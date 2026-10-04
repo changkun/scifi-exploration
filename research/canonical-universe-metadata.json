@@ -4,11 +4,15 @@
   "source_record_count": 14532,
   "total": 14564,
   "researched": 168,
-  "topic_known": 1823,
-  "topic_unknown": 12741,
+  "topic_known": 2160,
+  "topic_unknown": 12404,
+  "issue_analyzed": 784,
+  "issue_missing": 13780,
+  "issue_facet_records": 632,
+  "issue_facets": 1280,
   "year_unknown": 1901,
   "space_unknown": 14259,
-  "knowledge_added": 200,
+  "knowledge_added": 729,
   "library_correspondence": 2251,
   "conflicts": 453,
   "with_missing": 14428,
@@ -69,9 +73,24 @@
         "file": "research/knowledge-additional.json",
         "sha256": "2591d650b09ba6a8faac343daa833b1a8f568f1e372d89c28c6634b3ee6a8b9a",
         "count": 143
+      },
+      {
+        "file": "research/issues-before-1900.json",
+        "sha256": "e75c4823aa33b13ea16dc523802c370cd11ba6a3dc295ca0ed470d154140aa19",
+        "count": 88
+      },
+      {
+        "file": "research/issues-1900-1979.json",
+        "sha256": "2781f493620c79474ca28ced93019a42e63e6161bbcb92c7c5b316d5e5b01272",
+        "count": 269
+      },
+      {
+        "file": "research/issues-since-1980.json",
+        "sha256": "0611838f8b04d53e85df2971eabf232f227c3c1ce6ec35c6ff2e7691db9eef58",
+        "count": 275
       }
     ],
-    "knowledge_added": 200,
+    "knowledge_added": 729,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -101,6 +120,25 @@
     "library_subject_candidate_records": 628,
     "library_date_differences": 445,
     "library_missing_year_candidates": 65,
-    "note": "知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。"
+    "note": "知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。",
+    "issue_batches": [
+      {
+        "file": "research/issues-before-1900.json",
+        "sha256": "e75c4823aa33b13ea16dc523802c370cd11ba6a3dc295ca0ed470d154140aa19",
+        "count": 88
+      },
+      {
+        "file": "research/issues-1900-1979.json",
+        "sha256": "2781f493620c79474ca28ced93019a42e63e6161bbcb92c7c5b316d5e5b01272",
+        "count": 269
+      },
+      {
+        "file": "research/issues-since-1980.json",
+        "sha256": "0611838f8b04d53e85df2971eabf232f227c3c1ce6ec35c6ff2e7691db9eef58",
+        "count": 275
+      }
+    ],
+    "issue_facet_records": 632,
+    "issue_facet_count": 1280
   }
 }

@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "method": "read-only-identity-and-plot-audit-v1",
+    "date": "2026-10-04",
+    "status": "final_snapshot_review_complete",
+    "note": "本文件记录质量审查与纠错处置，不将整批知识补充提升为来源已核验。正文解释与具体情节仍保持 knowledge_added_unverified；未指出问题不代表没有问题。",
+    "scope": "1900—1979 与 1980 年以后的两份议题补充；重点为作品实体、单篇/扩写/合集/系列粒度、同作者异作错套，以及影视改编情节混入。",
+    "edited_files": [
+      "research/issue-review-notes.json"
+    ],
+    "reviewed_snapshots": [
+      {
+        "file": "research/issues-1900-1979.json",
+        "record_count": 269,
+        "sha256": "2781f493620c79474ca28ced93019a42e63e6161bbcb92c7c5b316d5e5b01272",
+        "reviewed_record_count": 269,
+        "batch_status_at_review": "frozen",
+        "review_method": "读取逐条 identity、issue 与 issue_facets，和底库实体及已知原作情节对照；仅对具体疑点定向读取来源。不是逐篇原作全文核验。",
+        "is_final_snapshot": true,
+        "facet_count": 538
+      },
+      {
+        "file": "research/issues-since-1980.json",
+        "record_count": 275,
+        "sha256": "0611838f8b04d53e85df2971eabf232f227c3c1ce6ec35c6ff2e7691db9eef58",
+        "reviewed_record_count": 275,
+        "batch_status_at_review": "frozen_for_parent_integration",
+        "review_method": "读取逐条 identity、issue 与 issue_facets，和底库实体及已知原作情节对照；仅对具体疑点定向读取来源。不是逐篇原作全文核验。",
+        "is_final_snapshot": true,
+        "facet_count": 550
+      }
+    ],
+    "limitations": [
+      "未逐本或逐篇阅读全文。",
+      "对熟悉作品进行具体情节对照；陌生条目只检查明显实体矛盾，不作无依据的正确性保证。",
+      "本文件对应上述最终冻结快照；未来若批次再变更，需重新记录版本及增量审查。"
+    ],
+    "finalized_batches": [
+      "research/issues-1900-1979.json",
+      "research/issues-since-1980.json"
+    ],
+    "follow_up_pending_batches": [],
+    "reviewed_record_total": 544,
+    "review_focus_examples": [
+      {
+        "id": "Q17993749",
+        "note": "Button, Button 保持原短篇的关系反讽，没有改写为电影长篇阴谋。此条为知识对照，非全文外部核验。"
+      },
+      {
+        "id": "Q837934",
+        "note": "Flowers for Algernon 在议题中明确为短篇版本；与扩写长篇的分析不能默认互换。"
+      },
+      {
+        "ids": [
+          "Q1198643",
+          "Q122536594"
+        ],
+        "note": "The Fifth Head of Cerberus 三中篇联作与第一篇分别分析；合集条目用选例而非单一故事泛化。"
+      },
+      {
+        "ids": [
+          "Q478110",
+          "Q937248",
+          "Q1452666"
+        ],
+        "note": "City、Tales of Pirx the Pilot、The Star Diaries 均明确集合层面和选例边界。"
+      }
+    ],
+    "reviewed_facet_total": 1088
+  },
+  "actually_read_sources": [
+    {
+      "url": "https://2013philipkdick.philipdick.com/works_novels_cosmicpuppets.html",
+      "kind": "作者官方网站旧站的作品介绍",
+      "supports": [
+        "Q467904 的标题与作者身份",
+        "Ted Barton 返回 Millgate 后发现小镇及个人历史异常；对立力量改变现实这一原作设定"
+      ],
+      "scope_note": "支持此处纠错所需的作品身份和核心设定，不能据此声称全部新议题已逐字段核实。"
+    },
+    {
+      "url": "https://www.sohu.com/a/446321871_100016677",
+      "kind": "德国孔院杂志官方账号发布的获授权原作节选及情节导语",
+      "supports": [
+        "Q130233258 中地球最富 13 人雇滑膛杀最贫 3 人的叙事动因",
+        "外星来客是第一地球的逃荒者，其赡养基准为地球最低生活标准",
+        "原作节选中的财富集中、空气产权与穷人生活机制"
+      ],
+      "scope_note": "页面标注原作、德译本、译者及海呐出版社刊印授权；没有复制长原文。"
+    },
+    {
+      "url": "https://sisuci.shisu.edu.cn/_upload/article/files/c4/18/cc0222294f38a84f693cd435ba25/9fe0497a-9fe9-41e2-867a-342476f74ee7.pdf",
+      "kind": "上海外国语大学孔子学院页面托管的《孔子学院 / Konfuzius-Institut》2021 年第 1 期（总第 39 期）官方期刊 PDF",
+      "supports": [
+        "刘慈欣《赡养人类》节选及情节导语；雇凶者、外星难民和最低标准的主体关系"
+      ],
+      "location_note": "PDF 第 62—63 页附近的“本期作家 / LIU CIXIN”栏目；以标题与正文定位，显示页码与印刷页码可能不同。",
+      "scope_note": "该来源用于复核上述单项因果错配，不用于给整份数据统一标 verified。"
+    },
+    {
+      "url": "https://subterraneanpress.com/burning-chrome/",
+      "kind": "英文本出版社正式书页与目录",
+      "supports": [
+        "Burning Chrome 为 1986 年首版的十篇合集",
+        "目录将 Fragments of a Hologram Rose 与 Burning Chrome 分为不同单篇"
+      ],
+      "scope_note": "用于识别合集与单篇关系，没有据此核验该条全部剧情细节。"
+    },
+    {
+      "url": "https://www.dedao.cn/ebook/detail?id=lxaVvndNG6D4kgLJ2OKxqVMmE1zXPwVlM1WAdjyQeYR75vbaBnr9ol8pZERLg1my",
+      "kind": "正版电子书书目页；明确注明出版方北京时代华文书局，并展示简介和目录",
+      "supports": [
+        "中文《全息玫瑰碎片》是收录十篇的合集",
+        "中文目录将《全息玫瑰碎片》与《整垮珂萝米》列为两个不同篇目"
+      ],
+      "scope_note": "出版社资料由电子书平台展示；不是出版社自有域名。该页面的发行日期是电子书版本日期，不能替代原作首刊年份。"
+    },
+    {
+      "url": "https://williamgibsonbooks.com/",
+      "kind": "作者官方网站",
+      "supports": [
+        "William Gibson 作者身份及其著作目录中存在 Burning Chrome"
+      ],
+      "scope_note": "作者首页没有本次所需的单篇与合集完整纪年，因此没有用它证明 1982/1986 层级关系。"
+    },
+    {
+      "url": "https://gutenberg.net.au/ebooks03/0301391h.html",
+      "kind": "Project Gutenberg Australia 原作公开文本",
+      "supports": [
+        "H. G. Wells 与 The Shape of Things to Come 的原题身份",
+        "页面首版信息为 1933；原作导言与目录显示未来史及海空交通控制的结构"
+      ],
+      "scope_note": "实际读到标题、版本说明、导言和目录；没有为该条宣称全文细读。该书页附有独立影视图片画廊，未用画廊作为原作情节依据；原作文本没有证明“未来互联网纾”是有效中文译题。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "Q467904",
+      "batch_file": "research/issues-1900-1979.json",
+      "identity": {
+        "title": "The Cosmic Puppets",
+        "author": "菲利普·迪克"
+      },
+      "problem_type": "other_work_plot_misattribution",
+      "original_claim_summary": "原 issue 与两个 facets 描述机器人试飞失败、工程师进入危险装置诊断，以及程序可靠性与人类灵活判断的差别。",
+      "correct_or_pending_explanation": "这些情节不属于 Dick 的 The Cosmic Puppets；该作围绕 Ted Barton 回到童年小镇后发现现实、历史和记忆冲突展开。原机器人试验分析与 Asimov 的 Risk 相符，此项对应识别含知识判断，本次未逐段核验 Risk 原文。",
+      "sources": [
+        "https://2013philipkdick.philipdick.com/works_novels_cosmicpuppets.html"
+      ],
+      "disposition": "corrected_in_batch",
+      "correction_observed": "当前 109 条批次中 Q467904 已改为小镇现实与记忆冲突；Risk 分析已放入 Q467818。修正后仍为知识补充待核状态。",
+      "follow_up": "已确认最终 269 条批次保留修正，Q467818 的 Risk 条目仍独立存在；若未来核查其全部剧情，仍需读取相应原作或一手材料。"
+    },
+    {
+      "id": "Q130233258",
+      "batch_file": "research/issues-since-1980.json",
+      "identity": {
+        "title": "赡养人类",
+        "author": "刘慈欣"
+      },
+      "problem_type": "actor_and_causal_relation_confusion",
+      "original_claim_summary": "原 issue 将清除穷人归为外星人的要求，并解释为保护极少数占有者；“贫困处置”的 basis 也作同样归因。",
+      "correct_or_pending_explanation": "雇杀最贫三人的一方是地球最富十三人；他们针对外星难民按地球最低生活标准实施赡养的计划，企图先抬高该基准。第一地球的终产者、极端财产权与空气产权则揭示外星难民逃离的制度，并非外星人要求保护地球富人的行动。",
+      "sources": [
+        "https://www.sohu.com/a/446321871_100016677",
+        "https://sisuci.shisu.edu.cn/_upload/article/files/c4/18/cc0222294f38a84f693cd435ba25/9fe0497a-9fe9-41e2-867a-342476f74ee7.pdf"
+      ],
+      "disposition": "corrected_in_batch",
+      "recommended_action": "改写 issue 的叙事主体与因果说明，并改写“贫困处置” facet 的 basis；可以保留财富集中与生命权的分析方向。",
+      "follow_up": "已确认最终 275 条批次的正文和相关 facets 均保留修正。此处核过叙事主体关系，不代表该条所有文学解释均已外部验证。",
+      "correction_observed": "最终 275 条批次将雇杀主体改为地球最富十三人，并把外星难民的赡养基准与第一地球终产者的空气产权分开；两个 facets 的 basis 已同步修正。状态仍为 knowledge_added_unverified。"
+    },
+    {
+      "id": "Q2755162",
+      "related_ids": [
+        "Q1068344"
+      ],
+      "batch_file": "research/issues-since-1980.json",
+      "identity": {
+        "title": "Burning Chrome（当前议题对应单篇）",
+        "source_title_zh": "全息玫瑰碎片",
+        "author": "威廉·吉布森"
+      },
+      "problem_type": "title_translation_and_collection_level_needs_review",
+      "original_claim_summary": "当前议题描写两名黑客入侵 Chrome 系统及其与 Rikki 的关系，采用 Burning Chrome 身份；底库中文源标签却为《全息玫瑰碎片》，并同时存在 Q1068344 的 1986 合集实体。",
+      "correct_or_pending_explanation": "本分析对应 1982 年单篇 Burning Chrome，不应自动转作整个 1986 同名合集的议题。出版社英文本目录把 Fragments of a Hologram Rose 与 Burning Chrome 列为不同单篇，中文正版电子书的《全息玫瑰碎片》则是十篇合集，并含不同篇目《全息玫瑰碎片》和《整垮珂萝米》。译题与实体粒度应核对，不宜仅凭中文源标签强改为另一单篇或删除原标签。",
+      "sources": [
+        "https://subterraneanpress.com/burning-chrome/",
+        "https://www.dedao.cn/ebook/detail?id=lxaVvndNG6D4kgLJ2OKxqVMmE1zXPwVlM1WAdjyQeYR75vbaBnr9ol8pZERLg1my"
+      ],
+      "source_boundary": "1982 的分析身份依据当前来源纪年和已知单篇身份；以上实际读取书页直接支持 1986 合集及目录层级，没有读取 1982 原杂志全文。",
+      "disposition": "scope_caveat_added",
+      "recommended_action": "在 field_notes 明确：本分析仅对应 1982 单篇 Burning Chrome；中文译题/1986 合集关联待核。保留原源标签，且不要将该单篇议题自动应用给 Q1068344 合集。",
+      "follow_up": "未来仍需核对中文译题和指向 1986 合集的 OpenLibrary ID；本轮已加分析范围说明。",
+      "correction_observed": "最终 275 条批次在 field_notes 明说 1982 单篇与 1986 同名合集的区别，保持原中文标签和外部关联待核，并添加 identity_caveat 及实际出版社来源。该项目的翻译及层级关联没有整体改标已核验。"
+    },
+    {
+      "id": "Q627383",
+      "batch_file": "research/issues-1900-1979.json",
+      "identity": {
+        "source_title_zh": "未来互联网纾",
+        "title_en": "The Shape of Things to Come",
+        "author": "H. G. Wells"
+      },
+      "problem_type": "source_chinese_label_needs_review",
+      "original_claim_summary": "原中文源标签“未来互联网纾”直接出现在该条身份；英文源名与本地 OpenLibrary 对应均为 The Shape of Things to Come。",
+      "correct_or_pending_explanation": "现有未来史、航空技术精英及重建秩序的分析没有显示异作错套；需要核对的是可读性异常的中文源标签，不宜把它当作已确认中文标准译名。原作公开文本可支持英文身份和 1933 首版信息，但不能凭此强定中文译名。",
+      "sources": [
+        "https://gutenberg.net.au/ebooks03/0301391h.html"
+      ],
+      "disposition": "scope_caveat_added",
+      "recommended_action": "保留原源标签，增加英文作品身份与中文译题待核提示；不自动替换成电影题名，不将原 source assertion 提升为已核验译名。",
+      "follow_up": "未来核实正式中文版本后再处理显示译题；本轮已补英文身份和中文标签待核提示。",
+      "correction_observed": "最终 269 条批次为该条加入 identity_caveat，明确本分析对应 Wells 的英文作品，中文源标签和译题待核；继续保留原标签，未把中文版身份改标为已核验。"
+    }
+  ],
+  "non_findings_note": "部分相近标题或版本没有作为错误报告：例如 Heinlein 的 4=71 是 Time for the Stars 的真实中文译名，星际迷航可对应 Tunnel in the Sky；同题单篇与合集不能仅凭标题混同。没有因译名罕见而擅自改实体。",
+  "summary": {
+    "plot_misattributions_reported": 2,
+    "plot_misattributions_corrected_in_batch": 2,
+    "identity_or_scope_items_reported": 2,
+    "identity_or_scope_caveats_added": 2,
+    "unresolved_blocking_plot_errors_observed": 0,
+    "note": "0 仅指本次快速审查发现且尚未处理的阻断性剧情错配，不代表数据无误，也不改变各条待核状态。"
+  }
+}

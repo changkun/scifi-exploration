@@ -47,7 +47,8 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
       duration: detail?.duration || UNKNOWN, science_class: detail?.science_class || UNKNOWN,
       science_note: detail?.science_note || '尚未进行科学前提分析。',
       story_era: detail?.story_era || '故事时代未知', reach: detail?.reach || '最大时间视野未知',
-      issue: detail?.issue || (topics.length ? `来源标签给出议题候选：${topics.join('、')}。需继续研究。` : '底层议题待研究'),
+      issue: detail?.issue || (topics.length ? `议题分析尚未补充。来源标签给出分类候选：${topics.join('、')}。` : '议题分析尚未补充'),
+      issue_facets: [], knowledge_identity_notes: [], issue_analysis_status: detail?.issue ? 'research_interpreted' : 'missing',
       series_name: detail?.series_name || '',
       inclusion_status: detail?.inclusion_status || '来源科幻文学候选',
       research_level: detail ? 'researched' : topics.length ? 'candidate' : 'bibliographic',
@@ -59,7 +60,7 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
     };
     const supplement=supplements.get(id);
     if(supplement)applySupplement(w,supplement);
-    w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, w.story_era, w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
+    w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, ...w.issue_facets.flatMap(f=>[f.label,f.question,f.basis]), ...(w.issue_alternatives||[]).map(a=>a.value), w.story_era, w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
     return w;
   });
   return { works, aliases, spatial: { ...spatial, works: works.map(w => ({ ...(w.spatial_evidence || { primary: 'unknown', secondary: [], confidence: '未知', rationale: '没有足够的空间分类证据，保留待分类。' }), id: w.id })) } };
@@ -69,6 +70,12 @@ export const FIELD_LABELS={title:'展示题名',original_title:'原题',author:'
 const knowledgeKeys={title_zh:'title',title_original:'original_title',original_language:'original_language',author:'author',spatial_primary:'spatial',duration:'story_duration',story_era:'story_era',reach:'temporal_reach',science_class:'science',issue:'issue',topics:'topics',branches:'branches'};
 function applySupplement(w,s){
   w.knowledge=s.knowledge||null;w.knowledge_topics=s.knowledge?.fields?.topics||[];
+  w.issue_facets=s.knowledge?.fields?.issue_facets||[];
+  w.knowledge_identity_notes=unique((s.knowledge?.assertions||[]).map(a=>a.identity_caveat));
+  w.issue_facets_status=w.issue_facets.length?'knowledge_added_unverified':'missing';
+  w.issue_alternatives=s.knowledge?.issue_alternatives||[];
+  if(w.research?.issue&&s.knowledge?.fields.issue&&w.research.issue!==s.knowledge.fields.issue)w.issue_alternatives=[...w.issue_alternatives,{value:s.knowledge.fields.issue,note:s.knowledge.field_notes.issue,input_file:s.knowledge.assertions?.find(a=>a.fields.issue===s.knowledge.fields.issue)?.input_file}];
+  w.issue_analysis_status=w.research?.issue?'research_interpreted':s.knowledge?.fields?.issue?'knowledge_added_unverified':'missing';
   w.library_checks=s.library_checks||[];w.library_detail_url=s.library_detail_url||null;
   w.library_topic_candidates=s.topic_candidates||[];
   w.topic_candidates=[...w.topic_candidates,...w.library_topic_candidates];
@@ -114,6 +121,10 @@ function applySupplement(w,s){
 export function coverageOf(works) {
   return { total: works.length, researched: works.filter(w => w.research).length,
     topic_known: works.filter(w => w.topics.length).length, topic_unknown: works.filter(w => !w.topics.length).length,
+    issue_analyzed:works.filter(w=>w.issue_analysis_status!=='missing').length,
+    issue_missing:works.filter(w=>w.issue_analysis_status==='missing').length,
+    issue_facet_records:works.filter(w=>w.issue_facets.length).length,
+    issue_facets:works.reduce((n,w)=>n+w.issue_facets.length,0),
     year_unknown: works.filter(w => w.sort_year == null).length,
     space_unknown: works.filter(w => w.spatial_primary === 'unknown').length,
     knowledge_added:works.filter(w=>w.knowledge).length,

@@ -30,3 +30,11 @@ node scripts/validate-unified.mjs
 新增来源须保留其原始身份与导入范围。新增研究或修订判断须记录来源、核查状态、字段依据与实体链接；不因展示需求虚构未知信息。全量加载任何索引分片失败时，不发布部分数据为完整结果。
 
 补全模型、状态与外部粒度保护见 [补全方法](completion-methodology.md)。基线审计和补充覆盖层分别归档，完整原字段不因补充而丢失。
+
+## 核心问题及细分议题
+
+`topics` 仍是多值宽泛导航类别，包含分别保存的原研究、知识补充与规则候选。`issue_analysis_status` 独立表示核心问题分析：`research_interpreted`、`knowledge_added_unverified` 或 `missing`；候选标签不会使状态变为已有分析。
+
+`issue_facets` 保存每项 `label/question/basis`，`issue_facets_status` 单列知识待核。`issue_alternatives` 保留新增的不同核心解释，已有解释仍为展示值。知识记录的 `assertions` 保存原始逐批输入，避免合并丢失字段备注、来源或解释。此层不会自动填补时间、空间、科学或书目身份。
+
+`issueStatus` 与 `facet` 是共享筛选，所有主要视图和URL均使用同一模型。议题地图的数量、细分标签、作品例子随当前筛选更新。专用 `issue-analysis.json.gz` 从完整统一模型生成，当前CSV也保留核心问题及全部细分问题结构。

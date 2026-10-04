@@ -6,6 +6,8 @@
 
 统一数据模型与字段边界见 [统一架构](docs/unified-architecture.md)，实体合并依据见 [实体链接](docs/entity-linking.md)。这完成了当前来源的全量使用，全球全量书目仍受来源覆盖限制；[覆盖来源与缺口](docs/coverage-sources.md) 列出尚未接入的数据库。
 
+**议题浏览**：议题地图显示当前筛选范围的作品分析、标签候选与分析缺口。可按细分问题精确筛选，点击作品查看具体问题及情节依据；相近细分标签暂时分别保留。全站搜索包括分析正文与依据，分享链接保留年代、细分议题和分析状态。
+
 **补全进度**：所有14,564条统一实体均逐字段登记缺口与核对状态。熟悉作品新增知识标为待独立核对；Open Library定向书目对照保留原字段、对应依据、主题词候选和日期差异。新增全站“已有知识补充”“有缺失”“部分书目对应”“日期差异”“身份或版本待核”及具体缺失字段筛选。当前数量以 `research/canonical-universe-metadata.json` 为准，方法见 [补全与核对](docs/completion-methodology.md) 和 [基线审计](docs/audit-methodology.md)。
 
 下载与归档：
@@ -17,6 +19,9 @@
 - `research/record-audit.json.gz`：全部条目的17字段基线审计，含完整原值和缺口。
 - `research/completion-overlay.json.gz`：知识补充、外部对照及可追溯规则候选。
 - `research/knowledge-existing.json`、`knowledge-additional.json`：逐字段已有知识及待核边界。
+- `research/issues-before-1900.json`、`issues-1900-1979.json`、`issues-since-1980.json`：按年代整理的作品核心问题、细分议题及情节依据，均为知识补充待核。
+- `research/issue-review-notes.json`：新增批次的交叉复查范围、具体修正与仍待核的题名/层级问题。
+- `research/issue-analysis.json.gz`：全部已有核心问题分析的专用索引；`issue-completion-summary.json` 记录本轮新增与仍缺分析的数量。
 - `research/library-crosschecks.json.gz`、`external-source/openlibrary/`：全部定向书目对照与原始缓存。
 
 `research/report.md`、`research/catalog.json`／`catalog.csv` 及 `research/source-notes/` 保留首轮 168 条研究的历史版本。它们用于追溯已有论述和版本判断，没有因扩库而改写成对全部来源作品的研究报告。当前网站的统一索引与字段覆盖，以统一模型、来源快照和实体链接说明为准。
@@ -66,6 +71,7 @@ python3 -m http.server 8787 --directory dist
 node scripts/validate.mjs
 node scripts/validate-unified.mjs
 node scripts/validate-completion.mjs
+node scripts/validate-issues.mjs
 ```
 
 无需安装前端依赖。Three.js 的固定版本和地球纹理已放入仓库。报告保留独立的阅读页面。

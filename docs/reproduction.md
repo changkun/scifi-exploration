@@ -47,10 +47,13 @@ node scripts/build-unified.mjs
 node scripts/validate.mjs
 node scripts/validate-unified.mjs
 node scripts/validate-completion.mjs
+node scripts/validate-issues.mjs
 ```
 
 审计以固定 `research/audit-baseline-universe.json.gz` 为输入，不用后续补充反过来改写基线。Open Library 脚本默认读取62份缓存，定向查询既有P648作品标识；只有显式 `--fetch` 才为缺失缓存请求接口，每批75标识、请求间隔至少1.1秒。缓存包含请求、取回时间及响应，manifest逐文件记录SHA256。未返回与身份不一致同样保留。
 
-`research/knowledge-existing.json` 和 `knowledge-additional.json` 记录已有知识补充；每条采用真实底库ID并附身份与字段备注，全部是 `knowledge_added_unverified`。补全脚本合成按需网页分片及下载档案。统一模型只填缺失或明确待核的字段，不修改原研究、原始来源、身份和原始空间依据。
+`research/knowledge-existing.json`、`knowledge-additional.json` 及三个 `research/issues-*.json` 年代批次记录已有知识补充；每条采用真实底库ID并附身份与字段备注，全部是 `knowledge_added_unverified`。补全脚本合成按需网页分片及下载档案。统一模型只填缺失或明确待核的字段，不修改原研究、原始来源、身份和原始空间依据。
 
 题名及至少一位作者相符、候选单部小说、独立且唯一作品标识才允许引用外部年份候选和主题词规则。共享短篇／扩写长篇／合集标识、系列、版本和未知粒度单列身份待核，不继承字段；日期差异保留双方值。版本语言绝不作为原语。详见 [补全与核对方法](completion-methodology.md)。
+
+新增议题批次必须采用真实统一ID与可匹配题名/作者，保留具体文本粒度，每条至少两个含 `label`、`question`、`basis` 的细分问题。合并时逐批原始断言保存在 `knowledge.assertions`；旧分析不被后续分析覆盖，补充解释列在 `issue_alternatives`。核心问题、细分标签、问题及情节依据写入统一 JSON 和 CSV，专用分析下载由同一模型生成。
