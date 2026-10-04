@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "method": "actual-reading-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "record_count": 13,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/silverberg-source-searches-round15.json",
+        "sha256": "d3a9630962db005e0bd671058d4a41732f7ee95f68e11205aa8f04384149ea2f",
+        "metadata": {
+          "round": 15,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-reading-log-v1",
+          "record_count": 5,
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round13-log.json",
+        "sha256": "a860d78a34e13cac13e0225f801119d900d818bd6efbe0cbb28126d67c4f5dcd",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "latest_round": "round13",
+          "record_count": 1,
+          "note": "原作实际读取为round12，工具中断后round13归档并形成限106–110页的局部分析；失败下载不提升为已获正文，只有材料中的明确页段已读。后续日志新round14。",
+          "frozen_at": "2026-10-04",
+          "analysis_record_count": 1,
+          "facet_count": 2
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round14-log.json",
+        "sha256": "b256a95f6b07c216365b73b916b03838fcbc1efecf18f9e3d9268fd0a1e21eca",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "round14",
+          "record_count": 3,
+          "note": "逐篇实际分段阅读从起点至THE END，明确附记/页脚和不同作品边界；网站菜单、WiseBot、相关文章不是原作。尚未读另四篇，未记成已读。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round15-log.json",
+        "sha256": "3aa89df24dfd713d7f18192d2efb9ee22efcc15059938ca50ff2ca167111b8c7",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "round": "round15",
+          "record_count": 4,
+          "note": "四个单篇均完整分段读公开重刊，记录实际读取范围和网页工具失败/正常请求成功；原刊扫描未对照，文学解释未升为已核验。",
+          "frozen_at": "2026-10-04",
+          "validation": "精确现有ID/题名作者、仅3个议题字段、合法topics、每篇2项以上具体facets、未核对状态、分析与实际日志逐ID一致；未改原年份或粒度。"
+        }
+      }
+    ],
+    "note": "逐项保留实际查询对象、直接打开记录、失败和正文范围，直接打开不冒充关键词检索。"
+  },
+  "records": [
+    {
+      "id": "Q131518445",
+      "identity": {
+        "title": "The Regulars",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-3-robert-silverberg-the-regulars.html",
+          "result": "actual_source_scope_read",
+          "material_type": "third_party_original_text_excerpt_read",
+          "reading_scope": "与第2页并行公开HTTP请求时该页实际取得，随后于v20发布后读取正文Spooky place起至For the house结尾；第2页429，未有连续全文。取得的HTML/文本仅私下保存，未核原刊。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留1981独立短篇。上一轮只读第1页，这次新增实际第3页末段至结尾；第2页仍未取得，未连续通读全篇。炼狱、中转与遗忘规则都是角色提出的理论，未直接据此填空间范围。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified"
+    },
+    {
+      "id": "Q105069974",
+      "identity": {
+        "title": "Flower, Mercy, Needle, Chain",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Yoon Ha Lee Flower Mercy Needle Chain Lightspeed original"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方公开原作全文",
+          "reading_scope": "实际读取正文74–210，从宇宙收束的开头至Shiron离开Blackwheel、Ω结尾；并读2010年9月第4期署名信息。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2010年独立单篇Q105069974；虚构逆因果、灵魂和宇宙终点不作现实物理事实。已读公开原文全文，但未对照其他版本，也未独立核验解释。Shiron关于宇宙循环的推断不提升为确定规律。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified"
+    },
+    {
+      "id": "Q98833129",
+      "identity": {
+        "title": "The Starship and the Temple Cat",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Yoon Ha Lee \"The Starship and the Temple Cat\" story Beneath Ceaseless Skies",
+        "site:beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/ \"Spectral Lance was astonished\""
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+          "result": "direct_open_failed_403",
+          "material_type": "原作网页直接打开",
+          "reading_scope": "直接打开失败；只依据本轮实际检索返回的原作缓存段落，不声称完整正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方原作检索缓存段落",
+          "reading_scope": "实际读检索返回的开头毁城/猫魂、舰船叛乱与悔罪、相遇/钟楼创伤/亡灵反击、接纳神庙及结尾；并读第244期2018-02-01署名。原链接打开403，缓存未保证连续完整正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2018年单篇Q98833129，与同年获奖合集不同。出版方称科学幻想；猫魂、法术和舰船意识属于故事设定。实际读到出版方检索缓存多个正文段落及最后登舰、持续悼亡的结尾；直接网页403，未声明整页连续全文或音频已读。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified"
+    },
+    {
+      "id": "Q29831554",
+      "identity": {
+        "title": "Ghostweight",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:clarkesworldmagazine.com/lee_01_11/ Ghostweight"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://clarkesworldmagazine.com/lee_01_11/",
+          "result": "original_link_unavailable_robots_restricted",
+          "material_type": "作者链接的原作入口",
+          "reading_scope": "直接链接未返回正文，检索工具报告robots限制；未换入口绕过限制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.yoonhalee.com/?p=303",
+          "result": "actual_source_scope_read",
+          "material_type": "作者说明及授权开头",
+          "reading_scope": "实际读14–22题名、2011年1月刊期、原文开头、作者对折纸/幽灵/暴行的定位与重刊目录，未展开原文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://bestsf.net/yoon-ha-lee-ghostweight-clarkesworld-magazine-52-january-2011/",
+          "result": "actual_source_scope_read",
+          "material_type": "评论作者关于确切单篇的原始书评",
+          "reading_scope": "实际读正文11–13及2011-01-03署名日期；仅有家园破坏、异族舰船、报复、自我变化与幽灵/控制室等细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2011年独立单篇Q29831554。作者页称太空幻想；本次只实际读作者发布的开头与定位、Best SF具名刊期评论正文11–13。Clarkesworld原作链接无法读取且检索报告robots限制，未读原文全文或收听音频；不借百科补造转折。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified"
+    },
+    {
+      "id": "Q76539336",
+      "identity": {
+        "title": "Non-Zero Probabilities",
+        "author": "N·K·杰米辛"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "N K Jemisin Non Zero Probabilities original Lightspeed",
+        "\"Non-Zero Probabilities\" \"clarkesworld\" \"Jemisin\"",
+        "\"Non-Zero Probabilities\" Jemisin read online clarkesworld",
+        "\"N. K. Jemisin\" \"Non-Zero Probabilities\" interview luck",
+        "\"Non-Zero Probabilities\" site:nkjemisin.com"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.worldswithoutend.com/novel.asp?id=16045",
+          "result": "linked_original_unavailable",
+          "material_type": "书目所链Clarkesworld原作入口",
+          "reading_scope": "书目打开可读但其Read the full story链接未返回原作正文；未声称全文核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://escapepod.org/2010/06/10/ep244-non-zero-probabilities/",
+          "result": "actual_source_scope_read",
+          "material_type": "获授权的原作文字节选及音频目录",
+          "reading_scope": "实际读署名/授权说明、文字节选35–43两次抽鬼牌及最初怀疑；只读文字，没有收听29:54音频。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfwa.org/2011/04/13/nebula-awards-2009-interview-n-k-jemisin/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者关于确切故事的访谈",
+          "reading_scope": "实际读本篇关于概率/意义、Adele普通生活、Brooklyn危机街景、多族裔与多套信仰的回答；新页面相应99–122，旧www页面116–131及对应后续多族裔段，不借用其另一部长篇剧情。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nkjemisin.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者书目检索缓存",
+          "reading_scope": "实际读本篇Clarkesworld2009/3360词与异常运气、坠落空调/脱轨等作者简介；网页直接打开失败，仅检索缓存。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nkjemisin.com/2009/11/everybodys-doin-it-nebdo/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者博客开头及发表信息检索缓存",
+          "reading_scope": "实际读本篇2009年9月第36期发表说明与Adele同时向不同祖系神灵祈祷的开头；直接打开失败，只取得检索缓存。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2009年独立短篇Q76539336；2010音频和2018合集不是其首刊。实际读授权134词文字节选、作者访谈中关于本篇的回答及作者书目/开头检索缓存，原作链接未返回全文、音频未收听。未据百科补写列车事故细节、性爱或纸飞机结尾；虚构概率不当作现实统计规律。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified"
+    },
+    {
+      "id": "Q56249508",
+      "identity": {
+        "title": "Zerelda: A Story of Love and Death",
+        "author": "Louise F. Suddick"
+      },
+      "attempt_state": "primary_partial_text_read_download_interrupted",
+      "queries": [
+        {
+          "provider": "Google Books browser",
+          "query": "Zerelda Suddick",
+          "round": "round12",
+          "result": "正常公开检索精确题名、作者、1899，J_VEAQAAMAAJ，可免费阅读。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+          "round": "round12",
+          "material_type": "原书公开扫描和准确书目",
+          "result": "实际读p106扫描，题名作者明确。未通读全书。"
+        },
+        {
+          "url": "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text",
+          "round": "round12",
+          "material_type": "同原书公开无障碍OCR",
+          "result": "实际读106–110页组：第VIII章末短暂记忆片段；第IX章起，Zerelda和母亲散步游湖，Aldace夫妇、城市共同体有多种工作，Zerelda作为宾客暂无义务；她羡慕亲密夫妻，母亲建议等待Isman来会而非主动寻他，并允许女儿选择，女儿无法确定相隔时间/距离。文本止于句子未完，没有读完该章。"
+        },
+        {
+          "url": "https://books.google.de/books/download/Zerelda.pdf?id=J_VEAQAAMAAJ&output=pdf",
+          "round": "round12",
+          "material_type": "公开菜单正常下载请求，中断状态未确认",
+          "result": "点击原页官方Download PDF并等待下载事件；工具调用约50分钟后被中断，未返回文件路径。不能判断下载已完成，未获得或读取本地PDF；未绕过访问限制。"
+        }
+      ],
+      "reason_unconfirmed": "实际局部已支持2个具体问题；进入世界的前因、整章、叙事层和全篇结局仍未读，不能替代整书研究。",
+      "next_step": "使用已证实公开阅读器的正文/章节导航继续前后上下文；不重复长时间等待下载。",
+      "issue_result": "added_to_private_round13_unverified",
+      "reading_scope": "原书p106扫描及106–110页组OCR，仅部分第IX章；下载结果未知，原书全文未读。",
+      "last_attempt_round": 12,
+      "latest_round": "round12"
+    },
+    {
+      "id": "Q17620891",
+      "identity": {
+        "title": "Absolutely Inflexible",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round14",
+          "result": "实际打开该篇明确题名/作者链接。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/absolutely-inflexible-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+          "location": "正文开头的旅客遣送；双向装置；Mahler过去旅行、返回与自我相遇的结尾；初刊页脚"
+        }
+      ],
+      "reading_scope": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+    },
+    {
+      "id": "Q19520771",
+      "identity": {
+        "title": "The Sixth Palace",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round14",
+          "result": "实际打开该篇明确题名/作者链接。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/the-sixth-palace-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+          "location": "藏宝小世界与伙伴协议；十八题及第一人死亡；第二人的假说、入门和出口结局；初刊页脚"
+        }
+      ],
+      "reading_scope": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+    },
+    {
+      "id": "Q25381484",
+      "identity": {
+        "title": "There Was an Old Woman—",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round14",
+          "result": "实际打开该篇明确题名/作者链接。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/there-was-an-old-woman-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+          "location": "母亲理论与人工子宫；职业培养和大学后的拒绝；共同谋杀与历史叙述结尾；作者附记和初刊页脚"
+        }
+      ],
+      "reading_scope": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+    },
+    {
+      "id": "Q25381966",
+      "identity": {
+        "title": "The Reality Trip",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round15",
+          "result": "实际打开该单篇明确链接，分段读取正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/the-reality-trip-robert-silverberg-the-reality-trip/",
+          "round": "round15",
+          "material_type": "原作公开重刊全文",
+          "result": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+          "location": "伪装/观察规则；同族孤独、揭露与接受；两位同族和Elizabeth关系；调动拒绝与辞职结尾"
+        }
+      ],
+      "reading_scope": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+      "next_step": "独立复核版本，继续未读两篇。"
+    },
+    {
+      "id": "Q56300334",
+      "identity": {
+        "title": "{Now + n, Now - n}",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round15",
+          "result": "实际打开该单篇明确链接，分段读取正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/now-n-now-n-robert-silverberg-science-fiction/",
+          "round": "round15",
+          "material_type": "原作公开重刊全文",
+          "result": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+          "location": "自我股价传递；恋爱与通信中断；护符真实作用、未来报纸及未决的共同穿越结尾"
+        }
+      ],
+      "reading_scope": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+      "next_step": "独立复核版本，继续未读两篇。"
+    },
+    {
+      "id": "Q30765118",
+      "identity": {
+        "title": "Many Mansions",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round15",
+          "result": "已读作者页并实际点该单篇链接，工具入口内部错误。"
+        },
+        {
+          "provider": "web search",
+          "query": "site:scifiwise.com \"Many Mansions\" \"Silverberg\"",
+          "round": "round15",
+          "result": "实际返回该原作页摘要及若干正文片段；仅凭搜索片段不称全文已读。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+          "round": "round15",
+          "material_type": "原作公开重刊网页",
+          "result": "网页读取工具直接打开返回406 Not Acceptable；正常公开页面请求随后取得HTML。私有提取134段并实际分1–55、56–100、101–134三段阅读至THE END，另读版权/1973初刊声明。",
+          "location": "原作全文134段及初刊声明；未与初刊扫描对照。"
+        }
+      ],
+      "reading_scope": "公开重刊全文分段读至THE END与版权初刊声明；幻想与多种不相容结果保留，不拼成单一事实经过。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释待独立复核；公开重刊未逐字与初刊比对。网页读取工具失败不能代表普通页面无正文。",
+      "next_step": "独立复核版本与非线性边界；继续To Jorslem。"
+    },
+    {
+      "id": "Q130617016",
+      "identity": {
+        "title": "To Jorslem",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        {
+          "provider": "SciFiwise作者页",
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "round": "round15",
+          "result": "实际读作者页21660words标注并点击To Jorslem；缓存读取失败消息给出精确链接/to-jorslem/。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/to-jorslem/",
+          "round": "round15",
+          "material_type": "原作公开重刊网页",
+          "result": "网页读取工具第一次/再次点击返回Internal Error/Cache miss。正常公开页面请求取得HTML，私有提取565段，实际按1–75、76–175、176–275、276–375、376–475、476–565分段全读至THE END，并读1969年2月Galaxy初刊声明。",
+          "location": "正文第1–13节全部及版权/初刊声明；未读初刊扫描或其他组成篇。"
+        }
+      ],
+      "reading_scope": "完整分段读公开正文第1–13节、私有提取565段至THE END及1969年2月Galaxy初刊声明。原刊扫描未对照，前两篇未作为已读材料。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释待独立复核；未与初刊逐字比对。网页工具缓存失败不等于原作公开页面不存在。",
+      "next_step": "独立核对原刊与篇章关系；继续统一库其他尚缺具体分析的精确身份。"
+    }
+  ]
+}

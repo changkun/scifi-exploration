@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "latest_round": "round13",
+    "record_count": 1,
+    "note": "原作实际读取为round12，工具中断后round13归档并形成限106–110页的局部分析；失败下载不提升为已获正文，只有材料中的明确页段已读。后续日志新round14。",
+    "frozen_at": "2026-10-04",
+    "analysis_record_count": 1,
+    "facet_count": 2
+  },
+  "records": [
+    {
+      "id": "Q56249508",
+      "identity": {
+        "title": "Zerelda: A Story of Love and Death",
+        "author": "Louise F. Suddick"
+      },
+      "attempt_state": "primary_partial_text_read_download_interrupted",
+      "queries": [
+        {
+          "provider": "Google Books browser",
+          "query": "Zerelda Suddick",
+          "round": "round12",
+          "result": "正常公开检索精确题名、作者、1899，J_VEAQAAMAAJ，可免费阅读。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+          "round": "round12",
+          "material_type": "原书公开扫描和准确书目",
+          "result": "实际读p106扫描，题名作者明确。未通读全书。"
+        },
+        {
+          "url": "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text",
+          "round": "round12",
+          "material_type": "同原书公开无障碍OCR",
+          "result": "实际读106–110页组：第VIII章末短暂记忆片段；第IX章起，Zerelda和母亲散步游湖，Aldace夫妇、城市共同体有多种工作，Zerelda作为宾客暂无义务；她羡慕亲密夫妻，母亲建议等待Isman来会而非主动寻他，并允许女儿选择，女儿无法确定相隔时间/距离。文本止于句子未完，没有读完该章。"
+        },
+        {
+          "url": "https://books.google.de/books/download/Zerelda.pdf?id=J_VEAQAAMAAJ&output=pdf",
+          "round": "round12",
+          "material_type": "公开菜单正常下载请求，中断状态未确认",
+          "result": "点击原页官方Download PDF并等待下载事件；工具调用约50分钟后被中断，未返回文件路径。不能判断下载已完成，未获得或读取本地PDF；未绕过访问限制。"
+        }
+      ],
+      "reason_unconfirmed": "实际局部已支持2个具体问题；进入世界的前因、整章、叙事层和全篇结局仍未读，不能替代整书研究。",
+      "next_step": "使用已证实公开阅读器的正文/章节导航继续前后上下文；不重复长时间等待下载。",
+      "issue_result": "added_to_private_round13_unverified",
+      "reading_scope": "原书p106扫描及106–110页组OCR，仅部分第IX章；下载结果未知，原书全文未读。",
+      "last_attempt_round": 12,
+      "latest_round": "round12"
+    }
+  ]
+}

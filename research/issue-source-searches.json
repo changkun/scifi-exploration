@@ -3,7 +3,7 @@
     "format": "actual-source-search-log-v1",
     "created_at": "2026-10-04",
     "status": "frozen_checkpoint",
-    "record_count": 824,
+    "record_count": 884,
     "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
     "inputs": [
       {
@@ -548,6 +548,116 @@
           "note": "只记录实际读取URL与确切支持范围；文学解释仍待独立核对。",
           "scope_note": "Caretaker为返回的完整独立短篇；其余多数为原作选定章节或出版社简介。Galactic Derelict的原作情节依据后卷明确回顾和已实际返回的出版简介缓存，不假称阅读本卷全文。The Beast Master的复仇线来自已有知识，官方合订本简介只支持明示背景；Kirkus为二手评论。"
         }
+      },
+      {
+        "file": "source-aggregate-round15-log.json",
+        "sha256": "a1d265a9896416380e71d41fad0dcd5cba64f918e0a980f63875e6a69edc84da",
+        "metadata": {
+          "method": "actual-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 13,
+          "inputs": [
+            {
+              "file": "research/issue-input-snapshots/silverberg-source-searches-round15.json",
+              "sha256": "d3a9630962db005e0bd671058d4a41732f7ee95f68e11205aa8f04384149ea2f",
+              "metadata": {
+                "round": 15,
+                "created_at": "2026-10-04",
+                "status": "frozen_checkpoint",
+                "method": "actual-reading-log-v1",
+                "record_count": 5,
+                "frozen_at": "2026-10-04"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round13-log.json",
+              "sha256": "a860d78a34e13cac13e0225f801119d900d818bd6efbe0cbb28126d67c4f5dcd",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "latest_round": "round13",
+                "record_count": 1,
+                "note": "原作实际读取为round12，工具中断后round13归档并形成限106–110页的局部分析；失败下载不提升为已获正文，只有材料中的明确页段已读。后续日志新round14。",
+                "frozen_at": "2026-10-04",
+                "analysis_record_count": 1,
+                "facet_count": 2
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round14-log.json",
+              "sha256": "b256a95f6b07c216365b73b916b03838fcbc1efecf18f9e3d9268fd0a1e21eca",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "frozen_at": "2026-10-04",
+                "round": "round14",
+                "record_count": 3,
+                "note": "逐篇实际分段阅读从起点至THE END，明确附记/页脚和不同作品边界；网站菜单、WiseBot、相关文章不是原作。尚未读另四篇，未记成已读。"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round15-log.json",
+              "sha256": "3aa89df24dfd713d7f18192d2efb9ee22efcc15059938ca50ff2ca167111b8c7",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "round": "round15",
+                "record_count": 4,
+                "note": "四个单篇均完整分段读公开重刊，记录实际读取范围和网页工具失败/正常请求成功；原刊扫描未对照，文学解释未升为已核验。",
+                "frozen_at": "2026-10-04",
+                "validation": "精确现有ID/题名作者、仅3个议题字段、合法topics、每篇2项以上具体facets、未核对状态、分析与实际日志逐ID一致；未改原年份或粒度。"
+              }
+            }
+          ],
+          "note": "逐项保留实际查询对象、直接打开记录、失败和正文范围，直接打开不冒充关键词检索。"
+        }
+      },
+      {
+        "file": "global-source-searches-round15.json",
+        "sha256": "26c28c5ccf6f09b706997df2929be3f9fbaecb756033da2887afee0b6c167979",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "scope": "逐条记录本轮实际读到的URL及支持范围；不是全文阅读或整体独立核验。",
+          "analysis_file": "work/evidence/global-round15.json",
+          "record_count": 30,
+          "facet_count": 80,
+          "freeze_identity_snapshot_sha256": "a4a666dc713c04f44d7321eed3bb81baa61e826174670dd619d52320dee965ed",
+          "source_reference_count": 38,
+          "unique_source_count": 37,
+          "self_check": "30个实体当前仍缺议题；题名作者逐项与当前快照一致；限定三字段、合法议题、2—4项具体facet及URL日志一一对应。全部仍是知识补充待核，不宣称独立书目或全文核验。",
+          "reading_scope_counts": {
+            "complete_original_read_records": 3,
+            "original_excerpt_with_or_without_intro_records": 3,
+            "intro_commentary_guide_or_secondary_records": 24
+          },
+          "complete_original_read_ids": [
+            "Q106102742",
+            "Q4546842",
+            "Q131308062"
+          ],
+          "original_excerpt_read_ids": [
+            "Q4999501",
+            "Q131462039",
+            "Q7295377"
+          ]
+        }
+      },
+      {
+        "file": "modern-source-searches-round16.json",
+        "sha256": "19a4514e69303cbd9f234dcd5f7209b1caa48ddad8e46ddb568071f1efad747f",
+        "metadata": {
+          "method": "actual-source-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "note": "仅记录实际读取URL与确切支持范围；不声称完整原作核验或权威认可文学解释。",
+          "record_count": 19,
+          "frozen_note": "本检查点完成结构、身份与缺口自查后冻结；不是全队列完成。保留逐条实际读取范围及文学分析待核状态。"
+        }
       }
     ],
     "updated_at": "2026-10-04",
@@ -560,9 +670,16 @@
       "previous_normalization": {
         "method": "exact_object_payload_v1",
         "normalized_at": "2026-10-04",
-        "records_with_removed_copies": 22,
-        "identical_copies_removed": 213,
-        "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+        "records_with_removed_copies": 0,
+        "identical_copies_removed": 0,
+        "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+        "previous_normalization": {
+          "method": "exact_object_payload_v1",
+          "normalized_at": "2026-10-04",
+          "records_with_removed_copies": 22,
+          "identical_copies_removed": 213,
+          "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+        }
       }
     }
   },
@@ -3465,7 +3582,7 @@
         "title": "Zerelda: A Story of Love and Death",
         "author": "Louise F. Suddick"
       },
-      "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+      "attempt_state": "primary_partial_text_read_download_interrupted",
       "queries": [
         "Internet Archive public advancedsearch: title:Zerelda",
         "\"Zerelda\" \"Suddick\" digitized",
@@ -3485,9 +3602,9 @@
         "Google Books public volumes API: intitle:Zerelda inauthor:Suddick",
         "web search: \"Zerelda\" \"Suddick\" \"review\" 1899 Neely",
         "web search: \"Zerelda\" \"Neely\" publisher catalogue",
-        "web search: \"Zerelda\" \"Suddick\" site:worldcat.org OR site:books.google.com OR site:catalog.loc.gov"
+        "web search: \"Zerelda\" \"Suddick\" site:worldcat.org OR site:books.google.com OR site:catalog.loc.gov",
+        "Google Books browser: Zerelda Suddick"
       ],
-      "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
       "materials_checked": [
         {
           "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
@@ -3530,117 +3647,75 @@
           "round": "round11",
           "material_type": "网页读取工具无法打开的公开检索入口",
           "result": "网页工具返回不可访问；本轮尚未用浏览器读此入口，不记录为零结果或已读书目。"
+        },
+        {
+          "url": "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+          "round": "round12",
+          "material_type": "原书公开扫描和准确书目",
+          "result": "实际读p106扫描，题名作者明确。未通读全书。"
+        },
+        {
+          "url": "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text",
+          "round": "round12",
+          "material_type": "同原书公开无障碍OCR",
+          "result": "实际读106–110页组：第VIII章末短暂记忆片段；第IX章起，Zerelda和母亲散步游湖，Aldace夫妇、城市共同体有多种工作，Zerelda作为宾客暂无义务；她羡慕亲密夫妻，母亲建议等待Isman来会而非主动寻他，并允许女儿选择，女儿无法确定相隔时间/距离。文本止于句子未完，没有读完该章。"
+        },
+        {
+          "url": "https://books.google.de/books/download/Zerelda.pdf?id=J_VEAQAAMAAJ&output=pdf",
+          "round": "round12",
+          "material_type": "公开菜单正常下载请求，中断状态未确认",
+          "result": "点击原页官方Download PDF并等待下载事件；工具调用约50分钟后被中断，未返回文件路径。不能判断下载已完成，未获得或读取本地PDF；未绕过访问限制。"
         }
       ],
-      "reason_unconfirmed": "目前只得到作者/公版/类型书目与一句星界旅行简介，未取得小说正文。",
-      "next_step": "继续查F Tennyson Neely1899版的大学馆藏扫描。",
-      "issue_result": "not_yet_supplemented",
-      "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
-      "last_attempt_round": 11,
-      "latest_round": "round11",
+      "reason_unconfirmed": "实际局部已支持2个具体问题；进入世界的前因、整章、叙事层和全篇结局仍未读，不能替代整书研究。",
+      "next_step": "使用已证实公开阅读器的正文/章节导航继续前后上下文；不重复长时间等待下载。",
+      "issue_result": "added_to_private_round13_unverified",
+      "reading_scope": "原书p106扫描及106–110页组OCR，仅部分第IX章；下载结果未知，原书全文未读。",
+      "last_attempt_round": 12,
+      "latest_round": "round12",
       "raw_reading_log": {
         "id": "Q56249508",
         "identity": {
           "title": "Zerelda: A Story of Love and Death",
           "author": "Louise F. Suddick"
         },
-        "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+        "attempt_state": "primary_partial_text_read_download_interrupted",
         "queries": [
           {
-            "provider": "Internet Archive public advancedsearch",
-            "query": "title:Zerelda",
-            "result_count": 20,
-            "result": "无匹配目标原书：零条或返回无关文献/游戏录像。"
-          },
-          "\"Zerelda\" \"Suddick\" digitized",
-          "\"Zerelda\" \"Suddick\" full text",
-          "\"Zerelda\" \"Suddick\" text",
-          "\"Zerelda\" \"Louise\"",
-          "\"Zerelda\" \"Suddick\" \"Neely\"",
-          "\"Zerelda\" Suddick archive.org",
-          "\"Zerelda\" \"Suddick\" \"digitized\"",
-          "\"Zerelda\" \"Neely\" novel",
-          "\"Zerelda\" \"Suddick\" digital",
-          "\"Zerelda\" \"Neely\" 1899 \"review\"",
-          "\"Zerelda\" \"story of love and death\" -wikipedia -luminist",
-          "\"Zerelda\" site:loc.gov",
-          "\"Zerelda\" \"Suddick\" library",
-          "\"Zerelda\" \"Suddick\" \"review\"",
-          {
-            "provider": "Google Books public volumes API",
-            "query": "intitle:Zerelda inauthor:Suddick",
-            "round": "round11",
-            "result": "HTTP429 RESOURCE_EXHAUSTED；公共默认配额拒绝，不是零结果。"
-          },
-          {
-            "provider": "web search",
-            "query": "\"Zerelda\" \"Suddick\" \"review\" 1899 Neely",
-            "round": "round11"
-          },
-          {
-            "provider": "web search",
-            "query": "\"Zerelda\" \"Neely\" publisher catalogue",
-            "round": "round11"
-          },
-          {
-            "provider": "web search",
-            "query": "\"Zerelda\" \"Suddick\" site:worldcat.org OR site:books.google.com OR site:catalog.loc.gov",
-            "round": "round11"
+            "provider": "Google Books browser",
+            "query": "Zerelda Suddick",
+            "round": "round12",
+            "result": "正常公开检索精确题名、作者、1899，J_VEAQAAMAAJ，可免费阅读。"
           }
         ],
-        "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
         "materials_checked": [
           {
-            "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
-            "material_type": "公开馆藏题名查询返回（非原作）",
-            "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
-            "round": "round7"
+            "url": "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+            "round": "round12",
+            "material_type": "原书公开扫描和准确书目",
+            "result": "实际读p106扫描，题名作者明确。未通读全书。"
           },
           {
-            "url": "https://pubdom.bookatomy.com/annee/2014/",
-            "material_type": "公版书目检索结果",
-            "result": "实际读题名、1899与作者，但无目标正文链接；不是小说情节依据。",
-            "round": "round7"
+            "url": "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text",
+            "round": "round12",
+            "material_type": "同原书公开无障碍OCR",
+            "result": "实际读106–110页组：第VIII章末短暂记忆片段；第IX章起，Zerelda和母亲散步游湖，Aldace夫妇、城市共同体有多种工作，Zerelda作为宾客暂无义务；她羡慕亲密夫妻，母亲建议等待Isman来会而非主动寻他，并允许女儿选择，女儿无法确定相隔时间/距离。文本止于句子未完，没有读完该章。"
           },
           {
-            "url": "https://en.wikipedia.org/wiki/Louise_F._Suddick",
-            "round": "round9",
-            "material_type": "public_search_result_read_not_full_original",
-            "result": "本轮实际读公開检索返回作者条目：1899Neely出版及一句星界旅行简介，二手简介不等于原作。"
-          },
-          {
-            "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/B/Bleiler%20-%20Checklist%20of%20SF%20and%20Supernatural%20Fiction.pdf",
-            "round": "round9",
-            "material_type": "public_search_result_read_not_full_original",
-            "result": "本轮实际读公开检索索引中的Suddick目标题名，不称读到小说或该PDF全文。"
-          },
-          {
-            "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Zerelda&type=title",
-            "material_type": "官方目录题名检索",
-            "result": "实际浏览Title:Zerelda返回No results matched your search；未获取目标正文，仅本查询范围。",
-            "round": "round10"
-          },
-          {
-            "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AZerelda%20inauthor%3ASuddick&maxResults=10",
-            "round": "round11",
-            "material_type": "公开目录API访问失败",
-            "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
-          },
-          {
-            "url": "https://books.google.com/books?q=Zerelda+Suddick",
-            "round": "round11",
-            "material_type": "网页读取工具无法打开的公开检索入口",
-            "result": "网页工具返回不可访问；本轮尚未用浏览器读此入口，不记录为零结果或已读书目。"
+            "url": "https://books.google.de/books/download/Zerelda.pdf?id=J_VEAQAAMAAJ&output=pdf",
+            "round": "round12",
+            "material_type": "公开菜单正常下载请求，中断状态未确认",
+            "result": "点击原页官方Download PDF并等待下载事件；工具调用约50分钟后被中断，未返回文件路径。不能判断下载已完成，未获得或读取本地PDF；未绕过访问限制。"
           }
         ],
-        "reason_unconfirmed": "目前只得到作者/公版/类型书目与一句星界旅行简介，未取得小说正文。",
-        "next_step": "继续查F Tennyson Neely1899版的大学馆藏扫描。",
-        "issue_result": "not_yet_supplemented",
-        "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
-        "last_attempt_round": 11,
-        "latest_round": "round11"
+        "reason_unconfirmed": "实际局部已支持2个具体问题；进入世界的前因、整章、叙事层和全篇结局仍未读，不能替代整书研究。",
+        "next_step": "使用已证实公开阅读器的正文/章节导航继续前后上下文；不重复长时间等待下载。",
+        "issue_result": "added_to_private_round13_unverified",
+        "reading_scope": "原书p106扫描及106–110页组OCR，仅部分第IX章；下载结果未知，原书全文未读。",
+        "last_attempt_round": 12,
+        "latest_round": "round12"
       },
-      "attempt_input": "early-search-attempts-round11.json",
+      "attempt_input": "source-aggregate-round15-log.json",
       "previous_attempts": [
         {
           "id": "Q56249508",
@@ -4063,6 +4138,189 @@
             "latest_round": "round10"
           },
           "attempt_input": "early-search-attempts-round10.json"
+        },
+        {
+          "id": "Q56249508",
+          "identity": {
+            "title": "Zerelda: A Story of Love and Death",
+            "author": "Louise F. Suddick"
+          },
+          "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+          "queries": [
+            "Internet Archive public advancedsearch: title:Zerelda",
+            "\"Zerelda\" \"Suddick\" digitized",
+            "\"Zerelda\" \"Suddick\" full text",
+            "\"Zerelda\" \"Suddick\" text",
+            "\"Zerelda\" \"Louise\"",
+            "\"Zerelda\" \"Suddick\" \"Neely\"",
+            "\"Zerelda\" Suddick archive.org",
+            "\"Zerelda\" \"Suddick\" \"digitized\"",
+            "\"Zerelda\" \"Neely\" novel",
+            "\"Zerelda\" \"Suddick\" digital",
+            "\"Zerelda\" \"Neely\" 1899 \"review\"",
+            "\"Zerelda\" \"story of love and death\" -wikipedia -luminist",
+            "\"Zerelda\" site:loc.gov",
+            "\"Zerelda\" \"Suddick\" library",
+            "\"Zerelda\" \"Suddick\" \"review\"",
+            "Google Books public volumes API: intitle:Zerelda inauthor:Suddick",
+            "web search: \"Zerelda\" \"Suddick\" \"review\" 1899 Neely",
+            "web search: \"Zerelda\" \"Neely\" publisher catalogue",
+            "web search: \"Zerelda\" \"Suddick\" site:worldcat.org OR site:books.google.com OR site:catalog.loc.gov"
+          ],
+          "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
+          "materials_checked": [
+            {
+              "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+              "material_type": "公开馆藏题名查询返回（非原作）",
+              "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+              "round": "round7"
+            },
+            {
+              "url": "https://pubdom.bookatomy.com/annee/2014/",
+              "material_type": "公版书目检索结果",
+              "result": "实际读题名、1899与作者，但无目标正文链接；不是小说情节依据。",
+              "round": "round7"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Louise_F._Suddick",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公開检索返回作者条目：1899Neely出版及一句星界旅行简介，二手简介不等于原作。"
+            },
+            {
+              "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/B/Bleiler%20-%20Checklist%20of%20SF%20and%20Supernatural%20Fiction.pdf",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索索引中的Suddick目标题名，不称读到小说或该PDF全文。"
+            },
+            {
+              "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Zerelda&type=title",
+              "material_type": "官方目录题名检索",
+              "result": "实际浏览Title:Zerelda返回No results matched your search；未获取目标正文，仅本查询范围。",
+              "round": "round10"
+            },
+            {
+              "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AZerelda%20inauthor%3ASuddick&maxResults=10",
+              "round": "round11",
+              "material_type": "公开目录API访问失败",
+              "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
+            },
+            {
+              "url": "https://books.google.com/books?q=Zerelda+Suddick",
+              "round": "round11",
+              "material_type": "网页读取工具无法打开的公开检索入口",
+              "result": "网页工具返回不可访问；本轮尚未用浏览器读此入口，不记录为零结果或已读书目。"
+            }
+          ],
+          "reason_unconfirmed": "目前只得到作者/公版/类型书目与一句星界旅行简介，未取得小说正文。",
+          "next_step": "继续查F Tennyson Neely1899版的大学馆藏扫描。",
+          "issue_result": "not_yet_supplemented",
+          "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
+          "last_attempt_round": 11,
+          "latest_round": "round11",
+          "raw_reading_log": {
+            "id": "Q56249508",
+            "identity": {
+              "title": "Zerelda: A Story of Love and Death",
+              "author": "Louise F. Suddick"
+            },
+            "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+            "queries": [
+              {
+                "provider": "Internet Archive public advancedsearch",
+                "query": "title:Zerelda",
+                "result_count": 20,
+                "result": "无匹配目标原书：零条或返回无关文献/游戏录像。"
+              },
+              "\"Zerelda\" \"Suddick\" digitized",
+              "\"Zerelda\" \"Suddick\" full text",
+              "\"Zerelda\" \"Suddick\" text",
+              "\"Zerelda\" \"Louise\"",
+              "\"Zerelda\" \"Suddick\" \"Neely\"",
+              "\"Zerelda\" Suddick archive.org",
+              "\"Zerelda\" \"Suddick\" \"digitized\"",
+              "\"Zerelda\" \"Neely\" novel",
+              "\"Zerelda\" \"Suddick\" digital",
+              "\"Zerelda\" \"Neely\" 1899 \"review\"",
+              "\"Zerelda\" \"story of love and death\" -wikipedia -luminist",
+              "\"Zerelda\" site:loc.gov",
+              "\"Zerelda\" \"Suddick\" library",
+              "\"Zerelda\" \"Suddick\" \"review\"",
+              {
+                "provider": "Google Books public volumes API",
+                "query": "intitle:Zerelda inauthor:Suddick",
+                "round": "round11",
+                "result": "HTTP429 RESOURCE_EXHAUSTED；公共默认配额拒绝，不是零结果。"
+              },
+              {
+                "provider": "web search",
+                "query": "\"Zerelda\" \"Suddick\" \"review\" 1899 Neely",
+                "round": "round11"
+              },
+              {
+                "provider": "web search",
+                "query": "\"Zerelda\" \"Neely\" publisher catalogue",
+                "round": "round11"
+              },
+              {
+                "provider": "web search",
+                "query": "\"Zerelda\" \"Suddick\" site:worldcat.org OR site:books.google.com OR site:catalog.loc.gov",
+                "round": "round11"
+              }
+            ],
+            "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
+            "materials_checked": [
+              {
+                "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+                "material_type": "公开馆藏题名查询返回（非原作）",
+                "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+                "round": "round7"
+              },
+              {
+                "url": "https://pubdom.bookatomy.com/annee/2014/",
+                "material_type": "公版书目检索结果",
+                "result": "实际读题名、1899与作者，但无目标正文链接；不是小说情节依据。",
+                "round": "round7"
+              },
+              {
+                "url": "https://en.wikipedia.org/wiki/Louise_F._Suddick",
+                "round": "round9",
+                "material_type": "public_search_result_read_not_full_original",
+                "result": "本轮实际读公開检索返回作者条目：1899Neely出版及一句星界旅行简介，二手简介不等于原作。"
+              },
+              {
+                "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/B/Bleiler%20-%20Checklist%20of%20SF%20and%20Supernatural%20Fiction.pdf",
+                "round": "round9",
+                "material_type": "public_search_result_read_not_full_original",
+                "result": "本轮实际读公开检索索引中的Suddick目标题名，不称读到小说或该PDF全文。"
+              },
+              {
+                "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Zerelda&type=title",
+                "material_type": "官方目录题名检索",
+                "result": "实际浏览Title:Zerelda返回No results matched your search；未获取目标正文，仅本查询范围。",
+                "round": "round10"
+              },
+              {
+                "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AZerelda%20inauthor%3ASuddick&maxResults=10",
+                "round": "round11",
+                "material_type": "公开目录API访问失败",
+                "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
+              },
+              {
+                "url": "https://books.google.com/books?q=Zerelda+Suddick",
+                "round": "round11",
+                "material_type": "网页读取工具无法打开的公开检索入口",
+                "result": "网页工具返回不可访问；本轮尚未用浏览器读此入口，不记录为零结果或已读书目。"
+              }
+            ],
+            "reason_unconfirmed": "目前只得到作者/公版/类型书目与一句星界旅行简介，未取得小说正文。",
+            "next_step": "继续查F Tennyson Neely1899版的大学馆藏扫描。",
+            "issue_result": "not_yet_supplemented",
+            "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
+            "last_attempt_round": 11,
+            "latest_round": "round11"
+          },
+          "attempt_input": "early-search-attempts-round11.json"
         }
       ]
     },
@@ -41870,12 +42128,19 @@
           "material_type": "third_party_original_text_excerpt_read",
           "reading_scope": "网页工具两次cache miss；通过公开HTTP取得第1页并实际读The Regulars正文开头至Mors Longa介绍常客的截断处。取得的HTML和提取正文仅私下保存，未比对原刊。",
           "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-3-robert-silverberg-the-regulars.html",
+          "result": "actual_source_scope_read",
+          "material_type": "third_party_original_text_excerpt_read",
+          "reading_scope": "与第2页并行公开HTTP请求时该页实际取得，随后于v20发布后读取正文Spooky place起至For the house结尾；第2页429，未有连续全文。取得的HTML/文本仅私下保存，未核原刊。",
+          "read_date": "2026-10-04"
         }
       ],
       "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
-      "reason_unconfirmed": "保留1981独立短篇身份。第三方页面2013出版信息不作为初刊年份；只实际读第1页开篇，未读完第2–3页，不判断其时间机制或结尾。 内容与解释仍待独立核对。",
+      "reason_unconfirmed": "保留1981独立短篇。上一轮只读第1页，这次新增实际第3页末段至结尾；第2页仍未取得，未连续通读全篇。炼狱、中转与遗忘规则都是角色提出的理论，未直接据此填空间范围。 内容与解释仍待独立核对。",
       "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
-      "issue_result": "added_to_private_round14_unverified",
+      "issue_result": "added_to_private_round15_unverified",
       "raw_reading_log": {
         "id": "Q131518445",
         "identity": {
@@ -41883,32 +42148,90 @@
           "author": "羅伯特·西爾柏格"
         },
         "attempt_state": "content_material_read",
-        "queries": [
-          "Robert Silverberg \"The Regulars\" short story text",
-          "Robert Silverberg \"The Regulars\" Sullivan story review"
-        ],
+        "queries": [],
         "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
         "materials_checked": [
           {
-            "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-2-robert-silverberg-the-regulars.html",
-            "result": "http_429_too_many_requests",
-            "reading_scope": "实际请求遭429，未读第2页，不以目录或搜索摘要填入该页情节。",
-            "read_date": "2026-10-04"
-          },
-          {
-            "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-robert-silverberg-the-regulars.html",
+            "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-3-robert-silverberg-the-regulars.html",
             "result": "actual_source_scope_read",
             "material_type": "third_party_original_text_excerpt_read",
-            "reading_scope": "网页工具两次cache miss；通过公开HTTP取得第1页并实际读The Regulars正文开头至Mors Longa介绍常客的截断处。取得的HTML和提取正文仅私下保存，未比对原刊。",
+            "reading_scope": "与第2页并行公开HTTP请求时该页实际取得，随后于v20发布后读取正文Spooky place起至For the house结尾；第2页429，未有连续全文。取得的HTML/文本仅私下保存，未核原刊。",
             "read_date": "2026-10-04"
           }
         ],
         "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
-        "reason_unconfirmed": "保留1981独立短篇身份。第三方页面2013出版信息不作为初刊年份；只实际读第1页开篇，未读完第2–3页，不判断其时间机制或结尾。 内容与解释仍待独立核对。",
+        "reason_unconfirmed": "保留1981独立短篇。上一轮只读第1页，这次新增实际第3页末段至结尾；第2页仍未取得，未连续通读全篇。炼狱、中转与遗忘规则都是角色提出的理论，未直接据此填空间范围。 内容与解释仍待独立核对。",
         "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
-        "issue_result": "added_to_private_round14_unverified"
+        "issue_result": "added_to_private_round15_unverified"
       },
-      "attempt_input": "silverberg-source-searches-round14.json"
+      "attempt_input": "source-aggregate-round15-log.json",
+      "previous_attempts": [
+        {
+          "id": "Q131518445",
+          "identity": {
+            "title": "The Regulars",
+            "author": "羅伯特·西爾柏格"
+          },
+          "attempt_state": "content_material_read",
+          "queries": [
+            "Robert Silverberg \"The Regulars\" short story text",
+            "Robert Silverberg \"The Regulars\" Sullivan story review"
+          ],
+          "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+          "materials_checked": [
+            {
+              "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-2-robert-silverberg-the-regulars.html",
+              "result": "http_429_too_many_requests",
+              "reading_scope": "实际请求遭429，未读第2页，不以目录或搜索摘要填入该页情节。",
+              "read_date": "2026-10-04"
+            },
+            {
+              "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-robert-silverberg-the-regulars.html",
+              "result": "actual_source_scope_read",
+              "material_type": "third_party_original_text_excerpt_read",
+              "reading_scope": "网页工具两次cache miss；通过公开HTTP取得第1页并实际读The Regulars正文开头至Mors Longa介绍常客的截断处。取得的HTML和提取正文仅私下保存，未比对原刊。",
+              "read_date": "2026-10-04"
+            }
+          ],
+          "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+          "reason_unconfirmed": "保留1981独立短篇身份。第三方页面2013出版信息不作为初刊年份；只实际读第1页开篇，未读完第2–3页，不判断其时间机制或结尾。 内容与解释仍待独立核对。",
+          "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+          "issue_result": "added_to_private_round14_unverified",
+          "raw_reading_log": {
+            "id": "Q131518445",
+            "identity": {
+              "title": "The Regulars",
+              "author": "羅伯特·西爾柏格"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "Robert Silverberg \"The Regulars\" short story text",
+              "Robert Silverberg \"The Regulars\" Sullivan story review"
+            ],
+            "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+            "materials_checked": [
+              {
+                "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-2-robert-silverberg-the-regulars.html",
+                "result": "http_429_too_many_requests",
+                "reading_scope": "实际请求遭429，未读第2页，不以目录或搜索摘要填入该页情节。",
+                "read_date": "2026-10-04"
+              },
+              {
+                "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-robert-silverberg-the-regulars.html",
+                "result": "actual_source_scope_read",
+                "material_type": "third_party_original_text_excerpt_read",
+                "reading_scope": "网页工具两次cache miss；通过公开HTTP取得第1页并实际读The Regulars正文开头至Mors Longa介绍常客的截断处。取得的HTML和提取正文仅私下保存，未比对原刊。",
+                "read_date": "2026-10-04"
+              }
+            ],
+            "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+            "reason_unconfirmed": "保留1981独立短篇身份。第三方页面2013出版信息不作为初刊年份；只实际读第1页开篇，未读完第2–3页，不判断其时间机制或结尾。 内容与解释仍待独立核对。",
+            "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+            "issue_result": "added_to_private_round14_unverified"
+          },
+          "attempt_input": "silverberg-source-searches-round14.json"
+        }
+      ]
     },
     {
       "id": "Q131380879",
@@ -44353,6 +44676,2773 @@
         "verification_status": "reading_scope_logged_not_full_verification"
       },
       "attempt_input": "modern-source-searches-round15.json"
+    },
+    {
+      "id": "Q105069974",
+      "identity": {
+        "title": "Flower, Mercy, Needle, Chain",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Yoon Ha Lee Flower Mercy Needle Chain Lightspeed original"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方公开原作全文",
+          "reading_scope": "实际读取正文74–210，从宇宙收束的开头至Shiron离开Blackwheel、Ω结尾；并读2010年9月第4期署名信息。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2010年独立单篇Q105069974；虚构逆因果、灵魂和宇宙终点不作现实物理事实。已读公开原文全文，但未对照其他版本，也未独立核验解释。Shiron关于宇宙循环的推断不提升为确定规律。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified",
+      "raw_reading_log": {
+        "id": "Q105069974",
+        "identity": {
+          "title": "Flower, Mercy, Needle, Chain",
+          "author": "李允夏"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Yoon Ha Lee Flower Mercy Needle Chain Lightspeed original"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方公开原作全文",
+            "reading_scope": "实际读取正文74–210，从宇宙收束的开头至Shiron离开Blackwheel、Ω结尾；并读2010年9月第4期署名信息。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "保留2010年独立单篇Q105069974；虚构逆因果、灵魂和宇宙终点不作现实物理事实。已读公开原文全文，但未对照其他版本，也未独立核验解释。Shiron关于宇宙循环的推断不提升为确定规律。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round15_unverified"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q98833129",
+      "identity": {
+        "title": "The Starship and the Temple Cat",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Yoon Ha Lee \"The Starship and the Temple Cat\" story Beneath Ceaseless Skies",
+        "site:beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/ \"Spectral Lance was astonished\""
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+          "result": "direct_open_failed_403",
+          "material_type": "原作网页直接打开",
+          "reading_scope": "直接打开失败；只依据本轮实际检索返回的原作缓存段落，不声称完整正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方原作检索缓存段落",
+          "reading_scope": "实际读检索返回的开头毁城/猫魂、舰船叛乱与悔罪、相遇/钟楼创伤/亡灵反击、接纳神庙及结尾；并读第244期2018-02-01署名。原链接打开403，缓存未保证连续完整正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2018年单篇Q98833129，与同年获奖合集不同。出版方称科学幻想；猫魂、法术和舰船意识属于故事设定。实际读到出版方检索缓存多个正文段落及最后登舰、持续悼亡的结尾；直接网页403，未声明整页连续全文或音频已读。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified",
+      "raw_reading_log": {
+        "id": "Q98833129",
+        "identity": {
+          "title": "The Starship and the Temple Cat",
+          "author": "李允夏"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Yoon Ha Lee \"The Starship and the Temple Cat\" story Beneath Ceaseless Skies",
+          "site:beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/ \"Spectral Lance was astonished\""
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+            "result": "direct_open_failed_403",
+            "material_type": "原作网页直接打开",
+            "reading_scope": "直接打开失败；只依据本轮实际检索返回的原作缓存段落，不声称完整正文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方原作检索缓存段落",
+            "reading_scope": "实际读检索返回的开头毁城/猫魂、舰船叛乱与悔罪、相遇/钟楼创伤/亡灵反击、接纳神庙及结尾；并读第244期2018-02-01署名。原链接打开403，缓存未保证连续完整正文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "保留2018年单篇Q98833129，与同年获奖合集不同。出版方称科学幻想；猫魂、法术和舰船意识属于故事设定。实际读到出版方检索缓存多个正文段落及最后登舰、持续悼亡的结尾；直接网页403，未声明整页连续全文或音频已读。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round15_unverified"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q29831554",
+      "identity": {
+        "title": "Ghostweight",
+        "author": "李允夏"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:clarkesworldmagazine.com/lee_01_11/ Ghostweight"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://clarkesworldmagazine.com/lee_01_11/",
+          "result": "original_link_unavailable_robots_restricted",
+          "material_type": "作者链接的原作入口",
+          "reading_scope": "直接链接未返回正文，检索工具报告robots限制；未换入口绕过限制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.yoonhalee.com/?p=303",
+          "result": "actual_source_scope_read",
+          "material_type": "作者说明及授权开头",
+          "reading_scope": "实际读14–22题名、2011年1月刊期、原文开头、作者对折纸/幽灵/暴行的定位与重刊目录，未展开原文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://bestsf.net/yoon-ha-lee-ghostweight-clarkesworld-magazine-52-january-2011/",
+          "result": "actual_source_scope_read",
+          "material_type": "评论作者关于确切单篇的原始书评",
+          "reading_scope": "实际读正文11–13及2011-01-03署名日期；仅有家园破坏、异族舰船、报复、自我变化与幽灵/控制室等细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2011年独立单篇Q29831554。作者页称太空幻想；本次只实际读作者发布的开头与定位、Best SF具名刊期评论正文11–13。Clarkesworld原作链接无法读取且检索报告robots限制，未读原文全文或收听音频；不借百科补造转折。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified",
+      "raw_reading_log": {
+        "id": "Q29831554",
+        "identity": {
+          "title": "Ghostweight",
+          "author": "李允夏"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "site:clarkesworldmagazine.com/lee_01_11/ Ghostweight"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://clarkesworldmagazine.com/lee_01_11/",
+            "result": "original_link_unavailable_robots_restricted",
+            "material_type": "作者链接的原作入口",
+            "reading_scope": "直接链接未返回正文，检索工具报告robots限制；未换入口绕过限制。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.yoonhalee.com/?p=303",
+            "result": "actual_source_scope_read",
+            "material_type": "作者说明及授权开头",
+            "reading_scope": "实际读14–22题名、2011年1月刊期、原文开头、作者对折纸/幽灵/暴行的定位与重刊目录，未展开原文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://bestsf.net/yoon-ha-lee-ghostweight-clarkesworld-magazine-52-january-2011/",
+            "result": "actual_source_scope_read",
+            "material_type": "评论作者关于确切单篇的原始书评",
+            "reading_scope": "实际读正文11–13及2011-01-03署名日期；仅有家园破坏、异族舰船、报复、自我变化与幽灵/控制室等细节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "保留2011年独立单篇Q29831554。作者页称太空幻想；本次只实际读作者发布的开头与定位、Best SF具名刊期评论正文11–13。Clarkesworld原作链接无法读取且检索报告robots限制，未读原文全文或收听音频；不借百科补造转折。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round15_unverified"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q76539336",
+      "identity": {
+        "title": "Non-Zero Probabilities",
+        "author": "N·K·杰米辛"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "N K Jemisin Non Zero Probabilities original Lightspeed",
+        "\"Non-Zero Probabilities\" \"clarkesworld\" \"Jemisin\"",
+        "\"Non-Zero Probabilities\" Jemisin read online clarkesworld",
+        "\"N. K. Jemisin\" \"Non-Zero Probabilities\" interview luck",
+        "\"Non-Zero Probabilities\" site:nkjemisin.com"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.worldswithoutend.com/novel.asp?id=16045",
+          "result": "linked_original_unavailable",
+          "material_type": "书目所链Clarkesworld原作入口",
+          "reading_scope": "书目打开可读但其Read the full story链接未返回原作正文；未声称全文核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://escapepod.org/2010/06/10/ep244-non-zero-probabilities/",
+          "result": "actual_source_scope_read",
+          "material_type": "获授权的原作文字节选及音频目录",
+          "reading_scope": "实际读署名/授权说明、文字节选35–43两次抽鬼牌及最初怀疑；只读文字，没有收听29:54音频。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfwa.org/2011/04/13/nebula-awards-2009-interview-n-k-jemisin/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者关于确切故事的访谈",
+          "reading_scope": "实际读本篇关于概率/意义、Adele普通生活、Brooklyn危机街景、多族裔与多套信仰的回答；新页面相应99–122，旧www页面116–131及对应后续多族裔段，不借用其另一部长篇剧情。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nkjemisin.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者书目检索缓存",
+          "reading_scope": "实际读本篇Clarkesworld2009/3360词与异常运气、坠落空调/脱轨等作者简介；网页直接打开失败，仅检索缓存。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nkjemisin.com/2009/11/everybodys-doin-it-nebdo/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者博客开头及发表信息检索缓存",
+          "reading_scope": "实际读本篇2009年9月第36期发表说明与Adele同时向不同祖系神灵祈祷的开头；直接打开失败，只取得检索缓存。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "保留2009年独立短篇Q76539336；2010音频和2018合集不是其首刊。实际读授权134词文字节选、作者访谈中关于本篇的回答及作者书目/开头检索缓存，原作链接未返回全文、音频未收听。未据百科补写列车事故细节、性爱或纸飞机结尾；虚构概率不当作现实统计规律。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round15_unverified",
+      "raw_reading_log": {
+        "id": "Q76539336",
+        "identity": {
+          "title": "Non-Zero Probabilities",
+          "author": "N·K·杰米辛"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "N K Jemisin Non Zero Probabilities original Lightspeed",
+          "\"Non-Zero Probabilities\" \"clarkesworld\" \"Jemisin\"",
+          "\"Non-Zero Probabilities\" Jemisin read online clarkesworld",
+          "\"N. K. Jemisin\" \"Non-Zero Probabilities\" interview luck",
+          "\"Non-Zero Probabilities\" site:nkjemisin.com"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.worldswithoutend.com/novel.asp?id=16045",
+            "result": "linked_original_unavailable",
+            "material_type": "书目所链Clarkesworld原作入口",
+            "reading_scope": "书目打开可读但其Read the full story链接未返回原作正文；未声称全文核验。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://escapepod.org/2010/06/10/ep244-non-zero-probabilities/",
+            "result": "actual_source_scope_read",
+            "material_type": "获授权的原作文字节选及音频目录",
+            "reading_scope": "实际读署名/授权说明、文字节选35–43两次抽鬼牌及最初怀疑；只读文字，没有收听29:54音频。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://sfwa.org/2011/04/13/nebula-awards-2009-interview-n-k-jemisin/",
+            "result": "actual_source_scope_read",
+            "material_type": "作者关于确切故事的访谈",
+            "reading_scope": "实际读本篇关于概率/意义、Adele普通生活、Brooklyn危机街景、多族裔与多套信仰的回答；新页面相应99–122，旧www页面116–131及对应后续多族裔段，不借用其另一部长篇剧情。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://nkjemisin.com/bibliography/",
+            "result": "actual_source_scope_read",
+            "material_type": "作者书目检索缓存",
+            "reading_scope": "实际读本篇Clarkesworld2009/3360词与异常运气、坠落空调/脱轨等作者简介；网页直接打开失败，仅检索缓存。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://nkjemisin.com/2009/11/everybodys-doin-it-nebdo/",
+            "result": "actual_source_scope_read",
+            "material_type": "作者博客开头及发表信息检索缓存",
+            "reading_scope": "实际读本篇2009年9月第36期发表说明与Adele同时向不同祖系神灵祈祷的开头；直接打开失败，只取得检索缓存。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "保留2009年独立短篇Q76539336；2010音频和2018合集不是其首刊。实际读授权134词文字节选、作者访谈中关于本篇的回答及作者书目/开头检索缓存，原作链接未返回全文、音频未收听。未据百科补写列车事故细节、性爱或纸飞机结尾；虚构概率不当作现实统计规律。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round15_unverified"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q17620891",
+      "identity": {
+        "title": "Absolutely Inflexible",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/absolutely-inflexible-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+          "location": "正文开头的旅客遣送；双向装置；Mahler过去旅行、返回与自我相遇的结尾；初刊页脚"
+        }
+      ],
+      "reading_scope": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。",
+      "raw_reading_log": {
+        "id": "Q17620891",
+        "identity": {
+          "title": "Absolutely Inflexible",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round14",
+            "result": "实际打开该篇明确题名/作者链接。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/absolutely-inflexible-robert-silverberg-science-fiction/",
+            "round": "round14",
+            "material_type": "原作公开重刊全文",
+            "result": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+            "location": "正文开头的旅客遣送；双向装置；Mahler过去旅行、返回与自我相遇的结尾；初刊页脚"
+          }
+        ],
+        "reading_scope": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。",
+        "issue_result": "added_to_private_round14_unverified",
+        "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+        "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q19520771",
+      "identity": {
+        "title": "The Sixth Palace",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/the-sixth-palace-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+          "location": "藏宝小世界与伙伴协议；十八题及第一人死亡；第二人的假说、入门和出口结局；初刊页脚"
+        }
+      ],
+      "reading_scope": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。",
+      "raw_reading_log": {
+        "id": "Q19520771",
+        "identity": {
+          "title": "The Sixth Palace",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round14",
+            "result": "实际打开该篇明确题名/作者链接。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/the-sixth-palace-robert-silverberg-science-fiction/",
+            "round": "round14",
+            "material_type": "原作公开重刊全文",
+            "result": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+            "location": "藏宝小世界与伙伴协议；十八题及第一人死亡；第二人的假说、入门和出口结局；初刊页脚"
+          }
+        ],
+        "reading_scope": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。",
+        "issue_result": "added_to_private_round14_unverified",
+        "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+        "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q25381484",
+      "identity": {
+        "title": "There Was an Old Woman—",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/there-was-an-old-woman-robert-silverberg-science-fiction/",
+          "round": "round14",
+          "material_type": "原作公开重刊全文",
+          "result": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+          "location": "母亲理论与人工子宫；职业培养和大学后的拒绝；共同谋杀与历史叙述结尾；作者附记和初刊页脚"
+        }
+      ],
+      "reading_scope": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+      "issue_result": "added_to_private_round14_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+      "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。",
+      "raw_reading_log": {
+        "id": "Q25381484",
+        "identity": {
+          "title": "There Was an Old Woman—",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round14",
+            "result": "实际打开该篇明确题名/作者链接。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/there-was-an-old-woman-robert-silverberg-science-fiction/",
+            "round": "round14",
+            "material_type": "原作公开重刊全文",
+            "result": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+            "location": "母亲理论与人工子宫；职业培养和大学后的拒绝；共同谋杀与历史叙述结尾；作者附记和初刊页脚"
+          }
+        ],
+        "reading_scope": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。",
+        "issue_result": "added_to_private_round14_unverified",
+        "reason_unconfirmed": "文学解释仍待独立核对，网页正文未逐字与原刊扫描对照；没有将全部字段升为已核验。",
+        "next_step": "独立复核文本/版本，不重读已明确情节以代替其余缺口研究。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q25381966",
+      "identity": {
+        "title": "The Reality Trip",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/the-reality-trip-robert-silverberg-the-reality-trip/",
+          "round": "round15",
+          "material_type": "原作公开重刊全文",
+          "result": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+          "location": "伪装/观察规则；同族孤独、揭露与接受；两位同族和Elizabeth关系；调动拒绝与辞职结尾"
+        }
+      ],
+      "reading_scope": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+      "next_step": "独立复核版本，继续未读两篇。",
+      "raw_reading_log": {
+        "id": "Q25381966",
+        "identity": {
+          "title": "The Reality Trip",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round15",
+            "result": "实际打开该单篇明确链接，分段读取正文。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/the-reality-trip-robert-silverberg-the-reality-trip/",
+            "round": "round15",
+            "material_type": "原作公开重刊全文",
+            "result": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+            "location": "伪装/观察规则；同族孤独、揭露与接受；两位同族和Elizabeth关系；调动拒绝与辞职结尾"
+          }
+        ],
+        "reading_scope": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。",
+        "issue_result": "added_to_private_round15_unverified",
+        "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+        "next_step": "独立复核版本，继续未读两篇。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q56300334",
+      "identity": {
+        "title": "{Now + n, Now - n}",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/now-n-now-n-robert-silverberg-science-fiction/",
+          "round": "round15",
+          "material_type": "原作公开重刊全文",
+          "result": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+          "location": "自我股价传递；恋爱与通信中断；护符真实作用、未来报纸及未决的共同穿越结尾"
+        }
+      ],
+      "reading_scope": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+      "next_step": "独立复核版本，继续未读两篇。",
+      "raw_reading_log": {
+        "id": "Q56300334",
+        "identity": {
+          "title": "{Now + n, Now - n}",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round15",
+            "result": "实际打开该单篇明确链接，分段读取正文。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/now-n-now-n-robert-silverberg-science-fiction/",
+            "round": "round15",
+            "material_type": "原作公开重刊全文",
+            "result": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+            "location": "自我股价传递；恋爱与通信中断；护符真实作用、未来报纸及未决的共同穿越结尾"
+          }
+        ],
+        "reading_scope": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。",
+        "issue_result": "added_to_private_round15_unverified",
+        "reason_unconfirmed": "文学解释尚待独立复核，网页未逐字与原刊扫描对照。",
+        "next_step": "独立复核版本，继续未读两篇。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q30765118",
+      "identity": {
+        "title": "Many Mansions",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [
+        "web search: site:scifiwise.com \"Many Mansions\" \"Silverberg\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+          "round": "round15",
+          "material_type": "原作公开重刊网页",
+          "result": "网页读取工具直接打开返回406 Not Acceptable；正常公开页面请求随后取得HTML。私有提取134段并实际分1–55、56–100、101–134三段阅读至THE END，另读版权/1973初刊声明。",
+          "location": "原作全文134段及初刊声明；未与初刊扫描对照。"
+        }
+      ],
+      "reading_scope": "公开重刊全文分段读至THE END与版权初刊声明；幻想与多种不相容结果保留，不拼成单一事实经过。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释待独立复核；公开重刊未逐字与初刊比对。网页读取工具失败不能代表普通页面无正文。",
+      "next_step": "独立复核版本与非线性边界；继续To Jorslem。",
+      "raw_reading_log": {
+        "id": "Q30765118",
+        "identity": {
+          "title": "Many Mansions",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round15",
+            "result": "已读作者页并实际点该单篇链接，工具入口内部错误。"
+          },
+          {
+            "provider": "web search",
+            "query": "site:scifiwise.com \"Many Mansions\" \"Silverberg\"",
+            "round": "round15",
+            "result": "实际返回该原作页摘要及若干正文片段；仅凭搜索片段不称全文已读。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+            "round": "round15",
+            "material_type": "原作公开重刊网页",
+            "result": "网页读取工具直接打开返回406 Not Acceptable；正常公开页面请求随后取得HTML。私有提取134段并实际分1–55、56–100、101–134三段阅读至THE END，另读版权/1973初刊声明。",
+            "location": "原作全文134段及初刊声明；未与初刊扫描对照。"
+          }
+        ],
+        "reading_scope": "公开重刊全文分段读至THE END与版权初刊声明；幻想与多种不相容结果保留，不拼成单一事实经过。",
+        "issue_result": "added_to_private_round15_unverified",
+        "reason_unconfirmed": "文学解释待独立复核；公开重刊未逐字与初刊比对。网页读取工具失败不能代表普通页面无正文。",
+        "next_step": "独立复核版本与非线性边界；继续To Jorslem。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q130617016",
+      "identity": {
+        "title": "To Jorslem",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_full_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://scifiwise.com/to-jorslem/",
+          "round": "round15",
+          "material_type": "原作公开重刊网页",
+          "result": "网页读取工具第一次/再次点击返回Internal Error/Cache miss。正常公开页面请求取得HTML，私有提取565段，实际按1–75、76–175、176–275、276–375、376–475、476–565分段全读至THE END，并读1969年2月Galaxy初刊声明。",
+          "location": "正文第1–13节全部及版权/初刊声明；未读初刊扫描或其他组成篇。"
+        }
+      ],
+      "reading_scope": "完整分段读公开正文第1–13节、私有提取565段至THE END及1969年2月Galaxy初刊声明。原刊扫描未对照，前两篇未作为已读材料。",
+      "issue_result": "added_to_private_round15_unverified",
+      "reason_unconfirmed": "文学解释待独立复核；未与初刊逐字比对。网页工具缓存失败不等于原作公开页面不存在。",
+      "next_step": "独立核对原刊与篇章关系；继续统一库其他尚缺具体分析的精确身份。",
+      "raw_reading_log": {
+        "id": "Q130617016",
+        "identity": {
+          "title": "To Jorslem",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_full_story_read",
+        "queries": [
+          {
+            "provider": "SciFiwise作者页",
+            "url": "https://scifiwise.com/author/robertsilverberg/",
+            "round": "round15",
+            "result": "实际读作者页21660words标注并点击To Jorslem；缓存读取失败消息给出精确链接/to-jorslem/。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://scifiwise.com/to-jorslem/",
+            "round": "round15",
+            "material_type": "原作公开重刊网页",
+            "result": "网页读取工具第一次/再次点击返回Internal Error/Cache miss。正常公开页面请求取得HTML，私有提取565段，实际按1–75、76–175、176–275、276–375、376–475、476–565分段全读至THE END，并读1969年2月Galaxy初刊声明。",
+            "location": "正文第1–13节全部及版权/初刊声明；未读初刊扫描或其他组成篇。"
+          }
+        ],
+        "reading_scope": "完整分段读公开正文第1–13节、私有提取565段至THE END及1969年2月Galaxy初刊声明。原刊扫描未对照，前两篇未作为已读材料。",
+        "issue_result": "added_to_private_round15_unverified",
+        "reason_unconfirmed": "文学解释待独立复核；未与初刊逐字比对。网页工具缓存失败不等于原作公开页面不存在。",
+        "next_step": "独立核对原刊与篇章关系；继续统一库其他尚缺具体分析的精确身份。"
+      },
+      "attempt_input": "source-aggregate-round15-log.json"
+    },
+    {
+      "id": "Q3092263",
+      "identity": {
+        "title": "Fairyland",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://store.gollancz.co.uk/products/fairyland",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单卷简介",
+          "reading_scope": "实际阅读Gollancz所示完整简介，支持Sharkey、Milena、劳动Doll及Folk的不同诉求；未核全书三阶段与结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Gollancz所示完整简介，支持Sharkey、Milena、劳动Doll及Folk的不同诉求；未核全书三阶段与结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3092263",
+        "identity": {
+          "title": "Fairyland",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://store.gollancz.co.uk/products/fairyland",
+            "material_kind": "出版方单卷简介",
+            "support_scope": "实际阅读Gollancz所示完整简介，支持Sharkey、Milena、劳动Doll及Folk的不同诉求；未核全书三阶段与结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q7759106",
+      "identity": {
+        "title": "The Quiet War",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/the-quiet-war",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方本卷完整简介",
+          "reading_scope": "实际阅读本卷完整出版简介，支持地球生态工程、Outers民主与改造、战前政治分歧；未读原作全文，不补战争结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整出版简介，支持地球生态工程、Outers民主与改造、战前政治分歧；未读原作全文，不补战争结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7759106",
+        "identity": {
+          "title": "The Quiet War",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/the-quiet-war",
+            "material_kind": "出版方本卷完整简介",
+            "support_scope": "实际阅读本卷完整出版简介，支持地球生态工程、Outers民主与改造、战前政治分歧；未读原作全文，不补战争结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q5522495",
+      "identity": {
+        "title": "Gardens of the Sun",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/paul-mcauley/gardens-of-the-sun/9780575084483/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方续卷完整简介",
+          "reading_scope": "实际阅读本卷完整简介，支持占领、档案掠夺、家族内斗与民主回流；不把前卷战前情节当本卷重点，不核全书结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整简介，支持占领、档案掠夺、家族内斗与民主回流；不把前卷战前情节当本卷重点，不核全书结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q5522495",
+        "identity": {
+          "title": "Gardens of the Sun",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.co.uk/titles/paul-mcauley/gardens-of-the-sun/9780575084483/",
+            "material_kind": "出版方续卷完整简介",
+            "support_scope": "实际阅读本卷完整简介，支持占领、档案掠夺、家族内斗与民主回流；不把前卷战前情节当本卷重点，不核全书结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131381216",
+      "identity": {
+        "title": "The Secret of Life",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/the-secret-of-life",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单书完整简介",
+          "reading_scope": "实际阅读完整出版简介，支持Slick、Mariella火星任务、企业与生态行动冲突；出版简介的疑问不是已证实的带回路径，未核全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读完整出版简介，支持Slick、Mariella火星任务、企业与生态行动冲突；出版简介的疑问不是已证实的带回路径，未核全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131381216",
+        "identity": {
+          "title": "The Secret of Life",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/the-secret-of-life",
+            "material_kind": "出版方单书完整简介",
+            "support_scope": "实际阅读完整出版简介，支持Slick、Mariella火星任务、企业与生态行动冲突；出版简介的疑问不是已证实的带回路径，未核全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131381574",
+      "identity": {
+        "title": "White Devils",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/White_Devils.html?id=oC5hPwAACAAJ",
+          "result": "actual_source_scope_read",
+          "material_type": "Google Books所示2004出版简介",
+          "reading_scope": "实际阅读页面所示Simon & Schuster版完整简介；是出版材料展示而非原作，支持证词改写、Obligate与Dead Zone追查。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读页面所示Simon & Schuster版完整简介；是出版材料展示而非原作，支持证词改写、Obligate与Dead Zone追查。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131381574",
+        "identity": {
+          "title": "White Devils",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://books.google.com/books/about/White_Devils.html?id=oC5hPwAACAAJ",
+            "material_kind": "Google Books所示2004出版简介",
+            "support_scope": "实际阅读页面所示Simon & Schuster版完整简介；是出版材料展示而非原作，支持证词改写、Obligate与Dead Zone追查。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131382751",
+      "identity": {
+        "title": "Austral",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/paul-mcauley/austral/9781473217331/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单书完整简介",
+          "reading_scope": "实际阅读完整出版简介；支持南极、ecopoets、husky排斥及绑架逃亡，不使用转载短评推断具体结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读完整出版简介；支持南极、ecopoets、husky排斥及绑架逃亡，不使用转载短评推断具体结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131382751",
+        "identity": {
+          "title": "Austral",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.co.uk/titles/paul-mcauley/austral/9781473217331/",
+            "material_kind": "出版方单书完整简介",
+            "support_scope": "实际阅读完整出版简介；支持南极、ecopoets、husky排斥及绑架逃亡，不使用转载短评推断具体结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q28452086",
+      "identity": {
+        "title": "Something Coming Through",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/something-coming-through",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单卷完整简介",
+          "reading_scope": "实际阅读完整本卷简介，支持十五世界、Chloe孤儿与Vic遗址案件；未核Jackaroo真实动机或最终真相。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读完整本卷简介，支持十五世界、Chloe孤儿与Vic遗址案件；未核Jackaroo真实动机或最终真相。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q28452086",
+        "identity": {
+          "title": "Something Coming Through",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/something-coming-through",
+            "material_kind": "出版方单卷完整简介",
+            "support_scope": "实际阅读完整本卷简介，支持十五世界、Chloe孤儿与Vic遗址案件；未核Jackaroo真实动机或最终真相。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131382360",
+      "identity": {
+        "title": "Into Everywhere",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/paul-mcauley/into-everywhere/9781473203990/",
+          "result": "actual_source_scope_read",
+          "material_type": "搜索结果所示完整出版简介",
+          "reading_scope": "实际阅读搜索结果所示完整Hachette简介；正文打开返回Internal Error，不称读过原作或已确认Jackaroo动机与结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读搜索结果所示完整Hachette简介；正文打开返回Internal Error，不称读过原作或已确认Jackaroo动机与结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131382360",
+        "identity": {
+          "title": "Into Everywhere",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.co.uk/titles/paul-mcauley/into-everywhere/9781473203990/",
+            "material_kind": "搜索结果所示完整出版简介",
+            "support_scope": "实际阅读搜索结果所示完整Hachette简介；正文打开返回Internal Error，不称读过原作或已确认Jackaroo动机与结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q39053152",
+      "identity": {
+        "title": "Evening's Empires",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/evenings-empires",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单卷完整简介",
+          "reading_scope": "实际阅读本卷完整简介，支持Hari、家族飞船、小行星与信任主题；不由其他Quiet War卷补神秘事件成因。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整简介，支持Hari、家族飞船、小行星与信任主题；不由其他Quiet War卷补神秘事件成因。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q39053152",
+        "identity": {
+          "title": "Evening's Empires",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/evenings-empires",
+            "material_kind": "出版方单卷完整简介",
+            "support_scope": "实际阅读本卷完整简介，支持Hari、家族飞船、小行星与信任主题；不由其他Quiet War卷补神秘事件成因。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131381627",
+      "identity": {
+        "title": "Mind's Eye",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.actusf.com/detail-d-un-article/Interview-de-Paul-McAuley-VO",
+          "result": "actual_source_scope_read",
+          "material_type": "作者访谈完整所示回答",
+          "reading_scope": "实际阅读作者有关Mind’s Eye的创作、视觉主题、Alfie家族与伊拉克历史回答；访谈解释不是实际神经科学可行性证明。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfrevu.com/php/Review-id.php?id=3155",
+          "result": "actual_source_scope_read",
+          "material_type": "明确标出的独立评论",
+          "reading_scope": "实际阅读本书完整独立评论，支持涂鸦、童年记忆、调查及秘密势力；非原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者有关Mind’s Eye的创作、视觉主题、Alfie家族与伊拉克历史回答；访谈解释不是实际神经科学可行性证明。；实际阅读本书完整独立评论，支持涂鸦、童年记忆、调查及秘密势力；非原作全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131381627",
+        "identity": {
+          "title": "Mind's Eye",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.actusf.com/detail-d-un-article/Interview-de-Paul-McAuley-VO",
+            "material_kind": "作者访谈完整所示回答",
+            "support_scope": "实际阅读作者有关Mind’s Eye的创作、视觉主题、Alfie家族与伊拉克历史回答；访谈解释不是实际神经科学可行性证明。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfrevu.com/php/Review-id.php?id=3155",
+            "material_kind": "明确标出的独立评论",
+            "support_scope": "实际阅读本书完整独立评论，支持涂鸦、童年记忆、调查及秘密势力；非原作全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q15035526",
+      "identity": {
+        "title": "In the Mouth of the Whale",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/in-the-mouth-of-the-whale",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方单卷完整简介",
+          "reading_scope": "实际阅读本卷完整简介，支持Quick/True/Ghosts与三种核心解释；这些为角色信念和计划，不声称技术成功或揭示最终真相。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整简介，支持Quick/True/Ghosts与三种核心解释；这些为角色信念和计划，不声称技术成功或揭示最终真相。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q15035526",
+        "identity": {
+          "title": "In the Mouth of the Whale",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/in-the-mouth-of-the-whale",
+            "material_kind": "出版方单卷完整简介",
+            "support_scope": "实际阅读本卷完整简介，支持Quick/True/Ghosts与三种核心解释；这些为角色信念和计划，不声称技术成功或揭示最终真相。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131380954",
+      "identity": {
+        "title": "Shrine of Stars",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/paul-mcauley/shrine-of-stars-confluence-book-3",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第三卷完整简介",
+          "reading_scope": "实际阅读第三卷简介；只写本卷囚禁、内战与追索起源，不由前两卷补最终身世答案。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读第三卷简介；只写本卷囚禁、内战与追索起源，不由前两卷补最终身世答案。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131380954",
+        "identity": {
+          "title": "Shrine of Stars",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/paul-mcauley/shrine-of-stars-confluence-book-3",
+            "material_kind": "出版方第三卷完整简介",
+            "support_scope": "实际阅读第三卷简介；只写本卷囚禁、内战与追索起源，不由前两卷补最终身世答案。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131381239",
+      "identity": {
+        "title": "Whole Wide World",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books?id=1bgWqbZFkRkC",
+          "result": "actual_source_scope_read",
+          "material_type": "Google Books所示2002出版简介",
+          "reading_scope": "实际阅读Tom Doherty Associates版所示完整简介；该页标revised，不据此将其日期覆盖底库2001，也不声称核对过版本正文差异。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Tom Doherty Associates版所示完整简介；该页标revised，不据此将其日期覆盖底库2001，也不声称核对过版本正文差异。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131381239",
+        "identity": {
+          "title": "Whole Wide World",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://books.google.com/books?id=1bgWqbZFkRkC",
+            "material_kind": "Google Books所示2002出版简介",
+            "support_scope": "实际阅读Tom Doherty Associates版所示完整简介；该页标revised，不据此将其日期覆盖底库2001，也不声称核对过版本正文差异。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q106102742",
+      "identity": {
+        "title": "Laws of Survival",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/Chapters/1932093024/1932093024___1.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方公开完整原作",
+          "reading_scope": "实际逐段阅读Baen公开全篇；支持Jill训练犬、机器人的条件和暴力、犬保护与结尾选择；不将她对外星幼体和撤退原因的猜想当作确证。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际逐段阅读Baen公开全篇；支持Jill训练犬、机器人的条件和暴力、犬保护与结尾选择；不将她对外星幼体和撤退原因的猜想当作确证。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q106102742",
+        "identity": {
+          "title": "Laws of Survival",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/Chapters/1932093024/1932093024___1.htm",
+            "material_kind": "出版方公开完整原作",
+            "support_scope": "实际逐段阅读Baen公开全篇；支持Jill训练犬、机器人的条件和暴力、犬保护与结尾选择；不将她对外星幼体和撤退原因的猜想当作确证。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q27902536",
+      "identity": {
+        "title": "The Flowers of Aulit Prison",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://delos.digital/9788867750948/i-fiori-della-prigione-di-aulit",
+          "result": "actual_source_scope_read",
+          "material_type": "译本出版方完整简介",
+          "reading_scope": "实际阅读Delos完整简介，支持Uli刑罚、共同现实与政府要求；未读原作，不补姐姐事件的真相或地球人的结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Delos完整简介，支持Uli刑罚、共同现实与政府要求；未读原作，不补姐姐事件的真相或地球人的结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q27902536",
+        "identity": {
+          "title": "The Flowers of Aulit Prison",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://delos.digital/9788867750948/i-fiori-della-prigione-di-aulit",
+            "material_kind": "译本出版方完整简介",
+            "support_scope": "实际阅读Delos完整简介，支持Uli刑罚、共同现实与政府要求；未读原作，不补姐姐事件的真相或地球人的结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q25384643",
+      "identity": {
+        "title": "The Erdmann Nexus",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://belial.fr/legacy/a/nancy-kress/le-nexus-du-docteur-erdmann-1",
+          "result": "actual_source_scope_read",
+          "material_type": "译本出版方完整简介",
+          "reading_scope": "实际阅读Le Bélial完整简介及明确标为评论的摘录；本分析只用主简介中的Erdmann、养老院共同异常，不补接触者身份和结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Le Bélial完整简介及明确标为评论的摘录；本分析只用主简介中的Erdmann、养老院共同异常，不补接触者身份和结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q25384643",
+        "identity": {
+          "title": "The Erdmann Nexus",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://belial.fr/legacy/a/nancy-kress/le-nexus-du-docteur-erdmann-1",
+            "material_kind": "译本出版方完整简介",
+            "support_scope": "实际阅读Le Bélial完整简介及明确标为评论的摘录；本分析只用主简介中的Erdmann、养老院共同异常，不补接触者身份和结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q6028483",
+      "identity": {
+        "title": "Inertia",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Inertia_(short_story)",
+          "result": "actual_source_scope_read",
+          "material_type": "明确标出的二手剧情概述",
+          "reading_scope": "实际阅读Synopsis段，支持皮肤肿瘤、情绪变化、六十年隔离与医生；未读原作，营地情节需原文复核。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.orbitbooks.net/2013/06/13/wastelands-featuring-stephen-king-george-r-r-martin-neil-gaiman-joe-hill-cory-doctorow-and-many-others/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方所载作者创作说明",
+          "reading_scope": "实际阅读Kress关于AIDS时代恐惧、隔离营假设与爱的说明；只支持创作缘起，不把2013文章日期当原作年，也不把原说明当全部剧情证据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Synopsis段，支持皮肤肿瘤、情绪变化、六十年隔离与医生；未读原作，营地情节需原文复核。；实际阅读Kress关于AIDS时代恐惧、隔离营假设与爱的说明；只支持创作缘起，不把2013文章日期当原作年，也不把原说明当全部剧情证据。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q6028483",
+        "identity": {
+          "title": "Inertia",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Inertia_(short_story)",
+            "material_kind": "明确标出的二手剧情概述",
+            "support_scope": "实际阅读Synopsis段，支持皮肤肿瘤、情绪变化、六十年隔离与医生；未读原作，营地情节需原文复核。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.orbitbooks.net/2013/06/13/wastelands-featuring-stephen-king-george-r-r-martin-neil-gaiman-joe-hill-cory-doctorow-and-many-others/",
+            "material_kind": "出版方所载作者创作说明",
+            "support_scope": "实际阅读Kress关于AIDS时代恐惧、隔离营假设与爱的说明；只支持创作缘起，不把2013文章日期当原作年，也不把原说明当全部剧情证据。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q905714",
+      "identity": {
+        "title": "Think Like a Dinosaur",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://sfanthology.site.wesleyan.edu/files/2010/08/WASF-Teachers-Guide-3Discussion.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方配套教学材料",
+          "reading_scope": "实际阅读第14页本篇讨论段，支持Tuulen、Hanen、Kamala版本处置与秘密故事；不是原作全文，本分析问题为独立表述。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读第14页本篇讨论段，支持Tuulen、Hanen、Kamala版本处置与秘密故事；不是原作全文，本分析问题为独立表述。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q905714",
+        "identity": {
+          "title": "Think Like a Dinosaur",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://sfanthology.site.wesleyan.edu/files/2010/08/WASF-Teachers-Guide-3Discussion.pdf",
+            "material_kind": "出版方配套教学材料",
+            "support_scope": "实际阅读第14页本篇讨论段，支持Tuulen、Hanen、Kamala版本处置与秘密故事；不是原作全文，本分析问题为独立表述。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131472114",
+      "identity": {
+        "title": "Computer Virus",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://delos.digital/9788867755547/computer-virus",
+          "result": "actual_source_scope_read",
+          "material_type": "译本出版方完整简介",
+          "reading_scope": "实际阅读Delos完整简介，支持住宅绑架、病童、政府处置疑问；未读原作，不猜AI逃亡来历和具体结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际阅读Computer Virus条列Asimov’s 2001年4月；只用于识别单篇，Delos原题年2999明显异常但不改底库。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Delos完整简介，支持住宅绑架、病童、政府处置疑问；未读原作，不猜AI逃亡来历和具体结局。；实际阅读Computer Virus条列Asimov’s 2001年4月；只用于识别单篇，Delos原题年2999明显异常但不改底库。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131472114",
+        "identity": {
+          "title": "Computer Virus",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://delos.digital/9788867755547/computer-virus",
+            "material_kind": "译本出版方完整简介",
+            "support_scope": "实际阅读Delos完整简介，支持住宅绑架、病童、政府处置疑问；未读原作，不猜AI逃亡来历和具体结局。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际阅读Computer Virus条列Asimov’s 2001年4月；只用于识别单篇，Delos原题年2999明显异常但不改底库。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q4999501",
+      "identity": {
+        "title": "Burn",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tachyonpublications.com/product/burn/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方简介、明确署名评论与原作开篇节选",
+          "reading_scope": "实际阅读Tachyon简介、署名Library Journal/Publishers Weekly/Booklist评论，以及开篇受伤梦境和治疗节选；未读全书，不补最后解决方案。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Tachyon简介、署名Library Journal/Publishers Weekly/Booklist评论，以及开篇受伤梦境和治疗节选；未读全书，不补最后解决方案。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q4999501",
+        "identity": {
+          "title": "Burn",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://tachyonpublications.com/product/burn/",
+            "material_kind": "出版方简介、明确署名评论与原作开篇节选",
+            "support_scope": "实际阅读Tachyon简介、署名Library Journal/Publishers Weekly/Booklist评论，以及开篇受伤梦境和治疗节选；未读全书，不补最后解决方案。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q4546842",
+      "identity": {
+        "title": "10¹⁶ to 1",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://shortstoryproject.com/stories/10-to-the-16-to-1/",
+          "result": "actual_source_scope_read",
+          "material_type": "公开原作全文",
+          "reading_scope": "实际逐段阅读Short Story Project所示完整英文篇章；支持Cross要求提前核战、刺杀、孩子未行动与成年自责；Cross对未来的说明为角色主张，不确认必然历史。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际逐段阅读Short Story Project所示完整英文篇章；支持Cross要求提前核战、刺杀、孩子未行动与成年自责；Cross对未来的说明为角色主张，不确认必然历史。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q4546842",
+        "identity": {
+          "title": "10¹⁶ to 1",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://shortstoryproject.com/stories/10-to-the-16-to-1/",
+            "material_kind": "公开原作全文",
+            "support_scope": "实际逐段阅读Short Story Project所示完整英文篇章；支持Cross要求提前核战、刺杀、孩子未行动与成年自责；Cross对未来的说明为角色主张，不确认必然历史。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131308062",
+      "identity": {
+        "title": "Itsy Bitsy Spider",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/Chapters/9781625791511/9781625791511___2.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方公开完整原作",
+          "reading_scope": "实际逐段阅读Baen全篇，支持Jen、母亲照护安排、机器人法定身份、父亲记忆与结尾维护费用；机器人对母亲动机的猜测不当作确证。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际逐段阅读Baen全篇，支持Jen、母亲照护安排、机器人法定身份、父亲记忆与结尾维护费用；机器人对母亲动机的猜测不当作确证。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131308062",
+        "identity": {
+          "title": "Itsy Bitsy Spider",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/Chapters/9781625791511/9781625791511___2.htm",
+            "material_kind": "出版方公开完整原作",
+            "support_scope": "实际逐段阅读Baen全篇，支持Jen、母亲照护安排、机器人法定身份、父亲记忆与结尾维护费用；机器人对母亲动机的猜测不当作确证。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q6928474",
+      "identity": {
+        "title": "Mr. Boy",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mr._Boy",
+          "result": "actual_source_scope_read",
+          "material_type": "明确标出的二手完整剧情概述",
+          "reading_scope": "实际阅读Plot段，支持逆龄、母亲形体、富家聚会与退出争执；未读原作正文，剧情仍待原文复核。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际阅读Mr. Boy条列Asimov’s 1990年6月；仅支持本单篇身份，不用1994年Wildlife的改写补情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Plot段，支持逆龄、母亲形体、富家聚会与退出争执；未读原作正文，剧情仍待原文复核。；实际阅读Mr. Boy条列Asimov’s 1990年6月；仅支持本单篇身份，不用1994年Wildlife的改写补情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q6928474",
+        "identity": {
+          "title": "Mr. Boy",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mr._Boy",
+            "material_kind": "明确标出的二手完整剧情概述",
+            "support_scope": "实际阅读Plot段，支持逆龄、母亲形体、富家聚会与退出争执；未读原作正文，剧情仍待原文复核。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际阅读Mr. Boy条列Asimov’s 1990年6月；仅支持本单篇身份，不用1994年Wildlife的改写补情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131218261",
+      "identity": {
+        "title": "Dancing on Air",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tachyonpublications.com/?p=1246",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方完整简介",
+          "reading_scope": "实际阅读搜索结果所示Tachyon完整简介，支持增强、Doberman、年老舞者与谋杀调查；不补增强副作用机制及凶手身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读搜索结果所示Tachyon完整简介，支持增强、Doberman、年老舞者与谋杀调查；不补增强副作用机制及凶手身份。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131218261",
+        "identity": {
+          "title": "Dancing on Air",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://tachyonpublications.com/?p=1246",
+            "material_kind": "出版方完整简介",
+            "support_scope": "实际阅读搜索结果所示Tachyon完整简介，支持增强、Doberman、年老舞者与谋杀调查；不补增强副作用机制及凶手身份。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131471754",
+      "identity": {
+        "title": "Evolution",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.delosstore.it/ebook/46397/evoluzione/",
+          "result": "actual_source_scope_read",
+          "material_type": "译本出版方完整简介",
+          "reading_scope": "实际阅读搜索结果所示Delos完整简介；仅支持抗药性、滥用与医院隔离的故事前提，未读原作，不补具体人物、政治措施或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读搜索结果所示Delos完整简介；仅支持抗药性、滥用与医院隔离的故事前提，未读原作，不补具体人物、政治措施或结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471754",
+        "identity": {
+          "title": "Evolution",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.delosstore.it/ebook/46397/evoluzione/",
+            "material_kind": "译本出版方完整简介",
+            "support_scope": "实际阅读搜索结果所示Delos完整简介；仅支持抗药性、滥用与医院隔离的故事前提，未读原作，不补具体人物、政治措施或结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q25397341",
+      "identity": {
+        "title": "The Choice",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://belial.fr/legacy/a/paul-j-mcauley/le-choix",
+          "result": "actual_source_scope_read",
+          "material_type": "译本出版方完整简介",
+          "reading_scope": "实际阅读搜索结果所示Belial完整简介；支持气候灾后Norfolk、两少年及父亲和母亲的生活约束；未读原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://belial.fr/blog/le-choix",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方杂志署名评论",
+          "reading_scope": "实际阅读Bifrost评论正文；支持寻找搁浅外星“龙”、期待与遭遇的落差、成年选择；不补具体结局或龙的机制。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读搜索结果所示Belial完整简介；支持气候灾后Norfolk、两少年及父亲和母亲的生活约束；未读原作全文。；实际阅读Bifrost评论正文；支持寻找搁浅外星“龙”、期待与遭遇的落差、成年选择；不补具体结局或龙的机制。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q25397341",
+        "identity": {
+          "title": "The Choice",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://belial.fr/legacy/a/paul-j-mcauley/le-choix",
+            "material_kind": "译本出版方完整简介",
+            "support_scope": "实际阅读搜索结果所示Belial完整简介；支持气候灾后Norfolk、两少年及父亲和母亲的生活约束；未读原作全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://belial.fr/blog/le-choix",
+            "material_kind": "出版方杂志署名评论",
+            "support_scope": "实际阅读Bifrost评论正文；支持寻找搁浅外星“龙”、期待与遭遇的落差、成年选择；不补具体结局或龙的机制。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q131462039",
+      "identity": {
+        "title": "Blade and Bone",
+        "author": "Paul J. McAuley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.asimovs.com/wp-content/uploads/2024/02/BladeandBone_McAuley.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "原刊公开原作开篇节选实际阅读",
+          "reading_scope": "实际阅读37页PDF的第0—7页开篇，支持死亡人质、追回刀、Lev医疗破产和tanky背景；只读这八页，不称已读全文，不补后续行动与结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fromearthtothestars.com/2023/10/18/return-to-mars/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者创作背景文章",
+          "reading_scope": "实际阅读作者Return to Mars文章，支持火星远期、意识保存的富人与墓葬骨刀构想；不把背景文章替代全篇情节核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读37页PDF的第0—7页开篇，支持死亡人质、追回刀、Lev医疗破产和tanky背景；只读这八页，不称已读全文，不补后续行动与结局。；实际阅读作者Return to Mars文章，支持火星远期、意识保存的富人与墓葬骨刀构想；不把背景文章替代全篇情节核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131462039",
+        "identity": {
+          "title": "Blade and Bone",
+          "author": "Paul J. McAuley"
+        },
+        "sources": [
+          {
+            "url": "https://www.asimovs.com/wp-content/uploads/2024/02/BladeandBone_McAuley.pdf",
+            "material_kind": "原刊公开原作开篇节选实际阅读",
+            "support_scope": "实际阅读37页PDF的第0—7页开篇，支持死亡人质、追回刀、Lev医疗破产和tanky背景；只读这八页，不称已读全文，不补后续行动与结局。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://fromearthtothestars.com/2023/10/18/return-to-mars/",
+            "material_kind": "作者创作背景文章",
+            "support_scope": "实际阅读作者Return to Mars文章，支持火星远期、意识保存的富人与墓葬骨刀构想；不把背景文章替代全篇情节核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q7295377",
+      "identity": {
+        "title": "Rat",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://cdn.penguin.co.uk/dam-assets/books/9781784879617/9781784879617-sample.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方公开选集原作开篇节选",
+          "reading_scope": "实际阅读The Big Book of Cyberpunk试读PDF第75—76页所收Rat开篇两页，支持体内藏毒、雇主、伪造父女身份与边检监控；页面截断，未读全篇，不补逃脱结果。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读The Big Book of Cyberpunk试读PDF第75—76页所收Rat开篇两页，支持体内藏毒、雇主、伪造父女身份与边检监控；页面截断，未读全篇，不补逃脱结果。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7295377",
+        "identity": {
+          "title": "Rat",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://cdn.penguin.co.uk/dam-assets/books/9781784879617/9781784879617-sample.pdf",
+            "material_kind": "出版方公开选集原作开篇节选",
+            "support_scope": "实际阅读The Big Book of Cyberpunk试读PDF第75—76页所收Rat开篇两页，支持体内藏毒、雇主、伪造父女身份与边检监控；页面截断，未读全篇，不补逃脱结果。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q130723962",
+      "identity": {
+        "title": "Beggars in Spain",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.nicholaswhyte.info/sf/bis.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "明确区分短篇与扩写长篇的二手剧情评论",
+          "reading_scope": "实际阅读1991中篇评论全文，支持双胞胎、父亲偏爱、Tony/Leisha分歧和救助儿童；评论对后续长篇出版年份不取作书目依据，未读中篇原文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际阅读作者书目，支持1991年Axolotl单行本及Asimov’s April首发身份；仅用于区分1993扩写长篇，不补故事情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读1991中篇评论全文，支持双胞胎、父亲偏爱、Tony/Leisha分歧和救助儿童；评论对后续长篇出版年份不取作书目依据，未读中篇原文。；实际阅读作者书目，支持1991年Axolotl单行本及Asimov’s April首发身份；仅用于区分1993扩写长篇，不补故事情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130723962",
+        "identity": {
+          "title": "Beggars in Spain",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.nicholaswhyte.info/sf/bis.htm",
+            "material_kind": "明确区分短篇与扩写长篇的二手剧情评论",
+            "support_scope": "实际阅读1991中篇评论全文，支持双胞胎、父亲偏爱、Tony/Leisha分歧和救助儿童；评论对后续长篇出版年份不取作书目依据，未读中篇原文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际阅读作者书目，支持1991年Axolotl单行本及Asimov’s April首发身份；仅用于区分1993扩写长篇，不补故事情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q130724067",
+      "identity": {
+        "title": "And Wild for to Hold",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://anneboleynnovels.wordpress.com/2013/07/27/and-wild-for-to-hold-by-nancy-kress-1991/",
+          "result": "actual_source_scope_read",
+          "material_type": "二手针对本篇的剧情评论",
+          "reading_scope": "实际阅读And Wild for to Hold评论正文，支持时间机构、Anne与女儿分离、概率模型与反诉；未读原作，不補评论未披露的判决结局，虚构战争模型不当作真实史学事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://subterraneanpress.com/best-of-nancy-kress/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方选集简介及目录",
+          "reading_scope": "实际阅读出版方简介和目录，确认And Wild for to Hold是独立篇章并以Anne被带离过去为前提；仅支持身份和宽泛前提，不支持细部诉讼情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读And Wild for to Hold评论正文，支持时间机构、Anne与女儿分离、概率模型与反诉；未读原作，不補评论未披露的判决结局，虚构战争模型不当作真实史学事实。；实际阅读出版方简介和目录，确认And Wild for to Hold是独立篇章并以Anne被带离过去为前提；仅支持身份和宽泛前提，不支持细部诉讼情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130724067",
+        "identity": {
+          "title": "And Wild for to Hold",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://anneboleynnovels.wordpress.com/2013/07/27/and-wild-for-to-hold-by-nancy-kress-1991/",
+            "material_kind": "二手针对本篇的剧情评论",
+            "support_scope": "实际阅读And Wild for to Hold评论正文，支持时间机构、Anne与女儿分离、概率模型与反诉；未读原作，不補评论未披露的判决结局，虚构战争模型不当作真实史学事实。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://subterraneanpress.com/best-of-nancy-kress/",
+            "material_kind": "出版方选集简介及目录",
+            "support_scope": "实际阅读出版方简介和目录，确认And Wild for to Hold是独立篇章并以Anne被带离过去为前提；仅支持身份和宽泛前提，不支持细部诉讼情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round15.json"
+    },
+    {
+      "id": "Q3212714",
+      "identity": {
+        "title": "The Leech",
+        "author": "罗伯特·谢克里"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Robert Sheckley The Leech Gutenberg"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.gutenberg.org/cache/epub/29525/pg29525-images.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Gutenberg 所收原刊正文的落地与初次接触、军方攻击及核打击、科学讨论、诱离太阳及完整孢子结尾等主要段落；不是逐行完整校勘。原刊转录署 Phillips Barbee，页末标 Galaxy 1952年12月；此笔名对应谢克里。生物关于吞吃宇宙形成星系的回忆被正文写成可能的梦，本分析不把它当确定宇宙史；核连锁反应担忧属作品设定，不是现实物理结论。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Gutenberg 所收原刊正文的落地与初次接触、军方攻击及核打击、科学讨论、诱离太阳及完整孢子结尾等主要段落；不是逐行完整校勘。原刊转录署 Phillips Barbee，页末标 Galaxy 1952年12月；此笔名对应谢克里。生物关于吞吃宇宙形成星系的回忆被正文写成可能的梦，本分析不把它当确定宇宙史；核连锁反应担忧属作品设定，不是现实物理结论。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3212714",
+        "identity": {
+          "title": "The Leech",
+          "author": "罗伯特·谢克里"
+        },
+        "queries": [
+          "Robert Sheckley The Leech Gutenberg"
+        ],
+        "urls_read": [
+          "https://www.gutenberg.org/cache/epub/29525/pg29525-images.html"
+        ],
+        "exact_support_scope": "实际读取 Gutenberg 所收原刊正文的落地与初次接触、军方攻击及核打击、科学讨论、诱离太阳及完整孢子结尾等主要段落；不是逐行完整校勘。原刊转录署 Phillips Barbee，页末标 Galaxy 1952年12月；此笔名对应谢克里。生物关于吞吃宇宙形成星系的回忆被正文写成可能的梦，本分析不把它当确定宇宙史；核连锁反应担忧属作品设定，不是现实物理结论。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q25379682",
+      "identity": {
+        "title": "Warrior Race",
+        "author": "罗伯特·谢克里"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Robert Sheckley Warrior Race Gutenberg"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.gutenberg.org/files/29548/29548-h/29548-h.htm",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Gutenberg 原刊转录正文的燃料不足、语言学习与调查档案、圣地燃料库、两轮交涉、自杀战争、假装互殴、威胁剥夺战士死亡以及完整离开结尾等段落；本批又读取中后部连续正文。页末注明 Galaxy 1952年11月。分析为独立短篇，不借同作者其他外星社会故事补情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Gutenberg 原刊转录正文的燃料不足、语言学习与调查档案、圣地燃料库、两轮交涉、自杀战争、假装互殴、威胁剥夺战士死亡以及完整离开结尾等段落；本批又读取中后部连续正文。页末注明 Galaxy 1952年11月。分析为独立短篇，不借同作者其他外星社会故事补情节。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q25379682",
+        "identity": {
+          "title": "Warrior Race",
+          "author": "罗伯特·谢克里"
+        },
+        "queries": [
+          "Robert Sheckley Warrior Race Gutenberg"
+        ],
+        "urls_read": [
+          "https://www.gutenberg.org/files/29548/29548-h/29548-h.htm"
+        ],
+        "exact_support_scope": "实际读取 Gutenberg 原刊转录正文的燃料不足、语言学习与调查档案、圣地燃料库、两轮交涉、自杀战争、假装互殴、威胁剥夺战士死亡以及完整离开结尾等段落；本批又读取中后部连续正文。页末注明 Galaxy 1952年11月。分析为独立短篇，不借同作者其他外星社会故事补情节。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q1215430",
+      "identity": {
+        "title": "Bedlam Planet",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "John Brunner \"Bedlam Planet\" publisher"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/bedlam-planet",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 的单书出版社简介，支持天龙座σ星行星、先遣殖民地、表面宜居条件与生态困境。这里据公开设定作有限解释，没有读取整部长篇；不推断困境的生化机制、解决方法或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 的单书出版社简介，支持天龙座σ星行星、先遣殖民地、表面宜居条件与生态困境。这里据公开设定作有限解释，没有读取整部长篇；不推断困境的生化机制、解决方法或结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q1215430",
+        "identity": {
+          "title": "Bedlam Planet",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [
+          "John Brunner \"Bedlam Planet\" publisher"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/bedlam-planet"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 的单书出版社简介，支持天龙座σ星行星、先遣殖民地、表面宜居条件与生态困境。这里据公开设定作有限解释，没有读取整部长篇；不推断困境的生化机制、解决方法或结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3203177",
+      "identity": {
+        "title": "The Wrong End of Time",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "John Brunner \"The Wrong End of Time\" publisher"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-wrong-end-of-time",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持未来封闭美国、俄国年轻科学家、冥王星附近高等智慧及其报告的毁灭威胁。未读取小说后续，不断言情报真实性、外星机制、时间结构或结局。标题不被用于推断时间旅行。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持未来封闭美国、俄国年轻科学家、冥王星附近高等智慧及其报告的毁灭威胁。未读取小说后续，不断言情报真实性、外星机制、时间结构或结局。标题不被用于推断时间旅行。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3203177",
+        "identity": {
+          "title": "The Wrong End of Time",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [
+          "John Brunner \"The Wrong End of Time\" publisher"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/the-wrong-end-of-time"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持未来封闭美国、俄国年轻科学家、冥王星附近高等智慧及其报告的毁灭威胁。未读取小说后续，不断言情报真实性、外星机制、时间结构或结局。标题不被用于推断时间旅行。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3576741",
+      "identity": {
+        "title": "Quicksand",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/quicksand",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持陌生女性出现、语言不通、来源调查与研究者心智受威胁，且标原作1967年。本分析只围绕这些已读设定；不猜女性的真实来历、诊疗技术、当事人同意与否或最后揭示。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持陌生女性出现、语言不通、来源调查与研究者心智受威胁，且标原作1967年。本分析只围绕这些已读设定；不猜女性的真实来历、诊疗技术、当事人同意与否或最后揭示。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3576741",
+        "identity": {
+          "title": "Quicksand",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/quicksand"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持陌生女性出现、语言不通、来源调查与研究者心智受威胁，且标原作1967年。本分析只围绕这些已读设定；不猜女性的真实来历、诊疗技术、当事人同意与否或最后揭示。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3576745",
+      "identity": {
+        "title": "The Stardroppers",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-stardroppers",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介完整的听星器部件、主观体验、解释不明、使用者消失、新闻审查与 Dan Cross 介入设定，标原作1972年。未读长篇后续，不断言失踪机制、声音来源或故事最终真相。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介完整的听星器部件、主观体验、解释不明、使用者消失、新闻审查与 Dan Cross 介入设定，标原作1972年。未读长篇后续，不断言失踪机制、声音来源或故事最终真相。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3576745",
+        "identity": {
+          "title": "The Stardroppers",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/the-stardroppers"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介完整的听星器部件、主观体验、解释不明、使用者消失、新闻审查与 Dan Cross 介入设定，标原作1972年。未读长篇后续，不断言失踪机制、声音来源或故事最终真相。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3234920",
+      "identity": {
+        "title": "The Productions of Time",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-productions-of-time",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持演员道格拉斯治疗后复出、自编排练、全体演员依赖及导演娱乐的设定，标原作1967年。未读取长篇的导演身份、时间机制和结局；不由标题推断时间旅行过程。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持演员道格拉斯治疗后复出、自编排练、全体演员依赖及导演娱乐的设定，标原作1967年。未读取长篇的导演身份、时间机制和结局；不由标题推断时间旅行过程。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3234920",
+        "identity": {
+          "title": "The Productions of Time",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/the-productions-of-time"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持演员道格拉斯治疗后复出、自编排练、全体演员依赖及导演娱乐的设定，标原作1967年。未读取长篇的导演身份、时间机制和结局；不由标题推断时间旅行过程。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3576862",
+      "identity": {
+        "title": "Times Without Number",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/times-without-number",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 的 Times Without Number 单书简介，支持时间协会、帝国与教会、同僚腐败、跨时战士及无敌舰队节点。仅解释以 Don Miguel 贯穿的合卷叙事设定，未逐篇对照早期刊本或1969修订本，也未核对最终时间线；不把出版社本版原作1969标注扩展为所有组成篇的首刊年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 的 Times Without Number 单书简介，支持时间协会、帝国与教会、同僚腐败、跨时战士及无敌舰队节点。仅解释以 Don Miguel 贯穿的合卷叙事设定，未逐篇对照早期刊本或1969修订本，也未核对最终时间线；不把出版社本版原作1969标注扩展为所有组成篇的首刊年。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3576862",
+        "identity": {
+          "title": "Times Without Number",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/times-without-number"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 的 Times Without Number 单书简介，支持时间协会、帝国与教会、同僚腐败、跨时战士及无敌舰队节点。仅解释以 Don Miguel 贯穿的合卷叙事设定，未逐篇对照早期刊本或1969修订本，也未核对最终时间线；不把出版社本版原作1969标注扩展为所有组成篇的首刊年。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q6058153",
+      "identity": {
+        "title": "Into the Slave Nebula",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/into-the-slave-nebula",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持自动化享乐地球、仿生人被杀、Derry Horn 离开地球、边远星区与奴隶贩子，以及仿生人来源真相改变文明理解。未读完整长篇；简介未公开具体身份真相，本分析不补写它，也不推断革命结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持自动化享乐地球、仿生人被杀、Derry Horn 离开地球、边远星区与奴隶贩子，以及仿生人来源真相改变文明理解。未读完整长篇；简介未公开具体身份真相，本分析不补写它，也不推断革命结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q6058153",
+        "identity": {
+          "title": "Into the Slave Nebula",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/into-the-slave-nebula"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持自动化享乐地球、仿生人被杀、Derry Horn 离开地球、边远星区与奴隶贩子，以及仿生人来源真相改变文明理解。未读完整长篇；简介未公开具体身份真相，本分析不补写它，也不推断革命结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q7767457",
+      "identity": {
+        "title": "The Super Barbarians",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-super-barbarians",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持 Quallavarra、Vorra 统治、强迫服役、Acre 例外与地球秘密造成的依赖。未读整部长篇；简介没有公开秘密内容，本分析不猜其技术或生理机制，也不把有限筹码写成最终解放。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持 Quallavarra、Vorra 统治、强迫服役、Acre 例外与地球秘密造成的依赖。未读整部长篇；简介没有公开秘密内容，本分析不猜其技术或生理机制，也不把有限筹码写成最终解放。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7767457",
+        "identity": {
+          "title": "The Super Barbarians",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/the-super-barbarians"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持 Quallavarra、Vorra 统治、强迫服役、Acre 例外与地球秘密造成的依赖。未读整部长篇；简介没有公开秘密内容，本分析不猜其技术或生理机制，也不把有限筹码写成最终解放。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q1239229",
+      "identity": {
+        "title": "Fire Time",
+        "author": "波尔·安德森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/poul-anderson/fire-time",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持 Anu/Bel/Ea 星系背景、伊什塔尔受热、北方南迁、Tassui/Gathering 冲突及 Primavera 殖民者无法获得联邦援助。未读取长篇全书；不推断星体轨道周期、最终救援、战争责任分配或当地各族道德立场。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持 Anu/Bel/Ea 星系背景、伊什塔尔受热、北方南迁、Tassui/Gathering 冲突及 Primavera 殖民者无法获得联邦援助。未读取长篇全书；不推断星体轨道周期、最终救援、战争责任分配或当地各族道德立场。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q1239229",
+        "identity": {
+          "title": "Fire Time",
+          "author": "波尔·安德森"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/poul-anderson/fire-time"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书出版社简介，支持 Anu/Bel/Ea 星系背景、伊什塔尔受热、北方南迁、Tassui/Gathering 冲突及 Primavera 殖民者无法获得联邦援助。未读取长篇全书；不推断星体轨道周期、最终救援、战争责任分配或当地各族道德立场。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q4366228",
+      "identity": {
+        "title": "Three Worlds to Conquer",
+        "author": "波尔·安德森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Poul Anderson \"Three Worlds to Conquer\" publisher"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/poul-anderson/three-worlds-to-conquer",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持 Mark Fraser 全家移民木卫三、Swayne/Vega 占领、资源导弹勒索与逃往木星的环境困难。原刊PDF因体积限制未成功读取，不列为实际正文来源；本分析未补写木星族群关系、接触技术或长篇结局，也不将1964连载与扩写本自动视为已逐句校对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持 Mark Fraser 全家移民木卫三、Swayne/Vega 占领、资源导弹勒索与逃往木星的环境困难。原刊PDF因体积限制未成功读取，不列为实际正文来源；本分析未补写木星族群关系、接触技术或长篇结局，也不将1964连载与扩写本自动视为已逐句校对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q4366228",
+        "identity": {
+          "title": "Three Worlds to Conquer",
+          "author": "波尔·安德森"
+        },
+        "queries": [
+          "Poul Anderson \"Three Worlds to Conquer\" publisher"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/poul-anderson/three-worlds-to-conquer"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持 Mark Fraser 全家移民木卫三、Swayne/Vega 占领、资源导弹勒索与逃往木星的环境困难。原刊PDF因体积限制未成功读取，不列为实际正文来源；本分析未补写木星族群关系、接触技术或长篇结局，也不将1964连载与扩写本自动视为已逐句校对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3786241",
+      "identity": {
+        "title": "Earthman's Burden",
+        "author": "波尔·安德森 / 戈登·R·迪克森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/poul-anderson-gordon-r-dickson/earthmans-burden-hoka-book-1",
+          "result": "actual_source_scope_read",
+          "reading_scope": "集合层面分析：实际读取 Hachette/Gateway 的 Earthman’s Burden 单书简介，明确两位作者、Taka、Alex Jones，以及西部酒馆和福尔摩斯式冒险选例。未通读六篇组成故事，未逐篇核对1957与重编版目录；仅解释出版社明确给出的共同框架和例子，不把其他 Hoka 卷剧情归入本集。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "集合层面分析：实际读取 Hachette/Gateway 的 Earthman’s Burden 单书简介，明确两位作者、Taka、Alex Jones，以及西部酒馆和福尔摩斯式冒险选例。未通读六篇组成故事，未逐篇核对1957与重编版目录；仅解释出版社明确给出的共同框架和例子，不把其他 Hoka 卷剧情归入本集。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3786241",
+        "identity": {
+          "title": "Earthman's Burden",
+          "author": "波尔·安德森 / 戈登·R·迪克森"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/poul-anderson-gordon-r-dickson/earthmans-burden-hoka-book-1"
+        ],
+        "exact_support_scope": "集合层面分析：实际读取 Hachette/Gateway 的 Earthman’s Burden 单书简介，明确两位作者、Taka、Alex Jones，以及西部酒馆和福尔摩斯式冒险选例。未通读六篇组成故事，未逐篇核对1957与重编版目录；仅解释出版社明确给出的共同框架和例子，不把其他 Hoka 卷剧情归入本集。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q24639583",
+      "identity": {
+        "title": "Born Under Mars",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/born-under-mars",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持两路人类殖民、熊派/半人马派制度对立、火星地下出身的 Ray Mallin 与任务引来的双方间谍。未读取长篇后续；不把两派名称误作外星物种，不猜阵营分化的生物机制、任务秘密或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持两路人类殖民、熊派/半人马派制度对立、火星地下出身的 Ray Mallin 与任务引来的双方间谍。未读取长篇后续；不把两派名称误作外星物种，不猜阵营分化的生物机制、任务秘密或结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q24639583",
+        "identity": {
+          "title": "Born Under Mars",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/born-under-mars"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持两路人类殖民、熊派/半人马派制度对立、火星地下出身的 Ray Mallin 与任务引来的双方间谍。未读取长篇后续；不把两派名称误作外星物种，不猜阵营分化的生物机制、任务秘密或结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q22076670",
+      "identity": {
+        "title": "Web of Everywhere",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/web-of-everywhere",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持即时门、未经许可旅行的大规模伤亡、隐私最高罪行与访客执念。未读取完整长篇；不补写装置密码或传送物理机制，不将出版社所称毁灭作为已完整核对的具体结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持即时门、未经许可旅行的大规模伤亡、隐私最高罪行与访客执念。未读取完整长篇；不补写装置密码或传送物理机制，不将出版社所称毁灭作为已完整核对的具体结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q22076670",
+        "identity": {
+          "title": "Web of Everywhere",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/web-of-everywhere"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持即时门、未经许可旅行的大规模伤亡、隐私最高罪行与访客执念。未读取完整长篇；不补写装置密码或传送物理机制，不将出版社所称毁灭作为已完整核对的具体结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q7810884",
+      "identity": {
+        "title": "To Conquer Chaos",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/to-conquer-chaos",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持荒地、怪物袭击、Conrad 的繁荣旧时代幻象与 Jervis Yanderman 关于幸存岛和走出者的消息，标原作1964年。未读取后续；不确定荒地成因、幻象机制或幸存者身份，本分析不补写这些答案。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 单书简介，支持荒地、怪物袭击、Conrad 的繁荣旧时代幻象与 Jervis Yanderman 关于幸存岛和走出者的消息，标原作1964年。未读取后续；不确定荒地成因、幻象机制或幸存者身份，本分析不补写这些答案。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7810884",
+        "identity": {
+          "title": "To Conquer Chaos",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/to-conquer-chaos"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 单书简介，支持荒地、怪物袭击、Conrad 的繁荣旧时代幻象与 Jervis Yanderman 关于幸存岛和走出者的消息，标原作1964年。未读取后续；不确定荒地成因、幻象机制或幸存者身份，本分析不补写这些答案。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q5299563",
+      "identity": {
+        "title": "Double, Double",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "John Brunner \"Double, Double\" publisher"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/Double_Double.html?id=9vnXEAAAQBAJ",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Google Books 承载的 Open Road 2014再版出版社简介，支持海滨小镇陌生人、海中变形生物、异常复制体与科学/偶然因素。未读取小说全文；不借同名 Star Trek 或 Ellery Queen 作品，不补写具体人物死亡、变形生物的起源与最终处置。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Google Books 承载的 Open Road 2014再版出版社简介，支持海滨小镇陌生人、海中变形生物、异常复制体与科学/偶然因素。未读取小说全文；不借同名 Star Trek 或 Ellery Queen 作品，不补写具体人物死亡、变形生物的起源与最终处置。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q5299563",
+        "identity": {
+          "title": "Double, Double",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [
+          "John Brunner \"Double, Double\" publisher"
+        ],
+        "urls_read": [
+          "https://books.google.com/books/about/Double_Double.html?id=9vnXEAAAQBAJ"
+        ],
+        "exact_support_scope": "实际读取 Google Books 承载的 Open Road 2014再版出版社简介，支持海滨小镇陌生人、海中变形生物、异常复制体与科学/偶然因素。未读取小说全文；不借同名 Star Trek 或 Ellery Queen 作品，不补写具体人物死亡、变形生物的起源与最终处置。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q3395621",
+      "identity": {
+        "title": "Polymath",
+        "author": "约翰·布鲁纳"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "John Brunner Polymath site.hachette.co.uk/titles/",
+        "\"Polymath\" \"John Brunner\" \"colonising\" \"polymath\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/polymath-empire-book-1",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette/Gateway 的 Polymath 单书完整出版社简介，支持灾难难民船失事、陌生行星、有限回收物资与研究了另一行星的建设学徒，页标1974年。分析限于该设定，不把1963 Castaways’ World 早期版本与1974扩写本视为已逐句核对，也不借其他 Empire/难民行星卷剧情。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette/Gateway 的 Polymath 单书完整出版社简介，支持灾难难民船失事、陌生行星、有限回收物资与研究了另一行星的建设学徒，页标1974年。分析限于该设定，不把1963 Castaways’ World 早期版本与1974扩写本视为已逐句核对，也不借其他 Empire/难民行星卷剧情。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3395621",
+        "identity": {
+          "title": "Polymath",
+          "author": "约翰·布鲁纳"
+        },
+        "queries": [
+          "John Brunner Polymath site.hachette.co.uk/titles/",
+          "\"Polymath\" \"John Brunner\" \"colonising\" \"polymath\""
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/john-brunner/polymath-empire-book-1"
+        ],
+        "exact_support_scope": "实际读取 Hachette/Gateway 的 Polymath 单书完整出版社简介，支持灾难难民船失事、陌生行星、有限回收物资与研究了另一行星的建设学徒，页标1974年。分析限于该设定，不把1963 Castaways’ World 早期版本与1974扩写本视为已逐句核对，也不借其他 Empire/难民行星卷剧情。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
+    },
+    {
+      "id": "Q30766215",
+      "identity": {
+        "title": "The Last Weapon",
+        "author": "罗伯特·谢克里"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Robert Sheckley The Last Weapon Gutenberg",
+        "Robert Sheckley \"The Last Weapon\" original text",
+        "Robert Sheckley \"The Last Weapon\" text English",
+        "\"Sheckley\" \"The Last Weapon\" \"1953\" English text",
+        "\"The Last Weapon\" \"Baen\" Sheckley",
+        "\"The Last Weapon\" Robert Sheckley original English full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/Chapters/9781451639414/9781451639414__c_.htm",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-robert-sheckley-the-last-weapon.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-2-robert-sheckley-the-last-weapon.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-3-robert-sheckley-the-last-weapon.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q30766215",
+        "identity": {
+          "title": "The Last Weapon",
+          "author": "罗伯特·谢克里"
+        },
+        "queries": [
+          "Robert Sheckley The Last Weapon Gutenberg",
+          "Robert Sheckley \"The Last Weapon\" original text",
+          "Robert Sheckley \"The Last Weapon\" text English",
+          "\"Sheckley\" \"The Last Weapon\" \"1953\" English text",
+          "\"The Last Weapon\" \"Baen\" Sheckley",
+          "\"The Last Weapon\" Robert Sheckley original English full text"
+        ],
+        "urls_read": [
+          "https://www.baen.com/Chapters/9781451639414/9781451639414__c_.htm",
+          "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-robert-sheckley-the-last-weapon.html",
+          "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-2-robert-sheckley-the-last-weapon.html",
+          "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-3-robert-sheckley-the-last-weapon.html"
+        ],
+        "exact_support_scope": "实际读取 Baen 合集版权页：仅支持 The Last Weapon 为谢克里作品、原载1953 Star Science Fiction Stories；Baen开放样章未包含此篇正文。另实际读 LibCat 非官方英文原作转录三页，从火星寻械、伙伴互杀、合成人军队与读心头盔到盒中吞噬者完整结尾；该镜像无可信版次信息，有排印错字，未与原刊扫描或授权再版逐句核对。剧情分析仍待核，不把镜像标为出版社文本，也不把火星灭绝的具体原因当作已证明事实。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round16.json"
     }
   ]
 }

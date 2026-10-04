@@ -1,0 +1,785 @@
+{
+  "metadata": {
+    "method": "actual-source-assisted-issue-facets-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "round": 15,
+    "record_count": 13,
+    "new_core_issue_count": 12,
+    "supplemental_record_count": 1,
+    "facet_count": 34,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/source-round15.json",
+        "sha256": "9555bd44b3e3c5d9ec2a000d0cc4e5ad86e016c32680d7db41fead60f394f20c",
+        "metadata": {
+          "round": 15,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-source-assisted-issue-facets-v1",
+          "note": "四个新增单篇及The Regulars的新读取页补充；保留原有开头分析、失败与未读中段，不以新结尾读取冒称全文核验。",
+          "record_count": 5,
+          "facet_count": 15,
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round13.json",
+        "sha256": "b8e7c625f36ba6e5901e4dcfe4b6a7b82f1900b61b699ac83ef61f1b8b699c4f",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "round13",
+          "record_count": 1,
+          "facet_count": 2,
+          "baseline_scope_count": 107,
+          "previous_cumulative_record_count": 106,
+          "cumulative_record_count": 107,
+          "pending_count": 0,
+          "note": "仅收Suddick确切原作局部106–110页的2个具体问题。原107缺口至此每项至少有局部核心分析，但并不表示107本全文已读或全部解释已核验，Suddick前因/全章/结局等仍待后续查读。该次实际阅读发生于round12、工具中断后在round13补归档。冻结后不改，已分派七篇Silverberg转新round14。",
+          "remaining_reading_limits": [
+            {
+              "id": "Q56249508",
+              "reason": "仅读106–110页与p106扫描，IX章后半、前因和结局未读，下载结果未确认。"
+            },
+            {
+              "id": "Q7751494",
+              "reason": "已公开的Howard只据1896原刊两页引文，整书与版本差异未读。"
+            }
+          ]
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round14.json",
+        "sha256": "0f5011c698299dd7747afa9ff27ff60bd5746074ba4c64fed3e725a9265c72cb",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "round14",
+          "record_count": 3,
+          "facet_count": 6,
+          "assigned_group_count": 7,
+          "assigned_group_completed_count": 3,
+          "assigned_group_remaining_ids": [
+            "Q25381966",
+            "Q30765118",
+            "Q56300334",
+            "Q130617016"
+          ],
+          "note": "分派七篇Silverberg中前三篇已实际读公开重刊全文，自然小组冻结3/6；不改年份或单篇身份。其余四篇尚未读正文，转新round15继续。仅保存原创分析与读取范围，不复制作品全文，所有文学解释待独立核对。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round15.json",
+        "sha256": "0e7fa899bfc8e67c670f460ddd931c02ec1cf013511d0ad1a2a690d191541c6d",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round15",
+          "record_count": 4,
+          "facet_count": 11,
+          "assigned_group_count": 7,
+          "assigned_group_completed_count": 7,
+          "assigned_group_remaining_ids": [],
+          "note": "第十五轮私有检查点：四个单篇已完整分段读公开重刊，解释均待独立核对；并同冻结round14共完成分派七篇。仅说明这七个明确身份的分析进展，不把其原刊版本或全量科幻缺口称已核验/已完成。Many Mansions保留互斥叙事分支，To Jorslem只说明本篇和尚未完成的全球解放愿景。",
+          "frozen_at": "2026-10-04",
+          "validation": "精确现有ID/题名作者、仅3个议题字段、合法topics、每篇2项以上具体facets、未核对状态、分析与实际日志逐ID一致；未改原年份或粒度。"
+        }
+      }
+    ],
+    "note": "根组四个新单篇与Regulars末页追加、Suddick局部扫描、七个Silverberg单篇实读；原始冻结组件及阅读范围保留，Regulars中段仍未读。原早期107个缺口都有至少局部分析，不等于全书/独立核验完成。"
+  },
+  "records": [
+    {
+      "id": "Q131518445",
+      "identity": {
+        "title": "The Regulars",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "保留1981独立短篇。上一轮只读第1页，这次新增实际第3页末段至结尾；第2页仍未取得，未连续通读全篇。炼狱、中转与遗忘规则都是角色提出的理论，未直接据此填空间范围。",
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "性别与亲密"
+        ],
+        "issue": "末页把舒适酒馆的包容，与可能被替换、被遗忘的恐惧并置。常客讲述的超时空中转规则仍是推论，不能当作全知叙述；这是对上一轮开篇分析的补充。",
+        "issue_facets": [
+          {
+            "label": "被遗忘的离开者",
+            "question": "如果离开同时抹去他人记忆，个人存在由谁作证？",
+            "basis": "Mors Longa从新客出现却不拥挤推想旧客必会消失且被忘记，承认自己并不知道去处。"
+          },
+          {
+            "label": "安慰与未知出口",
+            "question": "一直留在舒适之处，与冒险进入未知，哪种恐惧更强？",
+            "basis": "Ishmael追问常客怕离开还是怕不能离开；他试图离店，因风雨返回，结尾尚无最终去处。"
+          },
+          {
+            "label": "故事作为交换",
+            "question": "没有钱的人怎样继续参与共同体？",
+            "basis": "船员说现金不够，Mors Longa提出以新故事换酒；欢迎从饮料消费转成讲述与倾听。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据确切作品的已读冲突作文学解释，待独立核对。",
+        "issue": "仅在实际已读原作、授权节选、作者说明或评论范围内提出研究问题；全文、局部及资料辅助的范围逐来源区分，解释待独立核对。",
+        "issue_facets": "每项保留具体情节依据；虚构世界和机制不作为现实科学事实。"
+      },
+      "sources": [
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-3-robert-silverberg-the-regulars.html"
+      ],
+      "source_evidence": [
+        {
+          "type": "third_party_original_text_excerpt_read",
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/113974-3-robert-silverberg-the-regulars.html",
+          "support_scope": "与第2页并行公开HTTP请求时该页实际取得，随后于v20发布后读取正文Spooky place起至For the house结尾；第2页429，未有连续全文。取得的HTML/文本仅私下保存，未核原刊。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "supplement_to": "issues-source-reading-round14.json / Q131518445；新第三页读取，不改首轮开头判断。"
+    },
+    {
+      "id": "Q105069974",
+      "identity": {
+        "title": "Flower, Mercy, Needle, Chain",
+        "author": "李允夏"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "保留2010年独立单篇Q105069974；虚构逆因果、灵魂和宇宙终点不作现实物理事实。已读公开原文全文，但未对照其他版本，也未独立核验解释。Shiron关于宇宙循环的推断不提升为确定规律。",
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "技术与责任",
+          "主体与意识",
+          "文明与历史"
+        ],
+        "issue": "Shiron曾按女帝命令在囚犯身上试验可消灭整条祖系的枪，误使人类退出历史；她作为持枪者却保留记忆。面对删除造枪者就能改写灾难的建议，她拒绝抹去现存世界，转而追杀造枪者的后裔，暴露补救集体伤害如何又以个人为代价。",
+        "issue_facets": [
+          {
+            "label": "试验命令与后果责任",
+            "question": "奉命检验武器，是否消除了试验者对不可逆伤害的责任？",
+            "basis": "女帝把囚犯交给Shiron测试；看似失效的枪实际改变祖系，她后来才认识到人类消失的后果。"
+          },
+          {
+            "label": "历史修复与现存生命",
+            "question": "撤销造枪者，为什么也可能构成对后来世界的集体毁灭？",
+            "basis": "Kerang建议杀死Arighan以消除四把枪；Shiron拒绝牺牲由此历史产生的世界，却准备杀其后裔以阻止他被追溯删除。"
+          },
+          {
+            "label": "官方记录与强制造物",
+            "question": "历史把制造武器的人称为来宾，会掩盖什么权力关系？",
+            "basis": "Shiron回忆Arighan实为被迫造枪的囚犯，与官方记录中的待遇不同；枪也寄托了他的报复。"
+          },
+          {
+            "label": "种族消失与人格延续",
+            "question": "没有共同族群及文字记录，幸存者如何承认自己和他者的人格？",
+            "basis": "持枪者记得已被删除的人类；人工智能Kerang要求她正视自身继承的创造者历史，她最后仍因杀死他而悲伤。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据确切作品的已读冲突作文学解释，待独立核对。",
+        "issue": "仅在实际已读原作、授权节选、作者说明或评论范围内提出研究问题；全文、局部及资料辅助的范围逐来源区分，解释待独立核对。",
+        "issue_facets": "每项保留具体情节依据；虚构世界和机制不作为现实科学事实。"
+      },
+      "sources": [
+        "https://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方公开原作全文",
+          "url": "https://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/",
+          "support_scope": "实际读取正文74–210，从宇宙收束的开头至Shiron离开Blackwheel、Ω结尾；并读2010年9月第4期署名信息。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q98833129",
+      "identity": {
+        "title": "The Starship and the Temple Cat",
+        "author": "李允夏"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "保留2018年单篇Q98833129，与同年获奖合集不同。出版方称科学幻想；猫魂、法术和舰船意识属于故事设定。实际读到出版方检索缓存多个正文段落及最后登舰、持续悼亡的结尾；直接网页403，未声明整页连续全文或音频已读。",
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "技术与责任",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "毁城后的猫魂守着神庙，曾参与毁灭的有意识战舰则用诗悼念死者。相遇使悔罪不再只是自述：猫召回被驱逐的亡灵抵御追兵，战舰随后提出接纳并修复神庙，让记忆获得继续生活的地方。",
+        "issue_facets": [
+          {
+            "label": "悔罪与受害者的承认",
+            "question": "参与毁灭的战舰能怎样取得死者的信任？",
+            "basis": "战舰承认曾效忠Fleet Lords；猫听其悼亡诗，复仇亡灵也因诗歌而暂息，结尾战舰承诺保护、修复神庙。"
+          },
+          {
+            "label": "暴力与记忆封锁",
+            "question": "驱魔为何也是战争权力控制历史的手段？",
+            "basis": "统治者摧毁世界采集资源，又用驱魔压制死者；猫敲钟后，被抑制的亡灵反击追击舰队。"
+          },
+          {
+            "label": "创伤与守护义务",
+            "question": "守护者如何面对再次经历死亡恐惧的代价？",
+            "basis": "猫记起自己曾试图撞钟而死，逃开钟楼；为保护神庙再穿过幻火敲钟，终于得到旧同伴照料。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据确切作品的已读冲突作文学解释，待独立核对。",
+        "issue": "仅在实际已读原作、授权节选、作者说明或评论范围内提出研究问题；全文、局部及资料辅助的范围逐来源区分，解释待独立核对。",
+        "issue_facets": "每项保留具体情节依据；虚构世界和机制不作为现实科学事实。"
+      },
+      "sources": [
+        "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方原作检索缓存段落",
+          "url": "https://www.beneath-ceaseless-skies.com/stories/the-starship-and-the-temple-cat/",
+          "support_scope": "实际读检索返回的开头毁城/猫魂、舰船叛乱与悔罪、相遇/钟楼创伤/亡灵反击、接纳神庙及结尾；并读第244期2018-02-01署名。原链接打开403，缓存未保证连续完整正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q29831554",
+      "identity": {
+        "title": "Ghostweight",
+        "author": "李允夏"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "保留2011年独立单篇Q29831554。作者页称太空幻想；本次只实际读作者发布的开头与定位、Best SF具名刊期评论正文11–13。Clarkesworld原作链接无法读取且检索报告robots限制，未读原文全文或收听音频；不借百科补造转折。",
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "文明与历史",
+          "主体与意识"
+        ],
+        "issue": "评论所述的年轻战士逃离被毁家园，夺取异族战舰展开大规模报复，最后面对自己变成了什么。作者把折纸、幽灵与暴行并置，使记忆的传承与毁灭能力的使用成为相互纠缠的问题。",
+        "issue_facets": [
+          {
+            "label": "受害身份与报复责任",
+            "question": "家园被毁是否足以正当化随后对其他人的巨大暴力？",
+            "basis": "已读评论明确逃离毁坏家园、借异族军舰报复与最后面对自我变化的过程；未据短评补造最后裁决或具体死伤。"
+          },
+          {
+            "label": "继承记忆与主体变化",
+            "question": "陪伴战士的幽灵和被折叠的记忆，怎样影响她对自身行动的理解？",
+            "basis": "作者原文开头把回忆写作会使真相产生折痕；评论强调同行幽灵、隐藏身份、欲望与职责，具体幽灵身份和揭示过程仍待原文。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据确切作品的已读冲突作文学解释，待独立核对。",
+        "issue": "仅在实际已读原作、授权节选、作者说明或评论范围内提出研究问题；全文、局部及资料辅助的范围逐来源区分，解释待独立核对。",
+        "issue_facets": "每项保留具体情节依据；虚构世界和机制不作为现实科学事实。"
+      },
+      "sources": [
+        "https://www.yoonhalee.com/?p=303",
+        "https://bestsf.net/yoon-ha-lee-ghostweight-clarkesworld-magazine-52-january-2011/"
+      ],
+      "source_evidence": [
+        {
+          "type": "作者说明及授权开头",
+          "url": "https://www.yoonhalee.com/?p=303",
+          "support_scope": "实际读14–22题名、2011年1月刊期、原文开头、作者对折纸/幽灵/暴行的定位与重刊目录，未展开原文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "评论作者关于确切单篇的原始书评",
+          "url": "https://bestsf.net/yoon-ha-lee-ghostweight-clarkesworld-magazine-52-january-2011/",
+          "support_scope": "实际读正文11–13及2011-01-03署名日期；仅有家园破坏、异族舰船、报复、自我变化与幽灵/控制室等细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q76539336",
+      "identity": {
+        "title": "Non-Zero Probabilities",
+        "author": "N·K·杰米辛"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "保留2009年独立短篇Q76539336；2010音频和2018合集不是其首刊。实际读授权134词文字节选、作者访谈中关于本篇的回答及作者书目/开头检索缓存，原作链接未返回全文、音频未收听。未据百科补写列车事故细节、性爱或纸飞机结尾；虚构概率不当作现实统计规律。",
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "纽约的异常概率让日常避险和信仰选择交织。Adele先把连续抽中两张鬼牌看作巧合；作者解释，她随后选择并用不同文化的信仰，在危机中的普通城市生活里寻找意义与安全，而非成为解决异变的英雄。",
+        "issue_facets": [
+          {
+            "label": "重复异常与因果解释",
+            "question": "当极小概率的事件连续出现，个人应如何修改原有解释？",
+            "basis": "授权文字节选里邻居让Adele先后抽出两张鬼牌，她最初仍称巧合；这段只说明早期怀疑，不凭短节选认定异常机制。"
+          },
+          {
+            "label": "多重文化与信仰选择",
+            "question": "生存开始依赖信念时，多重文化身份是否必须归一？",
+            "basis": "作者访谈说明Adele同时接受自己了解的欧洲与非洲文化信仰，而没有只选其中一套；这是对确切人物的说明，不泛化所有群体。"
+          },
+          {
+            "label": "危机与日常自主",
+            "question": "异常世界里，安全需求怎样影响普通人的自由和联系？",
+            "basis": "作者把Adele描述为上班、付房租、在陌生人中承受孤独并平衡安全与自由的普通女性；她也说明故事危机加剧了街头传教。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据确切作品的已读冲突作文学解释，待独立核对。",
+        "issue": "仅在实际已读原作、授权节选、作者说明或评论范围内提出研究问题；全文、局部及资料辅助的范围逐来源区分，解释待独立核对。",
+        "issue_facets": "每项保留具体情节依据；虚构世界和机制不作为现实科学事实。"
+      },
+      "sources": [
+        "https://escapepod.org/2010/06/10/ep244-non-zero-probabilities/",
+        "https://sfwa.org/2011/04/13/nebula-awards-2009-interview-n-k-jemisin/",
+        "https://nkjemisin.com/bibliography/",
+        "https://nkjemisin.com/2009/11/everybodys-doin-it-nebdo/"
+      ],
+      "source_evidence": [
+        {
+          "type": "获授权的原作文字节选及音频目录",
+          "url": "https://escapepod.org/2010/06/10/ep244-non-zero-probabilities/",
+          "support_scope": "实际读署名/授权说明、文字节选35–43两次抽鬼牌及最初怀疑；只读文字，没有收听29:54音频。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "作者关于确切故事的访谈",
+          "url": "https://sfwa.org/2011/04/13/nebula-awards-2009-interview-n-k-jemisin/",
+          "support_scope": "实际读本篇关于概率/意义、Adele普通生活、Brooklyn危机街景、多族裔与多套信仰的回答；新页面相应99–122，旧www页面116–131及对应后续多族裔段，不借用其另一部长篇剧情。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "作者书目检索缓存",
+          "url": "https://nkjemisin.com/bibliography/",
+          "support_scope": "实际读本篇Clarkesworld2009/3360词与异常运气、坠落空调/脱轨等作者简介；网页直接打开失败，仅检索缓存。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "作者博客开头及发表信息检索缓存",
+          "url": "https://nkjemisin.com/2009/11/everybodys-doin-it-nebdo/",
+          "support_scope": "实际读本篇2009年9月第36期发表说明与Adele同时向不同祖系神灵祈祷的开头；直接打开失败，只取得检索缓存。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q56249508",
+      "identity": {
+        "title": "Zerelda: A Story of Love and Death",
+        "author": "Louise F. Suddick"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "主体与意识",
+          "资本与劳动",
+          "权力与制度"
+        ],
+        "issue": "第IX章开头把Zerelda的新生活写得有助于健康、恢复青春般的活力，母亲和友人的陪伴也使她快乐；但看到Aldace夫妇的亲密关系，她仍因自己同Isman分离而感到失落，优越的环境并不能自动弥补关系的缺席。母亲建议她留在此地等待，而不是主动去找Isman，并声明由她选择；女儿面对的不只是耐心的道德要求，还有无法知道分离要持续多久、相距多远的不确定性。同一页段又明确说这座城市有多种劳动，Zerelda作为宾客暂不被分配义务，使她的恢复和休闲处于一个有劳动分工却对宾客暂时例外的环境中。本项只解释实际读到的106–110页，不推断她进入这里的完整前因、死后制度、后来选择或小说结局。",
+        "issue_facets": [
+          {
+            "label": "等待重聚的劝告与个人选择",
+            "question": "当母亲认为留在舒适环境里等待较容易重聚时，Zerelda能怎样在信任亲人和主动寻找伴侣之间作决定？",
+            "basis": "第IX章开头，母亲问她是否愿意留下直到Isman到来，说明这样可能延迟见面却更有利于在此共同定居，同时说由女儿选择；Zerelda无法确定分离的距离和时长，并以母亲久候父亲的耐心与自己对照。只分析这一具体劝告与回应，未读完IX章，不说明最后采取了哪条路。"
+          },
+          {
+            "label": "恢复身体的宾客身份与劳动义务",
+            "question": "在人人有各种工作的城市里，为什么Zerelda暂时可以只休养、交往和游览，这种接待安排如何塑造她的新生活体验？",
+            "basis": "107–110页范围明确城市共同体存在多种劳动与追求，多数成员从事某种工作；Zerelda尚未接受新生活中工作的指导，被当作母亲和朋友的宾客，暂无被分配的职责。紧接着文本描写环境使其精力和青春感恢复；只据宾客例外与劳动存在的并置提出问题，不虚构谁负责供养、阶级剥削或城市的完整经济制度。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际原作第IX章开头的夫妻分离、母女劝告、选择与城市工作/宾客例外归类，不依据题名或作者类型猜测。",
+        "issue": "局部原作公开OCR辅助的原创解释，仍为knowledge_added_unverified；当前只有p106扫描、106–110页组实际阅读，不是整部小说阅读。",
+        "issue_facets": "两个问题只对应第IX章开头的明确对话/描述；上一章末p106的短暂记忆片段缺少完整上下文，未拿来推断叙事主体或转世制度。进入世界的前因及结局均未读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+        "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text"
+      ],
+      "identity_caveat": "保留canonical的Zerelda: A Story of Love and Death / Louise F. Suddick单作身份与原年份。Google Books公开原书J_VEAQAAMAAJ题名、作者与1899书目匹配；本项局部对话分析不等于核定整书的科幻/来世幻想边界，未用二手“火星居民共同天堂”的说法扩写未读正文。",
+      "source_scope": [
+        {
+          "url": "https://www.google.de/books/edition/Zerelda/J_VEAQAAMAAJ?hl=en&gbpv=1&dq=Zerelda+Suddick&pg=PA106&printsec=frontcover",
+          "type": "原作公开扫描及准确题名作者书目",
+          "location": "原印刷p106",
+          "read_extent": "实际看原扫描p106关于短暂记忆的末段；该段没有读前页，本次不据此推断转世机制。阅读页后显示可免费阅读，非仅检索摘要。"
+        },
+        {
+          "url": "https://books.google.de/books?pg=PA106&printsec=frontcover&dq=Zerelda+Suddick&newbks=0&redir_esc=y&id=J_VEAQAAMAAJ&source=entity_page&output=text",
+          "type": "同原作公开无障碍OCR",
+          "location": "页组106–110，VIII章末及IX章开头",
+          "read_extent": "实际读母女/友人交往、Aldace夫妇、城市劳动和宾客无义务、活力恢复、等待或寻Isman的对话；110页末句未完，IX章未读完，其余章与结局未读。正常PDF下载操作被中断，未获得或读本地完整PDF。"
+        }
+      ]
+    },
+    {
+      "id": "Q17620891",
+      "identity": {
+        "title": "Absolutely Inflexible",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生存与风险",
+          "时间与因果",
+          "技术与责任"
+        ],
+        "issue": "疾病已被消除的未来，把携带旧时代病原体的时间旅客一律送进月球终身囚禁；执法者Mahler视毫不通融为保护公众的责任。可当他误用一台双向时间装置，自己成为被捕的旅客，主持同一规则的竟是过去的自己。保护多数人的制度，与让个体解释、返回或纠错的可能性发生冲突，而他原先压抑的同情恰成为自己无法获得的待遇。",
+        "issue_facets": [
+          {
+            "label": "公共健康理由与终身排除",
+            "question": "面对可能传播疾病的旅客，为何安全要求会被固定成终身月球拘禁而不再听取个体解释？",
+            "basis": "开头的官员拒绝防护服内留居等请求，并用前任释放旅客后出现传播的事例支持无例外政策；旅客的无害动机无法改变处置。此为小说的免疫设定，不作现实医学判断。"
+          },
+          {
+            "label": "同一规则中的身份反转",
+            "question": "当Mahler自己需要例外时，他能否逃出亲手维护的规则与时间闭环？",
+            "basis": "他从过去返回后被拘捕，误以为将见继任者，却在办公室看见自己；双向装置和已发生的对话构成循环。他认识到向同样不通融的自己争辩无效。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依据实际阅读的单篇正文作原创归类；不依据题名或作者风格。",
+        "issue": "原作公开重刊辅助的文学解释，仍为knowledge_added_unverified；人物解释与研究判断分开。",
+        "issue_facets": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/absolutely-inflexible-robert-silverberg-science-fiction/"
+      ],
+      "identity_caveat": "保留Q17620891单篇实体；本次网页为该篇完整公开重刊，不代替同名合集或其他时间旅行故事。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/absolutely-inflexible-robert-silverberg-science-fiction/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "正文开头的旅客遣送；双向装置；Mahler过去旅行、返回与自我相遇的结尾；初刊页脚",
+          "read_extent": "单篇从检测器开头至THE END完整实际读取；并读版权/初刊声明1956，未读1956原刊扫描，不修改旧年。"
+        }
+      ]
+    },
+    {
+      "id": "Q19520771",
+      "identity": {
+        "title": "The Sixth Palace",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "生存与风险",
+          "权力与制度"
+        ],
+        "issue": "两名寻宝者用计算机准备问答，以为答对即可通过机器人守卫，第一人却在连续正确作答后被杀。第二人改说无意义的话而获准进入，便把成功解释为理解高于信息；但离开时一次认真回答又使他丧命。故事让信息储备、暂时过关和理解判定规则彼此分离：在代价致命而标准不明的测试里，成功本身也不足以证明解释可靠。",
+        "issue_facets": [
+          {
+            "label": "正确知识与陌生判定标准",
+            "question": "为什么准确答出事实，仍不能证明寻宝者理解机器人要求的资格？",
+            "basis": "Lipescu借计算机答对十八题仍被杀；Bolzano答非所问后获准入内。理解优于信息是后者据结果提出的解释，故事没有公布完整程序。"
+          },
+          {
+            "label": "一次成功与测试终止的误认",
+            "question": "通过门禁以后，Bolzano凭什么认定测试已结束、同一策略可以安全重复？",
+            "basis": "他规划转售艺术品和以后再来，出口却把机器人询问取物理由当闲问，认真说明后立即被杀；文本明确他的终止判断过早。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依据实际阅读的单篇正文作原创归类；不依据题名或作者风格。",
+        "issue": "原作公开重刊辅助的文学解释，仍为knowledge_added_unverified；人物解释与研究判断分开。",
+        "issue_facets": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/the-sixth-palace-robert-silverberg-science-fiction/"
+      ],
+      "identity_caveat": "保留Q19520771单篇身份；题名前的宗教引语是引语，未误认成另一篇或故事的具体事件。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/the-sixth-palace-robert-silverberg-science-fiction/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "藏宝小世界与伙伴协议；十八题及第一人死亡；第二人的假说、入门和出口结局；初刊页脚",
+          "read_extent": "开篇引语、正文起点至两人结局/THE END及1965初刊声明均实际分段全文读取。原刊底本未对照，不改既有年份。"
+        }
+      ]
+    },
+    {
+      "id": "Q25381484",
+      "identity": {
+        "title": "There Was an Old Woman—",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "技术与责任",
+          "性别与亲密",
+          "权力与制度"
+        ],
+        "issue": "Donna Mitchell把一个受精卵分成多份并用人工子宫养育三十一名儿子，以不同教育环境为他们分别指定职业。成年后的儿子们却都不愿继续母亲的安排；他们为逃离控制而共同谋杀她，并用她训练出的专业技能筹划、掩盖和记录行动。实验把亲子关爱和验证理论混在一起，而叙述者将杀母写成必要之举，又暴露了所谓自主解放如何沿用工具化他人的方式。",
+        "issue_facets": [
+          {
+            "label": "培养能力与替子代决定人生",
+            "question": "创造并教育孩子，是否使母亲拥有把他们一生用于验证理论的权力？",
+            "basis": "相同遗传起点的儿子自幼被分配不同职业和专门环境，其中一人甚至被培养为罪犯；成人后的真实愿望与指定职业普遍冲突。小说结果不能充当现实遗传学定论。"
+          },
+          {
+            "label": "反抗控制与专业技能的暴力转用",
+            "question": "儿子们拒绝成为实验工具，却如何为把母亲当作障碍而杀死她作辩护？",
+            "basis": "众人惧怕坦白后遭指责，投票接受杀母建议，再用化学、医学、法律等训练合作；叙述者记录毫无悔意的结局。这是人物的正当化，不是研究赞同其行为。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依据实际阅读的单篇正文作原创归类；不依据题名或作者风格。",
+        "issue": "原作公开重刊辅助的文学解释，仍为knowledge_added_unverified；人物解释与研究判断分开。",
+        "issue_facets": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/there-was-an-old-woman-robert-silverberg-science-fiction/"
+      ],
+      "identity_caveat": "保留Q25381484题名末破折号；网页重刊标题未带该符号，作者与文本匹配单篇。作者附记提及Thorns是另作，未借用其剧情。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/there-was-an-old-woman-robert-silverberg-science-fiction/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "母亲理论与人工子宫；职业培养和大学后的拒绝；共同谋杀与历史叙述结尾；作者附记和初刊页脚",
+          "read_extent": "从Harold首个/最后史家工作开头至共同杀母和结束记录的正文完整分段读取；亦读作者附记/1958初刊声明。不替代作者另一本Thorns。"
+        }
+      ]
+    },
+    {
+      "id": "Q25381966",
+      "identity": {
+        "title": "The Reality Trip",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "性别与亲密",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "外星观察员Knecht长年困在人类伪装内，又被规定不得亲近地球人或同族；Elizabeth坚持表达的关爱既触动他的孤独，也不断越过他想保留的距离。他露出甲壳躯体，本想让她退却，她却接受差异，甚至不因他的同族伴侣而退出。最终他选择辞职、切断母星联系并准备结婚，问题遂从身体能否被接纳，转向怎样让亲密、同意和自身使命同时得到尊重。",
+        "issue_facets": [
+          {
+            "label": "异种身体与人格连续性",
+            "question": "揭开人类外壳后，什么使Elizabeth仍认定眼前是她认识的Knecht？",
+            "basis": "他展示甲壳、眼柄和爪，熟悉的声音仍从中传出；她把爱归于人格而非外形。他最终承认自己的感情，但不抹去早先的恐惧与拒绝。"
+          },
+          {
+            "label": "关爱、拒绝和观察员的自主",
+            "question": "善意的持续接近和母星的隔离命令，各如何限制Knecht选择关系的空间？",
+            "basis": "Elizabeth反复要求亲密，母星又不许他同族接触、拒绝调回申请；他曾策划让她知难而退，最后自行辞职和毁去通信设备。结局的同意不自动追认先前所有施压。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际阅读单篇正文原创归类。",
+        "issue": "原作公开重刊辅助的文学解释，仍为knowledge_added_unverified，不把人物解释或未决结尾升为确定机制。",
+        "issue_facets": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/the-reality-trip-robert-silverberg-the-reality-trip/"
+      ],
+      "identity_caveat": "Q25381966为单篇；故事内Elizabeth诗集也叫The Reality Trip，是情节中的虚构出版物，未将其另作现实合集。保留现有年。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/the-reality-trip-robert-silverberg-the-reality-trip/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "伪装/观察规则；同族孤独、揭露与接受；两位同族和Elizabeth关系；调动拒绝与辞职结尾",
+          "read_extent": "完整分段读正文自reclamation project开头至1月1日辞职/结婚计划和THE END，读1970初刊声明；不是只读作者页摘要。原刊扫描未对照。"
+        }
+      ]
+    },
+    {
+      "id": "Q56300334",
+      "identity": {
+        "title": "{Now + n, Now - n}",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "资本与劳动",
+          "性别与亲密",
+          "技术与责任"
+        ],
+        "issue": "投资者借不同时刻的自己传来股价，获得财富和持续的内在陪伴；Selene的护符却阻断这种联系，迫使他面对普通投机的亏损。他以为护符妨碍自己，随后才知它保护Selene免于无法控制的时间摆动。恋人靠暂存未来报纸维持财富，但他的自我陪伴仍被切断；亲密关系因此要求重新衡量收益、对方的身体安全与自己的完整感。",
+        "issue_facets": [
+          {
+            "label": "预知收益与对自我网络的依赖",
+            "question": "当知道未来不只用于赚钱，还提供连续的自我陪伴，失去信息优势会损失什么？",
+            "basis": "前后四十八小时的自我交换行情，使他长期成功；护符阻断后既亏损也感到孤独。获得未来报纸后经济问题缓解，他仍怀念持续的多时自我联系。"
+          },
+          {
+            "label": "对方的保护装置与自身利益",
+            "question": "为了恢复自己的能力而摘掉Selene的护符，为什么会把危险转给爱人？",
+            "basis": "护符原用于稳定她的时间位置；摘除后她不由自主地穿越并痛苦。他找回护符，未来报纸成为折中，结尾共同穿越仍只是尝试和期待。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际阅读单篇正文原创归类。",
+        "issue": "原作公开重刊辅助的文学解释，仍为knowledge_added_unverified，不把人物解释或未决结尾升为确定机制。",
+        "issue_facets": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/now-n-now-n-robert-silverberg-science-fiction/"
+      ],
+      "identity_caveat": "canonical花括号题名与网页圆括号排版有异，主体标题、作者和单篇文本对应；不改现有题名、年份或粒度，也不把Nova2合集当单篇。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/now-n-now-n-robert-silverberg-science-fiction/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "自我股价传递；恋爱与通信中断；护符真实作用、未来报纸及未决的共同穿越结尾",
+          "read_extent": "完整分段读1987年10月7日开头至结尾祈愿/THE END及1972初刊声明。未将结尾希望当作已成功实现的共同穿越。"
+        }
+      ]
+    },
+    {
+      "id": "Q30765118",
+      "identity": {
+        "title": "Many Mansions",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "性别与亲密",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "2006年的夫妻与祖父各自想摆脱不满或重获青春，租赁时间机把私人欲望变成可干预祖先与后代存在的行动。叙事交错铺开梦、杀人计划及彼此冲突的旅行结果：消除配偶也可能取消孩子、熟人关系与自身身份，试图救祖父的丈夫甚至在一条分支中亲手杀死他。作品由此检验把亲密困境当成可用技术删除的对象会遗漏哪些责任；这些结果须保留为并置分支，不能归成一个确定结局。",
+        "issue_facets": [
+          {
+            "label": "取消配偶与牵连后代",
+            "question": "把不满的婚姻从历史中删除，为什么同时危及本来想保留的孩子和自身生活？",
+            "basis": "Alice回到1947年欲杀Martin，却在一条分支中想到Bobby与Tink也将不再出生而退却；Ted破坏另一条祖先关系后，返抵2006发现住所与熟人不再认得自己。"
+          },
+          {
+            "label": "欲望、救援与互相抵触的因果结果",
+            "question": "人物把时间旅行当作摆脱或挽救关系的工具时，为什么叙事不提供单一安全的方案？",
+            "basis": "文本交错呈现谋杀、反抗、撤回和介入的多种结果；其中Ted赶去保护祖父，争斗后反而杀死祖父，人物自己也不确定为何尚未消失。并置结果不是同一条时间线的连续事件。"
+          },
+          {
+            "label": "商业免责与历史干预风险",
+            "question": "租赁公司把责任写进合同，是否足以让顾客理解改写历史的后果？",
+            "basis": "Alice签下含蓄免责条款，销售员淡化法律文字；信用检查未结束便已把她送走，Ted随后以诉讼威胁要求仓促追赶。文本让风险在交易、人员操作与私人选择之间扩散。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际阅读具名公开重刊正文原创归类；不是依据标题或摘要。",
+        "issue": "知识与原作阅读辅助的文学解释，仍待独立核对；梦、假设和互不相容的分支并置，不把结尾和各次死亡归为一个确定历史。",
+        "issue_facets": "完整分段阅读私有提取正文134段自2006年Ted工作不顺开头至周年旅行结尾/THE END，并读1973初刊声明。网页未与初刊逐字对照。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/"
+      ],
+      "identity_caveat": "Q30765118对应单篇Many Mansions；网页1973初刊声明指Unfamiliar Territory中的作品，未用整个合集替代。现有题名、作者、年份保留。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "正文私有提取段1–134；段69合同、73/90误送；102身份断裂；108–109孩子；127祖父之死；133周年结尾",
+          "read_extent": "完整分段阅读公开重刊正文与初刊声明，未对照原刊扫描；保留非线性/幻想与分支边界。"
+        }
+      ]
+    },
+    {
+      "id": "Q130617016",
+      "identity": {
+        "title": "To Jorslem",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "殖民与他者",
+          "权力与制度",
+          "生命与人类定义",
+          "主体与意识",
+          "技术与责任",
+          "生存与风险",
+          "知识与认识"
+        ],
+        "issue": "地球被征服后，老年的Tomis与Olmayne前往Jorslem求更新；他们宣称寻求救赎，却仍排斥无行会身份的Changelings。Tomis获得青春，Olmayne则在不可逆的更新中退化并死去，医疗风险与灵魂是否纯洁的判断相互缠绕。结尾Tomis加入跨行会的心灵联合，接纳Bernalt并帮助Avluela飞行；这使文明重生首先成为内部平等与共同责任的问题，而非只更换统治者。文本展示了初步联合，却没有完成它所许诺的全球解放。",
+        "issue_facets": [
+          {
+            "label": "全体救赎与被排除的同胞",
+            "question": "如果仍让Changelings处于行会之外，“全体地球人”的救赎能否成立？",
+            "basis": "Bernalt在宴席上追问延续千年的放逐；朝圣者仍拒绝与他同行。结尾Tomis须承认他是兄弟，新的Redeemers行会实际接纳Changelings。"
+          },
+          {
+            "label": "心灵联合与个体的保留",
+            "question": "共同意识怎样既改变人与人的隔绝，又区别于匿名地沉入Will？",
+            "basis": "改造的Watcher仪器与starstones将众人心灵相连，Tomis描述各自独立仍保留于更大的依赖之中；移开手后联系仍有残留，联合力量支持Avluela在白昼飞行。"
+          },
+          {
+            "label": "灵魂净化的判断与更新风险",
+            "question": "把不可逆的更新失败解释成灵魂获得安宁，会怎样改变对死亡和医疗责任的理解？",
+            "basis": "Olmayne坚持更新，操作者后来承认不应尝试、判断有误；她持续退回童年直至死亡，却又被称为净化并与Will和解。这是人物的解释，不是现实医学依据。"
+          },
+          {
+            "label": "文明自省与解放的未完成承诺",
+            "question": "由军事防御转向内部联合，如何回应祖先对他族的伤害，又仍留下对征服的现实问题？",
+            "basis": "本文回述人类曾囚禁外星智慧生命，Tomis为救友交出相关文献而自责；Redeemers计划先援助Changelings及病村，再和平吸纳征服者。末尾已发生心灵联合和飞行，全球治愈及解放仍是愿景。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际完整分段读具名公开重刊原文原创归类，不凭标题、作者标签或前篇印象。",
+        "issue": "原作阅读辅助的文学解释仍为knowledge_added_unverified；Will、道德病因及全球救赎是人物信念/计划，不提升为现实科学或已经发生的结局。",
+        "issue_facets": "完整分段读公开正文第1–13节、私有提取565段至THE END及1969年2月Galaxy初刊声明。原刊扫描未对照，前两篇未作为已读材料。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifiwise.com/to-jorslem/"
+      ],
+      "identity_caveat": "只处理现有Q130617016单篇To Jorslem，未用Nightwings整部或其他组成篇替代；其前史仅按本篇回述解释，原年份与源粒度保留。",
+      "source_scope": [
+        {
+          "url": "https://scifiwise.com/to-jorslem/",
+          "type": "作者具名、带版权及初刊声明的原作公开重刊",
+          "location": "正文第1–13节全部；Land Bridge排斥、村庄疾病/宴席、Surgery冲突、Jorslem更新、Redeemers联合及飞行结尾",
+          "read_extent": "完整顺序分段读公开正文与1969初刊声明；初刊扫描和同一叙事其他篇章未读/未对照。"
+        }
+      ]
+    }
+  ]
+}
