@@ -74,6 +74,7 @@ function applySupplement(w,s){
   w.knowledge_identity_notes=unique((s.knowledge?.assertions||[]).map(a=>a.identity_caveat));
   w.issue_evidence_notes=unique((s.knowledge?.assertions||[]).map(a=>a.evidence_scope));
   w.reading_materials=s.reading_materials||[];
+  w.source_search_log=s.source_search_log||null;
   w.issue_facets_status=w.issue_facets.length?'knowledge_added_unverified':'missing';
   w.issue_alternatives=s.knowledge?.issue_alternatives||[];
   if(w.research?.issue&&s.knowledge?.fields.issue&&w.research.issue!==s.knowledge.fields.issue)w.issue_alternatives=[...w.issue_alternatives,{value:s.knowledge.fields.issue,note:s.knowledge.field_notes.issue,input_file:s.knowledge.assertions?.find(a=>a.fields.issue===s.knowledge.fields.issue)?.input_file}];

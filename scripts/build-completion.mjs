@@ -18,6 +18,16 @@ const readingMap=new Map(reading.records.map(r=>[r.id,r.materials]));
 const canonicalIds=new Set(audit.records.map(r=>r.id)),researchIds=new Set(links.links.map(r=>r.canonical_id));
 const auditMap=new Map(audit.records.map(r=>[r.id,r])),researchByCanonical=new Map(links.links.map(l=>[l.canonical_id,catalog.works.find(w=>w.id===l.research_id)]));
 const norm=v=>String(v||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+let sourceSearch={metadata:null,records:[]};
+try{sourceSearch=await read('research/issue-source-searches.json');}catch(error){if(error.code!=='ENOENT')throw error;}
+const sourceSearchMap=new Map();
+for(const r of sourceSearch.records){
+ const baseline=auditMap.get(r.id),original=sourceMap.get(r.id),prior=researchByCanonical.get(r.id);
+ const titles=[baseline?.title,original?.title,prior?.title_zh,prior?.title_original].map(norm);
+ const authors=[baseline?.fields.author.value,...(original?.authors||[]),(original?.authors||[]).join(' / '),prior?.author].map(norm);
+ if(!canonicalIds.has(r.id)||sourceSearchMap.has(r.id)||!r.identity?.title||!r.identity?.author||!titles.includes(norm(r.identity.title))||!authors.includes(norm(r.identity.author))||!Array.isArray(r.queries)||r.queries.some(q=>typeof q!=='string'||!q.trim())||!Array.isArray(r.materials_checked)||r.materials_checked.some(m=>!/^https?:\/\//.test(m.url)||typeof m.result!=='string'||!m.result.trim())||!r.attempt_state||!r.reason_unconfirmed||!r.next_step)throw new Error('Invalid actual source-search log: '+r.id);
+ sourceSearchMap.set(r.id,{input_file:'research/issue-source-searches.json',log_date:sourceSearch.metadata.created_at,...r});
+}
 const topics=new Set(catalog.works.flatMap(r=>r.topics)),spaces=new Set(['earth','planetary','interstellar','galactic','cosmic','abstract','unknown']);
 const durations=new Set(['日—月','年—一生','多代—百年','千年—文明史','百万年—宇宙尺度','多尺度或非线性','待核']);
 const sciences=new Set(['近现实外推','依赖未证技术','强反事实设定','混合或不适用']);
@@ -106,11 +116,12 @@ const records=audit.records.map(a=>{
  if(topicMap.size)candidateCount++;if(checks.some(c=>c.status==='title_author_correspondence'))matchedCount++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different'))dateConflicts++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='missing_source'))libraryMissingYearCandidates++;
- return {id:a.id,content_corrections:correctionMap.get(a.id)||[],reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
+ return {id:a.id,source_search_log:sourceSearchMap.get(a.id)||null,content_corrections:correctionMap.get(a.id)||[],reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
 });
 const metadata={format:'completion-overlay-v1',date:'2026-10-04',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
 metadata.content_corrections=corrections.records.length;
 metadata.reading_materials=reading.metadata;
+metadata.source_search_logs={record_count:sourceSearch.records.length,metadata:sourceSearch.metadata};
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);
