@@ -397,6 +397,11 @@
         "count": 77
       },
       {
+        "file": "research/issues-source-reading-round25.json",
+        "sha256": "ec8d7744ba5fd066ce1947e73bdc43ed5ca5f6264e6bb0fcd430b90452333e6c",
+        "count": 68
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -450,9 +455,19 @@
         "file": "research/spatial-reading-round11.json",
         "sha256": "48fc6d499cfbbf78e44404934be2f4a9e80c757b2082b88b4c624e2486cb4b1f",
         "count": 34
+      },
+      {
+        "file": "research/spatial-reading-round12.json",
+        "sha256": "24374abe774249322e470ddeaa6806f25cec17749ddc60c0c126bfaf93ca6c4d",
+        "count": 26
+      },
+      {
+        "file": "research/spatial-reading-round13.json",
+        "sha256": "7d92db0beaf0f37c24688f0c64c5a42da0b92fcad2a300b771334a1d12ee9a07",
+        "count": 27
       }
     ],
-    "knowledge_added": 2990,
+    "knowledge_added": 3058,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -484,6 +499,7 @@
     "library_missing_year_candidates": 65,
     "note": "知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。",
     "content_corrections": 1,
+    "issue_corrections": 1,
     "reading_materials": {
       "provider": "Open Library",
       "method": "official-monthly-work-dump-filter-v1",
@@ -505,12 +521,12 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 1671,
+      "record_count": 1740,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 1671,
+        "record_count": 1740,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -2333,6 +2349,109 @@
               "priority_rank_start": 294,
               "priority_rank_end": 360
             }
+          },
+          {
+            "file": "root-fast-round7-log.json",
+            "sha256": "cebb4cc56d5017a69e50433cf7b5994b59c745bc298b9ba22c21d2ff8a0a0a21",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "lane": 0,
+              "method": "easy-first-local-corresponding-synopsis-v1",
+              "source_commit": "e8b319853acd99025be04bfb24babf6426913579",
+              "source_snapshot_sha256": "157826adf35c68fd7a499872ebf4d883b300333370b25cc6dd31dd3d4b82c2a7",
+              "record_count": 10,
+              "facet_count": 28,
+              "attempted_count": 10,
+              "deferred_count": 0,
+              "fast_lane_indices_processed": [
+                80,
+                89
+              ],
+              "next_fast_lane_index": 90,
+              "original_fulltext_read_count": 0,
+              "scope": "10份社区简介逐份完整读取，以明示前提归类，不补秘密、结局或原作正文；无额外网络查询。"
+            }
+          },
+          {
+            "file": "global-recent-round9-log.json",
+            "sha256": "e2202e3f962655544cc0652ba483f7f130b8f986f06166cedcac0389073a55a2",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "逐份实际读官方2026-09-30 OL work dump社区维护简介，保留记录SHA；不足时单轮精准检索，以实际读到的明确出版简介/作者访谈/书评补充，逐URL注明范围。两次非有益尝试后延后。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "8d0168b6e9b1d27907d05a0c5b7356aba6c922a6a7a50b38a887354e8c133c92",
+              "starts_at_fast_index": 100,
+              "record_count": 20,
+              "facet_count": 40,
+              "attempted_count": 20,
+              "deferred_count": 0,
+              "skipped_existing_count": 0,
+              "frozen_source_snapshot_sha256": "157826adf35c68fd7a499872ebf4d883b300333370b25cc6dd31dd3d4b82c2a7",
+              "fast_indices_processed": [
+                100,
+                119
+              ],
+              "next_fast_index": 120,
+              "validation": "逐ID原lane所有权、当前缺口、原身份、合法议题、两句解释、具体facet、逐OL记录SHA及未知空间检查；格式检查不代表独立书目核验。",
+              "network_scope": "15份分析仅OL社区简介；5份补充材料：A Matter of Profit为Kirkus评论，Free Lunch为PW评论加作者书目片段，Infinity Beach为正规图书平台的出版简介，Venus及Brown Girl为实际出版页简介。Venus另读授权悬赏/停补助短片段，原作全文0。本批20项均取得足够具体材料，无延后。",
+              "original_full_read_count": 0
+            }
+          },
+          {
+            "file": "modern-recent-round9-log.json",
+            "sha256": "d51122e4760e63b2b0ca80a9b8167164cf64af61b88bac05118264cf7c852972",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 18,
+              "deferred_count": 1,
+              "skip_existing_count": 1,
+              "community_dump_read_count": 18,
+              "additional_actual_search_read_count": 4,
+              "publisher_excerpt_read_count": 0,
+              "original_full_text_count": 0,
+              "scope": "18条实际社区记录SHA与OL ID；4条补实际官方/评论搜索返回。Nemesis无具体小说剧情延后；Mendoza重读库发现已补、保留新增评论日期疑点不修改。0原作全文核验。"
+            }
+          },
+          {
+            "file": "early-recent-round8-log.json",
+            "sha256": "4f9220cedf4d11277b1246158ed02b58b6537ada276419ec0c463e21512bf844",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "queue": "fast-first-lane-3.json",
+              "record_count": 20,
+              "facet_count": 58,
+              "attempted_count": 20,
+              "not_added_count": 0,
+              "verification_note": "易查优先：逐条实际读已取得OLdump精确对应简介；明确记录社区来源及record_sha256，不冒称出版社或全书核验。不足材料只做定向查读，延后难项。",
+              "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
+              "checkpoint_note": "20条/58个细分问题；逐条实际读精确对应OL社区简介，Moon’s Shadow/Spherical Harmonic补作者书介。Mocking Program出版社仅搜索一句、直接读页失败，补社区百科剧情并明示地点矛盾。无原作全读。",
+              "priority_rank_start": 363,
+              "priority_rank_end": 441
+            }
+          },
+          {
+            "file": "early-recent-content-corrections-round1.json",
+            "sha256": "ff21af76eebdcd3b89a67ea749a2e7750b4bd0b8a1b78e97c2e8549b44168e9d",
+            "metadata": {
+              "method": "source-reading-issue-correction-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "record_count": 1,
+              "facet_count": 3,
+              "scope_note": "只纠正Flashfire既有分析主语错误；保留旧冻结文件与身份，当前文学解释仍待独立核查。"
+            }
           }
         ],
         "updated_at": "2026-10-04",
@@ -2774,6 +2893,11 @@
         "file": "research/issues-source-reading-round24.json",
         "sha256": "1cb1d01713c0dc677ad4ba4b4b5056be3f164a19888fc1566718e85353937a3e",
         "count": 77
+      },
+      {
+        "file": "research/issues-source-reading-round25.json",
+        "sha256": "ec8d7744ba5fd066ce1947e73bdc43ed5ca5f6264e6bb0fcd430b90452333e6c",
+        "count": 68
       }
     ],
     "spatial_batches": [
@@ -2831,10 +2955,20 @@
         "file": "research/spatial-reading-round11.json",
         "sha256": "48fc6d499cfbbf78e44404934be2f4a9e80c757b2082b88b4c624e2486cb4b1f",
         "count": 34
+      },
+      {
+        "file": "research/spatial-reading-round12.json",
+        "sha256": "24374abe774249322e470ddeaa6806f25cec17749ddc60c0c126bfaf93ca6c4d",
+        "count": 26
+      },
+      {
+        "file": "research/spatial-reading-round13.json",
+        "sha256": "7d92db0beaf0f37c24688f0c64c5a42da0b92fcad2a300b771334a1d12ee9a07",
+        "count": 27
       }
     ],
-    "issue_facet_records": 2893,
-    "issue_facet_count": 7103
+    "issue_facet_records": 2961,
+    "issue_facet_count": 7281
   },
   "chunks": [
     "./assets/completion-index/000.json",

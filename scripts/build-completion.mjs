@@ -81,6 +81,23 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     knowledge.set(r.id,merged);
   }
 }
+// Explicit corrections replace a documented erroneous display assertion while
+// keeping every frozen input, old assertion and reading scope recoverable.
+let issueCorrections={records:[]};
+try{issueCorrections=await read('research/issue-corrections.json');}catch(error){if(error.code!=='ENOENT')throw error;}
+const correctedIssueIds=new Set();
+for(const correction of issueCorrections.records){
+ const prior=knowledge.get(correction.id),note=correction.correction_note;
+ if(!prior||correctedIssueIds.has(correction.id)||correction.verification_status!=='knowledge_added_unverified'||!note?.reason||!/^[-a-zA-Z0-9]+\.json$/.test(note.corrects_component||''))throw new Error('Invalid issue correction identity or target: '+correction.id);
+ const bytes=await readFile(new URL('research/issue-input-snapshots/'+note.corrects_component,root));
+ if(createHash('sha256').update(bytes).digest('hex')!==note.corrects_component_sha256)throw new Error('Issue correction target digest mismatch: '+correction.id);
+ const original=JSON.parse(bytes).records.find(r=>r.id===correction.id);
+ const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+ if(!original||!equal(correction.identity,original.identity)||!prior.assertions.some(a=>{const {input_file,...raw}=a;return equal(raw,original);})||!equal(Object.keys(correction.fields).sort(),['issue','issue_facets','topics'])||!equal(correction.fields.topics,original.fields.topics)||prior.fields.issue!==original.fields.issue||correction.fields.issue.length<30||correction.fields.issue_facets.length<2||correction.fields.issue_facets.some(f=>!f.label||!f.question||!f.basis)||!correction.source_evidence?.length||correction.source_evidence.some(e=>!correction.sources?.includes(e.url)||!e.support_scope)||Object.keys(correction.fields).some(k=>!correction.field_notes?.[k]))throw new Error('Issue correction must match an exact original assertion and scoped evidence: '+correction.id);
+ const remaining=(prior.fields.issue_facets||[]).filter(f=>!original.fields.issue_facets.some(old=>equal(f,old)));
+ knowledge.set(correction.id,{...prior,fields:{...prior.fields,issue:correction.fields.issue,issue_facets:[...remaining,...correction.fields.issue_facets]},field_notes:{...prior.field_notes,issue:correction.field_notes.issue,issue_facets:correction.field_notes.issue_facets},sources:[...new Set([...prior.sources,...correction.sources])],assertions:[...prior.assertions,{input_file:'research/issue-corrections.json',...correction}],corrections:[...(prior.corrections||[]),correction],superseded_issue_fields:[...(prior.superseded_issue_fields||[]),{input_file:note.corrects_component,sha256:note.corrects_component_sha256,fields:original.fields,reason:note.reason}]});
+ correctedIssueIds.add(correction.id);
+}
 // Explicit subject headings generate navigation candidates only. Never infer
 // plot duration, location or scientific plausibility from a heading or title.
 const rules=[
@@ -127,6 +144,7 @@ const records=audit.records.map(a=>{
 });
 const metadata={format:'completion-overlay-v1',date:'2026-10-04',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
 metadata.content_corrections=corrections.records.length;
+metadata.issue_corrections=issueCorrections.records.length;
 metadata.reading_materials=reading.metadata;
 metadata.source_search_logs={record_count:sourceSearch.records.length,metadata:sourceSearch.metadata};
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
