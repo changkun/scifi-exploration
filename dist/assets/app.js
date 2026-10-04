@@ -1,6 +1,6 @@
 import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs';
 import {mountUniverse} from './universe.mjs';
-import {mountChronology} from './chronology.mjs';
+import {mountChronology} from './chronology.mjs?v=round4-context';
 import {mountBibliography} from './bibliography.mjs';
 import {mountTaxonomy} from './taxonomy.mjs';
 import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs';
@@ -26,14 +26,15 @@ function saveComparison(){try{localStorage.setItem('sf-atlas-comparison',JSON.st
 function updateFilters(){for(const key of ['level','space','yearStatus','audit','missing','issueStatus','facet'])$(`global-${key}`).value=state[key];$('global-search').value=state.query;for(const key of Object.keys(filterNames))$(`filter-${key}`).value=state[key];$('search-input').value=state.query;$('include-boundary').checked=state.boundary;$('chronology-boundary').checked=state.boundary;$('sort').value=state.sort;}
 function syncVisuals(){
  const filtered=filterWorks(works,state);
+ const scopeSelections=Object.entries(state).filter(([key,value])=>value&&['query','topic','branch','duration','science','language','form','level','space','genre','type','audit','missing','issueStatus','facet','yearStatus','era'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);return `${({query:'搜索',level:'研究层级',space:'空间',yearStatus:'年份状态',audit:'核对状态',missing:'缺失字段',issueStatus:'议题分析',facet:'细分议题',genre:'来源分支',type:'来源类型',...filterNames})[key]}：${control?.selectedOptions?.[0]?.textContent||value}`;});
  universe?.update(filtered,state.topic);universe?.setZone(state.space||'all');
- chronology?.update(filterWorks(works,{...state,yearMin:null,yearMax:null}));
+ chronology?.update(filterWorks(works,{...state,yearMin:null,yearMax:null}),{works:filterWorks(works,{...DEFAULT_STATE,boundary:state.boundary}),label:scopeSelections.length?`当前条件：${scopeSelections.join('；')}`:'当前条件：全部记录'});
  if(state.yearStatus==='unknown')chronology?.setUnknown();else chronology?.setRange(state.yearMin,state.yearMax);
  bibliography?.update(filtered,sourceMetadata,state,works);if(genreGraph)taxonomy?.update(genreGraph,filtered);
- $('chronology-filter-status').textContent=`统一底库当前 ${filtered.length.toLocaleString('zh-CN')} 条；所有视图共用筛选。`;
+ $('chronology-filter-status').textContent=`当前匹配 ${filtered.length.toLocaleString('zh-CN')} / 底库 ${works.length.toLocaleString('zh-CN')} 条${state.space?` · 空间：${$('global-space').selectedOptions[0]?.textContent}`:''}；所有视图共用筛选。`;
  renderThemes(filtered);
  $('global-count').textContent=`${filtered.length.toLocaleString('zh-CN')} / ${works.length.toLocaleString('zh-CN')} 条`;
- $('global-active').innerHTML=Object.entries(state).filter(([key,value])=>value&&['topic','branch','era','duration','science','language','form','genre','type','yearMin','yearMax','audit','missing','issueStatus','facet'].includes(key)).map(([key,value])=>`<button data-clear="${key}">${escape(key==='missing'?FIELD_LABELS[value]:key==='audit'?$('global-audit').selectedOptions[0]?.textContent:key==='issueStatus'?$('global-issueStatus').selectedOptions[0]?.textContent:value)} ×</button>`).join('');
+ $('global-active').innerHTML=Object.entries(state).filter(([key,value])=>value&&['query','level','space','yearStatus','topic','branch','era','duration','science','language','form','genre','type','yearMin','yearMax','audit','missing','issueStatus','facet'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);const label=key==='missing'?FIELD_LABELS[value]:control?.selectedOptions?.[0]?.textContent||value;const prefix=({query:'搜索：',level:'研究层级：',space:'空间：',yearStatus:'年份状态：'})[key]||'';return `<button data-clear="${key}" aria-label="移除筛选：${escape(prefix+label)}">${escape(prefix+label)} ×</button>`;}).join('');
 }
 function renderLibrary(){
  const filtered=filterWorks(works,state),pageCount=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
@@ -88,6 +89,7 @@ function showComparison(){
 function showToast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
 function applyFilter(key,value){closeWork();if($('comparison-dialog').open)$('comparison-dialog').close();state[key]=['yearMin','yearMax'].includes(key)?(value===''?null:Number(value)):value;if(key==='era'&&value){state.yearStatus='';state.yearMin=null;state.yearMax=null;}state.page=1;location.hash='library';renderNavigation();updateFilters();renderLibrary();$('library-view').scrollIntoView({behavior:'smooth',block:'start'});}
 function resetFilters(){state={...SITE_DEFAULT_STATE,layout:state.layout};updateFilters();renderLibrary();}
+function clearFilter(key){closeWork();state[key]=['yearMin','yearMax'].includes(key)?null:'';state.page=1;updateFilters();renderLibrary();}
 function registerEvents(){
  for(const key of ['level','space','yearStatus','audit','missing','issueStatus','facet'])$(`global-${key}`).addEventListener('change',e=>{state[key]=e.target.value;if(key==='yearStatus'&&state[key]==='unknown'){state.yearMin=null;state.yearMax=null;state.era='';}state.page=1;updateFilters();renderLibrary();});
  let searchTimer;$('global-search').addEventListener('input',e=>{clearTimeout(searchTimer);const value=e.target.value;searchTimer=setTimeout(()=>{state.query=value;state.page=1;updateFilters();renderLibrary();},150);});$('global-reset').addEventListener('click',resetFilters);
@@ -97,7 +99,7 @@ function registerEvents(){
  for(const id of ['include-boundary','chronology-boundary'])$(id).addEventListener('change',e=>{state.boundary=e.target.checked;state.page=1;updateFilters();renderLibrary();});$('sort').addEventListener('change',e=>{state.sort=e.target.value;state.page=1;renderLibrary();});$('reset-filters').addEventListener('click',resetFilters);$('chronology-reset').addEventListener('click',resetFilters);
  for(const layout of ['cards','table'])$(`${layout}-toggle`).addEventListener('click',()=>{state.layout=layout;renderLibrary();});
  for(const direction of ['previous','next'])$(`${direction}-page`).addEventListener('click',()=>{state.page+=direction==='next'?1:-1;renderLibrary();$('search-form').scrollIntoView({behavior:'smooth',block:'start'});});
- document.addEventListener('click',e=>{const target=e.target.closest('button');if(!target)return;if(target.dataset.work){if(!target.closest('#universe-root,#chronology-root'))openWork(target.dataset.work);}else if(target.dataset.compare)toggleCompare(target.dataset.compare);else if(target.dataset.filter)applyFilter(target.dataset.filter,target.dataset.value);else if(target.dataset.clear)applyFilter(target.dataset.clear,'');else if(target.hasAttribute('data-clear-years')){state.yearMin=null;state.yearMax=null;state.page=1;renderLibrary();}else if(target.hasAttribute('data-reset'))resetFilters();});
+ document.addEventListener('click',e=>{const target=e.target.closest('button');if(!target)return;if(target.dataset.work){if(!target.closest('#universe-root,#chronology-root'))openWork(target.dataset.work);}else if(target.dataset.compare)toggleCompare(target.dataset.compare);else if(target.dataset.filter)applyFilter(target.dataset.filter,target.dataset.value);else if(target.dataset.clear)clearFilter(target.dataset.clear);else if(target.hasAttribute('data-clear-years')){state.yearMin=null;state.yearMax=null;state.page=1;renderLibrary();}else if(target.hasAttribute('data-reset'))resetFilters();});
  $('close-work').addEventListener('click',closeWork);$('work-dialog').addEventListener('cancel',()=>{selectedWork='';updateURL();});$('close-comparison').addEventListener('click',()=>$('comparison-dialog').close());
  for(const id of ['work-dialog','comparison-dialog'])$(id).addEventListener('click',e=>{if(e.target===$(id)){const r=$(id).getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom){id==='work-dialog'?closeWork():$(id).close();}}});
  $('clear-comparison').addEventListener('click',()=>{compareIds=[];updateComparison();});$('open-comparison').addEventListener('click',showComparison);

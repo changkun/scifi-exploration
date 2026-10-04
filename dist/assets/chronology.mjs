@@ -38,6 +38,16 @@ function prepareWorks(input) {
   });
 }
 
+export function chronologyEraCounts(works) {
+  const counts = Array(ERAS.length).fill(0);
+  for (const { year } of prepareWorks(works)) {
+    if (year === null) continue;
+    const index = ERAS.findIndex(era => (era.min === null || year >= era.min) && (era.max === null || year <= era.max));
+    if (index >= 0) counts[index]++;
+  }
+  return counts;
+}
+
 /**
  * Publication chronology for the complete canonical catalog or a current subset.
  * Annual density uses all dated records supplied to this instance; unknown dates
@@ -58,7 +68,8 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
       <div><span class="chronology-kicker">PUBLICATION CHRONOLOGY / 09 ERAS</span><h2 id="${uid}-heading">科幻的时间长廊</h2><p>按来源发表年与研究纪年浏览。这里展示作品被发表或登记的时间；连载、版本和约年差异见详情。</p></div>
       <div class="chronology-readout"><strong data-role="count">0</strong><span>条当前记录</span><small data-role="extent"></small></div>
     </header>
-    <div class="chronology-era-guide"><span>01 / 时代导航</span><p>九段分期用于导览。末段包含 2026、2027 等全部较晚年份；未知年单独列出。名称不代替作品分支。</p></div>
+    <div class="chronology-era-guide"><span>01 / 时代导航</span><p>每段同时显示当前条件匹配数与底库数。0 个匹配只表示当前条件没有命中；空间待分类的记录不进入具体空间筛选。末段包含全部较晚年份，未知年单独列出。</p></div>
+    <p class="chronology-scope" data-role="scope" role="status"></p>
     <div class="chronology-era-scroll" tabindex="0" aria-label="九个时代，可横向滚动"><div class="chronology-eras" data-role="eras"></div></div>
     <div class="chronology-unknown"><button type="button" data-action="unknown-year" aria-pressed="false"><span>年份未知</span><strong data-role="unknown-count">0</strong><small>条</small></button><p data-role="known-summary"></p></div>
     <form class="chronology-range" data-role="range-form">
@@ -80,6 +91,7 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
   const el = role => root.querySelector(`[data-role="${role}"]`);
   const action = name => root.querySelector(`[data-action="${name}"]`);
   let source = prepareWorks(works), range = { min: null, max: null }, unknownOnly = false, page = 0, selectedId = '', destroyed = false;
+  let contextWorks = works, scopeLabel = '全部记录';
   let visible = [], annual = [], focusYear = null, hoverYear = null, graphWidth = 0, frame = null;
   const reducedMotion = () => view?.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   const visibleWorks = () => source.filter(({ year }) => {
@@ -90,16 +102,13 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
   const rangeLabel = () => unknownOnly ? '仅显示年份未知的记录' : range.min === null && range.max === null ? '当前未限制发表时间；未知年份保留在列表末尾' : `${range.min === null ? '不限开始' : yearLabel(range.min)} — ${range.max === null ? '不限结束' : yearLabel(range.max)}；未知年不在范围内`;
 
   function renderEras() {
-    const counts = Array(ERAS.length).fill(0);
-    for (const { year } of source) {
-      if (year === null) continue;
-      const index = ERAS.findIndex(era => (era.min === null || year >= era.min) && (era.max === null || year <= era.max));
-      if (index >= 0) counts[index]++;
-    }
+    const counts = chronologyEraCounts(source.map(item => item.work));
+    const totals = chronologyEraCounts(contextWorks);
+    el('scope').textContent = `${scopeLabel} · 底库数仅沿用“包含前史与边界参照”的选择，移除其余筛选；记录数不代表全球出版总量。`;
     const maximum = Math.max(1, ...counts);
     el('eras').innerHTML = ERAS.map((era, index) => {
       const active = !unknownOnly && range.min === era.min && range.max === era.max;
-      return `<article class="chronology-era${active ? ' is-active' : ''}"><button type="button" data-era="${era.id}" aria-pressed="${active}" aria-label="筛选 ${era.label}，输入数据中 ${counts[index]} 条记录"><span class="chronology-era-number">${String(index + 1).padStart(2, '0')}</span><strong>${era.label}</strong><span>${era.short}</span><div class="chronology-era-meter" aria-hidden="true"><i style="width:${counts[index] / maximum * 100}%"></i></div><small><b>${counts[index].toLocaleString('zh-CN')}</b> 条记录</small></button></article>`;
+      return `<article class="chronology-era${active ? ' is-active' : ''}"><button type="button" data-era="${era.id}" aria-pressed="${active}" aria-label="筛选 ${era.label}，当前条件匹配 ${counts[index]} 条，底库 ${totals[index]} 条"><span class="chronology-era-number">${String(index + 1).padStart(2, '0')}</span><strong>${era.label}</strong><span>${era.short}</span><div class="chronology-era-meter" aria-hidden="true"><i style="width:${counts[index] / maximum * 100}%"></i></div><small><b>${counts[index].toLocaleString('zh-CN')}</b> 条匹配<br>底库 ${totals[index].toLocaleString('zh-CN')} 条</small></button></article>`;
     }).join('');
   }
 
@@ -314,7 +323,7 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
   if (!resizeObserver) view?.addEventListener('resize', schedulePlot);
   render();
   return {
-    update(nextWorks) { if (!destroyed) { source = prepareWorks(nextWorks); render(); } },
+    update(nextWorks, context = {}) { if (!destroyed) { source = prepareWorks(nextWorks); contextWorks = context.works ?? nextWorks; scopeLabel = context.label || '全部记录'; render(); } },
     setRange(min, max, { silent = true } = {}) {
       if (destroyed) return;
       const from = min == null ? null : numberOrNull(min), to = max == null ? null : numberOrNull(max);
