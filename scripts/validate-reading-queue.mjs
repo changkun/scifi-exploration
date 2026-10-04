@@ -1,7 +1,7 @@
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
 import assertStrict from 'node:assert/strict';
-import {sourceSearchDetail} from '../dist/assets/completion.mjs';
+import {sourceSearchDetail,hasSourceAttempt} from '../dist/assets/completion.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [canonical,queue,materials]=await Promise.all(['research/canonical-universe.json.gz','research/issue-research-queue.json.gz','research/reading-materials.json.gz'].map(read));
 const assert=(ok,note)=>{if(!ok)throw new Error(note);console.log('PASS '+note);};
@@ -23,7 +23,7 @@ assert(revised.every(w=>w.content_corrections.every(c=>w.source_first_year===c.o
 assert(revised.every(w=>w.content_corrections.every(c=>w.sources.includes(c.source_url)&&c.inspection_method&&c.support_scope)),'日期更正保留实际查读范围与一手链接');
 const searchLogs=JSON.parse(await readFile(new URL('research/issue-source-searches.json',root),'utf8'));
 const logged=canonical.works.filter(w=>w.source_search_log);
-assert(logged.length===searchLogs.records.length&&new Set(logged.map(w=>w.id)).size===logged.length,'实际检索记录逐身份归档，空记录不算查读');
+assert(logged.length===searchLogs.records.length&&new Set(logged.map(w=>w.id)).size===logged.length,'补充与查读过程逐身份归档，原始空查询记录保留');
 for(const r of searchLogs.records){
  const w=identities.get(r.id),q=queue.records.find(q=>q.id===r.id);
  assertStrict.deepEqual(w.source_search_log,{input_file:'research/issue-source-searches.json',log_date:searchLogs.metadata.created_at,...r});
@@ -31,8 +31,11 @@ for(const r of searchLogs.records){
 }
 assert(true,'检索词、材料入口、失败结果与未确认原因完整进入底库及下载队列');
 assert(logged.every(w=>!w.completion.source_verified)&&canonical.metadata.source_search_logs.record_count===logged.length,'阅读或失败日志不升级为整条核验，归档数量可复算');
-assert(logged.every(w=>{const html=sourceSearchDetail(w);return html.includes('实际检索与阅读记录')&&html.includes('当次仍待确认')&&html.includes('当次后续计划')&&w.source_search_log.materials_checked.every(m=>html.includes(m.url.replaceAll('&','&amp;')));})&&sourceSearchDetail({source_search_log:null})==='','详情显示实际阅读边界与材料链接，不为无日志条目生成过程');
+assert(logged.every(w=>{const html=sourceSearchDetail(w);return html.includes(hasSourceAttempt(w.source_search_log)?'实际检索与阅读记录':'补充与待核过程记录')&&html.includes('当次仍待确认')&&html.includes('当次后续计划')&&w.source_search_log.materials_checked.every(m=>html.includes(m.url.replaceAll('&','&amp;')));})&&sourceSearchDetail({source_search_log:null})==='','详情显示实际阅读边界与材料链接，不为无日志条目生成过程');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 assert(logged.every(w=>{const r=w.source_search_log,html=sourceSearchDetail(w);return (!r.reading_scope||html.includes(esc(r.reading_scope)))&&r.materials_checked.every(m=>!m.reading_scope||html.includes(esc(m.reading_scope)))&&(r.previous_attempts||[]).every(a=>html.includes(esc(a.reason_unconfirmed)));}),'新读取范围和较早失败原因同时可见，历史过程不被覆盖');
 const unsafe={source_search_log:{log_date:'2026-10-04',queries:[],materials_checked:[],reading_scope:'<script>alert(1)</script>',reason_unconfirmed:'<img src=x>',next_step:'<svg>',previous_attempts:[{reason_unconfirmed:'<iframe>',next_step:'<object>'}]}};
 assert(!/<(?:script|img|svg|iframe|object)[ >]/.test(sourceSearchDetail(unsafe)),'阅读范围和历史说明中的外部文本按普通文字显示');
+
+assert(!hasSourceAttempt({queries:[],materials_checked:[]})&&hasSourceAttempt({queries:['exact title'],materials_checked:[]})&&hasSourceAttempt({queries:[],materials_checked:[{url:'https://example.com'}]})&&hasSourceAttempt({queries:[],materials_checked:[],previous_attempts:[{queries:['earlier search']}]})&&!sourceSearchDetail(unsafe).includes('<h3>实际检索与阅读记录</h3>'),'没有实际查询和材料读取的过程不算实际查读，历史尝试仍保留');
+assert(canonical.metadata.source_search_logs.actual_source_attempt_count===logged.filter(w=>hasSourceAttempt(w.source_search_log)).length&&canonical.metadata.source_search_logs.process_without_source_attempt_count===logged.filter(w=>!hasSourceAttempt(w.source_search_log)).length,'实际查读与仅补充或身份处理分别统计且可复算');

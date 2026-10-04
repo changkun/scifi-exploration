@@ -147,7 +147,8 @@ const metadata={format:'completion-overlay-v1',date:'2026-10-04',record_count:re
 metadata.content_corrections=corrections.records.length;
 metadata.issue_corrections=issueCorrections.records.length;
 metadata.reading_materials=reading.metadata;
-metadata.source_search_logs={record_count:sourceSearch.records.length,metadata:sourceSearch.metadata};
+const hasSourceAttempt=r=>!!r&&(!!r.queries?.length||!!r.materials_checked?.length||(r.previous_attempts||[]).some(hasSourceAttempt));
+metadata.source_search_logs={record_count:sourceSearch.records.length,actual_source_attempt_count:sourceSearch.records.filter(hasSourceAttempt).length,process_without_source_attempt_count:sourceSearch.records.filter(r=>!hasSourceAttempt(r)).length,metadata:sourceSearch.metadata};
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
 metadata.spatial_batches=knowledgeInputs.filter(i=>spatialInputs.includes(i.file));
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
