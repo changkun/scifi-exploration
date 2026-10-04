@@ -1,0 +1,812 @@
+{
+  "metadata": {
+    "method": "actual-reading-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "record_count": 17,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/shusterman-source-searches-round18.json",
+        "sha256": "16edf189d4987d77c6917e6d1734d8c4030dee478c119caa85a8ce61f1391fb4",
+        "metadata": {
+          "round": 18,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-reading-log-v1",
+          "frozen_at": "2026-10-04",
+          "record_count": 5
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round19-log.json",
+        "sha256": "d9044928110e54388cb77a1a273bf684b3d90b9743feffc45ad85460eecf0844",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round19",
+          "record_count": 2,
+          "facet_count": 0,
+          "note": "第十九轮真实检索/读取范围冻结：两篇单篇原刊正文全部已读；目录、web失败展示、常规下载及新版公开预览分开。后续查读写新轮，不改此日志。",
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round20-log.json",
+        "sha256": "fb15e2c2b062822438027f1c71b29093ba01123dd8925be2d92e60df1eecbe4f",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round20",
+          "record_count": 2,
+          "facet_count": 0,
+          "note": "第二十轮实际查读日志冻结：Alaree和One-Way Journey原刊单篇全文读完；目录定位、web展示失败、正常公开下载和正文范围分开，未读材料不冒充已读。下一轮另写新文件。",
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round21-log.json",
+        "sha256": "6c2ed824aa3c5680241193884440e31de5b9b7d0cceab5afccf07711efcbac19",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round21",
+          "record_count": 2,
+          "facet_count": 0,
+          "note": "第二十一轮冻结日志：两篇原刊单篇正文全读；正常下载与web验证页、单篇正文与合集介绍分开，OCR漏栏已以图像补读。",
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/bacigalupi-source-searches-round18.json",
+        "sha256": "7a19fdb89f7eb259d4f36b0ae9d478edcc3565441c1b4dfe1c698ddcb9beb605",
+        "metadata": {
+          "round": 18,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-reading-log-v1",
+          "frozen_at": "2026-10-04",
+          "record_count": 6
+        }
+      }
+    ],
+    "note": "实际查询、直接打开、失败资料与具体读取范围保留，不把下载当全书阅读。"
+  },
+  "records": [
+    {
+      "id": "Q7897829",
+      "identity": {
+        "title": "UnWind",
+        "author": "尼爾·舒斯特曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Neal Shusterman The Dark Side of Nowhere publisher Unwind synopsis",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:simonandschuster.com/books/Unwind/Neal-Shusterman \"About the Book\"",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/Unwind/Neal-Shusterman/Unwind-Dystology/9781416912040",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方确切第一卷简介与官方阅读导读",
+          "reading_scope": "实际读简介与导读518–575，身份争议、角色、营地音乐、产业与CyFi脑片信息；未读原作或观看/听取视频音频。2007书目首版与故事年份分开。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2007第一部长篇UnWind，不是后续系列整体。实际读出版方简介和导读，未读小说全文。页面简介有Conner/Rita拼写，而同页导读明确Connor/Risa，分析采用导读；不修改底库题名。导读明确小说未给确切故事年份，因此本轮不补年份。 文学解释仍待独立核对。",
+      "next_step": "逐章核对确切长篇的角色、行动与版本；补未读取部分，保留导读与原文证据区别。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q18208738",
+      "identity": {
+        "title": "The Dark Side of Nowhere",
+        "author": "尼爾·舒斯特曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Neal Shusterman The Dark Side of Nowhere publisher Unwind synopsis",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:simonandschuster.com/books/The-Dark-Side-of-Nowhere/Neal-Shusterman",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-Dark-Side-of-Nowhere/Neal-Shusterman/9781442422810",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方简介与授权第一章节选",
+          "reading_scope": "实际连续读486–552，第1章NOWHERE FAST完整网页节选，含Jason对Ethan被报死亡的反应、Grant暗示、葬礼与每月注射；这只是一章，不是整部。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://d28hgpri8am2if.cloudfront.net/tagged_assets/13003_the%20dark%20side%20of%20nowhere_cg.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方链接的4页教学导读",
+          "reading_scope": "实际读四页0–115：剧情概要、身份与能力、Grant训练、反馈循环、父亲寓言与最后站在人类一边；材料是导读，不是原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应1997长篇，所读网页是2012再版，不改底库年份。实际读官方第1章节选与4页教学导读，未读完整小说。开篇Ethan死亡是人物得到的说明，不据节选把全部身份秘密当已解；结束前的选择按导读限定，不虚构之后世界事件。 文学解释仍待独立核对。",
+      "next_step": "逐章核对确切长篇的角色、行动与版本；补未读取部分，保留导读与原文证据区别。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q48967442",
+      "identity": {
+        "title": "死神之弓",
+        "author": "尼爾·舒斯特曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "site.simonandschuster.com Neal Shusterman Scythe Thunderhead The Toll books",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:simonandschuster.com/books/Scythe/Neal-Shusterman \"About the Book\"",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/Scythe/Neal-Shusterman/Arc-of-a-Scythe/9781442472426",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第一卷简介与官方阅读导读",
+          "reading_scope": "实际读219–223、507–541：人口前提、不情愿学徒、决选、职业语言、共同责任及传统/名人收割者；未读原作节选或阅读全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2016第一部长篇《死神之弓》，不是整个Arc of a Scythe或续作。实际读出版社简介与确切第一卷导读，未读此页原作节选或整本小说。讨论问题属于可修订解释，不把导读提出的问题当作唯一答案。 文学解释仍待独立核对。",
+      "next_step": "逐章核对确切长篇的角色、行动与版本；补未读取部分，保留导读与原文证据区别。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q102045421",
+      "identity": {
+        "title": "Thunderhead",
+        "author": "尼爾·舒斯特曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "site.simonandschuster.com Neal Shusterman Scythe Thunderhead The Toll books",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/Thunderhead/Neal-Shusterman/Arc-of-a-Scythe/9781442472457",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第二卷简介与官方阅读导读",
+          "reading_scope": "实际读219–225、564–604：不能干预、Rowan行动、Anastasia选择方式与准备时间、Citra的概率判断及系统自述；导读是本卷辅助资料，不是全文核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2018第二部长篇Thunderhead，第一卷学徒经历仅作已明示的前史；第三卷消息中介、星际出路和最后制度结果不移入。实际读官方简介与阅读导读，未读本页小说节选或整本小说；角色自称正确与解释判断分开。 文学解释仍待独立核对。",
+      "next_step": "逐章核对确切长篇的角色、行动与版本；补未读取部分，保留导读与原文证据区别。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q110716546",
+      "identity": {
+        "title": "The Toll",
+        "author": "尼爾·舒斯特曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "site.simonandschuster.com Neal Shusterman Scythe Thunderhead The Toll books",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-Toll/Neal-Shusterman/Arc-of-a-Scythe/9781481497077",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第三卷简介、授权开篇演说与官方阅读导读",
+          "reading_scope": "实际读218–224、489–499的完整网页演说节选及512–550导读，采用配额、错误归罪、Greyson、Jeri与太空研究的明示信息；仅片段和导读，不是原作整部。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2019第三部长篇The Toll，页面所列2020为此口袋再版，不改首版年份。实际读官方开篇就职演说节选与本卷导读，未读完整小说或出航结尾；不能把Goddard的自辩当事实。分卷独立，未借后来的Gleanings选篇。 文学解释仍待独立核对。",
+      "next_step": "逐章核对确切长篇的角色、行动与版本；补未读取部分，保留导读与原文证据区别。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q17631915",
+      "identity": {
+        "title": "The Silent Colony",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Silent Colony\" Silverberg Future October 1954 original",
+          "result": "定位作者说明、选集公开预览与原刊书目入口；检索结果不单独充当正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/FUT.htm",
+          "material_type": "公共扫描目录",
+          "location": "OCT. 1954链接",
+          "result": "实际打开网页并读取HTML中的扫描链接。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p111–113/PDF111–113",
+          "result": "web点击内部错误；常规公开下载成功。全部三页正文按双栏OCR读完，题名署名/结尾视觉复核。"
+        },
+        {
+          "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+          "material_type": "新版作者说明与原作预览",
+          "location": "网页1211–1280，1281起为下一篇",
+          "result": "实际打开、阅读全文及作者对本篇说明；公开显示原作结尾，无需登录。"
+        }
+      ],
+      "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。",
+      "issue_result": "added_3_fields_3_facets_unverified",
+      "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
+      "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。"
+    },
+    {
+      "id": "Q17631646",
+      "identity": {
+        "title": "The Artifact Business",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Artifact Business\" \"Silverberg\" \"April 1957\" original",
+          "result": "定位原刊书目与目录；评论检索结果不作剧情依据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/FU.htm",
+          "material_type": "公共原刊扫描目录",
+          "location": "APRIL 1957链接",
+          "result": "实际打开网页并读HTML，取得精确PDF链接。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1957_04.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p40–50/PDF42–52",
+          "result": "web点击返回Cache miss；普通公开下载成功。双栏OCR辅助全文读完，标题署名及结尾视觉核见。"
+        }
+      ],
+      "reading_scope": "单篇印刷p40–50全部正文；最初PDF40–41为上一篇结尾，PDF53–54为后文文章，明确排除。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学分析待独立核对；未逐字校勘原刊OCR，叙述者的历史观与正当化话语不视为作者直接主张。",
+      "next_step": "冻结可独立接入；不将叙事内方法细节作为现实造假操作说明。"
+    },
+    {
+      "id": "Q17621098",
+      "identity": {
+        "title": "Alaree",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊扫描目录",
+          "result": "实际读SATURN MARCH 1958/INFINITY NOV. 1957链接，非情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SA_1958_03.pdf",
+          "material_type": "原刊扫描",
+          "result": "web PDF打开成功但截图Cache miss；常规公开下载成功。双栏OCR辅助完整单篇读至The End，p95署名、p107–108死亡与结尾另视觉核见。",
+          "location": "印刷/PDF p95–108"
+        }
+      ],
+      "reading_scope": "全部1958单篇p95–108；末页发行声明、p109下一篇不混入；未逐字校勘全部OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；死亡机制来自船长总结，不升格为科学事实，原刊中的群体心智与人类独立差异不自动映射现实群体。",
+      "next_step": "可在自然检查点冻结；余下一篇继续实际读取。"
+    },
+    {
+      "id": "Q17640558",
+      "identity": {
+        "title": "One-Way Journey",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊扫描目录",
+          "result": "实际读SATURN MARCH 1958/INFINITY NOV. 1957链接，非情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1957_11.pdf",
+          "material_type": "原刊扫描",
+          "result": "web点击Cache miss；普通公开下载成功。p47–64正文双栏OCR辅助顺序读完，p46署名及p63–64诊断/结尾视觉核见。",
+          "location": "印刷/PDF p46–64，p46标题插图，p47起正文"
+        }
+      ],
+      "reading_scope": "全部单篇正文p47–64；p46为标题插图已看，末页广告及p65下一篇明确排除，未逐字校勘全部OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；作品内出生记忆与药物治疗理论不当现实临床依据，结尾表示返航但未写抵达地球。",
+      "next_step": "自然检查点冻结后可合入，其他缺口继续新轮。"
+    },
+    {
+      "id": "Q23021213",
+      "identity": {
+        "title": "Halfway House",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Halfway House\" \"Robert Silverberg\" \"1966\" magazine",
+          "result": "找到If 1966-11原刊扫描及目录。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Halfway House\" \"Silverberg\" original story text",
+          "result": "找到同一原刊，评论/翻译检索结果未代替英文正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://galacticjourney.org/stories/1966%2C%2011%20%28November%29%2C%20If.pdf",
+          "material_type": "公开原刊扫描/正文一手",
+          "location": "印刷/PDF p100–109",
+          "result": "web open显示机器人验证页面；常规公开URL下载实际获得PDF，未提供验证凭据或绕过动作。原刊文本层完整顺序读完，标题/结尾视觉核见。"
+        }
+      ],
+      "reading_scope": "1966单篇10页全文至END；音乐唱片广告明确排除，未逐字校勘所有OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对；不推断商人实际返乡自尽或任期结束后剧情。",
+      "next_step": "冻结可独立接入，其他作品继续查读。"
+    },
+    {
+      "id": "Q17633021",
+      "identity": {
+        "title": "The Songs of Summer",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Songs of Summer\" \"Silverberg\" original story 1956",
+          "result": "定位1956-09原刊与作者新版介绍，剧情摘要不作正文替代。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"The Songs of Summer\" \"Silverberg\" \"June\"",
+          "result": "作者叙述的写作时间与出版年分开，现有日期不改。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊目录",
+          "result": "实际读HTML中SFS SEPT.1956链接，取得原刊URL。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1956_09.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p3–18/PDF5–20",
+          "result": "正常公开下载成功，16页正文按双栏完整实际读完；p3标题/署名，p14与p17–18结尾视觉核见。目录底部出版栏September1956，顶端日期印迹有歧义，不按OCR改纪年。"
+        },
+        {
+          "url": "https://www.everand.com/book/314603195/The-Robert-Silverberg-Science-Fiction-MEGAPACK",
+          "material_type": "新版公开出版与作者介绍",
+          "location": "Publisher Note和作者Introduction",
+          "result": "实际打开，作者提到收录本篇；只作身份辅助，预览没有本篇正文，不称读完整合集。"
+        }
+      ],
+      "reading_scope": "原刊印刷p3–18/PDF5–20完整单篇至终止符；十二节各叙述者及最后共享意识全部实际读完，p14、p17–18视觉补核OCR漏栏；下期广告不混入。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对；人物计划不当实际发生，合集范围不扩大；未逐字校勘全篇OCR。",
+      "next_step": "当前冻结后继续其他确切作品。"
+    },
+    {
+      "id": "Q7735678",
+      "identity": {
+        "title": "The Gambler",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://pyrsamples.blogspot.com/2008/11/fast-forward-2-paolo-bacigalupis.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者链接的出版社授权单篇全文",
+          "reading_scope": "实际读正文10–295全篇，交叉填补164–169、268–270，内容至版权署名296；下方读者评论不作故事依据。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2008独立单篇；不是Pump Six合集成员。Pyr明确公开整篇，实际分段连续读正文10–295及作者说明5–7，不读下方380条评论。主人公为老挝流亡者，不写成缅甸人；结尾只有报道发布和开始获得读者，不补职业、居留或生态获救结果。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q7756657",
+      "identity": {
+        "title": "沙與礦渣世界的人",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "http://windupstories.com/books/pump-six-and-other-stories/people-of-sand-and-slag/",
+          "result": "internal_error",
+          "reading_scope": "作者链接访问失败；未用失败页面冒充已读，改读Baen授权样本。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348___3.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方授权确切单篇正文",
+          "reading_scope": "实际以重叠分段完整读4–489，包括补齐129–147、426–434及结尾440–489；仅本篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2004单篇，实际读出版方授权原文4–489全篇，非整部合集。Montana矿场与Hawaii旅行均明确；开篇Paris和Antarctic攻击是沉浸游戏，不当实际到达舞台。角色的进化、神性与科学自夸不当作者认可或现实生物学事实。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q8051691",
+      "identity": {
+        "title": "黃卡人",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Yellow Card Man\" Bacigalupi story summary review",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "http://www.nightshadebooks.com/Downloads/WindupStories.pdf",
+          "result": "internal_error",
+          "reading_scope": "原出版方所链接样本PDF未取得，不能称原作已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Yellow_Card_Man",
+          "result": "actual_source_scope_read",
+          "material_type": "确切单篇二手剧情概要",
+          "reading_scope": "实际读104–137，含身份、工作队列、Ma公民身份、受伤与夺取岗位的结尾；不是原作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/non-fiction/reviews/pump-six-and-other-stories-by-paolo-bacigalupi/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名文学评论中的确切单篇段",
+          "reading_scope": "实际读88–97，贸易负责人、族群迫害、弱势与恐惧的读法；不复制作者价值判断。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2006单篇，实际读二手详细剧情与署名评论，原篇未取得。资料把Tranh明确为贸易公司前负责人，未采用另一检索摘要的学者称呼；不将此篇角色直接等同The Windup Girl的修订人物，也不借长篇补结局。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q106353250",
+      "identity": {
+        "title": "The Calorie Man",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "\"The Calorie Man\" Bacigalupi official text publisher",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "http://www.nightshadebooks.com/Downloads/WindupStories.pdf",
+          "result": "internal_error",
+          "reading_scope": "两篇授权样本未取得，不声称已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/non-fiction/reviews/pump-six-and-other-stories-by-paolo-bacigalupi/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论中本篇核心设定",
+          "reading_scope": "实际读84，热量、动力、专利不育种子与企业控制；整篇未读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://anthropocene.au.dk/fileadmin/news_import/Kim_Stanley_Robinson_ed_Green_Planets-_Ecology_and_Science_Fiction.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "学术章节对确切单篇的定向分析",
+          "reading_scope": "实际读印刷181–182/PDF195–196，5889–5911，尤其5903–5906的本篇童年留种失败；不是原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2005单篇，实际读署名评论与学术章节的定向分析，未取得原篇；不按记忆补逃亡路线、科学家与结局。学术文将企业控制视作研究解释，不将其虚构种子、执法或现实企业比较当现实已发生事件。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q29918150",
+      "identity": {
+        "title": "Pump Six",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Pump Six\" Bacigalupi story narrator Travis sewer pump college",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://anthropocene.au.dk/fileadmin/news_import/Kim_Stanley_Robinson_ed_Green_Planets-_Ecology_and_Science_Fiction.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "学术章节对标题单篇的定向分析",
+          "reading_scope": "实际读印刷187–189/PDF201–203，6078–6109及6131–6136，含纽约、百年泵、Alvarez、工程系停办与开放结尾；章节其余部分未连续全读，原篇未读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2008标题单篇，不是同名合集。实际读Green Planets中Otto章节的定向讨论，非原篇，非整部研究书。二手检索的名字与研究中的Alvarez不同，采用有出处的后者但仍待原文核对；污染与认知变化只作为虚构设定，不作现实因果断言。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    },
+    {
+      "id": "Q16671572",
+      "identity": {
+        "title": "Pump Six and Other Stories",
+        "author": "保羅·巴奇加盧比"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Paolo Bacigalupi official Pump Six The People of Sand and Slag The Calorie Man The Gambler Yellow Card Man text",
+          "round": "round18"
+        },
+        {
+          "provider": "web search",
+          "query": "site:windupstories.com \"Pump Six\" stories",
+          "round": "round18"
+        }
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://windupstories.com/books/pump-six-and-other-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者确切合集介绍",
+          "reading_scope": "实际读0–118，2010再版信息、11篇表述及引用评论10篇；篇数差异保留。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348_toc.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方样本目录",
+          "reading_scope": "实际读0–18，确认People、Calorie、Yellow、Pump及Small Offerings列名；目录非剧情。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348___3.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方授权成员原篇",
+          "reading_scope": "只将已读People用作明确成员选例，具体读法见本篇；并非合集全部已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/non-fiction/reviews/pump-six-and-other-stories-by-paolo-bacigalupi/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论点名成员设定",
+          "reading_scope": "只用84本篇热量机制作Calorie选例；不是标题单篇全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://anthropocene.au.dk/fileadmin/news_import/Kim_Stanley_Robinson_ed_Green_Planets-_Ecology_and_Science_Fiction.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "学术章节点名成员定向分析",
+          "reading_scope": "只用6078–6109污水泵失灵与学习路径作Pump选例；不是整合集世界观。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://windupstories.com/books-short-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者作品目录",
+          "reading_scope": "实际读单篇目录189–257与合集98–105：Gambler为Fast Forward 2成员，其余确切篇名与原刊/收录日期；目录不是正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/1597801348/1597801348__c_.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方电子样本版权页",
+          "reading_scope": "实际读0–47：2008合集版权、2009本版首印、各成员原刊版权及Small Offerings仅限定版；不改2008底库首年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2008合集，非2008标题单篇。作者页面的11篇与普通版10篇有版次差异；Baen版权页明确Small Offerings仅限定版，2009是其所呈再版首印。所读正文只有People，其余两个选例为评论/研究；未读全部成员。Gambler属于Fast Forward 2，不加入本合集。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round18_unverified"
+    }
+  ]
+}

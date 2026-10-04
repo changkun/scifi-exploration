@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "round": "round19",
+    "record_count": 2,
+    "facet_count": 0,
+    "note": "第十九轮真实检索/读取范围冻结：两篇单篇原刊正文全部已读；目录、web失败展示、常规下载及新版公开预览分开。后续查读写新轮，不改此日志。",
+    "frozen_at": "2026-10-04"
+  },
+  "records": [
+    {
+      "id": "Q17631915",
+      "identity": {
+        "title": "The Silent Colony",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Silent Colony\" Silverberg Future October 1954 original",
+          "result": "定位作者说明、选集公开预览与原刊书目入口；检索结果不单独充当正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/FUT.htm",
+          "material_type": "公共扫描目录",
+          "location": "OCT. 1954链接",
+          "result": "实际打开网页并读取HTML中的扫描链接。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p111–113/PDF111–113",
+          "result": "web点击内部错误；常规公开下载成功。全部三页正文按双栏OCR读完，题名署名/结尾视觉复核。"
+        },
+        {
+          "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+          "material_type": "新版作者说明与原作预览",
+          "location": "网页1211–1280，1281起为下一篇",
+          "result": "实际打开、阅读全文及作者对本篇说明；公开显示原作结尾，无需登录。"
+        }
+      ],
+      "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。",
+      "issue_result": "added_3_fields_3_facets_unverified",
+      "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
+      "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。"
+    },
+    {
+      "id": "Q17631646",
+      "identity": {
+        "title": "The Artifact Business",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Artifact Business\" \"Silverberg\" \"April 1957\" original",
+          "result": "定位原刊书目与目录；评论检索结果不作剧情依据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/FU.htm",
+          "material_type": "公共原刊扫描目录",
+          "location": "APRIL 1957链接",
+          "result": "实际打开网页并读HTML，取得精确PDF链接。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1957_04.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p40–50/PDF42–52",
+          "result": "web点击返回Cache miss；普通公开下载成功。双栏OCR辅助全文读完，标题署名及结尾视觉核见。"
+        }
+      ],
+      "reading_scope": "单篇印刷p40–50全部正文；最初PDF40–41为上一篇结尾，PDF53–54为后文文章，明确排除。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学分析待独立核对；未逐字校勘原刊OCR，叙述者的历史观与正当化话语不视为作者直接主张。",
+      "next_step": "冻结可独立接入；不将叙事内方法细节作为现实造假操作说明。"
+    }
+  ]
+}

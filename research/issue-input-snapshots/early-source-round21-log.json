@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "round": "round21",
+    "record_count": 2,
+    "facet_count": 0,
+    "note": "第二十一轮冻结日志：两篇原刊单篇正文全读；正常下载与web验证页、单篇正文与合集介绍分开，OCR漏栏已以图像补读。",
+    "frozen_at": "2026-10-04"
+  },
+  "records": [
+    {
+      "id": "Q23021213",
+      "identity": {
+        "title": "Halfway House",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Halfway House\" \"Robert Silverberg\" \"1966\" magazine",
+          "result": "找到If 1966-11原刊扫描及目录。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Halfway House\" \"Silverberg\" original story text",
+          "result": "找到同一原刊，评论/翻译检索结果未代替英文正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://galacticjourney.org/stories/1966%2C%2011%20%28November%29%2C%20If.pdf",
+          "material_type": "公开原刊扫描/正文一手",
+          "location": "印刷/PDF p100–109",
+          "result": "web open显示机器人验证页面；常规公开URL下载实际获得PDF，未提供验证凭据或绕过动作。原刊文本层完整顺序读完，标题/结尾视觉核见。"
+        }
+      ],
+      "reading_scope": "1966单篇10页全文至END；音乐唱片广告明确排除，未逐字校勘所有OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对；不推断商人实际返乡自尽或任期结束后剧情。",
+      "next_step": "冻结可独立接入，其他作品继续查读。"
+    },
+    {
+      "id": "Q17633021",
+      "identity": {
+        "title": "The Songs of Summer",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Songs of Summer\" \"Silverberg\" original story 1956",
+          "result": "定位1956-09原刊与作者新版介绍，剧情摘要不作正文替代。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"The Songs of Summer\" \"Silverberg\" \"June\"",
+          "result": "作者叙述的写作时间与出版年分开，现有日期不改。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊目录",
+          "result": "实际读HTML中SFS SEPT.1956链接，取得原刊URL。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1956_09.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "印刷p3–18/PDF5–20",
+          "result": "正常公开下载成功，16页正文按双栏完整实际读完；p3标题/署名，p14与p17–18结尾视觉核见。目录底部出版栏September1956，顶端日期印迹有歧义，不按OCR改纪年。"
+        },
+        {
+          "url": "https://www.everand.com/book/314603195/The-Robert-Silverberg-Science-Fiction-MEGAPACK",
+          "material_type": "新版公开出版与作者介绍",
+          "location": "Publisher Note和作者Introduction",
+          "result": "实际打开，作者提到收录本篇；只作身份辅助，预览没有本篇正文，不称读完整合集。"
+        }
+      ],
+      "reading_scope": "原刊印刷p3–18/PDF5–20完整单篇至终止符；十二节各叙述者及最后共享意识全部实际读完，p14、p17–18视觉补核OCR漏栏；下期广告不混入。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释仍待独立核对；人物计划不当实际发生，合集范围不扩大；未逐字校勘全篇OCR。",
+      "next_step": "当前冻结后继续其他确切作品。"
+    }
+  ]
+}

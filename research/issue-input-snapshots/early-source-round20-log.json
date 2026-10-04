@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "round": "round20",
+    "record_count": 2,
+    "facet_count": 0,
+    "note": "第二十轮实际查读日志冻结：Alaree和One-Way Journey原刊单篇全文读完；目录定位、web展示失败、正常公开下载和正文范围分开，未读材料不冒充已读。下一轮另写新文件。",
+    "frozen_at": "2026-10-04"
+  },
+  "records": [
+    {
+      "id": "Q17621098",
+      "identity": {
+        "title": "Alaree",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊扫描目录",
+          "result": "实际读SATURN MARCH 1958/INFINITY NOV. 1957链接，非情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SA_1958_03.pdf",
+          "material_type": "原刊扫描",
+          "result": "web PDF打开成功但截图Cache miss；常规公开下载成功。双栏OCR辅助完整单篇读至The End，p95署名、p107–108死亡与结尾另视觉核见。",
+          "location": "印刷/PDF p95–108"
+        }
+      ],
+      "reading_scope": "全部1958单篇p95–108；末页发行声明、p109下一篇不混入；未逐字校勘全部OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；死亡机制来自船长总结，不升格为科学事实，原刊中的群体心智与人类独立差异不自动映射现实群体。",
+      "next_step": "可在自然检查点冻结；余下一篇继续实际读取。"
+    },
+    {
+      "id": "Q17640558",
+      "identity": {
+        "title": "One-Way Journey",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "公共原刊扫描目录",
+          "result": "实际读SATURN MARCH 1958/INFINITY NOV. 1957链接，非情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1957_11.pdf",
+          "material_type": "原刊扫描",
+          "result": "web点击Cache miss；普通公开下载成功。p47–64正文双栏OCR辅助顺序读完，p46署名及p63–64诊断/结尾视觉核见。",
+          "location": "印刷/PDF p46–64，p46标题插图，p47起正文"
+        }
+      ],
+      "reading_scope": "全部单篇正文p47–64；p46为标题插图已看，末页广告及p65下一篇明确排除，未逐字校勘全部OCR。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；作品内出生记忆与药物治疗理论不当现实临床依据，结尾表示返航但未写抵达地球。",
+      "next_step": "自然检查点冻结后可合入，其他缺口继续新轮。"
+    }
+  ]
+}

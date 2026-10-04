@@ -6,15 +6,15 @@
     "source_record_count": 14532,
     "total": 14564,
     "researched": 168,
-    "topic_known": 3536,
-    "topic_unknown": 11028,
-    "issue_analyzed": 2383,
-    "issue_missing": 12181,
-    "issue_facet_records": 2231,
-    "issue_facets": 5269,
+    "topic_known": 3574,
+    "topic_unknown": 10990,
+    "issue_analyzed": 2424,
+    "issue_missing": 12140,
+    "issue_facet_records": 2272,
+    "issue_facets": 5400,
     "year_unknown": 1901,
-    "space_unknown": 14116,
-    "knowledge_added": 2328,
+    "space_unknown": 14099,
+    "knowledge_added": 2369,
     "library_correspondence": 2251,
     "conflicts": 454,
     "with_missing": 14428,
@@ -387,6 +387,21 @@
           "count": 17
         },
         {
+          "file": "research/issues-since-1980-round18.json",
+          "sha256": "dcce04dd9bcefe8c6377520a8bedda8099b1e3b3668e4f5c867de88832d7a29d",
+          "count": 14
+        },
+        {
+          "file": "research/issues-source-reading-round18.json",
+          "sha256": "ac85e46005403599afb97f5d488b9d0b5ba242656b3038547566afa9b07199c6",
+          "count": 17
+        },
+        {
+          "file": "research/issues-1900-1979-round19.json",
+          "sha256": "d45d7ea0d74f0e4d7a0a3e9e2307a29c1c1ed31d057c419fa4368170376dd5a0",
+          "count": 10
+        },
+        {
           "file": "research/spatial-reading-round1.json",
           "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
           "count": 66
@@ -405,9 +420,14 @@
           "file": "research/spatial-reading-round4.json",
           "sha256": "5dc9d1c99c68e4e3864b145c08e71884a07fcf49278410fa79d621f2aa855a22",
           "count": 26
+        },
+        {
+          "file": "research/spatial-reading-round5.json",
+          "sha256": "2767b52e12ad9b6a11dd91b95204e02330b4984bca7c4a7b7cdb6438d3e4e253",
+          "count": 17
         }
       ],
-      "knowledge_added": 2328,
+      "knowledge_added": 2369,
       "library": {
         "provider": "Open Library",
         "method": "existing-P648-batched-search-v1",
@@ -460,12 +480,12 @@
         "record_count": 4524
       },
       "source_search_logs": {
-        "record_count": 986,
+        "record_count": 1027,
         "metadata": {
           "format": "actual-source-search-log-v1",
           "created_at": "2026-10-04",
           "status": "frozen_checkpoint",
-          "record_count": 986,
+          "record_count": 1027,
           "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
           "inputs": [
             {
@@ -1303,6 +1323,117 @@
                 "note": "持续补1900–1979尚缺具体核心分析；已有知识与实际读取来源区分，文学解读仍待独立核对。",
                 "frozen_at": "2026-10-04"
               }
+            },
+            {
+              "file": "source-aggregate-round18-log.json",
+              "sha256": "427a0ded2e072e8358e2a7757b07c3b85772098c7146df3d3e5e19755dab3567",
+              "metadata": {
+                "method": "actual-reading-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "frozen_at": "2026-10-04",
+                "record_count": 17,
+                "inputs": [
+                  {
+                    "file": "research/issue-input-snapshots/shusterman-source-searches-round18.json",
+                    "sha256": "16edf189d4987d77c6917e6d1734d8c4030dee478c119caa85a8ce61f1391fb4",
+                    "metadata": {
+                      "round": 18,
+                      "created_at": "2026-10-04",
+                      "status": "frozen_checkpoint",
+                      "method": "actual-reading-log-v1",
+                      "frozen_at": "2026-10-04",
+                      "record_count": 5
+                    }
+                  },
+                  {
+                    "file": "research/issue-input-snapshots/early-source-round19-log.json",
+                    "sha256": "d9044928110e54388cb77a1a273bf684b3d90b9743feffc45ad85460eecf0844",
+                    "metadata": {
+                      "method": "actual-search-attempt-log-v1",
+                      "status": "frozen_checkpoint",
+                      "created_at": "2026-10-04",
+                      "updated_at": "2026-10-04",
+                      "round": "round19",
+                      "record_count": 2,
+                      "facet_count": 0,
+                      "note": "第十九轮真实检索/读取范围冻结：两篇单篇原刊正文全部已读；目录、web失败展示、常规下载及新版公开预览分开。后续查读写新轮，不改此日志。",
+                      "frozen_at": "2026-10-04"
+                    }
+                  },
+                  {
+                    "file": "research/issue-input-snapshots/early-source-round20-log.json",
+                    "sha256": "fb15e2c2b062822438027f1c71b29093ba01123dd8925be2d92e60df1eecbe4f",
+                    "metadata": {
+                      "method": "actual-search-attempt-log-v1",
+                      "status": "frozen_checkpoint",
+                      "created_at": "2026-10-04",
+                      "updated_at": "2026-10-04",
+                      "round": "round20",
+                      "record_count": 2,
+                      "facet_count": 0,
+                      "note": "第二十轮实际查读日志冻结：Alaree和One-Way Journey原刊单篇全文读完；目录定位、web展示失败、正常公开下载和正文范围分开，未读材料不冒充已读。下一轮另写新文件。",
+                      "frozen_at": "2026-10-04"
+                    }
+                  },
+                  {
+                    "file": "research/issue-input-snapshots/early-source-round21-log.json",
+                    "sha256": "6c2ed824aa3c5680241193884440e31de5b9b7d0cceab5afccf07711efcbac19",
+                    "metadata": {
+                      "method": "actual-search-attempt-log-v1",
+                      "status": "frozen_checkpoint",
+                      "created_at": "2026-10-04",
+                      "updated_at": "2026-10-04",
+                      "round": "round21",
+                      "record_count": 2,
+                      "facet_count": 0,
+                      "note": "第二十一轮冻结日志：两篇原刊单篇正文全读；正常下载与web验证页、单篇正文与合集介绍分开，OCR漏栏已以图像补读。",
+                      "frozen_at": "2026-10-04"
+                    }
+                  },
+                  {
+                    "file": "research/issue-input-snapshots/bacigalupi-source-searches-round18.json",
+                    "sha256": "7a19fdb89f7eb259d4f36b0ae9d478edcc3565441c1b4dfe1c698ddcb9beb605",
+                    "metadata": {
+                      "round": 18,
+                      "created_at": "2026-10-04",
+                      "status": "frozen_checkpoint",
+                      "method": "actual-reading-log-v1",
+                      "frozen_at": "2026-10-04",
+                      "record_count": 6
+                    }
+                  }
+                ],
+                "note": "实际查询、直接打开、失败资料与具体读取范围保留，不把下载当全书阅读。"
+              }
+            },
+            {
+              "file": "global-source-searches-round18.json",
+              "sha256": "f34c1b41b2f10d658c1d3caa8075cc99e43fcaad50c320588f3f2cb4829ecc72",
+              "metadata": {
+                "status": "frozen",
+                "date": "2026-10-04",
+                "scope": "1980年起及日期未知、当前仍缺核心议题的具体作品。",
+                "method": "逐实体实际阅读作者、出版方简介或原作；只补 topics、issue、issue_facets，未知情节不依系列或题名猜测。",
+                "verification": "knowledge_added_unverified；来源支持范围与全文、独立书目核验分开。",
+                "source_snapshot": "research/canonical-universe.json.gz",
+                "source_snapshot_sha256": "2e58036865fcadf567a0dd0487598d90a7365b0700a2dbb8c09c4442e2a08a1a",
+                "record_count": 14,
+                "facet_count": 37,
+                "frozen_date": "2026-10-04",
+                "checked_against_snapshot_sha256": "f3014845e6ef9eb64158c8dd89128688b8f07f4b0774a69c4e6c4503fc38c339",
+                "checks": "身份与当前exact ID/title/author一致，议题条目仍缺分析、空间条目仍unknown；字段白名单、合法议题、2–4具体facets、实际来源日志一一对应通过。此为结构与资料范围检查，非独立全书核验。"
+              }
+            },
+            {
+              "file": "modern-source-searches-round19.json",
+              "sha256": "cdf431ae3a5d336878cde70a4cc10a6a597c988cc986b7bb8febc088ce9081a0",
+              "metadata": {
+                "method": "actual-source-reading-log-v1",
+                "status": "frozen_checkpoint",
+                "record_count": 10,
+                "note": "逐项保留实际读取URL、确切支持范围和真实已发查询；二手评论与原作样章分别标定，非完整作品独立核验。"
+              }
             }
           ],
           "updated_at": "2026-10-04",
@@ -1333,9 +1464,16 @@
                   "previous_normalization": {
                     "method": "exact_object_payload_v1",
                     "normalized_at": "2026-10-04",
-                    "records_with_removed_copies": 22,
-                    "identical_copies_removed": 213,
-                    "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                    "records_with_removed_copies": 0,
+                    "identical_copies_removed": 0,
+                    "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+                    "previous_normalization": {
+                      "method": "exact_object_payload_v1",
+                      "normalized_at": "2026-10-04",
+                      "records_with_removed_copies": 22,
+                      "identical_copies_removed": 213,
+                      "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                    }
                   }
                 }
               }
@@ -1653,6 +1791,21 @@
           "file": "research/issues-1900-1979-round18.json",
           "sha256": "9c0aa1e57579689ee976dfafdbfec9fc75006ff17b00244fbb2f3d0c96a82612",
           "count": 17
+        },
+        {
+          "file": "research/issues-since-1980-round18.json",
+          "sha256": "dcce04dd9bcefe8c6377520a8bedda8099b1e3b3668e4f5c867de88832d7a29d",
+          "count": 14
+        },
+        {
+          "file": "research/issues-source-reading-round18.json",
+          "sha256": "ac85e46005403599afb97f5d488b9d0b5ba242656b3038547566afa9b07199c6",
+          "count": 17
+        },
+        {
+          "file": "research/issues-1900-1979-round19.json",
+          "sha256": "d45d7ea0d74f0e4d7a0a3e9e2307a29c1c1ed31d057c419fa4368170376dd5a0",
+          "count": 10
         }
       ],
       "spatial_batches": [
@@ -1675,18 +1828,23 @@
           "file": "research/spatial-reading-round4.json",
           "sha256": "5dc9d1c99c68e4e3864b145c08e71884a07fcf49278410fa79d621f2aa855a22",
           "count": 26
+        },
+        {
+          "file": "research/spatial-reading-round5.json",
+          "sha256": "2767b52e12ad9b6a11dd91b95204e02330b4984bca7c4a7b7cdb6438d3e4e253",
+          "count": 17
         }
       ],
-      "issue_facet_records": 2231,
-      "issue_facet_count": 5269
+      "issue_facet_records": 2272,
+      "issue_facet_count": 5400
     },
     "source_search_logs": {
-      "record_count": 986,
+      "record_count": 1027,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 986,
+        "record_count": 1027,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -2524,6 +2682,117 @@
               "note": "持续补1900–1979尚缺具体核心分析；已有知识与实际读取来源区分，文学解读仍待独立核对。",
               "frozen_at": "2026-10-04"
             }
+          },
+          {
+            "file": "source-aggregate-round18-log.json",
+            "sha256": "427a0ded2e072e8358e2a7757b07c3b85772098c7146df3d3e5e19755dab3567",
+            "metadata": {
+              "method": "actual-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "frozen_at": "2026-10-04",
+              "record_count": 17,
+              "inputs": [
+                {
+                  "file": "research/issue-input-snapshots/shusterman-source-searches-round18.json",
+                  "sha256": "16edf189d4987d77c6917e6d1734d8c4030dee478c119caa85a8ce61f1391fb4",
+                  "metadata": {
+                    "round": 18,
+                    "created_at": "2026-10-04",
+                    "status": "frozen_checkpoint",
+                    "method": "actual-reading-log-v1",
+                    "frozen_at": "2026-10-04",
+                    "record_count": 5
+                  }
+                },
+                {
+                  "file": "research/issue-input-snapshots/early-source-round19-log.json",
+                  "sha256": "d9044928110e54388cb77a1a273bf684b3d90b9743feffc45ad85460eecf0844",
+                  "metadata": {
+                    "method": "actual-search-attempt-log-v1",
+                    "status": "frozen_checkpoint",
+                    "created_at": "2026-10-04",
+                    "updated_at": "2026-10-04",
+                    "round": "round19",
+                    "record_count": 2,
+                    "facet_count": 0,
+                    "note": "第十九轮真实检索/读取范围冻结：两篇单篇原刊正文全部已读；目录、web失败展示、常规下载及新版公开预览分开。后续查读写新轮，不改此日志。",
+                    "frozen_at": "2026-10-04"
+                  }
+                },
+                {
+                  "file": "research/issue-input-snapshots/early-source-round20-log.json",
+                  "sha256": "fb15e2c2b062822438027f1c71b29093ba01123dd8925be2d92e60df1eecbe4f",
+                  "metadata": {
+                    "method": "actual-search-attempt-log-v1",
+                    "status": "frozen_checkpoint",
+                    "created_at": "2026-10-04",
+                    "updated_at": "2026-10-04",
+                    "round": "round20",
+                    "record_count": 2,
+                    "facet_count": 0,
+                    "note": "第二十轮实际查读日志冻结：Alaree和One-Way Journey原刊单篇全文读完；目录定位、web展示失败、正常公开下载和正文范围分开，未读材料不冒充已读。下一轮另写新文件。",
+                    "frozen_at": "2026-10-04"
+                  }
+                },
+                {
+                  "file": "research/issue-input-snapshots/early-source-round21-log.json",
+                  "sha256": "6c2ed824aa3c5680241193884440e31de5b9b7d0cceab5afccf07711efcbac19",
+                  "metadata": {
+                    "method": "actual-search-attempt-log-v1",
+                    "status": "frozen_checkpoint",
+                    "created_at": "2026-10-04",
+                    "updated_at": "2026-10-04",
+                    "round": "round21",
+                    "record_count": 2,
+                    "facet_count": 0,
+                    "note": "第二十一轮冻结日志：两篇原刊单篇正文全读；正常下载与web验证页、单篇正文与合集介绍分开，OCR漏栏已以图像补读。",
+                    "frozen_at": "2026-10-04"
+                  }
+                },
+                {
+                  "file": "research/issue-input-snapshots/bacigalupi-source-searches-round18.json",
+                  "sha256": "7a19fdb89f7eb259d4f36b0ae9d478edcc3565441c1b4dfe1c698ddcb9beb605",
+                  "metadata": {
+                    "round": 18,
+                    "created_at": "2026-10-04",
+                    "status": "frozen_checkpoint",
+                    "method": "actual-reading-log-v1",
+                    "frozen_at": "2026-10-04",
+                    "record_count": 6
+                  }
+                }
+              ],
+              "note": "实际查询、直接打开、失败资料与具体读取范围保留，不把下载当全书阅读。"
+            }
+          },
+          {
+            "file": "global-source-searches-round18.json",
+            "sha256": "f34c1b41b2f10d658c1d3caa8075cc99e43fcaad50c320588f3f2cb4829ecc72",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "scope": "1980年起及日期未知、当前仍缺核心议题的具体作品。",
+              "method": "逐实体实际阅读作者、出版方简介或原作；只补 topics、issue、issue_facets，未知情节不依系列或题名猜测。",
+              "verification": "knowledge_added_unverified；来源支持范围与全文、独立书目核验分开。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "2e58036865fcadf567a0dd0487598d90a7365b0700a2dbb8c09c4442e2a08a1a",
+              "record_count": 14,
+              "facet_count": 37,
+              "frozen_date": "2026-10-04",
+              "checked_against_snapshot_sha256": "f3014845e6ef9eb64158c8dd89128688b8f07f4b0774a69c4e6c4503fc38c339",
+              "checks": "身份与当前exact ID/title/author一致，议题条目仍缺分析、空间条目仍unknown；字段白名单、合法议题、2–4具体facets、实际来源日志一一对应通过。此为结构与资料范围检查，非独立全书核验。"
+            }
+          },
+          {
+            "file": "modern-source-searches-round19.json",
+            "sha256": "cdf431ae3a5d336878cde70a4cc10a6a597c988cc986b7bb8febc088ce9081a0",
+            "metadata": {
+              "method": "actual-source-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "record_count": 10,
+              "note": "逐项保留实际读取URL、确切支持范围和真实已发查询；二手评论与原作样章分别标定，非完整作品独立核验。"
+            }
           }
         ],
         "updated_at": "2026-10-04",
@@ -2554,9 +2823,16 @@
                 "previous_normalization": {
                   "method": "exact_object_payload_v1",
                   "normalized_at": "2026-10-04",
-                  "records_with_removed_copies": 22,
-                  "identical_copies_removed": 213,
-                  "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                  "records_with_removed_copies": 0,
+                  "identical_copies_removed": 0,
+                  "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+                  "previous_normalization": {
+                    "method": "exact_object_payload_v1",
+                    "normalized_at": "2026-10-04",
+                    "records_with_removed_copies": 22,
+                    "identical_copies_removed": 213,
+                    "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                  }
                 }
               }
             }
@@ -2567,10 +2843,10 @@
     "issue_research_queue": {
       "record_count": 14564,
       "stages": {
-        "analysis_present": 2383,
-        "source_search_next": 10391,
-        "content_reading_next": 858,
-        "identity_then_content": 932
+        "analysis_present": 2424,
+        "source_search_next": 10356,
+        "content_reading_next": 854,
+        "identity_then_content": 930
       },
       "url": "./assets/issue-research-queue.json.gz"
     }
