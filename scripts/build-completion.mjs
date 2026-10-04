@@ -3,6 +3,7 @@ import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
+import {completionChunks,completionDelivery} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [audit,library,source,catalog,links]=await Promise.all([gz('research/record-audit.json.gz'),gz('research/library-crosschecks.json.gz'),gz('research/structured-bibliography.json.gz'),read('dist/assets/catalog.json'),read('dist/assets/research-links.json')]);
@@ -152,9 +153,12 @@ metadata.spatial_batches=knowledgeInputs.filter(i=>spatialInputs.includes(i.file
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);
 const chunks=[];
-for(let start=0;start<records.length;start+=1000){const n=String(start/1000).padStart(3,'0');chunks.push(`./assets/completion-index/${n}.json`);await writeFile(new URL(n+'.json',indexDir),JSON.stringify({records:records.slice(start,start+1000)}));}
+const parts=completionChunks(records),delivery=completionDelivery(metadata,records);
+Object.assign(metadata,delivery.metadata);
+for(const [i,part] of parts.entries()){const n=String(i).padStart(3,'0');chunks.push(`./assets/completion-index/${n}.json`);await writeFile(new URL(n+'.json',indexDir),JSON.stringify({records:part}));}
 await writeFile(new URL('dist/assets/completion.json',root),JSON.stringify({format:'completion-manifest-v1',metadata,chunks},null,2)+'\n');
-await writeFile(new URL('research/completion-overlay.json.gz',root),gzipSync(JSON.stringify({metadata,records}),{level:9}));
-await writeFile(new URL('dist/assets/completion-overlay.json.gz',root),gzipSync(JSON.stringify({metadata,records}),{level:9}));
+await writeFile(new URL('research/completion-overlay.json.gz',root),delivery.bytes);
+if(delivery.local)await writeFile(new URL('dist/assets/completion-overlay.json.gz',root),delivery.bytes);
+else await unlink(new URL('dist/assets/completion-overlay.json.gz',root)).catch(error=>{if(error.code!=='ENOENT')throw error;});
 await writeFile(new URL('dist/assets/record-audit.json.gz',root),await readFile(new URL('research/record-audit.json.gz',root)));
 console.log(JSON.stringify(metadata,null,2));

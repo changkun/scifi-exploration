@@ -5,6 +5,7 @@ import {FIELD_LABELS,buildCanonicalUniverse} from '../dist/assets/canonical.mjs'
 import {loadBibliographySource,loadCompletionSource,loadLibraryDetail} from '../dist/assets/data-loader.mjs';
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {listSpatialInputs} from './issue-inputs.mjs';
+import {completionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
@@ -68,4 +69,20 @@ check('spatial filters and shareable state count the same universe as the map',(
 });
 const referenced=works.find(w=>w.library_detail_url),detail=await loadLibraryDetail(referenced,fetcher);assert.deepEqual(detail,crosschecks.records.find(r=>r.id===referenced.id));passed++;console.log('PASS full external metadata and subject detail preserved');
 const manifest=await read('dist/assets/completion.json');await assert.rejects(loadCompletionSource(async p=>p===manifest.chunks[0]?{ok:false}:fetcher(p)),/未完整载入/);passed++;console.log('PASS incomplete completion overlay rejects partial loading');
+check('completion shards stay within asset limits without losing or reordering records',()=>{
+ const sample=completion.records.slice(0,10),limit=Math.max(...sample.map(r=>Buffer.byteLength(JSON.stringify(r))))+Buffer.byteLength('{"records":[]}');
+ const parts=completionChunks(sample,limit);
+ assert(parts.length>1);assert.deepEqual(parts.flat(),sample);
+ for(const records of parts)assert(Buffer.byteLength(JSON.stringify({records}))<=limit);
+ assert.throws(()=>completionChunks(sample,1),/exceeds the shard size limit/);
+});
+const completeArchive=await gz('research/completion-overlay.json.gz');
+check('large completion downloads retain the full exact archive in the public repository',()=>{
+ assert.deepEqual(completeArchive,{metadata:manifest.metadata,records:completion.records});
+ const fallback=completionDelivery(manifest.metadata,completion.records.slice(0,2),1);
+ assert.equal(fallback.local,false);assert.equal(fallback.metadata.full_download_url,REPOSITORY_COMPLETION_DOWNLOAD);
+ assert.deepEqual(JSON.parse(gunzipSync(fallback.bytes)).records,completion.records.slice(0,2));
+ const local=completionDelivery(manifest.metadata,completion.records.slice(0,2));
+ assert.equal(local.local,true);assert.equal(local.metadata.full_download_url,LOCAL_COMPLETION_DOWNLOAD);
+});
 console.log(`${passed} completion checks passed.`);

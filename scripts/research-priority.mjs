@@ -29,7 +29,9 @@ export function researchPriority(work) {
     matched_description_available: ready,
     first_pass_seconds_target: 90,
     unproductive_source_attempts_limit: 2,
-    retry_rule: '未查过的条目优先；失败轮次越多越靠后。困难条目保留，首轮不反复打开浏览器。',
+    reading_strategy: 'single_pass_existing_synopsis',
+    detail_review: 'after_first_pass',
+    retry_rule: '现成明确简介一次读取，先补简短议题和依据；缺信息留未知，复核与补细节在覆盖后进行。无具体内容即延后，失败轮次越多越靠后。',
   };
 }
 

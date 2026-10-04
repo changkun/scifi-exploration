@@ -1,0 +1,2107 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "method": "single-pass-four-id-lanes-v1",
+    "source_commit": "9258cef23220f0806ad028f4e147f05d77650de9",
+    "source_snapshot_sha256": "70818c6fce16d9e3e57b7a321759bb05f73c50e1537c9a2dd20a67e87b6b0900",
+    "record_count": 56,
+    "facet_count": 112,
+    "attempted_identity_count": 70,
+    "deferred_count": 14,
+    "original_fulltext_read_count": 0,
+    "recovered_prior_analysis_count": 0,
+    "skipped_already_analyzed_count": 0,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/modern-recent-round13.json",
+        "sha256": "494cf89d7a473555bc52ffffb7f3d2e4570cc4cc1f472068a2e7edae0913fbf7",
+        "metadata": {
+          "method": "easy-first-matched-synopsis-knowledge-issue-facets-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "note": "现成简介直接作快速首轮文学解释，全部待独立核对；没有剧情或卷次错配者延后。",
+          "record_count": 56,
+          "facet_count": 112,
+          "field_count": 168,
+          "new_core_issue_count": 56,
+          "source_read_record_count": 56,
+          "single_work_count": 55,
+          "collection_scope_count": 1,
+          "scope": "fast-first lane2一遍过，来源纪年2003—2017共56条/112细分议题；55单作（漫画按指定版本与卷次）和1时间旅行选集选例。全部实际读取本地OLdump社区简介，1署名读者评价，0新增网络查询、0直接出版社页面、0全文。",
+          "community_dump_read_count": 56,
+          "community_reader_review_count": 1,
+          "additional_actual_search_read_count": 0,
+          "publisher_excerpt_read_count": 0,
+          "original_full_text_count": 0,
+          "deferred_count": 14,
+          "next_policy": "固定lane2继续其余可读简介；无剧情立即延后，不重复检索或补空间。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/modern-recent-round13-log.json",
+        "sha256": "0e73897970f8c5e67bdfd923a93c0f866eebf809dbf5380df160b62986ca9e7e",
+        "metadata": {
+          "method": "actual-source-reading-scope-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "note": "现成简介直接快速首轮，不追加常规搜索。",
+          "record_count": 56,
+          "scope": "fast-first lane2一遍过，来源纪年2003—2017共56条/112细分议题；55单作（漫画按指定版本与卷次）和1时间旅行选集选例。全部实际读取本地OLdump社区简介，1署名读者评价，0新增网络查询、0直接出版社页面、0全文。",
+          "deferred_count": 14,
+          "community_dump_read_count": 56,
+          "community_reader_review_count": 1,
+          "additional_actual_search_read_count": 0,
+          "publisher_excerpt_read_count": 0,
+          "original_full_text_count": 0
+        }
+      }
+    ],
+    "scope": "四个互斥ID分片；快速首轮对现成明确简介一次读取，先补简短核心和两项具体问题，无新增反复查读。切换前实际读到的其他来源逐项保留；简介不足、错配及版本疑点延后；未读原作全文，不升级独立核验。",
+    "verification": "全部knowledge_added_unverified；第一轮具体文学分析不等于全文阅读或独立核验。",
+    "new_core_analysis_count": 56,
+    "additional_existing_analysis_ids": [],
+    "additional_existing_analysis_count": 0
+  },
+  "records": [
+    {
+      "id": "Q55230410",
+      "identity": {
+        "title": "Hearts and Minds",
+        "author": "Dayton Ward"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度",
+          "文明与历史"
+        ],
+        "issue": "2031年被击落的外星船其实在寻找逃离不宜居家园的新住所，秘密机构却以不惜代价保护人类为名行动。数百年后皮卡德发现核战后的文明与隐瞒的人类历史相连，安全机构的判断因而成为后代必须重审的历史。",
+        "issue_facets": [
+          {
+            "label": "避难与入侵",
+            "question": "安全机构怎样区分寻求住所者与侵略者？",
+            "basis": "外星船员为家园危机寻新居，人类却害怕入侵并秘密行动。"
+          },
+          {
+            "label": "保密与历史",
+            "question": "长期隐藏的决策如何影响后来的文明相遇？",
+            "basis": "2386年的核战后行星谜团牵涉数世纪未公开的人类历史。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持2031外星避难者被击落及2386年皮卡德调查；两段的确切因果与结局未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20810561W"
+      ]
+    },
+    {
+      "id": "Q125456218",
+      "identity": {
+        "title": "The Flight of the Silvers",
+        "author": "Daniel Price"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "姐妹在世界毁灭前被陌生人强迫佩戴银手环，幸存后进入时间技术日常化的另一地球。她们获得并不想要的时间能力又遭追杀，使救命、控制与逃亡在同一次转移中重叠。",
+        "issue_facets": [
+          {
+            "label": "救命与同意",
+            "question": "紧急保护是否容许强制改变他人的处境？",
+            "basis": "陌生人强迫姐妹戴手环，手环使其免于世界毁灭。"
+          },
+          {
+            "label": "能力与自主",
+            "question": "不曾选择的特殊能力怎样改变个人自由？",
+            "basis": "幸存者带着不愿获得的时间能力在异世界受敌人追捕。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持世界毁灭、银手环、另一地球、日常时间设备与被追猎幸存者；不补救援者身份或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19708133W"
+      ]
+    },
+    {
+      "id": "Q54807360",
+      "identity": {
+        "title": "Tower Of Babel",
+        "author": "Christopher L. Bennett"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "年轻联邦希望吸纳多样的里格尔社会，却因总统选举的意识形态分裂危及谈判。外部集团又借敌对派系夺取秘密和人质，使扩大共同体同时面临内部代表争执与暴力破坏。",
+        "issue_facets": [
+          {
+            "label": "扩张与内部共识",
+            "question": "新成员谈判怎样受到既有成员政治冲突影响？",
+            "basis": "Archer推动里格尔加入，总统竞选却加热意识形态分裂。"
+          },
+          {
+            "label": "结盟与破坏",
+            "question": "竞争性组织怎样利用地方分裂阻止联合？",
+            "basis": "Orion Syndicate帮助敌对派系绑架星舰人员并夺取秘密。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持里格尔入盟、Babel谈判、联邦选举分裂及人质搜救；不补加入结果或相关电视剧。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17533977W"
+      ]
+    },
+    {
+      "id": "Q139884884",
+      "identity": {
+        "title": "One Piece, Volume 70: Enter Doflamingo",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "草帽一伙即将离开研究所时，凯撒发生惊人变化，路飞必须阻止其野心。幕后行动的多弗朗明哥使局面迅速转向，逃出研究机构并不等于摆脱控制它的更大权力网络。",
+        "issue_facets": [
+          {
+            "label": "研究所与威胁",
+            "question": "从危险研究场所脱身为何仍需对抗其负责人？",
+            "basis": "临近逃离时凯撒变貌，路飞面对其野心。"
+          },
+          {
+            "label": "幕后支配",
+            "question": "显现的对手怎样与隐藏权力相连？",
+            "basis": "七武海多弗朗明哥在幕后牵线并开始行动。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。实际读取日语第70卷简介，只支持研究所逃离、凯撒变貌及多弗朗明哥行动；不推断其技术机制或后卷结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17092140W"
+      ],
+      "identity_caveat": "《One Piece》第70卷漫画单位，非全系列。"
+    },
+    {
+      "id": "Q16385557",
+      "identity": {
+        "title": "Earth Afire",
+        "author": "奥森·斯科特·卡德 / 亚伦约·翰斯顿"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "维克托警告地球政府外星入侵将至，却未能说服怀疑的决策者。马泽与机动作战警察面对前所未有的威胁，危机准备因而取决于证据如何进入制度判断。",
+        "issue_facets": [
+          {
+            "label": "预警与权威",
+            "question": "政府怀疑何时成为阻碍防灾的因素？",
+            "basis": "维克托试图预警，却未能说服地球政府。"
+          },
+          {
+            "label": "未知与准备",
+            "question": "既有防卫机构怎样应对没有先例的威胁？",
+            "basis": "马泽及机动作战警察面对首次虫族战争的异常威胁。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持第一次虫族战争、预警失败与防卫行动；不移入《安德的游戏》的后世训练情节或本书结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17207142W"
+      ]
+    },
+    {
+      "id": "Q27891159",
+      "identity": {
+        "title": "Protector",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "布伦与伊利西迪须保护小王子和来庆生的人类孩子，危险却来自刺客行会内部的分裂。一个依赖专业暴力机构的社会在该机构失稳时，使儿童与跨族往来同时成为政治风险。",
+        "issue_facets": [
+          {
+            "label": "制度失稳与弱者",
+            "question": "暴力机构内部冲突怎样转嫁给儿童？",
+            "basis": "刺客行会的危险分裂威胁小王子与来访孩子。"
+          },
+          {
+            "label": "日常交往与安全",
+            "question": "跨族庆生活动怎样被政治秩序影响？",
+            "basis": "人类孩子因王子生日来访，却必须受到特别保护。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简短简介支持Bren、Illisidi、Cajeiri、生日来访者与行会分裂；不补阴谋责任者或其他Foreigner卷。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17658661W"
+      ]
+    },
+    {
+      "id": "Q55230322",
+      "identity": {
+        "title": "Allegiance in Exile",
+        "author": "David R. George III"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "知识与认识",
+          "生存与风险"
+        ],
+        "issue": "企业号在应当充满生命的行星上只发现毁坏而无生命的城市。登陆队必须追问灭亡原因以防同样的命运降临联邦，遗迹的解释因而成为活文明的生存工作。",
+        "issue_facets": [
+          {
+            "label": "遗迹与失落知识",
+            "question": "无生命的城市怎样提示已经消失的危机？",
+            "basis": "原本应有生命的行星只剩毁坏城市。"
+          },
+          {
+            "label": "历史与预防",
+            "question": "过去的灭亡能否转化为当下的风险判断？",
+            "basis": "登陆队调查原因，以避免整个联邦遭同样命运。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介仅支持行星异常、废墟城市与预防调查；灭亡原因、物种和结局未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20885372W"
+      ]
+    },
+    {
+      "id": "Q65766232",
+      "identity": {
+        "title": "A Call to Arms",
+        "author": "蒂莫西·赞恩"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "特拉维斯既重视规则，又擅长在局面崩坏时超出规则行动；年轻王国议会中的势力却认为无需海军。边境危险使防务需求与政治判断相冲突，也使军人的应变能力不能简单等同于不服从。",
+        "issue_facets": [
+          {
+            "label": "规则与应变",
+            "question": "按规则行动的人何时必须越出规则？",
+            "basis": "简介明确Travis喜欢规则，却能在局势失控时跳出规则。"
+          },
+          {
+            "label": "政治与防务",
+            "question": "否定海军价值的判断怎样面对边境风险？",
+            "basis": "议会力量认为海军无用，探索边缘的危险却逼近。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持Manticoran Navy、Travis Long、议会防务争论与边境风险；不补具体战役或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19332309W"
+      ],
+      "identity_caveat": "按现有Manticoran题名实体处理；现有2013纪年及合著者字段范围未在本轮核验，不与其他作者的同名小说混用。"
+    },
+    {
+      "id": "Q114414730",
+      "identity": {
+        "title": "On a Red Station, Drifting",
+        "author": "Aliette de Bodard"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "性别与亲密",
+          "生态与资源"
+        ],
+        "issue": "繁荣空间站的人工智能祖先原本保护自己的亲属，战争却带走人才并让难民涌入、资源紧张。站长还不知道祖先的心智正被疾病侵蚀，亲属秩序因此依赖一个同样脆弱的非人照护者。",
+        "issue_facets": [
+          {
+            "label": "人工亲属与照护",
+            "question": "人工智能作为亲属怎样承担家庭责任？",
+            "basis": "Honoured Ancestress由人类子宫诞生，长期保护人类亲属。"
+          },
+          {
+            "label": "照护者的脆弱",
+            "question": "保护共同体者患病时谁来承接责任？",
+            "basis": "战争与难民压力加剧，祖先又罹患似乎无药可治的心智疾病。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持Prosper Station、人工祖先、战争征召、难民资源压力与心智病；不补治愈结果或帝国全史。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19966439W"
+      ]
+    },
+    {
+      "id": "Q140428871",
+      "identity": {
+        "title": "Fullmetal Alchemist: Fullmetal Edition, Volume 13",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "知识与认识",
+          "性别与亲密"
+        ],
+        "issue": "在兄弟因失败炼金仪式失去身体的背景下，这一卷揭开人造人的神秘来源，并让兄弟的父亲准备介入冲突。对生命起源的求知与亲属保护因此相连，身世知识会改变谁能参与即将到来的对抗。",
+        "issue_facets": [
+          {
+            "label": "造物起源",
+            "question": "人造生命的来源为何影响当前冲突？",
+            "basis": "本卷简介明确人造人的神秘起源被揭开。"
+          },
+          {
+            "label": "父亲与介入",
+            "question": "亲属如何由背景人物变为冲突参与者？",
+            "basis": "兄弟父亲开始为与人造人的冲突作准备。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。读取Fullmetal Edition第13卷简介；只用人造人起源与父亲准备这两项卷内信息，仪式失败是共同背景。未核新版与原版卷页对照或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL28184665W"
+      ],
+      "identity_caveat": "Fullmetal Edition第13卷单位，不等同原版第13卷；底库纪年未核。"
+    },
+    {
+      "id": "Q140428876",
+      "identity": {
+        "title": "Fullmetal Alchemist: Fullmetal Edition, Volume 17",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "兄弟与亲密盟友曾犯下的过错被敌人利用，释放其最大的力量。过去的个人行动因此成为他人统治计划的材料，使承担责任与阻止责任被再次武器化成为同一个难题。",
+        "issue_facets": [
+          {
+            "label": "过错与操纵",
+            "question": "他人能否借个人罪责扩大自己的权力？",
+            "basis": "简介明确兄弟和盟友的过错被用来释放敌人的强大力量。"
+          },
+          {
+            "label": "过去与能动性",
+            "question": "无法撤销的行动如何影响当前抵抗？",
+            "basis": "敌方利用已发生的过错，使过去直接进入当前危机。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。只用Fullmetal Edition第17卷简介中利用过错释放敌方力量的情节；不补仪式细节、终战代价或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL28184666W"
+      ],
+      "identity_caveat": "Fullmetal Edition第17卷单位，不与原版第17卷混用；底库纪年未核。"
+    },
+    {
+      "id": "Q139884875",
+      "identity": {
+        "title": "One Piece, Volume 61: Romance Dawn for the New World",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "路飞与伙伴选择训练以应对更危险的海域和敌人。继续冒险在这里不只是勇气，还要求承认现有能力的局限，并把暂时停下转化为共同准备。",
+        "issue_facets": [
+          {
+            "label": "能力与选择",
+            "question": "承认自身不足怎样改变冒险决定？",
+            "basis": "一伙人决定训练，以面对更困难的海域和敌人。"
+          },
+          {
+            "label": "共同准备",
+            "question": "个人成长为何需要成为团队行动？",
+            "basis": "简介把路飞与全体船员的训练作为共同决定。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第61卷短简介只支持团队训练与更危险航程；不补具体两年期限、分散地点或重聚细节。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16805147W"
+      ],
+      "identity_caveat": "《One Piece》第61卷漫画单位。"
+    },
+    {
+      "id": "Q140392089",
+      "identity": {
+        "title": "Fullmetal Alchemist: Fullmetal Edition, Volume 1",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "失败的炼金仪式让爱德失去肢体，让阿尔只剩依附铠甲的灵魂，兄弟于是寻找贤者之石恢复身体。改造生命的尝试把亲情愿望变成不可回避的后果，修复之旅也要求重新理解技术能够许诺什么。",
+        "issue_facets": [
+          {
+            "label": "仪式与后果",
+            "question": "试图改变生命的技术行为应承担怎样的责任？",
+            "basis": "失败仪式造成兄弟不同形式的身体丧失。"
+          },
+          {
+            "label": "灵魂与身体",
+            "question": "仍有灵魂是否就能替代恢复身体的需要？",
+            "basis": "阿尔依附铠甲，兄弟仍共同寻找恢复身体的方法。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。Fullmetal Edition第1卷封底转录支持失败仪式、身体丧失和贤者之石求索；不补仪式对象或后卷石头来源。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL31200716W"
+      ],
+      "identity_caveat": "Fullmetal Edition第1卷书籍单位，版次纪年不作为原漫画首刊核验。"
+    },
+    {
+      "id": "Q140428844",
+      "identity": {
+        "title": "Fullmetal Alchemist: Fullmetal Edition, Volume 5",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "主体与意识"
+        ],
+        "issue": "兄弟在Devil’s Nest面对Greed提出的禁忌知识交换，被能够恢复身体的可能性所诱惑。知识不是无代价的答案，寻求身体修复的人必须判断自己能否接受提供者设定的交换条件。",
+        "issue_facets": [
+          {
+            "label": "禁忌知识的交换",
+            "question": "为修复自身可以接受怎样的知识交易？",
+            "basis": "Greed提出交换禁忌知识，兄弟受到吸引。"
+          },
+          {
+            "label": "求索与自主",
+            "question": "迫切需求是否会削弱对交易条件的判断？",
+            "basis": "失去身体的背景使这项提议具有特别诱惑。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。Fullmetal Edition第5卷简介支持Greed在Devil’s Nest提出禁忌知识交换；共同身体背景不当本卷新事件，交换结果未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19872936W"
+      ],
+      "identity_caveat": "Fullmetal Edition第5卷单位，不与原版第5卷混用。"
+    },
+    {
+      "id": "Q140428849",
+      "identity": {
+        "title": "Fullmetal Alchemist: Fullmetal Edition, Volume 9",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "爱德与敌人一起被困在怪物腹内，怪物、人类、朋友与敌人的区分开始模糊。共同受困改变原本的敌我关系，使生存判断不能只沿用外部社会赋予的身份。",
+        "issue_facets": [
+          {
+            "label": "共同受困与敌我",
+            "question": "同处险境会怎样改变对敌人的判断？",
+            "basis": "爱德与敌人一起困在怪物腹内。"
+          },
+          {
+            "label": "生命的分类",
+            "question": "当定义模糊时还怎样划分人类与怪物？",
+            "basis": "本卷简介明确怪物、人类、朋友与敌人的边界趋于不清。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。Fullmetal Edition第9卷简介支持腹内受困与分类模糊；不补怪物具体名称、空间机制或离开办法。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL28184659W"
+      ],
+      "identity_caveat": "Fullmetal Edition第9卷单位，不与原版第9卷混用。"
+    },
+    {
+      "id": "Q55230301",
+      "identity": {
+        "title": "A Choice of Catastrophes",
+        "author": "Michael Schuster / Steve Mollmann / Michael Schuster and Steve Mollmann"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "企业号遭空间扭曲后，具有特殊心智能力的人员陷入昏迷，麦考伊必须连接其心智进行救援。治疗使医生进入噩梦世界，却又可能危及全舰，个体救援与共同安全因此发生正面冲突。",
+        "issue_facets": [
+          {
+            "label": "治疗与进入他人心智",
+            "question": "救援者连接患者意识时会承担什么风险？",
+            "basis": "昏迷者是espers，医疗团队须联结他们的心智。"
+          },
+          {
+            "label": "个体与共同安全",
+            "question": "拯救少数人的行动怎样权衡全船风险？",
+            "basis": "麦考伊进入梦境的结果可能毁灭企业号与全部人员。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持空间扭曲、特殊心智能力人员昏迷、心智联结与全船风险；不补梦境机制或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17552751W"
+      ]
+    },
+    {
+      "id": "Q55230421",
+      "identity": {
+        "title": "Indistinguishable from Magic",
+        "author": "David A. McIntee"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "文明与历史"
+        ],
+        "issue": "两代工程师联手解决两百年前的技术谜团，发现调查延伸成涉及各自过去的致命冒险。技术解释不能与历史经验分离，所谓像魔法般先进的装置也需要能够承担后果的理解。",
+        "issue_facets": [
+          {
+            "label": "代际知识",
+            "question": "技术谜团为何需要不同代人的共同经验？",
+            "basis": "Geordi与Scotty等两代工程师联合研究古老谜团。"
+          },
+          {
+            "label": "过去与技术解释",
+            "question": "理解技术怎样改变对个人历史的判断？",
+            "basis": "调查走向更私人且危险的冒险，旧敌友和过去重新介入。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持两代工程师、两百年谜团与过去介入；具体技术和结局未读，不把标题格言当科学事实。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15692481W"
+      ]
+    },
+    {
+      "id": "Q139884873",
+      "identity": {
+        "title": "One Piece, Volume 59: The Death of Portgas D. Ace",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "路飞冒险营救兄长，却到得太晚未能救下艾斯，白胡子随后向海军作最后抵抗。亲属失落与海盗战争的权力变化交织，使个人失败成为改变整个世界秩序的事件的一部分。",
+        "issue_facets": [
+          {
+            "label": "营救与失落",
+            "question": "付出一切仍未救下亲人时怎样理解行动意义？",
+            "basis": "简介明确路飞营救失败，艾斯死亡。"
+          },
+          {
+            "label": "战争与个人命运",
+            "question": "一场战役怎样同时改变关系与世界秩序？",
+            "basis": "白胡子最后抵抗，战争终结让世界震动。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第59卷简介支持营救失败、艾斯死亡、白胡子最后抵抗与战后震荡；不补具体杀人手段或后续时代。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16805150W"
+      ],
+      "identity_caveat": "《One Piece》第59卷漫画单位。"
+    },
+    {
+      "id": "Q140451262",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 27",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "性别与亲密",
+          "生存与风险"
+        ],
+        "issue": "爱力克兄弟在霍恩海姆与盟友帮助下向人造人“父亲”发动最后攻击，获胜却可能要求某些人付出终极牺牲。共同抵抗把家庭与盟友联系起来，同时保留谁来承担代价的伦理问题。",
+        "issue_facets": [
+          {
+            "label": "共同抵抗",
+            "question": "家庭和盟友怎样共同面对造物统治者？",
+            "basis": "兄弟与霍恩海姆、盟友联合攻击“父亲”。"
+          },
+          {
+            "label": "胜利与牺牲",
+            "question": "目标正当是否足以决定谁应付出生命？",
+            "basis": "简介明确胜利可能需要终极牺牲，但没有说明最终承担者。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第27卷终卷简介支持合力攻击与可能牺牲；不把宣传悬念改写成已确认的幸存或牺牲结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20895449W"
+      ],
+      "identity_caveat": "原版《Fullmetal Alchemist》第27卷，非Fullmetal Edition第27卷。"
+    },
+    {
+      "id": "Q459983",
+      "identity": {
+        "title": "獵殺第四行者",
+        "author": "詹姆斯·弗雷 / Jobie Hughes"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "九名具有特殊能力的来客像普通人一样生活在人群中，却按编号被追杀，前三人已死而第四人知道自己将是下一个。外貌上的融入并不能带来安全，公开或隐藏身份都受追猎秩序限制。",
+        "issue_facets": [
+          {
+            "label": "伪装与归属",
+            "question": "外表与语言相同为何仍可能被视为他者？",
+            "basis": "来客看似普通人，却强调他们并非人类。"
+          },
+          {
+            "label": "编号与追猎",
+            "question": "按固定顺序的死亡怎样改变幸存者行动？",
+            "basis": "第一至第三人分别被杀，第四人明确自己将被追上。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持九名来客、特殊能力、混居人群及前三人被杀；不补编号规则、故乡和电影情节。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15280980W"
+      ]
+    },
+    {
+      "id": "Q5071908",
+      "identity": {
+        "title": "Changeless",
+        "author": "Gail Carriger"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "阿莱克西娅的狼人丈夫突然离开，把超自然军人、被驱除的鬼魂和愤怒女王留给她处理。她到苏格兰调查时又扰动狼人群体关系，亲密关系的失联与公共秩序的重整成为同一场行动。",
+        "issue_facets": [
+          {
+            "label": "亲密与责任转移",
+            "question": "伙伴离开怎样把私人问题变成额外公共负担？",
+            "basis": "丈夫消失后，军团、鬼魂和女王的麻烦由她面对。"
+          },
+          {
+            "label": "群体规则与外来者",
+            "question": "不同性质的主体怎样扰动既有群体秩序？",
+            "basis": "无魂者阿莱克西娅在调查中改变狼人群体动态。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持丈夫离开、超自然军团、鬼魂、女王及苏格兰调查；不补异常能力消失机制或结局，属超自然幻想边界。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL14981694W"
+      ]
+    },
+    {
+      "id": "Q54888270",
+      "identity": {
+        "title": "Inception",
+        "author": "S·D·佩里 / Britta Dennison"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "卡罗尔组建改造行星的科学团队，希望消除饥饿并把不宜居世界变成乐园，科研理想又与她及伙伴的亲密生活交织。用科学改变栖地的愿望因而需要同时承担社会后果与个人选择的责任。",
+        "issue_facets": [
+          {
+            "label": "改造与责任",
+            "question": "把世界变成乐园的承诺如何面对未知后果？",
+            "basis": "项目希望改变行星，重塑联邦并消除饥饿。"
+          },
+          {
+            "label": "事业与亲密",
+            "question": "公共理想与私人关系冲突时怎样选择？",
+            "basis": "卡罗尔、柯克、蕾拉与斯波克须平衡事业与个人生活。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持Carol Marcus行星改造项目、四人事业与私人关系；未读项目结果，不借电影Genesis设定或诺兰电影剧情。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17397219W"
+      ],
+      "identity_caveat": "本条为S. D. Perry/Britta Dennison的Star Trek小说《Inception》，非诺兰同名电影。"
+    },
+    {
+      "id": "Q7144755",
+      "identity": {
+        "title": "Pathfinder",
+        "author": "奥森·斯科特·卡德"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "里格能看见跨越过去的生命路径，救人失败却被旁观者误认为谋杀，被迫逃亡后又发现自己是被认为已死的王子。独特感知不能自动成为可共享的证据，血统真相也立即把少年放进新的政治危险。",
+        "issue_facets": [
+          {
+            "label": "私人感知与公共证据",
+            "question": "只有自己能见的路径怎样帮助别人理解事故？",
+            "basis": "救援中路径显现并干扰行动，Umbo却将失败说成谋杀。"
+          },
+          {
+            "label": "血统与控制",
+            "question": "被揭开的身份怎样削弱而非增加自主？",
+            "basis": "里格被当作已死王子识别，随后遭逮捕与刺杀威胁。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。实际读详细社区剧情梗概，只选路径感知、救援误解和王子身份冲突；不把该简介当原作全文核验，不展开末尾墙、机器人与年代真相。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15505449W"
+      ]
+    },
+    {
+      "id": "Q140451259",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 24",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "霍恩海姆终于有机会阻止控制中央市的人造人“父亲”，但布拉德利的回归又可能使战局转向军方。抵抗造物统治并非单一技术胜负，政治军权的重返能够重新组织暴力优势。",
+        "issue_facets": [
+          {
+            "label": "造物与统治",
+            "question": "人造生命如何成为城市权力的中心？",
+            "basis": "“父亲”统治中央市，霍恩海姆谋求阻止他。"
+          },
+          {
+            "label": "军权与战局",
+            "question": "领导者重新出现怎样改变抵抗者处境？",
+            "basis": "布拉德利归来可能把战斗优势带回军方。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第24卷简介支持霍恩海姆阻止“父亲”与布拉德利回归；攻击方法、胜负与后卷结局未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15655760W"
+      ],
+      "identity_caveat": "原版第24卷单位，不与Fullmetal Edition相同数字卷混用。"
+    },
+    {
+      "id": "Q5446066",
+      "identity": {
+        "title": "Fever Crumb",
+        "author": "菲利普·雷夫"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "技术与责任"
+        ],
+        "issue": "一个孤独女孩在荒凉而不理性的未来伦敦执行找回失落技术的任务。保存与重新获取知识成为抵抗社会失序的希望，但找回装置并不等于已经理解它的用途和后果。",
+        "issue_facets": [
+          {
+            "label": "失落知识",
+            "question": "社会为何需要从废弃过去寻找未来工具？",
+            "basis": "主人公的使命是在未来伦敦找回失落技术。"
+          },
+          {
+            "label": "发现与理解",
+            "question": "取得技术能否直接代替理解技术？",
+            "basis": "任务发生在不理性的社会环境，而简介没有保证技术已被掌握。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。短简介仅支持女孩、荒凉未来伦敦与技术找回任务；第二facet是围绕该设定的问题，不断言书中已有滥用结果，未补身世或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5826857W"
+      ]
+    },
+    {
+      "id": "Q7761170",
+      "identity": {
+        "title": "The Roar",
+        "author": "Emma Clayton"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "权力与制度",
+          "性别与亲密"
+        ],
+        "issue": "过度人口世界抹除了自然并筑墙隔绝被说成带疫的动物，米卡却不相信被绑架的双胞胎姐妹已经死亡。官方封闭生活与私人搜寻相冲突，使亲属信任成为检验隔离世界叙述的动力。",
+        "issue_facets": [
+          {
+            "label": "隔离与自然",
+            "question": "以疫病安全为由的墙怎样组织人的世界？",
+            "basis": "简介明确自然消失，围墙用于隔绝带疫动物。"
+          },
+          {
+            "label": "失踪与可信叙述",
+            "question": "面对宣布的死亡为何仍坚持查找？",
+            "basis": "米卡不信姐妹被绑架后已死，冒险继续寻找。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持人口压力、自然消失、隔离墙与米卡寻找姐妹；不补疫病叙述真假、超能力或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL17727339W"
+      ]
+    },
+    {
+      "id": "Q8051725",
+      "identity": {
+        "title": "Yellow Eyes",
+        "author": "John Ringo / Tom Kratman"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "Posleen战争在这一书中集中于巴拿马与南美，战场因此转向常被低估军事能力的地区。区域居民的防卫行动挑战外部军事想象，使抵抗入侵也成为重新认识谁具有行动能力的过程。",
+        "issue_facets": [
+          {
+            "label": "区域与主体性",
+            "question": "边缘战场如何改变谁能抵抗的想象？",
+            "basis": "读者简介明确战事集中在巴拿马及南美并突出居民行动。"
+          },
+          {
+            "label": "军事评价",
+            "question": "对地区军力的先入判断会遗漏什么？",
+            "basis": "读者特别指出常见的军力低估与本书呈现相冲突。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。实际读社区署名读者gmb的短评，仅支持战场地区与其观察到的低估军力主题；不将其评价当现实军事实证，不补具体兵种、战役或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15056423W"
+      ],
+      "identity_caveat": "现有2009纪年未经本轮核验；本轮依据读者简介而非直接出版社或正文。"
+    },
+    {
+      "id": "Q139884866",
+      "identity": {
+        "title": "One Piece, Volume 52: Roger and Rayleigh",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "殖民与他者",
+          "技术与责任"
+        ],
+        "issue": "路飞为阻止美人鱼凯米被拍卖而攻击天龙人，海军因此获准派大将追击。救援被制度解释成必须镇压的冒犯，保护被交易的生命于是与特权阶层及其执行机构直接冲突。",
+        "issue_facets": [
+          {
+            "label": "生命与交易",
+            "question": "拯救被拍卖者为何会被视为更严重的冒犯？",
+            "basis": "路飞救凯米并攻击天龙人，随即引来海军大将。"
+          },
+          {
+            "label": "特权与执行",
+            "question": "军力怎样维护特权阶层的不可侵犯性？",
+            "basis": "攻击天龙人的行动成为海军派大将追捕的许可。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第52卷封底转录支持凯米拍卖、攻击天龙人、海军追捕与神秘援助；不补援助者具体身份或后续事件。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16803864W"
+      ],
+      "identity_caveat": "《One Piece》第52卷漫画单位。"
+    },
+    {
+      "id": "Q140451256",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 21",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "主体与意识",
+          "生命与人类定义"
+        ],
+        "issue": "针对布拉德利的暗杀陷阱可能制造权力真空，而阿尔又被剥离作为身体的铠甲。政治统治和个人身体都面临被他人占据的可能，使身份的承载物与支配权成为并行问题。",
+        "issue_facets": [
+          {
+            "label": "暗杀与接替",
+            "question": "移除统治者是否就改变了权力运行方式？",
+            "basis": "简介明确暗杀可能打开由Mustang及盟友填补的权力真空。"
+          },
+          {
+            "label": "身体与占据",
+            "question": "失去代理身体后如何确认主体仍是谁？",
+            "basis": "阿尔与铠甲身体分离，简介追问谁在占据其位置。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第21卷简介支持布拉德利陷阱、政治真空与阿尔离甲；未核占据者身份或暗杀结果。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15671170W"
+      ],
+      "identity_caveat": "原版第21卷单位，不与Fullmetal Edition相同数字卷混用。"
+    },
+    {
+      "id": "Q54806999",
+      "identity": {
+        "title": "Kobayashi Maru",
+        "author": "Andy Mangels / Michael A. Martin"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "知识与认识",
+          "性别与亲密"
+        ],
+        "issue": "阿彻怀疑罗慕兰破坏维系新联盟的货运，却不能在不危及朋友的情况下提供证据。对朋友、母星和联盟的忠诚因此无法简单兼得，安全判断也受到可公开证据的限制。",
+        "issue_facets": [
+          {
+            "label": "证据与保护",
+            "question": "保护证人或朋友怎样限制公开预警？",
+            "basis": "阿彻无法证明货船袭击责任而不危及朋友生命。"
+          },
+          {
+            "label": "多重忠诚",
+            "question": "个人、国家与联盟义务冲突时怎样选择？",
+            "basis": "简介明确选择任何一方可能同时失去另外各方。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持联盟货运防卫、阿彻怀疑、朋友与证据风险及多重忠诚；不把人物对罗慕兰的军事比拟当客观现实政治判断，不补无解情境结果。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15101466W"
+      ]
+    },
+    {
+      "id": "Q7730090",
+      "identity": {
+        "title": "The Diamond of Darkhold",
+        "author": "琴娜·杜普洛"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "生态与资源"
+        ],
+        "issue": "逃出逐渐衰败的地下城后，莉娜与杜恩在地表严冬中发现残破书籍，从中推测旧城还留有灾前装置。生存迫使他们返回曾逃离的地方，而不完整的历史知识同时成为希望与冒险的依据。",
+        "issue_facets": [
+          {
+            "label": "残缺知识",
+            "question": "书页缺失时怎样据以作出高风险决定？",
+            "basis": "残破书籍暗示灾前装置仍在Ember，二人决定追索。"
+          },
+          {
+            "label": "逃离与返回",
+            "question": "新生活为何仍依赖旧世界留下的东西？",
+            "basis": "地表严冬困难使他们重返地下寻找能带来光明的遗物。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持第四部的地表严冬、残破书、旧城装置与返回行动；前三部逃亡只作背景，不补装置机制或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL4132754W"
+      ]
+    },
+    {
+      "id": "Q139858840",
+      "identity": {
+        "title": "One Piece, Volume 45: You Have My Sympathies",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "失去船的草帽一伙获水之七岛居民共同帮助，却必须赶在海军中将卡普追到前离开。互惠关系提供继续行动的条件，但地方支持仍须面对拥有压倒性力量的国家追捕。",
+        "issue_facets": [
+          {
+            "label": "互惠与共同体",
+            "question": "过去的帮助怎样转化为当前生存资源？",
+            "basis": "居民因感激而联合帮助失去船的草帽一伙。"
+          },
+          {
+            "label": "地方与国家力量",
+            "question": "民众支持能否抵消追捕机关的优势？",
+            "basis": "卡普追来，路飞认为被抓到便无法对抗。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第45卷简介支持船只困境、居民感激互助与卡普追赶；不补造船方式、家族真相或后卷旅程。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16802588W"
+      ],
+      "identity_caveat": "《One Piece》第45卷漫画单位。"
+    },
+    {
+      "id": "Q140451249",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 16",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "兄弟追查自己的炼金术失效而May与Scar仍能使用力量的原因，Scar也寻求他人帮助研究兄长的知识。相同技术出现不同权限与效果，使追索不再只是提升能力，而是辨认隐藏的控制条件。",
+        "issue_facets": [
+          {
+            "label": "差异与机制",
+            "question": "同类能力为何在不同人身上表现不同？",
+            "basis": "兄弟力量失效，而May和Scar仍可使用。"
+          },
+          {
+            "label": "知识与合作",
+            "question": "处于敌对关系的人怎样共享解释问题的资源？",
+            "basis": "Scar邀请出乎意料的帮手探索兄长留下的炼金知识。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第16卷简介支持力量失效差异、追踪May与Scar研究兄长知识；不補国家炼成阵、具体帮手或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8756267W"
+      ],
+      "identity_caveat": "原版第16卷单位，不与Fullmetal Edition相同数字卷混用。"
+    },
+    {
+      "id": "Q55230384",
+      "identity": {
+        "title": "Epiphany",
+        "author": "Josepha Sherman / Susan Shwartz / Josepha Sherman & Susan Shwartz"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "生态与资源",
+          "文明与历史"
+        ],
+        "issue": "瓦肯流亡者分别落在繁茂的罗慕卢斯与贫瘠但资源丰富的瑞摩斯，被隔离的家庭冲突最终走向内战。后世斯波克又追查威胁罗慕兰的敌人秘密，和平因此需要面对分配不平等留下的长久历史。",
+        "issue_facets": [
+          {
+            "label": "栖地与不平等",
+            "question": "移民共同体怎样因居住条件分裂？",
+            "basis": "两处新家园环境不同，Karatek一家困在Remus无法团聚并引发冲突。"
+          },
+          {
+            "label": "历史与和平",
+            "question": "了解隐藏过去为何成为避免新战争的条件？",
+            "basis": "后世Spock调查Watraii秘密，试图阻止再次大战。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持古代流亡、两星分配、Remus家庭与内战，以及Dominion战争后Spock和平计划；只分析《Epiphany》本卷，不扩写全三部曲秘密真相。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL742444W"
+      ]
+    },
+    {
+      "id": "Q7737284",
+      "identity": {
+        "title": "The Good That Men Do",
+        "author": "Andy Mangels / Michael A. Martin"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "权力与制度",
+          "知识与认识"
+        ],
+        "issue": "解密文件让后世发现，早期星舰先驱Trip曾被记为死亡的那一天并未死亡。和平时代的朋友重新追查这段历史，使国家为了行动而重写的记录与公民后来理解过去的权利发生冲突。",
+        "issue_facets": [
+          {
+            "label": "国家与记录",
+            "question": "机构为何能把活人的命运改写成共同记忆？",
+            "basis": "解密后揭示Trip没有死，Starfleet曾重写历史。"
+          },
+          {
+            "label": "解密与真相",
+            "question": "公开被推迟的事实如何改变后人的理解？",
+            "basis": "两位老友在Pax Galactica追查两百年前被相信的历史。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持后世朋友、解密、Trip未死与Starfleet重写历史；不把电视集死亡当本小说结局，不补隐蔽任务详情。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15101460W"
+      ]
+    },
+    {
+      "id": "Q139858838",
+      "identity": {
+        "title": "One Piece, Volume 43: Legend of a Hero",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "路飞抵达关押罗宾的塔，却须先突破刺客路奇，其他伙伴也各自战斗寻找释放她的钥匙。救出一个人的行动被拆成彼此依赖的任务，使友谊必须通过具体协作对抗制度性拘禁。",
+        "issue_facets": [
+          {
+            "label": "营救与共同劳动",
+            "question": "营救为什么需要不同成员同时承担风险？",
+            "basis": "路飞对抗路奇，其他船员各自找钥匙。"
+          },
+          {
+            "label": "拘禁与阻断",
+            "question": "控制入口与钥匙怎样形成对人的支配？",
+            "basis": "罗宾被关塔中，致命刺客与释放钥匙共同构成障碍。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第43卷封底支持关塔、路奇、分头战斗与找钥匙；不补胜负、司法岛历史或后续营救。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16802405W"
+      ],
+      "identity_caveat": "《One Piece》第43卷漫画单位。"
+    },
+    {
+      "id": "Q5228058",
+      "identity": {
+        "title": "Dauntless",
+        "author": "John G. Hemry"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "舰队在百年战争后被困敌区，只能把指挥权交给从长期休眠中醒来的吉尔里，而他的名字早已成为传奇。活人的判断与历史塑造的英雄形象并不相同，撤离与重振士气要求他在神话期待下承担实际责任。",
+        "issue_facets": [
+          {
+            "label": "传奇与本人",
+            "question": "被传颂的英雄如何面对真实领导责任？",
+            "basis": "吉尔里醒来发现自己已是传奇，却被迫指挥舰队。"
+          },
+          {
+            "label": "疲惫与共同生存",
+            "question": "长期战争后的队伍怎样重新形成行动意志？",
+            "basis": "舰队衰弱且士气低落，必须突破敌区避免被消灭。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持百年战争、休眠归来、传奇身份与困境舰队；不补战术、意识形态结局或全Lost Fleet系列。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8126362W"
+      ]
+    },
+    {
+      "id": "Q5449975",
+      "identity": {
+        "title": "Finding the Fox",
+        "author": "Ali Sparkes"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "知识与认识"
+        ],
+        "issue": "达克斯发现自己能变成狐狸，被送入特殊能力儿童的秘密学校，记者的探问又让冒险展开。学校保护与隔离的边界需要被辨认，儿童自我认识也受到机构保密的影响。",
+        "issue_facets": [
+          {
+            "label": "能力与身份",
+            "question": "身体变化怎样改变孩子理解自己的方式？",
+            "basis": "达克斯发现自己可以变成狐狸，并进入特殊能力学校。"
+          },
+          {
+            "label": "保护与保密",
+            "question": "秘密教育机构面对外部调查应如何回应？",
+            "basis": "记者试图了解学校，引出后续冒险。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。实际读荷兰语短简介，支持狐狸变身、学校与记者调查；学校目的、记者善恶及结局未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL7998219W"
+      ]
+    },
+    {
+      "id": "Q7601087",
+      "identity": {
+        "title": "Star Wars: Darth Bane: Path of Destruction",
+        "author": "德鲁·卡宾森"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "矿工德瑟尔从父亲虐待与危险劳动中逃出，却在西斯军队和学院把新的身份贝恩建立于残酷竞争。离开被压迫的位置没有终止支配逻辑，他寻求自由的能力被纳入追求绝对权力的制度。",
+        "issue_facets": [
+          {
+            "label": "劳动与招募",
+            "question": "被压迫者怎样被吸入另一种统治组织？",
+            "basis": "德瑟尔逃离矿井与追捕后加入西斯军队并接受学院训练。"
+          },
+          {
+            "label": "反叛与支配",
+            "question": "否定旧传统是否必然带来自由？",
+            "basis": "贝恩要拒绝西斯既有教导，却以建立绝对黑暗力量为目标。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。详细社区书介支持矿工身世、追捕、加入西斯、学院竞争与反传统；不补Rule of Two具体建立方式或续卷。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5684849W"
+      ]
+    },
+    {
+      "id": "Q7733921",
+      "identity": {
+        "title": "The Final Key",
+        "author": "凱薩琳·艾薩蘿"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "斯科利亚帝国遭Euban Concord连续暗杀与秘密破坏，少年学员却成为其世界仅存的希望。国家生存被押在未成年参与者身上，使政治机构的失效与个人承担的巨大责任形成对照。",
+        "issue_facets": [
+          {
+            "label": "隐蔽战争",
+            "question": "暗杀与秘密破坏怎样瓦解国家安全？",
+            "basis": "简介明确帝国遭连续暗杀和subterfuges针对。"
+          },
+          {
+            "label": "少年与公共责任",
+            "question": "共同体可以把多大生存负担交给少年？",
+            "basis": "一位teenage cadet成为其世界唯一希望。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。短简介支持敌对联盟、暗杀破坏及少年学员责任；人物名字、技术方案和结局未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL78620W"
+      ]
+    },
+    {
+      "id": "Q139851541",
+      "identity": {
+        "title": "One Piece, Volume 38: Rocketman!!",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "伙伴们追赶载有罗宾与敌人的海列车，营救却还须面对她是否愿意被救的疑问。亲密关系的保护意愿不能直接代替被保护者自己的意愿，组织暴力则进一步限制双方可作的选择。",
+        "issue_facets": [
+          {
+            "label": "营救与同意",
+            "question": "救人时如何理解对方可能拒绝的意愿？",
+            "basis": "简介直接追问即使找到罗宾，她是否愿意被救。"
+          },
+          {
+            "label": "分散与协作",
+            "question": "团队分开行动怎样继续互相承担责任？",
+            "basis": "Sanji、Usopp和Franky独自应对海军，其余船员追车。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第38卷封底支持海列车、CP9、分组追赶和营救意愿疑问；不把疑问提前答成拒绝或接受。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16802401W"
+      ],
+      "identity_caveat": "《One Piece》第38卷漫画单位。"
+    },
+    {
+      "id": "Q140451241",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 11",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "爱德重遇久别父亲并怨恨被抛下，兄弟又发现曾被当成母亲部分复活的结果其实是别的东西。亲情愤怒与技术事实重估交叠，使他们须重新理解先前失败的含义。",
+        "issue_facets": [
+          {
+            "label": "亲属与怨恨",
+            "question": "父亲的归来能否直接修复被遗弃的感受？",
+            "basis": "霍恩海姆高兴相见，爱德却怀有强烈怨恨。"
+          },
+          {
+            "label": "结果与解释",
+            "question": "把制造的生命误认成亲人会造成何种认识后果？",
+            "basis": "兄弟发现人体炼成的结果并非他们先前认为的母亲复活。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第11卷简介支持父子重逢、怨恨与人体炼成结果重估；不补原理、人物全部身世或后卷。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8756263W"
+      ],
+      "identity_caveat": "原版第11卷单位，不与Fullmetal Edition同数字卷混用。"
+    },
+    {
+      "id": "Q16385914",
+      "identity": {
+        "title": "Harbinger",
+        "author": "大衛·艾倫·麥克 / David Mack"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "联邦在边界外突然建设巨大基地，引来邻近文明对殖民与隐藏目的的怀疑，柯克在修船时也开始追问。地区灾难随后迫使多方调查，使探索的合法性取决于能否解释其动机与对生命的后果。",
+        "issue_facets": [
+          {
+            "label": "探索与猜疑",
+            "question": "远离本土的基地怎样改变邻近文明的安全感？",
+            "basis": "Vanguard建立于Taurus Reach，Tholian、Orion与Klingon均怀疑其动机。"
+          },
+          {
+            "label": "秘密任务与责任",
+            "question": "危机何时迫使机构公开探索的真实目的？",
+            "basis": "灾难威胁Starfleet存在，调查揭示基地任务及生命影响。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持新基地、殖民怀疑、灾难调查和任务目的被发现；具体目的与灾难机制未读。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5886050W"
+      ]
+    },
+    {
+      "id": "Q28419169",
+      "identity": {
+        "title": "The Best Time Travel Stories of the 20th Century",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "技术与责任",
+          "知识与认识"
+        ],
+        "issue": "这部选集以物理学家的时间突破、恐龙狩猎与发明者抹去自身等选例，展示改变时间会反过来改变行动者的处境。另有普通人走到现实舞台后台的故事，使时间与世界规则不再只是背景而成为可疑的结构。",
+        "issue_facets": [
+          {
+            "label": "干预与反噬",
+            "question": "时间技术的局部成功为何可能破坏行动者自身？",
+            "basis": "简介选例中Time’s Arrow突破有灾难后果，Rainbird发明者使自己消失。"
+          },
+          {
+            "label": "现实的结构",
+            "question": "普通生活背后的规则被揭开会怎样改变自我认识？",
+            "basis": "Yesterday was Monday的选例让普通人走到世界舞台的后台。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。只读社区转录的选集书介，实际列出六篇选例。本条是18篇选集的集合层面选例解释，不代表每篇已读；未读原篇，Time Machine被称短篇的书目口径不沿用。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15175417W"
+      ]
+    },
+    {
+      "id": "Q54432938",
+      "identity": {
+        "title": "The Necessary Beggar",
+        "author": "Susan Palwick"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "殖民与他者",
+          "性别与亲密"
+        ],
+        "issue": "达罗蒂被控杀害一位神圣乞者，整个家庭被和平而丰足的故乡共同放逐，落入敌意和战争中的美国未来。集体惩罚使无关亲属承受迁徙代价，而保存旧生活与接纳新世界又把一家人的应对分开。",
+        "issue_facets": [
+          {
+            "label": "集体惩罚",
+            "question": "一个人的指控为何可以成为全家的流亡理由？",
+            "basis": "故乡以严厉快速司法让达罗蒂全家分享羞耻与放逐。"
+          },
+          {
+            "label": "流亡与家庭",
+            "question": "陌生社会中的不同应对如何影响共同关系？",
+            "basis": "家人分别绝望、守旧或受新诱惑，爱被呈为重建希望的资源。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。详细简介支持高贵乞者被杀指控、全家放逐、美国未来与分歧适应；不判定指控真假或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL4459798W"
+      ]
+    },
+    {
+      "id": "Q7743432",
+      "identity": {
+        "title": "The Joiner King",
+        "author": "Troy Denning"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "殖民与他者",
+          "权力与制度"
+        ],
+        "issue": "部分绝地回应只有他们听得见的求助进入未知区域，随后被控干涉Chiss边境争端；巢群领袖又强迫旧友加入并融合原力。援助关系因此可能转成吞并主体的力量，救人、家族保护与避免战争无法轻易分开。",
+        "issue_facets": [
+          {
+            "label": "求助与介入",
+            "question": "听到特殊求助是否足以正当化跨境行动？",
+            "basis": "失踪绝地响应求助，却遭Chiss正式指控干涉争端。"
+          },
+          {
+            "label": "融合与强制",
+            "question": "集体能力增长何时以个人自主为代价？",
+            "basis": "巢群领袖迫使旧友加入并融合原力，即使会引发战争。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持失踪绝地、边境争议、巢群扩大及强制融合；不补领袖身份、结局或三部曲后卷。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL6207839W"
+      ]
+    },
+    {
+      "id": "Q7771704",
+      "identity": {
+        "title": "The Unseen Queen",
+        "author": "Troy Denning"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "获得新居的Killik巢群仍遭未知敌人攻击，并将责任归于绝地，调查又逼近隐藏的Dark Nest威胁。杰森的灾变预见究竟防止还是触发战争也悬而未决，使归罪与行动同时依赖不确定知识。",
+        "issue_facets": [
+          {
+            "label": "未知攻击与归罪",
+            "question": "缺少明确信息时怎样避免把盟友当敌人？",
+            "basis": "新巢群遇袭，Killik将责任归给绝地。"
+          },
+          {
+            "label": "预见与因果",
+            "question": "对灾难的预见怎样可能改变灾难本身？",
+            "basis": "简介把杰森预见触发或阻止战争作为未解疑问。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持袭击、归罪、调查与预见疑问；不答复Dark Nest为何追杀Mara、秘密身份或最终战争。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL6207834W"
+      ]
+    },
+    {
+      "id": "Q139851538",
+      "identity": {
+        "title": "One Piece, Volume 35: Captain",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "生态与资源",
+          "权力与制度"
+        ],
+        "issue": "路飞与乌索普修理梅利号时遭钱财被盗，船的未来因此成为艰难决定。有限资源把船长责任与伙伴共同依附的生活条件联系起来，继续航行需要面对愿望之外的约束。",
+        "issue_facets": [
+          {
+            "label": "资源与共同生活",
+            "question": "资源被夺怎样改变团队共同依赖的载体？",
+            "basis": "修船的钱被偷，船只未来无法按原计划处理。"
+          },
+          {
+            "label": "领导与艰难选择",
+            "question": "船长怎样承担关系中的不可回避决定？",
+            "basis": "路飞必须决定船会如何处置。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第35卷短简介支持修船、失窃与路飞的艰难决定；不补争吵胜负、船病细节或后卷新船。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8215717W"
+      ],
+      "identity_caveat": "《One Piece》第35卷漫画单位。"
+    },
+    {
+      "id": "Q55230307",
+      "identity": {
+        "title": "A Time for War, A Time for Peace",
+        "author": "基思·迪坎迪多"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "联邦总统因丑闻辞职引发选举，克林贡境内使馆遭恐怖分子夺取又暴露高层阴谋。公共制度危机之外，莱克的婚姻与指挥计划也受严酷检查阻碍，私人未来依赖同一套权力秩序能否保持正当。",
+        "issue_facets": [
+          {
+            "label": "丑闻与政治信任",
+            "question": "制度怎样在高层失责后重新取得授权？",
+            "basis": "总统辞职导致竞争选举，使馆事件又牵涉政府高层。"
+          },
+          {
+            "label": "公共与私人未来",
+            "question": "机构审查怎样同时影响职业和亲密计划？",
+            "basis": "Riker的指挥与婚姻计划遭高层严酷检查打断。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持Tezwa后选举、使馆恐袭、高层阴谋与Riker检查；不补整个九卷系列或结果。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL999505W"
+      ]
+    },
+    {
+      "id": "Q55230311",
+      "identity": {
+        "title": "A Time to Hate",
+        "author": "Robert Greenberger"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "两族百年和平原来由自然气体压制敌意维持，却最终会致死；被当成解药的环境干预又释放暴力。救命与恢复自主不再同步，皮卡德必须处理既有和平、生命风险与治疗后果的冲突。",
+        "issue_facets": [
+          {
+            "label": "和平与心智控制",
+            "question": "被环境压制的敌意消失是否等于和解？",
+            "basis": "自然气体使两族和平，却同时带来最终死亡。"
+          },
+          {
+            "label": "治疗与伤害",
+            "question": "解除致死条件为什么可能引发另一种灾难？",
+            "basis": "所谓解药释放长期压抑的敌意并触发全球杀戮。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持气体作用、致死风险、Kyle Riker干预与暴力复发；不补治疗原理、最终方案或种族存亡。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5821586W"
+      ]
+    },
+    {
+      "id": "Q55230315",
+      "identity": {
+        "title": "A Time to Sow",
+        "author": "Kevin Dilmore / Dayton Ward"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "生态与资源",
+          "权力与制度"
+        ],
+        "issue": "两百年前求救被认为来得太迟，但后世发现Dokaalan仍在衰败的小行星矿区挣扎，并计划改造新家园。幸存者内部的分裂、破坏与恐袭又威胁重建，使失去故乡后共同未来的想象仍需政治协调。",
+        "issue_facets": [
+          {
+            "label": "延迟援助与存续",
+            "question": "旧求救失效后幸存者怎样保留未来？",
+            "basis": "母星已毁，矿区殖民者仍希望改造邻近行星。"
+          },
+          {
+            "label": "重建与内部冲突",
+            "question": "共同生存目标为何不能自动带来团结？",
+            "basis": "Dokaalan内部苦涩分裂带来破坏和恐怖行为。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持古老求救、矿区幸存者、行星改造意向与内部冲突；不补阴谋方或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5696523W"
+      ]
+    },
+    {
+      "id": "Q7601151",
+      "identity": {
+        "title": "Republic Commando: Hard Contact",
+        "author": "Karen Traviss"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "四名克隆突击队员潜入敌占行星破坏纳米病毒设施，却缺少支援和熟悉伙伴，失散者又遇到缺乏经验的绝地学徒。高度训练的战争工具仍依赖临时关系与有限知识，完成任务的要求不能消除他们作为脆弱个体的处境。",
+        "issue_facets": [
+          {
+            "label": "战争与个体",
+            "question": "被设计为精锐的战士为何仍需关系支持？",
+            "basis": "队伍人数少、失散且同陌生人合作，无后援。"
+          },
+          {
+            "label": "危险技术与有限经验",
+            "question": "阻止生物武器的任务怎样受能力缺口影响？",
+            "basis": "目标是纳米病毒设施，学徒却承认经验不足。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持克隆队员、纳米病毒任务、失散、学徒及敌地危险；不补基因权利主张、凶手或任务结果。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5813999W"
+      ]
+    },
+    {
+      "id": "Q7727916",
+      "identity": {
+        "title": "The Coyote Kings of the Space-Age Bachelor Pad",
+        "author": "Malcolm Azania"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "知识与认识",
+          "性别与亲密"
+        ],
+        "issue": "洗碗工与录像店员的才智并未转化为认可，神秘女子的出现却把他们带入古代遗物的争夺。爱慕与创造力在这里同知识权力交织，被低估的日常劳动者可能左右所有生命的未来。",
+        "issue_facets": [
+          {
+            "label": "才智与社会位置",
+            "question": "才能为何与职业地位脱节？",
+            "basis": "两位好友虽聪颖，一人洗碗一人售录像，诗作与发明皆在业余。"
+          },
+          {
+            "label": "亲密与知识争夺",
+            "question": "爱慕怎样影响进入隐秘争夺的判断？",
+            "basis": "Hamza爱上Sherem，二人与收藏者及犯罪教团争夺遗物相连。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。简介支持两位好友职业、诗作发明、Sherem与遗物竞争；不补遗物功能、非洲语言具体含义或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL9171951W"
+      ]
+    },
+    {
+      "id": "Q139800309",
+      "identity": {
+        "title": "One Piece, Volume 29: Oratorio",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "知识与认识",
+          "生存与风险"
+        ],
+        "issue": "艾尼路宣告三小时后岛上只会剩五人站立，分散的草帽成员被迫在生存战中前行并重新汇合。拥有威权的预言把未知未来变成行动压力，伙伴的联合则在被控制的时限中形成反抗可能。",
+        "issue_facets": [
+          {
+            "label": "预言与威权",
+            "question": "统治者宣布的未来如何改变当下行为？",
+            "basis": "艾尼路给出三小时与五人幸存式的威胁预测。"
+          },
+          {
+            "label": "分散与反抗",
+            "question": "处于生存竞争中的伙伴怎样重新共同行动？",
+            "basis": "船员分散战斗，最终在Skypiea战场交汇。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。第29卷封底支持三小时预测、分散与最终战场相遇；不当作预言必然成真，不补神力机制或胜负。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8215675W"
+      ],
+      "identity_caveat": "《One Piece》第29卷漫画单位。"
+    },
+    {
+      "id": "Q140451232",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 5",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "兄弟与温莉寻访炼金老师，却因扒手事件转向寻找工艺极佳的机械义肢铁匠，故事又回望初学炼金术的过去。知识的获得依赖师徒与手艺共同体，身体修复也把科学追求与工匠照护连接起来。",
+        "issue_facets": [
+          {
+            "label": "手艺与身体",
+            "question": "身体技术如何依赖不显眼的工匠知识？",
+            "basis": "温莉被顶尖auto-mail工艺吸引，一行人寻访铁匠。"
+          },
+          {
+            "label": "学习与关系",
+            "question": "掌握技术的过去怎样影响当前求索？",
+            "basis": "寻找老师的行动与兄弟初学炼金术的回叙相连。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。原版第5卷简介支持访师、Rush Valley扒手、义肢铁匠与学习回叙；不补实验死伤或全系列。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8756250W"
+      ],
+      "identity_caveat": "原版第5卷单位，与Fullmetal Edition第5卷分开。"
+    },
+    {
+      "id": "Q2666326",
+      "identity": {
+        "title": "最後一戰：蟲族肆虐",
+        "author": "威廉·C·迪茨"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "从Reach毁灭中逃出的士官长与幸存者迫降Halo，必须抢在外星占据者之前解开其秘密并控制力量来源。避难很快变为争夺未知装置的军事行动，求生者也必须面对不了解技术就使用它的风险。",
+        "issue_facets": [
+          {
+            "label": "逃难与再武装",
+            "question": "幸存者为何会从避难转入力量争夺？",
+            "basis": "人类逃离毁灭的Reach后，立刻与占据者竞逐Halo控制权。"
+          },
+          {
+            "label": "未知技术的使用",
+            "question": "争夺速度会怎样挤压理解技术的时间？",
+            "basis": "双方要解开秘密并掌握强大力量，而不是先确认全部后果。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际逐条读取已匹配的Open Library官方月度dump中的社区作品简介（本地pending资料，不是直接出版社页面或原作正文）。短简介支持Reach后逃亡、Halo迫降和与外星占据者争夺秘密；不补游戏通关、Flood生物机制或结局。保留来源记录SHA256和题名/作者匹配状态；这种匹配不等于实体粒度或全书独立核验。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15141485W"
+      ]
+    }
+  ]
+}
