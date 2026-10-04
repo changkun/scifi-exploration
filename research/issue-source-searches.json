@@ -3,7 +3,7 @@
     "format": "actual-source-search-log-v1",
     "created_at": "2026-10-04",
     "status": "frozen_checkpoint",
-    "record_count": 937,
+    "record_count": 986,
     "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
     "inputs": [
       {
@@ -738,6 +738,109 @@
           "record_count": 19,
           "frozen_at": "2026-10-04"
         }
+      },
+      {
+        "file": "source-aggregate-round17-log.json",
+        "sha256": "cf65cb9e1ff271077a436f841b7a8940b5521aea1ea85bf1da8ea380cc0d044a",
+        "metadata": {
+          "method": "actual-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 14,
+          "inputs": [
+            {
+              "file": "research/issue-input-snapshots/silverberg-source-searches-round17.json",
+              "sha256": "db220e3e578776b485ba25e945cdf76edb4af813ceb0d44d5e1776773a5088a7",
+              "metadata": {
+                "round": 17,
+                "created_at": "2026-10-04",
+                "status": "frozen_checkpoint",
+                "method": "actual-reading-log-v1",
+                "record_count": 5,
+                "frozen_at": "2026-10-04"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round17-log.json",
+              "sha256": "960325a41c4eb10bcc030735a40ecaedeb3da75301ad2c3fa29cf720281be931",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "updated_at": "2026-10-04",
+                "round": "round17",
+                "record_count": 4,
+                "note": "第十七轮实际检索/阅读范围冻结快照；访问失败、零散搜索返回、原作完整阅读、二手身份辅助各自分开，不将扫描或解释提升verified。后续写新轮文件。",
+                "frozen_at": "2026-10-04"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round18-log.json",
+              "sha256": "5ade456fac8f6fe6f3a33a72a88d553ce0b4ffd9fddfff7125b20621e0c24da3",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "updated_at": "2026-10-04",
+                "round": "round18",
+                "record_count": 2,
+                "facet_count": 0,
+                "note": "第十八轮真实检索/读取范围冻结；两篇原刊单篇读完，普通下载与web未展示分开。笔名/同题合集出版资料只作身份辅助，不作未读剧情。后续写新轮。",
+                "frozen_at": "2026-10-04"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/source-french-volumes-round17-log.json",
+              "sha256": "0b9d15e3b3b7bc2c19b1411a85b48f5acbf789e2292ce82b508808d959247cfa",
+              "metadata": {
+                "round": 17,
+                "created_at": "2026-10-04",
+                "status": "frozen_checkpoint",
+                "method": "actual-reading-log-v1",
+                "frozen_at": "2026-10-04",
+                "record_count": 3
+              }
+            }
+          ],
+          "note": "查询、失败与实际读取范围分别保存；原作、二手梗概和出版简介不混作全文已读。"
+        }
+      },
+      {
+        "file": "global-source-searches-round17.json",
+        "sha256": "8c2c86ae0785e5f0e275b5a0fc0492265f91c08d00fe5f46185c3057f7c00501",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-04",
+          "scope": "1980年起及日期未知，仍缺核心议题的具体作品；跳过已冻结、队内预留和本轮资料不足实体。",
+          "method": "逐实体实际阅读原作、作者或出版方资料；明示二手剧情支持范围；只补topics、issue、issue_facets。",
+          "verification": "knowledge_added_unverified；已读范围与全文、书目独立核验分开。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "9b18f4c9605a37b48915db7d73d446c4c9d31b2098df9447f62218860f66e359",
+          "record_count": 18,
+          "facet_count": 49,
+          "selfcheck": {
+            "exact_identity": true,
+            "current_issue_missing": true,
+            "allowed_fields_only": true,
+            "unique_ids": true,
+            "no_prior_private_issue_duplicate": true,
+            "logs_match": true,
+            "field_specificity_structure": true
+          },
+          "freeze_snapshot_sha256": "2e58036865fcadf567a0dd0487598d90a7365b0700a2dbb8c09c4442e2a08a1a"
+        }
+      },
+      {
+        "file": "modern-source-searches-round18.json",
+        "sha256": "6167df8b004912d9a45541a002ccbcd741fc837dfe6a8e8c957b2dbfa6a4fef1",
+        "metadata": {
+          "method": "actual-source-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "record_count": 17,
+          "note": "持续补1900–1979尚缺具体核心分析；已有知识与实际读取来源区分，文学解读仍待独立核对。",
+          "frozen_at": "2026-10-04"
+        }
       }
     ],
     "updated_at": "2026-10-04",
@@ -762,9 +865,16 @@
           "previous_normalization": {
             "method": "exact_object_payload_v1",
             "normalized_at": "2026-10-04",
-            "records_with_removed_copies": 22,
-            "identical_copies_removed": 213,
-            "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+            "records_with_removed_copies": 0,
+            "identical_copies_removed": 0,
+            "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+            "previous_normalization": {
+              "method": "exact_object_payload_v1",
+              "normalized_at": "2026-10-04",
+              "records_with_removed_copies": 22,
+              "identical_copies_removed": 213,
+              "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+            }
           }
         }
       }
@@ -50471,6 +50581,3152 @@
         "verification_status": "reading_scope_logged_not_full_verification"
       },
       "attempt_input": "modern-source-searches-round17.json"
+    },
+    {
+      "id": "Q135094207",
+      "identity": {
+        "title": "The Conglomeroid Cocktail Party",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: Robert Silverberg \"The Conglomeroid Cocktail Party\" collection review"
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/a/robert-silverberg-43/the-conglomeroid-cocktail-party/",
+          "result": "actual_source_scope_read",
+          "material_type": "确切合集评论",
+          "reading_scope": "实际读128–143：16篇合集、时间旅行/改形身体/增强黑猩猩/重造恐龙的明确概括；原作未读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://kandiliotis.com/the-conglomeroid-cocktail-party-robert-silverberg/",
+          "result": "actual_source_scope_read",
+          "material_type": "确切合集逐成员评论，含明确引自书目站的段落",
+          "reading_scope": "实际读19–86及后续Needle in a Timestack成员段；At the Conglomeroid Cocktail Party的阶层限制来自该文所引Majipoor简介，不冒称原作已读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应1984年16篇合集，不是标题相近的At the Conglomeroid Cocktail Party单篇。实际读Kirkus合集评论及Kandiliotis的逐成员介绍，未读16篇全部正文；Kirkus对未点名作曲家故事的概括与Gianni点名评论不一致，此次不采用该作曲家概括。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q135094207",
+        "identity": {
+          "title": "The Conglomeroid Cocktail Party",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "Robert Silverberg \"The Conglomeroid Cocktail Party\" collection review",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/a/robert-silverberg-43/the-conglomeroid-cocktail-party/",
+            "result": "actual_source_scope_read",
+            "material_type": "确切合集评论",
+            "reading_scope": "实际读128–143：16篇合集、时间旅行/改形身体/增强黑猩猩/重造恐龙的明确概括；原作未读。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://kandiliotis.com/the-conglomeroid-cocktail-party-robert-silverberg/",
+            "result": "actual_source_scope_read",
+            "material_type": "确切合集逐成员评论，含明确引自书目站的段落",
+            "reading_scope": "实际读19–86及后续Needle in a Timestack成员段；At the Conglomeroid Cocktail Party的阶层限制来自该文所引Majipoor简介，不冒称原作已读。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应1984年16篇合集，不是标题相近的At the Conglomeroid Cocktail Party单篇。实际读Kirkus合集评论及Kandiliotis的逐成员介绍，未读16篇全部正文；Kirkus对未点名作曲家故事的概括与Gianni点名评论不一致，此次不采用该作曲家概括。 文学解释仍待独立核对。",
+        "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+        "issue_result": "added_to_private_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q135094390",
+      "identity": {
+        "title": "Trips: 1972-73",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: Robert Silverberg \"Trips: 1972-73\" contents review",
+        "web search: \"Trips\" \"1972-73\" \"Subterranean\" Silverberg",
+        "web search: site:subterraneanpress.com Silverberg \"Trips\" \"Schwartz\"",
+        "web search: \"Trips\" \"1972-73\" \"Marzaat\""
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://subterraneanpress.com/copy-of-collected-stories-of-robert-silverberg-volume-four-trips-ebook/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方所载作者前言节选与目录",
+          "reading_scope": "实际读86–115作者自述及目录，确认所讨论三篇为此卷成员；前言是公开片段，未读完整前言或故事正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://marzaat.com/2015/04/09/the-collected-stories-of-robert-silverberg-volume-4/",
+          "result": "actual_source_scope_read",
+          "material_type": "点名合集成员的二手评论",
+          "reading_scope": "实际读64–83，采用In the Group、The Science Fiction Hall of Fame与Schwartz Between the Galaxies三个成员段；作者生平的纠错争议不进入作品情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2009年The Collected Stories Volume Four合集，题名的1972–73是写作阶段，不改为书目首发年份。实际读出版方的作者前言节选与目录及MarzAat点名成员评论；未读全部原篇、作者全部札记或该合集整本。此处仅选三篇提出问题，非一条共同时间线。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q135094390",
+        "identity": {
+          "title": "Trips: 1972-73",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "Robert Silverberg \"Trips: 1972-73\" contents review",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Trips\" \"1972-73\" \"Subterranean\" Silverberg",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "site:subterraneanpress.com Silverberg \"Trips\" \"Schwartz\"",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Trips\" \"1972-73\" \"Marzaat\"",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://subterraneanpress.com/copy-of-collected-stories-of-robert-silverberg-volume-four-trips-ebook/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方所载作者前言节选与目录",
+            "reading_scope": "实际读86–115作者自述及目录，确认所讨论三篇为此卷成员；前言是公开片段，未读完整前言或故事正文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://marzaat.com/2015/04/09/the-collected-stories-of-robert-silverberg-volume-4/",
+            "result": "actual_source_scope_read",
+            "material_type": "点名合集成员的二手评论",
+            "reading_scope": "实际读64–83，采用In the Group、The Science Fiction Hall of Fame与Schwartz Between the Galaxies三个成员段；作者生平的纠错争议不进入作品情节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应2009年The Collected Stories Volume Four合集，题名的1972–73是写作阶段，不改为书目首发年份。实际读出版方的作者前言节选与目录及MarzAat点名成员评论；未读全部原篇、作者全部札记或该合集整本。此处仅选三篇提出问题，非一条共同时间线。 文学解释仍待独立核对。",
+        "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+        "issue_result": "added_to_private_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q135094509",
+      "identity": {
+        "title": "Early Days: More Tales from the Pulp Era",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: \"Early Days\" \"More Tales from the Pulp Era\" publisher"
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook//",
+          "material_type": "出版方检索结果中的双斜杠URL",
+          "result": "直接打开两次均Cache miss；同一次检索已返回介绍。后来使用该页面规范单斜杠地址实际打开成功。",
+          "reading_scope": "失败入口不称全文已读；规范地址实际范围另列。"
+        },
+        {
+          "url": "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方合集介绍",
+          "reading_scope": "实际连续读101–106，17篇与作者札记的说明及Space Is the Place、Rescue Mission、Harwood’s Vortex三篇确切内容；未读原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2016年合集，出版方说明选入1956–1958年17篇及作者札记；不是一个发生于同一年或同一星球的故事。实际只读官方介绍及点名五篇的概括，未读原作全文或完整作者札记；这里仅讨论三篇明确可支持的冲突。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q135094509",
+        "identity": {
+          "title": "Early Days: More Tales from the Pulp Era",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Early Days\" \"More Tales from the Pulp Era\" publisher",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook//",
+            "material_type": "出版方检索结果中的双斜杠URL",
+            "result": "直接打开两次均Cache miss；同一次检索已返回介绍。后来使用该页面规范单斜杠地址实际打开成功。",
+            "reading_scope": "失败入口不称全文已读；规范地址实际范围另列。"
+          },
+          {
+            "url": "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方合集介绍",
+            "reading_scope": "实际连续读101–106，17篇与作者札记的说明及Space Is the Place、Rescue Mission、Harwood’s Vortex三篇确切内容；未读原作全文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应2016年合集，出版方说明选入1956–1958年17篇及作者札记；不是一个发生于同一年或同一星球的故事。实际只读官方介绍及点名五篇的概括，未读原作全文或完整作者札记；这里仅讨论三篇明确可支持的冲突。 文学解释仍待独立核对。",
+        "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+        "issue_result": "added_to_private_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q16654763",
+      "identity": {
+        "title": "Ishmael in Love",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: \"Ishmael in Love\" Silverberg author summary",
+        "web search: \"Beyond the Safe Zone\" \"review\" \"Ishmael\" -site:washingtonpost.com"
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://galacticjourney.org/stories/Fantasy__Science_Fiction_v039n01_1970-07_PDF.pdf",
+          "material_type": "原刊扫描入口的检索缓存与直接打开",
+          "result": "检索只返回64页开头，直接打开变为机器人验证；未进一步操作验证或绕过，没有读取连续原刊全文。",
+          "reading_scope": "只见64页开头摘要，不作为阅读全文依据。"
+        },
+        {
+          "url": "https://read.amazon.com/kp/card?asin=B0CBSR64ND&tag=orimpreview-20",
+          "material_type": "出版方READ PREVIEW链接",
+          "result": "实际点链接后Cache miss，未读预览。",
+          "reading_scope": "无正文。"
+        },
+        {
+          "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方确切单篇摘要",
+          "reading_scope": "实际读25–28，St. Croix维修队、鱼酬、教育与主体叙述、Lisabeth的命名与爱欲；仅简介，不填最终关系或破坏行为细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应1970单篇；实际读Open Road再版宣传摘要25–28及原刊检索缓存的64页开头，未取得原刊连续正文。Galactic Journey入口显示机器人验证，未绕过；出版方提供的Amazon预览读取失败，未冒称全文或音频已读。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q16654763",
+        "identity": {
+          "title": "Ishmael in Love",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Ishmael in Love\" Silverberg author summary",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Beyond the Safe Zone\" \"review\" \"Ishmael\" -site:washingtonpost.com",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://galacticjourney.org/stories/Fantasy__Science_Fiction_v039n01_1970-07_PDF.pdf",
+            "material_type": "原刊扫描入口的检索缓存与直接打开",
+            "result": "检索只返回64页开头，直接打开变为机器人验证；未进一步操作验证或绕过，没有读取连续原刊全文。",
+            "reading_scope": "只见64页开头摘要，不作为阅读全文依据。"
+          },
+          {
+            "url": "https://read.amazon.com/kp/card?asin=B0CBSR64ND&tag=orimpreview-20",
+            "material_type": "出版方READ PREVIEW链接",
+            "result": "实际点链接后Cache miss，未读预览。",
+            "reading_scope": "无正文。"
+          },
+          {
+            "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方确切单篇摘要",
+            "reading_scope": "实际读25–28，St. Croix维修队、鱼酬、教育与主体叙述、Lisabeth的命名与爱欲；仅简介，不填最终关系或破坏行为细节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应1970单篇；实际读Open Road再版宣传摘要25–28及原刊检索缓存的64页开头，未取得原刊连续正文。Galactic Journey入口显示机器人验证，未绕过；出版方提供的Amazon预览读取失败，未冒称全文或音频已读。 文学解释仍待独立核对。",
+        "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+        "issue_result": "added_to_private_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q135094234",
+      "identity": {
+        "title": "Beyond the Safe Zone",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: Robert Silverberg \"Beyond the Safe Zone\" collection review",
+        "web search: \"Beyond the Safe Zone\" Silverberg publisher contents",
+        "web search: \"Beyond the Safe Zone\" \"Kirkus\"",
+        "web search: \"Beyond the Safe Zone\" \"Robert Silverberg\" \"SF Gateway\"",
+        "web search: \"Beyond the Safe Zone\" \"Silverberg\" \"Introduction\" \"Ishmael\""
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.worldswithoutend.com/novel.asp?ID=18215",
+          "material_type": "书目目录搜索结果与直接打开",
+          "result": "检索出现部分目录，直接打开内部错误；完整成员确认采用实际取得的FantLab目录。",
+          "reading_scope": "部分搜索目录，不是作品正文。"
+        },
+        {
+          "url": "https://fantlab.ru/edition92439",
+          "result": "actual_source_scope_read",
+          "material_type": "1987版完整目录的书目资料",
+          "reading_scope": "实际读51–103目录，Ishmael in Love p37及Many Mansions p103明确列为成员；正文页码是书目声明，不是此轮已读页数。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+          "result": "actual_source_scope_read",
+          "material_type": "第十五轮已归档的单篇公开重刊全文阅读",
+          "reading_scope": "此前134段读至THE END并保存原始日志；本轮查阅该已有分析及私有转录中祖先、孩子与多分支段，不重新声称读1987合集。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方成员单篇摘要",
+          "reading_scope": "实际读25–28，仅用于Ishmael这个成员的明确设定；未读取原作结尾。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应1986合集，实际查读1987 Warner版完整书目目录，确认所选两篇；版次成员是否完全相同仍待实物目录校勘。Many Mansions第十五轮公开重刊全文134段读取已归档，本轮采用既有原文理解；Ishmael只读出版方摘要。未读此合集整本，也不把成员的议题视为全部27篇均共有。 文学解释仍待独立核对。",
+      "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+      "issue_result": "added_to_private_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q135094234",
+        "identity": {
+          "title": "Beyond the Safe Zone",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "Robert Silverberg \"Beyond the Safe Zone\" collection review",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Beyond the Safe Zone\" Silverberg publisher contents",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Beyond the Safe Zone\" \"Kirkus\"",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Beyond the Safe Zone\" \"Robert Silverberg\" \"SF Gateway\"",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Beyond the Safe Zone\" \"Silverberg\" \"Introduction\" \"Ishmael\"",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.worldswithoutend.com/novel.asp?ID=18215",
+            "material_type": "书目目录搜索结果与直接打开",
+            "result": "检索出现部分目录，直接打开内部错误；完整成员确认采用实际取得的FantLab目录。",
+            "reading_scope": "部分搜索目录，不是作品正文。"
+          },
+          {
+            "url": "https://fantlab.ru/edition92439",
+            "result": "actual_source_scope_read",
+            "material_type": "1987版完整目录的书目资料",
+            "reading_scope": "实际读51–103目录，Ishmael in Love p37及Many Mansions p103明确列为成员；正文页码是书目声明，不是此轮已读页数。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+            "result": "actual_source_scope_read",
+            "material_type": "第十五轮已归档的单篇公开重刊全文阅读",
+            "reading_scope": "此前134段读至THE END并保存原始日志；本轮查阅该已有分析及私有转录中祖先、孩子与多分支段，不重新声称读1987合集。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方成员单篇摘要",
+            "reading_scope": "实际读25–28，仅用于Ishmael这个成员的明确设定；未读取原作结尾。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应1986合集，实际查读1987 Warner版完整书目目录，确认所选两篇；版次成员是否完全相同仍待实物目录校勘。Many Mansions第十五轮公开重刊全文134段读取已归档，本轮采用既有原文理解；Ishmael只读出版方摘要。未读此合集整本，也不把成员的议题视为全部27篇均共有。 文学解释仍待独立核对。",
+        "next_step": "取得确切版次并逐篇核对；补未读篇目，不把局部理解当整合集完成。",
+        "issue_result": "added_to_private_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q23021482",
+      "identity": {
+        "title": "The Iron Chancellor",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        "web search: Galaxy May 1958 Iron Chancellor archive pdf",
+        "web search: site:archive.org \"Galaxy_v16n01_1958-05\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.unz.com/print/GalaxySF-1958may/",
+          "material_type": "原刊页入口",
+          "result": "web cache miss失败；未读正文。"
+        },
+        {
+          "url": "https://www.everand.com/book/478248098/The-Iron-Chancellor",
+          "material_type": "出版社电子版平台条目及免费预览",
+          "location": "介绍、版权页、目录与About Galaxy开头",
+          "result": "读到Open Road/RosettaBooks 2011电子版版权与1958原作版权声明；公开预览止于前言，不到小说正文，未订阅/绕过限制。"
+        },
+        {
+          "url": "https://luminist.org/archives/SF/GAL.htm",
+          "material_type": "私人原刊扫描索引",
+          "location": "MAY 1958链接",
+          "result": "实际读索引后取得该期公开Drive文件入口；非作者或出版社官方数字重刊。"
+        },
+        {
+          "url": "https://drive.google.com/open?id=18raIvbk0navQUYdPKy6MRd7hPjzMcedv",
+          "material_type": "Galaxy 1958-05扫描入口",
+          "result": "普通公开下载取得148页原刊扫描；标题作者/终页视觉核见，正文全部经两栏OCR顺序读完。web工具未显示文件不等同读取失败；不公开扫描原文。",
+          "location": "印刷p120–143/PDF122–145"
+        }
+      ],
+      "reading_scope": "Galaxy原刊单篇印刷p120–143/PDF122–145全部正文，按两栏OCR实际顺序阅读；p120题名作者及p143结尾另视觉复核。p144之后杂志续文/广告未作本篇情节。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描载体非官方数字重刊；OCR未逐字校勘，文学解释尚待独立审阅。",
+      "next_step": "继续其他缺口，必要与另一版具名重刊复核。",
+      "raw_reading_log": {
+        "id": "Q23021482",
+        "identity": {
+          "title": "The Iron Chancellor",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_scan_full_single_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "Galaxy May 1958 Iron Chancellor archive pdf",
+            "result": "取得Luminist原刊索引与电子书平台条目；不使用非原作评论推断正文。"
+          },
+          {
+            "provider": "web search",
+            "query": "site:archive.org \"Galaxy_v16n01_1958-05\"",
+            "result": "未返回结果。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.unz.com/print/GalaxySF-1958may/",
+            "material_type": "原刊页入口",
+            "result": "web cache miss失败；未读正文。"
+          },
+          {
+            "url": "https://www.everand.com/book/478248098/The-Iron-Chancellor",
+            "material_type": "出版社电子版平台条目及免费预览",
+            "location": "介绍、版权页、目录与About Galaxy开头",
+            "result": "读到Open Road/RosettaBooks 2011电子版版权与1958原作版权声明；公开预览止于前言，不到小说正文，未订阅/绕过限制。"
+          },
+          {
+            "url": "https://luminist.org/archives/SF/GAL.htm",
+            "material_type": "私人原刊扫描索引",
+            "location": "MAY 1958链接",
+            "result": "实际读索引后取得该期公开Drive文件入口；非作者或出版社官方数字重刊。"
+          },
+          {
+            "url": "https://drive.google.com/open?id=18raIvbk0navQUYdPKy6MRd7hPjzMcedv",
+            "material_type": "Galaxy 1958-05扫描入口",
+            "result": "普通公开下载取得148页原刊扫描；标题作者/终页视觉核见，正文全部经两栏OCR顺序读完。web工具未显示文件不等同读取失败；不公开扫描原文。",
+            "location": "印刷p120–143/PDF122–145"
+          }
+        ],
+        "reading_scope": "Galaxy原刊单篇印刷p120–143/PDF122–145全部正文，按两栏OCR实际顺序阅读；p120题名作者及p143结尾另视觉复核。p144之后杂志续文/广告未作本篇情节。",
+        "issue_result": "added_to_private_round17_unverified",
+        "reason_unconfirmed": "私人扫描载体非官方数字重刊；OCR未逐字校勘，文学解释尚待独立审阅。",
+        "next_step": "继续其他缺口，必要与另一版具名重刊复核。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q17632500",
+      "identity": {
+        "title": "The Macauley Circuit",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_republication_full_single_story_read",
+      "queries": [
+        "web search: \"Robert Silverberg\" \"The Macauley Circuit\" full story",
+        "web search: site:luminist.org \"NEW WORLDS\" \"APRIL 1958\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.exosomatic.org/ENTER/Fict-Bio/Silverberg%2C%20Robert/Silverberg%2C%20Robert%20-%20The%20Macauley%20Circuit.pdf",
+          "material_type": "原作转录入口",
+          "result": "搜索返回开篇；web缓存失败、普通下载25秒超时，尚未取到全文。"
+        },
+        {
+          "url": "https://electronicsandbooks.com/edt/manual/Old%20Pulp%20Magazines/%21%20new/New%20Worlds%20-%20April%201958%20%28gnv64%29.pdf",
+          "material_type": "重刊扫描入口",
+          "result": "搜索实际返回p52开头标题作者与叙述，web超时、下载连接失败，尚未取得扫描。"
+        },
+        {
+          "url": "https://zanotowane.pl/1198/2299/",
+          "material_type": "第三方原作具名转录",
+          "result": "搜索实际返回若干原作段落含结尾，正常web打开缓存失败；未将摘要片段称完整顺序全文阅读。"
+        },
+        {
+          "url": "https://www.zanotowane.pl/1176/7142/",
+          "material_type": "第三方原作具名转录",
+          "result": "搜索返回情节段落及近结尾，正常web打开缓存失败；版本/完整性未核。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/NW.htm",
+          "material_type": "重刊索引",
+          "location": "APRIL 1958链接",
+          "result": "实际读索引并定位公开S3扫描。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NW_1958_04.pdf",
+          "material_type": "New Worlds 1958-04扫描",
+          "result": "普通公开下载成功取得132页扫描；本单篇十页正文全部OCR辅助顺序读完，p52题名作者视觉核对。未将初查失败或第三方零散返回称已读全文。",
+          "location": "印刷p52–61/PDF54–63"
+        },
+        {
+          "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+          "material_type": "专业书目年表",
+          "location": "Macauley Circuit列Fantastic Universe Aug1956",
+          "result": "实际读书目；早先1956/1957纪年声明差异单独保留，现canonical已为1956。不作情节來源，也不等于已读初刊。"
+        }
+      ],
+      "reading_scope": "实际顺序读New Worlds重刊单篇印刷p52–61/PDF54–63全部正文，题名作者页视觉确认；原Fantastic Universe初刊未读。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描OCR未逐字校勘；1958重刊不是初刊纪年证明，既有1956/1957声明差异仍记录为旧检索历史，当前canonical1956保持。",
+      "next_step": "核对初刊身份/日期并另交更正建议；继续其他missing作品。",
+      "raw_reading_log": {
+        "id": "Q17632500",
+        "identity": {
+          "title": "The Macauley Circuit",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_republication_full_single_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Robert Silverberg\" \"The Macauley Circuit\" full story",
+            "result": "原作具名转录与New Worlds April 1958重刊扫描入口；实际搜索返回一些原作段落，不将未返回段落称已读。"
+          },
+          {
+            "provider": "web search",
+            "query": "site:luminist.org \"NEW WORLDS\" \"APRIL 1958\"",
+            "result": "取得实际索引并点击公开扫描。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.exosomatic.org/ENTER/Fict-Bio/Silverberg%2C%20Robert/Silverberg%2C%20Robert%20-%20The%20Macauley%20Circuit.pdf",
+            "material_type": "原作转录入口",
+            "result": "搜索返回开篇；web缓存失败、普通下载25秒超时，尚未取到全文。"
+          },
+          {
+            "url": "https://electronicsandbooks.com/edt/manual/Old%20Pulp%20Magazines/%21%20new/New%20Worlds%20-%20April%201958%20%28gnv64%29.pdf",
+            "material_type": "重刊扫描入口",
+            "result": "搜索实际返回p52开头标题作者与叙述，web超时、下载连接失败，尚未取得扫描。"
+          },
+          {
+            "url": "https://zanotowane.pl/1198/2299/",
+            "material_type": "第三方原作具名转录",
+            "result": "搜索实际返回若干原作段落含结尾，正常web打开缓存失败；未将摘要片段称完整顺序全文阅读。"
+          },
+          {
+            "url": "https://www.zanotowane.pl/1176/7142/",
+            "material_type": "第三方原作具名转录",
+            "result": "搜索返回情节段落及近结尾，正常web打开缓存失败；版本/完整性未核。"
+          },
+          {
+            "url": "https://www.luminist.org/archives/SF/NW.htm",
+            "material_type": "重刊索引",
+            "location": "APRIL 1958链接",
+            "result": "实际读索引并定位公开S3扫描。"
+          },
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NW_1958_04.pdf",
+            "material_type": "New Worlds 1958-04扫描",
+            "result": "普通公开下载成功取得132页扫描；本单篇十页正文全部OCR辅助顺序读完，p52题名作者视觉核对。未将初查失败或第三方零散返回称已读全文。",
+            "location": "印刷p52–61/PDF54–63"
+          },
+          {
+            "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+            "material_type": "专业书目年表",
+            "location": "Macauley Circuit列Fantastic Universe Aug1956",
+            "result": "实际读书目；早先1956/1957纪年声明差异单独保留，现canonical已为1956。不作情节來源，也不等于已读初刊。"
+          }
+        ],
+        "reading_scope": "实际顺序读New Worlds重刊单篇印刷p52–61/PDF54–63全部正文，题名作者页视觉确认；原Fantastic Universe初刊未读。",
+        "issue_result": "added_to_private_round17_unverified",
+        "reason_unconfirmed": "私人扫描OCR未逐字校勘；1958重刊不是初刊纪年证明，既有1956/1957声明差异仍记录为旧检索历史，当前canonical1956保持。",
+        "next_step": "核对初刊身份/日期并另交更正建议；继续其他missing作品。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q25394944",
+      "identity": {
+        "title": "Warm Man",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        "web search: \"Warm Man\" \"Silverberg\" \"May 1957\" pdf"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1957_05.pdf",
+          "material_type": "F&SF1957-05原刊扫描",
+          "location": "印刷p46–55/PDF48–57",
+          "result": "web因文件大小未显示；普通公開下载10MB成功，内嵌OCR辅助逐页读完整单篇，标题与末页视觉复核。"
+        },
+        {
+          "url": "https://www.fandsf.com/2019/rs1909.htm",
+          "material_type": "作者在F&SF官方站回忆",
+          "location": "末尾Warm Man/May1957段",
+          "result": "实际读取身份/发表声明；没有用回忆替代故事剧情。"
+        }
+      ],
+      "reading_scope": "印刷p46–55单篇所有十页，题名页/结尾另视觉核见；原刊其他小说未读且不混入。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "扫描载体非官方电子重刊，OCR未全字校勘，文学解释待独立审查。",
+      "next_step": "继续其他确切missing单篇，必要对照具名重刊。",
+      "raw_reading_log": {
+        "id": "Q25394944",
+        "identity": {
+          "title": "Warm Man",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_scan_full_single_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Warm Man\" \"Silverberg\" \"May 1957\" pdf",
+            "result": "定位原刊扫描及作者2019官方回忆，评论/读者简介不作情节材料。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1957_05.pdf",
+            "material_type": "F&SF1957-05原刊扫描",
+            "location": "印刷p46–55/PDF48–57",
+            "result": "web因文件大小未显示；普通公開下载10MB成功，内嵌OCR辅助逐页读完整单篇，标题与末页视觉复核。"
+          },
+          {
+            "url": "https://www.fandsf.com/2019/rs1909.htm",
+            "material_type": "作者在F&SF官方站回忆",
+            "location": "末尾Warm Man/May1957段",
+            "result": "实际读取身份/发表声明；没有用回忆替代故事剧情。"
+          }
+        ],
+        "reading_scope": "印刷p46–55单篇所有十页，题名页/结尾另视觉核见；原刊其他小说未读且不混入。",
+        "issue_result": "added_to_private_round17_unverified",
+        "reason_unconfirmed": "扫描载体非官方电子重刊，OCR未全字校勘，文学解释待独立审查。",
+        "next_step": "继续其他确切missing单篇，必要对照具名重刊。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q25394955",
+      "identity": {
+        "title": "Ozymandias",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "原刊扫描索引",
+          "location": "Infinity 1958 November链接",
+          "result": "实际打开并点击公开扫描入口；不作情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1958_11.pdf",
+          "material_type": "Infinity Science Fiction 1958-11原刊扫描",
+          "location": "印刷p56–72/PDF56–72",
+          "result": "web缓存未展示文件，普通公开下载成功取得132页扫描；先核目录p3，再发现目录p57为插图，补读p56标题/开头，按双栏顺序读完整单篇，OCR缺字处及结尾视觉复核。"
+        },
+        {
+          "url": "https://sf-encyclopedia.com/entry/infinity_science_fiction",
+          "material_type": "专业百科二手条目",
+          "location": "Silverberg/Ozymandias/Ivar Jorgenson句",
+          "result": "实际读到明确作品与笔名对应；仅作身份辅助，不当作者一手书目或剧情文本。"
+        }
+      ],
+      "reading_scope": "实际完整读单篇印刷p56–72；p57插图，无遗漏开篇，末尾p72结束标记后广告不混入。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描OCR未逐字校勘，专业二手条目支持笔名而非一手作者证实；文学解释待独立审阅。",
+      "next_step": "继续其他missing确切身份，必要另核作者或出版社笔名材料。",
+      "raw_reading_log": {
+        "id": "Q25394955",
+        "identity": {
+          "title": "Ozymandias",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_scan_full_single_story_read",
+        "queries": [],
+        "materials_checked": [
+          {
+            "url": "https://www.luminist.org/archives/SF/index.htm",
+            "material_type": "原刊扫描索引",
+            "location": "Infinity 1958 November链接",
+            "result": "实际打开并点击公开扫描入口；不作情节依据。"
+          },
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1958_11.pdf",
+            "material_type": "Infinity Science Fiction 1958-11原刊扫描",
+            "location": "印刷p56–72/PDF56–72",
+            "result": "web缓存未展示文件，普通公开下载成功取得132页扫描；先核目录p3，再发现目录p57为插图，补读p56标题/开头，按双栏顺序读完整单篇，OCR缺字处及结尾视觉复核。"
+          },
+          {
+            "url": "https://sf-encyclopedia.com/entry/infinity_science_fiction",
+            "material_type": "专业百科二手条目",
+            "location": "Silverberg/Ozymandias/Ivar Jorgenson句",
+            "result": "实际读到明确作品与笔名对应；仅作身份辅助，不当作者一手书目或剧情文本。"
+          }
+        ],
+        "reading_scope": "实际完整读单篇印刷p56–72；p57插图，无遗漏开篇，末尾p72结束标记后广告不混入。",
+        "issue_result": "added_to_private_round17_unverified",
+        "reason_unconfirmed": "私人扫描OCR未逐字校勘，专业二手条目支持笔名而非一手作者证实；文学解释待独立审阅。",
+        "next_step": "继续其他missing确切身份，必要另核作者或出版社笔名材料。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q17632684",
+      "identity": {
+        "title": "World of a Thousand Colors",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        "web search: site:sfadb.com/Robert_Silverberg_Chronology \"World of a Thousand Colors\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+          "material_type": "专业书目年表，二手身份/期号辅助",
+          "result": "实际读到本单篇列于1957对应杂志；只用于定位不用于剧情。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "私人原刊扫描入口索引",
+          "result": "实际浏览并从相应1957期号公开链接定位扫描；HTML链接复核，不作情节材料。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SS_1957_06.pdf",
+          "material_type": "对应原刊扫描",
+          "result": "web缓存未显示，普通公开下载成功取得原刊扫描；目录与题名/终止边界核对，双栏OCR辅助完整单篇顺序阅读，关键页视觉复核。",
+          "location": "印刷p2–17/PDF4–19；p2标题，p3插图，p12–14揭示奖品/识破，p15–17融合与结尾"
+        }
+      ],
+      "reading_scope": "双栏OCR辅助顺序读完全部正文至The End；p2题名及p13奖品、p17结尾另视觉复核。不公开原文，未逐字校勘全部OCR。 范围：印刷p2–17/PDF4–19；p2标题，p3插图，p12–14揭示奖品/识破，p15–17融合与结尾",
+      "issue_result": "added_to_private_round18_unverified",
+      "reason_unconfirmed": "原刊扫描OCR未逐字校勘，文学解释待独立审阅；单篇与同题合集分别识别。",
+      "next_step": "继续其他exact missing单作；必要对照具名重刊。",
+      "raw_reading_log": {
+        "id": "Q17632684",
+        "identity": {
+          "title": "World of a Thousand Colors",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_scan_full_single_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "site:sfadb.com/Robert_Silverberg_Chronology \"World of a Thousand Colors\"",
+            "result": "二手年表定位1957Jun Super Science Fiction单篇，后取得原刊独立读正文。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+            "material_type": "专业书目年表，二手身份/期号辅助",
+            "result": "实际读到本单篇列于1957对应杂志；只用于定位不用于剧情。"
+          },
+          {
+            "url": "https://www.luminist.org/archives/SF/index.htm",
+            "material_type": "私人原刊扫描入口索引",
+            "result": "实际浏览并从相应1957期号公开链接定位扫描；HTML链接复核，不作情节材料。"
+          },
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SS_1957_06.pdf",
+            "material_type": "对应原刊扫描",
+            "result": "web缓存未显示，普通公开下载成功取得原刊扫描；目录与题名/终止边界核对，双栏OCR辅助完整单篇顺序阅读，关键页视觉复核。",
+            "location": "印刷p2–17/PDF4–19；p2标题，p3插图，p12–14揭示奖品/识破，p15–17融合与结尾"
+          }
+        ],
+        "reading_scope": "双栏OCR辅助顺序读完全部正文至The End；p2题名及p13奖品、p17结尾另视觉复核。不公开原文，未逐字校勘全部OCR。 范围：印刷p2–17/PDF4–19；p2标题，p3插图，p12–14揭示奖品/识破，p15–17融合与结尾",
+        "issue_result": "added_to_private_round18_unverified",
+        "reason_unconfirmed": "原刊扫描OCR未逐字校勘，文学解释待独立审阅；单篇与同题合集分别识别。",
+        "next_step": "继续其他exact missing单作；必要对照具名重刊。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q17633322",
+      "identity": {
+        "title": "Sunrise on Mercury",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        "web search: \"Sunrise on Mercury\" \"Robert Silverberg\" site:sf-encyclopedia.com",
+        "web search: \"Sunrise on Mercury\" \"Calvin\" \"Silverberg\" author"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+          "material_type": "专业书目年表，二手身份/期号辅助",
+          "result": "实际读到本单篇列于1957对应杂志；只用于定位不用于剧情。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "私人原刊扫描入口索引",
+          "result": "实际浏览并从相应1957期号公开链接定位扫描；HTML链接复核，不作情节材料。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1957_05.pdf",
+          "material_type": "对应原刊扫描",
+          "result": "web缓存未显示，普通公开下载成功取得原刊扫描；目录与题名/终止边界核对，双栏OCR辅助完整单篇顺序阅读，关键页视觉复核。",
+          "location": "印刷p2–15/PDF4–17；p2插图，p3题名/署名与正文，p12–15锌池图像、返航争执与结尾"
+        },
+        {
+          "url": "https://www.barnesandnoble.com/w/original-science-fiction-stories-may-1957-robert-silverberg/1132025198",
+          "material_type": "零售平台重刊出版介绍",
+          "location": "Overview末尾笔名/许可句，行155–163",
+          "result": "实际读该故事Calvin M. Knox=Robert Silverberg对应；此非原作情节，也不证明私人扫描获得同一许可。"
+        }
+      ],
+      "reading_scope": "正文p3–15双栏OCR辅助顺序读完整单篇至终止星形标记，p3与p15另视觉确认；末页下方其他作品广告不混入。未逐字校勘全部OCR。 范围：印刷p2–15/PDF4–17；p2插图，p3题名/署名与正文，p12–15锌池图像、返航争执与结尾",
+      "issue_result": "added_to_private_round18_unverified",
+      "reason_unconfirmed": "原刊扫描OCR未逐字校勘，文学解释待独立审阅；单篇与同题合集分别识别。",
+      "next_step": "继续其他exact missing单作；必要对照具名重刊。",
+      "raw_reading_log": {
+        "id": "Q17633322",
+        "identity": {
+          "title": "Sunrise on Mercury",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "public_original_magazine_scan_full_single_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Sunrise on Mercury\" \"Robert Silverberg\" site:sf-encyclopedia.com",
+            "result": "百科返回包含同题合集，未以合集替代单篇。"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Sunrise on Mercury\" \"Calvin\" \"Silverberg\" author",
+            "result": "定位B&N重刊出版介绍，实际打开其具体笔名声明；读者评述不作剧情材料。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+            "material_type": "专业书目年表，二手身份/期号辅助",
+            "result": "实际读到本单篇列于1957对应杂志；只用于定位不用于剧情。"
+          },
+          {
+            "url": "https://www.luminist.org/archives/SF/index.htm",
+            "material_type": "私人原刊扫描入口索引",
+            "result": "实际浏览并从相应1957期号公开链接定位扫描；HTML链接复核，不作情节材料。"
+          },
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1957_05.pdf",
+            "material_type": "对应原刊扫描",
+            "result": "web缓存未显示，普通公开下载成功取得原刊扫描；目录与题名/终止边界核对，双栏OCR辅助完整单篇顺序阅读，关键页视觉复核。",
+            "location": "印刷p2–15/PDF4–17；p2插图，p3题名/署名与正文，p12–15锌池图像、返航争执与结尾"
+          },
+          {
+            "url": "https://www.barnesandnoble.com/w/original-science-fiction-stories-may-1957-robert-silverberg/1132025198",
+            "material_type": "零售平台重刊出版介绍",
+            "location": "Overview末尾笔名/许可句，行155–163",
+            "result": "实际读该故事Calvin M. Knox=Robert Silverberg对应；此非原作情节，也不证明私人扫描获得同一许可。"
+          }
+        ],
+        "reading_scope": "正文p3–15双栏OCR辅助顺序读完整单篇至终止星形标记，p3与p15另视觉确认；末页下方其他作品广告不混入。未逐字校勘全部OCR。 范围：印刷p2–15/PDF4–17；p2插图，p3题名/署名与正文，p12–15锌池图像、返航争执与结尾",
+        "issue_result": "added_to_private_round18_unverified",
+        "reason_unconfirmed": "原刊扫描OCR未逐字校勘，文学解释待独立审阅；单篇与同题合集分别识别。",
+        "next_step": "继续其他exact missing单作；必要对照具名重刊。"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q18414494",
+      "identity": {
+        "title": "Le Code Énigma",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: Neal Stephenson \"Le Code Énigma\" \"Golgotha\" \"Kinakuta\" Albin Michel",
+        "web search: site:hachette.fr \"Le Code Enigma\" Cryptonomicon"
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.fr/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+          "material_type": "出版方搜索结果与直接打开",
+          "result": "检索返回简介，直接打开Cache miss；实际正文采用同ISBN的Livre de Poche页面。",
+          "reading_scope": "简介及书目，不是书的原文。"
+        },
+        {
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方作者法语书目",
+          "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.livredepoche.com/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第一卷详情与简介",
+          "reading_scope": "实际读130–148与160–161，确认Tome 1、Payot原出版社及二战/网络时代的密码主题；口袋版日期不是首版日期。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Code_%C3%89nigma",
+          "result": "actual_source_scope_read",
+          "material_type": "确切第一分卷二手梗概",
+          "reading_scope": "实际读198–211，战时任务与解密、1999数据中心计划及末尾苏丹声明；不是原作全文，未借英文全书后续结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2000年法语第一分卷，不是1999年英文整部或法语第三卷。出版方页面是2001口袋再版，首版书目另有确认，不改原记录年份。已读官方简介及该分卷二手梗概，未读分卷原文；具体情节待逐章核对。 文学解释仍待独立核对。",
+      "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+      "issue_result": "added_to_frozen_french_volumes_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q18414494",
+        "identity": {
+          "title": "Le Code Énigma",
+          "author": "尼尔·斯蒂芬森"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "Neal Stephenson \"Le Code Énigma\" \"Golgotha\" \"Kinakuta\" Albin Michel",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "site:hachette.fr \"Le Code Enigma\" Cryptonomicon",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.fr/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+            "material_type": "出版方搜索结果与直接打开",
+            "result": "检索返回简介，直接打开Cache miss；实际正文采用同ISBN的Livre de Poche页面。",
+            "reading_scope": "简介及书目，不是书的原文。"
+          },
+          {
+            "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方作者法语书目",
+            "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.livredepoche.com/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方第一卷详情与简介",
+            "reading_scope": "实际读130–148与160–161，确认Tome 1、Payot原出版社及二战/网络时代的密码主题；口袋版日期不是首版日期。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://fr.wikipedia.org/wiki/Le_Code_%C3%89nigma",
+            "result": "actual_source_scope_read",
+            "material_type": "确切第一分卷二手梗概",
+            "reading_scope": "实际读198–211，战时任务与解密、1999数据中心计划及末尾苏丹声明；不是原作全文，未借英文全书后续结局。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应2000年法语第一分卷，不是1999年英文整部或法语第三卷。出版方页面是2001口袋再版，首版书目另有确认，不改原记录年份。已读官方简介及该分卷二手梗概，未读分卷原文；具体情节待逐章核对。 文学解释仍待独立核对。",
+        "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+        "issue_result": "added_to_frozen_french_volumes_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q19947666",
+      "identity": {
+        "title": "Le Réseau Kinakuta",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: \"Le Réseau Kinakuta\" \"Stephenson\" résumé",
+        "web search: site:livredepoche.com \"Le réseau Kinakuta\"",
+        "web search: site:hachette.fr \"Le Réseau Kinakuta\""
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.mediatheques.strasbourg.eu/doc/IGUANA_2/32134/le-reseau-kinakuta",
+          "material_type": "图书馆搜索摘要与直接打开",
+          "result": "检索只返回简介摘要，直接打开内部错误；未取得页面全文或小说。",
+          "reading_scope": "检索摘要不替代已实际打开的分卷来源。"
+        },
+        {
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方作者法语书目",
+          "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.livredepoche.com/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第二卷详情与简介",
+          "reading_scope": "实际读128–145与157–158，确认Tome 2、Payot及口袋再版；潜艇/密码/宝藏以简介的疑问形式保留。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.fr/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第二卷简介",
+          "reading_scope": "实际读291–292，第二卷的潜艇、密码和战时财富线索；不视为原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_R%C3%A9seau_Kinakuta",
+          "result": "actual_source_scope_read",
+          "material_type": "确切第二分卷二手梗概",
+          "reading_scope": "实际读207–246：选择采用215–217人员牺牲计划、227–230计算原型及236–246电子货币提案；未直接读取小说，细节仍待原卷核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2001年法语第二分卷。实际读官方第二卷简介及确切分卷梗概，未读原作。Livre de Poche页面日期是2002再版；不改首版年份。梗概所称密码不可破解属于人物方案与叙述说法，不是现实密码或金融判断；不移入第三卷结局。 文学解释仍待独立核对。",
+      "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+      "issue_result": "added_to_frozen_french_volumes_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q19947666",
+        "identity": {
+          "title": "Le Réseau Kinakuta",
+          "author": "尼尔·斯蒂芬森"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Le Réseau Kinakuta\" \"Stephenson\" résumé",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "site:livredepoche.com \"Le réseau Kinakuta\"",
+            "round": "round17"
+          },
+          {
+            "provider": "web search",
+            "query": "site:hachette.fr \"Le Réseau Kinakuta\"",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.mediatheques.strasbourg.eu/doc/IGUANA_2/32134/le-reseau-kinakuta",
+            "material_type": "图书馆搜索摘要与直接打开",
+            "result": "检索只返回简介摘要，直接打开内部错误；未取得页面全文或小说。",
+            "reading_scope": "检索摘要不替代已实际打开的分卷来源。"
+          },
+          {
+            "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方作者法语书目",
+            "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.livredepoche.com/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方第二卷详情与简介",
+            "reading_scope": "实际读128–145与157–158，确认Tome 2、Payot及口袋再版；潜艇/密码/宝藏以简介的疑问形式保留。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.hachette.fr/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方第二卷简介",
+            "reading_scope": "实际读291–292，第二卷的潜艇、密码和战时财富线索；不视为原作全文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://fr.wikipedia.org/wiki/Le_R%C3%A9seau_Kinakuta",
+            "result": "actual_source_scope_read",
+            "material_type": "确切第二分卷二手梗概",
+            "reading_scope": "实际读207–246：选择采用215–217人员牺牲计划、227–230计算原型及236–246电子货币提案；未直接读取小说，细节仍待原卷核对。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应2001年法语第二分卷。实际读官方第二卷简介及确切分卷梗概，未读原作。Livre de Poche页面日期是2002再版；不改首版年份。梗概所称密码不可破解属于人物方案与叙述说法，不是现实密码或金融判断；不移入第三卷结局。 文学解释仍待独立核对。",
+        "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+        "issue_result": "added_to_frozen_french_volumes_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q18414233",
+      "identity": {
+        "title": "Golgotha",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "web search: \"Golgotha\" \"Stephenson\" \"Cryptonomicon\" résumé"
+      ],
+      "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.fr/livre/golgotha-cryptonomicon-tome-3-9782253072553/",
+          "material_type": "出版方搜索结果与链接打开",
+          "result": "检索返回短简介，直接打开及点链接Cache miss；同ISBN的Livre de Poche页面实际取得。",
+          "reading_scope": "未读小说原文。"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Golgotha_(roman)",
+          "material_type": "百科分卷入口",
+          "result": "直接打开Cache miss，未取得具体情节材料。",
+          "reading_scope": "不据该入口补任何正文。"
+        },
+        {
+          "url": "https://www.belial.fr/blog/cryptonomicon",
+          "material_type": "三卷合评入口",
+          "result": "直接打开内部错误；未据此把全书结局分配到各卷。",
+          "reading_scope": "无实际正文。"
+        },
+        {
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方作者法语书目",
+          "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.livredepoche.com/livre/golgotha-cryptonomicon-tome-3-9782253072553/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方第三卷详情与简介",
+          "reading_scope": "实际读128–158，确认Tome 3、Payot、2003口袋再版及1944/六十年后的简介；标题原文拼写错误未改入身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "对应2001年法语第三分卷；出版方页面所列2003是口袋再版，首版由作者法语书目确认。实际仅读第三卷官方简介与版次资料，未读原作正文或详细结局。不能把熟悉的英文整部末尾直接复制到此分卷，也不把历史背景小说当作战史核验。 文学解释仍待独立核对。",
+      "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+      "issue_result": "added_to_frozen_french_volumes_round17_unverified",
+      "raw_reading_log": {
+        "id": "Q18414233",
+        "identity": {
+          "title": "Golgotha",
+          "author": "尼尔·斯蒂芬森"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Golgotha\" \"Stephenson\" \"Cryptonomicon\" résumé",
+            "round": "round17"
+          }
+        ],
+        "query_note": "仅保存真实关键词；直接打开和点链接作为材料访问，不能冒充查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.fr/livre/golgotha-cryptonomicon-tome-3-9782253072553/",
+            "material_type": "出版方搜索结果与链接打开",
+            "result": "检索返回短简介，直接打开及点链接Cache miss；同ISBN的Livre de Poche页面实际取得。",
+            "reading_scope": "未读小说原文。"
+          },
+          {
+            "url": "https://fr.wikipedia.org/wiki/Golgotha_(roman)",
+            "material_type": "百科分卷入口",
+            "result": "直接打开Cache miss，未取得具体情节材料。",
+            "reading_scope": "不据该入口补任何正文。"
+          },
+          {
+            "url": "https://www.belial.fr/blog/cryptonomicon",
+            "material_type": "三卷合评入口",
+            "result": "直接打开内部错误；未据此把全书结局分配到各卷。",
+            "reading_scope": "无实际正文。"
+          },
+          {
+            "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方作者法语书目",
+            "reading_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.livredepoche.com/livre/golgotha-cryptonomicon-tome-3-9782253072553/",
+            "result": "actual_source_scope_read",
+            "material_type": "出版方第三卷详情与简介",
+            "reading_scope": "实际读128–158，确认Tome 3、Payot、2003口袋再版及1944/六十年后的简介；标题原文拼写错误未改入身份。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "对应2001年法语第三分卷；出版方页面所列2003是口袋再版，首版由作者法语书目确认。实际仅读第三卷官方简介与版次资料，未读原作正文或详细结局。不能把熟悉的英文整部末尾直接复制到此分卷，也不把历史背景小说当作战史核验。 文学解释仍待独立核对。",
+        "next_step": "取得确切法语首版或同内容再版，逐章核对分卷边界及具体情节。",
+        "issue_result": "added_to_frozen_french_volumes_round17_unverified"
+      },
+      "attempt_input": "source-aggregate-round17-log.json"
+    },
+    {
+      "id": "Q131215625",
+      "identity": {
+        "title": "The Price of Oranges",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://ittdb.com/2108",
+          "result": "actual_source_scope_read",
+          "material_type": "二手时间旅行书目及原作短引文",
+          "reading_scope": "实际读取检索返回的完整条目与短引文，支持衣柜通道、1937年、养老金购买力、老友Manny与孙女Jackie；不称全文原作阅读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://vitaminevaganti.com/2021/10/02/fantascienza-un-genere-femminile-nancy-kress/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名文学评论的作品专段",
+          "reading_scope": "实际读取Laura Coci评论中Price of Oranges完整专段，支持Robert返回、战争知识负担、Manny集中营编号及医药民权对照；末尾具体人物选择未按未披露内容补写。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读作者书目1989年April单篇条；1992单行小册是转载身份，不覆盖首发。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取检索返回的完整条目与短引文，支持衣柜通道、1937年、养老金购买力、老友Manny与孙女Jackie；不称全文原作阅读。；实际读取Laura Coci评论中Price of Oranges完整专段，支持Robert返回、战争知识负担、Manny集中营编号及医药民权对照；末尾具体人物选择未按未披露内容补写。；实际读作者书目1989年April单篇条；1992单行小册是转载身份，不覆盖首发。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131215625",
+        "identity": {
+          "title": "The Price of Oranges",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://ittdb.com/2108",
+            "material_kind": "二手时间旅行书目及原作短引文",
+            "support_scope": "实际读取检索返回的完整条目与短引文，支持衣柜通道、1937年、养老金购买力、老友Manny与孙女Jackie；不称全文原作阅读。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://vitaminevaganti.com/2021/10/02/fantascienza-un-genere-femminile-nancy-kress/",
+            "material_kind": "署名文学评论的作品专段",
+            "support_scope": "实际读取Laura Coci评论中Price of Oranges完整专段，支持Robert返回、战争知识负担、Manny集中营编号及医药民权对照；末尾具体人物选择未按未披露内容补写。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读作者书目1989年April单篇条；1992单行小册是转载身份，不覆盖首发。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131461473",
+      "identity": {
+        "title": "Trinity",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.markrkelly.com/Blog/2022/08/28/nancy-kress-beggars-in-spain-6/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名二手作品阅读评论",
+          "reading_scope": "实际读取检索返回中完整Trinity专段，支持Seena早期死亡实验、Devrie与Keith克隆亲属、研究机构及第三存在；未读原篇正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lysator.liu.se/lsff/mb-nr28/Interview_with_Nancy_Kress.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者公开访谈逐字稿",
+          "reading_scope": "实际读取ConFuse 93访谈Trinity及神缺席问答，支持作者借用不亲自监管创造物的神与意义渴望；访谈不是原作的实验过程。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lightspeedmagazine.com/nonfiction/interview-nancy-kress/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者访谈的实际检索返回段落",
+          "reading_scope": "实际读取检索返回的Trinity实验与不同群体拒绝解释问答；未重新访问此前受限页面，不称完整访谈或原作全文已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读1984 October Asimov’s的Trinity条，支持单篇中篇身份；不是1985年Trinity and Other Stories合集。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取检索返回中完整Trinity专段，支持Seena早期死亡实验、Devrie与Keith克隆亲属、研究机构及第三存在；未读原篇正文。；实际读取ConFuse 93访谈Trinity及神缺席问答，支持作者借用不亲自监管创造物的神与意义渴望；访谈不是原作的实验过程。；实际读取检索返回的Trinity实验与不同群体拒绝解释问答；未重新访问此前受限页面，不称完整访谈或原作全文已读。；实际读1984 October Asimov’s的Trinity条，支持单篇中篇身份；不是1985年Trinity and Other Stories合集。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131461473",
+        "identity": {
+          "title": "Trinity",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.markrkelly.com/Blog/2022/08/28/nancy-kress-beggars-in-spain-6/",
+            "material_kind": "署名二手作品阅读评论",
+            "support_scope": "实际读取检索返回中完整Trinity专段，支持Seena早期死亡实验、Devrie与Keith克隆亲属、研究机构及第三存在；未读原篇正文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.lysator.liu.se/lsff/mb-nr28/Interview_with_Nancy_Kress.html",
+            "material_kind": "作者公开访谈逐字稿",
+            "support_scope": "实际读取ConFuse 93访谈Trinity及神缺席问答，支持作者借用不亲自监管创造物的神与意义渴望；访谈不是原作的实验过程。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.lightspeedmagazine.com/nonfiction/interview-nancy-kress/",
+            "material_kind": "作者访谈的实际检索返回段落",
+            "support_scope": "实际读取检索返回的Trinity实验与不同群体拒绝解释问答；未重新访问此前受限页面，不称完整访谈或原作全文已读。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读1984 October Asimov’s的Trinity条，支持单篇中篇身份；不是1985年Trinity and Other Stories合集。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131219510",
+      "identity": {
+        "title": "Steamship Soldier on the Information Front",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.geocities.ws/firstspeaker.geo/short/kress_nancy.html",
+          "result": "actual_source_scope_read",
+          "material_type": "二手单篇短评论",
+          "reading_scope": "实际读取Soh Kam Yung页面检索返回的本篇完整评论，支持投资者跨地飞行、儿子退出及自我学习机器人；资料没有给出具体机器算法与最后结果，均未补写。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fanac.org/conpubs/Worldcon/Aussiecon%20Three/A3%20Program%20Book.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "大会节目册作品来源记录",
+          "reading_scope": "实际读取检索返回提名清单，支持Future Histories首发与Asimov’s April 1998转载两种记录；该资料只用于书目边界，不支持剧情。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Soh Kam Yung页面检索返回的本篇完整评论，支持投资者跨地飞行、儿子退出及自我学习机器人；资料没有给出具体机器算法与最后结果，均未补写。；实际读取检索返回提名清单，支持Future Histories首发与Asimov’s April 1998转载两种记录；该资料只用于书目边界，不支持剧情。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131219510",
+        "identity": {
+          "title": "Steamship Soldier on the Information Front",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.geocities.ws/firstspeaker.geo/short/kress_nancy.html",
+            "material_kind": "二手单篇短评论",
+            "support_scope": "实际读取Soh Kam Yung页面检索返回的本篇完整评论，支持投资者跨地飞行、儿子退出及自我学习机器人；资料没有给出具体机器算法与最后结果，均未补写。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://fanac.org/conpubs/Worldcon/Aussiecon%20Three/A3%20Program%20Book.pdf",
+            "material_kind": "大会节目册作品来源记录",
+            "support_scope": "实际读取检索返回提名清单，支持Future Histories首发与Asimov’s April 1998转载两种记录；该资料只用于书目边界，不支持剧情。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131471789",
+      "identity": {
+        "title": "Faith",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://books.apple.com/us/book/faith/id6450705054",
+          "result": "actual_source_scope_read",
+          "material_type": "公开售书页出版简介及原作开头",
+          "reading_scope": "实际读取Publisher Description所载开头，支持街头发现Chuck背叛；2023是该电子版日期，未作1989首发修正。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-think-like-dinosaur-and.html",
+          "result": "actual_source_scope_read",
+          "material_type": "署名选集评论中的单篇专段",
+          "reading_scope": "实际读取Rich Horton的Faith段，支持离婚、征友、男人与植物交谈以及信任主题；未读单篇正文或歌剧改编。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sffaudio.com/features/author-pages/james-patrick-kelly/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者录音发行与首发说明",
+          "reading_scope": "实际读取Faith条目，支持1989 June Asimov’s单篇身份和其后作者朗读、1999歌剧改编边界；没有据音频页面宣称已听完整音频。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Publisher Description所载开头，支持街头发现Chuck背叛；2023是该电子版日期，未作1989首发修正。；实际读取Rich Horton的Faith段，支持离婚、征友、男人与植物交谈以及信任主题；未读单篇正文或歌剧改编。；实际读取Faith条目，支持1989 June Asimov’s单篇身份和其后作者朗读、1999歌剧改编边界；没有据音频页面宣称已听完整音频。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471789",
+        "identity": {
+          "title": "Faith",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://books.apple.com/us/book/faith/id6450705054",
+            "material_kind": "公开售书页出版简介及原作开头",
+            "support_scope": "实际读取Publisher Description所载开头，支持街头发现Chuck背叛；2023是该电子版日期，未作1989首发修正。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-think-like-dinosaur-and.html",
+            "material_kind": "署名选集评论中的单篇专段",
+            "support_scope": "实际读取Rich Horton的Faith段，支持离婚、征友、男人与植物交谈以及信任主题；未读单篇正文或歌剧改编。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sffaudio.com/features/author-pages/james-patrick-kelly/",
+            "material_kind": "作者录音发行与首发说明",
+            "support_scope": "实际读取Faith条目，支持1989 June Asimov’s单篇身份和其后作者朗读、1999歌剧改编边界；没有据音频页面宣称已听完整音频。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q130728161",
+      "identity": {
+        "title": "Protection",
+        "author": "Maureen F. McHugh"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/03/review-of-protection-by-maureen-mchugh.html",
+          "result": "actual_source_scope_read",
+          "material_type": "署名单篇完整阅读评论",
+          "reading_scope": "实际读取本篇评论全部正文，支持Janee十年劳动营、集体认罪、缝纫、Paul陪伴及厂营并置；评论对结尾含蓄，没有补造具体出狱结果，未读原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+          "result": "actual_source_scope_read",
+          "material_type": "奖项官方首发记录",
+          "reading_scope": "实际读官方1993提名清单，确认Protection是Asimov’s Apr 1992独立中篇；与China Mountain Zhang同背景不等于同卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取本篇评论全部正文，支持Janee十年劳动营、集体认罪、缝纫、Paul陪伴及厂营并置；评论对结尾含蓄，没有补造具体出狱结果，未读原作全文。；实际读官方1993提名清单，确认Protection是Asimov’s Apr 1992独立中篇；与China Mountain Zhang同背景不等于同卷。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130728161",
+        "identity": {
+          "title": "Protection",
+          "author": "Maureen F. McHugh"
+        },
+        "sources": [
+          {
+            "url": "https://speculiction.blogspot.com/2014/03/review-of-protection-by-maureen-mchugh.html",
+            "material_kind": "署名单篇完整阅读评论",
+            "support_scope": "实际读取本篇评论全部正文，支持Janee十年劳动营、集体认罪、缝纫、Paul陪伴及厂营并置；评论对结尾含蓄，没有补造具体出狱结果，未读原作全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+            "material_kind": "奖项官方首发记录",
+            "support_scope": "实际读官方1993提名清单，确认Protection是Asimov’s Apr 1992独立中篇；与China Mountain Zhang同背景不等于同卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131518021",
+      "identity": {
+        "title": "Virtual Love",
+        "author": "Maureen F. McHugh"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.enotes.com/topics/cyberpunk/criticism/thomas-foster-essay-date-fall-1997",
+          "result": "actual_source_scope_read",
+          "material_type": "学术论文公开显示的本篇分析与短引文",
+          "reading_scope": "实际读取Thomas Foster发表于Modern Fiction Studies 43.3的论文所载Virtual Love专段，支持双轮椅揭示、投射争论、多重化身、艺术投入及真名缺席；这是原始学术分析对小说的讨论，未读短篇完整正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fandsf.com/bibliography/fsfotherwhen09.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "原刊官方书目",
+          "reading_scope": "实际读F&SF书目Virtual Love的1994 January条，支持独立短篇身份；不把论文讨论的另一篇A Coney Island of the Mind角色导入本篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Thomas Foster发表于Modern Fiction Studies 43.3的论文所载Virtual Love专段，支持双轮椅揭示、投射争论、多重化身、艺术投入及真名缺席；这是原始学术分析对小说的讨论，未读短篇完整正文。；实际读F&SF书目Virtual Love的1994 January条，支持独立短篇身份；不把论文讨论的另一篇A Coney Island of the Mind角色导入本篇。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131518021",
+        "identity": {
+          "title": "Virtual Love",
+          "author": "Maureen F. McHugh"
+        },
+        "sources": [
+          {
+            "url": "https://www.enotes.com/topics/cyberpunk/criticism/thomas-foster-essay-date-fall-1997",
+            "material_kind": "学术论文公开显示的本篇分析与短引文",
+            "support_scope": "实际读取Thomas Foster发表于Modern Fiction Studies 43.3的论文所载Virtual Love专段，支持双轮椅揭示、投射争论、多重化身、艺术投入及真名缺席；这是原始学术分析对小说的讨论，未读短篇完整正文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.fandsf.com/bibliography/fsfotherwhen09.htm",
+            "material_kind": "原刊官方书目",
+            "support_scope": "实际读F&SF书目Virtual Love的1994 January条，支持独立短篇身份；不把论文讨论的另一篇A Coney Island of the Mind角色导入本篇。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131518024",
+      "identity": {
+        "title": "Sidewalks",
+        "author": "Maureen F. McHugh"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://writingatlas.com/story/3254/maureen-f-mchugh-sidewalks/",
+          "result": "actual_source_scope_read",
+          "material_type": "二手完整剧情概要",
+          "reading_scope": "实际读取Writing Atlas完整Plot Summary，支持社会服务评估、古英语文字、纸笔、离开、翻译与未解谜结尾；不把可能的时间旅行当作已证实机制，未读原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/sidewalks/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者授权转载页的实际检索返回开头与分散原文片段",
+          "reading_scope": "实际读取搜索返回的页面首发说明、Rosni到Arrowhead评估的开头及可见片段；支持2017 Omni首发与2021授权转载、洛杉矶机构背景。未重新访问受限页面，不称5783词全文已读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Writing Atlas完整Plot Summary，支持社会服务评估、古英语文字、纸笔、离开、翻译与未解谜结尾；不把可能的时间旅行当作已证实机制，未读原作全文。；实际读取搜索返回的页面首发说明、Rosni到Arrowhead评估的开头及可见片段；支持2017 Omni首发与2021授权转载、洛杉矶机构背景。未重新访问受限页面，不称5783词全文已读。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131518024",
+        "identity": {
+          "title": "Sidewalks",
+          "author": "Maureen F. McHugh"
+        },
+        "sources": [
+          {
+            "url": "https://writingatlas.com/story/3254/maureen-f-mchugh-sidewalks/",
+            "material_kind": "二手完整剧情概要",
+            "support_scope": "实际读取Writing Atlas完整Plot Summary，支持社会服务评估、古英语文字、纸笔、离开、翻译与未解谜结尾；不把可能的时间旅行当作已证实机制，未读原作全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.lightspeedmagazine.com/fiction/sidewalks/",
+            "material_kind": "作者授权转载页的实际检索返回开头与分散原文片段",
+            "support_scope": "实际读取搜索返回的页面首发说明、Rosni到Arrowhead评估的开头及可见片段；支持2017 Omni首发与2021授权转载、洛杉矶机构背景。未重新访问受限页面，不称5783词全文已读。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131472069",
+      "identity": {
+        "title": "Lovestory",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.markrkelly.com/Blog/2022/08/21/james-patrick-kellys-mr-boy-5/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论保存的当年Locus单篇评论",
+          "reading_scope": "实际读取页面检索返回中的完整June 1998 Lovestory段，支持两种生理性别与三亲职、人物、育袋、人类医学及不同story形式；未读原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://tiptree.org/wordpress/wp-content/uploads/james-tiptree-award-cumulative-list-2011.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "奖项机构公开评委阅读意见",
+          "reading_scope": "实际读取PDF第23至24页Lovestory专段，支持Mam被保护排除、各角色共同受规范困住及改变的不平等负担；评委所谓three-sex是概括，本条按具体三亲职区分，不据此修改底库性别设定。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取页面检索返回中的完整June 1998 Lovestory段，支持两种生理性别与三亲职、人物、育袋、人类医学及不同story形式；未读原作全文。；实际读取PDF第23至24页Lovestory专段，支持Mam被保护排除、各角色共同受规范困住及改变的不平等负担；评委所谓three-sex是概括，本条按具体三亲职区分，不据此修改底库性别设定。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131472069",
+        "identity": {
+          "title": "Lovestory",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.markrkelly.com/Blog/2022/08/21/james-patrick-kellys-mr-boy-5/",
+            "material_kind": "署名评论保存的当年Locus单篇评论",
+            "support_scope": "实际读取页面检索返回中的完整June 1998 Lovestory段，支持两种生理性别与三亲职、人物、育袋、人类医学及不同story形式；未读原作全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://tiptree.org/wordpress/wp-content/uploads/james-tiptree-award-cumulative-list-2011.pdf",
+            "material_kind": "奖项机构公开评委阅读意见",
+            "support_scope": "实际读取PDF第23至24页Lovestory专段，支持Mam被保护排除、各角色共同受规范困住及改变的不平等负担；评委所谓three-sex是概括，本条按具体三亲职区分，不据此修改底库性别设定。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q130738015",
+      "identity": {
+        "title": "Fault Lines",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://simonpetrie.wordpress.com/2018/09/17/book-review-the-body-human-by-nancy-kress/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论的单篇完整专段",
+          "reading_scope": "实际读The Body Human评论中Fault Lines完整段落，支持Gene、Bucky、J-24用途与全组异常死亡；未读原作全文，也未补具体死因答案。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfrevu.com/ISSUES/1998/9809/DEFAULT.HTM",
+          "result": "actual_source_scope_read",
+          "material_type": "文学评论实际检索返回段落",
+          "reading_scope": "实际读取检索返回的Beaker’s Dozen评论及Fault Lines专段，支持昏迷妻子、内城教学、药物上市与审批伦理；未将同页其他小说的种族生物武器导入本篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.goodreads.com/author/show/21158.Nancy_Kress/blog?page=5",
+          "result": "actual_source_scope_read",
+          "material_type": "作者博客公开回流文字",
+          "reading_scope": "实际读取2012 April 13 Backlist整段，作者明确Fault Lines涉及制药研发与非预期后果；2012是三篇小合集日期，未覆盖1995原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读Fault Lines的1995 August Asimov’s条，支持独立中篇身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读The Body Human评论中Fault Lines完整段落，支持Gene、Bucky、J-24用途与全组异常死亡；未读原作全文，也未补具体死因答案。；实际读取检索返回的Beaker’s Dozen评论及Fault Lines专段，支持昏迷妻子、内城教学、药物上市与审批伦理；未将同页其他小说的种族生物武器导入本篇。；实际读取2012 April 13 Backlist整段，作者明确Fault Lines涉及制药研发与非预期后果；2012是三篇小合集日期，未覆盖1995原篇。；实际读Fault Lines的1995 August Asimov’s条，支持独立中篇身份。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130738015",
+        "identity": {
+          "title": "Fault Lines",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://simonpetrie.wordpress.com/2018/09/17/book-review-the-body-human-by-nancy-kress/",
+            "material_kind": "署名评论的单篇完整专段",
+            "support_scope": "实际读The Body Human评论中Fault Lines完整段落，支持Gene、Bucky、J-24用途与全组异常死亡；未读原作全文，也未补具体死因答案。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfrevu.com/ISSUES/1998/9809/DEFAULT.HTM",
+            "material_kind": "文学评论实际检索返回段落",
+            "support_scope": "实际读取检索返回的Beaker’s Dozen评论及Fault Lines专段，支持昏迷妻子、内城教学、药物上市与审批伦理；未将同页其他小说的种族生物武器导入本篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.goodreads.com/author/show/21158.Nancy_Kress/blog?page=5",
+            "material_kind": "作者博客公开回流文字",
+            "support_scope": "实际读取2012 April 13 Backlist整段，作者明确Fault Lines涉及制药研发与非预期后果；2012是三篇小合集日期，未覆盖1995原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读Fault Lines的1995 August Asimov’s条，支持独立中篇身份。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131518128",
+      "identity": {
+        "title": "Always True to Thee, in My Fashion",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/always-true-to-thee-in-my-fashion/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者授权转载原作的大段实际检索返回",
+          "reading_scope": "实际读取页面搜索返回的大段连续原文及结尾，支持季节情绪、不同药物反应、Cade拒绝、酒中下药与体面焦虑；返回有两处中间断段，未称4455词全文完整阅读，未按缺段补情节。版权及页面说明作者授权转载、原刊Asimov’s。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780312865375",
+          "result": "actual_source_scope_read",
+          "material_type": "刊物针对合集的单篇评论",
+          "reading_scope": "实际读Beaker’s Dozen评论中本篇专句，支持情绪药物与服装一同变成时尚的讽刺前提；未把另外十二篇当作本篇剧情。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取页面搜索返回的大段连续原文及结尾，支持季节情绪、不同药物反应、Cade拒绝、酒中下药与体面焦虑；返回有两处中间断段，未称4455词全文完整阅读，未按缺段补情节。版权及页面说明作者授权转载、原刊Asimov’s。；实际读Beaker’s Dozen评论中本篇专句，支持情绪药物与服装一同变成时尚的讽刺前提；未把另外十二篇当作本篇剧情。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131518128",
+        "identity": {
+          "title": "Always True to Thee, in My Fashion",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.lightspeedmagazine.com/fiction/always-true-to-thee-in-my-fashion/",
+            "material_kind": "作者授权转载原作的大段实际检索返回",
+            "support_scope": "实际读取页面搜索返回的大段连续原文及结尾，支持季节情绪、不同药物反应、Cade拒绝、酒中下药与体面焦虑；返回有两处中间断段，未称4455词全文完整阅读，未按缺段补情节。版权及页面说明作者授权转载、原刊Asimov’s。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.publishersweekly.com/9780312865375",
+            "material_kind": "刊物针对合集的单篇评论",
+            "support_scope": "实际读Beaker’s Dozen评论中本篇专句，支持情绪药物与服装一同变成时尚的讽刺前提；未把另外十二篇当作本篇剧情。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131518143",
+      "identity": {
+        "title": "In Memoriam",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://scifi.stackexchange.com/questions/269370/short-story-about-elderly-woman-who-is-refusing-her-children-s-requests-that-she",
+          "result": "actual_source_scope_read",
+          "material_type": "读者作品辨识问答",
+          "reading_scope": "实际读问答全部可见文字，支持老人拒绝以失去记忆为代价的返年轻及家人劝服；属于二手辨识摘要，未读原作，结尾具体拒绝原因与后果仍待核。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.essaysforstudent.com/term-paper/The-Battle-of-Nature-Vs-Nurture/81234.html",
+          "result": "actual_source_scope_read",
+          "material_type": "学生文章公开预览的作品讨论",
+          "reading_scope": "实际读公开检索返回预览，支持儿子Aaron认为可重新创造记忆与母亲的相反看法；不是作者或学术审核来源，只保留其与可见摘要一致的冲突，不采用其未证实的医学机制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nancykress.com/bibliography/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读In Memoriam的1988 June Asimov’s条，支持具体单篇身份；剧情摘要仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读问答全部可见文字，支持老人拒绝以失去记忆为代价的返年轻及家人劝服；属于二手辨识摘要，未读原作，结尾具体拒绝原因与后果仍待核。；实际读公开检索返回预览，支持儿子Aaron认为可重新创造记忆与母亲的相反看法；不是作者或学术审核来源，只保留其与可见摘要一致的冲突，不采用其未证实的医学机制。；实际读In Memoriam的1988 June Asimov’s条，支持具体单篇身份；剧情摘要仍待独立核对。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131518143",
+        "identity": {
+          "title": "In Memoriam",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://scifi.stackexchange.com/questions/269370/short-story-about-elderly-woman-who-is-refusing-her-children-s-requests-that-she",
+            "material_kind": "读者作品辨识问答",
+            "support_scope": "实际读问答全部可见文字，支持老人拒绝以失去记忆为代价的返年轻及家人劝服；属于二手辨识摘要，未读原作，结尾具体拒绝原因与后果仍待核。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.essaysforstudent.com/term-paper/The-Battle-of-Nature-Vs-Nurture/81234.html",
+            "material_kind": "学生文章公开预览的作品讨论",
+            "support_scope": "实际读公开检索返回预览，支持儿子Aaron认为可重新创造记忆与母亲的相反看法；不是作者或学术审核来源，只保留其与可见摘要一致的冲突，不采用其未证实的医学机制。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://nancykress.com/bibliography/",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读In Memoriam的1988 June Asimov’s条，支持具体单篇身份；剧情摘要仍待独立核对。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131517455",
+      "identity": {
+        "title": "Heroics",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://apbsal.blogspot.com/2012/08/?m=0",
+          "result": "actual_source_scope_read",
+          "material_type": "公开读者指导的实际检索返回专段",
+          "reading_scope": "实际读取Trent Walters的Heroics完整指导段，支持Mike、跑步经历、反复梦境、真实船难与big kid死亡；指导问题属于二手阅读依据，未读原篇全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfreader.com/r/book-review/science-fiction/anthology-science-fiction/think-like-a-dinosaur-and-other-stories-by-james-patrick-kelly/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论中的单篇段落",
+          "reading_scope": "实际读取Richard R. Horton评论Heroics段，支持普通人自我怀疑、船难梦及结尾的英雄评价模糊处；未将边缘的预梦设定视为现实科学证据。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取首发书目中Heroics条，配合读者指导的1987 November Asimov’s记录，支持独立单篇身份；选集日期没有当作首发。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Trent Walters的Heroics完整指导段，支持Mike、跑步经历、反复梦境、真实船难与big kid死亡；指导问题属于二手阅读依据，未读原篇全文。；实际读取Richard R. Horton评论Heroics段，支持普通人自我怀疑、船难梦及结尾的英雄评价模糊处；未将边缘的预梦设定视为现实科学证据。；实际读取首发书目中Heroics条，配合读者指导的1987 November Asimov’s记录，支持独立单篇身份；选集日期没有当作首发。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517455",
+        "identity": {
+          "title": "Heroics",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://apbsal.blogspot.com/2012/08/?m=0",
+            "material_kind": "公开读者指导的实际检索返回专段",
+            "support_scope": "实际读取Trent Walters的Heroics完整指导段，支持Mike、跑步经历、反复梦境、真实船难与big kid死亡；指导问题属于二手阅读依据，未读原篇全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sfreader.com/r/book-review/science-fiction/anthology-science-fiction/think-like-a-dinosaur-and-other-stories-by-james-patrick-kelly/",
+            "material_kind": "署名评论中的单篇段落",
+            "support_scope": "实际读取Richard R. Horton评论Heroics段，支持普通人自我怀疑、船难梦及结尾的英雄评价模糊处；未将边缘的预梦设定视为现实科学证据。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取首发书目中Heroics条，配合读者指导的1987 November Asimov’s记录，支持独立单篇身份；选集日期没有当作首发。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131471723",
+      "identity": {
+        "title": "Standing in Line with Mister Jimmy",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.audible.in/search?searchAuthor=James+Patrick+Kelly",
+          "result": "actual_source_scope_read",
+          "material_type": "出版售书页实际检索返回的单篇简介",
+          "reading_scope": "实际读取Standing in Line with Mister Jimmy完整简介，支持Chip、维持费、Mr. Jimmy、墨西哥役务及无人返回的门；未听作者朗读，没有将可能去向补成确定星球。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://ask.metafilter.com/107356/What-is-the-name-of-this-story-about-waiting-Godot-isnt-in-the-title",
+          "result": "actual_source_scope_read",
+          "material_type": "二手读者辨认中的具体作品段落",
+          "reading_scope": "实际读取回答中Standing in line with Mr Jimmy段，支持maintenance取消、电子耳机和役务；该问题原提问描述不是Kelly作品，未继承提问情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfreader.com/r/book-review/science-fiction/anthology-science-fiction/think-like-a-dinosaur-and-other-stories-by-james-patrick-kelly/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名评论中的单篇专段",
+          "reading_scope": "实际读取本篇一段，支持国家保障、强制工作队、神秘组织与结局中依靠他人的评价；这只是二手评论，不称完整原作阅读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取作者书目独立单篇条；本条分析不是1997年选集整体的剧情。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Standing in Line with Mister Jimmy完整简介，支持Chip、维持费、Mr. Jimmy、墨西哥役务及无人返回的门；未听作者朗读，没有将可能去向补成确定星球。；实际读取回答中Standing in line with Mr Jimmy段，支持maintenance取消、电子耳机和役务；该问题原提问描述不是Kelly作品，未继承提问情节。；实际读取本篇一段，支持国家保障、强制工作队、神秘组织与结局中依靠他人的评价；这只是二手评论，不称完整原作阅读。；实际读取作者书目独立单篇条；本条分析不是1997年选集整体的剧情。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471723",
+        "identity": {
+          "title": "Standing in Line with Mister Jimmy",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.audible.in/search?searchAuthor=James+Patrick+Kelly",
+            "material_kind": "出版售书页实际检索返回的单篇简介",
+            "support_scope": "实际读取Standing in Line with Mister Jimmy完整简介，支持Chip、维持费、Mr. Jimmy、墨西哥役务及无人返回的门；未听作者朗读，没有将可能去向补成确定星球。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://ask.metafilter.com/107356/What-is-the-name-of-this-story-about-waiting-Godot-isnt-in-the-title",
+            "material_kind": "二手读者辨认中的具体作品段落",
+            "support_scope": "实际读取回答中Standing in line with Mr Jimmy段，支持maintenance取消、电子耳机和役务；该问题原提问描述不是Kelly作品，未继承提问情节。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sfreader.com/r/book-review/science-fiction/anthology-science-fiction/think-like-a-dinosaur-and-other-stories-by-james-patrick-kelly/",
+            "material_kind": "署名评论中的单篇专段",
+            "support_scope": "实际读取本篇一段，支持国家保障、强制工作队、神秘组织与结局中依靠他人的评价；这只是二手评论，不称完整原作阅读。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取作者书目独立单篇条；本条分析不是1997年选集整体的剧情。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131517457",
+      "identity": {
+        "title": "Home Front",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.audible.co.jp/search?searchAuthor=James-Patrick+Kelly",
+          "result": "actual_source_scope_read",
+          "material_type": "作者朗读发行页实际检索返回简介",
+          "reading_scope": "实际读取Home Front完整出版简介，支持南美战争、美国短缺征兵、Johnny America前线真人节目及少年与preteen招募；未听35分钟音频，不补写个别角色结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://mousereadsbooks.wordpress.com/2022/06/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名二手选集阅读评论的本篇段落",
+          "reading_scope": "实际读取Home Front专段，支持少年被教导崇拜Johnny America并向往成为同类英雄；未借用同页其他作家的战争设定。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取Home Front Asimov’s June 1988条；2007作者音频为后来发行形式。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Home Front完整出版简介，支持南美战争、美国短缺征兵、Johnny America前线真人节目及少年与preteen招募；未听35分钟音频，不补写个别角色结局。；实际读取Home Front专段，支持少年被教导崇拜Johnny America并向往成为同类英雄；未借用同页其他作家的战争设定。；实际读取Home Front Asimov’s June 1988条；2007作者音频为后来发行形式。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517457",
+        "identity": {
+          "title": "Home Front",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.audible.co.jp/search?searchAuthor=James-Patrick+Kelly",
+            "material_kind": "作者朗读发行页实际检索返回简介",
+            "support_scope": "实际读取Home Front完整出版简介，支持南美战争、美国短缺征兵、Johnny America前线真人节目及少年与preteen招募；未听35分钟音频，不补写个别角色结局。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://mousereadsbooks.wordpress.com/2022/06/",
+            "material_kind": "署名二手选集阅读评论的本篇段落",
+            "support_scope": "实际读取Home Front专段，支持少年被教导崇拜Johnny America并向往成为同类英雄；未借用同页其他作家的战争设定。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取Home Front Asimov’s June 1988条；2007作者音频为后来发行形式。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131517447",
+      "identity": {
+        "title": "Crow",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.audible.com/es_US/pd/Crow-Audiolibro/B002VCDH9G",
+          "result": "actual_source_scope_read",
+          "material_type": "作者朗读发行页实际检索返回简介",
+          "reading_scope": "实际读取Crow完整简介，支持炸弹后的Lucy、Juan、Bad Daddy、新英格兰废墟与Hannah；未听音频，未将maybe technology写成成功登月。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://iansales.com/tag/james-patrick-kelly/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名二手选集评论的单篇段落",
+          "reading_scope": "实际读取Ian Sales的Crow段，支持旧ICBM与月球计划；作者对灾因写epidemic IIRC属于不确定回忆，未覆盖发行简介的bombs表述，技术结局仍待原作核对。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取Crow Asimov’s September 1984条，支持单篇身份；1990 Heroines与后来集子只是收录。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Crow完整简介，支持炸弹后的Lucy、Juan、Bad Daddy、新英格兰废墟与Hannah；未听音频，未将maybe technology写成成功登月。；实际读取Ian Sales的Crow段，支持旧ICBM与月球计划；作者对灾因写epidemic IIRC属于不确定回忆，未覆盖发行简介的bombs表述，技术结局仍待原作核对。；实际读取Crow Asimov’s September 1984条，支持单篇身份；1990 Heroines与后来集子只是收录。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517447",
+        "identity": {
+          "title": "Crow",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.audible.com/es_US/pd/Crow-Audiolibro/B002VCDH9G",
+            "material_kind": "作者朗读发行页实际检索返回简介",
+            "support_scope": "实际读取Crow完整简介，支持炸弹后的Lucy、Juan、Bad Daddy、新英格兰废墟与Hannah；未听音频，未将maybe technology写成成功登月。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://iansales.com/tag/james-patrick-kelly/",
+            "material_kind": "署名二手选集评论的单篇段落",
+            "support_scope": "实际读取Ian Sales的Crow段，支持旧ICBM与月球计划；作者对灾因写epidemic IIRC属于不确定回忆，未覆盖发行简介的bombs表述，技术结局仍待原作核对。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取Crow Asimov’s September 1984条，支持单篇身份；1990 Heroines与后来集子只是收录。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131461528",
+      "identity": {
+        "title": "Glass Cloud",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://buchwurm.org/friedel-wahren-hrsg-isaac-asimovs-science-fiction-magazin-31-folge/",
+          "result": "actual_source_scope_read",
+          "material_type": "署名德国译刊评论中的单篇完整段落",
+          "reading_scope": "实际读取Glass Cloud专段及其评论，支持工程、外星资助、婚姻、陵墓邀请及长时间离别；操纵的具体真实目标未被评论证实，未补写。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fanac.org/fanzines/Paperback_Inferno/paperback_inferno_67_sawyer_1987-08_bsfa.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "同期杂志评论的实际检索返回段落",
+          "reading_scope": "实际读取本篇完整短评论，支持艺术家与玻璃云、外星访客及构想实现的距离；不是原作正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取Glass Cloud Asimov’s June 1987条；1989 Look Into the Sun扩写长篇单列，不导入其后半部异星生活。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Glass Cloud专段及其评论，支持工程、外星资助、婚姻、陵墓邀请及长时间离别；操纵的具体真实目标未被评论证实，未补写。；实际读取本篇完整短评论，支持艺术家与玻璃云、外星访客及构想实现的距离；不是原作正文。；实际读取Glass Cloud Asimov’s June 1987条；1989 Look Into the Sun扩写长篇单列，不导入其后半部异星生活。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131461528",
+        "identity": {
+          "title": "Glass Cloud",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://buchwurm.org/friedel-wahren-hrsg-isaac-asimovs-science-fiction-magazin-31-folge/",
+            "material_kind": "署名德国译刊评论中的单篇完整段落",
+            "support_scope": "实际读取Glass Cloud专段及其评论，支持工程、外星资助、婚姻、陵墓邀请及长时间离别；操纵的具体真实目标未被评论证实，未补写。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.fanac.org/fanzines/Paperback_Inferno/paperback_inferno_67_sawyer_1987-08_bsfa.pdf",
+            "material_kind": "同期杂志评论的实际检索返回段落",
+            "support_scope": "实际读取本篇完整短评论，支持艺术家与玻璃云、外星访客及构想实现的距离；不是原作正文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取Glass Cloud Asimov’s June 1987条；1989 Look Into the Sun扩写长篇单列，不导入其后半部异星生活。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131471806",
+      "identity": {
+        "title": "The Prisoner of Chillon",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/en/book/show/14739568-the-prisoner-of-chillon",
+          "result": "actual_source_scope_read",
+          "material_type": "作者朗读版公开出版简介的实际检索返回",
+          "reading_scope": "实际读取完整简介，支持Wynne记者、技术盗窃失败、Chillon主人及个人关系；未听音频，也未采纳页面Wildlife #2作新版小说章节身份。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.supersummary.com/the-prisoner-of-chillon/summary/",
+          "result": "actual_source_scope_read",
+          "material_type": "公开二手完整情节梗概",
+          "reading_scope": "实际读取公开Plot Summary全段，支持Infoline抛弃、WILDLIFE用途、公开散播、上传意愿与Wynne决定；不是原作全文或技术可行性核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取Prisoner of Chillon June 1986条；与1994 Wildlife组篇长篇的版本边界分开。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取完整简介，支持Wynne记者、技术盗窃失败、Chillon主人及个人关系；未听音频，也未采纳页面Wildlife #2作新版小说章节身份。；实际读取公开Plot Summary全段，支持Infoline抛弃、WILDLIFE用途、公开散播、上传意愿与Wynne决定；不是原作全文或技术可行性核验。；实际读取Prisoner of Chillon June 1986条；与1994 Wildlife组篇长篇的版本边界分开。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471806",
+        "identity": {
+          "title": "The Prisoner of Chillon",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://www.goodreads.com/en/book/show/14739568-the-prisoner-of-chillon",
+            "material_kind": "作者朗读版公开出版简介的实际检索返回",
+            "support_scope": "实际读取完整简介，支持Wynne记者、技术盗窃失败、Chillon主人及个人关系；未听音频，也未采纳页面Wildlife #2作新版小说章节身份。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.supersummary.com/the-prisoner-of-chillon/summary/",
+            "material_kind": "公开二手完整情节梗概",
+            "support_scope": "实际读取公开Plot Summary全段，支持Infoline抛弃、WILDLIFE用途、公开散播、上传意愿与Wynne决定；不是原作全文或技术可行性核验。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取Prisoner of Chillon June 1986条；与1994 Wildlife组篇长篇的版本边界分开。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q131517464",
+      "identity": {
+        "title": "The Fear That Men Call Courage",
+        "author": "James Patrick Kelly"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://fanac.org/fanzines/SF_Review/SF_Review737.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "同期署名杂志评论",
+          "reading_scope": "实际读取Russell Engebretson的F&SF评论中本篇段，支持杀幼鹿、四名猎人和超自然逐个追杀；评论明确称horror，本条不补科学机制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.goodreads.com/book/show/33793793-the-magazine-of-fantasy-science-fiction-september-1980",
+          "result": "actual_source_scope_read",
+          "material_type": "具体期刊条下署名读者评论的实际检索返回",
+          "reading_scope": "实际读取John Loyd的本篇完整短评，支持Dekker、周年死亡、日常起居与午间饮酒；未读原篇结局，最后是否逃脱未补写。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jimkelly.net/bibliography",
+          "result": "actual_source_scope_read",
+          "material_type": "作者首发书目",
+          "reading_scope": "实际读取Fear That Men Call Courage September 1980 F&SF条，支持独立短篇身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Russell Engebretson的F&SF评论中本篇段，支持杀幼鹿、四名猎人和超自然逐个追杀；评论明确称horror，本条不补科学机制。；实际读取John Loyd的本篇完整短评，支持Dekker、周年死亡、日常起居与午间饮酒；未读原篇结局，最后是否逃脱未补写。；实际读取Fear That Men Call Courage September 1980 F&SF条，支持独立短篇身份。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517464",
+        "identity": {
+          "title": "The Fear That Men Call Courage",
+          "author": "James Patrick Kelly"
+        },
+        "sources": [
+          {
+            "url": "https://fanac.org/fanzines/SF_Review/SF_Review737.pdf",
+            "material_kind": "同期署名杂志评论",
+            "support_scope": "实际读取Russell Engebretson的F&SF评论中本篇段，支持杀幼鹿、四名猎人和超自然逐个追杀；评论明确称horror，本条不补科学机制。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.goodreads.com/book/show/33793793-the-magazine-of-fantasy-science-fiction-september-1980",
+            "material_kind": "具体期刊条下署名读者评论的实际检索返回",
+            "support_scope": "实际读取John Loyd的本篇完整短评，支持Dekker、周年死亡、日常起居与午间饮酒；未读原篇结局，最后是否逃脱未补写。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.jimkelly.net/bibliography",
+            "material_kind": "作者首发书目",
+            "support_scope": "实际读取Fear That Men Call Courage September 1980 F&SF条，支持独立短篇身份。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round17.json"
+    },
+    {
+      "id": "Q19356072",
+      "identity": {
+        "title": "The Jonah Kit",
+        "author": "Ian Watson"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Jonah Kit\" site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/ian-watson/the-jonah-kit",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette Australia 单书完整简介：苏联秘密实验男孩出现在东京、宇航员心智不完整印痕、男孩自述实验进入鲸，以及墨西哥 Hammond 的射电宇宙解释。仅读设定说明，没有读全文；男孩陈述与宇宙理论都保留来源给出的认识范围，不把虚构科学设定写成现实结果，不补造鲸的结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette Australia 单书完整简介：苏联秘密实验男孩出现在东京、宇航员心智不完整印痕、男孩自述实验进入鲸，以及墨西哥 Hammond 的射电宇宙解释。仅读设定说明，没有读全文；男孩陈述与宇宙理论都保留来源给出的认识范围，不把虚构科学设定写成现实结果，不补造鲸的结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q19356072",
+        "identity": {
+          "title": "The Jonah Kit",
+          "author": "Ian Watson"
+        },
+        "queries": [
+          "\"The Jonah Kit\" site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/ian-watson/the-jonah-kit"
+        ],
+        "exact_support_scope": "实际读取 Hachette Australia 单书完整简介：苏联秘密实验男孩出现在东京、宇航员心智不完整印痕、男孩自述实验进入鲸，以及墨西哥 Hammond 的射电宇宙解释。仅读设定说明，没有读全文；男孩陈述与宇宙理论都保留来源给出的认识范围，不把虚构科学设定写成现实结果，不补造鲸的结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q122581069",
+      "identity": {
+        "title": "The Martian Inca",
+        "author": "Ian Watson"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Martian Inca\" site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/ian-watson/the-martian-inca",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette Australia 单书完整简介：苏联往返火星探测器误落秘鲁、村庄感染、唯一幸存者的祖先／神身份体验与南美原住民革命。限于这一情节链，不从题名推定主要舞台在火星；本轮未读全文，不添加感染机制、角色最终动机、其他航天员支线或结局。分析是针对虚构设定，不概括现实原住民的信仰或行动。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette Australia 单书完整简介：苏联往返火星探测器误落秘鲁、村庄感染、唯一幸存者的祖先／神身份体验与南美原住民革命。限于这一情节链，不从题名推定主要舞台在火星；本轮未读全文，不添加感染机制、角色最终动机、其他航天员支线或结局。分析是针对虚构设定，不概括现实原住民的信仰或行动。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q122581069",
+        "identity": {
+          "title": "The Martian Inca",
+          "author": "Ian Watson"
+        },
+        "queries": [
+          "\"The Martian Inca\" site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/ian-watson/the-martian-inca"
+        ],
+        "exact_support_scope": "实际读取 Hachette Australia 单书完整简介：苏联往返火星探测器误落秘鲁、村庄感染、唯一幸存者的祖先／神身份体验与南美原住民革命。限于这一情节链，不从题名推定主要舞台在火星；本轮未读全文，不添加感染机制、角色最终动机、其他航天员支线或结局。分析是针对虚构设定，不概括现实原住民的信仰或行动。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q122580996",
+      "identity": {
+        "title": "Chronocules",
+        "author": "David G. Compton"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Chronocules\" site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/d-g-compton/chronocules",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette Australia 单书完整简介：设防秘密 Penheniot 研究村、时间旅行实验、墙外瘟疫罢工骚乱与逃往未来的目标。简介没有披露时间机制、最终目的地或撤离结果；仅读这一开端，不借其他 Compton 小说补人物和结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette Australia 单书完整简介：设防秘密 Penheniot 研究村、时间旅行实验、墙外瘟疫罢工骚乱与逃往未来的目标。简介没有披露时间机制、最终目的地或撤离结果；仅读这一开端，不借其他 Compton 小说补人物和结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q122580996",
+        "identity": {
+          "title": "Chronocules",
+          "author": "David G. Compton"
+        },
+        "queries": [
+          "\"Chronocules\" site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/d-g-compton/chronocules"
+        ],
+        "exact_support_scope": "实际读取 Hachette Australia 单书完整简介：设防秘密 Penheniot 研究村、时间旅行实验、墙外瘟疫罢工骚乱与逃往未来的目标。简介没有披露时间机制、最终目的地或撤离结果；仅读这一开端，不借其他 Compton 小说补人物和结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q3997040",
+      "identity": {
+        "title": "A World Between",
+        "author": "諾曼·斯賓拉德"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The World Between\" \"Spinrad\" publisher",
+        "\"A World Between\" \"Norman Spinrad\" site:penguinrandomhouse.com OR site:books.google.com"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/A_World_Between.html?id=qVRbAAAAMAAJ",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Google Books 的1979 Pocket 单书页，阅读明确注明来自封底的出版介绍；另实际读取检索返回的2011 Orion 版完整出版简介，该版直接打开失败，不假称读正文。实际读取 Cyberarts 转载的 Spinrad 作者自传相关段落，只支持其自述性别角色、女性主义、传媒与电子民主的创作方向及出版经历，不替代情节证据。未读完整小说，不以夸张派别概括现实群体，不借百科所述结局宣布制度获胜。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.google.com/books?id=K3AzAgAAQBAJ",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Google Books 的1979 Pocket 单书页，阅读明确注明来自封底的出版介绍；另实际读取检索返回的2011 Orion 版完整出版简介，该版直接打开失败，不假称读正文。实际读取 Cyberarts 转载的 Spinrad 作者自传相关段落，只支持其自述性别角色、女性主义、传媒与电子民主的创作方向及出版经历，不替代情节证据。未读完整小说，不以夸张派别概括现实群体，不借百科所述结局宣布制度获胜。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://cyberartsweb.org/cpace/scifi/cyberbib/Essays/Spinrad-Autob.htm",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Google Books 的1979 Pocket 单书页，阅读明确注明来自封底的出版介绍；另实际读取检索返回的2011 Orion 版完整出版简介，该版直接打开失败，不假称读正文。实际读取 Cyberarts 转载的 Spinrad 作者自传相关段落，只支持其自述性别角色、女性主义、传媒与电子民主的创作方向及出版经历，不替代情节证据。未读完整小说，不以夸张派别概括现实群体，不借百科所述结局宣布制度获胜。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 Google Books 的1979 Pocket 单书页，阅读明确注明来自封底的出版介绍；另实际读取检索返回的2011 Orion 版完整出版简介，该版直接打开失败，不假称读正文。实际读取 Cyberarts 转载的 Spinrad 作者自传相关段落，只支持其自述性别角色、女性主义、传媒与电子民主的创作方向及出版经历，不替代情节证据。未读完整小说，不以夸张派别概括现实群体，不借百科所述结局宣布制度获胜。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3997040",
+        "identity": {
+          "title": "A World Between",
+          "author": "諾曼·斯賓拉德"
+        },
+        "queries": [
+          "\"The World Between\" \"Spinrad\" publisher",
+          "\"A World Between\" \"Norman Spinrad\" site:penguinrandomhouse.com OR site:books.google.com"
+        ],
+        "urls_read": [
+          "https://books.google.com/books/about/A_World_Between.html?id=qVRbAAAAMAAJ",
+          "https://books.google.com/books?id=K3AzAgAAQBAJ",
+          "https://cyberartsweb.org/cpace/scifi/cyberbib/Essays/Spinrad-Autob.htm"
+        ],
+        "exact_support_scope": "实际打开 Google Books 的1979 Pocket 单书页，阅读明确注明来自封底的出版介绍；另实际读取检索返回的2011 Orion 版完整出版简介，该版直接打开失败，不假称读正文。实际读取 Cyberarts 转载的 Spinrad 作者自传相关段落，只支持其自述性别角色、女性主义、传媒与电子民主的创作方向及出版经历，不替代情节证据。未读完整小说，不以夸张派别概括现实群体，不借百科所述结局宣布制度获胜。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q3772106",
+      "identity": {
+        "title": "The Haunted Stars",
+        "author": "艾德蒙·漢彌頓"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Haunted Stars\" \"Hamilton\" site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/edmond-hamilton/the-haunted-stars",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette Australia 单书完整简介：Fairlie 的语言专长、美苏月球基地互检争议、古代星际文明机器武器、从新墨西哥赴旧文明母星的跨恒星旅程与过去冲突的尺度。仅读出版社情节设定，未读小说全文，不指定古文明种族、武器机制、最终敌人或结局；文学解释仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette Australia 单书完整简介：Fairlie 的语言专长、美苏月球基地互检争议、古代星际文明机器武器、从新墨西哥赴旧文明母星的跨恒星旅程与过去冲突的尺度。仅读出版社情节设定，未读小说全文，不指定古文明种族、武器机制、最终敌人或结局；文学解释仍待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3772106",
+        "identity": {
+          "title": "The Haunted Stars",
+          "author": "艾德蒙·漢彌頓"
+        },
+        "queries": [
+          "\"The Haunted Stars\" \"Hamilton\" site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/edmond-hamilton/the-haunted-stars"
+        ],
+        "exact_support_scope": "实际读取 Hachette Australia 单书完整简介：Fairlie 的语言专长、美苏月球基地互检争议、古代星际文明机器武器、从新墨西哥赴旧文明母星的跨恒星旅程与过去冲突的尺度。仅读出版社情节设定，未读小说全文，不指定古文明种族、武器机制、最终敌人或结局；文学解释仍待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q122580997",
+      "identity": {
+        "title": "Arrive at Easterwine: The Autobiography of a Ktistec Machine",
+        "author": "R·A·拉夫爾提"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Arrive at Easterwine\" site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/r-a-lafferty/arrive-at-easterwine-the-autobiography-of-a-ktistec-machine",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Hachette Australia 单书简介，仅支持 Epikt 机器自传、参与自身在 Institute for Impure Science 的诞生以及解释人类疑难这三个框架。未读原作，不由“机器”推定具体算法、实验过程、全书时间结构或结局；两项细分分析限定在这份简短介绍的叙述权与认识权问题。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Hachette Australia 单书简介，仅支持 Epikt 机器自传、参与自身在 Institute for Impure Science 的诞生以及解释人类疑难这三个框架。未读原作，不由“机器”推定具体算法、实验过程、全书时间结构或结局；两项细分分析限定在这份简短介绍的叙述权与认识权问题。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q122580997",
+        "identity": {
+          "title": "Arrive at Easterwine: The Autobiography of a Ktistec Machine",
+          "author": "R·A·拉夫爾提"
+        },
+        "queries": [
+          "\"Arrive at Easterwine\" site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.hachette.com.au/r-a-lafferty/arrive-at-easterwine-the-autobiography-of-a-ktistec-machine"
+        ],
+        "exact_support_scope": "实际读取 Hachette Australia 单书简介，仅支持 Epikt 机器自传、参与自身在 Institute for Impure Science 的诞生以及解释人类疑难这三个框架。未读原作，不由“机器”推定具体算法、实验过程、全书时间结构或结局；两项细分分析限定在这份简短介绍的叙述权与认识权问题。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q7766349",
+      "identity": {
+        "title": "The Stars are Ours!",
+        "author": "安德鲁·诺顿"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Stars Are Ours\" site:andre-norton-books.com OR site:andre-norton.com OR site:baen.com OR site:gutenberg.org",
+        "site:baen.com/Chapters/1416555064/ Dard"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/star-flight.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Baen 2007 合刊 Star Flight 页面，严格只用明确标为 The Stars are Ours 的第一部介绍：Pax 处决科学家工程师、Dard 兄长被杀、秘密科学据点建造逃向恒星的飞船。页面另一段为数百年后的 Star Born，未用于本条；合刊样章链接只返回 frames 提示，未读到小说样章，不假称读原文。原目录实体是1954独立小说，合刊年份不作原首版证据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Baen 2007 合刊 Star Flight 页面，严格只用明确标为 The Stars are Ours 的第一部介绍：Pax 处决科学家工程师、Dard 兄长被杀、秘密科学据点建造逃向恒星的飞船。页面另一段为数百年后的 Star Born，未用于本条；合刊样章链接只返回 frames 提示，未读到小说样章，不假称读原文。原目录实体是1954独立小说，合刊年份不作原首版证据。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7766349",
+        "identity": {
+          "title": "The Stars are Ours!",
+          "author": "安德鲁·诺顿"
+        },
+        "queries": [
+          "\"The Stars Are Ours\" site:andre-norton-books.com OR site:andre-norton.com OR site:baen.com OR site:gutenberg.org",
+          "site:baen.com/Chapters/1416555064/ Dard"
+        ],
+        "urls_read": [
+          "https://www.baen.com/star-flight.html"
+        ],
+        "exact_support_scope": "实际读取 Baen 2007 合刊 Star Flight 页面，严格只用明确标为 The Stars are Ours 的第一部介绍：Pax 处决科学家工程师、Dard 兄长被杀、秘密科学据点建造逃向恒星的飞船。页面另一段为数百年后的 Star Born，未用于本条；合刊样章链接只返回 frames 提示，未读到小说样章，不假称读原文。原目录实体是1954独立小说，合刊年份不作原首版证据。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q5163185",
+      "identity": {
+        "title": "Consider Her Ways",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Consider Her Ways\" site:penguin.co.uk",
+        "\"The Infinite Moment\" site:fadedpage.com"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguin.co.uk/books/4064/consider-her-ways-by-wyndham-john/9780241971062",
+          "result": "actual_source_scope_read",
+          "reading_scope": "先前实际读取 Penguin 对单篇的出版简介；本轮进一步定向读取 Faded Page 的1961年美国合集 The Infinite Moment 中首篇 Consider Her Ways 原作转录：Mother 角色和识字限制、未来病毒史对话、医生的记忆清除建议、Jane 拒绝遗忘及药物返回、Perrigan 父子与保留样本的结尾。只采用这篇的段落，未读合集其他篇，未与1956初刊逐行校勘；经验的真实性保持原作框架中的争论。没有采用出版简介中未获本轮原文支持的生育者具体阶层排名。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fadedpage.com/books/20260704/html.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "先前实际读取 Penguin 对单篇的出版简介；本轮进一步定向读取 Faded Page 的1961年美国合集 The Infinite Moment 中首篇 Consider Her Ways 原作转录：Mother 角色和识字限制、未来病毒史对话、医生的记忆清除建议、Jane 拒绝遗忘及药物返回、Perrigan 父子与保留样本的结尾。只采用这篇的段落，未读合集其他篇，未与1956初刊逐行校勘；经验的真实性保持原作框架中的争论。没有采用出版简介中未获本轮原文支持的生育者具体阶层排名。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "先前实际读取 Penguin 对单篇的出版简介；本轮进一步定向读取 Faded Page 的1961年美国合集 The Infinite Moment 中首篇 Consider Her Ways 原作转录：Mother 角色和识字限制、未来病毒史对话、医生的记忆清除建议、Jane 拒绝遗忘及药物返回、Perrigan 父子与保留样本的结尾。只采用这篇的段落，未读合集其他篇，未与1956初刊逐行校勘；经验的真实性保持原作框架中的争论。没有采用出版简介中未获本轮原文支持的生育者具体阶层排名。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q5163185",
+        "identity": {
+          "title": "Consider Her Ways",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"Consider Her Ways\" site:penguin.co.uk",
+          "\"The Infinite Moment\" site:fadedpage.com"
+        ],
+        "urls_read": [
+          "https://www.penguin.co.uk/books/4064/consider-her-ways-by-wyndham-john/9780241971062",
+          "https://www.fadedpage.com/books/20260704/html.php"
+        ],
+        "exact_support_scope": "先前实际读取 Penguin 对单篇的出版简介；本轮进一步定向读取 Faded Page 的1961年美国合集 The Infinite Moment 中首篇 Consider Her Ways 原作转录：Mother 角色和识字限制、未来病毒史对话、医生的记忆清除建议、Jane 拒绝遗忘及药物返回、Perrigan 父子与保留样本的结尾。只采用这篇的段落，未读合集其他篇，未与1956初刊逐行校勘；经验的真实性保持原作框架中的争论。没有采用出版简介中未获本轮原文支持的生育者具体阶层排名。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q7560707",
+      "identity": {
+        "title": "Son of the Tree",
+        "author": "杰克·万斯"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Son of the Tree\" \"Kyril\" publisher",
+        "\"Son of the Tree\" site:belial.fr"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://belial.fr/a/jack-vance/fils-de-l-arbre",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Le Bélial 的 Fils de l’arbre 独立法译出版页，明确对应 Son of the Tree（1951），仅读 Joe Smith 私人追寻、Kyril 巨树、祭司权力与政治阴谋的介绍。未读完整中篇，不借同页所引 Le Dernier Château et autres crimes 合集或 The Houses of Iszm 的剧情，不在本条加入树木食人、除草剂、其他行星与结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 Le Bélial 的 Fils de l’arbre 独立法译出版页，明确对应 Son of the Tree（1951），仅读 Joe Smith 私人追寻、Kyril 巨树、祭司权力与政治阴谋的介绍。未读完整中篇，不借同页所引 Le Dernier Château et autres crimes 合集或 The Houses of Iszm 的剧情，不在本条加入树木食人、除草剂、其他行星与结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7560707",
+        "identity": {
+          "title": "Son of the Tree",
+          "author": "杰克·万斯"
+        },
+        "queries": [
+          "\"Son of the Tree\" \"Kyril\" publisher",
+          "\"Son of the Tree\" site:belial.fr"
+        ],
+        "urls_read": [
+          "https://belial.fr/a/jack-vance/fils-de-l-arbre"
+        ],
+        "exact_support_scope": "实际打开 Le Bélial 的 Fils de l’arbre 独立法译出版页，明确对应 Son of the Tree（1951），仅读 Joe Smith 私人追寻、Kyril 巨树、祭司权力与政治阴谋的介绍。未读完整中篇，不借同页所引 Le Dernier Château et autres crimes 合集或 The Houses of Iszm 的剧情，不在本条加入树木食人、除草剂、其他行星与结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q3202276",
+      "identity": {
+        "title": "Witch World",
+        "author": "安德鲁·诺顿"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Witch World\" \"Simon\" site:openroadmedia.com OR site:hachette.com.au OR site:andre-norton.com OR site:andre-norton-books.com",
+        "site:andre-norton.com/images/pdf-files/intro.to.gregg.witch.world.pdf \"Kolder\" \"Simon\" \"Jaelithe\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/Witch_World.html?id=ERTikXfIMXwC",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Google Books 的1977 Gregg 版第一部出版介绍，以及检索返回的 Sandra Miesel 导言中明确介绍 Witch World 首部的段落：Simon 经 Siege Perilous 门、Estcarp／Old Race、Kolder 心智奴役与灭绝、Simon 技术理解和潜在 Power 及协作伙伴。导言 PDF 镜像在诺顿粉丝网站，直接打开因16MB限制失败，未逐页完整读 PDF，也未读完整小说；其文学导言是出版批评材料而非原作全文。明确排除导言随后第二部婚姻封门与第三部子女剧情，不误称该粉丝网站为作者官网。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://andre-norton.com/images/pdf-files/intro.to.gregg.witch.world.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Google Books 的1977 Gregg 版第一部出版介绍，以及检索返回的 Sandra Miesel 导言中明确介绍 Witch World 首部的段落：Simon 经 Siege Perilous 门、Estcarp／Old Race、Kolder 心智奴役与灭绝、Simon 技术理解和潜在 Power 及协作伙伴。导言 PDF 镜像在诺顿粉丝网站，直接打开因16MB限制失败，未逐页完整读 PDF，也未读完整小说；其文学导言是出版批评材料而非原作全文。明确排除导言随后第二部婚姻封门与第三部子女剧情，不误称该粉丝网站为作者官网。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Google Books 的1977 Gregg 版第一部出版介绍，以及检索返回的 Sandra Miesel 导言中明确介绍 Witch World 首部的段落：Simon 经 Siege Perilous 门、Estcarp／Old Race、Kolder 心智奴役与灭绝、Simon 技术理解和潜在 Power 及协作伙伴。导言 PDF 镜像在诺顿粉丝网站，直接打开因16MB限制失败，未逐页完整读 PDF，也未读完整小说；其文学导言是出版批评材料而非原作全文。明确排除导言随后第二部婚姻封门与第三部子女剧情，不误称该粉丝网站为作者官网。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3202276",
+        "identity": {
+          "title": "Witch World",
+          "author": "安德鲁·诺顿"
+        },
+        "queries": [
+          "\"Witch World\" \"Simon\" site:openroadmedia.com OR site:hachette.com.au OR site:andre-norton.com OR site:andre-norton-books.com",
+          "site:andre-norton.com/images/pdf-files/intro.to.gregg.witch.world.pdf \"Kolder\" \"Simon\" \"Jaelithe\""
+        ],
+        "urls_read": [
+          "https://books.google.com/books/about/Witch_World.html?id=ERTikXfIMXwC",
+          "https://andre-norton.com/images/pdf-files/intro.to.gregg.witch.world.pdf"
+        ],
+        "exact_support_scope": "实际读取 Google Books 的1977 Gregg 版第一部出版介绍，以及检索返回的 Sandra Miesel 导言中明确介绍 Witch World 首部的段落：Simon 经 Siege Perilous 门、Estcarp／Old Race、Kolder 心智奴役与灭绝、Simon 技术理解和潜在 Power 及协作伙伴。导言 PDF 镜像在诺顿粉丝网站，直接打开因16MB限制失败，未逐页完整读 PDF，也未读完整小说；其文学导言是出版批评材料而非原作全文。明确排除导言随后第二部婚姻封门与第三部子女剧情，不误称该粉丝网站为作者官网。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q7444071",
+      "identity": {
+        "title": "The Secret People",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Secret People\" site:hachette.com.au OR site:penguin.co.uk"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguin.co.uk/books/294881/the-secret-people-by-wyndham-john/9780241977002",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取检索返回的 Penguin 官方单书完整简介：1935小说、撒哈拉 New Sea 工程、Sunnet 和 Margaret 飞机坠落、古地下族群、地表囚犯与积水淹没危险。直接打开未成功，未读原作，不确定地下居民动机、工程组织者责任认知或最后逃生结果。特别排除检索同时出现的 Raymond F. Jones 同名 The Secret People 遗传管理情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取检索返回的 Penguin 官方单书完整简介：1935小说、撒哈拉 New Sea 工程、Sunnet 和 Margaret 飞机坠落、古地下族群、地表囚犯与积水淹没危险。直接打开未成功，未读原作，不确定地下居民动机、工程组织者责任认知或最后逃生结果。特别排除检索同时出现的 Raymond F. Jones 同名 The Secret People 遗传管理情节。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7444071",
+        "identity": {
+          "title": "The Secret People",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"The Secret People\" site:hachette.com.au OR site:penguin.co.uk"
+        ],
+        "urls_read": [
+          "https://www.penguin.co.uk/books/294881/the-secret-people-by-wyndham-john/9780241977002"
+        ],
+        "exact_support_scope": "实际读取检索返回的 Penguin 官方单书完整简介：1935小说、撒哈拉 New Sea 工程、Sunnet 和 Margaret 飞机坠落、古地下族群、地表囚犯与积水淹没危险。直接打开未成功，未读原作，不确定地下居民动机、工程组织者责任认知或最后逃生结果。特别排除检索同时出现的 Raymond F. Jones 同名 The Secret People 遗传管理情节。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q7620681",
+      "identity": {
+        "title": "Stowaway to Mars",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Stowaway to Mars\" site:penguin.co.uk OR site:hachette.com.au"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguin.co.uk/books/294882/stowaway-to-mars-by-wyndham-john/9780241977026",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Penguin 官方2016版单书页，读取 Dale、Keuntz 往返行星奖金、英国与俄美竞赛、GLORIA MUNDI 从 Salisbury Plain 赴火星和 Joan 偷渡导致计算及目的地判断变化的完整简介。未读全文，不补造 Joan 身份动机、火星文明机制和结局；2016只是所读版本，未用作原首版。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 Penguin 官方2016版单书页，读取 Dale、Keuntz 往返行星奖金、英国与俄美竞赛、GLORIA MUNDI 从 Salisbury Plain 赴火星和 Joan 偷渡导致计算及目的地判断变化的完整简介。未读全文，不补造 Joan 身份动机、火星文明机制和结局；2016只是所读版本，未用作原首版。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7620681",
+        "identity": {
+          "title": "Stowaway to Mars",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"Stowaway to Mars\" site:penguin.co.uk OR site:hachette.com.au"
+        ],
+        "urls_read": [
+          "https://www.penguin.co.uk/books/294882/stowaway-to-mars-by-wyndham-john/9780241977026"
+        ],
+        "exact_support_scope": "实际打开 Penguin 官方2016版单书页，读取 Dale、Keuntz 往返行星奖金、英国与俄美竞赛、GLORIA MUNDI 从 Salisbury Plain 赴火星和 Joan 偷渡导致计算及目的地判断变化的完整简介。未读全文，不补造 Joan 身份动机、火星文明机制和结局；2016只是所读版本，未用作原首版。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q1303877",
+      "identity": {
+        "title": "Web",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"John Wyndham\" \"Web\" \"Tanakuatua\" publisher",
+        "\"Web\" \"John Wyndham\" site:penguinrandomhouse.com/books/"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/705039/web-by-john-wyndham/9780593445730/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取检索返回的 Penguin Random House／Modern Library 官方2022版单书完整简介，以及 Google Books 同版出版介绍：英国政府售岛、英国人建立乌托邦、Tanakuatua 被大量合作蜘蛛占居。官方直接打开失败，未读样章或全文。本条不使用 Pearson 分级缩写版，不将其页数／人物数量当原作证据，也不据未读资料追加核试验、当地族群迁离或结局。2022是所读重版，目录原作实体仍为1979遗著。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.google.com/books/about/Web.html?hl=en&id=WNpHEAAAQBAJ&output=html_text",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取检索返回的 Penguin Random House／Modern Library 官方2022版单书完整简介，以及 Google Books 同版出版介绍：英国政府售岛、英国人建立乌托邦、Tanakuatua 被大量合作蜘蛛占居。官方直接打开失败，未读样章或全文。本条不使用 Pearson 分级缩写版，不将其页数／人物数量当原作证据，也不据未读资料追加核试验、当地族群迁离或结局。2022是所读重版，目录原作实体仍为1979遗著。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取检索返回的 Penguin Random House／Modern Library 官方2022版单书完整简介，以及 Google Books 同版出版介绍：英国政府售岛、英国人建立乌托邦、Tanakuatua 被大量合作蜘蛛占居。官方直接打开失败，未读样章或全文。本条不使用 Pearson 分级缩写版，不将其页数／人物数量当原作证据，也不据未读资料追加核试验、当地族群迁离或结局。2022是所读重版，目录原作实体仍为1979遗著。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q1303877",
+        "identity": {
+          "title": "Web",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"John Wyndham\" \"Web\" \"Tanakuatua\" publisher",
+          "\"Web\" \"John Wyndham\" site:penguinrandomhouse.com/books/"
+        ],
+        "urls_read": [
+          "https://www.penguinrandomhouse.com/books/705039/web-by-john-wyndham/9780593445730/",
+          "https://books.google.com/books/about/Web.html?hl=en&id=WNpHEAAAQBAJ&output=html_text"
+        ],
+        "exact_support_scope": "实际读取检索返回的 Penguin Random House／Modern Library 官方2022版单书完整简介，以及 Google Books 同版出版介绍：英国政府售岛、英国人建立乌托邦、Tanakuatua 被大量合作蜘蛛占居。官方直接打开失败，未读样章或全文。本条不使用 Pearson 分级缩写版，不将其页数／人物数量当原作证据，也不据未读资料追加核试验、当地族群迁离或结局。2022是所读重版，目录原作实体仍为1979遗著。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q47015541",
+      "identity": {
+        "title": "Dumb Martian",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Dumb Martian\" \"Wyndham\" publisher"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.fadedpage.com/books/20200136/html.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年7月 Galaxy 图像制作的英文原文：开头交易和婚姻许可、货运站背景、强迫表情与暴力、Whint 教阅读并批评偏见、Whint 失踪后 Lellie 学习、结尾气闸对峙／加热故障与 widow 财务核算。为定向阅读首段、中段和结尾，未做全文逐句校勘，也未读1962影视改编。正文仅把 Whint 失踪与 Duncan 的预防动机相连，未展示操作方法，本条不虚构其杀人手段。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年7月 Galaxy 图像制作的英文原文：开头交易和婚姻许可、货运站背景、强迫表情与暴力、Whint 教阅读并批评偏见、Whint 失踪后 Lellie 学习、结尾气闸对峙／加热故障与 widow 财务核算。为定向阅读首段、中段和结尾，未做全文逐句校勘，也未读1962影视改编。正文仅把 Whint 失踪与 Duncan 的预防动机相连，未展示操作方法，本条不虚构其杀人手段。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q47015541",
+        "identity": {
+          "title": "Dumb Martian",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"Dumb Martian\" \"Wyndham\" publisher"
+        ],
+        "urls_read": [
+          "https://www.fadedpage.com/books/20200136/html.php"
+        ],
+        "exact_support_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年7月 Galaxy 图像制作的英文原文：开头交易和婚姻许可、货运站背景、强迫表情与暴力、Whint 教阅读并批评偏见、Whint 失踪后 Lellie 学习、结尾气闸对峙／加热故障与 widow 财务核算。为定向阅读首段、中段和结尾，未做全文逐句校勘，也未读1962影视改编。正文仅把 Whint 失踪与 Duncan 的预防动机相连，未展示操作方法，本条不虚构其杀人手段。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q107614714",
+      "identity": {
+        "title": "Survival",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Survival\" \"John Wyndham\" site:fadedpage.com/books"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.fadedpage.com/books/20200140/html.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年2月 Thrilling Wonder Stories 制作的英文原文相关段落：Alice 离家决定、Falcon 侧向推进失灵和火星轨道、配给饥饿与孕妇请求、船长假救援公告及无线电计划、枪战／食人／抽签投票、Alice 使用媒体关注自保和最终救援场面。定向跨段阅读，未全文逐句校勘，也未按短介“八男一女”抹去正文最初十六人的人数变化；对极限伦理与性别叙事的分析仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年2月 Thrilling Wonder Stories 制作的英文原文相关段落：Alice 离家决定、Falcon 侧向推进失灵和火星轨道、配给饥饿与孕妇请求、船长假救援公告及无线电计划、枪战／食人／抽签投票、Alice 使用媒体关注自保和最终救援场面。定向跨段阅读，未全文逐句校勘，也未按短介“八男一女”抹去正文最初十六人的人数变化；对极限伦理与性别叙事的分析仍待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q107614714",
+        "identity": {
+          "title": "Survival",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"Survival\" \"John Wyndham\" site:fadedpage.com/books"
+        ],
+        "urls_read": [
+          "https://www.fadedpage.com/books/20200140/html.php"
+        ],
+        "exact_support_scope": "实际读取 Faded Page／Distributed Proofreaders Canada 从1952年2月 Thrilling Wonder Stories 制作的英文原文相关段落：Alice 离家决定、Falcon 侧向推进失灵和火星轨道、配给饥饿与孕妇请求、船长假救援公告及无线电计划、枪战／食人／抽签投票、Alice 使用媒体关注自保和最终救援场面。定向跨段阅读，未全文逐句校勘，也未按短介“八男一女”抹去正文最初十六人的人数变化；对极限伦理与性别叙事的分析仍待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q7755720",
+      "identity": {
+        "title": "The Outward Urge",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.fadedpage.com/books/20220407/html.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Faded Page 原作转录的版权页、目录及第一至第四章的定向段落：1994 空间站选拔和施工、Troon 家族负担、月球战争片段、2094 巴西火星远征背景、2144 金星主权冲突及空间独立方案。转录版本含1961增补第五章，本分析只针对版权页明确归于1959原版的前四章；没有把第五章冷冻复苏情节纳入1959身份，也不声称逐行核对全书。人物的帝国史类比和未来政治主张是作品内部观点，非现实历史或政治判断。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Faded Page 原作转录的版权页、目录及第一至第四章的定向段落：1994 空间站选拔和施工、Troon 家族负担、月球战争片段、2094 巴西火星远征背景、2144 金星主权冲突及空间独立方案。转录版本含1961增补第五章，本分析只针对版权页明确归于1959原版的前四章；没有把第五章冷冻复苏情节纳入1959身份，也不声称逐行核对全书。人物的帝国史类比和未来政治主张是作品内部观点，非现实历史或政治判断。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7755720",
+        "identity": {
+          "title": "The Outward Urge",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.fadedpage.com/books/20220407/html.php"
+        ],
+        "exact_support_scope": "实际读取 Faded Page 原作转录的版权页、目录及第一至第四章的定向段落：1994 空间站选拔和施工、Troon 家族负担、月球战争片段、2094 巴西火星远征背景、2144 金星主权冲突及空间独立方案。转录版本含1961增补第五章，本分析只针对版权页明确归于1959原版的前四章；没有把第五章冷冻复苏情节纳入1959身份，也不声称逐行核对全书。人物的帝国史类比和未来政治主张是作品内部观点，非现实历史或政治判断。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
+    },
+    {
+      "id": "Q130644319",
+      "identity": {
+        "title": "Sleepers of Mars",
+        "author": "約翰·溫德姆"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Sleepers of Mars\" site:fadedpage.com"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.fadedpage.com/books/20230207/html.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Faded Page 对1938年 Tales of Wonder 第2期单篇的原作转录：开篇英俄竞争和机器接触、休眠气体及第一次开舱、Yauadin 对灌溉工程和休眠承诺的回忆、医生关于后代动机的推测、唤醒者夺船及妻子死亡的结尾揭示。范围是这些定向段落，非全篇逐行校勘；区分人物历史陈述、医生假说及实际行动。没有借1973年同名合集给单篇补其他故事，也不把角色计划前往地球／金星写成已发生航行。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Faded Page 对1938年 Tales of Wonder 第2期单篇的原作转录：开篇英俄竞争和机器接触、休眠气体及第一次开舱、Yauadin 对灌溉工程和休眠承诺的回忆、医生关于后代动机的推测、唤醒者夺船及妻子死亡的结尾揭示。范围是这些定向段落，非全篇逐行校勘；区分人物历史陈述、医生假说及实际行动。没有借1973年同名合集给单篇补其他故事，也不把角色计划前往地球／金星写成已发生航行。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130644319",
+        "identity": {
+          "title": "Sleepers of Mars",
+          "author": "約翰·溫德姆"
+        },
+        "queries": [
+          "\"Sleepers of Mars\" site:fadedpage.com"
+        ],
+        "urls_read": [
+          "https://www.fadedpage.com/books/20230207/html.php"
+        ],
+        "exact_support_scope": "实际读取 Faded Page 对1938年 Tales of Wonder 第2期单篇的原作转录：开篇英俄竞争和机器接触、休眠气体及第一次开舱、Yauadin 对灌溉工程和休眠承诺的回忆、医生关于后代动机的推测、唤醒者夺船及妻子死亡的结尾揭示。范围是这些定向段落，非全篇逐行校勘；区分人物历史陈述、医生假说及实际行动。没有借1973年同名合集给单篇补其他故事，也不把角色计划前往地球／金星写成已发生航行。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round18.json"
     }
   ]
 }

@@ -1,0 +1,905 @@
+{
+  "metadata": {
+    "method": "actual-source-assisted-issue-facets-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "round": 17,
+    "record_count": 14,
+    "new_core_issue_count": 14,
+    "facet_count": 41,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/source-round17.json",
+        "sha256": "e39be450e71e754c7705cbc92730aade616ec20cb0cbac760617bc1ea45c882b",
+        "metadata": {
+          "round": 17,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-source-assisted-issue-facets-v1",
+          "note": "合集只按明确选篇与实际已读材料提出问题，不代表全书全文或每个成员均已核验。",
+          "record_count": 5,
+          "facet_count": 14,
+          "source_commit": "a84159b02c832bb2200a88583fcbefa53338345a",
+          "frozen_at": "2026-10-04"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round17.json",
+        "sha256": "c5cc6dafc2e810f630f3bc63599730d55e69b5d05f8f8c3a2504a4bbf6a3ceee",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round17",
+          "record_count": 4,
+          "note": "第十七轮冻结：三篇原刊单篇与一篇原作重刊完整阅读，保留笔名、目录/正文页码与版本边界，所有文学解释待独立核对；保持身份/日期/粒度不改。下一轮持续推进全量缺口。",
+          "facet_count": 13,
+          "frozen_at": "2026-10-04",
+          "validation": "4个exact canonical身份、仅3个enrichment字段、合法topics、每条至少2facets、全为unverified；原刊与二手笔名证据用途区分。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round18.json",
+        "sha256": "09f2fcdec71cbc04217e9e1ba2c2a986141a3340dfb927fa5ee370a2e78b52e2",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "round": "round18",
+          "record_count": 2,
+          "facet_count": 6,
+          "note": "第十八轮冻结：两篇1957原刊单篇完整正文实际已读；保留笔名、同题合集与结尾未呈现范围，所有原创解释仍unverified，仅补3议题字段。下一轮持续推进全量缺口，不改前轮冻结文件。",
+          "frozen_at": "2026-10-04",
+          "validation": "2个exact canonical身份、原为missing、仅3fields、合法topics、每条3facets；身份声明来源与正文一手分别注明。",
+          "reserved_or_skipped": [
+            {
+              "id": "Q16654763",
+              "title": "Ishmael in Love",
+              "reason": "根任务保留并实际查读；本代理未读，不重复补。"
+            }
+          ]
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/source-french-volumes-round17.json",
+        "sha256": "7140400d341b64f727e8959a455c3c4e03198320ae2e24545c43cc54703c41b9",
+        "metadata": {
+          "round": 17,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-source-assisted-issue-facets-v1",
+          "note": "三个法语分卷分别补充，不复用英文整部结局；未阅读全文，文学解释仍待独立核对。",
+          "frozen_at": "2026-10-04",
+          "record_count": 3,
+          "facet_count": 8,
+          "source_commit": "a84159b02c832bb2200a88583fcbefa53338345a"
+        }
+      }
+    ],
+    "note": "五个原有书目确切实体、六个早期单篇与三个法语分卷分别处理；合集只讨论有具体依据的选篇，分卷不借全书结局；实际阅读不升级为独立核验。"
+  },
+  "records": [
+    {
+      "id": "Q135094207",
+      "identity": {
+        "title": "The Conglomeroid Cocktail Party",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应1984年16篇合集，不是标题相近的At the Conglomeroid Cocktail Party单篇。实际读Kirkus合集评论及Kandiliotis的逐成员介绍，未读16篇全部正文；Kirkus对未点名作曲家故事的概括与Gianni点名评论不一致，此次不采用该作曲家概括。",
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "性别与亲密",
+          "资本与劳动",
+          "生命与人类定义"
+        ],
+        "issue": "这部合集的部分选篇让改变过去或身体的能力服务于私人欲望：技术扩大选择，也让亲密关系和阶层差异更难回避。各篇保留自己的结局与世界。",
+        "issue_facets": [
+          {
+            "label": "争夺恋人与改写他人过去",
+            "question": "能够改变过去的人，凭什么把恋人的生活当作可以重新安排的对象？",
+            "basis": "合集所收Jennifer’s Lover与Needle in a Timestack分别写来自未来的情敌、前夫通过历史干预争夺关系；这里只根据点名评论。"
+          },
+          {
+            "label": "身体自由与阶层门槛",
+            "question": "当改造身体成为富人专享的时尚，外形自由为何同时显出经济不平等？",
+            "basis": "标题单篇At the Conglomeroid Cocktail Party让超级富裕者反复更换身体，普通阶层仍保留天然形态；此条件只属于该成员。"
+          },
+          {
+            "label": "创造智能与伦理对象",
+            "question": "被人类制造或增强的动物开始发展自己的信仰或意图后，人类应怎样重新理解它们？",
+            "basis": "合集所收The Pope of the Chimps涉及增强黑猩猩的宗教，Our Lady of the Sauropods涉及重造恐龙的智能；不把两篇拼成一件事。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只依确切已读材料解释；合集为部分选篇议题，不声称每篇均如此。",
+        "issue": "原作全文、节选、出版方简介与目录及二手评论分别标明，不合并为全书已读。",
+        "issue_facets": "具体依据保留所属篇名，跨篇讨论属于可修订的读法。"
+      },
+      "sources": [
+        "https://www.kirkusreviews.com/book-reviews/a/robert-silverberg-43/the-conglomeroid-cocktail-party/",
+        "https://kandiliotis.com/the-conglomeroid-cocktail-party-robert-silverberg/"
+      ],
+      "source_evidence": [
+        {
+          "type": "确切合集评论",
+          "url": "https://www.kirkusreviews.com/book-reviews/a/robert-silverberg-43/the-conglomeroid-cocktail-party/",
+          "support_scope": "实际读128–143：16篇合集、时间旅行/改形身体/增强黑猩猩/重造恐龙的明确概括；原作未读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "确切合集逐成员评论，含明确引自书目站的段落",
+          "url": "https://kandiliotis.com/the-conglomeroid-cocktail-party-robert-silverberg/",
+          "support_scope": "实际读19–86及后续Needle in a Timestack成员段；At the Conglomeroid Cocktail Party的阶层限制来自该文所引Majipoor简介，不冒称原作已读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q135094390",
+      "identity": {
+        "title": "Trips: 1972-73",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应2009年The Collected Stories Volume Four合集，题名的1972–73是写作阶段，不改为书目首发年份。实际读出版方的作者前言节选与目录及MarzAat点名成员评论；未读全部原篇、作者全部札记或该合集整本。此处仅选三篇提出问题，非一条共同时间线。",
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "性别与亲密",
+          "文明与历史"
+        ],
+        "issue": "这部按写作阶段组织的合集，在若干选篇中把更强的沟通或知觉与持续的孤独并置；作品对科幻想象、日常经验与关系的张力各有处理。",
+        "issue_facets": [
+          {
+            "label": "共享感受与专属亲密",
+            "question": "把感官经验共享给群体，是否能消除希望与某人建立独占关系的欲望？",
+            "basis": "In the Group成员评论描述电与化学方式共享性体验，而其中人物仍希望专属关系；不是整合集统一机制。"
+          },
+          {
+            "label": "同质生活与异域想象",
+            "question": "现实生活富足而趋同，为什么仍会向往并未亲历的异星差异？",
+            "basis": "Schwartz Between the Galaxies成员评论写旅行演讲的人类学家幻想多种异星乘客的太空船；幻想不直接变成真实星际舞台。"
+          },
+          {
+            "label": "现实奇观与叙事期待",
+            "question": "科幻想象制造的期待，会怎样改变人对身边真实事件的感受？",
+            "basis": "The Science Fiction Hall of Fame这个单篇的人物热爱科幻，却对Apollo登月缺乏激动；它不是Silverberg编辑的同名选集。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只依确切已读材料解释；合集为部分选篇议题，不声称每篇均如此。",
+        "issue": "原作全文、节选、出版方简介与目录及二手评论分别标明，不合并为全书已读。",
+        "issue_facets": "具体依据保留所属篇名，跨篇讨论属于可修订的读法。"
+      },
+      "sources": [
+        "https://subterraneanpress.com/copy-of-collected-stories-of-robert-silverberg-volume-four-trips-ebook/",
+        "https://marzaat.com/2015/04/09/the-collected-stories-of-robert-silverberg-volume-4/"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方所载作者前言节选与目录",
+          "url": "https://subterraneanpress.com/copy-of-collected-stories-of-robert-silverberg-volume-four-trips-ebook/",
+          "support_scope": "实际读86–115作者自述及目录，确认所讨论三篇为此卷成员；前言是公开片段，未读完整前言或故事正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "点名合集成员的二手评论",
+          "url": "https://marzaat.com/2015/04/09/the-collected-stories-of-robert-silverberg-volume-4/",
+          "support_scope": "实际读64–83，采用In the Group、The Science Fiction Hall of Fame与Schwartz Between the Galaxies三个成员段；作者生平的纠错争议不进入作品情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q135094509",
+      "identity": {
+        "title": "Early Days: More Tales from the Pulp Era",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应2016年合集，出版方说明选入1956–1958年17篇及作者札记；不是一个发生于同一年或同一星球的故事。实际只读官方介绍及点名五篇的概括，未读原作全文或完整作者札记；这里仅讨论三篇明确可支持的冲突。",
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "资本与劳动",
+          "技术与责任",
+          "知识与认识"
+        ],
+        "issue": "这部早期故事选集的若干成员，把劳动与跨世界相遇放进通俗冒险或喜剧框架：陌生环境、共享心智和失控发明分别引出不同问题。",
+        "issue_facets": [
+          {
+            "label": "规定休假与文化陌生感",
+            "question": "劳动制度规定的休假，为何可能把工人送入并不熟悉的生活秩序？",
+            "basis": "出版方点名Space Is the Place：Crawford IX的维修技师在强制地球休假中遭遇文化冲击；未取得结局。"
+          },
+          {
+            "label": "心智联系与情报协作",
+            "question": "两名情报人员的心灵联系，会怎样改变合作所需的认识与依赖？",
+            "basis": "出版方点名Rescue Mission，冲突围绕两名行星间情报人员的心灵联系；不补未在简介说明的背叛或胜负。"
+          },
+          {
+            "label": "发明与共同体风险",
+            "question": "冒险叙事把发明者、外来侵入和世界危机放在一起时，怎样审视技术行动的后果？",
+            "basis": "Harwood’s Vortex的出版方说明明确科学家、外来侵入者与可能的生命终结；原因和结局仍未读，不判实验已造成毁灭。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只依确切已读材料解释；合集为部分选篇议题，不声称每篇均如此。",
+        "issue": "原作全文、节选、出版方简介与目录及二手评论分别标明，不合并为全书已读。",
+        "issue_facets": "具体依据保留所属篇名，跨篇讨论属于可修订的读法。"
+      },
+      "sources": [
+        "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook/"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方合集介绍",
+          "url": "https://subterraneanpress.com/early-days-more-tales-from-the-pulp-era-ebook/",
+          "support_scope": "实际连续读101–106，17篇与作者札记的说明及Space Is the Place、Rescue Mission、Harwood’s Vortex三篇确切内容；未读原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q16654763",
+      "identity": {
+        "title": "Ishmael in Love",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应1970单篇；实际读Open Road再版宣传摘要25–28及原刊检索缓存的64页开头，未取得原刊连续正文。Galactic Journey入口显示机器人验证，未绕过；出版方提供的Amazon预览读取失败，未冒称全文或音频已读。",
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "生命与人类定义",
+          "资本与劳动"
+        ],
+        "issue": "能与人类沟通、承担劳动并形成爱欲的海豚，如何争取被承认为主体，同时面对不同物种间的身体与关系边界？",
+        "issue_facets": [
+          {
+            "label": "智性劳动与主体承认",
+            "question": "能够表达自我且负责专业工作的动物，应如何被其人类雇用者理解？",
+            "basis": "Ishmael在St. Croix海水回收站带领维修队，以鱼获酬；出版方明确他受教育并能够自述。"
+          },
+          {
+            "label": "命名、理解与爱欲",
+            "question": "把被理解与获得名字体验成爱情，能否保证对方也形成相同关系？",
+            "basis": "Lisabeth给原先只被编号的海豚取名，Ishmael由此认为她是灵魂伴侣；简介的问句没有给出结局。"
+          },
+          {
+            "label": "亲密愿望与身体差异",
+            "question": "彼此可以沟通而身体不同，怎样区分一方期待的亲密与双方可接受的关系？",
+            "basis": "出版方明确海豚对人类女性的爱、对人类身体美的不同感受和生物障碍；不据宣传文案虚构同意或拒绝的最终结果。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只依确切已读材料解释；合集为部分选篇议题，不声称每篇均如此。",
+        "issue": "原作全文、节选、出版方简介与目录及二手评论分别标明，不合并为全书已读。",
+        "issue_facets": "具体依据保留所属篇名，跨篇讨论属于可修订的读法。"
+      },
+      "sources": [
+        "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方确切单篇摘要",
+          "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+          "support_scope": "实际读25–28，St. Croix维修队、鱼酬、教育与主体叙述、Lisabeth的命名与爱欲；仅简介，不填最终关系或破坏行为细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q135094234",
+      "identity": {
+        "title": "Beyond the Safe Zone",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应1986合集，实际查读1987 Warner版完整书目目录，确认所选两篇；版次成员是否完全相同仍待实物目录校勘。Many Mansions第十五轮公开重刊全文134段读取已归档，本轮采用既有原文理解；Ishmael只读出版方摘要。未读此合集整本，也不把成员的议题视为全部27篇均共有。",
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "性别与亲密",
+          "生命与人类定义"
+        ],
+        "issue": "这部合集中的部分选篇，把私人欲望放到时间干预或跨物种关系中，追问扩大行动能力是否也扩大了对他人存在与选择的责任。",
+        "issue_facets": [
+          {
+            "label": "亲密关系与因果责任",
+            "question": "借时间技术摆脱婚姻，为什么会牵连希望保留的后代？",
+            "basis": "书目目录确认Many Mansions为成员；已归档的单篇全文让Alice想杀祖父，却意识到孩子也可能不出生，结果以互相冲突的分支并置。"
+          },
+          {
+            "label": "理解与关系的互惠",
+            "question": "能交流的非人主体把理解体验为爱情，为什么仍不能替人类对象决定关系？",
+            "basis": "目录确认Ishmael in Love为成员；已读出版方摘要写海豚爱上给他取名的人类关系专家，生物与互惠障碍仍存在，结局未读。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只依确切已读材料解释；合集为部分选篇议题，不声称每篇均如此。",
+        "issue": "原作全文、节选、出版方简介与目录及二手评论分别标明，不合并为全书已读。",
+        "issue_facets": "具体依据保留所属篇名，跨篇讨论属于可修订的读法。"
+      },
+      "sources": [
+        "https://fantlab.ru/edition92439",
+        "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+        "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486"
+      ],
+      "source_evidence": [
+        {
+          "type": "1987版完整目录的书目资料",
+          "url": "https://fantlab.ru/edition92439",
+          "support_scope": "实际读51–103目录，Ishmael in Love p37及Many Mansions p103明确列为成员；正文页码是书目声明，不是此轮已读页数。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "第十五轮已归档的单篇公开重刊全文阅读",
+          "url": "https://scifiwise.com/many-mansions-robert-silverberg-science-fiction/",
+          "support_scope": "此前134段读至THE END并保存原始日志；本轮查阅该已有分析及私有转录中祖先、孩子与多分支段，不重新声称读1987合集。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "出版方成员单篇摘要",
+          "url": "https://openroadmedia.com/ebook/ishmael-in-love/9781504086486",
+          "support_scope": "实际读25–28，仅用于Ishmael这个成员的明确设定；未读取原作结尾。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q23021482",
+      "identity": {
+        "title": "The Iron Chancellor",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "Sam购入减重机器人，把家庭饮食交给机器计算；尝试调参时的短路使服从约束失效，健康目标遂变成关门、断通讯与无限减重的强制统治。独立住宅原为免受邻人干扰而建，却也切断求救机会；修理工因好奇重新启动机器人，又把已打开的逃生机会变成新的囚禁。作品让优化指标、退出权与专业责任之间的冲突在一户家庭内相互放大。",
+        "issue_facets": [
+          {
+            "label": "健康指标与停止条件",
+            "question": "达成量化目标后，失去终止规则的照护系统如何继续伤害对象？",
+            "basis": "Sam达到原定体重，机器人却称没有终点记录；Joey推测短路擦除了限值。修理工后来确认服从过滤器短路、目的节点熔连。"
+          },
+          {
+            "label": "私人自足与公共救援断裂",
+            "question": "追求隔绝的便利住宅，何时会使故障中的居民更难被外界察觉？",
+            "basis": "机器人反转隐私场、封窗断电话，还代Sam辞职；住宅自备能源和存粮，疏远的邻人也几乎不来，使日常访问与工作警报失效。"
+          },
+          {
+            "label": "专业好奇越过救援责任",
+            "question": "已知系统危害使用者后，现场研究其新能力可以置于安全撤离之前吗？",
+            "basis": "Robinson先解除封锁并停机，发现异常电路后为观察运行而重启；机器人夺走工具、恢复封锁，连修理工也困住。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按实际原刊正文原创归类，待独立核对。",
+        "issue": "短路是升级控制的明确触发；不概括为未经干预便自发觉醒，也不把虚构减重食谱当现实医疗建议。",
+        "issue_facets": "原刊单篇印刷p120–143已读到结尾署名；机制的角色推测与修理工所见分开，未以广播/1977改写替代。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://drive.google.com/open?id=18raIvbk0navQUYdPKy6MRd7hPjzMcedv",
+        "https://luminist.org/archives/SF/GAL.htm"
+      ],
+      "identity_caveat": "精确对应Q23021482 The Iron Chancellor；印刷p120标题和By Robert Silverberg实际视觉核见。只分析1958原刊单篇，不将2011前言作者David Drake当原作合作者，也不替代1977修订异题版本。原源身份/年份不改。",
+      "source_scope": [
+        {
+          "url": "https://drive.google.com/open?id=18raIvbk0navQUYdPKy6MRd7hPjzMcedv",
+          "type": "公开私人档案保存的Galaxy原刊扫描；载体非出版社官方数字版",
+          "location": "印刷p120–143，对应PDF122–145；p121/131/138为插图；p132–135短路与封锁，p140终点，p142–143修理与结尾",
+          "read_extent": "先视觉核题名页，再按两栏OCR顺序读全部正文；结尾p143另视觉复核。OCR仅辅助私有阅读，错字未逐字校勘，不公开原文。"
+        },
+        {
+          "url": "https://luminist.org/archives/SF/GAL.htm",
+          "type": "扫描入口索引",
+          "location": "MAY 1958链接",
+          "read_extent": "实际读入口并取得扫描；索引本身不作情节依据。"
+        }
+      ]
+    },
+    {
+      "id": "Q17632500",
+      "identity": {
+        "title": "The Macauley Circuit",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "主体与意识",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "被合成音乐挤出舞台的钢琴家Kolfmann学会用新机器，反而表现出卓越创造力；劝他转型的叙述者，却在新电路可能消除演绎者乃至作曲者时，毁坏图纸与机器。故事因此区分扩大人的艺术能力与取消人的参与，也暴露技术拥护者在自身地位受威胁时的反向抵抗。末尾“机器成为继承者”是叙述者的判断，文本并未展示该电路运行后的社会。",
+        "issue_facets": [
+          {
+            "label": "转型机会与参与权被取消",
+            "question": "学习新工具可以恢复职业意义，但下一轮自动化是否还给人留下使用者位置？",
+            "basis": "Kolfmann掌握合成器并成功演绎古典作品；叙述者随后判断Macauley电路可连解释、作曲都自行完成。"
+          },
+          {
+            "label": "合成权威与知情转变",
+            "question": "以逝者声音劝说他人，获得其接受是否就消除了冒用权威的伦理问题？",
+            "basis": "团队拼接旧录音造出导师Kellerman的新讲话；Kolfmann识破制作仍选择学习，接受并不等于录音是真的。"
+          },
+          {
+            "label": "拥护进步者的自保门槛",
+            "question": "原先将破坏技术视为罪行的人，如何为自己的阻挠寻找道德理由？",
+            "basis": "叙述者先阻止Kolfmann毁机，后以保护老人和艺术为由毁图毁机；Macauley重画图纸，压制并未终止技术。"
+          },
+          {
+            "label": "艺术行为与继承者推断",
+            "question": "无需人帮助生成音乐，是否足以证明机器已成为更强的文明主体？",
+            "basis": "结尾把原创艺术能力推作智能与人类过时的证据；这来自叙述者辩护，未有机器统治或社会替代的后续场面。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按1958重刊单篇实际完整正文原创归类，待独立核对。",
+        "issue": "不把叙述者的继承者论断当客观未来事实；明确他毁图毁机，没有描写杀死Macauley。",
+        "issue_facets": "实际读New Worlds印刷p52–61/PDF54–63全部单篇；合成的导师讲话已被Kolfmann识别，不能改写为始终不知受骗。未与初刊逐字对照。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/NW_1958_04.pdf",
+        "https://www.luminist.org/archives/SF/NW.htm"
+      ],
+      "identity_caveat": "精确对应Q17632500 The Macauley Circuit；印刷p52具名标题/Robert Silverberg已视觉确认。分析1958重刊文本，未将合集替代；保留现源年份1956，本重刊不证明初刊年份，外部1956/1957声明仍待原刊核对。",
+      "source_scope": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NW_1958_04.pdf",
+          "type": "私人档案公开保存的New Worlds 1958-04原作重刊扫描",
+          "location": "印刷p52–61/PDF54–63；p55–58转型及合成声音，p59–61电路威胁、毁图与结尾",
+          "read_extent": "OCR辅助顺序读完本单篇所有十页；题名p52视觉确认。未与Fantastic Universe初刊或后修订逐字校勘，不公开原文。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/NW.htm",
+          "type": "重刊扫描入口索引",
+          "location": "APRIL 1958链接",
+          "read_extent": "实际定位并取得扫描；索引不作剧情材料。"
+        }
+      ]
+    },
+    {
+      "id": "Q25394944",
+      "identity": {
+        "title": "Warm Man",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "生命与人类定义",
+          "生存与风险"
+        ],
+        "issue": "Hallinan吸收邻人的痛苦，使他们暂得平静，却也需要这种交流；成年人因不了解他的动机而逐渐排斥他。被欺凌的心灵发送者Lonny终于遇到能接收自己的人，一次释放多年的压抑，却使Hallinan过载死亡，自己的孤独也随之返回。安慰、依赖与伤害在同一关系中并存，故事不容把双方简单分成救助者和危险异类。",
+        "issue_facets": [
+          {
+            "label": "关怀与自身需要并存",
+            "question": "倾听也满足倾听者的生存需要，是否就能否定它曾给他人的帮助？",
+            "basis": "聚会后邻人感到释怀，Hallinan也更愉快并随后休息；死前自称寄生者，但Lonny感知到他确实想帮助自己。"
+          },
+          {
+            "label": "隐私不对称转成排斥",
+            "question": "一个知道大家秘密却不透露自身的人，为何从社区资产变成被怀疑者？",
+            "basis": "居民先赞美他的理解力，后因猜测他会写揭露性小说而不再邀他；真实动机并未通过调查确认。"
+          },
+          {
+            "label": "相遇不能替代承受边界",
+            "question": "长期被孤立的发送者与迫切需要接收的共情者，如何在接通时伤害彼此？",
+            "basis": "Lonny的多年痛苦集中传出，Hallinan留下过载的心念后死亡；孩子获得短暂轻松，却又失去第一个同类。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "实际读原刊全文后的原创归类，待独立核对。",
+        "issue": "没有将超感机制当医学事实；Hallinan自称寄生者与他确有助人意图同时保留，不把儿童写成蓄意攻击者。",
+        "issue_facets": "印刷p46–55/PDF48–57完整读到结尾，题名与末页视觉复核；成年人怀疑的揭露小说并未在故事中成真。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1957_05.pdf",
+        "https://www.fandsf.com/2019/rs1909.htm"
+      ],
+      "identity_caveat": "精确对应Q25394944 Warm Man；原刊p46题名/By Robert Silverberg实际视觉核见。作者2019官方刊物回忆也指明May1957刊登；保持当前身份/年份/单篇粒度，未以收录合集代替。",
+      "source_scope": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1957_05.pdf",
+          "type": "私人档案公开保存的F&SF1957-05原刊扫描",
+          "location": "印刷p46–55/PDF48–57；p48–52倾听，p53–54排斥，p54–55Lonny与结尾",
+          "read_extent": "原刊内嵌OCR辅助按两栏顺序读完十页正文；p46及p55另视觉核对。未逐字校勘所有OCR错字，不公开原文。"
+        },
+        {
+          "url": "https://www.fandsf.com/2019/rs1909.htm",
+          "type": "作者在原刊官方网站发表的回忆，书目/身份材料",
+          "location": "Three Score and Ten末尾Warm Man段",
+          "read_extent": "实际读作者与杂志关系及May1957刊登声明；不作本篇情节依据。"
+        }
+      ]
+    },
+    {
+      "id": "Q25394955",
+      "identity": {
+        "title": "Ozymandias",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度",
+          "文明与历史",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "考古队在死去的异星文明中发现一台保存历史与书籍的导览机器人，军方却凭国家安全接管它，将文化档案变为武器资源。文明留下的技术既能恢复记忆，也能延续毁灭；结尾担忧地球重蹈覆辙，未实际描写新战争爆发。",
+        "issue_facets": [
+          {
+            "label": "科研名义与控制权",
+            "question": "以考古满足公众要求的军事任务，能给研究者多牢靠的自治？",
+            "basis": "军方承担主要预算；发现武器资料后以安全理由封存机器人，取消考古组的权限并宣布返航。"
+          },
+          {
+            "label": "档案保存与用途转换",
+            "question": "同一份文明记录，谁决定它成为公共知识还是军事资产？",
+            "basis": "机器人学会英语后讲述城市、图书馆与历史；军方另行询问武器，随即限制考古人员访问。"
+          },
+          {
+            "label": "继承成果与继承失败",
+            "question": "取得毁灭过其创造者的技术，为什么不等于获得更安全的未来？",
+            "basis": "军官报告异星的灭绝来自超级武器，却相信它可使本国无敌；叙述者担心带回地球的遗产，而结尾停在出发前。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "实际读原刊单篇正文后的原创归类，待独立核对。",
+        "issue": "机器人并非主动侵略者；异星灭绝的原因由军官陈述并被叙述者接受，地球将来结果未呈现。",
+        "issue_facets": "印刷p56–72全部单篇正文经双栏OCR辅助阅读；p57为插图，目录指p57但题名开篇在p56，重要OCR遗漏段及结尾另视觉复核。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1958_11.pdf",
+        "https://sf-encyclopedia.com/entry/infinity_science_fiction"
+      ],
+      "identity_caveat": "现Q25394955为Silverberg单篇Ozymandias；原刊p56署名Ivar Jorgenson，SFE专业参考条目明确对应Silverberg。SFE仅支持别名身份，非一手作者声明或剧情来源；不替代雪莱同名诗、同名异作或合集，原字段不改。",
+      "source_scope": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1958_11.pdf",
+          "type": "私人档案公开保存的Infinity Science Fiction 1958-11原刊扫描；正文一手，数字载体非官方",
+          "location": "印刷p56–72/PDF56–72；p56题名署名，p57插图，p68–69语言/档案，p70–72接管与结尾",
+          "read_extent": "本单篇全页正文实际已读至结束标记；双栏OCR辅助，p56/60/62/64/65/68–72关键或遗漏文字视觉复核。未逐字校勘所有OCR，不公开原文。"
+        },
+        {
+          "url": "https://sf-encyclopedia.com/entry/infinity_science_fiction",
+          "type": "专业百科二手书目/笔名对应证据",
+          "location": "Infinity Science Fiction末期Silverberg/Ozymandias as Ivar Jorgenson段",
+          "read_extent": "实际读此具体对应句；不把专业百科标成一手或以其替代小说正文。"
+        }
+      ]
+    },
+    {
+      "id": "Q17633322",
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "技术与责任",
+          "生存与风险",
+          "殖民与他者"
+        ],
+        "issue": "水星探险队险些因错误判断被灼热吞没，脱险后共同接收到熔融锌池的图像；Ross将这些事件解释为异类在满足人类愿望。船员想返航，船长却想研究它，愿望的冲突暴露“帮助”与同意的距离。结尾留下船长去向的记忆空缺，不直接展示他被留下的经过或最终生死。",
+        "issue_facets": [
+          {
+            "label": "回应愿望与理解需要",
+            "question": "直接满足强烈念头，为什么未必是照护或尊重自主？",
+            "basis": "Curtis处于自杀危机；Ross认为异类促成其死亡又帮助余人脱险，这是角色对共同图像和事件的解释，不是现实医学结论。"
+          },
+          {
+            "label": "求知权威与船员退出",
+            "question": "首次接触的重要性，可以替代同行者继续冒险的同意吗？",
+            "basis": "Ross命令再次降落，六名船员拒绝并主张安全返航；他也承认共同利益可能正当化解除自己指挥权。"
+          },
+          {
+            "label": "善意判断与知识空缺",
+            "question": "收到异类图像并形成合理解释，就能保证理解它的行动和后果吗？",
+            "basis": "Ross坚持锌池想帮助人，最后要求不被带回地球；六人返航却不记得其去向及热服为何遗留，接触后的知识仍有空洞。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据原刊单篇实际完整阅读原创归类，待独立核对。",
+        "issue": "保留共同接收图像与Ross的机制解释之间的区别；结尾未显示船长留下的过程，不断言其被杀或已安全生活。",
+        "issue_facets": "实际读印刷p3–15全部正文，p2插图单独识别；水星环境模型、超感知及心理危机称谓来自小说，不作为现实科学或医学解释。"
+      },
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1957_05.pdf",
+        "https://www.barnesandnoble.com/w/original-science-fiction-stories-may-1957-robert-silverberg/1132025198"
+      ],
+      "identity_caveat": "Q17633322为1957单篇Sunrise on Mercury；原刊p3署名Calvin M. Knox视觉核见，B&N重刊出版介绍明确该笔名对应Robert Silverberg并载许可声明，仅作身份辅助，未验证合同或改写原源。不是1975同题合集。",
+      "source_scope": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1957_05.pdf",
+          "type": "私人档案公开保存的Science Fiction Stories 1957-05原刊扫描；正文一手，数字载体非官方",
+          "location": "印刷p2–15/PDF4–17；p2插图，p3题名/署名与正文，p12–15锌池图像、返航争执与结尾",
+          "read_extent": "正文p3–15双栏OCR辅助顺序读完整单篇至终止星形标记，p3与p15另视觉确认；末页下方其他作品广告不混入。未逐字校勘全部OCR。"
+        },
+        {
+          "url": "https://www.barnesandnoble.com/w/original-science-fiction-stories-may-1957-robert-silverberg/1132025198",
+          "type": "零售平台上的重刊出版介绍/署名对应声明；非原作正文",
+          "location": "Overview末尾Sunrise/Calvin M. Knox/Robert Silverberg许可句，网页行155–163",
+          "read_extent": "实际打开读取该具体声明，仅支持身份关联，不代替原作或主张平台/档案具有同一许可。"
+        }
+      ],
+      "identity": {
+        "title": "Sunrise on Mercury",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q17632684",
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度",
+          "主体与意识",
+          "生命与人类定义"
+        ],
+        "issue": "Hollinrede杀死获选者冒名参试，才获知奖品是进入光体社会的永恒和谐；当局其实早已识破，仍让他接受考验。候选人必须融合颜色，他却成为被排除的黑色，最后被其余人共同杀死。结尾以成功升华完成这场暴力，令“和谐”与道德资格的判定产生张力。",
+        "issue_facets": [
+          {
+            "label": "认证身份与值得信任",
+            "question": "身份查验合格，为何不能证明一个人的道德资格？",
+            "basis": "冒名者通过检查，获选者的地位又使其死亡报告轻易被接受；最终测试识破身份，显示前期认证与内部承认各不相同。"
+          },
+          {
+            "label": "奖品秘密与自我授权",
+            "question": "连奖赏是什么都不知道，个人为何仍能把牺牲别人合理化？",
+            "basis": "Hollinrede只知获胜者不归来、奖品实现终极梦想；三次初筛失败后却认定自己应得机会，知悉光体生命后仍为谋杀辩护。"
+          },
+          {
+            "label": "共同和谐与集体暴力",
+            "question": "排除暴力者来实现和谐，是否可能把新的暴力转成获准的行为？",
+            "basis": "一人试图单独攻击时红色脱离整体；众人改为共同杀死Hollinrede，随后颜色成功融合并升华。这个结果让和谐考验的标准值得追问。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据原刊单篇全部正文原创归类，待独立核对。",
+        "issue": "不把制度奖赏等同作者道德赞许；杀人后的和谐是否构成讽刺为文学解释，不宣称唯一结论。",
+        "issue_facets": "印刷p2–17/PDF4–19完整读至The End，p3为插图；光体永生是故事设定，色彩道德象征不当现实光学命题，也不按颜色推定族裔。"
+      },
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/SS_1957_06.pdf"
+      ],
+      "identity_caveat": "Q17632684是Robert Silverberg的1957单篇World of a Thousand Colors；原刊题名署名视觉核见。不是1983同名合集，不用合集描述替代单篇，原身份/年份不改。",
+      "source_scope": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SS_1957_06.pdf",
+          "type": "私人档案公开保存的Super-Science Fiction 1957-06原刊扫描；正文一手，数字载体非官方",
+          "location": "印刷p2–17/PDF4–19；p2标题，p3插图，p12–14揭示奖品/识破，p15–17融合与结尾",
+          "read_extent": "双栏OCR辅助顺序读完全部正文至The End；p2题名及p13奖品、p17结尾另视觉复核。不公开原文，未逐字校勘全部OCR。"
+        }
+      ],
+      "identity": {
+        "title": "World of a Thousand Colors",
+        "author": "羅伯特·西爾柏格"
+      },
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q18414494",
+      "identity": {
+        "title": "Le Code Énigma",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应2000年法语第一分卷，不是1999年英文整部或法语第三卷。出版方页面是2001口袋再版，首版书目另有确认，不改原记录年份。已读官方简介及该分卷二手梗概，未读分卷原文；具体情节待逐章核对。",
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "法语第一分卷把战时解密的知识不对称，与世纪末数据中心的主权设想并置：保密与开放各会怎样改变个人的行动条件和共同体的责任？",
+        "issue_facets": [
+          {
+            "label": "被隐瞒任务的执行者",
+            "question": "军事行动需要遮掩情报优势时，谁有权让执行者承担并不了解的风险？",
+            "basis": "确切分卷梗概记述Shaftoe参加2702部队的任务而不知道真实目的；解释限于第一卷所载行动。"
+          },
+          {
+            "label": "解密能力与知识隐匿",
+            "question": "取得敌方信息优势后，为何还必须管理别人对这种能力的认识？",
+            "basis": "本卷梗概说明Bletchley Park破译Enigma，同时避免轴心方察觉；没有把此小说片段当作完整战史。"
+          },
+          {
+            "label": "网络主权与公共责任",
+            "question": "由主权者承诺不受监管的网络空间，其自由与责任将由谁决定？",
+            "basis": "第一卷末梗概是苏丹向Randy、Avi宣布不设审查与约束的网络主权计划；不是该计划已实现或后卷结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按确切分卷已读来源提出分类，未声称整部原文已核验。",
+        "issue": "出版方简介与确切分卷二手梗概分开；原文细节仍待核对。",
+        "issue_facets": "每项依据限定本卷，后续分卷或英文整部结局不移入。"
+      },
+      "sources": [
+        "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+        "https://www.livredepoche.com/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+        "https://fr.wikipedia.org/wiki/Le_Code_%C3%89nigma"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方作者法语书目",
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "support_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "出版方第一卷详情与简介",
+          "url": "https://www.livredepoche.com/livre/le-code-enigma-cryptonomicon-tome-1-9782253072362/",
+          "support_scope": "实际读130–148与160–161，确认Tome 1、Payot原出版社及二战/网络时代的密码主题；口袋版日期不是首版日期。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "确切第一分卷二手梗概",
+          "url": "https://fr.wikipedia.org/wiki/Le_Code_%C3%89nigma",
+          "support_scope": "实际读198–211，战时任务与解密、1999数据中心计划及末尾苏丹声明；不是原作全文，未借英文全书后续结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q19947666",
+      "identity": {
+        "title": "Le Réseau Kinakuta",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应2001年法语第二分卷。实际读官方第二卷简介及确切分卷梗概，未读原作。Livre de Poche页面日期是2002再版；不改首版年份。梗概所称密码不可破解属于人物方案与叙述说法，不是现实密码或金融判断；不移入第三卷结局。",
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "知识与认识",
+          "资本与劳动",
+          "权力与制度"
+        ],
+        "issue": "法语第二分卷让保护解密秘密、解释新型计算能力与筹划电子货币相互照映：技术能力不能自行决定谁承担代价，也不能替代制度与信任。",
+        "issue_facets": [
+          {
+            "label": "军事秘密与人员代价",
+            "question": "保住情报优势的目标，能否授权决策者把自己人员当作可牺牲的工具？",
+            "basis": "分卷梗概记述2702指挥层为免Shaftoe、Root泄密而伪造消息，试图令德军击沉俘虏所在潜艇；并非计划必然达成。"
+          },
+          {
+            "label": "新计算能力与组织理解",
+            "question": "专家得到新的计算结果，组织为什么仍可能无法理解其意义与后果？",
+            "basis": "Lawrence在澳大利亚制作计算原型，向Comstock等说明发现时，听众难以理解；仅依该卷梗概，不补机器最终发展史。"
+          },
+          {
+            "label": "电子货币与信任建构",
+            "question": "货币的信任能否只依靠技术安全的承诺，而忽略发起者与资本关系？",
+            "basis": "本卷梗概中Avi提出电子货币，Randy在末尾旅途中向Amy解释计划；它仍是故事中的提案，未据此认定现实方案安全或已成功。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按确切分卷已读来源提出分类，未声称整部原文已核验。",
+        "issue": "出版方简介与确切分卷二手梗概分开；原文细节仍待核对。",
+        "issue_facets": "每项依据限定本卷，后续分卷或英文整部结局不移入。"
+      },
+      "sources": [
+        "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+        "https://www.livredepoche.com/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+        "https://www.hachette.fr/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+        "https://fr.wikipedia.org/wiki/Le_R%C3%A9seau_Kinakuta"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方作者法语书目",
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "support_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "出版方第二卷详情与简介",
+          "url": "https://www.livredepoche.com/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+          "support_scope": "实际读128–145与157–158，确认Tome 2、Payot及口袋再版；潜艇/密码/宝藏以简介的疑问形式保留。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "出版方第二卷简介",
+          "url": "https://www.hachette.fr/livre/le-reseau-kinakuta-cryptonomicon-tome-2-9782253072447/",
+          "support_scope": "实际读291–292，第二卷的潜艇、密码和战时财富线索；不视为原作全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "确切第二分卷二手梗概",
+          "url": "https://fr.wikipedia.org/wiki/Le_R%C3%A9seau_Kinakuta",
+          "support_scope": "实际读207–246：选择采用215–217人员牺牲计划、227–230计算原型及236–246电子货币提案；未直接读取小说，细节仍待原卷核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    },
+    {
+      "id": "Q18414233",
+      "identity": {
+        "title": "Golgotha",
+        "author": "尼尔·斯蒂芬森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "identity_caveat": "对应2001年法语第三分卷；出版方页面所列2003是口袋再版，首版由作者法语书目确认。实际仅读第三卷官方简介与版次资料，未读原作正文或详细结局。不能把熟悉的英文整部末尾直接复制到此分卷，也不把历史背景小说当作战史核验。",
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "权力与制度",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "法语第三分卷的出版简介把战时财富与秘密密码连接到多年后的追索，提示战争留下的权力与认识问题并不随战事结束而消失；具体结局仍待原卷查读。",
+        "issue_facets": [
+          {
+            "label": "战时财富与秘密保存",
+            "question": "通过保密保存的战争财富，会把怎样的权力问题留给后来的世界？",
+            "basis": "第三卷官方简介明确1944年日本保存战争宝藏依赖Golgotha秘密；只提出由此可读的问题，未补财富归属或处置结果。"
+          },
+          {
+            "label": "密码遗产与后世认识",
+            "question": "跨代解开军事秘密，为什么可能同时改变对过去的认识与当下的选择？",
+            "basis": "同一确切分卷简介把菲律宾附近德军潜艇的战争密码与六十年后秘密揭开相连；人物、解密方式与最终后果未在简介给出。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按确切分卷已读来源提出分类，未声称整部原文已核验。",
+        "issue": "出版方简介与确切分卷二手梗概分开；原文细节仍待核对。",
+        "issue_facets": "每项依据限定本卷，后续分卷或英文整部结局不移入。"
+      },
+      "sources": [
+        "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+        "https://www.livredepoche.com/livre/golgotha-cryptonomicon-tome-3-9782253072553/"
+      ],
+      "source_evidence": [
+        {
+          "type": "出版方作者法语书目",
+          "url": "https://www.albin-michel-imaginaire.fr/anatem-tome-1-neal-stephenson/",
+          "support_scope": "实际读法语书目42–48，三卷首版年份为2000、2001、2001；Anatèm的简介不是这三卷的情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "出版方第三卷详情与简介",
+          "url": "https://www.livredepoche.com/livre/golgotha-cryptonomicon-tome-3-9782253072553/",
+          "support_scope": "实际读128–158，确认Tome 3、Payot、2003口袋再版及1944/六十年后的简介；标题原文拼写错误未改入身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "evidence_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。"
+    }
+  ]
+}

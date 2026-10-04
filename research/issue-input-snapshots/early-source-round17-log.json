@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "round": "round17",
+    "record_count": 4,
+    "note": "第十七轮实际检索/阅读范围冻结快照；访问失败、零散搜索返回、原作完整阅读、二手身份辅助各自分开，不将扫描或解释提升verified。后续写新轮文件。",
+    "frozen_at": "2026-10-04"
+  },
+  "records": [
+    {
+      "id": "Q23021482",
+      "identity": {
+        "title": "The Iron Chancellor",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "Galaxy May 1958 Iron Chancellor archive pdf",
+          "result": "取得Luminist原刊索引与电子书平台条目；不使用非原作评论推断正文。"
+        },
+        {
+          "provider": "web search",
+          "query": "site:archive.org \"Galaxy_v16n01_1958-05\"",
+          "result": "未返回结果。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.unz.com/print/GalaxySF-1958may/",
+          "material_type": "原刊页入口",
+          "result": "web cache miss失败；未读正文。"
+        },
+        {
+          "url": "https://www.everand.com/book/478248098/The-Iron-Chancellor",
+          "material_type": "出版社电子版平台条目及免费预览",
+          "location": "介绍、版权页、目录与About Galaxy开头",
+          "result": "读到Open Road/RosettaBooks 2011电子版版权与1958原作版权声明；公开预览止于前言，不到小说正文，未订阅/绕过限制。"
+        },
+        {
+          "url": "https://luminist.org/archives/SF/GAL.htm",
+          "material_type": "私人原刊扫描索引",
+          "location": "MAY 1958链接",
+          "result": "实际读索引后取得该期公开Drive文件入口；非作者或出版社官方数字重刊。"
+        },
+        {
+          "url": "https://drive.google.com/open?id=18raIvbk0navQUYdPKy6MRd7hPjzMcedv",
+          "material_type": "Galaxy 1958-05扫描入口",
+          "result": "普通公开下载取得148页原刊扫描；标题作者/终页视觉核见，正文全部经两栏OCR顺序读完。web工具未显示文件不等同读取失败；不公开扫描原文。",
+          "location": "印刷p120–143/PDF122–145"
+        }
+      ],
+      "reading_scope": "Galaxy原刊单篇印刷p120–143/PDF122–145全部正文，按两栏OCR实际顺序阅读；p120题名作者及p143结尾另视觉复核。p144之后杂志续文/广告未作本篇情节。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描载体非官方数字重刊；OCR未逐字校勘，文学解释尚待独立审阅。",
+      "next_step": "继续其他缺口，必要与另一版具名重刊复核。"
+    },
+    {
+      "id": "Q17632500",
+      "identity": {
+        "title": "The Macauley Circuit",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_republication_full_single_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Robert Silverberg\" \"The Macauley Circuit\" full story",
+          "result": "原作具名转录与New Worlds April 1958重刊扫描入口；实际搜索返回一些原作段落，不将未返回段落称已读。"
+        },
+        {
+          "provider": "web search",
+          "query": "site:luminist.org \"NEW WORLDS\" \"APRIL 1958\"",
+          "result": "取得实际索引并点击公开扫描。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.exosomatic.org/ENTER/Fict-Bio/Silverberg%2C%20Robert/Silverberg%2C%20Robert%20-%20The%20Macauley%20Circuit.pdf",
+          "material_type": "原作转录入口",
+          "result": "搜索返回开篇；web缓存失败、普通下载25秒超时，尚未取到全文。"
+        },
+        {
+          "url": "https://electronicsandbooks.com/edt/manual/Old%20Pulp%20Magazines/%21%20new/New%20Worlds%20-%20April%201958%20%28gnv64%29.pdf",
+          "material_type": "重刊扫描入口",
+          "result": "搜索实际返回p52开头标题作者与叙述，web超时、下载连接失败，尚未取得扫描。"
+        },
+        {
+          "url": "https://zanotowane.pl/1198/2299/",
+          "material_type": "第三方原作具名转录",
+          "result": "搜索实际返回若干原作段落含结尾，正常web打开缓存失败；未将摘要片段称完整顺序全文阅读。"
+        },
+        {
+          "url": "https://www.zanotowane.pl/1176/7142/",
+          "material_type": "第三方原作具名转录",
+          "result": "搜索返回情节段落及近结尾，正常web打开缓存失败；版本/完整性未核。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/NW.htm",
+          "material_type": "重刊索引",
+          "location": "APRIL 1958链接",
+          "result": "实际读索引并定位公开S3扫描。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NW_1958_04.pdf",
+          "material_type": "New Worlds 1958-04扫描",
+          "result": "普通公开下载成功取得132页扫描；本单篇十页正文全部OCR辅助顺序读完，p52题名作者视觉核对。未将初查失败或第三方零散返回称已读全文。",
+          "location": "印刷p52–61/PDF54–63"
+        },
+        {
+          "url": "https://www.sfadb.com/Robert_Silverberg_Chronology",
+          "material_type": "专业书目年表",
+          "location": "Macauley Circuit列Fantastic Universe Aug1956",
+          "result": "实际读书目；早先1956/1957纪年声明差异单独保留，现canonical已为1956。不作情节來源，也不等于已读初刊。"
+        }
+      ],
+      "reading_scope": "实际顺序读New Worlds重刊单篇印刷p52–61/PDF54–63全部正文，题名作者页视觉确认；原Fantastic Universe初刊未读。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描OCR未逐字校勘；1958重刊不是初刊纪年证明，既有1956/1957声明差异仍记录为旧检索历史，当前canonical1956保持。",
+      "next_step": "核对初刊身份/日期并另交更正建议；继续其他missing作品。"
+    },
+    {
+      "id": "Q25394944",
+      "identity": {
+        "title": "Warm Man",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Warm Man\" \"Silverberg\" \"May 1957\" pdf",
+          "result": "定位原刊扫描及作者2019官方回忆，评论/读者简介不作情节材料。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1957_05.pdf",
+          "material_type": "F&SF1957-05原刊扫描",
+          "location": "印刷p46–55/PDF48–57",
+          "result": "web因文件大小未显示；普通公開下载10MB成功，内嵌OCR辅助逐页读完整单篇，标题与末页视觉复核。"
+        },
+        {
+          "url": "https://www.fandsf.com/2019/rs1909.htm",
+          "material_type": "作者在F&SF官方站回忆",
+          "location": "末尾Warm Man/May1957段",
+          "result": "实际读取身份/发表声明；没有用回忆替代故事剧情。"
+        }
+      ],
+      "reading_scope": "印刷p46–55单篇所有十页，题名页/结尾另视觉核见；原刊其他小说未读且不混入。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "扫描载体非官方电子重刊，OCR未全字校勘，文学解释待独立审查。",
+      "next_step": "继续其他确切missing单篇，必要对照具名重刊。"
+    },
+    {
+      "id": "Q25394955",
+      "identity": {
+        "title": "Ozymandias",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "public_original_magazine_scan_full_single_story_read",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/index.htm",
+          "material_type": "原刊扫描索引",
+          "location": "Infinity 1958 November链接",
+          "result": "实际打开并点击公开扫描入口；不作情节依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1958_11.pdf",
+          "material_type": "Infinity Science Fiction 1958-11原刊扫描",
+          "location": "印刷p56–72/PDF56–72",
+          "result": "web缓存未展示文件，普通公开下载成功取得132页扫描；先核目录p3，再发现目录p57为插图，补读p56标题/开头，按双栏顺序读完整单篇，OCR缺字处及结尾视觉复核。"
+        },
+        {
+          "url": "https://sf-encyclopedia.com/entry/infinity_science_fiction",
+          "material_type": "专业百科二手条目",
+          "location": "Silverberg/Ozymandias/Ivar Jorgenson句",
+          "result": "实际读到明确作品与笔名对应；仅作身份辅助，不当作者一手书目或剧情文本。"
+        }
+      ],
+      "reading_scope": "实际完整读单篇印刷p56–72；p57插图，无遗漏开篇，末尾p72结束标记后广告不混入。",
+      "issue_result": "added_to_private_round17_unverified",
+      "reason_unconfirmed": "私人扫描OCR未逐字校勘，专业二手条目支持笔名而非一手作者证实；文学解释待独立审阅。",
+      "next_step": "继续其他missing确切身份，必要另核作者或出版社笔名材料。"
+    }
+  ]
+}
