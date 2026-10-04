@@ -44,15 +44,6 @@ function press(data) {
 }
 const go = view => { if (location.hash !== `#${view}`) location.hash = view; };
 
-// app.js handles a data-filter click by setting the filter and then switching to the library.
-// That hash change makes the browser fire popstate at once, app.js answers popstate by
-// re-reading the filters from the URL, and the URL does not have the new filter yet — so from
-// any view but the library the click lands on an unfiltered list. Switching view before app.js
-// sees the click keeps the filter.
-document.addEventListener('click', event => {
-  if (event.target.closest?.('button[data-filter]') && location.hash !== '#library') location.hash = 'library';
-}, true);
-
 const dialog = document.createElement('dialog');
 dialog.className = 'jump';
 dialog.setAttribute('aria-label', '搜索与跳转');
