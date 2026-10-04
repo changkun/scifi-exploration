@@ -110,9 +110,29 @@
         "file": "research/issues-source-reading-round5.json",
         "sha256": "a93c4e43ffce7ea589b0ed5d9f114592cf5111d430495a2c94b0b673fc39c86e",
         "count": 34
+      },
+      {
+        "file": "research/issues-before-1900-round6.json",
+        "sha256": "fed80597ebcb6bb3cc06fc7205ddc80d87b10d91ef9253c2c99ce43c5f38e765",
+        "count": 6
+      },
+      {
+        "file": "research/issues-1900-1979-round6.json",
+        "sha256": "8378cd0b7b522fdf2eb4b45cf668656c38abfa51a0542872220ff60db4d8d32b",
+        "count": 41
+      },
+      {
+        "file": "research/issues-since-1980-round6.json",
+        "sha256": "74f3afecda57889c7e97c8e97629243bb998c1f8538bb058bc268822fc2d661a",
+        "count": 43
+      },
+      {
+        "file": "research/issues-source-reading-round6.json",
+        "sha256": "79958f6189e8ece7362d1f46f8854b2c9bfe43fce4373c2fb01d8a642bdef748",
+        "count": 30
       }
     ],
-    "knowledge_added": 1365,
+    "knowledge_added": 1485,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -165,13 +185,13 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 75,
+      "record_count": 176,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 75,
-        "scope": "实际过程已归档的早期与倪匡条目；当前未覆盖其余全量身份，不将目录、简介、局部原文和失败互相替代。",
+        "record_count": 176,
+        "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
             "file": "early-search-attempts-round5.json",
@@ -217,8 +237,62 @@
               "record_count": 37,
               "scope": "本轮实际读取、失败或材料不足的倪匡条目；不涵盖其余未处理缺口。"
             }
+          },
+          {
+            "file": "ni-kuang-source-searches-round6.json",
+            "sha256": "622d0a69d9920b76aa61ebcdda3e2081d34e5c0d965967fbb4ad2c41c12ec11a",
+            "metadata": {
+              "created_at": "2026-10-04",
+              "status": "frozen_checkpoint",
+              "record_count": 30,
+              "scope": "本轮实际阅读的30条倪匡相关现存身份；页面失败、社区概要及出版方检索文案分别保留，不代表原刊核验。"
+            }
+          },
+          {
+            "file": "modern-source-searches-round6.json",
+            "sha256": "b7a97e3add33a85920bcb25fbbeeb3f3f39463538dbdbfb4bb33c535617faea7",
+            "metadata": {
+              "method": "actual-reading-log-v1",
+              "note": "逐条整理 round6 已保存的实际读取材料及支持边界；不重建查询，不将编目确认或出版社概述声称为原作全文核对。",
+              "record_count": 30,
+              "status": "frozen_checkpoint"
+            }
+          },
+          {
+            "file": "global-source-searches-round6.json",
+            "sha256": "06eca2d7341fce5e635a2e40ec60bbab52b0d7d6d595530cb372823c9dd3f837",
+            "metadata": {
+              "date": "2026-10-04",
+              "round": "global-round6",
+              "analysis_file_sha256": "74f3afecda57889c7e97c8e97629243bb998c1f8538bb058bc268822fc2d661a",
+              "record_count": 43,
+              "method": "仅整理本轮确实读到的公开作者/出版方资料或官方月度 dump 简介。搜索查询文本未另存，故 saved_queries 为空；来源标注不把原作部分节选、导语、书目或解释升级为全文核验。",
+              "support_scope": "逐条 support_scope 直接保留本轮分析的阅读范围说明；同一作者书目只支持题名与收录形态，情节仍为知识待核。"
+            }
+          },
+          {
+            "file": "early-search-attempts-round6.json",
+            "sha256": "0677e396bd3d8b65074432b42f0c01e84d5a6d351fd052185fab63238de04998",
+            "metadata": {
+              "method": "actual-search-attempt-log-v1",
+              "scope": "仅本轮实际重新检索/读取的19条：6条局部原文支持分析，13条仍未取得目标正文；原23余项中4条本轮尚未重查，既有失败记录留在round5。",
+              "note": "链接存在、检索摘要、编目、正文局部阅读和抓取失败分开；未读全书不称已全文核验。",
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "frozen_at": "2026-10-04",
+              "record_count": 19,
+              "supplemented_count": 6,
+              "unresolved_count": 13,
+              "not_rechecked_this_round_ids": [
+                "Q5447851",
+                "Q124488362",
+                "Q124488457",
+                "Q124488530"
+              ]
+            }
           }
-        ]
+        ],
+        "updated_at": "2026-10-04"
       }
     },
     "issue_batches": [
@@ -316,10 +390,30 @@
         "file": "research/issues-source-reading-round5.json",
         "sha256": "a93c4e43ffce7ea589b0ed5d9f114592cf5111d430495a2c94b0b673fc39c86e",
         "count": 34
+      },
+      {
+        "file": "research/issues-before-1900-round6.json",
+        "sha256": "fed80597ebcb6bb3cc06fc7205ddc80d87b10d91ef9253c2c99ce43c5f38e765",
+        "count": 6
+      },
+      {
+        "file": "research/issues-1900-1979-round6.json",
+        "sha256": "8378cd0b7b522fdf2eb4b45cf668656c38abfa51a0542872220ff60db4d8d32b",
+        "count": 41
+      },
+      {
+        "file": "research/issues-since-1980-round6.json",
+        "sha256": "74f3afecda57889c7e97c8e97629243bb998c1f8538bb058bc268822fc2d661a",
+        "count": 43
+      },
+      {
+        "file": "research/issues-source-reading-round6.json",
+        "sha256": "79958f6189e8ece7362d1f46f8854b2c9bfe43fce4373c2fb01d8a642bdef748",
+        "count": 30
       }
     ],
-    "issue_facet_records": 1268,
-    "issue_facet_count": 2663
+    "issue_facet_records": 1388,
+    "issue_facet_count": 2959
   },
   "chunks": [
     "./assets/completion-index/000.json",

@@ -27,3 +27,7 @@ for(const r of searchLogs.records){
 assert(true,'检索词、材料入口、失败结果与未确认原因完整进入底库及下载队列');
 assert(logged.every(w=>!w.completion.source_verified)&&canonical.metadata.source_search_logs.record_count===logged.length,'阅读或失败日志不升级为整条核验，归档数量可复算');
 assert(logged.every(w=>{const html=sourceSearchDetail(w);return html.includes('实际检索与阅读记录')&&html.includes('当次仍待确认')&&html.includes('当次后续计划')&&w.source_search_log.materials_checked.every(m=>html.includes(m.url.replaceAll('&','&amp;')));})&&sourceSearchDetail({source_search_log:null})==='','详情显示实际阅读边界与材料链接，不为无日志条目生成过程');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+assert(logged.every(w=>{const r=w.source_search_log,html=sourceSearchDetail(w);return (!r.reading_scope||html.includes(esc(r.reading_scope)))&&r.materials_checked.every(m=>!m.reading_scope||html.includes(esc(m.reading_scope)))&&(r.previous_attempts||[]).every(a=>html.includes(esc(a.reason_unconfirmed)));}),'新读取范围和较早失败原因同时可见，历史过程不被覆盖');
+const unsafe={source_search_log:{log_date:'2026-10-04',queries:[],materials_checked:[],reading_scope:'<script>alert(1)</script>',reason_unconfirmed:'<img src=x>',next_step:'<svg>',previous_attempts:[{reason_unconfirmed:'<iframe>',next_step:'<object>'}]}};
+assert(!/<(?:script|img|svg|iframe|object)[ >]/.test(sourceSearchDetail(unsafe)),'阅读范围和历史说明中的外部文本按普通文字显示');
