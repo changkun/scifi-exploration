@@ -1,4 +1,4 @@
-import {FIELD_LABELS} from './canonical.mjs?v=round8-evidence';
+import {FIELD_LABELS} from './canonical.mjs?v=round9-evidence';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const formatValue=v=>Array.isArray(v)?v.map(x=>typeof x==='object'?`${x.label}：${x.question}（依据：${x.basis}）`:x).join('、'):v;
 const num=v=>Number(v).toLocaleString('zh-CN');
