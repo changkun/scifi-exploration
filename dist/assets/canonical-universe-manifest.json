@@ -6,15 +6,15 @@
     "source_record_count": 14532,
     "total": 14564,
     "researched": 168,
-    "topic_known": 3059,
-    "topic_unknown": 11505,
-    "issue_analyzed": 1847,
-    "issue_missing": 12717,
-    "issue_facet_records": 1695,
-    "issue_facets": 3798,
+    "topic_known": 3133,
+    "topic_unknown": 11431,
+    "issue_analyzed": 1935,
+    "issue_missing": 12629,
+    "issue_facet_records": 1783,
+    "issue_facets": 4039,
     "year_unknown": 1901,
     "space_unknown": 14259,
-    "knowledge_added": 1792,
+    "knowledge_added": 1880,
     "library_correspondence": 2251,
     "conflicts": 454,
     "with_missing": 14428,
@@ -250,9 +250,29 @@
           "file": "research/issues-source-reading-round9.json",
           "sha256": "fe6b87a1dfc84906a677930baadfc16cf51daaead2f299b0cca164bdafa1b9a6",
           "count": 27
+        },
+        {
+          "file": "research/issues-before-1900-round10.json",
+          "sha256": "cb877b97aa2b8da798bb38eb278c916bed8c46c4eb073b26356a677d81b83af1",
+          "count": 1
+        },
+        {
+          "file": "research/issues-1900-1979-round10.json",
+          "sha256": "762c8b4728c11ef2677b4e7fd77a8d3aefa39e8f21022c1c18fd06f57af59717",
+          "count": 19
+        },
+        {
+          "file": "research/issues-since-1980-round10.json",
+          "sha256": "84c4b863b0083bf19064d76dc00820336ab3c02a41450cbd9de8d7ee3ca7046b",
+          "count": 40
+        },
+        {
+          "file": "research/issues-source-reading-round10.json",
+          "sha256": "38510ef8649c93ee0747631e27842eff6b0c6f2e7d281974bfee55f3f8ffeb1d",
+          "count": 28
         }
       ],
-      "knowledge_added": 1792,
+      "knowledge_added": 1880,
       "library": {
         "provider": "Open Library",
         "method": "existing-P648-batched-search-v1",
@@ -305,12 +325,12 @@
         "record_count": 4524
       },
       "source_search_logs": {
-        "record_count": 453,
+        "record_count": 541,
         "metadata": {
           "format": "actual-source-search-log-v1",
           "created_at": "2026-10-04",
           "status": "frozen_checkpoint",
-          "record_count": 453,
+          "record_count": 541,
           "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
           "inputs": [
             {
@@ -590,6 +610,74 @@
                 "status": "frozen_checkpoint",
                 "record_count": 19
               }
+            },
+            {
+              "file": "silverberg-source-searches-round10.json",
+              "sha256": "71034974609feaac3740b1b26987f14173fba64a78ad8e7bb3a1fa60b1323eea",
+              "metadata": {
+                "round": 10,
+                "created_at": "2026-10-04",
+                "status": "frozen_checkpoint",
+                "method": "actual-reading-log-v1",
+                "record_count": 28
+              }
+            },
+            {
+              "file": "global-source-searches-round10.json",
+              "sha256": "3de08706ca75fa5f694f175e645cf7d4dedac09ebd92adafe81f18e67d4f9077",
+              "metadata": {
+                "date": "2026-10-04",
+                "status": "frozen_checkpoint",
+                "analysis_file": "work/evidence/global-round10.json",
+                "analysis_sha256": "84c4b863b0083bf19064d76dc00820336ab3c02a41450cbd9de8d7ee3ca7046b",
+                "record_count": 40,
+                "source_reference_count": 45,
+                "unique_urls": 44,
+                "method": "仅保存确已阅读材料与支持范围。原作序章、开头、单书简介、合集简介、版权页、作者日期目录及作品知识分开；未单独存盘的查询留空，不以结构自检代替全文或独立书目核验。"
+              }
+            },
+            {
+              "file": "early-search-attempts-round10.json",
+              "sha256": "0f16ec1ec8fd99484df7c1c669fd43fba395da5f93f17aa93b61723d7576cef9",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "frozen_at": "2026-10-04",
+                "round": "round10",
+                "record_count": 4,
+                "note": "本轮实际查读4个身份，保留前轮实际检索历史；materials_checked标round10的条目为本轮材料。Bodin局部原文与出版社情境支持局部分析；Grifoni此检查点只有原刊广告及编目/二手版本信息，不能当小说情节核验；Howard与Suddick仍无原作。新取得的Grifoni正文页影像进入round11。",
+                "primary_narrative_excerpt_read_ids": [
+                  "Q64457296"
+                ],
+                "primary_paratext_only_ids": [
+                  "Q17154576"
+                ],
+                "no_primary_narrative_ids": [
+                  "Q7751494",
+                  "Q56249508"
+                ],
+                "all_issue_analysis_unverified": true
+              }
+            },
+            {
+              "file": "modern-source-searches-round10.json",
+              "sha256": "3c80b2c8efe70d71abdacea4d975d0896b0e6b0810d199dcb0eb449791014ca1",
+              "metadata": {
+                "method": "actual-reading-log-v1",
+                "note": "仅保留本轮实际读取材料与已保存查询，来源支持范围不等于全文独立核验。",
+                "status": "frozen_checkpoint",
+                "record_count": 19
+              }
+            },
+            {
+              "file": "modern-identity-audit-round10.json",
+              "sha256": "7ff91b66922d212dda756f92cf6374dd21dd83a65a0e394f006cf7d755964c84",
+              "metadata": {
+                "method": "identity-audit-note-v1",
+                "status": "unresolved",
+                "note": "本条不写入补充分析，等待身份与版本核对。"
+              }
             }
           ],
           "updated_at": "2026-10-04"
@@ -770,18 +858,38 @@
           "file": "research/issues-source-reading-round9.json",
           "sha256": "fe6b87a1dfc84906a677930baadfc16cf51daaead2f299b0cca164bdafa1b9a6",
           "count": 27
+        },
+        {
+          "file": "research/issues-before-1900-round10.json",
+          "sha256": "cb877b97aa2b8da798bb38eb278c916bed8c46c4eb073b26356a677d81b83af1",
+          "count": 1
+        },
+        {
+          "file": "research/issues-1900-1979-round10.json",
+          "sha256": "762c8b4728c11ef2677b4e7fd77a8d3aefa39e8f21022c1c18fd06f57af59717",
+          "count": 19
+        },
+        {
+          "file": "research/issues-since-1980-round10.json",
+          "sha256": "84c4b863b0083bf19064d76dc00820336ab3c02a41450cbd9de8d7ee3ca7046b",
+          "count": 40
+        },
+        {
+          "file": "research/issues-source-reading-round10.json",
+          "sha256": "38510ef8649c93ee0747631e27842eff6b0c6f2e7d281974bfee55f3f8ffeb1d",
+          "count": 28
         }
       ],
-      "issue_facet_records": 1695,
-      "issue_facet_count": 3798
+      "issue_facet_records": 1783,
+      "issue_facet_count": 4039
     },
     "source_search_logs": {
-      "record_count": 453,
+      "record_count": 541,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 453,
+        "record_count": 541,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -1061,6 +1169,74 @@
               "status": "frozen_checkpoint",
               "record_count": 19
             }
+          },
+          {
+            "file": "silverberg-source-searches-round10.json",
+            "sha256": "71034974609feaac3740b1b26987f14173fba64a78ad8e7bb3a1fa60b1323eea",
+            "metadata": {
+              "round": 10,
+              "created_at": "2026-10-04",
+              "status": "frozen_checkpoint",
+              "method": "actual-reading-log-v1",
+              "record_count": 28
+            }
+          },
+          {
+            "file": "global-source-searches-round10.json",
+            "sha256": "3de08706ca75fa5f694f175e645cf7d4dedac09ebd92adafe81f18e67d4f9077",
+            "metadata": {
+              "date": "2026-10-04",
+              "status": "frozen_checkpoint",
+              "analysis_file": "work/evidence/global-round10.json",
+              "analysis_sha256": "84c4b863b0083bf19064d76dc00820336ab3c02a41450cbd9de8d7ee3ca7046b",
+              "record_count": 40,
+              "source_reference_count": 45,
+              "unique_urls": 44,
+              "method": "仅保存确已阅读材料与支持范围。原作序章、开头、单书简介、合集简介、版权页、作者日期目录及作品知识分开；未单独存盘的查询留空，不以结构自检代替全文或独立书目核验。"
+            }
+          },
+          {
+            "file": "early-search-attempts-round10.json",
+            "sha256": "0f16ec1ec8fd99484df7c1c669fd43fba395da5f93f17aa93b61723d7576cef9",
+            "metadata": {
+              "method": "actual-search-attempt-log-v1",
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "frozen_at": "2026-10-04",
+              "round": "round10",
+              "record_count": 4,
+              "note": "本轮实际查读4个身份，保留前轮实际检索历史；materials_checked标round10的条目为本轮材料。Bodin局部原文与出版社情境支持局部分析；Grifoni此检查点只有原刊广告及编目/二手版本信息，不能当小说情节核验；Howard与Suddick仍无原作。新取得的Grifoni正文页影像进入round11。",
+              "primary_narrative_excerpt_read_ids": [
+                "Q64457296"
+              ],
+              "primary_paratext_only_ids": [
+                "Q17154576"
+              ],
+              "no_primary_narrative_ids": [
+                "Q7751494",
+                "Q56249508"
+              ],
+              "all_issue_analysis_unverified": true
+            }
+          },
+          {
+            "file": "modern-source-searches-round10.json",
+            "sha256": "3c80b2c8efe70d71abdacea4d975d0896b0e6b0810d199dcb0eb449791014ca1",
+            "metadata": {
+              "method": "actual-reading-log-v1",
+              "note": "仅保留本轮实际读取材料与已保存查询，来源支持范围不等于全文独立核验。",
+              "status": "frozen_checkpoint",
+              "record_count": 19
+            }
+          },
+          {
+            "file": "modern-identity-audit-round10.json",
+            "sha256": "7ff91b66922d212dda756f92cf6374dd21dd83a65a0e394f006cf7d755964c84",
+            "metadata": {
+              "method": "identity-audit-note-v1",
+              "status": "unresolved",
+              "note": "本条不写入补充分析，等待身份与版本核对。"
+            }
           }
         ],
         "updated_at": "2026-10-04"
@@ -1069,10 +1245,10 @@
     "issue_research_queue": {
       "record_count": 14564,
       "stages": {
-        "analysis_present": 1847,
-        "source_search_next": 10821,
-        "content_reading_next": 945,
-        "identity_then_content": 951
+        "analysis_present": 1935,
+        "source_search_next": 10775,
+        "content_reading_next": 911,
+        "identity_then_content": 943
       },
       "url": "./assets/issue-research-queue.json.gz"
     }
