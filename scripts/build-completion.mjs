@@ -9,6 +9,11 @@ const [audit,library,source,catalog,links]=await Promise.all([gz('research/recor
 const libraries=new Map(library.records.map(r=>[r.id,r])),sourceMap=new Map(source.records.map(r=>[r.id,r]));
 let reading={metadata:null,records:[]};
 try{reading=await gz('research/reading-materials.json.gz');}catch(error){if(error.code!=='ENOENT')throw error;}
+let corrections={records:[]};
+try{corrections=await read('research/content-corrections.json');}catch(error){if(error.code!=='ENOENT')throw error;}
+for(const c of corrections.records){const r=sourceMap.get(c.id);if(!r||!([r.title,...Object.values(r.source_labels||{}).flat()].includes(c.identity?.title))||!([...(r.authors||[]),(r.authors||[]).join(' / ')].includes(c.identity?.author))||c.field!=='publication_year'||r.first_year!==c.original_source_value||!Number.isSafeInteger(c.proposed_value)||c.status!=='primary_evidence_read'||!c.source_url?.startsWith('https://')||!(c.support_scope&&c.location))throw new Error('Invalid content correction: '+c.id);}
+const correctionMap=new Map(corrections.records.map(c=>[c.id,[c]]));
+if(correctionMap.size!==corrections.records.length)throw new Error('Duplicate correction identity');
 const readingMap=new Map(reading.records.map(r=>[r.id,r.materials]));
 const canonicalIds=new Set(audit.records.map(r=>r.id)),researchIds=new Set(links.links.map(r=>r.canonical_id));
 const auditMap=new Map(audit.records.map(r=>[r.id,r])),researchByCanonical=new Map(links.links.map(l=>[l.canonical_id,catalog.works.find(w=>w.id===l.research_id)]));
@@ -101,9 +106,10 @@ const records=audit.records.map(a=>{
  if(topicMap.size)candidateCount++;if(checks.some(c=>c.status==='title_author_correspondence'))matchedCount++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different'))dateConflicts++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='missing_source'))libraryMissingYearCandidates++;
- return {id:a.id,reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
+ return {id:a.id,content_corrections:correctionMap.get(a.id)||[],reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
 });
 const metadata={format:'completion-overlay-v1',date:'2026-10-04',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
+metadata.content_corrections=corrections.records.length;
 metadata.reading_materials=reading.metadata;
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;

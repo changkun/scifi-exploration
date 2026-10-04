@@ -111,10 +111,21 @@ function applySupplement(w,s){
   }
   const conflicts=w.library_checks.filter(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different');
   if(conflicts.length||s.research_source_comparisons?.some(c=>c.comparison==='different_year_values'))fields.publication_date='conflict_needs_review';
+  w.content_corrections=s.content_corrections||[];
+  for(const c of w.content_corrections){
+    if(c.field==='publication_year'){
+      if(w.source_first_year!==c.original_source_value)throw new Error('日期更正不对应原始来源值：'+w.id);
+      w.first_year=c.proposed_value;w.sort_year=c.proposed_value;
+      w.year_display=`${c.primary_date||c.proposed_value}（原刊依据）`;
+      w.year_note=`来源纪年 ${c.original_source_value} 原样保留；${c.support_scope} ${c.note}`;
+      fields.publication_date='primary_date_correction';
+      w.sources=unique([...w.sources,c.source_url]);
+    }
+  }
   const missing=Object.entries({title:w.title_zh,original_title:w.title_original,author:w.author,publication_date:w.sort_year,original_language:w.original_language||w.research?.language_tradition,language_statements:labels(w.source_index?.language_statements).length||null,form:(w.research||s.form_candidate)?w.form:null,spatial:w.spatial_primary==='unknown'?null:w.spatial_primary,story_era:w.story_era,story_duration:w.duration,temporal_reach:w.reach,science:w.science_class,topics:w.topics.length||null,issue:(w.research||w.knowledge?.fields?.issue)?w.issue:null,branches:w.branches.length||null,external_identifiers:w.source_id||null}).filter(([,v])=>unknown(v)).map(([key])=>key);
   if(!w.source_id&&!w.series_name)missing.push('relationships');
   for(const f of missing)fields[f]=['original_title','original_language'].includes(f)?'unconfirmed':'missing';
-  w.completion={structural_checked:true,structural_result:s.structural_result,source_verified:false,field_statuses:fields,missing_fields:missing,knowledge_applied_fields:applied,has_knowledge:!!s.knowledge,has_library_correspondence:w.library_checks.some(c=>c.status==='title_author_correspondence'),has_conflict:conflicts.length>0||fields.publication_date==='conflict_needs_review',has_identity_review:w.library_checks.some(c=>c.status==='identity_or_scope_needs_review'||c.status==='not_returned'),issues:s.issues||[],research_source_comparisons:s.research_source_comparisons||[]};
+  w.completion={structural_checked:true,structural_result:s.structural_result,source_verified:false,field_statuses:fields,missing_fields:missing,knowledge_applied_fields:applied,has_knowledge:!!s.knowledge,has_library_correspondence:w.library_checks.some(c=>c.status==='title_author_correspondence'),has_conflict:w.content_corrections.length>0||conflicts.length>0||fields.publication_date==='conflict_needs_review',has_identity_review:w.library_checks.some(c=>c.status==='identity_or_scope_needs_review'||c.status==='not_returned'),issues:s.issues||[],research_source_comparisons:s.research_source_comparisons||[]};
   if(s.knowledge&&!w.research)w.research_level='enriched';
   else if(!w.research&&w.topics.length)w.research_level='candidate';
   w.sources=unique([...w.sources,...(s.knowledge?.sources||[]),...w.library_checks.map(c=>c.source_url)]);

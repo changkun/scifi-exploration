@@ -11,3 +11,6 @@ assert(!materials.records.some(r=>r.materials.some(m=>'text'in m||'description'i
 assert(materials.records.every(r=>r.materials.every(m=>m.acquisition_status!=='returned'||/^[a-f0-9]{64}$/.test(m.record_sha256))),'已取得记录保留可追踪的散列值');
 const counts={};for(const r of queue.records)counts[r.task.stage]=(counts[r.task.stage]||0)+1;
 assert(JSON.stringify(counts)===JSON.stringify(queue.metadata.stages),'阶段统计逐条可复算');
+const revised=canonical.works.filter(w=>w.content_corrections.length);
+assert(revised.every(w=>w.content_corrections.every(c=>w.source_first_year===c.original_source_value&&w.source_index.first_year===c.original_source_value&&w.sort_year===c.proposed_value&&w.completion.field_statuses.publication_date==='primary_date_correction'&&w.completion.has_conflict)),'原刊日期更正保留源值和差异并更新当前纪年');
+assert(revised.every(w=>w.content_corrections.every(c=>w.sources.includes(c.source_url)&&c.inspection_method&&c.support_scope)),'日期更正保留实际查读范围与一手链接');
