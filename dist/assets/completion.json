@@ -130,9 +130,29 @@
         "file": "research/issues-source-reading-round6.json",
         "sha256": "79958f6189e8ece7362d1f46f8854b2c9bfe43fce4373c2fb01d8a642bdef748",
         "count": 30
+      },
+      {
+        "file": "research/issues-before-1900-round7.json",
+        "sha256": "faedf628330001bacfffb13283f31a351baf265689d665424b9505b3c6a0d469",
+        "count": 4
+      },
+      {
+        "file": "research/issues-1900-1979-round7.json",
+        "sha256": "0c4f277afa67574b8ed4b79f460db9f52ab24eb2a8755a616adc346313b4f04f",
+        "count": 41
+      },
+      {
+        "file": "research/issues-since-1980-round7.json",
+        "sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+        "count": 39
+      },
+      {
+        "file": "research/issues-source-reading-round7.json",
+        "sha256": "dd43a05c70a68529f65e27d4bc3b924f5dd98abba4de5607436a1834a96bbaf8",
+        "count": 30
       }
     ],
-    "knowledge_added": 1485,
+    "knowledge_added": 1599,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -185,12 +205,12 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 176,
+      "record_count": 274,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 176,
+        "record_count": 274,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -288,6 +308,82 @@
                 "Q124488362",
                 "Q124488457",
                 "Q124488530"
+              ]
+            }
+          },
+          {
+            "file": "ni-kuang-source-searches-round7.json",
+            "sha256": "534aafd32509bdd02bb51865305ee1b1b9ee15a4e47f110edebaa51990082c6a",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "record_count": 31,
+              "created_at": "2026-10-04",
+              "method": "actual-reading-log-v1",
+              "note": "归档30条已读内容并补分析的身份和1条只读书目的未补身份；失败、检索返回正文、社区梗概及范围分别保留。",
+              "frozen_at": "2026-10-04"
+            }
+          },
+          {
+            "file": "global-source-searches-round7.json",
+            "sha256": "12ca492a6fb7c8566435610a20f260b11fea19f82de379acde767b38964d9239",
+            "metadata": {
+              "date": "2026-10-04",
+              "status": "frozen_checkpoint",
+              "analysis_file": "work/evidence/global-round7.json",
+              "analysis_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+              "record_count": 39,
+              "source_reference_count": 46,
+              "unique_urls": 46,
+              "method": "仅保存实际已读的材料链接和范围；未单独存盘的查询文本留空。原文选读、简介、目录和作者评论分开，不宣称全文或独立书目核验。"
+            }
+          },
+          {
+            "file": "modern-source-searches-round7.json",
+            "sha256": "8f7ba06187b65bc4267475621107e321da679c881b7b34f20884cea9caf30c5e",
+            "metadata": {
+              "method": "actual-reading-log-v1",
+              "note": "保留实际查询与读取支持范围；只读到索引片段、编目或部分页时明确注明，不声称原作全文核对。",
+              "record_count": 28,
+              "status": "frozen_checkpoint",
+              "coverage_note": "只记录实际保存的查询、读取URL和确切支持范围；失败访问不计来源，知识条目不假称实际读源。"
+            }
+          },
+          {
+            "file": "early-search-attempts-round7.json",
+            "sha256": "f5f58c3975f3216f4329b46ad6e7d3738cc326e73798ccf62d53ad1399085de8",
+            "metadata": {
+              "method": "actual-search-attempt-log-v1",
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "frozen_at": "2026-10-04",
+              "round": "round7",
+              "record_count": 17,
+              "analysis_added_count": 4,
+              "analysis_pending_count": 13,
+              "scope": "第六轮后17条余项，本轮各项均有实际检索/读取入口；4条局部原文可支持议题，13条仍不能确认连续原作内容。",
+              "note": "每条保留历次实际材料和轮次。本轮范围仅由round=7/round7及reading_scope限定；链接存在、目录结果和页面失败不表示已读正文，不提升任何文学解释为已核验。早前已读但本轮未重看的材料不假称重读。",
+              "analysis_checkpoint_sha256": "faedf628330001bacfffb13283f31a351baf265689d665424b9505b3c6a0d469",
+              "empty_material_url_ids": [],
+              "current_round_catalog_or_failure_only_ids": [
+                "Q6929216",
+                "Q7751494",
+                "Q17154576",
+                "Q56249508",
+                "Q64455652",
+                "Q64456182",
+                "Q64457296",
+                "Q64472284",
+                "Q64472917",
+                "Q64474255",
+                "Q64489125",
+                "Q64495475",
+                "Q124488362"
+              ],
+              "current_round_primary_excerpt_ids": [
+                "Q124488530",
+                "Q124488457",
+                "Q5447851",
+                "Q64494829"
               ]
             }
           }
@@ -410,10 +506,30 @@
         "file": "research/issues-source-reading-round6.json",
         "sha256": "79958f6189e8ece7362d1f46f8854b2c9bfe43fce4373c2fb01d8a642bdef748",
         "count": 30
+      },
+      {
+        "file": "research/issues-before-1900-round7.json",
+        "sha256": "faedf628330001bacfffb13283f31a351baf265689d665424b9505b3c6a0d469",
+        "count": 4
+      },
+      {
+        "file": "research/issues-1900-1979-round7.json",
+        "sha256": "0c4f277afa67574b8ed4b79f460db9f52ab24eb2a8755a616adc346313b4f04f",
+        "count": 41
+      },
+      {
+        "file": "research/issues-since-1980-round7.json",
+        "sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+        "count": 39
+      },
+      {
+        "file": "research/issues-source-reading-round7.json",
+        "sha256": "dd43a05c70a68529f65e27d4bc3b924f5dd98abba4de5607436a1834a96bbaf8",
+        "count": 30
       }
     ],
-    "issue_facet_records": 1388,
-    "issue_facet_count": 2959
+    "issue_facet_records": 1502,
+    "issue_facet_count": 3265
   },
   "chunks": [
     "./assets/completion-index/000.json",
