@@ -1,0 +1,1164 @@
+{
+  "metadata": {
+    "method": "source-assisted-spatial-navigation-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "record_count": 36,
+    "field_count": 85,
+    "source_commit": "6b974e20bee14d046e00e2ac7e680e77f596765b",
+    "source_snapshot_sha256": "384b69dd72ec556179dea85ea67f83e5416d05b8728d7cca340917348510de55",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/early-spatial-round3.json",
+        "sha256": "eca05adeb63f60ebb1b224102cd1132836125dfdfd5c5efbce8db52ec9c6ef4c",
+        "record_count": 8,
+        "metadata": {
+          "method": "source-assisted-spatial-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 8,
+          "field_count": 24,
+          "scope": "最近R19–R22九篇已完整阅读的单篇中当前canonical unknown空间；仅八篇有足够实际舞台依据。",
+          "note": "只补3空间字段，不修改任何冻结议题、年份或已有已知空间。7-zone采用现有合法值；abstract用于Halfway House明确跨continuum，多宇宙不是单独新增zone。",
+          "skipped": [
+            {
+              "id": "Q25381764",
+              "title": "Going Down Smooth",
+              "reason": "原刊p44–51医院和维护系统未明确所在天体；Under New Orleans只在机器异象中出现，不能据此把物理医院定位到Earth。保留unknown，不将心理叙述自动当abstract主舞台。"
+            }
+          ],
+          "validation": "8 exact canonical IDs/author/title，当前空间均unknown，只有三个fields，合法7-zone，有实际原刊范围与sources，全部unverified。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/root-spatial-round9.json",
+        "sha256": "c1d1ffb39d964d8257c2bf2c34a3045ea7e42b47bac6259a13b0370f092569fd",
+        "record_count": 5,
+        "metadata": {
+          "method": "source-assisted-spatial-navigation-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 5,
+          "field_count": 15,
+          "note": "只补五条原unknown的明确地球舞台；Eugene未取得明确场所天体，仍unknown。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-spatial-round5.json",
+        "sha256": "00cdec819e1f0dc3997efff3964d3989a1918a6495bf21ddaad7c55038fc4057",
+        "record_count": 9,
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-04",
+          "scope": "本轮实际读过明确地理舞台、canonical空间unknown的独立作品；空间与时间跨度分开。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "f3014845e6ef9eb64158c8dd89128688b8f07f4b0774a69c4e6c4503fc38c339",
+          "verification": "knowledge_added_unverified；阅读导航而非物理坐标。",
+          "record_count": 9,
+          "freeze_check_source_snapshot_sha256": "384b69dd72ec556179dea85ea67f83e5416d05b8728d7cca340917348510de55",
+          "freeze_check": "逐ID核对本地当前快照身份、仍缺议题／空间、字段白名单、合法议题、2—4具体facet与来源日志对应；这是格式与身份对照，不等于原作或跨库完整核验。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-spatial-round5.json",
+        "sha256": "4262bcca802794684fa188348805a1d09a0ae4c54bf44ef22d764f668c762dde",
+        "record_count": 14,
+        "metadata": {
+          "method": "source-assisted-spatial-navigation-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "record_count": 14,
+          "field_count": 28,
+          "single_work_record_count": 14,
+          "collection_record_count": 0,
+          "scope": "R20实际已读材料中场景明确、当前canonical空间unknown的单作；原作转录、原刊OCR、出版简介、二手评论逐URL区分。",
+          "note": "仅补阅读导航主区与具体依据，文学判断仍待独立核对；不是物理坐标。",
+          "exclusion_note": "The Immortals 本轮出版简介未明确足够地点，不以现代医疗场景猜地球。Honorable Opponent 的主要交换场景与广泛战争背景仍需界定，暂留unknown。Neighbor 地名已知但本次二手材料的天体层证据有限，留下一轮。",
+          "zone_counts": {
+            "planetary": 7,
+            "interstellar": 3,
+            "earth": 3,
+            "galactic": 1
+          }
+        }
+      }
+    ],
+    "normalization": "新增缺少的导航字段说明；Bride Ninety-One的Suvorna拼写按独立说明修正。原始冻结组件字节完全保留。",
+    "content_clarifications": {
+      "file": "research/content-clarifications-round1.json",
+      "sha256": "ad4502c77edfcc18d4b0f383806e071cfb6dde03b6a079f5605f536d05458ccf"
+    },
+    "zone_counts": {
+      "abstract": 1,
+      "cosmic": 0,
+      "earth": 17,
+      "galactic": 1,
+      "interstellar": 5,
+      "planetary": 12
+    },
+    "scope": "仅补确切作品尚缺的空间导航，已有定位不改；时间、核心问题、科学等字段由独立输入维护。",
+    "verification": "knowledge_added_unverified；来源阅读与字段检查不等于作品整体独立核验。"
+  },
+  "records": [
+    {
+      "id": "Q17631915",
+      "identity": {
+        "title": "The Silent Colony",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "三位来自Ninth World的旅行者经过其他编号世界及Fifth World卫星，降至Third World雪地；主体跨同一恒星周围行星层。原文未直接命名Earth，不把第三世界强填为明确地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p111列九、八、七世界及第五世界卫星，p112进入Third World大气并降落，p113雪地日出；三页单篇此前完整读完，本次重新读对应段。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q17631646",
+      "identity": {
+        "title": "The Artifact Business",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "Jarrell的发掘、公司交涉与赝品生产发生在异星Voltus。Earth是商品市场及他向往的博物馆所在地，结尾虽获未来调任承诺，却未实际离开Voltus；不按贸易背景扩为星际主舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1957_04.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1957_04.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "印刷p40–41/PDF42–43明确Voltuscian平原和从未见Earth；完整单篇p40–50此前已读，末尾留在当地继续考古，Earth调任只作承诺。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q17621098",
+      "identity": {
+        "title": "Alaree",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_secondary": [
+          "planetary"
+        ],
+        "spatial_rationale": "飞船在返回Earth途中因故障降至另一个白色恒星系统的未探索行星；修复后离开，Alaree的孤立与死亡发生在续航飞船上。星际航行与异星停留均实际出现，Earth仅为目标，不声称已抵达。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/SA_1958_03.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SA_1958_03.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p95提Spica IV与返回Earth，p96单独白色恒星/行星紧急降落，p103–104起飞，p105–108飞船上独立后死亡；单篇p95–108已全读，本次重读定位段。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q17640558",
+      "identity": {
+        "title": "One-Way Journey",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [
+          "interstellar"
+        ],
+        "spatial_rationale": "主体对话、恋爱去留与军方心理干预集中在Kollidor的Terra Import基地；受伤回忆涉及驶向该星球的飞船。返回Earth是结尾同意的后续目的地，原作没有展示抵达地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1957_11.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/ISF_1957_11.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p47基地明确在Kollidor；p62回忆Magyar飞向Kollidor并遭辐射受伤；p64同意回Earth，未出现到达场景；p46–64单篇全文已读，本次重读定位段。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q23021213",
+      "identity": {
+        "title": "Halfway House",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_secondary": [
+          "earth",
+          "planetary"
+        ],
+        "spatial_rationale": "Fold可让人从一个continuum穿至另一个，Halfway House为这些世界的筛选与转送节点；Alfieri实际从Earth进入节点、赴Hinnerang手术再返任职。abstract在此表示多宇宙通道，非纯粹心理幻觉；其他列举宇宙并非他的实际行程。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/stories/1966%2C%2011%20%28November%29%2C%20If.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/stories/1966%2C%2011%20%28November%29%2C%20If.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p101由Earth开启Fold，p102地球企业背景，p104跨continuum节点并实际送至Hinnerang、当地四月亮和低重力；p106–109回Halfway House任职；单篇p100–109全读，本次重读p104等。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q17633021",
+      "identity": {
+        "title": "The Songs of Summer",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "Dugan从1956年的纽约地铁进入未来America的夏日聚会与农居地，营建城市的行动仍在地球。New Jersey/Pennsylvania是他的推测，不能当已核确切地点；共享意识和结尾幻梦不是实际天体旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1956_09.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/SFS_1956_09.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "印刷p5–7/PDF7–9纽约、1956与America回述；p16/PDF18地理猜测；p17–18/PDF19–20只在Dugan脑中征服世界；原刊p3–18完整单篇已读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q25381757",
+      "identity": {
+        "title": "Bride Ninety-One",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_secondary": [
+          "earth",
+          "planetary"
+        ],
+        "spatial_rationale": "Paul和Landy以地球习俗结婚后乘星际飞船经历六周旅行，到达蜜月行星Thalia；船上事件与异星度假都是实际舞台。第二次婚约后去Suvorna是出发前计划，结尾未展示在那里生活。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p26–28地球婚约、spaceport及星际旅程，p32 hyperspace，p33–35 Thalia行星度假；p35 Suvorna明日出发，仅计划；p26–35已完整全读且标题/结尾视觉核见。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "content_clarification": {
+        "id": "Q25381757",
+        "identity": {
+          "title": "Bride Ninety-One",
+          "author": "羅伯特·西爾柏格"
+        },
+        "target_component": "early-spatial-round3.json",
+        "affected_paths": [
+          "fields.spatial_rationale"
+        ],
+        "prior_statement_summary": "新冻结空间rationale将Suvorna误拼为Suvarna。",
+        "finding": "原刊p35出发目的地明确拼写Suvorna；空间分类与未到达说明不变。",
+        "recommended_replacement_fields": {
+          "spatial_rationale": "Paul和Landy以地球习俗结婚后乘星际飞船经历六周旅行，到达蜜月行星Thalia；船上事件与异星度假都是实际舞台。第二次婚约后去Suvorna是出发前计划，结尾未展示在那里生活。"
+        },
+        "verification_status": "knowledge_added_unverified",
+        "sources": [
+          "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf"
+        ],
+        "source_evidence": [
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+            "type": "原刊扫描正文一手",
+            "support_scope": "If 1967-09 p35右栏末段实际视觉核见Suvorna；是出发前计划，不是实际到达。",
+            "read_date": "2026-10-04"
+          }
+        ]
+      }
+    },
+    {
+      "id": "Q17640539",
+      "identity": {
+        "title": "Neighbor",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "两个庄园的仇恨与探访发生在一颗由五十处大庄园分割的异星。Earth是跨光年运来古物的来源及离去家人的目的地，未作为实际展开的主体舞台；续命装置不改变所在天体层次。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅按实际完整阅读的原刊单篇舞台粗分；只新增到当前unknown，仍待独立核对。",
+        "spatial_secondary": "明确区分实际次要舞台/航行与来源、计划目的地和心理幻象；导航尺度不是真实天体坐标。",
+        "spatial_rationale": "原刊对应页码及范围见source_evidence；保留未显示的到达场景或确切位置，不补成已发生。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/stories/GAL_1964_08.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/stories/GAL_1964_08.pdf",
+          "type": "公开私人档案原刊扫描，正文一手；数字载体非官方，不声明素材授权",
+          "support_scope": "原刊p150星球及两座庄园，p159五十庄园，p161古物由Earth跨光年运来，p162家人去Earth；p150–164完整正文并8张双页图像实际全读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q3207055",
+      "identity": {
+        "title": "The Caress",
+        "author": "格雷格·伊根"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "当年点名本篇的评论明确故事为跨大西洋背景；仅归地球，不根据作者国籍推定澳大利亚，也不补具体城市。"
+      },
+      "sources": [
+        "https://www.fanac.org/fanzines/Q36/Q3636_i_ortlieb_1990-06.pdf"
+      ],
+      "source_evidence": [
+        {
+          "type": "1990当年评论文章",
+          "url": "https://www.fanac.org/fanzines/Q36/Q3636_i_ortlieb_1990-06.pdf",
+          "support_scope": "实际读扫描PDF页12／印刷页11的行430–466，基因艺术、警务药物、Segel自我与transatlantic背景；不是原篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "field_notes": {
+        "spatial_primary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_secondary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_rationale": "仅依据所列材料支持的场所导航，仍待独立核对。"
+      }
+    },
+    {
+      "id": "Q7669336",
+      "identity": {
+        "title": "TAP",
+        "author": "格雷格·伊根"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "所读法译开篇明确Sydney与King’s Cross，调查和家人生活均在地球城市；脑内语言体验是机制，不自动改为抽象空间。"
+      },
+      "sources": [
+        "https://www.quarante-deux.org/recits/egan/nouvelles/lama.html"
+      ],
+      "source_evidence": [
+        {
+          "type": "作者书目直接链接的法语译文局部",
+          "url": "https://www.quarante-deux.org/recits/egan/nouvelles/lama.html",
+          "support_scope": "实际读31–175：Sydney调查开篇、植入与黑盒、情感语言、儿童植入争议；另定向读499–513与575–579版本说明。中段与完整结局没有连续通读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "field_notes": {
+        "spatial_primary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_secondary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_rationale": "仅依据所列材料支持的场所导航，仍待独立核对。"
+      }
+    },
+    {
+      "id": "Q25376959",
+      "identity": {
+        "title": "Chaff",
+        "author": "格雷格·伊根"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "二手剧情条目明确Colombia雨林为追踪Largo的舞台，故仅标地球；不同材料的区域面积差异不用于定位。"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chaff_(novelette)"
+      ],
+      "source_evidence": [
+        {
+          "type": "二手条目剧情与评论转引",
+          "url": "https://en.wikipedia.org/wiki/Chaff_(novelette)",
+          "support_scope": "实际读128–148：Colombia、失败改造生态、Largo遗传工具与改变脑联结；Letson引文只通过该条目读到。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "field_notes": {
+        "spatial_primary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_secondary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_rationale": "仅依据所列材料支持的场所导航，仍待独立核对。"
+      }
+    },
+    {
+      "id": "Q91101833",
+      "identity": {
+        "title": "Into Darkness",
+        "author": "格雷格·伊根"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "二手摘要明确虫洞在地球表面跃迁且救援在其中进行；此处按主要灾害与行动发生地归地球，不因wormhole一词推到星际。"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Into_Darkness_(novelette)"
+      ],
+      "source_evidence": [
+        {
+          "type": "二手条目剧情摘要",
+          "url": "https://en.wikipedia.org/wiki/Into_Darkness_(novelette)",
+          "support_scope": "实际读123–145：地表虫洞、向内行进、随机驻留及教师John Nately第11次救援；未读原篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "field_notes": {
+        "spatial_primary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_secondary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_rationale": "仅依据所列材料支持的场所导航，仍待独立核对。"
+      }
+    },
+    {
+      "id": "Q91228357",
+      "identity": {
+        "title": "Mitochondrial Eve",
+        "author": "格雷格·伊根"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "二手摘要明确结尾的公开冲突发生London；据实际叙事地点归地球，祖先时间不转为空间尺度。"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mitochondrial_Eve_(novelette)"
+      ],
+      "source_evidence": [
+        {
+          "type": "二手条目剧情摘要",
+          "url": "https://en.wikipedia.org/wiki/Mitochondrial_Eve_(novelette)",
+          "support_scope": "实际读127–129，Paul、Lena、Children of Eve、父系对立团体和London公开冲突；没有读原篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "field_notes": {
+        "spatial_primary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_secondary": "仅依据所列材料支持的场所导航，仍待独立核对。",
+        "spatial_rationale": "仅依据所列材料支持的场所导航，仍待独立核对。"
+      }
+    },
+    {
+      "id": "Q683166",
+      "identity": {
+        "title": "Always",
+        "author": "Karen Joy Fowler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要舞台为加州Santa Cruz山地的Always共同体，叙述者在这里经历日常生活与关系变化。"
+      },
+      "field_notes": {
+        "spatial_primary": "开篇节选直接明确Santa Cruz山地；永生设定不改变地球舞台。",
+        "spatial_rationale": "仅提取本实体已读资料明确舞台，不把背景异星或其他作品继承为主要空间。"
+      },
+      "sources": [
+        "https://lisamasontheauthor.wordpress.com/2016/05/15/excerpt-from-always-in-karen-joy-fowlers-world-fantasy-award-collection-what-i-didnt-see-the-story-collection-storybundle-sfwapro/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://lisamasontheauthor.wordpress.com/2016/05/15/excerpt-from-always-in-karen-joy-fowlers-world-fantasy-award-collection-what-i-didnt-see-the-story-collection-storybundle-sfwapro/",
+          "material_kind": "本实体已读公开材料",
+          "support_scope": "实际读开篇How I Got Here节选，明确共同体地处Santa Cruz山地。"
+        }
+      ]
+    },
+    {
+      "id": "Q131217894",
+      "identity": {
+        "title": "Dispatches from the Revolution",
+        "author": "帕特·卡蒂甘"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要舞台为地球上的美国，叙述以芝加哥大会和后来地下访谈为中心，遗稿最终见于厄瓜多尔。"
+      },
+      "field_notes": {
+        "spatial_primary": "公开原作具体城市与国家明确；另类历史时间分歧不推作不同空间。",
+        "spatial_rationale": "仅提取本实体已读资料明确舞台，不把背景异星或其他作品继承为主要空间。"
+      },
+      "sources": [
+        "https://www.apexbookcompany.com/blogs/apex-magazine/dispatches-from-the-revolution"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.apexbookcompany.com/blogs/apex-magazine/dispatches-from-the-revolution",
+          "material_kind": "本实体已读公开材料",
+          "support_scope": "实际读完整原作，明确美国芝加哥、Berkeley等地与末尾厄瓜多尔遗稿地点。"
+        }
+      ]
+    },
+    {
+      "id": "Q27921684",
+      "identity": {
+        "title": "Angel",
+        "author": "帕特·卡蒂甘"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要舞台为人类城市的街道、餐馆、酒吧与公路，异星流放者在地球寻找容身之处。"
+      },
+      "field_notes": {
+        "spatial_primary": "公共单篇梗概明确Angel被流放到Earth；异星来源不改变本篇主要地球场景。",
+        "spatial_rationale": "仅提取本实体已读资料明确舞台，不把背景异星或其他作品继承为主要空间。"
+      },
+      "sources": [
+        "https://writingatlas.com/story/3648/pat-cadigan-angel/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://writingatlas.com/story/3648/pat-cadigan-angel/",
+          "material_kind": "本实体已读公开材料",
+          "support_scope": "实际读完整Plot Summary，明确城市生活及Angel被流放到Earth。"
+        }
+      ]
+    },
+    {
+      "id": "Q131218070",
+      "identity": {
+        "title": "True Faces",
+        "author": "帕特·卡蒂甘"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要案件发生在地球第一座外星使馆；外星身份不自动表示星际舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据本实体已读具体舞台；阅读导航而非物理坐标，仅补来源空间unknown。",
+        "spatial_rationale": "理由限于已读材料中的地点与活动，不由议题、体裁或长时间跨度推断。",
+        "entity_identity": "以1992年True Faces独立短篇为单位；1993年Dirty Work为收录集，不将一篇情节当作全书。依据是二手具体梗概及专业评论，仍待原作核对。"
+      },
+      "sources": [
+        "https://writingatlas.com/story/3653/pat-cadigan-true-faces/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://writingatlas.com/story/3653/pat-cadigan-true-faces/",
+          "material_kind": "公共短篇书目与情节梗概",
+          "support_scope": "实际读完整Plot Summary，支持地球使馆、女性遇害、测谎适配、真实面孔禁忌、集体自责与责任语义差异；未读所链接原文，也未采用无关推荐标签。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131471747",
+      "identity": {
+        "title": "Black Glass",
+        "author": "Karen Joy Fowler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "复活的Carry Nation冲击1990年代的酒吧与娱乐场所，并引来DEA介入。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据本实体已读具体舞台；阅读导航而非物理坐标，仅补来源空间unknown。",
+        "spatial_rationale": "理由限于已读材料中的地点与活动，不由议题、体裁或长时间跨度推断。",
+        "entity_identity": "以1991年独立中篇Black Glass为单位；作者官网及出版方销售的是1998年同题合集，本条只使用其中明确指向标题篇的材料，属于跨类型来源候选，不由巫术设定确认纯科幻。"
+      },
+      "sources": [
+        "https://www.readinggroupguides.com/reviews/black-glass/excerpt",
+        "https://www.karenjoyfowler.com/black-glass"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.readinggroupguides.com/reviews/black-glass/excerpt",
+          "material_kind": "公开原作开篇节选",
+          "support_scope": "实际读Chapter 1全部可见段落，支持Senate Bar、持斧女人破坏酒吧、宗教与母职训诫及对青年强制动作；未读完整中篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.karenjoyfowler.com/black-glass",
+          "material_kind": "作者官网合集简介中的本篇说明",
+          "support_scope": "实际读Carry Nation破坏迪厅和酒吧、动员女性并训诫男性的具体简介；官网1998指合集出版，不当作本篇1991首发。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q104911438",
+      "identity": {
+        "title": "The Lake Was Full of Artificial Things",
+        "author": "Karen Joy Fowler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "叙事围绕地球上的心理治疗与越南战争梦境；虚拟会面不另推物理宇宙。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据本实体已读具体舞台；阅读导航而非物理坐标，仅补来源空间unknown。",
+        "spatial_rationale": "理由限于已读材料中的地点与活动，不由议题、体裁或长时间跨度推断。",
+        "entity_identity": "以1985年独立短篇The Lake Was Full of Artificial Things为单位；1986年Artificial Things为收录集，2016年The Big Book of Science Fiction中的同题出版实体亦不合并。故事解释基于论文与评论，原篇尚未全文核验。"
+      },
+      "sources": [
+        "https://classicsofsciencefiction.com/2022/01/26/the-lake-was-full-of-artificial-things-by-karen-joy-fowler/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://classicsofsciencefiction.com/2022/01/26/the-lake-was-full-of-artificial-things-by-karen-joy-fowler/",
+          "material_kind": "James Wallace Harris署名单篇评论",
+          "support_scope": "实际读评论正文，支持Miranda分手后长期内疚、治疗外梦境、Daniel误杀男孩及死亡场景；保留其是否真实知识的疑问，不把评论对所有女性的扩展解释当作剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131517674",
+      "identity": {
+        "title": "Face Value",
+        "author": "Karen Joy Fowler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "两名人类生活并研究一个沙漠行星上的mene，主要事件集中在当地。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据本实体已读具体舞台；阅读导航而非物理坐标，仅补来源空间unknown。",
+        "spatial_rationale": "理由限于已读材料中的地点与活动，不由议题、体裁或长时间跨度推断。",
+        "entity_identity": "以Karen Joy Fowler的1986年Face Value独立短篇为单位；2011年Lightspeed为重印，作者访谈将Hesper写作Hester，记录保留原篇人物名。不与Sean Williams的2013年同题篇混用；作者未向人物公开的mene性别设定不补作已证情节。"
+      },
+      "sources": [
+        "https://fanac.org/fanzines/Foundation/foundation_39_james_1987-sp.pdf",
+        "https://www.lightspeedmagazine.com/fiction/face-value/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/face-value/",
+          "material_kind": "获授权重印原篇的公开可检索开头",
+          "support_scope": "实际读公开检索返回的开篇连续段落，支持二星沙漠环境、诗稿、mene触摸与取走母亲首饰、Taki回避目光；只有开头，未读完整原篇，未绕过此前直接读取限制。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://fanac.org/fanzines/Foundation/foundation_39_james_1987-sp.pdf",
+          "material_kind": "Sherry Francis署名同期专业评论",
+          "support_scope": "实际读印刷页80—81明确分析Face Value的段落：沙漠行星、两名人类、研究与婚姻疏离、私人对象被侵犯及集体意志占据。只采用本篇段，非全刊阅读全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131517682",
+      "identity": {
+        "title": "The Poplar Street Study",
+        "author": "Karen Joy Fowler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要舞台为地球郊区被外星人隔离的Poplar Street街区；入侵者来自何处不替代实际舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "已读具体评论明确地球街区或Boston警务舞台；时间线数量不自动推断空间尺度。",
+        "spatial_rationale": "仅提取实际已读地点与日常活动，阅读导航而非物理坐标。",
+        "entity_identity": "以1985年The Poplar Street Study独立短篇为单位；Artificial Things为后续收录集。课程笔记及同期说明支持具体情节，未独立全文核验；未采用某评论错误援引不确定性原理为社会实验结论背书。"
+      },
+      "sources": [
+        "https://www.chuq.me/otherrealms-2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.chuq.me/otherrealms-2",
+          "material_kind": "James Brunet署名同期作家侧写中的本篇说明",
+          "support_scope": "实际读公开可检索正文Authors: A Profile of Karen Joy Fowler的本篇段，明确地球被外星占领、一个郊区街区作为对照组及邻里关系；原刊为1986年2月，本篇指1985年6月F&SF。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q106095216",
+      "identity": {
+        "title": "Nothing Personal",
+        "author": "帕特·卡蒂甘"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要调查由Boston警探Tsung展开；跨时间线的身份交易仍围绕地球城市与家庭。"
+      },
+      "field_notes": {
+        "spatial_primary": "已读具体评论明确地球街区或Boston警务舞台；时间线数量不自动推断空间尺度。",
+        "spatial_rationale": "仅提取实际已读地点与日常活动，阅读导航而非物理坐标。",
+        "entity_identity": "以2007年Nothing Personal独立中篇为单位；Alien Crimes与2012年Other Worlds Than These均为收录集。标题也出现在某评论的自述分节，不能把Matthew Cheney文章的Nothing Personal小标题误作本篇分析。"
+      },
+      "sources": [
+        "https://strangehorizons.com/wordpress/non-fiction/reviews/alien-crimes-edited-by-mike-resnick/",
+        "https://tangentonline.com/print-other/anthologies/alien-crimes-edited-by-mike-resnick2/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tangentonline.com/print-other/anthologies/alien-crimes-edited-by-mike-resnick2/",
+          "material_kind": "Dave Truesdale署名专业评论的公开可检索正文",
+          "support_scope": "实际读Nothing Personal完整评论段，支持相似少女死亡、身份贩卖、父母逃生交易、双线风险与Pasco执法；直接页面存在重定向循环，未声称读完整原篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://strangehorizons.com/wordpress/non-fiction/reviews/alien-crimes-edited-by-mike-resnick/",
+          "material_kind": "Karen Burnham署名专业评论",
+          "support_scope": "实际读明确指向Nothing Personal的两段，支持Tsung的长期警务、衰老与遗憾、Dread、案件和新搭档关联；未将同集其他故事继承到本篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q122050864",
+      "identity": {
+        "title": "The Cage",
+        "author": "A. Bertram Chandler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要冲突发生于失事异星和另一星球上的动物园；以明确的异星地表场景归行星层。星际客轮和引擎是背景，不从未明说的两个星球距离推银河尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://gill.readingroo.ms/ENTER/Fict-Bio/Chandler,%20A%20Bertram/A.%20bertram%20Chandler-%20The%20Cage.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://gill.readingroo.ms/ENTER/Fict-Bio/Chandler,%20A%20Bertram/A.%20bertram%20Chandler-%20The%20Cage.pdf",
+          "support_scope": "实际读6页英文正文转录，明确写客轮落在无名星球，幸存者再被带到另一星球的动物园；可检索文本约7–213行。非出版社镜像，未与原刊逐字校勘。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q18389547",
+      "identity": {
+        "title": "The Demon Breed",
+        "author": "James H. Schmitz"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "已读情节围绕 Nandy-Cline 异星地表的生化研究与救援展开；Hub 与联邦是组织背景，不据此把本篇所有场景提升为银河舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://www.blackgate.com/2024/09/03/the-tuvela-theory-the-demon-breed-by-james-h-schmitz/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.blackgate.com/2024/09/03/the-tuvela-theory-the-demon-breed-by-james-h-schmitz/",
+          "support_scope": "实际读 William Stoddard 的 Black Gate 单书评论，明确把 Cay 的研究、捕获以及 Nile 与改造水獭的救援放在 Nandy-Cline。二手阅读，未读小说正文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q16385433",
+      "identity": {
+        "title": "Dear Pen Pal",
+        "author": "范·沃格特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "书信与意识替代装置明确连接地球与 Aurigae 恒星的第二颗行星；归恒星之间的交流与移动层。这里的跨星际接触不等于人物肉身乘船旅行，意识情节也不自动归抽象场域。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://zanotowane.pl/1145/9021/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://zanotowane.pl/1145/9021/",
+          "support_scope": "实际读 Dear Pen Pal 完整书信转录：开头标 Planet Aurigae II，明确说明 Aurigae sun 的第二颗行星、地球笔友、跨星际邮件及两张摄影片间的亚空间作用。非出版社镜像，未校勘1949原刊。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q7747544",
+      "identity": {
+        "title": "The Listeners",
+        "author": "James Gunn"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要监听与公共决策发生于地球：Puerto Rico 的 Arecibo 项目及人类社会回应；Capella 是远程信息来处，不把收到信号算作肉身访问恒星。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://books.google.com/books?hl=en&vid=ISBN9780684130132",
+        "https://www.ipgbook.com/the-listeners-products-9781944387433.php"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?hl=en&vid=ISBN9780684130132",
+          "support_scope": "实际读 Google Books 所载1972 Scribner简介，明确写 Puerto Rico 监听项目收到 Capella 信号。书目及简介，不是原作全篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.ipgbook.com/the-listeners-products-9781944387433.php",
+          "support_scope": "实际读 IPG 的2021重版出版简介，明确把场景放在 Arecibo 和地球长期研究者生活；属出版简介范围。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q134706037",
+      "identity": {
+        "title": "Goblin Night",
+        "author": "James H. Schmitz"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要舞台是已被人类殖民的异星森林公园，Telzey 的学生野营与追杀在该地展开；星空密集不是银河旅行的证据。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://mporcius.blogspot.com/2013/10/goblin-night-by-james-schmitz.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mporcius.blogspot.com/2013/10/goblin-night-by-james-schmitz.html",
+          "support_scope": "实际读 MPorcius 单篇评论第14行段落，明确说该 planet 的森林、过去殖民与当地野营追逐。二手情节阅读；未借同系列其他篇场景。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q25394002",
+      "identity": {
+        "title": "Process",
+        "author": "范·沃格特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "叙事沿一个异星森林集体的感知展开，行动涉及本星球上的船落地与邻近森林；飞船来自高空，但文本未因此把森林行动舞台变成星际巡航。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1950_12.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1950_12.pdf",
+          "support_scope": "实际读1950年12月 F&SF 原刊镜像可检索正文印刷页46–51，写 far sun、星球海岸、相邻森林、落船与地表矿床；仅以已读本篇场景判断。OCR 未逐字对照扫描。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q28403786",
+      "identity": {
+        "title": "A Can of Paint",
+        "author": "范·沃格特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要求生发生在金星及着陆飞船，结尾返回地球；两个明确太阳系行星构成导航依据，不采用电影改编的场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://www.zanotowane.pl/1200/5260/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.zanotowane.pl/1200/5260/",
+          "support_scope": "实际定向读 Destination Universe 转录中的 A Can of Paint，6738–8072行，明确金星着陆、当地文明测试及返回地球。非出版社镜像，未校勘1944版本。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q111712407",
+      "identity": {
+        "title": "A Great Deal of Power",
+        "author": "埃里克·弗兰克·拉塞尔"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "故事明确在未来德国、第六帝国统治下制造与试验机器人；这是地球国家背景，不由反乌托邦分支标签推定。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://www.blackgate.com/2018/01/06/birthday-reviews-eric-frank-russells-a-great-deal-of-power/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.blackgate.com/2018/01/06/birthday-reviews-eric-frank-russells-a-great-deal-of-power/",
+          "support_scope": "实际读 Steven H. Silver 的 Black Gate 单篇评论第13–16行，明说21世纪德国、第六帝国和当地三科学家。二手设定材料，未读原刊或全部结局。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q71943278",
+      "identity": {
+        "title": "Evensong",
+        "author": "莱斯特·德尔·雷"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "逃亡从银河中心拘禁处穿过一条旋臂，回到地球，而文明力量以恒星和世界间的网路追踪他；归明确银河与文明网络层。上帝身份、制造太阳能力与宇宙法则的说法不单独视为已发生的宇宙整体工程。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://www.scribd.com/document/765438331/Rey-Lester-Del-Evensong"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.scribd.com/document/765438331/Rey-Lester-Del-Evensong",
+          "support_scope": "实际读4页英文转录正文约105–231行，明确中心银河拘禁、旋臂未尽的逃亡、恒星/世界网路与祖先星球地球。用户上传文本，标注取自 Dangerous Visions，未与原合集校勘。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q5527315",
+      "identity": {
+        "title": "Gateway to Strangeness",
+        "author": "杰克·万斯"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "太阳帆训练计划由地球到火星再返回，失误使航线越过木星附近；以明确太阳系航线归行星层，不因又题 Dust of Far Suns 推星际远航。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://strangerthansf.com/reviews/vance-dustoffarsuns.html",
+        "https://warwick.ac.uk/fac/sci/physics/research/astro/people/stanway/sciencefiction/cosmicstories/sailing-to-the/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://strangerthansf.com/reviews/vance-dustoffarsuns.html",
+          "support_scope": "实际读 Stranger than SF 对单篇的评论第20–23行，明确 Earth、Mars、Jupiter 与回到 Earth；没有把合集其他篇加入。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://warwick.ac.uk/fac/sci/physics/research/astro/people/stanway/sciencefiction/cosmicstories/sailing-to-the/",
+          "support_scope": "实际读 Warwick Cosmic Stories 35–42行，支持太阳帆训练及到木星轨道以外的航程；是研究者文章和有限原文引述，不是整篇原刊阅读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q18153679",
+      "identity": {
+        "title": "Rule 18",
+        "author": "克利福德·D·西马克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要场景为未来地球上的球赛、新闻办公室及通往地球过去的时间通道；火星是参赛对手和族群背景，本轮不把它算成已经访问的场景。时间跳跃仍是地球地点，不自动归多维抽象。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://sfmagazines.com/?p=5831"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://sfmagazines.com/?p=5831",
+          "support_scope": "实际读 SF MAGAZINES 的 Rule 18 段落66–85行，写地球球队、新闻办公室、Native American reservation 与过去滞留。二手概述及有限引文，未读全篇原刊。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q139891125",
+      "identity": {
+        "title": "Kindness",
+        "author": "莱斯特·德尔·雷"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "行动从地球的博物馆飞船到小行星带旧聚居地，目的和已完成移动都明确在太阳系内；不把新旧人类的社会替代本身当作银河范围。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://sfmagazines.com/?p=12470"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://sfmagazines.com/?p=12470",
+          "support_scope": "实际读 SF MAGAZINES 的 Kindness 单篇69–76行，明确地球、飞船与 Asteroid Belt 的 planetoid；二手概述及结尾引文，未与1944原刊全文核对。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q19973919",
+      "identity": {
+        "title": "Ticket to Anywhere",
+        "author": "Damon Knight"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "主人公从地球来到火星，再使用明确属于古代星际运输系统的门，展开不可预测的跨世界旅程；不推定网络覆盖整个银河或从改编游戏补位置。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://thelearnedturtle.wordpress.com/2019/03/19/book-review-deep-space-by-robert-silverberg-editor/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://thelearnedturtle.wordpress.com/2019/03/19/book-review-deep-space-by-robert-silverberg-editor/",
+          "support_scope": "实际打开 Learned Turtle 对 Ticket to Anywhere 的单篇27–29行，明确 Mars artefact 为 ancient alien interstellar transportation system，随后 random trek across space。二手概述，未读全部原作。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q75225673",
+      "identity": {
+        "title": "Though Dreamers Die",
+        "author": "莱斯特·德尔·雷"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "背景与行动包括离开地球瘟疫的长程星际殖民船及在别处找到的新居住世界；只有一条明确跨恒星迁移过程，不把文明继承提升为整个银河的社会网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "依据实际材料明确的主要舞台归阅读导航层；不是坐标，不按类型、议题或发表年推定，不覆盖既有已知空间。",
+        "spatial_rationale": "逐URL记录读取层级和场景支持范围；文学导航判断仍待独立核对。"
+      },
+      "sources": [
+        "https://classicsofsciencefiction.com/2023/02/11/though-dreamers-die-by-lester-del-rey/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://classicsofsciencefiction.com/2023/02/11/though-dreamers-die-by-lester-del-rey/",
+          "support_scope": "实际读 James W. Harris 单篇评论13–18行，明确星际方舟与新世界，五机器人维护船与殖民目标。二手材料；对幸存者健康和星图细节的摘要分歧不影响明说的空间范围，仍未核对原刊全篇。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    }
+  ]
+}

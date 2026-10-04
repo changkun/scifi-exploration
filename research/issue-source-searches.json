@@ -3,7 +3,7 @@
     "format": "actual-source-search-log-v1",
     "created_at": "2026-10-04",
     "status": "frozen_checkpoint",
-    "record_count": 1027,
+    "record_count": 1073,
     "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
     "inputs": [
       {
@@ -952,6 +952,101 @@
           "record_count": 10,
           "note": "逐项保留实际读取URL、确切支持范围和真实已发查询；二手评论与原作样章分别标定，非完整作品独立核验。"
         }
+      },
+      {
+        "file": "source-aggregate-round19-log.json",
+        "sha256": "ae6aaa0e2a67c56386ecbd180f94da603711c8cbff99a972f89038f5ffff0800",
+        "metadata": {
+          "method": "actual-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 12,
+          "inputs": [
+            {
+              "file": "research/issue-input-snapshots/egan-source-searches-round19.json",
+              "sha256": "d831ac1d03c31bc0a848a2c5d4967f11fb9469e2d17bf92a3a84ac905755e093",
+              "metadata": {
+                "method": "actual-reading-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "frozen_at": "2026-10-04",
+                "record_count": 6,
+                "note": "共同查询真实字符串保留；错误探查词不变成事实。直接打开、链接失败、评论转引、译文局部与书目区分。"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round22-log.json",
+              "sha256": "03d0a5abf7f3c9469c13df831fc68c2460ea19e31c58843c257710f9e8d69bf8",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "updated_at": "2026-10-04",
+                "round": "round22",
+                "record_count": 3,
+                "facet_count": 0,
+                "note": "第二十二轮冻结日志：3原刊单篇完整阅读，正常公开下载成功与web失败、目录与正文范围分开；没有登录或验证绕行，不分发原文。",
+                "frozen_at": "2026-10-04"
+              }
+            },
+            {
+              "file": "research/issue-input-snapshots/early-source-round23-log.json",
+              "sha256": "978ebe848c344f6bcc3a63464fade37120d43d2fb64933960350939473a53a7e",
+              "metadata": {
+                "method": "actual-search-attempt-log-v1",
+                "status": "frozen_checkpoint",
+                "created_at": "2026-10-04",
+                "updated_at": "2026-10-04",
+                "round": "round23",
+                "record_count": 3,
+                "facet_count": 0,
+                "note": "第二十三轮冻结日志：3原刊单篇全文实读，题名/署名和结尾视觉核见；公共下载与web失败分开，没有登录或验证绕行，不分发原文。",
+                "frozen_at": "2026-10-04"
+              }
+            }
+          ],
+          "note": "实际查询、直接打开、失败资料、评论转引和原刊范围分别保留。"
+        }
+      },
+      {
+        "file": "global-source-searches-round19.json",
+        "sha256": "42c5631695aac94dd5f8fb52cbd04a41cd36e4ee0b2a7f57f923ae373ed2b7f2",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-04",
+          "scope": "1980年起及日期未知、当前仍缺核心议题的具体作品。",
+          "method": "逐实体实际阅读作者、出版方简介、获授权原作或明确署名评论；只补 topics、issue、issue_facets，未知情节不依系列或题名猜测。",
+          "verification": "knowledge_added_unverified；来源支持范围与全文、独立书目核验分开。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "f3014845e6ef9eb64158c8dd89128688b8f07f4b0774a69c4e6c4503fc38c339",
+          "record_count": 17,
+          "facet_count": 46,
+          "freeze_check_source_snapshot_sha256": "384b69dd72ec556179dea85ea67f83e5416d05b8728d7cca340917348510de55",
+          "freeze_check": "逐ID核对本地当前快照身份、仍缺议题／空间、字段白名单、合法议题、2—4具体facet与来源日志对应；这是格式与身份对照，不等于原作或跨库完整核验。"
+        }
+      },
+      {
+        "file": "modern-source-searches-round20.json",
+        "sha256": "fef167e47be605abb29a8e4e82953180f68a95d83cf329a7ba58c3abc217d6f5",
+        "metadata": {
+          "method": "actual-source-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "record_count": 17,
+          "note": "实际打开或搜索返回的读取范围逐条保存，不能把搜索摘录、出版简介与评论升级为原作全文核验。Evensong的未保留查询不补造，查询列表留空。"
+        }
+      },
+      {
+        "file": "early-content-clarifications-round1.json",
+        "sha256": "ad4502c77edfcc18d4b0f383806e071cfb6dde03b6a079f5605f536d05458ccf",
+        "metadata": {
+          "method": "targeted-source-layer-clarification-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 2,
+          "note": "独立补充/勘误说明，不改已冻结字节，不新增作品分析数量；一条区分原作命名与作者后记明确说明，一条纠正私有新空间文件的罗马字拼写。文学解释仍未独立核验。"
+        }
       }
     ],
     "updated_at": "2026-10-04",
@@ -988,9 +1083,16 @@
               "previous_normalization": {
                 "method": "exact_object_payload_v1",
                 "normalized_at": "2026-10-04",
-                "records_with_removed_copies": 22,
-                "identical_copies_removed": 213,
-                "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                "records_with_removed_copies": 0,
+                "identical_copies_removed": 0,
+                "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+                "previous_normalization": {
+                  "method": "exact_object_payload_v1",
+                  "normalized_at": "2026-10-04",
+                  "records_with_removed_copies": 22,
+                  "identical_copies_removed": 213,
+                  "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+                }
               }
             }
           }
@@ -54181,11 +54283,25 @@
           "material_type": "新版作者说明与原作预览",
           "location": "网页1211–1280，1281起为下一篇",
           "result": "实际打开、阅读全文及作者对本篇说明；公开显示原作结尾，无需登录。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "原刊扫描正文一手；私人公共数字档案",
+          "reading_scope": "本轮重新视觉通读p111–113全部三页，编号世界、p112小写earth及p113雪晶结尾；不推断原刊点名Earth。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+          "result": "actual_source_scope_read",
+          "material_type": "2019新版作者亲自介绍；公开零售预览",
+          "reading_scope": "本轮重新读作者前言网页行1211–1222，尤其1219明确定位来客赴Earth；不同于正文行1223–1280的命名。",
+          "read_date": "2026-10-04"
         }
       ],
-      "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。",
+      "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。；定向复核补充：原刊正文p111–113只用Third World/Third Planet，没有将天体明确命名为Earth；p112 falling to earth是小写地面表达。2019新版作者前言明确将三位来客说成访Earth者，地球定位因此有作者亲自说明，而非只有行星序号推断。",
       "issue_result": "added_3_fields_3_facets_unverified",
-      "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
+      "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。；本次区分与勘误：原刊正文p111–113只用Third World/Third Planet，没有将天体明确命名为Earth；p112 falling to earth是小写地面表达。2019新版作者前言明确将三位来客说成访Earth者，地球定位因此有作者亲自说明，而非只有行星序号推断。",
       "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。",
       "raw_reading_log": {
         "id": "Q17631915",
@@ -54226,7 +54342,124 @@
         "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
         "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。"
       },
-      "attempt_input": "source-aggregate-round18-log.json"
+      "attempt_input": "source-aggregate-round18-log.json",
+      "previous_attempts": [
+        {
+          "id": "Q17631915",
+          "identity": {
+            "title": "The Silent Colony",
+            "author": "羅伯特·西爾柏格"
+          },
+          "attempt_state": "full_original_story_read",
+          "queries": [
+            "web search: \"The Silent Colony\" Silverberg Future October 1954 original"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.luminist.org/archives/SF/FUT.htm",
+              "material_type": "公共扫描目录",
+              "location": "OCT. 1954链接",
+              "result": "实际打开网页并读取HTML中的扫描链接。"
+            },
+            {
+              "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+              "material_type": "原刊扫描/正文一手",
+              "location": "印刷p111–113/PDF111–113",
+              "result": "web点击内部错误；常规公开下载成功。全部三页正文按双栏OCR读完，题名署名/结尾视觉复核。"
+            },
+            {
+              "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+              "material_type": "新版作者说明与原作预览",
+              "location": "网页1211–1280，1281起为下一篇",
+              "result": "实际打开、阅读全文及作者对本篇说明；公开显示原作结尾，无需登录。"
+            }
+          ],
+          "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。",
+          "issue_result": "added_3_fields_3_facets_unverified",
+          "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
+          "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。",
+          "raw_reading_log": {
+            "id": "Q17631915",
+            "identity": {
+              "title": "The Silent Colony",
+              "author": "羅伯特·西爾柏格"
+            },
+            "attempt_state": "full_original_story_read",
+            "queries": [
+              {
+                "provider": "web search",
+                "query": "\"The Silent Colony\" Silverberg Future October 1954 original",
+                "result": "定位作者说明、选集公开预览与原刊书目入口；检索结果不单独充当正文。"
+              }
+            ],
+            "materials_checked": [
+              {
+                "url": "https://www.luminist.org/archives/SF/FUT.htm",
+                "material_type": "公共扫描目录",
+                "location": "OCT. 1954链接",
+                "result": "实际打开网页并读取HTML中的扫描链接。"
+              },
+              {
+                "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+                "material_type": "原刊扫描/正文一手",
+                "location": "印刷p111–113/PDF111–113",
+                "result": "web点击内部错误；常规公开下载成功。全部三页正文按双栏OCR读完，题名署名/结尾视觉复核。"
+              },
+              {
+                "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+                "material_type": "新版作者说明与原作预览",
+                "location": "网页1211–1280，1281起为下一篇",
+                "result": "实际打开、阅读全文及作者对本篇说明；公开显示原作结尾，无需登录。"
+              }
+            ],
+            "reading_scope": "完整1954单篇三页；新版说明只辅助身份，未分析整部2019选集。",
+            "issue_result": "added_3_fields_3_facets_unverified",
+            "reason_unconfirmed": "原刊署名Bob与作者新版说明相互支持身份，但未逐字对勘1954与新版全部措辞；文学问题保持待独立核对。",
+            "next_step": "冻结后接入核心分析；若需空间另立独立输入，不混入本议题层。"
+          },
+          "attempt_input": "source-aggregate-round18-log.json"
+        }
+      ],
+      "content_clarifications": [
+        {
+          "id": "Q17631915",
+          "identity": {
+            "title": "The Silent Colony",
+            "author": "羅伯特·西爾柏格"
+          },
+          "target_component": "early-source-round19.json",
+          "affected_paths": [
+            "fields.issue",
+            "fields.issue_facets[0].basis",
+            "field_notes.issue"
+          ],
+          "prior_statement_summary": "原议题使用地球称呼Third World，未将地球定位的来源层级写清。",
+          "finding": "原刊正文p111–113只用Third World/Third Planet，没有将天体明确命名为Earth；p112 falling to earth是小写地面表达。2019新版作者前言明确将三位来客说成访Earth者，地球定位因此有作者亲自说明，而非只有行星序号推断。",
+          "recommended_field_notes_append": {
+            "issue": "原刊以Third World/Third Planet命名；地球定位由作者2019 Alien Archives前言的直接说明支持（公开预览行1219），不能说原刊正文直接点名Earth。殖民、生存与认识解释仍待独立核对。"
+          },
+          "recommended_issue_change": "不必删除有作者直接说明支持的地球定位；增加来源层级注释即可。",
+          "verification_status": "knowledge_added_unverified",
+          "sources": [
+            "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+            "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters"
+          ],
+          "source_evidence": [
+            {
+              "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+              "type": "原刊扫描正文一手；私人公共数字档案",
+              "support_scope": "本轮重新视觉通读p111–113全部三页，编号世界、p112小写earth及p113雪晶结尾；不推断原刊点名Earth。",
+              "read_date": "2026-10-04"
+            },
+            {
+              "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+              "type": "2019新版作者亲自介绍；公开零售预览",
+              "support_scope": "本轮重新读作者前言网页行1211–1222，尤其1219明确定位来客赴Earth；不同于正文行1223–1280的命名。",
+              "read_date": "2026-10-04"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "Q17631646",
@@ -56525,6 +56758,3094 @@
         "verification_status": "reading_scope_logged_not_full_verification"
       },
       "attempt_input": "modern-source-searches-round19.json"
+    },
+    {
+      "id": "Q3059676",
+      "identity": {
+        "title": "Eugene",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "定向核见1472–1482，Interzone #36 June 1990及各合集版本；书目不支持情节。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Eugene_(short_story)",
+          "material_type": "二手条目剧情摘要",
+          "reading_scope": "实际读条目125–144：Angela、Bill、诊所模拟孩子及资金建议；没有读原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "作者书目确认1990单篇；内容仅据二手摘要，未读英文原作。",
+      "reason_unconfirmed": "对应1990单篇，不是Axiomatic或TAP and Other Stories整合集；二手内容待原作核对。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3059676",
+        "identity": {
+          "title": "Eugene",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+            "material_type": "作者书目",
+            "reading_scope": "定向核见1472–1482，Interzone #36 June 1990及各合集版本；书目不支持情节。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Eugene_(short_story)",
+            "material_type": "二手条目剧情摘要",
+            "reading_scope": "实际读条目125–144：Angela、Bill、诊所模拟孩子及资金建议；没有读原篇。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "作者书目确认1990单篇；内容仅据二手摘要，未读英文原作。",
+        "reason_unconfirmed": "对应1990单篇，不是Axiomatic或TAP and Other Stories整合集；二手内容待原作核对。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q3207055",
+      "identity": {
+        "title": "The Caress",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "定向读1483–1502，1990年1月初刊和译本关系。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fanac.org/fanzines/Q36/Q3636_i_ortlieb_1990-06.pdf",
+          "material_type": "1990当年评论文章",
+          "reading_scope": "实际读扫描PDF页12／印刷页11的行430–466，基因艺术、警务药物、Segel自我与transatlantic背景；不是原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.quarante-deux.org/carnets/domel/lectures/la_Caresse/",
+          "material_type": "Martinique Domel独立评论",
+          "reading_scope": "实际读正文24–35，改造、复原与艺术传播解释；评论区不是原作。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Caress_(short_story)",
+          "material_type": "猜测条目地址",
+          "reading_scope": "直接打开Cache miss，未得内容。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅读两篇点名评论，不是原作；Domel艺术传播之说是评论解释。",
+      "reason_unconfirmed": "只对应1990单篇；后来的电影扩写不是所分析文本，未借其剧情补写。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q3207055",
+        "identity": {
+          "title": "The Caress",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+            "material_type": "作者书目",
+            "reading_scope": "定向读1483–1502，1990年1月初刊和译本关系。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.fanac.org/fanzines/Q36/Q3636_i_ortlieb_1990-06.pdf",
+            "material_type": "1990当年评论文章",
+            "reading_scope": "实际读扫描PDF页12／印刷页11的行430–466，基因艺术、警务药物、Segel自我与transatlantic背景；不是原篇。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.quarante-deux.org/carnets/domel/lectures/la_Caresse/",
+            "material_type": "Martinique Domel独立评论",
+            "reading_scope": "实际读正文24–35，改造、复原与艺术传播解释；评论区不是原作。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Caress_(short_story)",
+            "material_type": "猜测条目地址",
+            "reading_scope": "直接打开Cache miss，未得内容。",
+            "result": "unavailable",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "仅读两篇点名评论，不是原作；Domel艺术传播之说是评论解释。",
+        "reason_unconfirmed": "只对应1990单篇；后来的电影扩写不是所分析文本，未借其剧情补写。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q7669336",
+      "identity": {
+        "title": "TAP",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "定向核见1021–1030，Asimov’s November 1995和LAMA译本链接。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+          "material_type": "作者在线作品目录",
+          "reading_scope": "定向读135–139的TAP英文、法语和西语链接。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.quarante-deux.org/recits/egan/nouvelles/lama.html",
+          "material_type": "作者书目直接链接的法语译文局部",
+          "reading_scope": "实际读31–175：Sydney调查开篇、植入与黑盒、情感语言、儿童植入争议；另定向读499–513与575–579版本说明。中段与完整结局没有连续通读。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.infinityplus.co.uk/stories/tap.htm",
+          "material_type": "作者链接英文原篇入口",
+          "reading_scope": "只返回验证／Loader页面，未读原篇，未绕过验证。",
+          "result": "verification_interstitial",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者链接的法语译文局部，未完整读取英文原篇或法译；译者和发表版本另记。",
+      "reason_unconfirmed": "对应1995单篇TAP，不是2008日语合集；二手搜索标September但作者书目及法译出版说明均为November，保留来源差异，不改底库年份。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7669336",
+        "identity": {
+          "title": "TAP",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+            "material_type": "作者书目",
+            "reading_scope": "定向核见1021–1030，Asimov’s November 1995和LAMA译本链接。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+            "material_type": "作者在线作品目录",
+            "reading_scope": "定向读135–139的TAP英文、法语和西语链接。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.quarante-deux.org/recits/egan/nouvelles/lama.html",
+            "material_type": "作者书目直接链接的法语译文局部",
+            "reading_scope": "实际读31–175：Sydney调查开篇、植入与黑盒、情感语言、儿童植入争议；另定向读499–513与575–579版本说明。中段与完整结局没有连续通读。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.infinityplus.co.uk/stories/tap.htm",
+            "material_type": "作者链接英文原篇入口",
+            "reading_scope": "只返回验证／Loader页面，未读原篇，未绕过验证。",
+            "result": "verification_interstitial",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "实际读作者链接的法语译文局部，未完整读取英文原篇或法译；译者和发表版本另记。",
+        "reason_unconfirmed": "对应1995单篇TAP，不是2008日语合集；二手搜索标September但作者书目及法译出版说明均为November，保留来源差异，不改底库年份。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q25376959",
+      "identity": {
+        "title": "Chaff",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "定向核见1154–1162，Interzone #78 December 1993及合集关系。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chaff_(novelette)",
+          "material_type": "二手条目剧情与评论转引",
+          "reading_scope": "实际读128–148：Colombia、失败改造生态、Largo遗传工具与改变脑联结；Letson引文只通过该条目读到。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chaff_(short_story)",
+          "material_type": "猜测条目地址",
+          "reading_scope": "404，未得内容。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfrevu.com/php/Review-id.php?id=18452",
+          "material_type": "评论入口",
+          "reading_scope": "搜索返回评论摘要，直接打开Internal Error；不声称读了评论全文。",
+          "result": "search_excerpt_only",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chaff_(novelette)",
+          "material_type": "Locus评论的链接尝试",
+          "reading_scope": "点击该页链接78返回Internal Error，随后官方域检索被robots阻止；未直接读Locus正文。",
+          "result": "linked_target_unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "未读原篇；事实据二手摘要，伦理线索据经该条目转引的评论。原评论直接读取失败。",
+      "reason_unconfirmed": "对应1993单篇；任务是捕获还是杀害、区域面积等不同二手表述有冲突，均不进入分析。Finlay/De Groot只是未获支持的实际查询词。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q25376959",
+        "identity": {
+          "title": "Chaff",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+            "material_type": "作者书目",
+            "reading_scope": "定向核见1154–1162，Interzone #78 December 1993及合集关系。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chaff_(novelette)",
+            "material_type": "二手条目剧情与评论转引",
+            "reading_scope": "实际读128–148：Colombia、失败改造生态、Largo遗传工具与改变脑联结；Letson引文只通过该条目读到。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chaff_(short_story)",
+            "material_type": "猜测条目地址",
+            "reading_scope": "404，未得内容。",
+            "result": "unavailable",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.sfrevu.com/php/Review-id.php?id=18452",
+            "material_type": "评论入口",
+            "reading_scope": "搜索返回评论摘要，直接打开Internal Error；不声称读了评论全文。",
+            "result": "search_excerpt_only",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chaff_(novelette)",
+            "material_type": "Locus评论的链接尝试",
+            "reading_scope": "点击该页链接78返回Internal Error，随后官方域检索被robots阻止；未直接读Locus正文。",
+            "result": "linked_target_unavailable",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "未读原篇；事实据二手摘要，伦理线索据经该条目转引的评论。原评论直接读取失败。",
+        "reason_unconfirmed": "对应1993单篇；任务是捕获还是杀害、区域面积等不同二手表述有冲突，均不进入分析。Finlay/De Groot只是未获支持的实际查询词。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q91101833",
+      "identity": {
+        "title": "Into Darkness",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "定向核见1271–1279，1992年1月初刊及译本。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Into_Darkness_(novelette)",
+          "material_type": "二手条目剧情摘要",
+          "reading_scope": "实际读123–145：地表虫洞、向内行进、随机驻留及教师John Nately第11次救援；未读原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.jwkash.com/death-in-a-collapsing-wormhole",
+          "material_type": "搜索返回的读者续写前言",
+          "reading_scope": "页面声明为受本篇启发的prologue，不是伊根原作；未用于分析。",
+          "result": "rejected_adaptation",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "作者书目只核身份与初刊；具体救援规则和行动仅据二手条目。",
+      "reason_unconfirmed": "对应1992单篇；未读取原作，也不把同人续写、盗版正文搜索结果或书目当原篇。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q91101833",
+        "identity": {
+          "title": "Into Darkness",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+            "material_type": "作者书目",
+            "reading_scope": "定向核见1271–1279，1992年1月初刊及译本。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Into_Darkness_(novelette)",
+            "material_type": "二手条目剧情摘要",
+            "reading_scope": "实际读123–145：地表虫洞、向内行进、随机驻留及教师John Nately第11次救援；未读原篇。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.jwkash.com/death-in-a-collapsing-wormhole",
+            "material_type": "搜索返回的读者续写前言",
+            "reading_scope": "页面声明为受本篇启发的prologue，不是伊根原作；未用于分析。",
+            "result": "rejected_adaptation",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "作者书目只核身份与初刊；具体救援规则和行动仅据二手条目。",
+        "reason_unconfirmed": "对应1992单篇；未读取原作，也不把同人续写、盗版正文搜索结果或书目当原篇。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q91228357",
+      "identity": {
+        "title": "Mitochondrial Eve",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+        "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+        "Greg Egan \"Into Darkness\" \"wormhole\" story",
+        "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+        "Greg Egan \"Chaff\" Finlay De Groot review",
+        "site:gregegan.net \"Chaff\" story",
+        "Greg Egan \"TAP\" Martha Ross superlanguage",
+        "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+      ],
+      "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+          "material_type": "作者在线作品目录",
+          "reading_scope": "实际读143–145，Interzone #92 February 1995及Hebrew链接；不是剧情。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mitochondrial_Eve_(novelette)",
+          "material_type": "二手条目剧情摘要",
+          "reading_scope": "实际读127–129，Paul、Lena、Children of Eve、父系对立团体和London公开冲突；没有读原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+          "material_type": "作者目录链接73的读取尝试",
+          "reading_scope": "点击Hebrew原文目标Internal Error，未捕获目标地址或读到正文；不编造精确目标URL。",
+          "result": "linked_target_unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅据二手剧情摘要；作者目录只证单篇身份，原文链接取得失败。",
+      "reason_unconfirmed": "对应1995单篇而非Luminous整合集；故事中的量子祖先实验属于虚构，不否认现实共同祖先研究。",
+      "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q91228357",
+        "identity": {
+          "title": "Mitochondrial Eve",
+          "author": "格雷格·伊根"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Greg Egan Eugene The Caress TAP Chaff Into Darkness Mitochondrial Eve official stories",
+          "site:gregegan.net \"Eugene\" \"Caress\" \"TAP\"",
+          "Greg Egan \"Into Darkness\" \"wormhole\" story",
+          "Greg Egan \"The Caress\" Khnopff Walter Samuels review",
+          "Greg Egan \"Chaff\" Finlay De Groot review",
+          "site:gregegan.net \"Chaff\" story",
+          "Greg Egan \"TAP\" Martha Ross superlanguage",
+          "site:locusmag.com \"Russell Letson Reviews The Best of Greg Egan\""
+        ],
+        "query_note": "共同检索批次的真实字符串逐字保留；查询中Walter Samuels、Finlay De Groot、Martha Ross是未获支持的探查词，不作为角色事实。直接打开不是关键词查询。",
+        "materials_checked": [
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+            "material_type": "作者在线作品目录",
+            "reading_scope": "实际读143–145，Interzone #92 February 1995及Hebrew链接；不是剧情。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Mitochondrial_Eve_(novelette)",
+            "material_type": "二手条目剧情摘要",
+            "reading_scope": "实际读127–129，Paul、Lena、Children of Eve、父系对立团体和London公开冲突；没有读原篇。",
+            "result": "actual_source_scope_read",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+            "material_type": "作者目录链接73的读取尝试",
+            "reading_scope": "点击Hebrew原文目标Internal Error，未捕获目标地址或读到正文；不编造精确目标URL。",
+            "result": "linked_target_unavailable",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "仅据二手剧情摘要；作者目录只证单篇身份，原文链接取得失败。",
+        "reason_unconfirmed": "对应1995单篇而非Luminous整合集；故事中的量子祖先实验属于虚构，不否认现实共同祖先研究。",
+        "next_step": "对照确切初刊或授权全文逐项检查情节、版本和解释；不将简介、评论或译文局部作为全篇核验。",
+        "issue_result": "added_to_frozen_input_unverified"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q25381757",
+      "identity": {
+        "title": "Bride Ninety-One",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"Bride Ninety-One\" \"Silverberg\" \"1967\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "p26–35",
+          "result": "web open缓存失败，常规公共URL下载成功；文本层全读且标题/结尾视觉核见。"
+        },
+        {
+          "url": "https://galacticjourney.org/stories/1967%2C%2009%20%28September%29%2C%20If.pdf",
+          "material_type": "备用原刊入口",
+          "result": "web open仅机器人验证页，不用此页内容作正文依据。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "原刊扫描正文一手",
+          "reading_scope": "If 1967-09 p35右栏末段实际视觉核见Suvorna；是出发前计划，不是实际到达。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "印刷/PDF p26–35完整单篇至END，p26、p33与p35视觉核见；下一篇明确排除。；定向复核补充：原刊p35出发目的地明确拼写Suvorna；空间分类与未到达说明不变。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对，不扩展到未写出的Suvorna婚后。；本次区分与勘误：原刊p35出发目的地明确拼写Suvorna；空间分类与未到达说明不变。",
+      "next_step": "按栏读完整确切单篇。",
+      "raw_reading_log": {
+        "id": "Q25381757",
+        "identity": {
+          "title": "Bride Ninety-One",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Bride Ninety-One\" \"Silverberg\" \"1967\"",
+            "result": "定位原刊日期与精确单篇，二手结果只作定位。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+            "material_type": "原刊扫描/正文一手",
+            "location": "p26–35",
+            "result": "web open缓存失败，常规公共URL下载成功；文本层全读且标题/结尾视觉核见。"
+          },
+          {
+            "url": "https://galacticjourney.org/stories/1967%2C%2009%20%28September%29%2C%20If.pdf",
+            "material_type": "备用原刊入口",
+            "result": "web open仅机器人验证页，不用此页内容作正文依据。"
+          }
+        ],
+        "reading_scope": "印刷/PDF p26–35完整单篇至END，p26、p33与p35视觉核见；下一篇明确排除。",
+        "issue_result": "added_3_fields_4_facets_unverified",
+        "reason_unconfirmed": "文学解释待独立核对，不扩展到未写出的Suvorna婚后。",
+        "next_step": "按栏读完整确切单篇。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json",
+      "previous_attempts": [
+        {
+          "id": "Q25381757",
+          "identity": {
+            "title": "Bride Ninety-One",
+            "author": "羅伯特·西爾柏格"
+          },
+          "attempt_state": "full_original_story_read",
+          "queries": [
+            "web search: \"Bride Ninety-One\" \"Silverberg\" \"1967\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+              "material_type": "原刊扫描/正文一手",
+              "location": "p26–35",
+              "result": "web open缓存失败，常规公共URL下载成功；文本层全读且标题/结尾视觉核见。"
+            },
+            {
+              "url": "https://galacticjourney.org/stories/1967%2C%2009%20%28September%29%2C%20If.pdf",
+              "material_type": "备用原刊入口",
+              "result": "web open仅机器人验证页，不用此页内容作正文依据。"
+            }
+          ],
+          "reading_scope": "印刷/PDF p26–35完整单篇至END，p26、p33与p35视觉核见；下一篇明确排除。",
+          "issue_result": "added_3_fields_4_facets_unverified",
+          "reason_unconfirmed": "文学解释待独立核对，不扩展到未写出的Suvorna婚后。",
+          "next_step": "按栏读完整确切单篇。",
+          "raw_reading_log": {
+            "id": "Q25381757",
+            "identity": {
+              "title": "Bride Ninety-One",
+              "author": "羅伯特·西爾柏格"
+            },
+            "attempt_state": "full_original_story_read",
+            "queries": [
+              {
+                "provider": "web search",
+                "query": "\"Bride Ninety-One\" \"Silverberg\" \"1967\"",
+                "result": "定位原刊日期与精确单篇，二手结果只作定位。"
+              }
+            ],
+            "materials_checked": [
+              {
+                "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+                "material_type": "原刊扫描/正文一手",
+                "location": "p26–35",
+                "result": "web open缓存失败，常规公共URL下载成功；文本层全读且标题/结尾视觉核见。"
+              },
+              {
+                "url": "https://galacticjourney.org/stories/1967%2C%2009%20%28September%29%2C%20If.pdf",
+                "material_type": "备用原刊入口",
+                "result": "web open仅机器人验证页，不用此页内容作正文依据。"
+              }
+            ],
+            "reading_scope": "印刷/PDF p26–35完整单篇至END，p26、p33与p35视觉核见；下一篇明确排除。",
+            "issue_result": "added_3_fields_4_facets_unverified",
+            "reason_unconfirmed": "文学解释待独立核对，不扩展到未写出的Suvorna婚后。",
+            "next_step": "按栏读完整确切单篇。"
+          },
+          "attempt_input": "source-aggregate-round19-log.json"
+        }
+      ],
+      "content_clarifications": [
+        {
+          "id": "Q25381757",
+          "identity": {
+            "title": "Bride Ninety-One",
+            "author": "羅伯特·西爾柏格"
+          },
+          "target_component": "early-spatial-round3.json",
+          "affected_paths": [
+            "fields.spatial_rationale"
+          ],
+          "prior_statement_summary": "新冻结空间rationale将Suvorna误拼为Suvarna。",
+          "finding": "原刊p35出发目的地明确拼写Suvorna；空间分类与未到达说明不变。",
+          "recommended_replacement_fields": {
+            "spatial_rationale": "Paul和Landy以地球习俗结婚后乘星际飞船经历六周旅行，到达蜜月行星Thalia；船上事件与异星度假都是实际舞台。第二次婚约后去Suvorna是出发前计划，结尾未展示在那里生活。"
+          },
+          "verification_status": "knowledge_added_unverified",
+          "sources": [
+            "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf"
+          ],
+          "source_evidence": [
+            {
+              "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+              "type": "原刊扫描正文一手",
+              "support_scope": "If 1967-09 p35右栏末段实际视觉核见Suvorna；是出发前计划，不是实际到达。",
+              "read_date": "2026-10-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q25381764",
+      "identity": {
+        "title": "Going Down Smooth",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"Going Down Smooth\" \"Silverberg\" \"1968\" Galaxy"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.luminist.org/archives/SF/GAL.htm",
+          "material_type": "公共原刊目录",
+          "result": "实际读到August1968公开Drive链接。"
+        },
+        {
+          "url": "https://drive.google.com/open?id=1ZHJvlF-tzq5gObBShI80-xLiWdw8tMNP",
+          "material_type": "公开原刊扫描入口",
+          "location": "拟定位印刷/PDF p44–51",
+          "result": "web缓存失败；标准公开下载成功，无登录/验证动作。正文8页按双栏全文读完，标题与结尾视觉核见。"
+        }
+      ],
+      "reading_scope": "印刷/PDF p44–51完整单篇全文；p44标题/署名与p51结尾视觉核见，p52下一篇明确排除。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "解释待独立核对；机器内心自述、检查假说与主管说法不当现实医学结论。",
+      "next_step": "冻结当前接入，再推进其他精确单作。",
+      "raw_reading_log": {
+        "id": "Q25381764",
+        "identity": {
+          "title": "Going Down Smooth",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Going Down Smooth\" \"Silverberg\" \"1968\" Galaxy",
+            "result": "定位原刊日期与精确单篇，二手结果只作定位。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.luminist.org/archives/SF/GAL.htm",
+            "material_type": "公共原刊目录",
+            "result": "实际读到August1968公开Drive链接。"
+          },
+          {
+            "url": "https://drive.google.com/open?id=1ZHJvlF-tzq5gObBShI80-xLiWdw8tMNP",
+            "material_type": "公开原刊扫描入口",
+            "location": "拟定位印刷/PDF p44–51",
+            "result": "web缓存失败；标准公开下载成功，无登录/验证动作。正文8页按双栏全文读完，标题与结尾视觉核见。"
+          }
+        ],
+        "reading_scope": "印刷/PDF p44–51完整单篇全文；p44标题/署名与p51结尾视觉核见，p52下一篇明确排除。",
+        "issue_result": "added_3_fields_4_facets_unverified",
+        "reason_unconfirmed": "解释待独立核对；机器内心自述、检查假说与主管说法不当现实医学结论。",
+        "next_step": "冻结当前接入，再推进其他精确单作。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q17640539",
+      "identity": {
+        "title": "Neighbor",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"Neighbor\" \"Silverberg\" \"1964\" story magazine",
+        "web search: \"Neighbor\" \"Silverberg\" \"Galaxy\" \"August\" 1964"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://galacticjourney.org/july-16-1964-august-1964-galaxy/",
+          "material_type": "私人档案评论与原刊链接定位",
+          "result": "实际打开评论页并读取原刊href；评论不替代正文。"
+        },
+        {
+          "url": "https://galacticjourney.org/stories/GAL_1964_08.pdf",
+          "material_type": "原刊扫描/正文一手",
+          "location": "目录印刷p3/PDF2，单篇p150–164/PDF76–83左页",
+          "result": "常规公共URL下载成功，15页单篇全文按四栏实际读完；8张双页图像均视觉补读，标题/署名与结尾核见，不读入p165下一篇。"
+        },
+        {
+          "url": "https://www.luminist.org/archives/SF/GAL.htm",
+          "material_type": "另一路公共原刊目录",
+          "result": "实际见1964-08公开Drive链接，web缓存失败，正文采用正常下载的GalacticJourney扫描。"
+        }
+      ],
+      "reading_scope": "印刷p150–164/PDF76–83左页完整单篇，8张双页图像均视觉通读补OCR裁边；p165下一篇明确排除。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；明确区分自利与和解，以及家长猜想/领主审理幻想与已发生情节。",
+      "next_step": "冻结当前接入，再推进其他精确单作。",
+      "raw_reading_log": {
+        "id": "Q17640539",
+        "identity": {
+          "title": "Neighbor",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Neighbor\" \"Silverberg\" \"1964\" story magazine",
+            "result": "定位原刊日期与精确单篇，二手结果只作定位。"
+          },
+          {
+            "provider": "web search",
+            "query": "\"Neighbor\" \"Silverberg\" \"Galaxy\" \"August\" 1964",
+            "result": "定位1964-08精确原刊。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://galacticjourney.org/july-16-1964-august-1964-galaxy/",
+            "material_type": "私人档案评论与原刊链接定位",
+            "result": "实际打开评论页并读取原刊href；评论不替代正文。"
+          },
+          {
+            "url": "https://galacticjourney.org/stories/GAL_1964_08.pdf",
+            "material_type": "原刊扫描/正文一手",
+            "location": "目录印刷p3/PDF2，单篇p150–164/PDF76–83左页",
+            "result": "常规公共URL下载成功，15页单篇全文按四栏实际读完；8张双页图像均视觉补读，标题/署名与结尾核见，不读入p165下一篇。"
+          },
+          {
+            "url": "https://www.luminist.org/archives/SF/GAL.htm",
+            "material_type": "另一路公共原刊目录",
+            "result": "实际见1964-08公开Drive链接，web缓存失败，正文采用正常下载的GalacticJourney扫描。"
+          }
+        ],
+        "reading_scope": "印刷p150–164/PDF76–83左页完整单篇，8张双页图像均视觉通读补OCR裁边；p165下一篇明确排除。",
+        "issue_result": "added_3_fields_4_facets_unverified",
+        "reason_unconfirmed": "文学解释待独立核对；明确区分自利与和解，以及家长猜想/领主审理幻想与已发生情节。",
+        "next_step": "冻结当前接入，再推进其他精确单作。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q23017685",
+      "identity": {
+        "title": "Blaze of Glory",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"Blaze of Glory\" \"Silverberg\" \"Galaxy\" 1957"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://drive.google.com/open?id=1Bbs0OCrVxsb6xQsoQ4K4ul5DaNQreRAi",
+          "material_type": "原刊扫描；正文一手，私人数字载体",
+          "location": "Galaxy 1957-08，印刷p60–72 / PDF p62–74；p64为插图，p72正文结束后广告，p73下一栏目排除。",
+          "result": "web open失败；链接自身常规公共下载URL成功，无登录/验证绕行；原刊全文实际读完。"
+        },
+        {
+          "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+          "material_type": "出版社官方作品目录",
+          "location": "Robert Silverberg与该单篇标题",
+          "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+        }
+      ],
+      "reading_scope": "按双栏顺序全文实际阅读；p60题名/署名与p72结尾视觉核见，p64无正文插图。 Galaxy 1957-08，印刷p60–72 / PDF p62–74；p64为插图，p72正文结束后广告，p73下一栏目排除。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "Shaulan导致故障或心控牺牲只属Loeb怀疑，原作未确认；Murchison实际完成救援与官方自愿英雄标签分开。",
+      "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。",
+      "raw_reading_log": {
+        "id": "Q23017685",
+        "identity": {
+          "title": "Blaze of Glory",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Blaze of Glory\" \"Silverberg\" \"Galaxy\" 1957",
+            "result": "定位精确原刊期号与单篇；二手目录仅作查找，不代替情节。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://drive.google.com/open?id=1Bbs0OCrVxsb6xQsoQ4K4ul5DaNQreRAi",
+            "material_type": "原刊扫描；正文一手，私人数字载体",
+            "location": "Galaxy 1957-08，印刷p60–72 / PDF p62–74；p64为插图，p72正文结束后广告，p73下一栏目排除。",
+            "result": "web open失败；链接自身常规公共下载URL成功，无登录/验证绕行；原刊全文实际读完。"
+          },
+          {
+            "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+            "material_type": "出版社官方作品目录",
+            "location": "Robert Silverberg与该单篇标题",
+            "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+          }
+        ],
+        "reading_scope": "按双栏顺序全文实际阅读；p60题名/署名与p72结尾视觉核见，p64无正文插图。 Galaxy 1957-08，印刷p60–72 / PDF p62–74；p64为插图，p72正文结束后广告，p73下一栏目排除。",
+        "issue_result": "added_3_fields_4_facets_unverified",
+        "reason_unconfirmed": "Shaulan导致故障或心控牺牲只属Loeb怀疑，原作未确认；Murchison实际完成救援与官方自愿英雄标签分开。",
+        "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q25381477",
+      "identity": {
+        "title": "The Outbreeders",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"The Outbreeders\" \"Silverberg\" \"1959\" pdf",
+        "web search: site.robert-silverberg.com \"Outbreeders\"",
+        "web search: site.majipoor.com \"Outbreeders\" \"Knox\"",
+        "web search: Robert Silverberg official \"Calvin M. Knox\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1959_09.pdf",
+          "material_type": "原刊扫描；正文一手，私人数字载体",
+          "location": "Fantastic Universe 1959-09，印刷p119–128 / PDF p121–130；p129–130为广告，明确不纳入。",
+          "result": "web open缓存失败，常规公共URL下载成功；全文止印刷p128，p129–130广告排除。"
+        },
+        {
+          "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+          "material_type": "出版社官方作品目录",
+          "location": "Robert Silverberg与该单篇标题",
+          "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+        }
+      ],
+      "reading_scope": "10页双栏正文实际全文读至最后一句；p119题名Calvin M. Knox署名、p128结尾视觉核见。 Fantastic Universe 1959-09，印刷p119–128 / PDF p121–130；p129–130为广告，明确不纳入。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "两族遗传同质性保留为小说设定，不作真实遗传学结论；祖先责任是竞争性传说，混合聚落属于结尾计划与展望。",
+      "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。",
+      "raw_reading_log": {
+        "id": "Q25381477",
+        "identity": {
+          "title": "The Outbreeders",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"The Outbreeders\" \"Silverberg\" \"1959\" pdf",
+            "result": "定位精确原刊期号与单篇；二手目录仅作查找，不代替情节。"
+          },
+          {
+            "provider": "web search",
+            "query": "site.robert-silverberg.com \"Outbreeders\"",
+            "result": "没有找到直接官方命中。"
+          },
+          {
+            "provider": "web search",
+            "query": "site.majipoor.com \"Outbreeders\" \"Knox\"",
+            "result": "没有找到直接命中；不据此补充归属。"
+          },
+          {
+            "provider": "web search",
+            "query": "Robert Silverberg official \"Calvin M. Knox\"",
+            "result": "找到出版社Silverberg合集目录含The Outbreeders，实际打开；原刊视觉确认Calvin M. Knox而非部分索引错误首字母B。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FU/FU_1959_09.pdf",
+            "material_type": "原刊扫描；正文一手，私人数字载体",
+            "location": "Fantastic Universe 1959-09，印刷p119–128 / PDF p121–130；p129–130为广告，明确不纳入。",
+            "result": "web open缓存失败，常规公共URL下载成功；全文止印刷p128，p129–130广告排除。"
+          },
+          {
+            "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+            "material_type": "出版社官方作品目录",
+            "location": "Robert Silverberg与该单篇标题",
+            "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+          }
+        ],
+        "reading_scope": "10页双栏正文实际全文读至最后一句；p119题名Calvin M. Knox署名、p128结尾视觉核见。 Fantastic Universe 1959-09，印刷p119–128 / PDF p121–130；p129–130为广告，明确不纳入。",
+        "issue_result": "added_3_fields_4_facets_unverified",
+        "reason_unconfirmed": "两族遗传同质性保留为小说设定，不作真实遗传学结论；祖先责任是竞争性传说，混合聚落属于结尾计划与展望。",
+        "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q21116172",
+      "identity": {
+        "title": "Gorgon Planet",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        "web search: \"Nebula\" \"February 1954\" \"Gorgon Planet\" pdf"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NEB/NEB_1954_02.pdf",
+          "material_type": "原刊扫描；正文一手，私人数字载体",
+          "location": "Nebula Science Fiction #7，1954-02，印刷p50–58 / PDF p52–60；p59下一篇Emancipation排除。",
+          "result": "Luminist实际索引href定位原刊，公共下载成功；单栏全文阅读，双栏试验切错列未作为依据。"
+        },
+        {
+          "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+          "material_type": "出版社官方作品目录",
+          "location": "Robert Silverberg与该单篇标题",
+          "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+        }
+      ],
+      "reading_scope": "9页单栏正文实际全文阅读；p50 Bob Silverberg署名与p58结尾视觉核见；误试双栏OCR不作为正文阅读顺序。 Nebula Science Fiction #7，1954-02，印刷p50–58 / PDF p52–60；p59下一篇Emancipation排除。",
+      "issue_result": "added_3_fields_3_facets_unverified",
+      "reason_unconfirmed": "致命凝视是小说设定，残存神经机理是人物解释；末句Sphinx出现仅为未展开的新危险，不补写后续遭遇。",
+      "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。",
+      "raw_reading_log": {
+        "id": "Q21116172",
+        "identity": {
+          "title": "Gorgon Planet",
+          "author": "羅伯特·西爾柏格"
+        },
+        "attempt_state": "full_original_story_read",
+        "queries": [
+          {
+            "provider": "web search",
+            "query": "\"Nebula\" \"February 1954\" \"Gorgon Planet\" pdf",
+            "result": "定位精确原刊期号与单篇；二手目录仅作查找，不代替情节。"
+          }
+        ],
+        "materials_checked": [
+          {
+            "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/NEB/NEB_1954_02.pdf",
+            "material_type": "原刊扫描；正文一手，私人数字载体",
+            "location": "Nebula Science Fiction #7，1954-02，印刷p50–58 / PDF p52–60；p59下一篇Emancipation排除。",
+            "result": "Luminist实际索引href定位原刊，公共下载成功；单栏全文阅读，双栏试验切错列未作为依据。"
+          },
+          {
+            "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-one-to-be-continued/",
+            "material_type": "出版社官方作品目录",
+            "location": "Robert Silverberg与该单篇标题",
+            "result": "实际读到，仅辅助书目归属，不支持未读剧情。"
+          }
+        ],
+        "reading_scope": "9页单栏正文实际全文阅读；p50 Bob Silverberg署名与p58结尾视觉核见；误试双栏OCR不作为正文阅读顺序。 Nebula Science Fiction #7，1954-02，印刷p50–58 / PDF p52–60；p59下一篇Emancipation排除。",
+        "issue_result": "added_3_fields_3_facets_unverified",
+        "reason_unconfirmed": "致命凝视是小说设定，残存神经机理是人物解释；末句Sphinx出现仅为未展开的新危险，不补写后续遭遇。",
+        "next_step": "独立复核文学解释；未声明全作品或未读合集已核验。"
+      },
+      "attempt_input": "source-aggregate-round19-log.json"
+    },
+    {
+      "id": "Q683166",
+      "identity": {
+        "title": "Always",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://lisamasontheauthor.wordpress.com/2016/05/15/excerpt-from-always-in-karen-joy-fowlers-world-fantasy-award-collection-what-i-didnt-see-the-story-collection-storybundle-sfwapro/",
+          "result": "actual_source_scope_read",
+          "material_type": "StoryBundle推广所载原作开篇节选",
+          "reading_scope": "实际读完How I Got Here节选，支持十七岁叙述者、Wilt、五千美元付款、1938年Santa Cruz山地与Porter开设路边展示；未读完整原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://smallbeerpress.com/books/2010/09/21/what-i-didnt-see-and-other-stories/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版社目录、首刊说明及引用评论",
+          "reading_scope": "实际读Always在目录、Asimov’s April-May 2007首刊说明，及本篇加州共同体、领袖承诺永生并禁止与他之外的人发生性关系的具体评论段。不以集合其他成员说明补本篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sffremembrance.com/2026/05/31/short-story-review-always-by-karen-joy-fowler/",
+          "result": "actual_source_scope_read",
+          "material_type": "Brian Collins署名评论",
+          "reading_scope": "实际读完评论正文中的共同体规则、兴趣与时间感变化、毒杀验证及最终独留等情节段；保留永生未解释的判断，不沿用评论作者的类型排除或好恶作为事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Always_(short_story)",
+          "result": "actual_source_scope_read",
+          "material_type": "公共百科单篇梗概",
+          "reading_scope": "实际读完整Synopsis及Release，交叉核对性别规则、毒杀目的、叙述者时间感与坚持信念；这是二手梗概，不称独立原文核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完How I Got Here节选，支持十七岁叙述者、Wilt、五千美元付款、1938年Santa Cruz山地与Porter开设路边展示；未读完整原篇。；实际读Always在目录、Asimov’s April-May 2007首刊说明，及本篇加州共同体、领袖承诺永生并禁止与他之外的人发生性关系的具体评论段。不以集合其他成员说明补本篇。；实际读完评论正文中的共同体规则、兴趣与时间感变化、毒杀验证及最终独留等情节段；保留永生未解释的判断，不沿用评论作者的类型排除或好恶作为事实。；实际读完整Synopsis及Release，交叉核对性别规则、毒杀目的、叙述者时间感与坚持信念；这是二手梗概，不称独立原文核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q683166",
+        "identity": {
+          "title": "Always",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://lisamasontheauthor.wordpress.com/2016/05/15/excerpt-from-always-in-karen-joy-fowlers-world-fantasy-award-collection-what-i-didnt-see-the-story-collection-storybundle-sfwapro/",
+            "material_kind": "StoryBundle推广所载原作开篇节选",
+            "support_scope": "实际读完How I Got Here节选，支持十七岁叙述者、Wilt、五千美元付款、1938年Santa Cruz山地与Porter开设路边展示；未读完整原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://smallbeerpress.com/books/2010/09/21/what-i-didnt-see-and-other-stories/",
+            "material_kind": "出版社目录、首刊说明及引用评论",
+            "support_scope": "实际读Always在目录、Asimov’s April-May 2007首刊说明，及本篇加州共同体、领袖承诺永生并禁止与他之外的人发生性关系的具体评论段。不以集合其他成员说明补本篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sffremembrance.com/2026/05/31/short-story-review-always-by-karen-joy-fowler/",
+            "material_kind": "Brian Collins署名评论",
+            "support_scope": "实际读完评论正文中的共同体规则、兴趣与时间感变化、毒杀验证及最终独留等情节段；保留永生未解释的判断，不沿用评论作者的类型排除或好恶作为事实。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Always_(short_story)",
+            "material_kind": "公共百科单篇梗概",
+            "support_scope": "实际读完整Synopsis及Release，交叉核对性别规则、毒杀目的、叙述者时间感与坚持信念；这是二手梗概，不称独立原文核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131217894",
+      "identity": {
+        "title": "Dispatches from the Revolution",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.apexbookcompany.com/blogs/apex-magazine/dispatches-from-the-revolution",
+          "result": "actual_source_scope_read",
+          "material_type": "出版社公开获授权原作重刊",
+          "reading_scope": "实际逐段读完约8037词正文至结尾与1991年Asimov’s首刊说明；访谈、政府认证和1998年遗稿落入占领军是作品内虚构材料，不当真实历史史料。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fantasyliterature.com/reviews/apex-magazine-issues-55-and-56/",
+          "result": "actual_source_scope_read",
+          "material_type": "Terry Weyna署名杂志评论",
+          "reading_scope": "实际读本篇完整评论段，支持1968年芝加哥另类历史、Kennedy死亡地点改变与多位参加者视角；其他作品评论不并入本条。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际逐段读完约8037词正文至结尾与1991年Asimov’s首刊说明；访谈、政府认证和1998年遗稿落入占领军是作品内虚构材料，不当真实历史史料。；实际读本篇完整评论段，支持1968年芝加哥另类历史、Kennedy死亡地点改变与多位参加者视角；其他作品评论不并入本条。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131217894",
+        "identity": {
+          "title": "Dispatches from the Revolution",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://www.apexbookcompany.com/blogs/apex-magazine/dispatches-from-the-revolution",
+            "material_kind": "出版社公开获授权原作重刊",
+            "support_scope": "实际逐段读完约8037词正文至结尾与1991年Asimov’s首刊说明；访谈、政府认证和1998年遗稿落入占领军是作品内虚构材料，不当真实历史史料。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://fantasyliterature.com/reviews/apex-magazine-issues-55-and-56/",
+            "material_kind": "Terry Weyna署名杂志评论",
+            "support_scope": "实际读本篇完整评论段，支持1968年芝加哥另类历史、Kennedy死亡地点改变与多位参加者视角；其他作品评论不并入本条。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q27921684",
+      "identity": {
+        "title": "Angel",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://writingatlas.com/story/3648/pat-cadigan-angel/",
+          "result": "actual_source_scope_read",
+          "material_type": "公共单篇梗概",
+          "reading_scope": "实际读完整Plot Summary，支持双性叙述者、共感、女人追索、流放缘由与能力传递；这是情节二手对照，不独立核验全书。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://martyhalpern.blogspot.com/2011/07/alien-contact-anthology-story-12.html",
+          "result": "actual_source_scope_read",
+          "material_type": "收录本编辑介绍、作者自述与原作节选",
+          "reading_scope": "实际读介绍正文及作者关于生来被排斥者、自我理解与无整齐答案的说明，及所载餐馆节选；首刊与单篇身份由编辑说明支持。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://gizmodo.com/could-you-tell-the-difference-between-an-alien-visitati-5860936",
+          "result": "actual_source_scope_read",
+          "material_type": "作者署名公开原作重刊",
+          "reading_scope": "实际读完整本篇；这里只记录阅读范围，具体梗概以另两项材料对照，不复制原文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完整Plot Summary，支持双性叙述者、共感、女人追索、流放缘由与能力传递；这是情节二手对照，不独立核验全书。；实际读介绍正文及作者关于生来被排斥者、自我理解与无整齐答案的说明，及所载餐馆节选；首刊与单篇身份由编辑说明支持。；实际读完整本篇；这里只记录阅读范围，具体梗概以另两项材料对照，不复制原文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q27921684",
+        "identity": {
+          "title": "Angel",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://writingatlas.com/story/3648/pat-cadigan-angel/",
+            "material_kind": "公共单篇梗概",
+            "support_scope": "实际读完整Plot Summary，支持双性叙述者、共感、女人追索、流放缘由与能力传递；这是情节二手对照，不独立核验全书。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://martyhalpern.blogspot.com/2011/07/alien-contact-anthology-story-12.html",
+            "material_kind": "收录本编辑介绍、作者自述与原作节选",
+            "support_scope": "实际读介绍正文及作者关于生来被排斥者、自我理解与无整齐答案的说明，及所载餐馆节选；首刊与单篇身份由编辑说明支持。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://gizmodo.com/could-you-tell-the-difference-between-an-alien-visitati-5860936",
+            "material_kind": "作者署名公开原作重刊",
+            "support_scope": "实际读完整本篇；这里只记录阅读范围，具体梗概以另两项材料对照，不复制原文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131308029",
+      "identity": {
+        "title": "The Faithful Companion at Forty",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mumpsimus.blogspot.com/2007/08/faithful-companion-at-forty-by-karen.html",
+          "result": "actual_source_scope_read",
+          "material_type": "Matthew Cheney署名评论及原作开篇节选",
+          "reading_scope": "实际读评论正文与所载开篇三段，支持少数族裔副手、四十岁生日、历史两理论与结尾暗示时间旅行；不是原篇全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://lareviewofbooks.org/article/strange-tales",
+          "result": "actual_source_scope_read",
+          "material_type": "Brooks Landon署名评论的公开索引段",
+          "reading_scope": "页面访问返回403，未重试绕过；实际读公开搜索返回的完整本篇评论段，支持英雄怀旧、Displacement Theory、邀请伙伴回去与边缘人物解释。只称该可见段已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.readinggroupguides.com/printpdf/reviews/black-glass",
+          "result": "actual_source_scope_read",
+          "material_type": "读书指南的单篇讨论与说明",
+          "reading_scope": "实际读四页指南，本条仅用生日未获电话及问题10的两种历史观；不把集合其他成员问题并入本篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+          "result": "actual_source_scope_read",
+          "material_type": "雨果奖官方历史书目",
+          "reading_scope": "实际读短篇提名名单，支持Fowler署名、Asimov’s July 1987独立短篇身份；不支持情节分析。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读评论正文与所载开篇三段，支持少数族裔副手、四十岁生日、历史两理论与结尾暗示时间旅行；不是原篇全文。；页面访问返回403，未重试绕过；实际读公开搜索返回的完整本篇评论段，支持英雄怀旧、Displacement Theory、邀请伙伴回去与边缘人物解释。只称该可见段已读。；实际读四页指南，本条仅用生日未获电话及问题10的两种历史观；不把集合其他成员问题并入本篇。；实际读短篇提名名单，支持Fowler署名、Asimov’s July 1987独立短篇身份；不支持情节分析。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131308029",
+        "identity": {
+          "title": "The Faithful Companion at Forty",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://mumpsimus.blogspot.com/2007/08/faithful-companion-at-forty-by-karen.html",
+            "material_kind": "Matthew Cheney署名评论及原作开篇节选",
+            "support_scope": "实际读评论正文与所载开篇三段，支持少数族裔副手、四十岁生日、历史两理论与结尾暗示时间旅行；不是原篇全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://lareviewofbooks.org/article/strange-tales",
+            "material_kind": "Brooks Landon署名评论的公开索引段",
+            "support_scope": "页面访问返回403，未重试绕过；实际读公开搜索返回的完整本篇评论段，支持英雄怀旧、Displacement Theory、邀请伙伴回去与边缘人物解释。只称该可见段已读。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.readinggroupguides.com/printpdf/reviews/black-glass",
+            "material_kind": "读书指南的单篇讨论与说明",
+            "support_scope": "实际读四页指南，本条仅用生日未获电话及问题10的两种历史观；不把集合其他成员问题并入本篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+            "material_kind": "雨果奖官方历史书目",
+            "support_scope": "实际读短篇提名名单，支持Fowler署名、Asimov’s July 1987独立短篇身份；不支持情节分析。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q108030563",
+      "identity": {
+        "title": "Lieserl",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/book/show/119991.Black_Glass",
+          "result": "actual_source_scope_read",
+          "material_type": "公共读者评论的本篇梗概段",
+          "reading_scope": "实际读本篇完整评论段，支持书信中女儿快速成长、未见面与未回信；评论的现实Lieserl推测不采用为史实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://performativeutterance.wordpress.com/2018/02/07/karen-joy-fowler-this-map-is-the-territory/",
+          "result": "actual_source_scope_read",
+          "material_type": "Kev McVeigh署名评论的公开索引文本",
+          "reading_scope": "实际读公开搜索返回的Lieserl完整分析段与开篇真实性提示；直接页面cache miss，未称原文全文已读。支持相对论意象、忽略妻女与叙述不可靠性。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.readinggroupguides.com/printpdf/reviews/black-glass",
+          "result": "actual_source_scope_read",
+          "material_type": "读书指南的单篇讨论及短引文",
+          "reading_scope": "实际读完整四页指南，本条限问题6、16、19、20关于Einstein配偶、亲职、叙事起点和认识局限；未读原篇全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版社所载评论与目录",
+          "reading_scope": "实际读本篇1990目录条目和评论；该评论将来信解释为使Einstein相信有女儿的骗局，与其他评论的时间意象读法不一致，因此不裁定实际机制，也不把重版日期当首刊。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读本篇完整评论段，支持书信中女儿快速成长、未见面与未回信；评论的现实Lieserl推测不采用为史实。；实际读公开搜索返回的Lieserl完整分析段与开篇真实性提示；直接页面cache miss，未称原文全文已读。支持相对论意象、忽略妻女与叙述不可靠性。；实际读完整四页指南，本条限问题6、16、19、20关于Einstein配偶、亲职、叙事起点和认识局限；未读原篇全文。；实际读本篇1990目录条目和评论；该评论将来信解释为使Einstein相信有女儿的骗局，与其他评论的时间意象读法不一致，因此不裁定实际机制，也不把重版日期当首刊。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q108030563",
+        "identity": {
+          "title": "Lieserl",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.goodreads.com/book/show/119991.Black_Glass",
+            "material_kind": "公共读者评论的本篇梗概段",
+            "support_scope": "实际读本篇完整评论段，支持书信中女儿快速成长、未见面与未回信；评论的现实Lieserl推测不采用为史实。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://performativeutterance.wordpress.com/2018/02/07/karen-joy-fowler-this-map-is-the-territory/",
+            "material_kind": "Kev McVeigh署名评论的公开索引文本",
+            "support_scope": "实际读公开搜索返回的Lieserl完整分析段与开篇真实性提示；直接页面cache miss，未称原文全文已读。支持相对论意象、忽略妻女与叙述不可靠性。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.readinggroupguides.com/printpdf/reviews/black-glass",
+            "material_kind": "读书指南的单篇讨论及短引文",
+            "support_scope": "实际读完整四页指南，本条限问题6、16、19、20关于Einstein配偶、亲职、叙事起点和认识局限；未读原篇全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+            "material_kind": "出版社所载评论与目录",
+            "support_scope": "实际读本篇1990目录条目和评论；该评论将来信解释为使Einstein相信有女儿的骗局，与其他评论的时间意象读法不一致，因此不裁定实际机制，也不把重版日期当首刊。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131218070",
+      "identity": {
+        "title": "True Faces",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://writingatlas.com/story/3653/pat-cadigan-true-faces/",
+          "result": "actual_source_scope_read",
+          "material_type": "公共短篇书目与情节梗概",
+          "reading_scope": "实际读完整Plot Summary，支持地球使馆、女性遇害、测谎适配、真实面孔禁忌、集体自责与责任语义差异；未读所链接原文，也未采用无关推荐标签。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780929480275",
+          "result": "actual_source_scope_read",
+          "material_type": "署名不详的专业合集书评",
+          "reading_scope": "实际读Dirty Work评论中明确指向True Faces的外星使馆谋杀说明；只作所分析单篇的交叉对应，不据合集其他成员批量补情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完整Plot Summary，支持地球使馆、女性遇害、测谎适配、真实面孔禁忌、集体自责与责任语义差异；未读所链接原文，也未采用无关推荐标签。；实际读Dirty Work评论中明确指向True Faces的外星使馆谋杀说明；只作所分析单篇的交叉对应，不据合集其他成员批量补情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131218070",
+        "identity": {
+          "title": "True Faces",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://writingatlas.com/story/3653/pat-cadigan-true-faces/",
+            "material_kind": "公共短篇书目与情节梗概",
+            "support_scope": "实际读完整Plot Summary，支持地球使馆、女性遇害、测谎适配、真实面孔禁忌、集体自责与责任语义差异；未读所链接原文，也未采用无关推荐标签。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.publishersweekly.com/9780929480275",
+            "material_kind": "署名不详的专业合集书评",
+            "support_scope": "实际读Dirty Work评论中明确指向True Faces的外星使馆谋杀说明；只作所分析单篇的交叉对应，不据合集其他成员批量补情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131471747",
+      "identity": {
+        "title": "Black Glass",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.readinggroupguides.com/reviews/black-glass/excerpt",
+          "result": "actual_source_scope_read",
+          "material_type": "公开原作开篇节选",
+          "reading_scope": "实际读Chapter 1全部可见段落，支持Senate Bar、持斧女人破坏酒吧、宗教与母职训诫及对青年强制动作；未读完整中篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.karenjoyfowler.com/black-glass",
+          "result": "actual_source_scope_read",
+          "material_type": "作者官网合集简介中的本篇说明",
+          "reading_scope": "实际读Carry Nation破坏迪厅和酒吧、动员女性并训诫男性的具体简介；官网1998指合集出版，不当作本篇1991首发。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方所载专业评论与目录",
+          "reading_scope": "实际读本篇Carry Nation在1990年代复活、DEA以巫术驱除的评论段，及目录Black Glass (1991)。不把15篇合集与本篇同题实体合并。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Chapter 1全部可见段落，支持Senate Bar、持斧女人破坏酒吧、宗教与母职训诫及对青年强制动作；未读完整中篇。；实际读Carry Nation破坏迪厅和酒吧、动员女性并训诫男性的具体简介；官网1998指合集出版，不当作本篇1991首发。；实际读本篇Carry Nation在1990年代复活、DEA以巫术驱除的评论段，及目录Black Glass (1991)。不把15篇合集与本篇同题实体合并。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471747",
+        "identity": {
+          "title": "Black Glass",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.readinggroupguides.com/reviews/black-glass/excerpt",
+            "material_kind": "公开原作开篇节选",
+            "support_scope": "实际读Chapter 1全部可见段落，支持Senate Bar、持斧女人破坏酒吧、宗教与母职训诫及对青年强制动作；未读完整中篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.karenjoyfowler.com/black-glass",
+            "material_kind": "作者官网合集简介中的本篇说明",
+            "support_scope": "实际读Carry Nation破坏迪厅和酒吧、动员女性并训诫男性的具体简介；官网1998指合集出版，不当作本篇1991首发。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+            "material_kind": "出版方所载专业评论与目录",
+            "support_scope": "实际读本篇Carry Nation在1990年代复活、DEA以巫术驱除的评论段，及目录Black Glass (1991)。不把15篇合集与本篇同题实体合并。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q104911438",
+      "identity": {
+        "title": "The Lake Was Full of Artificial Things",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://ueaeprints.uea.ac.uk/39033/1/2011DillonAPhD.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "Amanda Dillon博士论文中的逐篇文本分析",
+          "reading_scope": "实际读论文印刷页6—8开头对本篇的讨论及原文页码引注，支持记忆生成虚拟现实、治疗反事实、自我回声与现实边界。论文是独立研究材料，未据其引用宣称读完整原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://classicsofsciencefiction.com/2022/01/26/the-lake-was-full-of-artificial-things-by-karen-joy-fowler/",
+          "result": "actual_source_scope_read",
+          "material_type": "James Wallace Harris署名单篇评论",
+          "reading_scope": "实际读评论正文，支持Miranda分手后长期内疚、治疗外梦境、Daniel误杀男孩及死亡场景；保留其是否真实知识的疑问，不把评论对所有女性的扩展解释当作剧情。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://buchwurm.org/karen-joy-fowler-kuenstliche-dinge-erzaehlungen/",
+          "result": "actual_source_scope_read",
+          "material_type": "Michael Matzer署名合集评论的本篇段",
+          "reading_scope": "实际读第1篇具体情节段与评论，交叉核对Matsui医生、记忆数据生成、两次会面不满足及梦境逸出诊室；未凭全书目录继承其他篇情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读论文印刷页6—8开头对本篇的讨论及原文页码引注，支持记忆生成虚拟现实、治疗反事实、自我回声与现实边界。论文是独立研究材料，未据其引用宣称读完整原篇。；实际读评论正文，支持Miranda分手后长期内疚、治疗外梦境、Daniel误杀男孩及死亡场景；保留其是否真实知识的疑问，不把评论对所有女性的扩展解释当作剧情。；实际读第1篇具体情节段与评论，交叉核对Matsui医生、记忆数据生成、两次会面不满足及梦境逸出诊室；未凭全书目录继承其他篇情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q104911438",
+        "identity": {
+          "title": "The Lake Was Full of Artificial Things",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://ueaeprints.uea.ac.uk/39033/1/2011DillonAPhD.pdf",
+            "material_kind": "Amanda Dillon博士论文中的逐篇文本分析",
+            "support_scope": "实际读论文印刷页6—8开头对本篇的讨论及原文页码引注，支持记忆生成虚拟现实、治疗反事实、自我回声与现实边界。论文是独立研究材料，未据其引用宣称读完整原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://classicsofsciencefiction.com/2022/01/26/the-lake-was-full-of-artificial-things-by-karen-joy-fowler/",
+            "material_kind": "James Wallace Harris署名单篇评论",
+            "support_scope": "实际读评论正文，支持Miranda分手后长期内疚、治疗外梦境、Daniel误杀男孩及死亡场景；保留其是否真实知识的疑问，不把评论对所有女性的扩展解释当作剧情。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://buchwurm.org/karen-joy-fowler-kuenstliche-dinge-erzaehlungen/",
+            "material_kind": "Michael Matzer署名合集评论的本篇段",
+            "support_scope": "实际读第1篇具体情节段与评论，交叉核对Matsui医生、记忆数据生成、两次会面不满足及梦境逸出诊室；未凭全书目录继承其他篇情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131517674",
+      "identity": {
+        "title": "Face Value",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/nonfiction/author-spotlight-karen-joy-fowler/",
+          "result": "actual_source_scope_read",
+          "material_type": "Erin Stocks对作者的公开访谈可检索正文",
+          "reading_scope": "实际读搜索返回的完整访谈回答，支持Hesper隐私需要、mene完全互联、沟通失败及人格裂隙／精神崩溃两解。作者提到缠足是未必进入成篇的创作起点，本条没有将其变成剧情。网页直接读取曾被拒绝，未重试或绕过。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/face-value/",
+          "result": "actual_source_scope_read",
+          "material_type": "获授权重印原篇的公开可检索开头",
+          "reading_scope": "实际读公开检索返回的开篇连续段落，支持二星沙漠环境、诗稿、mene触摸与取走母亲首饰、Taki回避目光；只有开头，未读完整原篇，未绕过此前直接读取限制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fanac.org/fanzines/Foundation/foundation_39_james_1987-sp.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "Sherry Francis署名同期专业评论",
+          "reading_scope": "实际读印刷页80—81明确分析Face Value的段落：沙漠行星、两名人类、研究与婚姻疏离、私人对象被侵犯及集体意志占据。只采用本篇段，非全刊阅读全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读搜索返回的完整访谈回答，支持Hesper隐私需要、mene完全互联、沟通失败及人格裂隙／精神崩溃两解。作者提到缠足是未必进入成篇的创作起点，本条没有将其变成剧情。网页直接读取曾被拒绝，未重试或绕过。；实际读公开检索返回的开篇连续段落，支持二星沙漠环境、诗稿、mene触摸与取走母亲首饰、Taki回避目光；只有开头，未读完整原篇，未绕过此前直接读取限制。；实际读印刷页80—81明确分析Face Value的段落：沙漠行星、两名人类、研究与婚姻疏离、私人对象被侵犯及集体意志占据。只采用本篇段，非全刊阅读全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517674",
+        "identity": {
+          "title": "Face Value",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.lightspeedmagazine.com/nonfiction/author-spotlight-karen-joy-fowler/",
+            "material_kind": "Erin Stocks对作者的公开访谈可检索正文",
+            "support_scope": "实际读搜索返回的完整访谈回答，支持Hesper隐私需要、mene完全互联、沟通失败及人格裂隙／精神崩溃两解。作者提到缠足是未必进入成篇的创作起点，本条没有将其变成剧情。网页直接读取曾被拒绝，未重试或绕过。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.lightspeedmagazine.com/fiction/face-value/",
+            "material_kind": "获授权重印原篇的公开可检索开头",
+            "support_scope": "实际读公开检索返回的开篇连续段落，支持二星沙漠环境、诗稿、mene触摸与取走母亲首饰、Taki回避目光；只有开头，未读完整原篇，未绕过此前直接读取限制。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://fanac.org/fanzines/Foundation/foundation_39_james_1987-sp.pdf",
+            "material_kind": "Sherry Francis署名同期专业评论",
+            "support_scope": "实际读印刷页80—81明确分析Face Value的段落：沙漠行星、两名人类、研究与婚姻疏离、私人对象被侵犯及集体意志占据。只采用本篇段，非全刊阅读全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131517682",
+      "identity": {
+        "title": "The Poplar Street Study",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.drwhitelitr.net/LITR/4632/lectures/lect12a%28aliens%29.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "Craig White文学课程逐篇阅读笔记的公开可检索正文",
+          "reading_scope": "实际读公开搜索返回中所有明确标为Poplar Street的页码笔记及授课讨论，支持隔离、检查、食物测试、Anderson去留、Sunny观察适应与权威改变。直接网页为Cache miss；未取或声称读完整原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.chuq.me/otherrealms-2",
+          "result": "actual_source_scope_read",
+          "material_type": "James Brunet署名同期作家侧写中的本篇说明",
+          "reading_scope": "实际读公开可检索正文Authors: A Profile of Karen Joy Fowler的本篇段，明确地球被外星占领、一个郊区街区作为对照组及邻里关系；原刊为1986年2月，本篇指1985年6月F&SF。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方简介与合集目录",
+          "reading_scope": "实际读出版社点名本篇为外星入侵黑色喜剧及目录中所列篇名；只作单篇与收录集对应，不由简介推断实验结果。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读公开搜索返回中所有明确标为Poplar Street的页码笔记及授课讨论，支持隔离、检查、食物测试、Anderson去留、Sunny观察适应与权威改变。直接网页为Cache miss；未取或声称读完整原篇。；实际读公开可检索正文Authors: A Profile of Karen Joy Fowler的本篇段，明确地球被外星占领、一个郊区街区作为对照组及邻里关系；原刊为1986年2月，本篇指1985年6月F&SF。；实际读出版社点名本篇为外星入侵黑色喜剧及目录中所列篇名；只作单篇与收录集对应，不由简介推断实验结果。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131517682",
+        "identity": {
+          "title": "The Poplar Street Study",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.drwhitelitr.net/LITR/4632/lectures/lect12a%28aliens%29.htm",
+            "material_kind": "Craig White文学课程逐篇阅读笔记的公开可检索正文",
+            "support_scope": "实际读公开搜索返回中所有明确标为Poplar Street的页码笔记及授课讨论，支持隔离、检查、食物测试、Anderson去留、Sunny观察适应与权威改变。直接网页为Cache miss；未取或声称读完整原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.chuq.me/otherrealms-2",
+            "material_kind": "James Brunet署名同期作家侧写中的本篇说明",
+            "support_scope": "实际读公开可检索正文Authors: A Profile of Karen Joy Fowler的本篇段，明确地球被外星占领、一个郊区街区作为对照组及邻里关系；原刊为1986年2月，本篇指1985年6月F&SF。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+            "material_kind": "出版方简介与合集目录",
+            "support_scope": "实际读出版社点名本篇为外星入侵黑色喜剧及目录中所列篇名；只作单篇与收录集对应，不由简介推断实验结果。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131471813",
+      "identity": {
+        "title": "The Gate of Ghosts",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://efanzines.com/SFC/TMR28-29.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "Bruce Gillespie署名短篇阅读评论的公开可检索段",
+          "reading_scope": "实际读搜索返回中The Gate of Ghosts连续评论段及其少量原文引述，支持Jessica出入别处、返回方式变化、父母关系与母亲救援。PDF直接读取403后未重试或绕过；未读全刊或完整原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://buchwurm.org/karen-joy-fowler-kuenstliche-dinge-erzaehlungen/",
+          "result": "actual_source_scope_read",
+          "material_type": "Michael Matzer署名合集评论的本篇段",
+          "reading_scope": "实际读第9篇剧情与评论，采用Jessica、母亲既往濒死经验及祖母故事造成的文化分歧；不采用该文将德译发表年1988当作原作首发，也不推断故事结尾。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方简介与目录",
+          "reading_scope": "实际读出版社点名本篇为孩子进入陌生而危险世界，并核对目录The gate of ghosts；简介正文复数Gates与目录单数不同，不另建同题实体。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfadb.com/Karen_Joy_Fowler_Chronology",
+          "result": "actual_source_scope_read",
+          "material_type": "Locus系独立文学书目年表",
+          "reading_scope": "实际读1986年Artificial Things下The Gate of Ghosts及1987年选集收录项，仅支持作品年代与收录身份，不支持新增情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读搜索返回中The Gate of Ghosts连续评论段及其少量原文引述，支持Jessica出入别处、返回方式变化、父母关系与母亲救援。PDF直接读取403后未重试或绕过；未读全刊或完整原篇。；实际读第9篇剧情与评论，采用Jessica、母亲既往濒死经验及祖母故事造成的文化分歧；不采用该文将德译发表年1988当作原作首发，也不推断故事结尾。；实际读出版社点名本篇为孩子进入陌生而危险世界，并核对目录The gate of ghosts；简介正文复数Gates与目录单数不同，不另建同题实体。；实际读1986年Artificial Things下The Gate of Ghosts及1987年选集收录项，仅支持作品年代与收录身份，不支持新增情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131471813",
+        "identity": {
+          "title": "The Gate of Ghosts",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://efanzines.com/SFC/TMR28-29.pdf",
+            "material_kind": "Bruce Gillespie署名短篇阅读评论的公开可检索段",
+            "support_scope": "实际读搜索返回中The Gate of Ghosts连续评论段及其少量原文引述，支持Jessica出入别处、返回方式变化、父母关系与母亲救援。PDF直接读取403后未重试或绕过；未读全刊或完整原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://buchwurm.org/karen-joy-fowler-kuenstliche-dinge-erzaehlungen/",
+            "material_kind": "Michael Matzer署名合集评论的本篇段",
+            "support_scope": "实际读第9篇剧情与评论，采用Jessica、母亲既往濒死经验及祖母故事造成的文化分歧；不采用该文将德译发表年1988当作原作首发，也不推断故事结尾。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+            "material_kind": "出版方简介与目录",
+            "support_scope": "实际读出版社点名本篇为孩子进入陌生而危险世界，并核对目录The gate of ghosts；简介正文复数Gates与目录单数不同，不另建同题实体。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfadb.com/Karen_Joy_Fowler_Chronology",
+            "material_kind": "Locus系独立文学书目年表",
+            "support_scope": "实际读1986年Artificial Things下The Gate of Ghosts及1987年选集收录项，仅支持作品年代与收录身份，不支持新增情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q134605732",
+      "identity": {
+        "title": "The Elizabeth Complex",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.barnesandnoble.com/blog/the-remarkable-imagination-of-black-glass-by-karen-joy-fowler/",
+          "result": "actual_source_scope_read",
+          "material_type": "Ashley Krach署名书评的本篇段",
+          "reading_scope": "实际读The Elizabeth Complex段：女王Elizabeth、Lizzy Borden、Elizabeth Taylor的故事交织及父亲形象批判。只取该篇，不以合集评价判定每个成员。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://michellerichmond.com/first-lines-in-fiction/",
+          "result": "actual_source_scope_read",
+          "material_type": "作家Michelle Richmond写作教学文章中的原作开头引述",
+          "reading_scope": "实际读公开可检索文章中The Elizabeth Complex的单句开头，支持没有证据判定女儿是否责怪父亲的叙事框架；没有读取或复制完整短篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/karen-joy-fowler/black-glass/",
+          "result": "actual_source_scope_read",
+          "material_type": "专业合集评论",
+          "reading_scope": "实际读评论中明确点名The Elizabeth Complex的父女关系说明，不采用评价好坏作为情节事实。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方合集目录",
+          "reading_scope": "实际读The Elizabeth Complex (1996)目录项，仅核作品与年代对应；未按原作全文核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读The Elizabeth Complex段：女王Elizabeth、Lizzy Borden、Elizabeth Taylor的故事交织及父亲形象批判。只取该篇，不以合集评价判定每个成员。；实际读公开可检索文章中The Elizabeth Complex的单句开头，支持没有证据判定女儿是否责怪父亲的叙事框架；没有读取或复制完整短篇。；实际读评论中明确点名The Elizabeth Complex的父女关系说明，不采用评价好坏作为情节事实。；实际读The Elizabeth Complex (1996)目录项，仅核作品与年代对应；未按原作全文核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q134605732",
+        "identity": {
+          "title": "The Elizabeth Complex",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.barnesandnoble.com/blog/the-remarkable-imagination-of-black-glass-by-karen-joy-fowler/",
+            "material_kind": "Ashley Krach署名书评的本篇段",
+            "support_scope": "实际读The Elizabeth Complex段：女王Elizabeth、Lizzy Borden、Elizabeth Taylor的故事交织及父亲形象批判。只取该篇，不以合集评价判定每个成员。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://michellerichmond.com/first-lines-in-fiction/",
+            "material_kind": "作家Michelle Richmond写作教学文章中的原作开头引述",
+            "support_scope": "实际读公开可检索文章中The Elizabeth Complex的单句开头，支持没有证据判定女儿是否责怪父亲的叙事框架；没有读取或复制完整短篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/karen-joy-fowler/black-glass/",
+            "material_kind": "专业合集评论",
+            "support_scope": "实际读评论中明确点名The Elizabeth Complex的父女关系说明，不采用评价好坏作为情节事实。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.hachette.co.uk/titles/karen-joy-fowler/black-glass/9780575083318/",
+            "material_kind": "出版方合集目录",
+            "support_scope": "实际读The Elizabeth Complex (1996)目录项，仅核作品与年代对应；未按原作全文核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q134720534",
+      "identity": {
+        "title": "Artificial Things",
+        "author": "Karen Joy Fowler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方合集简介与十三篇目录",
+          "reading_scope": "实际读全部简介与目录，核对十三篇、Praxis剧场、Poplar Street外星入侵、Gate of Ghosts孩子进入危险世界三个点名选例；新序言属于所售2012电子版，不称1986首版已有。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.chuq.me/otherrealms-2",
+          "result": "actual_source_scope_read",
+          "material_type": "James Brunet署名同期作家侧写",
+          "reading_scope": "实际读1986年2月Authors侧写中明确分析Poplar Street及Praxis的段落，分别支持对照组与人类身体／软件大脑模拟人、谋杀伦理；非完整合集阅读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfadb.com/Karen_Joy_Fowler_Chronology",
+          "result": "actual_source_scope_read",
+          "material_type": "Locus系文学书目年表",
+          "reading_scope": "实际读1986年Artificial Things collection与Bantam Spectra条目，仅支持原合集年代、形式，不作情节独立验证。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读全部简介与目录，核对十三篇、Praxis剧场、Poplar Street外星入侵、Gate of Ghosts孩子进入危险世界三个点名选例；新序言属于所售2012电子版，不称1986首版已有。；实际读1986年2月Authors侧写中明确分析Poplar Street及Praxis的段落，分别支持对照组与人类身体／软件大脑模拟人、谋杀伦理；非完整合集阅读。；实际读1986年Artificial Things collection与Bantam Spectra条目，仅支持原合集年代、形式，不作情节独立验证。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q134720534",
+        "identity": {
+          "title": "Artificial Things",
+          "author": "Karen Joy Fowler"
+        },
+        "sources": [
+          {
+            "url": "https://www.hachette.com.au/karen-joy-fowler/artificial-things",
+            "material_kind": "出版方合集简介与十三篇目录",
+            "support_scope": "实际读全部简介与目录，核对十三篇、Praxis剧场、Poplar Street外星入侵、Gate of Ghosts孩子进入危险世界三个点名选例；新序言属于所售2012电子版，不称1986首版已有。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.chuq.me/otherrealms-2",
+            "material_kind": "James Brunet署名同期作家侧写",
+            "support_scope": "实际读1986年2月Authors侧写中明确分析Poplar Street及Praxis的段落，分别支持对照组与人类身体／软件大脑模拟人、谋杀伦理；非完整合集阅读。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfadb.com/Karen_Joy_Fowler_Chronology",
+            "material_kind": "Locus系文学书目年表",
+            "support_scope": "实际读1986年Artificial Things collection与Bantam Spectra条目，仅支持原合集年代、形式，不作情节独立验证。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q130719255",
+      "identity": {
+        "title": "Fool to Believe",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://writingatlas.com/story/3650/pat-cadigan-fool-to-believe/",
+          "result": "actual_source_scope_read",
+          "material_type": "公共书目及完整情节梗概",
+          "reading_scope": "实际读完整Plot Summary，支持脑警卧底、人格植入、演员角色分支、反复切换及非原主人揭示；原篇未读。梗概拼演员名为Savoy，与另一评论Sovay不同，正文避用此争议拼写。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sffremembrance.com/2025/06/13/novella-review-fool-to-believe-by-pat-cadigan/",
+          "result": "actual_source_scope_read",
+          "material_type": "Brian Collins署名评论",
+          "reading_scope": "实际读完整评论情节段，交叉核对脑警、Mersine/Marya、身体仍活而人格被抽走、控制切换与结尾离职；不继承评论对后来Fools结局的推测。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://tamaranth.blogspot.com/1993/05/",
+          "result": "actual_source_scope_read",
+          "material_type": "1993年作者访谈的公开可检索正文",
+          "reading_scope": "实际读开头Fool to Believe扩为Fools的作者问答，确认原篇并未等于最终长篇；本条只取改写边界，不将访谈关于长篇Marva等情节向原篇继承。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完整Plot Summary，支持脑警卧底、人格植入、演员角色分支、反复切换及非原主人揭示；原篇未读。梗概拼演员名为Savoy，与另一评论Sovay不同，正文避用此争议拼写。；实际读完整评论情节段，交叉核对脑警、Mersine/Marya、身体仍活而人格被抽走、控制切换与结尾离职；不继承评论对后来Fools结局的推测。；实际读开头Fool to Believe扩为Fools的作者问答，确认原篇并未等于最终长篇；本条只取改写边界，不将访谈关于长篇Marva等情节向原篇继承。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q130719255",
+        "identity": {
+          "title": "Fool to Believe",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://writingatlas.com/story/3650/pat-cadigan-fool-to-believe/",
+            "material_kind": "公共书目及完整情节梗概",
+            "support_scope": "实际读完整Plot Summary，支持脑警卧底、人格植入、演员角色分支、反复切换及非原主人揭示；原篇未读。梗概拼演员名为Savoy，与另一评论Sovay不同，正文避用此争议拼写。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sffremembrance.com/2025/06/13/novella-review-fool-to-believe-by-pat-cadigan/",
+            "material_kind": "Brian Collins署名评论",
+            "support_scope": "实际读完整评论情节段，交叉核对脑警、Mersine/Marya、身体仍活而人格被抽走、控制切换与结尾离职；不继承评论对后来Fools结局的推测。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://tamaranth.blogspot.com/1993/05/",
+            "material_kind": "1993年作者访谈的公开可检索正文",
+            "support_scope": "实际读开头Fool to Believe扩为Fools的作者问答，确认原篇并未等于最终长篇；本条只取改写边界，不将访谈关于长篇Marva等情节向原篇继承。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q104723577",
+      "identity": {
+        "title": "Variation on a Man",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://classicsofsciencefiction.com/2022/01/11/variation-on-a-man-by-pat-cadigan/",
+          "result": "actual_source_scope_read",
+          "material_type": "James Wallace Harris署名单篇评论",
+          "reading_scope": "实际读评论正文，支持Gladney意识被盗、人格重建、重新作曲、Allie的职业与接口、旧人格残影；不采用评论对上传技术的信与不信作为科学结论。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://reiszwolf.wordpress.com/2020/09/24/variation-on-a-man-1984-cyberpunk-short-story-by-pat-cadigan/",
+          "result": "actual_source_scope_read",
+          "material_type": "Andreas署名单篇评论",
+          "reading_scope": "实际读完整Synopsis及Review，交叉核对Mindplay工作、双向眼部接口、音乐组织的人格变化与联系；没有按其总体赛博朋克评价补其他情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfadb.com/Pat_Cadigan_Chronology",
+          "result": "actual_source_scope_read",
+          "material_type": "Locus系文学书目年表",
+          "reading_scope": "实际读Variation on a Man的Omni Jan1984及后续收录年表对应，只作身份与独立篇目核对，不支持未经阅读的新增情节。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读评论正文，支持Gladney意识被盗、人格重建、重新作曲、Allie的职业与接口、旧人格残影；不采用评论对上传技术的信与不信作为科学结论。；实际读完整Synopsis及Review，交叉核对Mindplay工作、双向眼部接口、音乐组织的人格变化与联系；没有按其总体赛博朋克评价补其他情节。；实际读Variation on a Man的Omni Jan1984及后续收录年表对应，只作身份与独立篇目核对，不支持未经阅读的新增情节。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q104723577",
+        "identity": {
+          "title": "Variation on a Man",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://classicsofsciencefiction.com/2022/01/11/variation-on-a-man-by-pat-cadigan/",
+            "material_kind": "James Wallace Harris署名单篇评论",
+            "support_scope": "实际读评论正文，支持Gladney意识被盗、人格重建、重新作曲、Allie的职业与接口、旧人格残影；不采用评论对上传技术的信与不信作为科学结论。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://reiszwolf.wordpress.com/2020/09/24/variation-on-a-man-1984-cyberpunk-short-story-by-pat-cadigan/",
+            "material_kind": "Andreas署名单篇评论",
+            "support_scope": "实际读完整Synopsis及Review，交叉核对Mindplay工作、双向眼部接口、音乐组织的人格变化与联系；没有按其总体赛博朋克评价补其他情节。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfadb.com/Pat_Cadigan_Chronology",
+            "material_kind": "Locus系文学书目年表",
+            "support_scope": "实际读Variation on a Man的Omni Jan1984及后续收录年表对应，只作身份与独立篇目核对，不支持未经阅读的新增情节。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q106095216",
+      "identity": {
+        "title": "Nothing Personal",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tangentonline.com/print-other/anthologies/alien-crimes-edited-by-mike-resnick2/",
+          "result": "actual_source_scope_read",
+          "material_type": "Dave Truesdale署名专业评论的公开可检索正文",
+          "reading_scope": "实际读Nothing Personal完整评论段，支持相似少女死亡、身份贩卖、父母逃生交易、双线风险与Pasco执法；直接页面存在重定向循环，未声称读完整原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/wordpress/non-fiction/reviews/alien-crimes-edited-by-mike-resnick/",
+          "result": "actual_source_scope_read",
+          "material_type": "Karen Burnham署名专业评论",
+          "reading_scope": "实际读明确指向Nothing Personal的两段，支持Tsung的长期警务、衰老与遗憾、Dread、案件和新搭档关联；未将同集其他故事继承到本篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.johnjosephadams.com/2012/04/20/other-worlds-than-these-table-of-contents/",
+          "result": "actual_source_scope_read",
+          "material_type": "编辑本人公开再版选集目录",
+          "reading_scope": "实际读Nothing Personal—Pat Cadigan目录项，只作2012选集成员对应，非情节来源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfadb.com/Pat_Cadigan_Titles",
+          "result": "actual_source_scope_read",
+          "material_type": "Locus系文学书目",
+          "reading_scope": "实际读Nothing Personal的Alien Crimes2007及后续收录列表，只支持独立中篇与再版边界。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Nothing Personal完整评论段，支持相似少女死亡、身份贩卖、父母逃生交易、双线风险与Pasco执法；直接页面存在重定向循环，未声称读完整原篇。；实际读明确指向Nothing Personal的两段，支持Tsung的长期警务、衰老与遗憾、Dread、案件和新搭档关联；未将同集其他故事继承到本篇。；实际读Nothing Personal—Pat Cadigan目录项，只作2012选集成员对应，非情节来源。；实际读Nothing Personal的Alien Crimes2007及后续收录列表，只支持独立中篇与再版边界。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q106095216",
+        "identity": {
+          "title": "Nothing Personal",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://tangentonline.com/print-other/anthologies/alien-crimes-edited-by-mike-resnick2/",
+            "material_kind": "Dave Truesdale署名专业评论的公开可检索正文",
+            "support_scope": "实际读Nothing Personal完整评论段，支持相似少女死亡、身份贩卖、父母逃生交易、双线风险与Pasco执法；直接页面存在重定向循环，未声称读完整原篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://strangehorizons.com/wordpress/non-fiction/reviews/alien-crimes-edited-by-mike-resnick/",
+            "material_kind": "Karen Burnham署名专业评论",
+            "support_scope": "实际读明确指向Nothing Personal的两段，支持Tsung的长期警务、衰老与遗憾、Dread、案件和新搭档关联；未将同集其他故事继承到本篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.johnjosephadams.com/2012/04/20/other-worlds-than-these-table-of-contents/",
+            "material_kind": "编辑本人公开再版选集目录",
+            "support_scope": "实际读Nothing Personal—Pat Cadigan目录项，只作2012选集成员对应，非情节来源。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sfadb.com/Pat_Cadigan_Titles",
+            "material_kind": "Locus系文学书目",
+            "support_scope": "实际读Nothing Personal的Alien Crimes2007及后续收录列表，只支持独立中篇与再版边界。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q131461507",
+      "identity": {
+        "title": "Death in the Promised Land",
+        "author": "帕特·卡蒂甘"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://sffremembrance.com/2026/04/25/novella-review-death-in-the-promised-land-by-pat-cadigan/",
+          "result": "actual_source_scope_read",
+          "material_type": "Brian Collins署名独立中篇评论",
+          "reading_scope": "实际读完整具体情节段，支持现实与AR双重割喉、Shantih Love与多名身份、可买卖／劫持人格、模拟Noo Yawk Sitty调查；评论未解释的结局未补写，未向原中篇继承后来长篇另一叙事线。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.apple.com/us/book/mammoth-books-presents-death-in-the-promised-land/id929375884",
+          "result": "actual_source_scope_read",
+          "material_type": "正规零售页所载出版方简介",
+          "reading_scope": "实际读Publisher Description，支持卷入虚拟现实的危险及部分内容后改写成长篇。简介把Tea from an Empty Cup写作1988，与本库1998不一致，本条不采其年份；2012为所售电子版。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.sfadb.com/Pat_Cadigan_Chronology",
+          "result": "actual_source_scope_read",
+          "material_type": "Locus系文学书目年表",
+          "reading_scope": "实际读Death in the Promised Land的1995条与再版项，仅作独立中篇对应，不将后期电子版日期改作首发。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完整具体情节段，支持现实与AR双重割喉、Shantih Love与多名身份、可买卖／劫持人格、模拟Noo Yawk Sitty调查；评论未解释的结局未补写，未向原中篇继承后来长篇另一叙事线。；实际读Publisher Description，支持卷入虚拟现实的危险及部分内容后改写成长篇。简介把Tea from an Empty Cup写作1988，与本库1998不一致，本条不采其年份；2012为所售电子版。；实际读Death in the Promised Land的1995条与再版项，仅作独立中篇对应，不将后期电子版日期改作首发。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q131461507",
+        "identity": {
+          "title": "Death in the Promised Land",
+          "author": "帕特·卡蒂甘"
+        },
+        "sources": [
+          {
+            "url": "https://sffremembrance.com/2026/04/25/novella-review-death-in-the-promised-land-by-pat-cadigan/",
+            "material_kind": "Brian Collins署名独立中篇评论",
+            "support_scope": "实际读完整具体情节段，支持现实与AR双重割喉、Shantih Love与多名身份、可买卖／劫持人格、模拟Noo Yawk Sitty调查；评论未解释的结局未补写，未向原中篇继承后来长篇另一叙事线。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://books.apple.com/us/book/mammoth-books-presents-death-in-the-promised-land/id929375884",
+            "material_kind": "正规零售页所载出版方简介",
+            "support_scope": "实际读Publisher Description，支持卷入虚拟现实的危险及部分内容后改写成长篇。简介把Tea from an Empty Cup写作1988，与本库1998不一致，本条不采其年份；2012为所售电子版。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.sfadb.com/Pat_Cadigan_Chronology",
+            "material_kind": "Locus系文学书目年表",
+            "support_scope": "实际读Death in the Promised Land的1995条与再版项，仅作独立中篇对应，不将后期电子版日期改作首发。 所读为公开检索返回的年表段，直接页面显示停用，未读取实时网页全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round19.json"
+    },
+    {
+      "id": "Q122050864",
+      "identity": {
+        "title": "The Cage",
+        "author": "A. Bertram Chandler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Cage\" \"Chandler\" text story",
+        "\"The Cage\" \"Chandler\" site.bertramchandler.com"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://gill.readingroo.ms/ENTER/Fict-Bio/Chandler,%20A%20Bertram/A.%20bertram%20Chandler-%20The%20Cage.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读6页英文原作转录的失事开端、动物园场景、几何与编篮失败、Joe 被圈养及释放结尾；来源为非出版社文本镜像，转录版本与原刊未校勘。采用正文直接情节作文学解释，仍待独立核对。两名失踪者遭活体解剖是 Boyle 的担忧而非正文确认，不写成既成事实；不移用同名他作。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读6页英文原作转录的失事开端、动物园场景、几何与编篮失败、Joe 被圈养及释放结尾；来源为非出版社文本镜像，转录版本与原刊未校勘。采用正文直接情节作文学解释，仍待独立核对。两名失踪者遭活体解剖是 Boyle 的担忧而非正文确认，不写成既成事实；不移用同名他作。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q122050864",
+        "identity": {
+          "title": "The Cage",
+          "author": "A. Bertram Chandler"
+        },
+        "queries": [
+          "\"The Cage\" \"Chandler\" text story",
+          "\"The Cage\" \"Chandler\" site.bertramchandler.com"
+        ],
+        "urls_read": [
+          "https://gill.readingroo.ms/ENTER/Fict-Bio/Chandler,%20A%20Bertram/A.%20bertram%20Chandler-%20The%20Cage.pdf"
+        ],
+        "exact_support_scope": "实际读6页英文原作转录的失事开端、动物园场景、几何与编篮失败、Joe 被圈养及释放结尾；来源为非出版社文本镜像，转录版本与原刊未校勘。采用正文直接情节作文学解释，仍待独立核对。两名失踪者遭活体解剖是 Boyle 的担忧而非正文确认，不写成既成事实；不移用同名他作。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q18389547",
+      "identity": {
+        "title": "The Demon Breed",
+        "author": "James H. Schmitz"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Demon Breed\" \"Schmitz\" publisher",
+        "\"Demon Breed\" site.baen.com",
+        "Baen The Hub Dangerous Territory Schmitz chapters Demon Breed",
+        "\"The Demon Breed\" Nile Parahuan Tuvela plot"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.blackgate.com/2024/09/03/the-tuvela-theory-the-demon-breed-by-james-h-schmitz/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 William Stoddard 在 Black Gate 的单书评论：Cay 与 Nile、Parahuan 的 Tuvela 假说、Nile 的生态与生化能力、改造水獭、Hub 私人行动与援助目标。它是二手情节和评论，不是原作全文；不把评论者对作者主旨的推测当确定事实。另实际读 Baen The Hub: Dangerous Territory 官方目录，只确认收录 The Demon Breed；可开放样章是前四篇，未读取本小说正文，未借那些篇目的情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/0671319841/0671319841_toc.htm",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 William Stoddard 在 Black Gate 的单书评论：Cay 与 Nile、Parahuan 的 Tuvela 假说、Nile 的生态与生化能力、改造水獭、Hub 私人行动与援助目标。它是二手情节和评论，不是原作全文；不把评论者对作者主旨的推测当确定事实。另实际读 Baen The Hub: Dangerous Territory 官方目录，只确认收录 The Demon Breed；可开放样章是前四篇，未读取本小说正文，未借那些篇目的情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 William Stoddard 在 Black Gate 的单书评论：Cay 与 Nile、Parahuan 的 Tuvela 假说、Nile 的生态与生化能力、改造水獭、Hub 私人行动与援助目标。它是二手情节和评论，不是原作全文；不把评论者对作者主旨的推测当确定事实。另实际读 Baen The Hub: Dangerous Territory 官方目录，只确认收录 The Demon Breed；可开放样章是前四篇，未读取本小说正文，未借那些篇目的情节。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q18389547",
+        "identity": {
+          "title": "The Demon Breed",
+          "author": "James H. Schmitz"
+        },
+        "queries": [
+          "\"The Demon Breed\" \"Schmitz\" publisher",
+          "\"Demon Breed\" site.baen.com",
+          "Baen The Hub Dangerous Territory Schmitz chapters Demon Breed",
+          "\"The Demon Breed\" Nile Parahuan Tuvela plot"
+        ],
+        "urls_read": [
+          "https://www.blackgate.com/2024/09/03/the-tuvela-theory-the-demon-breed-by-james-h-schmitz/",
+          "https://www.baen.com/Chapters/0671319841/0671319841_toc.htm"
+        ],
+        "exact_support_scope": "实际读 William Stoddard 在 Black Gate 的单书评论：Cay 与 Nile、Parahuan 的 Tuvela 假说、Nile 的生态与生化能力、改造水獭、Hub 私人行动与援助目标。它是二手情节和评论，不是原作全文；不把评论者对作者主旨的推测当确定事实。另实际读 Baen The Hub: Dangerous Territory 官方目录，只确认收录 The Demon Breed；可开放样章是前四篇，未读取本小说正文，未借那些篇目的情节。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q16642311",
+      "identity": {
+        "title": "Honorable Opponent",
+        "author": "克利福德·D·西马克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Honorable Opponent\" \"Simak\" text",
+        "\"Honorable Opponent\" Simak humans war game",
+        "\"Honorable Opponent\" site.gutenberg.org"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://mporcius.blogspot.com/2019/10/stories-from-galaxy-by-e-e-smith-f.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 MPorcius 的 The Third Galaxy Reader 阅读评论，只取 Honorable Opponent 段落中的交流障碍、交换俘虏、被俘舰队安全归来、游戏误解与传送技术分享。为二手情节描述，未读 Galaxy 原刊正文；原刊 Archive 链接和 metadata 获取失败，不列为已读。评论者关于人类从此再无致命战争的结论未作为剧情事实；非致命技术的权力问题为本条文学推论。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 MPorcius 的 The Third Galaxy Reader 阅读评论，只取 Honorable Opponent 段落中的交流障碍、交换俘虏、被俘舰队安全归来、游戏误解与传送技术分享。为二手情节描述，未读 Galaxy 原刊正文；原刊 Archive 链接和 metadata 获取失败，不列为已读。评论者关于人类从此再无致命战争的结论未作为剧情事实；非致命技术的权力问题为本条文学推论。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q16642311",
+        "identity": {
+          "title": "Honorable Opponent",
+          "author": "克利福德·D·西马克"
+        },
+        "queries": [
+          "\"Honorable Opponent\" \"Simak\" text",
+          "\"Honorable Opponent\" Simak humans war game",
+          "\"Honorable Opponent\" site.gutenberg.org"
+        ],
+        "urls_read": [
+          "https://mporcius.blogspot.com/2019/10/stories-from-galaxy-by-e-e-smith-f.html"
+        ],
+        "exact_support_scope": "实际打开 MPorcius 的 The Third Galaxy Reader 阅读评论，只取 Honorable Opponent 段落中的交流障碍、交换俘虏、被俘舰队安全归来、游戏误解与传送技术分享。为二手情节描述，未读 Galaxy 原刊正文；原刊 Archive 链接和 metadata 获取失败，不列为已读。评论者关于人类从此再无致命战争的结论未作为剧情事实；非致命技术的权力问题为本条文学推论。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q65204609",
+      "identity": {
+        "title": "Neighbor",
+        "author": "克利福德·D·西马克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Neighbor\" \"Simak\" \"Heath\" story",
+        "\"Neighbor\" \"Simak\" \"Astounding\" 1954 text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sfpotpourri.blogspot.com/2014/09/1961-aliens-for-neighbours-simak.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际从 Stack Exchange 的书名辨认线索点击并读 SF Potpourri 对 Simak Neighbor 的单篇介绍，只取 Coon Valley、Heath 新农场、无虫害与水分充足、异常农具和车辆、十年平静及记者调查这些明确设定。未读到原作结尾，不采用提问者记忆中的道路循环或用车辆细节推定技术机制；镜像正文打开失败。这里只作开端与冲突层面的有限分析，不宣称已确认隐藏身份或调查结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际从 Stack Exchange 的书名辨认线索点击并读 SF Potpourri 对 Simak Neighbor 的单篇介绍，只取 Coon Valley、Heath 新农场、无虫害与水分充足、异常农具和车辆、十年平静及记者调查这些明确设定。未读到原作结尾，不采用提问者记忆中的道路循环或用车辆细节推定技术机制；镜像正文打开失败。这里只作开端与冲突层面的有限分析，不宣称已确认隐藏身份或调查结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q65204609",
+        "identity": {
+          "title": "Neighbor",
+          "author": "克利福德·D·西马克"
+        },
+        "queries": [
+          "\"Neighbor\" \"Simak\" \"Heath\" story",
+          "\"Neighbor\" \"Simak\" \"Astounding\" 1954 text"
+        ],
+        "urls_read": [
+          "https://sfpotpourri.blogspot.com/2014/09/1961-aliens-for-neighbours-simak.html"
+        ],
+        "exact_support_scope": "实际从 Stack Exchange 的书名辨认线索点击并读 SF Potpourri 对 Simak Neighbor 的单篇介绍，只取 Coon Valley、Heath 新农场、无虫害与水分充足、异常农具和车辆、十年平静及记者调查这些明确设定。未读到原作结尾，不采用提问者记忆中的道路循环或用车辆细节推定技术机制；镜像正文打开失败。这里只作开端与冲突层面的有限分析，不宣称已确认隐藏身份或调查结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q16385433",
+      "identity": {
+        "title": "Dear Pen Pal",
+        "author": "范·沃格特"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"A E van Vogt\" \"Dear Pen Pal\" original"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://zanotowane.pl/1145/9021/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 The Best of A. E. van Vogt Volume 2 的非出版社文本转录镜像，并定向读 DEAR PEN PAL 完整书信段，含特殊材料、摄影片、意识替代说明和末信反转。页内题名与版权声明将本篇对应1949，但转录未与 Arkham Sampler 原刊或 Sphere 重版逐行校勘；该镜像不是独立版本核验。避免用二手简介简化成普通换身体：正文说接收身体原意识被压制、摄影记录的意识取代它。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 The Best of A. E. van Vogt Volume 2 的非出版社文本转录镜像，并定向读 DEAR PEN PAL 完整书信段，含特殊材料、摄影片、意识替代说明和末信反转。页内题名与版权声明将本篇对应1949，但转录未与 Arkham Sampler 原刊或 Sphere 重版逐行校勘；该镜像不是独立版本核验。避免用二手简介简化成普通换身体：正文说接收身体原意识被压制、摄影记录的意识取代它。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q16385433",
+        "identity": {
+          "title": "Dear Pen Pal",
+          "author": "范·沃格特"
+        },
+        "queries": [
+          "\"A E van Vogt\" \"Dear Pen Pal\" original"
+        ],
+        "urls_read": [
+          "https://zanotowane.pl/1145/9021/"
+        ],
+        "exact_support_scope": "实际打开 The Best of A. E. van Vogt Volume 2 的非出版社文本转录镜像，并定向读 DEAR PEN PAL 完整书信段，含特殊材料、摄影片、意识替代说明和末信反转。页内题名与版权声明将本篇对应1949，但转录未与 Arkham Sampler 原刊或 Sphere 重版逐行校勘；该镜像不是独立版本核验。避免用二手简介简化成普通换身体：正文说接收身体原意识被压制、摄影记录的意识取代它。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q7747544",
+      "identity": {
+        "title": "The Listeners",
+        "author": "James Gunn"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Listeners\" \"James Gunn\" publisher",
+        "\"The Listeners\" site:benbellabooks.com",
+        "\"The Listeners\" \"James Gunn\" site:nasa.gov"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books?hl=en&vid=ISBN9780684130132",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Google Books 的1972 Scribner 书目及其出版简介，和 IPG 的2021重版简介，支持长期监听、Capella、MacDonald 解码与争取回应、人生投入。另实际读 NASA Societal Impact of Spaceflight 中 De Witt Douglas Kilgore 的文学研究章节，定向读印刷页546–549（PDF562–565页）总统与儿子、公布与回复决策、图示说明的文字提取。这是学者的二手分析及其原作引述，不是 Gunn 原作全文；图示截图获取失败，未声称目视检验图形。未把 SETI 史与作品发表先后写成小说准确预测研究起源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.ipgbook.com/the-listeners-products-9781944387433.php",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Google Books 的1972 Scribner 书目及其出版简介，和 IPG 的2021重版简介，支持长期监听、Capella、MacDonald 解码与争取回应、人生投入。另实际读 NASA Societal Impact of Spaceflight 中 De Witt Douglas Kilgore 的文学研究章节，定向读印刷页546–549（PDF562–565页）总统与儿子、公布与回复决策、图示说明的文字提取。这是学者的二手分析及其原作引述，不是 Gunn 原作全文；图示截图获取失败，未声称目视检验图形。未把 SETI 史与作品发表先后写成小说准确预测研究起源。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/03/sp-4801.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Google Books 的1972 Scribner 书目及其出版简介，和 IPG 的2021重版简介，支持长期监听、Capella、MacDonald 解码与争取回应、人生投入。另实际读 NASA Societal Impact of Spaceflight 中 De Witt Douglas Kilgore 的文学研究章节，定向读印刷页546–549（PDF562–565页）总统与儿子、公布与回复决策、图示说明的文字提取。这是学者的二手分析及其原作引述，不是 Gunn 原作全文；图示截图获取失败，未声称目视检验图形。未把 SETI 史与作品发表先后写成小说准确预测研究起源。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Google Books 的1972 Scribner 书目及其出版简介，和 IPG 的2021重版简介，支持长期监听、Capella、MacDonald 解码与争取回应、人生投入。另实际读 NASA Societal Impact of Spaceflight 中 De Witt Douglas Kilgore 的文学研究章节，定向读印刷页546–549（PDF562–565页）总统与儿子、公布与回复决策、图示说明的文字提取。这是学者的二手分析及其原作引述，不是 Gunn 原作全文；图示截图获取失败，未声称目视检验图形。未把 SETI 史与作品发表先后写成小说准确预测研究起源。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q7747544",
+        "identity": {
+          "title": "The Listeners",
+          "author": "James Gunn"
+        },
+        "queries": [
+          "\"The Listeners\" \"James Gunn\" publisher",
+          "\"The Listeners\" site:benbellabooks.com",
+          "\"The Listeners\" \"James Gunn\" site:nasa.gov"
+        ],
+        "urls_read": [
+          "https://books.google.com/books?hl=en&vid=ISBN9780684130132",
+          "https://www.ipgbook.com/the-listeners-products-9781944387433.php",
+          "https://www.nasa.gov/wp-content/uploads/2023/03/sp-4801.pdf"
+        ],
+        "exact_support_scope": "实际读 Google Books 的1972 Scribner 书目及其出版简介，和 IPG 的2021重版简介，支持长期监听、Capella、MacDonald 解码与争取回应、人生投入。另实际读 NASA Societal Impact of Spaceflight 中 De Witt Douglas Kilgore 的文学研究章节，定向读印刷页546–549（PDF562–565页）总统与儿子、公布与回复决策、图示说明的文字提取。这是学者的二手分析及其原作引述，不是 Gunn 原作全文；图示截图获取失败，未声称目视检验图形。未把 SETI 史与作品发表先后写成小说准确预测研究起源。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q16655056",
+      "identity": {
+        "title": "The Immortals",
+        "author": "James Gunn"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Immortals\" \"James Gunn\" publisher",
+        "\"The Immortals\" \"James Gunn\" site:simonandschuster.com",
+        "\"The Immortals\" \"James Gunn\" \"ReAnimus\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://reanimus.com/store/?item=1638",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 ReAnimus 授权 James Gunn Library 的 The Immortals 单书简介，以及 Google Books 所载 Simon & Schuster 重版简介与增补说明；只采用 Cartwright、Pearce、血液、合成、追捕及后代这些共同设定。未读正文，也未依电视剧改编补入追捕情节。新版加 Greg Bear 引言、Gunn 前言及 Elixir／Elixer，分析不把新增篇作为1962原始组接内容；不写本轮未核的具体医院制度或结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.google.com/books/about/The_Immortals.html?id=5iibBQAAQBAJ",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 ReAnimus 授权 James Gunn Library 的 The Immortals 单书简介，以及 Google Books 所载 Simon & Schuster 重版简介与增补说明；只采用 Cartwright、Pearce、血液、合成、追捕及后代这些共同设定。未读正文，也未依电视剧改编补入追捕情节。新版加 Greg Bear 引言、Gunn 前言及 Elixir／Elixer，分析不把新增篇作为1962原始组接内容；不写本轮未核的具体医院制度或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 ReAnimus 授权 James Gunn Library 的 The Immortals 单书简介，以及 Google Books 所载 Simon & Schuster 重版简介与增补说明；只采用 Cartwright、Pearce、血液、合成、追捕及后代这些共同设定。未读正文，也未依电视剧改编补入追捕情节。新版加 Greg Bear 引言、Gunn 前言及 Elixir／Elixer，分析不把新增篇作为1962原始组接内容；不写本轮未核的具体医院制度或结局。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q16655056",
+        "identity": {
+          "title": "The Immortals",
+          "author": "James Gunn"
+        },
+        "queries": [
+          "\"The Immortals\" \"James Gunn\" publisher",
+          "\"The Immortals\" \"James Gunn\" site:simonandschuster.com",
+          "\"The Immortals\" \"James Gunn\" \"ReAnimus\""
+        ],
+        "urls_read": [
+          "https://reanimus.com/store/?item=1638",
+          "https://books.google.com/books/about/The_Immortals.html?id=5iibBQAAQBAJ"
+        ],
+        "exact_support_scope": "实际读 ReAnimus 授权 James Gunn Library 的 The Immortals 单书简介，以及 Google Books 所载 Simon & Schuster 重版简介与增补说明；只采用 Cartwright、Pearce、血液、合成、追捕及后代这些共同设定。未读正文，也未依电视剧改编补入追捕情节。新版加 Greg Bear 引言、Gunn 前言及 Elixir／Elixer，分析不把新增篇作为1962原始组接内容；不写本轮未核的具体医院制度或结局。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q134706037",
+      "identity": {
+        "title": "Goblin Night",
+        "author": "James H. Schmitz"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Schmitz \"Goblin Night\" \"Telzey\"",
+        "\"Goblin Night\" \"Schmitz\" Baen sample",
+        "Telzey Amberdon Goblin Night baen Chapters 067"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://mporcius.blogspot.com/2013/10/goblin-night-by-james-schmitz.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 MPorcius 的 Goblin Night 单篇评论，取学生林地野营、隐蔽捕猎、Telzey 的感知与成为猎物、高技术及原始追逐手段。为二手情节描述；Baen Telzey Amberdon 框架页面仅显示样章入口，实际正文入口获取失败，不列为已读正文。未把反派身体残疾等同犯罪原因的一般规律，不以评论的精神疾病解释作现实心理学判断；未借直接续篇 Sleep No More 的传送猛兽情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 MPorcius 的 Goblin Night 单篇评论，取学生林地野营、隐蔽捕猎、Telzey 的感知与成为猎物、高技术及原始追逐手段。为二手情节描述；Baen Telzey Amberdon 框架页面仅显示样章入口，实际正文入口获取失败，不列为已读正文。未把反派身体残疾等同犯罪原因的一般规律，不以评论的精神疾病解释作现实心理学判断；未借直接续篇 Sleep No More 的传送猛兽情节。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q134706037",
+        "identity": {
+          "title": "Goblin Night",
+          "author": "James H. Schmitz"
+        },
+        "queries": [
+          "Schmitz \"Goblin Night\" \"Telzey\"",
+          "\"Goblin Night\" \"Schmitz\" Baen sample",
+          "Telzey Amberdon Goblin Night baen Chapters 067"
+        ],
+        "urls_read": [
+          "https://mporcius.blogspot.com/2013/10/goblin-night-by-james-schmitz.html"
+        ],
+        "exact_support_scope": "实际读 MPorcius 的 Goblin Night 单篇评论，取学生林地野营、隐蔽捕猎、Telzey 的感知与成为猎物、高技术及原始追逐手段。为二手情节描述；Baen Telzey Amberdon 框架页面仅显示样章入口，实际正文入口获取失败，不列为已读正文。未把反派身体残疾等同犯罪原因的一般规律，不以评论的精神疾病解释作现实心理学判断；未借直接续篇 Sleep No More 的传送猛兽情节。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q25394002",
+      "identity": {
+        "title": "Process",
+        "author": "范·沃格特"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Process\" \"van Vogt\" \"Gutenberg\"",
+        "\"Process\" \"van Vogt\" forest"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1950_12.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 F&SF 1950年12月原刊扫描的 Process 英文可检索文本，印刷页46–51，含森林意识、飞船热防御、铀采集、两场森林核战与反讽结尾。文件为 Luminist 原刊镜像，OCR 尚未逐字对照扫描像素；未宣称其他全刊篇目已读。只据显示的行为分析采矿关系，不另造船员隐藏计划或技术原理；文学解释仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 F&SF 1950年12月原刊扫描的 Process 英文可检索文本，印刷页46–51，含森林意识、飞船热防御、铀采集、两场森林核战与反讽结尾。文件为 Luminist 原刊镜像，OCR 尚未逐字对照扫描像素；未宣称其他全刊篇目已读。只据显示的行为分析采矿关系，不另造船员隐藏计划或技术原理；文学解释仍待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q25394002",
+        "identity": {
+          "title": "Process",
+          "author": "范·沃格特"
+        },
+        "queries": [
+          "\"Process\" \"van Vogt\" \"Gutenberg\"",
+          "\"Process\" \"van Vogt\" forest"
+        ],
+        "urls_read": [
+          "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1950_12.pdf"
+        ],
+        "exact_support_scope": "实际读取 F&SF 1950年12月原刊扫描的 Process 英文可检索文本，印刷页46–51，含森林意识、飞船热防御、铀采集、两场森林核战与反讽结尾。文件为 Luminist 原刊镜像，OCR 尚未逐字对照扫描像素；未宣称其他全刊篇目已读。只据显示的行为分析采矿关系，不另造船员隐藏计划或技术原理；文学解释仍待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q28403786",
+      "identity": {
+        "title": "A Can of Paint",
+        "author": "范·沃格特"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"A Can of Paint\" \"van Vogt\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.zanotowane.pl/1200/5260/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 Destination Universe 英文转录中 A Can of Paint 单篇：从金星探险、容器与涂料失控，到金星人说明测试、黑暗实验、光电转换解法及返回地球销售结尾；约可检索文本6738–8072行。非出版社镜像有明显 OCR 重复与广告插入，未与1944原刊或合集各版校勘。液态光、皮肤呼吸等为小说设定与人物判断，不作为现实材料学或医学事实；后续机械场景已属下一篇，不移入本篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 Destination Universe 英文转录中 A Can of Paint 单篇：从金星探险、容器与涂料失控，到金星人说明测试、黑暗实验、光电转换解法及返回地球销售结尾；约可检索文本6738–8072行。非出版社镜像有明显 OCR 重复与广告插入，未与1944原刊或合集各版校勘。液态光、皮肤呼吸等为小说设定与人物判断，不作为现实材料学或医学事实；后续机械场景已属下一篇，不移入本篇。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q28403786",
+        "identity": {
+          "title": "A Can of Paint",
+          "author": "范·沃格特"
+        },
+        "queries": [
+          "\"A Can of Paint\" \"van Vogt\" text"
+        ],
+        "urls_read": [
+          "https://www.zanotowane.pl/1200/5260/"
+        ],
+        "exact_support_scope": "实际读取 Destination Universe 英文转录中 A Can of Paint 单篇：从金星探险、容器与涂料失控，到金星人说明测试、黑暗实验、光电转换解法及返回地球销售结尾；约可检索文本6738–8072行。非出版社镜像有明显 OCR 重复与广告插入，未与1944原刊或合集各版校勘。液态光、皮肤呼吸等为小说设定与人物判断，不作为现实材料学或医学事实；后续机械场景已属下一篇，不移入本篇。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q111712407",
+      "identity": {
+        "title": "A Great Deal of Power",
+        "author": "埃里克·弗兰克·拉塞尔"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"A Great Deal of Power\" \"Russell\" story",
+        "\"A Great Deal of Power\" \"Russell\" plot"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.blackgate.com/2018/01/06/birthday-reviews-eric-frank-russells-a-great-deal-of-power/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Steven H. Silver 在 Black Gate 的单篇评论，含1953 Fantastic Universe 首刊、又题 Boomerang、三科学家、William Smith、权力名单与秘密试验。它是1997重印本的二手评论，未读原刊正文或结局；不把评论者对故事好坏与作者主旨的判断当剧情事实，不另写机器人最终杀死制造者。这里分析已明确的机制和冲突，仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Steven H. Silver 在 Black Gate 的单篇评论，含1953 Fantastic Universe 首刊、又题 Boomerang、三科学家、William Smith、权力名单与秘密试验。它是1997重印本的二手评论，未读原刊正文或结局；不把评论者对故事好坏与作者主旨的判断当剧情事实，不另写机器人最终杀死制造者。这里分析已明确的机制和冲突，仍待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q111712407",
+        "identity": {
+          "title": "A Great Deal of Power",
+          "author": "埃里克·弗兰克·拉塞尔"
+        },
+        "queries": [
+          "\"A Great Deal of Power\" \"Russell\" story",
+          "\"A Great Deal of Power\" \"Russell\" plot"
+        ],
+        "urls_read": [
+          "https://www.blackgate.com/2018/01/06/birthday-reviews-eric-frank-russells-a-great-deal-of-power/"
+        ],
+        "exact_support_scope": "实际读 Steven H. Silver 在 Black Gate 的单篇评论，含1953 Fantastic Universe 首刊、又题 Boomerang、三科学家、William Smith、权力名单与秘密试验。它是1997重印本的二手评论，未读原刊正文或结局；不把评论者对故事好坏与作者主旨的判断当剧情事实，不另写机器人最终杀死制造者。这里分析已明确的机制和冲突，仍待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q71943278",
+      "identity": {
+        "title": "Evensong",
+        "author": "莱斯特·德尔·雷"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.scribd.com/document/765438331/Rey-Lester-Del-Evensong",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Scribd 用户上传的4页 Evensong 英文转录，正文约105–231行，含银河拘禁、回到祖先星球、教导与超越的回忆、被找到、God/Man揭示及第八日结尾。上传标注取自 Dangerous Visions，但非作者或出版社版本，未与1967原合集逐字校勘；分析只对应这篇短篇，不套用1954 For I Am Jealous People 或后来宗教题材。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Scribd 用户上传的4页 Evensong 英文转录，正文约105–231行，含银河拘禁、回到祖先星球、教导与超越的回忆、被找到、God/Man揭示及第八日结尾。上传标注取自 Dangerous Visions，但非作者或出版社版本，未与1967原合集逐字校勘；分析只对应这篇短篇，不套用1954 For I Am Jealous People 或后来宗教题材。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q71943278",
+        "identity": {
+          "title": "Evensong",
+          "author": "莱斯特·德尔·雷"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.scribd.com/document/765438331/Rey-Lester-Del-Evensong"
+        ],
+        "exact_support_scope": "实际读 Scribd 用户上传的4页 Evensong 英文转录，正文约105–231行，含银河拘禁、回到祖先星球、教导与超越的回忆、被找到、God/Man揭示及第八日结尾。上传标注取自 Dangerous Visions，但非作者或出版社版本，未与1967原合集逐字校勘；分析只对应这篇短篇，不套用1954 For I Am Jealous People 或后来宗教题材。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q5527315",
+      "identity": {
+        "title": "Gateway to Strangeness",
+        "author": "杰克·万斯"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Gateway to Strangeness\" \"Sail 25\"",
+        "\"Gateway to Strangeness\" text \"Belt\"",
+        "\"Sail 25\" site:jackvance.com",
+        "\"Sail 25\" \"Spatterlight\"",
+        "\"Sail 25\" \"Gateway\" \"Amazing\" 1962 text",
+        "\"Gateway to Strangeness\" \"Belt\" original text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://strangerthansf.com/reviews/vance-dustoffarsuns.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Stranger than SF 对集合 Dust of Far Suns 中同名篇的单篇评论，只取 Belt、训练、火星/木星失约、设备问题、学员死亡与返航评分；其强烈道德评价不当作作者定论。另实际读 Elizabeth Stanway 在 Warwick Cosmic Stories 的作品段落及所引训练简报，支持太阳帆训练与航行限制，未读原刊全篇。不同重印版本与摘要中装置数目、笔记本颜色和备件细节有出入，全部省略；不把合集其他三篇并入本项。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://warwick.ac.uk/fac/sci/physics/research/astro/people/stanway/sciencefiction/cosmicstories/sailing-to-the/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Stranger than SF 对集合 Dust of Far Suns 中同名篇的单篇评论，只取 Belt、训练、火星/木星失约、设备问题、学员死亡与返航评分；其强烈道德评价不当作作者定论。另实际读 Elizabeth Stanway 在 Warwick Cosmic Stories 的作品段落及所引训练简报，支持太阳帆训练与航行限制，未读原刊全篇。不同重印版本与摘要中装置数目、笔记本颜色和备件细节有出入，全部省略；不把合集其他三篇并入本项。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Stranger than SF 对集合 Dust of Far Suns 中同名篇的单篇评论，只取 Belt、训练、火星/木星失约、设备问题、学员死亡与返航评分；其强烈道德评价不当作作者定论。另实际读 Elizabeth Stanway 在 Warwick Cosmic Stories 的作品段落及所引训练简报，支持太阳帆训练与航行限制，未读原刊全篇。不同重印版本与摘要中装置数目、笔记本颜色和备件细节有出入，全部省略；不把合集其他三篇并入本项。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q5527315",
+        "identity": {
+          "title": "Gateway to Strangeness",
+          "author": "杰克·万斯"
+        },
+        "queries": [
+          "\"Gateway to Strangeness\" \"Sail 25\"",
+          "\"Gateway to Strangeness\" text \"Belt\"",
+          "\"Sail 25\" site:jackvance.com",
+          "\"Sail 25\" \"Spatterlight\"",
+          "\"Sail 25\" \"Gateway\" \"Amazing\" 1962 text",
+          "\"Gateway to Strangeness\" \"Belt\" original text"
+        ],
+        "urls_read": [
+          "https://strangerthansf.com/reviews/vance-dustoffarsuns.html",
+          "https://warwick.ac.uk/fac/sci/physics/research/astro/people/stanway/sciencefiction/cosmicstories/sailing-to-the/"
+        ],
+        "exact_support_scope": "实际读 Stranger than SF 对集合 Dust of Far Suns 中同名篇的单篇评论，只取 Belt、训练、火星/木星失约、设备问题、学员死亡与返航评分；其强烈道德评价不当作作者定论。另实际读 Elizabeth Stanway 在 Warwick Cosmic Stories 的作品段落及所引训练简报，支持太阳帆训练与航行限制，未读原刊全篇。不同重印版本与摘要中装置数目、笔记本颜色和备件细节有出入，全部省略；不把合集其他三篇并入本项。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q18153679",
+      "identity": {
+        "title": "Rule 18",
+        "author": "克利福德·D·西马克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Rule 18\" \"Clifford Simak\" story"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sfmagazines.com/?p=5831",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 SF MAGAZINES 对1938年7月 Astounding 中 Rule 18 的单篇评论，约66–85行，包括所引原作血统规则段落、时间招募、记者、赌博势力与滞留结尾。属于二手概述和有限引文，未读整篇原刊。人物对自动化与强健体魄的判断、以及结尾殖民式幻想均作为小说中的话语分析，不当作现实事实或作者赞同；不采用网页对编辑修改的无证猜测。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 SF MAGAZINES 对1938年7月 Astounding 中 Rule 18 的单篇评论，约66–85行，包括所引原作血统规则段落、时间招募、记者、赌博势力与滞留结尾。属于二手概述和有限引文，未读整篇原刊。人物对自动化与强健体魄的判断、以及结尾殖民式幻想均作为小说中的话语分析，不当作现实事实或作者赞同；不采用网页对编辑修改的无证猜测。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q18153679",
+        "identity": {
+          "title": "Rule 18",
+          "author": "克利福德·D·西马克"
+        },
+        "queries": [
+          "\"Rule 18\" \"Clifford Simak\" story"
+        ],
+        "urls_read": [
+          "https://sfmagazines.com/?p=5831"
+        ],
+        "exact_support_scope": "实际读 SF MAGAZINES 对1938年7月 Astounding 中 Rule 18 的单篇评论，约66–85行，包括所引原作血统规则段落、时间招募、记者、赌博势力与滞留结尾。属于二手概述和有限引文，未读整篇原刊。人物对自动化与强健体魄的判断、以及结尾殖民式幻想均作为小说中的话语分析，不当作现实事实或作者赞同；不采用网页对编辑修改的无证猜测。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q139891125",
+      "identity": {
+        "title": "Kindness",
+        "author": "莱斯特·德尔·雷"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Kindness\" \"Lester del Rey\" 1944 story original",
+        "\"Kindness\" \"Lester del Rey\" \"Harry\"",
+        "\"Kindness\" \"del Rey\" pdf",
+        "\"Kindness\" \"Lester del Rey\" Wildside description",
+        "\"Kindness\" \"Danny\" \"del Rey\"",
+        "\"Kindness\" \"Lester\" site:wildsidepress.com",
+        "\"Kindness\" \"del Rey\" \"Astounding\" \"1944\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sfmagazines.com/?p=12470",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 SF MAGAZINES 对1944选集内 Kindness 的单篇概述与结尾引文，约69–76行，支持 Danny/homo intelligens、博物馆飞船、小行星旧聚居地、便条与隐瞒安排。是二手阅读与有限正文引文，未读1944原刊全篇；便条中的同类或女性为可能性，不确认其真实存在、相遇或繁殖成功。此篇没有机器人文明，不移用 Though Dreamers Die / Into Thy Hands；文学解释待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 SF MAGAZINES 对1944选集内 Kindness 的单篇概述与结尾引文，约69–76行，支持 Danny/homo intelligens、博物馆飞船、小行星旧聚居地、便条与隐瞒安排。是二手阅读与有限正文引文，未读1944原刊全篇；便条中的同类或女性为可能性，不确认其真实存在、相遇或繁殖成功。此篇没有机器人文明，不移用 Though Dreamers Die / Into Thy Hands；文学解释待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q139891125",
+        "identity": {
+          "title": "Kindness",
+          "author": "莱斯特·德尔·雷"
+        },
+        "queries": [
+          "\"Kindness\" \"Lester del Rey\" 1944 story original",
+          "\"Kindness\" \"Lester del Rey\" \"Harry\"",
+          "\"Kindness\" \"del Rey\" pdf",
+          "\"Kindness\" \"Lester del Rey\" Wildside description",
+          "\"Kindness\" \"Danny\" \"del Rey\"",
+          "\"Kindness\" \"Lester\" site:wildsidepress.com",
+          "\"Kindness\" \"del Rey\" \"Astounding\" \"1944\" text"
+        ],
+        "urls_read": [
+          "https://sfmagazines.com/?p=12470"
+        ],
+        "exact_support_scope": "实际读 SF MAGAZINES 对1944选集内 Kindness 的单篇概述与结尾引文，约69–76行，支持 Danny/homo intelligens、博物馆飞船、小行星旧聚居地、便条与隐瞒安排。是二手阅读与有限正文引文，未读1944原刊全篇；便条中的同类或女性为可能性，不确认其真实存在、相遇或繁殖成功。此篇没有机器人文明，不移用 Though Dreamers Die / Into Thy Hands；文学解释待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q19973919",
+      "identity": {
+        "title": "Ticket to Anywhere",
+        "author": "Damon Knight"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Ticket to Anywhere\" \"Damon Knight\" text",
+        "\"Ticket to Anywhere\" Knight plot",
+        "\"Ticket to Anywhere\" \"Knight\" \"portal\" story",
+        "\"Ticket to Anywhere\" \"pdf\"",
+        "\"Ticket to Anywhere\" \"Knight\" \"Redman\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://thelearnedturtle.wordpress.com/2019/03/19/book-review-deep-space-by-robert-silverberg-editor/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Learned Turtle 对 Deep Space 内 Ticket to Anywhere 的单篇介绍，约27–29行：偷渡火星、古文明方形通道、不可预测的星际旅程；合集其他篇不移入本项。另实际读取 Tpi 对 Galaxy April 1952 的搜索返回单篇段落，支持地球行动监督与停滞、随机传送和返程风险；直接页面打开失败，故只称已读搜索摘录。未读原刊全篇或结尾正文，不写传送再生机制、网络总范围或结局定论；不使用1989游戏 The Star Portal 的房间与器具。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://tpi-reads.blogspot.com/2009/11/galaxy-april-1962.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开 Learned Turtle 对 Deep Space 内 Ticket to Anywhere 的单篇介绍，约27–29行：偷渡火星、古文明方形通道、不可预测的星际旅程；合集其他篇不移入本项。另实际读取 Tpi 对 Galaxy April 1952 的搜索返回单篇段落，支持地球行动监督与停滞、随机传送和返程风险；直接页面打开失败，故只称已读搜索摘录。未读原刊全篇或结尾正文，不写传送再生机制、网络总范围或结局定论；不使用1989游戏 The Star Portal 的房间与器具。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际打开 Learned Turtle 对 Deep Space 内 Ticket to Anywhere 的单篇介绍，约27–29行：偷渡火星、古文明方形通道、不可预测的星际旅程；合集其他篇不移入本项。另实际读取 Tpi 对 Galaxy April 1952 的搜索返回单篇段落，支持地球行动监督与停滞、随机传送和返程风险；直接页面打开失败，故只称已读搜索摘录。未读原刊全篇或结尾正文，不写传送再生机制、网络总范围或结局定论；不使用1989游戏 The Star Portal 的房间与器具。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q19973919",
+        "identity": {
+          "title": "Ticket to Anywhere",
+          "author": "Damon Knight"
+        },
+        "queries": [
+          "\"Ticket to Anywhere\" \"Damon Knight\" text",
+          "\"Ticket to Anywhere\" Knight plot",
+          "\"Ticket to Anywhere\" \"Knight\" \"portal\" story",
+          "\"Ticket to Anywhere\" \"pdf\"",
+          "\"Ticket to Anywhere\" \"Knight\" \"Redman\""
+        ],
+        "urls_read": [
+          "https://thelearnedturtle.wordpress.com/2019/03/19/book-review-deep-space-by-robert-silverberg-editor/",
+          "https://tpi-reads.blogspot.com/2009/11/galaxy-april-1962.html"
+        ],
+        "exact_support_scope": "实际打开 Learned Turtle 对 Deep Space 内 Ticket to Anywhere 的单篇介绍，约27–29行：偷渡火星、古文明方形通道、不可预测的星际旅程；合集其他篇不移入本项。另实际读取 Tpi 对 Galaxy April 1952 的搜索返回单篇段落，支持地球行动监督与停滞、随机传送和返程风险；直接页面打开失败，故只称已读搜索摘录。未读原刊全篇或结尾正文，不写传送再生机制、网络总范围或结局定论；不使用1989游戏 The Star Portal 的房间与器具。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
+    },
+    {
+      "id": "Q75225673",
+      "identity": {
+        "title": "Though Dreamers Die",
+        "author": "莱斯特·德尔·雷"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Though Dreamers Die\" \"del Rey\" story",
+        "\"Though Dreamers Die\" original text pdf",
+        "\"Though Dreamers Die\" \"Five\" \"Jorgen\"",
+        "\"Though Dreamers Die\" \"Astounding\" \"pdf\" 1944 February"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://classicsofsciencefiction.com/2023/02/11/though-dreamers-die-by-lester-del-rey/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 James W. Harris 的单篇评论正文：瘟疫、休眠殖民船、五机器人、Jorgen、建造机器人文明与清除人类记忆。另实际读 Vector66 的搜索返回分析段落，支持机器人作为后裔及清除命令；该PDF直接获取失败，未称读取整份期刊。两个二手描述对星图由谁留下有出入，Harris 与其他已见摘要对 Jorgen 健康状况也不一致，因此不写星图制作者、免疫或余寿，不套用 Robots Return 的后来事件。文学解释仍待独立核对。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fanac.org/fanzines/Vector/Vector66.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 James W. Harris 的单篇评论正文：瘟疫、休眠殖民船、五机器人、Jorgen、建造机器人文明与清除人类记忆。另实际读 Vector66 的搜索返回分析段落，支持机器人作为后裔及清除命令；该PDF直接获取失败，未称读取整份期刊。两个二手描述对星图由谁留下有出入，Harris 与其他已见摘要对 Jorgen 健康状况也不一致，因此不写星图制作者、免疫或余寿，不套用 Robots Return 的后来事件。文学解释仍待独立核对。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 James W. Harris 的单篇评论正文：瘟疫、休眠殖民船、五机器人、Jorgen、建造机器人文明与清除人类记忆。另实际读 Vector66 的搜索返回分析段落，支持机器人作为后裔及清除命令；该PDF直接获取失败，未称读取整份期刊。两个二手描述对星图由谁留下有出入，Harris 与其他已见摘要对 Jorgen 健康状况也不一致，因此不写星图制作者、免疫或余寿，不套用 Robots Return 的后来事件。文学解释仍待独立核对。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "raw_reading_log": {
+        "id": "Q75225673",
+        "identity": {
+          "title": "Though Dreamers Die",
+          "author": "莱斯特·德尔·雷"
+        },
+        "queries": [
+          "\"Though Dreamers Die\" \"del Rey\" story",
+          "\"Though Dreamers Die\" original text pdf",
+          "\"Though Dreamers Die\" \"Five\" \"Jorgen\"",
+          "\"Though Dreamers Die\" \"Astounding\" \"pdf\" 1944 February"
+        ],
+        "urls_read": [
+          "https://classicsofsciencefiction.com/2023/02/11/though-dreamers-die-by-lester-del-rey/",
+          "https://www.fanac.org/fanzines/Vector/Vector66.pdf"
+        ],
+        "exact_support_scope": "实际读 James W. Harris 的单篇评论正文：瘟疫、休眠殖民船、五机器人、Jorgen、建造机器人文明与清除人类记忆。另实际读 Vector66 的搜索返回分析段落，支持机器人作为后裔及清除命令；该PDF直接获取失败，未称读取整份期刊。两个二手描述对星图由谁留下有出入，Harris 与其他已见摘要对 Jorgen 健康状况也不一致，因此不写星图制作者、免疫或余寿，不套用 Robots Return 的后来事件。文学解释仍待独立核对。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round20.json"
     }
   ]
 }

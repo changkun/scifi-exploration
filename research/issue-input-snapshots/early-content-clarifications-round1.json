@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "method": "targeted-source-layer-clarification-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "record_count": 2,
+    "note": "独立补充/勘误说明，不改已冻结字节，不新增作品分析数量；一条区分原作命名与作者后记明确说明，一条纠正私有新空间文件的罗马字拼写。文学解释仍未独立核验。"
+  },
+  "records": [
+    {
+      "id": "Q17631915",
+      "identity": {
+        "title": "The Silent Colony",
+        "author": "羅伯特·西爾柏格"
+      },
+      "target_component": "early-source-round19.json",
+      "affected_paths": [
+        "fields.issue",
+        "fields.issue_facets[0].basis",
+        "field_notes.issue"
+      ],
+      "prior_statement_summary": "原议题使用地球称呼Third World，未将地球定位的来源层级写清。",
+      "finding": "原刊正文p111–113只用Third World/Third Planet，没有将天体明确命名为Earth；p112 falling to earth是小写地面表达。2019新版作者前言明确将三位来客说成访Earth者，地球定位因此有作者亲自说明，而非只有行星序号推断。",
+      "recommended_field_notes_append": {
+        "issue": "原刊以Third World/Third Planet命名；地球定位由作者2019 Alien Archives前言的直接说明支持（公开预览行1219），不能说原刊正文直接点名Earth。殖民、生存与认识解释仍待独立核对。"
+      },
+      "recommended_issue_change": "不必删除有作者直接说明支持的地球定位；增加来源层级注释即可。",
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+        "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1954_10.pdf",
+          "type": "原刊扫描正文一手；私人公共数字档案",
+          "support_scope": "本轮重新视觉通读p111–113全部三页，编号世界、p112小写earth及p113雪晶结尾；不推断原刊点名Earth。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.everand.com/book/426221269/Alien-Archives-Eighteen-Stories-of-Extraterrestrial-Encounters",
+          "type": "2019新版作者亲自介绍；公开零售预览",
+          "support_scope": "本轮重新读作者前言网页行1211–1222，尤其1219明确定位来客赴Earth；不同于正文行1223–1280的命名。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q25381757",
+      "identity": {
+        "title": "Bride Ninety-One",
+        "author": "羅伯特·西爾柏格"
+      },
+      "target_component": "early-spatial-round3.json",
+      "affected_paths": [
+        "fields.spatial_rationale"
+      ],
+      "prior_statement_summary": "新冻结空间rationale将Suvorna误拼为Suvarna。",
+      "finding": "原刊p35出发目的地明确拼写Suvorna；空间分类与未到达说明不变。",
+      "recommended_replacement_fields": {
+        "spatial_rationale": "Paul和Landy以地球习俗结婚后乘星际飞船经历六周旅行，到达蜜月行星Thalia；船上事件与异星度假都是实际舞台。第二次婚约后去Suvorna是出发前计划，结尾未展示在那里生活。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1967_09.pdf",
+          "type": "原刊扫描正文一手",
+          "support_scope": "If 1967-09 p35右栏末段实际视觉核见Suvorna；是出发前计划，不是实际到达。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    }
+  ]
+}

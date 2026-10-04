@@ -1,4 +1,4 @@
-import {FIELD_LABELS} from './canonical.mjs?v=round18-sources';
+import {FIELD_LABELS} from './canonical.mjs?v=round19-sources';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const formatValue=v=>Array.isArray(v)?v.map(x=>typeof x==='object'?`${x.label}：${x.question}（依据：${x.basis}）`:x).join('、'):v;
 const num=v=>Number(v).toLocaleString('zh-CN');
@@ -10,7 +10,17 @@ const SEARCH_RESULTS={author_bibliography_read:'已读作者作品目录',author
 export function sourceSearchDetail(w){
  const r=w.source_search_log;if(!r)return '';
  const scope=m=>m.reading_scope||m.support_scope||'';
- const outcomes={fetch_failed:'页面读取失败',community_plot_summary_read:'已读社区情节概要',community_search_text_read:'已读检索返回的社区正文，整页未读',actual_source_scope_read:'已读所列材料，支持范围见下方说明'};
+ const outcomes={
+  fetch_failed:'页面读取失败',
+  community_plot_summary_read:'已读社区情节概要',
+  community_search_text_read:'已读检索返回的社区正文，整页未读',
+  actual_source_scope_read:'已读所列材料，支持范围见下方说明',
+  verification_interstitial:'原篇入口显示验证页面，正文未读',
+  linked_target_unavailable:'链接目标未取得',
+  search_excerpt_only:'仅取得检索摘要，原页全文未读',
+  unavailable:'资料未取得',
+  rejected_adaptation:'改编或续写，不作为原篇依据'
+ };
  const earlier=r.previous_attempts||[];
  return `<section class="detail-section issue-identity-note"><h3>实际检索与阅读记录</h3><p>过程归档：${esc(r.log_date)} · 保留当次查找范围与后续计划。当前分析状态以上方条目为准。</p>${r.queries.length?`<details><summary>实际使用的检索词（${num(r.queries.length)}）</summary><ul>${r.queries.map(q=>`<li>${esc(q)}</li>`).join('')}</ul></details>`:''}${r.query_note?`<p>${esc(r.query_note)}</p>`:''}${r.reading_scope?`<p><strong>这次读到的范围：</strong>${esc(r.reading_scope)}</p>`:''}${r.materials_checked.length?`<ul>${r.materials_checked.map((m,i)=>`<li><a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer">材料 ${i+1} · ${esc(new URL(m.url).hostname)} ↗</a><br>${esc(outcomes[m.result]||SEARCH_RESULTS[m.result]||m.result)}${m.read_date?` · ${esc(m.read_date)}`:''}${scope(m)?`<p>${esc(scope(m))}</p>`:''}</li>`).join('')}</ul>`:''}<p><strong>当次仍待确认：</strong>${esc(r.reason_unconfirmed)}</p><p><strong>当次后续计划：</strong>${esc(r.next_step)}</p>${earlier.length?`<details><summary>保留更早的查读记录（${num(earlier.length)} 轮）</summary>${earlier.map(a=>`<p>${esc(a.reading_scope||a.attempt_state)}<br><strong>当时待确认：</strong>${esc(a.reason_unconfirmed)}<br><strong>当时计划：</strong>${esc(a.next_step)}</p>`).join('')}</details>`:''}</section>`;
 }
