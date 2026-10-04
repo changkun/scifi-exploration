@@ -1,0 +1,2058 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-04",
+    "record_count": 63,
+    "field_count": 144,
+    "source_commit": "a604ca146c4e09f54f1466b11257cce0c4fa024b",
+    "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/root-fast-spatial-round2.json",
+        "sha256": "6521f624c97913ec01f5083d311ae48a35bae05bbf9099941e70d0c9471c5b4a",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "lane": 0,
+          "method": "source-assisted-spatial-navigation-v1",
+          "source_commit": "a604ca146c4e09f54f1466b11257cce0c4fa024b",
+          "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+          "record_count": 18,
+          "facet_count": 88,
+          "attempted_count": 32,
+          "deferred_count": 1,
+          "fast_lane_indices_processed": [
+            0,
+            31
+          ],
+          "next_fast_lane_index": 32,
+          "original_fulltext_read_count": 0,
+          "scope": "实际逐条读取已取得的身份对应简介；四条简介不足时一次精准搜索取得明确内容，一条延后。社区简介、作者书介、检索返回区别保存，全部待核。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round2.json",
+        "sha256": "15010dd09523e18d76de9cc01330427b71aba09b10d88274b6b0caa59acf92d7",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "scope": "lane1近期R2独立空间输入；仅具体已读地点、canonical原空间未知；不由议题或年代推断。",
+          "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+          "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+          "record_count": 8,
+          "attempted_count": 4,
+          "deferred_count": 0,
+          "starts_at_lane_index": 16,
+          "frozen_source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_indices_processed": [
+            16,
+            31
+          ],
+          "next_lane_index": 32,
+          "validation": "逐ID身份、原字段守恒、lane顺序、合法议题、两句解释、2–4具体facet与实际URL范围检查；格式和证据范围通过不等于全文或独立书目核验。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round3.json",
+        "sha256": "3eea1d1e70045a948b0d70fc627c7539c023eadb4e7ee4b07db1ffa06e937310",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "scope": "lane1近期R3独立空间输入，仅canonical未知且本作材料明确场景。",
+          "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+          "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+          "record_count": 9,
+          "attempted_count": 0,
+          "deferred_count": 0,
+          "starts_at_lane_index": 32,
+          "frozen_source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+          "lane_indices_processed": [
+            32,
+            47
+          ],
+          "next_lane_index": 48,
+          "validation": "逐ID身份、原字段守恒、lane顺序、合法议题、两句解释、2–4具体facet与实际URL范围检查；格式和证据范围通过不等于全文或独立书目核验。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round4.json",
+        "sha256": "0becdc0a86ef24b8ce884d3866eb4644395155d8120230c04ae6f1e2336df020",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "独立空间输入，仅当前未知且本实体已读简介明确舞台；非物理坐标。",
+          "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+          "starts_at_fast_index": 0,
+          "record_count": 11,
+          "frozen_source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+          "fast_indices_processed": [
+            0,
+            19
+          ],
+          "next_fast_index": 20,
+          "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+          "network_scope": "19份分析全据已取得社区简介；仅延后Anomaly补读一次出版方教学概览，未取得关键机制。",
+          "original_full_read_count": 0
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round2.json",
+        "sha256": "863e52bcf7509f73bb4ab986f8622f91db36708362b4d3fa1c4113289d06b5ba",
+        "metadata": {
+          "method": "recent-first-source-supported-spatial-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "note": "只补当前unknown且实际材料场所明确的作品；舞台与威胁范围、流派标签分开；待独立核对。",
+          "freeze_date": "2026-10-04",
+          "record_count": 8,
+          "field_count": 16,
+          "zone_counts": {
+            "earth": 5,
+            "planetary": 1,
+            "interstellar": 2,
+            "galactic": 0,
+            "cosmic": 0,
+            "abstract": 0
+          }
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round3.json",
+        "sha256": "4e82cac46fffa11b41f202de61934ebcba6b4447d9f0424e4efb8162b8f0b913",
+        "metadata": {
+          "method": "actual-blurb-knowledge-spatial-v1",
+          "status": "frozen_checkpoint",
+          "lane": 2,
+          "record_count": 5,
+          "field_count": 10,
+          "note": "只补当前unknown且具体场所已读的单个作品/卷；社区或零散系列选例不足者不补。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round4.json",
+        "sha256": "33213a17103ecbf4103f9508c8969febaa3753abf01fee21f916459365e6e004",
+        "metadata": {
+          "method": "matched-community-synopsis-knowledge-spatial-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 5,
+          "field_count": 10,
+          "note": "明确地点才补原unknown；集合只读选例不补整体。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 0,
+      "cosmic": 0,
+      "earth": 28,
+      "galactic": 6,
+      "interstellar": 13,
+      "planetary": 16
+    },
+    "scope": "只补原unknown且有明示场所支持的条目；未知不由题名或议题推断，已有定位保持不动。"
+  },
+  "records": [
+    {
+      "id": "Q130581281",
+      "identity": {
+        "title": "轨道",
+        "author": "萨曼莎·哈维"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "空间站人员在轨道中生活并俯瞰下方地球，只归地月／行星层，不由星座景观扩为银河。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL35708581W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL35708581W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL35708581W",
+          "record_sha256": "51afdb447d652c380b30ad1ce60835b5e46ebd6cbce852801ff8f98c8068d51a"
+        }
+      ]
+    },
+    {
+      "id": "Q132201099",
+      "identity": {
+        "title": "The Potent Solution",
+        "author": "Ashley Nova"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确Charlotte在London接受炼金与侦探训练；是虚构魔法伦敦，不代表科学或历史核验。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL42104959W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL42104959W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL42104959W",
+          "record_sha256": "6221f2c02ab77c62bc55ce5cf9d0344c29a47e35a35530178bd5a49f68f6b0be"
+        }
+      ]
+    },
+    {
+      "id": "Q111814836",
+      "identity": {
+        "title": "The High Country",
+        "author": "John Jackson Miller"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确新世界表面的荒野与火山区域是失散船员的实际求生舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL27807824W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL27807824W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL27807824W",
+          "record_sha256": "b1f433758a4fdcdb912481bfc92ca4d77755625548a4e37c0f2ede230fa2cb35"
+        }
+      ]
+    },
+    {
+      "id": "Q112787692",
+      "identity": {
+        "title": "Nona the Ninth",
+        "author": "塔姆辛·缪尔"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "Nona实际生活的城市位于受到蓝色球体威胁的行星；天体未命名，不推断球体起源。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL26426935W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL26426935W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL26426935W",
+          "record_sha256": "d6a07e9890cb396a76b05cc645208ef94564c3e0d4e371e767d5db18b0064b8c"
+        }
+      ]
+    },
+    {
+      "id": "Q106838947",
+      "identity": {
+        "title": "Persephone Station",
+        "author": "Stina Leicht"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介直接称Persephone为planet，并指出West Brynner公司城与Monk’s Bar。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL21933204W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL21933204W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL21933204W",
+          "record_sha256": "fda97a73a4a26afc222f0226ebe531facf2f88fb608ff2bb0b650db7a250aa22"
+        }
+      ]
+    },
+    {
+      "id": "Q112107064",
+      "identity": {
+        "title": "The Autobiography of Kathryn Janeway",
+        "author": "Una McCormack"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书明确叙述Voyager在Delta Quadrant接触多个世界与跨银河的新联盟；目的地神话未采用。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL22030556W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL22030556W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL22030556W",
+          "record_sha256": "d4e8e0b019fcac8dc1b82aea62996e48d3c4a881c67bd0e1db766129218fbf09"
+        }
+      ]
+    },
+    {
+      "id": "Q55609029",
+      "identity": {
+        "title": "Dark Age",
+        "author": "皮爾斯·布朗"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷简介直接点名Darrow实际战场Mercury与Virginia所在Luna；不由全文系列补更大尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20072759W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20072759W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL20072759W",
+          "record_sha256": "90355778a0f39d71721aa54941b341c8810b972ac528ea4aa6ca95e0ecf2c870"
+        }
+      ]
+    },
+    {
+      "id": "Q85624939",
+      "identity": {
+        "title": "Semiosis",
+        "author": "Sue Burke"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确殖民者登陆并与该星球有感知的物种交流，不从作者或题名猜地名。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20159168W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20159168W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL20159168W",
+          "record_sha256": "f40d3c2c149c7abb000bb192e404e5efac83c7966543c7d356352df41bd4dd3a"
+        }
+      ]
+    },
+    {
+      "id": "Q139881236",
+      "identity": {
+        "title": "Black Ops",
+        "author": "Craig Alanson"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_secondary": [],
+        "spatial_rationale": "作者本卷书介明确星舰侦察往地球的异族星舰、转向另一星球Paradise部队的任务，不移入后卷光年距离。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL24759965W",
+        "https://david-odell-plal.squarespace.com/craig-alanson-books/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24759965W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL24759965W",
+          "record_sha256": "2cfdaaa4fe7e7986d35410c1e9a30b246fbf14ff3fc0a99522cc1178f09d6a0f"
+        },
+        {
+          "url": "https://david-odell-plal.squarespace.com/craig-alanson-books/",
+          "type": "作者书目中的本卷简介",
+          "support_scope": "实际打开并find读第67行Black Ops／Expeditionary Force Book4段落；不使用Book3、5、6的其他情节。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q28324890",
+      "identity": {
+        "title": "Carve the Mark",
+        "author": "韦罗妮卡·罗思"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷人物实际位于同一行星的Shotet与Thuvhe社会；银河背景不是实际跨银河旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17710061W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17710061W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL17710061W",
+          "record_sha256": "6f4ea5cd0a0f2a29d75fd353da6e083cf8b2328cfbf8abc3cbe2084262c94985"
+        }
+      ]
+    },
+    {
+      "id": "Q54565958",
+      "identity": {
+        "title": "Qualityland",
+        "author": "马克-乌维·克林"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "QualityLand简介明确是Earth上的国家，QualityCity为Peter的工作生活地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19792034W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19792034W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL19792034W",
+          "record_sha256": "f8725c223f5042e1f2f30a974b05beeb07c165b8871b6a4e104cc85169e434f6"
+        }
+      ]
+    },
+    {
+      "id": "Q16385288",
+      "identity": {
+        "title": "完美圈套",
+        "author": "大衛·艾格斯"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "出版社简介直接点名California园区；网络统一身份不代替地面实际场所。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16808654W",
+        "https://www.penguinrandomhouse.com/books/232010/the-circle-by-dave-eggers/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16808654W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16808654W",
+          "record_sha256": "6000ad4ecc055d17b98b939afab59948b07fe2ffbe1dd24d450b05bd3fe83a92"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/232010/the-circle-by-dave-eggers/",
+          "type": "出版社本书简介搜索返回",
+          "support_scope": "实际搜索返回Book Description本书段落：统一网络身份、加州公司园区及Mae生活日益公开；没有点开Read Sample。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q20311908",
+      "identity": {
+        "title": "一級艦隊",
+        "author": "恩内斯特·克莱恩"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷简介明确Zack所处现实地球及保卫Earth的动员；不补未读的外太空行程。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17343072W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17343072W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL17343072W",
+          "record_sha256": "52e709dea39b458faeff70ba89baf40a5dce13319ebdf0199a7fbe087776f190"
+        }
+      ]
+    },
+    {
+      "id": "Q23763212",
+      "identity": {
+        "title": "Karen Memory",
+        "author": "Elizabeth Bear"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确Seattle／Rapid City、Alaska航路与城市海滨，是地球的虚构蒸汽朋克版本。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19668290W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19668290W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL19668290W",
+          "record_sha256": "c5d9e78e38621d792cb21fc03f3ec8aec174a053480da58f3b41332803b92642"
+        }
+      ]
+    },
+    {
+      "id": "Q18414335",
+      "identity": {
+        "title": "Steadfast",
+        "author": "John G. Hemry"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷实际护送到Earth、追踪到Europa；Europa登陆限制为明确舞台而非已确认登陆。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19981155W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19981155W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL19981155W",
+          "record_sha256": "58d07e808650c2167ae75fd5aa391b577f61a29ed640f0d9206884b1b7fe71ca"
+        }
+      ]
+    },
+    {
+      "id": "Q19868032",
+      "identity": {
+        "title": "The Book of Strange New Things",
+        "author": "米歇爾·法柏"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确传教舞台在距离Earth数光年的world，与故乡灾害并置，符合恒星际尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20715148W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20715148W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL20715148W",
+          "record_sha256": "3967fab324e5bb1473be1f6b8714a61c9bb929a9da5e5ef5f56b3acb853f8e19"
+        }
+      ]
+    },
+    {
+      "id": "Q15052477",
+      "identity": {
+        "title": "放血尖端",
+        "author": "托马斯·品钦"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "出版社本书简介明确2001年的New York City与Upper West Side调查舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_secondary": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。",
+        "spatial_rationale": "只据已读材料明确场所作导航；社区简介可能有错，仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17094387W",
+        "https://www.penguinrandomhouse.com/books/306761/bleeding-edge-by-thomas-pynchon/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17094387W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL17094387W",
+          "record_sha256": "5c5d1db1c37ada3b4e433ad4fb934842ca9fe1c6e6ff58d794e31d24547e1ca4"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/306761/bleeding-edge-by-thomas-pynchon/",
+          "type": "出版社本书简介搜索返回",
+          "support_scope": "实际搜索返回2001纽约、网络泡沫崩溃与9/11之间、欺诈调查、技术圈人物及神秘死亡的Book Description；未读Sample。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q136769505",
+      "identity": {
+        "title": "A Philosophy of Thieves",
+        "author": "Fran Wilde"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要舞台为气候崩溃后的New Washington聚居地；评论另列Alaska流放。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅依据本书出版简介的聚居地和书评明确Alaska地点，待原作核对。",
+        "spatial_rationale": "城市与地理位置来自本书材料，不由赛博题材或未来年代推断。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/781353/a-philosophy-of-thieves-by-fran-wilde/",
+        "https://www.publishersweekly.com/9781645661948"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/781353/a-philosophy-of-thieves-by-fran-wilde/",
+          "support_scope": "本书New Washington社会舞台，出版简介。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9781645661948",
+          "support_scope": "实际读书评缓存的气候崩溃、New Washington与Alaska流放威胁；未读全篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q137918714",
+      "identity": {
+        "title": "Bee Speaker",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "火星工作团队响应地球求救并返航；主要路线在太阳系。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书简介直接指Mars、Earth与返航；没有从生物朋克题材推断。仅阅读导航，待原作核对。",
+        "spatial_rationale": "依据本作品已读明确地点，不表示物理坐标。"
+      },
+      "sources": [
+        "https://www.bloomsbury.com/us/bee-speaker-9781035901456/",
+        "https://www.bloomsbury.com/media/3zrmwbqh/final-hoz-pr-ss25-catalogue.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.bloomsbury.com/us/bee-speaker-9781035901456/",
+          "support_scope": "实际读本书Head of Zeus/Bloomsbury简介：地球渐进崩溃、火星合作、Bees与返航救援；美国精装列2025-06-03。未读全篇或救援结局。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.bloomsbury.com/media/3zrmwbqh/final-hoz-pr-ss25-catalogue.pdf",
+          "support_scope": "实际读官方2025春夏目录本书条目缓存，英国精装列2025-06-05；简介与后来的书页有微小措辞差别，未用作原作版本不同的证据。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q138309049",
+      "identity": {
+        "title": "Bellatrix, épisode 3",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "两位地球人的任务发生在Bellatrix行星；轨道外舰队控制联络。"
+      },
+      "field_notes": {
+        "spatial_primary": "第三册简介明确Bellatrix是行星，舰队在太空；不继承系列其他恒星地点。仅阅读导航，待原作核对。",
+        "spatial_rationale": "依据本作品已读明确地点，不表示物理坐标。"
+      },
+      "sources": [
+        "https://www.dargaud.com/bd/les-mondes-daldebaran/bellatrix/bellatrix-tome-3-bellatrix-tome-3-bda5594210",
+        "https://www.dargaud.com/actualites/bellatrix-nouvelle-planete-des-mondes-daldebaran-photo"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.dargaud.com/bd/les-mondes-daldebaran/bellatrix/bellatrix-tome-3-bellatrix-tome-3-bda5594210",
+          "support_scope": "实际读Dargaud第三册简介：Bellatrix行星、隐蔽任务、敌意外来者、Arctarode舰队及联络禁令；列Leo编绘、2025-10-03。未读漫画正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.dargaud.com/actualites/bellatrix-nouvelle-planete-des-mondes-daldebaran-photo",
+          "support_scope": "实际读出版方系列介绍中Episode3独立段落：营救Leda、Kim的异常暴力与外星群体监视；其余卷册内容未继承本条。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q139678791",
+      "identity": {
+        "title": "Slow Gods",
+        "author": "Catherine Webb"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Maw的经历与Slow的预警跨越多个星系及文明网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版方明确galaxy-spanning，作者访谈介绍多个政体与世界；不是将百年或超新星自动换成空间。仅阅读导航，待原作核对。",
+        "spatial_rationale": "依据本作品已读明确地点，不表示物理坐标。"
+      },
+      "sources": [
+        "https://www.hachettebookgroup.com/titles/claire-north/slow-gods/9780316586306/?lens=orbit",
+        "https://www.kirkusreviews.com/book-reviews/claire-north/slow-gods/",
+        "https://fantasy-hive.co.uk/2025/11/slow-gods-by-claire-north-author-interview/",
+        "https://www.hachette.co.uk/titles/claire-north/slow-gods/9780356526201/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachettebookgroup.com/titles/claire-north/slow-gods/9780316586306/?lens=orbit",
+          "support_scope": "实际读Orbit美国书页完整缓存：Maw的死亡与重生、复制品自述、超新星及跨星文明；作者栏明确Claire North是Catherine Webb笔名；列2025-11-18且仍有旧预购提示。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/claire-north/slow-gods/",
+          "support_scope": "实际读书评缓存开头：劳动与Shine社会、Slow约百年超新星预警及权力封锁；所列release2025-09-16与美国出版书页日期不同，未强行统一。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://fantasy-hive.co.uk/2025/11/slow-gods-by-claire-north-author-interview/",
+          "support_scope": "实际读作者访谈开头关于Maw是普通人、被更大决定波及，以及多个政体和文明的舞台；非原作全文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.hachette.co.uk/titles/claire-north/slow-gods/9780356526201/",
+          "support_scope": "实际读英国2026-06-09平装页及本书简介缓存；该日期是此格式，未当成2025小说首次出版年。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q139973521",
+      "identity": {
+        "title": "Hole in the Sky",
+        "author": "丹尼尔·H·威尔逊"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [
+          "planetary"
+        ],
+        "spatial_rationale": "接触过程从Oklahoma、Houston NASA与美国地下设施展开，远端Voyager 1提供太阳系观测。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版简介明确地球各地点为人物舞台；不把未知来者路线当作已知恒星际场景。",
+        "spatial_secondary": "Voyager 1在太阳系远端的互动是已读简介明确观测地点。",
+        "spatial_rationale": "依据本书具体地名和探测器观测，不由第一接触类型猜测。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/763900/hole-in-the-sky-by-daniel-h-wilson/",
+        "https://citylights.com/sci-fi-fantasy/hole-in-the-sky/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/763900/hole-in-the-sky-by-daniel-h-wilson/",
+          "support_scope": "实际读出版简介的地球地点与Voyager 1观测；未读原作全篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://citylights.com/sci-fi-fantasy/hole-in-the-sky/",
+          "support_scope": "实际读出版简介的地球地点与Voyager 1观测；未读原作全篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q141533511",
+      "identity": {
+        "title": "Wisdom: Starship Emissary",
+        "author": "Mark D. Owen"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "使团以Proxima Centauri b为目标，地月基地与星舰建造支撑跨恒星任务。"
+      },
+      "field_notes": {
+        "spatial_primary": "作者本书段落明确Proxima Centauri b，不能因为文案说galactic importance就放到星系。阅读导航仍待核。",
+        "spatial_rationale": "仅使用本作具体简介地点，不代表已读全文。"
+      },
+      "sources": [
+        "https://www.markdowen.com/",
+        "https://www.barnesandnoble.com/w/wisdom-mark-d-owen/1148201700"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.markdowen.com/",
+          "support_scope": "实际读作者主页WISDOM—Starship Emissary独立段落：Flax、Proxima Centauri b、Tamarind建船及Moonbase Verity秘密；没有继承主页IMPACT剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.barnesandnoble.com/w/wisdom-mark-d-owen/1148201700",
+          "support_scope": "实际读B&N完整本书简介：和平任务、新手与新船、编码秘密、个人牺牲及内外危险；纸书列2025-07-15。未读全篇，不采用宣传比较证明科学准确。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q119457882",
+      "identity": {
+        "title": "Firewall",
+        "author": "大衛·艾倫·麥克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Seven离开地球并加入Fenris Rangers开展星际执法。"
+      },
+      "field_notes": {
+        "spatial_primary": "作者及出版简介明确离地球与interstellar巡逻队，不按Star Trek全宇宙最大范围摆放。阅读导航仍待核。",
+        "spatial_rationale": "仅使用本作具体简介地点，不代表已读全文。"
+      },
+      "sources": [
+        "https://davidmack.pro/writing/firewall/",
+        "https://www.simonandschuster.co.uk/books/Star-Trek-Picard-Firewall/David-Mack/Star-Trek-Picard/9781668046357"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://davidmack.pro/writing/firewall/",
+          "support_scope": "实际读作者本书简介：拒绝公民资格、离地球、Rangers和Janeway友谊；美国精装列2024-02-27，2025平装另记。未读原作全文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.simonandschuster.co.uk/books/Star-Trek-Picard-Firewall/David-Mack/Star-Trek-Picard/9781668046357",
+          "support_scope": "实际读英国出版书页：Voyager归来两年后、本书前传身份和Rangers；英国页同ISBN列2024-02-29，与作者美国日期分别保留。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q125501091",
+      "identity": {
+        "title": "Batman: Resurrection",
+        "author": "John Jackson Miller"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要行动与医疗危机集中在Gotham City。"
+      },
+      "field_notes": {
+        "spatial_primary": "原作出版简介和作者电影续作定位明确Gotham城市舞台，不由超级英雄体裁推断宇宙范围。阅读导航仍待核。",
+        "spatial_rationale": "仅使用本作具体简介地点，不代表已读全文。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/750157/batman-resurrection-by-john-jackson-miller/",
+        "https://farawaypress.com/fiction/batmanresurrection/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/750157/batman-resurrection-by-john-jackson-miller/",
+          "support_scope": "实际读Random House Worlds完整简介：毒剂幸存者、纵火、利益、科学合作与执念；精装2024-10-15，平装2025-07-08。未读谜团答案。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://farawaypress.com/fiction/batmanresurrection/",
+          "support_scope": "实际读作者书页：原创小说接续Tim Burton第一部电影、首版2024-10-15；其平装列2025-07-28，与出版页07-08有差异，未替它裁定。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q127501755",
+      "identity": {
+        "title": "Star Wars: Escape from Valo",
+        "author": "Daniel José Older / 艾莉莎·王"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要求生和逃离任务在被占领的Valo行星，藏处位于Lonisa动物园废墟。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书官方人物介绍称Valo是行星，授权节选明确当地动物园；不取Star Wars全银河最大范围。阅读导航，非物理坐标。",
+        "spatial_rationale": "实际材料明确舞台，非全文核验。"
+      },
+      "sources": [
+        "https://books.disney.com/book/star-wars-the-high-republic-escape-from-valo/",
+        "https://www.starwars.com/news/the-high-republic-escape-from-valo-excerpt",
+        "https://www.starwars.com/news/inside-the-high-republic-phase-3-new-heroes"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.disney.com/book/star-wars-the-high-republic-escape-from-valo/",
+          "support_scope": "实际读出版方本书简介：通讯受阻的占领区域、Ram与年轻绝地合作逃离；列2024-01-30。未读整部长篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.starwars.com/news/the-high-republic-escape-from-valo-excerpt",
+          "support_scope": "实际读官方授权节选完整检索正文：动物园藏处、Tep Tep动物照料、Ram与三年轻人及训练请求；这是书中节选，不是全书。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.starwars.com/news/inside-the-high-republic-phase-3-new-heroes",
+          "support_scope": "实际读官方本书人物介绍和Alyssa Wong发言：Gavi创伤与原力丧失、三位年轻人关系。其他Phase III作品未继承。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q130301047",
+      "identity": {
+        "title": "The Editors",
+        "author": "Stephen Harrison"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "人物从New York编辑大会追查信息战争，作者另列Beijing与Kansas编辑。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书作者简介明确现实地名与当代网络舞台，不将线上百科当作物理宇宙。阅读导航，非物理坐标。",
+        "spatial_rationale": "实际材料明确舞台，非全文核验。"
+      },
+      "sources": [
+        "https://stephenharrison.com/the-editors",
+        "https://www.inkshares.com/books/infodemic",
+        "https://www.inkshares.com/books/infodemic/discussion"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://stephenharrison.com/the-editors",
+          "support_scope": "实际读作者完整本书简介：Morgan失业报道、编辑大会黑客攻击、Infopendium原则及信息战；未读全书或幕后身份。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.inkshares.com/books/infodemic",
+          "support_scope": "实际读出版页：志愿编辑、政府与富豪雇佣编辑、疫情前的信息攻防；页面称Available now。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.inkshares.com/books/infodemic/discussion",
+          "support_scope": "实际读作者更新缓存：原题Infodemic后改The Editors；较晚更新称正式2024-08-13并提早向支持者提供电子版，先前计划08-06不混为最终出版日。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q130727226",
+      "identity": {
+        "title": "Livesuit",
+        "author": "詹姆斯·S·A·科里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Livesuit部队投入跨银河持续战争，Kirin任务面对非人世界与星际通信。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版方本作明确战争spread across the galaxy，开篇是Kirin具体异星任务；标签待原作进一步核对。阅读导航，非物理坐标。",
+        "spatial_rationale": "实际材料明确舞台，非全文核验。"
+      },
+      "sources": [
+        "https://www.hachette.co.nz/james-s-a-corey/livesuit",
+        "https://www.planocritico.com/critica-livesuit-a-guerra-do-cativo-1-5-de-james-s-a-corey/",
+        "https://bingebooks.com/book/livesuit"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.co.nz/james-s-a-corey/livesuit",
+          "support_scope": "实际读Orbit地区页：首部Captive’s War novella、跨银河战争与身体融合；电子版2024-10-01。未由The Mercy of Gods继承角色或年代。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.planocritico.com/critica-livesuit-a-guerra-do-cativo-1-5-de-james-s-a-corey/",
+          "support_scope": "实际读葡语书评正文缓存关于Kirin战甲生理、通信与时间膨胀；书评对未来系列影响的猜测未采用。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://bingebooks.com/book/livesuit",
+          "support_scope": "实际读书页缓存所含开篇一段：Kirin观察非人桥形结构及小队战甲通信。只读此开头，不声称全篇或结局已核。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131244277",
+      "identity": {
+        "title": "Cosmopirates, tome 1 : Captif de l'oubli",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "七银行统治者控制整个银河并执行跨世界暴力，Xar-Cero在其网络中行动。"
+      },
+      "field_notes": {
+        "spatial_primary": "本册出版简介明确银河统治网络，不由space opera类型词单独推断。阅读导航，非物理坐标。",
+        "spatial_rationale": "实际材料明确舞台，非全文核验。"
+      },
+      "sources": [
+        "https://www.humano.com/album/37468",
+        "https://www.bandedessinee.info/Cosmopirates-1-bd"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.humano.com/album/37468",
+          "support_scope": "实际读Humanoïdes Associés第一册完整简介：七银行统治者、Xar-Cero责任与抹忆；列2024-11-06、Jodorowsky编剧/Pete Woods绘色。未读正文或第二册。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.bandedessinee.info/Cosmopirates-1-bd",
+          "support_scope": "实际读第一册书目与同出版简介缓存，仅核对卷册与ISBN9782731689112，不把系列第二册正文继承。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131674640",
+      "identity": {
+        "title": "Frontier",
+        "author": "Guillaume Singelin"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "资源前线离开地球，原出版简介明确把新领域延展到太阳系行星之外。"
+      },
+      "field_notes": {
+        "spatial_primary": "本作法文出版方明确au-delà des planètes du système solaire，英文版另具体小行星矿工；不是仅凭太空题材分类。阅读导航，非物理坐标。",
+        "spatial_rationale": "仅本作品已读简介或评论支持范围，不是全文核验。"
+      },
+      "sources": [
+        "https://www.editions-ruedesevres.fr/Frontier",
+        "https://www.magnetic-press.com/frontier/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.editions-ruedesevres.fr/Frontier",
+          "support_scope": "实际读Rue de Sèvres法文完整简介及2023-04-12出版资料：资源耗尽、三人物、地球之外生活。未读漫画正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.magnetic-press.com/frontier/",
+          "support_scope": "实际读英文版完整简介：资源开采、三人职业和人生道路；列2024年7月英语版，不能当作法文原作首年。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134108919",
+      "identity": {
+        "title": "We Called Them Giants",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "文明废墟中的Lori与同伴在原有人类街道拾荒，巨人来到其求生环境。"
+      },
+      "field_notes": {
+        "spatial_primary": "本作Image简介明确空街道、文明遗址及当地帮派，分销方所引Foreword明确post-apocalyptic Earth；只取地球主舞台。阅读导航，非物理坐标。",
+        "spatial_rationale": "仅本作品已读简介或评论支持范围，不是全文核验。"
+      },
+      "sources": [
+        "https://imagecomics.com/comics/releases/we-called-them-giants-hc-vol-1",
+        "https://www.publishersweekly.com/9781534387072",
+        "https://www.simonandschuster.net/books/We-Called-Them-Giants/Kieron-Gillen/9781534387072"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://imagecomics.com/comics/releases/we-called-them-giants-hc-vol-1",
+          "support_scope": "实际读Image独立原创新漫画简介：Lori、空城、求生帮派、巨人和通信鸿沟；列2024-10-30。未读漫画正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9781534387072",
+          "support_scope": "实际读PW完整评论：Lori与Annette拾荒、Dogs、Beatrice、巨人和保护者；只借具体求生与信任依据，不声称原作已读。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.simonandschuster.net/books/We-Called-Them-Giants/Kieron-Gillen/9781534387072",
+          "support_scope": "实际读同ISBN简介与2024-11-12分销日期；原出版方10月30日与分销日期分开，原底库作者未知保留。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134528243",
+      "identity": {
+        "title": "Koinè",
+        "author": "Mélanie Bost-Fiévet"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "革命后的人类居住于Koinè群岛，旅馆避难所面对当地地震。"
+      },
+      "field_notes": {
+        "spatial_primary": "本作La Volte简介明确La Terre sauvée和群岛、地震，故地球舞台；不从乌托邦类型推断。阅读导航，非物理坐标。",
+        "spatial_rationale": "本卷简介支持范围，未读原作全文。"
+      },
+      "sources": [
+        "https://lavolte.net/products/koine"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://lavolte.net/products/koine",
+          "support_scope": "实际读La Volte完整简介：革命后群岛、失落住客、模拟器和地震；2024-03-21、Eutopia novella。未读正文或灾害结局。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q135710776",
+      "identity": {
+        "title": "Alliance Unbound",
+        "author": "C·J·彻里 / Jane Fancher"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "冲突沿Cyteen、Alpha与Sol之间的星际跳跃路线和空间站网络展开。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷具体地点与星船路线支持恒星际；简介宣传用intergalactic不额外证明跨多个星系，保守取interstellar。阅读导航，非物理坐标。",
+        "spatial_rationale": "本卷简介支持范围，未读原作全文。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/607323/alliance-unbound-by-c-j-cherryh-and-jane-s-fancher/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/607323/alliance-unbound-by-c-j-cherryh-and-jane-s-fancher/",
+          "support_scope": "实际读DAW经PRH本卷完整简介：免费FTL、地图排除、Alpha饥饿与军事大船；列2024-10-15。赞誉标明来自Alliance Rising，未把其情节借给本卷。未读小说。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q137806747",
+      "identity": {
+        "title": "Prédiction",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Team Shadow在太空追寻失散殖民船，并到植物小行星调查外来文明的动机。"
+      },
+      "field_notes": {
+        "spatial_primary": "本册出版简介明确太空殖民船救援与小行星目的地，保守取恒星际航行，不把整个宇宙宣传语当物理坐标。",
+        "spatial_rationale": "仅本册实际读到的舞台；漫画正文和路线尺度未独立核验。"
+      },
+      "sources": [
+        "https://www.glenat.com/glenat-bd/colonisation-tome-08-9782344040034/",
+        "https://www.planetebd.com/bd/glenat/colonisation/prediction/53217.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.glenat.com/glenat-bd/colonisation-tome-08-9782344040034/",
+          "support_scope": "实际读Glénat第八册Prédiction完整简介：Team Shadow、Atil赠礼、Raylan、植物小行星与Garns；列2024-01-17、Filippi编剧/Cucca绘制。未读漫画正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.planetebd.com/bd/glenat/colonisation/prediction/53217.html",
+          "support_scope": "实际读署名Mick Léonard书评开头：两队在有机星球调查，Ag与Nilat冲突原因不向人类同伴说明；未使用评论未读后段或系列谜底。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q113520957",
+      "identity": {
+        "title": "Mickey7",
+        "author": "Edward Ashton"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "人类殖民队在冰雪世界Niflheim执行危险任务，两个Mickey在那里发生身份重叠。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确指定Niflheim为ice world殖民目标。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL24546118W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24546118W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "f924422061e8374f013a864238dbf6ad9dad62249aeafe3b212d3b5760a49334",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q111914310",
+      "identity": {
+        "title": "Light From Uncommon Stars",
+        "author": "丽卡·青木"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "三名主角的生活交汇在California的San Gabriel Valley甜甜圈店与音乐环境。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确现实地名California San Gabriel Valley；Lan过去星际经历不改变本书此处主要舞台。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL24167486W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24167486W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "35477d5af59ced1569d810f0ea9ef24c8c0cd9e592b78d3a295068a48f2496bf",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q122452564",
+      "identity": {
+        "title": "Marque of Caine",
+        "author": "Charles E. Gannon"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Riordan从Dornaani医疗社会出发，穿越危险世界并到达已知太空边缘之外。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确跨世界寻找病人、beyond the edge of known space与对地球的威胁。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20850438W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20850438W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "77594a676d172fc2e38cde765a158fe575b0543883de19978728c744fcef7266",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q123528533",
+      "identity": {
+        "title": "Finder",
+        "author": "Suzanne Palmer"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "取船任务位于人类居住太空边缘的Cernee深空殖民地，并面对来访外星船。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确deep space colony和人类太空最远角落；不由interstellar repo man职业单词单独推断。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL21292801W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL21292801W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "d1b7a91a31a8a13190f31a89ebc44ac9d422a7a8dcac669eaf81c988fa0ba79b",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q96650197",
+      "identity": {
+        "title": "Wanderers",
+        "author": "Chuck Wendig"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "梦游者与保护亲友的队伍穿越美国，沿途面对社会恐惧与民兵。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书简介明确across America和美国社会崩解，不从末世体裁推断位置。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20073919W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20073919W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "1f558423799179b80c42a87f5d4e07c3f8f56bef26393f7e3fa0098c8a514b53",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q115010844",
+      "identity": {
+        "title": "The Electric State",
+        "author": "西蒙·斯托伦哈格"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "少女与机器人穿越1997年另类美国景观，向大陆西端移动。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确American landscape及west across continent；未来技术存在于这个地球舞台。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19761147W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19761147W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "ecd13432a06ba0b74d96cf21dc707244bc8c8f1aa76b87f035661ac2cfa416c1",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q41663453",
+      "identity": {
+        "title": "An Absolutely Remarkable Thing",
+        "author": "漢克·葛林"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Carls先后出现在纽约、北京和Buenos Aires等地球城市，April应对国际媒体。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介列实际城市并描述全球同类现象；未知雕像来源不决定当前故事主舞台。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19649395W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19649395W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "652fcff9f848139f3cc8f032bee4bf361e4b0873c869c86fefc50f5f2d405338",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q113962000",
+      "identity": {
+        "title": "An Excess Male",
+        "author": "Maggie Shen King"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "2030年的中国社会以生育政策、人口不均与家庭寻找为主要环境。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确China和2030，地球社会舞台；年份与现实人口有效性另待核。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19717917W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19717917W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "525521c82f5cf7ee2871b0e2162251c1b73d9da48bafd087315f0b75a74d8e1a",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q28402896",
+      "identity": {
+        "title": "Dragon Teeth",
+        "author": "迈克尔·克莱顿"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "1876年美国西部化石采集，William在Cheyenne及西部地区保护发现。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确America western territories与Cheyenne Wyoming；历史小说边界不影响舞台定位。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17881779W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17881779W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "563cbf41c92612b33012f84d2ef9a8808c88a6e10018ce2fd7d807b1d620e974",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q30612289",
+      "identity": {
+        "title": "For We Are Many",
+        "author": "Dennis E. Taylor"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Bob复制探测器离开地球寻找宜居星球，遇见另一航天物种，同时关注地球灾难。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确从地球扩散四十年、寻找其他行星与spacefaring species；不从四十年时间跨度推空间。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19742648W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19742648W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "ec5d27d518d5f555add21948e80d01aea294d132c4c9c144481dcad28b98234f",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q54488341",
+      "identity": {
+        "title": "太空的六場葬禮",
+        "author": "慕兒·拉佛提"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "六名克隆船员在Dormire星舰这一封闭舞台调查前身谋杀。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确lone ship和starship Dormire；标签表示星舰/深空导航，确切坐标与航程未核。仅本实体已读简介；导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17879630W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17879630W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "record_sha256": "b472ca3d17267301a3ed0fab5db34565234ee295638b13dc452c72bc0adc10c1",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q138633472",
+      "identity": {
+        "title": "Sunward",
+        "author": "William Alexander"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "官方书介明确从Luna前往Phoebe Station，随后在太阳系追逐；将这些实际地点归入行星/太阳系航区，不因“stars”宣传语改成跨恒星。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际读取 Simon & Schuster 官方页面及其搜索返回的完整书介，支持 Tova、Agatha、首次 Luna—Phoebe Station 航程、太阳系追逐、AI 心智风险与选择家庭。2025-09-16 出版资料已读；未读取小说正文或追逐结局。空间支持范围：官方书介明确从Luna前往Phoebe Station，随后在太阳系追逐；将这些实际地点归入行星/太阳系航区，不因“stars”宣传语改成跨恒星。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.net/books/Sunward/William-Alexander/9781668058053"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.net/books/Sunward/William-Alexander/9781668058053",
+          "support_scope": "实际读取 Simon & Schuster 官方页面及其搜索返回的完整书介，支持 Tova、Agatha、首次 Luna—Phoebe Station 航程、太阳系追逐、AI 心智风险与选择家庭。2025-09-16 出版资料已读；未读取小说正文或追逐结局。空间支持范围：官方书介明确从Luna前往Phoebe Station，随后在太阳系追逐；将这些实际地点归入行星/太阳系航区，不因“stars”宣传语改成跨恒星。"
+        }
+      ]
+    },
+    {
+      "id": "Q139711231",
+      "identity": {
+        "title": "What a Fish Looks Like",
+        "author": "Syr Hayati Beker"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "故事整体等待最后飞船离开地球的十天，以Seb/Jay的留守与离开抉择为当前舞台。新行星是未来目的地，未把尚未读到的航程推成星际主区。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际读取 Stelliform 官方完整搜索返回书介，支持 Seb/Jay、十天、最后飞船、留守/撤离及六则童话与多种文档形式。2025-09-04 出版资料已读。第一轮分析为 novella-in-fairytale-retellings 关联整体，未逐篇读取正文，未采用其他评论中未核对的100个名额或任何结局。空间支持范围：故事整体等待最后飞船离开地球的十天，以Seb/Jay的留守与离开抉择为当前舞台。新行星是未来目的地，未把尚未读到的航程推成星际主区。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.stelliform.press/index.php/product/what-a-fish-looks-like-by-syr-hayati-beker/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.stelliform.press/index.php/product/what-a-fish-looks-like-by-syr-hayati-beker/",
+          "support_scope": "实际读取 Stelliform 官方完整搜索返回书介，支持 Seb/Jay、十天、最后飞船、留守/撤离及六则童话与多种文档形式。2025-09-04 出版资料已读。第一轮分析为 novella-in-fairytale-retellings 关联整体，未逐篇读取正文，未采用其他评论中未核对的100个名额或任何结局。空间支持范围：故事整体等待最后飞船离开地球的十天，以Seb/Jay的留守与离开抉择为当前舞台。新行星是未来目的地，未把尚未读到的航程推成星际主区。"
+        }
+      ]
+    },
+    {
+      "id": "Q139955628",
+      "identity": {
+        "title": "The Will: Song of Light",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "出版社单书页明确1919年Paris的Petliura、白军阴谋及乌克兰合唱团；是地球巴黎舞台，不把系列蒸汽朋克标签映射为空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "先用底库原语题名Воля: Пісня світла重新查询，实际完整读取 The Will Production 官方单书页：72页、编剧В'ячеслав Бугайов、画家Ігор Курилін、1919巴黎、Petliura、白军阴谋与合唱团。来源仅是漫画书介和改编声明，不是漫画全文、研究著作全文或对1919年史实核验；未从系列蒸汽朋克标签虚构本卷机器设定。空间支持范围：出版社单书页明确1919年Paris的Petliura、白军阴谋及乌克兰合唱团；是地球巴黎舞台，不把系列蒸汽朋克标签映射为空间。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://thewill.com.ua/komiks-volia-pisnia-svitla/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://thewill.com.ua/komiks-volia-pisnia-svitla/",
+          "support_scope": "先用底库原语题名Воля: Пісня світла重新查询，实际完整读取 The Will Production 官方单书页：72页、编剧В'ячеслав Бугайов、画家Ігор Курилін、1919巴黎、Petliura、白军阴谋与合唱团。来源仅是漫画书介和改编声明，不是漫画全文、研究著作全文或对1919年史实核验；未从系列蒸汽朋克标签虚构本卷机器设定。空间支持范围：出版社单书页明确1919年Paris的Petliura、白军阴谋及乌克兰合唱团；是地球巴黎舞台，不把系列蒸汽朋克标签映射为空间。"
+        }
+      ]
+    },
+    {
+      "id": "Q140031396",
+      "identity": {
+        "title": "The Dissolution",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "本卷官方Synopsis明确Paris-Eurythmia及其法庭、档案、增强学院；创作者Ikki资料把该都城放在Europe & Russia大陆治理区。AI神话式名称和法律身份抹除不自动成为抽象宇宙位置。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际先读结构底库，确定La Dissolution属于Codemachia，排除Nicholas Binge及A Z Ravenshadow的同名作品；再完整读取创作者项目站本卷Synopsis、角色和地点，并读取Ikki项目文章确认英法对应与第四卷。只读官方概要，未点击第一章或Full Synopsis全文；未更改候选发表年。Ikki英法版本所列系列时间尺度不同，未用它们补本卷精确叙事时长。空间支持范围：本卷官方Synopsis明确Paris-Eurythmia及其法庭、档案、增强学院；创作者Ikki资料把该都城放在Europe & Russia大陆治理区。AI神话式名称和法律身份抹除不自动成为抽象宇宙位置。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://codemachia.com/story/la-dissolution",
+        "https://www.ikki.io/blog/ai-worldbuilding-pipeline-codemachia"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://codemachia.com/story/la-dissolution",
+          "support_scope": "实际先读结构底库，确定La Dissolution属于Codemachia，排除Nicholas Binge及A Z Ravenshadow的同名作品；再完整读取创作者项目站本卷Synopsis、角色和地点，并读取Ikki项目文章确认英法对应与第四卷。只读官方概要，未点击第一章或Full Synopsis全文；未更改候选发表年。Ikki英法版本所列系列时间尺度不同，未用它们补本卷精确叙事时长。空间支持范围：本卷官方Synopsis明确Paris-Eurythmia及其法庭、档案、增强学院；创作者Ikki资料把该都城放在Europe & Russia大陆治理区。AI神话式名称和法律身份抹除不自动成为抽象宇宙位置。"
+        },
+        {
+          "url": "https://www.ikki.io/blog/ai-worldbuilding-pipeline-codemachia",
+          "support_scope": "实际先读结构底库，确定La Dissolution属于Codemachia，排除Nicholas Binge及A Z Ravenshadow的同名作品；再完整读取创作者项目站本卷Synopsis、角色和地点，并读取Ikki项目文章确认英法对应与第四卷。只读官方概要，未点击第一章或Full Synopsis全文；未更改候选发表年。Ikki英法版本所列系列时间尺度不同，未用它们补本卷精确叙事时长。空间支持范围：本卷官方Synopsis明确Paris-Eurythmia及其法庭、档案、增强学院；创作者Ikki资料把该都城放在Europe & Russia大陆治理区。AI神话式名称和法律身份抹除不自动成为抽象宇宙位置。"
+        }
+      ]
+    },
+    {
+      "id": "Q141537716",
+      "identity": {
+        "title": "The Apologists",
+        "author": "Tade Thompson"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "2025中篇的法译出版社概要明确London及公寓连环案件；该分类只表示已读调查舞台，不解决原作未读的现实机制，也不把2016同名短篇世界覆盖过来。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际完整读取Le Bélial作者页所列Les Expiateurs官方概要；实际读到L’épaule d’Orion评论与BSFA目录搜索返回，分别确认2025中篇/2026法译及Clarkesworld 2025-11目标。Clarkesworld原作链接工具Cache miss/robots，未读正文，不标全文核对。2016同名短篇又曾法译Expiation，评论明确说明2025版是后续；没有将旧短篇外星灭绝、每日道歉等剧情复制进当前未读结局。空间支持范围：2025中篇的法译出版社概要明确London及公寓连环案件；该分类只表示已读调查舞台，不解决原作未读的现实机制，也不把2016同名短篇世界覆盖过来。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://belial.fr/p/tade-thompson/",
+        "https://lepauledorion.com/2026/08/20/les-expiateurs-tade-thompson/",
+        "https://www.bsfa.co.uk/bsfa-awards-longlist/No%20Link"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://belial.fr/p/tade-thompson/",
+          "support_scope": "实际完整读取Le Bélial作者页所列Les Expiateurs官方概要；实际读到L’épaule d’Orion评论与BSFA目录搜索返回，分别确认2025中篇/2026法译及Clarkesworld 2025-11目标。Clarkesworld原作链接工具Cache miss/robots，未读正文，不标全文核对。2016同名短篇又曾法译Expiation，评论明确说明2025版是后续；没有将旧短篇外星灭绝、每日道歉等剧情复制进当前未读结局。空间支持范围：2025中篇的法译出版社概要明确London及公寓连环案件；该分类只表示已读调查舞台，不解决原作未读的现实机制，也不把2016同名短篇世界覆盖过来。"
+        },
+        {
+          "url": "https://lepauledorion.com/2026/08/20/les-expiateurs-tade-thompson/",
+          "support_scope": "实际完整读取Le Bélial作者页所列Les Expiateurs官方概要；实际读到L’épaule d’Orion评论与BSFA目录搜索返回，分别确认2025中篇/2026法译及Clarkesworld 2025-11目标。Clarkesworld原作链接工具Cache miss/robots，未读正文，不标全文核对。2016同名短篇又曾法译Expiation，评论明确说明2025版是后续；没有将旧短篇外星灭绝、每日道歉等剧情复制进当前未读结局。空间支持范围：2025中篇的法译出版社概要明确London及公寓连环案件；该分类只表示已读调查舞台，不解决原作未读的现实机制，也不把2016同名短篇世界覆盖过来。"
+        },
+        {
+          "url": "https://www.bsfa.co.uk/bsfa-awards-longlist/No%20Link",
+          "support_scope": "实际完整读取Le Bélial作者页所列Les Expiateurs官方概要；实际读到L’épaule d’Orion评论与BSFA目录搜索返回，分别确认2025中篇/2026法译及Clarkesworld 2025-11目标。Clarkesworld原作链接工具Cache miss/robots，未读正文，不标全文核对。2016同名短篇又曾法译Expiation，评论明确说明2025版是后续；没有将旧短篇外星灭绝、每日道歉等剧情复制进当前未读结局。空间支持范围：2025中篇的法译出版社概要明确London及公寓连环案件；该分类只表示已读调查舞台，不解决原作未读的现实机制，也不把2016同名短篇世界覆盖过来。"
+        }
+      ]
+    },
+    {
+      "id": "Q125548172",
+      "identity": {
+        "title": "Pliable Truths",
+        "author": "Dayton Ward"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "本书官方说明Federation星系、Bajor撤军与Cardassian内部秘密，以及需避免重燃的interstellar incident；按明示星际政治/飞船介入的舞台归跨恒星区，不扩大为整个银河。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际读取Simon & Schuster官方完整搜索返回书介及2024-05-21/352页资料。只使用本书2369谈判、Picard创伤和Ro求救的明确开端，不借电视剧完整剧情补揭密内容或本书结局；不是整套Next Generation或Deep Space Nine集合分析。空间支持范围：本书官方说明Federation星系、Bajor撤军与Cardassian内部秘密，以及需避免重燃的interstellar incident；按明示星际政治/飞船介入的舞台归跨恒星区，不扩大为整个银河。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/Pliable-Truths/Dayton-Ward/Star-Trek-The-Next-Generation/9781668046418"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/Pliable-Truths/Dayton-Ward/Star-Trek-The-Next-Generation/9781668046418",
+          "support_scope": "实际读取Simon & Schuster官方完整搜索返回书介及2024-05-21/352页资料。只使用本书2369谈判、Picard创伤和Ro求救的明确开端，不借电视剧完整剧情补揭密内容或本书结局；不是整套Next Generation或Deep Space Nine集合分析。空间支持范围：本书官方说明Federation星系、Bajor撤军与Cardassian内部秘密，以及需避免重燃的interstellar incident；按明示星际政治/飞船介入的舞台归跨恒星区，不扩大为整个银河。"
+        }
+      ]
+    },
+    {
+      "id": "Q127699256",
+      "identity": {
+        "title": "Lost to Eternity",
+        "author": "Greg Cox"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "官方单书概要明示地球2024调查、2268飞船前往另一世界救科学家及2292三方星舰与Osori接触，具有跨世界的星际舞台；长时段与长寿不自动改为宇宙演化区。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际读取Simon & Schuster官方完整搜索返回单书简介与2024-07-23资料，支持三个时代、三个谜案、被绑科学家、不老幕后人及外交归责。未读取小说全文；没有从Star Trek IV电影或其他电影小说化借入Gillian失踪的最终解释，不断言本书给出的反派身份或解密结果。空间支持范围：官方单书概要明示地球2024调查、2268飞船前往另一世界救科学家及2292三方星舰与Osori接触，具有跨世界的星际舞台；长时段与长寿不自动改为宇宙演化区。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/Lost-to-Eternity/Greg-Cox/Star-Trek-The-Original-Series/9781668050057"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/Lost-to-Eternity/Greg-Cox/Star-Trek-The-Original-Series/9781668050057",
+          "support_scope": "实际读取Simon & Schuster官方完整搜索返回单书简介与2024-07-23资料，支持三个时代、三个谜案、被绑科学家、不老幕后人及外交归责。未读取小说全文；没有从Star Trek IV电影或其他电影小说化借入Gillian失踪的最终解释，不断言本书给出的反派身份或解密结果。空间支持范围：官方单书概要明示地球2024调查、2268飞船前往另一世界救科学家及2292三方星舰与Osori接触，具有跨世界的星际舞台；长时段与长寿不自动改为宇宙演化区。"
+        }
+      ]
+    },
+    {
+      "id": "Q130363312",
+      "identity": {
+        "title": "Круть",
+        "author": "维克多·佩列文"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Eksmo本书概要明确西伯利亚殖民地和行星危险，已读主行动以该地球地点为依据。地狱、Mesozoic等简介谜题未读到具体机制，不把心灵或神秘现象直接归abstract。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介舞台归类，知识补充待独立核对；只更新原unknown。",
+        "spatial_rationale": "实际完整读取Eksmo单书页“О книге”第114–120行及本书身份。只采用绿色纪元、植入修正、Markus、任务后抹忆和西伯利亚危机；未读正文、神秘学解密或结局。页面下方“Другие книги автора”另书Возвращение Синей Бороды的Golgofsky/量子回跳书介已排除，不能混入Круть。保持2024单部小说而非整套Transhumanism Inc.分析。空间支持范围：Eksmo本书概要明确西伯利亚殖民地和行星危险，已读主行动以该地球地点为依据。地狱、Mesozoic等简介谜题未读到具体机制，不把心灵或神秘现象直接归abstract。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://eksmo.ru/book/krut-ITD1395063/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://eksmo.ru/book/krut-ITD1395063/",
+          "support_scope": "实际完整读取Eksmo单书页“О книге”第114–120行及本书身份。只采用绿色纪元、植入修正、Markus、任务后抹忆和西伯利亚危机；未读正文、神秘学解密或结局。页面下方“Другие книги автора”另书Возвращение Синей Бороды的Golgofsky/量子回跳书介已排除，不能混入Круть。保持2024单部小说而非整套Transhumanism Inc.分析。空间支持范围：Eksmo本书概要明确西伯利亚殖民地和行星危险，已读主行动以该地球地点为依据。地狱、Mesozoic等简介谜题未读到具体机制，不把心灵或神秘现象直接归abstract。"
+        }
+      ]
+    },
+    {
+      "id": "Q132802075",
+      "identity": {
+        "title": "Les Champs de la Lune",
+        "author": "Catherine Dufour"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "出版社简介明确月球穹顶农场和地下居民；归入月球/行星航区，不从机器人题材推空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际书介场景的知识归类，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取Hachette所载出版社简介的搜索返回正文，明确月球农场、穹顶和地下生活者；非整本正文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.fr/livre/les-champs-de-la-lune-9782253909293/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.fr/livre/les-champs-de-la-lune-9782253909293/",
+          "support_scope": "实际读取Hachette所载出版社简介的搜索返回正文，明确月球农场、穹顶和地下生活者；非整本正文核验。"
+        }
+      ]
+    },
+    {
+      "id": "Q133843128",
+      "identity": {
+        "title": "The Tusks of Extinction",
+        "author": "Ray Nayler"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方书介明确莫斯科复活猛犸计划与地球象群、偷猎危机；复生和意识移植不改变这一舞台的地球归类。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际书介场景的知识归类，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取Macmillan官方简介的搜索返回正文，支持莫斯科、末代大象与猛犸群；未读全书，不将数字心智设定当作抽象空间。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781250393661/thetusksofextinction/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781250393661/thetusksofextinction/",
+          "support_scope": "实际读取Macmillan官方简介的搜索返回正文，支持莫斯科、末代大象与猛犸群；未读全书，不将数字心智设定当作抽象空间。"
+        }
+      ]
+    },
+    {
+      "id": "Q138013188",
+      "identity": {
+        "title": "Le pacte des apparences",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "这一漫画卷的具体航程是在地球与火星之间，陷阱和返航困难均围绕该航程；归入太阳系/行星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际书介场景的知识归类，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取Decitre搜索返回的Le pacte des apparences题名书介，明确五个月赴火星航程和返回地球几无希望；路径仍旧第二卷名，正文题名为本卷，身份冲突详见议题记录。未以其他卷代表本卷。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.decitre.fr/livres/phobos-tome-2-la-regle-du-jeu-9782344042878.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.decitre.fr/livres/phobos-tome-2-la-regle-du-jeu-9782344042878.html",
+          "support_scope": "实际读取Decitre搜索返回的Le pacte des apparences题名书介，明确五个月赴火星航程和返回地球几无希望；路径仍旧第二卷名，正文题名为本卷，身份冲突详见议题记录。未以其他卷代表本卷。"
+        }
+      ]
+    },
+    {
+      "id": "Q139600843",
+      "identity": {
+        "title": "Kaiju No. 8, Volume 13",
+        "author": "松本直也"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方本卷简介明确危机发生于日本立川及城市各处；只按这一具体卷的城市舞台归地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际书介场景的知识归类，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取VIZ第十三卷官方简介的搜索返回正文，明确Tachikawa城市与城内多个怪兽出现地点；未读整卷、未借第十五卷场景。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.viz.com/manga-books/manga/kaiju-no-8-volume-13-0/product/8340"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.viz.com/manga-books/manga/kaiju-no-8-volume-13-0/product/8340",
+          "support_scope": "实际读取VIZ第十三卷官方简介的搜索返回正文，明确Tachikawa城市与城内多个怪兽出现地点；未读整卷、未借第十五卷场景。"
+        }
+      ]
+    },
+    {
+      "id": "Q116814638",
+      "identity": {
+        "title": "The Terraformers",
+        "author": "安娜丽·奈维茨"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "官方书介把多代生态改造、火山城市、交通建设和地产冲突放在Sask-E同一行星，归入行星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际书介场景的知识归类，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取Tor官方专题页书介的搜索返回正文，明确Sask-E、火山城市、planetwide transit与planet-altering weapon；未将多代时间跨度当成空间尺度，也未从全银河宣传词扩大实际舞台。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://read.macmillan.com/lp/the-terraformers-by-newitz/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://read.macmillan.com/lp/the-terraformers-by-newitz/",
+          "support_scope": "实际读取Tor官方专题页书介的搜索返回正文，明确Sask-E、火山城市、planetwide transit与planet-altering weapon；未将多代时间跨度当成空间尺度，也未从全银河宣传词扩大实际舞台。"
+        }
+      ]
+    },
+    {
+      "id": "Q135107368",
+      "identity": {
+        "title": "Dungeon Crawler Carl",
+        "author": "Matt Dinniman"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "首部具体地牢由地球建筑与居民构成并环绕地球，观看者来自银河不等于主角已经在银河旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Earth建筑原子化和circles the entire globe，不把银河观众地点当主要舞台。 来源记录SHA256 1186727610c4c81a3eb9524045bcbb95f00ff9993c896ea5242f9ebf5773cbeb。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL24593432W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24593432W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Earth建筑原子化和circles the entire globe，不把银河观众地点当主要舞台。 来源记录SHA256 1186727610c4c81a3eb9524045bcbb95f00ff9993c896ea5242f9ebf5773cbeb。",
+          "record_sha256": "1186727610c4c81a3eb9524045bcbb95f00ff9993c896ea5242f9ebf5773cbeb"
+        }
+      ]
+    },
+    {
+      "id": "Q85809878",
+      "identity": {
+        "title": "To Sleep in a Sea of Stars",
+        "author": "克里斯托弗·鲍里尼"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "该长篇简介明确Kira在调查后经历galaxy-spanning odyssey并卷入群星间战争，归入银河尺度，不推宇宙尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持外星未殖民行星、群星战争以及明确跨银河旅程措辞，未读具体路线。 来源记录SHA256 fc87ddc7eabf9fb8423b1e19aa46223c1b90b2d896ab66f2b7e03e1a9130f057。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20861787W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20861787W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持外星未殖民行星、群星战争以及明确跨银河旅程措辞，未读具体路线。 来源记录SHA256 fc87ddc7eabf9fb8423b1e19aa46223c1b90b2d896ab66f2b7e03e1a9130f057。",
+          "record_sha256": "fc87ddc7eabf9fb8423b1e19aa46223c1b90b2d896ab66f2b7e03e1a9130f057"
+        }
+      ]
+    },
+    {
+      "id": "Q97276628",
+      "identity": {
+        "title": "Devolution",
+        "author": "麦克斯·布鲁克斯"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Greenloop与雷尼尔山喷发后的居民事件为地球具体地点，未知生物不改变空间归类。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Mount Rainier和Greenloop灾后调查，虚构大脚怪不视为外星或抽象地点。 来源记录SHA256 72926cb08f81161dcdc83ded67b62f49b6114dce7c24eecffaf22a5fa9591f8e。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20821281W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20821281W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Mount Rainier和Greenloop灾后调查，虚构大脚怪不视为外星或抽象地点。 来源记录SHA256 72926cb08f81161dcdc83ded67b62f49b6114dce7c24eecffaf22a5fa9591f8e。",
+          "record_sha256": "72926cb08f81161dcdc83ded67b62f49b6114dce7c24eecffaf22a5fa9591f8e"
+        }
+      ]
+    },
+    {
+      "id": "Q64485242",
+      "identity": {
+        "title": "Space Opera",
+        "author": "凯瑟琳·M·瓦伦特"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "人类参加greatest stage in the galaxy的Galactivision，故事明确汇集银河文明和多世界代表，归银河航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Sentience Wars撕裂银河、great galactic civilizations聚会和人类代表进入银河舞台，未声称超银河旅行。 来源记录SHA256 c0f05154b37b8470dee1d2f44623655d8b896bec9d52d126205c226d96c7adfc。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19741544W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19741544W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Sentience Wars撕裂银河、great galactic civilizations聚会和人类代表进入银河舞台，未声称超银河旅行。 来源记录SHA256 c0f05154b37b8470dee1d2f44623655d8b896bec9d52d126205c226d96c7adfc。",
+          "record_sha256": "c0f05154b37b8470dee1d2f44623655d8b896bec9d52d126205c226d96c7adfc"
+        }
+      ]
+    },
+    {
+      "id": "Q54878224",
+      "identity": {
+        "title": "Die Optimierer",
+        "author": "Theresa Hannig"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "简介明确2050年德国的职业分配与社会优化制度，归地球舞台；算法治理不归抽象空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Deutschland im Jahr 2050这一具体国家时代及国内公民制度。 来源记录SHA256 72d206d1c330f6da4d2b9fe5c9800e3cd727a722213c64cd6bb93d583f60daef。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL24343748W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24343748W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Deutschland im Jahr 2050这一具体国家时代及国内公民制度。 来源记录SHA256 72d206d1c330f6da4d2b9fe5c9800e3cd727a722213c64cd6bb93d583f60daef。",
+          "record_sha256": "72d206d1c330f6da4d2b9fe5c9800e3cd727a722213c64cd6bb93d583f60daef"
+        }
+      ]
+    }
+  ]
+}

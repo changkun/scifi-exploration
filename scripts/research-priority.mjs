@@ -6,7 +6,7 @@ export function researchPriority(work) {
   const unsuccessful = new Set();
   for (const attempt of attempts) {
     const searched = (attempt.queries || []).length || (attempt.materials_checked || []).length;
-    const added = attempt.issue_result === 'added_unverified' ||
+    const added = /^added(?:_|$)/.test(attempt.issue_result || '') ||
       /analysis_added/.test(attempt.attempt_state || '');
     if (!searched || added) continue;
     // Preserve the original logs. Repeated copies of the same archived attempt

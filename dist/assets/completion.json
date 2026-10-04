@@ -382,6 +382,11 @@
         "count": 63
       },
       {
+        "file": "research/issues-source-reading-round22.json",
+        "sha256": "03b3b855c84e2e961de79120ea81eb0cf4f3dcee604977f2801fb56464a21974",
+        "count": 164
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -420,9 +425,14 @@
         "file": "research/spatial-reading-round8.json",
         "sha256": "cf8b727ab6d7747076a67aa25db0ed3d5b4c46d2bb0e02a1c105e76e3e75d764",
         "count": 29
+      },
+      {
+        "file": "research/spatial-reading-round9.json",
+        "sha256": "91d46e2157873b69bb6ce57829eace0ecdfb98188552a99795b690c0c285f514",
+        "count": 63
       }
     ],
-    "knowledge_added": 2538,
+    "knowledge_added": 2702,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -475,12 +485,12 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 1204,
+      "record_count": 1377,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 1204,
+        "record_count": 1377,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -1724,6 +1734,204 @@
               "log_count": 20,
               "checkpoint_note": "专属 lane 3 最近的前20个身份；18条分析、2条材料不足保留。仅源码外私有冻结输入，后续继续下一轮。"
             }
+          },
+          {
+            "file": "root-fast-round2-log.json",
+            "sha256": "3fbbc6bac3f8652ad107d6963a4d14b2b89625f48902d4225d9be50d0018b580",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "lane": 0,
+              "method": "easy-first-local-synopsis-and-targeted-search-v1",
+              "source_commit": "a604ca146c4e09f54f1466b11257cce0c4fa024b",
+              "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+              "record_count": 32,
+              "facet_count": 88,
+              "attempted_count": 32,
+              "deferred_count": 1,
+              "fast_lane_indices_processed": [
+                0,
+                31
+              ],
+              "next_fast_lane_index": 32,
+              "original_fulltext_read_count": 0,
+              "scope": "实际逐条读取已取得的身份对应简介；四条简介不足时一次精准搜索取得明确内容，一条延后。社区简介、作者书介、检索返回区别保存，全部待核。"
+            }
+          },
+          {
+            "file": "global-recent-round2-log.json",
+            "sha256": "1c8bf63bc3153acb4617e2ad845e93637af574a9e2fff9bb7ca2169f03bbdc7d",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "scope": "recent-first-lane-1.json文件顺序，从2026起下降；第一阶段快速逐条查读简介和明确评论。",
+              "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+              "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+              "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+              "record_count": 15,
+              "facet_count": 42,
+              "attempted_count": 16,
+              "deferred_count": 1,
+              "starts_at_lane_index": 16,
+              "frozen_source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+              "lane_indices_processed": [
+                16,
+                31
+              ],
+              "next_lane_index": 32,
+              "validation": "逐ID身份、原字段守恒、lane顺序、合法议题、两句解释、2–4具体facet与实际URL范围检查；格式和证据范围通过不等于全文或独立书目核验。"
+            }
+          },
+          {
+            "file": "global-recent-round3-log.json",
+            "sha256": "4e672a4cf02fe737ceb7fefef412810256a9358c4f6e539f25aabba3598e0227",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "scope": "recent-first-lane-1.json文件顺序，从2026起下降；第一阶段快速逐条查读简介和明确评论。",
+              "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+              "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+              "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+              "record_count": 13,
+              "facet_count": 37,
+              "attempted_count": 16,
+              "deferred_count": 3,
+              "starts_at_lane_index": 32,
+              "priority_policy": "易查优先：一轮精准搜索与最多一次简单直接阅读；无明确情节或2次非有益尝试后延后，继续同lane顺序。",
+              "frozen_source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+              "lane_indices_processed": [
+                32,
+                47
+              ],
+              "next_lane_index": 48,
+              "validation": "逐ID身份、原字段守恒、lane顺序、合法议题、两句解释、2–4具体facet与实际URL范围检查；格式和证据范围通过不等于全文或独立书目核验。"
+            }
+          },
+          {
+            "file": "global-recent-round4-log.json",
+            "sha256": "d5962eb687425b6468742c6db00667893a11f06da7afb12493f492e1ccd0374e",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+              "starts_at_fast_index": 0,
+              "record_count": 19,
+              "facet_count": 38,
+              "attempted_count": 20,
+              "deferred_count": 1,
+              "frozen_source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+              "fast_indices_processed": [
+                0,
+                19
+              ],
+              "next_fast_index": 20,
+              "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+              "network_scope": "19份分析全据已取得社区简介；仅延后Anomaly补读一次出版方教学概览，未取得关键机制。",
+              "original_full_read_count": 0
+            }
+          },
+          {
+            "file": "modern-recent-round2-log.json",
+            "sha256": "6bf7b1b924283d0eec95f16fe5b923c2389a89030836cec29d73ef0b10090a51",
+            "metadata": {
+              "method": "recent-first-actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 16,
+              "start_queue_index": 17,
+              "note": "第一遍实际作者/出版社/明确评论简介支持；文学解释待独立核对。批次冻结不表示全队列完成。",
+              "freeze_date": "2026-10-04",
+              "queue_start_index": 17,
+              "queue_end_index": 33,
+              "processed_queue_records": 17,
+              "remaining_lane_records_unprocessed": 2538,
+              "full_original_text_read_count": 0,
+              "independent_literary_verification": false,
+              "deferred_attempt_count": 1,
+              "successful_analysis_records": 16
+            }
+          },
+          {
+            "file": "modern-recent-round3-log.json",
+            "sha256": "7f178e5bb0150d25dac9b7d4999a9d9a261d4b13e7437f51841f68d55a3cc213",
+            "metadata": {
+              "method": "recent-first-actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "queue_start_index": 34,
+              "note": "2024近期lane2继续；批次不表示全量完成。",
+              "record_count": 15,
+              "deferred_count": 1,
+              "processed_identity_count": 16,
+              "scope": "实际读取官方/明确评论的搜索返回正文或页面，逐条保留边界；没有全原作阅读。"
+            }
+          },
+          {
+            "file": "modern-recent-round4-log.json",
+            "sha256": "77ea9123fa06f93d9f78afb25a053b0b880208341b4af451fe4ba146f8556f5c",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 16,
+              "deferred_count": 0,
+              "community_dump_read_count": 16,
+              "official_blurb_additional_read_count": 1,
+              "original_full_text_count": 0,
+              "scope": "16份实际社区dump简介的SHA与OL ID保留；其中Candy另读官方简介搜索返回，未称全文核验。"
+            }
+          },
+          {
+            "file": "early-recent-round2-log.json",
+            "sha256": "49b697d92d071836107d84fb212d888230ad8146e3276683d01c20dc06da4364",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "ordering": "继续专属 recent-first-lane-3 索引20起，从近往远；只补3项议题字段。",
+              "record_count": 20,
+              "facet_count": 60,
+              "attempted_count": 20,
+              "not_added_count": 0,
+              "verification_note": "实际读作者、出版社介绍、明确评论或机构文学参考；文学解释全部待核，简介读取不等于全书核验。",
+              "remaining_note": "自然检查点，未完成的专属ID和全量缺口仍继续；版本和类别疑点不抹去。",
+              "log_count": 20,
+              "checkpoint_note": "专属lane3索引20–39共20身份，20条议题、60个细分问题；全部为实际介绍/评论或有限公开节选依据的未独立核验解释。冻结后转fast-first-lane-3优先现成简介，不再编辑本文件。",
+              "identity_boundaries": "Weeër与2024 Lord of the Flies漫画的SF边界未确认；三体为吴青松漫画仅第一卷介绍，86第14卷英语待发行，不以原小说/动画/别卷替代。",
+              "next_queue": "fast-first-lane-3.json，按本地已落盘ID排除重复。"
+            }
+          },
+          {
+            "file": "early-recent-round3-log.json",
+            "sha256": "f12cca85f84fcb1109f617e735181ce896a7a379787f7043b0d02fceea5f0c15",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "queue": "fast-first-lane-3.json",
+              "record_count": 19,
+              "facet_count": 55,
+              "attempted_count": 20,
+              "not_added_count": 1,
+              "verification_note": "易查优先：逐条实际读已取得OLdump精确对应简介；明确记录社区来源及record_sha256，不冒称出版社或全书核验。不足材料只做定向查读，延后难项。",
+              "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
+              "checkpoint_note": "首批易查清单priority_rank9–99中20个未分析身份，19条/55 facets，1条defer。Demain les chats仅取得原篇广告与漫画情节，保持原篇缺口；三条原简介只有短句/页数的成功补充明确记录本次出版社/机构/评论依据。"
+            }
           }
         ],
         "updated_at": "2026-10-04",
@@ -2150,6 +2358,11 @@
         "file": "research/issues-source-reading-round21.json",
         "sha256": "9a2686bad677ad50e72f9e8e2acc19ffe0c71b3acf761e0af844cc1a5d68c1ed",
         "count": 63
+      },
+      {
+        "file": "research/issues-source-reading-round22.json",
+        "sha256": "03b3b855c84e2e961de79120ea81eb0cf4f3dcee604977f2801fb56464a21974",
+        "count": 164
       }
     ],
     "spatial_batches": [
@@ -2192,10 +2405,15 @@
         "file": "research/spatial-reading-round8.json",
         "sha256": "cf8b727ab6d7747076a67aa25db0ed3d5b4c46d2bb0e02a1c105e76e3e75d764",
         "count": 29
+      },
+      {
+        "file": "research/spatial-reading-round9.json",
+        "sha256": "91d46e2157873b69bb6ce57829eace0ecdfb98188552a99795b690c0c285f514",
+        "count": 63
       }
     ],
-    "issue_facet_records": 2441,
-    "issue_facet_count": 5893
+    "issue_facet_records": 2605,
+    "issue_facet_count": 6351
   },
   "chunks": [
     "./assets/completion-index/000.json",
