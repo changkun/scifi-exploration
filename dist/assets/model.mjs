@@ -11,7 +11,7 @@ export const ERA_BOUNDS = [
 ];
 export const DURATIONS=['日—月','年—一生','多代—百年','千年—文明史','百万年—宇宙尺度','多尺度或非线性','待核'];
 export const SCIENCES=['近现实外推','依赖未证技术','强反事实设定','混合或不适用'];
-export const DEFAULT_STATE={query:'',topic:'',branch:'',era:'',duration:'',science:'',language:'',form:'',boundary:false,sort:'oldest',layout:'cards',page:1};
+export const DEFAULT_STATE={query:'',topic:'',branch:'',era:'',duration:'',science:'',language:'',form:'',boundary:false,yearMin:null,yearMax:null,sort:'oldest',layout:'cards',page:1};
 export const languageOf=w=>w.language_tradition.split(/[·／]/)[0];
 export function filterWorks(works,state){
  const query=state.query.trim().toLocaleLowerCase();
@@ -19,6 +19,9 @@ export function filterWorks(works,state){
  const era=ERA_BOUNDS.find(e=>e.id===state.era);
  return works.filter(w=>{
   if(!state.boundary&&w.inclusion_status!=='科幻作品')return false;
+  const year=w.sort_year??w.first_year;
+  if(state.yearMin!=null&&year<state.yearMin)return false;
+  if(state.yearMax!=null&&year>state.yearMax)return false;
   if(state.topic&&!w.topics.includes(state.topic))return false;
   if(state.branch&&!w.branches.includes(state.branch))return false;
   if(era&&((w.sort_year??w.first_year)<era.min||(w.sort_year??w.first_year)>era.max))return false;
@@ -34,6 +37,8 @@ export function stateFromURL(search,works){
  const params=new URLSearchParams(search),state={...DEFAULT_STATE};
  for(const key of ['query','topic','branch','era','duration','science','language','form'])if(params.has(key))state[key]=params.get(key);
  state.boundary=params.get('boundary')==='1';
+ for(const key of ['yearMin','yearMax']){const value=params.get(key);if(value!==null&&/^\d{1,4}$/.test(value))state[key]=Number(value);}
+ if(state.yearMin!=null&&state.yearMax!=null&&state.yearMin>state.yearMax){state.yearMin=null;state.yearMax=null;}
  if(['oldest','newest','title'].includes(params.get('sort')))state.sort=params.get('sort');
  if(params.get('layout')==='table')state.layout='table';
  state.page=Math.max(1,Math.min(1000,Number.parseInt(params.get('page'),10)||1));
@@ -45,6 +50,7 @@ export function searchFromState(state,workId){
  const p=new URLSearchParams();
  for(const key of ['query','topic','branch','era','duration','science','language','form'])if(state[key])p.set(key,state[key]);
  if(state.boundary)p.set('boundary','1');
+ for(const key of ['yearMin','yearMax'])if(state[key]!=null)p.set(key,String(state[key]));
  if(state.sort!==DEFAULT_STATE.sort)p.set('sort',state.sort);
  if(state.layout!=='cards')p.set('layout',state.layout);
  if(state.page>1)p.set('page',String(state.page));

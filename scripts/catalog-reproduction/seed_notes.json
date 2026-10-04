@@ -1,0 +1,39 @@
+{
+  "scope": "全部匹配P136=Q24925或其P279子类且P31=Q7725634或其P279子类的Wikidata作品实体；不是所有全球科幻。",
+  "verified_ids": {
+    "Q24925": "science fiction / 科學幻想",
+    "Q7725634": "literary work / 文學作品",
+    "Q8261": "novel / 長篇小說",
+    "Q49084": "short story / 短篇小说"
+  },
+  "openlibrary_probe": {
+    "subject_key_science_fiction_work_count": 21216,
+    "broad_subject_science_fiction_work_count": 86772,
+    "collection_status": "只核接口与单条探针，未进行全分页或收录这些条目。",
+    "bulk_rule": "官方要求大规模下载改用月度dump，不以API批量下载；本次改用Wikidata。",
+    "documentation": [
+      "https://openlibrary.org/dev/docs/api/subjects",
+      "https://openlibrary.org/dev/docs/api/search",
+      "https://openlibrary.org/developers/api#bulk-access",
+      "https://openlibrary.org/developers/dumps"
+    ],
+    "probe_date": "2026-10-04"
+  },
+  "source_rules": {
+    "identity": "按QID去重，禁止仅按题名大规模合并。",
+    "title": "zh/en标签用于显示，P1476原文字串保留；标签不自动视为原题。",
+    "year": "MIN(P577)只作首次发表候选，未独立核初刊、原作、单行本和译本。",
+    "language": "P407是作品或名称关联语言，不保证原语；保留库声明，原语未独立核时标未知。",
+    "classification": "仅公共知识图谱书目索引；不继承168条的议题、空间标签或全文阅读状态。",
+    "license": "Wikidata结构化数据CC0； https://www.wikidata.org/wiki/Wikidata:Licensing"
+  },
+  "source_documents": [
+    "https://www.wikidata.org/wiki/Q24925",
+    "https://www.wikidata.org/wiki/Q7725634",
+    "https://www.wikidata.org/wiki/Q8261",
+    "https://www.wikidata.org/wiki/Q49084",
+    "https://www.wikidata.org/wiki/Property:P407",
+    "https://www.wikidata.org/wiki/Property:P577",
+    "https://www.wikidata.org/wiki/Wikidata:Licensing"
+  ]
+}

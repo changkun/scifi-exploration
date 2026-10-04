@@ -1,0 +1,106 @@
+<div id="sf-atlas-cn">
+  <h2>科幻作品交叉分类</h2>
+  <div class="viz-controls">
+    <label class="form-label">底层议题<select class="form-select" data-field="topics"></select></label>
+    <label class="form-label">分支<select class="form-select" data-field="branches"></select></label>
+    <label class="form-label">主体时间尺度<select class="form-select" data-field="duration"></select></label>
+    <label class="form-label">科学前提<select class="form-select" data-field="science_class"></select></label>
+  </div>
+  <div class="viz-row">
+    <label class="form-check"><input class="form-check-input" type="checkbox" data-extra><span class="form-check-label">含前史与边界参照</span></label>
+    <span class="text-small" data-total aria-live="polite"></span>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <caption class="sr-only">代表作品样本。按底层议题、分支、主体时间尺度和科学前提筛选；标签为研究者解释。</caption>
+      <thead><tr><th scope="col">主要出版版本</th><th scope="col">作品</th><th scope="col">核心问题</th><th scope="col">主体历时</th></tr></thead>
+      <tbody data-rows></tbody>
+    </table>
+  </div>
+  <div class="viz-row">
+    <button class="btn" type="button" data-prev>上一页</button>
+    <span class="tabular-nums" data-page></span>
+    <button class="btn" type="button" data-next>下一页</button>
+  </div>
+  <div class="card" data-detail aria-live="polite"></div>
+</div>
+<style>
+  #sf-atlas-cn {color:var(--foreground)}
+  #sf-atlas-cn th {font-weight:500}
+  #sf-atlas-cn [data-detail] {margin-top:16px}
+  #sf-atlas-cn .detail-meta {color:var(--muted-foreground)}
+  #sf-atlas-cn .detail-values {display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:12px 0}
+  #sf-atlas-cn .detail-values dt {font-weight:500}
+  #sf-atlas-cn .detail-values dd {margin:0;overflow-wrap:anywhere}
+  #sf-atlas-cn td {overflow-wrap:anywhere}
+  @media (max-width:480px) {
+    #sf-atlas-cn .detail-values {grid-template-columns:1fr;gap:4px}
+    #sf-atlas-cn .detail-values dd {margin-bottom:8px}
+  }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('sf-atlas-cn');
+  const dataset = __DATA__;
+  const size = 7;
+  const initial = {topics:'',branches:'',duration:'',science_class:'',extras:false,page:0,selected:''};
+  let state = {...initial};
+  const selects = [...root.querySelectorAll('select[data-field]')];
+  const extra = root.querySelector('[data-extra]');
+  const rows = root.querySelector('[data-rows]');
+  const detail = root.querySelector('[data-detail]');
+  const fields = ['topics','branches','duration','science_class'];
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  for (const select of selects) {
+    const field=select.dataset.field;
+    const labels={topics:'全部议题',branches:'全部分支',duration:'全部尺度',science_class:'全部科学前提'};
+    const values=[...new Set(dataset.flatMap(x=>Array.isArray(x[field])?x[field]:[x[field]]))];
+    select.innerHTML=`<option value="">${labels[field]}</option>`+values.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+    select.addEventListener('change',()=>{state[field]=select.value;state.page=0;state.selected='';render();save();});
+  }
+  function matches(item) {
+    if(!state.extras && item.inclusion_status!=='科幻作品') return false;
+    return fields.every(f=>!state[f] || (Array.isArray(item[f])?item[f].includes(state[f]):item[f]===state[f]));
+  }
+  function renderDetail(item) {
+    if(!item){detail.innerHTML='<span>当前组合没有匹配作品</span>';return;}
+    const links=item.sources.map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">来源${i+1}</a>`).join(' · ');
+    const values=[['原题',item.title_original],['底层议题',item.topics.join('、')],['分支',item.branches.join('、')],['故事时代',item.story_era],['主体历时',item.duration],['最大时间视野',item.reach],['科学前提',`${item.science_class}：${item.science_note}`],['版本备注',item.year_note]];
+    detail.innerHTML=`<h3>${esc(item.title_zh)}</h3><div class="detail-meta">${esc(item.author)} · ${esc(item.year_display)} · ${esc(item.form)} · ${esc(item.language_tradition)} · ${esc(item.inclusion_status)}</div><p>${esc(item.issue)}</p><dl class="detail-values">${values.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><div class="text-small">${esc(item.evidence_note)}</div><div>${links}</div>`;
+  }
+  function render() {
+    for(const s of selects) s.value=state[s.dataset.field] || '';
+    extra.checked=state.extras;
+    const items=dataset.filter(matches);
+    const pages=Math.max(1,Math.ceil(items.length/size));
+    state.page=Math.max(0,Math.min(Number(state.page)||0,pages-1));
+    const visible=items.slice(state.page*size,(state.page+1)*size);
+    if(!items.some(x=>x.id===state.selected)) state.selected=visible[0]?.id || '';
+    rows.innerHTML=visible.map(x=>`<tr><td>${esc(x.year_display)}</td><td><button type="button" class="btn btn-ghost" data-select="${esc(x.id)}" aria-pressed="${state.selected===x.id}">${esc(x.title_zh)}</button><div class="text-small">${esc(x.author)} · ${esc(x.form)}</div></td><td>${esc(x.issue)}</td><td>${esc(x.duration)}</td></tr>`).join('');
+    root.querySelector('[data-total]').textContent=`匹配 ${items.length} 条 / 样本 ${dataset.length} 条`;
+    root.querySelector('[data-page]').textContent=`${state.page+1} / ${pages}`;
+    root.querySelector('[data-prev]').disabled=state.page===0;
+    root.querySelector('[data-next]').disabled=state.page===pages-1;
+    renderDetail(items.find(x=>x.id===state.selected));
+  }
+  function save() {
+    if(window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:{filters:Object.fromEntries(fields.map(f=>[f,state[f]])),selectedWork:dataset.find(x=>x.id===state.selected)?.title_zh || null},privateContent:{...state}}).catch(()=>{});
+  }
+  function restore(saved) {
+    const candidate=saved?.privateContent;
+    if(candidate && typeof candidate==='object') {
+      for(const f of fields) state[f]=typeof candidate[f]==='string'?candidate[f]:'';
+      state.extras=candidate.extras===true;
+      state.page=Number.isInteger(candidate.page)?candidate.page:0;
+      state.selected=typeof candidate.selected==='string'?candidate.selected:initial.selected;
+    }
+    render();
+  }
+  extra.addEventListener('change',()=>{state.extras=extra.checked;state.page=0;state.selected='';render();save();});
+  root.querySelector('[data-prev]').addEventListener('click',()=>{state.page--;state.selected='';render();save();});
+  root.querySelector('[data-next]').addEventListener('click',()=>{state.page++;state.selected='';render();save();});
+  rows.addEventListener('click',event=>{const b=event.target.closest('button[data-select]');if(b){state.selected=b.dataset.select;render();save();}});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState) restore(event.detail.globals.widgetState);});
+  restore(window.openai?.widgetState);
+})();
+</script>
