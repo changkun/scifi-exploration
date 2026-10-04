@@ -2,7 +2,7 @@
   "format": "completion-manifest-v1",
   "metadata": {
     "format": "completion-overlay-v1",
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "record_count": 14564,
     "structural_checked": 14564,
     "knowledge_inputs": [
@@ -432,6 +432,11 @@
         "count": 149
       },
       {
+        "file": "research/issues-source-reading-round32.json",
+        "sha256": "3a4cc284acad5e8f6782a939531b369780027bfae7ef8ca8775f17a743c75235",
+        "count": 144
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -510,9 +515,14 @@
         "file": "research/spatial-reading-round16.json",
         "sha256": "2e94d94d205552e81d0216b3cb9631cd8a6aaab82f05b6ea1c05513d04a9c653",
         "count": 13
+      },
+      {
+        "file": "research/spatial-reading-round17.json",
+        "sha256": "48aa4e49ed56462db7f5b4f4c6f4f6007760bd2941532cac7b731c607edfbc62",
+        "count": 23
       }
     ],
-    "knowledge_added": 3855,
+    "knowledge_added": 3999,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -566,14 +576,14 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 2713,
-      "actual_source_attempt_count": 2710,
-      "process_without_source_attempt_count": 3,
+      "record_count": 2894,
+      "actual_source_attempt_count": 2827,
+      "process_without_source_attempt_count": 67,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 2713,
+        "record_count": 2894,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -3075,9 +3085,137 @@
               "first_pass_policy": "一次读现成材料；熟悉确切篇目直接知识待核，不追加网络/版本细节搜索。不会因为目录只列篇名就称剧情外部核验。",
               "materials_quality_note": "Q8717304社区description有生成问答与域名假引用，明确不作为剧情证据，只用确定篇目既有知识。Q7096686为非虚构且材料只讲重版，保留缺口。"
             }
+          },
+          {
+            "file": "root-fast-round13-log.json",
+            "sha256": "1a0f614cdd6d6d902c5b4c286081ebf8d81c7b3ecde8870c5deb5c88d2fb76c1",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "b8f0599a31943e8231516405f30ce2efec14e95f",
+              "source_snapshot_sha256": "f02171a15c82b7842ce4f3ce881abbb441ec0a71cc6fdc4296f44a7b588cacbc",
+              "method": "existing-known-work-single-pass-v1",
+              "record_count": 34,
+              "facet_count": 68,
+              "attempted_count": 34,
+              "deferred_count": 0,
+              "actual_search_attempt_count": 0,
+              "existing_knowledge_count": 34,
+              "original_fulltext_read_count": 0,
+              "processed_fast_indices": [
+                1000,
+                1008,
+                1009,
+                1048,
+                1070,
+                1071,
+                1090,
+                1117,
+                1128,
+                1135,
+                1136,
+                1161,
+                1171,
+                1188,
+                1190,
+                1192,
+                1252,
+                1258,
+                1266,
+                1282,
+                1284,
+                1301,
+                1327,
+                1330,
+                1331,
+                1332,
+                1346,
+                1366,
+                1373,
+                1408,
+                1435,
+                1441,
+                1442,
+                1395
+              ],
+              "next_fast_lane_index": 206,
+              "scope": "非连续挑出研究者熟悉的具体身份，已有知识先补待核；本轮无网络检索和剧情来源读取，未补其他卷册及未知结局。剩余身份全部保留队列。"
+            }
+          },
+          {
+            "file": "global-recent-round15-log.json",
+            "sha256": "a01609dedd5feb8fe4c5855c353e9ce317e6f6d4c22cc67748f0f3d3925879da",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "076af80120996fc569eacd4059b204c40f82db49a97e956bad6798b5bea51df2",
+              "starts_at_fast_index": 350,
+              "record_count": 40,
+              "facet_count": 80,
+              "attempted_count": 59,
+              "deferred_count": 19,
+              "skipped_existing_count": 0,
+              "fast_indices": [
+                350,
+                408
+              ],
+              "next_fast_index": 409,
+              "freeze_snapshot_sha256": "f02171a15c82b7842ce4f3ce881abbb441ec0a71cc6fdc4296f44a7b588cacbc",
+              "methodology_limit": "首遍速度优先；已熟悉准确作品可凭已有知识短分析并明确待核，其余按实际返回简介/明确评论/原文片段。困难不追多跳，源作者、年份与形态不覆盖；已有知识与实际来源支持范围分别保存。",
+              "self_check": "唯一lane身份、当前缺口、原身份守恒、三议题字段、合法topics、每项两facet及具体依据、真实URL/范围与知识声明、空间仅原未知字段检查通过；不等于独立书目、全文或科学核验。"
+            }
+          },
+          {
+            "file": "modern-recent-round17-log.json",
+            "sha256": "a66f2b24cf0eb1176511c579421ff95b69613d56b5e5f3d868fea3e8bf96559f",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 32,
+              "facet_count": 64,
+              "field_count": 96,
+              "new_core_issue_count": 32,
+              "source_read_record_count": 25,
+              "record_with_actual_material_count": 25,
+              "actual_content_source_record_count": 23,
+              "actual_identity_source_record_count": 2,
+              "search_attempted_record_count": 26,
+              "knowledge_plot_record_count": 9,
+              "knowledge_only_zero_query_count": 6,
+              "community_dump_read_count": 0,
+              "original_full_text_count": 0,
+              "collection_scope_count": 6,
+              "single_work_count": 26,
+              "deferred_count": 6,
+              "scope": "lane2首轮2020—2019自然组及3项已熟悉2018单作：32条/64细分，23条采用实际内容简介/具名评论/授权局部原篇，9条明确为已有知识剧情（其中2条实际页面仅支持身份与合集范围，1条查询未获具体材料，6条未实施网络查询）。25条有实际材料URL；26条实施过搜索，这两项均不等于全文核验。6个集合或系列实体用指定卷段/选例，不泛称全部篇章已研究。0整部原作全文核验。 Deferred日志保留6项材料不足/粒度疑点；没有把零检索边界处置算作实际查读。"
+            }
+          },
+          {
+            "file": "early-recent-round15-log.json",
+            "sha256": "deef0d28fd4f44924363f1524d42389c20048ed1b8b826b43431cb78f9a5aebc",
+            "metadata": {
+              "method": "actual-first-pass-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "lane": 3,
+              "read_date": "2026-10-04",
+              "attempted_count": 50,
+              "added_count": 38,
+              "not_added_count": 12,
+              "analysis_file": "early-recent-round15.json",
+              "scope_note": "仅真实执行查询和所列阅读范围；日志failed或metadata_only不等于内容已核验。"
+            }
           }
         ],
-        "updated_at": "2026-10-04",
+        "updated_at": "2026-10-05",
         "material_deduplication": {
           "method": "exact_object_payload_v1",
           "normalized_at": "2026-10-04",
@@ -3551,6 +3689,11 @@
         "file": "research/issues-source-reading-round31.json",
         "sha256": "b32ed55cf0ae81594afc64d1b9ad48e64d0c8e9388762d2adb915e635c5380f0",
         "count": 149
+      },
+      {
+        "file": "research/issues-source-reading-round32.json",
+        "sha256": "3a4cc284acad5e8f6782a939531b369780027bfae7ef8ca8775f17a743c75235",
+        "count": 144
       }
     ],
     "spatial_batches": [
@@ -3633,10 +3776,15 @@
         "file": "research/spatial-reading-round16.json",
         "sha256": "2e94d94d205552e81d0216b3cb9631cd8a6aaab82f05b6ea1c05513d04a9c653",
         "count": 13
+      },
+      {
+        "file": "research/spatial-reading-round17.json",
+        "sha256": "48aa4e49ed56462db7f5b4f4c6f4f6007760bd2941532cac7b731c607edfbc62",
+        "count": 23
       }
     ],
-    "issue_facet_records": 3758,
-    "issue_facet_count": 8935,
+    "issue_facet_records": 3902,
+    "issue_facet_count": 9223,
     "full_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/completion-overlay.json.gz"
   },
   "chunks": [
