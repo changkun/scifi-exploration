@@ -10,6 +10,8 @@
 
 **补全进度**：所有14,564条统一实体均逐字段登记缺口与核对状态。熟悉作品新增知识标为待独立核对；Open Library定向书目对照保留原字段、对应依据、主题词候选和日期差异。新增全站“已有知识补充”“有缺失”“部分书目对应”“日期差异”“身份或版本待核”及具体缺失字段筛选。当前数量以 `research/canonical-universe-metadata.json` 为准，方法见 [补全与核对](docs/completion-methodology.md) 和 [基线审计](docs/audit-methodology.md)。
 
+**持续研究队列**：全部统一身份有明确下一步；取得简介与已完成分析分开计数。阅读范围、月度资料获取与复现见 [持续补全](docs/continuous-issue-research.md)。
+
 下载与归档：
 
 - `research/canonical-universe.json.gz`：统一索引、研究层、旧 ID 别名和详细来源引用。
@@ -22,6 +24,7 @@
 - `research/issues-before-1900.json`、`issues-1900-1979.json`、`issues-since-1980.json`：按年代整理的作品核心问题、细分议题及情节依据，均为知识补充待核。
 - `research/issue-review-notes.json`：新增批次的交叉复查范围、具体修正与仍待核的题名/层级问题。
 - `research/issue-analysis.json.gz`：全部已有核心问题分析的专用索引；`issue-completion-summary.json` 记录本轮新增与仍缺分析的数量。
+- `research/issue-research-queue.json.gz`、`reading-materials.json.gz`：全量逐条研究任务及已取得资料的公开事实清单。
 - `research/library-crosschecks.json.gz`、`external-source/openlibrary/`：全部定向书目对照与原始缓存。
 
 `research/report.md`、`research/catalog.json`／`catalog.csv` 及 `research/source-notes/` 保留首轮 168 条研究的历史版本。它们用于追溯已有论述和版本判断，没有因扩库而改写成对全部来源作品的研究报告。当前网站的统一索引与字段覆盖，以统一模型、来源快照和实体链接说明为准。
@@ -72,6 +75,7 @@ node scripts/validate.mjs
 node scripts/validate-unified.mjs
 node scripts/validate-completion.mjs
 node scripts/validate-issues.mjs
+node scripts/validate-reading-queue.mjs
 ```
 
 无需安装前端依赖。Three.js 的固定版本和地球纹理已放入仓库。报告保留独立的阅读页面。

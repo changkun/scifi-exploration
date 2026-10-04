@@ -2,10 +2,14 @@
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
+import {listIssueInputs} from './issue-inputs.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [audit,library,source,catalog,links]=await Promise.all([gz('research/record-audit.json.gz'),gz('research/library-crosschecks.json.gz'),gz('research/structured-bibliography.json.gz'),read('dist/assets/catalog.json'),read('dist/assets/research-links.json')]);
 const libraries=new Map(library.records.map(r=>[r.id,r])),sourceMap=new Map(source.records.map(r=>[r.id,r]));
+let reading={metadata:null,records:[]};
+try{reading=await gz('research/reading-materials.json.gz');}catch(error){if(error.code!=='ENOENT')throw error;}
+const readingMap=new Map(reading.records.map(r=>[r.id,r.materials]));
 const canonicalIds=new Set(audit.records.map(r=>r.id)),researchIds=new Set(links.links.map(r=>r.canonical_id));
 const auditMap=new Map(audit.records.map(r=>[r.id,r])),researchByCanonical=new Map(links.links.map(l=>[l.canonical_id,catalog.works.find(w=>w.id===l.research_id)]));
 const norm=v=>String(v||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
@@ -13,7 +17,7 @@ const topics=new Set(catalog.works.flatMap(r=>r.topics)),spaces=new Set(['earth'
 const durations=new Set(['日—月','年—一生','多代—百年','千年—文明史','百万年—宇宙尺度','多尺度或非线性','待核']);
 const sciences=new Set(['近现实外推','依赖未证技术','强反事实设定','混合或不适用']);
 const knowledge=new Map(),knowledgeInputs=[];
-const issueInputs=['research/issues-before-1900.json','research/issues-1900-1979.json','research/issues-since-1980.json'];
+const issueInputs=await listIssueInputs(root);
 for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs]){
   let bytes;try{bytes=await readFile(new URL(p,root));}catch(e){if(e.code==='ENOENT'){console.log('Pending knowledge input: '+p);continue;}throw e;}
   const data=JSON.parse(bytes);knowledgeInputs.push({file:p,sha256:createHash('sha256').update(bytes).digest('hex'),count:data.records.length});
@@ -97,9 +101,10 @@ const records=audit.records.map(a=>{
  if(topicMap.size)candidateCount++;if(checks.some(c=>c.status==='title_author_correspondence'))matchedCount++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different'))dateConflicts++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='missing_source'))libraryMissingYearCandidates++;
- return {id:a.id,structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
+ return {id:a.id,reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
 });
 const metadata={format:'completion-overlay-v1',date:'2026-10-04',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
+metadata.reading_materials=reading.metadata;
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);

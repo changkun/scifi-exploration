@@ -10,7 +10,11 @@ const fetcher=async p=>{try{return{ok:true,json:()=>read('dist/'+p)}}catch{retur
 const [source,catalog,spatial,links]=await Promise.all([loadBibliographySource(fetcher),read('dist/assets/catalog.json'),read('dist/assets/spatial.json'),read('dist/assets/research-links.json')]);
 const completion=await loadCompletionSource(fetcher);
 const canonical=buildCanonicalUniverse(source.records,catalog.works,spatial,links,completion.records),works=canonical.works;
-const snapshot=JSON.parse(gunzipSync(await readFile(new URL('dist/assets/canonical-universe.json.gz',root))));
+const archive=await read('dist/assets/canonical-universe-manifest.json');
+const parts=await Promise.all(archive.chunks.map(async p=>JSON.parse(gunzipSync(await readFile(new URL('dist/'+p,root))))));
+const snapshot={metadata:archive.metadata,aliases:archive.aliases,works:parts.flatMap(p=>p.works)};
+const complete=JSON.parse(gunzipSync(await readFile(new URL('research/canonical-universe.json.gz',root))));
+assert.deepEqual(snapshot,complete,'Site shards retain the exact complete download snapshot');
 let passed=0;const check=(name,fn)=>{fn();passed++;console.log('PASS '+name);};
 const filter=values=>filterWorks(works,{...DEFAULT_STATE,boundary:true,...values});
 check('all source identities retained once; unresolved research records retained',()=>{const ids=new Set(works.map(w=>w.id));assert.equal(ids.size,works.length);for(const r of source.records)assert(ids.has(r.id));const linked=links.links.filter(l=>l.status==='linked').length;assert.equal(works.length,source.records.length+catalog.works.length-linked);assert.equal(works.filter(w=>w.research).length,168);assert.equal(canonical.aliases.size,168);});

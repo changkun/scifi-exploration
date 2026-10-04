@@ -1,0 +1,41 @@
+# 持续议题补全与逐条研究队列
+
+补全目标仍覆盖当前统一底库的每条身份。完成一批并不等于完成全量研究，也不把获取简介、结构检查或题名作者对应记为内容分析完成。
+
+## 第二轮已发布检查点
+
+2026-10-04 在前一版本 784 条核心问题分析基础上，新增 183 条，达到 967 条；尚缺分析 13,597 条。新增 396 个细分问题及情节依据，累计 1,676 个。四组新增记录分别为早期 31 条、1900—1979 年 61 条、1980 年后 73 条、跨年代实际资料阅读 18 条。后续检查点数量以生成元数据为准。
+
+新增全部维持 `knowledge_added_unverified`。原作或出版社介绍已实际阅读的范围逐批说明，不将简介或章节节选冒充全书核验。19世纪使用后世重印文本时记录版本差异；短篇、合集、系列、译本和边界参照保持各自身份。熟悉内容的补充仍需要独立核对。
+
+## 定向内容资料获取
+
+从 Open Library 官方 2026-09-30 月度 Work dump 流式扫描 41,666,337 行，仅保留本底库已有的 4,643 个外部 Work 标识：返回 4,294 个，含简介 2,521 个，349 个标识此次未返回。未返回不代表作品不存在。此步骤不扩大来源边界，也不产生任何议题分析。
+
+取得记录清单见 `research/reading-materials.json.gz`。保留 dump URL、完整压缩流 SHA256、记录 SHA256、修订及修改时间。公开清单不复制外部简介文本；简介仅存放在仓库外的阅读工作区。简介可能由社区编辑、转载出版社文案、混入其他版本或包含错误，因此必须先确认对应文本，再阅读和解释。
+
+- [官方批量数据说明](https://openlibrary.org/developers/dumps)
+- [此次 Work dump](https://archive.org/download/ol_dump_2026-09-30/ol_dump_works_2026-09-30.txt.gz)
+- [官方 API 使用原则](https://openlibrary.org/developers/api)
+
+## 全量队列
+
+`research/issue-research-queue.json.gz` 恰好覆盖全部 14,564 条身份，并保留每条当前核心问题状态、内容资料记录、缺失字段、文本边界与来源链接。
+
+| 阶段 | 依据与下一步 |
+| --- | --- |
+| `analysis_present` | 已有核心问题，继续逐字段核对；不代表已全部核实 |
+| `content_reading_next` | 已取得简介，先前题名作者对应且此次题名与至少一位作者未变；仍需辨明文本粒度和内容 |
+| `identity_then_content` | 有简介，但身份或范围存在待核项；先区分同名、系列、合集、短篇或版本 |
+| `source_search_next` | 定向资料中没有简介；继续查原作、作者、出版社及图书馆内容资料 |
+
+队列依据当前资料状态排序下一步，不能替代逐条阅读。每部作品详情显示其任务与已取得资料状态；网站补全页显示当前筛选范围的四类数量。
+
+## 复现
+
+1. 运行 `scripts/acquire-work-synopses.py`，传入官方月度 dump URL 和仓库外缓存目录；流式处理，不保存整份 dump，不进行数千次逐本 API 请求。
+2. 运行 `scripts/index-reading-materials.py`，传入仓库外缓存和仓库外阅读索引路径；生成公开事实清单与私有待研读资料包。
+3. 实际阅读资料，把带身份和字段依据的解释记录在 `research/issues-*-roundN.json`。自动登记脚本按轮次加载，原批次与原解释均保留。
+4. 依次运行 `scripts/build-completion.mjs` 与 `scripts/build-unified.mjs`，再运行所有验证脚本，包括 `scripts/validate-reading-queue.mjs`。
+
+完整统一下载保留于 GitHub 的 `research/canonical-universe.json.gz`。网站按每千条拆分无损副本，分片清单为 `dist/assets/canonical-universe-manifest.json`，以适应持续增长及单个资源大小限制；验证会重组所有分片并与完整快照逐项比较。

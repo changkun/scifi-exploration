@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
 const root=new URL('../',import.meta.url);
@@ -13,12 +13,26 @@ const {works,aliases}=buildCanonicalUniverse(records,catalog.works,spatial,links
 const metadata={format:'canonical-work-universe-v1',research_date:'2026-10-04',source_record_count:records.length,...coverageOf(works),entity_linking:links.metadata,source_scope:manifest.metadata.scope,identity_note:'本版本统一已有来源实体及研究记录的网页身份，不宣称已完成全球书目。系列、章节、版本等源实体保持独立；未可靠链接的研究记录使用local编号。',field_note:'当前索引与研究层完整保留；每条source_index.detail_url指向完整源字段，所有来源详细记录、关系与related_entities另见bibliography-full.json.gz。unknown不作负面判断。',full_source_data:'./assets/bibliography-full.json.gz'};
 metadata.completion=completion.metadata;metadata.field_note+=' 知识补充待独立核对；跨来源一致仅限部分字段。所有缺口与差异保留在completion；原研究与source_index不覆盖。';
 const snapshot={metadata,aliases:Object.fromEntries(aliases),works};
+const stages={};for(const w of works)stages[w.issue_research_task.stage]=(stages[w.issue_research_task.stage]||0)+1;
+const queue={metadata:{format:'issue-research-queue-v1',date:metadata.research_date,record_count:works.length,stages,acquisition:completion.metadata.reading_materials,note:'每条身份均登记。取得内容资料不算分析完成；已有分析仍待独立核对。保留所有未确认字段与身份疑点。'},records:works.map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,issue_analysis_status:w.issue_analysis_status,task:w.issue_research_task,reading_materials:w.reading_materials,identity_notes:w.knowledge_identity_notes,source_boundary:w.form_basis,missing_fields:w.completion.missing_fields,source_urls:w.sources}))};
+metadata.issue_research_queue={record_count:works.length,stages,url:'./assets/issue-research-queue.json.gz'};
 await mkdir(new URL('research/',root),{recursive:true});
 const compressed=gzipSync(JSON.stringify(snapshot),{level:9});
-await writeFile(new URL('dist/assets/canonical-universe.json.gz',root),compressed);
+// Keep the complete archive in GitHub; the Site mirrors identical records in
+// bounded shards so growing research never exceeds the per-asset limit.
+const archiveDir=new URL('dist/assets/canonical-archive/',root);
+await mkdir(archiveDir,{recursive:true});
+for(const name of await readdir(archiveDir))if(name.endsWith('.json.gz'))await unlink(new URL(name,archiveDir));
+const archiveChunks=[];
+for(let start=0;start<works.length;start+=1000){const name=String(start/1000).padStart(3,'0')+'.json.gz';archiveChunks.push('./assets/canonical-archive/'+name);await writeFile(new URL(name,archiveDir),gzipSync(JSON.stringify({works:works.slice(start,start+1000)}),{level:9}));}
+await writeFile(new URL('dist/assets/canonical-universe-manifest.json',root),JSON.stringify({format:'canonical-archive-manifest-v1',metadata,aliases:snapshot.aliases,chunks:archiveChunks,complete_archive_url:'https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/canonical-universe.json.gz'},null,2)+'\n');
+await unlink(new URL('dist/assets/canonical-universe.json.gz',root)).catch(e=>{if(e.code!=='ENOENT')throw e;});
 await writeFile(new URL('research/canonical-universe.json.gz',root),compressed);
 await writeFile(new URL('research/canonical-universe-metadata.json',root),JSON.stringify(metadata,null,2)+'\n');
-const fields=['id','research_id','source_id','title_zh','title_original','author','first_year','sort_year','source_first_year','year_display','research_level','source_entity_kind','topics','research_topics','knowledge_topics','topic_candidates','issue','issue_analysis_status','issue_facets','issue_facets_status','issue_alternatives','knowledge_identity_notes','branches','duration','science_class','spatial_primary','completion'];
+const queueBytes=gzipSync(JSON.stringify(queue),{level:9});
+await writeFile(new URL('research/issue-research-queue.json.gz',root),queueBytes);
+await writeFile(new URL('dist/assets/issue-research-queue.json.gz',root),queueBytes);
+const fields=['id','research_id','source_id','title_zh','title_original','author','first_year','sort_year','source_first_year','year_display','research_level','source_entity_kind','topics','research_topics','knowledge_topics','topic_candidates','issue','issue_analysis_status','issue_facets','issue_facets_status','issue_alternatives','knowledge_identity_notes','issue_evidence_notes','issue_research_task','reading_materials','branches','duration','science_class','spatial_primary','completion'];
 const csv=values=>values.map(value=>'"'+String(value??'').replaceAll('"','""')+'"').join(',');
 await writeFile(new URL('research/canonical-universe.csv.gz',root),gzipSync('\ufeff'+[csv(fields),...works.map(w=>csv(fields.map(k=>typeof w[k]==='object'&&w[k]!=null?JSON.stringify(w[k]):w[k])))].join('\n'),{level:9}));
 const previousKnowledge=(await Promise.all(['research/knowledge-existing.json','research/knowledge-additional.json'].map(read))).flatMap(d=>d.records);
@@ -27,7 +41,7 @@ const newlyAnalyzed=works.filter(w=>w.issue_analysis_status!=='missing'&&!previo
 const nineteenth=works.filter(w=>w.sort_year!=null&&w.sort_year>=1800&&w.sort_year<=1899);
 const issueSummary={date:metadata.research_date,universe:works.length,previously_analyzed:previouslyAnalyzed.size,analyzed:metadata.issue_analyzed,newly_analyzed:newlyAnalyzed.length,analysis_missing:metadata.issue_missing,facet_records:metadata.issue_facet_records,facet_count:metadata.issue_facets,facet_labels:new Set(works.flatMap(w=>w.issue_facets.map(f=>f.label))).size,nineteenth_century:{total:nineteenth.length,analyzed:nineteenth.filter(w=>w.issue_analysis_status!=='missing').length,newly_analyzed:nineteenth.filter(w=>newlyAnalyzed.some(n=>n.id===w.id)).length,faceted:nineteenth.filter(w=>w.issue_facets.length).length},batches:completion.metadata.issue_batches,newly_analyzed_ids:newlyAnalyzed.map(w=>w.id),note:'作品分析与宽泛标签候选分开统计；新增分析及情节依据全部待独立核对，未知条目原样保留。'};
 await writeFile(new URL('research/issue-completion-summary.json',root),JSON.stringify(issueSummary,null,2)+'\n');
-const issueData={metadata:issueSummary,records:works.filter(w=>w.issue_analysis_status!=='missing').map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,topics:w.topics,research_topics:w.research_topics,knowledge_topics:w.knowledge_topics,topic_candidates:w.topic_candidates,issue:w.issue,issue_analysis_status:w.issue_analysis_status,issue_facets:w.issue_facets,issue_facets_status:w.issue_facets_status,issue_alternatives:w.issue_alternatives||[],knowledge_identity_notes:w.knowledge_identity_notes,original_research_issue:w.research?.issue||null,knowledge_assertions:w.knowledge?.assertions||[],sources:w.sources}))};
+const issueData={metadata:issueSummary,records:works.filter(w=>w.issue_analysis_status!=='missing').map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,topics:w.topics,research_topics:w.research_topics,knowledge_topics:w.knowledge_topics,topic_candidates:w.topic_candidates,issue:w.issue,issue_analysis_status:w.issue_analysis_status,issue_facets:w.issue_facets,issue_facets_status:w.issue_facets_status,issue_alternatives:w.issue_alternatives||[],knowledge_identity_notes:w.knowledge_identity_notes,issue_evidence_notes:w.issue_evidence_notes,issue_research_task:w.issue_research_task,original_research_issue:w.research?.issue||null,knowledge_assertions:w.knowledge?.assertions||[],sources:w.sources}))};
 const issueCompressed=gzipSync(JSON.stringify(issueData),{level:9});
 await writeFile(new URL('research/issue-analysis.json.gz',root),issueCompressed);
 await writeFile(new URL('dist/assets/issue-analysis.json.gz',root),issueCompressed);

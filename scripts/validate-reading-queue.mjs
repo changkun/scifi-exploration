@@ -1,0 +1,13 @@
+import {readFile} from 'node:fs/promises';
+import {gunzipSync} from 'node:zlib';
+const root=new URL('../',import.meta.url),read=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
+const [canonical,queue,materials]=await Promise.all(['research/canonical-universe.json.gz','research/issue-research-queue.json.gz','research/reading-materials.json.gz'].map(read));
+const assert=(ok,note)=>{if(!ok)throw new Error(note);console.log('PASS '+note);};
+const identities=new Map(canonical.works.map(w=>[w.id,w]));
+assert(queue.records.length===identities.size&&new Set(queue.records.map(r=>r.id)).size===identities.size&&queue.records.every(r=>identities.has(r.id)),'全量身份恰好登记一次');
+assert(queue.records.every(r=>(r.task.stage==='analysis_present')===(identities.get(r.id).issue_analysis_status!=='missing')),'资料取得没有升级为分析完成');
+assert(queue.records.every(r=>r.task.stage!=='content_reading_next'||r.reading_materials.some(m=>m.has_description&&m.previous_identity_status==='title_author_correspondence'&&m.same_dump_title&&m.same_dump_authors)),'研读优先保留题名作者与原书目对应条件');
+assert(!materials.records.some(r=>r.materials.some(m=>'text'in m||'description'in m)),'公开资料清单不含原简介文本');
+assert(materials.records.every(r=>r.materials.every(m=>m.acquisition_status!=='returned'||/^[a-f0-9]{64}$/.test(m.record_sha256))),'已取得记录保留可追踪的散列值');
+const counts={};for(const r of queue.records)counts[r.task.stage]=(counts[r.task.stage]||0)+1;
+assert(JSON.stringify(counts)===JSON.stringify(queue.metadata.stages),'阶段统计逐条可复算');

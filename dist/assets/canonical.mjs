@@ -72,6 +72,8 @@ function applySupplement(w,s){
   w.knowledge=s.knowledge||null;w.knowledge_topics=s.knowledge?.fields?.topics||[];
   w.issue_facets=s.knowledge?.fields?.issue_facets||[];
   w.knowledge_identity_notes=unique((s.knowledge?.assertions||[]).map(a=>a.identity_caveat));
+  w.issue_evidence_notes=unique((s.knowledge?.assertions||[]).map(a=>a.evidence_scope));
+  w.reading_materials=s.reading_materials||[];
   w.issue_facets_status=w.issue_facets.length?'knowledge_added_unverified':'missing';
   w.issue_alternatives=s.knowledge?.issue_alternatives||[];
   if(w.research?.issue&&s.knowledge?.fields.issue&&w.research.issue!==s.knowledge.fields.issue)w.issue_alternatives=[...w.issue_alternatives,{value:s.knowledge.fields.issue,note:s.knowledge.field_notes.issue,input_file:s.knowledge.assertions?.find(a=>a.fields.issue===s.knowledge.fields.issue)?.input_file}];
@@ -117,6 +119,14 @@ function applySupplement(w,s){
   else if(!w.research&&w.topics.length)w.research_level='candidate';
   w.sources=unique([...w.sources,...(s.knowledge?.sources||[]),...w.library_checks.map(c=>c.source_url)]);
   if(w.knowledge&&!w.research)w.evidence_note='已有知识补充，尚未独立逐字段核对。来源书目、规则候选与知识解释分别保留；链接不代表所有字段已经验证。';
+  const described=w.reading_materials.filter(m=>m.has_description),matched=described.filter(m=>m.previous_identity_status==='title_author_correspondence'&&m.same_dump_title&&m.same_dump_authors);
+  w.issue_research_task=w.issue_analysis_status!=='missing'
+    ?{stage:'analysis_present',label:'已有分析，继续核对',reason:'核心问题已整理；需继续核对情节、文本范围与各项来源，保留可修订解释。',next_action:'逐字段核对现有分析及未确认属性。'}
+    :matched.length
+      ?{stage:'content_reading_next',label:'内容资料待研读',reason:'已取得简介，且与先前对应书目的题名及至少一位作者相同；简介尚未逐条研读，内容和文本粒度仍需确认。',next_action:'阅读简介并查原作、作者或出版社资料，提炼有情节依据的问题。'}
+      :described.length
+        ?{stage:'identity_then_content',label:'先确认资料对应对象',reason:'已有内容资料，但书目身份、文本粒度或此次题名作者对照尚未满足阅读优先条件。',next_action:'先区分同名、系列、合集、短篇、版本，再阅读对应文本资料。'}
+        :{stage:'source_search_next',label:'继续寻找内容资料',reason:'此次定向取得的资料中没有可用简介；这不代表作品或资料不存在。',next_action:'查找原作目录、作者与出版社介绍、图书馆摘要，记录可读内容及身份疑点。'};
 }
 export function coverageOf(works) {
   return { total: works.length, researched: works.filter(w => w.research).length,
