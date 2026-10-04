@@ -2,7 +2,7 @@
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
-import {listIssueInputs} from './issue-inputs.mjs';
+import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [audit,library,source,catalog,links]=await Promise.all([gz('research/record-audit.json.gz'),gz('research/library-crosschecks.json.gz'),gz('research/structured-bibliography.json.gz'),read('dist/assets/catalog.json'),read('dist/assets/research-links.json')]);
@@ -33,12 +33,13 @@ const durations=new Set(['日—月','年—一生','多代—百年','千年—
 const sciences=new Set(['近现实外推','依赖未证技术','强反事实设定','混合或不适用']);
 const knowledge=new Map(),knowledgeInputs=[];
 const issueInputs=await listIssueInputs(root);
-for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs]){
+const spatialInputs=await listSpatialInputs(root);
+for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs,...spatialInputs]){
   let bytes;try{bytes=await readFile(new URL(p,root));}catch(e){if(e.code==='ENOENT'){console.log('Pending knowledge input: '+p);continue;}throw e;}
   const data=JSON.parse(bytes);knowledgeInputs.push({file:p,sha256:createHash('sha256').update(bytes).digest('hex'),count:data.records.length});
   const inputIds=new Set();
   for(const r of data.records){
-    if(!canonicalIds.has(r.id)||inputIds.has(r.id)||knowledge.has(r.id)&&!issueInputs.includes(p))throw new Error('Invalid or duplicate knowledge identity: '+r.id);
+    if(!canonicalIds.has(r.id)||inputIds.has(r.id)||knowledge.has(r.id)&&!issueInputs.includes(p)&&!spatialInputs.includes(p))throw new Error('Invalid or duplicate knowledge identity: '+r.id);
     inputIds.add(r.id);
     if(!r.identity?.title||!r.identity?.author||r.verification_status!=='knowledge_added_unverified')throw new Error('Knowledge identity or status absent: '+r.id);
     if(r.identity_caveat!==undefined&&(typeof r.identity_caveat!=='string'||!r.identity_caveat.trim()))throw new Error('Invalid identity caveat: '+r.id);
@@ -48,6 +49,12 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     if(!titles.includes(norm(r.identity.title))||!authors.includes(norm(r.identity.author)))throw new Error('Knowledge title/author do not match canonical identity: '+r.id);
     if(Object.keys(r.fields).some(k=>!r.field_notes?.[k]))throw new Error('Knowledge field note absent: '+r.id);
     if(r.fields.spatial_primary&&!spaces.has(r.fields.spatial_primary))throw new Error('Invalid space: '+r.id);
+    if(spatialInputs.includes(p)){
+      if(Object.keys(r.fields).some(k=>!['spatial_primary','spatial_secondary','spatial_rationale'].includes(k)))throw new Error('Spatial batch changes unrelated field: '+r.id);
+      if(!spaces.has(r.fields.spatial_primary)||r.fields.spatial_primary==='unknown'||!r.fields.spatial_rationale?.trim())throw new Error('Spatial judgment absent: '+r.id);
+      if(r.fields.spatial_secondary&&(!Array.isArray(r.fields.spatial_secondary)||r.fields.spatial_secondary.some(s=>!spaces.has(s)||s==='unknown'||s===r.fields.spatial_primary)))throw new Error('Invalid secondary space: '+r.id);
+      if(!r.source_evidence?.length||r.source_evidence.some(s=>!s.url?.startsWith('https://')||!s.support_scope?.trim()||!r.sources?.includes(s.url)))throw new Error('Spatial reading scope absent: '+r.id);
+    }
     if(r.fields.duration&&!durations.has(r.fields.duration))throw new Error('Invalid duration: '+r.id);
     if(r.fields.science_class&&!sciences.has(r.fields.science_class))throw new Error('Invalid science: '+r.id);
     if((r.fields.topics||[]).some(t=>!topics.has(t)))throw new Error('Invalid topic: '+r.id);
@@ -123,6 +130,7 @@ metadata.content_corrections=corrections.records.length;
 metadata.reading_materials=reading.metadata;
 metadata.source_search_logs={record_count:sourceSearch.records.length,metadata:sourceSearch.metadata};
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
+metadata.spatial_batches=knowledgeInputs.filter(i=>spatialInputs.includes(i.file));
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);
 const chunks=[];

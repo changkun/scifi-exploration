@@ -11,3 +11,12 @@ export async function listIssueInputs(root){
    return round(a)-round(b)||period(a)-period(b);
   }).map(f=>'research/'+f);
 }
+
+// Spatial judgments have their own evidence-backed inputs. An issue label or
+// a bibliographic genre never supplies a map position.
+export async function listSpatialInputs(root){
+ const files=await readdir(new URL('research/',root));
+ return files.filter(f=>/^spatial-reading-round[1-9]\d*\.json$/.test(f))
+  .sort((a,b)=>Number(a.match(/round(\d+)/)[1])-Number(b.match(/round(\d+)/)[1]))
+  .map(f=>'research/'+f);
+}

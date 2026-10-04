@@ -5,7 +5,7 @@ import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
 import {loadBibliographySource,loadCompletionSource} from '../dist/assets/data-loader.mjs';
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {issueDetail,renderIssueExplorer} from '../dist/assets/issues.mjs';
-import {listIssueInputs} from './issue-inputs.mjs';
+import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
@@ -17,6 +17,12 @@ const inputs=await Promise.all(batches.map(read));
 check('all issue batches preserve their exact original assertions in the merged archive',()=>{for(let i=0;i<inputs.length;i++)for(const r of inputs[i].records){const w=works.find(w=>w.id===r.id);assert(w);assert(w.knowledge.assertions.some(a=>{const {input_file,...raw}=a;return input_file===batches[i]&&JSON.stringify(raw)===JSON.stringify(r);}));assert.equal(r.verification_status,'knowledge_added_unverified');assert.deepEqual(Object.keys(r.fields).sort(),['issue','issue_facets','topics']);}});
 const originals=await Promise.all(['research/knowledge-existing.json','research/knowledge-additional.json'].map(read));
 const priorKnowledge=new Map(originals.flatMap(d=>d.records).map(r=>[r.id,r]));
+// Keep the separate spatial overlay in both sides of the issue-only comparison.
+// This still rejects any spatial fields originating in an issue batch.
+for(const input of await Promise.all((await listSpatialInputs(root)).map(read)))for(const r of input.records){
+ const old=priorKnowledge.get(r.id);
+ priorKnowledge.set(r.id,{...(old||r),fields:{...r.fields,...old?.fields},field_notes:{...r.field_notes,...old?.field_notes}});
+}
 const priorSupplements=completion.records.map(s=>({...s,knowledge:priorKnowledge.get(s.id)||null}));
 const prior=buildCanonicalUniverse(source.records,catalog.works,spatial,links,priorSupplements).works,priorMap=new Map(prior.map(w=>[w.id,w]));
 check('issue additions never fabricate unrelated bibliographic, spatial or temporal fields',()=>{for(const w of works){const old=priorMap.get(w.id);for(const key of ['id','source_index','research','first_year','sort_year','source_first_year','spatial_primary','spatial_evidence','duration','story_era','reach','science_class','science_note','original_language','title_zh','title_original','author','languages','forms','entity_link'])assert.deepEqual(w[key],old[key],w.id+' '+key);if(old.issue_analysis_status!=='missing')assert.equal(w.issue,old.issue);}});

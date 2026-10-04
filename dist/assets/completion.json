@@ -265,9 +265,29 @@
         "file": "research/issues-1900-1979-round14.json",
         "sha256": "27fa7713176e42a594327f196dd62db7b622d8c422c866942e9020fe79397d7a",
         "count": 14
+      },
+      {
+        "file": "research/issues-since-1980-round14.json",
+        "sha256": "c8c19b90d5ce809bc51aed27c1d442ab94a1af9d95383d34ec123e75bb75aba5",
+        "count": 40
+      },
+      {
+        "file": "research/issues-source-reading-round14.json",
+        "sha256": "3ec8addc6636dba42a9efef84f161bebd745a8c747d7a74ad9ca2afc6b84b8a2",
+        "count": 4
+      },
+      {
+        "file": "research/issues-1900-1979-round15.json",
+        "sha256": "299ddd20b1d9fee8bf97d4402c22f2295316f4cd3ab2f22a62706e7a5a97ffd3",
+        "count": 10
+      },
+      {
+        "file": "research/spatial-reading-round1.json",
+        "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
+        "count": 66
       }
     ],
-    "knowledge_added": 2111,
+    "knowledge_added": 2165,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -320,12 +340,12 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 770,
+      "record_count": 824,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 770,
+        "record_count": 824,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -833,15 +853,59 @@
               "record_count": 14,
               "note": "只记录实际读取URL与确切支持范围；文学解释仍待独立核对。"
             }
+          },
+          {
+            "file": "silverberg-source-searches-round14.json",
+            "sha256": "d60d976ee25569d5c17b19acbc19d8ac3faf5b923ee6b75f3421b5ff2d2b69fa",
+            "metadata": {
+              "round": 14,
+              "created_at": "2026-10-04",
+              "status": "frozen_checkpoint",
+              "method": "actual-reading-log-v1",
+              "record_count": 4,
+              "frozen_at": "2026-10-04"
+            }
+          },
+          {
+            "file": "global-source-searches-round14.json",
+            "sha256": "b64c8f69caf88597a75ed00df2d5874a34ca0cd0bbcc632b22ce719e681743d4",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "date": "2026-10-04",
+              "scope": "只记录实际读到的材料与支持范围；不是全文或独立书目核验。",
+              "source_snapshot_sha256": "1fdac6b64f2654c1ba24600a673b25822560acb0a351294b8edc0ca0ad504676",
+              "record_count": 40,
+              "source_reference_count": 70,
+              "unique_source_url_count": 59,
+              "method": "逐记录逐URL实际阅读范围日志；未保存查询保留queries空，不捏造检索历史；不等于全文阅读或内容自动验证。"
+            }
+          },
+          {
+            "file": "modern-source-searches-round15.json",
+            "sha256": "fb5c5eb73f26c0ab27f8321c43e4721335797d05ee5ef48c9c8f68e630648329",
+            "metadata": {
+              "method": "actual-source-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "record_count": 10,
+              "note": "只记录实际读取URL与确切支持范围；文学解释仍待独立核对。",
+              "scope_note": "Caretaker为返回的完整独立短篇；其余多数为原作选定章节或出版社简介。Galactic Derelict的原作情节依据后卷明确回顾和已实际返回的出版简介缓存，不假称阅读本卷全文。The Beast Master的复仇线来自已有知识，官方合订本简介只支持明示背景；Kirkus为二手评论。"
+            }
           }
         ],
         "updated_at": "2026-10-04",
         "material_deduplication": {
           "method": "exact_object_payload_v1",
           "normalized_at": "2026-10-04",
-          "records_with_removed_copies": 22,
-          "identical_copies_removed": 213,
-          "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+          "records_with_removed_copies": 0,
+          "identical_copies_removed": 0,
+          "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained.",
+          "previous_normalization": {
+            "method": "exact_object_payload_v1",
+            "normalized_at": "2026-10-04",
+            "records_with_removed_copies": 22,
+            "identical_copies_removed": 213,
+            "preserved": "Distinct URLs, reading scopes, material kinds, results, dates, raw_reading_log and previous_attempts are retained."
+          }
         }
       }
     },
@@ -1095,10 +1159,32 @@
         "file": "research/issues-1900-1979-round14.json",
         "sha256": "27fa7713176e42a594327f196dd62db7b622d8c422c866942e9020fe79397d7a",
         "count": 14
+      },
+      {
+        "file": "research/issues-since-1980-round14.json",
+        "sha256": "c8c19b90d5ce809bc51aed27c1d442ab94a1af9d95383d34ec123e75bb75aba5",
+        "count": 40
+      },
+      {
+        "file": "research/issues-source-reading-round14.json",
+        "sha256": "3ec8addc6636dba42a9efef84f161bebd745a8c747d7a74ad9ca2afc6b84b8a2",
+        "count": 4
+      },
+      {
+        "file": "research/issues-1900-1979-round15.json",
+        "sha256": "299ddd20b1d9fee8bf97d4402c22f2295316f4cd3ab2f22a62706e7a5a97ffd3",
+        "count": 10
       }
     ],
-    "issue_facet_records": 2014,
-    "issue_facet_count": 4674
+    "spatial_batches": [
+      {
+        "file": "research/spatial-reading-round1.json",
+        "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
+        "count": 66
+      }
+    ],
+    "issue_facet_records": 2068,
+    "issue_facet_count": 4803
   },
   "chunks": [
     "./assets/completion-index/000.json",
