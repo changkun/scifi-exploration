@@ -1,0 +1,1288 @@
+{
+  "metadata": {
+    "method": "source-assisted-spatial-navigation-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "record_count": 42,
+    "field_count": 94,
+    "source_commit": "b5750b5a3191e189f9f5c9f1777e2603c60aed2e",
+    "source_snapshot_sha256": "9b18f4c9605a37b48915db7d73d446c4c9d31b2098df9447f62218860f66e359",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/root-spatial-round4.json",
+        "sha256": "4578bdd1fa64f46dc6c717e28a2f758906cdba44423b6076b9db4c6948fbe73c",
+        "record_count": 6,
+        "metadata": {
+          "method": "actual-source-assisted-spatial-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 6,
+          "field_count": 18,
+          "note": "四条地球、两条单行星。实际场景、出航计划、未决体验及扩写长篇的舞台分开；只补 unknown，内容和解释待独立核对。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-spatial-round2.json",
+        "sha256": "d00bdfe1b4f5e61ea4822b9f65f4e3adf40577a0e69b3a54cec8957540deab13",
+        "record_count": 17,
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-04",
+          "scope": "R16已实际阅读且主舞台明确、current spatial unknown的17个具体作品；合集与含混地点先跳过。",
+          "method": "从逐条材料提取具体地点，主要类别只作阅读导航，与时间跨度或未来年代分开。",
+          "verification": "knowledge_added_unverified；来源实际读取和格式自检不等于独立全文核验。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "9b18f4c9605a37b48915db7d73d446c4c9d31b2098df9447f62218860f66e359",
+          "record_count": 17,
+          "skipped": [
+            "Fountain of Age、Phone Repairs、Half the Day Is Night、Oversite与Interview现有材料地球舞台明示程度不足，本轮暂跳过。",
+            "After the Apocalypse是九篇合集，不按成员篇代表全书主要空间。"
+          ],
+          "selfcheck": {
+            "exact_identity": true,
+            "current_spatial_unknown": true,
+            "allowed_fields_only": true,
+            "source_evidence_per_url": true
+          }
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-spatial-round2.json",
+        "sha256": "209b190206739167c1fd2f436feb861c3caf21b41e71ca0eef51f6f1d1a9e10b",
+        "record_count": 16,
+        "metadata": {
+          "method": "source-assisted-spatial-navigation-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "record_count": 16,
+          "field_count": 32,
+          "single_work_record_count": 16,
+          "collection_record_count": 0,
+          "scope": "R16/R17实际阅读材料中16部确切独立作品，当前canonical空间unknown；保留出版社简介、选页与非官方镜像限制。",
+          "note": "仅补明确主要舞台，仍待独立核对；导航层不是实际坐标。议题与空间输入独立，集合与未决精神场域不强填。",
+          "zone_counts": {
+            "earth": 6,
+            "planetary": 9,
+            "interstellar": 1
+          },
+          "exclusion_note": "不以单篇或出版社个别选例代表合集；Iron Dream 内嵌故事地点尚未在本轮材料中充分确证，Mind Parasites 地球意识与月轨道工程的主次尚待核，暂不填；不覆盖既有空间。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/early-spatial-round2.json",
+        "sha256": "f8b07f88f464276fa1cad21829eac8488731614b6878519927a17dae3293b06e",
+        "record_count": 3,
+        "metadata": {
+          "method": "source-assisted-spatial-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 3,
+          "field_count": 9,
+          "scope": "R16四篇与R17 The Iron Chancellor的原unknown空间；只对实际正文足以支持的三条新增空间。",
+          "note": "只新增三个空间字段，不触碰议题、纪年、既有已知空间；文学空间粗分仍knowledge_added_unverified。",
+          "skipped": [
+            {
+              "id": "Q7602114",
+              "title": "Starman’s Quest",
+              "reason": "已读序幕/前三章明确星际船返地球与Enclave，尚不足以判定长篇主体舞台；暂保留unknown，不把开篇星际设定概括为全书的主场景。"
+            },
+            {
+              "id": "Q23021482",
+              "title": "The Iron Chancellor",
+              "reason": "原刊全文明确未来人类郊居住宅与通勤，但此次没有定位到直接标识地球/地球城市的句段；保留unknown，不凭题名或家庭生活强定天体。"
+            }
+          ],
+          "validation": "三ID与现canonical题名作者一致，原spatial_primary均unknown，合法7-zone值，只有3fields，有实际阅读来源与限定范围。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 0,
+      "cosmic": 0,
+      "earth": 23,
+      "galactic": 0,
+      "interstellar": 1,
+      "planetary": 18
+    },
+    "scope": "仅补确切作品尚缺的空间导航，已有定位不改；时间、核心问题、科学等字段由独立输入维护。",
+    "verification": "knowledge_added_unverified；来源阅读与字段检查不等于作品整体独立核验。"
+  },
+  "records": [
+    {
+      "id": "Q131471743",
+      "identity": {
+        "title": "Hot Sky",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "主体为2133年地球海上船只与哗变；扩写长篇新增的L5轨道场景不挪入1990短篇。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.everand.com/book/141437908/Hot-Sky-at-Midnight"
+      ],
+      "source_evidence": [
+        {
+          "type": "作者前言的许可公开预览",
+          "url": "https://www.everand.com/book/141437908/Hot-Sky-at-Midnight",
+          "support_scope": "实际连续读2011作者前言1537–1561，尤其1550–1551关于1989写作、1990初刊、2133地球海上哗变及Carter改名扩写的说明。此来源为长篇前言，不是短篇全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q131461440",
+      "identity": {
+        "title": "The Desert of Stolen Dreams",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "旅程发生在Majipoor同一行星的大陆、海洋与Suvrael沙漠；梦境叠加不把这段行星旅行变成抽象空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://s3.us-west-1.wasabisys.com/luminist/EB/A/Asimov_ed%20-%20The%20Mammoth%20Book%20of%20Short%20SF%20Novels.pdf"
+      ],
+      "source_evidence": [
+        {
+          "type": "非官方公开扫描版的确切原作全文",
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/EB/A/Asimov_ed%20-%20The%20Mammoth%20Book%20of%20Short%20SF%20Novels.pdf",
+          "support_scope": "实际顺序读PDF物理550–592页（印刷532–574）全部12节，前框架物理549–550页（531–532）另读。视觉核对532页正文起始及574页第12节结束；OCR中533及后续运行标题匹配本篇。只把本篇算全文阅读，未把下载整本当作读完整本。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q131471824",
+      "identity": {
+        "title": "A Thief in Ni-moya",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本篇舞台为Majipoor行星的Ni-moya城市；成员评论与合集框架均明确城市位于该行星，不凭全系列规模改列星际。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fantasyliterature.com/reviews/majipoor-chronicles/"
+      ],
+      "source_evidence": [
+        {
+          "type": "评论作者的确切成员分析",
+          "url": "https://fantasyliterature.com/reviews/majipoor-chronicles/",
+          "support_scope": "实际读Kat Hooper书评第9项A Thief in Ni-moya，以及必要的合集身份框架；确切成员叙述继承庄园、Ni-moya、贵族实践与公正平衡。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q131518432",
+      "identity": {
+        "title": "The Affair",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "双方分别生活在San Francisco与Phoenix，精神远距关系发生在地球城市之间；心灵感应不是星际航行。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://decnotes.datacellar.net/showtopic.php?conf=1060&topic=1073742855&userno=117360"
+      ],
+      "source_evidence": [
+        {
+          "type": "1984年同期读者一手阅读报告的检索缓存",
+          "url": "https://decnotes.datacellar.net/showtopic.php?conf=1060&topic=1073742855&userno=117360",
+          "support_scope": "实际读检索返回的1984-07-25第109.0项：Playboy六月单篇，San Francisco男性证券分析师与Phoenix女性陶艺家，双方已婚，远距心灵感应情爱。直接打开不可访问，未读原篇。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q134706000",
+      "identity": {
+        "title": "To Kiss the Star",
+        "author": "Amy Sterling Casil"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "已读主体为地球英国护理中心及作出决定的生活场景；约三周后前往Epsilon Eridani只是计划，末尾星辰体验未确认为真实出航，不移用未读后续。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://maestrosdelsaber.com/wp-content/uploads/ftp-files/Novela%2C%20Cuentos%20y%20Teatro/Nov%20Ciencia%20Ficcion%20y%20Fantas%C3%ADa/zzz%20Varias%20Ciencia%20Ficcion/Nov%20Sterling%20Casil%2C%20Amy%20-%20To%20kiss%20the%20star.pdf"
+      ],
+      "source_evidence": [
+        {
+          "type": "非官方公开电子转录本的有界正文节选",
+          "url": "https://maestrosdelsaber.com/wp-content/uploads/ftp-files/Novela%2C%20Cuentos%20y%20Teatro/Nov%20Ciencia%20Ficcion%20y%20Fantas%C3%ADa/zzz%20Varias%20Ciencia%20Ficcion/Nov%20Sterling%20Casil%2C%20Amy%20-%20To%20kiss%20the%20star.pdf",
+          "support_scope": "实际读标题/版权/献词页1–3、正文4–11以及33–36结束页；物理页与所印页码一致，末页36视觉核对。12–32尚未读，不声称全文；版权页列2001-02 F&SF初刊，仅作身份对照。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q131472052",
+      "identity": {
+        "title": "Beauty in the Night",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "主体为外星占领下的地球Salisbury生活与Khalid的行动；外星访客不使这篇地球故事自动成为星际。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据确切作品实际已读场景的文学舞台判断，待独立核对。",
+        "spatial_secondary": "仅列材料明确发生的次要天体舞台；未来出航计划、想象与未决体验不冒称已发生。",
+        "spatial_rationale": "导航粗分，只补原unknown；空间、时间、作品身份和议题输入分开。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://sfcrowsnest.info/the-millennium-express-1995-2009-the-collected-stories-of-robert-silverberg-book-review/",
+        "https://www.fantascienza.com/23809/gli-anni-alieni-di-robert-silverberg"
+      ],
+      "source_evidence": [
+        {
+          "type": "评论作者的确切成员分析",
+          "url": "https://sfcrowsnest.info/the-millennium-express-1995-2009-the-collected-stories-of-robert-silverberg-book-review/",
+          "support_scope": "实际读39–41行Beauty in the Night：Salisbury出生背景、父亲施暴与外星侵占；只用成员段落，不以一篇代表合集。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "type": "评论作者明确分界的原篇/长篇说明",
+          "url": "https://www.fantascienza.com/23809/gli-anni-alieni-di-robert-silverberg",
+          "support_scope": "实际读80–83行：Khalid报复父亲、攻击Entity的矛盾心理及82行说明此独立篇1997-09初刊、先于长篇。后续83–87长篇扩展已读但排除本条依据，待原篇校勘。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q101097185",
+      "identity": {
+        "title": "Someday",
+        "author": "James Patrick Kelly"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Daya居住的Third Landing殖民星及来访者飞船。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际完整原篇明确Third Landing村落、异星原生植物和飞船到访；主要故事在这一殖民星上。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://escapepod.org/2017/08/03/ep587-someday/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://escapepod.org/2017/08/03/ep587-someday/",
+          "support_scope": "实际完整原篇明确Third Landing村落、异星原生植物和飞船到访；主要故事在这一殖民星上。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131471724",
+      "identity": {
+        "title": "Solstice",
+        "author": "James Patrick Kelly"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Tony赴英国Stonehenge及其遗迹历史窗口。"
+      },
+      "field_notes": {
+        "spatial_primary": "MIT所载Solstice专段明确Stonehenge作为现在行动和历史穿插的地点。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://web.mit.edu/m-i-t/science_fiction/profiles/kelly.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://web.mit.edu/m-i-t/science_fiction/profiles/kelly.html",
+          "support_scope": "MIT所载Solstice专段明确Stonehenge作为现在行动和历史穿插的地点。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q27902535",
+      "identity": {
+        "title": "Out of All Them Bright Stars",
+        "author": "Nancy Kress"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "地球餐馆中Sally接待外星客人John。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际评论明确地球社会、Sally餐馆及到访的蓝色外星客人；不将星空题名推为太空舞台。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://pamphillips.net/2010/08/12/re-out-of-all-them-bright-stars/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://pamphillips.net/2010/08/12/re-out-of-all-them-bright-stars/",
+          "support_scope": "实际评论明确地球社会、Sally餐馆及到访的蓝色外星客人；不将星空题名推为太空舞台。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131308044",
+      "identity": {
+        "title": "The Mountain to Mohammed",
+        "author": "Nancy Kress"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "未来Boston的医院、难民诊疗与公共花园。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际阅读摘要明确Boston、当地医院与Public Garden的医疗和救人行动。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://writingatlas.com/story/3498/nancy-kress-the-mountain-to-mohammed/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://writingatlas.com/story/3498/nancy-kress-the-mountain-to-mohammed/",
+          "support_scope": "实际阅读摘要明确Boston、当地医院与Public Garden的医疗和救人行动。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131222075",
+      "identity": {
+        "title": "Undone",
+        "author": "James Patrick Kelly"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Mada在地球的乌托邦、早期历史及遥远未来往返。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际完整workshop版原篇的主要旅行是地球时段切换；百万年时间距离没有变为宇宙空间标签。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://odysseyworkshop.org/UndoneJamesPatrickKelly.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://odysseyworkshop.org/UndoneJamesPatrickKelly.pdf",
+          "support_scope": "实际完整workshop版原篇的主要旅行是地球时段切换；百万年时间距离没有变为宇宙空间标签。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131518138",
+      "identity": {
+        "title": "Dear Sarah",
+        "author": "Nancy Kress"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "首次接触后地球的村镇、就业危机与军队。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际评论明确外来者到地球、地球失业人口与MaryJo所在村镇和军队。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://spaceandsorcery.wordpress.com/2018/10/30/short-story-review-dear-sarah-by-nancy-kress/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://spaceandsorcery.wordpress.com/2018/10/30/short-story-review-dear-sarah-by-nancy-kress/",
+          "support_scope": "实际评论明确外来者到地球、地球失业人口与MaryJo所在村镇和军队。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5099787",
+      "identity": {
+        "title": "China Mountain Zhang",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "未来纽约工程工作及中国主导的地球社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "Tor简介及公开开篇明确纽约、上海升学可能和地球国际秩序；未从未来年代推空间。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://us.macmillan.com/books/9781250237408/chinamountainzhang/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781250237408/chinamountainzhang/",
+          "support_scope": "Tor简介及公开开篇明确纽约、上海升学可能和地球国际秩序；未从未来年代推空间。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q65202611",
+      "identity": {
+        "title": "Mission Child",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "同一殖民行星的北部Hamra、Taufzin与南方群岛。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际PW评论明确distant world、北部村落、Taufzin及该行星南部岛屿；只取本长篇行动地点。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://www.publishersweekly.com/9780380974566"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.publishersweekly.com/9780380974566",
+          "support_scope": "实际PW评论明确distant world、北部村落、Taufzin及该行星南部岛屿；只取本长篇行动地点。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131381203",
+      "identity": {
+        "title": "Nekropolis",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "架空未来摩洛哥Fez的墓地贫民区与雇主家宅。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际完整返回的2001 PW评论明确22世纪摩洛哥与Fez；此空间断言只对应长篇Hariba版本。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://www.publishersweekly.com/978-0-380-97457-3"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.publishersweekly.com/978-0-380-97457-3",
+          "support_scope": "实际完整返回的2001 PW评论明确22世纪摩洛哥与Fez；此空间断言只对应长篇Hariba版本。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q4656557",
+      "identity": {
+        "title": "入海之门",
+        "author": "Joan Slonczewski"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Shora海洋世界与Valedon相关的殖民冲突。"
+      },
+      "field_notes": {
+        "spatial_primary": "作者指南明确Shora ocean-covered planet及Valedon来的士兵、Spinel与反抗；不由指南历史类比推空间。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://biology.kenyon.edu/slonc/books/adoor_art/adoor_study.htm"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://biology.kenyon.edu/slonc/books/adoor_art/adoor_study.htm",
+          "support_scope": "作者指南明确Shora ocean-covered planet及Valedon来的士兵、Spinel与反抗；不由指南历史类比推空间。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7617041",
+      "identity": {
+        "title": "Still Forms on Foxfield",
+        "author": "Joan Slonczewski"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Foxfield殖民星、Commensals及Dwelling。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际剧情摘要明确Foxfield planet、当地定居点与Dwelling，地球是来客来源和背景，未当主要舞台。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Still_Forms_on_Foxfield"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Still_Forms_on_Foxfield",
+          "support_scope": "实际剧情摘要明确Foxfield planet、当地定居点与Dwelling，地球是来客来源和背景，未当主要舞台。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q84702880",
+      "identity": {
+        "title": "Daughter of Elysium",
+        "author": "Joan Slonczewski"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Shora浮城Elysium；涉及Fold其他行星的外交。",
+        "spatial_secondary": [
+          "interstellar"
+        ]
+      },
+      "field_notes": {
+        "spatial_primary": "实际版本简介明确跨Fold来访的Raincloud一家与water world Shora浮城；主要舞台用行星，星际联系为副标签。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。",
+        "spatial_secondary": "材料明确跨Fold来访与多行星联系，但主要场景仍为Shora浮城；副标签是叙事背景导航。"
+      },
+      "sources": [
+        "https://www.davidmswitzer.com/slonczewski/elysium.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.davidmswitzer.com/slonczewski/elysium.html",
+          "support_scope": "实际版本简介明确跨Fold来访的Raincloud一家与water world Shora浮城；主要舞台用行星，星际联系为副标签。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q109656841",
+      "identity": {
+        "title": "The Wall Around Eden",
+        "author": "Joan Slonczewski"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "核灾后地球的Gwynwood及其他空气墙聚落。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际PW评论明确Pennsylvania、Australia和地球核灾后的保护聚落；未以Pylon内部四维空间取代主要地球舞台。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://www.publishersweekly.com/9781557100306"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.publishersweekly.com/9781557100306",
+          "support_scope": "实际PW评论明确Pennsylvania、Australia和地球核灾后的保护聚落；未以Pylon内部四维空间取代主要地球舞台。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7747390",
+      "identity": {
+        "title": "The Lincoln Train",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "另类美国南北战争后的Mississippi与St. Louis。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际完整原篇明确Mississippi、St. Louis车站与西迁目的地；另类历史不会自动成为多维空间。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://shortstoryproject.com/stories/the-lincoln-train/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://shortstoryproject.com/stories/the-lincoln-train/",
+          "support_scope": "实际完整原篇明确Mississippi、St. Louis车站与西迁目的地；另类历史不会自动成为多维空间。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q130739200",
+      "identity": {
+        "title": "The Cost to Be Wise",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "寒冷殖民星上的Sckarline村落与武装来客。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际本篇评论明确久远殖民行星及Sckarline村落，空间仅针对1996中篇，不继承Mission Child南迁。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://speculiction.blogspot.com/2014/02/review-of-cost-to-be-wise-by-maureen.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/02/review-of-cost-to-be-wise-by-maureen.html",
+          "support_scope": "实际本篇评论明确久远殖民行星及Sckarline村落，空间仅针对1996中篇，不继承Mission Child南迁。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q105845471",
+      "identity": {
+        "title": "Special Economics",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "疫情后中国深圳的New Life工厂与员工宿舍。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际Special Economics专段明确中国北部迁移到深圳及当地生物技术工作、市场；不导入同页其他作品地点。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://vector-bsfa.com/2008/12/05/chinese-futures/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://vector-bsfa.com/2008/12/05/chinese-futures/",
+          "support_scope": "实际Special Economics专段明确中国北部迁移到深圳及当地生物技术工作、市场；不导入同页其他作品地点。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131471715",
+      "identity": {
+        "title": "Nekropolis",
+        "author": "Maureen F. McHugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "未来中东社会的雇主家宅和Nekropolis街区。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际1994单篇专段明确future Middle East与Diyet；地点只到资料明示范围，不复制2001长篇Fez身份。 本字段是阅读导航，知识补充待核。",
+        "spatial_rationale": "只记录已读资料明确的主要场景，不改其他字段，不把时间跨度换成空间尺度。"
+      },
+      "sources": [
+        "https://speculiction.blogspot.com/2016/08/review-of-mothers-other-monsters-by.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://speculiction.blogspot.com/2016/08/review-of-mothers-other-monsters-by.html",
+          "support_scope": "实际1994单篇专段明确future Middle East与Diyet；地点只到资料明示范围，不复制2001长篇Fez身份。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3212714",
+      "identity": {
+        "title": "The Leech",
+        "author": "罗伯特·谢克里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "外来生命落在地球后的调查、军队攻击与科学家应对构成主要行动；末尾孢子飞散只是灾难后果，不据此把地球危机改成星际航行。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.gutenberg.org/cache/epub/29525/pg29525-images.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.gutenberg.org/cache/epub/29525/pg29525-images.html",
+          "support_scope": "R16 实际读 Project Gutenberg 英文原作开篇地球落物与调查、军方攻击及末章孢子结局；本条只提取明确地球主舞台。当前底库1974与原刊1952日期有差异，沿用已有说明不默改身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "identity_caveat": "分析对象为署 Phillips Barbee 的英文独立短篇 The Leech（原刊转录标1952年12月），与底库谢克里同名短篇标签对应；底库 sort_year=1974 与原刊日期不一致，保留日期疑点，不在本批修改年份或擅判1974所属版本。"
+    },
+    {
+      "id": "Q25379682",
+      "identity": {
+        "title": "Warrior Race",
+        "author": "罗伯特·谢克里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "两名地球人在一颗外星行星的燃料库、村落及当地人圣地周围交涉，主要冲突发生在单一异星地表；人物来自地球和银河调查队背景不构成银河网络主舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.gutenberg.org/files/29548/29548-h/29548-h.htm"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.gutenberg.org/files/29548/29548-h/29548-h.htm",
+          "support_scope": "R16 实际读 Project Gutenberg 英文原作：地球来客取燃料、当地集体行动与离开该世界的结局；空间只取主要异星停留场景，不猜行星天体坐标。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q1215430",
+      "identity": {
+        "title": "Bedlam Planet",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "殖民者的困境集中在天龙座σ星的一颗新登陆行星及其生态适应；来源明确指向单个定居世界。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/bedlam-planet"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/bedlam-planet",
+          "support_scope": "R16 实际读取 Hachette Australia 单书完整简介，明确先遣殖民者登陆 Sigma Draconis 的行星并在新殖民地遇到困境；仅按这一明确舞台归层，未读全书。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q3203177",
+      "identity": {
+        "title": "The Wrong End of Time",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "封闭的未来美国与来到境内的俄国科学家，是出版社明确给出的行动舞台；冥王星附近生命及毁灭地球的消息属于来者报告，不直接当作主角实际深空航程。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/the-wrong-end-of-time"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-wrong-end-of-time",
+          "support_scope": "R16 并于本轮实际重读官方完整简介：future America、Russian scientist 进入封闭美国、Pluto 附近生命的报告。仅地球跨国危机的舞台明确，远方威胁真实性和结局未读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q6058153",
+      "identity": {
+        "title": "Into the Slave Nebula",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Derry Horn 从地球实际踏上前往边远恒星地区的危险任务，并在那里落入奴隶贩子之手；星际行动是情节的一部分，不仅是社会背景。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/into-the-slave-nebula"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/into-the-slave-nebula",
+          "support_scope": "R16 与本轮实际读取 Hachette 官方完整简介：Earth 的享乐生活、mission to outlying primitive stars、被奴隶贩子俘虏，以及已经离开地球的描述。未推具体恒星距离或银河位置。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q7767457",
+      "identity": {
+        "title": "The Super Barbarians",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "人类被统治与 Acre 自治区的冲突发生在 Quallavarra 这一个世界；征服者已控制太空只是背景，不将其自动扩成多个社会间的银河网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/the-super-barbarians"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-super-barbarians",
+          "support_scope": "R16 与本轮实际读取官方完整简介，明确 Quallavarra 的世界、Acre 唯一自由区域及其他地区的人类服役；未读全书，不穷举其他地点。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q1239229",
+      "identity": {
+        "title": "Fire Time",
+        "author": "波尔·安德森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "伊什塔尔的地表受热、族群南迁与当地战争构成出版社明确说明的主舞台；地球联邦在别处的星际战争是援助受限背景。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/poul-anderson/fire-time"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/poul-anderson/fire-time",
+          "support_scope": "R16 实际读取 Hachette 官方单书完整简介，明确 Ishtar、Anu 接近导致北方受热、当地族群冲突与联邦舰队忙于另一星际战争。只取伊什塔尔主行动，不据远方战事填 galactic。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q4366228",
+      "identity": {
+        "title": "Three Worlds to Conquer",
+        "author": "波尔·安德森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "地球、木卫三殖民地和木星逃生构成明确的太阳系内行星／卫星行动；没有据此宣称跨恒星移动。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/poul-anderson/three-worlds-to-conquer"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/poul-anderson/three-worlds-to-conquer",
+          "support_scope": "R16 实际读取 Hachette 单书完整简介：Fraser 一家赴 Ganymede、殖民地被战舰控制并以导弹威胁 Earth，以及希望转向 Jupiter；仅这一明确行星链支持空间判断。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q3395621",
+      "identity": {
+        "title": "Polymath",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "难民船坠落在未测绘的行星后，幸存者以有限物资建设安全居所；宇宙灾难是逃亡背景，主要问题与行动集中在该行星。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/polymath-empire-book-1"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/polymath-empire-book-1",
+          "support_scope": "R16 与本轮实际读取官方完整简介，明确 crash-landed on an unmapped world、船已损失、planet-builder 受训对象与此地不同；不以 cosmic catastrophe 一词把舞台直接归宇宙演化。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q30766215",
+      "identity": {
+        "title": "The Last Weapon",
+        "author": "罗伯特·谢克里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "三名地球人在火星废墟中取武器、互相攻击并打开最后武器；主要行动舞台为火星，征服地球是人物计划。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-robert-sheckley-the-last-weapon.html",
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-2-robert-sheckley-the-last-weapon.html",
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-3-robert-sheckley-the-last-weapon.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-robert-sheckley-the-last-weapon.html",
+          "support_scope": "R16 实际读非官方 LibCat 英文正文镜像第1–3页，包含火星武器库、同伴相残及末章吞噬者；版本与录入未独立对校。Baen 只曾用于版权／编目，未把该版权页当火星地点证据。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-2-robert-sheckley-the-last-weapon.html",
+          "support_scope": "R16 实际读非官方 LibCat 英文正文镜像第1–3页，包含火星武器库、同伴相残及末章吞噬者；版本与录入未独立对校。Baen 只曾用于版权／编目，未把该版权页当火星地点证据。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/43297-3-robert-sheckley-the-last-weapon.html",
+          "support_scope": "R16 实际读非官方 LibCat 英文正文镜像第1–3页，包含火星武器库、同伴相残及末章吞噬者；版本与录入未独立对校。Baen 只曾用于版权／编目，未把该版权页当火星地点证据。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q16652748",
+      "identity": {
+        "title": "The Victim from Space",
+        "author": "罗伯特·谢克里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Hadwell 在 Igathi 的异星村落、河桥与当地仪式中行动，主要文化冲突发生在一个外星世界；来去航程不变成多文明网络的默认归类。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-robert-sheckley-the-victim-from-space.html",
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-2-robert-sheckley-the-victim-from-space.html",
+        "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-5-robert-sheckley-the-victim-from-space.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-robert-sheckley-the-victim-from-space.html",
+          "support_scope": "R17 实际读非官方 LibCat 英文镜像第1、2、5页：Igathi 村落、Brog 与 Kataga 的行动、Hadwell 与 Mele 离开；第3、4页未读，空间范围不假称全文穷举。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-2-robert-sheckley-the-victim-from-space.html",
+          "support_scope": "R17 实际读非官方 LibCat 英文镜像第1、2、5页：Igathi 村落、Brog 与 Kataga 的行动、Hadwell 与 Mele 离开；第3、4页未读，空间范围不假称全文穷举。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://libcat.ru/knigi/fantastika-i-fjentezi/socialno-psihologicheskaya-fantastika/43973-5-robert-sheckley-the-victim-from-space.html",
+          "support_scope": "R17 实际读非官方 LibCat 英文镜像第1、2、5页：Igathi 村落、Brog 与 Kataga 的行动、Hadwell 与 Mele 离开；第3、4页未读，空间范围不假称全文穷举。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q7750454",
+      "identity": {
+        "title": "The Martian Sphinx",
+        "author": "约翰·布鲁纳"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "地球能源使地日距离改变，远征又在火星调查女子与金属装置；地球—火星行动属行星层，女子声称来自另一星系不等于已有主角跨恒星航程。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-brunner/the-martian-sphinx"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-brunner/the-martian-sphinx",
+          "support_scope": "R17 实际读取官方完整单书简介，明确 Earth、Sun 距离副作用、Mars expedition 与金属多面体；女子跨星系来源仍为自述，未读全文验证。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q4132785",
+      "identity": {
+        "title": "把银禧带来",
+        "author": "沃德·摩爾"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "南北战争、葛底斯堡与历史改写后的美国都是地球地区；这里的时间旅行与替代历史没有自动取消明确的地球物理舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/ward-moore/bring-the-jubilee",
+        "https://books.google.com/books?vid=ISBN9781434478535"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/ward-moore/bring-the-jubilee",
+          "support_scope": "R17 实际读取 Hachette 官方简介及 Google Books 上 Wildside 版介绍，明确 America、Civil War、Gettysburg 与陷于1877的叙事框架；时间机制和动机措辞差异另有原记录说明。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.google.com/books?vid=ISBN9781434478535",
+          "support_scope": "R17 实际读取 Hachette 官方简介及 Google Books 上 Wildside 版介绍，明确 America、Civil War、Gettysburg 与陷于1877的叙事框架；时间机制和动机措辞差异另有原记录说明。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "identity_caveat": "本分析对应1953长篇 Bring the Jubilee；1952同名中篇先刊及扩写差异未在本批校对。canonical 中文标签“把银禧带来”仅作精确身份键，不视为经核定的中文译题。"
+    },
+    {
+      "id": "Q3019177",
+      "identity": {
+        "title": "戴维",
+        "author": "Edgar Pangborn"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "核战后的美国东北部、旧时代文化遗迹与流浪者成长是明确地球地区；文明倒退或跨世纪并不自动改成抽象空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/edgar-pangborn/davy-post-holocaust-stories-book-1",
+        "https://www.hachette.com.au/edgar-pangborn/edgar-pangborn-sf-gateway-omnibus-davy-mirror-for-observers-good-neighbors-and-other-strangers"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/edgar-pangborn/davy-post-holocaust-stories-book-1",
+          "support_scope": "R17 实际读取 Hachette 单书介绍和官方合订本专属 DAVY 段落，明确 Northeastern United States、灾后第四世纪与教会社会。合订本另两部的 Martian Observers 情节未移用。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.com.au/edgar-pangborn/edgar-pangborn-sf-gateway-omnibus-davy-mirror-for-observers-good-neighbors-and-other-strangers",
+          "support_scope": "R17 实际读取 Hachette 单书介绍和官方合订本专属 DAVY 段落，明确 Northeastern United States、灾后第四世纪与教会社会。合订本另两部的 Martian Observers 情节未移用。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q12720515",
+      "identity": {
+        "title": "Alien Embassy",
+        "author": "Ian Watson"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Lila 在东非成长并前往西藏，明确的身体行动舞台是地球；Bardo 宣称的精神星际旅行和 Starbeast 解释在简介中不断被质疑，不据此填为已证实的跨恒星航行或抽象主区。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/ian-watson/alien-embassy"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/ian-watson/alien-embassy",
+          "support_scope": "R17 实际读取 Hachette 单书完整简介，明确 Earth 的22世纪、East Africa 与 Lila travels to Tibet，精神星际旅行属多层目的解释。实际目的与结局未给出，空间只取明确地面行动。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q3795843",
+      "identity": {
+        "title": "The Reproductive System",
+        "author": "John Sladek"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Wompler 公司位于犹他州 Millford，实验室中的金属盒复制与取材是已读材料明确支持的行动；自复制技术不是单凭题材就归抽象或宇宙层的理由。"
+      },
+      "field_notes": {
+        "spatial_primary": "由已实际读取的原作选页或出版社情节说明提取明确行动舞台，仍待独立核对；导航层不是天体坐标，也不依据年代、体裁或议题猜位置。",
+        "spatial_rationale": "只说明已读材料明确支持的主要行动舞台及边界；区分实际移动、远方背景、人物报告与精神／虚拟体验，不声称穷尽全书每个地点。"
+      },
+      "sources": [
+        "https://www.hachette.com.au/john-sladek/the-reproductive-system",
+        "https://www.hachette.com.au/john-sladek/john-sladek-sf-gateway-omnibus-the-reproductive-system-the-muller-fokker-effect-tik-tok"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/john-sladek/the-reproductive-system",
+          "support_scope": "R17 实际读取检索工具返回的官方单书简介段落，明确 Millford, Utah；单书直接打开失败。另实际打开官方合订本并读取 THE REPRODUCTIVE SYSTEM 专属段落的实验室繁殖场景；未读全小说，不移用 Tik-Tok 等同页他作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.com.au/john-sladek/john-sladek-sf-gateway-omnibus-the-reproductive-system-the-muller-fokker-effect-tik-tok",
+          "support_scope": "R17 实际读取检索工具返回的官方单书简介段落，明确 Millford, Utah；单书直接打开失败。另实际打开官方合订本并读取 THE REPRODUCTIVE SYSTEM 专属段落的实验室繁殖场景；未读全小说，不移用 Tik-Tok 等同页他作。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q85807834",
+      "identity": {
+        "title": "The Man Who Never Forgot",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "已读单篇在洛杉矶电影院、酒吧、其他美国城市及母亲家/医院展开；记忆和遗传的特殊设定没有改变地球社会舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "按实际已读正文的明确地名/所在天体归类，仍待独立核对；局部读取不证明整书所有舞台。",
+        "spatial_secondary": "不将未直接读到的航线或广泛时代背景补为实际次要旅行舞台。",
+        "spatial_rationale": "粗分供导航，不是真实坐标；保留读取版本与范围。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.lexal.net/scifi/scifiction/classics/classics_archive/silverberg5/index.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.lexal.net/scifi/scifiction/classics/classics_archive/silverberg5/index.html",
+          "type": "原作文本重刊的SCI FICTION镜像；非原刊校勘版",
+          "support_scope": "开头洛杉矶电影院，随后迁居与酒吧；末尾医院母子重逢。完整镜像正文实际已读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q56151734",
+      "identity": {
+        "title": "Master of Life and Death",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际已读开篇明确以地球人口管理及地球地区迁居为舞台，机关调配比利时居民至Patagonia。这里只支持开篇地球舞台；全书未读部分的空间扩展仍待核。"
+      },
+      "field_notes": {
+        "spatial_primary": "按实际已读正文的明确地名/所在天体归类，仍待独立核对；局部读取不证明整书所有舞台。",
+        "spatial_secondary": "不将未直接读到的航线或广泛时代背景补为实际次要旅行舞台。",
+        "spatial_rationale": "粗分供导航，不是真实坐标；保留读取版本与范围。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.gutenberg.org/cache/epub/50441/pg50441-images.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.gutenberg.org/cache/epub/50441/pg50441-images.html",
+          "type": "Project Gutenberg原作长篇转录；只读开篇",
+          "support_scope": "第一章及第二章救婴段，网页行105–408；比利时/Patagonia调配和Popeek机关，未读中后部。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q5146069",
+      "identity": {
+        "title": "Collecting Team",
+        "author": "羅伯特·西爾柏格"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "三名地球采集者的主体行动集中在一颗未命名的异星表面：采集、维修飞船及被安置入仿地球住所。没有将赴异星的背景扩大为实际多恒星旅行情节。"
+      },
+      "field_notes": {
+        "spatial_primary": "按实际已读正文的明确地名/所在天体归类，仍待独立核对；局部读取不证明整书所有舞台。",
+        "spatial_secondary": "不将未直接读到的航线或广泛时代背景补为实际次要旅行舞台。",
+        "spatial_rationale": "粗分供导航，不是真实坐标；保留读取版本与范围。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://englishousness.weebly.com/uploads/4/1/9/0/41906519/collecting_team_full_text.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://englishousness.weebly.com/uploads/4/1/9/0/41906519/collecting_team_full_text.pdf",
+          "type": "教学站附词注的原作转录；版本保真待核",
+          "support_scope": "PDF1–5页正文完整已读；开头探索行星、采集，结尾当地仿地球住所。词注未作剧情依据。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    }
+  ]
+}
