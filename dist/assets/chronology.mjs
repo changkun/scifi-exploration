@@ -141,7 +141,7 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
     const available = Math.max(1, el('plot-scroll').clientWidth || 800);
     // Each occupied year gets a column; a canvas keeps DOM size independent of works.
     // Cap the bitmap, while retaining every annual column even in unusual datasets.
-    graphWidth = Math.max(available, Math.min(16000, annual.length * 28 + GRAPH_PADDING * 2));
+    graphWidth = Math.max(available, Math.min(16000, annual.length * 4 + GRAPH_PADDING * 2));
     canvas.style.width = `${graphWidth}px`;
     const ratio = Math.min(view?.devicePixelRatio || 1, 2, 16000 / graphWidth);
     canvas.width = Math.max(1, Math.round(graphWidth * ratio));
@@ -150,10 +150,13 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
     if (!context) return;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
     context.clearRect(0, 0, graphWidth, GRAPH_HEIGHT);
-    context.font = '11px ui-monospace, SFMono-Regular, Consolas, monospace';
+    const styles = view?.getComputedStyle?.(root);
+    const tone = (name, fallback) => styles?.getPropertyValue(name).trim() || fallback;
+    const labelColor = tone('--chrono-label', '#8a8880');
+    context.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
     context.textAlign = 'left';
     if (!annual.length) {
-      context.fillStyle = '#a4b9d1';
+      context.fillStyle = labelColor;
       context.fillText('当前没有已知年份记录。', 22, 90);
       canvas.textContent = '当前没有已知年份记录。';
       return;
@@ -161,12 +164,12 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
     const baseY = GRAPH_HEIGHT - 49, usableHeight = baseY - 38;
     const maxCount = Math.max(1, ...annual.map(item => item.count));
     const step = (graphWidth - GRAPH_PADDING * 2) / annual.length;
-    const barWidth = Math.max(1, Math.min(17, step * 0.68));
+    const barWidth = Math.max(1, Math.min(17, step > 3 ? step - 2 : step * 0.68));
     for (let fraction = 0; fraction <= 1; fraction += 0.5) {
       const y = baseY - usableHeight * fraction;
-      context.strokeStyle = 'rgba(124,177,214,.15)';
+      context.strokeStyle = tone('--chrono-grid', 'rgba(236,232,220,.09)');
       context.beginPath(); context.moveTo(GRAPH_PADDING, y); context.lineTo(graphWidth - GRAPH_PADDING, y); context.stroke();
-      context.fillStyle = '#a4b9d1';
+      context.fillStyle = labelColor;
       context.fillText(String(Math.round(maxCount * fraction)), 7, y - 5);
     }
     const labelStride = Math.max(1, Math.ceil(52 / step));
@@ -174,16 +177,15 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
       const x = GRAPH_PADDING + (index + 0.5) * step;
       const height = Math.max(2, item.count / maxCount * usableHeight);
       const focused = item.year === focusYear;
-      context.fillStyle = focused ? '#9584f3' : item.year === hoverYear ? '#b9faff' : '#59dce5';
-      context.globalAlpha = focused || item.year === hoverYear ? 1 : 0.75;
+      context.fillStyle = focused ? tone('--chrono-bar-focus', '#8fbcff') : item.year === hoverYear ? tone('--chrono-bar-hover', '#ffd87a') : tone('--chrono-bar', '#b0842d');
       context.fillRect(x - barWidth / 2, baseY - height, barWidth, height);
       context.globalAlpha = 1;
       if (focused) {
-        context.strokeStyle = '#d8d0ff'; context.lineWidth = 1;
+        context.strokeStyle = tone('--chrono-bar-focus', '#8fbcff'); context.lineWidth = 1;
         context.strokeRect(x - barWidth / 2 - 3, baseY - height - 4, barWidth + 6, height + 8);
       }
       if (index % labelStride === 0 || index === annual.length - 1) {
-        context.fillStyle = '#a4b9d1'; context.textAlign = 'center';
+        context.fillStyle = labelColor; context.textAlign = 'center';
         context.fillText(String(item.year), x, baseY + 26);
       }
     });
