@@ -1,0 +1,789 @@
+{
+  "metadata": {
+    "status": "frozen",
+    "date": "2026-10-04",
+    "lane": 1,
+    "queue": "fast-first-lane-1.json",
+    "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+    "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+    "method": "逐份实际读官方2026-09-30 OL work dump社区维护简介，保留记录SHA；不足时单轮精准检索，以实际读到的明确出版简介/作者访谈/书评补充，逐URL注明范围。两次非有益尝试后延后。",
+    "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+    "source_snapshot": "research/canonical-universe.json.gz",
+    "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+    "starts_at_fast_index": 80,
+    "record_count": 19,
+    "facet_count": 38,
+    "attempted_count": 20,
+    "deferred_count": 1,
+    "skipped_existing_count": 0,
+    "frozen_source_snapshot_sha256": "8d0168b6e9b1d27907d05a0c5b7356aba6c922a6a7a50b38a887354e8c133c92",
+    "fast_indices_processed": [
+      80,
+      99
+    ],
+    "next_fast_index": 100,
+    "validation": "逐ID原lane所有权、当前缺口、原身份、合法议题、两句解释、具体facet、逐OL记录SHA及未知空间检查；格式检查不代表独立书目核验。",
+    "network_scope": "13份分析仅OL社区简介；6份另读明确本书资料：2份出版方目录/归档标题块、2份正规销售/图书平台简介、1份PW本书评论、1份传记参考中明确作品剧情段。原作全文0。Skybreaker缺具体冲突且定向材料不够而延后；都市奇幻/医学与政治惊悚边界逐条明确。",
+    "original_full_read_count": 0
+  },
+  "records": [
+    {
+      "id": "Q1458945",
+      "identity": {
+        "title": "The Angel Experiment",
+        "author": "詹姆斯·帕特森"
+      },
+      "fast_index": 80,
+      "lane_index": 710,
+      "source_sort_year": 2005,
+      "priority_rank": 309,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q1458945",
+        "work_id": "OL167174W",
+        "record_sha256": "e2f160d0547684b0748d61bf2c99a73108990a604bf4e53329f49a3c3c6bb7ab"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL167174W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "e2f160d0547684b0748d61bf2c99a73108990a604bf4e53329f49a3c3c6bb7ab",
+          "work_id": "OL167174W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q282989",
+      "identity": {
+        "title": "Skybreaker",
+        "author": "肯尼思·奥培尔"
+      },
+      "fast_index": 81,
+      "lane_index": 713,
+      "source_sort_year": 2005,
+      "priority_rank": 311,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Skybreaker\" site.kennethoppel.ca",
+        "\"Skybreaker\" \"Kenneth Oppel\" site.simonandschuster.com"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q282989",
+        "work_id": "OL19334W",
+        "record_sha256": "4bdd4b5e6fc5262b3c652b20e13d484a555d4a6e740cfab645f5ca77597f3b30"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL19334W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID完整社区简介，但具体情节不足，未填分析。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "4bdd4b5e6fc5262b3c652b20e13d484a555d4a6e740cfab645f5ca77597f3b30"
+        },
+        {
+          "url": "https://www.simonandschuster.com/authors/Kenneth-Oppel/1316253",
+          "material_kind": "publisher_author_bibliography_cached",
+          "support_scope": "实际读作者页中Skybreaker为Airborn续作及获奖/畅销简介，仅支持书目背景，没有本卷具体情节。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "OL简介只有Matt/Kate与伙伴寻找传说宝藏飞船，缺少该卷具体阻碍和冲突机制；两次定向作者/出版方查询只返回作者书目，不借Airborn前卷或Starclimber续卷补情节。",
+      "failure_count": 2,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q2998337",
+      "identity": {
+        "title": "Cosmos Incorporated",
+        "author": "Maurice G. Dantec"
+      },
+      "fast_index": 82,
+      "lane_index": 714,
+      "source_sort_year": 2005,
+      "priority_rank": 312,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q2998337",
+        "work_id": "OL785563W",
+        "record_sha256": "55e603916d93c4dc92d4d297447c87e9bbb8ca6142cf4021a4842810de9c0476"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL785563W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "55e603916d93c4dc92d4d297447c87e9bbb8ca6142cf4021a4842810de9c0476",
+          "work_id": "OL785563W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7431494",
+      "identity": {
+        "title": "Schism",
+        "author": "凱薩琳·艾薩蘿"
+      },
+      "fast_index": 83,
+      "lane_index": 728,
+      "source_sort_year": 2005,
+      "priority_rank": 322,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Schism\" \"Catherine Asaro\" publisher"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q7431494",
+        "work_id": "OL78626W",
+        "record_sha256": "a0912f7f7322865a428c30a48f45c3681202408032ad2f8173097b704f17b7df"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL78626W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a0912f7f7322865a428c30a48f45c3681202408032ad2f8173097b704f17b7df",
+          "work_id": "OL78626W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780765309518",
+          "material_kind": "publishersweekly_exact_book_review_cached",
+          "support_scope": "实际读本书PW短评：Soz入学、父亲断绝关系、弟弟出走、父亲被绑架及敌意升级；二手评论，不是原文/出版社剧情页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q105491858",
+      "identity": {
+        "title": "The Language of Power",
+        "author": "Rosemary Kirstein"
+      },
+      "fast_index": 84,
+      "lane_index": 737,
+      "source_sort_year": 2004,
+      "priority_rank": 326,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q105491858",
+        "work_id": "OL5728405W",
+        "record_sha256": "62546fbc738691464bb17bbb67f6d2a713c7f3cd3bf2e285ceb312e40bca0f36"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5728405W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "62546fbc738691464bb17bbb67f6d2a713c7f3cd3bf2e285ceb312e40bca0f36",
+          "work_id": "OL5728405W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q1313655",
+      "identity": {
+        "title": "白色病毒",
+        "author": "肯·福勒特"
+      },
+      "fast_index": 85,
+      "lane_index": 741,
+      "source_sort_year": 2004,
+      "priority_rank": 327,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q1313655",
+        "work_id": "OL1914078W",
+        "record_sha256": "d47b39de3a9222a8751094047e21b60744b09467bc237171a93a628f01e300c6"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL1914078W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "d47b39de3a9222a8751094047e21b60744b09467bc237171a93a628f01e300c6",
+          "work_id": "OL1914078W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q1758811",
+      "identity": {
+        "title": "The Plot Against America",
+        "author": "菲利普·罗斯"
+      },
+      "fast_index": 86,
+      "lane_index": 750,
+      "source_sort_year": 2004,
+      "priority_rank": 330,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q1758811",
+        "work_id": "OL74664W",
+        "record_sha256": "bfedf19d20a2b99ec4dc15469c8a852c8a377a81a7e0555f1c39e53bf369cec3"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL74664W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "bfedf19d20a2b99ec4dc15469c8a852c8a377a81a7e0555f1c39e53bf369cec3",
+          "work_id": "OL74664W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q1912284",
+      "identity": {
+        "title": "The Supernaturalist",
+        "author": "埃因·科爾弗"
+      },
+      "fast_index": 87,
+      "lane_index": 751,
+      "source_sort_year": 2004,
+      "priority_rank": 331,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q1912284",
+        "work_id": "OL5726001W",
+        "record_sha256": "d4ba099572b99d4c3e0789bfbcc92dbd55d6de7348c54c197be0b92edfbf96a1"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5726001W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "d4ba099572b99d4c3e0789bfbcc92dbd55d6de7348c54c197be0b92edfbf96a1",
+          "work_id": "OL5726001W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q3702329",
+      "identity": {
+        "title": "Dante's Equation",
+        "author": "珍·简森"
+      },
+      "fast_index": 88,
+      "lane_index": 799,
+      "source_sort_year": 2003,
+      "priority_rank": 354,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q3702329",
+        "work_id": "OL27640W",
+        "record_sha256": "a1e01f40753c839fbd0f0da744576c3dfca254ac125a8418a066f3caf6a7ac0b"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL27640W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a1e01f40753c839fbd0f0da744576c3dfca254ac125a8418a066f3caf6a7ac0b",
+          "work_id": "OL27640W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q4999624",
+      "identity": {
+        "title": "Burndive",
+        "author": "Karin Lowachee"
+      },
+      "fast_index": 89,
+      "lane_index": 803,
+      "source_sort_year": 2003,
+      "priority_rank": 357,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Burndive\" \"Karin Lowachee\" author",
+        "\"Burndive\" site.belial.fr"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q4999624",
+        "work_id": "OL5813797W",
+        "record_sha256": "2af3bacd3c2adfb75b971b75345a551eb047e23cba8c401f2af22555ddc6f1b0"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5813797W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "2af3bacd3c2adfb75b971b75345a551eb047e23cba8c401f2af22555ddc6f1b0",
+          "work_id": "OL5813797W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://belial.fr/collection/le-belial-e-belial-?p=5",
+          "material_kind": "publisher_collection_page_exact_title_synopsis_cached",
+          "support_scope": "实际读Le Bélial目录页Burndive明确标题块完整简介：Ryan、地球袭击创伤、Austro、媒体与刺杀；目录其他书不用于本条，不读其下载PDF/全章。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q5966432",
+      "identity": {
+        "title": "La dama número trece",
+        "author": "José Carlos Somoza"
+      },
+      "fast_index": 90,
+      "lane_index": 808,
+      "source_sort_year": 2003,
+      "priority_rank": 361,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q5966432",
+        "work_id": "OL10563W",
+        "record_sha256": "d36a26c3e9dfe9bf7713d6661d97ab1f240fa0997fe4b9be99fa8221e84a4fd6"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL10563W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "d36a26c3e9dfe9bf7713d6661d97ab1f240fa0997fe4b9be99fa8221e84a4fd6",
+          "work_id": "OL10563W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q6505921",
+      "identity": {
+        "title": "Lazarus Rising",
+        "author": "Dan Cragg / David Sherman"
+      },
+      "fast_index": 91,
+      "lane_index": 809,
+      "source_sort_year": 2003,
+      "priority_rank": 364,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q6505921",
+        "work_id": "OL14963584W",
+        "record_sha256": "614b763342a81b6520fd7a09cdc57bd3671aa56f369006f197bbb3afe723f880"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL14963584W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "614b763342a81b6520fd7a09cdc57bd3671aa56f369006f197bbb3afe723f880",
+          "work_id": "OL14963584W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q8075192",
+      "identity": {
+        "title": "Zulu Heart",
+        "author": "史蒂文·巴恩斯"
+      },
+      "fast_index": 92,
+      "lane_index": 820,
+      "source_sort_year": 2003,
+      "priority_rank": 370,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Zulu Heart\" site.penguinrandomhouse.com",
+        "\"Zulu Heart\" \"Steven Barnes\" site.penguinrandomhouse.com"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q8075192",
+        "work_id": "OL2701146W",
+        "record_sha256": "6ed5eb126ac1ce8fa5a752a01ad54016b94ac1fc87a534ef10d2fe7bc7536888"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL2701146W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "6ed5eb126ac1ce8fa5a752a01ad54016b94ac1fc87a534ef10d2fe7bc7536888",
+          "work_id": "OL2701146W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://www.barnesandnoble.com/w/zulu-heart-steven-barnes/1103361037",
+          "material_kind": "authorized_retailer_exact_book_overview_partial_cached",
+          "support_scope": "实际读B&N本书Overview可见简介：替代美洲、Kai为贵族、Aidan为前奴隶；所见在promise of freedom后截断，未声称读完整宣传文或原作。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q1154138",
+      "identity": {
+        "title": "The Golden Age",
+        "author": "John C. Wright"
+      },
+      "fast_index": 93,
+      "lane_index": 822,
+      "source_sort_year": 2002,
+      "priority_rank": 371,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q1154138",
+        "work_id": "OL5725219W",
+        "record_sha256": "5b9b8714c10d27b33ab7565854598602e5bf7bf664fd437030a4440d792f20b9"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5725219W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "5b9b8714c10d27b33ab7565854598602e5bf7bf664fd437030a4440d792f20b9",
+          "work_id": "OL5725219W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q12040642",
+      "identity": {
+        "title": "Nemesis",
+        "author": "Jeanne Kalogridis / J.M. Dillard"
+      },
+      "fast_index": 94,
+      "lane_index": 823,
+      "source_sort_year": 2002,
+      "priority_rank": 372,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q12040642",
+        "work_id": "OL2421563W",
+        "record_sha256": "a207d89e6ab4084554deb37355700d18da41accbe4fd13111759fd2d03767eb7"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL2421563W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a207d89e6ab4084554deb37355700d18da41accbe4fd13111759fd2d03767eb7",
+          "work_id": "OL2421563W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q2136077",
+      "identity": {
+        "title": "紅兔子",
+        "author": "汤姆·克兰西"
+      },
+      "fast_index": 95,
+      "lane_index": 833,
+      "source_sort_year": 2002,
+      "priority_rank": 373,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q2136077",
+        "work_id": "OL448959W",
+        "record_sha256": "b5b6f33d2f5903e25b1b1f90a93fa0311d08a1d9294717d4bbc2c399048f0faf"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL448959W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "b5b6f33d2f5903e25b1b1f90a93fa0311d08a1d9294717d4bbc2c399048f0faf",
+          "work_id": "OL448959W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q2915295",
+      "identity": {
+        "title": "Shadow Puppets",
+        "author": "奥森·斯科特·卡德"
+      },
+      "fast_index": 96,
+      "lane_index": 835,
+      "source_sort_year": 2002,
+      "priority_rank": 374,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Shadow Puppets\" site.us.macmillan.com",
+        "\"Shadow Puppets\" \"Orson Scott Card\" site.torpublishinggroup.com"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q2915295",
+        "work_id": "OL49569W",
+        "record_sha256": "ed09c70713d08b7fe53a6a58e7376c515f41b4d9e5af0d6a1107e8fd9bfbca1d"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL49569W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "ed09c70713d08b7fe53a6a58e7376c515f41b4d9e5af0d6a1107e8fd9bfbca1d",
+          "work_id": "OL49569W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://books.google.com/books?hl=hy&id=prJnl6LgN2QC",
+          "material_kind": "authorized_book_platform_publisher_synopsis_cached",
+          "support_scope": "实际读Google Books展示的Tor Publishing Group本卷完整宣传简介，外敌胜利后失去统一、争夺儿童、Peter/Bean重建政府；为2003版介绍，不读原书章或用其日期改2002原年。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q3976930",
+      "identity": {
+        "title": "Summer Knight",
+        "author": "吉姆·布契"
+      },
+      "fast_index": 97,
+      "lane_index": 840,
+      "source_sort_year": 2002,
+      "priority_rank": 377,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q3976930",
+        "work_id": "OL5961786W",
+        "record_sha256": "514121e48237f35f68bd577ddcb14b9e2ffb7c955e87a1d2b92cb5920405adf2"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5961786W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "514121e48237f35f68bd577ddcb14b9e2ffb7c955e87a1d2b92cb5920405adf2",
+          "work_id": "OL5961786W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q47004598",
+      "identity": {
+        "title": "Solitaire",
+        "author": "Kelley Eskridge"
+      },
+      "fast_index": 98,
+      "lane_index": 842,
+      "source_sort_year": 2002,
+      "priority_rank": 378,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Solitaire\" \"Kelley Eskridge\" author",
+        "\"Solitaire\" site.smallbeerpress.com"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q47004598",
+        "work_id": "OL5957415W",
+        "record_sha256": "490c17310d8d4b65ff535739c092a8b4fd585a0e7030b4a038d6d38c1db80293"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5957415W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "490c17310d8d4b65ff535739c092a8b4fd585a0e7030b4a038d6d38c1db80293",
+          "work_id": "OL5957415W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://smallbeerpress.com/2011/01/",
+          "material_kind": "publisher_monthly_archive_exact_title_synopsis_cached",
+          "support_scope": "实际读2011年1月出版归档中明确Solitaire: a novel的本书简介全文：Hope/公司、身份崩塌、数月中的多年虚拟独囚与归来；不把相邻作品和OtherLife改编剧情继承。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q5416583",
+      "identity": {
+        "title": "Evening's Empire",
+        "author": "David Herter"
+      },
+      "fast_index": 99,
+      "lane_index": 846,
+      "source_sort_year": 2002,
+      "priority_rank": 380,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Evening's Empire\" \"David Herter\" publisher"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q5416583",
+        "work_id": "OL5956183W",
+        "record_sha256": "b6d27558f25c516e7845f571cc85b78771356df7b6c6556ac2f02450a748cd8d"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL5956183W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "b6d27558f25c516e7845f571cc85b78771356df7b6c6556ac2f02450a748cd8d",
+          "work_id": "OL5956183W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        },
+        {
+          "url": "https://www.encyclopedia.com/arts/educational-magazines/herter-david",
+          "material_kind": "encyclopedia_author_biography_exact_book_plot_paragraph_cached",
+          "support_scope": "实际读作者传记参考中Evening’s Empire独立作品段：Oregon、丧妻作曲者、Verne歌剧、房东Megan和工厂下Downstairs；二手参考资料，不是作者自述/出版社简介/原作。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    }
+  ]
+}
