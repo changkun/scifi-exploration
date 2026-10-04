@@ -5,3 +5,5 @@
 Wikidata 提取的结构化数据与其标签适用其 [CC0 声明](https://www.wikidata.org/wiki/Wikidata:Licensing)。本项目保留来源链接及获取方法，以便追溯；候选分类的新增说明采用上述 CC BY 4.0。
 
 原始小说、外部网页、封面、引文及第三方素材的权利由各自权利人保有，不属于本许可授权范围。NASA 纹理与 Three.js 分别见 `docs/attribution.md`。
+
+Open Library外部书目元数据按其[来源许可说明](https://openlibrary.org/developers/licensing)保留，未因纳入本仓库而被重新许可；本项目新增知识说明、核对规则及原创分析适用上述CC BY 4.0。

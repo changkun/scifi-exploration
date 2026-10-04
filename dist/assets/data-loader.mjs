@@ -11,6 +11,18 @@ export async function loadBibliographySource(fetcher=fetch) {
  return {records,metadata:data.metadata};
 }
 const shardCache=new Map();
+export async function loadCompletionSource(fetcher=fetch){
+ const r=await fetcher('./assets/completion.json');if(!r.ok)throw new Error('补全状态未载入');const manifest=await r.json();
+ if(manifest.format!=='completion-manifest-v1'||!Array.isArray(manifest.chunks)||new Set(manifest.chunks).size!==manifest.chunks.length)throw new Error('补全清单无效');
+ const records=(await Promise.all(manifest.chunks.map(async path=>{if(!/^\.\/assets\/completion-index\/\d{3}\.json$/.test(path))throw new Error('补全分片路径无效');const part=await fetcher(path);if(!part.ok)throw new Error('补全分片未完整载入');const data=await part.json();if(!Array.isArray(data.records))throw new Error('补全分片无效');return data.records;}))).flat();
+ if(records.length!==manifest.metadata.record_count||new Set(records.map(r=>r.id)).size!==records.length)throw new Error('补全状态缺失或重复');
+ return {records,metadata:manifest.metadata};
+}
+export async function loadLibraryDetail(work,fetcher=fetch){
+ const path=work.library_detail_url;if(!path)return null;if(!/^\.\/assets\/library-details\/\d{3}\.json$/.test(path))throw new Error('外部详情路径无效');
+ if(!shardCache.has(path))shardCache.set(path,(async()=>{const r=await fetcher(path);if(!r.ok)throw new Error('外部书目详情暂时无法载入');const data=await r.json();return new Map(data.records.map(r=>[r.id,r]));})().catch(e=>{shardCache.delete(path);throw e;}));
+ const result=(await shardCache.get(path)).get(work.id);if(!result)throw new Error('外部书目对应记录缺失');return result;
+}
 export async function loadSourceDetail(work,fetcher=fetch) {
  const relative=work.source_index?.detail_url;if(!relative)return null;
  if(!/^\.\/assets\/bibliography-details\/\d{3}\.json$/.test(relative))throw new Error('详情分片路径无效');

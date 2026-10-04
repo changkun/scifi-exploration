@@ -1,11 +1,13 @@
 const unique = values => [...new Set(values.filter(Boolean))];
 const labels = values => (values || []).map(value => typeof value === 'string' ? value : value.label || value.id).filter(Boolean);
 export const UNKNOWN = '待分类';
-export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, links) {
+export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, links, completionRecords = []) {
   const source = new Map(sourceRecords.map(record => [record.id, record]));
   const research = new Map(researchWorks.map(record => [record.id, record]));
   const places = new Map((spatial.works || []).map(record => [record.id, record]));
   const aliases = new Map(), enrichment = new Map();
+  const supplements = new Map(completionRecords.map(r => [r.id,r]));
+  if(supplements.size!==completionRecords.length)throw new Error('补充记录编号重复');
   for (const link of links.links) {
     if (!research.has(link.research_id)) throw new Error('实体链接指向不存在的研究记录');
     if (link.status === 'linked' && !source.has(link.canonical_id)) throw new Error('实体链接指向不存在的来源记录');
@@ -15,6 +17,7 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
   }
   if (aliases.size !== research.size) throw new Error('实体链接没有覆盖全部研究记录');
   const ids = unique([...source.keys(), ...enrichment.keys()]);
+  if(completionRecords.length&&(supplements.size!==ids.length||ids.some(id=>!supplements.has(id))))throw new Error('补全状态未覆盖完整统一底库');
   const works = ids.map(id => {
     const index = source.get(id), layer = enrichment.get(id), detail = layer?.work;
     const originalPlace = detail ? places.get(detail.id) : null;
@@ -54,14 +57,67 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
       evidence_note: detail?.evidence_note || '公共来源书目尚未逐条人工核查；规则分类是候选，未读取作品全文。',
       research: detail || null, entity_link: layer?.link || null, source_index: index || null
     };
-    w.search_text = [title, w.title_original, w.author, detail?.series_name, detail?.issue, detail?.story_era, detail?.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...topics, ...branches].filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
+    const supplement=supplements.get(id);
+    if(supplement)applySupplement(w,supplement);
+    w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, w.story_era, w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
     return w;
   });
   return { works, aliases, spatial: { ...spatial, works: works.map(w => ({ ...(w.spatial_evidence || { primary: 'unknown', secondary: [], confidence: '未知', rationale: '没有足够的空间分类证据，保留待分类。' }), id: w.id })) } };
+}
+const unknown = v => v==null || v==='' || /^(待分类|待核|年份未知|作者未知|标题未知|形态未知|语言未知|故事时代未知|最大时间视野未知|原题待核)/.test(String(v));
+export const FIELD_LABELS={title:'展示题名',original_title:'原题',author:'作者',publication_date:'发表时间',original_language:'原语',language_statements:'来源语言',form:'文本形态',spatial:'空间范围',story_era:'故事时代',story_duration:'主体叙事跨度',temporal_reach:'最大时间视野',science:'科学前提',topics:'底层议题',issue:'核心问题',branches:'分支',relationships:'系列与版本关系',external_identifiers:'外部标识'};
+const knowledgeKeys={title_zh:'title',title_original:'original_title',original_language:'original_language',author:'author',spatial_primary:'spatial',duration:'story_duration',story_era:'story_era',reach:'temporal_reach',science_class:'science',issue:'issue',topics:'topics',branches:'branches'};
+function applySupplement(w,s){
+  w.knowledge=s.knowledge||null;w.knowledge_topics=s.knowledge?.fields?.topics||[];
+  w.library_checks=s.library_checks||[];w.library_detail_url=s.library_detail_url||null;
+  w.library_topic_candidates=s.topic_candidates||[];
+  w.topic_candidates=[...w.topic_candidates,...w.library_topic_candidates];
+  w.topics=unique([...w.topics,...w.library_topic_candidates.map(t=>t.topic),...w.knowledge_topics]);
+  w.branches=unique([...w.branches,...(w.source_index?.branch_candidates||[]).map(b=>b.branch),...(s.branch_candidates||[]).map(b=>b.branch),...(s.knowledge?.fields?.branches||[])]);
+  const fields={...s.field_statuses},applied=[];
+  w.form_candidate=s.form_candidate;w.form_basis=s.form_basis;
+  if(!w.research&&s.form_candidate){w.form=s.form_candidate;w.forms=unique([...w.forms,s.form_candidate]);fields.form='rule_candidate_unverified';}
+  if(s.knowledge){
+    const k=s.knowledge.fields;
+    for(const key of ['title_zh','title_original','author','duration','story_era','reach','science_class','issue']){
+      if(k[key] && (unknown(w[key])||['duration','story_era','reach'].includes(key)&&/待核|无可核|未明确/.test(w[key])||key==='issue'&&!w.research)){
+        w[key]=k[key];applied.push(key);fields[knowledgeKeys[key]]='knowledge_added_unverified';
+      }
+    }
+    if(k.original_language){w.original_language=k.original_language;w.languages=unique([...w.languages.filter(l=>l!=='语言未知'),k.original_language]);if(!w.research)w.language_tradition=w.languages.join(' / ');fields.original_language='knowledge_added_unverified';applied.push('original_language');}
+    if(w.spatial_primary==='unknown'&&k.spatial_primary&&k.spatial_primary!=='unknown'){
+      w.spatial_primary=k.spatial_primary;w.spatial_evidence={primary:k.spatial_primary,secondary:k.spatial_secondary||[],rationale:k.spatial_rationale||s.knowledge.field_notes?.spatial_primary||'已有剧情知识补充；待独立核对。',confidence:'已有知识补充 · 待独立核对'};fields.spatial='knowledge_added_unverified';applied.push('spatial_primary');
+    }
+    if(k.science_note&&applied.includes('science_class'))w.science_note=k.science_note;
+    if(k.topics?.length)fields.topics=w.research_topics.length?fields.topics:'knowledge_added_unverified';
+    if(k.branches?.length&&!w.research)fields.branches='knowledge_added_unverified';
+  }
+  if(w.library_topic_candidates.length&&!w.research_topics.length&&!w.knowledge_topics.length)fields.topics='rule_candidate_unverified';
+  for(const c of w.library_checks.filter(c=>c.status==='title_author_correspondence')){
+    fields.title='cross_source_correspondence';fields.author='cross_source_correspondence';fields.external_identifiers='cross_source_correspondence';
+    if(c.year_comparison.status==='agree')fields.publication_date='cross_source_correspondence';
+    else if(c.year_comparison.status==='missing_source' && w.sort_year==null && Number.isSafeInteger(c.year_comparison.library)){
+      w.first_year=c.year_comparison.library;w.sort_year=c.year_comparison.library;w.year_display=`${w.sort_year}（外部书目候选）`;w.year_note='Open Library 作品索引的 first_publish_year 候选；题名及作者相符，初刊与版本角色仍待核。来源日期缺失原样保留。';fields.publication_date='external_candidate_unverified';
+    }
+  }
+  const conflicts=w.library_checks.filter(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different');
+  if(conflicts.length||s.research_source_comparisons?.some(c=>c.comparison==='different_year_values'))fields.publication_date='conflict_needs_review';
+  const missing=Object.entries({title:w.title_zh,original_title:w.title_original,author:w.author,publication_date:w.sort_year,original_language:w.original_language||w.research?.language_tradition,language_statements:labels(w.source_index?.language_statements).length||null,form:(w.research||s.form_candidate)?w.form:null,spatial:w.spatial_primary==='unknown'?null:w.spatial_primary,story_era:w.story_era,story_duration:w.duration,temporal_reach:w.reach,science:w.science_class,topics:w.topics.length||null,issue:(w.research||w.knowledge?.fields?.issue)?w.issue:null,branches:w.branches.length||null,external_identifiers:w.source_id||null}).filter(([,v])=>unknown(v)).map(([key])=>key);
+  if(!w.source_id&&!w.series_name)missing.push('relationships');
+  for(const f of missing)fields[f]=['original_title','original_language'].includes(f)?'unconfirmed':'missing';
+  w.completion={structural_checked:true,structural_result:s.structural_result,source_verified:false,field_statuses:fields,missing_fields:missing,knowledge_applied_fields:applied,has_knowledge:!!s.knowledge,has_library_correspondence:w.library_checks.some(c=>c.status==='title_author_correspondence'),has_conflict:conflicts.length>0||fields.publication_date==='conflict_needs_review',has_identity_review:w.library_checks.some(c=>c.status==='identity_or_scope_needs_review'||c.status==='not_returned'),issues:s.issues||[],research_source_comparisons:s.research_source_comparisons||[]};
+  if(s.knowledge&&!w.research)w.research_level='enriched';
+  else if(!w.research&&w.topics.length)w.research_level='candidate';
+  w.sources=unique([...w.sources,...(s.knowledge?.sources||[]),...w.library_checks.map(c=>c.source_url)]);
+  if(w.knowledge&&!w.research)w.evidence_note='已有知识补充，尚未独立逐字段核对。来源书目、规则候选与知识解释分别保留；链接不代表所有字段已经验证。';
 }
 export function coverageOf(works) {
   return { total: works.length, researched: works.filter(w => w.research).length,
     topic_known: works.filter(w => w.topics.length).length, topic_unknown: works.filter(w => !w.topics.length).length,
     year_unknown: works.filter(w => w.sort_year == null).length,
-    space_unknown: works.filter(w => w.spatial_primary === 'unknown').length };
+    space_unknown: works.filter(w => w.spatial_primary === 'unknown').length,
+    knowledge_added:works.filter(w=>w.knowledge).length,
+    library_correspondence:works.filter(w=>w.completion?.has_library_correspondence).length,
+    conflicts:works.filter(w=>w.completion?.has_conflict).length,
+    with_missing:works.filter(w=>w.completion?.missing_fields.length).length };
 }

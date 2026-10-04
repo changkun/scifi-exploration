@@ -1,0 +1,799 @@
+{
+  "metadata": {
+    "format": "record-field-audit-v1",
+    "snapshot_date": "2026-10-04",
+    "record_count": 14564,
+    "source_record_count": 14532,
+    "research_record_count": 168,
+    "structural_checked_count": 14564,
+    "structural_pass_count": 14564,
+    "source_verified_count": 0,
+    "field_independently_verified_count": 0,
+    "method": "完整离线快照逐记录逐字段结构检查、原始缓存一致性及证据／缺口登记；未进行新的独立外部书目核验。",
+    "status_note": "structural_checked 是检查阶段；structural_result 是结构结果。source_verified 仅在有独立、逐字段可追溯证据时使用，本轮不赋值。",
+    "inputs": [
+      {
+        "file": "research/audit-baseline-universe.json.gz",
+        "sha256": "2c57f7aa8150404f86a7d3cf706aa5a85d9eccb03591f739602a36b951c906d2"
+      },
+      {
+        "file": "research/expanded-catalog.json.gz",
+        "sha256": "e853997fe0f4c0fd6ad58200729455f973d25c824b8de378cd25cedc980dcd9a"
+      },
+      {
+        "file": "research/catalog.json",
+        "sha256": "689dbe473261e44a33f739dcac7f829d241f6252e46fe430a54f3f97c356bcde"
+      }
+    ],
+    "record_output": "research/record-audit.json.gz"
+  },
+  "structural": {
+    "pass": true,
+    "failed_record_ids": [],
+    "global_errors": [],
+    "missing_values_are_structural_errors": false
+  },
+  "field_summary": {
+    "title": {
+      "status_counts": {
+        "research_documented": 168,
+        "source_asserted": 14396
+      },
+      "availability_counts": {
+        "present": 14564
+      },
+      "independently_verified_count": 0
+    },
+    "original_title": {
+      "status_counts": {
+        "needs_review": 14396,
+        "research_documented": 168
+      },
+      "availability_counts": {
+        "research_statement": 168,
+        "unconfirmed": 14396
+      },
+      "independently_verified_count": 0
+    },
+    "author": {
+      "status_counts": {
+        "missing": 1384,
+        "research_documented": 168,
+        "source_asserted": 13012
+      },
+      "availability_counts": {
+        "missing": 1384,
+        "present": 13180
+      },
+      "independently_verified_count": 0
+    },
+    "publication_date": {
+      "status_counts": {
+        "needs_review": 14532,
+        "research_documented": 32
+      },
+      "availability_counts": {
+        "missing": 1965,
+        "present_candidate": 12599
+      },
+      "independently_verified_count": 0
+    },
+    "original_language": {
+      "status_counts": {
+        "needs_review": 14396,
+        "research_documented": 168
+      },
+      "availability_counts": {
+        "research_language_context": 168,
+        "unconfirmed": 14396
+      },
+      "independently_verified_count": 0
+    },
+    "language_statements": {
+      "status_counts": {
+        "missing": 1408,
+        "source_asserted": 13156
+      },
+      "availability_counts": {
+        "missing": 1376,
+        "present": 13156,
+        "research_only": 32
+      },
+      "independently_verified_count": 0
+    },
+    "form": {
+      "status_counts": {
+        "research_documented": 168,
+        "source_asserted": 14396
+      },
+      "availability_counts": {
+        "present": 14564
+      },
+      "independently_verified_count": 0
+    },
+    "spatial": {
+      "status_counts": {
+        "missing": 14396,
+        "needs_review": 45,
+        "research_interpretation": 123
+      },
+      "availability_counts": {
+        "missing": 14396,
+        "present_analysis": 123,
+        "unconfirmed": 45
+      },
+      "independently_verified_count": 0
+    },
+    "story_era": {
+      "status_counts": {
+        "missing": 14396,
+        "research_interpretation": 168
+      },
+      "availability_counts": {
+        "missing": 14396,
+        "present_analysis": 168
+      },
+      "independently_verified_count": 0
+    },
+    "story_duration": {
+      "status_counts": {
+        "missing": 14420,
+        "research_interpretation": 144
+      },
+      "availability_counts": {
+        "missing": 14420,
+        "present_analysis": 144
+      },
+      "independently_verified_count": 0
+    },
+    "temporal_reach": {
+      "status_counts": {
+        "missing": 14396,
+        "research_interpretation": 168
+      },
+      "availability_counts": {
+        "missing": 14396,
+        "present_analysis": 168
+      },
+      "independently_verified_count": 0
+    },
+    "science": {
+      "status_counts": {
+        "missing": 14396,
+        "research_interpretation": 168
+      },
+      "availability_counts": {
+        "missing": 14396,
+        "present_analysis": 168
+      },
+      "independently_verified_count": 0
+    },
+    "topics": {
+      "status_counts": {
+        "analysis_candidate": 1096,
+        "missing": 13300,
+        "research_interpretation": 168
+      },
+      "availability_counts": {
+        "candidate_only": 1096,
+        "missing": 13300,
+        "present_analysis": 168
+      },
+      "independently_verified_count": 0
+    },
+    "issue": {
+      "status_counts": {
+        "analysis_candidate": 1096,
+        "missing": 13300,
+        "research_interpretation": 168
+      },
+      "availability_counts": {
+        "candidate_only": 1096,
+        "missing": 13300,
+        "present_analysis": 168
+      },
+      "independently_verified_count": 0
+    },
+    "branches": {
+      "status_counts": {
+        "research_interpretation": 168,
+        "source_asserted": 14396
+      },
+      "availability_counts": {
+        "present": 14564
+      },
+      "independently_verified_count": 0
+    },
+    "relationships": {
+      "status_counts": {
+        "missing": 32,
+        "source_asserted": 14532
+      },
+      "availability_counts": {
+        "not_exported": 32,
+        "source_exported": 14532
+      },
+      "independently_verified_count": 0
+    },
+    "external_identifiers": {
+      "status_counts": {
+        "missing": 32,
+        "source_asserted": 14532
+      },
+      "availability_counts": {
+        "openlibrary_id_missing": 10040,
+        "present": 4524
+      },
+      "independently_verified_count": 0
+    }
+  },
+  "issue_counts": {
+    "approximate_research_year": 1,
+    "author_label_unresolved": 13,
+    "author_name_without_entity": 47,
+    "future_publication_in_source": 1,
+    "literary_media_scope_boundary": 1151,
+    "multilingual_title_statements": 1308,
+    "multiple_openlibrary_ids": 120,
+    "multiple_publication_dates": 280,
+    "multiple_publication_years": 105,
+    "multiple_source_languages": 197,
+    "openlibrary_edition_identifier_in_source": 251,
+    "publication_date_after_snapshot": 6,
+    "publication_date_unknown_value": 1,
+    "research_source_identity_unresolved": 32,
+    "research_source_year_difference": 12,
+    "shared_openlibrary_id": 38,
+    "source_text_granularity_unspecified": 1828,
+    "unexpected_raw_openlibrary_identifier_shape": 1
+  },
+  "openlibrary": {
+    "property": "P648",
+    "with_work_id_entity_count": 4524,
+    "without_work_id_entity_count": 10008,
+    "identifier_value_count": 4662,
+    "unique_work_id_count": 4643,
+    "multiple_id_entity_count": 120,
+    "shared_id_count": 19,
+    "shared_id_entity_count": 38,
+    "shared_ids": {
+      "OL103185W": [
+        "Q3221761",
+        "Q3576739"
+      ],
+      "OL10570230W": [
+        "Q5977633",
+        "Q5977636"
+      ],
+      "OL137952W": [
+        "Q125918377",
+        "Q54806964"
+      ],
+      "OL15029001W": [
+        "Q208971",
+        "Q36673350"
+      ],
+      "OL17941738W": [
+        "Q46509775",
+        "Q7076198"
+      ],
+      "OL1831574W": [
+        "Q54800642",
+        "Q54800643"
+      ],
+      "OL1955944W": [
+        "Q17026037",
+        "Q2956167"
+      ],
+      "OL1973742W": [
+        "Q7776543",
+        "Q7776551"
+      ],
+      "OL24726867W": [
+        "Q123682427",
+        "Q138634286"
+      ],
+      "OL26602213W": [
+        "Q113009361",
+        "Q124653072"
+      ],
+      "OL2783383W": [
+        "Q54807016",
+        "Q54807017"
+      ],
+      "OL49488W": [
+        "Q5376051",
+        "Q816016"
+      ],
+      "OL515754W": [
+        "Q122463813",
+        "Q837934"
+      ],
+      "OL5684854W": [
+        "Q2543776",
+        "Q2711383"
+      ],
+      "OL59694W": [
+        "Q2274025",
+        "Q7754424"
+      ],
+      "OL59717W": [
+        "Q3055720",
+        "Q7749973"
+      ],
+      "OL59734W": [
+        "Q4190765",
+        "Q7738166"
+      ],
+      "OL7970557W": [
+        "Q131740716",
+        "Q54802801"
+      ],
+      "OL8368448W": [
+        "Q151337",
+        "Q30887961"
+      ]
+    },
+    "raw_P648": {
+      "entity_count": 4727,
+      "value_count": 4923,
+      "unique_value_count": 4904,
+      "work_value_count": 4662,
+      "edition_value_count": 260,
+      "edition_entity_count": 251,
+      "unrecognized_values": [
+        {
+          "id": "Q1811417",
+          "value": "O"
+        }
+      ]
+    },
+    "note": "这些是已保存 Wikidata ID 声明，未访问 Open Library 核实；多值或共享值需核对，不能据此合并。"
+  },
+  "source_field_missing": {
+    "authors": 1384,
+    "author_entities": 1431,
+    "first_year": 1966,
+    "publication_dates": 1965,
+    "language_statements": 1376,
+    "title_statements": 2724,
+    "title_original": 14532,
+    "original_language": 14532,
+    "openlibrary_work_ids": 10008
+  },
+  "source_entity_kind_counts": {
+    "chapter_or_serial_part": 63,
+    "edition_or_translation": 25,
+    "series": 942,
+    "work_or_unspecified": 13502
+  },
+  "research_source_date_differences": [
+    {
+      "id": "Q183565",
+      "research_id": "early10",
+      "title": "海底两万里",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1870,
+        "research_note": "1869—1870年连载；1870年两卷单行本，1871年修订",
+        "source_value": 1869,
+        "source_dates": [
+          "1869-03-20T00:00:00Z"
+        ],
+        "source_description": "1869/1870 novel by Jules Verne",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q213019",
+      "research_id": "early16",
+      "title": "世界大战",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1898,
+        "research_note": "1897年英美连载；1898年英国首本",
+        "source_value": 1897,
+        "source_dates": [
+          "1897-01-01T00:00:00Z"
+        ],
+        "source_description": "1897 serialized novel by H. G. Wells",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q471005",
+      "research_id": "early11",
+      "title": "神秘岛",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1874,
+        "research_note": "1874—1875年三卷单行本及连载，首卷1874年",
+        "source_value": 1888,
+        "source_dates": [
+          "1888-01-01T00:00:00Z"
+        ],
+        "source_description": "1874 novel by Jules Verne",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q475589",
+      "research_id": "early19",
+      "title": "火星公主",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1917,
+        "research_note": "1912年以《火星的月亮下》连载；1917年首本",
+        "source_value": 1912,
+        "source_dates": [
+          "1912-01-01T00:00:00Z",
+          "1917-01-01T00:00:00Z"
+        ],
+        "source_description": "novel by Edgar Rice Burroughs",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q513228",
+      "research_id": "global22",
+      "title": "仙女座星云",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1958,
+        "research_note": "1957年杂志连载；1958年俄语单行本；1959年英译。",
+        "source_value": 1957,
+        "source_dates": [
+          "1957-01-01T00:00:00Z"
+        ],
+        "source_description": "1957 novel by Ivan Yefremov",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q607112",
+      "research_id": "global10a",
+      "title": "三体",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 2008,
+        "research_note": "2006年连载；本条记录2008年中文单行本。",
+        "source_value": 2006,
+        "source_dates": [
+          "2006-01-01T00:00:00Z"
+        ],
+        "source_description": "science fiction novel by Liu Cixin",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q718268",
+      "research_id": "early14",
+      "title": "莫罗博士岛",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1896,
+        "research_note": "1896年英美版本存在差异",
+        "source_value": 1895,
+        "source_dates": [
+          "1895-01-01T00:00:00Z",
+          "1896-01-01T00:00:00Z"
+        ],
+        "source_description": "1896 novel by Herbert George Wells",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q1075805",
+      "research_id": "global03",
+      "title": "猫城记",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1933,
+        "research_note": "1933年单行本；常见书史另记1932年起连载，1947年修订。",
+        "source_value": 1932,
+        "source_dates": [
+          "1932-01-01T00:00:00Z"
+        ],
+        "source_description": "1932 novel by Lao She",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q3208037",
+      "research_id": "extra03",
+      "title": "太空云雀",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 1946,
+        "research_note": "1928年连载；1946单行本；1958修订删去Garby部分。本条记录1946形态。",
+        "source_value": 1928,
+        "source_dates": [
+          "1928-01-01T00:00:00Z"
+        ],
+        "source_description": "1928 novel by Edward Elmer Smith",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q17111624",
+      "research_id": "extra15",
+      "title": "火星救援",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 2014,
+        "research_note": "本条记录2014 Crown商版；此前网络及电子版本参看来源，不能把2014当作全作品首次出现。",
+        "source_value": 2011,
+        "source_dates": [
+          "2011-01-01T00:00:00Z",
+          "2013-03-01T00:00:00Z"
+        ],
+        "source_description": "2011 science fiction novel by Andy Weir",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q26721390",
+      "research_id": "global15",
+      "title": "北京折叠",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 2012,
+        "research_note": "2012年网络发表；2014年中文刊物、2015年英译。",
+        "source_value": 2014,
+        "source_dates": [
+          "2014-02-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ],
+        "source_description": "2015 novelette by Hao Jingfang",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    },
+    {
+      "id": "Q37672819",
+      "research_id": "global08",
+      "title": "流浪地球",
+      "comparison": {
+        "field": "publication_date",
+        "status": "needs_review",
+        "comparison": "different_year_values",
+        "research_value": 2000,
+        "research_note": "2000年7月《科幻世界》；本条指小说而非2008年选集或电影。",
+        "source_value": 2001,
+        "source_dates": [
+          "2001-01-01T00:00:00Z"
+        ],
+        "source_description": "short story by Liu Cixin",
+        "basis": "双方字段的版本规则不同；值差异本身不能证明哪一方错误。"
+      }
+    }
+  ],
+  "raw_source_export": {
+    "available": true,
+    "snapshot_date": "2026-10-04",
+    "files": [
+      {
+        "file": "research/source-export/export-log.json.gz",
+        "sha256_uncompressed": "6d1cadec414dd327e51b474db0ec87ec0c324f154263dd48bd2f164d0e2f14a7",
+        "manifest_matches": true,
+        "row_count": 3,
+        "container": "list"
+      },
+      {
+        "file": "research/source-export/fields-large-0.json.gz",
+        "sha256_uncompressed": "ec5359cd99a2b0d3513599358b16f42241120387893ee414ac07552aff0c196a",
+        "manifest_matches": true,
+        "row_count": 30106,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/fields-large-12000.json.gz",
+        "sha256_uncompressed": "f70ba663e5e799c606eb563cd32a5935ffad9d7c2a3bab5925c60be70f578b54",
+        "manifest_matches": true,
+        "row_count": 19985,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/fields-large-3000.json.gz",
+        "sha256_uncompressed": "6919bf75eb64f70f934710f569043c9316c1bcf3735eba235d8d2d5b7481c327",
+        "manifest_matches": true,
+        "row_count": 26170,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/fields-large-6000.json.gz",
+        "sha256_uncompressed": "adacdb1f1992d918a3e22e933bf310e39ea2db76734dd160a519634d546e842a",
+        "manifest_matches": true,
+        "row_count": 23988,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/fields-large-9000.json.gz",
+        "sha256_uncompressed": "20bd846b14e24e9bc40e9eeafeb0c67968502f93d8f9994cd6769a4c3908be99",
+        "manifest_matches": true,
+        "row_count": 25013,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/fields-partial.json.gz",
+        "sha256_uncompressed": "9924db6d8233fe5946d76105dc19a84b53f3d6ad03bca573b0f97884ba63e3a0",
+        "manifest_matches": true,
+        "row_count": 14534,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/genre-ancestry.json.gz",
+        "sha256_uncompressed": "1b69c1e1811ac1aafc96567e6db46a81e693ed23f71fe82dbd81cb60c4492946",
+        "manifest_matches": true,
+        "row_count": 57687,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/genre-ids.json.gz",
+        "sha256_uncompressed": "f4bd1269c667181143e0c3e5b537b0c84aa092ea8283a2371f33ad193356f1e8",
+        "manifest_matches": true,
+        "row_count": 454,
+        "container": "list"
+      },
+      {
+        "file": "research/source-export/membership.json.gz",
+        "sha256_uncompressed": "78969d63456facee61d3612d8a14f32509b793a44bdd39a28c3f7fd7b5dd0d52",
+        "manifest_matches": true,
+        "row_count": 14534,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/related-all-labels.json.gz",
+        "sha256_uncompressed": "47e95b3623e581e4cd1e6c3a4645597ea18d4f2e963c19427838255ad5aef561",
+        "manifest_matches": true,
+        "row_count": 142266,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/related-full.json.gz",
+        "sha256_uncompressed": "e54242452b6c0fc9fec1de2b0ac281620d12330e79c3f396865e0d52543869fc",
+        "manifest_matches": true,
+        "row_count": 7004,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/request-log.json.gz",
+        "sha256_uncompressed": "a4cc3f6be6afcecbf5ebe92c9d56553a138b75c542088cf8cb30eefc66f138dc",
+        "manifest_matches": true,
+        "row_count": 5,
+        "container": "list"
+      },
+      {
+        "file": "research/source-export/source-extra.json.gz",
+        "sha256_uncompressed": "ce02cf0222b017836cc8e3b73ee90f3141c2c7a2cd9a97562b92bb91b989ccbd",
+        "manifest_matches": true,
+        "row_count": 107417,
+        "container": "dict"
+      },
+      {
+        "file": "research/source-export/work-ids.json.gz",
+        "sha256_uncompressed": "ce5d2134cad7953dc2bae879e245631f49ac9f3963084a186e197f8e0d8fee13",
+        "manifest_matches": true,
+        "row_count": 14534,
+        "container": "list"
+      }
+    ],
+    "queries": [
+      {
+        "file": "research/source-export/queries/fields-full.sparql",
+        "sha256": "c63ef8166d77a27788135075fe8434b2aa8e18b89708d1a1641aa81422f7d42f"
+      },
+      {
+        "file": "research/source-export/queries/fields-large-0.sparql",
+        "sha256": "fd7686e980e265a4a21084c430c2b79b53a7a5d1c7fb9b7e79c3e3eb265acd6a"
+      },
+      {
+        "file": "research/source-export/queries/fields-large-12000.sparql",
+        "sha256": "ee909e0e8fb9aa8440a1ee917641aeeedd08a1d358cd161b9ae8f60ddae79510"
+      },
+      {
+        "file": "research/source-export/queries/fields-large-3000.sparql",
+        "sha256": "1bb5946d16e0729f5a07a7512a8daa6bf4f9458b92a60964981ac81647e92212"
+      },
+      {
+        "file": "research/source-export/queries/fields-large-6000.sparql",
+        "sha256": "93e50b2a185a72b6752caca53c917772a0b78d5e1c0ac7a4f9a695a96d40f53d"
+      },
+      {
+        "file": "research/source-export/queries/fields-large-9000.sparql",
+        "sha256": "a546858461e8a8492a17f1ffa460339ba741f8dc89ae41f7c8c837d152a3e75a"
+      },
+      {
+        "file": "research/source-export/queries/genre-ancestry.executed.sparql",
+        "sha256": "47251615b4426a5eccd518ee2aeeda8d6efb978d930527b8193c66657923c939"
+      },
+      {
+        "file": "research/source-export/queries/genre-ancestry.sparql",
+        "sha256": "47251615b4426a5eccd518ee2aeeda8d6efb978d930527b8193c66657923c939"
+      },
+      {
+        "file": "research/source-export/queries/membership.sparql",
+        "sha256": "efdfcc756c439471aa2475d7c83f29b716a3d81a2fb18b1ba890c3e320558274"
+      },
+      {
+        "file": "research/source-export/queries/related-all-labels.executed.sparql",
+        "sha256": "99208baaa8d9187157e17037a68a0087ab41e2a0193f13034d2a0e100ed1e63c"
+      },
+      {
+        "file": "research/source-export/queries/related-all-labels.sparql",
+        "sha256": "99208baaa8d9187157e17037a68a0087ab41e2a0193f13034d2a0e100ed1e63c"
+      },
+      {
+        "file": "research/source-export/queries/related-full.sparql",
+        "sha256": "bef6f54f208f5171510249cba65895e739e9d8e48acc6624d940cef0a81a9315"
+      },
+      {
+        "file": "research/source-export/queries/related-values.sparql",
+        "sha256": "60cda74fb9db77e074eceb850e440592ee8bbf41389bb5e379154fc136608d60"
+      },
+      {
+        "file": "research/source-export/queries/source-extra.executed.sparql",
+        "sha256": "af3d126afa21029ae5bfd8abef8d52c516174affa6efb8f0fe71b7b2a07348c7"
+      },
+      {
+        "file": "research/source-export/queries/source-extra.sparql",
+        "sha256": "af3d126afa21029ae5bfd8abef8d52c516174affa6efb8f0fe71b7b2a07348c7"
+      }
+    ],
+    "manifest_mismatches": [],
+    "direct_field_entity_count": 14534,
+    "membership_count": 14534,
+    "claim_detail_coverage": {
+      "statement_ids": false,
+      "rank_metadata": false,
+      "references": false,
+      "qualifiers": false,
+      "time_precision": false,
+      "calendar_model": false,
+      "note": "查询读取 wdt 直接值及标签；未导出完整 claim 元数据。日期字符串中的月日不能证明声明精度。"
+    }
+  },
+  "review_priorities": [
+    {
+      "code": "independent_bibliographic_verification",
+      "count": 14564,
+      "note": "逐条原题、作者、原语、初刊阶段尚待独立来源核对。"
+    },
+    {
+      "code": "claim_precision_and_scope",
+      "count": 14532,
+      "note": "补完整 claim 精度、限定符、参考资料；不把日期字符串当声明精度。"
+    },
+    {
+      "code": "openlibrary_id_assessment",
+      "count": 4524,
+      "note": "优先用合法公开来源确认已有外部 ID 和作品层级；严格遵守服务批量访问政策。"
+    },
+    {
+      "code": "narrative_and_science_evidence",
+      "count": 14396,
+      "note": "书目元数据不足以补故事时代、时长、空间与科学前提；不能用题名猜剧情。"
+    }
+  ]
+}

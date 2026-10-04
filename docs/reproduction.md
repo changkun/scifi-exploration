@@ -36,3 +36,21 @@ node scripts/validate.mjs
 ## 当前覆盖仍有缺口
 
 离线结果的完整性说明仅针对这次来源查询。ISFDB、地区国家书目与其他专业索引的接入、跨来源作品／版本归并，以及大量底层议题、叙事时间与现实匹配核查，仍未完成。详见 [来源覆盖](coverage-sources.md)。
+
+## 复现补全与核对层
+
+```sh
+python3 scripts/audit-catalog.py
+python3 scripts/crosscheck-openlibrary.py
+node scripts/build-completion.mjs
+node scripts/build-unified.mjs
+node scripts/validate.mjs
+node scripts/validate-unified.mjs
+node scripts/validate-completion.mjs
+```
+
+审计以固定 `research/audit-baseline-universe.json.gz` 为输入，不用后续补充反过来改写基线。Open Library 脚本默认读取62份缓存，定向查询既有P648作品标识；只有显式 `--fetch` 才为缺失缓存请求接口，每批75标识、请求间隔至少1.1秒。缓存包含请求、取回时间及响应，manifest逐文件记录SHA256。未返回与身份不一致同样保留。
+
+`research/knowledge-existing.json` 和 `knowledge-additional.json` 记录已有知识补充；每条采用真实底库ID并附身份与字段备注，全部是 `knowledge_added_unverified`。补全脚本合成按需网页分片及下载档案。统一模型只填缺失或明确待核的字段，不修改原研究、原始来源、身份和原始空间依据。
+
+题名及至少一位作者相符、候选单部小说、独立且唯一作品标识才允许引用外部年份候选和主题词规则。共享短篇／扩写长篇／合集标识、系列、版本和未知粒度单列身份待核，不继承字段；日期差异保留双方值。版本语言绝不作为原语。详见 [补全与核对方法](completion-methodology.md)。

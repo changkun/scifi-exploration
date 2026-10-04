@@ -1,0 +1,69 @@
+{
+  "format": "completion-manifest-v1",
+  "metadata": {
+    "format": "completion-overlay-v1",
+    "date": "2026-10-04",
+    "record_count": 14564,
+    "structural_checked": 14564,
+    "knowledge_inputs": [
+      {
+        "file": "research/knowledge-existing.json",
+        "sha256": "0f9d783a72d4c783c8f9ce3e033bc35f3ec3170fd5635a175aeab4d207663178",
+        "count": 57
+      },
+      {
+        "file": "research/knowledge-additional.json",
+        "sha256": "2591d650b09ba6a8faac343daa833b1a8f568f1e372d89c28c6634b3ee6a8b9a",
+        "count": 143
+      }
+    ],
+    "knowledge_added": 200,
+    "library": {
+      "provider": "Open Library",
+      "method": "existing-P648-batched-search-v1",
+      "source_records_with_ids": 4524,
+      "unique_identifiers": 4643,
+      "returned_identifiers": 4294,
+      "batch_count": 62,
+      "failed_batches": 0,
+      "fields": [
+        "key",
+        "title",
+        "author_name",
+        "author_key",
+        "first_publish_year",
+        "language",
+        "edition_count",
+        "subject",
+        "place",
+        "time"
+      ],
+      "identity_matched_records": 2251,
+      "scope_note": "既有作品标识定向批量核对；题名和作者一致仅确认部分书目字段，不等于原语、初刊、故事或文学分类完成核验。版本语言不可作原语。日期差异原样保留。",
+      "docs_url": "https://openlibrary.org/dev/docs/api/search",
+      "usage_url": "https://openlibrary.org/developers/api"
+    },
+    "library_correspondence": 2251,
+    "library_subject_candidate_records": 628,
+    "library_date_differences": 445,
+    "library_missing_year_candidates": 65,
+    "note": "知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。"
+  },
+  "chunks": [
+    "./assets/completion-index/000.json",
+    "./assets/completion-index/001.json",
+    "./assets/completion-index/002.json",
+    "./assets/completion-index/003.json",
+    "./assets/completion-index/004.json",
+    "./assets/completion-index/005.json",
+    "./assets/completion-index/006.json",
+    "./assets/completion-index/007.json",
+    "./assets/completion-index/008.json",
+    "./assets/completion-index/009.json",
+    "./assets/completion-index/010.json",
+    "./assets/completion-index/011.json",
+    "./assets/completion-index/012.json",
+    "./assets/completion-index/013.json",
+    "./assets/completion-index/014.json"
+  ]
+}

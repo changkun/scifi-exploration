@@ -1,0 +1,129 @@
+# 全目录逐字段审计：基线与证据范围
+
+本审计覆盖保存快照中的 **14,564 个实体**：14,532 个 Wikidata 来源实体，加 32 个尚未可靠链接的研究实体。168 条研究记录全部保留；其中 136 条以可靠链接叠加在来源实体上。这个集合是已说明查询范围的科幻文学相关实体集合，并不等于全球所有科幻小说。
+
+本轮已完成全部记录的结构检查、来源原始缓存一致性检查与逐字段证据登记，**没有新增独立外部书目核验**。结构通过不能说明作者、初刊年、原语、剧情或科学分析都正确。后续外部补充使用另一完成状态覆盖层，不改写本基线的核验含义。
+
+## 可复现运行与文件
+
+在仓库目录运行：
+
+```sh
+python3 scripts/audit-catalog.py
+```
+
+只使用 Python 标准库，无网络请求，不修改原始书目、网站 dist 或 Git。默认输入如下：
+
+- `research/audit-baseline-universe.json.gz`：固定统一快照；首次缺失时从当时的 `research/canonical-universe.json.gz` 复制，后续绝不自动覆盖。
+- `research/expanded-catalog.json.gz`：完整来源记录及集中保存的关联实体标签。
+- `research/catalog.json`：168 条研究原始记录。
+- `research/source-export/`：全部原始缓存及实际查询；读取全部 15 份缓存并核对保存的未压缩 SHA-256。
+
+输出为 `research/audit-summary.json` 与 `research/record-audit.json.gz`。可用 `--snapshot`、`--source`、`--research`、`--raw-cache`、`--output-dir` 明确指定另一组输入。显式审计新快照时请使用独立输出目录，保持基线输出可复核。例如：
+
+```sh
+python3 scripts/audit-catalog.py --snapshot research/canonical-universe.json.gz --output-dir research/current-audit
+```
+
+输出记录输入文件的相对路径及 SHA-256；不写入机器绝对路径。压缩输出使用固定时间戳，可重复生成相同结果。保存的基线快照不随后续目录补充改变；来源和研究原始输入也应保留原版。
+
+## 状态与 JSON 契约
+
+逐条输出结构如下；完整列表为 `records`，以 `id` 关联统一目录：
+
+```json
+{
+  "metadata": {"format": "record-field-audit-v1", "record_count": 14564},
+  "records": [{
+    "id": "Q721",
+    "research_id": null,
+    "source_id": "Q721",
+    "status": "structural_checked",
+    "verification": {
+      "structural_checked": true,
+      "structural_result": "pass",
+      "source_verified": false,
+      "independent_verification_scope": "none_in_this_run",
+      "requires_independent_bibliographic_review": true
+    },
+    "fields": {},
+    "issues": [],
+    "source_boundary": {},
+    "research_source_comparisons": [],
+    "missing_fields": [],
+    "unconfirmed_fields": []
+  }]
+}
+```
+
+`structural_checked` 表示已执行检查阶段；`structural_result` 表示结构结果。`source_verified` 保留给具有独立、逐字段可追溯外部证据的核验，本轮全部为 false。168 条既有研究记录有引用，但当前并未逐条重新访问、核验每个字段，因此记录为 `citation_documented_not_field_specific_verification`，不自动升级整条状态。
+
+所有记录均有以下 17 个字段审计对象：
+
+| 字段 | 审计含义 |
+|---|---|
+| `title` | 展示题名、来源中英标签与 P1476、研究题名 |
+| `original_title` | 原题是否有研究陈述；P1476 不自动证明原题 |
+| `author` | P50 实体、P2093 字符串、作者标签及缺口 |
+| `publication_date` | 全部源日期、最小年候选、研究版本年、排序年及说明 |
+| `original_language` | 原语确认状态；与关联语言声明分开 |
+| `language_statements` | 全部 P407 声明，不自动推为原语 |
+| `form` | 来源实体类型、文本粒度候选与研究形态 |
+| `spatial` | 当前导航标签及原研究候选；空间未知明确保留 |
+| `story_era` | 故事时代；不由发表年代填补 |
+| `story_duration` | 主体故事时长粗分；待核仍为缺口 |
+| `temporal_reach` | 最大时间视野，与空间范围独立 |
+| `science` | 既有科学前提定性分析及其说明 |
+| `topics` | 研究议题、来源规则候选与未研究分开 |
+| `issue` | 研究核心提问；候选提示语不算提问已补全 |
+| `branches` | 来源 genre、规则候选和研究分支分别保留 |
+| `relationships` | 全部六类已保存来源关系；空值不证明关系不存在 |
+| `external_identifiers` | P648 的 W、M、其他原值与共享标识 |
+
+每个字段含 `value`、`status`、`availability`、`basis`、`source_value`、`research_value`、`sources`、`review_reasons` 和 `independently_verified:false`。状态分为 `source_asserted`（来源转录）、`research_documented`（既有研究及引用）、`research_interpretation`（内容解释）、`analysis_candidate`（规则候选）、`needs_review`（需核对）、`missing`。这些状态不等价于独立验证。`availability` 则单独记录 present、missing、unconfirmed、candidate_only 等信息可用性。
+
+`issues` 分为 `structural_error`、`review`、`info`。未知值、多语言、多个合法日期、系列、章节和版本均不自动成为结构错误。`research_source_comparisons` 保留双方字段及说明；local 记录还保留已有候选证据，便于人工复核而不自动合并。
+
+## 原始来源与语义限制
+
+源查询使用 `wdt:` 直接值，并保存标签、别名及关系。未取得完整声明 ID、rank 元数据、限定符、参考资料、日期精度或历法。日期字符串中的 `01-01` 或其他月日不能证明声明的精度；最小 P577 年份也不能证明初刊、单行本首版或原文首发年。相关字段明确登记 `needs_review`。
+
+P1476 的多语言题名可能包含译名、改题、副标题和版本题名。P407 可能是原语、译语、方言或其他关联语言；本轮不自动选择原题或原语。全部来源的显式 `title_original`、`original_language` 原本为 null，研究层的语言语境和原题陈述独立保留。
+
+P50 标签的翻译差异不算作者冲突。作者字符串而无作者实体也是合法来源形式。关联实体的完整多语言标签集中保存在来源文件 `related_entities`，避免在每个审计记录重复巨大的标签表。
+
+## 2026-10-04 基线结果
+
+全部 14,564 个实体结构通过，独立书目核验计数为 **0**。完整成员查询保存 14,534 个原始实体；其中两条明显非虚构实体另存排除记录，当前来源集合为 14,532。原始字段与规范化字段检查通过；规范化 work ID 列表只保存 W 标识是明确契约，M 标识和异常原值仍在原始缓存及审计中保留。
+
+| 来源缺口或待核信息 | 实际数量 |
+|---|---:|
+| 作者名缺失 / P50 实体缺失 | 1,384 / 1,431 |
+| P577 日期缺失 / 候选年份缺失 | 1,965 / 1,966 |
+| P407 缺失 / P1476 缺失 | 1,376 / 2,724 |
+| 多个 P577 日期 / 多个不同年份 | 280 / 105 |
+| 多语言 P1476 / 多个 P407 语言 | 1,308 / 197 |
+| 来源年与可靠链接研究年不同 | 12 |
+| 日期字符串晚于快照日 | 6 |
+
+P577 有一条未知值 URI（`Q96105011`），所以“有日期属性值”与“有可用年份”差一条。晚于快照的日期包括 2027 年预告；仍需确认精度和阶段，不将其判为无效。
+
+空间已有可用导航标签 123 条，45 条保留研究候选但当前导航仍为未知，另 14,396 条没有空间分析。故事时代、最大时间视野和科学前提仅有 168 条研究分析；主体时长有 144 条粗分，另 24 条研究记录仍待核。核心议题有 168 条研究解释、1,096 条规则候选，13,300 条尚无议题信息。候选不计为内容已经核对。
+
+### Open Library 标识
+
+14,532 个来源实体中，4,524 个具有 W 类型标识，共 4,662 个值、4,643 个唯一 W ID；120 个实体有多个 W ID。19 个 W ID 被两个来源实体共用，涉及 38 个 QID。包括《安德的游戏》短篇与扩写长篇、《献给阿尔吉侬的花束》1959／1966 两种文本等，**不能按 P648 自动合并**。
+
+完整原始 P648 有 4,727 个实体、4,923 个值：4,662 个 W 值、260 个 M 类型版本值（涉及 251 个实体），另有 `Q1811417` 的无法识别原值 `O`。W、M 和异常值全部在审计字段中分开保存。这里统计的是 Wikidata 的标识声明；基线没有查询 Open Library 内容确认对应关系。后续跨库对应核验须另列证据和字段范围。
+
+### 实体粒度与冲突复核
+
+来源实体分类为系列 942、章节或连载部分 63、版本或翻译 25、其他或未指定 13,502；同一实体可有多个直接 P31，类别计数采用既有规范化优先规则。版本优先的 14 条还同时含章节类型，因此直接“章”类型共有 77 条。保留原类型可复核，不把它们都算成独立小说。
+
+1,151 条含图像、视听或其他交叉媒介类型，登记为浏览范围边界；这些不是无效记录。1,828 条目前缺少足以区分单卷、短篇、合集等的具体粒度证据。系列关系、章节关系和版本关联按原 QID 保存，不擅自构造三部曲或合并卷册。
+
+12 条研究／来源年差在摘要中完整列出，并保留版本说明。连载与单行本阶段差别可能合理；《神秘岛》（1874／1888）、《莫罗博士岛》（1896／1895）、《流浪地球》（2000／2001）宜优先回到独立书目来源核对。差异本身不能证明任何一方错误。
+
+## 后续补全的边界
+
+外部补充应逐字段记录来源、取得时间、适用文本或版本、对应规则及核验范围。题名和作者跨库对应只支持相关字段，不能升级为原语、初刊日期、空间、故事跨度、科学前提和全部议题均已核验。书目元数据缺少剧情证据时，保留未知；不能由题名、年份、genre 或长度臆造剧情。

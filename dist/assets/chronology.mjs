@@ -197,7 +197,7 @@ export function mountChronology(container, { works = [], onWork = () => {}, onRa
     const displayed = visible.slice(start, start + PAGE_SIZE);
     el('list-count').textContent = visible.length ? `${start + 1}—${start + displayed.length} / ${visible.length.toLocaleString('zh-CN')} 条` : '0 条记录';
     el('list').start = start + 1;
-    el('list').innerHTML = displayed.length ? displayed.map(({ work }) => `<li><button type="button" data-work="${escapeHTML(work.id)}"${selectedId === work.id ? ' class="is-selected"' : ''}><span class="chronology-list-year">${escapeHTML(displayYear(work))}</span><span class="chronology-list-title"><strong>${escapeHTML(titleOf(work))}</strong><small>${escapeHTML(authorOf(work))}</small></span><span class="chronology-list-open" aria-hidden="true">↗</span></button></li>`).join('') : '<li class="chronology-list-empty">当前没有记录；可清除范围，或调整作品库筛选。</li>';
+    el('list').innerHTML = displayed.length ? displayed.map(({ work }) => `<li><button type="button" data-work="${escapeHTML(work.id)}"${selectedId === work.id ? ' class="is-selected"' : ''}><span class="chronology-list-year">${escapeHTML(displayYear(work))}</span><span class="chronology-list-title"><strong>${escapeHTML(titleOf(work))}</strong><small>${escapeHTML(authorOf(work))}</small><small>${work.knowledge?'已有知识补充 · ':''}待独立核对</small></span><span class="chronology-list-open" aria-hidden="true">↗</span></button></li>`).join('') : '<li class="chronology-list-empty">当前没有记录；可清除范围，或调整作品库筛选。</li>';
     el('page-count').textContent = `第 ${page + 1} / ${totalPages} 页 · 每页最多 ${PAGE_SIZE} 条`;
     action('first-page').disabled = action('previous-page').disabled = page === 0;
     action('last-page').disabled = action('next-page').disabled = page >= totalPages - 1;
