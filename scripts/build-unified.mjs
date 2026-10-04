@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {gzipSync} from 'node:zlib';
+import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
+const root=new URL('../',import.meta.url);
+const read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
+const [catalog,spatial,links,manifest]=await Promise.all(['dist/assets/catalog.json','dist/assets/spatial.json','dist/assets/research-links.json','dist/assets/bibliography.json'].map(read));
+const records=(await Promise.all(manifest.chunks.map(p=>read('dist/'+p)))).flatMap(x=>x.records);
+if(records.length!==manifest.metadata.record_count||new Set(records.map(r=>r.id)).size!==records.length)throw new Error('Incomplete source index');
+catalog.works.forEach((w,i)=>w.report_index=i+1);
+const {works,aliases}=buildCanonicalUniverse(records,catalog.works,spatial,links);
+const metadata={format:'canonical-work-universe-v1',research_date:'2026-10-04',source_record_count:records.length,...coverageOf(works),entity_linking:links.metadata,source_scope:manifest.metadata.scope,identity_note:'本版本统一已有来源实体及研究记录的网页身份，不宣称已完成全球书目。系列、章节、版本等源实体保持独立；未可靠链接的研究记录使用local编号。',field_note:'当前索引与研究层完整保留；每条source_index.detail_url指向完整源字段，所有来源详细记录、关系与related_entities另见bibliography-full.json.gz。unknown不作负面判断。',full_source_data:'./assets/bibliography-full.json.gz'};
+const snapshot={metadata,aliases:Object.fromEntries(aliases),works};
+await mkdir(new URL('research/',root),{recursive:true});
+const compressed=gzipSync(JSON.stringify(snapshot),{level:9});
+await writeFile(new URL('dist/assets/canonical-universe.json.gz',root),compressed);
+await writeFile(new URL('research/canonical-universe.json.gz',root),compressed);
+await writeFile(new URL('research/canonical-universe-metadata.json',root),JSON.stringify(metadata,null,2)+'\n');
+const fields=['id','research_id','source_id','title_zh','title_original','author','first_year','sort_year','source_first_year','year_display','research_level','source_entity_kind','topics','research_topics','topic_candidates','branches','duration','science_class','spatial_primary'];
+const csv=values=>values.map(value=>'"'+String(value??'').replaceAll('"','""')+'"').join(',');
+await writeFile(new URL('research/canonical-universe.csv.gz',root),gzipSync('\ufeff'+[csv(fields),...works.map(w=>csv(fields.map(k=>typeof w[k]==='object'&&w[k]!=null?JSON.stringify(w[k]):w[k])))].join('\n'),{level:9}));
+console.log(JSON.stringify(metadata,null,2));

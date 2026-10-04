@@ -1,5 +1,5 @@
 const ERAS = [
-  { id: 'before1800', label: '1800 年以前', short: '前史', min: 0, max: 1799 },
+  { id: 'before1800', label: '1800 年以前', short: '早期与前史', min: null, max: 1799 },
   { id: '1800', label: '1800—1899', short: '工业与远航', min: 1800, max: 1899 },
   { id: '1900', label: '1900—1939', short: '现代类型成形', min: 1900, max: 1939 },
   { id: '1940', label: '1940—1959', short: '太空与系统', min: 1940, max: 1959 },
@@ -7,201 +7,335 @@ const ERAS = [
   { id: '1980', label: '1980—1999', short: '网络与后人类', min: 1980, max: 1999 },
   { id: '2000', label: '2000—2009', short: '技术与风险', min: 2000, max: 2009 },
   { id: '2010', label: '2010—2019', short: '多元文明', min: 2010, max: 2019 },
-  { id: '2020', label: '2020—2025', short: '当代情境', min: 2020, max: 2025 }
+  { id: '2020', label: '2020 年及以后', short: '当代与未来年份', min: 2020, max: null }
 ];
-const START_YEAR = 1900, END_YEAR = 2025, GRAPH_WIDTH = 1260, GRAPH_HEIGHT = 270;
+const PAGE_SIZE = 60;
+const GRAPH_HEIGHT = 268;
+const GRAPH_PADDING = 42;
 let instanceCounter = 0;
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-const yearOf = work => Number(work.sort_year ?? work.first_year);
-const displayYear = work => work.year_display || (yearOf(work) < 1800 ? '早期作品（纪年见版本备注）' : String(yearOf(work)));
-const pointX = year => 42 + (year - START_YEAR) / (END_YEAR - START_YEAR) * (GRAPH_WIDTH - 84);
+const numberOrNull = value => {
+  if (value === null || value === undefined || (typeof value !== 'number' && typeof value !== 'string') || String(value).trim() === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) && Number.isInteger(number) ? number : null;
+};
+const yearOf = work => numberOrNull(work.sort_year) ?? numberOrNull(work.first_year);
+const yearLabel = year => year === null ? '年份未知' : year < 0 ? `公元前 ${Math.abs(year)} 年` : `${year} 年`;
+const titleOf = work => work.title_zh || work.title || work.title_original || work.id;
+const authorOf = work => Array.isArray(work.author) ? work.author.join('、') : work.author || (Array.isArray(work.authors) ? work.authors.join('、') : '') || '作者未知';
+const displayYear = work => yearOf(work) === null ? '年份未知' : work.year_display || yearLabel(yearOf(work));
 
 function prepareWorks(input) {
   const ids = new Set();
   return (Array.isArray(input) ? input : []).filter(work => {
-    if (!work || typeof work.id !== 'string' || !Number.isFinite(yearOf(work)) || ids.has(work.id)) return false;
+    if (!work || typeof work.id !== 'string' || !work.id || ids.has(work.id)) return false;
     ids.add(work.id);
     return true;
-  }).slice().sort((a, b) => yearOf(a) - yearOf(b) || a.id.localeCompare(b.id));
+  }).map(work => ({ work, year: yearOf(work) })).sort((a, b) => {
+    if (a.year === null && b.year !== null) return 1;
+    if (a.year !== null && b.year === null) return -1;
+    return (a.year === null ? 0 : a.year - b.year) || a.work.id.localeCompare(b.work.id);
+  });
 }
 
 /**
- * Mount a self-contained publication chronology; no build step or dependency.
- * `works` may be the entire catalog or the current subset. Callbacks are optional.
- * Range endpoints are inclusive numbers or null (unbounded).
+ * Publication chronology for the complete canonical catalog or a current subset.
+ * Annual density uses all dated records supplied to this instance; unknown dates
+ * stay separate. Empty years are folded, so horizontal distance is not elapsed time.
+ * onRange(min, max) receives inclusive endpoints; null is an unbounded endpoint.
+ * onUnknownYear() is optional and requests the host's global unknown-year filter.
  */
-export function mountChronology(container, { works = [], onWork = () => {}, onRange = () => {} } = {}) {
+export function mountChronology(container, { works = [], onWork = () => {}, onRange = () => {}, onUnknownYear = () => {} } = {}) {
   if (!container || typeof container.appendChild !== 'function') throw new TypeError('mountChronology requires a container element');
   const document = container.ownerDocument;
+  const view = document.defaultView;
   const uid = `chronology-${++instanceCounter}`;
   const root = document.createElement('section');
   root.className = 'chronology';
   root.setAttribute('aria-labelledby', `${uid}-heading`);
   root.innerHTML = `
     <header class="chronology-header">
-      <div><span class="chronology-kicker">PUBLICATION CHRONOLOGY / 09 ERAS</span><h2 id="${uid}-heading">科幻的时间长廊</h2><p>发表时间，非故事发生时间。沿着作品诞生的年代，追踪问题如何变化。</p></div>
-      <div class="chronology-readout"><strong data-role="count">0</strong><span>条当前目录记录</span><small data-role="extent"></small></div>
+      <div><span class="chronology-kicker">PUBLICATION CHRONOLOGY / 09 ERAS</span><h2 id="${uid}-heading">科幻的时间长廊</h2><p>按来源发表年与研究纪年浏览。这里展示作品被发表或登记的时间；连载、版本和约年差异见详情。</p></div>
+      <div class="chronology-readout"><strong data-role="count">0</strong><span>条当前记录</span><small data-role="extent"></small></div>
     </header>
-    <div class="chronology-era-guide"><span>01 / 时代导航</span><p>九段分期等宽展示，小点表示当前样本记录；点击时代可筛选。阶段名称只作导览，不替代语言传统或作品分支。</p></div>
+    <div class="chronology-era-guide"><span>01 / 时代导航</span><p>九段分期用于导览。末段包含 2026、2027 等全部较晚年份；未知年单独列出。名称不代替作品分支。</p></div>
     <div class="chronology-era-scroll" tabindex="0" aria-label="九个时代，可横向滚动"><div class="chronology-eras" data-role="eras"></div></div>
+    <div class="chronology-unknown"><button type="button" data-action="unknown-year" aria-pressed="false"><span>年份未知</span><strong data-role="unknown-count">0</strong><small>条</small></button><p data-role="known-summary"></p></div>
     <form class="chronology-range" data-role="range-form">
       <div class="chronology-range-title"><span>时间范围</span><small>留空表示不设边界</small></div>
-      <label for="${uid}-from">从<input id="${uid}-from" data-role="from" type="number" min="0" max="9999" step="1" inputmode="numeric" placeholder="不限" aria-describedby="${uid}-range-help"></label>
+      <label for="${uid}-from">从<input id="${uid}-from" data-role="from" type="number" step="1" inputmode="numeric" placeholder="不限" aria-describedby="${uid}-range-help"></label>
       <span class="chronology-range-separator" aria-hidden="true">→</span>
-      <label for="${uid}-to">至<input id="${uid}-to" data-role="to" type="number" min="0" max="9999" step="1" inputmode="numeric" placeholder="不限" aria-describedby="${uid}-range-help"></label>
+      <label for="${uid}-to">至<input id="${uid}-to" data-role="to" type="number" step="1" inputmode="numeric" placeholder="不限" aria-describedby="${uid}-range-help"></label>
       <button class="chronology-primary" type="submit">应用范围</button><button type="button" data-action="clear-range">清除范围</button>
-      <p id="${uid}-range-help" class="chronology-range-help">按目录排序年份筛选；连载、单行本与约年差异见作品版本备注。</p>
+      <p id="${uid}-range-help" class="chronology-range-help">按所收录记录的纪年筛选，不统一等同于全球首发年。指定年份范围时不混入未知年。</p>
       <p class="chronology-range-status" data-role="range-status" role="status"></p>
     </form>
-    <div class="chronology-plot-heading"><div><span>02 / 年度光点</span><h3>1900—2025 · 年份等距</h3></div><div class="chronology-scroll-buttons"><button type="button" data-action="scroll-left" aria-label="时间图向较早年份滚动">←</button><button type="button" data-action="scroll-right" aria-label="时间图向较晚年份滚动">→</button></div></div>
-    <p class="chronology-plot-help" id="${uid}-plot-help">横向滚动查看各年。每个光点是一条记录，同年作品向上叠放；选中光点后可用方向键移动，回车打开作品。</p>
-    <div class="chronology-plot-scroll" data-role="plot-scroll" tabindex="0" role="region" aria-label="1900至2025年的作品发表时间图" aria-describedby="${uid}-plot-help"><div class="chronology-plot" data-role="plot"></div></div>
-    <div class="chronology-legend"><span><i></i>一条记录</span><span><i class="chronology-legend-selected"></i>当前选中</span><p>光点密度只来自这份代表样本，不表示全球科幻作品数量或分支分布。1900 年以前的作品见时代导航与下方列表。</p></div>
-    <section class="chronology-list-section" aria-labelledby="${uid}-list-heading"><div class="chronology-list-heading"><div><span>03 / 依次阅读</span><h3 id="${uid}-list-heading">按发表时间排列</h3></div><p data-role="list-count"></p></div><ol class="chronology-list" data-role="list"></ol><button class="chronology-more" data-action="more" type="button">继续展开作品 ↓</button></section>`;
+    <div class="chronology-plot-heading"><div><span>02 / 年度数量密度</span><h3 data-role="plot-heading">等待年份记录</h3></div><div class="chronology-scroll-buttons"><button type="button" data-action="scroll-left" aria-label="时间图向较早年份滚动">←</button><button type="button" data-action="scroll-right" aria-label="时间图向较晚年份滚动">→</button></div></div>
+    <p class="chronology-plot-help" id="${uid}-plot-help">每柱代表一个有记录年份，柱高与记录数成正比；空白年份折叠，横向距离不表示经过时长。点击柱筛选该年。聚焦图表后可用方向键、Home / End 选年，回车应用。</p>
+    <div class="chronology-plot-scroll" data-role="plot-scroll" tabindex="0" role="region" aria-label="全部有年份记录的年度数量图" aria-describedby="${uid}-plot-help"><canvas class="chronology-density-canvas" data-role="canvas" height="${GRAPH_HEIGHT}" tabindex="0" role="slider" aria-orientation="horizontal" aria-label="选择发表年份" aria-describedby="${uid}-plot-help">年度数量图</canvas></div>
+    <div class="chronology-year-selection"><div data-role="year-readout" aria-live="polite"></div><div><button type="button" data-action="previous-year" aria-label="选择上一个有记录年份">上一年</button><button class="chronology-primary" type="button" data-action="select-year">筛选所选年份</button><button type="button" data-action="next-year" aria-label="选择下一个有记录年份">下一年</button></div></div>
+    <div class="chronology-legend"><span><i></i>年度记录数</span><span><i class="chronology-legend-selected"></i>所选年份</span><p>数量来自当前载入的来源与筛选结果，不能当作全球各年度出版量。来源未来年份可能属于预告或待核日期。</p></div>
+    <section class="chronology-list-section" aria-labelledby="${uid}-list-heading"><div class="chronology-list-heading"><div><span>03 / 依次阅读</span><h3 id="${uid}-list-heading">按发表时间排列</h3></div><p data-role="list-count" role="status"></p></div><ol class="chronology-list" data-role="list"></ol><nav class="chronology-pagination" aria-label="时间列表分页"><button type="button" data-action="first-page">首页</button><button type="button" data-action="previous-page">上一页</button><span data-role="page-count"></span><button type="button" data-action="next-page">下一页</button><button type="button" data-action="last-page">末页</button></nav></section>`;
   container.appendChild(root);
   const el = role => root.querySelector(`[data-role="${role}"]`);
-  let source = prepareWorks(works), range = { min: null, max: null }, listLimit = 12, selectedId = '', focusId = '', destroyed = false;
-  const visibleWorks = () => source.filter(work => (range.min === null || yearOf(work) >= range.min) && (range.max === null || yearOf(work) <= range.max));
-  const reducedMotion = () => document.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  const rangeLabel = () => range.min === null && range.max === null ? '当前未限制发表时间' : `${range.min === null ? '不限开始' : range.min + ' 年'} — ${range.max === null ? '不限结束' : range.max + ' 年'}`;
+  const action = name => root.querySelector(`[data-action="${name}"]`);
+  let source = prepareWorks(works), range = { min: null, max: null }, unknownOnly = false, page = 0, selectedId = '', destroyed = false;
+  let visible = [], annual = [], focusYear = null, hoverYear = null, graphWidth = 0, frame = null;
+  const reducedMotion = () => view?.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const visibleWorks = () => source.filter(({ year }) => {
+    if (unknownOnly) return year === null;
+    if (range.min === null && range.max === null) return true;
+    return year !== null && (range.min === null || year >= range.min) && (range.max === null || year <= range.max);
+  });
+  const rangeLabel = () => unknownOnly ? '仅显示年份未知的记录' : range.min === null && range.max === null ? '当前未限制发表时间；未知年份保留在列表末尾' : `${range.min === null ? '不限开始' : yearLabel(range.min)} — ${range.max === null ? '不限结束' : yearLabel(range.max)}；未知年不在范围内`;
 
-  function renderEras(records) {
+  function renderEras() {
+    const counts = Array(ERAS.length).fill(0);
+    for (const { year } of source) {
+      if (year === null) continue;
+      const index = ERAS.findIndex(era => (era.min === null || year >= era.min) && (era.max === null || year <= era.max));
+      if (index >= 0) counts[index]++;
+    }
+    const maximum = Math.max(1, ...counts);
     el('eras').innerHTML = ERAS.map((era, index) => {
-      const members = records.filter(work => yearOf(work) >= era.min && yearOf(work) <= era.max);
-      const active = (range.min ?? 0) === era.min && range.max === era.max;
-      const sparks = members.map(() => '<i></i>').join('');
-      return `<article class="chronology-era${active ? ' is-active' : ''}"><button type="button" data-era="${era.id}" aria-pressed="${active}" aria-label="筛选 ${era.label}，当前 ${members.length} 条记录"><span class="chronology-era-number">${String(index + 1).padStart(2, '0')}</span><strong>${era.label}</strong><span>${era.short}</span><div class="chronology-era-sparks" aria-hidden="true">${sparks}</div><small><b>${members.length}</b> 条记录</small></button></article>`;
+      const active = !unknownOnly && range.min === era.min && range.max === era.max;
+      return `<article class="chronology-era${active ? ' is-active' : ''}"><button type="button" data-era="${era.id}" aria-pressed="${active}" aria-label="筛选 ${era.label}，输入数据中 ${counts[index]} 条记录"><span class="chronology-era-number">${String(index + 1).padStart(2, '0')}</span><strong>${era.label}</strong><span>${era.short}</span><div class="chronology-era-meter" aria-hidden="true"><i style="width:${counts[index] / maximum * 100}%"></i></div><small><b>${counts[index].toLocaleString('zh-CN')}</b> 条记录</small></button></article>`;
     }).join('');
   }
 
-  function renderPlot(records) {
-    const modern = records.filter(work => yearOf(work) >= START_YEAR && yearOf(work) <= END_YEAR);
-    const perYear = new Map();
-    for (const work of modern) perYear.set(yearOf(work), (perYear.get(yearOf(work)) || 0) + 1);
-    const baseY = GRAPH_HEIGHT - 52;
-    const maxStack = Math.max(1, ...perYear.values());
-    const spacing = Math.min(17, (baseY - 40) / maxStack);
-    const ticks = Array.from({ length: 13 }, (_, i) => 1900 + i * 10).concat(2025);
-    const grid = ticks.map(year => `<line x1="${pointX(year)}" y1="25" x2="${pointX(year)}" y2="${baseY + 7}" class="chronology-grid-line"/><text x="${pointX(year)}" y="${baseY + 34}" text-anchor="middle">${year}</text>`).join('');
-    const density = [...perYear].map(([year, count]) => `<line x1="${pointX(year)}" y1="${baseY}" x2="${pointX(year)}" y2="${baseY - count * spacing}" class="chronology-density-line"/>`).join('');
-    let keyboardId = modern.some(work => work.id === focusId) ? focusId : modern.some(work => work.id === selectedId) ? selectedId : modern[0]?.id;
-    const depth = new Map();
-    const nodes = modern.map(work => {
-      const year = yearOf(work), stack = (depth.get(year) || 0) + 1;
-      depth.set(year, stack);
-      const left = pointX(year) / GRAPH_WIDTH * 100, top = baseY - stack * spacing;
-      const side = left < 15 ? ' tooltip-left' : left > 85 ? ' tooltip-right' : '';
-      return `<button type="button" class="chronology-node${selectedId === work.id ? ' is-selected' : ''}${side}" data-point="${escapeHTML(work.id)}" data-work="${escapeHTML(work.id)}" tabindex="${work.id === keyboardId ? 0 : -1}" style="left:${left}%;top:${top}px" aria-label="${escapeHTML(displayYear(work))}，${escapeHTML(work.title_zh)}，${escapeHTML(work.author)}，打开作品详情"><i aria-hidden="true"></i><span class="chronology-tooltip" aria-hidden="true"><strong>${escapeHTML(work.title_zh)}</strong><small>${escapeHTML(displayYear(work))} · ${escapeHTML(work.author)}</small></span></button>`;
-    }).join('');
-    el('plot').innerHTML = `<svg class="chronology-axis" viewBox="0 0 ${GRAPH_WIDTH} ${GRAPH_HEIGHT}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${uid}-axis-glow"><stop stop-color="#59dce5"/><stop offset="1" stop-color="#9584f3"/></linearGradient></defs>${grid}${density}<line x1="42" y1="${baseY}" x2="${GRAPH_WIDTH - 42}" y2="${baseY}" class="chronology-baseline" style="stroke:url(#${uid}-axis-glow)"/></svg>${nodes}${modern.length ? '' : '<p class="chronology-plot-empty">当前范围没有 1900—2025 年的记录。早期作品仍可从下方列表打开。</p>'}`;
+  function updateYearReadout() {
+    const current = annual.find(item => item.year === (hoverYear ?? focusYear));
+    el('year-readout').textContent = current ? `${yearLabel(current.year)} · ${current.count.toLocaleString('zh-CN')} 条记录${current.year > new Date().getUTCFullYear() ? ' · 未来来源年份，待核' : ''}` : '当前没有可绘制的已知年份；未知记录可从列表打开。';
+    for (const name of ['previous-year', 'select-year', 'next-year', 'scroll-left', 'scroll-right']) action(name).disabled = !annual.length;
+    const index = annual.findIndex(item => item.year === focusYear);
+    action('previous-year').disabled = index <= 0;
+    action('next-year').disabled = index < 0 || index >= annual.length - 1;
+    const canvas = el('canvas');
+    if (annual.length) {
+      canvas.setAttribute('role', 'slider');
+      canvas.tabIndex = 0;
+      canvas.setAttribute('aria-valuemin', String(annual[0].year));
+      canvas.setAttribute('aria-valuemax', String(annual[annual.length - 1].year));
+      canvas.setAttribute('aria-valuenow', String(focusYear));
+      const focused = annual[index];
+      canvas.setAttribute('aria-valuetext', `${yearLabel(focusYear)}，${focused?.count || 0} 条记录；回车筛选`);
+    } else {
+      canvas.setAttribute('role', 'img');
+      canvas.tabIndex = -1;
+      for (const attribute of ['aria-valuemin', 'aria-valuemax', 'aria-valuenow', 'aria-valuetext']) canvas.removeAttribute(attribute);
+    }
   }
 
-  function renderList(records) {
-    const displayed = records.slice(0, listLimit);
-    el('list-count').textContent = `显示 ${displayed.length} / ${records.length} 条`;
-    el('list').innerHTML = displayed.length ? displayed.map((work, index) => `<li><button type="button" data-work="${escapeHTML(work.id)}"><span class="chronology-list-index">${String(index + 1).padStart(2, '0')}</span><span class="chronology-list-year">${escapeHTML(displayYear(work))}</span><span class="chronology-list-title"><strong>${escapeHTML(work.title_zh)}</strong><small>${escapeHTML(work.author)}</small></span><span class="chronology-list-open" aria-hidden="true">↗</span></button></li>`).join('') : '<li class="chronology-list-empty">当前时间范围没有记录；可清除范围，或调整作品库筛选。</li>';
-    root.querySelector('[data-action="more"]').hidden = displayed.length >= records.length;
+  function drawPlot() {
+    if (destroyed) return;
+    const canvas = el('canvas');
+    const available = Math.max(1, el('plot-scroll').clientWidth || 800);
+    // Each occupied year gets a column; a canvas keeps DOM size independent of works.
+    // Cap the bitmap, while retaining every annual column even in unusual datasets.
+    graphWidth = Math.max(available, Math.min(16000, annual.length * 28 + GRAPH_PADDING * 2));
+    canvas.style.width = `${graphWidth}px`;
+    const ratio = Math.min(view?.devicePixelRatio || 1, 2, 16000 / graphWidth);
+    canvas.width = Math.max(1, Math.round(graphWidth * ratio));
+    canvas.height = Math.round(GRAPH_HEIGHT * ratio);
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    context.clearRect(0, 0, graphWidth, GRAPH_HEIGHT);
+    context.font = '11px ui-monospace, SFMono-Regular, Consolas, monospace';
+    context.textAlign = 'left';
+    if (!annual.length) {
+      context.fillStyle = '#a4b9d1';
+      context.fillText('当前没有已知年份记录。', 22, 90);
+      canvas.textContent = '当前没有已知年份记录。';
+      return;
+    }
+    const baseY = GRAPH_HEIGHT - 49, usableHeight = baseY - 38;
+    const maxCount = Math.max(1, ...annual.map(item => item.count));
+    const step = (graphWidth - GRAPH_PADDING * 2) / annual.length;
+    const barWidth = Math.max(1, Math.min(17, step * 0.68));
+    for (let fraction = 0; fraction <= 1; fraction += 0.5) {
+      const y = baseY - usableHeight * fraction;
+      context.strokeStyle = 'rgba(124,177,214,.15)';
+      context.beginPath(); context.moveTo(GRAPH_PADDING, y); context.lineTo(graphWidth - GRAPH_PADDING, y); context.stroke();
+      context.fillStyle = '#a4b9d1';
+      context.fillText(String(Math.round(maxCount * fraction)), 7, y - 5);
+    }
+    const labelStride = Math.max(1, Math.ceil(52 / step));
+    annual.forEach((item, index) => {
+      const x = GRAPH_PADDING + (index + 0.5) * step;
+      const height = Math.max(2, item.count / maxCount * usableHeight);
+      const focused = item.year === focusYear;
+      context.fillStyle = focused ? '#9584f3' : item.year === hoverYear ? '#b9faff' : '#59dce5';
+      context.globalAlpha = focused || item.year === hoverYear ? 1 : 0.75;
+      context.fillRect(x - barWidth / 2, baseY - height, barWidth, height);
+      context.globalAlpha = 1;
+      if (focused) {
+        context.strokeStyle = '#d8d0ff'; context.lineWidth = 1;
+        context.strokeRect(x - barWidth / 2 - 3, baseY - height - 4, barWidth + 6, height + 8);
+      }
+      if (index % labelStride === 0 || index === annual.length - 1) {
+        context.fillStyle = '#a4b9d1'; context.textAlign = 'center';
+        context.fillText(String(item.year), x, baseY + 26);
+      }
+    });
+    const total = annual.reduce((sum, item) => sum + item.count, 0);
+    canvas.textContent = `${annual.length} 个有记录年份，覆盖 ${total} 条已知年份记录；最早 ${yearLabel(annual[0].year)}，最晚 ${yearLabel(annual[annual.length - 1].year)}。`;
+    canvas.dataset.knownCount = String(total);
+    canvas.dataset.yearCount = String(annual.length);
+  }
+
+  function schedulePlot() {
+    if (frame !== null) return;
+    const request = view?.requestAnimationFrame?.bind(view) || (callback => setTimeout(callback, 0));
+    frame = request(() => { frame = null; drawPlot(); });
+  }
+
+  function renderList() {
+    const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+    page = Math.max(0, Math.min(page, totalPages - 1));
+    const start = page * PAGE_SIZE;
+    const displayed = visible.slice(start, start + PAGE_SIZE);
+    el('list-count').textContent = visible.length ? `${start + 1}—${start + displayed.length} / ${visible.length.toLocaleString('zh-CN')} 条` : '0 条记录';
+    el('list').start = start + 1;
+    el('list').innerHTML = displayed.length ? displayed.map(({ work }) => `<li><button type="button" data-work="${escapeHTML(work.id)}"${selectedId === work.id ? ' class="is-selected"' : ''}><span class="chronology-list-year">${escapeHTML(displayYear(work))}</span><span class="chronology-list-title"><strong>${escapeHTML(titleOf(work))}</strong><small>${escapeHTML(authorOf(work))}</small></span><span class="chronology-list-open" aria-hidden="true">↗</span></button></li>`).join('') : '<li class="chronology-list-empty">当前没有记录；可清除范围，或调整作品库筛选。</li>';
+    el('page-count').textContent = `第 ${page + 1} / ${totalPages} 页 · 每页最多 ${PAGE_SIZE} 条`;
+    action('first-page').disabled = action('previous-page').disabled = page === 0;
+    action('last-page').disabled = action('next-page').disabled = page >= totalPages - 1;
   }
 
   function render() {
     if (destroyed) return;
-    const records = visibleWorks();
-    el('count').textContent = records.length;
-    el('extent').textContent = records.length ? `${displayYear(records[0])} → ${displayYear(records[records.length - 1])}` : '等待新的坐标';
+    visible = visibleWorks();
+    const sourceUnknown = source.reduce((count, record) => count + (record.year === null ? 1 : 0), 0);
+    const known = visible.filter(record => record.year !== null);
+    const counts = new Map();
+    for (const { year } of known) counts.set(year, (counts.get(year) || 0) + 1);
+    annual = [...counts].map(([year, count]) => ({ year, count })).sort((a, b) => a.year - b.year);
+    if (!annual.some(item => item.year === focusYear)) focusYear = annual[0]?.year ?? null;
+    hoverYear = null;
+    el('count').textContent = visible.length.toLocaleString('zh-CN');
+    el('extent').textContent = annual.length ? `${yearLabel(annual[0].year)} → ${yearLabel(annual[annual.length - 1].year)}${visible.length > known.length ? ` · 另有 ${visible.length - known.length} 条年份未知` : ''}` : visible.length ? `${visible.length} 条年份未知` : '当前没有记录';
+    el('unknown-count').textContent = sourceUnknown.toLocaleString('zh-CN');
+    action('unknown-year').setAttribute('aria-pressed', String(unknownOnly));
+    action('unknown-year').disabled = sourceUnknown === 0;
+    el('known-summary').textContent = `输入数据共 ${source.length.toLocaleString('zh-CN')} 条：${(source.length - sourceUnknown).toLocaleString('zh-CN')} 条有纪年，${sourceUnknown.toLocaleString('zh-CN')} 条未知。`;
     el('range-status').textContent = rangeLabel();
-    renderEras(records); renderPlot(records); renderList(records);
+    el('plot-heading').textContent = annual.length ? `${yearLabel(annual[0].year)}—${yearLabel(annual[annual.length - 1].year)} · ${annual.length} 个年份` : '年份未知区 / 暂无已知年份';
+    el('canvas').dataset.knownCount = String(known.length);
+    el('canvas').dataset.yearCount = String(annual.length);
+    renderEras(); renderList(); updateYearReadout(); schedulePlot();
   }
 
   function applyRange(min, max, notify = true) {
-    range = { min, max };
-    listLimit = 12;
+    range = { min, max }; unknownOnly = false; page = 0;
     el('from').value = min === null ? '' : String(min);
     el('to').value = max === null ? '' : String(max);
     el('to').setCustomValidity('');
     render();
-    if (notify) onRange(min, max);
+    if (notify && typeof onRange === 'function') onRange(min, max);
+  }
+
+  function applyUnknown(notify = true) {
+    range = { min: null, max: null }; unknownOnly = true; page = 0;
+    el('from').value = el('to').value = '';
+    el('to').setCustomValidity('');
+    render();
+    if (notify && typeof onUnknownYear === 'function') onUnknownYear();
+  }
+
+  function selectFocusYear(index, scroll = true) {
+    if (!annual.length) return;
+    focusYear = annual[Math.max(0, Math.min(annual.length - 1, index))].year;
+    hoverYear = null; updateYearReadout(); drawPlot();
+    if (scroll) {
+      const position = annual.findIndex(item => item.year === focusYear);
+      const viewport = el('plot-scroll');
+      const x = GRAPH_PADDING + (position + 0.5) * (graphWidth - GRAPH_PADDING * 2) / annual.length;
+      if (x < viewport.scrollLeft + 30 || x > viewport.scrollLeft + viewport.clientWidth - 30) viewport.scrollTo({ left: Math.max(0, x - viewport.clientWidth / 2), behavior: reducedMotion() ? 'auto' : 'smooth' });
+    }
+  }
+
+  function indexAt(event) {
+    if (!annual.length) return -1;
+    const rectangle = el('canvas').getBoundingClientRect();
+    const x = event.clientX - rectangle.left;
+    if (x < GRAPH_PADDING || x > graphWidth - GRAPH_PADDING) return -1;
+    return Math.max(0, Math.min(annual.length - 1, Math.floor((x - GRAPH_PADDING) / (graphWidth - GRAPH_PADDING * 2) * annual.length)));
   }
 
   function handleSubmit(event) {
-    event.preventDefault();
-    el('to').setCustomValidity('');
-    const min = el('from').value.trim() === '' ? null : Number(el('from').value);
-    const max = el('to').value.trim() === '' ? null : Number(el('to').value);
-    if (min !== null && max !== null && min > max) el('to').setCustomValidity('结束年份不能早于开始年份');
+    event.preventDefault(); el('to').setCustomValidity('');
+    const fromText = el('from').value.trim(), toText = el('to').value.trim();
+    const min = fromText === '' ? null : numberOrNull(fromText), max = toText === '' ? null : numberOrNull(toText);
+    if ((fromText && min === null) || (toText && max === null)) el('to').setCustomValidity('请输入整数年份，或留空');
+    else if (min !== null && max !== null && min > max) el('to').setCustomValidity('结束年份不能早于开始年份');
     if (el('range-form').reportValidity()) applyRange(min, max);
   }
 
   function handleClick(event) {
-    const button = event.target.closest('button');
-    if (!button || !root.contains(button)) return;
-    if (button.dataset.work) {
-      selectedId = button.dataset.work;
-      if (button.dataset.point) focusId = selectedId;
-      root.querySelectorAll('[data-point]').forEach(node => {
-        node.classList.toggle('is-selected', node.dataset.point === selectedId);
-        if (button.dataset.point) node.tabIndex = node.dataset.point === selectedId ? 0 : -1;
-      });
-      onWork(selectedId);
-    } else if (button.dataset.era) {
-      const era = ERAS.find(item => item.id === button.dataset.era);
-      applyRange(era.min === 0 ? null : era.min, era.max);
-    } else if (button.dataset.action === 'clear-range') applyRange(null, null);
-    else if (button.dataset.action === 'more') {
-      const nextIndex = listLimit;
-      listLimit += 24;
-      renderList(visibleWorks());
-      el('list').querySelectorAll('button')[nextIndex]?.focus();
-    } else if (button.dataset.action === 'scroll-left' || button.dataset.action === 'scroll-right') {
-      el('plot-scroll').scrollBy({ left: (button.dataset.action === 'scroll-left' ? -1 : 1) * 320, behavior: reducedMotion() ? 'auto' : 'smooth' });
+    const button = event.target.closest?.('button');
+    if (!button || !root.contains(button) || button.disabled) return;
+    const { work, era, action: name } = button.dataset;
+    if (work) { selectedId = work; renderList(); if (typeof onWork === 'function') onWork(work); }
+    else if (era) { const period = ERAS.find(item => item.id === era); applyRange(period.min, period.max); }
+    else if (name === 'clear-range') applyRange(null, null);
+    else if (name === 'unknown-year') applyUnknown();
+    else if (name === 'select-year' && focusYear !== null) applyRange(focusYear, focusYear);
+    else if (name === 'previous-year' || name === 'next-year') selectFocusYear(annual.findIndex(item => item.year === focusYear) + (name === 'previous-year' ? -1 : 1));
+    else if (name === 'scroll-left' || name === 'scroll-right') el('plot-scroll').scrollBy({ left: (name === 'scroll-left' ? -1 : 1) * 320, behavior: reducedMotion() ? 'auto' : 'smooth' });
+    else if (name.endsWith('-page')) {
+      const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+      page = name === 'first-page' ? 0 : name === 'last-page' ? totalPages - 1 : page + (name === 'previous-page' ? -1 : 1);
+      renderList(); el('list').querySelector('button')?.focus();
     }
   }
 
+  function handleCanvasClick(event) { const index = indexAt(event); if (index >= 0) { selectFocusYear(index, false); applyRange(focusYear, focusYear); } }
+  function handlePointerMove(event) { const index = indexAt(event); const year = index >= 0 ? annual[index].year : null; if (year !== hoverYear) { hoverYear = year; updateYearReadout(); schedulePlot(); } }
+  function handlePointerLeave() { hoverYear = null; updateYearReadout(); schedulePlot(); }
   function handleKeydown(event) {
-    const node = event.target.closest('[data-point]');
-    if (!node) return;
-    const keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'];
-    if (!keys.includes(event.key)) return;
+    const keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', 'Enter', ' '];
+    if (event.target !== el('canvas') || !annual.length || !keys.includes(event.key)) return;
     event.preventDefault();
-    const nodes = [...el('plot').querySelectorAll('[data-point]')];
-    const current = nodes.indexOf(node);
-    const next = event.key === 'Home' ? 0 : event.key === 'End' ? nodes.length - 1 : Math.max(0, Math.min(nodes.length - 1, current + (['ArrowLeft', 'ArrowDown'].includes(event.key) ? -1 : 1)));
-    nodes.forEach((item, index) => { item.tabIndex = index === next ? 0 : -1; });
-    focusId = nodes[next].dataset.point;
-    nodes[next].focus({ preventScroll: true });
-    nodes[next].scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' });
-  }
-
-  function handleFocus(event) {
-    const node = event.target.closest('[data-point]');
-    if (node) {
-      focusId = node.dataset.point;
-      el('plot').querySelectorAll('[data-point]').forEach(item => { item.tabIndex = item === node ? 0 : -1; });
-    }
+    if (event.key === 'Enter' || event.key === ' ') { applyRange(focusYear, focusYear); return; }
+    const current = annual.findIndex(item => item.year === focusYear);
+    selectFocusYear(event.key === 'Home' ? 0 : event.key === 'End' ? annual.length - 1 : current + (['ArrowLeft', 'ArrowDown'].includes(event.key) ? -1 : 1));
   }
   function handleRangeInput() { el('to').setCustomValidity(''); }
-
   el('range-form').addEventListener('submit', handleSubmit);
   el('range-form').addEventListener('input', handleRangeInput);
   root.addEventListener('click', handleClick);
   root.addEventListener('keydown', handleKeydown);
-  root.addEventListener('focusin', handleFocus);
+  el('canvas').addEventListener('click', handleCanvasClick);
+  el('canvas').addEventListener('pointermove', handlePointerMove);
+  el('canvas').addEventListener('pointerleave', handlePointerLeave);
+  const resizeObserver = view?.ResizeObserver ? new view.ResizeObserver(schedulePlot) : null;
+  resizeObserver?.observe(el('plot-scroll'));
+  if (!resizeObserver) view?.addEventListener('resize', schedulePlot);
   render();
   return {
     update(nextWorks) { if (!destroyed) { source = prepareWorks(nextWorks); render(); } },
     setRange(min, max, { silent = true } = {}) {
       if (destroyed) return;
-      const from = min == null ? null : Number(min), to = max == null ? null : Number(max);
-      if ((from !== null && !Number.isFinite(from)) || (to !== null && !Number.isFinite(to)) || (from !== null && to !== null && from > to)) throw new RangeError('Invalid chronology range');
+      const from = min == null ? null : numberOrNull(min), to = max == null ? null : numberOrNull(max);
+      if ((min != null && from === null) || (max != null && to === null) || (from !== null && to !== null && from > to)) throw new RangeError('Invalid chronology range');
       applyRange(from, to, !silent);
     },
+    clearRange({ silent = true } = {}) { if (!destroyed) applyRange(null, null, !silent); },
+    setUnknown({ silent = true } = {}) { if (!destroyed) applyUnknown(!silent); },
     destroy() {
       if (destroyed) return;
       destroyed = true;
+      if (frame !== null) { if (view?.cancelAnimationFrame) view.cancelAnimationFrame(frame); else clearTimeout(frame); }
+      resizeObserver?.disconnect();
+      view?.removeEventListener('resize', schedulePlot);
       el('range-form').removeEventListener('submit', handleSubmit);
       el('range-form').removeEventListener('input', handleRangeInput);
       root.removeEventListener('click', handleClick);
       root.removeEventListener('keydown', handleKeydown);
-      root.removeEventListener('focusin', handleFocus);
+      el('canvas').removeEventListener('click', handleCanvasClick);
+      el('canvas').removeEventListener('pointermove', handlePointerMove);
+      el('canvas').removeEventListener('pointerleave', handlePointerLeave);
       root.remove();
     }
   };

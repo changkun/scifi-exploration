@@ -152,7 +152,7 @@ if (flags.has('--help') || flags.has('-h')) {
       works.forEach((_, index) => assert(anchors.includes(`record-${String(index + 1).padStart(3, '0')}`)));
     });
 
-    await run('model: 160 default works and 168 with boundary references', () => {
+    await run('model: curated boundary toggle returns 160 or 168 records', () => {
       assert.equal(filtered({}).length, 160); assert.equal(filtered({ boundary: true }).length, 168);
     });
     await run('model: 1940—1959 has 20 works; year endpoints are inclusive', () => {
@@ -193,7 +193,7 @@ if (flags.has('--help') || flags.has('-h')) {
       assert.equal(searchFromState(state(), ''), '');
     });
     await run('model: malformed URL values are cleaned', () => {
-      const malformed = stateFromURL('?topic=missing&branch=missing&era=2099&duration=missing&science=missing&language=missing&form=missing&sort=reverse&layout=wide&boundary=yes&page=-8&yearMin=-100&yearMax=20e2', works);
+      const malformed = stateFromURL('?topic=missing&branch=missing&era=2099&duration=missing&science=missing&language=missing&form=missing&sort=reverse&layout=wide&boundary=yes&page=-8&yearMin=-100junk&yearMax=20e2', works);
       assert.deepEqual(malformed, state());
       for (const query of ['?yearMin=2020&yearMax=1900', '?yearMin=2000.5&yearMax=NaN', '?yearMin=&yearMax=2025junk']) {
         const result = stateFromURL(query, works); assert.equal(result.yearMin, null); assert.equal(result.yearMax, null);
