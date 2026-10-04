@@ -1,0 +1,905 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-04",
+    "record_count": 29,
+    "field_count": 72,
+    "source_commit": "2f2e7f00ce7b7f747341fb8784adfae95eac9797",
+    "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/root-recent-spatial-round1.json",
+        "sha256": "b9af41a3fdaba2e981f2223c4551e9c426d4e7b3eda8552a4b7758ae7247ca4c",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "lane": 0,
+          "method": "source-assisted-spatial-navigation-v1",
+          "source_commit": "2f2e7f00ce7b7f747341fb8784adfae95eac9797",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "e68ee1b3a34fadce08d8132a9c1d04a4cc8337d016de56aec703bb17a1e68e89",
+          "record_count": 9,
+          "facet_count": 0,
+          "attempted_count": 16,
+          "deferred_count": 2,
+          "lane_indices_processed": [
+            0,
+            15
+          ],
+          "next_lane_index": 16,
+          "verification": "有具体作品资料的第一轮文学解释全部knowledge_added_unverified；出版预告、正文片段、作者访谈、书目和实际失败范围分别记录。",
+          "original_fulltext_read_count": 0,
+          "scope": "保留所有身份；先读可用作者/出版方/评论，资料不足就记录后转下一条，不等待全文。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round1.json",
+        "sha256": "22ac77703fcbc1a2afa5812d536f414a646e9dbf1cad6275ec09f40d4f1b6187",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "scope": "recent-first-lane-1.json文件顺序，从2026起下降；第一阶段快速逐条查读简介和明确评论。",
+          "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+          "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+          "record_count": 6,
+          "attempted_count": 16,
+          "deferred_count": 1,
+          "frozen_source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "validation": "逐ID身份、lane顺序、字段守恒、合法议题、两句解释、2–4具体facet及逐URL实际阅读范围均检查；此为格式和证据范围检查，非全文/独立书目核验。",
+          "lane_indices_processed": [
+            0,
+            15
+          ],
+          "next_lane_index": 16
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round1.json",
+        "sha256": "02ec53bf8a5bffea4ba6c35607f4501d408be1adf288045721a5e6fc95da6db0",
+        "metadata": {
+          "method": "knowledge-based-spatial-v1",
+          "status": "frozen_checkpoint",
+          "lane": 2,
+          "record_count": 9,
+          "field_count": 18,
+          "scope": "近期快搜R1中原空间unknown且已有明确舞台的9项；具体阅读和预告边界逐条保留。",
+          "note": "不覆盖已知空间，不由体裁/时间/主观意识推断。明确异维结构可归abstract，尚不知地方的项目保留unknown。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/early-recent-spatial-round1.json",
+        "sha256": "c2ae711093577a14d2ad98630a4c1417902f9c9145918cb9f1e427e1be8e81d1",
+        "metadata": {
+          "method": "source-reading-spatial-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "early-recent-spatial-round1",
+          "record_count": 5,
+          "field_count": 15,
+          "note": "专属lane3最近首轮中5个明确场所、基线为unknown的身份；只补3项空间字段，既知空间不覆盖；简介读取，不称原作全文已读。",
+          "remaining_note": "其余条目没有足够明确的实际场所或主次范围，本轮保持unknown，不以题名、作者、宇宙量级或宣传口号推断。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 3,
+      "cosmic": 0,
+      "earth": 13,
+      "galactic": 2,
+      "interstellar": 1,
+      "planetary": 10
+    },
+    "scope": "只补原unknown且有明示场所支持的条目；未知不由题名或议题推断，已有定位保持不动。",
+    "normalization": "派生记录为source_evidence中已有source_url增加同值url以适配读取器；冻结原文件完整保留，事实和读取范围不改变。"
+  },
+  "records": [
+    {
+      "id": "Q138179461",
+      "identity": {
+        "title": "An Luingeas Dorcha air Fàire",
+        "author": "Timothy C. Armstrong"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书双语简介直接点名Earth：主角在覆盖地球表面的森林中藏匿六年。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://booksfromscotland.com/book/an-luingeas-dorcha-air-faire/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://booksfromscotland.com/book/an-luingeas-dorcha-air-faire/",
+          "type": "出版行业书介",
+          "support_scope": "实际读Publishing Scotland目录54–60的盖尔语/英语并列本书简介，32–43列CLÀR、ISBN与2026-05-28；不继承2013前卷完整情节。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q139171713",
+      "identity": {
+        "title": "Les Abysses Stellaires",
+        "author": "Arnaud Simonnet"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "第二卷作者简介明确地球接触后的政治变化及Matairea的苏醒，采用已点名的地球／外星行星舞台；不把“银河联盟”自动当作遍历银河的地理范围。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2",
+          "type": "作者第二卷书介（搜索返回）",
+          "support_scope": "主页链接3打开Cache miss后，实际定向搜索返回第二卷完整介绍和技术信息：Grande Confluence、Lotus、Matairea、2026-03-30。不是第一卷正文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q139817043",
+      "identity": {
+        "title": "The Quiet Crawl",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "题名对应作者简介搜索返回直接点名两名Londoners发现证据；仅按伦敦人类社会作导航，不主张AI网络物理范围。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.goodreads.com/book/show/252245441-the-quiet-crawl"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/book/show/252245441-the-quiet-crawl",
+          "type": "作者简介／书目（搜索返回）",
+          "support_scope": "实际搜索返回Luke Rajkumar署名、27页短篇、2026-05-22及两个伦敦人发现第二互联网；直接打开机器人检查页，没有绕过。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q139891526",
+      "identity": {
+        "title": "Radiant Star",
+        "author": "安·樂克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "Kirkus本书专段明确遥远、无日照且冰冻的Aaa行星及其城市供应困境。仅导航这一已读舞台，不按帝国名自动提升银河范围。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.kirkusreviews.com/book-reviews/ann-leckie/radiant-star/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/ann-leckie/radiant-star/",
+          "type": "本书署名机构评论",
+          "support_scope": "实际读143–148本书专段：Aaa、供应中断、Tais成圣与遗产、仆役青年；未读原作或相关系列全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q141252839",
+      "identity": {
+        "title": "MAYA: Seed Takes Root",
+        "author": "阿南·甘地 / Zain Memon"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "发行方本卷简介直接点名Neh星球及其Maya树网；网络梦境作本行星内叙事，不自动扩大为多维或整个宇宙。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.simonandschuster.com/books/MAYA-Seed-Takes-Root/Anand-Gandhi/MAYA/9798893311891"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/MAYA-Seed-Takes-Root/Anand-Gandhi/MAYA/9798893311891",
+          "type": "出版社/发行方本卷书介（搜索返回）",
+          "support_scope": "实际搜索返回Authors Equity第一卷书介：Neh、七种族、树网、竞赛、Kshar和Yachay；产品列2026-08-25。未读全文或收听有声书。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q141410217",
+      "identity": {
+        "title": "Monsters of Ohio",
+        "author": "約翰·史卡奇"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书出版社预告明确Richland, Ohio小镇、工厂与回乡；未来或异变不改变已点名地球舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.panmacmillan.com/authors/john-scalzi/monsters-of-ohio/9781509835249"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.panmacmillan.com/authors/john-scalzi/monsters-of-ohio/9781509835249",
+          "type": "出版社预出版书介",
+          "support_scope": "实际搜索返回并打开：Richland、私募工厂危机、Mike和警长、触手变化、英国2026-11-05；只读Synopsis，不称原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q130783926",
+      "identity": {
+        "title": "Absolute Martian Manhunter",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "访谈明确人类FBI探员John Jones在现实社会处理暴力事件；“Martian”只是异类借取的命名，不能因此标成火星行星舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.dc.com/blog/2025/03/25/absolute-interview-martian-manhunter-is-twice-the-hero-he-usually-is"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.dc.com/blog/2025/03/25/absolute-interview-martian-manhunter-is-twice-the-hero-he-usually-is",
+          "type": "出版社主持的作者访谈",
+          "support_scope": "实际读19–33系列创作访谈，支持双重角色、Martian借名和FBI调查；未读漫画画格，观点是作者创作说明。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q135107542",
+      "identity": {
+        "title": "Where the Axe Is Buried",
+        "author": "Ray Nayler"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书简介直接把AI治理欧洲与欧洲东缘的Federation并置；仅导航已点名的欧洲社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.hachette.co.uk/titles/ray-nayler/where-the-axe-is-buried/9781399627900/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.co.uk/titles/ray-nayler/where-the-axe-is-buried/9781399627900/",
+          "type": "出版社本书简介",
+          "support_scope": "实际读81–82本书情节及英国2026纸本版本，不使用推荐语当情节。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q136431367",
+      "identity": {
+        "title": "Privatized Freedom",
+        "author": "Rhys Constance"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "作者第一卷书介明确Helsinki到Svalbard/Arctic north的追查路线；仅按已点名地球区域导航。"
+      },
+      "field_notes": {
+        "spatial_primary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_secondary": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。",
+        "spatial_rationale": "按明示场所作导航，仍待独立核对；不由题名或分支推断尺度。"
+      },
+      "sources": [
+        "https://www.rhysconstance.com/privatized-freedom"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.rhysconstance.com/privatized-freedom",
+          "type": "作者本卷书介与主题说明",
+          "support_scope": "实际搜索返回并打开作者第一卷介绍：Helsinki/Svalbard、植入物、AI、企业阴谋和2025身份；未通读页面原文sample excerpt或整部小说。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q138632763",
+      "identity": {
+        "title": "Operation Bounce House",
+        "author": "Matt Dinniman"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要冲突发生在殖民行星New Sonora，居民抵抗由地球远程操纵的战争机器。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读官方简介明确New Sonora的牧场与居民防卫、Earth远程玩家；未据传送门推断精确恒星位置。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/772005/operation-bounce-house-by-matt-dinniman/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/772005/operation-bounce-house-by-matt-dinniman/",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读官方简介明确New Sonora的牧场与居民防卫、Earth远程玩家；未据传送门推断精确恒星位置。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q139595833",
+      "identity": {
+        "title": "A Memory of Iron",
+        "author": "Carlos Donoso"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "舰队守卫太阳系外部轨道，设施失联与Elena所在巡航舰构成主要已知舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读作者本卷官网说明人类已殖民太阳系、舰队外轨守卫及Hecate-7剧情；不因space opera字样扩大为银河。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.carlos-donoso.com/memory-of-iron/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.carlos-donoso.com/memory-of-iron/",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读作者本卷官网说明人类已殖民太阳系、舰队外轨守卫及Hecate-7剧情；不因space opera字样扩大为银河。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q140467933",
+      "identity": {
+        "title": "Lily Starling and the Death Machine",
+        "author": "Christian Hurst"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Bimini机器任务与向银河多个受疫区分发疫苗相连，呈多地点行动网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读本卷评论明确Bimini、VEN-2E在银河部分地区扩散与Lily疫苗分发；银河网络标签待原作核，不由系列题材继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kirkusreviews.com/book-reviews/christian-hurst/lily-starling-and-the-death-machine/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/christian-hurst/lily-starling-and-the-death-machine/",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读本卷评论明确Bimini、VEN-2E在银河部分地区扩散与Lily疫苗分发；银河网络标签待原作核，不由系列题材继承。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q140997401",
+      "identity": {
+        "title": "Blightfall",
+        "author": "布兰登·山德森 / Janci Patterson"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "核心任务被困于外星行星Blightfall，队伍在其森林环境和定居点寻找盟友。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读本卷官方简介明确抵达Blightfall被攻击与滞留；只按主舞台分区，不因intergalactic宣传扩大宇宙尺度。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/731307/blightfall-by-brandon-sanderson-and-janci-patterson/9780593707074/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/731307/blightfall-by-brandon-sanderson-and-janci-patterson/9780593707074/",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读本卷官方简介明确抵达Blightfall被攻击与滞留；只按主舞台分区，不因intergalactic宣传扩大宇宙尺度。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q136490360",
+      "identity": {
+        "title": "The King Must Die",
+        "author": "Kemi Ashing-Giwa"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要危机位于改造失败的Newearth，Fen在当地帝国与反抗阵营间行动。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读官方简介和第一章开头，明确Newearth行星及帝国危机；外星Makers赠予背景不替代本卷主舞台。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/The-King-Must-Die/Kemi-Ashing-Giwa/9781668061015"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-King-Must-Die/Kemi-Ashing-Giwa/9781668061015",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读官方简介和第一章开头，明确Newearth行星及帝国危机；外星Makers赠予背景不替代本卷主舞台。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q130784448",
+      "identity": {
+        "title": "Absolute Green Lantern",
+        "author": "Al Ewing"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "开局的未知绿色力量降到地球并压毁小镇，普通人在当地面对能力变化。"
+      },
+      "field_notes": {
+        "spatial_primary": "只依据本实体已读资料明确的主要舞台；六区是阅读导航，不是物理坐标或故事时间尺度。",
+        "spatial_rationale": "实际读作者访谈明确Green power comes to Earth、小镇被压毁；标签仅对应已读系列开局，不假称所有后续期都留在地球。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.dc.com/blog/2025/04/02/absolute-interview-green-lantern-reminds-us-to-beware-its-power"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.dc.com/blog/2025/04/02/absolute-interview-green-lantern-reminds-us-to-beware-its-power",
+          "material_kind": "本作品实际已读作者/出版社简介或明确评论",
+          "support_scope": "实际读作者访谈明确Green power comes to Earth、小镇被压毁；标签仅对应已读系列开局，不假称所有后续期都留在地球。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q138801667",
+      "identity": {
+        "title": "The Brothel of Shadows - Cosmic Interception",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "作者站明确把故事中的场所放在维度相互重叠、几何和通常时空规则改变的现实边界；这是对该明确空间前提的归类，不由梦境或心理主题推断。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读作者宣传文章的临界场所、维度重叠和异维通道说明；1980年代阿姆斯特丹是入口，不把古老宇宙实体的存在自动当宇宙尺度旅行。未读正文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://ilbordellodelleombre.com/blog/il-bordello-delle-ombre-romanzo"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://ilbordellodelleombre.com/blog/il-bordello-delle-ombre-romanzo",
+          "support_scope": "实际读作者宣传文章的临界场所、维度重叠和异维通道说明；1980年代阿姆斯特丹是入口，不把古老宇宙实体的存在自动当宇宙尺度旅行。未读正文。",
+          "url": "https://ilbordellodelleombre.com/blog/il-bordello-delle-ombre-romanzo"
+        }
+      ]
+    },
+    {
+      "id": "Q139861547",
+      "identity": {
+        "title": "The Void Between (novel)",
+        "author": "Sotiris Spyrou"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "作者第二册专页明确 Ulysses 在恒星之间前往 Ithaca Station，并在多个航行区域与星站之间展开返乡和家园政治两线；不由“太空歌剧”标签推断。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读第二册书介的 spaces between stars、Ithaca Station、Circe/Siren/Scylla 行程；不把三部曲整体行程或异维记忆口号改成此册已核定更大航区。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://theulyssesuniverse.com/books/the-void-between"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://theulyssesuniverse.com/books/the-void-between",
+          "support_scope": "实际读第二册书介的 spaces between stars、Ithaca Station、Circe/Siren/Scylla 行程；不把三部曲整体行程或异维记忆口号改成此册已核定更大航区。",
+          "url": "https://theulyssesuniverse.com/books/the-void-between"
+        }
+      ]
+    },
+    {
+      "id": "Q140078684",
+      "identity": {
+        "title": "Monster High: Boomuda Triangle",
+        "author": "Megan Brown / Eileen Widjaja"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "官方漫画组介绍明确诸替代宇宙撕裂汇合，人物在不同世界的自身版本之间寻找彼此；主舞台按平行世界交汇归 abstract，不将其画成现实宇宙位置。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读合集官方书介中的多宇宙、异版本人物和 Boomuda Triangle；合集2026-12-08仍预告，已有单期商品简介但未读漫画画格，不声称逐期完整核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/828038/monster-high-boomuda-triangle-by-megan-brown/"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://www.penguinrandomhouse.com/books/828038/monster-high-boomuda-triangle-by-megan-brown/",
+          "support_scope": "实际读合集官方书介中的多宇宙、异版本人物和 Boomuda Triangle；合集2026-12-08仍预告，已有单期商品简介但未读漫画画格，不声称逐期完整核验。",
+          "url": "https://www.penguinrandomhouse.com/books/828038/monster-high-boomuda-triangle-by-megan-brown/"
+        }
+      ]
+    },
+    {
+      "id": "Q140606366",
+      "identity": {
+        "title": "Red Dwarf: Titan",
+        "author": "Andrew Marshall / Rob Grant"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "官方书介明确 Red Dwarf 在土星卫星 Titan 的轨道，船员前往 Titan 休假及其危险前哨展开行动；局部月面/轨道舞台采用 planetary。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读官方书介的 Titan 轨道、岸休假和前哨行动；拯救 every Reality 是风险目标，书介未证明发生了跨宇宙移动，因此不升级主舞台为 abstract。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://adaptive.hachettelearning.com/titles/rob-grant/red-dwarf-titan/9781399636094/"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://adaptive.hachettelearning.com/titles/rob-grant/red-dwarf-titan/9781399636094/",
+          "support_scope": "实际读官方书介的 Titan 轨道、岸休假和前哨行动；拯救 every Reality 是风险目标，书介未证明发生了跨宇宙移动，因此不升级主舞台为 abstract。",
+          "url": "https://adaptive.hachettelearning.com/titles/rob-grant/red-dwarf-titan/9781399636094/"
+        }
+      ]
+    },
+    {
+      "id": "Q141136166",
+      "identity": {
+        "title": "The Infinite Extent",
+        "author": "Dennis E. Taylor"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "出版社预告明确 Bobs 在恒星间扩张，使用 Pan Galactic Federation 的虫洞网络，处理多处殖民地和难民安置，并面对威胁 Milky Way 的天体；按银河内多星际网络归 galactic。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读官方第六册预告的跨恒星、联邦虫洞网络与 Milky Way 范围。所读 hardcover 日期为2027-01-05，其他2026首发形式未核；空间分类是已公布前提，不是正文已读或整银河每处实际到访。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/The-Infinite-Extent/Dennis-E-Taylor/Bobiverse/9781668271100"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://www.simonandschuster.com/books/The-Infinite-Extent/Dennis-E-Taylor/Bobiverse/9781668271100",
+          "support_scope": "实际读官方第六册预告的跨恒星、联邦虫洞网络与 Milky Way 范围。所读 hardcover 日期为2027-01-05，其他2026首发形式未核；空间分类是已公布前提，不是正文已读或整银河每处实际到访。",
+          "url": "https://www.simonandschuster.com/books/The-Infinite-Extent/Dennis-E-Taylor/Bobiverse/9781668271100"
+        }
+      ]
+    },
+    {
+      "id": "Q141286902",
+      "identity": {
+        "title": "Midnight X-Men",
+        "author": "乔纳森·希克曼"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方首期预告明确两类吸血群体与普通居民的冲突发生在 New York City；主舞台按地球城市归 earth，不因另类宇宙背景自动改为 abstract。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读首期官方商品书介明确 New York City。当前2026-10-04，首期预定10月7尚未发行；只是系列开端的明确地方，非所有后续期舞台已核。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://prhcomics.com/book/?isbn=75960621668000111"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://prhcomics.com/book/?isbn=75960621668000111",
+          "support_scope": "实际读首期官方商品书介明确 New York City。当前2026-10-04，首期预定10月7尚未发行；只是系列开端的明确地方，非所有后续期舞台已核。",
+          "url": "https://prhcomics.com/book/?isbn=75960621668000111"
+        }
+      ]
+    },
+    {
+      "id": "Q7798461",
+      "identity": {
+        "title": "穿越銀鑰匙之門",
+        "author": "H·P·洛夫克拉夫特 / E·霍夫曼·普萊斯"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "实际文本让 Carter 越过地球与时间，进入无法用通常地理/历史定位的领域，并以高维意识平面和超时空原型解释多个自我投影；主舞台依这些明确非普通空间结构归 abstract。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读一至三节开篇越界及第五节 archetype 段落，不是全文/结尾核验。恒星、星系及非人自我在该段是投影可能性，不据此把主舞台当作实际星际路线或整宇宙工程。原刊1934与canonical2026疑点保持。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hplovecraft.com/writings/texts/fiction/tgsk.aspx"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://www.hplovecraft.com/writings/texts/fiction/tgsk.aspx",
+          "support_scope": "实际读一至三节开篇越界及第五节 archetype 段落，不是全文/结尾核验。恒星、星系及非人自我在该段是投影可能性，不据此把主舞台当作实际星际路线或整宇宙工程。原刊1934与canonical2026疑点保持。",
+          "url": "https://www.hplovecraft.com/writings/texts/fiction/tgsk.aspx"
+        }
+      ]
+    },
+    {
+      "id": "Q134567348",
+      "identity": {
+        "title": "Anima Rising",
+        "author": "Christopher Moore"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "作者书介明确目前行动从1911 Vienna 的 Danube 运河和 Klimt 工作室展开，人物以恢复记忆为主线；主舞台按明确地球城市归 earth。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读作者简介的维也纳、运河与工作室；北极和 Underworld 是简介中的回忆线索，未核定实际异维往返，不因混合奇幻主题提升空间等级。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.chrismoore.com/books-archive/anima-rising/"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://www.chrismoore.com/books-archive/anima-rising/",
+          "support_scope": "实际读作者简介的维也纳、运河与工作室；北极和 Underworld 是简介中的回忆线索，未核定实际异维往返，不因混合奇幻主题提升空间等级。",
+          "url": "https://www.chrismoore.com/books-archive/anima-rising/"
+        }
+      ]
+    },
+    {
+      "id": "Q136490464",
+      "identity": {
+        "title": "The Island of Last Things",
+        "author": "Emma Sloley"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方书介明确最后动物园位于 Alcatraz Island，角色来自 Paris，行动围绕离岛走私和外部保护区展开；是地球岛屿与社会地理。"
+      },
+      "field_notes": {
+        "spatial_primary": "根据逐URL已读材料明确地点作知识补充，待独立核对；未由年份、体裁或议题推断。",
+        "spatial_rationale": "实际读官方书介完整搜索返回的 Alcatraz/Paris、偷运和保护区前提，另在2025 hardcover 页读有限开篇；没有读结尾，也不把未定位保护区写成外星环境。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781250329264/theislandoflastthings/"
+      ],
+      "source_evidence": [
+        {
+          "source_url": "https://us.macmillan.com/books/9781250329264/theislandoflastthings/",
+          "support_scope": "实际读官方书介完整搜索返回的 Alcatraz/Paris、偷运和保护区前提，另在2025 hardcover 页读有限开篇；没有读结尾，也不把未定位保护区写成外星环境。",
+          "url": "https://us.macmillan.com/books/9781250329264/theislandoflastthings/"
+        }
+      ]
+    },
+    {
+      "id": "Q138013185",
+      "identity": {
+        "title": "La tempête des destins",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本次第四册简介的实际舞台是火星基地；风暴与被困先驱的生存冲突均在该基地展开。没有依据把未读的地球或其他星际场所列为次要区。"
+      },
+      "field_notes": {
+        "spatial_primary": "只对当前基线 unknown 的身份补充，依据实际已读本作介绍；文学空间分类仍待核，不代表坐标或独立阅读全文验证。",
+        "spatial_secondary": "没有读到明确实际转场者保持空数组；预言、比喻、模拟与离场背景不自动新增空间。",
+        "spatial_rationale": "来源介绍支持范围及读取方式逐条注明。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.glenat.com/glenat-bd/phobos-tome-04-9782344071588/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.glenat.com/glenat-bd/phobos-tome-04-9782344071588/",
+          "type": "publisher_volume_synopsis",
+          "support_scope": "官方第四册 Résumé 段明确 base martienne，先驱被困其内及风暴；本轮定向重读该段，未读漫画全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q139736654",
+      "identity": {
+        "title": "Le dernier nom des fleurs",
+        "author": "Aude Lapadu-Hargues"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "出版社明确二十二世纪的地球资源枯竭，故事中的种植、情绪测量与女性社会在此展开。没有实际读取其他星球或宇宙转场。"
+      },
+      "field_notes": {
+        "spatial_primary": "只对当前基线 unknown 的身份补充，依据实际已读本作介绍；文学空间分类仍待核，不代表坐标或独立阅读全文验证。",
+        "spatial_secondary": "没有读到明确实际转场者保持空数组；预言、比喻、模拟与离场背景不自动新增空间。",
+        "spatial_rationale": "来源介绍支持范围及读取方式逐条注明。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.editions-maisonpop.com/livres/le-dernier-nom-des-fleurs"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.editions-maisonpop.com/livres/le-dernier-nom-des-fleurs",
+          "type": "publisher_synopsis",
+          "support_scope": "官方 Résumé 开头明确 la Terre 及生态灾害；已读完整简介并定向重读地球指称，未读长篇全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q134778329",
+      "identity": {
+        "title": "We Are Dreams in the Eternal Machine",
+        "author": "Deni Ellis Béchard"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确地球人类被隔离在受控环境；模拟世界是该环境呈现的体验，不因可模拟任何场景就扩成宇宙主舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "只对当前基线 unknown 的身份补充，依据实际已读本作介绍；文学空间分类仍待核，不代表坐标或独立阅读全文验证。",
+        "spatial_secondary": "没有读到明确实际转场者保持空数组；预言、比喻、模拟与离场背景不自动新增空间。",
+        "spatial_rationale": "来源介绍支持范围及读取方式逐条注明。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://milkweed.org/book/we-are-dreams-in-the-eternal-machine"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://milkweed.org/book/we-are-dreams-in-the-eternal-machine",
+          "type": "publisher_synopsis",
+          "support_scope": "主要简介明确 Earth 与七十亿人、受控环境、触觉模拟；已读全部主要简介，未读所附正文节选或全书。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q136566075",
+      "identity": {
+        "title": "Cathedral of the Drowned",
+        "author": "Nathan Ballingrud"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "出版社本作简介明确 Io 与地球月球两处身体状态，两个 Charlie 汇合的沉没 Cathedral 飞船位于 Io；按太阳系内非地球星球／卫星舞台归类，巨大蜈蚣等设定属于小说虚构，不是真实卫星环境说明。"
+      },
+      "field_notes": {
+        "spatial_primary": "只对当前基线 unknown 的身份补充，依据实际已读本作介绍；文学空间分类仍待核，不代表坐标或独立阅读全文验证。",
+        "spatial_secondary": "没有读到明确实际转场者保持空数组；预言、比喻、模拟与离场背景不自动新增空间。",
+        "spatial_rationale": "来源介绍支持范围及读取方式逐条注明。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781250347688/cathedralofthedrowned/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781250347688/cathedralofthedrowned/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读到官方 Book Details 完整简介：Jupiter 的 Io、Earth 的 moon、Io 的坠毁飞船与两个 Charlie 汇合；直开曾 internal error，未读中篇正文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q141251179",
+      "identity": {
+        "title": "The Most Dangerous Games",
+        "author": "詹姆斯·帕特森 / MrBeast"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本作介绍中的比赛地点为南极、智利沿海岛屿、沙漠与山峰等地球场所；未读到非地球舞台，不把“拯救世界”的宣传扩大成星际场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "只对当前基线 unknown 的身份补充，依据实际已读本作介绍；文学空间分类仍待核，不代表坐标或独立阅读全文验证。",
+        "spatial_secondary": "没有读到明确实际转场者保持空数组；预言、比喻、模拟与离场背景不自动新增空间。",
+        "spatial_rationale": "来源介绍支持范围及读取方式逐条注明。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.harperreach.com/products/free-ebook-sampler-read-the-first-7-chapters-of-the-most-dangerous-games-from-mrbeast-and-james-patterson-an-explosive-thriller-full-of-deadly-suspense-about-a-secret-competition-for-1-billion-mrbea-2/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.harperreach.com/products/free-ebook-sampler-read-the-first-7-chapters-of-the-most-dangerous-games-from-mrbeast-and-james-patterson-an-explosive-thriller-full-of-deadly-suspense-about-a-secret-competition-for-1-billion-mrbea-2/",
+          "type": "publisher_synopsis",
+          "support_scope": "实际读到本作完整发行简介中的 Antarctic 与 coast of Chile 等比赛地理指称；未读 sampler 七章正文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    }
+  ]
+}

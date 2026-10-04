@@ -2,6 +2,7 @@
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
+import {researchPriority,compareResearchPriority} from './research-priority.mjs';
 const root=new URL('../',import.meta.url);
 const read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const [catalog,spatial,links,manifest]=await Promise.all(['dist/assets/catalog.json','dist/assets/spatial.json','dist/assets/research-links.json','dist/assets/bibliography.json'].map(read));
@@ -14,7 +15,9 @@ const metadata={format:'canonical-work-universe-v1',research_date:'2026-10-04',s
 metadata.completion=completion.metadata;metadata.field_note+=' 知识补充待独立核对；跨来源一致仅限部分字段。所有缺口与差异保留在completion；原研究与source_index不覆盖。';
 const snapshot={metadata,aliases:Object.fromEntries(aliases),works};
 const stages={};for(const w of works)stages[w.issue_research_task.stage]=(stages[w.issue_research_task.stage]||0)+1;
-const queue={metadata:{format:'issue-research-queue-v1',date:metadata.research_date,record_count:works.length,stages,acquisition:completion.metadata.reading_materials,note:'每条身份均登记。取得内容资料不算分析完成；已有分析仍待独立核对。保留所有未确认字段与身份疑点。'},records:works.map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,issue_analysis_status:w.issue_analysis_status,task:w.issue_research_task,reading_materials:w.reading_materials,source_search_log:w.source_search_log,identity_notes:w.knowledge_identity_notes,content_corrections:w.content_corrections,source_boundary:w.form_basis,missing_fields:w.completion.missing_fields,source_urls:w.sources}))};
+const queue={metadata:{format:'issue-research-queue-v1',date:metadata.research_date,record_count:works.length,stages,acquisition:completion.metadata.reading_materials,note:'每条身份均登记。取得内容资料不算分析完成；已有分析仍待独立核对。保留所有未确认字段与身份疑点。'},records:works.map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,issue_analysis_status:w.issue_analysis_status,task:w.issue_research_task,priority:researchPriority(w),reading_materials:w.reading_materials,source_search_log:w.source_search_log,identity_notes:w.knowledge_identity_notes,content_corrections:w.content_corrections,source_boundary:w.form_basis,missing_fields:w.completion.missing_fields,source_urls:w.sources}))};
+const priorityOrder=queue.records.filter(r=>r.issue_analysis_status==='missing').sort((a,b)=>compareResearchPriority(a,b,Number(metadata.research_date.slice(0,4))));
+queue.metadata.scheduling={policy:'easy-first-with-deferred-retries-v1',parallel_lanes:4,first_pass_seconds_target:90,unproductive_source_attempts_limit:2,order:'失败轮次升序 → 已匹配现成简介优先 → 来源年份由近往远 → 稳定ID；未来日期和未知年份单列，不作已出版判断。',failure_unit:'有实际查询或资料访问且未补入分析的一次归档轮次；单个网址访问失败不等于整条失败。',first_pass_count:priorityOrder.filter(r=>r.priority.state==='first_pass').length,deferred_retry_count:priorityOrder.filter(r=>r.priority.state==='deferred_retry').length,matched_description_count:priorityOrder.filter(r=>r.priority.matched_description_available).length,priority_order:priorityOrder.map(r=>r.id),note:'排序不删除困难条目，不改变身份、原始日志或核验状态。四路互斥编号；首轮只补明确内容支持的解释，仍待独立核对。'};
 metadata.source_search_logs=completion.metadata.source_search_logs;
 metadata.issue_research_queue={record_count:works.length,stages,url:'./assets/issue-research-queue.json.gz'};
 await mkdir(new URL('research/',root),{recursive:true});

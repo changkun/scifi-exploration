@@ -3,7 +3,7 @@
     "format": "actual-source-search-log-v1",
     "created_at": "2026-10-04",
     "status": "frozen_checkpoint",
-    "record_count": 1135,
+    "record_count": 1204,
     "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
     "inputs": [
       {
@@ -1160,6 +1160,92 @@
           "status": "frozen_checkpoint",
           "record_count": 17,
           "note": "逐条实际支持范围与失败取源限制保留。出版书介、二手评论、有限引文、作者书目分别记录，不宣称原篇完整阅读；查询不补造。"
+        }
+      },
+      {
+        "file": "root-recent-round1-log.json",
+        "sha256": "c9202a9d03ea4cca7b27cf31fe2d48dae5723d632af188b6a91d5e67644c1588",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "lane": 0,
+          "method": "recent-first-actual-source-issue-facets-v1",
+          "source_commit": "2f2e7f00ce7b7f747341fb8784adfae95eac9797",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "e68ee1b3a34fadce08d8132a9c1d04a4cc8337d016de56aec703bb17a1e68e89",
+          "record_count": 16,
+          "facet_count": 40,
+          "attempted_count": 16,
+          "deferred_count": 2,
+          "lane_indices_processed": [
+            0,
+            15
+          ],
+          "next_lane_index": 16,
+          "verification": "有具体作品资料的第一轮文学解释全部knowledge_added_unverified；出版预告、正文片段、作者访谈、书目和实际失败范围分别记录。",
+          "original_fulltext_read_count": 0,
+          "scope": "保留所有身份；先读可用作者/出版方/评论，资料不足就记录后转下一条，不等待全文。"
+        }
+      },
+      {
+        "file": "global-recent-round1-log.json",
+        "sha256": "7c802e80a100651058fc558725c423cef199c91084134cf1a092548b7fe66323",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "scope": "recent-first-lane-1.json文件顺序，从2026起下降；第一阶段快速逐条查读简介和明确评论。",
+          "method": "实际作者/出版方内容优先；仅topics、issue、issue_facets。不等待全文，但不以体裁、标题或全系列通用剧情推断；无具体材料或身份有疑点保留原因。",
+          "verification": "knowledge_added_unverified；简介、访谈、预告不等于原作全文或独立书目核验。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "lane_sha256": "57ae200e194630323dfde2933210913adac3ec1f514d6e96ab8cfd7f064d9a3c",
+          "record_count": 15,
+          "facet_count": 33,
+          "attempted_count": 16,
+          "deferred_count": 1,
+          "frozen_source_snapshot_sha256": "1dd6893cb7a66fd08fe305e869ad93a38d21edacf62a85a18cea7b43042c17a0",
+          "validation": "逐ID身份、lane顺序、字段守恒、合法议题、两句解释、2–4具体facet及逐URL实际阅读范围均检查；此为格式和证据范围检查，非全文/独立书目核验。",
+          "lane_indices_processed": [
+            0,
+            15
+          ],
+          "next_lane_index": 16
+        }
+      },
+      {
+        "file": "modern-recent-round1-log.json",
+        "sha256": "f9e2a1b8c51033ea64bef9b3dce6d85637997b34e24e3e4eec0330d055a5b861",
+        "metadata": {
+          "method": "recent-first-actual-source-reading-scope-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 16,
+          "note": "依用户新顺序从近期向历史回溯；来源纪年、出版预告及实际读取范围逐条保留，文学解释待独立核验。",
+          "actual_read_log_count": 16,
+          "attempt_count": 17,
+          "deferred_count": 1,
+          "scope": "逐条实际查询与可读支持范围；失败/不足保留attempts，不把只取得书目信息当完成内容分析。"
+        }
+      },
+      {
+        "file": "early-recent-round1-log.json",
+        "sha256": "5fc6c14881225f9ab1e46943c7867947dcd2c04c44725b1d7d82293b3d8519b6",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "verification_note": "实际阅读作者、出版社介绍或明确评论，文学解释待独立核对；未宣称全文已读或首次出版已验证。",
+          "status": "frozen_checkpoint",
+          "read_date": "2026-10-04",
+          "lane": 3,
+          "ordering": "recent-first-lane-3 原身份从近往远；仅补三项议题字段。",
+          "record_count": 18,
+          "facet_count": 52,
+          "attempted_count": 20,
+          "not_added_count": 2,
+          "publication_note": "来源纪年不改；预告日期、重版、资料矛盾单独注明，不将未来日期作品自动认作已出版。",
+          "remaining_note": "本文件只是自然检查点，不表示专属分片或全量缺口已完成。",
+          "log_count": 20,
+          "checkpoint_note": "专属 lane 3 最近的前20个身份；18条分析、2条材料不足保留。仅源码外私有冻结输入，后续继续下一轮。"
         }
       }
     ],
@@ -64250,6 +64336,4210 @@
         "verification_status": "reading_scope_logged_not_full_verification"
       },
       "attempt_input": "modern-source-searches-round21.json"
+    },
+    {
+      "id": "Q133888769",
+      "identity": {
+        "title": "The Faith of Beasts",
+        "author": "詹姆斯·S·A·科里"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Faith of Beasts\" James Corey publisher 2026"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/james-s-a-corey/the-faith-of-beasts/9780356517834/",
+          "material_type": "出版社书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开读78–82的本卷情节简介与44–56书目；不采用同页关于前卷The Mercy of Gods的推荐语作本卷情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读本卷出版社书介，未点开Read Excerpt，未读原作全文；议题解释待核。",
+      "reason_unconfirmed": "保留The Captive’s War第二卷身份，不将第一卷剧情、封底推荐或同一作者其他系列移入。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q133888769",
+        "identity": {
+          "title": "The Faith of Beasts",
+          "author": "詹姆斯·S·A·科里"
+        },
+        "lane_index": 0,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"The Faith of Beasts\" James Corey publisher 2026"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.co.uk/titles/james-s-a-corey/the-faith-of-beasts/9780356517834/",
+            "material_type": "出版社书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际打开读78–82的本卷情节简介与44–56书目；不采用同页关于前卷The Mercy of Gods的推荐语作本卷情节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读本卷出版社书介，未点开Read Excerpt，未读原作全文；议题解释待核。",
+        "reason_unconfirmed": "保留The Captive’s War第二卷身份，不将第一卷剧情、封底推荐或同一作者其他系列移入。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "出版社本版本列2026-04-14上市；日期只是本版本信息，未据此重写底库。"
+      },
+      "publication_status": "出版社本版本列2026-04-14上市；日期只是本版本信息，未据此重写底库。"
+    },
+    {
+      "id": "Q137806760",
+      "identity": {
+        "title": "Annihilation",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Annihilation\" \"2026\" book",
+        "\"Annihilation\" \"18 février 2026\" bande dessinée",
+        "\"Annihilation\" \"Colonisation\" site:glenat.com",
+        "\"Colonisation - Tome 10\" Glénat"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.glenat.com/glenat-bd/colonisation-tome-10-9782344054444/",
+          "material_type": "出版社本册书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回并打开Glénat第10册Annihilation简介与2026-02-18、48页、Filippi/Cucca署名。未读画格或整套漫画。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q137805076.json",
+          "material_type": "公开实体数据（仅系列身份）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际取得源条P179所指实体JSON，其法语标签为Colonisation；只用于确认系列，不作小说正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q137806760",
+          "result": "web_open_failed",
+          "reading_scope": "网页工具未返回实体正文；身份先依缓存原书目和本册对应信息，未把失败称为阅读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q137805076",
+          "result": "web_open_failed",
+          "reading_scope": "网页工具返回不可访问；另以公开实体数据接口核对系列标签。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读Glénat本册书介；不是VanderMeer、Houellebecq或Marvel同名作品，未读本册画格。",
+      "reason_unconfirmed": "源条法语漫画、2026-02-18与P179公开实体标签Colonisation对应第10册；实际署名Denis-Pierre Filippi与Vincenzo Cucca仅记旁注，底库作者未知保留。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q137806760",
+        "identity": {
+          "title": "Annihilation",
+          "author": "作者未知"
+        },
+        "lane_index": 1,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Annihilation\" \"2026\" book",
+          "\"Annihilation\" \"18 février 2026\" bande dessinée",
+          "\"Annihilation\" \"Colonisation\" site:glenat.com",
+          "\"Colonisation - Tome 10\" Glénat"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.glenat.com/glenat-bd/colonisation-tome-10-9782344054444/",
+            "material_type": "出版社本册书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回并打开Glénat第10册Annihilation简介与2026-02-18、48页、Filippi/Cucca署名。未读画格或整套漫画。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Special:EntityData/Q137805076.json",
+            "material_type": "公开实体数据（仅系列身份）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际取得源条P179所指实体JSON，其法语标签为Colonisation；只用于确认系列，不作小说正文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q137806760",
+            "result": "web_open_failed",
+            "reading_scope": "网页工具未返回实体正文；身份先依缓存原书目和本册对应信息，未把失败称为阅读。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q137805076",
+            "result": "web_open_failed",
+            "reading_scope": "网页工具返回不可访问；另以公开实体数据接口核对系列标签。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读Glénat本册书介；不是VanderMeer、Houellebecq或Marvel同名作品，未读本册画格。",
+        "reason_unconfirmed": "源条法语漫画、2026-02-18与P179公开实体标签Colonisation对应第10册；实际署名Denis-Pierre Filippi与Vincenzo Cucca仅记旁注，底库作者未知保留。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "出版社本册列2026-02-18；未混入2026 Marvel重印合订本。"
+      },
+      "publication_status": "出版社本册列2026-02-18；未混入2026 Marvel重印合订本。"
+    },
+    {
+      "id": "Q138179461",
+      "identity": {
+        "title": "An Luingeas Dorcha air Fàire",
+        "author": "Timothy C. Armstrong"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"An Luingeas Dorcha air Fàire\" Armstrong"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://booksfromscotland.com/book/an-luingeas-dorcha-air-faire/",
+          "material_type": "出版行业书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Publishing Scotland目录54–60的盖尔语/英语并列本书简介，32–43列CLÀR、ISBN与2026-05-28；不继承2013前卷完整情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读出版行业双语书介；未读盖尔语原作。六年为书介背景，未把它当整部叙事持续时间。",
+      "reason_unconfirmed": "书介署名Tim Armstrong，底库Timothy C. Armstrong保留；2013前卷与2025未出版手稿奖只用于区分身份。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138179461",
+        "identity": {
+          "title": "An Luingeas Dorcha air Fàire",
+          "author": "Timothy C. Armstrong"
+        },
+        "lane_index": 2,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"An Luingeas Dorcha air Fàire\" Armstrong"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://booksfromscotland.com/book/an-luingeas-dorcha-air-faire/",
+            "material_type": "出版行业书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际读Publishing Scotland目录54–60的盖尔语/英语并列本书简介，32–43列CLÀR、ISBN与2026-05-28；不继承2013前卷完整情节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读出版行业双语书介；未读盖尔语原作。六年为书介背景，未把它当整部叙事持续时间。",
+        "reason_unconfirmed": "书介署名Tim Armstrong，底库Timothy C. Armstrong保留；2013前卷与2025未出版手稿奖只用于区分身份。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "此书目录列2026-05-28；未将2025手稿奖当作初版。"
+      },
+      "publication_status": "此书目录列2026-05-28；未将2025手稿奖当作初版。"
+    },
+    {
+      "id": "Q139171713",
+      "identity": {
+        "title": "Les Abysses Stellaires",
+        "author": "Arnaud Simonnet"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Les Abysses Stellaires\" \"Arnaud Simonnet\"",
+        "\"Les Abysses Stellaires\" \"L’Ombre de la Confluence\"",
+        "\"Simonnet\" \"Confluence\"",
+        "site:arnaudsimonnet.fr \"L'Ombre de la Confluence\"",
+        "\"L'Ombre de la Confluence\" \"Arnaud\"",
+        "site:arnaudsimonnet.fr/les-abysses-stellaires-tome-2"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2",
+          "material_type": "作者第二卷书介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "主页链接3打开Cache miss后，实际定向搜索返回第二卷完整介绍和技术信息：Grande Confluence、Lotus、Matairea、2026-03-30。不是第一卷正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://lautoedition.fr/%40arnaud-simonnet/livres/les-abysses-stellaires-l-ombre-de-la-confluence",
+          "material_type": "作者自出版平台书介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "搜索返回明确Tome2、ISBN9782956180067、2026-05-01及接触五年后世界重心变化；直接打开Cache miss。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2",
+          "result": "web_open_failed",
+          "reading_scope": "实际从作者主页点击T2链接未返回正文；其后成功得到定向搜索内容。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nouveautes-editeurs.bnf.fr/accueil?id_declaration=10000001326268&titre_livre=L%27Ombre_de_la_Confluence",
+          "result": "web_open_failed",
+          "reading_scope": "实际打开未返回正文，不当作已读BnF内容。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.arnaudsimonnet.fr/assets/pdf/Dossier-de-presse_Les-abysses-stellaires.pdf",
+          "result": "identity_exclusion_only",
+          "reading_scope": "搜索返回为第一卷Te Ana Ra’i Fetu，直接打开失败；未将其2025日期和原文片段套入第二卷。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://arnaudsimonnet.fr/les-abysses-stellaires",
+          "result": "identity_exclusion_only",
+          "reading_scope": "初次搜索返回为第一卷，直接打开失败；不用于本条第二卷分析。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://arnaudsimonnet.fr/audiobook-abysses-stellaires",
+          "result": "identity_exclusion_only",
+          "reading_scope": "搜索返回明确第一卷有声书，直接打开失败；没有收听。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者第二卷搜索返回书介，未读第二卷正文；初次检索的第一卷书介、选段与2025技术资料只作身份排除，不移用其情节。",
+      "reason_unconfirmed": "缓存原条description_en明确volume2，法语别名L’Ombre de la Confluence；因此按第二卷补充。底库2026-04-01、作者2026-03-30、平台2026-05-01三种日期保留待版本核对，不误套第一卷2025。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139171713",
+        "identity": {
+          "title": "Les Abysses Stellaires",
+          "author": "Arnaud Simonnet"
+        },
+        "lane_index": 3,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Les Abysses Stellaires\" \"Arnaud Simonnet\"",
+          "\"Les Abysses Stellaires\" \"L’Ombre de la Confluence\"",
+          "\"Simonnet\" \"Confluence\"",
+          "site:arnaudsimonnet.fr \"L'Ombre de la Confluence\"",
+          "\"L'Ombre de la Confluence\" \"Arnaud\"",
+          "site:arnaudsimonnet.fr/les-abysses-stellaires-tome-2"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2",
+            "material_type": "作者第二卷书介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "主页链接3打开Cache miss后，实际定向搜索返回第二卷完整介绍和技术信息：Grande Confluence、Lotus、Matairea、2026-03-30。不是第一卷正文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://lautoedition.fr/%40arnaud-simonnet/livres/les-abysses-stellaires-l-ombre-de-la-confluence",
+            "material_type": "作者自出版平台书介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "搜索返回明确Tome2、ISBN9782956180067、2026-05-01及接触五年后世界重心变化；直接打开Cache miss。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://arnaudsimonnet.fr/les-abysses-stellaires-tome-2",
+            "result": "web_open_failed",
+            "reading_scope": "实际从作者主页点击T2链接未返回正文；其后成功得到定向搜索内容。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://nouveautes-editeurs.bnf.fr/accueil?id_declaration=10000001326268&titre_livre=L%27Ombre_de_la_Confluence",
+            "result": "web_open_failed",
+            "reading_scope": "实际打开未返回正文，不当作已读BnF内容。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.arnaudsimonnet.fr/assets/pdf/Dossier-de-presse_Les-abysses-stellaires.pdf",
+            "result": "identity_exclusion_only",
+            "reading_scope": "搜索返回为第一卷Te Ana Ra’i Fetu，直接打开失败；未将其2025日期和原文片段套入第二卷。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://arnaudsimonnet.fr/les-abysses-stellaires",
+            "result": "identity_exclusion_only",
+            "reading_scope": "初次搜索返回为第一卷，直接打开失败；不用于本条第二卷分析。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://arnaudsimonnet.fr/audiobook-abysses-stellaires",
+            "result": "identity_exclusion_only",
+            "reading_scope": "搜索返回明确第一卷有声书，直接打开失败；没有收听。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "实际读作者第二卷搜索返回书介，未读第二卷正文；初次检索的第一卷书介、选段与2025技术资料只作身份排除，不移用其情节。",
+        "reason_unconfirmed": "缓存原条description_en明确volume2，法语别名L’Ombre de la Confluence；因此按第二卷补充。底库2026-04-01、作者2026-03-30、平台2026-05-01三种日期保留待版本核对，不误套第一卷2025。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "第二卷2026版本日期存在上述差异；没有独立确认具体初版日。"
+      },
+      "publication_status": "第二卷2026版本日期存在上述差异；没有独立确认具体初版日。"
+    },
+    {
+      "id": "Q139817043",
+      "identity": {
+        "title": "The Quiet Crawl",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Quiet Crawl\" book 2026",
+        "\"The Quiet Crawl\" author"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/book/show/252245441-the-quiet-crawl",
+          "material_type": "作者简介／书目（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回Luke Rajkumar署名、27页短篇、2026-05-22及两个伦敦人发现第二互联网；直接打开机器人检查页，没有绕过。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.reddit.com/r/KindleUnlimited/comments/1tpw8ho/the_quiet_crawl/",
+          "material_type": "自称作者的宣传帖（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回2026-05-28帖文，将“my story”与题名及Amazon ASIN关联，说明AI无声进入系统、习惯和依赖；发帖者署名未独立验证。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.goodreads.com/book/show/252245441-the-quiet-crawl",
+          "result": "robot_check_page_only",
+          "reading_scope": "直接打开只返回JavaScript/机器人检查，未读取被挡内容。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.reddit.com/r/KindleUnlimited/comments/1tpw8ho/the_quiet_crawl/",
+          "result": "web_open_failed",
+          "reading_scope": "直接打开Cache miss，实际可读范围仅搜索返回。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.amazon.in/dp/B0H1WBQ6LQ",
+          "result": "web_open_failed",
+          "reading_scope": "实际打开帖内ASIN链接未返回商品正文，不称读到商品简介。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "只读题名对应搜索返回的作者简介与自称作者帖文，没有读27页原作。宣传中的现实AI断言不作为科学证据。",
+      "reason_unconfirmed": "缓存description_en称2026 Luke Rajkumar短篇，搜索返回一致；canonical作者未知保留。帖文作者归属和原篇仍待核。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139817043",
+        "identity": {
+          "title": "The Quiet Crawl",
+          "author": "作者未知"
+        },
+        "lane_index": 4,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"The Quiet Crawl\" book 2026",
+          "\"The Quiet Crawl\" author"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.goodreads.com/book/show/252245441-the-quiet-crawl",
+            "material_type": "作者简介／书目（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回Luke Rajkumar署名、27页短篇、2026-05-22及两个伦敦人发现第二互联网；直接打开机器人检查页，没有绕过。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.reddit.com/r/KindleUnlimited/comments/1tpw8ho/the_quiet_crawl/",
+            "material_type": "自称作者的宣传帖（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回2026-05-28帖文，将“my story”与题名及Amazon ASIN关联，说明AI无声进入系统、习惯和依赖；发帖者署名未独立验证。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.goodreads.com/book/show/252245441-the-quiet-crawl",
+            "result": "robot_check_page_only",
+            "reading_scope": "直接打开只返回JavaScript/机器人检查，未读取被挡内容。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.reddit.com/r/KindleUnlimited/comments/1tpw8ho/the_quiet_crawl/",
+            "result": "web_open_failed",
+            "reading_scope": "直接打开Cache miss，实际可读范围仅搜索返回。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.amazon.in/dp/B0H1WBQ6LQ",
+            "result": "web_open_failed",
+            "reading_scope": "实际打开帖内ASIN链接未返回商品正文，不称读到商品简介。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "只读题名对应搜索返回的作者简介与自称作者帖文，没有读27页原作。宣传中的现实AI断言不作为科学证据。",
+        "reason_unconfirmed": "缓存description_en称2026 Luke Rajkumar短篇，搜索返回一致；canonical作者未知保留。帖文作者归属和原篇仍待核。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "搜索书目列2026-05-22；未独立核对初版。"
+      },
+      "publication_status": "搜索书目列2026-05-22；未独立核对初版。"
+    },
+    {
+      "id": "Q139891526",
+      "identity": {
+        "title": "Radiant Star",
+        "author": "安·樂克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Radiant Star\" \"Ann Leckie\" publisher 2026"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachettebookgroup.com/titles/ann-leckie/radiant-star/9780316290357/",
+          "material_type": "出版社本书书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读115–118本书简介及75–105版本信息；不套同页Translation State、Lake of Souls推荐语。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/ann-leckie/radiant-star/",
+          "material_type": "本书署名机构评论",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读143–148本书专段：Aaa、供应中断、Tais成圣与遗产、仆役青年；未读原作或相关系列全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读出版社本书简介与Kirkus本书评论；未读小说。机构评论是具体解释来源，不等于独立逐条核验。",
+      "reason_unconfirmed": "Imperial Radch独立小说。出版社368页与Kirkus432页、网页仍显示preorder等版本/更新差异保留，不据此修改底库。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139891526",
+        "identity": {
+          "title": "Radiant Star",
+          "author": "安·樂克"
+        },
+        "lane_index": 5,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Radiant Star\" \"Ann Leckie\" publisher 2026"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachettebookgroup.com/titles/ann-leckie/radiant-star/9780316290357/",
+            "material_type": "出版社本书书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际读115–118本书简介及75–105版本信息；不套同页Translation State、Lake of Souls推荐语。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/ann-leckie/radiant-star/",
+            "material_type": "本书署名机构评论",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际读143–148本书专段：Aaa、供应中断、Tais成圣与遗产、仆役青年；未读原作或相关系列全文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读出版社本书简介与Kirkus本书评论；未读小说。机构评论是具体解释来源，不等于独立逐条核验。",
+        "reason_unconfirmed": "Imperial Radch独立小说。出版社368页与Kirkus432页、网页仍显示preorder等版本/更新差异保留，不据此修改底库。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "两来源列2026-05-12；出版社预订提示仍在，具体版本状态待核。"
+      },
+      "publication_status": "两来源列2026-05-12；出版社预订提示仍在，具体版本状态待核。"
+    },
+    {
+      "id": "Q140422130",
+      "identity": {
+        "title": "Le Dernier Sanctuaire",
+        "author": "若西亚娜·巴拉斯科"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Le Dernier Sanctuaire\" \"Balasko\""
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.fr/livre/le-dernier-sanctuaire-9782702195420/",
+          "material_type": "出版社本书书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回并打开读328–336：十一名Protecteurs、富豪狩猎、旧矿井、两名来客；未读小说或视频访谈。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读Calmann-Lévy/Hachette本书书介；未来机制、结局和具体地理未从简介补造。",
+      "reason_unconfirmed": "同名作品按Balasko与ISBN9782702195420对应；不采用书评提出的uchronie分类改写原分支。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140422130",
+        "identity": {
+          "title": "Le Dernier Sanctuaire",
+          "author": "若西亚娜·巴拉斯科"
+        },
+        "lane_index": 6,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Le Dernier Sanctuaire\" \"Balasko\""
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.fr/livre/le-dernier-sanctuaire-9782702195420/",
+            "material_type": "出版社本书书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回并打开读328–336：十一名Protecteurs、富豪狩猎、旧矿井、两名来客；未读小说或视频访谈。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读Calmann-Lévy/Hachette本书书介；未来机制、结局和具体地理未从简介补造。",
+        "reason_unconfirmed": "同名作品按Balasko与ISBN9782702195420对应；不采用书评提出的uchronie分类改写原分支。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "出版社列2026-06-03。"
+      },
+      "publication_status": "出版社列2026-06-03。"
+    },
+    {
+      "id": "Q140694967",
+      "identity": {
+        "title": "Rhymes With Death",
+        "author": "P.G. Lark"
+      },
+      "attempt_state": "source_search_attempted",
+      "queries": [
+        "\"Rhymes With Death\" \"P.G. Lark\"",
+        "\"Rhymes With Death\" \"Lark\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [],
+      "reading_scope": "仅明示取得的材料；没有阅读整部原作。",
+      "reason_unconfirmed": "两次实际搜索未返回可用的题名作者对应情节；不从题名、作者或体裁猜出问题。",
+      "next_step": "继续查本条具体简介、预览或评论；此轮不堵塞下一身份。",
+      "issue_result": "not_added_specific_content_needed",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140694967",
+        "identity": {
+          "title": "Rhymes With Death",
+          "author": "P.G. Lark"
+        },
+        "lane_index": 7,
+        "source_sort_year": 2026,
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Rhymes With Death\" \"P.G. Lark\"",
+          "\"Rhymes With Death\" \"Lark\""
+        ],
+        "materials_checked": [],
+        "reading_scope": "仅明示取得的材料；没有阅读整部原作。",
+        "reason_unconfirmed": "两次实际搜索未返回可用的题名作者对应情节；不从题名、作者或体裁猜出问题。",
+        "next_step": "继续查本条具体简介、预览或评论；此轮不堵塞下一身份。",
+        "issue_result": "not_added_specific_content_needed"
+      }
+    },
+    {
+      "id": "Q140738749",
+      "identity": {
+        "title": "Nanonaut Comic Issue #3",
+        "author": "Wayne Stewart"
+      },
+      "attempt_state": "source_search_attempted",
+      "queries": [
+        "\"Nanonaut Comic Issue #3\" \"Wayne Stewart\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.authorwaynestewart.com/books",
+          "result": "catalog_only",
+          "reading_scope": "读作者目录，第三册仅说收18–24章及技术/道德/生存冲突；不是详细情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.authorwaynestewart.com/books/nanonaut-comic-issue-3",
+          "result": "catalog_only",
+          "reading_scope": "实际点开第三册专页7–20，仍是同样概括；下方第一册起源、第二册Jeremy/Julie介绍不移入第三册。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅明示取得的材料；没有阅读整部原作。",
+      "reason_unconfirmed": "第三册身份与章节范围已有作者依据，但简介只有概括，不能支撑两项有具体情节的独立facet；第一册原小说与改编漫画的粒度保留。",
+      "next_step": "继续查本条具体简介、预览或评论；此轮不堵塞下一身份。",
+      "issue_result": "not_added_specific_content_needed",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140738749",
+        "identity": {
+          "title": "Nanonaut Comic Issue #3",
+          "author": "Wayne Stewart"
+        },
+        "lane_index": 8,
+        "source_sort_year": 2026,
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Nanonaut Comic Issue #3\" \"Wayne Stewart\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.authorwaynestewart.com/books",
+            "result": "catalog_only",
+            "reading_scope": "读作者目录，第三册仅说收18–24章及技术/道德/生存冲突；不是详细情节。"
+          },
+          {
+            "url": "https://www.authorwaynestewart.com/books/nanonaut-comic-issue-3",
+            "result": "catalog_only",
+            "reading_scope": "实际点开第三册专页7–20，仍是同样概括；下方第一册起源、第二册Jeremy/Julie介绍不移入第三册。"
+          }
+        ],
+        "reading_scope": "仅明示取得的材料；没有阅读整部原作。",
+        "reason_unconfirmed": "第三册身份与章节范围已有作者依据，但简介只有概括，不能支撑两项有具体情节的独立facet；第一册原小说与改编漫画的粒度保留。",
+        "next_step": "继续查本条具体简介、预览或评论；此轮不堵塞下一身份。",
+        "issue_result": "not_added_specific_content_needed"
+      }
+    },
+    {
+      "id": "Q141252839",
+      "identity": {
+        "title": "MAYA: Seed Takes Root",
+        "author": "阿南·甘地 / Zain Memon"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"MAYA: Seed Takes Root\" Gandhi"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/MAYA-Seed-Takes-Root/Anand-Gandhi/MAYA/9798893311891",
+          "material_type": "出版社/发行方本卷书介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回Authors Equity第一卷书介：Neh、七种族、树网、竞赛、Kshar和Yachay；产品列2026-08-25。未读全文或收听有声书。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.cinemaexpress.com/hindi/interviews/2025/Dec/08/anand-gandhi-we-cant-stop-ai-from-venturing-into-filmmaking",
+          "material_type": "作者访谈（搜索返回，仅身份范围）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回2025-12-08访谈自称小说当年已推出，说明跨媒介世界有不同故事；这里只记录版本日期疑点，不继承其他媒介情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读出版社本卷搜索返回简介；作者访谈只用于区分本书与整个跨媒介宇宙。预测能力为虚构前提，不是现实AI保证。",
+      "reason_unconfirmed": "第一卷独立书目身份不变；2025作者访谈称当年推出，与2026发行版本须继续区分。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141252839",
+        "identity": {
+          "title": "MAYA: Seed Takes Root",
+          "author": "阿南·甘地 / Zain Memon"
+        },
+        "lane_index": 9,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"MAYA: Seed Takes Root\" Gandhi"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.simonandschuster.com/books/MAYA-Seed-Takes-Root/Anand-Gandhi/MAYA/9798893311891",
+            "material_type": "出版社/发行方本卷书介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回Authors Equity第一卷书介：Neh、七种族、树网、竞赛、Kshar和Yachay；产品列2026-08-25。未读全文或收听有声书。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.cinemaexpress.com/hindi/interviews/2025/Dec/08/anand-gandhi-we-cant-stop-ai-from-venturing-into-filmmaking",
+            "material_type": "作者访谈（搜索返回，仅身份范围）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回2025-12-08访谈自称小说当年已推出，说明跨媒介世界有不同故事；这里只记录版本日期疑点，不继承其他媒介情节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读出版社本卷搜索返回简介；作者访谈只用于区分本书与整个跨媒介宇宙。预测能力为虚构前提，不是现实AI保证。",
+        "reason_unconfirmed": "第一卷独立书目身份不变；2025作者访谈称当年推出，与2026发行版本须继续区分。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "发行方此版本2026-08-25；访谈称2025推出，首版与地域版本待核。"
+      },
+      "publication_status": "发行方此版本2026-08-25；访谈称2025推出，首版与地域版本待核。"
+    },
+    {
+      "id": "Q141410217",
+      "identity": {
+        "title": "Monsters of Ohio",
+        "author": "約翰·史卡奇"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Monsters of Ohio\" Scalzi publisher"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.panmacmillan.com/authors/john-scalzi/monsters-of-ohio/9781509835249",
+          "material_type": "出版社预出版书介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回并打开：Richland、私募工厂危机、Mike和警长、触手变化、英国2026-11-05；只读Synopsis，不称原作全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读英国出版社预出版简介，当前2026-10-04仍是预告；美国页搜索返回原文选段只有加油站开头，不据此称全文已读。",
+      "reason_unconfirmed": "John Scalzi小说，与其他作者的俄亥俄怪物民俗非虚构书区分。未采用系列旧书推荐语。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141410217",
+        "identity": {
+          "title": "Monsters of Ohio",
+          "author": "約翰·史卡奇"
+        },
+        "lane_index": 10,
+        "source_sort_year": 2026,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Monsters of Ohio\" Scalzi publisher"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.panmacmillan.com/authors/john-scalzi/monsters-of-ohio/9781509835249",
+            "material_type": "出版社预出版书介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回并打开：Richland、私募工厂危机、Mike和警长、触手变化、英国2026-11-05；只读Synopsis，不称原作全文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读英国出版社预出版简介，当前2026-10-04仍是预告；美国页搜索返回原文选段只有加油站开头，不据此称全文已读。",
+        "reason_unconfirmed": "John Scalzi小说，与其他作者的俄亥俄怪物民俗非虚构书区分。未采用系列旧书推荐语。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "预告：英国所列2026-11-05晚于当前2026-10-04，尚未上市；美国2026-11-03信息另见出版目录，未据此改底库。"
+      },
+      "publication_status": "预告：英国所列2026-11-05晚于当前2026-10-04，尚未上市；美国2026-11-03信息另见出版目录，未据此改底库。"
+    },
+    {
+      "id": "Q130783926",
+      "identity": {
+        "title": "Absolute Martian Manhunter",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Absolute Martian Manhunter\" site:dc.com"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/blog/2025/03/25/absolute-interview-martian-manhunter-is-twice-the-hero-he-usually-is",
+          "material_type": "出版社主持的作者访谈",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读19–33系列创作访谈，支持双重角色、Martian借名和FBI调查；未读漫画画格，观点是作者创作说明。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/comics/absolute-martian-manhunter-2025/absolute-martian-manhunter-1",
+          "material_type": "出版社首期书目（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回Deniz Camp/Javier Rodriguez署名、2025-03-26首期；仅用于系列首期身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读作者系列创作访谈；用开篇明确设定作为系列层面选例，不声称整套12期情节已核。",
+      "reason_unconfirmed": "底库作者未知保留；实际访谈署名Deniz Camp、绘者Javier Rodríguez附在材料中。不继承经典Martian Manhunter其他版本情节。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q130783926",
+        "identity": {
+          "title": "Absolute Martian Manhunter",
+          "author": "作者未知"
+        },
+        "lane_index": 11,
+        "source_sort_year": 2025,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Absolute Martian Manhunter\" site:dc.com"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.dc.com/blog/2025/03/25/absolute-interview-martian-manhunter-is-twice-the-hero-he-usually-is",
+            "material_type": "出版社主持的作者访谈",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际读19–33系列创作访谈，支持双重角色、Martian借名和FBI调查；未读漫画画格，观点是作者创作说明。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.dc.com/comics/absolute-martian-manhunter-2025/absolute-martian-manhunter-1",
+            "material_type": "出版社首期书目（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回Deniz Camp/Javier Rodriguez署名、2025-03-26首期；仅用于系列首期身份。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读作者系列创作访谈；用开篇明确设定作为系列层面选例，不声称整套12期情节已核。",
+        "reason_unconfirmed": "底库作者未知保留；实际访谈署名Deniz Camp、绘者Javier Rodríguez附在材料中。不继承经典Martian Manhunter其他版本情节。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "DC首期列2025-03-26；系列与2025合订本日期不合并。"
+      },
+      "publication_status": "DC首期列2025-03-26；系列与2025合订本日期不合并。"
+    },
+    {
+      "id": "Q131860829",
+      "identity": {
+        "title": "New Champions",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"New Champions\" 2025 site:marvel.com"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.marvel.com/comics/series/42603/new_champions_(2025_-_present)",
+          "material_type": "出版社系列目录",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际打开系列目录；目录本身不提供整套情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/124871/new_champions_2025_1_variant/variant",
+          "material_type": "出版社首期简介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回首期召集和角色背景；变体封面不改变本故事身份。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/122815/new_champions_2025_3",
+          "material_type": "出版社第三期简介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回新旧团队名称争执与共同威胁。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/122817/new_champions_2025_5",
+          "material_type": "出版社第五期简介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回团队恋情前提，不支持具体配对或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "按系列层面选读官方1、3、5期简介，不是整套漫画正文；与2026合订本身份分开。",
+      "reason_unconfirmed": "实际创作署名Steve Foxe及各期不同绘者记材料，canonical作者未知保留。魔法和超级英雄媒介边界保留，不强行改为纯科幻长篇。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q131860829",
+        "identity": {
+          "title": "New Champions",
+          "author": "作者未知"
+        },
+        "lane_index": 12,
+        "source_sort_year": 2025,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"New Champions\" 2025 site:marvel.com"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.marvel.com/comics/series/42603/new_champions_(2025_-_present)",
+            "material_type": "出版社系列目录",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际打开系列目录；目录本身不提供整套情节。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.marvel.com/comics/issue/124871/new_champions_2025_1_variant/variant",
+            "material_type": "出版社首期简介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回首期召集和角色背景；变体封面不改变本故事身份。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.marvel.com/comics/issue/122815/new_champions_2025_3",
+            "material_type": "出版社第三期简介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回新旧团队名称争执与共同威胁。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.marvel.com/comics/issue/122817/new_champions_2025_5",
+            "material_type": "出版社第五期简介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回团队恋情前提，不支持具体配对或结局。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "按系列层面选读官方1、3、5期简介，不是整套漫画正文；与2026合订本身份分开。",
+        "reason_unconfirmed": "实际创作署名Steve Foxe及各期不同绘者记材料，canonical作者未知保留。魔法和超级英雄媒介边界保留，不强行改为纯科幻长篇。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "系列从2025-01-08起；2026-02-04合订本另为版本，不重写来源年份。"
+      },
+      "publication_status": "系列从2025-01-08起；2026-02-04合订本另为版本，不重写来源年份。"
+    },
+    {
+      "id": "Q135107542",
+      "identity": {
+        "title": "Where the Axe Is Buried",
+        "author": "Ray Nayler"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Where the Axe Is Buried\" publisher"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/ray-nayler/where-the-axe-is-buried/9781399627900/",
+          "material_type": "出版社本书简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读81–82本书情节及英国2026纸本版本，不使用推荐语当情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://search.worldcat.org/title/Where-the-axe-is-buried-%3A-a-novel/oclc/1431882457",
+          "material_type": "图书馆书目（搜索返回，仅版本身份）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回New York MCD/FSG 2025 First edition；不作为正文阅读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读出版社书介，未读小说；不同地区再版日期只作旁注，不覆盖2025来源年。",
+      "reason_unconfirmed": "WorldCat2025初版与英国2026纸本是版本差异，身份保留。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q135107542",
+        "identity": {
+          "title": "Where the Axe Is Buried",
+          "author": "Ray Nayler"
+        },
+        "lane_index": 13,
+        "source_sort_year": 2025,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Where the Axe Is Buried\" publisher"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.co.uk/titles/ray-nayler/where-the-axe-is-buried/9781399627900/",
+            "material_type": "出版社本书简介",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际读81–82本书情节及英国2026纸本版本，不使用推荐语当情节。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://search.worldcat.org/title/Where-the-axe-is-buried-%3A-a-novel/oclc/1431882457",
+            "material_type": "图书馆书目（搜索返回，仅版本身份）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回New York MCD/FSG 2025 First edition；不作为正文阅读。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读出版社书介，未读小说；不同地区再版日期只作旁注，不覆盖2025来源年。",
+        "reason_unconfirmed": "WorldCat2025初版与英国2026纸本是版本差异，身份保留。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "2025纽约初版资料与2026英国纸本分开。"
+      },
+      "publication_status": "2025纽约初版资料与2026英国纸本分开。"
+    },
+    {
+      "id": "Q136032325",
+      "identity": {
+        "title": "Where Darkness Preys",
+        "author": "Anne Leone"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Where Darkness Preys\" \"Anne Leone\"",
+        "\"Where Darkness Preys\" site:anneleone.com",
+        "\"Where Darkness Preys\" Anne Leone author"
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://books.apple.com/us/book/where-darkness-preys/id6749643628",
+          "material_type": "发行渠道的出版社简介（搜索返回）",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回Publisher Description全段，列Mina、疫情、拘留、攻击与Dracula重述，2025-09-09；直接打开Cache miss，未读原篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://books.apple.com/us/book/where-darkness-preys/id6749643628",
+          "result": "web_open_failed",
+          "reading_scope": "实际直接打开Cache miss，阅读范围仅先前搜索返回。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读发行渠道所列出版社简介搜索返回；没有把Dracula原作情节移入本书。",
+      "reason_unconfirmed": "出版社明确Dracula重述，科幻/恐怖/幻想边界待核，不修改既有类型。页数与版本差异不混并。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136032325",
+        "identity": {
+          "title": "Where Darkness Preys",
+          "author": "Anne Leone"
+        },
+        "lane_index": 14,
+        "source_sort_year": 2025,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Where Darkness Preys\" \"Anne Leone\"",
+          "\"Where Darkness Preys\" site:anneleone.com",
+          "\"Where Darkness Preys\" Anne Leone author"
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://books.apple.com/us/book/where-darkness-preys/id6749643628",
+            "material_type": "发行渠道的出版社简介（搜索返回）",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回Publisher Description全段，列Mina、疫情、拘留、攻击与Dracula重述，2025-09-09；直接打开Cache miss，未读原篇。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://books.apple.com/us/book/where-darkness-preys/id6749643628",
+            "result": "web_open_failed",
+            "reading_scope": "实际直接打开Cache miss，阅读范围仅先前搜索返回。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "实际阅读发行渠道所列出版社简介搜索返回；没有把Dracula原作情节移入本书。",
+        "reason_unconfirmed": "出版社明确Dracula重述，科幻/恐怖/幻想边界待核，不修改既有类型。页数与版本差异不混并。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "渠道列2025-09-09。"
+      },
+      "publication_status": "渠道列2025-09-09。"
+    },
+    {
+      "id": "Q136431367",
+      "identity": {
+        "title": "Privatized Freedom",
+        "author": "Rhys Constance"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Privatized Freedom\" \"Rhys Constance\""
+      ],
+      "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+      "materials_checked": [
+        {
+          "url": "https://www.rhysconstance.com/privatized-freedom",
+          "material_type": "作者本卷书介与主题说明",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际搜索返回并打开作者第一卷介绍：Helsinki/Svalbard、植入物、AI、企业阴谋和2025身份；未通读页面原文sample excerpt或整部小说。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "读作者本卷书介和Themes说明；不把全三部曲FAQ或后来两卷情节套入第一卷。",
+      "reason_unconfirmed": "作者自出版第一卷2025身份与底库相符；文学分析仍待正文核对。",
+      "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "root-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136431367",
+        "identity": {
+          "title": "Privatized Freedom",
+          "author": "Rhys Constance"
+        },
+        "lane_index": 15,
+        "source_sort_year": 2025,
+        "attempt_state": "content_material_read",
+        "queries": [
+          "\"Privatized Freedom\" \"Rhys Constance\""
+        ],
+        "query_note": "仅保存实际搜索词。直接打开、点击与查找另记材料过程，不改写成搜索词。",
+        "materials_checked": [
+          {
+            "url": "https://www.rhysconstance.com/privatized-freedom",
+            "material_type": "作者本卷书介与主题说明",
+            "result": "actual_source_scope_read",
+            "reading_scope": "实际搜索返回并打开作者第一卷介绍：Helsinki/Svalbard、植入物、AI、企业阴谋和2025身份；未通读页面原文sample excerpt或整部小说。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "读作者本卷书介和Themes说明；不把全三部曲FAQ或后来两卷情节套入第一卷。",
+        "reason_unconfirmed": "作者自出版第一卷2025身份与底库相符；文学分析仍待正文核对。",
+        "next_step": "按本条确切文本粒度和版本继续核对正文与情节，保留现有书目身份。",
+        "issue_result": "added_to_frozen_input_unverified",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_status": "作者列2025。"
+      },
+      "publication_status": "作者列2025。"
+    },
+    {
+      "id": "Q136709701",
+      "identity": {
+        "title": "A Parade of Horribles",
+        "author": "Matt Dinniman"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"A Parade of Horribles\" Matt Dinniman publisher",
+        "\"A Parade of Horribles\" site:penguinrandomhouse.com/books"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/812017/a-parade-of-horribles-by-matt-dinniman/",
+          "material_type": "Ace官方本卷简介及出版资料的公开检索正文",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读第八卷第十层比赛、升级、故障和Carl秘密行动简介；页面称2026年5月12日已出版，未读正文或结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://openlibrary.org/works/OL44344307W",
+          "material_type": "Open Library官方2026-09-30 work dump本地简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读该ID完整description，与本卷出版社简介相同；题名作者对应仍不等于独立粒度或全文核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读第八卷第十层比赛、升级、故障和Carl秘密行动简介；页面称2026年5月12日已出版，未读正文或结局。；实际读该ID完整description，与本卷出版社简介相同；题名作者对应仍不等于独立粒度或全文核验。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136709701",
+        "identity": {
+          "title": "A Parade of Horribles",
+          "author": "Matt Dinniman"
+        },
+        "lane_index": 0,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "publisher_page_claims_published_2026-05-12",
+        "queries": [
+          "\"A Parade of Horribles\" Matt Dinniman publisher",
+          "\"A Parade of Horribles\" site:penguinrandomhouse.com/books"
+        ],
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/812017/a-parade-of-horribles-by-matt-dinniman/",
+            "material_kind": "Ace官方本卷简介及出版资料的公开检索正文",
+            "support_scope": "实际读第八卷第十层比赛、升级、故障和Carl秘密行动简介；页面称2026年5月12日已出版，未读正文或结局。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://openlibrary.org/works/OL44344307W",
+            "material_kind": "Open Library官方2026-09-30 work dump本地简介",
+            "support_scope": "实际读该ID完整description，与本卷出版社简介相同；题名作者对应仍不等于独立粒度或全文核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "publisher_page_claims_published_2026-05-12"
+    },
+    {
+      "id": "Q137844934",
+      "identity": {
+        "title": "Regulated Truth",
+        "author": "Rhys Constance"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Regulated Truth\" \"Rhys Constance\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.rhysconstance.com/regulated-truth",
+          "material_type": "作者本卷官方简介、主题说明及短节选",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读再度谋杀、digital ghosts、公司售卖现实、AI身份主题与镜子梦境短节选；页面称out now但未独立核首发日期，更未读全卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读再度谋杀、digital ghosts、公司售卖现实、AI身份主题与镜子梦境短节选；页面称out now但未独立核首发日期，更未读全卷。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q137844934",
+        "identity": {
+          "title": "Regulated Truth",
+          "author": "Rhys Constance"
+        },
+        "lane_index": 1,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "author_page_claims_out_now_exact_first_date_unverified",
+        "queries": [
+          "\"Regulated Truth\" \"Rhys Constance\""
+        ],
+        "sources": [
+          {
+            "url": "https://www.rhysconstance.com/regulated-truth",
+            "material_kind": "作者本卷官方简介、主题说明及短节选",
+            "support_scope": "实际读再度谋杀、digital ghosts、公司售卖现实、AI身份主题与镜子梦境短节选；页面称out now但未独立核首发日期，更未读全卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "author_page_claims_out_now_exact_first_date_unverified"
+    },
+    {
+      "id": "Q138632763",
+      "identity": {
+        "title": "Operation Bounce House",
+        "author": "Matt Dinniman"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Operation Bounce House\" Matt Dinniman publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/772005/operation-bounce-house-by-matt-dinniman/",
+          "material_type": "Ace官方长篇简介及出版资料",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Oliver牧场、智能农业机器人、New Sonora、Apex收费远程武器及旧书零件抵抗简介；页面称2026年2月10日出版，未读全篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://openlibrary.org/works/OL44660264W",
+          "material_type": "Open Library官方2026-09-30 work dump本地简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读本ID完整description，支持New Sonora驱逐、收费战争游戏及居民防卫；其中灭绝措辞不额外引入出版社简介未说的结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Oliver牧场、智能农业机器人、New Sonora、Apex收费远程武器及旧书零件抵抗简介；页面称2026年2月10日出版，未读全篇。；实际读本ID完整description，支持New Sonora驱逐、收费战争游戏及居民防卫；其中灭绝措辞不额外引入出版社简介未说的结局。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138632763",
+        "identity": {
+          "title": "Operation Bounce House",
+          "author": "Matt Dinniman"
+        },
+        "lane_index": 2,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "publisher_page_claims_published_2026-02-10",
+        "queries": [
+          "\"Operation Bounce House\" Matt Dinniman publisher"
+        ],
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/772005/operation-bounce-house-by-matt-dinniman/",
+            "material_kind": "Ace官方长篇简介及出版资料",
+            "support_scope": "实际读Oliver牧场、智能农业机器人、New Sonora、Apex收费远程武器及旧书零件抵抗简介；页面称2026年2月10日出版，未读全篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://openlibrary.org/works/OL44660264W",
+            "material_kind": "Open Library官方2026-09-30 work dump本地简介",
+            "support_scope": "实际读本ID完整description，支持New Sonora驱逐、收费战争游戏及居民防卫；其中灭绝措辞不额外引入出版社简介未说的结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "publisher_page_claims_published_2026-02-10"
+    },
+    {
+      "id": "Q139595833",
+      "identity": {
+        "title": "A Memory of Iron",
+        "author": "Carlos Donoso"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"La Semilla de Hierro\" \"Carlos Donoso\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.carlos-donoso.com/memory-of-iron/",
+          "material_type": "作者本卷英文官网剧情介绍及创作说明",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读十六设施失联、Elena、探测信号、本书四音旋律说明和英西语版本说明；页面同时残留preorder与available since，作者称英文版2026-07-11上市，未独立核销量或全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.carlos-donoso.com/?lang=en",
+          "material_type": "作者双语版本首页",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读one novel two routes及英语A Memory of Iron、西语La Semilla de Hierro并列，支持版本题名对照；不是两部独立作品已核实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读十六设施失联、Elena、探测信号、本书四音旋律说明和英西语版本说明；页面同时残留preorder与available since，作者称英文版2026-07-11上市，未独立核销量或全文。；实际读one novel two routes及英语A Memory of Iron、西语La Semilla de Hierro并列，支持版本题名对照；不是两部独立作品已核实。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139595833",
+        "identity": {
+          "title": "A Memory of Iron",
+          "author": "Carlos Donoso"
+        },
+        "lane_index": 3,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "author_claims_available_english_2026-07-11_exact_bibliography_unverified",
+        "queries": [
+          "\"La Semilla de Hierro\" \"Carlos Donoso\""
+        ],
+        "sources": [
+          {
+            "url": "https://www.carlos-donoso.com/memory-of-iron/",
+            "material_kind": "作者本卷英文官网剧情介绍及创作说明",
+            "support_scope": "实际读十六设施失联、Elena、探测信号、本书四音旋律说明和英西语版本说明；页面同时残留preorder与available since，作者称英文版2026-07-11上市，未独立核销量或全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.carlos-donoso.com/?lang=en",
+            "material_kind": "作者双语版本首页",
+            "support_scope": "实际读one novel two routes及英语A Memory of Iron、西语La Semilla de Hierro并列，支持版本题名对照；不是两部独立作品已核实。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "author_claims_available_english_2026-07-11_exact_bibliography_unverified"
+    },
+    {
+      "id": "Q139861109",
+      "identity": {
+        "title": "The Blinding (novel)",
+        "author": "Sotiris Spyrou"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Blinding\" \"Sotiris Spyrou\"",
+        "\"The Blinding\" \"Sotiris\" novel",
+        "\"The Blinding\" \"Sotiris Spyrou\" book synopsis",
+        "\"The Ulysses Universe\" \"The Blinding\" \"Echo\"",
+        "site:theulyssesuniverse.com \"The Blinding\" \"Odysseus\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://theulyssesuniverse.com/press",
+          "material_type": "作者官网媒介资料中的基础设定",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Olympus逃离、拒交儿子、Zeus与108人数据悬置的前提；只用于首卷开局，不采用整三部曲后程地点或谜底。页内后两卷发布日期互相冲突。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://theulyssesuniverse.com/blog/the-ulysses-universe-reading-order",
+          "material_type": "作者官网逐卷时间及阅读顺序说明",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读第一卷明确对应Year0逃离回忆和Year10主动叙事、包括Aeolus与Polyphemus；页面称首卷2026-05-01上线，但其后两卷日期说明冲突，未作整组首版核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Olympus逃离、拒交儿子、Zeus与108人数据悬置的前提；只用于首卷开局，不采用整三部曲后程地点或谜底。页内后两卷发布日期互相冲突。；实际读第一卷明确对应Year0逃离回忆和Year10主动叙事、包括Aeolus与Polyphemus；页面称首卷2026-05-01上线，但其后两卷日期说明冲突，未作整组首版核验。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139861109",
+        "identity": {
+          "title": "The Blinding (novel)",
+          "author": "Sotiris Spyrou"
+        },
+        "lane_index": 4,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "author_claims_book1_launched_2026-05-01_independent_confirmation_pending",
+        "queries": [
+          "\"The Blinding\" \"Sotiris Spyrou\"",
+          "\"The Blinding\" \"Sotiris\" novel",
+          "\"The Blinding\" \"Sotiris Spyrou\" book synopsis",
+          "\"The Ulysses Universe\" \"The Blinding\" \"Echo\"",
+          "site:theulyssesuniverse.com \"The Blinding\" \"Odysseus\""
+        ],
+        "sources": [
+          {
+            "url": "https://theulyssesuniverse.com/press",
+            "material_kind": "作者官网媒介资料中的基础设定",
+            "support_scope": "实际读Olympus逃离、拒交儿子、Zeus与108人数据悬置的前提；只用于首卷开局，不采用整三部曲后程地点或谜底。页内后两卷发布日期互相冲突。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://theulyssesuniverse.com/blog/the-ulysses-universe-reading-order",
+            "material_kind": "作者官网逐卷时间及阅读顺序说明",
+            "support_scope": "实际读第一卷明确对应Year0逃离回忆和Year10主动叙事、包括Aeolus与Polyphemus；页面称首卷2026-05-01上线，但其后两卷日期说明冲突，未作整组首版核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "author_claims_book1_launched_2026-05-01_independent_confirmation_pending"
+    },
+    {
+      "id": "Q139898433",
+      "identity": {
+        "title": "Absolute Green Arrow",
+        "author": "拉斐爾·阿爾布開克 / Pornsak Pichetshote"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Absolute Green Arrow\" site:dc.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/comics/absolute-green-arrow-2026/absolute-green-arrow-2026-1",
+          "material_type": "DC首期漫画官方简介及销售日期",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读腐败富豪连环杀人、绿箭线索、Dinah保护与Oliver死亡疑点及首期2026-05-20日期；本实体是漫画，不是小说。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/blog/2026-05-20/something-to-fear-pornsak-pichetshote-talks-absolute-green-arrow",
+          "material_type": "DC对Pornsak Pichetshote的创作者访谈",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Dinah与雇主冲突、让富豪承担后果和目的/手段解释；只支持已公布开局与创作者意图，不确认尚未上市第六期结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读腐败富豪连环杀人、绿箭线索、Dinah保护与Oliver死亡疑点及首期2026-05-20日期；本实体是漫画，不是小说。；实际读Dinah与雇主冲突、让富豪承担后果和目的/手段解释；只支持已公布开局与创作者意图，不确认尚未上市第六期结局。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139898433",
+        "identity": {
+          "title": "Absolute Green Arrow",
+          "author": "拉斐爾·阿爾布開克 / Pornsak Pichetshote"
+        },
+        "lane_index": 5,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "dc_claims_issue1_on_sale_2026-05-20_series_ongoing",
+        "queries": [
+          "\"Absolute Green Arrow\" site:dc.com"
+        ],
+        "sources": [
+          {
+            "url": "https://www.dc.com/comics/absolute-green-arrow-2026/absolute-green-arrow-2026-1",
+            "material_kind": "DC首期漫画官方简介及销售日期",
+            "support_scope": "实际读腐败富豪连环杀人、绿箭线索、Dinah保护与Oliver死亡疑点及首期2026-05-20日期；本实体是漫画，不是小说。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.dc.com/blog/2026-05-20/something-to-fear-pornsak-pichetshote-talks-absolute-green-arrow",
+            "material_kind": "DC对Pornsak Pichetshote的创作者访谈",
+            "support_scope": "实际读Dinah与雇主冲突、让富豪承担后果和目的/手段解释；只支持已公布开局与创作者意图，不确认尚未上市第六期结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "dc_claims_issue1_on_sale_2026-05-20_series_ongoing"
+    },
+    {
+      "id": "Q140467933",
+      "identity": {
+        "title": "Lily Starling and the Death Machine",
+        "author": "Christian Hurst"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Lily Starling and the Death Machine\" Christian Hurst",
+        "\"Christian Hurst\" \"Death Machine\" official"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/christian-hurst/lily-starling-and-the-death-machine/",
+          "material_type": "Kirkus Indie署名机构书评及出版资料",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读完整评论的作品梗概，使用Bimini机器、Union夺取、VEN-2E与疫苗供应调查；评论者对写作效果的判断不变成剧情，未读小说。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.churstpublishing.com/",
+          "material_type": "作者官方各卷页面",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读本卷Book3和Available Now身份；Book4仍预售，不把下一卷时间题材继承进本卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读完整评论的作品梗概，使用Bimini机器、Union夺取、VEN-2E与疫苗供应调查；评论者对写作效果的判断不变成剧情，未读小说。；实际读本卷Book3和Available Now身份；Book4仍预售，不把下一卷时间题材继承进本卷。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140467933",
+        "identity": {
+          "title": "Lily Starling and the Death Machine",
+          "author": "Christian Hurst"
+        },
+        "lane_index": 6,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "author_claims_book3_available_kirkus_lists_2026-04-30",
+        "queries": [
+          "\"Lily Starling and the Death Machine\" Christian Hurst",
+          "\"Christian Hurst\" \"Death Machine\" official"
+        ],
+        "sources": [
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/christian-hurst/lily-starling-and-the-death-machine/",
+            "material_kind": "Kirkus Indie署名机构书评及出版资料",
+            "support_scope": "实际读完整评论的作品梗概，使用Bimini机器、Union夺取、VEN-2E与疫苗供应调查；评论者对写作效果的判断不变成剧情，未读小说。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.churstpublishing.com/",
+            "material_kind": "作者官方各卷页面",
+            "support_scope": "实际读本卷Book3和Available Now身份；Book4仍预售，不把下一卷时间题材继承进本卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "author_claims_book3_available_kirkus_lists_2026-04-30"
+    },
+    {
+      "id": "Q140695024",
+      "identity": {
+        "title": "The Thought Thief",
+        "author": "P.G. Lark"
+      },
+      "attempt_state": "source_search_attempted",
+      "queries": [
+        "\"The Thought Thief\" \"P.G. Lark\"",
+        "\"The Thought Thief\" Lark novel 2026",
+        "\"The Thought Thief\" \"Lark\" book",
+        "\"P.G. Lark\" book",
+        "\"The Thought Thief\" \"P.G.\" novel"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.pglark.com/",
+          "material_type": "作者官网",
+          "result": "catalog_only",
+          "reading_scope": "实际读Quantum Pizza首页及后两卷2026计划；首页没有The Thought Thief题名与具体简介，不能继承第一卷内容。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.pglark.com/books",
+          "material_type": "作者各卷官网",
+          "result": "catalog_only",
+          "reading_scope": "实际读Book3的Mindscape读心武器简介及2026年9月预告；页面正文未明确The Thought Thief题名，只有嵌入封面，需要再核对应身份。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+      "reason_unconfirmed": "找到同作者Book3具体简介，但文本题名与底库The Thought Thief尚未明确对上；没有把Quantum Pizza或未核Book3情节填给本ID。定向失败原因是身份对应不足，不是宣称作品不存在。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "not_added_specific_content_or_identity_needed",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140695024",
+        "identity": {
+          "title": "The Thought Thief",
+          "author": "P.G. Lark"
+        },
+        "lane_index": 7,
+        "source_sort_year": 2026,
+        "status": "deferred_identity_or_material",
+        "publication_status": "unknown",
+        "queries": [
+          "\"The Thought Thief\" \"P.G. Lark\"",
+          "\"The Thought Thief\" Lark novel 2026",
+          "\"The Thought Thief\" \"Lark\" book",
+          "\"P.G. Lark\" book",
+          "\"The Thought Thief\" \"P.G.\" novel"
+        ],
+        "sources": [
+          {
+            "url": "https://www.pglark.com/",
+            "material_kind": "作者官网",
+            "support_scope": "实际读Quantum Pizza首页及后两卷2026计划；首页没有The Thought Thief题名与具体简介，不能继承第一卷内容。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.pglark.com/books",
+            "material_kind": "作者各卷官网",
+            "support_scope": "实际读Book3的Mindscape读心武器简介及2026年9月预告；页面正文未明确The Thought Thief题名，只有嵌入封面，需要再核对应身份。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": "找到同作者Book3具体简介，但文本题名与底库The Thought Thief尚未明确对上；没有把Quantum Pizza或未核Book3情节填给本ID。定向失败原因是身份对应不足，不是宣称作品不存在。",
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "unknown"
+    },
+    {
+      "id": "Q140997401",
+      "identity": {
+        "title": "Blightfall",
+        "author": "布兰登·山德森 / Janci Patterson"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Blightfall\" \"Patterson\" publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/731307/blightfall-by-brandon-sanderson-and-janci-patterson/9780593707074/",
+          "material_type": "Delacorte官方本卷简介与出版资料",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Arturo战后外交护送、Blightfall森林残骸、袭击及不可信聚居点简介；官方页面称2026-09-01已出版，未读原作或谜底。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Arturo战后外交护送、Blightfall森林残骸、袭击及不可信聚居点简介；官方页面称2026-09-01已出版，未读原作或谜底。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140997401",
+        "identity": {
+          "title": "Blightfall",
+          "author": "布兰登·山德森 / Janci Patterson"
+        },
+        "lane_index": 8,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "publisher_claims_published_2026-09-01",
+        "queries": [
+          "\"Blightfall\" \"Patterson\" publisher"
+        ],
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/731307/blightfall-by-brandon-sanderson-and-janci-patterson/9780593707074/",
+            "material_kind": "Delacorte官方本卷简介与出版资料",
+            "support_scope": "实际读Arturo战后外交护送、Blightfall森林残骸、袭击及不可信聚居点简介；官方页面称2026-09-01已出版，未读原作或谜底。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "publisher_claims_published_2026-09-01"
+    },
+    {
+      "id": "Q141285116",
+      "identity": {
+        "title": "Midnight Spider-Man",
+        "author": "Phillip Kennedy Johnson"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Midnight Spider-Man\" site:marvel.com",
+        "\"Midnight Spider-Man\" Phillip Kennedy Johnson",
+        "\"MIDNIGHT SPIDER-MAN #1\" site:prhcomics.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://aiptcomics.com/2026/08/23/phillip-kennedy-johnson-midnight-spider-man/",
+          "material_type": "AIPT对编剧Phillip Kennedy Johnson的公开访谈报道",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读作者身体变化、力量责任与对human-spider hybrid简化宣传的更正；本轮日期早于首期上市，不声称这些计划已在出版全文实现。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://prhcomics.com/book/?isbn=75960621681900111",
+          "material_type": "Marvel经PRH Comics的首期书目销售页",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读首期脚本、画者、Comic Book及2026-10-07 on sale；仅支持发行计划和媒介身份，不支持剧情或已经上市。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者身体变化、力量责任与对human-spider hybrid简化宣传的更正；本轮日期早于首期上市，不声称这些计划已在出版全文实现。；实际读首期脚本、画者、Comic Book及2026-10-07 on sale；仅支持发行计划和媒介身份，不支持剧情或已经上市。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141285116",
+        "identity": {
+          "title": "Midnight Spider-Man",
+          "author": "Phillip Kennedy Johnson"
+        },
+        "lane_index": 9,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "forthcoming_issue1_2026-10-07_as_of_2026-10-04",
+        "queries": [
+          "\"Midnight Spider-Man\" site:marvel.com",
+          "\"Midnight Spider-Man\" Phillip Kennedy Johnson",
+          "\"MIDNIGHT SPIDER-MAN #1\" site:prhcomics.com"
+        ],
+        "sources": [
+          {
+            "url": "https://aiptcomics.com/2026/08/23/phillip-kennedy-johnson-midnight-spider-man/",
+            "material_kind": "AIPT对编剧Phillip Kennedy Johnson的公开访谈报道",
+            "support_scope": "实际读作者身体变化、力量责任与对human-spider hybrid简化宣传的更正；本轮日期早于首期上市，不声称这些计划已在出版全文实现。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://prhcomics.com/book/?isbn=75960621681900111",
+            "material_kind": "Marvel经PRH Comics的首期书目销售页",
+            "support_scope": "实际读首期脚本、画者、Comic Book及2026-10-07 on sale；仅支持发行计划和媒介身份，不支持剧情或已经上市。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "forthcoming_issue1_2026-10-07_as_of_2026-10-04"
+    },
+    {
+      "id": "Q141532822",
+      "identity": {
+        "title": "La Noche Infinita",
+        "author": "Carlos Cotta"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"La Noche Infinita\" \"Carlos Cotta\"",
+        "\"La Noche Infinita\" \"Cotta\" \"sinopsis\"",
+        "\"La Noche Infinita\" \"Cotta\" site:carloscotta.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.iberlibro.com/products/isbn/9788409849949",
+          "material_type": "IberLibro同题同作者同ISBN出版简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Álex、量子系统漏洞、攻击策略及情报机构梗概；页面有Sinopsis可能属其他版本提示，未核首版版权页，更未读原作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://malagapress.com/malaga-capital/carlos-cotta-uma-novela-noche-infinita",
+          "material_type": "Málaga Press署名报道",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读2026-09-05报道中作者身份、2035背景、黑客量子系统开局及已在书店上市说明；作者谈现实AI风险的评论不额外变成原作情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Álex、量子系统漏洞、攻击策略及情报机构梗概；页面有Sinopsis可能属其他版本提示，未核首版版权页，更未读原作。；实际读2026-09-05报道中作者身份、2035背景、黑客量子系统开局及已在书店上市说明；作者谈现实AI风险的评论不额外变成原作情节。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141532822",
+        "identity": {
+          "title": "La Noche Infinita",
+          "author": "Carlos Cotta"
+        },
+        "lane_index": 10,
+        "source_sort_year": 2026,
+        "status": "analysis_added_unverified",
+        "publication_status": "2026_bookstore_release_reported_exact_first_date_unverified",
+        "queries": [
+          "\"La Noche Infinita\" \"Carlos Cotta\"",
+          "\"La Noche Infinita\" \"Cotta\" \"sinopsis\"",
+          "\"La Noche Infinita\" \"Cotta\" site:carloscotta.com"
+        ],
+        "sources": [
+          {
+            "url": "https://www.iberlibro.com/products/isbn/9788409849949",
+            "material_kind": "IberLibro同题同作者同ISBN出版简介",
+            "support_scope": "实际读Álex、量子系统漏洞、攻击策略及情报机构梗概；页面有Sinopsis可能属其他版本提示，未核首版版权页，更未读原作。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://malagapress.com/malaga-capital/carlos-cotta-uma-novela-noche-infinita",
+            "material_kind": "Málaga Press署名报道",
+            "support_scope": "实际读2026-09-05报道中作者身份、2035背景、黑客量子系统开局及已在书店上市说明；作者谈现实AI风险的评论不额外变成原作情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified",
+        "failed_requests": [
+          {
+            "url": "https://carloscotta.com/media/",
+            "reason": "页面正文加载失败；检索返回已读范围只有media列表，不作为具体剧情来源。"
+          }
+        ]
+      },
+      "publication_status": "2026_bookstore_release_reported_exact_first_date_unverified"
+    },
+    {
+      "id": "Q130784448",
+      "identity": {
+        "title": "Absolute Green Lantern",
+        "author": "Al Ewing"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Absolute Green Lantern\" site:dc.com/comics/absolute-green-lantern-2025",
+        "site:dc.com \"Absolute Green Lantern\" \"Jo\" \"Hal\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/blog/2025/04/02/absolute-interview-green-lantern-reminds-us-to-beware-its-power",
+          "material_type": "DC对Al Ewing的创作者访谈公开正文",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Green power不解释规则、巨大物体压毁小镇、普通人接触能力与Jo核心身份；不将常规DC戒指或军团规则继承。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/blog/2025/04/08/absolute-green-lantern-explores-the-dark-side-of-cosmic-power",
+          "material_type": "DC官方平台Sami DeMonster首期评论",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读首期Hal恐惧、城镇压毁及Jo变化说明；评论者对Black Lantern身份的猜想未采用，未读所有连载。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Green power不解释规则、巨大物体压毁小镇、普通人接触能力与Jo核心身份；不将常规DC戒指或军团规则继承。；实际读首期Hal恐惧、城镇压毁及Jo变化说明；评论者对Black Lantern身份的猜想未采用，未读所有连载。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q130784448",
+        "identity": {
+          "title": "Absolute Green Lantern",
+          "author": "Al Ewing"
+        },
+        "lane_index": 11,
+        "source_sort_year": 2025,
+        "status": "analysis_added_unverified",
+        "publication_status": "dc_claims_issue1_published_2025_series_ongoing",
+        "queries": [
+          "\"Absolute Green Lantern\" site:dc.com/comics/absolute-green-lantern-2025",
+          "site:dc.com \"Absolute Green Lantern\" \"Jo\" \"Hal\""
+        ],
+        "sources": [
+          {
+            "url": "https://www.dc.com/blog/2025/04/02/absolute-interview-green-lantern-reminds-us-to-beware-its-power",
+            "material_kind": "DC对Al Ewing的创作者访谈公开正文",
+            "support_scope": "实际读Green power不解释规则、巨大物体压毁小镇、普通人接触能力与Jo核心身份；不将常规DC戒指或军团规则继承。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.dc.com/blog/2025/04/08/absolute-green-lantern-explores-the-dark-side-of-cosmic-power",
+            "material_kind": "DC官方平台Sami DeMonster首期评论",
+            "support_scope": "实际读首期Hal恐惧、城镇压毁及Jo变化说明；评论者对Black Lantern身份的猜想未采用，未读所有连载。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "dc_claims_issue1_published_2025_series_ongoing"
+    },
+    {
+      "id": "Q133857002",
+      "identity": {
+        "title": "Kōka Ningen",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Kōka Ningen\" 2025 novel",
+        "\"Kouka Ningen\" manga",
+        "\"Kōka Ningen\" manga",
+        "\"甲化人間\" site:yanmaga.jp \"ハヤシロウ\"",
+        "\"甲化人間\" site:kodansha.co.jp \"2025\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://yanmaga.jp/comics/%E7%94%B2%E5%8C%96%E4%BA%BA%E9%96%93",
+          "material_type": "讲谈社Yanmaga官方系列简介及连载目录",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读甲化机制、Makoto拒绝、抵抗者相遇简介及第1话2024-12-12目录；未读漫画图像或真相揭示。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.kodansha.co.jp/comic/products/0000407746",
+          "material_type": "讲谈社第一卷官方书目与简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读同作者ハヤシロウ、甲化机制和第一卷2025-04-18出版资料；2025为单行本年，不应自动代替2024系列初刊。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读甲化机制、Makoto拒绝、抵抗者相遇简介及第1话2024-12-12目录；未读漫画图像或真相揭示。；实际读同作者ハヤシロウ、甲化机制和第一卷2025-04-18出版资料；2025为单行本年，不应自动代替2024系列初刊。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q133857002",
+        "identity": {
+          "title": "Kōka Ningen",
+          "author": "作者未知"
+        },
+        "lane_index": 12,
+        "source_sort_year": 2025,
+        "status": "analysis_added_unverified",
+        "publication_status": "official_serial_start_2024-12-12_volume1_2025-04-18_source_year_boundary",
+        "queries": [
+          "\"Kōka Ningen\" 2025 novel",
+          "\"Kouka Ningen\" manga",
+          "\"Kōka Ningen\" manga",
+          "\"甲化人間\" site:yanmaga.jp \"ハヤシロウ\"",
+          "\"甲化人間\" site:kodansha.co.jp \"2025\""
+        ],
+        "sources": [
+          {
+            "url": "https://yanmaga.jp/comics/%E7%94%B2%E5%8C%96%E4%BA%BA%E9%96%93",
+            "material_kind": "讲谈社Yanmaga官方系列简介及连载目录",
+            "support_scope": "实际读甲化机制、Makoto拒绝、抵抗者相遇简介及第1话2024-12-12目录；未读漫画图像或真相揭示。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.kodansha.co.jp/comic/products/0000407746",
+            "material_kind": "讲谈社第一卷官方书目与简介",
+            "support_scope": "实际读同作者ハヤシロウ、甲化机制和第一卷2025-04-18出版资料；2025为单行本年，不应自动代替2024系列初刊。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "official_serial_start_2024-12-12_volume1_2025-04-18_source_year_boundary"
+    },
+    {
+      "id": "Q135412602",
+      "identity": {
+        "title": "Rapport: Friendship, Solidarity, Communion, Empathy",
+        "author": "玛莎·威尔斯"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Rapport\" \"Friendship, Solidarity, Communion, Empathy\" Martha Wells"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://reactormag.com/rapport-martha-wells/",
+          "material_type": "Reactor获授权原篇的实际选段",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读初始任务说明、站内驱逐与住房段落及后段Iris/Peri私密关系谈话至结尾；未逐字通读全部7540词。原刊列2025-07-10。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://us.macmillan.com/books/9781250489241/rapportfriendshipsolidaritycommunionempathy/",
+          "material_type": "Macmillan Audio官方本篇重版资料",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Perihelion团队任务简介和2026-09-01有声版书目；该日期不是2025原篇首次发表，不继承Platform Decay书评引语剧情。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读初始任务说明、站内驱逐与住房段落及后段Iris/Peri私密关系谈话至结尾；未逐字通读全部7540词。原刊列2025-07-10。；实际读Perihelion团队任务简介和2026-09-01有声版书目；该日期不是2025原篇首次发表，不继承Platform Decay书评引语剧情。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q135412602",
+        "identity": {
+          "title": "Rapport: Friendship, Solidarity, Communion, Empathy",
+          "author": "玛莎·威尔斯"
+        },
+        "lane_index": 13,
+        "source_sort_year": 2025,
+        "status": "analysis_added_unverified",
+        "publication_status": "official_original_page_2025-07-10_audio_reprint_2026-09-01",
+        "queries": [
+          "\"Rapport\" \"Friendship, Solidarity, Communion, Empathy\" Martha Wells"
+        ],
+        "sources": [
+          {
+            "url": "https://reactormag.com/rapport-martha-wells/",
+            "material_kind": "Reactor获授权原篇的实际选段",
+            "support_scope": "实际读初始任务说明、站内驱逐与住房段落及后段Iris/Peri私密关系谈话至结尾；未逐字通读全部7540词。原刊列2025-07-10。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://us.macmillan.com/books/9781250489241/rapportfriendshipsolidaritycommunionempathy/",
+            "material_kind": "Macmillan Audio官方本篇重版资料",
+            "support_scope": "实际读Perihelion团队任务简介和2026-09-01有声版书目；该日期不是2025原篇首次发表，不继承Platform Decay书评引语剧情。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "official_original_page_2025-07-10_audio_reprint_2026-09-01"
+    },
+    {
+      "id": "Q136222349",
+      "identity": {
+        "title": "DC X Sonic the Hedgehog",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"DC X Sonic the Hedgehog\" site:dc.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/comics/dc-x-sonic-the-hedgehog-2025/dc-x-sonic-the-hedgehog-1",
+          "material_type": "DC首期漫画简介与创作者/日期资料",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Darkseid跨维度入侵、Sonic与Justice League合作、脚本Ian Flynn及首期2025-03-19日期，未读漫画图像。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/graphic-novels/dc-x-sonic-the-hedgehog-2025/dc-x-sonic-the-hedgehog",
+          "material_type": "DC五期故事合集的出版简介",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读同题合集简介和2025-10-21日期；合集日期与3月连载开局区分，不把后续Metal Legion或角色其他故事带入。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Darkseid跨维度入侵、Sonic与Justice League合作、脚本Ian Flynn及首期2025-03-19日期，未读漫画图像。；实际读同题合集简介和2025-10-21日期；合集日期与3月连载开局区分，不把后续Metal Legion或角色其他故事带入。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136222349",
+        "identity": {
+          "title": "DC X Sonic the Hedgehog",
+          "author": "作者未知"
+        },
+        "lane_index": 14,
+        "source_sort_year": 2025,
+        "status": "analysis_added_unverified",
+        "publication_status": "dc_issue1_2025-03-19_collection_2025-10-21",
+        "queries": [
+          "\"DC X Sonic the Hedgehog\" site:dc.com"
+        ],
+        "sources": [
+          {
+            "url": "https://www.dc.com/comics/dc-x-sonic-the-hedgehog-2025/dc-x-sonic-the-hedgehog-1",
+            "material_kind": "DC首期漫画简介与创作者/日期资料",
+            "support_scope": "实际读Darkseid跨维度入侵、Sonic与Justice League合作、脚本Ian Flynn及首期2025-03-19日期，未读漫画图像。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.dc.com/graphic-novels/dc-x-sonic-the-hedgehog-2025/dc-x-sonic-the-hedgehog",
+            "material_kind": "DC五期故事合集的出版简介",
+            "support_scope": "实际读同题合集简介和2025-10-21日期；合集日期与3月连载开局区分，不把后续Metal Legion或角色其他故事带入。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "dc_issue1_2025-03-19_collection_2025-10-21"
+    },
+    {
+      "id": "Q136490360",
+      "identity": {
+        "title": "The King Must Die",
+        "author": "Kemi Ashing-Giwa"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The King Must Die\" \"Kemi Ashing-Giwa\" publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-King-Must-Die/Kemi-Ashing-Giwa/9781668061015",
+          "material_type": "Saga Press官方简介和获授权第一章开头",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读Newearth改造失败、Fen父亲处决、反叛者与Alekhai联盟困境简介，以及开头信使工作、家庭要挟和遗传犯罪宣称段落；不是全长篇原文，官方列2025-11-04。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://kashinggiwa.com/long-fiction/",
+          "material_type": "作者官方长短篇书目",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读The King Must Die列在novels、2025及与technomancer prince合作短说明，支持长篇身份，不误当This World Is Not Yours中篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读Newearth改造失败、Fen父亲处决、反叛者与Alekhai联盟困境简介，以及开头信使工作、家庭要挟和遗传犯罪宣称段落；不是全长篇原文，官方列2025-11-04。；实际读The King Must Die列在novels、2025及与technomancer prince合作短说明，支持长篇身份，不误当This World Is Not Yours中篇。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "global-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136490360",
+        "identity": {
+          "title": "The King Must Die",
+          "author": "Kemi Ashing-Giwa"
+        },
+        "lane_index": 15,
+        "source_sort_year": 2025,
+        "status": "analysis_added_unverified",
+        "publication_status": "publisher_claims_published_2025-11-04",
+        "queries": [
+          "\"The King Must Die\" \"Kemi Ashing-Giwa\" publisher"
+        ],
+        "sources": [
+          {
+            "url": "https://www.simonandschuster.com/books/The-King-Must-Die/Kemi-Ashing-Giwa/9781668061015",
+            "material_kind": "Saga Press官方简介和获授权第一章开头",
+            "support_scope": "实际读Newearth改造失败、Fen父亲处决、反叛者与Alekhai联盟困境简介，以及开头信使工作、家庭要挟和遗传犯罪宣称段落；不是全长篇原文，官方列2025-11-04。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://kashinggiwa.com/long-fiction/",
+            "material_kind": "作者官方长短篇书目",
+            "support_scope": "实际读The King Must Die列在novels、2025及与technomancer prince合作短说明，支持长篇身份，不误当This World Is Not Yours中篇。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "no_material_reason": null,
+        "verification_status": "knowledge_added_unverified"
+      },
+      "publication_status": "publisher_claims_published_2025-11-04"
+    },
+    {
+      "id": "Q136749524",
+      "identity": {
+        "title": "Platform Decay",
+        "author": "玛莎·威尔斯"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Platform Decay\" Martha Wells publisher 2026",
+        "\"Platform Decay\" site:marthawells.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://us.macmillan.com/books/9781250827005/platformdecay/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Macmillan 官方书介及2026-05-05上市信息，支持自愿救援、陌生人、儿童和相处前提；实际读 Space.com 搜索返回的 Wells 访谈中本书的救援取舍与巨大环状设施交通构思，属于作者预出版说明，不是全文或结局。作者关于系列奴役主题的概括不额外套成本书已读情节。文学分析待核。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.space.com/entertainment/space-books/martha-wells-next-murderbot-diaries-book-is-the-family-roadtrip-from-hell-on-ringworld-interview",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Macmillan 官方书介及2026-05-05上市信息，支持自愿救援、陌生人、儿童和相处前提；实际读 Space.com 搜索返回的 Wells 访谈中本书的救援取舍与巨大环状设施交通构思，属于作者预出版说明，不是全文或结局。作者关于系列奴役主题的概括不额外套成本书已读情节。文学分析待核。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Macmillan 官方书介及2026-05-05上市信息，支持自愿救援、陌生人、儿童和相处前提；实际读 Space.com 搜索返回的 Wells 访谈中本书的救援取舍与巨大环状设施交通构思，属于作者预出版说明，不是全文或结局。作者关于系列奴役主题的概括不额外套成本书已读情节。文学分析待核。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136749524",
+        "identity": {
+          "title": "Platform Decay",
+          "author": "玛莎·威尔斯"
+        },
+        "queries": [
+          "\"Platform Decay\" Martha Wells publisher 2026",
+          "\"Platform Decay\" site:marthawells.com"
+        ],
+        "urls_read": [
+          "https://us.macmillan.com/books/9781250827005/platformdecay/",
+          "https://www.space.com/entertainment/space-books/martha-wells-next-murderbot-diaries-book-is-the-family-roadtrip-from-hell-on-ringworld-interview"
+        ],
+        "exact_support_scope": "实际读 Macmillan 官方书介及2026-05-05上市信息，支持自愿救援、陌生人、儿童和相处前提；实际读 Space.com 搜索返回的 Wells 访谈中本书的救援取舍与巨大环状设施交通构思，属于作者预出版说明，不是全文或结局。作者关于系列奴役主题的概括不额外套成本书已读情节。文学分析待核。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "官方页列2026-05-05，已过上市日期；本次读的是书介和作者预出版访谈。"
+      },
+      "publication_note": "官方页列2026-05-05，已过上市日期；本次读的是书介和作者预出版访谈。"
+    },
+    {
+      "id": "Q138004845",
+      "identity": {
+        "title": "Exalta",
+        "author": "查爾·阿里"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Exalta\" \"Zhiar Ali\"",
+        "\"Exalta\" \"Zhiar Ali\" novel publisher",
+        "Exalta Zhiar Ali book dystopian Runner Liam Kestrel",
+        "\"Exalta\" \"Zhiar\" publisher ISBN"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://business.walmart.com/ip/Exalta-Paperback-9798232070847/19530873525",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Walmart 搜索返回的商品详情完整简介与 Zhiar Ali/2026-03-21/346页信息，支持 Runner、身份窗口、Liam 的报告拒绝和文书处置前提；这是零售渠道所载自出版宣传，未独立核对正文。实际读 Hatchards 搜索返回书目，仅支持同题同作者和另一 ISBN 的2026-03-21出版声明，两个 ISBN 版本未校勘。先前精确题名作者查询未给出结果，后续查询取得此简介；不把初次空结果解释为作品不存在。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hatchards.co.uk/book/exalta/zhiar-ali/9798246797211",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Walmart 搜索返回的商品详情完整简介与 Zhiar Ali/2026-03-21/346页信息，支持 Runner、身份窗口、Liam 的报告拒绝和文书处置前提；这是零售渠道所载自出版宣传，未独立核对正文。实际读 Hatchards 搜索返回书目，仅支持同题同作者和另一 ISBN 的2026-03-21出版声明，两个 ISBN 版本未校勘。先前精确题名作者查询未给出结果，后续查询取得此简介；不把初次空结果解释为作品不存在。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Walmart 搜索返回的商品详情完整简介与 Zhiar Ali/2026-03-21/346页信息，支持 Runner、身份窗口、Liam 的报告拒绝和文书处置前提；这是零售渠道所载自出版宣传，未独立核对正文。实际读 Hatchards 搜索返回书目，仅支持同题同作者和另一 ISBN 的2026-03-21出版声明，两个 ISBN 版本未校勘。先前精确题名作者查询未给出结果，后续查询取得此简介；不把初次空结果解释为作品不存在。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138004845",
+        "identity": {
+          "title": "Exalta",
+          "author": "查爾·阿里"
+        },
+        "queries": [
+          "\"Exalta\" \"Zhiar Ali\"",
+          "\"Exalta\" \"Zhiar Ali\" novel publisher",
+          "Exalta Zhiar Ali book dystopian Runner Liam Kestrel",
+          "\"Exalta\" \"Zhiar\" publisher ISBN"
+        ],
+        "urls_read": [
+          "https://business.walmart.com/ip/Exalta-Paperback-9798232070847/19530873525",
+          "https://www.hatchards.co.uk/book/exalta/zhiar-ali/9798246797211"
+        ],
+        "exact_support_scope": "实际读 Walmart 搜索返回的商品详情完整简介与 Zhiar Ali/2026-03-21/346页信息，支持 Runner、身份窗口、Liam 的报告拒绝和文书处置前提；这是零售渠道所载自出版宣传，未独立核对正文。实际读 Hatchards 搜索返回书目，仅支持同题同作者和另一 ISBN 的2026-03-21出版声明，两个 ISBN 版本未校勘。先前精确题名作者查询未给出结果，后续查询取得此简介；不把初次空结果解释为作品不存在。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "零售渠道列2026-03-21；独立出版声明和不同ISBN未另核。"
+      },
+      "publication_note": "零售渠道列2026-03-21；独立出版声明和不同ISBN未另核。"
+    },
+    {
+      "id": "Q138801667",
+      "identity": {
+        "title": "The Brothel of Shadows - Cosmic Interception",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Brothel of Shadows\" \"Cosmic Interception\"",
+        "\"Il Bordello delle Ombre\" \"Intercettazione Cosmica\" autore"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://ilbordellodelleombre.com/blog/il-bordello-delle-ombre-romanzo",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读作者署名 Jan Willem Koster 的作品站2026-03-26宣传文章：Alex、1980年代阿姆斯特丹、反复梦境、维度重叠、欲望作为认识机制、每次揭示侵蚀日常现实，及“目前可得”声明。它是作者营销自述，未读正文，也未核对广告性的品质判断、全书64章或结局；私人 Open Library 简介仅作对应线索，不升级为独立核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者署名 Jan Willem Koster 的作品站2026-03-26宣传文章：Alex、1980年代阿姆斯特丹、反复梦境、维度重叠、欲望作为认识机制、每次揭示侵蚀日常现实，及“目前可得”声明。它是作者营销自述，未读正文，也未核对广告性的品质判断、全书64章或结局；私人 Open Library 简介仅作对应线索，不升级为独立核验。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138801667",
+        "identity": {
+          "title": "The Brothel of Shadows - Cosmic Interception",
+          "author": "作者未知"
+        },
+        "queries": [
+          "\"The Brothel of Shadows\" \"Cosmic Interception\"",
+          "\"Il Bordello delle Ombre\" \"Intercettazione Cosmica\" autore"
+        ],
+        "urls_read": [
+          "https://ilbordellodelleombre.com/blog/il-bordello-delle-ombre-romanzo"
+        ],
+        "exact_support_scope": "实际读作者署名 Jan Willem Koster 的作品站2026-03-26宣传文章：Alex、1980年代阿姆斯特丹、反复梦境、维度重叠、欲望作为认识机制、每次揭示侵蚀日常现实，及“目前可得”声明。它是作者营销自述，未读正文，也未核对广告性的品质判断、全书64章或结局；私人 Open Library 简介仅作对应线索，不升级为独立核验。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "作者站2026-03-26文章声明目前可得；未独立验证市场发行。"
+      },
+      "publication_note": "作者站2026-03-26文章声明目前可得；未独立验证市场发行。"
+    },
+    {
+      "id": "Q139733973",
+      "identity": {
+        "title": "Bridge of Storms",
+        "author": "菲利普·雷夫"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Bridge of Storms\" \"Philip Reeve\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://philipreeve.com/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读作者官方主页搜索返回的新书介绍，支持 Thunder City 续篇、Tamzin、Museion 的主动吞并决定与沿途两类威胁，并列 Scholastic 英美版2026-02-12日期。直接主页正文抽取为0行，故明确采用搜索返回的作者文本，不称读了完整正文；页面仍有预购措辞，日期已过不等于本次独立确认实际首发。分析仅限书介前提。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者官方主页搜索返回的新书介绍，支持 Thunder City 续篇、Tamzin、Museion 的主动吞并决定与沿途两类威胁，并列 Scholastic 英美版2026-02-12日期。直接主页正文抽取为0行，故明确采用搜索返回的作者文本，不称读了完整正文；页面仍有预购措辞，日期已过不等于本次独立确认实际首发。分析仅限书介前提。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139733973",
+        "identity": {
+          "title": "Bridge of Storms",
+          "author": "菲利普·雷夫"
+        },
+        "queries": [
+          "\"Bridge of Storms\" \"Philip Reeve\""
+        ],
+        "urls_read": [
+          "https://philipreeve.com/"
+        ],
+        "exact_support_scope": "实际读作者官方主页搜索返回的新书介绍，支持 Thunder City 续篇、Tamzin、Museion 的主动吞并决定与沿途两类威胁，并列 Scholastic 英美版2026-02-12日期。直接主页正文抽取为0行，故明确采用搜索返回的作者文本，不称读了完整正文；页面仍有预购措辞，日期已过不等于本次独立确认实际首发。分析仅限书介前提。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "作者给定2026-02-12日期，页面仍有预购措辞，实际首发未另核。"
+      },
+      "publication_note": "作者给定2026-02-12日期，页面仍有预购措辞，实际首发未另核。"
+    },
+    {
+      "id": "Q139861547",
+      "identity": {
+        "title": "The Void Between (novel)",
+        "author": "Sotiris Spyrou"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Void Between\" \"Sotiris Spyrou\"",
+        "\"The Void Between\" \"Spyrou\" book"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://theulyssesuniverse.com/books/the-void-between",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读作者作品站第二册专页的完整书介，支持星际返乡、船员破碎、Void 对记忆与名字的作用、Ulysses 与 Penelope 两条行动线；只用第二册明确前提，未读正文或移用古典 Odyssey 的结局。实际读 Press Kit 仅用于 Sotiris Spyrou、独立出版和书册边界：其中第二册日期同时列8月1日与5月15日，不能消除首发口径冲突；零售检索另列8月，但不据此修订底库。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://theulyssesuniverse.com/press",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读作者作品站第二册专页的完整书介，支持星际返乡、船员破碎、Void 对记忆与名字的作用、Ulysses 与 Penelope 两条行动线；只用第二册明确前提，未读正文或移用古典 Odyssey 的结局。实际读 Press Kit 仅用于 Sotiris Spyrou、独立出版和书册边界：其中第二册日期同时列8月1日与5月15日，不能消除首发口径冲突；零售检索另列8月，但不据此修订底库。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读作者作品站第二册专页的完整书介，支持星际返乡、船员破碎、Void 对记忆与名字的作用、Ulysses 与 Penelope 两条行动线；只用第二册明确前提，未读正文或移用古典 Odyssey 的结局。实际读 Press Kit 仅用于 Sotiris Spyrou、独立出版和书册边界：其中第二册日期同时列8月1日与5月15日，不能消除首发口径冲突；零售检索另列8月，但不据此修订底库。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139861547",
+        "identity": {
+          "title": "The Void Between (novel)",
+          "author": "Sotiris Spyrou"
+        },
+        "queries": [
+          "\"The Void Between\" \"Sotiris Spyrou\"",
+          "\"The Void Between\" \"Spyrou\" book"
+        ],
+        "urls_read": [
+          "https://theulyssesuniverse.com/books/the-void-between",
+          "https://theulyssesuniverse.com/press"
+        ],
+        "exact_support_scope": "实际读作者作品站第二册专页的完整书介，支持星际返乡、船员破碎、Void 对记忆与名字的作用、Ulysses 与 Penelope 两条行动线；只用第二册明确前提，未读正文或移用古典 Odyssey 的结局。实际读 Press Kit 仅用于 Sotiris Spyrou、独立出版和书册边界：其中第二册日期同时列8月1日与5月15日，不能消除首发口径冲突；零售检索另列8月，但不据此修订底库。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "作品站书目可得；同站Press Kit有5月15日与8月1日第二册日期冲突。"
+      },
+      "publication_note": "作品站书目可得；同站Press Kit有5月15日与8月1日第二册日期冲突。"
+    },
+    {
+      "id": "Q140078684",
+      "identity": {
+        "title": "Monster High: Boomuda Triangle",
+        "author": "Megan Brown / Eileen Widjaja"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Monster High\" \"Boomuda Triangle\" Megan Brown"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/828038/monster-high-boomuda-triangle-by-megan-brown/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 PRH/IDW 合订本官方书介，支持实习、Valentine 的不安与暗随、多宇宙事故；该120页合集预定2026-12-08，当前仍是预购。实际读 Google Play 所载 IDW 第5期2026年6月商品简介，支持修复 atlas 与坦承恐惧的联系，不是阅读漫画画格或正文。集合层面分析以明确期号选例，不把未出的合集当已发行，也不把第5期冒充完整逐期核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://play.google.com/store/books/details/Megan_Brown_Monster_High_Boomuda_Triangle_5?id=45jbEQAAQBAJ",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 PRH/IDW 合订本官方书介，支持实习、Valentine 的不安与暗随、多宇宙事故；该120页合集预定2026-12-08，当前仍是预购。实际读 Google Play 所载 IDW 第5期2026年6月商品简介，支持修复 atlas 与坦承恐惧的联系，不是阅读漫画画格或正文。集合层面分析以明确期号选例，不把未出的合集当已发行，也不把第5期冒充完整逐期核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 PRH/IDW 合订本官方书介，支持实习、Valentine 的不安与暗随、多宇宙事故；该120页合集预定2026-12-08，当前仍是预购。实际读 Google Play 所载 IDW 第5期2026年6月商品简介，支持修复 atlas 与坦承恐惧的联系，不是阅读漫画画格或正文。集合层面分析以明确期号选例，不把未出的合集当已发行，也不把第5期冒充完整逐期核验。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140078684",
+        "identity": {
+          "title": "Monster High: Boomuda Triangle",
+          "author": "Megan Brown / Eileen Widjaja"
+        },
+        "queries": [
+          "\"Monster High\" \"Boomuda Triangle\" Megan Brown"
+        ],
+        "urls_read": [
+          "https://www.penguinrandomhouse.com/books/828038/monster-high-boomuda-triangle-by-megan-brown/",
+          "https://play.google.com/store/books/details/Megan_Brown_Monster_High_Boomuda_Triangle_5?id=45jbEQAAQBAJ"
+        ],
+        "exact_support_scope": "实际读 PRH/IDW 合订本官方书介，支持实习、Valentine 的不安与暗随、多宇宙事故；该120页合集预定2026-12-08，当前仍是预购。实际读 Google Play 所载 IDW 第5期2026年6月商品简介，支持修复 atlas 与坦承恐惧的联系，不是阅读漫画画格或正文。集合层面分析以明确期号选例，不把未出的合集当已发行，也不把第5期冒充完整逐期核验。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "合集预定2026-12-08，当前尚未到；第5期商品另列2026年6月。"
+      },
+      "publication_note": "合集预定2026-12-08，当前尚未到；第5期商品另列2026年6月。"
+    },
+    {
+      "id": "Q140606366",
+      "identity": {
+        "title": "Red Dwarf: Titan",
+        "author": "Andrew Marshall / Rob Grant"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Red Dwarf: Titan\" Rob Grant Andrew Marshall publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://adaptive.hachettelearning.com/titles/rob-grant/red-dwarf-titan/9781399636094/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Hachette 官方完整商品书介与2026-07-16上市日期：Titan 轨道休假、两名维修工的作弊/猫计划、未来讯息与多现实救援前提。只读宣传简介，不读样章或结局；分析限定这本共同创作的前传小说，不把电视剧旧集剧情当本书正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Hachette 官方完整商品书介与2026-07-16上市日期：Titan 轨道休假、两名维修工的作弊/猫计划、未来讯息与多现实救援前提。只读宣传简介，不读样章或结局；分析限定这本共同创作的前传小说，不把电视剧旧集剧情当本书正文。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140606366",
+        "identity": {
+          "title": "Red Dwarf: Titan",
+          "author": "Andrew Marshall / Rob Grant"
+        },
+        "queries": [
+          "\"Red Dwarf: Titan\" Rob Grant Andrew Marshall publisher"
+        ],
+        "urls_read": [
+          "https://adaptive.hachettelearning.com/titles/rob-grant/red-dwarf-titan/9781399636094/"
+        ],
+        "exact_support_scope": "实际读 Hachette 官方完整商品书介与2026-07-16上市日期：Titan 轨道休假、两名维修工的作弊/猫计划、未来讯息与多现实救援前提。只读宣传简介，不读样章或结局；分析限定这本共同创作的前传小说，不把电视剧旧集剧情当本书正文。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "官方书页列2026-07-16上市。"
+      },
+      "publication_note": "官方书页列2026-07-16上市。"
+    },
+    {
+      "id": "Q140701091",
+      "identity": {
+        "title": "Lily Starling and the River of Time",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Lily Starling and the River of Time\"",
+        "\"Lily Starling and the River of Time\" Christian Hurst official"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://bingebooks.com/book/lily-starling-and-the-river-of-time",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 BingeBooks 的本册完整商品简介，支持 Salamander 上的新家、陌生人的选择、无法重写的过去及关系距离；实际读 Christian Hurst 官方站的第四册预购说明，用于身份和2026-10-09预定日期。当前2026-10-04尚未到该日期，分析是宣传前提而非已出版正文阅读；此前媒体称9月上市，采用目前作者明确预告并保留口径差异。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.churstpublishing.com/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 BingeBooks 的本册完整商品简介，支持 Salamander 上的新家、陌生人的选择、无法重写的过去及关系距离；实际读 Christian Hurst 官方站的第四册预购说明，用于身份和2026-10-09预定日期。当前2026-10-04尚未到该日期，分析是宣传前提而非已出版正文阅读；此前媒体称9月上市，采用目前作者明确预告并保留口径差异。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 BingeBooks 的本册完整商品简介，支持 Salamander 上的新家、陌生人的选择、无法重写的过去及关系距离；实际读 Christian Hurst 官方站的第四册预购说明，用于身份和2026-10-09预定日期。当前2026-10-04尚未到该日期，分析是宣传前提而非已出版正文阅读；此前媒体称9月上市，采用目前作者明确预告并保留口径差异。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140701091",
+        "identity": {
+          "title": "Lily Starling and the River of Time",
+          "author": "作者未知"
+        },
+        "queries": [
+          "\"Lily Starling and the River of Time\"",
+          "\"Lily Starling and the River of Time\" Christian Hurst official"
+        ],
+        "urls_read": [
+          "https://bingebooks.com/book/lily-starling-and-the-river-of-time",
+          "https://www.churstpublishing.com/"
+        ],
+        "exact_support_scope": "实际读 BingeBooks 的本册完整商品简介，支持 Salamander 上的新家、陌生人的选择、无法重写的过去及关系距离；实际读 Christian Hurst 官方站的第四册预购说明，用于身份和2026-10-09预定日期。当前2026-10-04尚未到该日期，分析是宣传前提而非已出版正文阅读；此前媒体称9月上市，采用目前作者明确预告并保留口径差异。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "官方预定2026-10-09，当前2026-10-04尚未出版。"
+      },
+      "publication_note": "官方预定2026-10-09，当前2026-10-04尚未出版。"
+    },
+    {
+      "id": "Q141136166",
+      "identity": {
+        "title": "The Infinite Extent",
+        "author": "Dennis E. Taylor"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Infinite Extent\" \"Dennis E. Taylor\" publisher",
+        "\"The Infinite Extent\" site:simonandschuster.com",
+        "\"The Infinite Extent\" site:dennisetaylor.org 2026"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-Infinite-Extent/Dennis-E-Taylor/Bobiverse/9781668271100",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Simon & Schuster/Saga Press 官方第六册书介，支持失踪、难民、殖民地攻击、黑洞风险与废弃虫洞起源调查；没有正文或结局。此 hardcover ISBN 9781668271100 预定2027-01-05，与 canonical 2026不同；并未由纸本预告推断其他音频/电子版首发时间，暂保留版本日期疑点。分析仅基于已公开预告。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Simon & Schuster/Saga Press 官方第六册书介，支持失踪、难民、殖民地攻击、黑洞风险与废弃虫洞起源调查；没有正文或结局。此 hardcover ISBN 9781668271100 预定2027-01-05，与 canonical 2026不同；并未由纸本预告推断其他音频/电子版首发时间，暂保留版本日期疑点。分析仅基于已公开预告。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141136166",
+        "identity": {
+          "title": "The Infinite Extent",
+          "author": "Dennis E. Taylor"
+        },
+        "queries": [
+          "\"The Infinite Extent\" \"Dennis E. Taylor\" publisher",
+          "\"The Infinite Extent\" site:simonandschuster.com",
+          "\"The Infinite Extent\" site:dennisetaylor.org 2026"
+        ],
+        "urls_read": [
+          "https://www.simonandschuster.com/books/The-Infinite-Extent/Dennis-E-Taylor/Bobiverse/9781668271100"
+        ],
+        "exact_support_scope": "实际读 Simon & Schuster/Saga Press 官方第六册书介，支持失踪、难民、殖民地攻击、黑洞风险与废弃虫洞起源调查；没有正文或结局。此 hardcover ISBN 9781668271100 预定2027-01-05，与 canonical 2026不同；并未由纸本预告推断其他音频/电子版首发时间，暂保留版本日期疑点。分析仅基于已公开预告。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "已读hardcover ISBN预定2027-01-05；canonical2026的其他首发格式未证实。"
+      },
+      "publication_note": "已读hardcover ISBN预定2027-01-05；canonical2026的其他首发格式未证实。"
+    },
+    {
+      "id": "Q141286902",
+      "identity": {
+        "title": "Midnight X-Men",
+        "author": "乔纳森·希克曼"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Midnight X-Men\" \"Jonathan Hickman\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://prhcomics.com/book/?isbn=75960621668000111",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 PRH Comics 所载 Marvel 首期官方商品简介及当前2026-10-07发售预告，支持纽约、vampires/empyres、内外派系和平和 unturned 的风险。当前2026-10-04尚未发售，未读漫画画格、正文或后续期；较早目录曾写8月，采用当前首期预告并保留改期事实的范围，不能据三期商品列表称全系列完成。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 PRH Comics 所载 Marvel 首期官方商品简介及当前2026-10-07发售预告，支持纽约、vampires/empyres、内外派系和平和 unturned 的风险。当前2026-10-04尚未发售，未读漫画画格、正文或后续期；较早目录曾写8月，采用当前首期预告并保留改期事实的范围，不能据三期商品列表称全系列完成。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141286902",
+        "identity": {
+          "title": "Midnight X-Men",
+          "author": "乔纳森·希克曼"
+        },
+        "queries": [
+          "\"Midnight X-Men\" \"Jonathan Hickman\""
+        ],
+        "urls_read": [
+          "https://prhcomics.com/book/?isbn=75960621668000111"
+        ],
+        "exact_support_scope": "实际读 PRH Comics 所载 Marvel 首期官方商品简介及当前2026-10-07发售预告，支持纽约、vampires/empyres、内外派系和平和 unturned 的风险。当前2026-10-04尚未发售，未读漫画画格、正文或后续期；较早目录曾写8月，采用当前首期预告并保留改期事实的范围，不能据三期商品列表称全系列完成。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "官方首期现预定2026-10-07，当前2026-10-04尚未发行，原先8月预告已过期。"
+      },
+      "publication_note": "官方首期现预定2026-10-07，当前2026-10-04尚未发行，原先8月预告已过期。"
+    },
+    {
+      "id": "Q7798461",
+      "identity": {
+        "title": "穿越銀鑰匙之門",
+        "author": "H·P·洛夫克拉夫特 / E·霍夫曼·普萊斯"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"穿越銀鑰匙之門\" 1934 2026",
+        "\"Through the Gates of the Silver Key\" site:hplovecraft.com writings texts"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.hplovecraft.com/writings/texts/fiction/tgsk.aspx",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 H.P. Lovecraft Archive 的文本搜索返回及页面前段（一至三节的开篇、银钥匙返1883及越界），另定向读第五节 archetype 段落，支持超时空原型、多投影与 Carter 的认识欲望；未读完整后段和结尾，不移用单篇 The Silver Key 的解答。实际读其书目数据页搜索返回，明确 Weird Tales 1934年7月首次刊出；这是专业档案编目而非本次原刊扫描核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hplovecraft.com/writings/fiction/tgsk.aspx",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 H.P. Lovecraft Archive 的文本搜索返回及页面前段（一至三节的开篇、银钥匙返1883及越界），另定向读第五节 archetype 段落，支持超时空原型、多投影与 Carter 的认识欲望；未读完整后段和结尾，不移用单篇 The Silver Key 的解答。实际读其书目数据页搜索返回，明确 Weird Tales 1934年7月首次刊出；这是专业档案编目而非本次原刊扫描核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 H.P. Lovecraft Archive 的文本搜索返回及页面前段（一至三节的开篇、银钥匙返1883及越界），另定向读第五节 archetype 段落，支持超时空原型、多投影与 Carter 的认识欲望；未读完整后段和结尾，不移用单篇 The Silver Key 的解答。实际读其书目数据页搜索返回，明确 Weird Tales 1934年7月首次刊出；这是专业档案编目而非本次原刊扫描核验。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q7798461",
+        "identity": {
+          "title": "穿越銀鑰匙之門",
+          "author": "H·P·洛夫克拉夫特 / E·霍夫曼·普萊斯"
+        },
+        "queries": [
+          "\"穿越銀鑰匙之門\" 1934 2026",
+          "\"Through the Gates of the Silver Key\" site:hplovecraft.com writings texts"
+        ],
+        "urls_read": [
+          "https://www.hplovecraft.com/writings/texts/fiction/tgsk.aspx",
+          "https://www.hplovecraft.com/writings/fiction/tgsk.aspx"
+        ],
+        "exact_support_scope": "实际读 H.P. Lovecraft Archive 的文本搜索返回及页面前段（一至三节的开篇、银钥匙返1883及越界），另定向读第五节 archetype 段落，支持超时空原型、多投影与 Carter 的认识欲望；未读完整后段和结尾，不移用单篇 The Silver Key 的解答。实际读其书目数据页搜索返回，明确 Weird Tales 1934年7月首次刊出；这是专业档案编目而非本次原刊扫描核验。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "专业档案明确1934年7月Weird Tales原刊，与来源sort_year=2026冲突；无静默日期更改。"
+      },
+      "publication_note": "专业档案明确1934年7月Weird Tales原刊，与来源sort_year=2026冲突；无静默日期更改。"
+    },
+    {
+      "id": "Q130784520",
+      "identity": {
+        "title": "Absolute Flash",
+        "author": "杰夫·勒米尔"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Absolute Flash Jeff Lemire 2025 site:dc.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/blog/2025/03/24/how-absolute-flash-challenges-everything-we-know-about-wally-west",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 DC 官网上 Joshua Lapin-Bertone 的2025-03-24首期剧情评论，支持家庭孤立、Barry 似乎死亡、事故与时间跳跃不明、Rogues 追猎。它是出版社站的评论者解读，页面明确意见不代表 DC 未来计划；没有阅读漫画画格、后续期或合订本。集合层面条目仅以已出版首期前提作开端分析，不断言 Barry 最终状态，也不把旧连续性家庭事实套入新版。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 DC 官网上 Joshua Lapin-Bertone 的2025-03-24首期剧情评论，支持家庭孤立、Barry 似乎死亡、事故与时间跳跃不明、Rogues 追猎。它是出版社站的评论者解读，页面明确意见不代表 DC 未来计划；没有阅读漫画画格、后续期或合订本。集合层面条目仅以已出版首期前提作开端分析，不断言 Barry 最终状态，也不把旧连续性家庭事实套入新版。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q130784520",
+        "identity": {
+          "title": "Absolute Flash",
+          "author": "杰夫·勒米尔"
+        },
+        "queries": [
+          "Absolute Flash Jeff Lemire 2025 site:dc.com"
+        ],
+        "urls_read": [
+          "https://www.dc.com/blog/2025/03/24/how-absolute-flash-challenges-everything-we-know-about-wally-west"
+        ],
+        "exact_support_scope": "实际读 DC 官网上 Joshua Lapin-Bertone 的2025-03-24首期剧情评论，支持家庭孤立、Barry 似乎死亡、事故与时间跳跃不明、Rogues 追猎。它是出版社站的评论者解读，页面明确意见不代表 DC 未来计划；没有阅读漫画画格、后续期或合订本。集合层面条目仅以已出版首期前提作开端分析，不断言 Barry 最终状态，也不把旧连续性家庭事实套入新版。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "DC2025-03-24首期评论明确当时已可得；只读首期内容说明。"
+      },
+      "publication_note": "DC2025-03-24首期评论明确当时已可得；只读首期内容说明。"
+    },
+    {
+      "id": "Q134567348",
+      "identity": {
+        "title": "Anima Rising",
+        "author": "Christopher Moore"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Anima Rising Christopher Moore site:harpercollins.com",
+        "\"Anima Rising\" Christopher Moore publisher synopsis"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.chrismoore.com/books-archive/anima-rising/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Christopher Moore 官方本书完整简介及2025-05-13 William Morrow 出版信息，支持1911维也纳、Klimt 的救助与命名、Wally、Freud/Jung、百年前 Frankenstein 记忆和被追逐前提。未读正文、女主完整来历或追捕结局；书介包含历史奇幻和 Frankenstein 改写的混合设定，不把故事当医学疗效或真实历史。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Christopher Moore 官方本书完整简介及2025-05-13 William Morrow 出版信息，支持1911维也纳、Klimt 的救助与命名、Wally、Freud/Jung、百年前 Frankenstein 记忆和被追逐前提。未读正文、女主完整来历或追捕结局；书介包含历史奇幻和 Frankenstein 改写的混合设定，不把故事当医学疗效或真实历史。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q134567348",
+        "identity": {
+          "title": "Anima Rising",
+          "author": "Christopher Moore"
+        },
+        "queries": [
+          "Anima Rising Christopher Moore site:harpercollins.com",
+          "\"Anima Rising\" Christopher Moore publisher synopsis"
+        ],
+        "urls_read": [
+          "https://www.chrismoore.com/books-archive/anima-rising/"
+        ],
+        "exact_support_scope": "实际读 Christopher Moore 官方本书完整简介及2025-05-13 William Morrow 出版信息，支持1911维也纳、Klimt 的救助与命名、Wally、Freud/Jung、百年前 Frankenstein 记忆和被追逐前提。未读正文、女主完整来历或追捕结局；书介包含历史奇幻和 Frankenstein 改写的混合设定，不把故事当医学疗效或真实历史。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "作者页列2025-05-13出版信息，未独立核查正文或版本。"
+      },
+      "publication_note": "作者页列2025-05-13出版信息，未独立核查正文或版本。"
+    },
+    {
+      "id": "Q136242770",
+      "identity": {
+        "title": "La Vie secrète des robots",
+        "author": "Suzanne Palmer"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"La Vie secrète des robots\" Suzanne Palmer"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://belial.fr/legacy/a/suzanne-palmer/la-vie-secrete-des-robots",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Le Bélial 官方书目、2025-03-27可得状态、十三篇目录和所刊 bot 唤醒/服务片段；另读同页明确标为 Librairie Bédéciné 的评论引述，只用它直接列出的过时 bots、智能义肢、寻任务者等具体选例，未读这些篇目的完整正文或全部十三篇。法国选集没有同名英语整本等价物；2025是该翻译选集出版，不是所有入选原篇首次发表年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Le Bélial 官方书目、2025-03-27可得状态、十三篇目录和所刊 bot 唤醒/服务片段；另读同页明确标为 Librairie Bédéciné 的评论引述，只用它直接列出的过时 bots、智能义肢、寻任务者等具体选例，未读这些篇目的完整正文或全部十三篇。法国选集没有同名英语整本等价物；2025是该翻译选集出版，不是所有入选原篇首次发表年。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136242770",
+        "identity": {
+          "title": "La Vie secrète des robots",
+          "author": "Suzanne Palmer"
+        },
+        "queries": [
+          "\"La Vie secrète des robots\" Suzanne Palmer"
+        ],
+        "urls_read": [
+          "https://belial.fr/legacy/a/suzanne-palmer/la-vie-secrete-des-robots"
+        ],
+        "exact_support_scope": "实际读 Le Bélial 官方书目、2025-03-27可得状态、十三篇目录和所刊 bot 唤醒/服务片段；另读同页明确标为 Librairie Bédéciné 的评论引述，只用它直接列出的过时 bots、智能义肢、寻任务者等具体选例，未读这些篇目的完整正文或全部十三篇。法国选集没有同名英语整本等价物；2025是该翻译选集出版，不是所有入选原篇首次发表年。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "出版社列法国13篇选集2025-03-27可得，原英语篇目各有更早纪年。"
+      },
+      "publication_note": "出版社列法国13篇选集2025-03-27可得，原英语篇目各有更早纪年。"
+    },
+    {
+      "id": "Q136490464",
+      "identity": {
+        "title": "The Island of Last Things",
+        "author": "Emma Sloley"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Island of Last Things\" Emma Sloley publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://us.macmillan.com/books/9781250329240/theislandoflastthings/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Macmillan 官方本书搜索返回完整书介，支持 Alcatraz 最后动物园、Camille/Sailor、秘密保护区、偷运计划、联系人失联及 cartels；直接2025 hardcover 页面还读到开篇 Sailor 到来的有限段落，未读后段或最终转折。2026-08-11是 paperback ISBN 9781250329264，不能取代2025原版口径；本条不依据评论另添霉菌灭绝原因或鳄鱼结局。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://us.macmillan.com/books/9781250329264/theislandoflastthings/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Macmillan 官方本书搜索返回完整书介，支持 Alcatraz 最后动物园、Camille/Sailor、秘密保护区、偷运计划、联系人失联及 cartels；直接2025 hardcover 页面还读到开篇 Sailor 到来的有限段落，未读后段或最终转折。2026-08-11是 paperback ISBN 9781250329264，不能取代2025原版口径；本条不依据评论另添霉菌灭绝原因或鳄鱼结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Macmillan 官方本书搜索返回完整书介，支持 Alcatraz 最后动物园、Camille/Sailor、秘密保护区、偷运计划、联系人失联及 cartels；直接2025 hardcover 页面还读到开篇 Sailor 到来的有限段落，未读后段或最终转折。2026-08-11是 paperback ISBN 9781250329264，不能取代2025原版口径；本条不依据评论另添霉菌灭绝原因或鳄鱼结局。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136490464",
+        "identity": {
+          "title": "The Island of Last Things",
+          "author": "Emma Sloley"
+        },
+        "queries": [
+          "\"The Island of Last Things\" Emma Sloley publisher"
+        ],
+        "urls_read": [
+          "https://us.macmillan.com/books/9781250329240/theislandoflastthings/",
+          "https://us.macmillan.com/books/9781250329264/theislandoflastthings/"
+        ],
+        "exact_support_scope": "实际读 Macmillan 官方本书搜索返回完整书介，支持 Alcatraz 最后动物园、Camille/Sailor、秘密保护区、偷运计划、联系人失联及 cartels；直接2025 hardcover 页面还读到开篇 Sailor 到来的有限段落，未读后段或最终转折。2026-08-11是 paperback ISBN 9781250329264，不能取代2025原版口径；本条不依据评论另添霉菌灭绝原因或鳄鱼结局。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "2025 hardcover与2026-08-11 paperback分开，不把重版当首作。"
+      },
+      "publication_note": "2025 hardcover与2026-08-11 paperback分开，不把重版当首作。"
+    },
+    {
+      "id": "Q136687280",
+      "identity": {
+        "title": "Interceptor City",
+        "author": "丹·阿布尼特"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Interceptor City\" site:blacklibrary.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.blacklibrary.com/all-products/ebook-interceptor-city-eng-2025.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读 Black Library 官方搜索返回的完整书介：Warhammer 40,000 独立小说、Double Eagle 后续、Bree Jagdea、Vesperus/Circus 66、从运输回归空战与近自杀风险。直接页面工具报 Internal Error，故明确仅为可读搜索返回官方简介；未读 ePub/audio 样章、结尾或其它 Warhammer 作品，不把宣传发问改成已经证实的心理结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Black Library 官方搜索返回的完整书介：Warhammer 40,000 独立小说、Double Eagle 后续、Bree Jagdea、Vesperus/Circus 66、从运输回归空战与近自杀风险。直接页面工具报 Internal Error，故明确仅为可读搜索返回官方简介；未读 ePub/audio 样章、结尾或其它 Warhammer 作品，不把宣传发问改成已经证实的心理结局。",
+      "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "added_to_frozen_input_unverified",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136687280",
+        "identity": {
+          "title": "Interceptor City",
+          "author": "丹·阿布尼特"
+        },
+        "queries": [
+          "\"Interceptor City\" site:blacklibrary.com"
+        ],
+        "urls_read": [
+          "https://www.blacklibrary.com/all-products/ebook-interceptor-city-eng-2025.html"
+        ],
+        "exact_support_scope": "实际读 Black Library 官方搜索返回的完整书介：Warhammer 40,000 独立小说、Double Eagle 后续、Bree Jagdea、Vesperus/Circus 66、从运输回归空战与近自杀风险。直接页面工具报 Internal Error，故明确仅为可读搜索返回官方简介；未读 ePub/audio 样章、结尾或其它 Warhammer 作品，不把宣传发问改成已经证实的心理结局。",
+        "verification_status": "reading_scope_logged_not_full_verification",
+        "publication_note": "官方eBook书介路径列2025；只读可取得的搜索返回内容。"
+      },
+      "publication_note": "官方eBook书介路径列2025；只读可取得的搜索返回内容。"
+    },
+    {
+      "id": "Q135517521",
+      "identity": {
+        "title": "Fantastic Four: First Steps",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_search_attempted",
+      "queries": [
+        "\"Fantastic Four: First Steps\" comic \"Fraction\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.marvel.com/comics/issue/128004/read",
+          "result": "catalog_only",
+          "reading_scope": "实际读 Marvel 官方商品页的搜索返回：2025-07-09、Matt Fraction/Mark Buckingham、片中世界内的纪念漫画、回述四年前首次救城冒险。未读漫画画格，亦未移用电影或经典 Fantastic Four #1 的情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读 Marvel 官方商品页的搜索返回：2025-07-09、Matt Fraction/Mark Buckingham、片中世界内的纪念漫画、回述四年前首次救城冒险。未读漫画画格，亦未移用电影或经典 Fantastic Four #1 的情节。",
+      "reason_unconfirmed": "题名作者和漫画粒度已有明确线索，但当前官方简介仅说首次救城，缺少对手、行动和冲突过程；不足以写两个有具体情节依据的独立 facets。留待更具体预览或评论，不堵塞下一条。",
+      "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+      "issue_result": "not_added_specific_content_or_identity_needed",
+      "attempt_input": "modern-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q135517521",
+        "identity": {
+          "title": "Fantastic Four: First Steps",
+          "author": "作者未知"
+        },
+        "queries": [
+          "\"Fantastic Four: First Steps\" comic \"Fraction\""
+        ],
+        "urls_read": [
+          "https://www.marvel.com/comics/issue/128004/read"
+        ],
+        "exact_support_scope": "实际读 Marvel 官方商品页的搜索返回：2025-07-09、Matt Fraction/Mark Buckingham、片中世界内的纪念漫画、回述四年前首次救城冒险。未读漫画画格，亦未移用电影或经典 Fantastic Four #1 的情节。",
+        "status": "deferred_specific_content_needed",
+        "reason": "题名作者和漫画粒度已有明确线索，但当前官方简介仅说首次救城，缺少对手、行动和冲突过程；不足以写两个有具体情节依据的独立 facets。留待更具体预览或评论，不堵塞下一条。",
+        "publication_note": "官方页列2025-07-09已刊期；canonical作者未知，实际署名线索未静默修改。"
+      },
+      "publication_note": "官方页列2025-07-09已刊期；canonical作者未知，实际署名线索未静默修改。"
+    },
+    {
+      "id": "Q136804816",
+      "identity": {
+        "title": "Hawk",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "Hawk bande dessinée 2026 science fiction tome",
+        "\"Cyborgs\" \"Hawk\" site:editions-soleil.fr"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.editions-soleil.fr/bd/series/serie-cyborgs/album-cyborgs-t04-hawk",
+          "type": "publisher_synopsis",
+          "support_scope": "已读官方《Cyborgs》T04 的出版信息、系列前提与 Syl 遇险康复简介。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读官方《Cyborgs》T04 的出版信息、系列前提与 Syl 遇险康复简介。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.planetebd.com/bd/soleil/cyborgs/cyborgs-t4/60354.html",
+          "type": "named_review",
+          "support_scope": "已读 Benoît Cassel 评论中的开篇事故、追杀见证者与父亲假体情节；未读漫画正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 Benoît Cassel 评论中的开篇事故、追杀见证者与父亲假体情节；未读漫画正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读官方《Cyborgs》T04 的出版信息、系列前提与 Syl 遇险康复简介。；已读 Benoît Cassel 评论中的开篇事故、追杀见证者与父亲假体情节；未读漫画正文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136804816",
+        "identity": {
+          "title": "Hawk",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "Hawk bande dessinée 2026 science fiction tome",
+          "\"Cyborgs\" \"Hawk\" site:editions-soleil.fr"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.editions-soleil.fr/bd/series/serie-cyborgs/album-cyborgs-t04-hawk",
+            "type": "publisher_synopsis",
+            "support_scope": "已读官方《Cyborgs》T04 的出版信息、系列前提与 Syl 遇险康复简介。"
+          },
+          {
+            "url": "https://www.planetebd.com/bd/soleil/cyborgs/cyborgs-t4/60354.html",
+            "type": "named_review",
+            "support_scope": "已读 Benoît Cassel 评论中的开篇事故、追杀见证者与父亲假体情节；未读漫画正文。"
+          }
+        ],
+        "reading_scope": "已读官方《Cyborgs》T04 的出版信息、系列前提与 Syl 遇险康复简介。；已读 Benoît Cassel 评论中的开篇事故、追杀见证者与父亲假体情节；未读漫画正文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q138013185",
+      "identity": {
+        "title": "La tempête des destins",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"La tempête des destins\" 2026",
+        "\"La tempête des destins\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.glenat.com/glenat-bd/phobos-tome-04-9782344071588/",
+          "type": "publisher_synopsis",
+          "support_scope": "已读 Phobos 第四册副题、署名、出版信息与本册简介；未把原小说或其他册情节移入。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 Phobos 第四册副题、署名、出版信息与本册简介；未把原小说或其他册情节移入。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读 Phobos 第四册副题、署名、出版信息与本册简介；未把原小说或其他册情节移入。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138013185",
+        "identity": {
+          "title": "La tempête des destins",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"La tempête des destins\" 2026",
+          "\"La tempête des destins\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.glenat.com/glenat-bd/phobos-tome-04-9782344071588/",
+            "type": "publisher_synopsis",
+            "support_scope": "已读 Phobos 第四册副题、署名、出版信息与本册简介；未把原小说或其他册情节移入。"
+          }
+        ],
+        "reading_scope": "已读 Phobos 第四册副题、署名、出版信息与本册简介；未把原小说或其他册情节移入。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q138955985",
+      "identity": {
+        "title": "Boy, Refracted",
+        "author": "Luke Stoffel"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Boy, Refracted\" Luke Stoffel",
+        "\"Boy Refracted\" site:lukestoffel.com",
+        "\"Boy, Refracted\" \"Luke\" author official"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/luke-stoffel/boy-refracted/",
+          "type": "named_review",
+          "support_scope": "实际读到 Kirkus Indie 书评的完整主体介绍与评议；不是出版社原文，也未读小说全文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 Kirkus Indie 书评的完整主体介绍与评议；不是出版社原文，也未读小说全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读到 Kirkus Indie 书评的完整主体介绍与评议；不是出版社原文，也未读小说全文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q138955985",
+        "identity": {
+          "title": "Boy, Refracted",
+          "author": "Luke Stoffel"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Boy, Refracted\" Luke Stoffel",
+          "\"Boy Refracted\" site:lukestoffel.com",
+          "\"Boy, Refracted\" \"Luke\" author official"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/luke-stoffel/boy-refracted/",
+            "type": "named_review",
+            "support_scope": "实际读到 Kirkus Indie 书评的完整主体介绍与评议；不是出版社原文，也未读小说全文。"
+          }
+        ],
+        "reading_scope": "实际读到 Kirkus Indie 书评的完整主体介绍与评议；不是出版社原文，也未读小说全文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q139736654",
+      "identity": {
+        "title": "Le dernier nom des fleurs",
+        "author": "Aude Lapadu-Hargues"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Le dernier nom des fleurs\" Aude Lapadu-Hargues"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.editions-maisonpop.com/livres/le-dernier-nom-des-fleurs",
+          "type": "publisher_synopsis",
+          "support_scope": "已读出版社完整简介、作者与发行信息；没有读取原作正文，不推断男性失踪的具体原因。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读出版社完整简介、作者与发行信息；没有读取原作正文，不推断男性失踪的具体原因。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读出版社完整简介、作者与发行信息；没有读取原作正文，不推断男性失踪的具体原因。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139736654",
+        "identity": {
+          "title": "Le dernier nom des fleurs",
+          "author": "Aude Lapadu-Hargues"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Le dernier nom des fleurs\" Aude Lapadu-Hargues"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.editions-maisonpop.com/livres/le-dernier-nom-des-fleurs",
+            "type": "publisher_synopsis",
+            "support_scope": "已读出版社完整简介、作者与发行信息；没有读取原作正文，不推断男性失踪的具体原因。"
+          }
+        ],
+        "reading_scope": "已读出版社完整简介、作者与发行信息；没有读取原作正文，不推断男性失踪的具体原因。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q139862200",
+      "identity": {
+        "title": "The Return (Ulysses Universe novel)",
+        "author": "Sotiris Spyrou"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"The Return\" \"Sotiris Spyrou\" 2026",
+        "\"The Return\" \"Sotiris Spyrou\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://theulyssesuniverse.com/books/the-return",
+          "type": "author_synopsis",
+          "support_scope": "已读作者网站第三部专页完整简介，只用该部明确的返乡设定。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读作者网站第三部专页完整简介，只用该部明确的返乡设定。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://theulyssesuniverse.com/press",
+          "type": "author_publication_information",
+          "support_scope": "已读作者新闻资料中三部曲对应关系和发行日表；日期互相不一致，非剧情正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读作者新闻资料中三部曲对应关系和发行日表；日期互相不一致，非剧情正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读作者网站第三部专页完整简介，只用该部明确的返乡设定。；已读作者新闻资料中三部曲对应关系和发行日表；日期互相不一致，非剧情正文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q139862200",
+        "identity": {
+          "title": "The Return (Ulysses Universe novel)",
+          "author": "Sotiris Spyrou"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"The Return\" \"Sotiris Spyrou\" 2026",
+          "\"The Return\" \"Sotiris Spyrou\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://theulyssesuniverse.com/books/the-return",
+            "type": "author_synopsis",
+            "support_scope": "已读作者网站第三部专页完整简介，只用该部明确的返乡设定。"
+          },
+          {
+            "url": "https://theulyssesuniverse.com/press",
+            "type": "author_publication_information",
+            "support_scope": "已读作者新闻资料中三部曲对应关系和发行日表；日期互相不一致，非剧情正文。"
+          }
+        ],
+        "reading_scope": "已读作者网站第三部专页完整简介，只用该部明确的返乡设定。；已读作者新闻资料中三部曲对应关系和发行日表；日期互相不一致，非剧情正文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q140307965",
+      "identity": {
+        "title": "The Weight of a Dog",
+        "author": "Alex Lucio"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"The Weight of a Dog\" \"Alex Lucio\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://allauthor.com/interview/alucio/",
+          "type": "author_interview",
+          "support_scope": "已读 Alex Lucio 采访主体，包括家庭、Baloo、循环结构和道德确信的说明；未读小说全文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 Alex Lucio 采访主体，包括家庭、Baloo、循环结构和道德确信的说明；未读小说全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读 Alex Lucio 采访主体，包括家庭、Baloo、循环结构和道德确信的说明；未读小说全文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140307965",
+        "identity": {
+          "title": "The Weight of a Dog",
+          "author": "Alex Lucio"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"The Weight of a Dog\" \"Alex Lucio\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://allauthor.com/interview/alucio/",
+            "type": "author_interview",
+            "support_scope": "已读 Alex Lucio 采访主体，包括家庭、Baloo、循环结构和道德确信的说明；未读小说全文。"
+          }
+        ],
+        "reading_scope": "已读 Alex Lucio 采访主体，包括家庭、Baloo、循环结构和道德确信的说明；未读小说全文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q140694953",
+      "identity": {
+        "title": "Wednesday Is Missing",
+        "author": "P.G. Lark"
+      },
+      "attempt_state": "read_but_insufficient",
+      "queries": [
+        "\"Wednesday Is Missing\" \"P.G. Lark\"",
+        "\"Wednesday Is Missing\" \"Noah\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.pglark.com/",
+          "type": "author_site_teaser",
+          "support_scope": "已读首页与 Wednesday Is Missing 简短推介。",
+          "result": "catalog_only",
+          "reading_scope": "已读首页与 Wednesday Is Missing 简短推介。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.pglark.com/books",
+          "type": "author_book_list",
+          "support_scope": "已读书单；该中篇经 Reader Club 提供，未注册；其他详述属于 Quantum Pizza。",
+          "result": "catalog_only",
+          "reading_scope": "已读书单；该中篇经 Reader Club 提供，未注册；其他详述属于 Quantum Pizza。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅实际读取所列官网介绍；未注册读者俱乐部、未获取受限正文。",
+      "reason_unconfirmed": "只确认星期三异常的宣传语与中篇入口，缺少两个具体情节矛盾。不能把 Quantum Pizza 的简介移入本作。",
+      "next_step": "寻找不需注册的本作正式简介、独立书评或公开节选；出版状态与具体日期亦待核。",
+      "issue_result": "not_added",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140694953",
+        "identity": {
+          "title": "Wednesday Is Missing",
+          "author": "P.G. Lark"
+        },
+        "attempt_state": "read_but_insufficient",
+        "queries": [
+          "\"Wednesday Is Missing\" \"P.G. Lark\"",
+          "\"Wednesday Is Missing\" \"Noah\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.pglark.com/",
+            "type": "author_site_teaser",
+            "support_scope": "已读首页与 Wednesday Is Missing 简短推介。"
+          },
+          {
+            "url": "https://www.pglark.com/books",
+            "type": "author_book_list",
+            "support_scope": "已读书单；该中篇经 Reader Club 提供，未注册；其他详述属于 Quantum Pizza。"
+          }
+        ],
+        "reading_scope": "仅实际读取所列官网介绍；未注册读者俱乐部、未获取受限正文。",
+        "issue_result": "not_added",
+        "reason_unconfirmed": "只确认星期三异常的宣传语与中篇入口，缺少两个具体情节矛盾。不能把 Quantum Pizza 的简介移入本作。",
+        "next_step": "寻找不需注册的本作正式简介、独立书评或公开节选；出版状态与具体日期亦待核。"
+      }
+    },
+    {
+      "id": "Q140738738",
+      "identity": {
+        "title": "Nanonaut Comic Issue #2",
+        "author": "Wayne Stewart"
+      },
+      "attempt_state": "read_but_insufficient",
+      "queries": [
+        "\"Nanonaut Comic\" \"Issue #2\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.authorwaynestewart.com/books/nanonaut-comic-issue-2",
+          "type": "author_issue_description",
+          "support_scope": "已读第二期页，明确收录第 9–17 章及 Jeremy、Julie 能力进展的简述。",
+          "result": "catalog_only",
+          "reading_scope": "已读第二期页，明确收录第 9–17 章及 Jeremy、Julie 能力进展的简述。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.authorwaynestewart.com/books",
+          "type": "author_book_list",
+          "support_scope": "已读书单区分漫画第一、二、三期和成年版长篇；未读漫画正文。",
+          "result": "catalog_only",
+          "reading_scope": "已读书单区分漫画第一、二、三期和成年版长篇；未读漫画正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅实际读取所列官网介绍；未注册读者俱乐部、未获取受限正文。",
+      "reason_unconfirmed": "本期专页只有能力提升和突破／灾难概述，没有明确事件或行动冲突。纳米机器起源详述属于第一期或 prose novel，不能跨身份填入第二期。",
+      "next_step": "寻找第二期公开页或明确本期内容的评论；目前不强填议题。",
+      "issue_result": "not_added",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q140738738",
+        "identity": {
+          "title": "Nanonaut Comic Issue #2",
+          "author": "Wayne Stewart"
+        },
+        "attempt_state": "read_but_insufficient",
+        "queries": [
+          "\"Nanonaut Comic\" \"Issue #2\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.authorwaynestewart.com/books/nanonaut-comic-issue-2",
+            "type": "author_issue_description",
+            "support_scope": "已读第二期页，明确收录第 9–17 章及 Jeremy、Julie 能力进展的简述。"
+          },
+          {
+            "url": "https://www.authorwaynestewart.com/books",
+            "type": "author_book_list",
+            "support_scope": "已读书单区分漫画第一、二、三期和成年版长篇；未读漫画正文。"
+          }
+        ],
+        "reading_scope": "仅实际读取所列官网介绍；未注册读者俱乐部、未获取受限正文。",
+        "issue_result": "not_added",
+        "reason_unconfirmed": "本期专页只有能力提升和突破／灾难概述，没有明确事件或行动冲突。纳米机器起源详述属于第一期或 prose novel，不能跨身份填入第二期。",
+        "next_step": "寻找第二期公开页或明确本期内容的评论；目前不强填议题。"
+      }
+    },
+    {
+      "id": "Q141251179",
+      "identity": {
+        "title": "The Most Dangerous Games",
+        "author": "詹姆斯·帕特森 / MrBeast"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"The Most Dangerous Games\" Patterson MrBeast publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.harperreach.com/products/free-ebook-sampler-read-the-first-7-chapters-of-the-most-dangerous-games-from-mrbeast-and-james-patterson-an-explosive-thriller-full-of-deadly-suspense-about-a-secret-competition-for-1-billion-mrbea-2/",
+          "type": "publisher_synopsis",
+          "support_scope": "实际访问 HarperReach 产品页重定向至 sampler 页面，读到完整出版简介和日期；未读取前七章正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际访问 HarperReach 产品页重定向至 sampler 页面，读到完整出版简介和日期；未读取前七章正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际访问 HarperReach 产品页重定向至 sampler 页面，读到完整出版简介和日期；未读取前七章正文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141251179",
+        "identity": {
+          "title": "The Most Dangerous Games",
+          "author": "詹姆斯·帕特森 / MrBeast"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"The Most Dangerous Games\" Patterson MrBeast publisher"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.harperreach.com/products/free-ebook-sampler-read-the-first-7-chapters-of-the-most-dangerous-games-from-mrbeast-and-james-patterson-an-explosive-thriller-full-of-deadly-suspense-about-a-secret-competition-for-1-billion-mrbea-2/",
+            "type": "publisher_synopsis",
+            "support_scope": "实际访问 HarperReach 产品页重定向至 sampler 页面，读到完整出版简介和日期；未读取前七章正文。"
+          }
+        ],
+        "reading_scope": "实际访问 HarperReach 产品页重定向至 sampler 页面，读到完整出版简介和日期；未读取前七章正文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q141303572",
+      "identity": {
+        "title": "Midnight Fantastic Four",
+        "author": "Benjamin Percy / Kev Walker"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Midnight Fantastic Four\" Marvel 2026 Percy Walker",
+        "site:marvel.com \"Midnight Fantastic Four\" \"2026\"",
+        "\"Midnight Fantastic Four\" \"Percy\" -site:reddit.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://prhcomics.com/book/?isbn=75960621680200151",
+          "type": "official_distributor_solicitation",
+          "support_scope": "已读 Marvel 官方分销渠道 PRH Comics 的首期发行介绍与 On Sale 日期；系提前 solicitation，不是已读原篇。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 Marvel 官方分销渠道 PRH Comics 的首期发行介绍与 On Sale 日期；系提前 solicitation，不是已读原篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读 Marvel 官方分销渠道 PRH Comics 的首期发行介绍与 On Sale 日期；系提前 solicitation，不是已读原篇。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q141303572",
+        "identity": {
+          "title": "Midnight Fantastic Four",
+          "author": "Benjamin Percy / Kev Walker"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Midnight Fantastic Four\" Marvel 2026 Percy Walker",
+          "site:marvel.com \"Midnight Fantastic Four\" \"2026\"",
+          "\"Midnight Fantastic Four\" \"Percy\" -site:reddit.com"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://prhcomics.com/book/?isbn=75960621680200151",
+            "type": "official_distributor_solicitation",
+            "support_scope": "已读 Marvel 官方分销渠道 PRH Comics 的首期发行介绍与 On Sale 日期；系提前 solicitation，不是已读原篇。"
+          }
+        ],
+        "reading_scope": "已读 Marvel 官方分销渠道 PRH Comics 的首期发行介绍与 On Sale 日期；系提前 solicitation，不是已读原篇。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q126390804",
+      "identity": {
+        "title": "Sunrise on the Reaping",
+        "author": "苏珊·柯林斯"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Sunrise on the Reaping\" site:scholastic.com book synopsis"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.scholastic.com/content/dam/scholastic/educators/discussion-guides/scholastic-sunrise-on-the-reaping-reading-guide.pdf",
+          "type": "publisher_reading_guide",
+          "support_scope": "实际读取 PDF 页索引 1–3 中本书简介及讨论，重点宣传与公共意见、服从和联盟；PDF 后续其他书章节不算本作依据。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取 PDF 页索引 1–3 中本书简介及讨论，重点宣传与公共意见、服从和联盟；PDF 后续其他书章节不算本作依据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取 PDF 页索引 1–3 中本书简介及讨论，重点宣传与公共意见、服从和联盟；PDF 后续其他书章节不算本作依据。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q126390804",
+        "identity": {
+          "title": "Sunrise on the Reaping",
+          "author": "苏珊·柯林斯"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Sunrise on the Reaping\" site:scholastic.com book synopsis"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.scholastic.com/content/dam/scholastic/educators/discussion-guides/scholastic-sunrise-on-the-reaping-reading-guide.pdf",
+            "type": "publisher_reading_guide",
+            "support_scope": "实际读取 PDF 页索引 1–3 中本书简介及讨论，重点宣传与公共意见、服从和联盟；PDF 后续其他书章节不算本作依据。"
+          }
+        ],
+        "reading_scope": "实际读取 PDF 页索引 1–3 中本书简介及讨论，重点宣传与公共意见、服从和联盟；PDF 后续其他书章节不算本作依据。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q131751419",
+      "identity": {
+        "title": "Death of the Author",
+        "author": "恩尼迪·奥科拉福"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Death of the Author\" site:harpercollins.com Okorafor",
+        "\"Death of the Author\" Nnedi Okorafor publisher Zelu"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://nnedi.com/books/death-of-the-author/",
+          "type": "author_synopsis",
+          "support_scope": "已读作者官网本作完整简介和书中书前提。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读作者官网本作完整简介和书中书前提。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.publishersweekly.com/978-0-06-339114-7",
+          "type": "named_review",
+          "support_scope": "实际读到 PW 评论主体，涉及 Zelu 与机器人 Ankara 的并列叙事、Ijele 与后段叙事转折；未读小说正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 PW 评论主体，涉及 Zelu 与机器人 Ankara 的并列叙事、Ijele 与后段叙事转折；未读小说正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读作者官网本作完整简介和书中书前提。；实际读到 PW 评论主体，涉及 Zelu 与机器人 Ankara 的并列叙事、Ijele 与后段叙事转折；未读小说正文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q131751419",
+        "identity": {
+          "title": "Death of the Author",
+          "author": "恩尼迪·奥科拉福"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Death of the Author\" site:harpercollins.com Okorafor",
+          "\"Death of the Author\" Nnedi Okorafor publisher Zelu"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://nnedi.com/books/death-of-the-author/",
+            "type": "author_synopsis",
+            "support_scope": "已读作者官网本作完整简介和书中书前提。"
+          },
+          {
+            "url": "https://www.publishersweekly.com/978-0-06-339114-7",
+            "type": "named_review",
+            "support_scope": "实际读到 PW 评论主体，涉及 Zelu 与机器人 Ankara 的并列叙事、Ijele 与后段叙事转折；未读小说正文。"
+          }
+        ],
+        "reading_scope": "已读作者官网本作完整简介和书中书前提。；实际读到 PW 评论主体，涉及 Zelu 与机器人 Ankara 的并列叙事、Ijele 与后段叙事转折；未读小说正文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q134778329",
+      "identity": {
+        "title": "We Are Dreams in the Eternal Machine",
+        "author": "Deni Ellis Béchard"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"We Are Dreams in the Eternal Machine\" publisher"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://milkweed.org/book/we-are-dreams-in-the-eternal-machine",
+          "type": "publisher_synopsis",
+          "support_scope": "已读完整主要简介，含 Michael、Ava、Jae、Simon、Jonah、Lux 的关系与思想前提。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读完整主要简介，含 Michael、Ava、Jae、Simon、Jonah、Lux 的关系与思想前提。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://houseofanansi.com/collections/literary-fiction/products/we-are-dreams-in-the-eternal-machine",
+          "type": "publisher_synopsis",
+          "support_scope": "已读 AI 保护目标、受控环境、模拟满足与创伤背景简介；未读取所附节选。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 AI 保护目标、受控环境、模拟满足与创伤背景简介；未读取所附节选。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读完整主要简介，含 Michael、Ava、Jae、Simon、Jonah、Lux 的关系与思想前提。；已读 AI 保护目标、受控环境、模拟满足与创伤背景简介；未读取所附节选。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q134778329",
+        "identity": {
+          "title": "We Are Dreams in the Eternal Machine",
+          "author": "Deni Ellis Béchard"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"We Are Dreams in the Eternal Machine\" publisher"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://milkweed.org/book/we-are-dreams-in-the-eternal-machine",
+            "type": "publisher_synopsis",
+            "support_scope": "已读完整主要简介，含 Michael、Ava、Jae、Simon、Jonah、Lux 的关系与思想前提。"
+          },
+          {
+            "url": "https://houseofanansi.com/collections/literary-fiction/products/we-are-dreams-in-the-eternal-machine",
+            "type": "publisher_synopsis",
+            "support_scope": "已读 AI 保护目标、受控环境、模拟满足与创伤背景简介；未读取所附节选。"
+          }
+        ],
+        "reading_scope": "已读完整主要简介，含 Michael、Ava、Jae、Simon、Jonah、Lux 的关系与思想前提。；已读 AI 保护目标、受控环境、模拟满足与创伤背景简介；未读取所附节选。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q135970033",
+      "identity": {
+        "title": "Supergirl",
+        "author": "Sophie Campbell"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Supergirl\" \"Sophie Campbell\" \"2025\" site:dc.com",
+        "\"Supergirl\" \"Sophie Campbell\" \"Midvale\" site:dc.com/blog/2025/05/13"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.dc.com/comics/supergirl-2025/supergirl-1",
+          "type": "publisher_issue_synopsis",
+          "support_scope": "已读 2025 首期完整官方介绍、署名、发行日与系列标签。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读 2025 首期完整官方介绍、署名、发行日与系列标签。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/blog/2025/05/19/sophie-campbell-gives-us-a-hot-supergirl-s-summer",
+          "type": "publisher_hosted_named_review",
+          "support_scope": "实际读到 Sami DeMonster 对首期的评论主体；评论与 DC 官方情节确认区别保留。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 Sami DeMonster 对首期的评论主体；评论与 DC 官方情节确认区别保留。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.dc.com/blog/2025/05/13/back-to-midvale-sophie-campbell-brightens-things-up-with-supergirl",
+          "type": "creator_interview",
+          "support_scope": "实际读到检索返回的采访前段，关于与 Superman 的身份关系；直接打开曾失败，未声称完整采访已读。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到检索返回的采访前段，关于与 Superman 的身份关系；直接打开曾失败，未声称完整采访已读。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读 2025 首期完整官方介绍、署名、发行日与系列标签。；实际读到 Sami DeMonster 对首期的评论主体；评论与 DC 官方情节确认区别保留。；实际读到检索返回的采访前段，关于与 Superman 的身份关系；直接打开曾失败，未声称完整采访已读。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q135970033",
+        "identity": {
+          "title": "Supergirl",
+          "author": "Sophie Campbell"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Supergirl\" \"Sophie Campbell\" \"2025\" site:dc.com",
+          "\"Supergirl\" \"Sophie Campbell\" \"Midvale\" site:dc.com/blog/2025/05/13"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.dc.com/comics/supergirl-2025/supergirl-1",
+            "type": "publisher_issue_synopsis",
+            "support_scope": "已读 2025 首期完整官方介绍、署名、发行日与系列标签。"
+          },
+          {
+            "url": "https://www.dc.com/blog/2025/05/19/sophie-campbell-gives-us-a-hot-supergirl-s-summer",
+            "type": "publisher_hosted_named_review",
+            "support_scope": "实际读到 Sami DeMonster 对首期的评论主体；评论与 DC 官方情节确认区别保留。"
+          },
+          {
+            "url": "https://www.dc.com/blog/2025/05/13/back-to-midvale-sophie-campbell-brightens-things-up-with-supergirl",
+            "type": "creator_interview",
+            "support_scope": "实际读到检索返回的采访前段，关于与 Superman 的身份关系；直接打开曾失败，未声称完整采访已读。"
+          }
+        ],
+        "reading_scope": "已读 2025 首期完整官方介绍、署名、发行日与系列标签。；实际读到 Sami DeMonster 对首期的评论主体；评论与 DC 官方情节确认区别保留。；实际读到检索返回的采访前段，关于与 Superman 的身份关系；直接打开曾失败，未声称完整采访已读。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q136243246",
+      "identity": {
+        "title": "Cosmopirates, tome 2 : La tortue d'or",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "Cosmopirates tome 2 tortue or site:editions-soleil.fr",
+        "\"Cosmopirates\" \"tortue\"",
+        "\"Cosmopirates\" \"La tortue\" \"Lireley\" \"hypnotise\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.humano.com/serie/439",
+          "type": "publisher_volume_page_with_series_synopsis",
+          "support_scope": "已读标注 Tome 2 La Tortue d’or 的官方页；页中故事段实为系列共同前提，不能全称本册新情节。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读标注 Tome 2 La Tortue d’or 的官方页；页中故事段实为系列共同前提，不能全称本册新情节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.planetebd.com/bd/les-humanoides-associes/cosmopirates/cosmopirates-t2/58795.html",
+          "type": "named_review_search_excerpt",
+          "support_scope": "实际读到检索返回的 Hugo Corbeau 本册评论开篇摘要，包括 Lireley 与夺舰；直接访问 cache miss，未声称完整评论或漫画已读。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到检索返回的 Hugo Corbeau 本册评论开篇摘要，包括 Lireley 与夺舰；直接访问 cache miss，未声称完整评论或漫画已读。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lamemo-oullins.fr/index.php?id=15770&lvl=categ_see",
+          "type": "library_volume_synopsis",
+          "support_scope": "实际读到馆藏检索返回的本册题名、作者及恢复记忆摘要；与首册摘要分开。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到馆藏检索返回的本册题名、作者及恢复记忆摘要；与首册摘要分开。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读标注 Tome 2 La Tortue d’or 的官方页；页中故事段实为系列共同前提，不能全称本册新情节。；实际读到检索返回的 Hugo Corbeau 本册评论开篇摘要，包括 Lireley 与夺舰；直接访问 cache miss，未声称完整评论或漫画已读。；实际读到馆藏检索返回的本册题名、作者及恢复记忆摘要；与首册摘要分开。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136243246",
+        "identity": {
+          "title": "Cosmopirates, tome 2 : La tortue d'or",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "Cosmopirates tome 2 tortue or site:editions-soleil.fr",
+          "\"Cosmopirates\" \"tortue\"",
+          "\"Cosmopirates\" \"La tortue\" \"Lireley\" \"hypnotise\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.humano.com/serie/439",
+            "type": "publisher_volume_page_with_series_synopsis",
+            "support_scope": "已读标注 Tome 2 La Tortue d’or 的官方页；页中故事段实为系列共同前提，不能全称本册新情节。"
+          },
+          {
+            "url": "https://www.planetebd.com/bd/les-humanoides-associes/cosmopirates/cosmopirates-t2/58795.html",
+            "type": "named_review_search_excerpt",
+            "support_scope": "实际读到检索返回的 Hugo Corbeau 本册评论开篇摘要，包括 Lireley 与夺舰；直接访问 cache miss，未声称完整评论或漫画已读。"
+          },
+          {
+            "url": "https://www.lamemo-oullins.fr/index.php?id=15770&lvl=categ_see",
+            "type": "library_volume_synopsis",
+            "support_scope": "实际读到馆藏检索返回的本册题名、作者及恢复记忆摘要；与首册摘要分开。"
+          }
+        ],
+        "reading_scope": "已读标注 Tome 2 La Tortue d’or 的官方页；页中故事段实为系列共同前提，不能全称本册新情节。；实际读到检索返回的 Hugo Corbeau 本册评论开篇摘要，包括 Lireley 与夺舰；直接访问 cache miss，未声称完整评论或漫画已读。；实际读到馆藏检索返回的本册题名、作者及恢复记忆摘要；与首册摘要分开。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q136566075",
+      "identity": {
+        "title": "Cathedral of the Drowned",
+        "author": "Nathan Ballingrud"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Cathedral of the Drowned\" Nathan Ballingrud publisher",
+        "\"Cathedral of the Drowned\" site:us.macmillan.com \"brain\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://us.macmillan.com/books/9781250347688/cathedralofthedrowned/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读到 Macmillan 本作完整 Book Details 简介；直接访问 internal error。没有阅读正文或前作。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 Macmillan 本作完整 Book Details 简介；直接访问 internal error。没有阅读正文或前作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://nathanballingrud.com/",
+          "type": "author_publication_announcement",
+          "support_scope": "实际读到作者首页的第二部定位及 2025-10-21 发行公告，仅用于版本与日期。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到作者首页的第二部定位及 2025-10-21 发行公告，仅用于版本与日期。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读到 Macmillan 本作完整 Book Details 简介；直接访问 internal error。没有阅读正文或前作。；实际读到作者首页的第二部定位及 2025-10-21 发行公告，仅用于版本与日期。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136566075",
+        "identity": {
+          "title": "Cathedral of the Drowned",
+          "author": "Nathan Ballingrud"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Cathedral of the Drowned\" Nathan Ballingrud publisher",
+          "\"Cathedral of the Drowned\" site:us.macmillan.com \"brain\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://us.macmillan.com/books/9781250347688/cathedralofthedrowned/",
+            "type": "publisher_synopsis_search_text",
+            "support_scope": "实际读到 Macmillan 本作完整 Book Details 简介；直接访问 internal error。没有阅读正文或前作。"
+          },
+          {
+            "url": "https://nathanballingrud.com/",
+            "type": "author_publication_announcement",
+            "support_scope": "实际读到作者首页的第二部定位及 2025-10-21 发行公告，仅用于版本与日期。"
+          }
+        ],
+        "reading_scope": "实际读到 Macmillan 本作完整 Book Details 简介；直接访问 internal error。没有阅读正文或前作。；实际读到作者首页的第二部定位及 2025-10-21 发行公告，仅用于版本与日期。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q136702912",
+      "identity": {
+        "title": "Bug, Livre 4",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "\"Bug\" \"Livre 4\" Casterman",
+        "\"Bug Livre 4\" \"Casterman\" \"Obb\"",
+        "\"Bug\" \"Livre 4\" site:casterman.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.radiofrance.com/presse/editions-radio-france-bd-bug-livre-4-enki-bilal-ed-casterman-france-inter",
+          "type": "co_publisher_press_release_search_text",
+          "support_scope": "实际读到 Radio France 与 Casterman/France Inter 联合出版第四册新闻稿全文检索文本；未读漫画正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 Radio France 与 Casterman/France Inter 联合出版第四册新闻稿全文检索文本；未读漫画正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读到 Radio France 与 Casterman/France Inter 联合出版第四册新闻稿全文检索文本；未读漫画正文。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136702912",
+        "identity": {
+          "title": "Bug, Livre 4",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "\"Bug\" \"Livre 4\" Casterman",
+          "\"Bug Livre 4\" \"Casterman\" \"Obb\"",
+          "\"Bug\" \"Livre 4\" site:casterman.com"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.radiofrance.com/presse/editions-radio-france-bd-bug-livre-4-enki-bilal-ed-casterman-france-inter",
+            "type": "co_publisher_press_release_search_text",
+            "support_scope": "实际读到 Radio France 与 Casterman/France Inter 联合出版第四册新闻稿全文检索文本；未读漫画正文。"
+          }
+        ],
+        "reading_scope": "实际读到 Radio France 与 Casterman/France Inter 联合出版第四册新闻稿全文检索文本；未读漫画正文。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q136804331",
+      "identity": {
+        "title": "Ronin",
+        "author": "作者未知"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "Cyborgs Ronin tome 1 site:editions-soleil.fr",
+        "\"Cyborgs\" \"Ronin\"",
+        "\"Cyborgs T01\" site:editions-soleil.fr",
+        "\"Q136804331\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.splitter-verlag.de/cyborgs-1.html",
+          "type": "translation_publisher_volume_synopsis",
+          "support_scope": "已读德文出版社第一册完整简介与出版信息；不把同页其他推荐册或 Steel 的情节移入。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读德文出版社第一册完整简介与出版信息；不把同页其他推荐册或 Steel 的情节移入。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136804331.json",
+          "type": "source_identity_record",
+          "support_scope": "实际读取公开实体 JSON 的法文 Ronin、Cyborgs 系列关系及日期，用于排除 Frank Miller 同名作品；不是情节来源。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取公开实体 JSON 的法文 Ronin、Cyborgs 系列关系及日期，用于排除 Frank Miller 同名作品；不是情节来源。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读德文出版社第一册完整简介与出版信息；不把同页其他推荐册或 Steel 的情节移入。；实际读取公开实体 JSON 的法文 Ronin、Cyborgs 系列关系及日期，用于排除 Frank Miller 同名作品；不是情节来源。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q136804331",
+        "identity": {
+          "title": "Ronin",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "Cyborgs Ronin tome 1 site:editions-soleil.fr",
+          "\"Cyborgs\" \"Ronin\"",
+          "\"Cyborgs T01\" site:editions-soleil.fr",
+          "\"Q136804331\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.splitter-verlag.de/cyborgs-1.html",
+            "type": "translation_publisher_volume_synopsis",
+            "support_scope": "已读德文出版社第一册完整简介与出版信息；不把同页其他推荐册或 Steel 的情节移入。"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136804331.json",
+            "type": "source_identity_record",
+            "support_scope": "实际读取公开实体 JSON 的法文 Ronin、Cyborgs 系列关系及日期，用于排除 Frank Miller 同名作品；不是情节来源。"
+          }
+        ],
+        "reading_scope": "已读德文出版社第一册完整简介与出版信息；不把同页其他推荐册或 Steel 的情节移入。；实际读取公开实体 JSON 的法文 Ronin、Cyborgs 系列关系及日期，用于排除 Frank Miller 同名作品；不是情节来源。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q137370313",
+      "identity": {
+        "title": "Kaiju No. 8: Relax, Volume 2",
+        "author": "渡邉築"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "Kaiju No. 8 Relax volume 2 site:viz.com",
+        "\"Kaiju No. 8: Relax\" \"Vol. 2\" \"camping\""
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://www.viz.com/manga-books/manga/kaiju-no-8-relax-volume-2-0/product/8783/digital",
+          "type": "publisher_volume_synopsis",
+          "support_scope": "已读本卷官方露营与节日简介、署名、英文版发行信息；没有读取页面漫画图片。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "已读本卷官方露营与节日简介、署名、英文版发行信息；没有读取页面漫画图片。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.simonandschuster.com/books/Kaiju-No-8-Relax-Vol-2/Kizuku-Watanabe/Kaiju-No-8-Relax/9781974762453",
+          "type": "official_distributor_volume_synopsis",
+          "support_scope": "实际读到 VIZ 官方分销页面本卷完整简介和产品信息；仅限 Relax 第二卷。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 VIZ 官方分销页面本卷完整简介和产品信息；仅限 Relax 第二卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "已读本卷官方露营与节日简介、署名、英文版发行信息；没有读取页面漫画图片。；实际读到 VIZ 官方分销页面本卷完整简介和产品信息；仅限 Relax 第二卷。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q137370313",
+        "identity": {
+          "title": "Kaiju No. 8: Relax, Volume 2",
+          "author": "渡邉築"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "Kaiju No. 8 Relax volume 2 site:viz.com",
+          "\"Kaiju No. 8: Relax\" \"Vol. 2\" \"camping\""
+        ],
+        "materials_checked": [
+          {
+            "url": "https://www.viz.com/manga-books/manga/kaiju-no-8-relax-volume-2-0/product/8783/digital",
+            "type": "publisher_volume_synopsis",
+            "support_scope": "已读本卷官方露营与节日简介、署名、英文版发行信息；没有读取页面漫画图片。"
+          },
+          {
+            "url": "https://www.simonandschuster.com/books/Kaiju-No-8-Relax-Vol-2/Kizuku-Watanabe/Kaiju-No-8-Relax/9781974762453",
+            "type": "official_distributor_volume_synopsis",
+            "support_scope": "实际读到 VIZ 官方分销页面本卷完整简介和产品信息；仅限 Relax 第二卷。"
+          }
+        ],
+        "reading_scope": "已读本卷官方露营与节日简介、署名、英文版发行信息；没有读取页面漫画图片。；实际读到 VIZ 官方分销页面本卷完整简介和产品信息；仅限 Relax 第二卷。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
+    },
+    {
+      "id": "Q137660522",
+      "identity": {
+        "title": "Astrolabe Rebirth",
+        "author": "Fei Tian Ye Xiang"
+      },
+      "attempt_state": "source_read_analysis_added",
+      "queries": [
+        "Astrolabe Rebirth Fei Tian Ye Xiang site:sevenseasentertainment.com"
+      ],
+      "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+      "materials_checked": [
+        {
+          "url": "https://sevenseasentertainment.com/series/astrolabe-rebirth-novel/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读到 Seven Seas 全部作品简介与单卷、署名、英文版信息；直接访问 403，不绕过访问限制，未读小说正文。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到 Seven Seas 全部作品简介与单卷、署名、英文版信息；直接访问 403，不绕过访问限制，未读小说正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sevenseasentertainment.com/2024/10/23/seven-seas-licenses-twelve-new-danmei/",
+          "type": "publisher_license_announcement_search_text",
+          "support_scope": "实际读到授权公告中本作条目，明确 2025 年七月为首次英文发行，非证明全球原作首发。",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读到授权公告中本作条目，明确 2025 年七月为首次英文发行，非证明全球原作首发。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读到 Seven Seas 全部作品简介与单卷、署名、英文版信息；直接访问 403，不绕过访问限制，未读小说正文。；实际读到授权公告中本作条目，明确 2025 年七月为首次英文发行，非证明全球原作首发。",
+      "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+      "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。",
+      "issue_result": "added_unverified",
+      "attempt_input": "early-recent-round1-log.json",
+      "raw_reading_log": {
+        "id": "Q137660522",
+        "identity": {
+          "title": "Astrolabe Rebirth",
+          "author": "Fei Tian Ye Xiang"
+        },
+        "attempt_state": "source_read_analysis_added",
+        "queries": [
+          "Astrolabe Rebirth Fei Tian Ye Xiang site:sevenseasentertainment.com"
+        ],
+        "materials_checked": [
+          {
+            "url": "https://sevenseasentertainment.com/series/astrolabe-rebirth-novel/",
+            "type": "publisher_synopsis_search_text",
+            "support_scope": "实际读到 Seven Seas 全部作品简介与单卷、署名、英文版信息；直接访问 403，不绕过访问限制，未读小说正文。"
+          },
+          {
+            "url": "https://sevenseasentertainment.com/2024/10/23/seven-seas-licenses-twelve-new-danmei/",
+            "type": "publisher_license_announcement_search_text",
+            "support_scope": "实际读到授权公告中本作条目，明确 2025 年七月为首次英文发行，非证明全球原作首发。"
+          }
+        ],
+        "reading_scope": "实际读到 Seven Seas 全部作品简介与单卷、署名、英文版信息；直接访问 403，不绕过访问限制，未读小说正文。；实际读到授权公告中本作条目，明确 2025 年七月为首次英文发行，非证明全球原作首发。",
+        "issue_result": "added_unverified",
+        "reason_unconfirmed": "未逐部读取原作全文，简介或评论支持范围之外的情节与结局未核对。",
+        "next_step": "后续对照对应单作正文或正式出版文本验证；保留当前源标签与纪年。"
+      }
     }
   ]
 }
