@@ -3,7 +3,7 @@
     "format": "actual-source-search-log-v1",
     "created_at": "2026-10-04",
     "status": "frozen_checkpoint",
-    "record_count": 620,
+    "record_count": 695,
     "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
     "inputs": [
       {
@@ -408,6 +408,62 @@
             "sort_year_max": 1979
           },
           "record_count": 20
+        }
+      },
+      {
+        "file": "silverberg-source-searches-round12.json",
+        "sha256": "d0199e5f82ba229cb0b9714c81abcd272c5071c9f50bc0424b28806301fc0b62",
+        "metadata": {
+          "round": 12,
+          "created_at": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "method": "actual-reading-log-v1",
+          "record_count": 18,
+          "analysis_sha256": "49408ceeff163f4377abc55e9c1d400674f2f7a280379737cb36e135ec8c7ae6"
+        }
+      },
+      {
+        "file": "global-source-searches-round12.json",
+        "sha256": "610df865b4916894f201e1c10168497f4723536bdf6facc78a236eadeab081b3",
+        "metadata": {
+          "date": "2026-10-04",
+          "status": "frozen_checkpoint",
+          "analysis_file": "work/evidence/global-round12.json",
+          "analysis_sha256": "96ed2e0ba4a84c4dda0beeb7786353357c556b7b8bda8954b18a2b9df567a211",
+          "record_count": 40,
+          "source_reference_count": 43,
+          "unique_urls": 43,
+          "method": "仅存实际阅读材料和支持范围；出版简介、原作开头／主要段落、专业书目版本辨析明确区分。未保存具体查询则queries为空。结构自检不等于原作全文阅读或独立书目核验。"
+        }
+      },
+      {
+        "file": "early-root-search-checkpoint-round12.json",
+        "sha256": "1680a4cfa57015384a2d1b1197385c1abf67281ea3bd36761a206f8eb9d87351",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "round": 12,
+          "record_count": 1,
+          "created_at": "2026-10-04",
+          "checkpoint_by": "root",
+          "input_snapshot": {
+            "file": "early-search-attempts.json",
+            "sha256": "de9912fb0b8a2d23a54deda78e80dddaee32d54eb17d99718af1961a923b6f79"
+          },
+          "scope": "只归档已保存的Howard实际读取日志；其他待查身份在既有队列中完整保留。"
+        }
+      },
+      {
+        "file": "modern-source-searches-round12.json",
+        "sha256": "7c83cefd2a1e87467bf883fd6785088ff97c06930c243c8549d7202f1db97061",
+        "metadata": {
+          "method": "actual-reading-log-v1",
+          "note": "17条真实阅读日志；只列实际读取URL与已保存查询，不把失败打开或页面附加导读当作原作证据。",
+          "status": "frozen_checkpoint",
+          "scope": {
+            "sort_year_min": 1900,
+            "sort_year_max": 1979
+          },
+          "record_count": 17
         }
       }
     ],
@@ -1085,7 +1141,7 @@
         "title": "The Milltillionaire",
         "author": "Albert Waldo Howard"
       },
-      "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+      "attempt_state": "primary_original_excerpt_read",
       "queries": [
         "Internet Archive public advancedsearch: title:Milltillionaire",
         "\"The Milltillionaire\" Howard read digitized",
@@ -1298,21 +1354,108 @@
           "round": "round11",
           "material_type": "公开PDF下载失败",
           "result": "正常公开下载返回HTTP429及435字节错误内容；不是可读PDF，没有做正文阅读。"
+        },
+        {
+          "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+          "result": "catalog_read"
+        },
+        {
+          "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+          "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+          "round": 6
+        },
+        {
+          "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+          "material_type": "公开馆藏题名查询返回（非原作）",
+          "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+          "round": "round7"
+        },
+        {
+          "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+          "material_type": "出版社微缩目录的检索结果",
+          "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+          "round": "round7"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Milltillionaire",
+          "round": "round9",
+          "material_type": "public_search_result_read_not_full_original",
+          "result": "本轮实际读公开检索返回的条目全文及参考书目，只有二手未来制度概述；未把它称为原作。"
+        },
+        {
+          "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+          "round": "round9",
+          "material_type": "public_search_result_read_not_full_original",
+          "result": "本轮实际读公开检索返回中的Howard/Wright2796条目；微缩目录无正文。"
+        },
+        {
+          "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Milltillionaire&searchtype=title",
+          "material_type": "官方目录题名检索",
+          "result": "实际浏览Title:Milltillionaire返回No results matched your search；没有获取目标正文，仅本查询范围。",
+          "round": "round10"
+        },
+        {
+          "url": "https://discovery.ucl.ac.uk/1546142/1/Pfaelzer_468829.pdf",
+          "material_type": "大学开放论文（研究材料）",
+          "result": "已正常下载完整PDF并提取OCR，定向搜索Milltill/Hovorr/AlbertHoward/Bardic等；只定位print492参考书目Howard1895，实际读该页书目上下文，未找到目标情节原文引句，不称全文细读论文。",
+          "round": "round10"
+        },
+        {
+          "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AMilltillionaire&maxResults=10",
+          "round": "round11",
+          "material_type": "公开目录API访问失败",
+          "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
+        },
+        {
+          "url": "https://books.google.com/books?id=sWYfAQAAIAAJ",
+          "round": "round11",
+          "material_type": "正式1971年原作重印合集的Google Books编目与公开检索片段",
+          "result": "实际读American Utopias; Selected Short Fiction，Arthur Orcutt Lewis，Arno Press1971，318页的编目；搜索结果给第3页PART SECOND的财富/Bard原文短片段，但正常预览不可用，书内搜索显示No results/contents unavailable，不称读过该原作重印全文。"
+        },
+        {
+          "url": "https://books.google.com/books?id=KEZxhkG5eikC&pg=PA373",
+          "round": "round11",
+          "material_type": "Bleiler正式研究目录的公开检索片段（非原作）",
+          "result": "实际读p373检索片段，说明约1895与第二版约1898未见/可能有异；只有研究编目范围。"
+        },
+        {
+          "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA44&hl=en#v=onepage&q&f=false",
+          "round": "round11",
+          "material_type": "1897原刊公共阅读入口/目录索引，目标正文未显示",
+          "result": "Google Books正确题名检索返回Food, Home and Garden卷1–3（1897）的索引条目Milltillionaire44；实际进入Read free并导航PA44，但当前观测仍显示Loading白页，书内检索No results；未读页44正文或断言它是书评/原作。"
+        },
+        {
+          "url": "https://books.google.com/books/download/Food_Home_and_Garden.pdf?id=8JlXAAAAMAAJ&output=pdf",
+          "round": "round11",
+          "material_type": "公开PDF下载失败",
+          "result": "正常公开下载返回HTTP429及435字节错误内容；不是可读PDF，没有做正文阅读。"
+        },
+        {
+          "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA44&output=html",
+          "round": "round12",
+          "material_type": "当时刊物明确署名的原作摘录扫描",
+          "result": "实际读原刊44页右栏题名、M. Auburré Hovorré、Delectable Dining Salon说明、菜单与首段；44页脚July，45页脚1896。不是广告或纯编目。"
+        },
+        {
+          "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA45&output=html",
+          "round": "round12",
+          "material_type": "同原作摘录续页扫描",
+          "result": "实际读45页左栏全部续段与结束边界；右栏和随后刊物口号不是目标小说。另读公开无障碍文字，前组40–44后组45–49，避免漏掉5页组的引文续文。"
         }
       ],
-      "reason_unconfirmed": "已有Wright2796等正式编目及二手未来制度概述，仍未找到原作正文。",
-      "next_step": "寻找Wright2796的公共数字化或正式免费章节。",
-      "issue_result": "not_yet_supplemented",
-      "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
-      "last_attempt_round": 11,
-      "latest_round": "round11",
+      "reason_unconfirmed": "局部原文现已支持饮食伦理、充裕/文明等级与自动餐饮分析；小说全文、不同版本与其完整制度未核。",
+      "next_step": "继续查全文；本次原刊引文局部范围已归档。",
+      "issue_result": "added_to_private_round12_unverified",
+      "reading_scope": "Food, Home and Garden印刷44–45页目标小说摘录及编辑明确署名；正常公开文字和原扫描均实际读。未取得整部小说。",
+      "last_attempt_round": 12,
+      "latest_round": "round12",
       "raw_reading_log": {
         "id": "Q7751494",
         "identity": {
           "title": "The Milltillionaire",
           "author": "Albert Waldo Howard"
         },
-        "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+        "attempt_state": "primary_original_excerpt_read",
         "queries": [
           {
             "provider": "Internet Archive public advancedsearch",
@@ -1436,16 +1579,28 @@
             "round": "round11",
             "material_type": "公开PDF下载失败",
             "result": "正常公开下载返回HTTP429及435字节错误内容；不是可读PDF，没有做正文阅读。"
+          },
+          {
+            "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA44&output=html",
+            "round": "round12",
+            "material_type": "当时刊物明确署名的原作摘录扫描",
+            "result": "实际读原刊44页右栏题名、M. Auburré Hovorré、Delectable Dining Salon说明、菜单与首段；44页脚July，45页脚1896。不是广告或纯编目。"
+          },
+          {
+            "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA45&output=html",
+            "round": "round12",
+            "material_type": "同原作摘录续页扫描",
+            "result": "实际读45页左栏全部续段与结束边界；右栏和随后刊物口号不是目标小说。另读公开无障碍文字，前组40–44后组45–49，避免漏掉5页组的引文续文。"
           }
         ],
-        "reason_unconfirmed": "已有Wright2796等正式编目及二手未来制度概述，仍未找到原作正文。",
-        "next_step": "寻找Wright2796的公共数字化或正式免费章节。",
-        "issue_result": "not_yet_supplemented",
-        "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
-        "last_attempt_round": 11,
-        "latest_round": "round11"
+        "reason_unconfirmed": "局部原文现已支持饮食伦理、充裕/文明等级与自动餐饮分析；小说全文、不同版本与其完整制度未核。",
+        "next_step": "继续查全文；本次原刊引文局部范围已归档。",
+        "issue_result": "added_to_private_round12_unverified",
+        "reading_scope": "Food, Home and Garden印刷44–45页目标小说摘录及编辑明确署名；正常公开文字和原扫描均实际读。未取得整部小说。",
+        "last_attempt_round": 12,
+        "latest_round": "round12"
       },
-      "attempt_input": "early-search-attempts-round11.json",
+      "attempt_input": "early-root-search-checkpoint-round12.json",
       "previous_attempts": [
         {
           "id": "Q7751494",
@@ -2045,6 +2200,374 @@
             "latest_round": "round10"
           },
           "attempt_input": "early-search-attempts-round10.json"
+        },
+        {
+          "id": "Q7751494",
+          "identity": {
+            "title": "The Milltillionaire",
+            "author": "Albert Waldo Howard"
+          },
+          "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+          "queries": [
+            "Internet Archive public advancedsearch: title:Milltillionaire",
+            "\"The Milltillionaire\" Howard read digitized",
+            "\"The Milltillionaire\" full text",
+            "\"The Milltillionaire\" \"Wright\" digital",
+            "\"The Milltillionaire\" full text Howard",
+            "\"Milltillionaire\" \"digitized\"",
+            "\"Milltillionaire\" \"Howard\" excerpt",
+            "\"The Milltillionaire\" \"text\"",
+            "\"The Milltillionaire\" text Howard",
+            "\"Milltillionaire\" site:archive.org",
+            "\"Milltillionaire\" site:books.google.com",
+            "\"Milltillionaire\" Howard Roemer excerpt",
+            "\"Milltillionaire\" \"University\" digitized",
+            "\"Milltillionaire\" \"Roemer\" \"pdf\"",
+            "\"Hovorre\" \"Milltillionaire\" text",
+            "\"Milltillionaire\" \"full view\"",
+            "\"Wright\" \"Milltillionaire\" digital",
+            "\"milltillionaire\" \"indiana\"",
+            "Google Books public volumes API: intitle:Milltillionaire",
+            "web search: \"Milltillionaire\" Howard library scan",
+            "web search: \"Milltillionaire\" \"Hovorré\" \"text\"",
+            "Google Books browser search: Milltillionaire"
+          ],
+          "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
+          "materials_checked": [
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+              "round": 6
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+              "round": 6
+            },
+            {
+              "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+              "material_type": "公开馆藏题名查询返回（非原作）",
+              "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+              "round": "round7"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "material_type": "出版社微缩目录的检索结果",
+              "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+              "round": "round7"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+              "round": 6
+            },
+            {
+              "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+              "material_type": "公开馆藏题名查询返回（非原作）",
+              "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+              "round": "round7"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "material_type": "出版社微缩目录的检索结果",
+              "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+              "round": "round7"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Milltillionaire",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回的条目全文及参考书目，只有二手未来制度概述；未把它称为原作。"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回中的Howard/Wright2796条目；微缩目录无正文。"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+              "round": 6
+            },
+            {
+              "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+              "material_type": "公开馆藏题名查询返回（非原作）",
+              "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+              "round": "round7"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "material_type": "出版社微缩目录的检索结果",
+              "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+              "round": "round7"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Milltillionaire",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回的条目全文及参考书目，只有二手未来制度概述；未把它称为原作。"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回中的Howard/Wright2796条目；微缩目录无正文。"
+            },
+            {
+              "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Milltillionaire&searchtype=title",
+              "material_type": "官方目录题名检索",
+              "result": "实际浏览Title:Milltillionaire返回No results matched your search；没有获取目标正文，仅本查询范围。",
+              "round": "round10"
+            },
+            {
+              "url": "https://discovery.ucl.ac.uk/1546142/1/Pfaelzer_468829.pdf",
+              "material_type": "大学开放论文（研究材料）",
+              "result": "已正常下载完整PDF并提取OCR，定向搜索Milltill/Hovorr/AlbertHoward/Bardic等；只定位print492参考书目Howard1895，实际读该页书目上下文，未找到目标情节原文引句，不称全文细读论文。",
+              "round": "round10"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "catalog_read"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+              "round": 6
+            },
+            {
+              "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+              "material_type": "公开馆藏题名查询返回（非原作）",
+              "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+              "round": "round7"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "material_type": "出版社微缩目录的检索结果",
+              "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+              "round": "round7"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Milltillionaire",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回的条目全文及参考书目，只有二手未来制度概述；未把它称为原作。"
+            },
+            {
+              "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+              "round": "round9",
+              "material_type": "public_search_result_read_not_full_original",
+              "result": "本轮实际读公开检索返回中的Howard/Wright2796条目；微缩目录无正文。"
+            },
+            {
+              "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Milltillionaire&searchtype=title",
+              "material_type": "官方目录题名检索",
+              "result": "实际浏览Title:Milltillionaire返回No results matched your search；没有获取目标正文，仅本查询范围。",
+              "round": "round10"
+            },
+            {
+              "url": "https://discovery.ucl.ac.uk/1546142/1/Pfaelzer_468829.pdf",
+              "material_type": "大学开放论文（研究材料）",
+              "result": "已正常下载完整PDF并提取OCR，定向搜索Milltill/Hovorr/AlbertHoward/Bardic等；只定位print492参考书目Howard1895，实际读该页书目上下文，未找到目标情节原文引句，不称全文细读论文。",
+              "round": "round10"
+            },
+            {
+              "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AMilltillionaire&maxResults=10",
+              "round": "round11",
+              "material_type": "公开目录API访问失败",
+              "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
+            },
+            {
+              "url": "https://books.google.com/books?id=sWYfAQAAIAAJ",
+              "round": "round11",
+              "material_type": "正式1971年原作重印合集的Google Books编目与公开检索片段",
+              "result": "实际读American Utopias; Selected Short Fiction，Arthur Orcutt Lewis，Arno Press1971，318页的编目；搜索结果给第3页PART SECOND的财富/Bard原文短片段，但正常预览不可用，书内搜索显示No results/contents unavailable，不称读过该原作重印全文。"
+            },
+            {
+              "url": "https://books.google.com/books?id=KEZxhkG5eikC&pg=PA373",
+              "round": "round11",
+              "material_type": "Bleiler正式研究目录的公开检索片段（非原作）",
+              "result": "实际读p373检索片段，说明约1895与第二版约1898未见/可能有异；只有研究编目范围。"
+            },
+            {
+              "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA44&hl=en#v=onepage&q&f=false",
+              "round": "round11",
+              "material_type": "1897原刊公共阅读入口/目录索引，目标正文未显示",
+              "result": "Google Books正确题名检索返回Food, Home and Garden卷1–3（1897）的索引条目Milltillionaire44；实际进入Read free并导航PA44，但当前观测仍显示Loading白页，书内检索No results；未读页44正文或断言它是书评/原作。"
+            },
+            {
+              "url": "https://books.google.com/books/download/Food_Home_and_Garden.pdf?id=8JlXAAAAMAAJ&output=pdf",
+              "round": "round11",
+              "material_type": "公开PDF下载失败",
+              "result": "正常公开下载返回HTTP429及435字节错误内容；不是可读PDF，没有做正文阅读。"
+            }
+          ],
+          "reason_unconfirmed": "已有Wright2796等正式编目及二手未来制度概述，仍未找到原作正文。",
+          "next_step": "寻找Wright2796的公共数字化或正式免费章节。",
+          "issue_result": "not_yet_supplemented",
+          "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
+          "last_attempt_round": 11,
+          "latest_round": "round11",
+          "raw_reading_log": {
+            "id": "Q7751494",
+            "identity": {
+              "title": "The Milltillionaire",
+              "author": "Albert Waldo Howard"
+            },
+            "attempt_state": "catalog_or_secondary_or_access_failure_only_this_round",
+            "queries": [
+              {
+                "provider": "Internet Archive public advancedsearch",
+                "query": "title:Milltillionaire",
+                "result_count": 0,
+                "result": "无匹配目标原书：零条或返回无关文献/游戏录像。"
+              },
+              "\"The Milltillionaire\" Howard read digitized",
+              "\"The Milltillionaire\" full text",
+              "\"The Milltillionaire\" \"Wright\" digital",
+              "\"The Milltillionaire\" full text Howard",
+              "\"Milltillionaire\" \"digitized\"",
+              "\"Milltillionaire\" \"Howard\" excerpt",
+              "\"The Milltillionaire\" \"text\"",
+              "\"The Milltillionaire\" text Howard",
+              "\"Milltillionaire\" site:archive.org",
+              "\"Milltillionaire\" site:books.google.com",
+              "\"Milltillionaire\" Howard Roemer excerpt",
+              "\"Milltillionaire\" \"University\" digitized",
+              "\"Milltillionaire\" \"Roemer\" \"pdf\"",
+              "\"Hovorre\" \"Milltillionaire\" text",
+              "\"Milltillionaire\" \"full view\"",
+              "\"Wright\" \"Milltillionaire\" digital",
+              "\"milltillionaire\" \"indiana\"",
+              {
+                "provider": "Google Books public volumes API",
+                "query": "intitle:Milltillionaire",
+                "round": "round11",
+                "result": "HTTP429 RESOURCE_EXHAUSTED；公共默认配额拒绝，不是零结果。"
+              },
+              {
+                "provider": "web search",
+                "query": "\"Milltillionaire\" Howard library scan",
+                "round": "round11"
+              },
+              {
+                "provider": "web search",
+                "query": "\"Milltillionaire\" \"Hovorré\" \"text\"",
+                "round": "round11"
+              },
+              {
+                "provider": "Google Books browser search",
+                "query": "Milltillionaire",
+                "round": "round11",
+                "result": "系统曾改拼写为Multimillionaire；点击Search instead for Milltillionaire，读正确检索返回。"
+              }
+            ],
+            "query_note": "较早轮次的查询字符串未逐字归档，此处只记录实际材料入口与读取结果；不补造查询。",
+            "materials_checked": [
+              {
+                "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+                "result": "catalog_read"
+              },
+              {
+                "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+                "result": "实际检索可见Gale/Wright书目2796及笔名；是编目，不是原作正文。",
+                "round": 6
+              },
+              {
+                "url": "https://archive.org/advancedsearch.php?q=title%3A%28stranger%20AND%20packet%29%20OR%20title%3A%28milltillionaire%29%20OR%20title%3A%28zerelda%29%20OR%20%28title%3A%28hundred%20AND%20years%20AND%20hence%29%20AND%20creator%3A%28Hay%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&rows=50&output=json",
+                "material_type": "公开馆藏题名查询返回（非原作）",
+                "result": "实际读本次返回20条结果，均为Zerelda同名其他人物/游戏，无四个目标原书；只说明本查询返回范围，不能据此断言整个馆藏没有书。",
+                "round": "round7"
+              },
+              {
+                "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+                "material_type": "出版社微缩目录的检索结果",
+                "result": "实际读目录索引所示Howard笔名、Wright2796；此为原书的编目，不是正文。",
+                "round": "round7"
+              },
+              {
+                "url": "https://en.wikipedia.org/wiki/The_Milltillionaire",
+                "round": "round9",
+                "material_type": "public_search_result_read_not_full_original",
+                "result": "本轮实际读公开检索返回的条目全文及参考书目，只有二手未来制度概述；未把它称为原作。"
+              },
+              {
+                "url": "https://assets.cengage.com/gale/psm/1000000A.pdf",
+                "round": "round9",
+                "material_type": "public_search_result_read_not_full_original",
+                "result": "本轮实际读公开检索返回中的Howard/Wright2796条目；微缩目录无正文。"
+              },
+              {
+                "url": "https://catalog.hathitrust.org/Search/Home?lookfor=Milltillionaire&searchtype=title",
+                "material_type": "官方目录题名检索",
+                "result": "实际浏览Title:Milltillionaire返回No results matched your search；没有获取目标正文，仅本查询范围。",
+                "round": "round10"
+              },
+              {
+                "url": "https://discovery.ucl.ac.uk/1546142/1/Pfaelzer_468829.pdf",
+                "material_type": "大学开放论文（研究材料）",
+                "result": "已正常下载完整PDF并提取OCR，定向搜索Milltill/Hovorr/AlbertHoward/Bardic等；只定位print492参考书目Howard1895，实际读该页书目上下文，未找到目标情节原文引句，不称全文细读论文。",
+                "round": "round10"
+              },
+              {
+                "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3AMilltillionaire&maxResults=10",
+                "round": "round11",
+                "material_type": "公开目录API访问失败",
+                "result": "实际读取HTTP429 RESOURCE_EXHAUSTED返回；未获取书目或目标正文，不解释为馆藏无书。"
+              },
+              {
+                "url": "https://books.google.com/books?id=sWYfAQAAIAAJ",
+                "round": "round11",
+                "material_type": "正式1971年原作重印合集的Google Books编目与公开检索片段",
+                "result": "实际读American Utopias; Selected Short Fiction，Arthur Orcutt Lewis，Arno Press1971，318页的编目；搜索结果给第3页PART SECOND的财富/Bard原文短片段，但正常预览不可用，书内搜索显示No results/contents unavailable，不称读过该原作重印全文。"
+              },
+              {
+                "url": "https://books.google.com/books?id=KEZxhkG5eikC&pg=PA373",
+                "round": "round11",
+                "material_type": "Bleiler正式研究目录的公开检索片段（非原作）",
+                "result": "实际读p373检索片段，说明约1895与第二版约1898未见/可能有异；只有研究编目范围。"
+              },
+              {
+                "url": "https://books.google.de/books?id=8JlXAAAAMAAJ&pg=PA44&hl=en#v=onepage&q&f=false",
+                "round": "round11",
+                "material_type": "1897原刊公共阅读入口/目录索引，目标正文未显示",
+                "result": "Google Books正确题名检索返回Food, Home and Garden卷1–3（1897）的索引条目Milltillionaire44；实际进入Read free并导航PA44，但当前观测仍显示Loading白页，书内检索No results；未读页44正文或断言它是书评/原作。"
+              },
+              {
+                "url": "https://books.google.com/books/download/Food_Home_and_Garden.pdf?id=8JlXAAAAMAAJ&output=pdf",
+                "round": "round11",
+                "material_type": "公开PDF下载失败",
+                "result": "正常公开下载返回HTTP429及435字节错误内容；不是可读PDF，没有做正文阅读。"
+              }
+            ],
+            "reason_unconfirmed": "已有Wright2796等正式编目及二手未来制度概述，仍未找到原作正文。",
+            "next_step": "寻找Wright2796的公共数字化或正式免费章节。",
+            "issue_result": "not_yet_supplemented",
+            "reading_scope": "本轮实际查阅公开检索/书目入口，API返回配额错误；只有材料所明示的片段范围，未取得目标完整小说正文。",
+            "last_attempt_round": 11,
+            "latest_round": "round11"
+          },
+          "attempt_input": "early-search-attempts-round11.json"
         }
       ]
     },
@@ -35056,6 +35579,3550 @@
         "verification_status": "reading_scope_logged_not_full_verification"
       },
       "attempt_input": "modern-source-searches-round11.json"
+    },
+    {
+      "id": "Q134727093",
+      "identity": {
+        "title": "A Young Man's Journey to Viriconium",
+        "author": "M. John Harrison"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://fanac.org/fanzines/Vector/Vector267.pdf",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_essay_read",
+          "reading_scope": "实际读 Paul Kincaid《A Young Man's Journey》印刷页33–35的返回正文，包括叙述者、两位老人、镜像及题名比较；这是评论者的解释和有限原文引用，不是完整原作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/wordpress/non-fiction/articles/interview-m-john-harrison/",
+          "result": "actual_source_scope_read",
+          "material_type": "author_interview_read",
+          "reading_scope": "实际读相关提问及 Harrison 关于不固定虚构空间、人物修订与逃避主义的回答；入口细节由采访者提问提出，不作为作者证实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1985年单篇身份。Kincaid 的2011年评论比较不同题名版本，引用1985及后续版本；未亲自逐字比较两版原文。实际读评论印刷页33–35及作者访谈相关回答。访谈提问者称画作/地点与评论所引镜子/地点不一致，不据此填写确切入口位置或证明穿越真实发生。保留当前纪年，2002/2003/2004的再版资料不作为本条首刊年份。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q134727093",
+        "identity": {
+          "title": "A Young Man's Journey to Viriconium",
+          "author": "M. John Harrison"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://fanac.org/fanzines/Vector/Vector267.pdf",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_essay_read",
+            "reading_scope": "实际读 Paul Kincaid《A Young Man's Journey》印刷页33–35的返回正文，包括叙述者、两位老人、镜像及题名比较；这是评论者的解释和有限原文引用，不是完整原作。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://strangehorizons.com/wordpress/non-fiction/articles/interview-m-john-harrison/",
+            "result": "actual_source_scope_read",
+            "material_type": "author_interview_read",
+            "reading_scope": "实际读相关提问及 Harrison 关于不固定虚构空间、人物修订与逃避主义的回答；入口细节由采访者提问提出，不作为作者证实。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1985年单篇身份。Kincaid 的2011年评论比较不同题名版本，引用1985及后续版本；未亲自逐字比较两版原文。实际读评论印刷页33–35及作者访谈相关回答。访谈提问者称画作/地点与评论所引镜子/地点不一致，不据此填写确切入口位置或证明穿越真实发生。保留当前纪年，2002/2003/2004的再版资料不作为本条首刊年份。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q106007999",
+      "identity": {
+        "title": "Kiosk",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Kiosk\" Borislav fabrication story"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "http://www.sfsite.com/fsf/fiction/bs01.htm",
+          "result": "access_failed",
+          "reading_scope": "作者公开帖实际链接；web返回内部读取错误，公开网络请求DNS无法解析，没有取得全文。"
+        },
+        {
+          "url": "https://web.archive.org/web/20080115084153/http%3A//www.sfsite.com/fsf/fiction/bs01.htm",
+          "result": "access_failed",
+          "reading_scope": "实际点击 Stack Exchange 提供的存档链接；cache miss，没有取得正文。"
+        },
+        {
+          "url": "https://www.wired.com/2008/01/fantasy-and-sci/",
+          "result": "actual_source_scope_read",
+          "material_type": "author_shared_original_excerpt_read",
+          "reading_scope": "实际读 Bruce Sterling 公开分享的 Borislav 制造玩具开篇；只涵盖玩具、顾客和 kiosk 商业变化。原杂志全文链接无法读取。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_review_read",
+          "reading_scope": "实际读所汇编 Locus January 2007 的 Kiosk 评论段落，支持黑市设备及经济/当局冲突，非原作全篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://scifi.stackexchange.com/questions/286605/story-involving-fabbers-replicators-3d-printers-famous-quote",
+          "result": "actual_source_scope_read",
+          "material_type": "reader_quoted_excerpt_read",
+          "reading_scope": "实际读答复所引回收部件和废料段落及其存档链接；引用的准确性待原杂志复核。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按2007年 F&SF 单篇，保留当前身份和纪年。实际读作者2008年公开帖中的原作开篇及 Horton 本篇书评；杂志原文链接、其存档在本轮无法取得。回收细节来自读者所引原文，单独标明，不冒充已读整篇；机器设定不当成现实制造技术事实。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q106007999",
+        "identity": {
+          "title": "Kiosk",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Kiosk\" Borislav fabrication story"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "http://www.sfsite.com/fsf/fiction/bs01.htm",
+            "result": "access_failed",
+            "reading_scope": "作者公开帖实际链接；web返回内部读取错误，公开网络请求DNS无法解析，没有取得全文。"
+          },
+          {
+            "url": "https://web.archive.org/web/20080115084153/http%3A//www.sfsite.com/fsf/fiction/bs01.htm",
+            "result": "access_failed",
+            "reading_scope": "实际点击 Stack Exchange 提供的存档链接；cache miss，没有取得正文。"
+          },
+          {
+            "url": "https://www.wired.com/2008/01/fantasy-and-sci/",
+            "result": "actual_source_scope_read",
+            "material_type": "author_shared_original_excerpt_read",
+            "reading_scope": "实际读 Bruce Sterling 公开分享的 Borislav 制造玩具开篇；只涵盖玩具、顾客和 kiosk 商业变化。原杂志全文链接无法读取。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_review_read",
+            "reading_scope": "实际读所汇编 Locus January 2007 的 Kiosk 评论段落，支持黑市设备及经济/当局冲突，非原作全篇。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://scifi.stackexchange.com/questions/286605/story-involving-fabbers-replicators-3d-printers-famous-quote",
+            "result": "actual_source_scope_read",
+            "material_type": "reader_quoted_excerpt_read",
+            "reading_scope": "实际读答复所引回收部件和废料段落及其存档链接；引用的准确性待原杂志复核。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按2007年 F&SF 单篇，保留当前身份和纪年。实际读作者2008年公开帖中的原作开篇及 Horton 本篇书评；杂志原文链接、其存档在本轮无法取得。回收细节来自读者所引原文，单独标明，不冒充已读整篇；机器设定不当成现实制造技术事实。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q106371429",
+      "identity": {
+        "title": "The Blemmye's Strategem",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Blemmye\" Hildegart story"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_review_read",
+          "reading_scope": "实际读所汇编 Locus January 2005 本篇段落；内容明示修女商业活动、Sinan 关系、Silent Master 和延寿预期，没有完整说明结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "来源题名为 The Blemmye's Stratagem，当前底库拼写 Strategem 原样保留待核；按2005年单篇，不把2006年合集年当首刊。实际读 Horton 的本篇评论开场梗概，未读原作结局，不借百科中的外星人揭示补写后半情节。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q106371429",
+        "identity": {
+          "title": "The Blemmye's Strategem",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Blemmye\" Hildegart story"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_review_read",
+            "reading_scope": "实际读所汇编 Locus January 2005 本篇段落；内容明示修女商业活动、Sinan 关系、Silent Master 和延寿预期，没有完整说明结局。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "来源题名为 The Blemmye's Stratagem，当前底库拼写 Strategem 原样保留待核；按2005年单篇，不把2006年合集年当首刊。实际读 Horton 的本篇评论开场梗概，未读原作结局，不借百科中的外星人揭示补写后半情节。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131308024",
+      "identity": {
+        "title": "Dinner in Audoghast",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Dinner in Audoghast\" prophecy"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/dinner-in-audoghast/",
+          "result": "actual_source_scope_read",
+          "material_type": "authorized_original_story_read",
+          "reading_scope": "实际读故事返回正文从宴席开篇至结尾（网页行69–300，末段另打开补齐），页面明示作者许可重印；非历史资料逐事实核验。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.lightspeedmagazine.com/nonfiction/author-spotlight-bruce-sterling-2/",
+          "result": "actual_source_scope_read",
+          "material_type": "author_interview_read",
+          "reading_scope": "实际读相关采访回答；作者将其作品定位为现代人的讽刺想象，区别于来自失落文化自身的文学遗物。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://writingatlas.com/story/620/bruce-sterling-dinner-in-audoghast/",
+          "result": "search_text_read",
+          "material_type": "secondary_synopsis_search_text_read",
+          "reading_scope": "实际搜索返回简介与剧情，纪年写1000 BC，与已读授权正文明确1014 AD不符，仅作为资料差异记录。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1985年单篇。实际读 Lightspeed 经作者许可重印的连续故事正文及尾段，作品明确1014 AD；Writing Atlas 简介误写1000 BC，未采纳。预言与作者构造不等同于已核历史事实；2013年访谈中的遗址断言也未作为考古结论写入。仅补议题，不自动填故事时代和跨度字段。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131308024",
+        "identity": {
+          "title": "Dinner in Audoghast",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Dinner in Audoghast\" prophecy"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.lightspeedmagazine.com/fiction/dinner-in-audoghast/",
+            "result": "actual_source_scope_read",
+            "material_type": "authorized_original_story_read",
+            "reading_scope": "实际读故事返回正文从宴席开篇至结尾（网页行69–300，末段另打开补齐），页面明示作者许可重印；非历史资料逐事实核验。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.lightspeedmagazine.com/nonfiction/author-spotlight-bruce-sterling-2/",
+            "result": "actual_source_scope_read",
+            "material_type": "author_interview_read",
+            "reading_scope": "实际读相关采访回答；作者将其作品定位为现代人的讽刺想象，区别于来自失落文化自身的文学遗物。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://writingatlas.com/story/620/bruce-sterling-dinner-in-audoghast/",
+            "result": "search_text_read",
+            "material_type": "secondary_synopsis_search_text_read",
+            "reading_scope": "实际搜索返回简介与剧情，纪年写1000 BC，与已读授权正文明确1014 AD不符，仅作为资料差异记录。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1985年单篇。实际读 Lightspeed 经作者许可重印的连续故事正文及尾段，作品明确1014 AD；Writing Atlas 简介误写1000 BC，未采纳。预言与作者构造不等同于已核历史事实；2013年访谈中的遗址断言也未作为考古结论写入。仅补议题，不自动填故事时代和跨度字段。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131516772",
+      "identity": {
+        "title": "Spook",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+          "result": "actual_source_scope_read",
+          "material_type": "translated_edition_review_read",
+          "reading_scope": "实际读书评 Spook 条目行103–114，包括记忆装置与被移除的情节；来源为德译评论，非英文原作。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1983年 Spook 单篇。实际读德译合集书评的本篇段落；未通读英文原作，不将书评中现实政治类比写成故事事实。装置名称、人物和后果均待原文独立核对。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131516772",
+        "identity": {
+          "title": "Spook",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+            "result": "actual_source_scope_read",
+            "material_type": "translated_edition_review_read",
+            "reading_scope": "实际读书评 Spook 条目行103–114，包括记忆装置与被移除的情节；来源为德译评论，非英文原作。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1983年 Spook 单篇。实际读德译合集书评的本篇段落；未通读英文原作，不将书评中现实政治类比写成故事事实。装置名称、人物和后果均待原文独立核对。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131471805",
+      "identity": {
+        "title": "The Beautiful and the Sublime",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+          "result": "actual_source_scope_read",
+          "material_type": "translated_edition_review_read",
+          "reading_scope": "实际读本篇书评行116–128；细节来自德译合集评论。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://theporporbooksblog.blogspot.com/2023/11/book-review-crystal-express.html",
+          "result": "actual_source_scope_read",
+          "material_type": "collection_review_read",
+          "reading_scope": "实际读行19本篇短评和1986纪年；其余同集单篇不自动继承为本条依据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按 The Beautiful and the Sublime 单篇。当前来源与另一个合集书评标1986，德译书评条目标1987，差异保留，不更改当前纪年。实际读本篇德译书评，没有读英文结局；评论关于科学终结的评价只用于提出可修订问题，不当现实技术判断。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131471805",
+        "identity": {
+          "title": "The Beautiful and the Sublime",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+            "result": "actual_source_scope_read",
+            "material_type": "translated_edition_review_read",
+            "reading_scope": "实际读本篇书评行116–128；细节来自德译合集评论。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://theporporbooksblog.blogspot.com/2023/11/book-review-crystal-express.html",
+            "result": "actual_source_scope_read",
+            "material_type": "collection_review_read",
+            "reading_scope": "实际读行19本篇短评和1986纪年；其余同集单篇不自动继承为本条依据。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按 The Beautiful and the Sublime 单篇。当前来源与另一个合集书评标1986，德译书评条目标1987，差异保留，不更改当前纪年。实际读本篇德译书评，没有读英文结局；评论关于科学终结的评价只用于提出可修订问题，不当现实技术判断。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q107985170",
+      "identity": {
+        "title": "The Little Magic Shop",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Little Magic Shop\" story James Abernathy"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+          "result": "actual_source_scope_read",
+          "material_type": "translated_edition_review_read",
+          "reading_scope": "实际读 The Little Magic Shop 书评行146–153；供给与衰老情节来自评论。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://speculiction.blogspot.com/2016/09/review-of-feeling-very-strange.html",
+          "result": "search_text_read",
+          "material_type": "collection_review_search_text_read",
+          "reading_scope": "实际查询返回本篇 James Abernathy 与延寿药水的短评；未取得原作。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1987年独立短篇，不用2006/2007合集年替代。实际读德译书评本篇段落及英文评论的简短题名/主人公说明，未读原作完整正文。店主身份和细部交易解释仍待英文原作核对，不将魔法药剂当成科学延寿机制。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q107985170",
+        "identity": {
+          "title": "The Little Magic Shop",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Little Magic Shop\" story James Abernathy"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+            "result": "actual_source_scope_read",
+            "material_type": "translated_edition_review_read",
+            "reading_scope": "实际读 The Little Magic Shop 书评行146–153；供给与衰老情节来自评论。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://speculiction.blogspot.com/2016/09/review-of-feeling-very-strange.html",
+            "result": "search_text_read",
+            "material_type": "collection_review_search_text_read",
+            "reading_scope": "实际查询返回本篇 James Abernathy 与延寿药水的短评；未取得原作。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1987年独立短篇，不用2006/2007合集年替代。实际读德译书评本篇段落及英文评论的简短题名/主人公说明，未读原作完整正文。店主身份和细部交易解释仍待英文原作核对，不将魔法药剂当成科学延寿机制。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131213574",
+      "identity": {
+        "title": "Flowers of Edo",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+          "result": "actual_source_scope_read",
+          "material_type": "translated_edition_review_read",
+          "reading_scope": "实际读 Flowers of Edo 条目行155–165；只采用电报冲突和图像的故事层线索，不采纳历史年份断言。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1987年独立单篇；实际读德译书评本篇段落，未通读英文原作。书评把 Perry 事件写为1865等历史细节不作为历史事实采纳；议题只基于其明示的故事冲突，隐喻解释待原作核对。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131213574",
+        "identity": {
+          "title": "Flowers of Edo",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://buchwurm.org/bruce-sterling-zikadenkoenigin-cyberpunk-und-danach/",
+            "result": "actual_source_scope_read",
+            "material_type": "translated_edition_review_read",
+            "reading_scope": "实际读 Flowers of Edo 条目行155–165；只采用电报冲突和图像的故事层线索，不采纳历史年份断言。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1987年独立单篇；实际读德译书评本篇段落，未通读英文原作。书评把 Perry 事件写为1865等历史细节不作为历史事实采纳；议题只基于其明示的故事冲突，隐喻解释待原作核对。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131516766",
+      "identity": {
+        "title": "In Paradise",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"In Paradise\" Felix story"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_review_read",
+          "reading_scope": "实际读 In Paradise 两段评论，范围限手机促成关系及其政治阻力。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按2002年 F&SF 单篇。实际读 Horton 所汇编的 Locus September 2002 书评；仅开场和冲突概述，没有原作结局。性别、国籍和安全制度的进一步解释仍待独立核对。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131516766",
+        "identity": {
+          "title": "In Paradise",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"In Paradise\" Felix story"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://rrhorton.blogspot.com/2020/04/birthday-review-stories-of-bruce.html",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_review_read",
+            "reading_scope": "实际读 In Paradise 两段评论，范围限手机促成关系及其政治阻力。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按2002年 F&SF 单篇。实际读 Horton 所汇编的 Locus September 2002 书评；仅开场和冲突概述，没有原作结局。性别、国籍和安全制度的进一步解释仍待独立核对。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q7721873",
+      "identity": {
+        "title": "The Centauri Device",
+        "author": "M. John Harrison"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "M John Harrison The Centauri Device publisher John Truck"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/m-john-harrison/the-centauri-device",
+          "result": "actual_source_scope_read",
+          "material_type": "publisher_synopsis_read",
+          "reading_scope": "实际读长篇现售版简介及版本信息，范围限 John Truck 身份、操作限制、战争和有意识武器。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/m-john-harrison-7/the-centauri-device/",
+          "result": "search_text_read",
+          "material_type": "critic_review_search_text_read",
+          "reading_scope": "实际查询返回1974年11月长篇书评，支持灭绝战争与敌对阵营追逐武器；非原作正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1974年长篇，区别于同名1974年杂志中篇和先行节选 The Wolf That Follows；只读长篇出版方简介及 Kirkus 长篇书评，没有通读正文。2000/2010现售版年不替代首刊；未把短篇身份或结局自动并入本条。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7721873",
+        "identity": {
+          "title": "The Centauri Device",
+          "author": "M. John Harrison"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "M John Harrison The Centauri Device publisher John Truck"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.com.au/m-john-harrison/the-centauri-device",
+            "result": "actual_source_scope_read",
+            "material_type": "publisher_synopsis_read",
+            "reading_scope": "实际读长篇现售版简介及版本信息，范围限 John Truck 身份、操作限制、战争和有意识武器。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/m-john-harrison-7/the-centauri-device/",
+            "result": "search_text_read",
+            "material_type": "critic_review_search_text_read",
+            "reading_scope": "实际查询返回1974年11月长篇书评，支持灭绝战争与敌对阵营追逐武器；非原作正文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1974年长篇，区别于同名1974年杂志中篇和先行节选 The Wolf That Follows；只读长篇出版方简介及 Kirkus 长篇书评，没有通读正文。2000/2010现售版年不替代首刊；未把短篇身份或结局自动并入本条。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q11886848",
+      "identity": {
+        "title": "The Pastel City",
+        "author": "M. John Harrison"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "M John Harrison The Pastel City publisher tegeus",
+        "site.hachette.com.au \"Viriconium\" \"Pastel City\""
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://theblackletters.net/the-pastel-city-by-m-john-harrison-1971-e/",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_review_read",
+          "reading_scope": "实际读评论行23–41和局部原文引述，包括旧文明资源、遗物战争、金属盐沼泽与保卫城市；不连续覆盖原作。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.hachette.com.au/m-john-harrison/viriconium",
+          "result": "actual_source_scope_read",
+          "material_type": "publisher_omnibus_synopsis_read",
+          "reading_scope": "实际查询返回合编目录包含四部作品；仅支持 The Pastel City 与后续卷的组成边界，不从合编文案补本卷情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1971年首部长篇，不将 Viriconium 合编、A Storm of Wings、In Viriconium 或晚期短篇的世界规则复制进来。实际读 Emera 本书评论及其有限原文引述，并读出版方合编说明以确定组成边界；未读完整原作，评论者反工业主义解读仅保留为可修订解释。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q11886848",
+        "identity": {
+          "title": "The Pastel City",
+          "author": "M. John Harrison"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "M John Harrison The Pastel City publisher tegeus",
+          "site.hachette.com.au \"Viriconium\" \"Pastel City\""
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://theblackletters.net/the-pastel-city-by-m-john-harrison-1971-e/",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_review_read",
+            "reading_scope": "实际读评论行23–41和局部原文引述，包括旧文明资源、遗物战争、金属盐沼泽与保卫城市；不连续覆盖原作。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.hachette.com.au/m-john-harrison/viriconium",
+            "result": "actual_source_scope_read",
+            "material_type": "publisher_omnibus_synopsis_read",
+            "reading_scope": "实际查询返回合编目录包含四部作品；仅支持 The Pastel City 与后续卷的组成边界，不从合编文案补本卷情节。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1971年首部长篇，不将 Viriconium 合编、A Storm of Wings、In Viriconium 或晚期短篇的世界规则复制进来。实际读 Emera 本书评论及其有限原文引述，并读出版方合编说明以确定组成边界；未读完整原作，评论者反工业主义解读仅保留为可修订解释。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q85806814",
+      "identity": {
+        "title": "The Committed Men",
+        "author": "M. John Harrison"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "M John Harrison The Committed Men publisher 1971",
+        "site.sf-encyclopedia.com \"The Committed Men\"",
+        "\"The Committed Men\" \"baby\" Harrison"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/a/m-john-harrison-2/the-committed-men/",
+          "result": "actual_source_scope_read",
+          "material_type": "critic_review_read",
+          "reading_scope": "实际从百科链接打开并读取1971年9月书评主体行127–139，支持医生保护婴儿和灾变冲突。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Committed_Men",
+          "result": "actual_source_scope_read",
+          "material_type": "secondary_synopsis_read",
+          "reading_scope": "实际读行118–125梗概及评论出处；身体适应、迫害、群落仪式及护送为二手内容，仍待原作核对。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sf-encyclopedia.com/entry/harrison_m_john",
+          "result": "search_text_read",
+          "material_type": "editorial_bibliography_search_text_read",
+          "reading_scope": "实际查询返回书目列1971英国版及同年修订美国版，只支持版本差异备注。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1971年长篇。书目资料列英国版与修订美国版，Kirkus 为 Doubleday 美国版评论；未比对两版正文，不断言全部细节适用于所有版。实际读本书评论及百科梗概，未通读原作，不把2018年改编提案当作已拍影片。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q85806814",
+        "identity": {
+          "title": "The Committed Men",
+          "author": "M. John Harrison"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "M John Harrison The Committed Men publisher 1971",
+          "site.sf-encyclopedia.com \"The Committed Men\"",
+          "\"The Committed Men\" \"baby\" Harrison"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/a/m-john-harrison-2/the-committed-men/",
+            "result": "actual_source_scope_read",
+            "material_type": "critic_review_read",
+            "reading_scope": "实际从百科链接打开并读取1971年9月书评主体行127–139，支持医生保护婴儿和灾变冲突。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Committed_Men",
+            "result": "actual_source_scope_read",
+            "material_type": "secondary_synopsis_read",
+            "reading_scope": "实际读行118–125梗概及评论出处；身体适应、迫害、群落仪式及护送为二手内容，仍待原作核对。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://sf-encyclopedia.com/entry/harrison_m_john",
+            "result": "search_text_read",
+            "material_type": "editorial_bibliography_search_text_read",
+            "reading_scope": "实际查询返回书目列1971英国版及同年修订美国版，只支持版本差异备注。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1971年长篇。书目资料列英国版与修订美国版，Kirkus 为 Doubleday 美国版评论；未比对两版正文，不断言全部细节适用于所有版。实际读本书评论及百科梗概，未通读原作，不把2018年改编提案当作已拍影片。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q1197126",
+      "identity": {
+        "title": "Involution Ocean",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling Involution Ocean publisher drug",
+        "site.openroadmedia.com \"Involution Ocean\""
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://openroadmedia.com/ebook/involution-ocean/9781497686540",
+          "result": "search_text_read",
+          "material_type": "publisher_synopsis_search_text_read",
+          "reading_scope": "实际查询返回完整现售版简介，支持 Flare 来源、禁令、船队和触碰冲突；直接打开返回 cache miss，没有通读正文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.fantasticfiction.com/s/bruce-sterling/involution-ocean.htm",
+          "result": "actual_source_scope_read",
+          "material_type": "bibliographic_synopsis_read",
+          "reading_scope": "实际读行22–23本书简介，包括 John Newhouse、Lunglance 和 Dalusa；结局未披露。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.everand.com/book/246181826/Involution-Ocean",
+          "result": "search_text_read",
+          "material_type": "retailer_public_preview_search_text_read",
+          "reading_scope": "实际查询返回 Chapter 1 开头数段，支持叙述者自述以药物填补空缺及旅程由来；直接打开失败，没有取得更后章节。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://openlibrary.org/books/OL24940755M/Involution_Ocean",
+          "result": "search_text_read",
+          "material_type": "identity_conflict_search_text_read",
+          "reading_scope": "实际查询返回1977版条目与 Laura Webster/Islands in the Net 简介错配；仅记录冲突，不用于此条内容。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1977年长篇。实际查询返回出版方现售版简介、读书目站完整简介及公开预览开篇；出版方/预览直接打开失败，因此明确为已读搜索正文范围。Open Library 某1977年版条目却被关联到 Islands in the Net 并给 Laura Webster 文案，未将该错配简介用于此条。2014电子版年不替代首刊，原作后部和捕猎后果待核。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q1197126",
+        "identity": {
+          "title": "Involution Ocean",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling Involution Ocean publisher drug",
+          "site.openroadmedia.com \"Involution Ocean\""
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://openroadmedia.com/ebook/involution-ocean/9781497686540",
+            "result": "search_text_read",
+            "material_type": "publisher_synopsis_search_text_read",
+            "reading_scope": "实际查询返回完整现售版简介，支持 Flare 来源、禁令、船队和触碰冲突；直接打开返回 cache miss，没有通读正文。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.fantasticfiction.com/s/bruce-sterling/involution-ocean.htm",
+            "result": "actual_source_scope_read",
+            "material_type": "bibliographic_synopsis_read",
+            "reading_scope": "实际读行22–23本书简介，包括 John Newhouse、Lunglance 和 Dalusa；结局未披露。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.everand.com/book/246181826/Involution-Ocean",
+            "result": "search_text_read",
+            "material_type": "retailer_public_preview_search_text_read",
+            "reading_scope": "实际查询返回 Chapter 1 开头数段，支持叙述者自述以药物填补空缺及旅程由来；直接打开失败，没有取得更后章节。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://openlibrary.org/books/OL24940755M/Involution_Ocean",
+            "result": "search_text_read",
+            "material_type": "identity_conflict_search_text_read",
+            "reading_scope": "实际查询返回1977版条目与 Laura Webster/Islands in the Net 简介错配；仅记录冲突，不用于此条内容。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1977年长篇。实际查询返回出版方现售版简介、读书目站完整简介及公开预览开篇；出版方/预览直接打开失败，因此明确为已读搜索正文范围。Open Library 某1977年版条目却被关联到 Islands in the Net 并给 Laura Webster 文案，未将该错配简介用于此条。2014电子版年不替代首刊，原作后部和捕猎后果待核。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131461495",
+      "identity": {
+        "title": "Green Days in Brunei",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Green Days in Brunei\" Turner Choi source"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://academic.oup.com/liverpool-scholarship-online/book/43316/chapter/363081343",
+          "result": "actual_source_scope_read",
+          "material_type": "academic_criticism_read",
+          "reading_scope": "实际读本篇段落网页行666–697，范围为旧生产线、改装、绿色船舶及发展观；这是 Shippey 的文学解释。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sfwa.org/2009/12/04/transracial-writing-for-the-sincere/",
+          "result": "actual_source_scope_read",
+          "material_type": "writing_essay_with_story_analysis_read",
+          "reading_scope": "实际读行114–121本篇人物/视角分析；不同出身、语言、归属的关系用于提出研究问题。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.drunkmonkeyclub.com/download/Science%20Fiction%20and%20Fantasy%20A-E/Bruce%20Sterling/Bruce%20Sterling%20-%20Crystal%20Express.pdf",
+          "result": "search_text_read",
+          "material_type": "unverified_transcription_excerpt_search_text_read",
+          "reading_scope": "实际查询返回油台对话开篇，支持 Turner 与部长围绕文档/联网的冲突；这是第三方转写，不等同作者授权正文已核。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1985年单篇。实际读 Shippey 本篇评论段落及 SFWA 写作文章中的分析、原文少量引用；也实际取得第三方转写本的开篇片段，来源版本和转写准确性仍待核。没有完整连续阅读本篇，不把评论关于西方发展观的解释当成作者唯一主旨或现实文莱历史。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131461495",
+        "identity": {
+          "title": "Green Days in Brunei",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Green Days in Brunei\" Turner Choi source"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://academic.oup.com/liverpool-scholarship-online/book/43316/chapter/363081343",
+            "result": "actual_source_scope_read",
+            "material_type": "academic_criticism_read",
+            "reading_scope": "实际读本篇段落网页行666–697，范围为旧生产线、改装、绿色船舶及发展观；这是 Shippey 的文学解释。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://sfwa.org/2009/12/04/transracial-writing-for-the-sincere/",
+            "result": "actual_source_scope_read",
+            "material_type": "writing_essay_with_story_analysis_read",
+            "reading_scope": "实际读行114–121本篇人物/视角分析；不同出身、语言、归属的关系用于提出研究问题。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.drunkmonkeyclub.com/download/Science%20Fiction%20and%20Fantasy%20A-E/Bruce%20Sterling/Bruce%20Sterling%20-%20Crystal%20Express.pdf",
+            "result": "search_text_read",
+            "material_type": "unverified_transcription_excerpt_search_text_read",
+            "reading_scope": "实际查询返回油台对话开篇，支持 Turner 与部长围绕文档/联网的冲突；这是第三方转写，不等同作者授权正文已核。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1985年单篇。实际读 Shippey 本篇评论段落及 SFWA 写作文章中的分析、原文少量引用；也实际取得第三方转写本的开篇片段，来源版本和转写准确性仍待核。没有完整连续阅读本篇，不把评论关于西方发展观的解释当成作者唯一主旨或现实文莱历史。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131308031",
+      "identity": {
+        "title": "Our Neural Chernobyl",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://academic.oup.com/liverpool-scholarship-online/book/43316/chapter/363081343",
+          "result": "actual_source_scope_read",
+          "material_type": "academic_criticism_read",
+          "reading_scope": "实际读网页行646–648中 Our Neural Chernobyl 的明确概述，只支持研究事故/智能传播线索，非完整原作。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1988年独立单篇，不将 Globalhead 合集身份当作同一分析对象。实际读 Shippey 章节对本篇的短小概述，没有读原作；病毒、智能及灾难只是虚构机制，不当医学或生物科学结论。具体角色、结局与智能变化细节继续待核。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131308031",
+        "identity": {
+          "title": "Our Neural Chernobyl",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://academic.oup.com/liverpool-scholarship-online/book/43316/chapter/363081343",
+            "result": "actual_source_scope_read",
+            "material_type": "academic_criticism_read",
+            "reading_scope": "实际读网页行646–648中 Our Neural Chernobyl 的明确概述，只支持研究事故/智能传播线索，非完整原作。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1988年独立单篇，不将 Globalhead 合集身份当作同一分析对象。实际读 Shippey 章节对本篇的短小概述，没有读原作；病毒、智能及灾难只是虚构机制，不当医学或生物科学结论。具体角色、结局与智能变化细节继续待核。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131218263",
+      "identity": {
+        "title": "Deep Eddy",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Deep Eddy\" story censorship"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+          "result": "actual_source_scope_read",
+          "material_type": "collection_review_read",
+          "reading_scope": "实际读 Deep Eddy 条目行22；仅包裹、信息设备及街头冲突梗概，没有全篇正文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1993年单篇，不把1999合集年份当首刊。实际读本篇书评段落，尚未读原作；共享背景的 Bicycle Repairman、Taklamakan 不用于倒填本篇揭示。spex 功能和冲突过程继续待核。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131218263",
+        "identity": {
+          "title": "Deep Eddy",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Deep Eddy\" story censorship"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+            "result": "actual_source_scope_read",
+            "material_type": "collection_review_read",
+            "reading_scope": "实际读 Deep Eddy 条目行22；仅包裹、信息设备及街头冲突梗概，没有全篇正文。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1993年单篇，不把1999合集年份当首刊。实际读本篇书评段落，尚未读原作；共享背景的 Bicycle Repairman、Taklamakan 不用于倒填本篇揭示。spex 功能和冲突过程继续待核。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q4903762",
+      "identity": {
+        "title": "Bicycle Repairman",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Bruce Sterling \"Bicycle Repairman\" original story Lyle"
+      ],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+          "result": "actual_source_scope_read",
+          "material_type": "collection_review_read",
+          "reading_scope": "实际读 Bicycle Repairman 条目行23，范围为自主谋生、设备包裹和陌生访客。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.electronicsandbooks.com/edt/manual/Old%20Pulp%20Magazines/%21%20new/Asimov%27s%20-%20October-November%201996.pdf",
+          "result": "search_text_read",
+          "material_type": "magazine_reprint_ocr_search_text_read",
+          "reading_scope": "实际查询返回印刷页163母子远程对话，包括 squat 安全争论及自卫设备；并未连续读取整篇转载 OCR。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bicycle_Repairman",
+          "result": "actual_source_scope_read",
+          "material_type": "secondary_bibliography_read",
+          "reading_scope": "实际读出版/再收录及同名短剧区别，只支持身份边界。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1996年单篇，不与 Monty Python 同名短剧混合；1997为获奖年，1999/2007为再收录。实际读书评本篇条目与原刊转载 OCR 的搜索返回局部母子对话，未通读全篇；未用1993前篇或1998后篇情节代替本条依据。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q4903762",
+        "identity": {
+          "title": "Bicycle Repairman",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [
+          "Bruce Sterling \"Bicycle Repairman\" original story Lyle"
+        ],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+            "result": "actual_source_scope_read",
+            "material_type": "collection_review_read",
+            "reading_scope": "实际读 Bicycle Repairman 条目行23，范围为自主谋生、设备包裹和陌生访客。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.electronicsandbooks.com/edt/manual/Old%20Pulp%20Magazines/%21%20new/Asimov%27s%20-%20October-November%201996.pdf",
+            "result": "search_text_read",
+            "material_type": "magazine_reprint_ocr_search_text_read",
+            "reading_scope": "实际查询返回印刷页163母子远程对话，包括 squat 安全争论及自卫设备；并未连续读取整篇转载 OCR。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Bicycle_Repairman",
+            "result": "actual_source_scope_read",
+            "material_type": "secondary_bibliography_read",
+            "reading_scope": "实际读出版/再收录及同名短剧区别，只支持身份边界。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1996年单篇，不与 Monty Python 同名短剧混合；1997为获奖年，1999/2007为再收录。实际读书评本篇条目与原刊转载 OCR 的搜索返回局部母子对话，未通读全篇；未用1993前篇或1998后篇情节代替本条依据。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q131516770",
+      "identity": {
+        "title": "Sacred Cow",
+        "author": "布鲁斯·斯特林"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+      "materials_checked": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+          "result": "actual_source_scope_read",
+          "material_type": "collection_review_read",
+          "reading_scope": "实际读 Sacred Cow 条目行21；范围仅拍片产业迁移、成本和灾后场地的冲突。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+      "reason_unconfirmed": "按1993年独立单篇。实际读本篇书评段落，未读原文；灾难比例、疾病机制与人物内在感受未作为已核事实补充。故事中的产业/文化反转用于可修订文学问题，不当真实流行病预测。 内容与解释仍待独立核对。",
+      "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131516770",
+        "identity": {
+          "title": "Sacred Cow",
+          "author": "布鲁斯·斯特林"
+        },
+        "attempt_state": "content_material_read",
+        "queries": [],
+        "query_note": "保存本轮实际查询，直接打开的材料不虚构查询词；范围按逐材料说明。",
+        "materials_checked": [
+          {
+            "url": "https://speculiction.blogspot.com/2014/03/review-of-good-old-fashioned-future-by.html",
+            "result": "actual_source_scope_read",
+            "material_type": "collection_review_read",
+            "reading_scope": "实际读 Sacred Cow 条目行21；范围仅拍片产业迁移、成本和灾后场地的冲突。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐来源记录实际读取材料与范围，未读原作部分继续待核。",
+        "reason_unconfirmed": "按1993年独立单篇。实际读本篇书评段落，未读原文；灾难比例、疾病机制与人物内在感受未作为已核事实补充。故事中的产业/文化反转用于可修订文学问题，不当真实流行病预测。 内容与解释仍待独立核对。",
+        "next_step": "按确切短篇、长篇或合集身份，核对原作、版次和细项依据。",
+        "issue_result": "added_to_private_round12_unverified"
+      },
+      "attempt_input": "silverberg-source-searches-round12.json"
+    },
+    {
+      "id": "Q7766675",
+      "identity": {
+        "title": "艾比斯之梦",
+        "author": "Hiroshi Yamamoto"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.cite.com.tw/book?id=20412",
+          "result": "actual_source_scope_read",
+          "material_type": "中文出版方框架与七篇分项简介／所示首篇开头",
+          "reading_scope": "实际读2011中文页框架与七则分项简介，护理机器人Shion、虚拟女孩Asami与Ibis起源只按相应分项使用；首篇开头仅所示部分，不称七篇全文。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.simonandschuster.com/books/The-Stories-of-Ibis/Hiroshi-Yamamoto/The-Stories-of-Ibis/9781421534404",
+          "result": "actual_source_scope_read",
+          "material_type": "英译本完整框架简介",
+          "reading_scope": "实际读Haikasoru本介绍中的人类衰落、Ibis框架和七个人机故事；不把英译页当中文各分项或原语2006日期证明。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读城邦出版集团旗下奇幻基地2011中文书介绍中框架与七篇分项简介，以及Haikasoru英译本完整框架简介；中文页所示首篇开头只读返回段，未作整篇或全书核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7766675",
+        "identity": {
+          "title": "艾比斯之梦",
+          "author": "Hiroshi Yamamoto"
+        },
+        "sources": [
+          {
+            "url": "https://www.cite.com.tw/book?id=20412",
+            "material_kind": "中文出版方框架与七篇分项简介／所示首篇开头",
+            "support_scope": "实际读2011中文页框架与七则分项简介，护理机器人Shion、虚拟女孩Asami与Ibis起源只按相应分项使用；首篇开头仅所示部分，不称七篇全文。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://www.simonandschuster.com/books/The-Stories-of-Ibis/Hiroshi-Yamamoto/The-Stories-of-Ibis/9781421534404",
+            "material_kind": "英译本完整框架简介",
+            "support_scope": "实际读Haikasoru本介绍中的人类衰落、Ibis框架和七个人机故事；不把英译页当中文各分项或原语2006日期证明。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7733522",
+      "identity": {
+        "title": "盛世 中國 2013年",
+        "author": "陈冠中"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/208958/the-fat-years-by-chan-koonchung/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读英译本完整出版简介，支持月份缺失、朋友调查、绑架官员与对居民的发现；未读原语全文或把现实政治判断当书中已经验证的事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读英译本完整出版简介，支持月份缺失、朋友调查、绑架官员与对居民的发现；未读原语全文或把现实政治判断当书中已经验证的事实。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7733522",
+        "identity": {
+          "title": "盛世 中國 2013年",
+          "author": "陈冠中"
+        },
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/208958/the-fat-years-by-chan-koonchung/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读英译本完整出版简介，支持月份缺失、朋友调查、绑架官员与对居民的发现；未读原语全文或把现实政治判断当书中已经验证的事实。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q3210408",
+      "identity": {
+        "title": "The House of the Scorpion",
+        "author": "Nancy Farmer"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-House-of-the-Scorpion/Nancy-Farmer/The-House-of-the-Scorpion/9781439106556",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读单卷完整出版简介及页内Simon Pulse阅读指南About the Book，支持克隆差别待遇、智力剥夺、逃离与返回；未把2002首卷与2013续作The Lord of Opium合并，未阅读全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读单卷完整出版简介及页内Simon Pulse阅读指南About the Book，支持克隆差别待遇、智力剥夺、逃离与返回；未把2002首卷与2013续作The Lord of Opium合并，未阅读全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q3210408",
+        "identity": {
+          "title": "The House of the Scorpion",
+          "author": "Nancy Farmer"
+        },
+        "sources": [
+          {
+            "url": "https://www.simonandschuster.com/books/The-House-of-the-Scorpion/Nancy-Farmer/The-House-of-the-Scorpion/9781439106556",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读单卷完整出版简介及页内Simon Pulse阅读指南About the Book，支持克隆差别待遇、智力剥夺、逃离与返回；未把2002首卷与2013续作The Lord of Opium合并，未阅读全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7731352",
+      "identity": {
+        "title": "The Ear, the Eye and the Arm",
+        "author": "Nancy Farmer"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://schol.ca/our-books/book/ear-the-eye-and-the-arm-the-9780545356619",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读Scholastic单书完整简介，支持2194 Harare、庄园外失踪与核废料能力；资料未展开犯罪计划或传统文化具体机制，暂不由一般非洲背景推断。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Scholastic单书完整简介，支持2194 Harare、庄园外失踪与核废料能力；资料未展开犯罪计划或传统文化具体机制，暂不由一般非洲背景推断。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7731352",
+        "identity": {
+          "title": "The Ear, the Eye and the Arm",
+          "author": "Nancy Farmer"
+        },
+        "sources": [
+          {
+            "url": "https://schol.ca/our-books/book/ear-the-eye-and-the-arm-the-9780545356619",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读Scholastic单书完整简介，支持2194 Harare、庄园外失踪与核废料能力；资料未展开犯罪计划或传统文化具体机制，暂不由一般非洲背景推断。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q4880455",
+      "identity": {
+        "title": "Beggars and Choosers",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/beggars-and-choosers/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站单卷完整介绍；支持三层遗传分工、失眠者岛屿退居和社会技术风险，不把简介等同全文核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站单卷完整介绍；支持三层遗传分工、失眠者岛屿退居和社会技术风险，不把简介等同全文核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q4880455",
+        "identity": {
+          "title": "Beggars and Choosers",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/beggars-and-choosers/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站单卷完整介绍；支持三层遗传分工、失眠者岛屿退居和社会技术风险，不把简介等同全文核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q4880453",
+      "identity": {
+        "title": "Beggars Ride",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/beggars-ride/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站单卷完整介绍；只取两代增强者、普通人贫富分裂与文明危机，未由次级评论补入具体病毒、导弹或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站单卷完整介绍；只取两代增强者、普通人贫富分裂与文明危机，未由次级评论补入具体病毒、导弹或结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q4880453",
+        "identity": {
+          "title": "Beggars Ride",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/beggars-ride/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站单卷完整介绍；只取两代增强者、普通人贫富分裂与文明危机，未由次级评论补入具体病毒、导弹或结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7246870",
+      "identity": {
+        "title": "Probability Sun",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/probability-sun/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站本卷完整短简介；只支持遗物的多种可能功能与败势，不用次级摘要继承其他卷的人物、共享现实机制或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站本卷完整短简介；只支持遗物的多种可能功能与败势，不用次级摘要继承其他卷的人物、共享现实机制或结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7246870",
+        "identity": {
+          "title": "Probability Sun",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/probability-sun/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站本卷完整短简介；只支持遗物的多种可能功能与败势，不用次级摘要继承其他卷的人物、共享现实机制或结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q3908940",
+      "identity": {
+        "title": "Probability Space",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://us.macmillan.com/books/9781466825253/probabilityspace/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读Tor单卷完整出版简介与页面返回的原作开头段落（Amanda父亲被绑架、前往太空港）；不是整章或全书核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Tor单卷完整出版简介与页面返回的原作开头段落（Amanda父亲被绑架、前往太空港）；不是整章或全书核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q3908940",
+        "identity": {
+          "title": "Probability Space",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://us.macmillan.com/books/9781466825253/probabilityspace/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读Tor单卷完整出版简介与页面返回的原作开头段落（Amanda父亲被绑架、前往太空港）；不是整章或全书核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131380867",
+      "identity": {
+        "title": "Maximum Light",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/maximum-light/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站单卷完整介绍，支持生育损害、人口老化及混合生命阴谋；资料未揭示全案机制和结局，解释仅限所述冲突。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站单卷完整介绍，支持生育损害、人口老化及混合生命阴谋；资料未揭示全案机制和结局，解释仅限所述冲突。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131380867",
+        "identity": {
+          "title": "Maximum Light",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/maximum-light/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站单卷完整介绍，支持生育损害、人口老化及混合生命阴谋；资料未揭示全案机制和结局，解释仅限所述冲突。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131381533",
+      "identity": {
+        "title": "Nothing Human",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/nothing-human/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站完整单卷情节介绍，明确覆盖首批少年遭改造、怀孕与数代后适应困境；未阅读全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站完整单卷情节介绍，明确覆盖首批少年遭改造、怀孕与数代后适应困境；未阅读全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131381533",
+        "identity": {
+          "title": "Nothing Human",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/nothing-human/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站完整单卷情节介绍，明确覆盖首批少年遭改造、怀孕与数代后适应困境；未阅读全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131381570",
+      "identity": {
+        "title": "Crucible",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/crucible/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站完整本卷简介；首卷Crossfire经历仅作页面明确前情，本卷分析围绕去攻击性病毒，不宣称掌握病毒结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站完整本卷简介；首卷Crossfire经历仅作页面明确前情，本卷分析围绕去攻击性病毒，不宣称掌握病毒结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131381570",
+        "identity": {
+          "title": "Crucible",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/crucible/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站完整本卷简介；首卷Crossfire经历仅作页面明确前情，本卷分析围绕去攻击性病毒，不宣称掌握病毒结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q27902537",
+      "identity": {
+        "title": "After the Fall, Before the Fall, During the Fall",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tachyonpublications.com/product/after-the-fall-before-the-fall-during-the-fall/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读完整出版简介及所示NOVEMBER 2013开头节选（Pete入屋绑架至返回壳内）；节选最后句截断，未作整章或全书核验。外星袭击作为人物与简介的初始解释，不断言已核实最终原因。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读完整出版简介及所示NOVEMBER 2013开头节选（Pete入屋绑架至返回壳内）；节选最后句截断，未作整章或全书核验。外星袭击作为人物与简介的初始解释，不断言已核实最终原因。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q27902537",
+        "identity": {
+          "title": "After the Fall, Before the Fall, During the Fall",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://tachyonpublications.com/product/after-the-fall-before-the-fall-during-the-fall/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读完整出版简介及所示NOVEMBER 2013开头节选（Pete入屋绑架至返回壳内）；节选最后句截断，未作整章或全书核验。外星袭击作为人物与简介的初始解释，不断言已核实最终原因。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q27902538",
+      "identity": {
+        "title": "Yesterday's Kin",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tachyonpublications.com/product/yesterdays-kin/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读Tachyon完整中篇简介；页面返回原作开头学术庆功段落亦有阅读，但本分析不将此视为完整原文核验，也不借长篇续扩写补结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Tachyon完整中篇简介；页面返回原作开头学术庆功段落亦有阅读，但本分析不将此视为完整原文核验，也不借长篇续扩写补结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q27902538",
+        "identity": {
+          "title": "Yesterday's Kin",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://tachyonpublications.com/product/yesterdays-kin/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读Tachyon完整中篇简介；页面返回原作开头学术庆功段落亦有阅读，但本分析不将此视为完整原文核验，也不借长篇续扩写补结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131382745",
+      "identity": {
+        "title": "Tomorrow's Kin",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/tomorrows-kin/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者完整扩写本简介／边界说明",
+          "reading_scope": "实际读十年延伸、国家与私人企业竞争、进入太空动机等作者介绍；只支持长篇本，不回填Yesterday’s Kin中篇。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://us.macmillan.com/books/9780765390318/tomorrowskin/",
+          "result": "actual_source_scope_read",
+          "material_type": "出版方扩写长篇完整简介",
+          "reading_scope": "实际读Tor关于Marianne与外星来访威胁的长篇简介；十年延伸主要依作者页，未以开头部分替代全书。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整介绍及Tor出版简介；扩写延伸十年和后续国家、企业竞争来自作者自述，不把网页显示开头段当作全书核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131382745",
+        "identity": {
+          "title": "Tomorrow's Kin",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/tomorrows-kin/",
+            "material_kind": "作者完整扩写本简介／边界说明",
+            "support_scope": "实际读十年延伸、国家与私人企业竞争、进入太空动机等作者介绍；只支持长篇本，不回填Yesterday’s Kin中篇。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://us.macmillan.com/books/9780765390318/tomorrowskin/",
+            "material_kind": "出版方扩写长篇完整简介",
+            "support_scope": "实际读Tor关于Marianne与外星来访威胁的长篇简介；十年延伸主要依作者页，未以开头部分替代全书。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131382759",
+      "identity": {
+        "title": "If Tomorrow Comes",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/if-tomorrow-comes/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站本卷完整介绍，支持时差、来船异议与Isabel处境；不由前卷或页面转载短评推导具体战争过程和结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站本卷完整介绍，支持时差、来船异议与Isabel处境；不由前卷或页面转载短评推导具体战争过程和结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131382759",
+        "identity": {
+          "title": "If Tomorrow Comes",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/if-tomorrow-comes/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站本卷完整介绍，支持时差、来船异议与Isabel处境；不由前卷或页面转载短评推导具体战争过程和结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131461983",
+      "identity": {
+        "title": "Sea Change",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://tachyonpublications.com/product/sea-changes/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读完整出版简介及所示原作开头短节选（假身份、Org与自认拯救世界的自述）；不是全章或全文，Quinault仅按简介明确角色记录，不补法律制度细节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读完整出版简介及所示原作开头短节选（假身份、Org与自认拯救世界的自述）；不是全章或全文，Quinault仅按简介明确角色记录，不补法律制度细节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131461983",
+        "identity": {
+          "title": "Sea Change",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://tachyonpublications.com/product/sea-changes/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读完整出版简介及所示原作开头短节选（假身份、Org与自认拯救世界的自述）；不是全章或全文，Quinault仅按简介明确角色记录，不补法律制度细节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131382856",
+      "identity": {
+        "title": "The Eleventh Gate",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/the-eleventh-gate.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读Baen完整单卷出版简介；未点击原文样章，不由“惊人发现”推断其具体功能或本卷结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Baen完整单卷出版简介；未点击原文样章，不由“惊人发现”推断其具体功能或本卷结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131382856",
+        "identity": {
+          "title": "The Eleventh Gate",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/the-eleventh-gate.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读Baen完整单卷出版简介；未点击原文样章，不由“惊人发现”推断其具体功能或本卷结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131376346",
+      "identity": {
+        "title": "An Alien Light",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/an-alien-light.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读Wordfire Press经Baen分销的完整单书简介；作者网站另转载Publishers Weekly评论已读，仅用其作背景，不将评论冒充作者原话或全书证据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Wordfire Press经Baen分销的完整单书简介；作者网站另转载Publishers Weekly评论已读，仅用其作背景，不将评论冒充作者原话或全书证据。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131376346",
+        "identity": {
+          "title": "An Alien Light",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/an-alien-light.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读Wordfire Press经Baen分销的完整单书简介；作者网站另转载Publishers Weekly评论已读，仅用其作背景，不将评论冒充作者原话或全书证据。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131382108",
+      "identity": {
+        "title": "Steal Across the Sky",
+        "author": "Nancy Kress"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://nancykress.com/steal-across-the-sky/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者网站完整单书介绍与其中公开招募文本；分析限一万年前伤害、志愿见证和选择条件，未凭次级概述补入被剥夺的具体能力或结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者网站完整单书介绍与其中公开招募文本；分析限一万年前伤害、志愿见证和选择条件，未凭次级概述补入被剥夺的具体能力或结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131382108",
+        "identity": {
+          "title": "Steal Across the Sky",
+          "author": "Nancy Kress"
+        },
+        "sources": [
+          {
+            "url": "https://nancykress.com/steal-across-the-sky/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者网站完整单书介绍与其中公开招募文本；分析限一万年前伤害、志愿见证和选择条件，未凭次级概述补入被剥夺的具体能力或结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q117803756",
+      "identity": {
+        "title": "Observer",
+        "author": "Nancy Kress / 罗伯特·兰萨"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://us.macmillan.com/books/9781250376466/observer/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读Tor完整再版简介及返回的开头部分（医院自保、指控和网络围攻），不是全文；意识生成现实为小说项目与待核设定，不把出版宣传的hard science或作者生物中心主义当成已证科学结论。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Tor完整再版简介及返回的开头部分（医院自保、指控和网络围攻），不是全文；意识生成现实为小说项目与待核设定，不把出版宣传的hard science或作者生物中心主义当成已证科学结论。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q117803756",
+        "identity": {
+          "title": "Observer",
+          "author": "Nancy Kress / 罗伯特·兰萨"
+        },
+        "sources": [
+          {
+            "url": "https://us.macmillan.com/books/9781250376466/observer/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读Tor完整再版简介及返回的开头部分（医院自保、指控和网络围攻），不是全文；意识生成现实为小说项目与待核设定，不把出版宣传的hard science或作者生物中心主义当成已证科学结论。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q6549446",
+      "identity": {
+        "title": "Limit of Vision",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/lov.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整单书介绍及公开第一章的开头部分（失联、情绪变化、资助报告、禁止人工生命及研究者偷运植入）；未读全章或全书，不将LOVs描述为已验证现实技术。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整单书介绍及公开第一章的开头部分（失联、情绪变化、资助报告、禁止人工生命及研究者偷运植入）；未读全章或全书，不将LOVs描述为已验证现实技术。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q6549446",
+        "identity": {
+          "title": "Limit of Vision",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/lov.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整单书介绍及公开第一章的开头部分（失联、情绪变化、资助报告、禁止人工生命及研究者偷运植入）；未读全章或全书，不将LOVs描述为已验证现实技术。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q30084993",
+      "identity": {
+        "title": "The Bohr Maker",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/tbmpage.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整单书介绍及第一章公开开头（Phousita在河流仓库发现遗体及贫困生活），具体分析以介绍明确的许可、装置和感染为界；未阅读全文。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整单书介绍及第一章公开开头（Phousita在河流仓库发现遗体及贫困生活），具体分析以介绍明确的许可、装置和感染为界；未阅读全文。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q30084993",
+        "identity": {
+          "title": "The Bohr Maker",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/tbmpage.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整单书介绍及第一章公开开头（Phousita在河流仓库发现遗体及贫困生活），具体分析以介绍明确的许可、装置和感染为界；未阅读全文。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131376803",
+      "identity": {
+        "title": "Deception Well",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/dwpage.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整本卷介绍及公开第一章开头（Lot进入通风管、追随者战争与父亲共融教导）；未核对全章或最终共融机制。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整本卷介绍及公开第一章开头（Lot进入通风管、追随者战争与父亲共融教导）；未核对全章或最终共融机制。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131376803",
+        "identity": {
+          "title": "Deception Well",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/dwpage.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整本卷介绍及公开第一章开头（Lot进入通风管、追随者战争与父亲共融教导）；未核对全章或最终共融机制。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7916983",
+      "identity": {
+        "title": "Vast",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/vastpage.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整简介及PRELUDE返回的主要开头（Nikko定期清醒、记忆封存、敌方细胞与追击）；未作整章或全书核验，未继承后续Inverted Frontier各卷情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整简介及PRELUDE返回的主要开头（Nikko定期清醒、记忆封存、敌方细胞与追击）；未作整章或全书核验，未继承后续Inverted Frontier各卷情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7916983",
+        "identity": {
+          "title": "Vast",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/vastpage.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整简介及PRELUDE返回的主要开头（Nikko定期清醒、记忆封存、敌方细胞与追击）；未作整章或全书核验，未继承后续Inverted Frontier各卷情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131381527",
+      "identity": {
+        "title": "Memory",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/memorypage.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整单书介绍与公开第一章开头部分（家庭、银雾、寺庙防御和kobolds）；只取简介明确的哥哥线索与人工世界，不假定银雾最终来源已核实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整单书介绍与公开第一章开头部分（家庭、银雾、寺庙防御和kobolds）；只取简介明确的哥哥线索与人工世界，不假定银雾最终来源已核实。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131381527",
+        "identity": {
+          "title": "Memory",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/memorypage.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整单书介绍与公开第一章开头部分（家庭、银雾、寺庙防御和kobolds）；只取简介明确的哥哥线索与人工世界，不假定银雾最终来源已核实。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q122452557",
+      "identity": {
+        "title": "The Red: First Light",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/the_red_first_light.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者完整首卷介绍及EPISODE 1: DARK PATROL开头（战争产业讲话、装备检查、Guidance持续感官上传）；未全文核验，未凭续卷确认危险预感的终极主体与计划。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整首卷介绍及EPISODE 1: DARK PATROL开头（战争产业讲话、装备检查、Guidance持续感官上传）；未全文核验，未凭续卷确认危险预感的终极主体与计划。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q122452557",
+        "identity": {
+          "title": "The Red: First Light",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/the_red_first_light.php",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者完整首卷介绍及EPISODE 1: DARK PATROL开头（战争产业讲话、装备检查、Guidance持续感官上传）；未全文核验，未凭续卷确认危险预感的终极主体与计划。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q131382746",
+      "identity": {
+        "title": "The Last Good Man",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/the_last_good_man.php",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读作者完整单卷简介；页面转载他人评论提母子经历已读但不把其作为作者直接证据，未从泛AI军事主题猜具体结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者完整单卷简介；页面转载他人评论提母子经历已读但不把其作为作者直接证据，未从泛AI军事主题猜具体结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q131382746",
+        "identity": {
+          "title": "The Last Good Man",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/the_last_good_man.php",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读作者完整单卷简介；页面转载他人评论提母子经历已读但不把其作为作者直接证据，未从泛AI军事主题猜具体结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q27976091",
+      "identity": {
+        "title": "Goddesses",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://mythicisland.com/e-book/goddesses/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读作者合集页中关于单篇Goddesses的写作自述与完整公开开头(i)、(ii)两节；只据(i)明确的民政合同与女婴场景分析，未读2000中篇全文，不用合集其余九篇情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读作者合集页中关于单篇Goddesses的写作自述与完整公开开头(i)、(ii)两节；只据(i)明确的民政合同与女婴场景分析，未读2000中篇全文，不用合集其余九篇情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q27976091",
+        "identity": {
+          "title": "Goddesses",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://mythicisland.com/e-book/goddesses/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读作者合集页中关于单篇Goddesses的写作自述与完整公开开头(i)、(ii)两节；只据(i)明确的民政合同与女婴场景分析，未读2000中篇全文，不用合集其余九篇情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q61054553",
+      "identity": {
+        "title": "The Martian Obelisk",
+        "author": "Linda Nagata"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://reactormag.com/the-martian-obelisk/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读Reactor/Tor.com公开原作主要段落：方尖碑缘起、十九分钟通信延迟、Tory求援、拆塔与末尾孙女消息；返回视图有少量中间段落省略，未声称逐字完整或外部独立核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读Reactor/Tor.com公开原作主要段落：方尖碑缘起、十九分钟通信延迟、Tory求援、拆塔与末尾孙女消息；返回视图有少量中间段落省略，未声称逐字完整或外部独立核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q61054553",
+        "identity": {
+          "title": "The Martian Obelisk",
+          "author": "Linda Nagata"
+        },
+        "sources": [
+          {
+            "url": "https://reactormag.com/the-martian-obelisk/",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读Reactor/Tor.com公开原作主要段落：方尖碑缘起、十九分钟通信延迟、Tory求援、拆塔与末尾孙女消息；返回视图有少量中间段落省略，未声称逐字完整或外部独立核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q444451",
+      "identity": {
+        "title": "City of Golden Shadow",
+        "author": "Tad Williams"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/332183/city-of-golden-shadow-by-tad-williams/paperback/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方首卷介绍，包括Renie、!Xabbu、Paul Jonas、Orlando及Sellars的角色处境；不以最终卷对网络机制的解释倒填首卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方首卷介绍，包括Renie、!Xabbu、Paul Jonas、Orlando及Sellars的角色处境；不以最终卷对网络机制的解释倒填首卷。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q444451",
+        "identity": {
+          "title": "City of Golden Shadow",
+          "author": "Tad Williams"
+        },
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/332183/city-of-golden-shadow-by-tad-williams/paperback/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方首卷介绍，包括Renie、!Xabbu、Paul Jonas、Orlando及Sellars的角色处境；不以最终卷对网络机制的解释倒填首卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7338006",
+      "identity": {
+        "title": "River of Blue Fire",
+        "author": "Tad Williams"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://penguinrandomhouselibrary.com/book/?isbn=9780756417123",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读本卷出版简介及公开第一章开头至讨论行动计划的部分（巨虫河流、Orlando病情、Martine感官过载）；未读全章或全卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷出版简介及公开第一章开头至讨论行动计划的部分（巨虫河流、Orlando病情、Martine感官过载）；未读全章或全卷。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7338006",
+        "identity": {
+          "title": "River of Blue Fire",
+          "author": "Tad Williams"
+        },
+        "sources": [
+          {
+            "url": "https://penguinrandomhouselibrary.com/book/?isbn=9780756417123",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读本卷出版简介及公开第一章开头至讨论行动计划的部分（巨虫河流、Orlando病情、Martine感官过载）；未读全章或全卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q6925481",
+      "identity": {
+        "title": "Mountain of Black Glass",
+        "author": "Tad Williams"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781101524329",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体简介及所示公开节选",
+          "reading_scope": "实际阅读本卷完整出版简介及第一章公开开头部分（NETFEED数字鸿沟、Renie梦境与真实身份争论）；梦境未当实际事件，未读全章或全卷。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整出版简介及第一章公开开头部分（NETFEED数字鸿沟、Renie梦境与真实身份争论）；梦境未当实际事件，未读全章或全卷。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q6925481",
+        "identity": {
+          "title": "Mountain of Black Glass",
+          "author": "Tad Williams"
+        },
+        "sources": [
+          {
+            "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781101524329",
+            "material_kind": "作者／出版方单实体简介及所示公开节选",
+            "support_scope": "实际阅读本卷完整出版简介及第一章公开开头部分（NETFEED数字鸿沟、Renie梦境与真实身份争论）；梦境未当实际事件，未读全章或全卷。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7440105",
+      "identity": {
+        "title": "Sea of Silver Light",
+        "author": "Tad Williams"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/290827/sea-of-silver-light-by-tad-williams/",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方终卷完整短简介，仅据其中儿童、永生阴谋、前敌人联盟与Johnny冲突分析；未将简介未解释的结局机制认作已核验。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方终卷完整短简介，仅据其中儿童、永生阴谋、前敌人联盟与Johnny冲突分析；未将简介未解释的结局机制认作已核验。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7440105",
+        "identity": {
+          "title": "Sea of Silver Light",
+          "author": "Tad Williams"
+        },
+        "sources": [
+          {
+            "url": "https://www.penguinrandomhouse.com/books/290827/sea-of-silver-light-by-tad-williams/",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方终卷完整短简介，仅据其中儿童、永生阴谋、前敌人联盟与Johnny冲突分析；未将简介未解释的结局机制认作已核验。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q5758058",
+      "identity": {
+        "title": "Higher Education",
+        "author": "傑里·波奈爾 / Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/higher-education.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方完整单书短简介；没有成功打开公开样章，未从系列理念推断具体训练制度和结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方完整单书短简介；没有成功打开公开样章，未从系列理念推断具体训练制度和结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q5758058",
+        "identity": {
+          "title": "Higher Education",
+          "author": "傑里·波奈爾 / Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/higher-education.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方完整单书短简介；没有成功打开公开样章，未从系列理念推断具体训练制度和结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7718000",
+      "identity": {
+        "title": "The Billion Dollar Boy",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/the-billion-dollar-boy.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方完整单书简介；没有读取Read Online正文，不推定介绍未列出的继承安排和结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方完整单书简介；没有读取Read Online正文，不推定介绍未列出的继承安排和结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7718000",
+        "identity": {
+          "title": "The Billion Dollar Boy",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/the-billion-dollar-boy.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方完整单书简介；没有读取Read Online正文，不推定介绍未列出的继承安排和结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7728539",
+      "identity": {
+        "title": "The Cyborg from Earth",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/the-cyborg-from-earth.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方完整单书简介；赛博格的所谓叛乱是任务叙述，不把其合法性或最后阵营作为已核事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方完整单书简介；赛博格的所谓叛乱是任务叙述，不把其合法性或最后阵营作为已核事实。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7728539",
+        "identity": {
+          "title": "The Cyborg from Earth",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/the-cyborg-from-earth.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方完整单书简介；赛博格的所谓叛乱是任务叙述，不把其合法性或最后阵营作为已核事实。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7820291",
+      "identity": {
+        "title": "Tomorrow and Tomorrow",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/tomorrow-and-tomorrow.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方完整长篇简介；Omega Point仅作为作品设定，不表示现实宇宙学已确认；公开章节目录可见但正文读取失败。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方完整长篇简介；Omega Point仅作为作品设定，不表示现实宇宙学已确认；公开章节目录可见但正文读取失败。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7820291",
+        "identity": {
+          "title": "Tomorrow and Tomorrow",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/tomorrow-and-tomorrow.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方完整长篇简介；Omega Point仅作为作品设定，不表示现实宇宙学已确认；公开章节目录可见但正文读取失败。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q3222992",
+      "identity": {
+        "title": "Brother to Dragons",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/brother-to-dragons.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方完整短简介；只分析明确的孤儿院、街头及TANDI排斥，不从外部评论扩入未直接核对的任务结局。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方完整短简介；只分析明确的孤儿院、街头及TANDI排斥，不从外部评论扩入未直接核对的任务结局。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q3222992",
+        "identity": {
+          "title": "Brother to Dragons",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/brother-to-dragons.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方完整短简介；只分析明确的孤儿院、街头及TANDI排斥，不从外部评论扩入未直接核对的任务结局。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q5142434",
+      "identity": {
+        "title": "Cold as Ice",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/cold-as-ice.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读本卷完整出版简介；protected seas译作受保护海洋，未推断保护制度或反对理由已核实；不继承Ganymede Club和Dark as Day情节。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读本卷完整出版简介；protected seas译作受保护海洋，未推断保护制度或反对理由已核实；不继承Ganymede Club和Dark as Day情节。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q5142434",
+        "identity": {
+          "title": "Cold as Ice",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/cold-as-ice.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读本卷完整出版简介；protected seas译作受保护海洋，未推断保护制度或反对理由已核实；不继承Ganymede Club和Dark as Day情节。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q4899208",
+      "identity": {
+        "title": "Between the Strokes of Night",
+        "author": "Charles Sheffield"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；没有保存的不补造，逐材料记录实际支持范围。",
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/between-the-strokes-of-night.html",
+          "result": "actual_source_scope_read",
+          "material_type": "作者／出版方单实体完整简介",
+          "reading_scope": "实际阅读出版方现售修订版完整简介；分析仅取共同主线，不宣称已比对1985与2002文本差异或核验修订物理机制。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://sf-encyclopedia.com/entry/sheffield_charles",
+          "result": "actual_source_scope_read",
+          "material_type": "专业书目条目中的版本辨析",
+          "reading_scope": "实际读Between the Strokes of Night1985与2002修订的版本说明及列表；该来源在本条只支持版本边界，不当出版方现售本原作情节证据。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际阅读出版方现售修订版完整简介；分析仅取共同主线，不宣称已比对1985与2002文本差异或核验修订物理机制。",
+      "reason_unconfirmed": "材料范围以外的具体作品知识和文学解释仍待独立核对。",
+      "next_step": "按本条短篇、长篇、合集或系列的确切范围，逐项对照原作。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q4899208",
+        "identity": {
+          "title": "Between the Strokes of Night",
+          "author": "Charles Sheffield"
+        },
+        "sources": [
+          {
+            "url": "https://www.baen.com/between-the-strokes-of-night.html",
+            "material_kind": "作者／出版方单实体完整简介",
+            "support_scope": "实际阅读出版方现售修订版完整简介；分析仅取共同主线，不宣称已比对1985与2002文本差异或核验修订物理机制。",
+            "reading_status": "actually_read_support_scope_only"
+          },
+          {
+            "url": "https://sf-encyclopedia.com/entry/sheffield_charles",
+            "material_kind": "专业书目条目中的版本辨析",
+            "support_scope": "实际读Between the Strokes of Night1985与2002修订的版本说明及列表；该来源在本条只支持版本边界，不当出版方现售本原作情节证据。",
+            "reading_status": "actually_read_support_scope_only"
+          }
+        ],
+        "queries": [],
+        "verification_status": "knowledge_added_unverified"
+      },
+      "attempt_input": "global-source-searches-round12.json"
+    },
+    {
+      "id": "Q7197325",
+      "identity": {
+        "title": "Piper in the Woods",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://www.gutenberg.org/cache/epub/32832/pg32832-images.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取Project Gutenberg本篇英文正文，从问诊、Y-3调查到泥土结尾；本地人缺乏知识等表述作为医生立场分析，不当作客观民族事实。不是生理上真的变成植物。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取Project Gutenberg本篇英文正文，从问诊、Y-3调查到泥土结尾；本地人缺乏知识等表述作为医生立场分析，不当作客观民族事实。不是生理上真的变成植物。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7197325",
+        "identity": {
+          "title": "Piper in the Woods",
+          "author": "菲利普·迪克"
+        },
+        "queries": [],
+        "urls_read": [
+          "https://www.gutenberg.org/cache/epub/32832/pg32832-images.html"
+        ],
+        "exact_support_scope": "实际读取Project Gutenberg本篇英文正文，从问诊、Y-3调查到泥土结尾；本地人缺乏知识等表述作为医生立场分析，不当作客观民族事实。不是生理上真的变成植物。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7493662",
+      "identity": {
+        "title": "Shell Game",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Philip K Dick \"Shell Game\" story text pdf"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/shell-game",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载的英文原作，从疑似袭击、医院船磁带、样本实验到Tate逃入沼泽及进攻准备的结尾。只据故事正文，不采用网页将其泛称地球末世的简介；心理诊断术语属于作品时代设定。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载的英文原作，从疑似袭击、医院船磁带、样本实验到Tate逃入沼泽及进攻准备的结尾。只据故事正文，不采用网页将其泛称地球末世的简介；心理诊断术语属于作品时代设定。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7493662",
+        "identity": {
+          "title": "Shell Game",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Philip K Dick \"Shell Game\" story text pdf"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/shell-game"
+        ],
+        "exact_support_scope": "实际读取转载的英文原作，从疑似袭击、医院船磁带、样本实验到Tate逃入沼泽及进攻准备的结尾。只据故事正文，不采用网页将其泛称地球末世的简介；心理诊断术语属于作品时代设定。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7737681",
+      "identity": {
+        "title": "The Great C",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Philip K Dick \"The Great C\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sickmyduck.narod.ru/pkd083-0.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取非官方镜像转载的英文原作至部落再次准备问题的结尾；机器制造灾难是其宣称与部落传说，未当作独立确认事实。网页1952-7-31为创作日期，另列首刊1953；分析本短篇，不移植Deus Irae改写。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取非官方镜像转载的英文原作至部落再次准备问题的结尾；机器制造灾难是其宣称与部落传说，未当作独立确认事实。网页1952-7-31为创作日期，另列首刊1953；分析本短篇，不移植Deus Irae改写。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7737681",
+        "identity": {
+          "title": "The Great C",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Philip K Dick \"The Great C\" text"
+        ],
+        "urls_read": [
+          "https://sickmyduck.narod.ru/pkd083-0.html"
+        ],
+        "exact_support_scope": "实际读取非官方镜像转载的英文原作至部落再次准备问题的结尾；机器制造灾难是其宣称与部落传说，未当作独立确认事实。网页1952-7-31为创作日期，另列首刊1953；分析本短篇，不移植Deus Irae改写。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q6963923",
+      "identity": {
+        "title": "Nanny",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Philip K Dick \"Nanny\" full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sickmyduck.narod.ru/pkd034-0.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取非官方镜像转载的英文正文，含修理与销售对话、公园搏斗、Fields购买新型号和Casworthy再升级的结尾。网页1952-8-26为创作日期，首刊另标1955；只分析本短篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取非官方镜像转载的英文正文，含修理与销售对话、公园搏斗、Fields购买新型号和Casworthy再升级的结尾。网页1952-8-26为创作日期，首刊另标1955；只分析本短篇。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q6963923",
+        "identity": {
+          "title": "Nanny",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Philip K Dick \"Nanny\" full text"
+        ],
+        "urls_read": [
+          "https://sickmyduck.narod.ru/pkd034-0.html"
+        ],
+        "exact_support_scope": "实际读取非官方镜像转载的英文正文，含修理与销售对话、公园搏斗、Fields购买新型号和Casworthy再升级的结尾。网页1952-8-26为创作日期，首刊另标1955；只分析本短篇。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7741789",
+      "identity": {
+        "title": "The Indefatigable Frog",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Philip K Dick \"The Indefatigable Frog\" full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sickmyduck.narod.ru/pkd088-0.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取镜像英文正文至Grote承认仍未检验出原悖论的结尾。缩小、穿过分子和重力变化是本篇反事实设定，不当作现实物理证明；只分析本短篇。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取镜像英文正文至Grote承认仍未检验出原悖论的结尾。缩小、穿过分子和重力变化是本篇反事实设定，不当作现实物理证明；只分析本短篇。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7741789",
+        "identity": {
+          "title": "The Indefatigable Frog",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Philip K Dick \"The Indefatigable Frog\" full text"
+        ],
+        "urls_read": [
+          "https://sickmyduck.narod.ru/pkd088-0.html"
+        ],
+        "exact_support_scope": "实际读取镜像英文正文至Grote承认仍未检验出原悖论的结尾。缩小、穿过分子和重力变化是本篇反事实设定，不当作现实物理证明；只分析本短篇。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7741978",
+      "identity": {
+        "title": "The Infinites",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Infinites\" \"Copyright\" Dick text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sickmyduck.narod.ru/pkd089-0.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取非官方镜像英文正文及结尾：Blake伤害Silvia、仓鼠介入、两人身体恢复。瞬间定向进化、目的论与能量生命属于本篇反事实设定，不等于现实演化科学；镜像将Planet Stories误写为Planet Stones，不据此改底库。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取非官方镜像英文正文及结尾：Blake伤害Silvia、仓鼠介入、两人身体恢复。瞬间定向进化、目的论与能量生命属于本篇反事实设定，不等于现实演化科学；镜像将Planet Stories误写为Planet Stones，不据此改底库。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7741978",
+        "identity": {
+          "title": "The Infinites",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"The Infinites\" \"Copyright\" Dick text"
+        ],
+        "urls_read": [
+          "https://sickmyduck.narod.ru/pkd089-0.html"
+        ],
+        "exact_support_scope": "实际读取非官方镜像英文正文及结尾：Blake伤害Silvia、仓鼠介入、两人身体恢复。瞬间定向进化、目的论与能量生命属于本篇反事实设定，不等于现实演化科学；镜像将Planet Stories误写为Planet Stones，不据此改底库。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q5421001",
+      "identity": {
+        "title": "Expendable",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Dick \"Expendable\" \"Tirmus\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://sickmyduck.narod.ru/pkd017-0.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取镜像转载英文原作全篇，从毛虫监视、蚂蚁投票到蜘蛛承诺范围的结尾。人类入侵与蜘蛛培育史是故事中蜘蛛所讲背景，不当作真实自然史；本篇不是泛称虫群灭绝全人类。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取镜像转载英文原作全篇，从毛虫监视、蚂蚁投票到蜘蛛承诺范围的结尾。人类入侵与蜘蛛培育史是故事中蜘蛛所讲背景，不当作真实自然史；本篇不是泛称虫群灭绝全人类。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q5421001",
+        "identity": {
+          "title": "Expendable",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Dick \"Expendable\" \"Tirmus\" text"
+        ],
+        "urls_read": [
+          "https://sickmyduck.narod.ru/pkd017-0.html"
+        ],
+        "exact_support_scope": "实际读取镜像转载英文原作全篇，从毛虫监视、蚂蚁投票到蜘蛛承诺范围的结尾。人类入侵与蜘蛛培育史是故事中蜘蛛所讲背景，不当作真实自然史；本篇不是泛称虫群灭绝全人类。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7201191",
+      "identity": {
+        "title": "Planet for Transients",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:studopedia.org/5-49222.html \"Trent\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://studopedia.org/5-49222.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取搜索缓存返回的英文原作正文，从Trent行走、与变异群体接触到Norris解释迁离和登陆许可；直接打开页面及原刊OCR链接失败，未检查原刊扫描。分析原短篇，不移植Deus Irae扩写。核辐射带来定向适应是小说设定。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取搜索缓存返回的英文原作正文，从Trent行走、与变异群体接触到Norris解释迁离和登陆许可；直接打开页面及原刊OCR链接失败，未检查原刊扫描。分析原短篇，不移植Deus Irae扩写。核辐射带来定向适应是小说设定。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7201191",
+        "identity": {
+          "title": "Planet for Transients",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "site:studopedia.org/5-49222.html \"Trent\""
+        ],
+        "urls_read": [
+          "https://studopedia.org/5-49222.html"
+        ],
+        "exact_support_scope": "实际读取搜索缓存返回的英文原作正文，从Trent行走、与变异群体接触到Norris解释迁离和登陆许可；直接打开页面及原刊OCR链接失败，未检查原刊扫描。分析原短篇，不移植Deus Irae扩写。核辐射带来定向适应是小说设定。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q5420206",
+      "identity": {
+        "title": "展品",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Dick \"Exhibit Piece\" \"Copyright\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://nyc3.digitaloceanspaces.com/sffaudio-usa/mp3s/ExhibitPieceByPhilipK.Dick.pdf",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取原刊PDF的OCR正文，包括两套记忆、Grunberg诊断、展区边界谈判和末页钴弹标题；末页截图失败，但OCR明晰。分析本短篇而非电视剧The Real Life；原刊封面/目录为1954年8月，镜像另标1953存在内部不一致，未据其改纪年。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取原刊PDF的OCR正文，包括两套记忆、Grunberg诊断、展区边界谈判和末页钴弹标题；末页截图失败，但OCR明晰。分析本短篇而非电视剧The Real Life；原刊封面/目录为1954年8月，镜像另标1953存在内部不一致，未据其改纪年。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q5420206",
+        "identity": {
+          "title": "展品",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Dick \"Exhibit Piece\" \"Copyright\" text"
+        ],
+        "urls_read": [
+          "https://nyc3.digitaloceanspaces.com/sffaudio-usa/mp3s/ExhibitPieceByPhilipK.Dick.pdf"
+        ],
+        "exact_support_scope": "实际读取原刊PDF的OCR正文，包括两套记忆、Grunberg诊断、展区边界谈判和末页钴弹标题；末页截图失败，但OCR明晰。分析本短篇而非电视剧The Real Life；原刊封面/目录为1954年8月，镜像另标1953存在内部不一致，未据其改纪年。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7770352",
+      "identity": {
+        "title": "The Trouble with Bubbles",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"The Trouble with Bubbles\" \"Nathan Hull\" \"Worldcraft\" text full",
+        "site:studopedia.org/5-49212.html \"earthquake\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://studopedia.org/5-49212.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取搜索缓存呈现的原作正文，包括Hull立法、毁球宴会、外星接触使Worldcraft贬值及地震结尾；直接打开该页失败，未读原刊扫描。结尾暗示人类世界也可能被操弄，并未明确证明地球就是造世球。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取搜索缓存呈现的原作正文，包括Hull立法、毁球宴会、外星接触使Worldcraft贬值及地震结尾；直接打开该页失败，未读原刊扫描。结尾暗示人类世界也可能被操弄，并未明确证明地球就是造世球。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7770352",
+        "identity": {
+          "title": "The Trouble with Bubbles",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"The Trouble with Bubbles\" \"Nathan Hull\" \"Worldcraft\" text full",
+          "site:studopedia.org/5-49212.html \"earthquake\""
+        ],
+        "urls_read": [
+          "https://studopedia.org/5-49212.html"
+        ],
+        "exact_support_scope": "实际读取搜索缓存呈现的原作正文，包括Hull立法、毁球宴会、外星接触使Worldcraft贬值及地震结尾；直接打开该页失败，未读原刊扫描。结尾暗示人类世界也可能被操弄，并未明确证明地球就是造世球。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q7770755",
+      "identity": {
+        "title": "The Turning Wheel",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Dick\" \"The Turning Wheel\" \"Sung-wu\" text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/the-turning-wheel",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文的调查、未来扫描、Tinker派农医实践和青霉素念珠结尾；预告是可能发生的未来，角色未彻底皈依技术立场。种族与等级术语是虚构压迫秩序的表现，不能作为现实人群事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文的调查、未来扫描、Tinker派农医实践和青霉素念珠结尾；预告是可能发生的未来，角色未彻底皈依技术立场。种族与等级术语是虚构压迫秩序的表现，不能作为现实人群事实。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q7770755",
+        "identity": {
+          "title": "The Turning Wheel",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"Dick\" \"The Turning Wheel\" \"Sung-wu\" text"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/the-turning-wheel"
+        ],
+        "exact_support_scope": "实际读取转载原作正文的调查、未来扫描、Tinker派农医实践和青霉素念珠结尾；预告是可能发生的未来，角色未彻底皈依技术立场。种族与等级术语是虚构压迫秩序的表现，不能作为现实人群事实。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q5429800",
+      "identity": {
+        "title": "Fair Game",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Dick\" \"Fair Game\" \"Douglas\" text",
+        "site:philipdick.com \"Fair Game\" \"1959\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://studylib.net/doc/17821284/philip-k.-dick--1953-",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文的巨眼、诱饵、学者假说、捕网与煎锅结尾；作者官方书目将首刊列入1959。转载标题1953与写作纪年可能相关，不据其改首版；寄生文明利用学识是人物推论，被结尾反转。",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://philipdick.com/biography/bibliography/",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文的巨眼、诱饵、学者假说、捕网与煎锅结尾；作者官方书目将首刊列入1959。转载标题1953与写作纪年可能相关，不据其改首版；寄生文明利用学识是人物推论，被结尾反转。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文的巨眼、诱饵、学者假说、捕网与煎锅结尾；作者官方书目将首刊列入1959。转载标题1953与写作纪年可能相关，不据其改首版；寄生文明利用学识是人物推论，被结尾反转。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q5429800",
+        "identity": {
+          "title": "Fair Game",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"Dick\" \"Fair Game\" \"Douglas\" text",
+          "site:philipdick.com \"Fair Game\" \"1959\""
+        ],
+        "urls_read": [
+          "https://studylib.net/doc/17821284/philip-k.-dick--1953-",
+          "https://philipdick.com/biography/bibliography/"
+        ],
+        "exact_support_scope": "实际读取转载原作正文的巨眼、诱饵、学者假说、捕网与煎锅结尾；作者官方书目将首刊列入1959。转载标题1953与写作纪年可能相关，不据其改首版；寄生文明利用学识是人物推论，被结尾反转。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q4660826",
+      "identity": {
+        "title": "A World of Talent",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Dick\" \"A World of Talent\" full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/a-world-of-talent",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文，包括殖民分离宣传、婚配与绝育制度、Pat反能力身份、反预知者暗杀及Tim时间路径结尾；本篇Patricia Ann Connley不与Ubik人物合并。网页OCR开头缺少少量文字，已读上述关键场景；非原刊逐字校勘。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文，包括殖民分离宣传、婚配与绝育制度、Pat反能力身份、反预知者暗杀及Tim时间路径结尾；本篇Patricia Ann Connley不与Ubik人物合并。网页OCR开头缺少少量文字，已读上述关键场景；非原刊逐字校勘。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q4660826",
+        "identity": {
+          "title": "A World of Talent",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"Dick\" \"A World of Talent\" full text"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/a-world-of-talent"
+        ],
+        "exact_support_scope": "实际读取转载原作正文，包括殖民分离宣传、婚配与绝育制度、Pat反能力身份、反预知者暗杀及Tim时间路径结尾；本篇Patricia Ann Connley不与Ubik人物合并。网页OCR开头缺少少量文字，已读上述关键场景；非原刊逐字校勘。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q13184891",
+      "identity": {
+        "title": "Meddler",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "Meddler Philip Dick sffaudio PDF",
+        "\"Meddler\" \"Time Dip\" \"Hasten\" text -site:wikipedia.org -site:hurleyhouse.com"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/meddler",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文的政治授权、影像变化、强制出发、蝴蝶携工具钻孔及返航茧结尾。仅支持本短篇情节，不宣称证实全部蝴蝶来源机制；不是只依据网站新写简介，未完成原刊校勘。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文的政治授权、影像变化、强制出发、蝴蝶携工具钻孔及返航茧结尾。仅支持本短篇情节，不宣称证实全部蝴蝶来源机制；不是只依据网站新写简介，未完成原刊校勘。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q13184891",
+        "identity": {
+          "title": "Meddler",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "Meddler Philip Dick sffaudio PDF",
+          "\"Meddler\" \"Time Dip\" \"Hasten\" text -site:wikipedia.org -site:hurleyhouse.com"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/meddler"
+        ],
+        "exact_support_scope": "实际读取转载原作正文的政治授权、影像变化、强制出发、蝴蝶携工具钻孔及返航茧结尾。仅支持本短篇情节，不宣称证实全部蝴蝶来源机制；不是只依据网站新写简介，未完成原刊校勘。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q13178864",
+      "identity": {
+        "title": "A Present for Pat",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"A Present for Pat\" \"Eric\" text Dick",
+        "site:studopedia.org/5-49214.html \"Nar Dolk\" \"Bradshaw\""
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://studopedia.org/5-49214.html",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取搜索缓存的转载原作正文，包括购买、变形、老板解雇、能力距离、执法与老板现形结尾；直接开页失败。原作两存在先后离开当前维度，未据书评声称小神杀死老板；人物谈论维度不是现实物理事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取搜索缓存的转载原作正文，包括购买、变形、老板解雇、能力距离、执法与老板现形结尾；直接开页失败。原作两存在先后离开当前维度，未据书评声称小神杀死老板；人物谈论维度不是现实物理事实。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q13178864",
+        "identity": {
+          "title": "A Present for Pat",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"A Present for Pat\" \"Eric\" text Dick",
+          "site:studopedia.org/5-49214.html \"Nar Dolk\" \"Bradshaw\""
+        ],
+        "urls_read": [
+          "https://studopedia.org/5-49214.html"
+        ],
+        "exact_support_scope": "实际读取搜索缓存的转载原作正文，包括购买、变形、老板解雇、能力距离、执法与老板现形结尾；直接开页失败。原作两存在先后离开当前维度，未据书评声称小神杀死老板；人物谈论维度不是现实物理事实。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q19714587",
+      "identity": {
+        "title": "Souvenir",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"Souvenir\" Philip Dick \"Rogers\" full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/souvenir",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文至木杯、布料的家庭结尾；网页随后混入Evan Hunter另一篇，未纳入分析。保留殖民地氏族战争与技术选择，不能简化为纯善牧歌；纪念品在士兵家里而非凭记忆写成博物馆陈列。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文至木杯、布料的家庭结尾；网页随后混入Evan Hunter另一篇，未纳入分析。保留殖民地氏族战争与技术选择，不能简化为纯善牧歌；纪念品在士兵家里而非凭记忆写成博物馆陈列。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q19714587",
+        "identity": {
+          "title": "Souvenir",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"Souvenir\" Philip Dick \"Rogers\" full text"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/souvenir"
+        ],
+        "exact_support_scope": "实际读取转载原作正文至木杯、布料的家庭结尾；网页随后混入Evan Hunter另一篇，未纳入分析。保留殖民地氏族战争与技术选择，不能简化为纯善牧歌；纪念品在士兵家里而非凭记忆写成博物馆陈列。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
+    },
+    {
+      "id": "Q139850364",
+      "identity": {
+        "title": "James P. Crow",
+        "author": "菲利普·迪克"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "\"James P. Crow\" Philip Dick full text"
+      ],
+      "query_note": "仅保留实际保存的查询；未保存查询不补造。",
+      "materials_checked": [
+        {
+          "url": "https://americanliterature.com/author/philip-k-dick/short-story/james-p-crow",
+          "result": "actual_source_scope_read",
+          "reading_scope": "实际读取转载原作正文的Donnie受辱、Lists、平权机器人谈话、时间影像与分离公告结尾；OCR个别段落顺序破碎。未以网页附加FAQ作为原作证据，不将机器人起源误记确定为有意伪造，也未把结尾可能的专断读成已发生事实。",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读取转载原作正文的Donnie受辱、Lists、平权机器人谈话、时间影像与分离公告结尾；OCR个别段落顺序破碎。未以网页附加FAQ作为原作证据，不将机器人起源误记确定为有意伪造，也未把结尾可能的专断读成已发生事实。",
+      "reason_unconfirmed": "材料只支持明示读取范围，简介或节选不是整部原作核验，解释继续待核。",
+      "next_step": "按原作粒度和版本继续逐项核对具体情节依据。",
+      "issue_result": "added_to_private_round12_unverified",
+      "raw_reading_log": {
+        "id": "Q139850364",
+        "identity": {
+          "title": "James P. Crow",
+          "author": "菲利普·迪克"
+        },
+        "queries": [
+          "\"James P. Crow\" Philip Dick full text"
+        ],
+        "urls_read": [
+          "https://americanliterature.com/author/philip-k-dick/short-story/james-p-crow"
+        ],
+        "exact_support_scope": "实际读取转载原作正文的Donnie受辱、Lists、平权机器人谈话、时间影像与分离公告结尾；OCR个别段落顺序破碎。未以网页附加FAQ作为原作证据，不将机器人起源误记确定为有意伪造，也未把结尾可能的专断读成已发生事实。",
+        "verification_status": "reading_scope_logged_not_full_verification"
+      },
+      "attempt_input": "modern-source-searches-round12.json"
     }
   ]
 }
