@@ -1,0 +1,2602 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-04",
+    "record_count": 83,
+    "field_count": 193,
+    "source_commit": "a9c25c4cff4cbce8cb415ae90d0c3f20d58514e5",
+    "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/root-fast-spatial-round3.json",
+        "sha256": "f423f829df4fb931d5c6c477047cd98d5cdae7e66b69e0ec65f394eef9ae3734",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "lane": 0,
+          "method": "easy-first-local-synopsis-v1",
+          "source_commit": "a9c25c4cff4cbce8cb415ae90d0c3f20d58514e5",
+          "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "record_count": 4,
+          "facet_count": 21,
+          "attempted_count": 8,
+          "deferred_count": 0,
+          "fast_lane_indices_processed": [
+            32,
+            39
+          ],
+          "next_fast_lane_index": 40,
+          "original_fulltext_read_count": 0,
+          "scope": "八份对应社区简介实际逐条读取；原作、不同同名身份及未读机制分开，不做多跳浏览器检索。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/root-fast-spatial-round4.json",
+        "sha256": "83e5f62cbb74ca0627e517d0d4345062a4a93996f4d37afbdd27de8734e21ffd",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "lane": 0,
+          "method": "easy-first-local-synopsis-and-one-targeted-search-v1",
+          "source_commit": "a9c25c4cff4cbce8cb415ae90d0c3f20d58514e5",
+          "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "record_count": 13,
+          "facet_count": 55,
+          "attempted_count": 20,
+          "deferred_count": 0,
+          "fast_lane_indices_processed": [
+            40,
+            59
+          ],
+          "next_fast_lane_index": 60,
+          "original_fulltext_read_count": 0,
+          "scope": "20份身份对应的社区简介逐条读取；Dead or Alive的较短简介另有一次精准出版搜索；全书未读、集合只据框架。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round5.json",
+        "sha256": "73bd8dcb9cd9969ab7daae84a598efb8d759fcad607b0793caef756da14843dd",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "本批独立空间输入，仅canonical未知且已读本作材料明确舞台。",
+          "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。短文本可进行一轮精准检索；若读到明确出版简介，逐URL另记实际范围。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+          "starts_at_fast_index": 20,
+          "record_count": 10,
+          "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "fast_indices_processed": [
+            20,
+            39
+          ],
+          "next_fast_index": 40,
+          "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+          "network_scope": "14份分析只读社区简介；4份另实际读出版、授权销售或作者/代理简介。原作只见极短开篇或宣传段，不声称全文。2延后保留原因。",
+          "original_full_read_count": 0
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round6.json",
+        "sha256": "17fb15aaebb54cb36ac37af213d0b1764c3c40e2e273f199495193b0ee31884f",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "本批独立空间输入，逐作品实际简介舞台，未知来源不扩大。",
+          "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。短文本可进行一轮精准检索；若读到明确出版简介，逐URL另记实际范围。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "starts_at_fast_index": 40,
+          "record_count": 13,
+          "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "fast_indices_processed": [
+            40,
+            59
+          ],
+          "next_fast_index": 60,
+          "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+          "network_scope": "17份分析只实际读OL社区简介，2份另实际读出版方本卷简介；1份社区简评仅笼统内容，精准搜索无具体剧情，延后。原作全文0。",
+          "original_full_read_count": 0
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round7.json",
+        "sha256": "0ea3b926db64bac03d0c734515278afad3b4d28f7305913ea3a7699ba0738cc6",
+        "metadata": {
+          "status": "frozen",
+          "date": "2026-10-04",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "本批独立空间输入，只补当前未知且已读本实体材料明确的舞台。",
+          "method": "逐份实际读官方2026-09-30 OL work dump社区维护简介，保留记录SHA；不足时单轮精准检索，以实际读到的明确出版简介/作者访谈/书评补充，逐URL注明范围。两次非有益尝试后延后。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "starts_at_fast_index": 60,
+          "record_count": 9,
+          "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+          "fast_indices_processed": [
+            60,
+            79
+          ],
+          "next_fast_index": 80,
+          "validation": "逐ID原lane所有权、当前缺口、原身份、合法议题、两句解释、具体facet、逐OL记录SHA及未知空间检查；格式检查不代表独立书目核验。",
+          "network_scope": "12份分析仅OL社区简介；5份补充材料：3份出版方小说简介、1份出版方原作者访谈及分卷简介、1份本书PW评论。原作全文0；World Made by Hand另实际读授权开篇洗衣房对话。2份延后，1份已在private R22写入而跳过。",
+          "original_full_read_count": 0,
+          "attempted_count": 20,
+          "facet_count": 34,
+          "deferred_count": 2,
+          "skipped_existing_count": 1
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round5.json",
+        "sha256": "295a5965aeeb0fb92e51408e2970cf5f0b5a821982351ebd331b8da56c6337b7",
+        "metadata": {
+          "method": "matched-community-synopsis-knowledge-spatial-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 8,
+          "field_count": 16,
+          "note": "只补明确场景的当前unknown；VR、时间异常、末日风险不作为抽象或太空舞台。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round6.json",
+        "sha256": "7e5dcf3a18845fa35cf446243d69a3526b7aec7c4fd011ffaba8f06f7c1c3ba4",
+        "metadata": {
+          "method": "matched-community-synopsis-knowledge-spatial-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 5,
+          "field_count": 10,
+          "note": "只补明确场景的当前unknown；VR、时间异常、末日风险不作为抽象或太空舞台。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/modern-recent-spatial-round7.json",
+        "sha256": "6f6c34165b9d084b371cc2dfa32d072bc45af6e78fa184f964f1ab7ca5740119",
+        "metadata": {
+          "method": "matched-community-synopsis-knowledge-spatial-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 11,
+          "field_count": 22,
+          "note": "只补明确场景的当前unknown；VR、时间异常、末日风险不作为抽象或太空舞台。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/early-recent-spatial-round2.json",
+        "sha256": "a1d89104836bbc93d17c02814c92bf905fb3d39deca017b70d98b8a8cd530482",
+        "metadata": {
+          "method": "source-reading-spatial-v1",
+          "status": "frozen_checkpoint",
+          "read_date": "2026-10-04",
+          "baseline": "canonical-universe本次只读unknown；不得覆盖已知空间",
+          "record_count": 4,
+          "field_count": 12,
+          "scope_note": "只纳近期议题R2实际明确的少量舞台；没有借故事时间跨度、作品名称或作者推空间。其余unknown保持。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/early-recent-spatial-round3.json",
+        "sha256": "618349f7732388b85bb49a6815e350c6092fc8ebdc3d90cd02db84f94a39e0fe",
+        "metadata": {
+          "method": "source-reading-spatial-v1",
+          "status": "frozen_checkpoint",
+          "read_date": "2026-10-04",
+          "baseline": "canonical-universe本次只读unknown；不得覆盖已知空间",
+          "record_count": 6,
+          "field_count": 18,
+          "scope_note": "只纳近期议题R3实际明确的少量舞台；没有借故事时间跨度、作品名称或作者推空间。其余unknown保持。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 3,
+      "cosmic": 0,
+      "earth": 57,
+      "galactic": 4,
+      "interstellar": 4,
+      "planetary": 15
+    },
+    "scope": "只补原unknown且有明示场所支持的条目；未知不由题名或议题推断，已有定位保持不动。"
+  },
+  "records": [
+    {
+      "id": "Q16386546",
+      "identity": {
+        "title": "格殺指令",
+        "author": "詹姆士·達許納"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书简介直接点名地球遭太阳耀斑，Mark与Trina在灾后地面求生。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_secondary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_rationale": "仅据已读具体场所，社区简介与导航解释仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16671713W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16671713W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16671713W",
+          "record_sha256": "a10cbed2e33d7bb1788cb0738339222638f55058f42e48eae73259a772713f39"
+        }
+      ]
+    },
+    {
+      "id": "Q17002323",
+      "identity": {
+        "title": "Blackout",
+        "author": "希南·馬克圭爾"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书简介明确2041年的灾后America，是地球美国的虚构灾后环境。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_secondary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_rationale": "仅据已读具体场所，社区简介与导航解释仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16684212W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16684212W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16684212W",
+          "record_sha256": "6e97d23e2dc0ddc05324ea65a083fec95876be728e303b3e1a816d64f1c9f049"
+        }
+      ]
+    },
+    {
+      "id": "Q7046496",
+      "identity": {
+        "title": "Nocturnal",
+        "author": "斯科特·辛格勒"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书简介明确San Francisco的实际连续谋杀与警探调查舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_secondary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_rationale": "仅据已读具体场所，社区简介与导航解释仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16191049W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16191049W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16191049W",
+          "record_sha256": "db1450060e071fbe35c46e2fafb966efeaa4467e4f71d5800d1b77b4c1c21b02"
+        }
+      ]
+    },
+    {
+      "id": "Q7745946",
+      "identity": {
+        "title": "The Last Policeman",
+        "author": "本·H·温特斯"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书简介明确撞击前的United States经济和Hank的地面调查，不把小行星本身设为人物舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_secondary": "仅据已读具体场所，社区简介与导航解释仍待独立核对。",
+        "spatial_rationale": "仅据已读具体场所，社区简介与导航解释仍待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16799662W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16799662W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16799662W",
+          "record_sha256": "7be70d3866b3a206e7c622e0c3f97ca1d807a9da01d7f7999cac97bb921cfdcf"
+        }
+      ]
+    },
+    {
+      "id": "Q3052025",
+      "identity": {
+        "title": "Stadt der Fremden",
+        "author": "柴納·米耶維"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "已对应简介明确Avice回到出生行星Arieka，Embassytown与Hosts为实际主场；immer旅程是返回前背景。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16001889W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16001889W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16001889W",
+          "record_sha256": "e5493315351a56494e3d996916e166d089be517d6fd07eabb26212584cdfd181"
+        }
+      ]
+    },
+    {
+      "id": "Q6517721",
+      "identity": {
+        "title": "Legend",
+        "author": "陸希未"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷明确旧西部United States上的Republic及其城区，是反事实地球社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16334220W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16334220W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16334220W",
+          "record_sha256": "760e6f76a7338d5775b5d8656c08af188b8d6ea1a5ece21ca3df6cb19d4cd0f6"
+        }
+      ]
+    },
+    {
+      "id": "Q4015745",
+      "identity": {
+        "title": "反恐任务",
+        "author": "汤姆·克兰西 / 格蘭特·布萊克伍德"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书出版简介明确跨全球追踪并返回美国，属于地球当代军事舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15399491W",
+        "https://www.penguinrandomhouse.com/books/291826/dead-or-alive-by-tom-clancy/9781101544358/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15399491W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL15399491W",
+          "record_sha256": "3fff14698fd37d2adc88b6d9e439678de36bf496af626e44639f96e77de36e04"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/291826/dead-or-alive-by-tom-clancy/9781101544358/",
+          "type": "出版社本书简介搜索返回",
+          "support_scope": "实际读搜索返回的Book Description：The Campus创建、官方否认联系、Emir计划与跨国追踪；当前页面推介Prime节目不作小说剧情。未点开Sample。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q4924729",
+      "identity": {
+        "title": "Blameless",
+        "author": "Gail Carriger"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介直接给出London、England与Italy的逃亡和求知路线，是地球超自然版本。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16451474W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16451474W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16451474W",
+          "record_sha256": "de1ac3cf43ea42556537a2f0346a1132383e239f8baa8fe52a94287174670cbe"
+        }
+      ]
+    },
+    {
+      "id": "Q7775297",
+      "identity": {
+        "title": "The Witch of Hebron",
+        "author": "詹姆斯·霍华德·康斯特勒"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介直接点名Union Grove、New York和后石油America。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15944075W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15944075W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL15944075W",
+          "record_sha256": "3faf5ee829a1b5d8d4d2f1bb88e52c9b0792901de07e15eb536140a9a53d8726"
+        }
+      ]
+    },
+    {
+      "id": "Q3272008",
+      "identity": {
+        "title": "Leviathan",
+        "author": "史考特·韋斯特費德"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷在British Air Service与德国战争阵营间的飞艇上发生，是英德反事实地球历史场所。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL547144W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL547144W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL547144W",
+          "record_sha256": "69be60c24e6ffb308e51b73e5c491612b49ae9a12086d283b68a889e50bff2b9"
+        }
+      ]
+    },
+    {
+      "id": "Q7539916",
+      "identity": {
+        "title": "Sleepless",
+        "author": "查理·赫斯頓"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷明确Los Angeles与LAPD警务及世界其他地区的失眠瘟疫。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16981473W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16981473W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL16981473W",
+          "record_sha256": "29ab0cd0319b3f36b6bd0bcb64a98d24fb39bb6800b6a69e6646b86407f8b45f"
+        }
+      ]
+    },
+    {
+      "id": "Q7721328",
+      "identity": {
+        "title": "The Carbon Diaries: 2015",
+        "author": "Saci Lloyd"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "Laura记录的碳配给明确发生在England，不将小说2015当现实政策已实施。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15928068W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15928068W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL15928068W",
+          "record_sha256": "92b3675331f12fec22878f0d7745d9a9369ef2a424c1e3758ca4bd1196bbc958"
+        }
+      ]
+    },
+    {
+      "id": "Q1817920",
+      "identity": {
+        "title": "Man in the Dark",
+        "author": "保罗·奥斯特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "Brill的框架实际舞台是Vermont女儿家，内战是所编故事中的America。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL1682214W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL1682214W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL1682214W",
+          "record_sha256": "6255181603e63a9d94c3c5eaa7f9a9d89901942151d4aece5a0f718a85026025"
+        }
+      ]
+    },
+    {
+      "id": "Q54803035",
+      "identity": {
+        "title": "Gods of Night",
+        "author": "大衛·艾倫·麥克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷同时叙述Federation舰长群体危机与遥远Gamma Quadrant行星上的舰船发现；不补未给坐标。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL5886066W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL5886066W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL5886066W",
+          "record_sha256": "8f66110f4a77b8d021896ebcf3ce9604e47288e4429aa2e559e038bf4d5c1c20"
+        }
+      ]
+    },
+    {
+      "id": "Q7272832",
+      "identity": {
+        "title": "Quofum",
+        "author": "艾伦·迪安·福斯特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "研究队明确实际抵达planet Quofum并被困其地表研究营，不把宣传的银河危机当主角已跨银河。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL14953035W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL14953035W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL14953035W",
+          "record_sha256": "698f834cc9c60e21778f06278b7c8f13302ef2591640979610c8d5630600b228"
+        }
+      ]
+    },
+    {
+      "id": "Q7751684",
+      "identity": {
+        "title": "The Mirrored Heavens",
+        "author": "David J. Williams"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本书明确搜寻跨越Earth与Moon，太空电梯也是地月前沿设施；不由外太空背景推星际层。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL12437037W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL12437037W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL12437037W",
+          "record_sha256": "a0f30748fa27345fe003e5958cadd60871d6c79f3b7ad099baffe608cbbf7678"
+        }
+      ]
+    },
+    {
+      "id": "Q7766773",
+      "identity": {
+        "title": "瑪莎的故事",
+        "author": "丹·阿布尼特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "集合主框架明确Martha在受统治的Earth旅行并返回Britain；未读的成员篇不扩大主层。"
+      },
+      "field_notes": {
+        "spatial_primary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_secondary": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。",
+        "spatial_rationale": "只据实际读取的明确场所作导航；社区简介和解释待独立核对。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17521655W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17521655W",
+          "type": "Open Library社区简介／本地已取得Work dump",
+          "support_scope": "实际读取已取得的Open Library 2026-09-30 Work dump中本身份对应的完整简介字段；社区编目内容，非原作全文，也非本轮直接访问出版方页面。",
+          "read_date": "2026-10-04",
+          "work_id": "OL17521655W",
+          "record_sha256": "e9088c33e0f504b6993415cac3b90e30d5c825359cddfa6436450fee202c6490"
+        }
+      ]
+    },
+    {
+      "id": "Q55653446",
+      "identity": {
+        "title": "星之军团",
+        "author": "卡梅隆·赫爾利"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Legion由衰败世界船构成，在星辰间的深空航行，Mokshi提供离开船群的可能。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际出版简介明确between the stars及world-ships，保守取恒星际；outer rim of universe宣传语不作为宇宙尺度证明。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19618080W",
+        "https://www.simonandschuster.net/books/The-Stars-Are-Legion/Kameron-Hurley/9781481447935"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19618080W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "291f00ad31ece5216680f713488ae945d475eb311eaa562b6a23e3e65bd5701b"
+        },
+        {
+          "url": "https://www.simonandschuster.net/books/The-Stars-Are-Legion/Kameron-Hurley/9781481447935",
+          "support_scope": "实际读本书出版简介全文和授权开篇极短首句：衰败世界船、失忆Zan、家人囚禁、Mokshi与争夺；未继续读长篇授权节选或全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q56303020",
+      "identity": {
+        "title": "Vanguard",
+        "author": "John G. Hemry"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "新殖民地Glenlyon受到邻近世界舰队攻击，各殖民社会尝试联盟。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确FTL后殖民扩张和邻近世界战舰，不是只依据军事类型。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL28215804W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL28215804W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "8d3696a1d4fad14fbe59192626fdcbc48b840c39657f96464523e8af1d78a4e5"
+        }
+      ]
+    },
+    {
+      "id": "Q65234277",
+      "identity": {
+        "title": "Waking Gods",
+        "author": "Sylvain Neuvel"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "研究从South Dakota的机械手发现延续至第二台机器人出现在London。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确两处地球地点，不把未知机器人来源当作实际故事舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL19650721W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19650721W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "fb746a2c01f9435254834cb8f9aee6e89718a4604ab3f9c1c76cab684cf3a5b6"
+        }
+      ]
+    },
+    {
+      "id": "Q29469803",
+      "identity": {
+        "title": "群鳥飛舞的世界末日",
+        "author": "查理·珍·安德絲"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Patricia与Laurence在San Francisco面对科技公司和巫术社会的冲突，背景是国际危机。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确San Francisco与人类星球命运，地球舞台而非由魔法类型推地点。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17357379W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17357379W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "502f81f112cce6a71272d6bcefecebfb2ba58fe8c4098b4c5f420d891f21c78a"
+        }
+      ]
+    },
+    {
+      "id": "Q50809636",
+      "identity": {
+        "title": "Central Station",
+        "author": "拉維·蒂達爾"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Boris回到Tel Aviv，主要关系集中在星际枢纽Central Station周边城市与家庭。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书简介明示returned to Tel Aviv from Mars，以Tel Aviv主舞台而非过去Mars居所作导航。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20028051W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20028051W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "58812ee09048411069033332aef821c60b917213fe92175c15e39b24a60e4bd3"
+        }
+      ]
+    },
+    {
+      "id": "Q54833637",
+      "identity": {
+        "title": "Company Town",
+        "author": "Madeline Ashby"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "New Arcadia是加拿大Maritimes海岸外城市规模的石油平台，Hwa在其社区做保镖。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书简介明确Canadian Maritimes offshore oil rig，超常威胁不改变平台地球主舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL20028052W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20028052W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "7820d03b7781504c8d8fdc6f93bd795569a6e2883286cbe99c0fbc8d3df130ca"
+        }
+      ]
+    },
+    {
+      "id": "Q18794344",
+      "identity": {
+        "title": "The Kraken Project",
+        "author": "道格拉斯·普雷斯顿"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "事故发生在Goddard测试设施，Dorothy在网络中逃逸，后藏入北California孩子的玩具机器人。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确地球地面测试与California，Titan航行仅为原计划，不能据探测目标把主要舞台标成土星。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL18020330W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL18020330W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "30186e146abec3697b4454939b1a3595c4ae5ec513bd67f06209bc31020b648e"
+        }
+      ]
+    },
+    {
+      "id": "Q131382204",
+      "identity": {
+        "title": "Existence",
+        "author": "大衛·布林"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Gerald在近地轨道清理遗留物，未知器物的讯息随后进入地球全球信息网。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确轨道垃圾与Earth infomesh；近地工作和地球社会构成主舞台，未知器物来源未核。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16637274W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16637274W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "738db589ee788c9b3e9937fc09cb0373acd750c1cf3c0218df38d3698e3d0946"
+        }
+      ]
+    },
+    {
+      "id": "Q102204348",
+      "identity": {
+        "title": "Obsidian",
+        "author": "Jennifer Armentrout"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Katy搬往West Virginia，与住在当地的Daemon相遇并面对外星追猎者。"
+      },
+      "field_notes": {
+        "spatial_primary": "原OL德语简介与英文出版简介都明确West Virginia；外星人的来源不等于实际主舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL27173156W",
+        "https://entangledpublishing.com/books/obsidian",
+        "https://jenniferlarmentrout.com/books/obsidian/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL27173156W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "c9d16cc0ba4e00c37bb1f9354d632ef71357a73a3c29383a7923689ebe14c181"
+        },
+        {
+          "url": "https://entangledpublishing.com/books/obsidian",
+          "support_scope": "实际读Entangled本书完整简介：West Virginia、Daemon冻结时间、外星人能力与Katy标记；只瞥见授权第一章开头，未读完整章节。当前页列Lux Book1、Release2024-07-02及内文Copyright2012，不能当作首年已核。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://jenniferlarmentrout.com/books/obsidian/",
+          "support_scope": "实际读作者本题完整同情节简介，页首却标Book2 of Lux，与出版社Book1有编号差异。仅支持本题Katy剧情，编号须另核。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q2947797",
+      "identity": {
+        "title": "天空的孩子",
+        "author": "弗诺·文奇"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Ravna、人类儿童和Tines在Tines World行星战后重建新社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确本卷Ten years on Tines World和the planet；银河灾难只是背景，不扩大本卷到银河主舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16239463W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16239463W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "6c683e7974c46dfed463f6f64fd091c0981e609afa22782525c408bcd38844fd"
+        }
+      ]
+    },
+    {
+      "id": "Q7742712",
+      "identity": {
+        "title": "The Islanders",
+        "author": "克里斯多夫·普利斯特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "主舞台为名称与位置随叙述变化的Dream Archipelago，实际星体归属在已读资料中未明。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书材料明确群岛定位漂移，采用抽象/未定导航；没有据island词猜成地球，也不将时空机制裁定。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16638743W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16638743W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a33539bd418c9ff4cc549099e6fd48139816c9c512d29750fe1f297b68d10885"
+        }
+      ]
+    },
+    {
+      "id": "Q1199882",
+      "identity": {
+        "title": "末日之旅",
+        "author": "加斯汀·柯羅寧"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "美国政府秘密实验失控后，Amy与幸存者在崩溃的人类社会求生。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际出版方本卷/前提明确U.S. government facility与社会灾难，未把多年叙事当成离开地球的证据。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15168588W",
+        "https://www.penguinrandomhouse.com/series/PAS/passage-trilogy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15168588W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "d2d4eaf2327a6a16b319819f86b6576ee245844c2a3a9146b34d03f0e8d44455"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/series/PAS/passage-trilogy/",
+          "support_scope": "实际读PRH系列页中明确Book1的The Passage简介：Amy、Wolgast、政府实验失控、长时求生；仅本卷块及灾难前提，不用后两卷剧情或TV标题当影视正文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q16834408",
+      "identity": {
+        "title": "Freedom™",
+        "author": "丹尼尔·苏亚雷斯"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "社会网络控制和Corn Rebellion冲突落在美国中西部，企业私人军队介入。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确American Midwest；darknet是制度和通信机制，不是宇宙物理地点。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL14996932W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL14996932W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "cae45a4619aa29dd9d85807892d9579d288d1de5ae2182d675a495b4cc37c1ac"
+        }
+      ]
+    },
+    {
+      "id": "Q4690467",
+      "identity": {
+        "title": "After America",
+        "author": "約翰·伯明罕"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "灾后的美国重建与Texas地方权力、海盗和掠夺者冲突。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确United States和Texas；无外星/空间舞台证据。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL27678280W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL27678280W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "9036da1edfd04580d20d3f294384393f2083bb04c5bcfbe9527337f054d1fb31"
+        }
+      ]
+    },
+    {
+      "id": "Q500952",
+      "identity": {
+        "title": "Star Wars: The Old Republic: Fatal Alliance",
+        "author": "西恩·威廉斯"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "拍卖和残骸危机联结Republic与Sith Empire，多方试图阻止跨银河威胁。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确跨银河参会与destroy the galaxy风险，并有两大政治网络协作；未以Star Wars品牌单独推范围。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15244161W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15244161W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "87d376c508ba996e9ef80c1d7479d6a763c62c3d97172637108e5b6fc8906a3e"
+        }
+      ]
+    },
+    {
+      "id": "Q7561142",
+      "identity": {
+        "title": "Song of Scarabaeus",
+        "author": "Sara Creasy"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Edie和Finn最终面对Scarabaeus这一她改造失败的异星世界，帝国逼近。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介具体称die on site of only failure a world called Scarabaeus，保守取目标行星；完整星际路线未读。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15170702W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15170702W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "0cf217e5696b122f2646aa159e61ecdf0ba0f1968e890cd49752d6a92277f1a6"
+        }
+      ]
+    },
+    {
+      "id": "Q3368751",
+      "identity": {
+        "title": "Patient Zero",
+        "author": "喬納森·馬比里"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Baltimore警探Joe加入政府DMS队伍，阻止针对人类社会的生物武器释放。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确Baltimore侦探和政府新队伍；没有把僵尸类型当外星舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL5967392W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL5967392W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "1f509400d521d8525936562d1c89c995969ee81e9fec9c33376e0db26cba8d5c"
+        }
+      ]
+    },
+    {
+      "id": "Q5506316",
+      "identity": {
+        "title": "Frozen in Time",
+        "author": "Ali Sparkes"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "当代England的防空设施中发现1956年冷冻的孩子，两兄妹帮助他们适应现世。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确present-day England；数十年时间跳跃不改变地球舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15640060W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15640060W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "b67b7b3642b18d9a01f22b9a8fa2ec75085d0cb88a9b2e6df589cf40c887de15"
+        }
+      ]
+    },
+    {
+      "id": "Q7564508",
+      "identity": {
+        "title": "Soulless",
+        "author": "Gail Carriger"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Alexia面对Victorian London上层社会的吸血鬼异常与皇家调查。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确Victorian London和Queen Victoria，超自然身体不改变地球历史改写舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL14981695W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL14981695W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "f1c4ce237ac3d0f8dded0dab43ba1dc0f6e7d8c63edd5223086e96680cbcec1d"
+        }
+      ]
+    },
+    {
+      "id": "Q4927574",
+      "identity": {
+        "title": "Blood Colony",
+        "author": "塔納納里夫·杜因"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Fana从Washington State的家离开，进入地下Glow药物传播网络并遭追猎。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷出版简介明确Washington State家园与Vatican关系宗派，主要为地球社会追逐。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL2632186W",
+        "https://www.simonandschuster.com/books/Blood-Colony/Tananarive-Due/9781416579250"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL2632186W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a593a0bca49dbcd70147e7cb9e13712c1a17e53298784fcc03b2b3eaf3dd2a14"
+        },
+        {
+          "url": "https://www.simonandschuster.com/books/Blood-Colony/Tananarive-Due/9781416579250",
+          "support_scope": "实际读S&S本卷完整简介与2008-06-03电子版资料：Glow血液治疗、Fana朋友被囚禁、地下药贩与宗派追杀。未读原作正文或宣传中被引用的前两卷。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q54806930",
+      "identity": {
+        "title": "Mere Mortals",
+        "author": "大衛·艾倫·麥克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "地球防线、Alpha Quadrant通道与半个银河之外的Caeliar接触构成并行危机。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷明确Earth、deep space、half a galaxy away，故星系网络；时间裂缝并非空间标签推断依据。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL15662052W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15662052W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "6b7b27afadc7507429f3cef9c37cebc9e748de0c76a5898da0703b935eb9691f"
+        }
+      ]
+    },
+    {
+      "id": "Q5557435",
+      "identity": {
+        "title": "Ghosts of India",
+        "author": "Mark Morris"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Doctor和Donna在1947年Calcutta调查失踪传言与Gandhi相关历史威胁。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确India 1947与Calcutta，角色能时间旅行不扩大本次主舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL17438805W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL17438805W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "169fbe1f7378294d7b1a3c67fd2f6b690cf18b458b7037d9b90fba0b59054b4e"
+        }
+      ]
+    },
+    {
+      "id": "Q6012023",
+      "identity": {
+        "title": "In the Courts of the Crimson Kings",
+        "author": "S. M. Stirling"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Jeremy和Teyud在Mars探索Deep Beyond古城及Tollamune后裔所在城市。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书简介明确journeys to Mars与当地古城，单行星舞台不由标题Kings推断。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL18167528W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL18167528W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "be1e6d8abbb7567e723e36e1da3ef9e976463dd1dab5f46b70f0b2bafab5d70c"
+        }
+      ]
+    },
+    {
+      "id": "Q6773143",
+      "identity": {
+        "title": "Mars Life",
+        "author": "班·保華"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "核心调查围绕火星岩壁居所和村落遗迹展开，地球政治影响研究资金。"
+      },
+      "field_notes": {
+        "spatial_primary": "本实体简介明确火星考古舞台与地球政府影响，地月/行星导航与故事年代分开。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL14923157W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL14923157W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "f638fecc698ad93b2879bde448a385ebefc9df4c030def8b289c4a189c9645e3"
+        }
+      ]
+    },
+    {
+      "id": "Q8035936",
+      "identity": {
+        "title": "World Made By Hand",
+        "author": "詹姆斯·霍华德·康斯特勒"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "工业文明衰退后的New York州Union Grove社区及周边河流、农地。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版简介和已读开篇明确Union Grove、New York与当地河流；没有据末世主题猜空间。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL3284162W",
+        "https://groveatlantic.com/book/world-made-by-hand/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL3284162W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "5eb5b83d90ddc54f1a78889d783a87cddb4264b7daf5bd21c6cabce06fb9b240"
+        },
+        {
+          "url": "https://groveatlantic.com/book/world-made-by-hand/",
+          "support_scope": "实际读本书About The Book简介和授权开篇洗衣房/河流对话片段；未读全章或全书，不借同页续卷评论补首卷剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3853132",
+      "identity": {
+        "title": "Saving the World and Other Extreme Sports",
+        "author": "詹姆斯·帕特森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Flock成员分散在相隔半个地球的藏身与囚禁处，阻止人口改造及消灭计划。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确halfway across the globe，保守作为地球社会导航；未推具体城市。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL5337360W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL5337360W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "294b5aba3a1f65fb9d00d6a9b5352ef6075785791b93bee2d7efb7dbb8b25482"
+        }
+      ]
+    },
+    {
+      "id": "Q4733392",
+      "identity": {
+        "title": "Ally",
+        "author": "Karen Traviss"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Cavanagh’s Star的Umeh、Bezer’ej等世界与远方地球的干涉、改造危机相连。"
+      },
+      "field_notes": {
+        "spatial_primary": "简介明确恒星周围多世界与distant Earth之间的行动关系，采用恒星际阅读导航。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL5813991W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL5813991W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "8b4d08ee73f01e1fcae15d2537186e47b41862fce853708c4f531c2963bd710a"
+        }
+      ]
+    },
+    {
+      "id": "Q6736735",
+      "identity": {
+        "title": "Mainspring",
+        "author": "Jay Lake"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "New Haven学徒在Victoria统治的替代世界接到修复地球发条的使命。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际简介同时明确New Haven、新英格兰和Earth；太阳机械关系是背景机制，不据此扩大主要舞台至星系。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL8470526W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8470526W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "819cf012473ce5dea2dc3dea63314146d003b5c769b9062932e5bc5c63070461"
+        }
+      ]
+    },
+    {
+      "id": "Q473082",
+      "identity": {
+        "title": "The Glass Books of the Dream Eaters",
+        "author": "戈登·達爾奎斯特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "主要城市和Harschmort庄园为作者明示虚构地域，城市不指定为London、Paris或Amsterdam。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际作者访谈明确城市不是一个特定现实城市；采用抽象/未定导航，不把维多利亚风格自动定位为真实伦敦。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL8052024W",
+        "https://www.penguinrandomhouse.com/books/36148/the-glass-books-of-the-dream-eaters-volume-one-by-gordon-dahlquist/9780307755575/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8052024W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "a17d202a5232c22fdefdf7fb1a7d8ac61b5a63566fce4c06fd0ab419eac97e4f"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/36148/the-glass-books-of-the-dream-eaters-volume-one-by-gordon-dahlquist/9780307755575/",
+          "support_scope": "实际读Volume One出版简介和作者访谈中原小说记忆机器/玻璃书机制及虚构城市说明；与OL原整部长篇简介分开标粒度，未读样章或继承续作。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5373863",
+      "identity": {
+        "title": "Emperor",
+        "author": "斯蒂芬·巴科斯特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "罗马Britannia、Hadrian城墙和Constantine政治构成本卷家族历史舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介给出明确地球历史地域；预言涉及未来不改变其主要空间分类。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL72842W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL72842W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "24aa17aeb7dbad486f016fecd40b317621c67f19235ffbf05aa78d33db188fb1"
+        }
+      ]
+    },
+    {
+      "id": "Q6322714",
+      "identity": {
+        "title": "K-Machines",
+        "author": "達米恩·布羅德里克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "战斗穿行多个互相交错的现实，真实世界与巨大游戏的关系在材料中保持疑问。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际本书PW评论明确multiple interlocking realities，不以长时尺度、标题或类型推空间。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL16028780W",
+        "https://www.publishersweekly.com/9781560258056"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16028780W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "92bbc21ab99ea99f088b2e2125d5f46b5ccb11050cb73cbb4b483d91cda4f4d5"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9781560258056",
+          "support_scope": "实际读本书PW短评全文：August、拒绝说明规则的手足、K-Machines和交错现实，现实/游戏为评论提出的问题；不是出版社简介或原文全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7239066",
+      "identity": {
+        "title": "Prayers for the Assassin",
+        "author": "Robert Ferrigno"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "2040年的美国分裂为Seattle为首府的政体与旧南方Bible Belt，核废墟和追踪发生于其间。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版简介明确New York、Washington、Seattle及美国内战地域，未将预设未来当成实际预测。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL1995103W",
+        "https://www.simonandschuster.com/books/Prayers-for-the-Assassin/Robert-Ferrigno/9780743555715"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL1995103W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "69a9dd081f747be186dde08fb3c2106ca33f39dd51d26f2835c524b77146f81b"
+        },
+        {
+          "url": "https://www.simonandschuster.com/books/Prayers-for-the-Assassin/Robert-Ferrigno/9780743555715",
+          "support_scope": "实际读官方页面About the Book完整小说简介，核袭击归责、Sarah证据/失踪、Rakkim与Darwin；页面产品是abridged audio，未听读该产品或授权书章。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q48804733",
+      "identity": {
+        "title": "The Thousandth Floor",
+        "author": "Katharine McGee"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "2118曼哈顿的千层塔为明确地球城市，技术监视及基因设计不改变舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Manhattan,2118和New York城市以及塔内人物；不推其他地点。 来源记录SHA256 8b3b4f81d87319f35d85eebede699019ed3875205e2dbb7b899eab6f098d408e。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20042206W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20042206W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Manhattan,2118和New York城市以及塔内人物；不推其他地点。 来源记录SHA256 8b3b4f81d87319f35d85eebede699019ed3875205e2dbb7b899eab6f098d408e。",
+          "record_sha256": "8b3b4f81d87319f35d85eebede699019ed3875205e2dbb7b899eab6f098d408e"
+        }
+      ]
+    },
+    {
+      "id": "Q85740021",
+      "identity": {
+        "title": "After Atlas",
+        "author": "Emma Newman"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "调查发生在地球，Atlas星际远航是留在地球的侦探过去的背景，不归成当前跨恒星旅程。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Carlos地球婴儿史、Earth最有权势者的谋杀和酒店调查；没有把Atlas远航路线当侦探的路线。 来源记录SHA256 47e3e5959bf107230b1a1d51609baa3c45d61dc2aa473d0153709da8f87fab08。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20054408W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20054408W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Carlos地球婴儿史、Earth最有权势者的谋杀和酒店调查；没有把Atlas远航路线当侦探的路线。 来源记录SHA256 47e3e5959bf107230b1a1d51609baa3c45d61dc2aa473d0153709da8f87fab08。",
+          "record_sha256": "47e3e5959bf107230b1a1d51609baa3c45d61dc2aa473d0153709da8f87fab08"
+        }
+      ]
+    },
+    {
+      "id": "Q108167600",
+      "identity": {
+        "title": "L'Instant présent",
+        "author": "紀優·穆索"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Lisa与Arthur的相遇和年度重逢围绕纽约曼哈顿，时间异常不自动归为抽象空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。法英简介明确Manhattan酒吧和New York人物生活；未读取时间规则细节。 来源记录SHA256 31c858fef3bd06fff2e0af5fca845f7d9979e839963916e5e51ed81815236ae2。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20024445W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20024445W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。法英简介明确Manhattan酒吧和New York人物生活；未读取时间规则细节。 来源记录SHA256 31c858fef3bd06fff2e0af5fca845f7d9979e839963916e5e51ed81815236ae2。",
+          "record_sha256": "31c858fef3bd06fff2e0af5fca845f7d9979e839963916e5e51ed81815236ae2"
+        }
+      ]
+    },
+    {
+      "id": "Q133455111",
+      "identity": {
+        "title": "Artemis Invaded",
+        "author": "Jane Lindskold"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "当前寻找失落技术、联系轨道船及面对入侵的行动集中在Artemis行星，归行星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持pleasure planet Artemis、当地技术库和orbiting ship；返故乡为尚未实现目标，未推跨恒星实际路线。 来源记录SHA256 c24b1fbaab3071b1106529731859261e106e2cd7aa41fd2d145d28ab5fc9704f。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20010300W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20010300W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持pleasure planet Artemis、当地技术库和orbiting ship；返故乡为尚未实现目标，未推跨恒星实际路线。 来源记录SHA256 c24b1fbaab3071b1106529731859261e106e2cd7aa41fd2d145d28ab5fc9704f。",
+          "record_sha256": "c24b1fbaab3071b1106529731859261e106e2cd7aa41fd2d145d28ab5fc9704f"
+        }
+      ]
+    },
+    {
+      "id": "Q43325355",
+      "identity": {
+        "title": "Radiance",
+        "author": "凯瑟琳·M·瓦伦特"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "纪录片调查包含Neptune、Mars和Venus，船员返回Earth，属于作品反事实太阳系行星之间的旅程。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持明确经典科幻式可居住太阳系及三行星调查/地球返航；不是现实可居住性判断。 来源记录SHA256 762ee7f8b5fe322d52ca89a28ae170731970a57e9323bd0baed9753996426207。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19339805W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19339805W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持明确经典科幻式可居住太阳系及三行星调查/地球返航；不是现实可居住性判断。 来源记录SHA256 762ee7f8b5fe322d52ca89a28ae170731970a57e9323bd0baed9753996426207。",
+          "record_sha256": "762ee7f8b5fe322d52ca89a28ae170731970a57e9323bd0baed9753996426207"
+        }
+      ]
+    },
+    {
+      "id": "Q120731999",
+      "identity": {
+        "title": "V-S Day",
+        "author": "艾倫‧史提爾"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "这部反事实军备竞赛围绕德国、美国及地球轨道攻防，归地球与近地舞台，不延伸其他星球。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持1941德国Peenemunde和above America，项目为manned orbital spacecraft。 来源记录SHA256 4bef48659163f3881893ccbe5c823b9fa209ecbf7ddd045b5801b26240eb55c0。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19977805W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19977805W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持1941德国Peenemunde和above America，项目为manned orbital spacecraft。 来源记录SHA256 4bef48659163f3881893ccbe5c823b9fa209ecbf7ddd045b5801b26240eb55c0。",
+          "record_sha256": "4bef48659163f3881893ccbe5c823b9fa209ecbf7ddd045b5801b26240eb55c0"
+        }
+      ]
+    },
+    {
+      "id": "Q16948707",
+      "identity": {
+        "title": "Shovel Ready",
+        "author": "Adam Sternbergh"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "废墟与虚拟世界都围绕近未来纽约及Times Square灾难，VR不自动把整部作品归抽象空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持New York、Times Square以及灾后街道和付费VR；未推VR为脱离地球的真实航区。 来源记录SHA256 266960e2dc449e387625294e16c8f18c5b28ca42ec2fe190a4cc8db9cb181074。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16819797W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16819797W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持New York、Times Square以及灾后街道和付费VR；未推VR为脱离地球的真实航区。 来源记录SHA256 266960e2dc449e387625294e16c8f18c5b28ca42ec2fe190a4cc8db9cb181074。",
+          "record_sha256": "266960e2dc449e387625294e16c8f18c5b28ca42ec2fe190a4cc8db9cb181074"
+        }
+      ]
+    },
+    {
+      "id": "Q18210253",
+      "identity": {
+        "title": "World of Trouble",
+        "author": "本·H·温特斯"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Hank的避难屋与妹妹调查在新英格兰，外来小行星是迫近地球的风险，不是主角太空旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持woods of New England、Concord旧警队和安全屋；未从天体灾难推定宇宙旅行。 来源记录SHA256 7cad43c7d71ea9007f0681fc012055f644ebaa3a432645701bc9b6deb5d372b0。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19981755W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19981755W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持woods of New England、Concord旧警队和安全屋；未从天体灾难推定宇宙旅行。 来源记录SHA256 7cad43c7d71ea9007f0681fc012055f644ebaa3a432645701bc9b6deb5d372b0。",
+          "record_sha256": "7cad43c7d71ea9007f0681fc012055f644ebaa3a432645701bc9b6deb5d372b0"
+        }
+      ]
+    },
+    {
+      "id": "Q25217421",
+      "identity": {
+        "title": "Cyberstorm",
+        "author": "Matthew Mather"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "纽约被暴风雪隔断、Mike一家在城内求生，为明确地球城市舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持New Yorker、New York和城市与外界隔断；网络异常不使物理舞台归抽象。 来源记录SHA256 10c4fbee2bc19b269e84007a417e53aa33614eeeb32e0149fbc83b83988d5d69。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19634015W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19634015W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持New Yorker、New York和城市与外界隔断；网络异常不使物理舞台归抽象。 来源记录SHA256 10c4fbee2bc19b269e84007a417e53aa33614eeeb32e0149fbc83b83988d5d69。",
+          "record_sha256": "10c4fbee2bc19b269e84007a417e53aa33614eeeb32e0149fbc83b83988d5d69"
+        }
+      ]
+    },
+    {
+      "id": "Q15220527",
+      "identity": {
+        "title": "Third Humanity",
+        "author": "柏納·韋柏"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "巨人骨骼发现于南极，缩小人类研究在巴黎，明确为地球研究地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Antarctique地下湖和Paris项目；物种代际变化不是宇宙尺度。 来源记录SHA256 d67b0748d7d6a9b046ee31dbc352422bb10eb1165be8e8edcb94ae520db57e71。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL24217583W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24217583W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Antarctique地下湖和Paris项目；物种代际变化不是宇宙尺度。 来源记录SHA256 d67b0748d7d6a9b046ee31dbc352422bb10eb1165be8e8edcb94ae520db57e71。",
+          "record_sha256": "d67b0748d7d6a9b046ee31dbc352422bb10eb1165be8e8edcb94ae520db57e71"
+        }
+      ]
+    },
+    {
+      "id": "Q2659311",
+      "identity": {
+        "title": "傲慢与偏见与僵尸",
+        "author": "赛斯·葛雷恩·史密斯"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "英国Meryton村的瘟疫和人物冲突为地球舞台，活尸不自动推外星或抽象世界。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持quiet English village of Meryton、Elizabeth与Darcy；这是奇幻改写的英国，不是现实事件。 来源记录SHA256 9b60ffdcb4e6b26d2b126a2f7a62cc7652fee99fc5c3b52b0447c6fc45e47291。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15093171W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15093171W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持quiet English village of Meryton、Elizabeth与Darcy；这是奇幻改写的英国，不是现实事件。 来源记录SHA256 9b60ffdcb4e6b26d2b126a2f7a62cc7652fee99fc5c3b52b0447c6fc45e47291。",
+          "record_sha256": "9b60ffdcb4e6b26d2b126a2f7a62cc7652fee99fc5c3b52b0447c6fc45e47291"
+        }
+      ]
+    },
+    {
+      "id": "Q7766886",
+      "identity": {
+        "title": "彈簧腿傑克現身",
+        "author": "Mark Hodder"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方书介明确1861伦敦及East End调查；世界可能不该存在的疑问不改变其实际城市舞台归类。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际官方简介场景的知识补充，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取Pyr/S&S官方简介搜索返回，支持London,1861和London East End；反事实时间史不自动映射为abstract航区。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/The-Strange-Affair-of-Spring-Heeled-Jack/Mark-Hodder/A-Burton-Swinburne-Adventure/9781616142407"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/The-Strange-Affair-of-Spring-Heeled-Jack/Mark-Hodder/A-Burton-Swinburne-Adventure/9781616142407",
+          "support_scope": "实际读取Pyr/S&S官方简介搜索返回，支持London,1861和London East End；反事实时间史不自动映射为abstract航区。"
+        }
+      ]
+    },
+    {
+      "id": "Q15263258",
+      "identity": {
+        "title": "Star Wars: Darth Bane: Dynasty of Evil",
+        "author": "德鲁·卡宾森"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Zannah追踪Bane across the galaxy至沙漠据点，是官方明确的银河范围行动，不由Star Wars体裁推断。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际官方简介场景的知识补充，待独立核对；只补原unknown。",
+        "spatial_rationale": "实际读取PRH官方简介搜索返回，明确tracks him across the galaxy to a desolate desert outpost；不推银河外范围。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/89893/dynasty-of-evil-star-wars-legends-darth-bane-by-drew-karpyshyn/paperback/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/89893/dynasty-of-evil-star-wars-legends-darth-bane-by-drew-karpyshyn/paperback/",
+          "support_scope": "实际读取PRH官方简介搜索返回，明确tracks him across the galaxy to a desolate desert outpost；不推银河外范围。"
+        }
+      ]
+    },
+    {
+      "id": "Q7303893",
+      "identity": {
+        "title": "Red Claw",
+        "author": "Philip Palmer"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "团队实际调查和逃难都在明确的New Amazon行星，归行星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持lush planet New Amazon、丛林、团队被袭和机器人威胁；未从行星生态敌意推宇宙位置。 来源记录SHA256 587cd4fe2573f442721b7eb54bd2505b7719ad88be7a1eeca4810b12d2304d44。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL24294962W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL24294962W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持lush planet New Amazon、丛林、团队被袭和机器人威胁；未从行星生态敌意推宇宙位置。 来源记录SHA256 587cd4fe2573f442721b7eb54bd2505b7719ad88be7a1eeca4810b12d2304d44。",
+          "record_sha256": "587cd4fe2573f442721b7eb54bd2505b7719ad88be7a1eeca4810b12d2304d44"
+        }
+      ]
+    },
+    {
+      "id": "Q7419817",
+      "identity": {
+        "title": "Santa Olivia",
+        "author": "Jacqueline Carey"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Santa Olivia位于Texas与Mexico之间DMZ及美国军事基地旁，明确地球舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Texas/Mexico边境缓冲区和镇内反抗；基因Wolf-Man不归外星舞台。 来源记录SHA256 2bb63b78e071a44ba6b5ac86574514d72b6c2af7fc72a178b0334fdb40379b33。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL2719919W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL2719919W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Texas/Mexico边境缓冲区和镇内反抗；基因Wolf-Man不归外星舞台。 来源记录SHA256 2bb63b78e071a44ba6b5ac86574514d72b6c2af7fc72a178b0334fdb40379b33。",
+          "record_sha256": "2bb63b78e071a44ba6b5ac86574514d72b6c2af7fc72a178b0334fdb40379b33"
+        }
+      ]
+    },
+    {
+      "id": "Q1656333",
+      "identity": {
+        "title": "I'll be here in sunshine and in shadow",
+        "author": "Christian Kracht"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "反事实瑞士帝国与Reduit山堡为地球政治地理，历史改写不自动归abstract。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Schweiz、Zürich、St. Petersburg及Schweizer Bergfestung；不将反事实当真实历史。 来源记录SHA256 8171e33def6723a7b643aa7f679f9e85930d682ed7fc51b91e6085b46ba46ce9。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL3123545W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL3123545W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Schweiz、Zürich、St. Petersburg及Schweizer Bergfestung；不将反事实当真实历史。 来源记录SHA256 8171e33def6723a7b643aa7f679f9e85930d682ed7fc51b91e6085b46ba46ce9。",
+          "record_sha256": "8171e33def6723a7b643aa7f679f9e85930d682ed7fc51b91e6085b46ba46ce9"
+        }
+      ]
+    },
+    {
+      "id": "Q20012546",
+      "identity": {
+        "title": "Die schlafenden Hüter",
+        "author": "安德里亚斯·埃施巴赫"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "当前发现、儿童探索在Mars，外星痕迹也明确涉及Earth，归太阳系/行星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Mars蓝塔/玻璃洞穴和Earth痕迹；没有把未知外星生命来源猜成跨恒星行动。 来源记录SHA256 0e9c464a3bcacab4aa347657628656c6ab4587ef57c186fea8507ab70d2d31bc。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19073312W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19073312W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Mars蓝塔/玻璃洞穴和Earth痕迹；没有把未知外星生命来源猜成跨恒星行动。 来源记录SHA256 0e9c464a3bcacab4aa347657628656c6ab4587ef57c186fea8507ab70d2d31bc。",
+          "record_sha256": "0e9c464a3bcacab4aa347657628656c6ab4587ef57c186fea8507ab70d2d31bc"
+        }
+      ]
+    },
+    {
+      "id": "Q2915600",
+      "identity": {
+        "title": "安德的流亡",
+        "author": "奥森·斯科特·卡德"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Ender和Valentine实际开启beyond the stars的相对论旅程，归跨恒星航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持离开Earth进行relativistic journey beyond the stars，不只因Ender系列体裁分类。 来源记录SHA256 b78137e3a94a7908378fd6402ab9ca9849ef6c79741fc3aa65e093087306ea1c。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL49485W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL49485W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持离开Earth进行relativistic journey beyond the stars，不只因Ender系列体裁分类。 来源记录SHA256 b78137e3a94a7908378fd6402ab9ca9849ef6c79741fc3aa65e093087306ea1c。",
+          "record_sha256": "b78137e3a94a7908378fd6402ab9ca9849ef6c79741fc3aa65e093087306ea1c"
+        }
+      ]
+    },
+    {
+      "id": "Q5164869",
+      "identity": {
+        "title": "Contagious",
+        "author": "斯科特·辛格勒"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "病原危机明确横跨America，秘密防疫与国家选择在地球；病原有外星意图不等于主角外星航行。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Across America及总统核选项；未给感染来源猜宇宙坐标。 来源记录SHA256 845772e71911028af2a832c73fd5c5e65d312965ed20adb1aa35f294290a425f。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8489439W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8489439W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Across America及总统核选项；未给感染来源猜宇宙坐标。 来源记录SHA256 845772e71911028af2a832c73fd5c5e65d312965ed20adb1aa35f294290a425f。",
+          "record_sha256": "845772e71911028af2a832c73fd5c5e65d312965ed20adb1aa35f294290a425f"
+        }
+      ]
+    },
+    {
+      "id": "Q7670427",
+      "identity": {
+        "title": "TIM Defender of the Earth",
+        "author": "Sam Enthoven"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "政府实验与纳米机器危机明确涉及London、Big Ben、Westminster及British Isles。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持具体英国地点和地球救援目标，恐龙或纳米机器不改变舞台归类。 来源记录SHA256 46da5f4ea64866c4f315424325cf2429a2b51a40dd3f83c6b870239caa666364。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8423519W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8423519W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持具体英国地点和地球救援目标，恐龙或纳米机器不改变舞台归类。 来源记录SHA256 46da5f4ea64866c4f315424325cf2429a2b51a40dd3f83c6b870239caa666364。",
+          "record_sha256": "46da5f4ea64866c4f315424325cf2429a2b51a40dd3f83c6b870239caa666364"
+        }
+      ]
+    },
+    {
+      "id": "Q7762655",
+      "identity": {
+        "title": "The Scourge of God",
+        "author": "S. M. Stirling"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Rudi继续穿越昔日United States，全球技术失效不使实体地理变成abstract航区。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持trek across land once United States和全球Change，未推其他星球。 来源记录SHA256 ef6d8972ea180f91fd679c88dad91ffc04e50d5804d2a47a32f5af8d5bf8ddd6。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL14918716W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL14918716W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持trek across land once United States和全球Change，未推其他星球。 来源记录SHA256 ef6d8972ea180f91fd679c88dad91ffc04e50d5804d2a47a32f5af8d5bf8ddd6。",
+          "record_sha256": "ef6d8972ea180f91fd679c88dad91ffc04e50d5804d2a47a32f5af8d5bf8ddd6"
+        }
+      ]
+    },
+    {
+      "id": "Q7995779",
+      "identity": {
+        "title": "Whitechapel Gods",
+        "author": "S. M. Peters"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "机械神统治的Whitechapel明确在Victorian London，归作品反事实地球城市。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持London/Whitechapel、被隔离城区；mechanical gods并不自动带来宇宙航区。 来源记录SHA256 a9a195b88732da822d66204c2d41cabfbdb37650665fa7f3b84c9bde0c1defab。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL8749223W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8749223W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持London/Whitechapel、被隔离城区；mechanical gods并不自动带来宇宙航区。 来源记录SHA256 a9a195b88732da822d66204c2d41cabfbdb37650665fa7f3b84c9bde0c1defab。",
+          "record_sha256": "a9a195b88732da822d66204c2d41cabfbdb37650665fa7f3b84c9bde0c1defab"
+        }
+      ]
+    },
+    {
+      "id": "Q4959656",
+      "identity": {
+        "title": "Breakpoint",
+        "author": "理查德·克拉克"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "袭击针对地球经济治理通信网络、通信卫星及基础设施，归地球/近地舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持全球网格、Internet cable centers和communications satellites；不从global网络隐喻推宇宙尺度。 来源记录SHA256 c49394a03352160321bd4bf6cecd38eab19d9502591d2da9f48c181a6b20b1fe。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL5749838W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL5749838W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持全球网格、Internet cable centers和communications satellites；不从global网络隐喻推宇宙尺度。 来源记录SHA256 c49394a03352160321bd4bf6cecd38eab19d9502591d2da9f48c181a6b20b1fe。",
+          "record_sha256": "c49394a03352160321bd4bf6cecd38eab19d9502591d2da9f48c181a6b20b1fe"
+        }
+      ]
+    },
+    {
+      "id": "Q5453204",
+      "identity": {
+        "title": "First Light",
+        "author": "瑞贝卡.史德"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Peter在Greenland冰盖，Thea群体在Arctic冰内及寻求Earth surface，具体地球舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "明确场所的知识补充，待独立核对；仅补原unknown。",
+        "spatial_rationale": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Greenland、arctic ice、Earth surface；冰内秘密世界是实际场所，不由秘密推abstract。 来源记录SHA256 1ee0be168d151d10813b2c19a40acf1c8a7968998500fcc44dacf204a6a57072。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL15855775W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL15855775W",
+          "support_scope": "实际逐条读取匹配的OL月度dump社区简介，非直接出版社或全文。支持Greenland、arctic ice、Earth surface；冰内秘密世界是实际场所，不由秘密推abstract。 来源记录SHA256 1ee0be168d151d10813b2c19a40acf1c8a7968998500fcc44dacf204a6a57072。",
+          "record_sha256": "1ee0be168d151d10813b2c19a40acf1c8a7968998500fcc44dacf204a6a57072"
+        }
+      ]
+    },
+    {
+      "id": "Q124653072",
+      "identity": {
+        "title": "Agent Stitch: The Menace at the Mall",
+        "author": "Steve Behling"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本册官方简介明确Stitch与伙伴到韩国首尔展开调查并保护地球；不从系列影视添加夏威夷等未读场所。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/812143/disney-agent-stitch-the-menace-at-the-mall-by-steve-behling-illustrated-by-arianna-rea/9781368085533/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/812143/disney-agent-stitch-the-menace-at-the-mall-by-steve-behling-illustrated-by-arianna-rea/9781368085533/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读检索返回的PRH完整本册简介和装帧日期；未读原作。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q131917031",
+      "identity": {
+        "title": "The Shutouts",
+        "author": "Gabrielle Korn"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本作简介明确Kelly在美国气候灾难中寻女，并与未来的避难项目和北部居住地并置；只限已读简介及社区节选，不把未定位的去处作宇宙场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781250323491/theshutouts/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781250323491/theshutouts/",
+          "type": "publisher_synopsis_and_original_excerpt",
+          "support_scope": "实际读取完整Book Details及公开节选Max/Sterrett/Len段（页面抓取行48–115）；节选前半与全书未读。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q134517489",
+      "identity": {
+        "title": "The Mars House",
+        "author": "Natasha Pulley"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "主体冲突明确发生在火星Tharsis居住地，January在该地的工作、身份和政治婚姻构成已读简介的主要舞台；地球灾难是移民背景，未确认当前正文地球转场。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.bloomsbury.com/us/mars-house-9781639732333/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.bloomsbury.com/us/mars-house-9781639732333/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读Bloomsbury2024精装完整核心简介：January、Tharsis、身体差异、Gale与婚姻及威胁；未读小说全文。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q130374434",
+      "identity": {
+        "title": "Crypt of the Moon Spider",
+        "author": "Nathan Ballingrud"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "Veronica乘行来到月球Barrowfield诊所，月球森林与巨蛛洞穴是本作介绍明确的环境；Nebraska只在节选开头回忆中出现，不把回忆当实际地球转场。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781250291745/cryptofthemoonspider/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781250291745/cryptofthemoonspider/",
+          "type": "publisher_synopsis_and_excerpt_opening_search_text",
+          "support_scope": "实际读完整本作简介及公开节选开头首段，限定该段；未读全书或后续Lunar Gothic卷。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q130036358",
+      "identity": {
+        "title": "Red Team Blues",
+        "author": "科利·多克托罗"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "简介明确Martin乘旅行巴士漫游California并熟悉Silicon Valley，财务调查在这一地球社会语境展开；不因数字技术添加虚拟空间或恒星旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL27892978W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL27892978W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "3a536a9c2455051129d2e57e04ae8afe6ba9f74c78c40cba300a012c62c51532",
+          "description_characters": 1497
+        }
+      ]
+    },
+    {
+      "id": "Q108757111",
+      "identity": {
+        "title": "One Last Stop",
+        "author": "凱西·麥奎斯頓"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "August搬到New York并在地铁认识Jane；1970年代是Jane的时间来源，不是空间分区。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL21703286W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL21703286W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "3d6b1ecbf734eb20a9afbbbf18473e4c041d1e267c96b7e66587bab36fcf8301",
+          "description_characters": 1286
+        }
+      ]
+    },
+    {
+      "id": "Q104658977",
+      "identity": {
+        "title": "Nos frères inattendus",
+        "author": "阿敏·马卢夫"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "Alec与Ève住在Atlantic海岸的小岛，通讯危机与美国总统顾问信息联系同属地球舞台；陌生兄弟自称古希腊继承者不能证明来自外星。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL22449232W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL22449232W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "a62bbb5fa35a865ba2488266fe7950a5cb2f12899003c99029550319507bc101",
+          "description_characters": 1485
+        }
+      ]
+    },
+    {
+      "id": "Q111913950",
+      "identity": {
+        "title": "The Relentless Moon",
+        "author": "瑪莉·羅比奈·寇沃"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [
+          "earth"
+        ],
+        "spatial_rationale": "Nicole的两种生活分别明确在新建Moon Base和作为地球政治人物妻子的环境中展开；此条保留月球/地球双场景，不以整套系列其他星球扩充。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20883101W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20883101W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "3831d91de23beb7fc73052799dedfe08ee824e8fda08915dfe6370dcfdf74e41",
+          "description_characters": 465
+        }
+      ]
+    },
+    {
+      "id": "Q108415509",
+      "identity": {
+        "title": "The Old Drift",
+        "author": "Namwali Serpell"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本作出版社介绍明确Zambezi河、Victoria Falls附近聚落与三户Zambian家庭的百年生活；Afronauts愿景和未来技术列表不足以确认实际恒星旅行。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL20148914W",
+        "https://www.penguinrandomhouse.com/books/537834/the-old-drift-by-namwali-serpell/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL20148914W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "32ed6817bbbd79026a53eeee2aa33870d48bb7e1a705bc1f456cf6a7ba626829",
+          "description_characters": 383
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/537834/the-old-drift-by-namwali-serpell/",
+          "type": "publisher_synopsis_search_text",
+          "support_scope": "实际读取PRH完整核心书介及2019电子版/2020平装日期；未读全书，奖项和其他书介绍不作为剧情。",
+          "read_date": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "Q50331931",
+      "identity": {
+        "title": "Emergence",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "当前难民危机明确位于atevi行星轨道的Alpha Station，并涉及移往该行星Mospheira岛的谈判；另一空间站毁灭仅为难民来历，不把源地当当前星际转场。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅补当前本地canonical基线unknown，依据已实际读取的具体本作场景；分类待独立核验。",
+        "spatial_secondary": "只纳已读介绍明确的另一实际生活场景；回忆、目标、来源、比喻和未读转场不自动入次要区。",
+        "spatial_rationale": "沿用本轮实际来源阅读范围，不表示全书核验或真实坐标。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL19731950W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL19731950W",
+          "type": "community_work_description_local_dump",
+          "support_scope": "实际读取题名及至少一位作者对应的Open Library Work dump简介全文；社区目录材料，不等于直接读出版社、原书或全书。",
+          "read_date": "2026-10-04",
+          "record_sha256": "e43f699b7a8882b2cb619f8c764d0483c60d7f56e1ee2e649c7a3a9c5bfb3c26",
+          "description_characters": 945
+        }
+      ]
+    }
+  ]
+}

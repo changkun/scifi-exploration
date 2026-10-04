@@ -387,6 +387,11 @@
         "count": 164
       },
       {
+        "file": "research/issues-source-reading-round23.json",
+        "sha256": "801effa904e182476154f108f08ed41781fd438103bc7d33b8a5d9e0a9eb5795",
+        "count": 211
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -430,9 +435,14 @@
         "file": "research/spatial-reading-round9.json",
         "sha256": "91d46e2157873b69bb6ce57829eace0ecdfb98188552a99795b690c0c285f514",
         "count": 63
+      },
+      {
+        "file": "research/spatial-reading-round10.json",
+        "sha256": "172d137371a96fa83da70141d7284954e3479590a098b43d6852dc7a9a9f7668",
+        "count": 83
       }
     ],
-    "knowledge_added": 2702,
+    "knowledge_added": 2913,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -485,12 +495,12 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 1377,
+      "record_count": 1593,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 1377,
+        "record_count": 1593,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -1932,6 +1942,274 @@
               "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
               "checkpoint_note": "首批易查清单priority_rank9–99中20个未分析身份，19条/55 facets，1条defer。Demain les chats仅取得原篇广告与漫画情节，保持原篇缺口；三条原简介只有短句/页数的成功补充明确记录本次出版社/机构/评论依据。"
             }
+          },
+          {
+            "file": "root-fast-round3-log.json",
+            "sha256": "9340b246dfc0f41e2df4570b27d9ca4622c581afb01345d2f09bb3427ad2b4e0",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "lane": 0,
+              "method": "easy-first-local-synopsis-v1",
+              "source_commit": "a9c25c4cff4cbce8cb415ae90d0c3f20d58514e5",
+              "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "record_count": 8,
+              "facet_count": 21,
+              "attempted_count": 8,
+              "deferred_count": 0,
+              "fast_lane_indices_processed": [
+                32,
+                39
+              ],
+              "next_fast_lane_index": 40,
+              "original_fulltext_read_count": 0,
+              "scope": "八份对应社区简介实际逐条读取；原作、不同同名身份及未读机制分开，不做多跳浏览器检索。"
+            }
+          },
+          {
+            "file": "root-fast-round4-log.json",
+            "sha256": "c77c86f9ca62eb968131bc505f18296f54f20634a19479cc40274a3a268f632c",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "created_at": "2026-10-04",
+              "lane": 0,
+              "method": "easy-first-local-synopsis-and-one-targeted-search-v1",
+              "source_commit": "a9c25c4cff4cbce8cb415ae90d0c3f20d58514e5",
+              "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "record_count": 20,
+              "facet_count": 55,
+              "attempted_count": 20,
+              "deferred_count": 0,
+              "fast_lane_indices_processed": [
+                40,
+                59
+              ],
+              "next_fast_lane_index": 60,
+              "original_fulltext_read_count": 0,
+              "scope": "20份身份对应的社区简介逐条读取；Dead or Alive的较短简介另有一次精准出版搜索；全书未读、集合只据框架。"
+            }
+          },
+          {
+            "file": "global-recent-round5-log.json",
+            "sha256": "2e849f3a41c3cdbb96c51ef82053aa47120681a6f04fd7bad1cd65e7144e49a3",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。短文本可进行一轮精准检索；若读到明确出版简介，逐URL另记实际范围。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "0db6d421185a2aa981ef2cab8c24368f6c4a552230b657a587c7e07a67bed194",
+              "starts_at_fast_index": 20,
+              "record_count": 18,
+              "facet_count": 36,
+              "attempted_count": 20,
+              "deferred_count": 2,
+              "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "fast_indices_processed": [
+                20,
+                39
+              ],
+              "next_fast_index": 40,
+              "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+              "network_scope": "14份分析只读社区简介；4份另实际读出版、授权销售或作者/代理简介。原作只见极短开篇或宣传段，不声称全文。2延后保留原因。",
+              "original_full_read_count": 0
+            }
+          },
+          {
+            "file": "global-recent-round6-log.json",
+            "sha256": "ed872d04b292825ff22fa6c77978e7f080ba2c3ad2550f282fedccbdc5f0e0f1",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "逐份实际阅读已取得官方2026-09-30 Open Library work dump的社区维护简介；保留记录SHA和题名作者对应条件。只补议题，不把原库年份、同题和作者对应等同文本粒度已核。没有读出版社页面或原作全文，不做这种声明。短文本可进行一轮精准检索；若读到明确出版简介，逐URL另记实际范围。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "starts_at_fast_index": 40,
+              "record_count": 19,
+              "facet_count": 38,
+              "attempted_count": 20,
+              "deferred_count": 1,
+              "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "fast_indices_processed": [
+                40,
+                59
+              ],
+              "next_fast_index": 60,
+              "validation": "逐ID原lane所有权、当前缺口、身份与原字段守恒、合法议题、两句分析、2–4有具体依据facet、逐OL记录SHA和空间范围检查；通过不等于独立核验或原作全文阅读。",
+              "network_scope": "17份分析只实际读OL社区简介，2份另实际读出版方本卷简介；1份社区简评仅笼统内容，精准搜索无具体剧情，延后。原作全文0。",
+              "original_full_read_count": 0
+            }
+          },
+          {
+            "file": "global-recent-round7-log.json",
+            "sha256": "6b13e643f76d685ef4ac5cabeeeba992753f720d4878a7654cd24ee7c7aeb32c",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-04",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "逐份实际读官方2026-09-30 OL work dump社区维护简介，保留记录SHA；不足时单轮精准检索，以实际读到的明确出版简介/作者访谈/书评补充，逐URL注明范围。两次非有益尝试后延后。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "starts_at_fast_index": 60,
+              "record_count": 17,
+              "facet_count": 34,
+              "attempted_count": 20,
+              "deferred_count": 2,
+              "skipped_existing_count": 1,
+              "frozen_source_snapshot_sha256": "6e31d7388a2fbf8c811877f8aec09aab1c88e70371e5189196554f73f2acb496",
+              "fast_indices_processed": [
+                60,
+                79
+              ],
+              "next_fast_index": 80,
+              "validation": "逐ID原lane所有权、当前缺口、原身份、合法议题、两句解释、具体facet、逐OL记录SHA及未知空间检查；格式检查不代表独立书目核验。",
+              "network_scope": "12份分析仅OL社区简介；5份补充材料：3份出版方小说简介、1份出版方原作者访谈及分卷简介、1份本书PW评论。原作全文0；World Made by Hand另实际读授权开篇洗衣房对话。2份延后，1份已在private R22写入而跳过。",
+              "original_full_read_count": 0
+            }
+          },
+          {
+            "file": "modern-recent-round5-log.json",
+            "sha256": "4d495257515614ffdf7dbaf4beaf0010703fe5f5638e5d409f9d033550b3d2ae",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 16,
+              "deferred_count": 0,
+              "community_dump_read_count": 16,
+              "official_blurb_additional_read_count": 0,
+              "original_full_text_count": 0,
+              "scope": "16份实际社区dump简介的SHA与OL ID逐条保留，没有直接出版社页面或原作全文核验。"
+            }
+          },
+          {
+            "file": "modern-recent-round6-log.json",
+            "sha256": "7f2e044959f2dafd4e14d949e8db504ff592c5305e6d801cb70e97be70261bc3",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 16,
+              "deferred_count": 0,
+              "community_dump_read_count": 16,
+              "additional_actual_search_read_count": 5,
+              "original_full_text_count": 0,
+              "scope": "16份社区dump记录SHA与OL ID保留，5条另读官方简介或明确评论的搜索返回正文；0原作全文。"
+            }
+          },
+          {
+            "file": "modern-recent-round7-log.json",
+            "sha256": "d4453a6748a71dee00c207057c62cf72f5722f287140c55aa2871d14fad695fc",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 16,
+              "deferred_count": 0,
+              "community_dump_read_count": 16,
+              "official_blurb_additional_read_count": 0,
+              "original_full_text_count": 0,
+              "scope": "16份实际社区dump简介的SHA与OL ID逐条保留，没有直接出版社页面或原作全文核验。"
+            }
+          },
+          {
+            "file": "early-recent-round4-log.json",
+            "sha256": "6e44075638f21c07ee349c022be1f7200bcd6d85e727ec05c6239fb3e41ae746",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "queue": "fast-first-lane-3.json",
+              "record_count": 20,
+              "facet_count": 55,
+              "attempted_count": 20,
+              "not_added_count": 0,
+              "verification_note": "易查优先：逐条实际读已取得OLdump精确对应简介；明确记录社区来源及record_sha256，不冒称出版社或全书核验。不足材料只做定向查读，延后难项。",
+              "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
+              "checkpoint_note": "易查清单priority_rank101–156中20身份，20条/55 facets，当前没有新增defer；原社区简介不足的四作另用实际出版社介绍/明确评论，不从别卷套情节。保留合集和虚构自传/类型边界。"
+            }
+          },
+          {
+            "file": "early-recent-round5-log.json",
+            "sha256": "f0c38ad1276e8f863ad483117d6a7be6413933e1c912737f3f752c25e472a80d",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "queue": "fast-first-lane-3.json",
+              "record_count": 20,
+              "facet_count": 59,
+              "attempted_count": 20,
+              "not_added_count": 0,
+              "verification_note": "易查优先：逐条实际读已取得OLdump精确对应简介；明确记录社区来源及record_sha256，不冒称出版社或全书核验。不足材料只做定向查读，延后难项。",
+              "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
+              "checkpoint_note": "易查priority_rank161–222的20个身份，20条/59 facets；原科幻候选含奇幻或政治惊悚，补具体议题不等于确认类型。The Power of Six为OL转述BookRags；本轮未直接读该学习指南。所有文学解释继续待独立核验。"
+            }
+          },
+          {
+            "file": "early-recent-round6-log.json",
+            "sha256": "eae44269d6ecd2dba531c28e19f42bd239adb93197bf7210acd89ce6705587ee",
+            "metadata": {
+              "method": "source-assisted-knowledge-issue-facets-v1",
+              "status": "frozen_checkpoint",
+              "read_date": "2026-10-04",
+              "lane": 3,
+              "queue": "fast-first-lane-3.json",
+              "record_count": 20,
+              "facet_count": 58,
+              "attempted_count": 20,
+              "not_added_count": 0,
+              "verification_note": "易查优先：逐条实际读已取得OLdump精确对应简介；明确记录社区来源及record_sha256，不冒称出版社或全书核验。不足材料只做定向查读，延后难项。",
+              "continuation_note": "仅自然检查点，剩余专属队列与全量缺口继续；冻结后不修改此文件。",
+              "checkpoint_note": "易查priority_rank224–288共20身份、20条/58 facets；介绍中的诊断、命运、统治和机器比喻均限具体小说语境。没有凭短摘要补阴谋答案。Postsingular只读OL短简介及出版社节选首段，Book Details定位失败另留日志。"
+            }
+          },
+          {
+            "file": "recovered-global-source-searches-round22.json",
+            "sha256": "612d6ec1477ee21d0cbe6b6dc42aa09be6dbb8b428fa7110a0cbc15a54c4cefa",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "date": "2026-10-04",
+              "scope": "1980年起及日期未知、当前仍缺核心议题的具体作品。",
+              "method": "逐实体实际阅读作者、出版方简介、获授权原作或明确署名评论；只补 topics、issue、issue_facets，未知情节不依系列或题名猜测。",
+              "verification": "knowledge_added_unverified；来源支持范围与全文、独立书目核验分开。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "526c8829a4d0b03553a72409511ad9b09b66a11c6591e225b363dd0124097405",
+              "record_count": 14,
+              "facet_count": 31,
+              "checkpoint_note": "按根任务新近优先分路指令暂停作者顺序；仅已完成且实际读资料的14条保留，本轮尚未公共冻结。",
+              "recovered_original_file": "global-source-searches-round22.json",
+              "recovered_original_sha256": "4c78019200683f71f4970541afa8b7b10832eff7fa01139f53c11a1d2123eaec",
+              "recovery_note": "保留先前已实际完成分析与查询原记录；仅冻结派生元数据，原始文件及记录未改，不计为本次新阅读。"
+            }
+          },
+          {
+            "file": "recovered-modern-source-searches-round22.json",
+            "sha256": "ff9c9aa0ab7d09c53396e2ff40e48fc19092b3ac764f8dd13516f0dd3b4dd0d4",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "status": "frozen_checkpoint",
+              "record_count": 7,
+              "note": "记录实际读取范围，不将书介/评论当成原篇全文。",
+              "recovered_original_file": "modern-source-searches-round22.json",
+              "recovered_original_sha256": "ad22f8d522876a3e2bb64f2ecde65a4887d83733a85132538a0e684757ec08ff",
+              "recovery_note": "保留先前已实际完成分析与查询原记录；仅冻结派生元数据，原始文件及记录未改，不计为本次新阅读。"
+            }
           }
         ],
         "updated_at": "2026-10-04",
@@ -2363,6 +2641,11 @@
         "file": "research/issues-source-reading-round22.json",
         "sha256": "03b3b855c84e2e961de79120ea81eb0cf4f3dcee604977f2801fb56464a21974",
         "count": 164
+      },
+      {
+        "file": "research/issues-source-reading-round23.json",
+        "sha256": "801effa904e182476154f108f08ed41781fd438103bc7d33b8a5d9e0a9eb5795",
+        "count": 211
       }
     ],
     "spatial_batches": [
@@ -2410,10 +2693,15 @@
         "file": "research/spatial-reading-round9.json",
         "sha256": "91d46e2157873b69bb6ce57829eace0ecdfb98188552a99795b690c0c285f514",
         "count": 63
+      },
+      {
+        "file": "research/spatial-reading-round10.json",
+        "sha256": "172d137371a96fa83da70141d7284954e3479590a098b43d6852dc7a9a9f7668",
+        "count": 83
       }
     ],
-    "issue_facet_records": 2605,
-    "issue_facet_count": 6351
+    "issue_facet_records": 2816,
+    "issue_facet_count": 6898
   },
   "chunks": [
     "./assets/completion-index/000.json",
