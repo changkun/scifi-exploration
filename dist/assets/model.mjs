@@ -26,7 +26,7 @@ export function filterWorks(works,state){
   if(state.science&&w.science_class!==state.science)return false;
   if(state.language&&languageOf(w)!==state.language)return false;
   if(state.form&&w.form!==state.form)return false;
-  const haystack=[w.title_zh,w.title_original,w.author,w.issue,w.story_era,w.reach,w.science_note,w.language_tradition,...w.topics,...w.branches].join(' ').toLocaleLowerCase();
+  const haystack=[w.title_zh,w.title_original,w.author,w.series_name,w.issue,w.story_era,w.reach,w.science_note,w.language_tradition,...w.topics,...w.branches].join(' ').toLocaleLowerCase();
   return terms.every(t=>haystack.includes(t));
  }).sort((a,b)=>state.sort==='title'?a.title_zh.localeCompare(b.title_zh,'zh-CN'):state.sort==='newest'?(b.sort_year??b.first_year)-(a.sort_year??a.first_year):(a.sort_year??a.first_year)-(b.sort_year??b.first_year));
 }
