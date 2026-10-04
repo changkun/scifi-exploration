@@ -4,15 +4,15 @@
   "source_record_count": 14532,
   "total": 14564,
   "researched": 168,
-  "topic_known": 4797,
-  "topic_unknown": 9767,
-  "issue_analyzed": 4054,
-  "issue_missing": 10510,
-  "issue_facet_records": 3902,
-  "issue_facets": 9223,
+  "topic_known": 4904,
+  "topic_unknown": 9660,
+  "issue_analyzed": 4180,
+  "issue_missing": 10384,
+  "issue_facet_records": 4028,
+  "issue_facets": 9475,
   "year_unknown": 1901,
-  "space_unknown": 13639,
-  "knowledge_added": 3999,
+  "space_unknown": 13623,
+  "knowledge_added": 4125,
   "library_correspondence": 2251,
   "conflicts": 454,
   "with_missing": 14428,
@@ -495,6 +495,11 @@
         "count": 144
       },
       {
+        "file": "research/issues-source-reading-round33.json",
+        "sha256": "f75cb15eee2d9b052076443e5bd0845c4f121ed33bb57892e912d4520daa66c4",
+        "count": 126
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -578,9 +583,14 @@
         "file": "research/spatial-reading-round17.json",
         "sha256": "48aa4e49ed56462db7f5b4f4c6f4f6007760bd2941532cac7b731c607edfbc62",
         "count": 23
+      },
+      {
+        "file": "research/spatial-reading-round18.json",
+        "sha256": "966d76e8a45e139f866e0ffcafebcd48211247e9b5312eb917d95395da966f0e",
+        "count": 16
       }
     ],
-    "knowledge_added": 3999,
+    "knowledge_added": 4125,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -634,14 +644,14 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 2894,
-      "actual_source_attempt_count": 2827,
-      "process_without_source_attempt_count": 67,
+      "record_count": 3058,
+      "actual_source_attempt_count": 2956,
+      "process_without_source_attempt_count": 102,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 2894,
+        "record_count": 3058,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -3271,6 +3281,143 @@
               "analysis_file": "early-recent-round15.json",
               "scope_note": "仅真实执行查询和所列阅读范围；日志failed或metadata_only不等于内容已核验。"
             }
+          },
+          {
+            "file": "root-fast-round14-log.json",
+            "sha256": "fa14cda1f3e8b697a60b3d63b9004d21bbf88f1a67ce39007555fc8637d04ea5",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "a671a25264943442c11b0ad5133131559ec4823e",
+              "source_snapshot_sha256": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+              "method": "existing-known-work-single-pass-v1",
+              "record_count": 27,
+              "facet_count": 54,
+              "attempted_count": 27,
+              "deferred_count": 0,
+              "actual_search_attempt_count": 0,
+              "existing_knowledge_count": 27,
+              "original_fulltext_read_count": 0,
+              "processed_fast_indices": [
+                1451,
+                1452,
+                1468,
+                1480,
+                1483,
+                1485,
+                1511,
+                1521,
+                1522,
+                1531,
+                1557,
+                1564,
+                1567,
+                1593,
+                1618,
+                1647,
+                1652,
+                1653,
+                1655,
+                1656,
+                1661,
+                1664,
+                1693,
+                1694,
+                1701,
+                1703,
+                1704
+              ],
+              "next_fast_lane_index": 206,
+              "scope": "非连续熟悉作品先补，实际网络查询0、剧情材料0；单卷单篇、明确系列起段与选集同名选篇分别限范围，所有解释待核。"
+            }
+          },
+          {
+            "file": "global-recent-round16-log.json",
+            "sha256": "1242824887e690622011ed2d89e479b6eede56404bb760ce531fbb884ae36988",
+            "metadata": {
+              "status": "frozen",
+              "date": "2026-10-05",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "f02171a15c82b7842ce4f3ce881abbb441ec0a71cc6fdc4296f44a7b588cacbc",
+              "starts_at_fast_index": 409,
+              "record_count": 31,
+              "facet_count": 62,
+              "attempted_count": 52,
+              "deferred_count": 21,
+              "skipped_existing_count": 0,
+              "fast_indices": [
+                409,
+                460
+              ],
+              "next_fast_index": 461,
+              "freeze_snapshot_sha256": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+              "methodology_limit": "首遍速度优先；已熟悉准确作品可凭已有知识短分析并明确待核，其余按实际返回简介/明确评论/原文片段。困难不追多跳，源作者、年份与形态不覆盖；已有知识与实际来源支持范围分别保存。",
+              "self_check": "唯一lane身份、当前缺口、原身份守恒、三议题字段、合法topics、每项两facet及具体依据、真实URL/范围与知识声明、空间仅原未知字段检查通过；不等于独立书目、全文或科学核验。"
+            }
+          },
+          {
+            "file": "modern-recent-round18-log.json",
+            "sha256": "59b5d20a30eaa8671ef5307ea032e067e5f246643a0cecc4280373cde3f606b1",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 31,
+              "facet_count": 62,
+              "field_count": 93,
+              "new_core_issue_count": 31,
+              "source_read_record_count": 23,
+              "record_with_actual_material_count": 23,
+              "actual_content_source_record_count": 23,
+              "actual_identity_source_record_count": 0,
+              "search_attempted_record_count": 23,
+              "knowledge_plot_record_count": 8,
+              "knowledge_only_zero_query_count": 8,
+              "community_dump_read_count": 0,
+              "original_partial_text_record_count": 2,
+              "original_full_text_count": 0,
+              "collection_scope_count": 1,
+              "single_work_count": 30,
+              "deferred_count": 9,
+              "total_query_handled_count": 32,
+              "scope": "lane2首轮2018—2017自然组31条/62细分：23条有实际出版社、作者、具名评论或社区内容资料，8条准确熟悉单作/指定卷段用已有知识零查询补充。23条查读中2条为授权原篇局部（I Sing Against the Silent Sun 前半部、The Moon Is Not a Battlefield lines68—194），其他为介绍/评论；0整部原作全文核验。86系列仅第一卷开端选例，2个One Piece单卷及2期Descender分别解释，不复制整系列剧情。所有作者未知源标签不自行替换。9项无内容或粒度难项延后。 所有知识零查询项均不计入实际查询或实际查读。"
+            }
+          },
+          {
+            "file": "early-recent-round16-log.json",
+            "sha256": "01e7e46d3e8636bd5e6eae465bd02e57e477853bfdfc7ac61f489564ffc6fae7",
+            "metadata": {
+              "method": "actual-first-pass-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "lane": 3,
+              "read_date": "2026-10-05",
+              "attempted_count": 45,
+              "added_count": 37,
+              "not_added_count": 8,
+              "frozen_date": "2026-10-05",
+              "record_count": 37,
+              "facet_count": 74,
+              "priority_range": [
+                1135,
+                1320
+              ],
+              "canonical_gzip_sha256_at_freeze": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+              "remaining_selected_ids": [
+                "Q139888314",
+                "Q55230555",
+                "Q88898423",
+                "Q97355082",
+                "Q98925651"
+              ],
+              "continuation_note": "前45项形成检查点；第46–50项已有一次检索所得材料将转入R17，不等待额外深挖。冻结文件不修改。"
+            }
           }
         ],
         "updated_at": "2026-10-05",
@@ -3752,6 +3899,11 @@
         "file": "research/issues-source-reading-round32.json",
         "sha256": "3a4cc284acad5e8f6782a939531b369780027bfae7ef8ca8775f17a743c75235",
         "count": 144
+      },
+      {
+        "file": "research/issues-source-reading-round33.json",
+        "sha256": "f75cb15eee2d9b052076443e5bd0845c4f121ed33bb57892e912d4520daa66c4",
+        "count": 126
       }
     ],
     "spatial_batches": [
@@ -3839,21 +3991,26 @@
         "file": "research/spatial-reading-round17.json",
         "sha256": "48aa4e49ed56462db7f5b4f4c6f4f6007760bd2941532cac7b731c607edfbc62",
         "count": 23
+      },
+      {
+        "file": "research/spatial-reading-round18.json",
+        "sha256": "966d76e8a45e139f866e0ffcafebcd48211247e9b5312eb917d95395da966f0e",
+        "count": 16
       }
     ],
-    "issue_facet_records": 3902,
-    "issue_facet_count": 9223,
+    "issue_facet_records": 4028,
+    "issue_facet_count": 9475,
     "full_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/completion-overlay.json.gz"
   },
   "source_search_logs": {
-    "record_count": 2894,
-    "actual_source_attempt_count": 2827,
-    "process_without_source_attempt_count": 67,
+    "record_count": 3058,
+    "actual_source_attempt_count": 2956,
+    "process_without_source_attempt_count": 102,
     "metadata": {
       "format": "actual-source-search-log-v1",
       "created_at": "2026-10-04",
       "status": "frozen_checkpoint",
-      "record_count": 2894,
+      "record_count": 3058,
       "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
       "inputs": [
         {
@@ -6483,6 +6640,143 @@
             "analysis_file": "early-recent-round15.json",
             "scope_note": "仅真实执行查询和所列阅读范围；日志failed或metadata_only不等于内容已核验。"
           }
+        },
+        {
+          "file": "root-fast-round14-log.json",
+          "sha256": "fa14cda1f3e8b697a60b3d63b9004d21bbf88f1a67ce39007555fc8637d04ea5",
+          "metadata": {
+            "status": "frozen_checkpoint",
+            "lane": 0,
+            "created_at": "2026-10-05",
+            "source_commit": "a671a25264943442c11b0ad5133131559ec4823e",
+            "source_snapshot_sha256": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+            "method": "existing-known-work-single-pass-v1",
+            "record_count": 27,
+            "facet_count": 54,
+            "attempted_count": 27,
+            "deferred_count": 0,
+            "actual_search_attempt_count": 0,
+            "existing_knowledge_count": 27,
+            "original_fulltext_read_count": 0,
+            "processed_fast_indices": [
+              1451,
+              1452,
+              1468,
+              1480,
+              1483,
+              1485,
+              1511,
+              1521,
+              1522,
+              1531,
+              1557,
+              1564,
+              1567,
+              1593,
+              1618,
+              1647,
+              1652,
+              1653,
+              1655,
+              1656,
+              1661,
+              1664,
+              1693,
+              1694,
+              1701,
+              1703,
+              1704
+            ],
+            "next_fast_lane_index": 206,
+            "scope": "非连续熟悉作品先补，实际网络查询0、剧情材料0；单卷单篇、明确系列起段与选集同名选篇分别限范围，所有解释待核。"
+          }
+        },
+        {
+          "file": "global-recent-round16-log.json",
+          "sha256": "1242824887e690622011ed2d89e479b6eede56404bb760ce531fbb884ae36988",
+          "metadata": {
+            "status": "frozen",
+            "date": "2026-10-05",
+            "lane": 1,
+            "queue": "fast-first-lane-1.json",
+            "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+            "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+            "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+            "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+            "source_snapshot": "research/canonical-universe.json.gz",
+            "source_snapshot_sha256": "f02171a15c82b7842ce4f3ce881abbb441ec0a71cc6fdc4296f44a7b588cacbc",
+            "starts_at_fast_index": 409,
+            "record_count": 31,
+            "facet_count": 62,
+            "attempted_count": 52,
+            "deferred_count": 21,
+            "skipped_existing_count": 0,
+            "fast_indices": [
+              409,
+              460
+            ],
+            "next_fast_index": 461,
+            "freeze_snapshot_sha256": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+            "methodology_limit": "首遍速度优先；已熟悉准确作品可凭已有知识短分析并明确待核，其余按实际返回简介/明确评论/原文片段。困难不追多跳，源作者、年份与形态不覆盖；已有知识与实际来源支持范围分别保存。",
+            "self_check": "唯一lane身份、当前缺口、原身份守恒、三议题字段、合法topics、每项两facet及具体依据、真实URL/范围与知识声明、空间仅原未知字段检查通过；不等于独立书目、全文或科学核验。"
+          }
+        },
+        {
+          "file": "modern-recent-round18-log.json",
+          "sha256": "59b5d20a30eaa8671ef5307ea032e067e5f246643a0cecc4280373cde3f606b1",
+          "metadata": {
+            "method": "actual-source-reading-scope-v1",
+            "lane": 2,
+            "status": "frozen_checkpoint",
+            "record_count": 31,
+            "facet_count": 62,
+            "field_count": 93,
+            "new_core_issue_count": 31,
+            "source_read_record_count": 23,
+            "record_with_actual_material_count": 23,
+            "actual_content_source_record_count": 23,
+            "actual_identity_source_record_count": 0,
+            "search_attempted_record_count": 23,
+            "knowledge_plot_record_count": 8,
+            "knowledge_only_zero_query_count": 8,
+            "community_dump_read_count": 0,
+            "original_partial_text_record_count": 2,
+            "original_full_text_count": 0,
+            "collection_scope_count": 1,
+            "single_work_count": 30,
+            "deferred_count": 9,
+            "total_query_handled_count": 32,
+            "scope": "lane2首轮2018—2017自然组31条/62细分：23条有实际出版社、作者、具名评论或社区内容资料，8条准确熟悉单作/指定卷段用已有知识零查询补充。23条查读中2条为授权原篇局部（I Sing Against the Silent Sun 前半部、The Moon Is Not a Battlefield lines68—194），其他为介绍/评论；0整部原作全文核验。86系列仅第一卷开端选例，2个One Piece单卷及2期Descender分别解释，不复制整系列剧情。所有作者未知源标签不自行替换。9项无内容或粒度难项延后。 所有知识零查询项均不计入实际查询或实际查读。"
+          }
+        },
+        {
+          "file": "early-recent-round16-log.json",
+          "sha256": "01e7e46d3e8636bd5e6eae465bd02e57e477853bfdfc7ac61f489564ffc6fae7",
+          "metadata": {
+            "method": "actual-first-pass-reading-log-v1",
+            "status": "frozen_checkpoint",
+            "lane": 3,
+            "read_date": "2026-10-05",
+            "attempted_count": 45,
+            "added_count": 37,
+            "not_added_count": 8,
+            "frozen_date": "2026-10-05",
+            "record_count": 37,
+            "facet_count": 74,
+            "priority_range": [
+              1135,
+              1320
+            ],
+            "canonical_gzip_sha256_at_freeze": "90070137b45a9340b41172a214d03ed79217b73f1f5083f4d2143173544698ed",
+            "remaining_selected_ids": [
+              "Q139888314",
+              "Q55230555",
+              "Q88898423",
+              "Q97355082",
+              "Q98925651"
+            ],
+            "continuation_note": "前45项形成检查点；第46–50项已有一次检索所得材料将转入R17，不等待额外深挖。冻结文件不修改。"
+          }
         }
       ],
       "updated_at": "2026-10-05",
@@ -6547,9 +6841,9 @@
   "issue_research_queue": {
     "record_count": 14564,
     "stages": {
-      "analysis_present": 4054,
-      "source_search_next": 9816,
-      "identity_then_content": 648,
+      "analysis_present": 4180,
+      "source_search_next": 9697,
+      "identity_then_content": 641,
       "content_reading_next": 46
     },
     "url": "./assets/issue-research-queue.json.gz"
