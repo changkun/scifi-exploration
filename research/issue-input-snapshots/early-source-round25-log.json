@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "method": "actual-search-attempt-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "round": "round25",
+    "record_count": 2,
+    "note": "本轮两篇成功正文阅读。只列实际查询与材料；索引不是情节证据，网页工具大小失败不等于公开PDF无正文。私有PDF与提取原文不随研究输入公开。"
+  },
+  "records": [
+    {
+      "id": "Q25381788",
+      "identity": {
+        "title": "Sundance",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Sundance\" \"Silverberg\" \"1969\" Fantasy Science Fiction",
+          "result": "定位原刊期次；二手摘要只作定位，不作为情节证据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1969_06.pdf",
+          "material_type": "私人档案公开保存的原刊扫描；正文一手，数字载体非官方",
+          "location": "The Magazine of Fantasy and Science Fiction，June 1969；印刷p4–17 / PDF p3–16。",
+          "result": "原刊公开PDF在网页阅读工具成功打开，随后普通公开下载；全文文本层按页阅读。"
+        }
+      ],
+      "reading_scope": "14页原刊单篇正文实际全文阅读；标题与结尾扫描视觉核对。p17结尾之后编辑告示、p18下一篇均排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "结尾不确认屠杀确实发生，也不确认一切只是幻觉或治疗；Eaters文化及治疗编程均保留叙事/人物解释层级。不得用开篇或编辑介绍消除结尾歧义。",
+      "next_step": "等待独立复核与统一库接入；保留精确原刊版本边界。"
+    },
+    {
+      "id": "Q23017361",
+      "identity": {
+        "title": "The Fangs of the Trees",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Fangs of the Trees\" \"Silverberg\" \"1968\" magazine",
+          "result": "定位原刊期次；二手摘要只作定位，不作为情节证据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/FSF.htm",
+          "material_type": "原刊扫描目录索引，非故事正文",
+          "result": "实际打开并定位1968年10月入口；只支持源文件定位。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1968_10.pdf",
+          "material_type": "私人档案公开保存的原刊扫描；正文一手，数字载体非官方",
+          "location": "The Magazine of Fantasy and Science Fiction，October 1968；印刷p109–128 / PDF p108–127。",
+          "result": "原刊索引点击到公开PDF；网页阅读工具因11534411字节大小失败，普通公开下载成功，全文文本层按页阅读。"
+        }
+      ],
+      "reading_scope": "20页原刊单篇正文实际全文阅读，标题和终页扫描视觉核对。印刷p128黑色结束标识之后结束；p129市场广告排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "毁林必要性、病毒机制与救园效果不当现实科学结论。Naomi遭强制和欺骗；正文未发生其担心的性侵犯，不能把人物恐惧或Holbrook的念头写成已实施行为。",
+      "next_step": "等待独立复核与统一库接入；保留精确原刊版本边界。"
+    }
+  ]
+}

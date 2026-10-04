@@ -1,4 +1,4 @@
-import {FIELD_LABELS} from './canonical.mjs?v=round19-sources';
+import {FIELD_LABELS} from './canonical.mjs?v=round20-sources';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const formatValue=v=>Array.isArray(v)?v.map(x=>typeof x==='object'?`${x.label}：${x.question}（依据：${x.basis}）`:x).join('、'):v;
 const num=v=>Number(v).toLocaleString('zh-CN');
@@ -19,6 +19,7 @@ export function sourceSearchDetail(w){
   linked_target_unavailable:'链接目标未取得',
   search_excerpt_only:'仅取得检索摘要，原页全文未读',
   unavailable:'资料未取得',
+  catalog_only:'仅查找目录，未读作品正文',
   rejected_adaptation:'改编或续写，不作为原篇依据'
  };
  const earlier=r.previous_attempts||[];

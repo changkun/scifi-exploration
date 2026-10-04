@@ -1,0 +1,888 @@
+{
+  "metadata": {
+    "method": "actual-reading-log-v1",
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-04",
+    "frozen_at": "2026-10-04",
+    "record_count": 18,
+    "unique_identity_count": 17,
+    "analysis_identity_count": 15,
+    "not_added_identity_count": 2,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/egan-source-searches-round20.json",
+        "sha256": "40dc412d4b1d5edf439b0c211a727c8d38b2d3a2c5caf2e7d2813946e0761f29",
+        "metadata": {
+          "method": "actual-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "record_count": 9,
+          "note": "实际查询与阅读范围保留，失败读取与后来取得材料分列；下载Vector不等于通读全刊。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round24-log.json",
+        "sha256": "d05d402e378737df7c9f81132159b8c2ad03afd24db723180a662aad4d385386",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "updated_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "round24",
+          "record_count": 3,
+          "facet_count": 0,
+          "note": "两篇原刊全文已读；第三条只有真实书目检索线索、没有正文，不新增分析。扫描及OCR仅私有研究，不分发原文。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round25-log.json",
+        "sha256": "c138d0704b7a1c6180e43e631321627334a4ec9892e19f8fa7914dd922f1f30f",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "frozen_at": "2026-10-04",
+          "round": "round25",
+          "record_count": 2,
+          "note": "本轮两篇成功正文阅读。只列实际查询与材料；索引不是情节证据，网页工具大小失败不等于公开PDF无正文。私有PDF与提取原文不随研究输入公开。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-source-round26-log.json",
+        "sha256": "5280f182472cb81e948161dcdafc28fe3381dad725ac470d1036f0b1ac4bbb5e",
+        "metadata": {
+          "method": "actual-search-attempt-log-v1",
+          "status": "frozen_checkpoint",
+          "created_at": "2026-10-04",
+          "round": "round26",
+          "record_count": 4,
+          "frozen_at": "2026-10-04",
+          "note": "两篇原刊全文实际阅读并添加；另两篇仅目录/公开预览，未添加。普通公共下载，无登录/受限内容绕过。私有原刊图像与OCR不公开复制。"
+        }
+      }
+    ],
+    "note": "保留Ringing the Changes两次未读正文尝试及Flies未添加记录；日志身份多于分析身份，不能将有日志等同已补分析。"
+  },
+  "records": [
+    {
+      "id": "Q91331223",
+      "identity": {
+        "title": "Lost Continent",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际定向读783–791，2008 The Starry Rift单篇与2013重印；只用于身份。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://paulgrahamraven.com/publications/oceanic-by-greg-egan/",
+          "material_type": "署名评论原文",
+          "reading_scope": "实际读27–28的本篇专段：时间流离、陌生社会、官僚约束；作者存档Interzone #225书评，未读小说原文。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fanac.org/fanzines/Vector/Vector261.pdf",
+          "material_type": "Gary Dalkin当年署名书评",
+          "reading_scope": "web打开Cache miss后实际下载公开PDF并提取；读印刷页36的Lost Continent段及页37的Induction段。不是小说正文，也未通读全刊。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://simonpetrie.wordpress.com/reviewing/review-oceanic-by-greg-egan/",
+          "material_type": "Simon Petrie署名评论原文",
+          "reading_scope": "实际读21–22：Ali、陌生环境及公平问题；澳洲难民政策为评论类比。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://strangehorizons.com/wordpress/non-fiction/reviews/the-starry-rift-edited-by-jonathan-strahan/",
+          "material_type": "评论目标读取失败",
+          "reading_scope": "直接打开Timeout；只见此前检索一句影响说明，未用于具体剧情。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读三篇点名评论的相关段落；未读2008原篇。",
+      "reason_unconfirmed": "作者书目确认为2008单篇。Dalkin称Iraqi refugee/US internment camp，Raven称中东过去与似当代澳洲，Petrie仅作澳洲类比；地区与时代细节待原作核对，不选择其一作定论。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q91332353",
+      "identity": {
+        "title": "Induction",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际定向核见822–831：Foundation #100 Summer 2007及合集关系。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fanac.org/fanzines/Vector/Vector261.pdf",
+          "material_type": "Gary Dalkin当年署名书评",
+          "reading_scope": "web打开Cache miss后实际下载公开PDF并提取；读印刷页36的Lost Continent段及页37的Induction段。不是小说正文，也未通读全刊。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://simonpetrie.wordpress.com/reviewing/review-oceanic-by-greg-egan/",
+          "material_type": "Simon Petrie署名评论原文",
+          "reading_scope": "实际读26的本篇专段，光速限制与阅读体验；没有具体人物或完整情节。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://fanac.org/fanzines/Vector/Vector261.pdf",
+          "material_type": "公开PDF最初读取尝试",
+          "reading_scope": "web直接打开Cache miss；后来普通下载成功并仅读相关书评段，失败过程保留。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "只读两篇评论的本篇专段；内容有限，未读小说。",
+      "reason_unconfirmed": "对应2007单篇。Dalkin认为时间线可能通向Amalgam，是评论推测，不确认系列归属；深空距离未明确，空间暂留unknown。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q91463601",
+      "identity": {
+        "title": "Glory",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际定向读846–860：2007 The New Space Opera及收录版本。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://classicsofsciencefiction.com/2019/03/20/glory-by-greg-egan/",
+          "material_type": "James Wallace Harris署名评论原文",
+          "reading_scope": "实际读25–35：Joan/Anne进入Noudah身体、两国冲突、拯救Niah数学遗存；评论的seekers/spreaders对照与作者意图推测分开。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://simonpetrie.wordpress.com/reviewing/review-oceanic-by-greg-egan/",
+          "material_type": "Simon Petrie署名评论原文",
+          "reading_scope": "实际读35–36本篇专段：数学遗产与交战Noudah；评论把人物写Anne/Jane，未据此替换身份。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Glory_(novelette)",
+          "material_type": "二手条目摘要",
+          "reading_scope": "实际读123–125剧情；没有把最后的和平／远行概述作为原篇核验。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Glory_(novelette)",
+          "material_type": "出版方原文入口链接尝试",
+          "reading_scope": "点击条目80（Harper Voyager免费故事）返回Internal Error，未获得目标正文；失败结果未给出目标地址，因此只记录实际起点，不编造目标URL。未下载另一个非出版方PDF镜像。",
+          "result": "linked_target_unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "两篇署名评论和二手摘要，未读取2007原文。",
+      "reason_unconfirmed": "对应2007单篇，不把Incandescence全书或其他同宇宙故事移入本篇；人物拼写与具体结局仍待原文核对。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q125957515",
+      "identity": {
+        "title": "Wang's Carpets",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读401的Wang’s Carpets选集收录，作品粒度为独立短篇；底库未知年份不在本输入改动。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Online.html",
+          "material_type": "作者在线作品目录",
+          "reading_scope": "实际读140–142，1995 New Legends单篇和译者Predrag Raos。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://timeteam.github.io/fiction/2016/12/21/wangs-carpets.html",
+          "material_type": "读者署名阅读评论",
+          "reading_scope": "实际读19–25：软件化探险者、Orpheus海洋中的计算生命与数学结构；数学解释和出版年份表述不是原作校勘。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://kasmana.people.charleston.edu/MATHFICT/mfview.php?callnumber=mf935",
+          "material_type": "Alex Kasman学术书目与评论线索",
+          "reading_scope": "实际读9–10：Wang tiles生命与Catherine Asaro另有论文；未读取所提6000字论文。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wang%27s_Carpets",
+          "material_type": "二手剧情摘要",
+          "reading_scope": "实际读125–126，Orpheus、计算结构及无法交流；不是原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://web.math.hr/mathe/sagovi/index.html",
+          "material_type": "作者链接的克罗地亚译文入口",
+          "reading_scope": "直接读取重定向https://web.math.pmf.unizg.hr/mathe/sagovi/index.html后500，未取得译文。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wang%27s_Carpets",
+          "material_type": "二手条目的原评论链接尝试",
+          "reading_scope": "点击条目88（Greg Johnson原评论）返回Internal Error，失败结果未给出精确目标地址；只保留实际起点。未读原评论，也未将Diaspora节选当本篇。",
+          "result": "linked_target_unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "作者目录、数学书目、阅读评论和二手剧情；原篇与克罗地亚译文均未读。",
+      "reason_unconfirmed": "对应独立短篇；作者列1995，读者评论列1996版本，底库未知年份原样保留。Diaspora含改写段落，不能把整部小说剧情移入此项；MathFiction的“expanded into an entire novel”仅为宽泛关系描述。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q130284313",
+      "identity": {
+        "title": "Phoresis and Other Journeys",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读276–289：2023三中篇合集与版本；不在本输入改未知年份。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/index.html",
+          "material_type": "作者主页合集说明",
+          "reading_scope": "实际读67–75：三篇此前分别以限量精装出版。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Ebooks.html",
+          "material_type": "作者官方合集简介与一个开篇短摘",
+          "reading_scope": "实际读393–401：Camille/Vesta短摘，以及三部不同中篇各自简介；未读任一完整中篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "仅作者合集书目、三篇简介与其中一篇开头短摘；合集及三篇原文未全文阅读。",
+      "reason_unconfirmed": "以Phoresis and Other Journeys整合集为单位；三项分别注明成员篇，不把Phoresis单篇或单一连续宇宙等同整本书。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q130879114",
+      "identity": {
+        "title": "Crisis Actors",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读644–647：2022 Tomorrow’s Parties初刊与后出合集。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://locusmag.com/2023/04/russell-letson-reviews-sleep-and-the-soul-by-greg-egan/",
+          "material_type": "Russell Letson署名评论原文",
+          "reading_scope": "实际定向读84–85的Crisis Actors专段：Carl潜入气候救援组织、参与风暴后救援、无法发现造假仍相信造假。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://niklasriewald.com/2023/05/08/book-review-sleep-and-the-soul-by-greg-egan/",
+          "material_type": "读者评论原文",
+          "reading_scope": "实际读16本篇一句评论，阴谋思维能否被用于善行；不视为完整剧情。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Crisis_Actors_(short_story)",
+          "material_type": "二手条目入口",
+          "reading_scope": "直接打开Cache miss、再点After Zero引用也Internal Error，未取得条目正文。",
+          "result": "unavailable",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "实际读点名本篇的署名评论；未读取小说或失效的二手条目。",
+      "reason_unconfirmed": "对应2022独立短篇，不把Sleep and the Soul其他篇目的灵魂教义移入Carl故事；场所天体缺明确证据，本轮空间仍unknown。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q130879116",
+      "identity": {
+        "title": "After Zero",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读654–657：2022 Phase Change初刊与后出合集。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/After_Zero",
+          "material_type": "二手剧情摘要",
+          "reading_scope": "实际读123–129：Latifa、Earth–Sun L1遮光项目、竞资方案及2060/2072情节年份；文学中的方案不是现实可行性验证。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://locusmag.com/2023/04/russell-letson-reviews-sleep-and-the-soul-by-greg-egan/",
+          "material_type": "Russell Letson署名评论原文",
+          "reading_scope": "实际读76–77的工程、商业组织、众筹及对手项目专段。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://niklasriewald.com/2023/05/08/book-review-sleep-and-the-soul-by-greg-egan/",
+          "material_type": "读者评论原文",
+          "reading_scope": "实际读19遮光及L1方案一句评论；未用于补完整工程细节。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "二手剧情、两篇实际署名评论；未读完整小说。",
+      "reason_unconfirmed": "对应2022独立短篇；Latifa与Zero for Conduct关系仅作身份说明，不转移另一篇剧情。未在本输入补故事跨度或现实科学匹配度。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q131100609",
+      "identity": {
+        "title": "This Is Not the Way Home",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读688–694：2019 Mission Critical单篇与后出重印。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://classicsofsciencefiction.com/2020/07/23/this-is-not-the-way-home-by-greg-egan/",
+          "material_type": "James Wallace Harris署名评论原文",
+          "reading_scope": "实际读13–24：月球游客被留下、怀孕、skyhook救援构想；失联起因和是否安全返回未明确。没有读原篇。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://locusmag.com/2023/04/russell-letson-reviews-sleep-and-the-soul-by-greg-egan/",
+          "material_type": "Russell Letson署名评论原文",
+          "reading_scope": "实际读75的本篇专段：失联、留下的三人、Aisha与月生女儿及无火箭航程。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "两篇点名评论的实际段落；未读原篇，不确认失联原因或最后着陆。",
+      "reason_unconfirmed": "对应2019独立短篇；战争只是疑测，Harris明确缺失原因和结局不确定，因此不写成地球战毁或已安全回家。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q131100610",
+      "identity": {
+        "title": "The Slipway",
+        "author": "格雷格·伊根"
+      },
+      "attempt_state": "content_material_read",
+      "queries": [
+        "site:gregegan.net \"Lost Continent\" \"Glory\" \"Wang\"",
+        "Greg Egan \"Induction\" review",
+        "Greg Egan \"Glory\" review",
+        "Greg Egan \"Lost Continent\" review",
+        "Greg Egan \"Wang's Carpets\" review",
+        "site:gregegan.net \"This Is Not the Way Home\"",
+        "site:gregegan.net \"The Slipway\"",
+        "Greg Egan \"After Zero\" \"Crisis Actors\" review",
+        "Greg Egan \"Induction\" \"Oceanic\" story",
+        "Greg Egan \"This Is Not the Way Home\" review",
+        "Greg Egan \"Crisis Actors\" \"After Zero\" review",
+        "Greg Egan \"The Slipway\" review"
+      ],
+      "query_note": "同批真实查询逐字保留；直接打开、页内查找和失效链接不是关键词检索。没有把未实际读取的搜索结果列为已读。",
+      "materials_checked": [
+        {
+          "url": "https://www.gregegan.net/BIBLIOGRAPHY/Bibliography.html",
+          "material_type": "作者书目",
+          "reading_scope": "实际读684–687：2019 Analog July/August单篇与Instantiation收录。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://theastoundinganalogcompanion.com/2019/07/02/the-view-through-a-wormhole/",
+          "material_type": "作者在刊物官方博客的科学背景文章",
+          "reading_scope": "实际读15–40：本篇新增星团观测、虫洞解释是待检验假说、成像思想实验；不是小说，也非确认故事最终机制。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://lecultedapophis.com/2021/06/07/the-slipway-greg-egan/",
+          "material_type": "署名阅读评论原文",
+          "reading_scope": "实际读27–38：New Zealand的Brian、Australia的Fatima、观测与假说、种族／性别攻击；未借其避谈的结局补写结果。",
+          "result": "actual_source_scope_read",
+          "read_date": "2026-10-04"
+        },
+        {
+          "url": "https://www.gregegan.net/SiteMap.html",
+          "material_type": "作者站点地图查找",
+          "reading_scope": "页内查找Slipway没有匹配；仅为入口探查，不支持剧情。",
+          "result": "catalog_only",
+          "read_date": "2026-10-04"
+        }
+      ],
+      "reading_scope": "作者科学背景文章的局部与点名阅读评论；未读取小说原文。",
+      "reason_unconfirmed": "对应2019单篇；官方文章为虫洞成像背景，不保证小说解释就是常见虫洞。未把Perihelion Summer灾害或评论的其他作者类比移入本篇。",
+      "next_step": "继续取得确切初刊或授权原文，逐项核对情节、版本与解释；评论和书介不等于整篇原作核验。",
+      "issue_result": "added_to_frozen_input_unverified"
+    },
+    {
+      "id": "Q17640255",
+      "identity": {
+        "title": "The Man with Talent",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"A Man of Talent\" \"Silverberg\" \"1956\" magazine",
+          "result": "原刊期号定位；后世目录/评论仅用于寻找入口，不作为正文分析依据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FUT_1956_4.pdf",
+          "material_type": "原刊扫描；正文一手，私人数字载体",
+          "location": "Future Science Fiction #31，Winter 1956–1957；印刷/PDF p103–116，p116下方广告、p117下一篇排除。",
+          "result": "web读取超大小限制/缓存失败，正常公共URL下载成功；OCR按栏全读，结尾与篇界视觉核见，无登录或验证绕行。"
+        }
+      ],
+      "reading_scope": "14页双栏原刊正文实际全文阅读；p103标题/署名、p115观众转折、p116结尾视觉补核，短篇之外不纳入。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "Vilar的天赋、家族品味与艺术稀缺论均非客观裁定；末尾只设想私人第二卷，未展示后续成果。",
+      "next_step": "独立复核文学解释；未读改写/合集不称已核验。"
+    },
+    {
+      "id": "Q25381957",
+      "identity": {
+        "title": "We Know Who We Are",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "full_original_story_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"We Know Who We Are\" \"Silverberg\" 1970 magazine",
+          "result": "原刊期号定位；后世目录/评论仅用于寻找入口，不作为正文分析依据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/AS/AS_1970_07.pdf",
+          "material_type": "原刊扫描；正文一手，私人数字载体",
+          "location": "Amazing Stories 1970-07，印刷/PDF p80–87；p87上方结尾，下方横线后的Bob Shaw Invasion of Privacy续文明确排除。",
+          "result": "web读取超大小限制/缓存失败，正常公共URL下载成功；OCR按栏全读，结尾与篇界视觉核见，无登录或验证绕行。"
+        }
+      ],
+      "reading_scope": "8页双栏本篇全文实际读完；p87结尾视觉确认横线边界，后接另一篇不混入。",
+      "issue_result": "added_3_fields_4_facets_unverified",
+      "reason_unconfirmed": "Fa死亡及逐级强度警示为已读情节；过量使用是Skagg依据现场作出的解释，不当现实治疗结论。他尚未完成旅行、重用机器或改变全城。",
+      "next_step": "独立复核文学解释；未读改写/合集不称已核验。"
+    },
+    {
+      "id": "Q25381780",
+      "identity": {
+        "title": "Ringing the Changes",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "locator_only_original_not_read",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Ringing the Changes\" \"Silverberg\" 1970 magazine",
+          "result": "定位Alchemy and Academe 1970选集入口；没有取得或读取原作正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://openlibrary.org/works/OL8348633W/ALCHEMY_ACADEME?edition=ia%3Aalchemyacademeco00mcca",
+          "material_type": "图书馆/社区编目搜索结果",
+          "result": "仅搜索结果见目录有Ringing the changes / Robert Silverberg；未打开原作全文。"
+        }
+      ],
+      "reading_scope": "仅实际搜索结果书目线索；没有正文阅读。",
+      "issue_result": "not_added",
+      "reason_unconfirmed": "二手评论不能替代实际原作阅读，不凭概述补议题。",
+      "next_step": "寻找合法公开原文/出版社预览，保持单篇和同题合集边界。"
+    },
+    {
+      "id": "Q25381788",
+      "identity": {
+        "title": "Sundance",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Sundance\" \"Silverberg\" \"1969\" Fantasy Science Fiction",
+          "result": "定位原刊期次；二手摘要只作定位，不作为情节证据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1969_06.pdf",
+          "material_type": "私人档案公开保存的原刊扫描；正文一手，数字载体非官方",
+          "location": "The Magazine of Fantasy and Science Fiction，June 1969；印刷p4–17 / PDF p3–16。",
+          "result": "原刊公开PDF在网页阅读工具成功打开，随后普通公开下载；全文文本层按页阅读。"
+        }
+      ],
+      "reading_scope": "14页原刊单篇正文实际全文阅读；标题与结尾扫描视觉核对。p17结尾之后编辑告示、p18下一篇均排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "结尾不确认屠杀确实发生，也不确认一切只是幻觉或治疗；Eaters文化及治疗编程均保留叙事/人物解释层级。不得用开篇或编辑介绍消除结尾歧义。",
+      "next_step": "等待独立复核与统一库接入；保留精确原刊版本边界。"
+    },
+    {
+      "id": "Q23017361",
+      "identity": {
+        "title": "The Fangs of the Trees",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"The Fangs of the Trees\" \"Silverberg\" \"1968\" magazine",
+          "result": "定位原刊期次；二手摘要只作定位，不作为情节证据。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/FSF.htm",
+          "material_type": "原刊扫描目录索引，非故事正文",
+          "result": "实际打开并定位1968年10月入口；只支持源文件定位。"
+        },
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/FSF/FSF_1968_10.pdf",
+          "material_type": "私人档案公开保存的原刊扫描；正文一手，数字载体非官方",
+          "location": "The Magazine of Fantasy and Science Fiction，October 1968；印刷p109–128 / PDF p108–127。",
+          "result": "原刊索引点击到公开PDF；网页阅读工具因11534411字节大小失败，普通公开下载成功，全文文本层按页阅读。"
+        }
+      ],
+      "reading_scope": "20页原刊单篇正文实际全文阅读，标题和终页扫描视觉核对。印刷p128黑色结束标识之后结束；p129市场广告排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "毁林必要性、病毒机制与救园效果不当现实科学结论。Naomi遭强制和欺骗；正文未发生其担心的性侵犯，不能把人物恐惧或Holbrook的念头写成已实施行为。",
+      "next_step": "等待独立复核与统一库接入；保留精确原刊版本边界。"
+    },
+    {
+      "id": "Q25381780",
+      "identity": {
+        "title": "Ringing the Changes",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_locator_only",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Ringing the Changes\" \"Robert Silverberg\" text",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Ringing the Changes\" \"Silverberg\" site:everand.com/book",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Ringing the Changes\" Silverberg publisher excerpt",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://subterraneanpress.com/collected-stories-of-robert-silverberg-volume-three-something-wild-is-loose/",
+          "material_type": "出版社合集目录与介绍",
+          "result": "实际读目录及作者前言摘录，但未提供该单篇正文。"
+        },
+        {
+          "url": "https://scifiwise.com/author/robertsilverberg/",
+          "material_type": "作者公开作品入口目录",
+          "result": "实际读当前目录一页；没有此题入口，下一页点击网页工具失败。"
+        }
+      ],
+      "reading_scope": "只有目录/索引，未读本单篇正文。",
+      "issue_result": "not_added: original story body not yet read",
+      "reason_unconfirmed": "未读到可支持细分问题的具体故事正文。",
+      "next_step": "继续精确身份原文阅读；不凭题名或二手概述填充。"
+    },
+    {
+      "id": "Q23056596",
+      "identity": {
+        "title": "Flies",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_locator_only",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"Flies\" \"Silverberg\" \"Dangerous Visions\" text",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"Flies\" Silverberg site:baen.com/Chapters",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/Chapters/ERBAEN0065/ERBAEN0065_toc.htm",
+          "material_type": "出版社电子书目录",
+          "result": "实际确认Flies列为Robert Silverberg单篇；可见下一页仅前言，未读到Flies正文。"
+        },
+        {
+          "url": "https://www.baen.com/Chapters/ERBAEN0065/ERBAEN0065___1.htm",
+          "material_type": "出版社电子书前言预览",
+          "result": "实际查看首尾与导航，下一页返回版权页；未读Flies。"
+        },
+        {
+          "url": "https://www.everand.com/book/853893261/Dangerous-Visions",
+          "material_type": "出版社授权平台公开预览",
+          "result": "实际定位目录中的Flies与Afterword；公开可见部分未出现本单篇正文。"
+        }
+      ],
+      "reading_scope": "合集目录与部分前言/版权页可见；单篇正文未读。",
+      "issue_result": "not_added: original story body not yet read",
+      "reason_unconfirmed": "未读到可支持细分问题的具体故事正文。",
+      "next_step": "继续精确身份原文阅读；不凭题名或二手概述填充。"
+    },
+    {
+      "id": "Q131518405",
+      "identity": {
+        "title": "All the Way Up, All the Way Down",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [
+        {
+          "provider": "web search",
+          "query": "\"All the Way Up, All the Way Down\" \"Galaxy\" 1971 Silverberg",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        },
+        {
+          "provider": "web search",
+          "query": "\"All the Way Up, All the Way Down\" \"July\" Galaxy",
+          "result": "定位资料；未以搜索摘要代替正文。"
+        }
+      ],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/GAL.htm",
+          "material_type": "原刊公开扫描索引",
+          "result": "实际打开1971July目录链接。"
+        },
+        {
+          "url": "https://drive.google.com/open?id=1lpQuns1YH7pzVL6exUQZ9ohxdb--2EFg",
+          "material_type": "私人档案公开原刊扫描，正文一手",
+          "result": "普通公开下载成功；无文字层，扫描按页/左右栏识别后正文全部实际阅读，题名和终页视觉核对。",
+          "location": "Galaxy，July–August1971；印刷p140–160 / PDF p143–163（p140整页插图，p141题名署名，正文p142起）"
+        }
+      ],
+      "reading_scope": "Galaxy，July–August1971；印刷p140–160 / PDF p143–163（p140整页插图，p141题名署名，正文p142起），精确单篇全文实际读完；相邻作品/书评/文章及穿插广告均排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；未以后来World Inside长篇修订文本替换单篇。",
+      "next_step": "等待独立复核和统一库接入，保留版本/单篇边界。"
+    },
+    {
+      "id": "Q131518449",
+      "identity": {
+        "title": "The Throwbacks",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "source_body_read_analysis_added",
+      "queries": [],
+      "materials_checked": [
+        {
+          "url": "https://luminist.org/archives/SF/GAL.htm",
+          "material_type": "原刊公开扫描索引",
+          "result": "实际打开1970July目录链接。"
+        },
+        {
+          "url": "https://drive.google.com/open?id=11PgjFCijH0NhRzzsNom1ZbTjeqdfuvlG",
+          "material_type": "私人档案公开原刊扫描，正文一手",
+          "result": "普通公开下载成功；无文字层，扫描按页/左右栏识别后正文全部实际阅读，题名和终页视觉核对。",
+          "location": "Galaxy，July1970；印刷p26–54 / PDF p28–56"
+        }
+      ],
+      "reading_scope": "Galaxy，July1970；印刷p26–54 / PDF p28–56，精确单篇全文实际读完；相邻作品/书评/文章及穿插广告均排除。",
+      "issue_result": "added: 1 issue / 4 facets; knowledge_added_unverified",
+      "reason_unconfirmed": "文学解释待独立核对；未以后来World Inside长篇修订文本替换单篇。",
+      "next_step": "等待独立复核和统一库接入，保留版本/单篇边界。"
+    }
+  ]
+}
