@@ -1,3 +1,4 @@
+import {validateR88AuthorCreationHistoryCandidate} from './round88-author-creation-history-validator.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
@@ -132,7 +133,9 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
-    if(evidence.discovery_source_mode==='bibliographic_candidate_no_core_analysis'){
+    if(validateR88AuthorCreationHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
+      assert(renderClassifications(works).includes('作者自传与创作背景 · 目标小说情节待核'));
+    }else if(evidence.discovery_source_mode==='bibliographic_candidate_no_core_analysis'){
       assert.equal(evidence.actual_bibliographic_source_read,true);
       assert.equal(evidence.actual_content_source_read,false);
       assert.equal(evidence.knowledge_analysis,false);

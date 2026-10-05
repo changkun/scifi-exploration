@@ -16,6 +16,11 @@ export async function buildSiteDelivery(repository, commit, output) {
   execFileSync('tar', ['-xf', '-', '-C', output], {input: archive, maxBuffer: 1024 * 1024});
   const dist = join(output, 'dist');
   const origin = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/dist/`;
+  const processLogicalFile = 'research/issue-source-searches.json';
+  const processMainURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/main/${processLogicalFile}`;
+  const processSnapshotURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/${processLogicalFile}`;
+  const processSnapshotBytes = execFileSync('git', ['show', `${commit}:${processLogicalFile}`], {cwd: repository, maxBuffer: 256 * 1024 * 1024});
+  const processSnapshotSHA = createHash('sha256').update(processSnapshotBytes).digest('hex');
   const sourceHashes = {};
   async function fingerprint(directory, prefix = '') {
     for (const entry of await readdir(directory, {withFileTypes: true})) {
@@ -53,6 +58,10 @@ export async function buildSiteDelivery(repository, commit, output) {
     const path = join(dist, file);
     let text = await readFile(path, 'utf8');
     for (const remote of remoteFiles) text = text.replaceAll('./' + remote, origin + remote);
+    if (file === 'assets/completion.mjs') {
+      if (text.split(processMainURL).length !== 2) throw new Error('Complete process archive download boundary changed');
+      text = text.replace(processMainURL, processSnapshotURL);
+    }
     await writeFile(path, text);
   }
   const manifestPath = join(dist, 'assets/canonical-universe-manifest.json');
@@ -73,6 +82,9 @@ export async function buildSiteDelivery(repository, commit, output) {
     remote_directories: REMOTE_DIRECTORIES.map(name => `assets/${name}/`),
     remote_files: remoteFiles,
     source_sha256: sourceHashes,
+    research_source_sha256: {[processLogicalFile]: processSnapshotSHA},
+    research_source_bytes: {[processLogicalFile]: processSnapshotBytes.length},
+    process_archive_download_url: processSnapshotURL,
     note: 'All record fields, detail shards and complete compressed exports remain at dataset_origin. Resolve relative shard paths against that origin. Export links use the exact commit. The pre-existing main-branch full-corpus download link is the evolving corpus, not this frozen snapshot.'
   };
   await writeFile(join(dist, 'assets/site-delivery.json'), JSON.stringify(metadata, null, 2) + '\n');

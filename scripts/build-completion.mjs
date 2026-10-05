@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
 import {completionChunks,completionDelivery} from './completion-delivery.mjs';
-import {validateSpatialEvidence} from './spatial-evidence.mjs';
+import {validateSpatialEvidence,initialResearchSpatialBuildArguments} from './spatial-evidence.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [audit,library,source,catalog,links]=await Promise.all([gz('research/record-audit.json.gz'),gz('research/library-crosschecks.json.gz'),gz('research/structured-bibliography.json.gz'),read('dist/assets/catalog.json'),read('dist/assets/research-links.json')]);
@@ -62,7 +62,7 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
       if(r.fields.spatial_secondary&&(!Array.isArray(r.fields.spatial_secondary)||r.fields.spatial_secondary.some(s=>!spaces.has(s)||s==='unknown'||s===r.fields.spatial_primary)))throw new Error('Invalid secondary space: '+r.id);
       const priorSpatialContext=canonicalSpatialContext.get(r.id);
       const currentWork=priorSpatialContext ? {...priorSpatialContext,knowledge:{...priorSpatialContext.knowledge,assertions:knowledge.get(r.id)?.assertions},source_search_log:sourceSearchMap.get(r.id)} : undefined;
-      validateSpatialEvidence(r,{issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id),currentWork,repoDir:fileURLToPath(root)});
+      validateSpatialEvidence(r,initialResearchSpatialBuildArguments(r,{repoDir:fileURLToPath(root),currentWork:priorSpatialContext}) || {issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id),currentWork,repoDir:fileURLToPath(root)});
     }
     if(r.fields.duration&&!durations.has(r.fields.duration))throw new Error('Invalid duration: '+r.id);
     if(r.fields.science_class&&!sciences.has(r.fields.science_class))throw new Error('Invalid science: '+r.id);

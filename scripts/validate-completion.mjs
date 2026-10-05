@@ -43,7 +43,10 @@ for(const input of spatialInputs)for(const record of input.records){
  const archivedFirstPass = [
   'early-published-spatial-expansion-round1.json',
   'early-published-spatial-expansion-round2.json',
-  'early-published-spatial-expansion-round3.json'
+  'early-published-spatial-expansion-round3.json',
+  'early-published-spatial-expansion-round4.json',
+  'early-published-spatial-expansion-round5.json',
+  'early-published-spatial-expansion-round6.json'
  ].includes(record.source_spatial_input_file);
  if(archivedFirstPass){
   // Original first-pass A files predate the ownership metadata convention.
@@ -124,7 +127,7 @@ check('spatial batches preserve exact assertions, scoped evidence and field isol
  }
 });
 check('existing spatial knowledge separates zero-query and scoped-lookup provenance and rejects invented support',()=>{
- const records=spatialInputs.flatMap(input=>input.records).filter(record=>record.analysis_basis==='existing_knowledge_unverified');
+ const records=spatialInputs.flatMap(input=>input.records).filter(record=>record.analysis_basis==='existing_knowledge_unverified'&&!record.initial_research_provenance);
  assert(records.some(record=>record.id==='Q5619311'));
  for(const record of records){
   const work=works.find(work=>work.id===record.id),context={issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root)};
@@ -140,6 +143,27 @@ check('existing spatial knowledge separates zero-query and scoped-lookup provena
     assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,actual_search_performed:false}}));
     assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,raw_reading_log:{...context.sourceSearchLog.raw_reading_log,queries:[]}}}));
   }
+ }
+});
+check('initial research spatial knowledge preserves unknown original operations and exact normalized placement',()=>{
+ const records=spatialInputs.flatMap(input=>input.records).filter(record=>record.initial_research_provenance);
+ assert.equal(records.length,127);
+ for(const record of records){
+  const work=works.find(item=>item.id===record.id);
+  const context={issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root)};
+  assert.equal(validateSpatialEvidence(record,context),'initial_research_existing_knowledge_unverified');
+  assert.equal(work.spatial_evidence.primary,record.fields.spatial_primary);
+  assert.deepEqual(work.spatial_evidence.secondary,record.fields.spatial_secondary||[]);
+  assert.equal(work.spatial_evidence.rationale,record.fields.spatial_rationale);
+  assert.equal(record.original_actual_search_count,null);
+  assert.equal(record.original_actual_open_count,null);
+  assert.equal(record.original_operation_count_state,'unknown_not_recorded');
+  assert.deepEqual(record.sources,[]);assert.deepEqual(record.source_evidence,[]);
+  assert.equal(work.completion.source_verified,false);
+  assert.throws(()=>validateSpatialEvidence({...record,initial_research_provenance:undefined,knowledge_provenance_mode:undefined},context));
+  assert.throws(()=>validateSpatialEvidence({...record,actual_search_count:0},context));
+  assert.throws(()=>validateSpatialEvidence({...record,fields:{...record.fields,spatial_rationale:'invented location'}},context));
+  assert.throws(()=>validateSpatialEvidence(record,{...context,currentWork:{...work,spatial_evidence:{...work.spatial_evidence,rationale:'invented location'}}}));
  }
 });
 check('a repeated real query preserves the earlier zero-query spatial provenance',()=>{

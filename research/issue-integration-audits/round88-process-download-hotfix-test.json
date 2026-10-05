@@ -1,0 +1,49 @@
+{
+  "status": "targeted_offline_checks_passed",
+  "no_network_requests": true,
+  "public_edits": 0,
+  "test_scope": "Read-only existing Git snapshot, exact completion link substitution and rejection guard; full delivery integration remains root-side after hotfix commit.",
+  "snapshot": {
+    "dataset_commit": "93c5c5338866d2a99ec7267d740f65f2e18c297f",
+    "research_source_sha256": {
+      "research/issue-source-searches.json": "cb8883b00e213b74331e93393b78f4b0d37a61703eafab8c80aecb9e3c3547cb"
+    },
+    "research_source_bytes": {
+      "research/issue-source-searches.json": 81606183
+    },
+    "process_archive_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/93c5c5338866d2a99ec7267d740f65f2e18c297f/research/issue-source-searches.json"
+  },
+  "snapshot_records": 13166,
+  "current_working_archive_bytes": 87074450,
+  "current_working_archive_sha256": "f6f23acbf3e8c6938c1ad776df1701a7f84cb5de3eaf36d304c8df0995503602",
+  "stale_asset_bytes": 80786,
+  "stale_asset_sha256": "8925598f37b5550008de1ce8f4962a238f92f02a1563e746966a34600230889a",
+  "positive_checks": 4,
+  "negative_checks": [
+    {
+      "case": "stale",
+      "rejected": true
+    },
+    {
+      "case": "main",
+      "rejected": true
+    },
+    {
+      "case": "wrong_commit",
+      "rejected": true
+    },
+    {
+      "case": "stale_hash",
+      "rejected": true
+    },
+    {
+      "case": "stale_length",
+      "rejected": true
+    }
+  ],
+  "syntax_checks": [
+    "completion.mjs",
+    "build-site-delivery.mjs",
+    "validate-site-delivery.mjs"
+  ]
+}
