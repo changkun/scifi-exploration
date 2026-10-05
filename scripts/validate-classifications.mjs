@@ -78,6 +78,18 @@ for(const candidate of registry.discovery_candidates||[]){
       assert(evidence.sources.every(url=>work.source_search_log?.materials_checked.some(material=>
         material.url===url && material.actual_bibliographic_source_read===true &&
         material.actual_content_source_read===false && material.reading_scope)));
+    }else if(evidence.discovery_source_mode==='scoped_candidate_no_core_analysis'){
+      assert.equal(evidence.actual_content_source_read,true);
+      assert.equal(evidence.knowledge_analysis,false);
+      assert.equal(work.issue_analysis_status,'missing');
+      assert(evidence.private_raw_source?.sha256);
+      assert(evidence.sources.every(url=>work.source_search_log?.materials_checked.some(material=>
+        material.url===url && material.actual_content_source_read===true &&
+        material.knowledge_analysis===false && material.reading_scope &&
+        material.scope_evidence_sha256===evidence.private_raw_source.sha256)));
+      assert(evidence.sources.every(url=>work.source_search_log.raw_reading_log.direct_page_reads?.some(read=>
+        read.url===url && read.sha256===evidence.private_raw_source.sha256 &&
+        read.outcome==='actually_read_limited_page_return_not_full_original')));
     }else{
       assert(evidence.sources.every(url=>work.knowledge?.sources.includes(url)));
     }

@@ -41,7 +41,7 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
     sourceSearchLog = {...sourceSearchLog, queries: [], materials_checked: []};
   }
   const note = record.field_notes?.spatial_primary || '';
-  const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书)?已有知识|明确已有知识|准确熟悉本书/.test(note);
+  const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书|此卷)?已有知识|明确已有知识|准确熟悉本书/.test(note);
   if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !explicitKnowledge) fail();
   if (record.knowledge_provenance_mode === 'existing_knowledge_after_scoped_lookup') {
     if (!record.field_notes.evidence_provenance || !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw)) fail();
