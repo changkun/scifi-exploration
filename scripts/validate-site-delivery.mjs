@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readFile, readdir} from 'node:fs/promises';
+import {readFile, readdir, stat} from 'node:fs/promises';
 import {resolve, join} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
@@ -9,6 +9,24 @@ const delivery = join(output, 'dist');
 const metadata = JSON.parse(await readFile(join(delivery, 'assets/site-delivery.json'), 'utf8'));
 const repo = process.cwd();
 const base = join(repo, 'dist');
+// Complete exports can grow in the repository, but must never enter the
+// hosting package or lose their exact-commit download destinations.
+for (const file of ['assets/issue-analysis.json.gz', 'assets/issue-research-queue.json.gz']) {
+  assert.ok(metadata.remote_files.includes(file), `${file}: complete export is not mapped`);
+  assert.equal(createHash('sha256').update(await readFile(join(base, file))).digest('hex'), metadata.source_sha256[file]);
+  await assert.rejects(stat(join(delivery, file)), {code: 'ENOENT'});
+}
+async function checkHostedSizes(directory) {
+  for (const entry of await readdir(directory, {withFileTypes: true})) {
+    const file = join(directory, entry.name);
+    if (entry.isDirectory()) await checkHostedSizes(file);
+    else {
+      assert.ok(entry.isFile(), `Unsupported hosted asset: ${file}`);
+      assert.ok((await stat(file)).size <= 5 * 1024 * 1024, `Hosted asset exceeds 5 MiB: ${file}`);
+    }
+  }
+}
+await checkHostedSizes(delivery);
 const original = await import(pathToFileURL(join(base, 'assets/data-loader.mjs')));
 const generated = await import(pathToFileURL(join(delivery, 'assets/data-loader.mjs')));
 let requests = 0;
@@ -57,6 +75,7 @@ for (const file of ['assets/completion.mjs', 'assets/issues.mjs']) {
   for (const remote of metadata.remote_files) expected = expected.replaceAll('./' + remote, metadata.dataset_origin + remote);
   assert.equal(await readFile(join(delivery, file), 'utf8'), expected);
 }
+assert.ok((await readFile(join(delivery, 'assets/completion.mjs'), 'utf8')).includes(metadata.dataset_origin + 'assets/issue-research-queue.json.gz'), 'The full research queue must remain downloadable from the exact commit');
 const wrongWork = {source_id: 'Q1', source_index: {detail_url: './assets/bibliography-details/../../../secret.json'}};
 await assert.rejects(generated.loadSourceDetail(wrongWork, remoteFetch), /路径/);
 const unavailable = async url => url.includes('/completion-index/') ? {ok: false} : remoteFetch(url);

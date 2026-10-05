@@ -129,7 +129,13 @@ if (flags.has('--help') || flags.has('-h')) {
       await Promise.all(resources.map(async resource => { const info = await stat(path.join(dist, resource)); assert(info.isFile() && info.size > 0, `Missing or empty resource: ${resource}`); }));
     });
     await run('resources: runtime files and shards are at most 5 MiB; whole exports stay in repository', async () => {
-      const repositoryExports = new Set(['assets/issue-analysis.json.gz']);
+      // These complete download exports are removed from the hosted package
+      // and linked to its exact dataset commit by build-site-delivery.mjs.
+      // The browsable records continue to load from bounded index shards.
+      const repositoryExports = new Set(['assets/issue-analysis.json.gz', 'assets/issue-research-queue.json.gz']);
+      for (const relative of repositoryExports) {
+        assert.deepEqual(await readFile(path.join(dist, relative)), await readFile(path.join(project, 'research', path.basename(relative))), `${relative}: download must preserve the complete repository export`);
+      }
       async function walk(directory) {
         const entries = await readdir(directory, { withFileTypes: true });
         for (const entry of entries) {
