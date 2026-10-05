@@ -1,0 +1,643 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-05",
+    "record_count": 21,
+    "field_count": 42,
+    "source_commit": "e8e4f037818d3cf06fed11bb7a70ccf60b608afa",
+    "source_snapshot_sha256": "dd13dcd146a4f0dd20430a1f6f0b2f5156ee46d7fe66ff9fcdfb223c8a1dce08",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round35.json",
+        "sha256": "ce9cb1c504ef1e779af82709dfb7df5da3d5c60885bc3392c199c6ad811d5ae9",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "本轮同实体已读材料明确且canonical未知的空间，不为导航追加阅读。",
+          "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "dd13dcd146a4f0dd20430a1f6f0b2f5156ee46d7fe66ff9fcdfb223c8a1dce08",
+          "starts_at_fast_index": 1192,
+          "record_count": 21,
+          "ends_at_fast_index": 1229,
+          "next_fast_index": 1230,
+          "freeze_date": "2026-10-05",
+          "session_inherited_baseline_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+          "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+          "audit_snapshot_sha256": "dd13dcd146a4f0dd20430a1f6f0b2f5156ee46d7fe66ff9fcdfb223c8a1dce08",
+          "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 2,
+      "cosmic": 0,
+      "earth": 8,
+      "galactic": 3,
+      "interstellar": 4,
+      "planetary": 4
+    },
+    "scope": "只补原unknown且有明示场所支持的条目；未知不由题名或议题推断，已有定位保持不动。"
+  },
+  "records": [
+    {
+      "id": "Q54807236",
+      "identity": {
+        "title": "Ragnarok",
+        "author": "Nathan Archer"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "Voyager追踪回Alpha Quadrant的信号，闯入两族长期空间战争。"
+      },
+      "field_notes": {
+        "spatial_primary": "实际同次Memory Alpha夹套摘要明示返回Alpha Quadrant；OL同卷简介明示太空船与两族空间战争。本导航不把大战年数当宇宙尺度。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL3256198W/Star_Trek_Voyager_-_Ragnarok?edition=ragnarok00arch",
+        "https://memory-alpha.fandom.com/wiki/Ragnarok_%28novel%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL3256198W/Star_Trek_Voyager_-_Ragnarok?edition=ragnarok00arch",
+          "support_scope": "实际读检索返回本work完整社区简介及Voyager#3信息：回家信号、两族长久空间战争、双方要摧毁Voyager；没有读小说正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://memory-alpha.fandom.com/wiki/Ragnarok_%28novel%29",
+          "support_scope": "实际读检索返回该1995小说夹套摘要，明确回Alpha Quadrant的希望信号与长期交战，不是全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5608630",
+      "identity": {
+        "title": "Gridiron",
+        "author": "Philip Kerr"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要事件发生在洛杉矶由计算机统一管理的智能大楼内。"
+      },
+      "field_notes": {
+        "spatial_primary": "出版社与PW同实体材料直接写Los Angeles和大楼内被困，不以AI类型推地点。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.penguin.co.uk/books/359143/gridiron-by-philip-kerr/9780099594314",
+        "https://www.publishersweekly.com/9780446520539"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguin.co.uk/books/359143/gridiron-by-philip-kerr/9780099594314",
+          "support_scope": "实际读Penguin本书检索缓存完整简介，智能大楼、温控/安保与杀死创造者；未读正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780446520539",
+          "support_scope": "实际读PW1996本书完整检索缓存评论：洛杉矶、计算机代际与游戏程序、被困团队及杀戮；二手评论支持目标错置分析。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q692102",
+      "identity": {
+        "title": "Amnesia Moon",
+        "author": "强纳森·列瑟"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "人物从怀俄明Hatfork出发沿美国公路旅行，沿途现实呈破碎状态。"
+      },
+      "field_notes": {
+        "spatial_primary": "已读本书首版简介明确Wyoming与American highway；抽象现实变化作为叙事特征，不把月亮题名当行星导航。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://books.google.com/books?id=OTB0PgAACAAJ"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?id=OTB0PgAACAAJ",
+          "support_scope": "实际读Google Books中Harcourt Brace1995本书完整供给简介，Hatfork怀俄明、失忆、Kellogg否认炸弹、Melinda公路同行与破碎现实；未读内页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7252231",
+      "identity": {
+        "title": "Proud Helios",
+        "author": "梅麗莎·斯科特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "围绕通往Gamma Quadrant的虫洞运输，Sisko处理隐形袭击船与星际战争风险。"
+      },
+      "field_notes": {
+        "spatial_primary": "本ID完整OL简介直接写Gamma Quadrant/wormhole shipping/interstellar war，不从Star Trek品牌泛推。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL1697244W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL1697244W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7761398",
+      "identity": {
+        "title": "The Romance of Crime",
+        "author": "加雷恩·羅拔士"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要调查地点为火箭驱动小行星上的Rock of Judgement法庭与监狱。"
+      },
+      "field_notes": {
+        "spatial_primary": "原小说夹套摘要直接说明rocket-powered asteroid，远处行星线索不自动扩大为跨恒星主舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://doctorwhoworlduk.com/romancecrime"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://doctorwhoworlduk.com/romancecrime",
+          "support_scope": "实际读原小说页面完整夹套摘要与第6卷说明，Rock小行星机构和待解线索；保存于社区书目页，未读原著。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7776249",
+      "identity": {
+        "title": "The Woven Path",
+        "author": "Robin Jarvis"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "伦敦东区Wyrd Museum的房间将Neil送回二战伦敦。"
+      },
+      "field_notes": {
+        "spatial_primary": "同书两个重印简介分别明确East End London与World War II London；时间跳转不自动视为空间多维。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://books.google.com/books?id=VbP1yhE-WDIC",
+        "https://books.google.com/books/about/The_Woven_Path.html?id=VwUJAAAACAAJ"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?id=VbP1yhE-WDIC",
+          "support_scope": "实际读Google Books中HarperCollins2011重印完整简介，伦敦博物馆、Neil、被迫回到过去和汲取毁灭的邪恶；未读内页。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://books.google.com/books/about/The_Woven_Path.html?id=VwUJAAAACAAJ",
+          "support_scope": "实际读1999 Troll版本短简介，管理员父亲、三姐妹、魔法房间与二战伦敦；版本资料不作1995首版日期核验。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7992507",
+      "identity": {
+        "title": "When Heaven Fell",
+        "author": "William Barton"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Athol在银河AI帝国军队服役，行动连接地球、Hu战争与其他奴属种族。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书具体摘要直接写galaxy-spanning empire及不同种族/行星行动，不以服役二十年推空间范围。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/When_Heaven_Fell"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/When_Heaven_Fell",
+          "support_scope": "实际读检索返回本小说完整社区剧情摘要，AI银河帝国、Athol回地球、出卖反叛、Hu战争与其他奴属种族反抗；没有读原作或直接出版方页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q105543544",
+      "identity": {
+        "title": "The Ghost Standard",
+        "author": "威廉·泰恩"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "主要求生事件发生在深空船难后的救生艇内。"
+      },
+      "field_notes": {
+        "spatial_primary": "已读本篇明确梗概直接写deep space shipwreck；采用深空导航，不把galactic法律字眼自动当银河遍历。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://variety-sf.blogspot.com/2010/06/william-tenn-ghost-standard-short-story.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://variety-sf.blogspot.com/2010/06/william-tenn-ghost-standard-short-story.html",
+          "support_scope": "实际读本篇完整二手摘要，救生艇、Juan/Tuezuzim、Ghost裁决与法律定义，以及1994首刊标记；未读原作全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q121966115",
+      "identity": {
+        "title": "Les Voyageurs malgré eux",
+        "author": "Élisabeth Vonarburg"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "主要开局在平行魁北克的Montréal法语飞地，Catherine任教并在城内见幻象。"
+      },
+      "field_notes": {
+        "spatial_primary": "具体作品辞典与同期评论明示Montréal/Québec；平行历史不自动等于离开地球舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.daliaf.com/oeuvres/voyageurs-malgre-eux-les-1994",
+        "https://www.revue-solaris.com/1994/03/elisabeth-vonarburg-les-voyageurs-malgre-eux-sf-2/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.daliaf.com/oeuvres/voyageurs-malgre-eux-les-1994",
+          "support_scope": "实际读法语想象文学作品辞典本卷书目与摘要，Catherine任教、法语飞地、废墟视觉及他人正常化；文学辞典二手摘要。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.revue-solaris.com/1994/03/elisabeth-vonarburg-les-voyageurs-malgre-eux-sf-2/",
+          "support_scope": "实际读Solaris本卷书评检索返回，平行Québec/Montréal、法语飞地与摇摆记忆，后续评论的寓意不当作原作事实。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q133801012",
+      "identity": {
+        "title": "L'Ombre du chat",
+        "author": "Paul Borrelli"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "本卷案件发生在2032年的马赛地下十八层巨城。"
+      },
+      "field_notes": {
+        "spatial_primary": "原著出版社本书页明确Marseille、2032与地下城市，不从反乌托邦标签推空间。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.l-atalante.com/catalogue/insomniaques-et-ferroviaires/l-ombre-du-chat-9782905158956/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.l-atalante.com/catalogue/insomniaques-et-ferroviaires/l-ombre-du-chat-9782905158956/",
+          "support_scope": "实际读L’Atalante本卷完整检索缓存简介及1994原语版信息，马赛2032、地下城/动物绝迹、Canavese仪式凶案及Serge杀人机器；未读正文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134463984",
+      "identity": {
+        "title": "La Terre de promesse",
+        "author": "Christian Léourier"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "船只汇入Lanmeur，Gald的迁居选择涉及Ynis Hen与Irgendwo等世界。"
+      },
+      "field_notes": {
+        "spatial_primary": "同卷明确astronefs聚集与多个命名行星/世界的迁居寻找；不采用其他页四千年开篇推宇宙级舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.ibol.fr/?nav=livre&param=La+terre+de+promesse"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ibol.fr/?nav=livre&param=La+terre+de+promesse",
+          "support_scope": "实际读具体题名作者对应的图书介绍完整摘要：来客、Enclave变保留地、Ynis Hen/Irgendwo与Gald寻觅；不是直接出版社或正文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q21613375",
+      "identity": {
+        "title": "Scissors Cut Paper Wrap Stone",
+        "author": "伊恩·麥當勞"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Ethan与Masahiko在未来日本沿四国八十八所路线朝圣。"
+      },
+      "field_notes": {
+        "spatial_primary": "同卷PW评论直接明确21世纪Japan和Shikoku pilgrimage；另一篇The Tear的宇宙舞台不继承。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.publishersweekly.com/9780553561166",
+        "https://books.apple.com/us/book/scissors-cut-paper-wrap-stone/id1458913379"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.publishersweekly.com/9780553561166",
+          "support_scope": "实际读PW1994本卷完整检索缓存评论，fracters各作用、欧洲机构强迫审讯暗杀、四国朝圣与善用尝试；二手评论，不是正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://books.apple.com/us/book/scissors-cut-paper-wrap-stone/id1458913379",
+          "support_scope": "实际读2019出版方电子书简介，Ethan/fracters/朝圣及另含The Tear的合订说明；未用另篇内容。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q28668523",
+      "identity": {
+        "title": "The X-Files: Goblins",
+        "author": "Charles L. Grant"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Mulder与Scully在现代美国调查隐形持刀攻击造成的案件。"
+      },
+      "field_notes": {
+        "spatial_primary": "本小说夹套介绍直接写modern America，合订对应GOBLINS专段给具体调查；不采用另一部Ground Zero地点。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.fantasticfiction.com/a/kevin-j-anderson/goblins-ground-zero.htm",
+        "https://www.fantasticfiction.com/g/charles-l-grant/goblins.htm"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.fantasticfiction.com/a/kevin-j-anderson/goblins-ground-zero.htm",
+          "support_scope": "实际读2016合订本简介中明确标GOBLINS的段落，离体持刀手与Mulder/Scully调查；GROUND ZERO段未用。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.fantasticfiction.com/g/charles-l-grant/goblins.htm",
+          "support_scope": "实际读本小说身份与夹套式系列调查角色简介，modern America及Bureau静默快速处理要求；未从其列举的其他通用案件代补本卷。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3231919",
+      "identity": {
+        "title": "The Dolphins of Pern",
+        "author": "安妮·麥考菲利"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要事件在Pern行星，人物重新建立陆地与海洋智慧海豚的联系。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确Pern oceans/continents和当地恢复联系；跨星殖民是历史背景，不将主舞台扩大。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://books.google.com/books?id=ClRSAAAACAAJ",
+        "https://www.penguinrandomhouse.com/books/110309/the-dolphins-of-pern-by-anne-mccaffrey/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?id=ClRSAAAACAAJ",
+          "support_scope": "实际读Google Books的Random House1997本卷完整供给简介，智慧海豚共同殖民、Thread后遗忘、T’lion/Readis和重建陆海联系；未读内页。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/110309/the-dolphins-of-pern-by-anne-mccaffrey/",
+          "support_scope": "实际读官方该卷1995平装短简介，两位男孩恢复智慧海豚联系；版本不作为原始1994首刊核验。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3480916",
+      "identity": {
+        "title": "Sexomorphoses",
+        "author": "Ayerdhal"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "Aimlin(e)的身份追寻跨越银河，并同皇帝对Daym的控制相交。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷明确摘要写d’un bout à l’autre de la galaxie；不是因space opera标签放入银河。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.label-emmaus.co/fr/9791030700367-sexomorphoses/",
+        "https://fr.wikipedia.org/wiki/Sexomorphoses"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.label-emmaus.co/fr/9791030700367-sexomorphoses/",
+          "support_scope": "实际读书店该书完整夹套式摘要，性别改变、联邦搅局使命、找创造者及可能编程；二手书目简介，未读出版社正文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Sexomorphoses",
+          "support_scope": "实际读本卷社区摘要，Aimlin(e)跨银河寻身份、皇帝Daym控制与Génésis观察；未用前卷独立条目的细节。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q4849966",
+      "identity": {
+        "title": "Balance of Power",
+        "author": "Dafydd ab Hugh"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "科技竞价涉及联邦、Klingon、Romulan与Cardassian等银河阵营，光子炮威胁舰队。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷实际简介明确多个星际阵营且称every race in the galaxy；采用文明网络导航，不按宇宙商业宣言推cosmic。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL13418339W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL13418339W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5223330",
+      "identity": {
+        "title": "Dark Mirror",
+        "author": "黛安娜·杜安"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "主要冲突由镜像帝国打开跨宇宙门户，替换联邦Enterprise-D而产生。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介明确dimensional barrier/doorway into our universe与两个世界的镜像星舰；abstract为多维阅读导航，非实证坐标。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL1950847W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL1950847W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5418587",
+      "identity": {
+        "title": "Evolution",
+        "author": "John Peel"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Doctor与Sarah在维多利亚时代英格兰Devon调查儿童失踪和人体改造。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书Publisher’s summary直接写England,Earth及Devon moorland；穿越年代不当作离开地球。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://tardis.fandom.com/wiki/Evolution_%28novel%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tardis.fandom.com/wiki/Evolution_%28novel%29",
+          "support_scope": "实际读原小说社区页面的完整Publisher’s summary检索返回和John Peel/第2卷身份，维多利亚英格兰、受害线索及演化干预；未读原小说。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q54802893",
+      "identity": {
+        "title": "Foreign Foes",
+        "author": "Dave Galanter / Greg Brodeur"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要事件在Velex行星，Picard主持和谈，Riker与Troi困在地下。"
+      },
+      "field_notes": {
+        "spatial_primary": "本ID简介直接写planet Velex以及far below surface，两个参会种族不自动扩大为银河主舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL6022403W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL6022403W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q54807239",
+      "identity": {
+        "title": "Requiem",
+        "author": "迈克尔·詹·弗莱德曼 / Kevin J. Ryan"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Picard被遗物送到过去的Cestus III行星，现时外交目标为Gorn母星。"
+      },
+      "field_notes": {
+        "spatial_primary": "同卷简介直接点名past on a planet called Cestus III及Gorn homeworld；战争风险涉及银河不直接改变主地点。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL137975W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL137975W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7265293",
+      "identity": {
+        "title": "Q-Squared",
+        "author": "彼得·大卫"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "Picard卷入来自Q Continuum的超强存在与Trelane的力量争斗。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷直接明示来自another continuum的Q与超强存在；abstract表示未定/多维舞台，all of creation风险不自动标cosmic物理坐标。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL8126298W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL8126298W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    }
+  ]
+}
