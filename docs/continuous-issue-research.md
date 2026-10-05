@@ -524,3 +524,11 @@ Key Word的实际材料为普通推理、Children的Blish/J. A. Lawrence署名�
 The She-Wolf’s Hidden Grin只读实际返回的授权开头，不把4931词全文算已读。The Best Laid Plans只取短篇介绍和开头的采花安排，A Very Klingon Khristmas按韵文图画书戏仿；Gundam AGE: Memories of Sid只取原漫画连载前提。译名Leinster候选、Concertos的2012 novella与2019 roman区别未获情节确认而后置。Dibell、Brust、Attanasio等日期与版本口径保持原值，L’Incal拍卖图录单页描述不升级整章阅读。
 
 五组85项校验与身份顺序、原始来源、日期、文本粒度、既有研究、空间、冻结字节及设计守恒检查通过。R53已部署v55，并在公开浏览器确认7,430核心、7,922议题分类、1,387空间、7,243过程及固定提交下载；R54待固定提交推送和公开确认。各分片继续首遍，不等待发布。
+
+### 2026-10-05：R55 优先明确前提与已有知识
+
+六份互斥冻结输入新增121条核心、242项具体问题及18条原未知空间；158个处理身份中37条后置。累计14,564身份、7,670核心、6,894核心缺口、16,455细分、1,423空间、7,555份过程，50次较早尝试保留。熟悉作品直接已有知识或由目录仅确认成员；陌生作品一次查询即按明确内容补入或后置，原作全文读取0，全部仍待核。
+
+Fullmetal Edition的合编卷与普通卷明确分开，2021版与源2012不一致保留；Cinta Yang Berpikir本轮材料为教育手册，保持实体而不造科幻剧情。The Dragon Griaule只用具名成员；Aucun souvenir assez solide仅图书馆总体导读的概念框架，未把导读比喻写为具体事件。Edge of Infinity仅用Drive具名选例与已有知识。Zoo不借电视剧，Oceanum等后续队列继续首遍。
+
+Rocheworld原版/增写版、Blackcollar首卷/合本、Toynbee单篇/同题集与Dune Encyclopedia虚构百科的边界保留；Pillar of Fire戏剧集及Venging后出集未代替原篇。五组85项校验及身份顺序、原来源、日期、粒度、旧分析与空间、冻结字节、设计守恒检查通过。R54已部署v56并公开确认7,549核心、8,039议题分类、1,405空间、7,397过程及固定下载提交；R55待固定提交和公开确认，分片继续研究。
