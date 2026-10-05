@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 17,
+    "version": 18,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v16.json",
-      "sha256": "c46a90ca6ac3a9d89007086b46aed68cd184b1bf2125b699b5fd4acb6ef22d90"
+      "file": "research/classification-registry-history/v17.json",
+      "sha256": "5e082363261ea94a1f3ddcad83c6c66ab95e9ee3fdfea01ea7614ac6d00dcc1a"
     },
-    "revision_note": "第85批严格保留V16八维34入口、67人工种子/91关联及116旧候选；新增9个待比较方向，不自动建立分类。三项无核心身份只保留实际缓存支持的出版或章节形式，不计剧情补全或独立核验。",
+    "revision_note": "第86批保留V17八维34入口、67人工种子/91关联及125旧候选；追加8个准确原缓存支持的跨维待比较方向。目录与剧情范围分开，不自动标签，不增加核心或核验等级。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -256,6 +256,26 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry-root-assist-modern-classification-candidates-r3.json",
         "sha256": "366427660b94ea1e54fedcd9561e94df1b5f2a3b6b1f7942a8315d59662bbea2"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-root-classification-candidates-round1.json",
+        "sha256": "7cb83ca46cf8086254adda2db78c5fade5a8912ce8eda09d1b7f8181aea0364f"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-root-classification-candidates-round3.json",
+        "sha256": "4f91f0de49b046bf88aa6791f35b7035ea1aace551daec29b9a48b4c21851159"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-global-classification-candidates-round1.json",
+        "sha256": "aa4756b89218785e4028c64cc6a52cbb7b6ce7828f83fe969a294005c872a948"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r1.json",
+        "sha256": "9e164321024a610fc195520e9366a5db9db33bde96353498bbf3cf74b5a85e4a"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r2.json",
+        "sha256": "66d1b7fa5600866d9f1797baeaecd53e43cabefcb0ee2a82484b45c1a47d1b82"
       }
     ]
   },
@@ -4932,6 +4952,491 @@
       "id": "discovery:quick-retry-root-assist-modern-classification-candidates-r3:2",
       "review_status": "pending_further_comparison",
       "review_note": "保留开放维度、定义边界与准确作品范围；孤例先比较，不自动分类、不传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "label": "以启发发明建立现实关联",
+      "dimension": "现实与未来关系",
+      "definition": "作品论述把虚构与现实的联系解释为刺激创造，而非要求装置按原样兑现；须区分历史作者立场、现实因果证据与科学可行性。",
+      "work_evidence": [
+        {
+          "id": "Q133461824",
+          "identity": {
+            "title": "Amazing Stories, Vol. 1, No. 7",
+            "author": "作者未知"
+          },
+          "basis": "本期社论分别谈预测、最初刺激与不同产物，并承认不可能的想象；仅描述其文学纲领。",
+          "sources": [
+            "https://en.wikisource.org/wiki/Amazing_Stories/Volume_01/Number_07"
+          ],
+          "exact_support_scope": "实际一次open本期目录及L195–206社论公开转录；只分析社论的想象/现实关联论述，不声称全期虚构篇章共同情节或历史/专利事实已核验。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-root-r1-open-14.json",
+            "sha256": "537b66cb8140f0ea4568410a97200d3223dd3a1fb0bd8b94753b28bd07307b3b",
+            "container": "single_record",
+            "record_sha256": "3362e6b25d0f8192e912de6287fae25ecbc37268fb8dde4989ccc5c85da5f6e3",
+            "provenance": "actual_cached_direct_page_return",
+            "actual_query": "\"Amazing Stories\" \"October 1926\" site:en.wikisource.org OR site:gutenberg.org",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-root-r1-search-14.json",
+              "sha256": "e793fe0c454a9d7ec3015fb5a813f446f6d8cc92d31acb7278cee62a0654e036",
+              "container": "single_record",
+              "record_sha256": "2f6119e1e06c68ed5714dc2ce4312a1dbf88ba3a96137b7f6643aa3a782df88d",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Amazing Stories\" \"October 1926\" site:en.wikisource.org OR site:gutenberg.org",
+              "new_queries": 0,
+              "new_opens": 0
+            },
+            {
+              "private_raw_file": "work/evidence/quick-retry2-root-r1-open-14.json",
+              "sha256": "537b66cb8140f0ea4568410a97200d3223dd3a1fb0bd8b94753b28bd07307b3b",
+              "container": "single_record",
+              "record_sha256": "3362e6b25d0f8192e912de6287fae25ecbc37268fb8dde4989ccc5c85da5f6e3",
+              "provenance": "actual_cached_direct_page_return",
+              "actual_query": "\"Amazing Stories\" \"October 1926\" site:en.wikisource.org OR site:gutenberg.org",
+              "new_queries": 0,
+              "new_opens": 0
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "id": "discovery:quick-retry2-root-classification-candidates-round1:1",
+      "proposed_label": "以启发发明建立现实关联",
+      "definition_boundary": "作品论述把虚构与现实的联系解释为刺激创造，而非要求装置按原样兑现；须区分历史作者立场、现实因果证据与科学可行性。",
+      "proposed_dimension": "现实与未来关系",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "label": "科幻许诺与数字能力的批评对读",
+      "dimension": "现实与未来关系 / 表达与文本形态",
+      "definition": "以科幻文学和电影的虚拟永生、意识下载等许诺作为批评对象，考察对真实数字能力的夸大；是批评专著的方法，须与故事自身机制和实际科学验证分开。",
+      "work_evidence": [
+        {
+          "id": "Q58108071",
+          "identity": {
+            "title": "Patologías de la realidad virtual",
+            "author": "Teresa López-Pellisa"
+          },
+          "basis": "FCE官方说明该专著以文学/电影科幻分析虚拟空间许诺，并诊断歪曲真实数字能力的症状。",
+          "sources": [
+            "https://www.fondodeculturaeconomica.com/Ficha/9788437507316/F"
+          ],
+          "exact_support_scope": "一次查询准确FCE官方书介；采用专著的问题框架和方法声明，不捏造故事、具体章节命名或回答。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-root-r3-search-42.json",
+            "sha256": "b3d2838c397237b4f6bf7d469b91db24258060b9485e5b11f9f1dfeabb700d24",
+            "container": "single_record",
+            "record_sha256": "3cfc7fbc9737d3907ff980d59cf499afd389722ed0491e42edacb2884baf0541",
+            "provenance": "actual_cached_search_return",
+            "actual_query": "\"Patologías de la realidad virtual\" site:fce.com.ar OR site:fondodeculturaeconomica.com",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-root-r3-search-42.json",
+              "sha256": "b3d2838c397237b4f6bf7d469b91db24258060b9485e5b11f9f1dfeabb700d24",
+              "container": "single_record",
+              "record_sha256": "3cfc7fbc9737d3907ff980d59cf499afd389722ed0491e42edacb2884baf0541",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Patologías de la realidad virtual\" site:fce.com.ar OR site:fondodeculturaeconomica.com",
+              "new_queries": 0,
+              "new_opens": 0
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "id": "discovery:quick-retry2-root-classification-candidates-round3:1",
+      "proposed_label": "科幻许诺与数字能力的批评对读",
+      "definition_boundary": "以科幻文学和电影的虚拟永生、意识下载等许诺作为批评对象，考察对真实数字能力的夸大；是批评专著的方法，须与故事自身机制和实际科学验证分开。",
+      "proposed_dimension": "现实与未来关系 / 表达与文本形态",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "作品形态",
+      "proposed_label": "线性视觉小说",
+      "definition_boundary": "用视觉小说载体呈现固定次序的图文／音效叙事；不由视觉小说标签假定分支选择，也不把此限定载体推到后续未读部分。",
+      "verification_status": "candidate_from_source_reading_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q120200939",
+          "identity": {
+            "title": "South Scrimshaw",
+            "author": "作者未知"
+          },
+          "sources": [
+            "https://store.steampowered.com/app/2443110/South_Scrimshaw_Part_One/"
+          ],
+          "exact_support_scope": "实际一次查询开发者／发行者Steam第一部分说明：linear VN、fictional science documentary、鲸幼体出生至青春期四章；没有玩全游戏或推后续部分。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-global-r1-search-19.json",
+            "sha256": "f3a1497bd7a37bf1f50f8eb975152ce86f3a2cb152a36e3619a5d21c7a93ed52",
+            "container": "single_record",
+            "record_sha256": "6b94456712bfdfe00e226fbf401299302e3bd5536df1fc9e201d2fec2b3d7275",
+            "provenance": "actual_cached_search_return",
+            "actual_query": "site:store.steampowered.com \"South Scrimshaw\" documentary whale",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "source_analysis_file": "work/evidence/quick-retry2-global-round1.json",
+          "source_analysis_file_sha256": "97ecdc069494619c0313789117f7b5a5af0fb9b07d2e6186a8780a73f6a28699",
+          "integration_relation": "same_batch_core",
+          "basis": "开发者明确第一部分采用linear VN format，配合图像、音乐与音效呈现四章。",
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-global-r1-search-19.json",
+              "sha256": "f3a1497bd7a37bf1f50f8eb975152ce86f3a2cb152a36e3619a5d21c7a93ed52",
+              "container": "single_record",
+              "record_sha256": "6b94456712bfdfe00e226fbf401299302e3bd5536df1fc9e201d2fec2b3d7275",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "site:store.steampowered.com \"South Scrimshaw\" documentary whale",
+              "new_queries": 0,
+              "new_opens": 0
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-global-classification-candidates-round1:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "虚构自然纪录片",
+      "definition_boundary": "以自然纪录片的观察与解释形式呈现虚构生物及环境，使生命历程成为叙事轴；不等同真实科普纪录片或只出现动物的小说。",
+      "verification_status": "candidate_from_source_reading_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q120200939",
+          "identity": {
+            "title": "South Scrimshaw",
+            "author": "作者未知"
+          },
+          "sources": [
+            "https://store.steampowered.com/app/2443110/South_Scrimshaw_Part_One/"
+          ],
+          "exact_support_scope": "实际一次查询开发者／发行者Steam第一部分说明：linear VN、fictional science documentary、鲸幼体出生至青春期四章；没有玩全游戏或推后续部分。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-global-r1-search-19.json",
+            "sha256": "f3a1497bd7a37bf1f50f8eb975152ce86f3a2cb152a36e3619a5d21c7a93ed52",
+            "container": "single_record",
+            "record_sha256": "6b94456712bfdfe00e226fbf401299302e3bd5536df1fc9e201d2fec2b3d7275",
+            "provenance": "actual_cached_search_return",
+            "actual_query": "site:store.steampowered.com \"South Scrimshaw\" documentary whale",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "source_analysis_file": "work/evidence/quick-retry2-global-round1.json",
+          "source_analysis_file_sha256": "97ecdc069494619c0313789117f7b5a5af0fb9b07d2e6186a8780a73f6a28699",
+          "integration_relation": "same_batch_core",
+          "basis": "官方明说science fiction documentary about fictional science，并跟随异星鲸幼体从出生至青春期。",
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-global-r1-search-19.json",
+              "sha256": "f3a1497bd7a37bf1f50f8eb975152ce86f3a2cb152a36e3619a5d21c7a93ed52",
+              "container": "single_record",
+              "record_sha256": "6b94456712bfdfe00e226fbf401299302e3bd5536df1fc9e201d2fec2b3d7275",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "site:store.steampowered.com \"South Scrimshaw\" documentary whale",
+              "new_queries": 0,
+              "new_opens": 0
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-global-classification-candidates-round1:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "叙事机制与身份重建",
+      "proposed_label": "主动记忆擦除后的社会规则再学习",
+      "definition_boundary": "明确人物个人记忆被技术删除而语言和动作技能保存，并须重新学习消费、关系或社会规约；不将所有失忆或身体转移故事归此类。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131471912",
+          "identity": {
+            "title": "Understanding Human Behavior",
+            "author": "托马斯·M·迪斯科"
+          },
+          "basis": "原篇I明确Richard删除个人过去却保留通用技能，II安排Consumership课程解释服装的消费与阶层信号。",
+          "sources": [
+            "https://strangehorizons.com/wordpress/fiction/understanding-human-behavior/"
+          ],
+          "exact_support_scope": "实际搜索命中并直接打开Strange Horizons原篇转载；读取开篇I与II的记忆擦除、Delphi机构和消费课程片段。只分析所读前提，不称全文核验，不由检索中结尾片段补整篇结论。",
+          "raw_query": "\"Understanding Human Behavior\" Disch \"Fundamental\"",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r1-search-batch1.json",
+          "raw_search_sha256": "3e2762c8ef950468f9b3fcea6db36e8d7251377076f49d57fe641c8bfd00ed4e",
+          "raw_search_record_sha256": "9e240c288c85459ea472a2e0e43f5d8b27d6254f0d808bd03de4c931919f4f95",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-modern-r1-open-batch1.json",
+            "sha256": "209c7ab5d2503c74aa3ed8d4c602d43b97168d5165faa4269a8d5acffd77aa54",
+            "container": "list_result",
+            "record_sha256": "fd318d61f50f616d5494d8938940b9d9932929fa7f16090ff32e8fba2dee673d",
+            "provenance": "actual_cached_direct_page_return",
+            "actual_query": "\"Understanding Human Behavior\" Disch \"Fundamental\"",
+            "new_queries": 0,
+            "new_opens": 0,
+            "record_index": 1
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r1-search-batch1.json",
+              "sha256": "3e2762c8ef950468f9b3fcea6db36e8d7251377076f49d57fe641c8bfd00ed4e",
+              "container": "list_result",
+              "record_sha256": "9e240c288c85459ea472a2e0e43f5d8b27d6254f0d808bd03de4c931919f4f95",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Understanding Human Behavior\" Disch \"Fundamental\"",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 2
+            },
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r1-open-batch1.json",
+              "sha256": "209c7ab5d2503c74aa3ed8d4c602d43b97168d5165faa4269a8d5acffd77aa54",
+              "container": "list_result",
+              "record_sha256": "fd318d61f50f616d5494d8938940b9d9932929fa7f16090ff32e8fba2dee673d",
+              "provenance": "actual_cached_direct_page_return",
+              "actual_query": "\"Understanding Human Behavior\" Disch \"Fundamental\"",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 1
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r1:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "科学设定与历史假说",
+      "proposed_label": "电结晶导致复杂生命生成",
+      "definition_boundary": "虚构设定明确将电化学/电结晶处理无机材料视为复杂生命的生成途径；是作品的历史科学想象，不表示现代证实，不泛化到所有人工生命。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q43005202",
+          "identity": {
+            "title": "The Electric Vampire",
+            "author": "F. H. Power"
+          },
+          "basis": "原篇叙述Vickers重复并扩大Crosse电结晶实验，培养出有电击和吸血行为的巨大节肢状生物；编者的历史事实宣称未经此次科学史独立核查。",
+          "sources": [
+            "https://cyberneticzoo.com/bionics/1910-electric-vampire-f-h-power-british/"
+          ],
+          "exact_support_scope": "实际查询并直接打开Cyberneticzoo的F. H. Power英文原篇转载；读取培养实验、犬只电击死亡、吸血与输血救援片段（L9–124等）。转载注明London Magazine1910；未另查原刊扫描，科学史编者注不作为现代科学事实。",
+          "raw_query": "\"Electric Vampire\" \"Power\" 1910 electricity",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r1-search-batch1.json",
+          "raw_search_sha256": "3e2762c8ef950468f9b3fcea6db36e8d7251377076f49d57fe641c8bfd00ed4e",
+          "raw_search_record_sha256": "a45d8e460c086ae5a4186c4eeceb1a6a6ee38a61ae31066743b56e033af191f3",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-modern-r1-open-batch1.json",
+            "sha256": "209c7ab5d2503c74aa3ed8d4c602d43b97168d5165faa4269a8d5acffd77aa54",
+            "container": "list_result",
+            "record_sha256": "0eaa67bb77f67347dd57f31dd56d3f7143b4f9fffaa3d99730c30b0ed3797772",
+            "provenance": "actual_cached_direct_page_return",
+            "actual_query": "\"Electric Vampire\" \"Power\" 1910 electricity",
+            "new_queries": 0,
+            "new_opens": 0,
+            "record_index": 3
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r1-search-batch1.json",
+              "sha256": "3e2762c8ef950468f9b3fcea6db36e8d7251377076f49d57fe641c8bfd00ed4e",
+              "container": "list_result",
+              "record_sha256": "a45d8e460c086ae5a4186c4eeceb1a6a6ee38a61ae31066743b56e033af191f3",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Electric Vampire\" \"Power\" 1910 electricity",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 15
+            },
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r1-open-batch1.json",
+              "sha256": "209c7ab5d2503c74aa3ed8d4c602d43b97168d5165faa4269a8d5acffd77aa54",
+              "container": "list_result",
+              "record_sha256": "0eaa67bb77f67347dd57f31dd56d3f7143b4f9fffaa3d99730c30b0ed3797772",
+              "provenance": "actual_cached_direct_page_return",
+              "actual_query": "\"Electric Vampire\" \"Power\" 1910 electricity",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 3
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r1:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "叙事时间与意识运行机制",
+      "proposed_label": "意识间歇运行跨越长纪年",
+      "definition_boundary": "明确上传或可停启意识以可调的清醒间隔跨越长时段，外部年代与主观感知次数分离；一般睡眠、长寿、冷冻或相对论时间膨胀不自动算此类。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131472325",
+          "identity": {
+            "title": "Utriusque Cosmi",
+            "author": "羅伯特·查爾斯·威爾森"
+          },
+          "basis": "UtriusqueCosmi具体评论解释timesliding与saccades，上传意识可关闭再启，千年可仅留下几秒感知。",
+          "sources": [
+            "https://phantazine.blogspot.com/2012/01/",
+            "https://ayearofstoriespirate.blogspot.com/2009/07/"
+          ],
+          "exact_support_scope": "实际查询返回Phantazine2012与AYearofStoriesPirate2009针对Wilson本篇的评论；采用上传、Fleet、timesliding和回访过去，不借同页TheIsland/Solace等休眠航行故事。社区评论，原篇未读。",
+          "raw_query": "\"Utriusque Cosmi\" \"Wilson\" \"narrator\"",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+          "raw_search_sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+          "raw_search_record_sha256": "1f1be8063d7a1ded158bb89a01385a327e3f16538337788be7f9cee218505a8b",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+            "sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+            "container": "list_result",
+            "record_sha256": "1f1be8063d7a1ded158bb89a01385a327e3f16538337788be7f9cee218505a8b",
+            "provenance": "actual_cached_search_return",
+            "actual_query": "\"Utriusque Cosmi\" \"Wilson\" \"narrator\"",
+            "new_queries": 0,
+            "new_opens": 0,
+            "record_index": 5
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+              "sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+              "container": "list_result",
+              "record_sha256": "1f1be8063d7a1ded158bb89a01385a327e3f16538337788be7f9cee218505a8b",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Utriusque Cosmi\" \"Wilson\" \"narrator\"",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 5
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "scoped_candidate_with_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r2:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "文本形式与选编范围",
+      "proposed_label": "虚构节选与非虚构材料并置合集",
+      "definition_boundary": "目录/出版说明明确混合长篇章节节选、完整或独立短篇、非虚构文章及访谈等，而非统一叙事长篇；该形式只据书目，不传播各节选原长篇全部剧情。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q21161141",
+          "identity": {
+            "title": "Stars and Gods",
+            "author": "拉瑞·尼文"
+          },
+          "basis": "StarsandGods本次实际返回的目录列RingworldsChildren第1章等具名章节节选、Stories、Space.com非虚构、DracoTavernStories与访谈/通信。",
+          "sources": [
+            "https://www.allbookstores.com/Stars-Gods-Larry-Niven/9780765330055"
+          ],
+          "exact_support_scope": "本轮单次查询返回本集出版介绍与读者详细目录；仅读混合载体/节选范围，未读正文，核心保持延期。目录不是节选内容核验。",
+          "raw_query": "\"Stars and Gods\" \"Niven\" \"Safe\" review",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+          "raw_search_sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+          "raw_search_record_sha256": "b7ed1acae95a1eedaa1340e1368132642eaba373e88dfebc22ac3b40ca69533e",
+          "bibliographic_scope_only": true,
+          "actual_content_source_read": false,
+          "core_analysis_added": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+            "sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+            "container": "list_result",
+            "record_sha256": "b7ed1acae95a1eedaa1340e1368132642eaba373e88dfebc22ac3b40ca69533e",
+            "provenance": "actual_cached_search_return",
+            "actual_query": "\"Stars and Gods\" \"Niven\" \"Safe\" review",
+            "new_queries": 0,
+            "new_opens": 0,
+            "record_index": 4
+          },
+          "all_exact_raw_evidence": [
+            {
+              "private_raw_file": "work/evidence/quick-retry2-modern-r2-search-batch2.json",
+              "sha256": "5614ce8a48fca8cda4aef1b88642ce1086c880baeed5d1f5f3430c1400343d65",
+              "container": "list_result",
+              "record_sha256": "b7ed1acae95a1eedaa1340e1368132642eaba373e88dfebc22ac3b40ca69533e",
+              "provenance": "actual_cached_search_return",
+              "actual_query": "\"Stars and Gods\" \"Niven\" \"Safe\" review",
+              "new_queries": 0,
+              "new_opens": 0,
+              "record_index": 4
+            }
+          ],
+          "adapter_scope": "仅复用本轮准确身份的已冻结查询／已读页，不增请求、核心、标签分配或核验等级。",
+          "discovery_source_mode": "bibliographic_candidate_no_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r2:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
     }
   ],
   "promoted_discoveries": [
