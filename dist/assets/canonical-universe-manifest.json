@@ -6,15 +6,15 @@
     "source_record_count": 14532,
     "total": 14564,
     "researched": 168,
-    "topic_known": 7565,
-    "topic_unknown": 6999,
-    "issue_analyzed": 7059,
-    "issue_missing": 7505,
-    "issue_facet_records": 6907,
-    "issue_facets": 15233,
+    "topic_known": 7684,
+    "topic_unknown": 6880,
+    "issue_analyzed": 7184,
+    "issue_missing": 7380,
+    "issue_facet_records": 7032,
+    "issue_facets": 15483,
     "year_unknown": 1901,
     "space_unknown": 13211,
-    "knowledge_added": 7004,
+    "knowledge_added": 7129,
     "library_correspondence": 2251,
     "conflicts": 454,
     "with_missing": 14428,
@@ -583,8 +583,13 @@
         },
         {
           "file": "research/issues-source-reading-round50.json",
-          "sha256": "3dfe6386075e5648129a1e0ec789c800312722ccc44924efaee7e997797ba205",
+          "sha256": "17b0c902753d7242ba0c4bdfad2e74632bcd163c803d3e8a49e9e86e73bae3fa",
           "count": 160
+        },
+        {
+          "file": "research/issues-source-reading-round51.json",
+          "sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+          "count": 125
         },
         {
           "file": "research/spatial-reading-round1.json",
@@ -762,7 +767,7 @@
           "count": 20
         }
       ],
-      "knowledge_added": 7004,
+      "knowledge_added": 7129,
       "library": {
         "provider": "Open Library",
         "method": "existing-P648-batched-search-v1",
@@ -816,14 +821,14 @@
         "record_count": 4524
       },
       "source_search_logs": {
-        "record_count": 6780,
-        "actual_source_attempt_count": 6352,
-        "process_without_source_attempt_count": 428,
+        "record_count": 6935,
+        "actual_source_attempt_count": 6501,
+        "process_without_source_attempt_count": 434,
         "metadata": {
           "format": "actual-source-search-log-v1",
           "created_at": "2026-10-04",
           "status": "frozen_checkpoint",
-          "record_count": 6780,
+          "record_count": 6935,
           "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
           "inputs": [
             {
@@ -6910,6 +6915,160 @@
                 "original_fulltext_read_count": 0,
                 "scope": "八首查六明确内容补入，两薄弱内容直接后置；授权开头有限、完整原作0。"
               }
+            },
+            {
+              "file": "early-recent-round43-log.json",
+              "sha256": "31a418e1b95a01dd4ce124d3522edb44dc5ae9c9cea5be87d0367d3a2e86ca3b",
+              "metadata": {
+                "method": "actual-first-pass-reading-log-v1",
+                "status": "frozen_checkpoint",
+                "lane": 3,
+                "read_date": "2026-10-05",
+                "attempted_count": 50,
+                "added_count": 44,
+                "not_added_count": 6,
+                "frozen_date": "2026-10-05",
+                "record_count": 44,
+                "facet_count": 88,
+                "priority_range": [
+                  7018,
+                  7216
+                ],
+                "canonical_gzip_sha256_at_freeze": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+                "remaining_selected_ids": [],
+                "continuation_note": "本批50身份完成首遍：44核心/88 facets，6项明确延期；全部新增冻结时仍canonical missing。随后立即转私有R44，困难项留后轮，不等发布。",
+                "complete_original_text_read_count": 0
+              }
+            },
+            {
+              "file": "modern-recent-round45-log.json",
+              "sha256": "7ab176456c18270ae036cd7ce2be364554d7586a6d398f5e6a5e9b66f3d491fd",
+              "metadata": {
+                "method": "actual-source-reading-scope-v1",
+                "lane": 2,
+                "status": "frozen_checkpoint",
+                "record_count": 31,
+                "facet_count": 62,
+                "field_count": 93,
+                "new_core_issue_count": 31,
+                "source_read_record_count": 31,
+                "record_with_actual_material_count": 31,
+                "actual_content_source_record_count": 29,
+                "actual_identity_source_record_count": 2,
+                "search_attempted_record_count": 31,
+                "knowledge_plot_record_count": 2,
+                "knowledge_only_zero_query_count": 0,
+                "community_dump_read_count": 0,
+                "original_partial_text_record_count": 4,
+                "original_full_text_count": 0,
+                "collection_scope_count": 6,
+                "single_work_count": 25,
+                "deferred_count": 9,
+                "actual_query_deferred_count": 9,
+                "zero_query_identity_deferred_count": 0,
+                "total_lane_actual_query_record_count": 40,
+                "total_actual_query_record_count": 40,
+                "total_actual_query_material_record_count": 40,
+                "supplementary_query_record_count": 0,
+                "supplementary_open_record_count": 1,
+                "deferred_original_partial_text_record_count": 0,
+                "scope": "lane2首轮1983—1982自然组31新核心/62细分，40个身份各一次查询，其中31可用、9即时后置。29条有具体内容材料，2条Nebula17/18仅目录核收录并明标Johnny Mnemonic/Burning Chrome已有单篇知识；6集合仅指定选篇或双作分别，25单作含Black Magic原漫画限定框架，不套M-66动画。4原作局部：Broken Symmetries作者官网Chapter8、Kitemaster开头和对话、Golden Gate品格段、Saison de rouille第一页；完整原作阅读0。唯一简单额外打开是Kitemaster评论所在作者页，限定该篇L96–112不借相邻Kitecadet/Kitemistress。保留英语未出版手稿荷法译Tidestorm Limit、River of Eternity早稿与正式序列区别、Moon of Ice1982中篇而非1988扩写、Roderick只第二卷、Virgin/Zanid合订本、Gor17修订再版、Kahn小说化与电影媒介界线。实际S&S Broken Symmetries页面错放Secret Passages书介，未采用；Living Legend译版作者署名与通常Yermakov不一致延后。个别译题查询失配及作者Billion拼写尝试明确记录，不假称精确身份查读或完成。9延期项不计分析完成。全部文学分析待独立核验。"
+              }
+            },
+            {
+              "file": "modern-recent-round46-log.json",
+              "sha256": "8f0a779a92d78d275cde37417c88b14b5e2b50956d93906b89130708253a3d20",
+              "metadata": {
+                "method": "actual-source-reading-scope-v1",
+                "lane": 2,
+                "status": "frozen_checkpoint",
+                "record_count": 31,
+                "facet_count": 62,
+                "field_count": 93,
+                "new_core_issue_count": 31,
+                "source_read_record_count": 29,
+                "record_with_actual_material_count": 29,
+                "actual_content_source_record_count": 24,
+                "actual_identity_source_record_count": 5,
+                "search_attempted_record_count": 29,
+                "knowledge_plot_record_count": 8,
+                "knowledge_only_zero_query_count": 2,
+                "community_dump_read_count": 0,
+                "original_partial_text_record_count": 5,
+                "original_full_text_count": 0,
+                "collection_scope_count": 5,
+                "single_work_count": 26,
+                "deferred_count": 10,
+                "actual_query_deferred_count": 10,
+                "zero_query_identity_deferred_count": 0,
+                "total_lane_actual_query_record_count": 39,
+                "total_actual_query_record_count": 39,
+                "total_actual_query_material_record_count": 39,
+                "supplementary_query_record_count": 0,
+                "supplementary_open_record_count": 1,
+                "deferred_original_partial_text_record_count": 2,
+                "scope": "lane2首轮1982—1981自然组31新核心/62细分，41个身份：29可用项实际各一次查询、2熟悉单作零查询，10一次查询后立即延期。24可用项有具体内容来源，5合集项仅核目录并明确熟悉选篇知识；已有知识参与8项（含零查询Merchanter’s Luck、Sur及混合Blue Champagne）。5合集只采用指定选例、26单作不借同题集合或后续卷。5原作局部：L’Orbe首卷第一页、Masques de clown退化片段、Swarmer, Skimmer原刊开头、H-Tec社区回答引用的一小段对话、Notre chair disparue第一页；另Jeury合集和Casey’s Empire各只有不够前提的开头而延期，原作全文0。仅额外打开Blue Champagne准确评论一次502失败，搜索返回只核身份和泳池背景，情绪商业/辅助身体前提明确已有知识待核，不假称打开成功。保留The Dreamers纸本1980/底库1981、Souls原刊月份歧异、From Here to Forever同年宗教同题身份、Garrett合集短篇候选、Swarmer原刊节选与后来长篇、Venetian Court中篇/扩写长篇区别、Tiptree标题篇/合集及未来警察媒介疑点。社区书介或同页用户添加简介明确非直接出版社。10延期项不计分析完成。全部文学解释待独立核验。"
+              }
+            },
+            {
+              "file": "root-fast-round63-log.json",
+              "sha256": "485074e3f929113bb287e1fcb61b7b49fb7c073ead07ce5f47db64e19ea4f8c3",
+              "metadata": {
+                "status": "frozen_checkpoint",
+                "lane": 0,
+                "created_at": "2026-10-05",
+                "source_commit": "fd9db2448618bbb05925ffb3bb5d11df481e1b1f",
+                "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+                "method": "parallel-single-query-easy-first-v1",
+                "record_count": 7,
+                "facet_count": 14,
+                "attempted_count": 8,
+                "deferred_count": 1,
+                "actual_search_attempt_count": 8,
+                "page_open_count": 0,
+                "original_fulltext_read_count": 0,
+                "scope": "八次首查，七明确书介/作者说明/原篇片段补入，纯奖项名单后置；完整原作0，漫画未看图像。"
+              }
+            },
+            {
+              "file": "root-fast-round64-log.json",
+              "sha256": "dff41a0484485a65884e690007ed2361dbe65f31050466df5fa0973dc19e1da6",
+              "metadata": {
+                "status": "frozen_checkpoint",
+                "lane": 0,
+                "created_at": "2026-10-05",
+                "source_commit": "4549bad1834988af4db809cbda7fb6627c2efe66",
+                "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+                "method": "parallel-single-query-easy-first-v1",
+                "record_count": 7,
+                "facet_count": 14,
+                "attempted_count": 8,
+                "deferred_count": 1,
+                "actual_search_attempt_count": 8,
+                "page_open_count": 0,
+                "original_fulltext_read_count": 0,
+                "scope": "八首查，六明确本卷书介加一准确已知选篇；未完稿合集无剧情后置，全文0。"
+              }
+            },
+            {
+              "file": "root-fast-round65-log.json",
+              "sha256": "63dcff024f988dcf76e94c3b6571ee4fe7119870334f391ce8e9b5a23d405a5a",
+              "metadata": {
+                "status": "frozen_checkpoint",
+                "lane": 0,
+                "created_at": "2026-10-05",
+                "source_commit": "4549bad1834988af4db809cbda7fb6627c2efe66",
+                "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+                "method": "parallel-single-query-easy-first-v1",
+                "record_count": 5,
+                "facet_count": 10,
+                "attempted_count": 8,
+                "deferred_count": 3,
+                "actual_search_attempt_count": 8,
+                "page_open_count": 0,
+                "original_fulltext_read_count": 0,
+                "scope": "八个并行首查，五作具体书介/概要补入；两合集仅目录与一个原语书名待核后置。"
+              }
             }
           ],
           "updated_at": "2026-10-05",
@@ -7479,8 +7638,13 @@
         },
         {
           "file": "research/issues-source-reading-round50.json",
-          "sha256": "3dfe6386075e5648129a1e0ec789c800312722ccc44924efaee7e997797ba205",
+          "sha256": "17b0c902753d7242ba0c4bdfad2e74632bcd163c803d3e8a49e9e86e73bae3fa",
           "count": 160
+        },
+        {
+          "file": "research/issues-source-reading-round51.json",
+          "sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+          "count": 125
         }
       ],
       "spatial_batches": [
@@ -7660,19 +7824,19 @@
           "count": 20
         }
       ],
-      "issue_facet_records": 6907,
-      "issue_facet_count": 15233,
+      "issue_facet_records": 7032,
+      "issue_facet_count": 15483,
       "full_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/completion-overlay.json.gz"
     },
     "source_search_logs": {
-      "record_count": 6780,
-      "actual_source_attempt_count": 6352,
-      "process_without_source_attempt_count": 428,
+      "record_count": 6935,
+      "actual_source_attempt_count": 6501,
+      "process_without_source_attempt_count": 434,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 6780,
+        "record_count": 6935,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -13759,6 +13923,160 @@
               "original_fulltext_read_count": 0,
               "scope": "八首查六明确内容补入，两薄弱内容直接后置；授权开头有限、完整原作0。"
             }
+          },
+          {
+            "file": "early-recent-round43-log.json",
+            "sha256": "31a418e1b95a01dd4ce124d3522edb44dc5ae9c9cea5be87d0367d3a2e86ca3b",
+            "metadata": {
+              "method": "actual-first-pass-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "lane": 3,
+              "read_date": "2026-10-05",
+              "attempted_count": 50,
+              "added_count": 44,
+              "not_added_count": 6,
+              "frozen_date": "2026-10-05",
+              "record_count": 44,
+              "facet_count": 88,
+              "priority_range": [
+                7018,
+                7216
+              ],
+              "canonical_gzip_sha256_at_freeze": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+              "remaining_selected_ids": [],
+              "continuation_note": "本批50身份完成首遍：44核心/88 facets，6项明确延期；全部新增冻结时仍canonical missing。随后立即转私有R44，困难项留后轮，不等发布。",
+              "complete_original_text_read_count": 0
+            }
+          },
+          {
+            "file": "modern-recent-round45-log.json",
+            "sha256": "7ab176456c18270ae036cd7ce2be364554d7586a6d398f5e6a5e9b66f3d491fd",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 31,
+              "facet_count": 62,
+              "field_count": 93,
+              "new_core_issue_count": 31,
+              "source_read_record_count": 31,
+              "record_with_actual_material_count": 31,
+              "actual_content_source_record_count": 29,
+              "actual_identity_source_record_count": 2,
+              "search_attempted_record_count": 31,
+              "knowledge_plot_record_count": 2,
+              "knowledge_only_zero_query_count": 0,
+              "community_dump_read_count": 0,
+              "original_partial_text_record_count": 4,
+              "original_full_text_count": 0,
+              "collection_scope_count": 6,
+              "single_work_count": 25,
+              "deferred_count": 9,
+              "actual_query_deferred_count": 9,
+              "zero_query_identity_deferred_count": 0,
+              "total_lane_actual_query_record_count": 40,
+              "total_actual_query_record_count": 40,
+              "total_actual_query_material_record_count": 40,
+              "supplementary_query_record_count": 0,
+              "supplementary_open_record_count": 1,
+              "deferred_original_partial_text_record_count": 0,
+              "scope": "lane2首轮1983—1982自然组31新核心/62细分，40个身份各一次查询，其中31可用、9即时后置。29条有具体内容材料，2条Nebula17/18仅目录核收录并明标Johnny Mnemonic/Burning Chrome已有单篇知识；6集合仅指定选篇或双作分别，25单作含Black Magic原漫画限定框架，不套M-66动画。4原作局部：Broken Symmetries作者官网Chapter8、Kitemaster开头和对话、Golden Gate品格段、Saison de rouille第一页；完整原作阅读0。唯一简单额外打开是Kitemaster评论所在作者页，限定该篇L96–112不借相邻Kitecadet/Kitemistress。保留英语未出版手稿荷法译Tidestorm Limit、River of Eternity早稿与正式序列区别、Moon of Ice1982中篇而非1988扩写、Roderick只第二卷、Virgin/Zanid合订本、Gor17修订再版、Kahn小说化与电影媒介界线。实际S&S Broken Symmetries页面错放Secret Passages书介，未采用；Living Legend译版作者署名与通常Yermakov不一致延后。个别译题查询失配及作者Billion拼写尝试明确记录，不假称精确身份查读或完成。9延期项不计分析完成。全部文学分析待独立核验。"
+            }
+          },
+          {
+            "file": "modern-recent-round46-log.json",
+            "sha256": "8f0a779a92d78d275cde37417c88b14b5e2b50956d93906b89130708253a3d20",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 31,
+              "facet_count": 62,
+              "field_count": 93,
+              "new_core_issue_count": 31,
+              "source_read_record_count": 29,
+              "record_with_actual_material_count": 29,
+              "actual_content_source_record_count": 24,
+              "actual_identity_source_record_count": 5,
+              "search_attempted_record_count": 29,
+              "knowledge_plot_record_count": 8,
+              "knowledge_only_zero_query_count": 2,
+              "community_dump_read_count": 0,
+              "original_partial_text_record_count": 5,
+              "original_full_text_count": 0,
+              "collection_scope_count": 5,
+              "single_work_count": 26,
+              "deferred_count": 10,
+              "actual_query_deferred_count": 10,
+              "zero_query_identity_deferred_count": 0,
+              "total_lane_actual_query_record_count": 39,
+              "total_actual_query_record_count": 39,
+              "total_actual_query_material_record_count": 39,
+              "supplementary_query_record_count": 0,
+              "supplementary_open_record_count": 1,
+              "deferred_original_partial_text_record_count": 2,
+              "scope": "lane2首轮1982—1981自然组31新核心/62细分，41个身份：29可用项实际各一次查询、2熟悉单作零查询，10一次查询后立即延期。24可用项有具体内容来源，5合集项仅核目录并明确熟悉选篇知识；已有知识参与8项（含零查询Merchanter’s Luck、Sur及混合Blue Champagne）。5合集只采用指定选例、26单作不借同题集合或后续卷。5原作局部：L’Orbe首卷第一页、Masques de clown退化片段、Swarmer, Skimmer原刊开头、H-Tec社区回答引用的一小段对话、Notre chair disparue第一页；另Jeury合集和Casey’s Empire各只有不够前提的开头而延期，原作全文0。仅额外打开Blue Champagne准确评论一次502失败，搜索返回只核身份和泳池背景，情绪商业/辅助身体前提明确已有知识待核，不假称打开成功。保留The Dreamers纸本1980/底库1981、Souls原刊月份歧异、From Here to Forever同年宗教同题身份、Garrett合集短篇候选、Swarmer原刊节选与后来长篇、Venetian Court中篇/扩写长篇区别、Tiptree标题篇/合集及未来警察媒介疑点。社区书介或同页用户添加简介明确非直接出版社。10延期项不计分析完成。全部文学解释待独立核验。"
+            }
+          },
+          {
+            "file": "root-fast-round63-log.json",
+            "sha256": "485074e3f929113bb287e1fcb61b7b49fb7c073ead07ce5f47db64e19ea4f8c3",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "fd9db2448618bbb05925ffb3bb5d11df481e1b1f",
+              "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 7,
+              "facet_count": 14,
+              "attempted_count": 8,
+              "deferred_count": 1,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八次首查，七明确书介/作者说明/原篇片段补入，纯奖项名单后置；完整原作0，漫画未看图像。"
+            }
+          },
+          {
+            "file": "root-fast-round64-log.json",
+            "sha256": "dff41a0484485a65884e690007ed2361dbe65f31050466df5fa0973dc19e1da6",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "4549bad1834988af4db809cbda7fb6627c2efe66",
+              "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 7,
+              "facet_count": 14,
+              "attempted_count": 8,
+              "deferred_count": 1,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八首查，六明确本卷书介加一准确已知选篇；未完稿合集无剧情后置，全文0。"
+            }
+          },
+          {
+            "file": "root-fast-round65-log.json",
+            "sha256": "63dcff024f988dcf76e94c3b6571ee4fe7119870334f391ce8e9b5a23d405a5a",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "4549bad1834988af4db809cbda7fb6627c2efe66",
+              "source_snapshot_sha256": "906ab58d0261842aa8a56037c2fb7b0b29f9e5eb870069cd590cf1724c3b6cbc",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 5,
+              "facet_count": 10,
+              "attempted_count": 8,
+              "deferred_count": 3,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八个并行首查，五作具体书介/概要补入；两合集仅目录与一个原语书名待核后置。"
+            }
           }
         ],
         "updated_at": "2026-10-05",
@@ -13823,8 +14141,8 @@
     "issue_research_queue": {
       "record_count": 14564,
       "stages": {
-        "analysis_present": 7059,
-        "source_search_next": 6949,
+        "analysis_present": 7184,
+        "source_search_next": 6824,
         "identity_then_content": 513,
         "content_reading_next": 43
       },
