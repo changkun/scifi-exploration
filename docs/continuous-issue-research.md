@@ -508,3 +508,11 @@ R50已部署v52并在公开浏览器核对7,059条核心、7,565条议题分类�
 Stars Are the Styx只开篇、Fires of Azeroth只序章、Carnelian Throne只后修订版简介；Call Him Moses的分节与原刊关系待核。Captain Underpants第2卷保留1999与2014版本差别；The City on the Edge of Forever只取2014漫画开端，未借电视或2014剧本书；Scalzi三集分别保持身份；La Musique du soleil只用Cogito示例，其他七篇未宣称研究。Blood Type宣传所比照的I Am Legend与Necroscope不是合集成员，不借其情节硬填。
 
 五组85项检查与身份、来源、日期、粒度、旧研究、空间、冻结字节及设计守恒通过。R51已部署v53并公开确认7,184核心、7,684议题分类、1,353空间、6,935过程和固定提交下载；R52待推送及公开核对，其他分片不等待发布。
+
+### 2026-10-05：R53 熟悉作品直接补，陌生作品一次查询
+
+五份互斥冻结输入新增120条核心、240项具体问题和17条原未知空间。154个处理身份中34条后置。累计14,564身份、7,430核心、7,134核心缺口、7,922议题分类、15,975细分、1,387空间、7,243份过程；50次较早尝试保留。原作全文阅读0。八部熟悉作品本次直接采用已有知识：实际查询0、开页0、原作阅读0，不补造来源；所有新增仍待独立核对。
+
+Three anthology examples are explicitly bounded: Rags & Bones uses The Sleeper and the Spindle; Dangerous Women uses The Princess and the Queen; the thirtieth Year's Best collection uses The Girl-Thing Who Went Out for Sushi. The read catalogs support membership, while story premises come from existing knowledge and, for the Cadigan example, the already public single-story analysis. No entire anthology is treated as read. House of Steel remains deferred because companion specifications do not establish the attached novel's specific conflict. Sandcastle does not borrow the film Old's added explanations. The Core of the Sun describes fictional Finland, not factual contemporary policy.
+
+Key Word的实际材料为普通推理、Children的Blish/J. A. Lawrence署名不同、Commandos源年冲突均保留。五组85项校验及原身份、来源、日期、粒度、旧解释、空间、冻结输入字节和设计守恒通过。R52已部署v54并在公开页面核对7,310核心、7,806议题分类、1,370空间、7,089过程及固定提交下载；R53待推送和公开确认，其余分片继续首遍。

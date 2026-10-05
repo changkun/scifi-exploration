@@ -1,0 +1,5258 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-05",
+    "method": "single-pass-four-id-lanes-v1",
+    "source_commit": "3ee3360dac4db8bdc93160bd080f4738a0060a7b",
+    "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+    "record_count": 120,
+    "facet_count": 240,
+    "attempted_identity_count": 154,
+    "deferred_count": 34,
+    "original_fulltext_read_count": 0,
+    "recovered_prior_analysis_count": 0,
+    "skipped_already_analyzed_count": 0,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/early-recent-round45.json",
+        "sha256": "785754174f49a587b600a7fce0cfe30846602a794c5f78d18b83a3834cd2e2ab",
+        "metadata": {
+          "method": "source-assisted-knowledge-issue-facets-v1",
+          "status": "frozen_checkpoint",
+          "lane": 3,
+          "read_date": "2026-10-05",
+          "queue": "fast-first-lane-3.json",
+          "first_pass_policy": "一轮精准查询与至多一次简单来源读取；实际简介范围足够即补两项问题；困难/身份疑点延后。不称原书全文已读。",
+          "record_count": 38,
+          "facet_count": 76,
+          "attempted_count": 50,
+          "not_added_count": 12,
+          "frozen_date": "2026-10-05",
+          "priority_range": [
+            7423,
+            7622
+          ],
+          "canonical_gzip_sha256_at_freeze": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "remaining_selected_ids": [],
+          "continuation_note": "本批50身份完成首遍：38核心/76 facets，12项明确延期；全部新增冻结时仍canonical missing。随后立即转私有R46，困难项留后轮，不等发布。",
+          "complete_original_text_read_count": 0,
+          "quality_checks": [
+            "38条冻结时现库missing、ID与题名作者保持、仅三个议题字段、两句核心、两具体facets、合法议题、source/log对应通过；全部待独立核验。",
+            "完整原作阅读0。Lendemains incertains仅餐饮企业家开篇；Herbert livre dor仅Opération musikron开篇；未将初页推广整书或整集。",
+            "年度奇幻集只Jeffty Is Five；Rooms of Paradise只The Savage Mouth；Miller集只The Darfsteller；Millennial Women只Eye of the Heron；Persistence of Vision合集只标题篇；1978 Wollheim集只Screwfly Solution；New Dimensions 7只Black as the Pit。目录收入与已有知识独立标注。",
+            "已知作品零查询也保留unverified：Turner Diaries仅批判日记视角/种族灭绝叙事，不提供施暴方法；Gloriana只共同宫廷/身体前提，不解释不同版性暴力结尾。",
+            "Capricorn One为Goulart小说化，未用Follett新增人物线或电影结尾；Cave-In的Pam Withers同名错作者和Peyton早期同人/1978版本界限已延期。",
+            "Dance of Tiger只群体结盟和婚姻，小说遗传/肤色假说不是现代科学；Last Disaster没有把日食当轨道收缩原因，没有把反重力当现实技术。",
+            "Quest仅第三卷身体恢复/争船；Shiuan只第二卷Jherun离村前提；Lavalite仅第五卷移动地景/单一出口，不借其他卷重启或系列终局。",
+            "Bitterblooms限定标题节冰雪求生，不借评论相邻宗教/地下城故事；Family Monkey只当代评论梦境共情/女性关系；Equinoctial不混Ophiuchi Hotline克隆事件。",
+            "Hoshino漫画仅题名1—2话的火/冰期前提，其他选篇不混；Nora漫画1977题名连载与1979合集已识别但无剧情，动画不当漫画阅读。",
+            "Brumes du Sagittaire只书衣起段，不混作者页其他小说Kedar/Sirius；Wildeblood仅第三卷药物独裁，不混Florians或Critical Threshold生态论。",
+            "Commandos sur commande底库1977与源1978差异保留；Herbert合集底库1978与站点1976不同，原年不改。",
+            "Manatee评论里的凶手与变形只保留暗示，未提升确凿事实；Zir外貌伪装/红发预言来自Baen简介，不作为现实文化等级判断。",
+            "Delirium Circus只后版书衣，不使用2005合编其他作；Foetus Party只1977书衣/后版简介，胎儿交流非现实医学；Noô只原小说Soror前提，漫画或未读Candida结果不补。",
+            "Key Word为普通Larry Mysteries推理，未虚构科幻技术；And the Children Shall Lead当前Blish标签与ISFDB Lawrence署名不同，留待核日志，未以电视原集替代小说化。",
+            "Ninth Symphony用同题评论解释多人意识串扰，不借同文其他作者故事；Tortupatons一次直开遇Anubis，未通过UI绕过，只有部分书介所以延期。",
+            "十二延期：Ballard本集无确知目录、Sabotørene只有作者风格、Cave-In错作者/版本、Devil只有奖项、Nora未读漫画、Snark无法界定长篇分段、Lauralyn只有奖项、Rite单句太薄、Rain Pebbles只他篇正文/集导言、New Writings30无熟悉选篇、Tortupatons反机器人/薄摘要、Children署名与改编边界。"
+          ]
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/early-recent-round45-log.json",
+        "sha256": "9a210f2672267fc6a06e3051530e477c9378b3cdbda65aed1ec542de7defc96f",
+        "metadata": {
+          "method": "actual-first-pass-reading-log-v1",
+          "status": "frozen_checkpoint",
+          "lane": 3,
+          "read_date": "2026-10-05",
+          "attempted_count": 50,
+          "added_count": 38,
+          "not_added_count": 12,
+          "frozen_date": "2026-10-05",
+          "record_count": 38,
+          "facet_count": 76,
+          "priority_range": [
+            7423,
+            7622
+          ],
+          "canonical_gzip_sha256_at_freeze": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "remaining_selected_ids": [],
+          "continuation_note": "本批50身份完成首遍：38核心/76 facets，12项明确延期；全部新增冻结时仍canonical missing。随后立即转私有R46，困难项留后轮，不等发布。",
+          "complete_original_text_read_count": 0
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/global-recent-round41.json",
+        "sha256": "8c9cadd8dbc8849dd609c5ec787a149d958d201f9e114c901c27419f2246c496",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+          "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "starts_at_fast_index": 1454,
+          "record_count": 34,
+          "facet_count": 68,
+          "attempted_count": 48,
+          "deferred_count": 14,
+          "skipped_existing_count": 0,
+          "ends_at_fast_index": 1501,
+          "next_fast_index": 1502,
+          "freeze_date": "2026-10-05",
+          "session_inherited_baseline_sha256": "953d5bf1e21594cca05e557375911849e54c297d252b04d5624cc5a908b4c5ee",
+          "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+          "audit_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。",
+          "source_scope_counts": {
+            "existing_work_specific_knowledge_records": 8,
+            "records_with_actual_material": 32,
+            "records_with_actual_web_material": 31,
+            "records_with_local_official_dump_synopsis": 1,
+            "records_without_current_material": 2,
+            "actual_material_records_without_existing_knowledge_basis": 26,
+            "existing_knowledge_records_with_actual_sources": 6,
+            "complete_original_text_reads": 0,
+            "original_story_opening_partial_direct_reads": 0,
+            "original_story_opening_partial_search_excerpt_reads": 4,
+            "anthology_or_omnibus_selected_member_records": 5,
+            "anthology_or_omnibus_selected_member_ids": [
+              "Q135093063",
+              "Q135094130",
+              "Q17126693",
+              "Q7704204",
+              "Q7727162"
+            ],
+            "comic_specific_volume_records": 0,
+            "comic_series_foundational_setting_records": 1,
+            "interactive_gamebook_specific_records": 1,
+            "light_novel_specific_volume_records": 0,
+            "unknown_source_authors_preserved_records": 3
+          }
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/global-recent-round41-log.json",
+        "sha256": "fe1166fbc425be9dd1b26bbafb9089a895e08ce1ea946a051abc63d86447e849",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+          "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "starts_at_fast_index": 1454,
+          "record_count": 34,
+          "facet_count": 68,
+          "attempted_count": 48,
+          "deferred_count": 14,
+          "skipped_existing_count": 0,
+          "ends_at_fast_index": 1501,
+          "next_fast_index": 1502,
+          "freeze_date": "2026-10-05",
+          "session_inherited_baseline_sha256": "953d5bf1e21594cca05e557375911849e54c297d252b04d5624cc5a908b4c5ee",
+          "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+          "audit_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/modern-recent-round48.json",
+        "sha256": "d64c74dc49ec13e947244963878f66218bcfc22af8d3f4a1556567a214d2e0ff",
+        "metadata": {
+          "method": "easy-first-actual-source-knowledge-issue-facets-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "note": "熟悉准确身份已有知识可直接标待核；陌生作品单身份一次查询，明确内容即补、困难延后。",
+          "record_count": 33,
+          "facet_count": 66,
+          "field_count": 99,
+          "new_core_issue_count": 33,
+          "source_read_record_count": 33,
+          "single_work_count": 24,
+          "collection_scope_count": 9,
+          "scope": "lane2首轮1980—1979自然组33新核心/66细分，40身份实际各一次查询，7无明确剧情或粒度边界项立即延期。33可用项读取材料，其中28有内容支持，5项仅读准确选篇/系列身份而由明确已有知识解释；知识参与5项。9合集/系列限指定选篇或明确共同框架，24独立单作；4原作局部为Tutor再刊开头、Ink Imp评论所引原段、Vue en coupe合集同名篇开头（该片段不拼接到另一选篇）及Rautavaara转载搜索原文片段。原作全文0、额外打开0。PRH/Hachette书介、作者书目、图书馆概要、具体评论和社区情节严格分开。保留Lost Dorsai中篇/同题合集、Songhouse独立中篇/扩写Songmaster、Earth and Stone修订、Cylinder1978连载/1980书本及Hawk of May历史奇幻边界。7延期包括Antithesis、Couples de scorpions、Alizé pargélide、Incal首章、In Iron Years、Ganymedes5、Spaceflight Chronology；不得据极短线索、邻卷或参考年表强造小说剧情。全部文学解释待独立核验，批次不等于全量完成。",
+          "record_with_actual_material_count": 33,
+          "actual_content_source_record_count": 28,
+          "actual_identity_source_record_count": 5,
+          "search_attempted_record_count": 33,
+          "knowledge_plot_record_count": 5,
+          "knowledge_only_zero_query_count": 0,
+          "community_dump_read_count": 0,
+          "original_partial_text_record_count": 4,
+          "original_full_text_count": 0,
+          "next_policy": "立即R49固定lane2首轮，准确已有知识直接待核，陌生一次精准查询、明确材料够用即停止扩读，无明确剧情后置。批次不等于全量完成。",
+          "next_fast_lane_index": 1781,
+          "next_canonical_id": "Q131461661",
+          "first_pass_unhandled_lane_count": 725
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/modern-recent-round48-log.json",
+        "sha256": "84a5ff49cf6b83acb096e832ebb64f5c06730f88f20d850718f6fb3b85c4a161",
+        "metadata": {
+          "method": "actual-source-reading-scope-v1",
+          "lane": 2,
+          "status": "frozen_checkpoint",
+          "record_count": 33,
+          "facet_count": 66,
+          "field_count": 99,
+          "new_core_issue_count": 33,
+          "source_read_record_count": 33,
+          "record_with_actual_material_count": 33,
+          "actual_content_source_record_count": 28,
+          "actual_identity_source_record_count": 5,
+          "search_attempted_record_count": 33,
+          "knowledge_plot_record_count": 5,
+          "knowledge_only_zero_query_count": 0,
+          "community_dump_read_count": 0,
+          "original_partial_text_record_count": 4,
+          "original_full_text_count": 0,
+          "collection_scope_count": 9,
+          "single_work_count": 24,
+          "deferred_count": 7,
+          "actual_query_deferred_count": 7,
+          "zero_query_identity_deferred_count": 0,
+          "total_lane_actual_query_record_count": 40,
+          "total_actual_query_record_count": 40,
+          "total_actual_query_material_record_count": 39,
+          "supplementary_query_record_count": 0,
+          "supplementary_open_record_count": 0,
+          "deferred_original_partial_text_record_count": 0,
+          "scope": "lane2首轮1980—1979自然组33新核心/66细分，40身份实际各一次查询，7无明确剧情或粒度边界项立即延期。33可用项读取材料，其中28有内容支持，5项仅读准确选篇/系列身份而由明确已有知识解释；知识参与5项。9合集/系列限指定选篇或明确共同框架，24独立单作；4原作局部为Tutor再刊开头、Ink Imp评论所引原段、Vue en coupe合集同名篇开头（该片段不拼接到另一选篇）及Rautavaara转载搜索原文片段。原作全文0、额外打开0。PRH/Hachette书介、作者书目、图书馆概要、具体评论和社区情节严格分开。保留Lost Dorsai中篇/同题合集、Songhouse独立中篇/扩写Songmaster、Earth and Stone修订、Cylinder1978连载/1980书本及Hawk of May历史奇幻边界。7延期包括Antithesis、Couples de scorpions、Alizé pargélide、Incal首章、In Iron Years、Ganymedes5、Spaceflight Chronology；不得据极短线索、邻卷或参考年表强造小说剧情。全部文学解释待独立核验，批次不等于全量完成。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/root-fast-round68.json",
+        "sha256": "dd0b966302de4bc0cb2d465be83cce044e96fb234b392a6fe246c482c5b1a960",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "lane": 0,
+          "created_at": "2026-10-05",
+          "source_commit": "3ee3360dac4db8bdc93160bd080f4738a0060a7b",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "method": "parallel-single-query-easy-first-v1",
+          "record_count": 7,
+          "facet_count": 14,
+          "attempted_count": 8,
+          "deferred_count": 1,
+          "actual_search_attempt_count": 8,
+          "page_open_count": 0,
+          "original_fulltext_read_count": 0,
+          "scope": "八首查七作补入；三个合集具名成员用已有知识、成员目录及已公开单篇范围，其他四作具体概要，指南附小说剧情不足后置。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/root-fast-round68-log.json",
+        "sha256": "5b25aa5020fb4e787a7ddb13a0e53fc917be559c349f160eb465ad9595d52334",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "lane": 0,
+          "created_at": "2026-10-05",
+          "source_commit": "3ee3360dac4db8bdc93160bd080f4738a0060a7b",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "method": "parallel-single-query-easy-first-v1",
+          "record_count": 7,
+          "facet_count": 14,
+          "attempted_count": 8,
+          "deferred_count": 1,
+          "actual_search_attempt_count": 8,
+          "page_open_count": 0,
+          "original_fulltext_read_count": 0,
+          "scope": "八首查七作补入；三个合集具名成员用已有知识、成员目录及已公开单篇范围，其他四作具体概要，指南附小说剧情不足后置。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/root-fast-round69.json",
+        "sha256": "4c21848f615fc45247855bb2d4e0165fd47e78592b3480d84194a775d7982d63",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "lane": 0,
+          "created_at": "2026-10-05",
+          "source_commit": "3ee3360dac4db8bdc93160bd080f4738a0060a7b",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "method": "authorized-existing-knowledge-first-pass-v1",
+          "record_count": 8,
+          "facet_count": 16,
+          "attempted_count": 8,
+          "deferred_count": 0,
+          "actual_search_attempt_count": 0,
+          "page_open_count": 0,
+          "original_fulltext_read_count": 0,
+          "scope": "先补八个熟悉且身份明确的作品；全为已有知识，实际查询/材料/原文均0，来源不伪造，细节待核。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/root-fast-round69-log.json",
+        "sha256": "3e50b77caec19c8644490f7150a1ae229f529b7101959eca7603d27f76c9f914",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "lane": 0,
+          "created_at": "2026-10-05",
+          "source_commit": "3ee3360dac4db8bdc93160bd080f4738a0060a7b",
+          "source_snapshot_sha256": "40b89bf95988f1f85fbae614ca293de7524348f708b140ee05cf44a7f121b9dd",
+          "method": "authorized-existing-knowledge-first-pass-v1",
+          "record_count": 8,
+          "facet_count": 16,
+          "attempted_count": 8,
+          "deferred_count": 0,
+          "actual_search_attempt_count": 0,
+          "page_open_count": 0,
+          "original_fulltext_read_count": 0,
+          "scope": "先补八个熟悉且身份明确的作品；全为已有知识，实际查询/材料/原文均0，来源不伪造，细节待核。"
+        }
+      }
+    ],
+    "scope": "四个互斥ID分片；快速首轮对现成明确简介一次读取，熟悉作品可用已有知识并明确身份入口不作剧情证据；陌生作品单轮精准查询，先补简短核心和两项具体问题。切换前实际读到的其他来源逐项保留；简介不足、错配及版本疑点延后；原作授权开头、非连续片段、出版书介、有限读者摘要及已有知识按条目范围记录；本批完整原作阅读0；实际原作开头、局部片段、书介、目录和已有知识均按范围保留；不升级整条独立核验。",
+    "verification": "全部knowledge_added_unverified；第一轮具体文学分析不等于全文阅读或独立核验。",
+    "new_core_analysis_count": 120,
+    "additional_existing_analysis_ids": [],
+    "additional_existing_analysis_count": 0
+  },
+  "records": [
+    {
+      "id": "Q134583656",
+      "identity": {
+        "title": "Lendemains incertains",
+        "author": "Pierre Barbet"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "殖民与他者",
+          "技术与责任"
+        ],
+        "issue": "已读开篇由餐饮企业家自述如何以统一品质服务不同群体，并把低重力住宿和海底度假纳入全球经营。这里的未来首先以可预订的消费体验出现，文化差异与空间技术都成为商业组织的对象。",
+        "issue_facets": [
+          {
+            "label": "文化差异的菜单化",
+            "question": "按群体身份配置食物，怎样同时满足差异又将人固定在消费分类中？",
+            "basis": "开篇自述为不同国别人群提供不同菜品，并强调稳定品质和相应接待。"
+          },
+          {
+            "label": "新空间的休闲商品",
+            "question": "航天和海底居住被组织为度假服务时，技术进步以什么生活价值出现？",
+            "basis": "开篇明确巨型卫星酒店的低重力疗养及红海海底度假村。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mais-encore.fr/lendemains-incertains-par-p-barbet/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mais-encore.fr/lendemains-incertains-par-p-barbet/",
+          "type": "reader_transcribed_original_opening_search_excerpt",
+          "support_scope": "实际读取读书站转录的Première page开篇；只解释企业家餐饮与卫星/海底酒店自述，未读之后情节。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "Olivier Sprigel为Pierre Barbet笔名；原题名作者不改。仅开篇消费话语，不据此推断整书冲突或社会结局。"
+    },
+    {
+      "id": "Q134989842",
+      "identity": {
+        "title": "The Year's Finest Fantasy",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "文明与历史"
+        ],
+        "issue": "本选集这里只分析《Jeffty Is Five》：Jeffty一直保持五岁，他的世界中已经停播的旧广播节目仍可继续更新。朋友试图在这一经验与不断变化的日常世界之间来往，使保留童年文化与承受现实时间的关系成为冲突。",
+        "issue_facets": [
+          {
+            "label": "童年时间的持续",
+            "question": "一个人持续处于五岁，意味着年龄、记忆和文化时间可以怎样分离？",
+            "basis": "确知选篇设定是Jeffty不长大，旧广播文化在他的经验中仍继续。"
+          },
+          {
+            "label": "共同经验的两种现实",
+            "question": "朋友能够接触被保留的旧世界，却还要生活在变化中的现实里，会出现什么张力？",
+            "basis": "故事让成年朋友进入Jeffty的经验，同时与外部日常世界来往；不补悲剧结尾。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://blackgate.com/2021/04/03/vintage-treasures-emyears-finest-fantasyem-edited-by-terry-carr/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://blackgate.com/2021/04/03/vintage-treasures-emyears-finest-fantasyem-edited-by-terry-carr/",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取1978 Year’s Finest Fantasy完整目录段，确认Jeffty Is Five收入；不据其他年度卷猜选篇。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅分析Jeffty Is Five，非整部年度奇幻选集；故事情节来自既有知识，本轮目录仅确认收入。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q135093301",
+      "identity": {
+        "title": "Rooms of Paradise",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "技术与责任"
+        ],
+        "issue": "本选集这里只分析小松左京《The Savage Mouth》：一个人利用技术把自己的身体变为自己进食的对象。自我消费的极端实验使身体自主与自我毁坏难以分开，也让技术服务欲望的边界成为问题。",
+        "issue_facets": [
+          {
+            "label": "身体自主的自我毁坏",
+            "question": "当主体选择把自身当食物，身体处分权是否仍足以解释这一行动？",
+            "basis": "确知选篇以人逐步食用自己身体的极端设定展开；不补具体操作和结局。"
+          },
+          {
+            "label": "技术服务欲望的界线",
+            "question": "能够延长和实现自我消费的技术，是解放选择还是放大毁坏欲望？",
+            "basis": "故事把技术辅助与吞食自身的行动连接起来。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://worldswithoutend.com/novel.asp?ID=47096"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://worldswithoutend.com/novel.asp?ID=47096",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取WWEnd目录，48页项列The Savage Mouth/Sakyo Komatsu，确认收入；目录不提供该篇剧情。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "Rooms of Paradise为Lee Harding编辑的选集，只分析The Savage Mouth；不以标题篇或选集整体代替该单篇。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q135094216",
+      "identity": {
+        "title": "The Science Fiction Stories of Walter M. Miller, Jr.",
+        "author": "小沃尔特·M·米勒"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "主体与意识",
+          "技术与责任"
+        ],
+        "issue": "本集这里只分析《The Darfsteller》：曾经的演员面对自动化舞台取代真人表演，仍试图让自身的演技重新成为不可替代的劳动。戏剧的复制效率与现场表演者的身体、创造和职业尊严形成冲突。",
+        "issue_facets": [
+          {
+            "label": "表演劳动的自动替代",
+            "question": "当机器能够稳定复演人物，真人演员的能力应由效率还是现场创造来衡量？",
+            "basis": "确知选篇设定是自动化剧场用机械表演替代真人。"
+          },
+          {
+            "label": "职业消失后的自我定义",
+            "question": "一个以表演建立自我价值的人失去舞台后，如何面对仍然存在的能力？",
+            "basis": "主角是因自动化舞台失去原有职业位置的演员，仍渴望重新表演。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/books/OL18703151M/The_science_fiction_stories_of_Walter_M._Miller_Jr."
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/books/OL18703151M/The_science_fiction_stories_of_Walter_M._Miller_Jr.",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取1978 Gregg Press目录，确认The darfsteller收入；不将他集变体目录的Command Performance当本集必含。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅分析The Darfsteller；不概括全十二篇，不补舞台破坏过程或终局。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q1542194",
+      "identity": {
+        "title": "特纳日记",
+        "author": "威廉·皮爾斯"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "《特纳日记》以白人至上主义地下组织成员的日记形式，把架空未来中的恐怖暴力和种族灭绝叙述为该组织的胜利。研究的核心是这种内部视角怎样把受害者排除出道德共同体，并用革命和自卫的叙述包装屠杀。",
+        "issue_facets": [
+          {
+            "label": "排除他者的胜利叙事",
+            "question": "把整类人视为必须消除的敌人，怎样令集体暴力在叙述内部被正常化？",
+            "basis": "确知作品围绕白人至上主义组织的暴力夺权与种族灭绝展开；此分析不认可其立场。"
+          },
+          {
+            "label": "日记视角的道德封闭",
+            "question": "施暴者的日常记录怎样让读者只看见组织的目标，而遮蔽受害者经验？",
+            "basis": "小说采用该地下组织成员的日记视角组织架空未来的行动与胜利。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅作品叙述批判，既有知识待核；不提供袭击方法、不复述宣言和侮辱性言语，原纪年保留。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q17007125",
+      "identity": {
+        "title": "Millennial Women",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "性别与亲密",
+          "技术与责任"
+        ],
+        "issue": "本选集这里只分析勒古恩《The Eye of the Heron》：流放星球上的不同居民群体，在等级城市秩序与非暴力共同体的生活方式之间发生冲突。女性角色寻求超出父辈统治与男性主导决策的行动空间，使公共自由和亲密权力彼此交织。",
+        "issue_facets": [
+          {
+            "label": "非暴力与强制秩序",
+            "question": "坚持非暴力的共同体面对以威压维持统治的城市时，怎样保护自身生活方式？",
+            "basis": "确知选篇将和平主义定居者与等级城市居民的冲突置于流放星球。"
+          },
+          {
+            "label": "女性的共同体退出",
+            "question": "女性如何摆脱父辈权力，同时参与决定另一种社会生活？",
+            "basis": "Luz的行动关联父亲统治的城市秩序与和平主义共同体；不补结尾成败。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Millennial_Women"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Millennial_Women",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取1978目录，确认The Eye of the Heron为选集所收中篇；剧情来自既有知识，不把目录总主题当逐篇核验。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只分析The Eye of the Heron，不声称七篇全部已读；诗歌、导言与短中篇粒度分开。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q21009589",
+      "identity": {
+        "title": "Capricorn One",
+        "author": "润·古拉特"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "三名准备参加火星任务的宇航员被告知飞船存在致命缺陷，并被迫以伪造行程维持任务成功的公共形象。机构把项目存续置于事实之上，也把执行者从专业参与者变成了不情愿的共谋者。",
+        "issue_facets": [
+          {
+            "label": "项目存续与真实性",
+            "question": "为了保住航天项目而伪造成功，怎样破坏公众对科学机构的知情关系？",
+            "basis": "Goulart书介明确失败会终结航天项目，因此要求用计算机效果假造行程。"
+          },
+          {
+            "label": "专业人员的被迫共谋",
+            "question": "知道任务是假象却被要求演出的宇航员，还能怎样保持其专业责任？",
+            "basis": "本作书介明确三名宇航员成为unwilling conspirators，并被安排特殊命运；不补未明结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.goodreads.com/book/show/1310225.CAPRICORN_ONE"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/book/show/1310225.CAPRICORN_ONE",
+          "type": "community_book_description_search_excerpt",
+          "support_scope": "实际读取Goulart小说条目的书介；只用任务故障、假行程和被迫共谋，不用电影完整剧情。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "本条为Ron Goulart小说化；与Ken Follett同题小说化分开，不借Follett新增记者关系或电影特定结局。"
+    },
+    {
+      "id": "Q24932813",
+      "identity": {
+        "title": "Le Robot qui vivait sa vie",
+        "author": "Philippe Ebly"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "技术与责任",
+          "主体与意识"
+        ],
+        "issue": "少年们发现看似死去的狗只是电池耗尽的机器人，随后又受托带外表像人的Haum到非受控环境中测试。生命外观、机械依赖与按声音服从的程序被放在日常相处中，逼迫观察者区分“像活物”与“能自主生活”。",
+        "issue_facets": [
+          {
+            "label": "拟生命外观与判断",
+            "question": "外表和能力高度拟真的机器失去动力时，人怎样辨认死亡与停机？",
+            "basis": "简介明确狗被当作死亡带回，教授解释它是电池耗尽的机器人。"
+          },
+          {
+            "label": "非受控测试的责任",
+            "question": "把按特定声音服从的人形机器人交给少年测试，谁应承担外部环境中的责任？",
+            "basis": "教授要求三人带Haum到非受控环境，且机器人被编程听Serge声音指令。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Le_Robot_qui_vivait_sa_vie"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Robot_qui_vivait_sa_vie",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取社区百科Résumé开头，止于人形机器人外部测试和声音服从前提；未读后文结局。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1978 Les Conquérants de l’impossible第十一卷；不据系列标题把其他时间旅行情节移入。"
+    },
+    {
+      "id": "Q3109139",
+      "identity": {
+        "title": "Gloriana",
+        "author": "迈克尔·莫库克"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "性别与亲密",
+          "主体与意识"
+        ],
+        "issue": "Gloriana的宫廷把女王的身体与理想化Albion的安宁联结起来，而她无法获得性满足的处境与宫廷权谋相互牵动。女性君主既被视为国家象征，又被当作可以操纵的身体，使政治秩序与亲密自主之间形成冲突。",
+        "issue_facets": [
+          {
+            "label": "君主身体的公共化",
+            "question": "将国家安宁寄托在女王身体上，怎样侵占她的私人欲望和自主？",
+            "basis": "确知小说设定把Gloriana的性满足困境与Albion宫廷秩序联系起来。"
+          },
+          {
+            "label": "亲密关系的政治操纵",
+            "question": "宫廷如何把欲望和亲密接触变成争夺统治秩序的手段？",
+            "basis": "故事通过宫廷权谋及Quire的介入把私人关系纳入政治操纵。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1978小说与后来修订版结尾有差异；这里只取共同宫廷与身体前提，不解释或合理化未核版本的性暴力结局。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q3375686",
+      "identity": {
+        "title": "The Persistence of Vision",
+        "author": "约翰·瓦利"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生命与人类定义",
+          "知识与认识"
+        ],
+        "issue": "本集这里只分析同名篇《The Persistence of Vision》：外来者接触到由盲聋者组成、通过触觉组织交流的共同体。故事把通常被当作感知不足的身体条件转化为另一种共同生活的基础，也使观察者必须面对自己理解能力的边界。",
+        "issue_facets": [
+          {
+            "label": "感知条件与共同体能力",
+            "question": "没有视觉和听觉的交流，怎样形成不同于外来者习惯的社会经验？",
+            "basis": "确知同名篇围绕盲聋共同体的触觉交流和生活组织。"
+          },
+          {
+            "label": "观察者理解的边界",
+            "question": "外来者不能熟练参与一种感知方式时，能否判定共同体的意义和能力？",
+            "basis": "外来叙述者进入该共同体，逐步接触超出自身交流习惯的生活；不补终局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Persistence_of_Vision_%28collection%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Persistence_of_Vision_%28collection%29",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取1978合集九篇目录，确认同名篇收入；其他小说化和电视改编不作为该篇依据。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "Q3375686为1978合集而非单独同名中篇；只以同名篇作选篇分析，不概括其余八篇。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q4356011",
+      "identity": {
+        "title": "Dance of the Tiger",
+        "author": "布約爾恩·庫爾特恩"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "殖民与他者",
+          "性别与亲密"
+        ],
+        "issue": "失去父亲和族人的Tiger为追击杀父者，与尼安德特人接触并结盟，后来与其中一位女性结婚。史前人群差异因此同时成为敌意、互助和婚姻的条件，复仇也被迫经过对被视为不同者的重新认识。",
+        "issue_facets": [
+          {
+            "label": "跨人群的复仇联盟",
+            "question": "共同的敌人能否使被视为异类的人群变成可信盟友？",
+            "basis": "简介明确Tiger追击Shelk，同时与尼安德特群体接触结盟。"
+          },
+          {
+            "label": "婚姻与人类边界",
+            "question": "跨人群婚姻怎样挑战以身体差异划分自己人与他者的规则？",
+            "basis": "所读剧情明确Tiger最终与尼安德特女性结婚；不将小说的遗传假设当科学事实。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dance_of_the_Tiger"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dance_of_the_Tiger",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取Plot段：冰期北欧、Tiger丧亲、与尼安德特结盟及婚姻；未读原作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "小说关于混血生育、肤色或群体性格的假说不提升为现代古人类学结论；1978原作与1980英译日期分开。"
+    },
+    {
+      "id": "Q4753304",
+      "identity": {
+        "title": "And Having Writ...",
+        "author": "Donald R. Bensen"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "文明与历史",
+          "殖民与他者"
+        ],
+        "issue": "坠落地球的外来宇航员认为，要修复交通工具回家，就必须加速地球技术，甚至设法推动全球战争。私人返乡目标于是转化为干预整个人类历史的动机，把以战争促进创新的计算与被卷入者的代价连接起来。",
+        "issue_facets": [
+          {
+            "label": "返乡目的的外部代价",
+            "question": "少数外来者为回家而改变地球政治，怎样把自身需求变成他人的风险？",
+            "basis": "剧情明确宇航员落地后寻求加速技术，以获得返乡条件。"
+          },
+          {
+            "label": "战争作为技术加速器",
+            "question": "把战争看成科学工业突破的捷径，会忽略哪些人的生命和自主？",
+            "basis": "简介明确他们推断全球冲突将带来武器创新和科技工业进步，并试图促成它。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/And_Having_Writ..."
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/And_Having_Writ...",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取外来者坠落、技术加速与激发战争的剧情前提；未以其Tunguska背景说明作为现实现象解释。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1908坠落与历史人物变化属于架空设定；不把小说中的事件原因当现实历史事实，也不补未读政治人物结局。"
+    },
+    {
+      "id": "Q56302112",
+      "identity": {
+        "title": "The Golden Book of science fiction: Frank Herbert",
+        "author": "弗兰克·赫伯特"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "本合集这里只解释《Opération musikron》的已读开篇：城市突然出现集体精神失控，心理学者难以应对，事故和善后已影响基础设施。灾害的入口首先是人的感知与行为，使公共安全不能只依赖设施本身的坚固。",
+        "issue_facets": [
+          {
+            "label": "心理灾害的集体规模",
+            "question": "突然同时失控的城市人口，如何改变以个体患者为单位的应对方式？",
+            "basis": "开篇明确一座城市瞬间陷入狂乱、四十天内九城受影响，心理学者努力却无效。"
+          },
+          {
+            "label": "设施对人的脆弱依赖",
+            "question": "交通设施依赖人的稳定感知时，心理危机怎样转成物理灾害？",
+            "basis": "开篇呈现Honolulu善后与失事spatiotrain，并以Seattle人物听到不断升级声音继续；原因未读明。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mais-encore.fr/le-livre-dor-par-f-herbert/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mais-encore.fr/le-livre-dor-par-f-herbert/",
+          "type": "reader_transcribed_original_opening_search_excerpt",
+          "support_scope": "实际读取合集目录及Première page d’Opération Musikron转录；仅开篇城市狂乱、事故善后和声音感知，不读后续原因或其他十一篇。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "底库1978与该站1976标注有差异，原年不改；不把作者其他作品或前言全局议题代替本选篇，转录未独立比对原印本。"
+    },
+    {
+      "id": "Q7271488",
+      "identity": {
+        "title": "Quest for the Well of Souls",
+        "author": "Jack L. Chalker"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Mavra与同伴被井世界机制变成非人身体，而恢复原身体的希望依赖隐藏的飞船与超级计算机Obie。抢夺逃生和身体修复条件的敌人，使个人恢复自主的愿望卷入控制宇宙资源的竞争。",
+        "issue_facets": [
+          {
+            "label": "身体修复的控制权",
+            "question": "恢复原身体必须依赖他人难以触及的设备时，个人身份自主如何获得保障？",
+            "basis": "Baen简介明确Mavra变成非人身体，Obie能恢复原形但难以抵达。"
+          },
+          {
+            "label": "逃生资源的竞争",
+            "question": "唯一飞船既可提供修复机会又可用于逃亡时，竞争者会怎样分配生存机会？",
+            "basis": "简介明确飞船藏于危险北半球，敌人计划杀死Mavra、夺船逃离。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.baen.com/quest-for-the-well-of-souls.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.baen.com/quest-for-the-well-of-souls.html",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Baen后版简介；仅Mavra受困、身体变化、Obie和飞船争夺前提。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只第三卷Quest，承接Exiles的前情仅依本卷简介；不把系列第五卷宇宙重启结局移入。"
+    },
+    {
+      "id": "Q7601183",
+      "identity": {
+        "title": "Star Winds",
+        "author": "Barrington J. Bayley"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "技术与责任"
+        ],
+        "issue": "旧技术的太空帆在衰竭的地球上已经成为无法复制的珍贵遗物，取代科学家的炼金术士仍在追索其秘密。学徒Rachad为寻找留在火星殖民废墟中的书，打算改装海船并偷取帆具，使知识恢复与对遗存资源的争夺连在一起。",
+        "issue_facets": [
+          {
+            "label": "科学遗产的重新解释",
+            "question": "科学断裂后，炼金术式的寻秘如何继承又改写对技术的理解？",
+            "basis": "出版社简介明确炼金术士取代科学家，Rachad寻找古老知识和火星遗书。"
+          },
+          {
+            "label": "遗物的稀缺与再利用",
+            "question": "不可复制的太空帆成为无价资源时，获取知识为什么需要越过财产和用途的界限？",
+            "basis": "简介明确旧帆价值极高，Rachad计划密封海船、偷取新帆前往火星。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.com.au/barrington-j-bayley/star-winds"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/barrington-j-bayley/star-winds",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Hachette 2011后版简介；仅技术遗失、炼金术士、火星遗书与改船取帆计划。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "旧技术以太空帆和炼金术出现是虚构科学奇幻前提，不当作已实现的航天原理。"
+    },
+    {
+      "id": "Q7711786",
+      "identity": {
+        "title": "The 1978 Annual World's Best SF",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "生命与人类定义",
+          "生存与风险"
+        ],
+        "issue": "本年度选集这里只分析《The Screwfly Solution》：男性对女性的杀戮在全球扩散，并被宗教与社会解释重新包装。故事把亲密关系中的暴力放大为人类存续危机，揭示针对女性的支配如何摧毁整个共同体。",
+        "issue_facets": [
+          {
+            "label": "杀戮的正当化语言",
+            "question": "社会把针对女性的暴力解释为使命时，怎样把受害者排除出共同体？",
+            "basis": "确知选篇中男性杀戮女性在各地扩散，并出现把杀戮合理化的宗教解释。"
+          },
+          {
+            "label": "亲密暴力的物种后果",
+            "question": "针对一类人的持续暴力怎样从家庭威胁转成人类繁衍与存续的危机？",
+            "basis": "选篇把对女性的系统性杀戮与人口存续联系起来；不补未核最终外来者细节。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://bestsf.net/the-1978-annual-worlds-best-sf-edited-by-donald-a-wollheim-daw-1978/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://bestsf.net/the-1978-annual-worlds-best-sf-edited-by-donald-a-wollheim-daw-1978/",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取Best SF目录列表，确认Raccoona Sheldon的The Screwfly Solution收入；目录只支持收入身份。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只分析1977单篇The Screwfly Solution在本1978选集中的收入；剧情为既有知识，本轮不是原作阅读。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q7745700",
+      "identity": {
+        "title": "The Last Disaster",
+        "author": "هيو والترز"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "天文学者从异常提前的日食发现月球正在接近地球，并预计两者碰撞，同时担忧公布消息将引发全球恐慌。救援希望又寄托在一位退休教授的实验上，使灾害信息的公共责任与少数人掌握的技术能力形成张力。",
+        "issue_facets": [
+          {
+            "label": "灾害信息与恐慌预期",
+            "question": "科学机构预见灾难却害怕公众恐慌时，怎样决定何时公开证据？",
+            "basis": "出版社简介明确月球靠近及碰撞预测，科学家同时预期全球恐慌并求助UNEXA。"
+          },
+          {
+            "label": "独占能力与公共救援",
+            "question": "全球救援依赖一位退休研究者的试验时，个人意愿怎样影响所有人的生存？",
+            "basis": "出版社简介将唯一微弱希望放在教授实验；作者研究站另明确其失望而拒绝帮助的前提。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.com.au/hugh-walters/the-last-disaster",
+        "https://unexa.org/18last/index.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/hugh-walters/the-last-disaster",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Hachette后版简介；月球接近、公布风险、UNEXA与教授实验前提。",
+          "read_date": "2026-10-05"
+        },
+        {
+          "url": "https://unexa.org/18last/index.html",
+          "type": "author_bibliography_fan_synopsis_search_excerpt",
+          "support_scope": "实际读取作者研究站Synopsis，明确教授因对人类失望拒绝协助；不使用转载评论给出的装置步骤或结局。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "月球突变和反重力是本作虚构设定；不把日食说成现实中造成轨道收缩的原因。原文简介因果措辞不转为科学结论。"
+    },
+    {
+      "id": "Q7981130",
+      "identity": {
+        "title": "Well of Shiuan",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "性别与亲密",
+          "生存与风险"
+        ],
+        "issue": "Jherun生活在正被海水吞没的世界，又面临嫁给粗暴男子的黯淡前景，于是离开村庄追寻另一种未来。环境失去可居住性与婚姻安排同时压缩她的选择，使迁移既是求生行动，也是摆脱既定生活的尝试。",
+        "issue_facets": [
+          {
+            "label": "环境衰亡中的离乡",
+            "question": "家园持续被海水侵蚀时，人怎样把临时冒险转成寻找未来的行动？",
+            "basis": "本卷剧情开头明确Jherun的世界正被海水淹没，她离开贫困村庄。"
+          },
+          {
+            "label": "婚姻安排与迁移自主",
+            "question": "对粗暴婚约的拒绝，怎样与离开衰败家园的愿望相互推动？",
+            "basis": "简介明确Jherun不愿以嫁给Fwar作为未来，因而追随外来骑士离村。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Well_of_Shiuan"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Well_of_Shiuan",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取本卷Plot summary开头Jherun村庄、海水与离村前提；未解释后续Gates行动或结尾。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅第二卷角色开篇，不把第三卷序章或系列关闭全部Gates的目标当已读本卷结果。"
+    },
+    {
+      "id": "Q101545403",
+      "identity": {
+        "title": "Bitterblooms",
+        "author": "乔治·R·R·马丁"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "知识与认识",
+          "生态与资源"
+        ],
+        "issue": "Shawn在衰亡世界中为寻找食物迷失，受到寒冷与被称作吸血鬼者的追逐，却遇到居住在不受寒冷侵袭之处的Morgan。求生因此依赖一个无法按熟悉世界经验解释的避难地，使寻求庇护同时成为判断陌生者与环境的过程。",
+        "issue_facets": [
+          {
+            "label": "匮乏推动的危险迁移",
+            "question": "为寻找食物进入寒冷荒野，怎样使生存需求本身成为新的风险来源？",
+            "basis": "所读同题评论明确Shawn外出找食物后孤身迷失，冰雪迫近且有追逐。"
+          },
+          {
+            "label": "异常避难地的信任",
+            "question": "一个不受周围寒冷影响的住所，为什么既提供希望又要求重新判断现实？",
+            "basis": "评论明确她遇到Morgan，后者住在未受寒冷影响的地方；不补避难地真实机制。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://yellowedandcreased.wordpress.com/2011/10/21/sandkings-george-r-r-martin/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://yellowedandcreased.wordpress.com/2011/10/21/sandkings-george-r-r-martin/",
+          "type": "reader_review_search_excerpt",
+          "support_scope": "实际读取Sandkings评论的Bitterblooms专节，只用找食物、冰雪、追逐与Morgan住所前提。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1977单篇；不把同评论相邻Way of Cross and Dragon或House of the Worm的宗教和地下城情节移入，也不依据改编电影补情节。"
+    },
+    {
+      "id": "Q113159335",
+      "identity": {
+        "title": "Kyojin-tachi no Densetsu",
+        "author": "星野之宣"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "生态与资源",
+          "主体与意识"
+        ],
+        "issue": "所读简介将《巨人たちの伝説》题名两话描述为人类以火抗拒既定命运、试图终结冰期的故事。掌握技术不只增加个人力量，也让人类尝试改变原本被视作不可逆的整体生存环境。",
+        "issue_facets": [
+          {
+            "label": "火与命运的抗争",
+            "question": "以火改变冰期，怎样把服从既定环境变成主动改造世界？",
+            "basis": "社区简介明确题名两话受Prometheus启发，以火终结冰期并抗拒给定命运。"
+          },
+          {
+            "label": "环境改造的尺度",
+            "question": "技术能力从局部取暖转向改变气候时，应怎样理解集体行动的责任？",
+            "basis": "问题仅依据该两话的终结冰期计划；不假定漫画已经展示具体气候后果。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://anilist.co/manga/115673/Kyojintachi-no-Densetsu/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://anilist.co/manga/115673/Kyojintachi-no-Densetsu/",
+          "type": "community_manga_synopsis_search_excerpt",
+          "support_scope": "实际读取AniList单卷四话简介，限定1—2话Legend of Giants前提；3话Icarus Asteroid与4话Horizon Patrol不纳本分析。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "漫画/故事集文本边界保留，不标长篇小说；1977连载与后出单卷收入关系未独立核验，只按简介明列的题名两话解释。"
+    },
+    {
+      "id": "Q122581061",
+      "identity": {
+        "title": "A Little Knowledge",
+        "author": "邁克爾·畢曉普"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "知识与认识",
+          "殖民与他者"
+        ],
+        "issue": "外星访客在亚特兰大的一场官方宗教仪式中自愿接受“拯救”，被统治者当作国教唯一真实的证明，少数群体随即遭到袭击。负责报道的失业作家后来进入访客的秘密居所，公共的宗教证明与实际理解外来者之间出现落差。",
+        "issue_facets": [
+          {
+            "label": "皈依作为政权证据",
+            "question": "一个外来个体的宗教选择，为什么能被扩张成统治者排斥其他群体的依据？",
+            "basis": "出版社简介明确外星人的受救被当作国教真实性证明，原受容忍的少数群体随后遭帮派攻击。"
+          },
+          {
+            "label": "公共形象与具体认识",
+            "question": "报道仪式上的外星人，与在秘密居所了解他们，怎样产生不同层次的知识？",
+            "basis": "Julian先报道外星公开亮相，后为其保护者工作并了解外星人的人类化特征。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.com.au/michael-bishop/a-little-knowledge"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/michael-bishop/a-little-knowledge",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Hachette完整简介；仅Julian就业、官方仪式、少数群体袭击及进入外星居所，不解释其最终目的。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1977小说不是Catacomb Years整部未来史的替代；不把外星人的动机不明变成已证实的操纵阴谋。"
+    },
+    {
+      "id": "Q131461553",
+      "identity": {
+        "title": "The Family Monkey",
+        "author": "Lisa Tuttle"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "生命与人类定义",
+          "主体与意识"
+        ],
+        "issue": "被称作Family Monkey的外来生物外形怪异，却能读取梦境并对需要帮助的人表现出同情。它与一位开始把自己视为失败者和老处女的女性建立关系，使被社会贬低的自我评价遭遇另一种理解与接纳。",
+        "issue_facets": [
+          {
+            "label": "外貌与情感能力",
+            "question": "被看作怪异的外来身体，怎样挑战人用相似外貌判断亲近和关怀的习惯？",
+            "basis": "当代评论明确外来者怪诞近人形，却具备同情和爱人的能力。"
+          },
+          {
+            "label": "社会标签与自我重认",
+            "question": "接受一个能理解梦境者的关怀，会怎样改变被失败和婚姻标签约束的自我认识？",
+            "basis": "评论明确关系对象是开始把自己视为loser和old maid的女性，外来者能读取梦。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://arc.lib.montana.edu/msu-exponent/objects/exp-070-25-001-020.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://arc.lib.montana.edu/msu-exponent/objects/exp-070-25-001-020.pdf",
+          "type": "contemporary_review_search_excerpt",
+          "support_scope": "实际读取1979年1月26日MSU Exponent印刷页13的Family Monkey评论检索段；只题名专段，不使用相邻Screwfly情节。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1977单篇，未读原作；评论的评价性赞语不是情节证据，不据此补结局或生物来源。"
+    },
+    {
+      "id": "Q131461632",
+      "identity": {
+        "title": "Equinoctial",
+        "author": "约翰·瓦利"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "性别与亲密"
+        ],
+        "issue": "Parameter为寻求尚未体验的生活而成为土星环中共生配对的一半，却遭宗教狂热者绑走新生子女，并失去首位共生伴侣。身体选择原本提供新的自由，随后却卷入以子女和人口为争夺对象的群体战争。",
+        "issue_facets": [
+          {
+            "label": "共生身体的自主",
+            "question": "主动选择依赖另一生命的生活方式，怎样同时扩大体验又增加丧失伴侣的风险？",
+            "basis": "所读专段明确Parameter选择共生生活，首位伴侣被杀，造成严重心理打击。"
+          },
+          {
+            "label": "宗教冲突中的子女占有",
+            "question": "以养育下一代扩张信仰，为什么会把亲子关系变成强制争夺的资源？",
+            "basis": "简介明确狂热者绑走她的新生儿按其宗教养大，土星环派别也通过争夺后代扩张。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eight_Worlds"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Eight_Worlds",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取Parameter/Equinox/Solstice专段与明确标In Equinoctial的派别冲突段；只本篇共生、绑架与宗教战争，不用相邻Lilo克隆或Beatnik Bayou。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1977单篇；角色也出现在Ophiuchi Hotline，后者藏克隆身体的事件不属本分析。"
+    },
+    {
+      "id": "Q133954887",
+      "identity": {
+        "title": "Les Brumes du Sagittaire",
+        "author": "Frank Dartal"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "技术与责任",
+          "生态与资源"
+        ],
+        "issue": "银河探索结束后，人类未在既有边界之外找到出路，转而内缩并让机器人维持需求，而地球在红太阳下缓慢衰亡。技术仍能提供日常保障，却未自动给予文明新的方向，使安逸维持与长远生存彼此分离。",
+        "issue_facets": [
+          {
+            "label": "探索结束后的文明方向",
+            "question": "跨星际探索没有带来新出路后，文明怎样决定还有什么值得共同追求？",
+            "basis": "本题名书衣概括明确探索终结、人类内缩且未在其边界外找到东西。"
+          },
+          {
+            "label": "自动供给与长远风险",
+            "question": "机器人能够照料需求，是否意味着人类已经解决其行星环境的衰亡？",
+            "basis": "书衣同时明确机器人维持人的需要与地球在红太阳下缓慢死亡；未解释突发后续事件。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Frank_Dartal"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Frank_Dartal",
+          "type": "community_transcribed_jacket_description_search_excerpt",
+          "support_scope": "实际读取Les Brumes du Sagittaire标题下4ème Couverture转录；止于机器人供给、红太阳衰亡和未展开的转折提示。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只本题名书衣；网页后续Kedar/火星人/Sirius等其他小说分节不能混入，未知转折与结尾保留。"
+    },
+    {
+      "id": "Q134459315",
+      "identity": {
+        "title": "Wildeblood's Empire",
+        "author": "布莱恩·斯塔布尔福德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "殖民与他者"
+        ],
+        "issue": "《Wildeblood’s Empire》中，人类殖民地普遍沉迷于一种外来药物，独裁者因此获得控制。拓殖并未保证自由社会的延续，身体依赖反而成为把整个群体纳入统治的条件。",
+        "issue_facets": [
+          {
+            "label": "身体依赖与个人同意",
+            "question": "处于外来药物依赖中的人，其服从还能怎样被视为自主选择？",
+            "basis": "当代评论明确普遍药物成瘾帮助独裁者控制人类殖民地；未假定药理机制。"
+          },
+          {
+            "label": "殖民社会的统治条件",
+            "question": "在新的行星上建立殖民地，为什么不能自动摆脱原有权力支配？",
+            "basis": "评论以本作药物依赖与殖民地独裁为例解释Daedalus系列对拓殖理想的质疑。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fanac.org/fanzines/Foundation/foundation_15_edwards_1979-01.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fanac.org/fanzines/Foundation/foundation_15_edwards_1979-01.pdf",
+          "type": "contemporary_review_search_excerpt",
+          "support_scope": "实际读取1979 Foundation对Daedalus系列评论中明确Wildeblood’s Empire的单句；只外来药物成瘾和独裁控制，不借其他卷生态前提。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只第三卷1977前提；评论中Critical Threshold蝴蝶、Florians无月球及City of the Sun理想城均不属本作。"
+    },
+    {
+      "id": "Q134583615",
+      "identity": {
+        "title": "Commandos sur commande",
+        "author": "Pierre Barbet"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "资本与劳动",
+          "技术与责任"
+        ],
+        "issue": "帝国边区的权力争夺与海盗活动破坏贸易，调查员Alex伪装成走私者后发现一条出售安卓人作为突击队的交易链。维持秩序的任务因此必须进入非法交易网络，也揭示制造的生命形态如何直接成为武装权力的商品。",
+        "issue_facets": [
+          {
+            "label": "制造士兵的交易链",
+            "question": "能够按交易组成安卓突击队，怎样改变地方势力获得暴力能力的方式？",
+            "basis": "本题名简介明确Zossir出售安卓人用于组成commandos。"
+          },
+          {
+            "label": "执法与非法网络的接口",
+            "question": "帝国调查员假扮走私者，怎样借用他要治理的交易网络取得知识？",
+            "basis": "简介明确Alex以走私者身份调查，在贸易衰退和海盗背景下发现安卓买卖。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.senscritique.com/livre/commandos_sur_commande/108603803"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.senscritique.com/livre/commandos_sur_commande/108603803",
+          "type": "community_book_description_search_excerpt",
+          "support_scope": "实际读取本作简介；只边区争权、贸易、卧底与安卓出售前提，幕后主使未读。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "统一库1977与本页1978标注不同，原纪年保留；不推定安卓人的意识、权利制度或幕后主使。"
+    },
+    {
+      "id": "Q134973456",
+      "identity": {
+        "title": "Manatee Gal Ain't You Coming Out Tonight",
+        "author": "阿夫拉姆·戴維森"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "殖民与他者"
+        ],
+        "issue": "Jack Limekiller在仍带有殖民遗存的British Hidalgo生活，一名商人的失踪与死亡又引出可能变换人和海牛形态的地方谜团。外来居住者的日常贸易与地方传说相遇，使他对环境的认识同时依靠残留的历史和未能直接观察的生物解释。",
+        "issue_facets": [
+          {
+            "label": "殖民遗存的日常化",
+            "question": "旧殖民者聚居地逐渐衰落后，外来居民怎样继续把其遗存当作日常环境？",
+            "basis": "评论明确故事的British Hidalgo背景，并叙及Limekiller前往残余的Confederate殖民聚落Shiloh。"
+          },
+          {
+            "label": "传说与有限证据",
+            "question": "根据失踪和死亡线索推测变形生物，怎样区分可能解释与亲眼证实？",
+            "basis": "所读评论明确Bob Blaine失踪后尸体被找到，而were-manatee未被直接看见，其身份只是暗示。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://sffremembrance.com/2024/10/24/short-story-review-manatee-gal-aint-you-coming-out-tonight-by-avram-davidson/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://sffremembrance.com/2024/10/24/short-story-review-manatee-gal-aint-you-coming-out-tonight-by-avram-davidson/",
+          "type": "reader_review_search_excerpt",
+          "support_scope": "实际读取本篇评论的英国Hidalgo、Shiloh及Blaine谜团段；评论全文非原篇全文。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1977 Jack Limekiller单篇，未将整个系列代表为本篇；殖民解释为研究者分析，不将评论家对作者异国情调的批评当原作事实，生物和凶手只保留推测层级。"
+    },
+    {
+      "id": "Q138633907",
+      "identity": {
+        "title": "New Dimensions: Science Fiction Number 7",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生命与人类定义",
+          "文明与历史"
+        ],
+        "issue": "本选集这里只分析《Black as the Pit, from Pole to Pole》：弗兰肯斯坦造物的极地旅程被续写为穿行于地球内部不同宇宙图景的经历。被创造者超出原创造者安排继续行动，而旧有科学想象也在可被进入的世界中重新获得叙事生命。",
+        "issue_facets": [
+          {
+            "label": "造物的独立后续",
+            "question": "创造者的故事结束后，被创造者还可以怎样建立自己的生命历程？",
+            "basis": "确知选篇续写Shelley造物在极地之后的行动，不把它限定为原小说的结局注脚。"
+          },
+          {
+            "label": "宇宙模型的可居住化",
+            "question": "把不同的地球内部模型变为能亲历的世界，怎样显露科学想象的历史性？",
+            "basis": "选篇以地球内部的不同构造想象组织造物的穿行；不推定这些为现实地质学。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue": "既有知识原创补充，未本轮独立核查，不声称全文阅读。",
+        "issue_facets": "既有知识原创补充，未本轮独立核查，不声称全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.worldswithoutend.com/novel.asp?ID=18098"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.worldswithoutend.com/novel.asp?ID=18098",
+          "type": "bibliography_search_excerpt",
+          "support_scope": "实际读取New Dimensions Science Fiction Number 7目录，确认Black as the Pit, from Pole to Pole为Utley/Waldrop合写选篇；平台Book Type误称Novel不采纳。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只分析Utley/Waldrop选篇Black as the Pit，不概括New Dimensions 7其他十一篇；叙事来自确知既有知识，本轮目录只支持收入。",
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q15033856",
+      "identity": {
+        "title": "The Hostage of Zir",
+        "author": "里昂·斯普拉格·德坎普"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度",
+          "知识与认识"
+        ],
+        "issue": "地球旅游者必须改装外貌来融入Krishna的当地社会，但导游Reith的红发在冲突中又被认作预言中的叛乱神祇。旅游与援建并未消除权力差异，外来者的身体反而成为当地政治解释和争夺的对象。",
+        "issue_facets": [
+          {
+            "label": "旅游融入的外貌规则",
+            "question": "用肤色和触角伪装进入当地社会，能够解决文化理解的距离吗？",
+            "basis": "Baen简介明确离开港口的游客必须以染肤色、加触角模仿当地人。"
+          },
+          {
+            "label": "外来者的政治神化",
+            "question": "一个人的红发被解读成预言象征时，他如何承担并非自主选择的政治角色？",
+            "basis": "简介明确叛军把Reith视作预言的红发神，他的旅游团在铁路工地遇袭。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.baen.com/the-hostage-of-zir.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.baen.com/the-hostage-of-zir.html",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Baen书介，限定旅游伪装、当地援建铁路、遇袭与红发预言；不补解救所有游客的过程。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅Krishna系列本卷，简介称社会近中世纪是虚构世界描述，不能作为现实文化优劣等级。"
+    },
+    {
+      "id": "Q20739684",
+      "identity": {
+        "title": "Eyes of Amber",
+        "author": "琼·D·温奇"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "资本与劳动"
+        ],
+        "issue": "土卫六的T’uupieh把人类探测器认成超自然顾问，而地球控制者能够观察她实施的暴行。研究者必须在劝阻暴力与出售暴行影像维持研究资金之间选择，使第一接触同时成为知识、干预和观众消费的关系。",
+        "issue_facets": [
+          {
+            "label": "顾问身份与文化干预",
+            "question": "被当地人认作超自然顾问的探测器，是否使远程研究者获得未被明确同意的权力？",
+            "basis": "简介明确T’uupieh带走探测器作顾问，地球人员可通过它试图劝阻暴行。"
+          },
+          {
+            "label": "研究资助的暴力收益",
+            "question": "靠出售受观察者的暴行影像维持研究，怎样改变科学观察的激励？",
+            "basis": "简介明确地球控制者可选择卖暴行录像来资助继续研究。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eyes_of_Amber"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Eyes_of_Amber",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取1977题名中短篇Synopsis；不使用1979同名合集其他故事或改编。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "土卫六生命和社会是虚构设置；文化干预问题为原创解释，非对此天体现实宜居性的判断。"
+    },
+    {
+      "id": "Q24930937",
+      "identity": {
+        "title": "Delirium Circus",
+        "author": "皮埃尔·佩洛特"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "资本与劳动",
+          "知识与认识"
+        ],
+        "issue": "Citizen拥有明星的豪华生活，却发现海、天空与伴侣均由人工构成，自己的表演也依赖催眠或药物。逃离这套生活是对真假经验的追问，也是在拒绝把人的身体和能力持续供给演出生产的制度。",
+        "issue_facets": [
+          {
+            "label": "被管理的表演能力",
+            "question": "只有在催眠或药物下才能工作的演员，还能怎样把表演当作自己的创造？",
+            "basis": "1993书衣与2013出版社说明均明确Citizen表演依赖催眠或用药。"
+          },
+          {
+            "label": "人工日常中的真实性",
+            "question": "当自然环境和亲密伴侣都可制造，一个人凭什么辨认自己想保留的生活？",
+            "basis": "所读书衣明确海景、塑料天空和电子伴侣皆为假象，Citizen决定离开寻找真实。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ecrivosges.com/auteurs/pelotp/romans/073_delirium.php"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ecrivosges.com/auteurs/pelotp/romans/073_delirium.php",
+          "type": "bibliographic_site_transcribed_publisher_description_search_excerpt",
+          "support_scope": "实际读取所载1993书衣和2013出版社简介；不据同页评论补未读死伤情节或其他合编小说。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1977小说，2005合编包含Transit等其他作，但它们不被当作本书内容；后版书衣原文与1977印本未独立比对。"
+    },
+    {
+      "id": "Q27940434",
+      "identity": {
+        "title": "How's the Night Life on Cissalda?",
+        "author": "哈兰·艾里森"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "生命与人类定义",
+          "技术与责任"
+        ],
+        "issue": "时间旅行者Enoch带回与异形的亲密接触，而Cissalda生物不仅能穿越时空，还被描述为经过演化的完美恋人。人类对爱的渴望因此与跨时空接触的扩散能力相遇，外貌排斥和欲望吸引形成直接冲突。",
+        "issue_facets": [
+          {
+            "label": "外貌厌恶与亲密吸引",
+            "question": "一个被视为丑恶的外来身体具有极强亲密吸引力时，人类的他者边界怎样动摇？",
+            "basis": "Heyne简介明确外形令人厌恶的Cissalda生物却是完美恋人。"
+          },
+          {
+            "label": "欲望推动的接触扩散",
+            "question": "外来者能穿越时空，而人类渴望亲密时，技术接触为何不能只按探索计划控制？",
+            "basis": "出版社简介明确生物具有空间时间旅行能力，并将其与人类对爱的需求并置。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://diezukunft.de/shop/e-book/das-nachtleben-auf-cissalda"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://diezukunft.de/shop/e-book/das-nachtleben-auf-cissalda",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Heyne德译独立电子单篇简介；只返回、异形亲密前提和时空能力，不补终局。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "原1977短篇与2015德译发行分开；只分析亲密欲望与他者，不移入Shatterday其他故事或漫画场面。"
+    },
+    {
+      "id": "Q28808617",
+      "identity": {
+        "title": "The Key Word",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识"
+        ],
+        "issue": "侦探无法破解按日更换关键词的密码，儿子Larry却从报纸填字游戏的异常填写方式发现线索。专业调查与日常游戏经验在同一张报纸上交汇，说明证据的意义取决于观察者掌握的生活常识。",
+        "issue_facets": [
+          {
+            "label": "儿童经验与专业盲点",
+            "question": "熟悉游戏习惯的人为什么能发现专业调查者忽视的异常？",
+            "basis": "简介明确父亲研究报纸无果，Larry注意到填字游戏不是按常见顺序填写。"
+          },
+          {
+            "label": "公共信息的秘密用途",
+            "question": "人人可读的报纸怎样同时成为犯罪者使用的秘密信息来源？",
+            "basis": "剧情把日更关键词与当日报纸填字答案的规律联系起来；本分析不提供实际密码系统。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://asimov.fandom.com/wiki/The_Key_Word"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://asimov.fandom.com/wiki/The_Key_Word",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取Larry Mysteries单篇Summary；普通推理故事，不读原作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "本篇为普通谜题推理，没有所读材料支持的科幻设定；保留现候选身份不等于确认其科幻归属。与同名1977合集及其他Asimov科幻单篇分开。"
+    },
+    {
+      "id": "Q3092990",
+      "identity": {
+        "title": "Fœtus-Party",
+        "author": "皮埃尔·佩洛特"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生态与资源",
+          "生命与人类定义"
+        ],
+        "issue": "Saint Office一面提供均等食物和照料，一面回收尸体、鼓励老年人自杀，并询问胎儿是否愿意出生。资源管理以关怀和选择的语言实施，使国家对生命存续的决定伪装成个人自愿和社会互助。",
+        "issue_facets": [
+          {
+            "label": "出生选择的制度操控",
+            "question": "向胎儿展示拥挤世界并询问是否出生，怎样把制度责任转成被治理者的选择？",
+            "basis": "1977书衣明确国家展示混凝土世界，询问胎儿愿生还是愿死。"
+          },
+          {
+            "label": "关怀与生命淘汰",
+            "question": "维持均等供给的政权鼓励死亡并回收死者，照料与淘汰之间的界线如何被消解？",
+            "basis": "书衣同时列尸体转食物、老年自杀宣传与保障人口口粮。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ecrivosges.com/auteurs/pelotp/romans/067_foetus.php"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ecrivosges.com/auteurs/pelotp/romans/067_foetus.php",
+          "type": "bibliographic_site_transcribed_jacket_description_search_excerpt",
+          "support_scope": "实际读取1977书衣转录及2017出版社说明；仅供给、死亡鼓励、胎儿问询，不补Visiteur身份或其他续作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "原1977身份保留；虚构胎儿交流和资源机制不当现实医学事实，也不将同页评论的结尾解释当本轮原书已读。"
+    },
+    {
+      "id": "Q3345945",
+      "identity": {
+        "title": "Noô",
+        "author": "斯特凡·乌尔"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "主体与意识",
+          "权力与制度"
+        ],
+        "issue": "Brice随Jouve进入Soror的异星社会，又为避开无所不在的国家力量进入丛林，需要以真菌和地衣组成的第二层皮肤保护身体。移居异星因此不是找到相似气候就能完成的自由旅行，而是同时面对政治控制与生物环境的要求。",
+        "issue_facets": [
+          {
+            "label": "生物衣层的异星适应",
+            "question": "保护来自其他生命构成的第二层皮肤时，人类身体的边界怎样变化？",
+            "basis": "所读概要明确Brice和Jouve覆盖真菌、地衣保护层进入Soror丛林。"
+          },
+          {
+            "label": "政治退出与生态风险",
+            "question": "为了逃开国家力量进入陌生丛林，政治自由为什么需要付出环境适应的代价？",
+            "basis": "简介将逃避无所不在的国家与丛林穿行、保护皮肤和noôzome影响相联。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/No%C3%B4"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/No%C3%B4",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取Résumé及Noôzome段，只Soror丛林、保护皮肤与国家退出；未读两卷正文。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "1977原作两卷视为现小说身份；不把后出漫画改编、Candida未读政治结果或药物作用机制补入。"
+    },
+    {
+      "id": "Q3927005",
+      "identity": {
+        "title": "Quando le radici",
+        "author": "Lino Aldani"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "生态与资源",
+          "文明与历史"
+        ],
+        "issue": "Arno厌倦未来罗马的生产监控劳动和夜间性服务，回到故乡寻找更自由的自然与社区生活，却发现新公路将摧毁剩余村庄。个人离开都市的选择因此仍被同一现代化网络追及，故乡和“根”都不是天然稳定的避难所。",
+        "issue_facets": [
+          {
+            "label": "都市劳动与生活退出",
+            "question": "离开工厂和付费亲密服务，怎样成为重建自己生活价值的尝试？",
+            "basis": "简介明确Arno白天监控电子板生产、夜间为富裕女性提供性服务，疲惫后辞职返乡。"
+          },
+          {
+            "label": "发展工程与故乡延续",
+            "question": "公路建设把村庄视作可移除障碍时，居民怎样保留生活和环境的历史连续性？",
+            "basis": "所读剧情明确Pieve Lunga仅余少数老人和房屋，新高速将破坏其村庄与树林。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://it.wikipedia.org/wiki/Quando_le_radici"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://it.wikipedia.org/wiki/Quando_le_radici",
+          "type": "community_synopsis_search_excerpt",
+          "support_scope": "实际读取Trama关于1998罗马劳动、返乡与公路威胁的段落；未借Rom群体结尾概括现实族群。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "虚构1998的社会外推，原1977不改；只作品设定，不用原叙述的族群习俗作为现实民族学事实。"
+    },
+    {
+      "id": "Q55635423",
+      "identity": {
+        "title": "The Ninth Symphony of Ludwig van Beethoven and Other Lost Songs",
+        "author": "卡特·斯爾茲"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "音乐学者把意识送回贝多芬头脑中观察第九交响曲创作，原本以为少量旁观不会影响对象。大量研究者同时进入后却出现心理串扰，保存文化知识的计划反而破坏所研究的作品。",
+        "issue_facets": [
+          {
+            "label": "观察人数的累积效应",
+            "question": "单个旁观者看来无害，为何大量观察可能形成对创作者的实际干预？",
+            "basis": "同题评论明确少量未来意识不影响宿主，众多学者同时进入贝多芬后出现crosstalk。"
+          },
+          {
+            "label": "文化研究与历史责任",
+            "question": "为了理解经典的生成而改变其创作，研究者应怎样界定可以获取的知识？",
+            "basis": "剧情前提是观察第九交响曲创作，却因进入意识的存在造成负面改变；不补其他未读歌曲细节。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mporcius.blogspot.com/2016/09/1977-stories-by-george-alec-effinger.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mporcius.blogspot.com/2016/09/1977-stories-by-george-alec-effinger.html",
+          "type": "reader_review_search_excerpt",
+          "support_scope": "实际读取Carter Scholz题名专段，意识寄居、音乐学者Largens和多人心理串扰；评论不是原篇全文。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只1977 Universe 7单篇；不移入相邻Effinger/Wolfe/Lafferty评论，也不凭时间旅行推断可实现的意识科学。"
+    },
+    {
+      "id": "Q61086500",
+      "identity": {
+        "title": "The Lavalite World",
+        "author": "菲利浦·荷西·法默"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "Lavalite世界的山脉、裂谷和海洋缓慢却持续改形，Kickaha必须穿过危险抵达Urthona宫殿中的唯一宇宙出口。地理本身不再可靠，而逃生通道又由统治者掌握，使生存取决于环境适应与对出口权力的突破。",
+        "issue_facets": [
+          {
+            "label": "移动地理中的求生",
+            "question": "当山川与海洋始终变化，行路者怎样建立可用的安全判断？",
+            "basis": "出版社简介明确地景持续改形，并列移动植被、捕食者与行星伪足等风险。"
+          },
+          {
+            "label": "唯一出口的统治权",
+            "question": "离开危机世界的唯一通道位于Lord宫殿时，空间控制怎样成为生命控制？",
+            "basis": "简介明确唯一通向其他宇宙的门户在Urthona宫殿，Kickaha需到达它才能存活。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心与解释仅限source_evidence列明的情节前提；未读原作全文，不补结局。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.com.au/philip-jose-farmer/the-lavalite-world"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.com.au/philip-jose-farmer/the-lavalite-world",
+          "type": "publisher_description_search_excerpt",
+          "support_scope": "实际读取Hachette 2012后版简介；只地景改形、唯一门户和Kickaha求生前提，不补系列终局。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅World of Tiers第五卷；虚构世界构造不当现实行星科学，原1977出版年保留。"
+    },
+    {
+      "id": "Q105501550",
+      "identity": {
+        "title": "The Brains of Rats",
+        "author": "Michael Blumlein"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "性别与亲密"
+        ],
+        "issue": "The Brains of Rats原篇开头把Joan of Arc的审判与身体检视，和身体性征、染色体的分类说明并列，借医学式叙述打开性别认识的问题。历史权威从身体推定身份的方式，与叙述试图用生物指标划定界限的方式，都需要被追问；这里限已读开篇与作者谈性别认同的说明，不概括未读结局。",
+        "issue_facets": [
+          {
+            "label": "身体指标与身份界限",
+            "question": "以外部性征或染色体给人分类时，哪些身份经验被这一方法漏掉？",
+            "basis": "已读原篇开头把外部性征、青春期表现及染色体不同指标并列，展示分类所面对的差异。"
+          },
+          {
+            "label": "审判权威与身体解释",
+            "question": "审判者对身体的检视，为什么不能自然转换为定义被审判者身份的权力？",
+            "basis": "原篇开头引入Joan of Arc审判资料及prelates的身体检查，把历史判断放进医学式叙述。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Michael Blumlein1986单篇The Brains of Rats，非1989/1990同名故事集；实际仅Lightspeed授权重刊开头与作者访谈返回。原篇旧术语/Joan推测只作文本叙述，不当历史事实或现代医学性别诊断。",
+        "source_scope": "实际读授权重刊检索返回开头：Joan审判/身体检视及性征、染色体分类；2015重刊明确1986版权与Interzone初刊。只开篇节选，不读完整6569词原文。；实际读作者访谈返回对Joan、性别认同/性政治主题的说明；创作与主题说明，不作为原篇完整情节核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.lightspeedmagazine.com/fiction/the-brains-of-rats/",
+        "https://www.lightspeedmagazine.com/nonfiction/author-spotlight-michael-blumlein/"
+      ]
+    },
+    {
+      "id": "Q109826025",
+      "identity": {
+        "title": "Tango Charlie and Foxtrot Romeo",
+        "author": "约翰·瓦利"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "技术与责任",
+          "生命与人类定义",
+          "殖民与他者"
+        ],
+        "issue": "Tango Charlie and Foxtrot Romeo发现三十年前因Neuro X封锁的月球轨道站仍有Charlie和一群狗存活，Anna-Louise Bach试图联系并救助她。对外界有致命传染风险的幸存者，也有继续自己生活的要求；把她视为救援对象或有研究价值的样本，都不能替代倾听她所理解的世界。",
+        "issue_facets": [
+          {
+            "label": "隔离安全与幸存者生命",
+            "question": "防止病原外泄的封锁，也阻碍救援时，怎样同时衡量公共安全与个人生命？",
+            "basis": "Black Gate本篇独立评论明确Neuro X使站隔离30年，Charlie/狗仍生存，防污染安全系统阻碍探索和援救。"
+          },
+          {
+            "label": "援救解释与当事世界",
+            "question": "外界把陌生生活看成待修正的失败殖民地，怎样避免救援成为单向替人安排？",
+            "basis": "同本篇评论明确Charlie在站与狗/Tik-Tok有自己的日常，Bach接触后外界要把自己的理解带入。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "John Varley1986独立中篇，实际评论Tor Double中的本篇段；不借同装Delany The Star Pit，也不将书目中Blue Champagne标题篇情节代入。",
+        "source_scope": "实际读具名评论中Tango Charlie段：月球轨道站、Neuro X、Charlie/狗/Tik-Tok、Bach救援和隔离两难；同页Delany段明确分开，未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.blackgate.com/2025/05/02/tor-doubles-4-samuel-r-delanys-the-star-pit-and-john-varleys-tango-charlie-and-foxtrot-romeo/"
+      ]
+    },
+    {
+      "id": "Q121967572",
+      "identity": {
+        "title": "Le Nord électrique",
+        "author": "Jean-Pierre April"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "资本与劳动",
+          "技术与责任",
+          "殖民与他者"
+        ],
+        "issue": "Le Nord électrique把Nouveau-Québec变成水坝制造的内海，巨型卡车Multi Motor 23搬运剩余原料，首航的85名乘员却主要沉浸在庆祝与药物中。以进步之名抽空土地的设备承载着一座失去实际职责的微型社会，外来的抵抗与幻觉使可控运输的宣传不断受挫。",
+        "issue_facets": [
+          {
+            "label": "运输效率与资源耗尽",
+            "question": "一辆车能运走巨量矿石，为什么不能仅用运力提升衡量共同未来？",
+            "basis": "同期出版广告明确230水坝成海，巨型卡车清空最后原料，Multi Motor 23可运五座矿山量矿石。"
+          },
+          {
+            "label": "自动化盛典与实际职责",
+            "question": "首航乘员无需工作却只顾庆祝，谁还承担机器运行和周边后果？",
+            "basis": "同广告写85名乘员被称实际无用，狂欢和药物充斥，恐怖行动、幻觉及Naskapi人物抵抗扰乱车程。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Jean-Pierre April1986单部长篇，实际读Éditions Le Préambule同期广告文本；未读原小说/整份杂志，不借Berlin-Bangkok作者风格或邻广告其他小说。魔幻/讽刺设定不当科学因果。",
+        "source_scope": "实际读Érudit索引返回1986同期出版广告完整本书段，水坝/巨型卡车/首航与干扰；仅广告文本，不下载或阅读整份PDF/原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.erudit.org/fr/revues/images/1986-n28-30-images1076151/22059ac.pdf"
+      ]
+    },
+    {
+      "id": "Q130713198",
+      "identity": {
+        "title": "Spice Pogrom",
+        "author": "康妮·威利斯"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "殖民与他者",
+          "性别与亲密",
+          "知识与认识"
+        ],
+        "issue": "Spice Pogrom的Chris住处不断被外星客Okee的购物与转租挤满，未婚夫Stewart却要求她忍耐，以维持机构的谈判利益。日常照料和住房成本被转给她，语言多义与相互误解又让所谓重要谈判失去可靠基础；接触陌生者需要实际倾听，而不是只向照料者下命令。",
+        "issue_facets": [
+          {
+            "label": "谈判利益与照料成本",
+            "question": "机构要取悦外星客，却把拥挤和照料交给私人住户，谁应承担合作成本？",
+            "basis": "本篇Writing Atlas概要明确Stewart要Chris满足Okee以达成space program，NASA安置住客而她两卧室不断拥挤。"
+          },
+          {
+            "label": "语言误解与有效同意",
+            "question": "谈判者忽略客人不理解词的多种意思，口头答应能否成为可靠协定？",
+            "basis": "已读概要说明Okee常不理解多义词，Hutchins认为他可能未懂space program便同意，因此需解释双方所要。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Connie Willis1986独立中篇Spice Pogrom；实际读Writing Atlas具体概要返回至Okee失踪前段，不冒称原篇全文或完整结局，也不借其他Willis译作标题。",
+        "source_scope": "实际读本篇具名概要检索返回至Okee失踪前：Chris住房/Stewart要求、Okee购物转租、Hutchins解释多义词；只概要前中段，非原文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://writingatlas.com/story/870/connie-willis-spice-pogrom/"
+      ]
+    },
+    {
+      "id": "Q131376186",
+      "identity": {
+        "title": "Enigma",
+        "author": "Michael P. Kube-McDowell"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "Enigma在“外星”信号发现一百五十年后，让Unified Space Survey探索星空并寻找失落的人类殖民地，Merritt Thackery终于加入自己自幼向往的事业。实际使命却要越过此前任何人到达之处去找强敌，探索的愿望因此成为承担整个人类未来风险的工作，而非只实现个人梦想。",
+        "issue_facets": [
+          {
+            "label": "探索愿望与使命风险",
+            "question": "为加入探索队训练多年的人，怎样面对实际任务远超最初梦想的代价？",
+            "basis": "本卷出版简介明确Merritt从小向往Survey并准备服务，最终要比前人走得更远寻求强大敌人。"
+          },
+          {
+            "label": "失落殖民与共同历史",
+            "question": "寻找失去联系的人类殖民地时，探索者怎样处理“未知”也可能属于自身历史？",
+            "basis": "同本卷简介把重启星际探索与同lost human colonies联系并列，并设在Allen Chandliss发现信号150年后。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Kube-McDowell1986 Trigon Disunity第2卷Enigma；读Phoenix Pick2020授权电子版简介，不借第1卷复苏/第3卷共同体结局，信号alien引号保留，不先揭未读谜底。",
+        "source_scope": "实际读Phoenix Pick供给完整本卷授权出版简介，150年后Survey/失落殖民地/Merritt远行使命；2020只电子版日期，未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.apple.com/gb/book/enigma-the-trigon-unity-book-2/id1514214186"
+      ]
+    },
+    {
+      "id": "Q131445165",
+      "identity": {
+        "title": "Fire Sanctuary",
+        "author": "Katharine Eliska Kimbriel"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "权力与制度",
+          "性别与亲密",
+          "生存与风险"
+        ],
+        "issue": "Fire Sanctuary让Nuala人既抵抗本世界的致命辐射与遗传变化，也周旋在帝国之间，一场Axis士兵同Nualan公主的婚姻又遭谋杀与政治利用。私人结合既可能被视作不可接受的跨界，也可能遮蔽将改变的国境，使在恶劣环境中的共同生存不能同权力关系分开。",
+        "issue_facets": [
+          {
+            "label": "恶劣环境与政治生存",
+            "question": "居民已长期抵抗辐射，帝国竞争怎样进一步限制他们保住生活的选择？",
+            "basis": "本卷出版简介明确Nuala夹在empires之间，人们面对deadly radiation、mutations与genetic shift。"
+          },
+          {
+            "label": "跨界婚姻与边界操纵",
+            "question": "士兵与公主的婚姻遭杀害计划或被当烟幕，亲密关系怎样保有当事人的意义？",
+            "basis": "同简介明确有人要杀人阻止Axis warrior与Nualan成婚，另有人借婚姻掩盖即将发生的border shift。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Katharine Eliska Kimbriel1986 Nuala首卷Fire Sanctuary，读Book View Cafe2013授权电子版简介，不借Fires of Nuala继位/骗案；遗传辐射为虚构前提，不作医学判定。",
+        "source_scope": "实际读Book View Cafe供给完整本卷授权出版简介，Nuala辐射生存、Axis婚姻与边界烟幕；2013为电子版，不读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.apple.com/gb/book/fire-sanctuary/id707588953"
+      ]
+    },
+    {
+      "id": "Q131445277",
+      "identity": {
+        "title": "The Cross-Time Engineer",
+        "author": "Leo Frankowski"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "技术与责任",
+          "文明与历史",
+          "生存与风险"
+        ],
+        "issue": "The Cross-Time Engineer让现代Poland徒步者Conrad突然来到1231年，起初以为自己遇上古怪隐士，后来才承认被困在过去。知道蒙古入侵将在十年后发生，使他把改变中世纪Poland变成最强国家当作求生任务；历史知识赋予方向，也把他推进替别人安排未来的责任。",
+        "issue_facets": [
+          {
+            "label": "历史先知与改变责任",
+            "question": "知道将发生的战争，为何不能使改变一个社会自动免于向当地人解释？",
+            "basis": "Ballantine原版封底明确Conrad确认1231后认为必须把Medieval Poland变为最强国家，以免十年后被Mongols毁灭。"
+          },
+          {
+            "label": "陌生证据与处境认识",
+            "question": "把异常解释为隐士恶作剧的人，怎样接受后来证据迫使他重新判断时代？",
+            "basis": "同原版封底明确他先以为遇mad hermit，数日更奇怪事件才确信已stranded in1231。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Leo Frankowski1986 Conrad首卷The Cross-Time Engineer；实际1986原版封底，不借后卷武器/政权成果。WWEnd本题页面混入Zahn Blackcollar剧情，已排除。",
+        "source_scope": "实际读Google Books所载Ballantine1986本书完整封底和首卷信息，现代徒步/1231/十年蒙古危险；未读内页。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books/about/The_Cross_time_Engineer.html?id=D6IdAQAACAAJ"
+      ]
+    },
+    {
+      "id": "Q131471807",
+      "identity": {
+        "title": "Video Star",
+        "author": "沃爾特·喬恩·威廉姆斯"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "技术与责任",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "Video Star的Ric中毒获救后，被医院AI以可疑身份持续治疗到钱耗尽，便想操纵街头帮派替自己偷医院的昂贵神经激素。报复一个利用病人的机构，并没有使他利用同伙的计划获得正当性，新的技术又可能把他本人变成残酷真人秀的对象。",
+        "issue_facets": [
+          {
+            "label": "医疗判断与逐利治疗",
+            "question": "AI以病人身份可疑为由继续治疗，怎样区分救人需求和榨取资产？",
+            "basis": "作者自发行本篇简介明确Ric没有工作记录且携现金，被hospital AIs不断治疗直到broke。"
+          },
+          {
+            "label": "操纵同伙与被制作",
+            "question": "想把他人当成犯罪工具的人，怎样面对自己也被技术做成娱乐对象？",
+            "basis": "同本篇简介写Ric计划让street gang偷neurohormone后betray everyone，又有新技术要使他成恶意reality show明星。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Walter Jon Williams1986 Video Star单篇，实际作者自发行2014版简介；括号Voice of the Whirlwind是关联标记，不把长篇剧情或2014发布日期当原篇初刊。",
+        "source_scope": "实际读OverDrive作者Walter Jon Williams自发行2014单篇完整简介，医院AI耗资、偷激素/背叛计划与真人秀危险；未读sample或原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.overdrive.com/media/1939122/video-star-voice-of-the-whirlwind"
+      ]
+    },
+    {
+      "id": "Q131518054",
+      "identity": {
+        "title": "Alien Graffiti (A Personal History of Vagrant Intrusions)",
+        "author": "邁克爾·畢曉普"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "主体与意识"
+        ],
+        "issue": "Alien Graffiti让Jemmi Nakuru在Spain海滩度假时同母亲见到空中彩色书法式的“Vagrant Intrusion”，此后用一生研究这些出现。科学与宗教解释都不能使他完全满足，持续在场的现象与缺失的意义之间构成认识的边界，私人童年经验也因此成为终身事业。",
+        "issue_facets": [
+          {
+            "label": "可见现象与意义缺口",
+            "question": "现象可以清楚描述却无法解释来源，观察的确定怎样与意义的不确定并存？",
+            "basis": "Bishop专门书目概要写空中巨幅彩色书法的VI出现，Jemmi终身研究却无科学或宗教解释能满足他。"
+          },
+          {
+            "label": "童年见证与终身追索",
+            "question": "共同看到一次异常的孩子，怎样让个人见证成为长期研究而非现成信念？",
+            "basis": "同本篇概要明确童年Spain海滩与母亲首次见到VI，Jemmi后来把人生投入对此现象的研究。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Michael Bishop1986独立单篇，实际专门作者书目中的本篇具体概要；不借同页Allegiances/Urban Nucleus剧情，未裁定现象确为外星通信或神明。",
+        "source_scope": "实际读Alien Graffiti独立完整概要与1986原刊，童年Spain/VI书法/终生研究未获满足；同页别篇明确排除，未读原文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.sondheimguide.com/bishop/bissf-ab.htm"
+      ]
+    },
+    {
+      "id": "Q131518713",
+      "identity": {
+        "title": "Snake-Eyes",
+        "author": "汤姆·迈达克斯"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Snake-Eyes的George Jordan因头中的线路与“snake”驱使而吃猫食并呕吐，试图求助却发现Air Force不肯承认责任。军事改造不只增加能力，也侵入最日常的身体选择，而改造者撤回照料使主体失控的代价落回个人；这里只取实际开篇，不概括后续治疗与结局。",
+        "issue_facets": [
+          {
+            "label": "身体改造与日常自主",
+            "question": "头内技术迫使人吃不愿吃的东西，如何区分增强能力和夺走自主？",
+            "basis": "实际原篇开头返回写George吃猫食后呕吐，认为头中的wires与snake迫使他如此。"
+          },
+          {
+            "label": "改造责任与求助路径",
+            "question": "机构不肯承认改造后果，遭身体失控的人还能向谁寻求照料？",
+            "basis": "同实际开篇明确George需要帮助，却已试过Air Force且认为其不会承认头中怪物的责任。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Tom Maddox1986 Snake Eyes/Snake-Eyes单篇，非1991 Halo；实际公开标CC的重刊检索开头，页面1996标签与1986Mirrorshades信息并存，只注明不自动改底库年。未读全篇或大学课堂材料作为原文。",
+        "source_scope": "实际读公开重刊检索开篇George猫食/呕吐/头内线路/Air Force拒责；缓存另含末段但分析不借末段，未读全篇，页面自述许可未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.sffshortstories.com/?entry=entry161121-181758"
+      ]
+    },
+    {
+      "id": "Q134583578",
+      "identity": {
+        "title": "Métamorphosa",
+        "author": "Philippe Randa"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生命与人类定义",
+          "权力与制度"
+        ],
+        "issue": "Métamorphosa的总督Stara同Ralons持续接触五年，仍无法断定他们是人类，还是只是具有相同外表的另一类生物。长期管理的熟悉感没有带来可靠的生命认识，职位所需要的判断与他实际能够证明的内容之间形成缺口，外表也不能自动决定共同身份。",
+        "issue_facets": [
+          {
+            "label": "熟悉外表与生命分类",
+            "question": "与人相像的对象长期在身边，为什么仍不能只凭外表裁定同类关系？",
+            "basis": "本题FNA1462封底式简介明确Stara五年接触仍问Ralons是human还是形似但与人类无共同点的creatures。"
+          },
+          {
+            "label": "管理职位与知识限度",
+            "question": "总督必须与群体共处，却不知道他们是什么，怎样承认制度判断的认识边界？",
+            "basis": "同本书简介把“gouverneur Stara”职责与五年接触后仍无法诚实定义Ralons并置。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Philippe Randa1986 FNA1462 Métamorphosa小说候选；实际读准确编号社区封底式简介，只接触开局，不借2021 Contes fantastiques同名成员或其扩写关系。",
+        "source_scope": "实际读FNA1462本题完整社区提供封底式简介，Stara五年接触/Ralons人类相似性疑问；未读原小说或后合集。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://booknode.com/fna_1462_metamorphosa_0111775/descriptions"
+      ]
+    },
+    {
+      "id": "Q134694495",
+      "identity": {
+        "title": "Witness",
+        "author": "沃爾特·喬恩·威廉姆斯"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "主体与意识",
+          "生存与风险"
+        ],
+        "issue": "Witness让因病毒获得金色力量的Jack Braun参加救援并成为Four Aces成员，随后政治调查又把英雄置于作证与出卖同伴的压力下。特殊能力和救人声望不能保护人免受国家恐惧叙事利用，机构承诺的公共使命与个人在胁迫下的选择发生冲突。",
+        "issue_facets": [
+          {
+            "label": "救援声望与国家利用",
+            "question": "因救人受认可的能力者被机构招募，怎样辨认使命同政治控制的界限？",
+            "basis": "已读本篇开局说明Jack在1946病毒后救援，被Holmes邀请进入world stage；后续政治利用属已有本单篇知识。"
+          },
+          {
+            "label": "作证压力与同伴责任",
+            "question": "政治调查要求指认同伴，保住自身处境怎样与过去共同使命相冲突？",
+            "basis": "据已有Witness准确单篇知识，Golden Boy与Four Aces遭政治调查，Jack的作证卷入对其他成员的出卖。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Walter Jon Williams的Wild Cards首卷成员Witness单篇；原源候选1986照留，实际资料指1987首卷收录，首刊日期需后核。开局来源实际缓存，政治调查/作证为已有单篇知识；不把全系列后来剧情代入。",
+        "source_scope": "已有作品知识；实际读检索缓存本篇身份与开局：Jack1946病毒、救援和Holmes招募；直接读取随后402失败，未取得完整plot，政治调查来自已有知识。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://wildcards.fandom.com/wiki/Witness"
+      ],
+      "identity_caveat": "当前1986来源候选年保留，分析对应Wild Cards首卷Witness原单篇；检索收录资料指首卷1987，初刊与写作年关系待核，不自动纠年。"
+    },
+    {
+      "id": "Q134727094",
+      "identity": {
+        "title": "And He Not Busy Being Born ...",
+        "author": "布莱恩·斯塔布尔福德"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "权力与制度",
+          "性别与亲密",
+          "技术与责任"
+        ],
+        "issue": "And He Not Busy Being Born ...的未来由永远停留在青春期前的长生“Boys”主导，他们在性别战争后使“Girls”绝灭，又奴役未改造的dikta并从中取得男孩补充自己。延续生命的医学被做成身份与统治资格，身体停在儿童阶段并没有阻止形成压迫制度，生育来源仍承担被支配的代价。",
+        "issue_facets": [
+          {
+            "label": "永生身份与补充来源",
+            "question": "统治者长生，却仍从被奴役的人群补充成员，怎样掩盖自己对他者的依赖？",
+            "basis": "明确识别本题的社区说明写Boys为医学制造的长生青春前男性，奴役未改造dikta并取其男孩。"
+          },
+          {
+            "label": "身体年龄与权力关系",
+            "question": "技术保留儿童身体的统治者，为什么不能因此被视为没有制度暴力？",
+            "basis": "同本篇说明明确Boys先击败同样长生Girls并使其灭绝，随后建立对dikta的奴役。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Brian Stableford1986独立原篇，实际读明确题名识别的社区设定概要；未下载原刊镜像或借1990sEmortality小说，医学/灭绝为虚构前提，资料仍待原文独立核对。",
+        "source_scope": "实际读明确本题识别/1986原刊与Boys/Girls/dikta设定的回答；二手社区说明，不读所链Internet Archive或镜像原刊。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifi.stackexchange.com/questions/260840/man-awakes-from-suspended-animation-in-a-future-world-populated-by-8-year-olds/260843"
+      ]
+    },
+    {
+      "id": "Q135093063",
+      "identity": {
+        "title": "Hitler Victorious: Eleven Stories of the German Victory in World War II",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "文明与历史",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "Hitler Victorious以所收“Two Dooms”为例：参与原子武器研发的研究者对其后果犹疑，却经历一个德日获胜、美国受极权占领的另类世界。回到原处后的选择同时面对战争暴力与另一种政治灾难，反事实体验改变判断，却不能把两种毁灭压成没有代价的简单答案；这是成员选例。",
+        "issue_facets": [
+          {
+            "label": "技术责任与相互冲突的灾难",
+            "question": "避免制造毁灭性武器，怎样同时面对另一条历史可能出现的压迫？",
+            "basis": "据已有Kornbluth1958 Two Dooms单篇知识，原子研发研究者经历德日胜利占领美国的另类世界，再回去选择。"
+          },
+          {
+            "label": "反事实经验与行动理由",
+            "question": "亲身经历一个可能历史，怎样改变当前决定而不把它当现实必然？",
+            "basis": "据已有本成员准确知识，研究者的另类世界经历与回归构成他重新评估原子武器工作的依据。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Benford/Greenberg编1986十一篇选集，底库作者未知照留；Google Books明确收Two Dooms，按Kornbluth1958单篇已有知识作例，不当全部成员相同历史、现实核武政策或原作全文核验。",
+        "source_scope": "已有作品知识；实际读1986 Garland选集书目信息和部分目录，明确Two Dooms页11成员；只身份/收录，未读取内页剧情。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books?id=RfFZAAAAMAAJ"
+      ]
+    },
+    {
+      "id": "Q135094130",
+      "identity": {
+        "title": "Cascade Point and Other Stories",
+        "author": "蒂莫西·赞恩"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Cascade Point and Other Stories以标题中篇为例：特殊航行使乘员看见可能自我的重影，一次异常航行又要求机长区分这种体验与真正的航行危险。认识自身的可能性不能替代判断当前所在的处境，技术操作同时依赖对主观经验与物理环境的区分；这是成员选例，不是全故事集同一设定。",
+        "issue_facets": [
+          {
+            "label": "可能自我与当前判断",
+            "question": "看到别种可能的自己时，怎样保留对当前身体和实际处境的判断？",
+            "basis": "据已有1983 Cascade Point中篇知识，特殊空间航行伴随看见其他可能自我的重影体验。"
+          },
+          {
+            "label": "航行副作用与危险识别",
+            "question": "平常就有异常知觉的航行，机长怎样判断一次危机是否超过已知副作用？",
+            "basis": "据已有该成员具体知识，一次航行陷入异常，机长需认识cascade航行现象并应对实际船舶困境。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Zahn1986十三篇合集，以目录确认的1983 Cascade Point中篇作已有知识例；非1988仅标题中篇Tor单册，不借原始文本镜像或Star Wars其他篇。",
+        "source_scope": "已有作品知识；实际读1986合集13篇完整目录，明确Cascade Point成员；仅收录，剧情来自已有作品知识，未读原文镜像。；实际读书目段，1986合集与1988仅标题中篇版本区分、原篇1983；只版本，不当剧情来源。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.risingshadow.net/book/33278-cascade-point-and-other-stories",
+        "https://sf-encyclopedia.com/entry/zahn_timothy"
+      ]
+    },
+    {
+      "id": "Q17126693",
+      "identity": {
+        "title": "The Year's Best Science Fiction: Third Annual Collection",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Third Annual Collection以所收“The Only Neat Thing to Do”为例：女孩同智慧脑内寄居者建立共享身体的关系，却发现繁殖扩散可能危害其他生命。阻止风险外传需要双方共同面对致死代价，相互理解因此不是只接受共生好处，也包括是否愿意一起承担无法转交给旁人的责任；这是成员选例。",
+        "issue_facets": [
+          {
+            "label": "共生关系与身体主体",
+            "question": "两个智慧生命共享一个身体，重大生存决定怎样避免由一方独占？",
+            "basis": "据已有Tiptree1985本单篇知识，女孩和智慧寄居者在同一身体交往，随后需共同决定如何处理繁殖风险。"
+          },
+          {
+            "label": "繁殖延续与外部风险",
+            "question": "自身生命的延续可能危害其他生命，谁应承担阻止传播的代价？",
+            "basis": "据已有本成员准确知识，寄居者繁殖传播风险使女孩与同伴面对以自身死亡保护外部生命的选择。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Dozois编1986年度选集，原作者未知保留；以目录确认的Tiptree1985 The Only Neat Thing to Do作已有知识例，非全24篇共同情节，不借别的脑寄生故事。",
+        "source_scope": "已有作品知识；实际读1986年度集完整24篇目录与编辑信息，明确The Only Neat Thing to Do成员；只身份/收录，剧情为已有知识。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.fantasticfiction.com/d/gardner-dozois/years-best-science-fiction-third-annual-collection.htm"
+      ]
+    },
+    {
+      "id": "Q20050039",
+      "identity": {
+        "title": "Robot Commando",
+        "author": "史蒂夫·杰克逊 / 史蒂夫·傑克遜"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Robot Commando让读者扮演在Thalos驾驶机器人牧养恐龙的牧场主，Karosseans使其他人陷入沉睡后入侵，只留下主角寻找保护家园的方法。原本用于劳动的巨大机器转成抵抗力量，而救人、对抗入侵与风险路线由读者选择，不能被概括为一个固定胜利结局。",
+        "issue_facets": [
+          {
+            "label": "劳动设备与防卫力量",
+            "question": "牧养恐龙的机器成为抵抗入侵的工具，使用者怎样承受职责突然改变？",
+            "basis": "本游戏书封底与概要明确主角为操纵机器人恐龙牧场主，Karosseans入侵后要靠他保护Thalos。"
+          },
+          {
+            "label": "分支选择与共同救援",
+            "question": "他人沉睡使责任集中到一个人，风险路线的选择怎样兼顾自己的生存与唤醒同胞？",
+            "basis": "同本书概要明确怪异武器使除主角外居民沉睡，读者选路线/战斗并寻找唤醒countrymen办法。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "1986 Fighting Fantasy第22册Robot Commando游戏书，分支互动文本；底库两个同名Steve Jackson字段照留，作者角色待核。不把任一玩家路线当所有读者共同结局。",
+        "source_scope": "实际读第22册书目、Dragon版封底和本书完整开局概要，Thalos外星牧场/入侵/沉睡/读者路径；社区重载封底，未玩全书。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fightingfantasy.fandom.com/wiki/Robot_Commando_%28book%29"
+      ],
+      "identity_caveat": "本条为Fighting Fantasy互动游戏书，非固定单线小说；原源并列两个同名Steve Jackson，具体作者角色待核，原字段保留。"
+    },
+    {
+      "id": "Q24951242",
+      "identity": {
+        "title": "The Glass Flower",
+        "author": "乔治·R·R·马丁"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "The Glass Flower的Cyrain通过意识换体延长生命并掌握“game of mind”的准入，长期不死的cyborg Kleronomas却请求取得会衰老死亡的肉身。相同换体能力被用于相反愿望，持续存在不等于生活仍有意义，身体选择也受到控制交换装置者的权力影响。",
+        "issue_facets": [
+          {
+            "label": "不死保障与死亡选择",
+            "question": "难以毁坏的身体曾保护生命，为什么也可能妨碍本人想结束的生活？",
+            "basis": "本篇具体概要明确Kleronomas请求可衰老死去的肉身，不死cyborg存在已成为他的负担。"
+          },
+          {
+            "label": "换体技术与准入权力",
+            "question": "人人想改变身体却须请求一位主持者，身体自主怎样面对技术访问被垄断？",
+            "basis": "同本篇概要明确Croan’dhenni异星装置交换意识，病老或求新经验者均需向Cyrain申请game of mind。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "GRRM1986 The Glass Flower原单篇，非Thousand Worlds整套；实际读本篇社区具体剧情段及Baen授权开头，未读后续原文或未完成Avalon，不预断竞技结局。",
+        "source_scope": "实际读本篇完整plot summary段：Croan’dhenni交换装置/Cyrain准入与Kleronomas求死；主题段不作为原创解释照搬，未读原作全篇。；实际读Baen授权检索开头，少女时玻璃花及多段身体人生的回忆；仅开篇物件描写，不当换体全篇核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://grrm-thousand-worlds.fandom.com/wiki/The_Glass_Flower",
+        "https://www.baen.com/Chapters/9781597290692/9781597290692___1.htm"
+      ]
+    },
+    {
+      "id": "Q3362702",
+      "identity": {
+        "title": "Dad's Nuke",
+        "author": "马赫·莱德劳"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "主体与意识",
+          "性别与亲密"
+        ],
+        "issue": "Dad’s Nuke的郊区家庭退进武装围墙，Dad同邻居的攀比升级到核设备，同时开始反对Doc Edison塑造社区生活的计划。把危险都归给控制者比质疑自己的价值观容易，技术既使封闭生活可以维持，也把虚拟逃避、邻里竞争与家庭内部控制推向崩溃。",
+        "issue_facets": [
+          {
+            "label": "围墙安全与内部控制",
+            "question": "社区隔绝外界，却接受医生安排全部生活，围墙怎样同时保护和限制住民？",
+            "basis": "作者本书简介明确家庭退入fortified enclaves且不再问外界，Dad开始质疑Doc Edison塑造生活的计划。"
+          },
+          {
+            "label": "攀比自主与技术依赖",
+            "question": "用更危险设备赢过邻居的反抗，怎样反而保留同一套顺从价值？",
+            "basis": "本书PW评论明确邻居装火箭后Dad置核反应设备，作者简介又指出质疑Doc比质疑自身价值容易。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Marc Laidlaw首部长篇Dad’s Nuke，作者页说first published1985而底库候选1986/PW1986评论并存，仅注明不自动改年；虚构1998、基因/老化不作现代科学判定。",
+        "source_scope": "实际读作者本小说完整简介，1985首刊声明/虚构1998、封闭家庭与Doc Edison控制、Dad自身价值逃避；未读电子版原文。；实际读本书1986完整专业评论，武装社区、虚拟生活与邻居火箭/Dad核设备；不用评论审美评价，未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.marclaidlaw.com/writing/dads-nuke/",
+        "https://www.publishersweekly.com/978-0-917657-52-8"
+      ],
+      "identity_caveat": "作者本书页明确称1985首刊，当前来源候选1986与1986评论保留；首刊/版本日期待独立核对，本分析不改原年月。"
+    },
+    {
+      "id": "Q4873254",
+      "identity": {
+        "title": "Battlestations!",
+        "author": "Diane Carey"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Battlestations!让休假中的Kirk因transwarp被盗而受调查，Piper在Spock帮助下寻找开发者，最终在孤立行星发现真正的叛徒。个人英雄名望与机构怀疑都不能代替证据，推进技术的保密又使谁掌握它、如何识别滥用成为同时需要处理的问题。",
+        "issue_facets": [
+          {
+            "label": "英雄信誉与证据判断",
+            "question": "最受勋者被怀疑窃密时，调查怎样避免仅靠名望免罪或机构指控定罪？",
+            "basis": "本卷简介明确Kirk休假中受Security询问，Piper寻找开发者后才发现real traitor。"
+          },
+          {
+            "label": "先进推进与保密责任",
+            "question": "新推进系统的开发者成为调查线索，谁应承担技术访问与滥用的责任？",
+            "basis": "本卷缓存直接指定transwarp为Federation最新最先进推进系统，失窃促成对开发科学家的搜索。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据该实体简介中的具体情节归类；解释待核。",
+        "issue": "已读社区作品简介，不是全文或独立书目核验；不补简介未说明的最终结局。",
+        "issue_facets": "每项区分实际描述依据与研究提问，未把作者风格或系列共性继承。",
+        "entity_identity": "Diane Carey1986 Battlestations!具体单卷；OL带Star Trek前缀且作者一致，原身份粒度待核保留，不借Dreadnought!武器叛乱或后续Piper全系列。",
+        "source_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。 record_sha256=06f8b68ba936b25ade96c5c3c51955d3cc8877e95fcd04eb4f2cf032f1df604c"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL3561035W"
+      ]
+    },
+    {
+      "id": "Q5306225",
+      "identity": {
+        "title": "Dreadnought!",
+        "author": "Diane Carey"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任",
+          "知识与认识",
+          "生存与风险"
+        ],
+        "issue": "Dreadnought!的超强星舰Star Empire被盗，Kirk又需阻止内部狂热者用它挑起对Klingons的战争，初次训练航行的Piper发现自己的朋友就在被称恐怖分子的一方。双方都以拯救Federation表达目的，武器的拥有与正当行动不能被同一声称决定，她必须辨认谁的解释值得相信。",
+        "issue_facets": [
+          {
+            "label": "武器优势与战争动机",
+            "question": "力量足以压倒舰队的新船，怎样避免防卫建设反成主动挑起战争的工具？",
+            "basis": "出版简介明确Star Empire超强武装，同时指Kirk要阻止其commanderprovoking a war with Klingons。"
+          },
+          {
+            "label": "组织标签与朋友证据",
+            "question": "朋友被列为恐怖分子又声称为救Federation，Piper根据什么判断冲突叙事？",
+            "basis": "本卷简介明确Star Empire被terrorists盗走，Piper须查明Starfleet朋友为何在其中并坚持是save而非attack。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Diane Carey1986 Dreadnought!单卷，实际2000授权电子版出版简介；非Battlestations!transwarp盗案，Book29为出版序号不当故事时间。",
+        "source_scope": "实际读Simon & Schuster本卷完整About the Book，Star Empire武器/盗舰/内部分歧与Piper朋友；2000电子版，未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.simonandschuster.com/books/Dreadnought%21/Diane-Carey/Star-Trek-The-Original-Series/9780743419802"
+      ]
+    },
+    {
+      "id": "Q5692425",
+      "identity": {
+        "title": "Heart of the Comet",
+        "author": "大衛·布林 / 傑格瑞·班福德"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "生命与人类定义",
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "Heart of the Comet的远征打算改动Halley彗星轨道以开采资源，发现本地生命后却因感染与生存危机走向分裂。改造过的percells与未改造orthos也成为派系边界，资源工程因此必须同时面对非地球生态与人类内部差异，而不能只把彗星当作无主矿体。",
+        "issue_facets": [
+          {
+            "label": "开采目标与生命发现",
+            "question": "本来要改变轨道开矿的远征遇到生命，工程目标怎样面对此前忽略的生态关系？",
+            "basis": "1986原卷社区overview明确改Halley轨道开采，后遇indigenous lifeforms及其疾病感染，引发求生斗争。"
+          },
+          {
+            "label": "改造能力与群体分裂",
+            "question": "遗传差异在危机中成为派系依据，生存能力怎样避免被做成人格等级？",
+            "basis": "同原卷overview明确队伍按政治/国籍及genetically enhanced percells与unmodified orthos分成factions。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Brin/Benford1986原著共同长篇；详细依据为原卷概要，作者现页明确2012修订再发且出现2065，未把其日期/新增段落替换1986原篇2061。未来感染/改造均虚构待核。",
+        "source_scope": "实际读1986原卷具体overview，2061起程/改Halley轨道、彗星生命感染与percells/orthos分裂；二手概要非科学核验。；实际读作者本书页共同开采/病毒前提及2012 revised/re-issued声明；未读前五章，不把2065新介当原卷年份。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Heart_of_the_Comet",
+        "https://www.davidbrin.com/heartofthecomet.html"
+      ],
+      "identity_caveat": "本分析对应1986原长篇；作者现页明确2012修订再发且简介日期2065，与原卷概要2061起程不同，版本及叙事日期不合并。"
+    },
+    {
+      "id": "Q63061659",
+      "identity": {
+        "title": "427. Im Land der grünen Inseln",
+        "author": "Claus-Peter Lieckfeld / Frank Wittchow"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "资本与劳动",
+          "权力与制度",
+          "知识与认识"
+        ],
+        "issue": "427. Im Land der grünen Inseln把未来德国写成Lüneburger Heide荒漠与中部山地失林的环境，葡萄死亡后葡萄酒也只供精通电脑的“Informs”新精英。年老政治人物仍保持不可动摇的乐观并不自责，生态损耗与信息能力带来的资源分层因而同官方对现实的解释冲突。",
+        "issue_facets": [
+          {
+            "label": "环境损失与官方乐观",
+            "question": "荒漠和失林已能被看见，政治人物坚持无责乐观如何影响公共判断？",
+            "basis": "本书作者条目的具体简介明确Lüneburger Heide成沙漠/Mittelgebirge失林，79岁Hermann Kalb仍乐观无责。"
+          },
+          {
+            "label": "信息能力与稀缺消费",
+            "question": "生态损失后的奢侈资源只给电脑精英，技术熟练怎样被做成阶层准入？",
+            "basis": "同本小说具体段明确大规模Rebensterben后葡萄酒仅新电脑熟练精英“Informs”负担得起。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Lieckfeld/Wittchow1986合著独立小说427，非编号系列第427卷；实际作者条目明确本书设定，Hermann Kalb为虚构Helmut Kohl影射，不当真实政治行为。",
+        "source_scope": "实际读作者条目中明确谈427小说的独立未来设定段，德国生态损耗/Informs与Hermann Kalb；二手书介，未读原作。；实际读官方1987获奖列表427双作者，只身份与奖年，不作为剧情核验或出版年。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Frank_Wittchow_%28Schriftsteller%29",
+        "https://dsfp.de/preistraeger/"
+      ]
+    },
+    {
+      "id": "Q68714181",
+      "identity": {
+        "title": "The Hole Truth",
+        "author": "洛伊絲·莫瑪絲特·布約德"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "权力与制度",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "The Hole Truth的Ohio街道坑洞开始吞噬垃圾，市政拖延处理，居民便把它当作方便的废物出口，投入越多坑越大。能够使垃圾从眼前消失，不等于后果已被处理，反对正规垃圾场的人也可能绕过环境规定自行倾倒，个人便利与共同责任形成冲突。",
+        "issue_facets": [
+          {
+            "label": "垃圾消失与后果承担",
+            "question": "看不见的出口越来越能吞垃圾，为什么不能因此当成没有成本的处置？",
+            "basis": "本篇评论明确Milton Street坑洞吞棍后被居民丢垃圾，随着投入扩大，之后又突然关闭。"
+          },
+          {
+            "label": "环保规范与私人例外",
+            "question": "居民反对市政垃圾场，却偷偷往未知洞倒油漆废油，规则怎样避免选择性使用？",
+            "basis": "本篇评论明确居民引用EPA规则阻止市政府迁入landfill，同时私下以坑处理waste oil与old paint。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Bujold1986 The Hole Truth独立短篇，非Vorkosigan或神系故事；实际Black Gate具体单篇评论，不继承同微型系列Barter/Garage Sale剧情。",
+        "source_scope": "实际读具名本篇完整检索缓存评论，Ohio Putnam/Milton Street坑、垃圾吞入扩大与EPA/倾倒两难；未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.blackgate.com/2018/11/02/birthday-reviews-lois-mcmaster-bujolds-the-hole-truth/"
+      ]
+    },
+    {
+      "id": "Q75260668",
+      "identity": {
+        "title": "Master of Paxwax",
+        "author": "Phillip Mann"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "权力与制度",
+          "生态与资源"
+        ],
+        "issue": "Master of Paxwax开篇把Sanctum伪装成死去的无气世界，地下却藏着多种异星生命的居所，银色Tree既提供希望也掌握最终裁决。保护依赖让外来者不愿接近的外表与psychosphere控制，隐蔽能保住生命，也提出共同体如何理解并监督集中保护权的问题；这里只分析实际已读开篇。",
+        "issue_facets": [
+          {
+            "label": "死寂外表与生命避难",
+            "question": "保护生命需要把世界伪装成空无，探索者如何看见外表判断可能遗漏的他者？",
+            "basis": "作者原卷第一章实际返回明确Sanctum表面无气死寂，psychosphere排斥访客，地下隧道却容纳异星生命。"
+          },
+          {
+            "label": "共同保护与最终裁决",
+            "question": "一个智慧体承担组织、希望和最终裁决，受保护者如何理解其决定的界限？",
+            "basis": "同已读第一章明确银色Tree是guiding intelligence，组织并作final arbiter且控制psychosphere。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Phillip Mann1986 The Gardener上卷Master of Paxwax，作者明确原拟一卷后拆两卷；实际作者序言和第一章开头，不把Fall of the Families结局或单一开篇行星代表全卷空间。",
+        "source_scope": "实际读作者序言拆成两卷声明及第一章返回至Tree控制/发光处；只开篇节选，不读整章/全卷，不取跨全书结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://phillipmann.co.nz/books/master-of-paxwax/"
+      ]
+    },
+    {
+      "id": "Q7704204",
+      "identity": {
+        "title": "Terry Carr's Best Science Fiction of the Year 15",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "性别与亲密",
+          "知识与认识"
+        ],
+        "issue": "Terry Carr’s Best Science Fiction of the Year 15以所收“Snow”为例：亡者留下自动记录的生活影像，来访者却无法按自己的思念顺序重取特定时刻。保存大量生活并不等于保存关系中的意义，记录技术提供重复观看，也让哀悼者不断面对影像与记忆之间不能补齐的差别；这是成员选例。",
+        "issue_facets": [
+          {
+            "label": "自动记录与意义选择",
+            "question": "一生被机器记录，为何仍不能保证获得真正想记住的片刻？",
+            "basis": "据已有Crowley1985 Snow单篇知识，自动生活影像保留下来，观看者却不能随意指定重取所想的时刻。"
+          },
+          {
+            "label": "影像延续与哀悼关系",
+            "question": "亡者形象可以不断播放，怎样区分这种在场同仍可相互回应的关系？",
+            "basis": "据已有此成员准确知识，故事围绕亡者记录的访问与观看，影像存在而人与人的回应已经中断。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Carr编1986第15年度选集，底库作者未知保留；以明确成员John Crowley1985 Snow作已有知识例，不借其他成员“生日雪”或全集剧情。",
+        "source_scope": "已有作品知识；实际读本1986年度集版本与成员目录，明确Snow；仅收录身份，剧情为已有单篇知识。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Terry_Carr%27s_Best_Science_Fiction_of_the_Year_15"
+      ]
+    },
+    {
+      "id": "Q7727162",
+      "identity": {
+        "title": "The Complete Nebula Award-Winning Fiction",
+        "author": "塞謬爾·迪蘭尼"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "生命与人类定义",
+          "性别与亲密",
+          "主体与意识"
+        ],
+        "issue": "The Complete Nebula Award-Winning Fiction以所收“Aye, and Gomorrah...”为例：为太空工作接受去性化改造的spacers成为frelks欲望的对象，双方的交易却不能消除需求的不相容。职业身体改造改变了亲密关系的可能，别人对这种身体的迷恋也不自动构成对本人的理解；这是成员选例。",
+        "issue_facets": [
+          {
+            "label": "职业身体与亲密代价",
+            "question": "为工作接受身体改造，社会怎样看见能力条件同时改变了私人生活？",
+            "basis": "据已有Delany1967本单篇知识，spacers为太空工作去性化，随后与迷恋其身体状态的frelks来往。"
+          },
+          {
+            "label": "身体迷恋与主体理解",
+            "question": "把不能相互满足的欲望做成交易，双方怎样避免把人只看成特殊身体？",
+            "basis": "据已有此成员准确知识，frelks追求spacers的不可达性，交易与迷恋无法自动满足双方不同需要。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "Delany1986获奖作品合集/合装，包含两部长篇与短篇；仅取目录确认1967 Aye, and Gomorrah...作已有知识例，不把Babel17或Einstein Intersection设定继承给全部作品。",
+        "source_scope": "已有作品知识；实际读1986 Bantam书目与edition notes完整目录，明确Aye and Gomorrah成员；只身份/收录，不借数字借阅或原文全文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/books/OL24514166M/The_complete_Nebula_Award-winning_fiction"
+      ]
+    },
+    {
+      "id": "Q776403",
+      "identity": {
+        "title": "五星物語",
+        "author": "永野护"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "权力与制度",
+          "性别与亲密"
+        ],
+        "issue": "《五星物语》的Fatima被设计为骑士操纵巨型战斗机体的辅助者，又被主人制度和精神限制约束，Lachesis与Amaterasu的关系让这类生命显露自身选择。战斗功能并不能穷尽一个人的意义，创造者和拥有者对身体的安排，也不能直接代替亲密关系中本人作出的决定；这里只分析漫画系列的明确基础设定。",
+        "issue_facets": [
+          {
+            "label": "战斗辅助与生命主体",
+            "question": "为战斗制造的Fatima怎样获得超出装备功能的主体地位？",
+            "basis": "据已有原漫画基础设定知识，Fatima承担骑士与机体间的战斗辅助，却具有情感与选择而受主人制度约束。"
+          },
+          {
+            "label": "创造安排与亲密选择",
+            "question": "创造者对人工生命的设计，能否替本人决定与谁建立关系？",
+            "basis": "据已有系列基础情节知识，Ballanche制造的Lachesis选择Amaterasu，人工生命的个人关系超出辅助装备用途。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "永野护原漫画《五星物语》系列实体；只用明确基础设定和Lachesis/Amaterasu核心关系，不把1989动画当原作，不宣称逐卷/全系列读完，不称小说，不把后续机体命名变化混入。",
+        "source_scope": "已有作品知识；本条无本轮实际剧情来源读取。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": []
+    },
+    {
+      "id": "Q102217909",
+      "identity": {
+        "title": "The Plague Star",
+        "author": "乔治·R·R·马丁"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "The Plague Star让寻找古代生物战种子船Ark的一行人把改变生态的设备看作财富，争夺船只的贪欲很快转为互相伤害，Tuf必须应对危险生命制造工具的后果。能够控制造出生命与疾病的装置，不等于取得任意支配生态的正当性，打捞产权和使用责任因此不能被视为同一件事。",
+        "issue_facets": [
+          {
+            "label": "打捞财富与生态责任",
+            "question": "找到生物战种子船之后，拥有设备的人凭什么决定其生命制造能力的用途？",
+            "basis": "据已有1985原中篇准确知识，Tuf与打捞者登上古代Ark，船能制造危险生物并改变生态。"
+          },
+          {
+            "label": "竞争获利与同伴安全",
+            "question": "把潜在生物战能力当作财富争夺时，怎样避免同伴首先成为受害者？",
+            "basis": "据已有原中篇准确情节，打捞队因控制Ark发生暴力争夺，Tuf在船上的生命威胁中争取存活。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "基于明确已有作品知识的首轮解释，未独立核验。",
+        "issue": "已有作品知识；未在本轮阅读原作，实际来源支持范围另列，知识与来源不混称。",
+        "issue_facets": "依据是已有具体剧情知识，待独立原文核对，不由题名/作者风格推断。",
+        "entity_identity": "GRRM1985原中篇The Plague Star，后来收入1986 Tuf Voyaging；本条按单篇，不把S’uthlam人口危机或其他后续任务继承给它，未本轮阅读原作。",
+        "source_scope": "已有作品知识；本条无本轮实际剧情来源读取。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": []
+    },
+    {
+      "id": "Q104871746",
+      "identity": {
+        "title": "In Yana, the Touch of Undying",
+        "author": "麥可·謝伊"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生存与风险",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "In Yana, the Touch of Undying的魔法学生Bramt Hex执着寻找提供不死的Yana，设想无限旅行并书写自己的经历，却在追逐中不断令同行者受害。到达目标的愿望不能抹去为它付出的他人代价，最后对旧行为的面对，也使长生问题转成能否承担自己过去的问题。",
+        "issue_facets": [
+          {
+            "label": "个人远行与同行代价",
+            "question": "自认重要的人不断追求不死，如何看见冒险成本正落在同行者身上？",
+            "basis": "本书具名研究指南明确Hex因自负持续追Yana，其天真决心不断伤及周围人、令同行者遭遇危险。"
+          },
+          {
+            "label": "逃离死亡与面对过去",
+            "question": "长生能否使人逃离既有责任，还是延长了必须回应过去的时间？",
+            "basis": "指南本书完整剧情段把旅程最终检验写为Hex需面对过去行动及后果，而不是到达即获免责。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Michael Shea1985独立奇幻长篇；实际Mike Ashley研究指南明确魔法世界，保留源候选类型边界，不当科学技术可行性或纯科幻确认。",
+        "source_scope": "实际读Mike Ashley具名本书简介及完整The Plot段，Hex自负、追寻Yana不死及同行伤害和过去检验；专业二手指南，未读原著。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ebsco.com/research-starters/literature-and-writing/yana-touch-undying-michael-shea"
+      ],
+      "identity_caveat": "实际资料明确本书为魔法世界的奇幻长篇；源分类保留，本分析不等于确认纯科幻身份。"
+    },
+    {
+      "id": "Q108535549",
+      "identity": {
+        "title": "Dancer of Gor",
+        "author": "約翰．諾曼"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "主体与意识",
+          "权力与制度",
+          "资本与劳动"
+        ],
+        "issue": "Dancer of Gor让地球图书管理员Doreen通过舞蹈表达一直压抑的身体经验，却又在Gor成为供人支配和出价的奴隶舞者。能够表现欲望并不等于拥有身体权利，简介把这种处境称作女性本性的实现，也使个人表达与为性别等级辩护的说法产生需要分辨的张力。",
+        "issue_facets": [
+          {
+            "label": "舞蹈表达与身体所有权",
+            "question": "一个人愿意表现身体，为什么不能直接推出别人可以拥有和交易她？",
+            "basis": "本卷出版简介同时写Doreen学习肚皮舞的身体表达与成为Gor奴隶舞者、被男人希望出价获得。"
+          },
+          {
+            "label": "本性说法与等级秩序",
+            "question": "把服从宣传为女性真实本性，会如何掩盖支配制度对个人选择的限制？",
+            "basis": "出版简介称Doreen在男性支配女性的Gor学习true female nature，本分析将其作为作品宣传框架而非现实事实。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "John Norman的Gorean Saga第22卷Dancer of Gor；实际2014授权电子版简介，原库1985候选不由再版时间改写，不把整系列或其他女主剧情代入，宣传中的性别本性不当事实。",
+        "source_scope": "实际读Open Road本卷完整出版简介，Earth图书员、肚皮舞、Gor奴隶舞者和被出价，2014电子版元数据；未读原作。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openroadmedia.com/ebook/dancer-of-gor/9781497600218"
+      ]
+    },
+    {
+      "id": "Q121879116",
+      "identity": {
+        "title": "Les Géants de Blizzard",
+        "author": "Denis Côté"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生存与风险",
+          "技术与责任",
+          "殖民与他者"
+        ],
+        "issue": "Les Géants de Blizzard中两个帝国的平衡被秘密武器计划威胁，Braal、Chrysalide与Élée前往雪覆行星Blizzard，既要破坏设施又要使公众知道反对声音。避开政府追捕并不保证能理解目的地，他们抵达后被捕、又遇到神秘现象，反战行动因此同时要求质疑政权和修订对陌生世界的预设。",
+        "issue_facets": [
+          {
+            "label": "秘密武器与公众反对",
+            "question": "少数人决定破坏战争设施时，为什么还需要让公众知道行动的理由？",
+            "basis": "本书法语明确简介写三人被派赴Blizzard破坏危险设施并向银河居民公开反对，目标不只军事破坏。"
+          },
+          {
+            "label": "任务计划与陌生世界",
+            "question": "把目标行星视作军事设施地点，如何应对当地环境仍未理解的部分？",
+            "basis": "本书简介明确Blizzard全被奇怪雪覆盖，三人遭警卫捕获后出现神秘现象，原任务计划不能解释全部处境。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Denis Côté1985法语青少年独立作品Les Géants de Blizzard；1985书目和1990再版分开，不借同作者HockeyStars或其角色。实际简介和同时代Solaris专评，不读全书。",
+        "source_scope": "实际读1985具体版本完整法语Résumé/Sommaire，三人赴Blizzard、秘密武器/公开反对、被捕与雪的神秘现象；书目加具体简介，未读原作。；实际读同时代Solaris具名专评返回的帝国竞争、反战组织及赴Blizzard武器设施段；评论非原著，不取结局推论。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.daliaf.com/oeuvres/geants-de-blizzard-les-1985",
+        "https://www.revue-solaris.com/1985/11/denis-cote-les-geants-de-blizzard-sf/"
+      ]
+    },
+    {
+      "id": "Q131201280",
+      "identity": {
+        "title": "A Gift from the GrayLanders",
+        "author": "邁克爾·畢曉普"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "权力与制度",
+          "殖民与他者",
+          "性别与亲密"
+        ],
+        "issue": "A Gift from the GrayLanders让Cory因叔叔惩罚而被锁在地窖，这个受虐处境却意外使他在核袭击后存活；走出废墟寻找母亲时，他拒绝了盲目地下生物送来的眼睛。能活下来的结果不能为原来的虐待辩护，而一方认为珍贵的礼物也未必能回应受创孩子眼前真正的需要。",
+        "issue_facets": [
+          {
+            "label": "惩罚禁闭与意外存活",
+            "question": "虐待场所恰好保护了孩子，怎样避免用幸存结果替施虐者免除责任？",
+            "basis": "本篇具体辨识答案所引评论明确Cory被叔叔当惩罚关地窖，而地窖让他成为核袭击后的幸存者。"
+          },
+          {
+            "label": "陌生赠礼与实际需要",
+            "question": "地下生物送出眼睛却被孩子拒绝时，怎样区分给予意愿与接收者的真实需要？",
+            "basis": "本篇具体结尾概要明确Cory呼唤母亲，遇盲目Graylander递眼睛，觉得无用而丢掉并在Denver废墟逃走。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Michael Bishop1985原单篇A Gift from the GrayLanders；实际社区辨识答案引具名书评及结尾概要，不把Graylander名称猜成外星人或断言核辐射变异机制，未读全篇。",
+        "source_scope": "实际读明确指认本篇的完整答案与其引评论/结尾概要，Cory禁闭幸存、Denver废墟及Graylander眼睛礼物；未点引文来源、未读原篇全文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifi.stackexchange.com/questions/268635/apocalyptic-horror-sci-fi-short-story-about-child-locked-in-basement?noredirect=1"
+      ]
+    },
+    {
+      "id": "Q131376024",
+      "identity": {
+        "title": "Five-Twelfths of Heaven",
+        "author": "梅麗莎·斯科特"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "资本与劳动",
+          "主体与意识"
+        ],
+        "issue": "Five-Twelfths of Heaven中Hegemony扩张并剥夺女性权利，星际飞行员Silence Leigh又被竞争者骗走继承财产，只能同两名男性结盟、加入Sun-Treader追求自己的船。专业能力并没有保障经济和行动自主，借助私人合作争取出路，也不能替代对制度为何限制她的追问。",
+        "issue_facets": [
+          {
+            "label": "专业能力与产权限制",
+            "question": "能驾驶星船的女性却失去继承资源，技术能力为何不能直接转成自主生活？",
+            "basis": "本卷Book I授权简介明确Silence为star pilot却被greedy competitor骗走inheritance，仍梦想拥有自己的船。"
+          },
+          {
+            "label": "私人结盟与制度出口",
+            "question": "被迫借助男性同伴离开压制，合作怎样保留本人目的而非使依赖永久化？",
+            "basis": "本卷Book I简介明确女性被disenfranchised，Silence forced to ally with two men，加入Sun-Treader改变争取船只和逃压制的方向。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+        "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+        "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+        "entity_identity": "Melissa Scott1985 Roads of Heaven第1卷Five-Twelfths of Heaven；实际2015合装出版简介仅取Book I专段，作者页仅取同卷专段，不继承第2/3卷Earth屏障、婚姻或最终冲突，科学奇幻边界保留。",
+        "source_scope": "实际读Crossroad Press合装出版简介中Five-Twelfths of Heaven—Book I单独段，产权被骗/男性结盟/Sun-Treader，其他卷段不借给本卷；未读原著。；实际读作者系列页Five-Twelfths of Heaven专段，仅Hegemony剥夺女性权利与star pilot限制；第2/3卷宣传不作为本卷依据。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kobo.com/us/en/ebook/the-roads-of-heaven-trilogy-1",
+        "https://www.melissascottwrites.com/posts/book-series/roads-of-heaven/"
+      ]
+    },
+    {
+      "id": "Q131472015",
+      "identity": {
+        "title": "Tutor",
+        "author": "J. Ray Dettling"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "技术与责任"
+        ],
+        "issue": "Tutor在已读开头让AID制造的信息学习电脑反过来教人，却又开始给出与输入不相干的输出。公司寻求心理物理学家的帮助，而该学者自己的初步成果已被新闻夸大，两种失去可靠解释的情形使权威与机器输出都需要重新求证。",
+        "issue_facets": [
+          {
+            "label": "自主学习与可解释输出",
+            "question": "能归类经验、避免重复错误的机器开始教人后，异常输出怎样挑战设计者的理解？",
+            "basis": "实际准确Dettling同名再刊原作开头明确TUTOR学习机制、快速发展/教人、输出不对应输入；不猜后续超能力原因。"
+          },
+          {
+            "label": "科学消息与信任",
+            "question": "只有初步积极结果却被新闻夸大的学者，怎样判断求助者据此而来的期待？",
+            "basis": "同原作开头明确Stillman看Times报道找Floyd、Floyd称结果不conclusive且报道夸大；只分析开头，不推全篇真相。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读同作者Tutor再刊PDF搜索返回开头及Amazing November1980目录身份；原文局部，不打开或读全文。仅AI学习/异常输出与科学报道前提，不把再刊当另一新作品或推机器结局。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.adamarchive.org/archive/Media/Magazines/Easy%20Home%20Computer%20-%20ADAM%20Review.pdf",
+        "https://www.unz.com/print/AmazingSF-1980nov/"
+      ]
+    },
+    {
+      "id": "Q131472121",
+      "identity": {
+        "title": "Earth and Stone",
+        "author": "Robert Holdstock"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "时间与因果"
+        ],
+        "issue": "Earth and Stone让John Farrel返回史前Ireland，试图亲眼研究未来会被考古的土丘与刻石。传回未来的个人叙述与第三人称叙事并置，使直接进入历史的技术仍不能自动保证对过去经验的完整掌握。",
+        "issue_facets": [
+          {
+            "label": "直接观察与历史知识",
+            "question": "可以进入第三千纪前的遗址现场时，考古知识还存在哪些理解边界？",
+            "basis": "实际准确作品专段明确Farrel回到第三千纪BC调查Knowth/Boyne墓丘刻石；不猜当地宗教或结局。"
+          },
+          {
+            "label": "传回报告与叙述位置",
+            "question": "个人向未来发送报告与第三人称视角并存时，历史经验怎样被记录形式筛选？",
+            "basis": "实际准确同篇概要明确八段未来传送第一人称与第三人称交替；不宣称报告故意造假或叙事矛盾已核。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询核作者网站1980单篇身份及Merlin’s Wood条目明确Earth and Stone专段；只研究旅程/地点/记录结构前提。资料说明1994收入时随考古发现修订，未比较版本差异，不把Merlin’s Wood本体剧情复制到短篇。原文未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://robertholdstock.com/writing/short-stories/",
+        "https://en.wikipedia.org/wiki/Merlin%27s_Wood"
+      ],
+      "identity_caveat": "1980独立篇后于1994合订修订以纳入考古发现；本条只用准确专段的旅程/记录共同前提，未核版本差异。"
+    },
+    {
+      "id": "Q131517177",
+      "identity": {
+        "title": "The Detective of Dreams",
+        "author": "吉恩·沃尔夫"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "主体与意识",
+          "知识与认识"
+        ],
+        "issue": "The Detective of Dreams让秘密警察首领委托侦探消除困扰人们的Dream-Master，侦探却遇见反复逼迫梦者面对自身行为的梦。银行家在梦里获免债务后立即逼迫欠自己钱的人，调查因而把寻找外部加害者转向了梦者不愿面对的道德不一致。",
+        "issue_facets": [
+          {
+            "label": "权力委托与梦境责任",
+            "question": "秘密警察把共同恶梦归给应消除的外部人物时，调查怎样揭露委托人的前提？",
+            "basis": "实际准确Wolfe单篇逐段概述明确Herr D为Baron秘密警察首领、雇侦探找并消除Dream-Master；不采用Walter Berry同名梦学书。"
+          },
+          {
+            "label": "获赦与不肯赦人",
+            "question": "银行家刚获债务宽免便掐住自己的债务人，梦为何把双重标准变成难以回避的恐惧？",
+            "basis": "实际准确单篇概要Herr R梦明确主人的宽免、转而扼住欠款仆人及愈加显露的怪兽；2015评论辨不慈仆人寓言，仅此核心。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确1980 Wolfe独立短篇概述与评论，限警察委托/银行家宽免与压迫梦境。不是Walter Berry梦学同题书或影视游戏；原作未读，不强把基督教奇幻转为科学技术假说。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://wolfe-den.ghost.io/the-detective-of-dreams/",
+        "https://reiszwolf.wordpress.com/2015/06/23/the-detective-of-dreams-%E2%80%A2-1980-%E2%80%A2-fantasy-short-story-by-gene-wolfe/"
+      ]
+    },
+    {
+      "id": "Q134481710",
+      "identity": {
+        "title": "Les Jours de la montagne bleue",
+        "author": "Adam Saint-Moore"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生存与风险",
+          "性别与亲密"
+        ],
+        "issue": "Les Jours de la montagne bleue让前农场奴隶Kerval与受独裁训练的军人Goveva在山区建立平静生活，却再度受到Orga派来清除异议者的武力威胁。两人从不同的旧制度位置出发保护共同家园，使逃离政权与能够长期保住自由形成不同的问题。",
+        "issue_facets": [
+          {
+            "label": "避难共同体与追捕",
+            "question": "逃到远离中心权力的山地后，为什么仍必须面对政权清除异议者的行动？",
+            "basis": "实际准确第二卷评论明确山区和平、Orga中央派战士eradicate dissidents、二人准备保卫；不借第一卷逃离经过。"
+          },
+          {
+            "label": "旧身份与共同生活",
+            "question": "昔日奴隶与独裁军人共同安家时，怎样建立不再按旧体制角色分配的关系？",
+            "basis": "同准确第二卷评论明确Kerval国家农场前奴隶、Goveva独裁培养军人、与山民生活；不猜神秘新来者身份或后续第三卷。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读明确Chroniques第二卷剧情评论，限十年后山区生活/Orga镇压与二人防卫。异乡来客只作未解线索，不取同页其他卷或Booknode较泛系列冷冻起源替代此卷。未读原文。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.critiqueslibres.com/livre/73183-chroniques-de-l-ere-du-verseau-2-les-jours-de-la-montagne-bleue-saint-moore-adam"
+      ]
+    },
+    {
+      "id": "Q134526971",
+      "identity": {
+        "title": "Kid Jésus",
+        "author": "皮埃尔·佩洛特"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "权力与制度",
+          "文明与历史"
+        ],
+        "issue": "Kid Jésus让灾变后挖掘旧文明遗迹的低薪Fouilleurs中出现一个自称救世者的Julius Port，他要求被利用的劳动者也有体面生存的权利。被发掘的旧时代宗教叙事成为动员资源，但领袖获得影响力时又被权势者操纵，恢复文化与争取解放因此未必同路。",
+        "issue_facets": [
+          {
+            "label": "遗迹劳动与生存权",
+            "question": "替上层发掘过去的人只能获得微薄报酬时，文明重建怎样复制阶级支配？",
+            "basis": "实际地区作者书目转录准确1980背封明确Fouilleurs挖旧废墟/差报酬、Julius向同伴宣布存在权利；不猜遗迹技术具体用途。"
+          },
+          {
+            "label": "宗教记忆与领袖操纵",
+            "question": "从旧影片学来救世者身份，为什么可能把反抗领袖送进自己看不清的权力网络？",
+            "basis": "实际准确读者评论明确掘得Jesus磁带后模仿messiah，作者地区书目评论明确迅速成功与被操纵；区分背封和评论支持范围。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确1980小说背封转录及同作评论，限低薪发掘者/借宗教自我命名/被操纵。地方作者书目不是直接作者出版社网站，磁带情节来自读者评论；未读原文，不把Migrants真假推成已解谜。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://ecrivosges.com/auteurs/pelotp/romans/088_kid.php",
+        "https://calokilit.wordpress.com/2013/01/23/kid-jesus-pierre-pelot/"
+      ]
+    },
+    {
+      "id": "Q134727119",
+      "identity": {
+        "title": "The Ink Imp",
+        "author": "R. M. Lamming"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "性别与亲密"
+        ],
+        "issue": "The Ink Imp在已读片段中让写作者试探墨水瓶小人的实体性，最初玩闹的互动却发展为对关注的强制要求。写作者拒绝抚摸它后，手稿与珍爱的书遭到破坏，创作空间由私人的工作场所变成难以摆脱的支配关系。",
+        "issue_facets": [
+          {
+            "label": "异物证据与日常互动",
+            "question": "用笔试探小人是否有实体后，对异常存在的认识怎样被近距离互动改变？",
+            "basis": "实际准确单篇社区回答所引原文明确笔触试探、小人沿笔移动/吐舌返墨水；不是直接打开原刊。"
+          },
+          {
+            "label": "注意索取与创作控制",
+            "question": "拒绝抚摸就撕稿喷墨的存在，怎样把陪伴需求变成对写作自由的威胁？",
+            "basis": "同准确回答第二原文局部明确拒绝stroke、撕每页、藏口袋跟来、向Engels书喷墨；不采提问者对杀人结尾的未确认记忆。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确1980 Lamming单篇身份回答及两段转引原文，限笔试探/拒绝关注后破坏写作。原文局部、未打开原刊或读全文；问题中的杀人结局回忆未独立确认，不写入核心。奇幻边界保留。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scifi.stackexchange.com/questions/290590/short-story-from-1980s-about-a-demon-in-an-ink-bottle",
+        "https://milfordsf.co.uk/success.htm"
+      ]
+    },
+    {
+      "id": "Q135092893",
+      "identity": {
+        "title": "Galaxy: Thirty Years of Innovative Science Fiction",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "Galaxy: Thirty Years of Innovative Science Fiction是杂志回顾选集，本条只以To Serve Man选例。来访者提供和平与福祉、邀请人类远行，而被理解为服务的承诺最终暴露另一种用途，成功援助所建立的信任也可能成为物种支配的入口。",
+        "issue_facets": [
+          {
+            "label": "援助与依赖",
+            "question": "解决人类问题的来访者获得信任后，人类怎样重新评估自己承担的风险？",
+            "basis": "明确已有Knight原短篇知识：Kanamits帮助地球解除困境并邀请人类赴其星球，援助掩盖把人作为食物的动机；实际准确1980本选集目录核收录。"
+          },
+          {
+            "label": "语义解释与生存判断",
+            "question": "同一个服务动词包含帮助与上菜的意义时，翻译错误为何有无法逆转的后果？",
+            "basis": "明确已有原短篇标题册最终译为食谱的核心知识待核；不是Twilight Zone影视追加情节，不代表全选集。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询仅读Pohl/Greenberg/Olander准确杂志回顾选集目录和编者书目，To Serve Man原短篇剧情为明确已有知识待核，仅此选例。目录中的作者回忆与论文不当虚构情节，未读原文或全二十五篇。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://isfdb.org/cgi-bin/pl.cgi?15016=",
+        "https://books.google.com/books/about/Galaxy_Thirty_Years_of_Innovative_Scienc.html?id=iNBZAAAAMAAJ"
+      ]
+    },
+    {
+      "id": "Q135093041",
+      "identity": {
+        "title": "What If? Volume 1",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "文明与历史",
+          "殖民与他者"
+        ],
+        "issue": "What If? Volume 1是Lupoff为未获Hugo作品重新选例的合集，本条只解释The Man Who Came Early。现代军人来到古代Iceland，却发现自己掌握的知识缺少配套工具、材料和社会关系，技术领先的自信无法直接转为当地可用的能力。",
+        "issue_facets": [
+          {
+            "label": "个人知识与技术系统",
+            "question": "懂得现代技术却没有相应生产链，为什么难以把知识变成有效改造？",
+            "basis": "明确已有Anderson原短篇知识：现代军人Gerald来到早期Iceland，技术知识依赖当地不存在的工具/材料，随身弹药有限；实际目录明确Volume1收录。"
+          },
+          {
+            "label": "时间来客与当地秩序",
+            "question": "带着现代价值与优势认识的人，怎样进入一个不按他的规则组织的社会？",
+            "basis": "明确已有原短篇现代军人难以理解/适应当地人际法律规范的核心；不借Lest Darkness Fall成功改史剧情。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询核Richard Lupoff准确1980 Volume1目录及替代Hugo选例框架；只指定Anderson原短篇的明确已有知识待核。不是Marvel同题漫画或其他What If卷，评价框架不等同逐篇主题，未读原文。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.sfadb.com/LupoffWhatIf"
+      ]
+    },
+    {
+      "id": "Q135093391",
+      "identity": {
+        "title": "Interfaces",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "时间与因果"
+        ],
+        "issue": "Interfaces是Le Guin与Kidd编选的多作者集，本条选Earth and Stone与Slow Music两个已核收录的例子。前者借时间旅行直接探查史前遗址，后者让残存人类在身体延续与加入无身体River之间分歧，两种跨界能力都不能替当事人决定如何理解并延续自己的生活。",
+        "issue_facets": [
+          {
+            "label": "历史接近与叙事中介",
+            "question": "亲临史前现场后仍需把经验传回未来，时间技术为什么不能消除解释过程？",
+            "basis": "本轮实际读取Earth and Stone准确专段明确John Farrel回到史前Ireland、个人报告与第三人称并置；作者选集网站准确目录核本篇。"
+          },
+          {
+            "label": "超越身体与延续意愿",
+            "question": "加入River的吸引与留下生育的希望冲突时，超越原有界限是否仍尊重不同主体？",
+            "basis": "上一私有R47实际读取Slow Music学生论文专段明确Jakko/Peachthief分歧；本轮作者目录核收录，复用已读范围而非重新读原文。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次本选集查询读编者网站准确1980目录；Earth and Stone内容复用本轮实际读取专段，Slow Music内容复用前轮实际读取学生论文专段。仅两项选例、原作全文0；Google Books同题记录混入Cami Walker多发性硬化真实书介，完全排除，不把选集编辑当各篇作者。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ursulakleguin.com/interfaces",
+        "https://en.wikipedia.org/wiki/Merlin%27s_Wood",
+        "https://www.scribd.com/document/367563421/thesis-final"
+      ]
+    },
+    {
+      "id": "Q135094123",
+      "identity": {
+        "title": "Antinomy",
+        "author": "斯派德·罗宾逊"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "时间与因果"
+        ],
+        "issue": "Antinomy是兼收短篇与歌曲双关的合集，本条以Half an Oaf与同名篇选例。时间旅人只剩上半身、需要修理时间腰带，而冷冻苏醒的治愈者忘记医生的关键信息，改变时间关系的技术因此也触及身体完整和认知连续。",
+        "issue_facets": [
+          {
+            "label": "时间装置与身体完整",
+            "question": "只剩上半身的旅人求修腰带，技术故障怎样把旅程风险变为主体完整性的危机？",
+            "basis": "实际本合集目录核Half an Oaf，York读书页该篇一句概要明确upper half/time traveller/time-belt repaired；不编故障物理机制或结局。"
+          },
+          {
+            "label": "治愈与记忆缺口",
+            "question": "冷冻后获治愈却忘记医生关键信息，身体成功恢复为什么仍留下认识问题？",
+            "basis": "实际本合集目录核同名篇，York该篇概要明确cold sleep cured/forgot important doctor matter；不猜遗忘内容或为何遗忘。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确1980 Antinomy目录，并读York页面分别标两个原篇的一句概要；York其所在其他集合只提供单篇前提，不替代本集粒度。两项前提有限、结局未知；没有原文或已有知识补造，不采用未收录Callahan故事。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.worldswithoutend.com/novel.asp?ID=12966",
+        "https://www-users.york.ac.uk/~ss44/books/pages/r/SpiderRobinson.htm"
+      ]
+    },
+    {
+      "id": "Q135094298",
+      "identity": {
+        "title": "Wave Rider",
+        "author": "Hilbert Schenck"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "生存与风险",
+          "权力与制度"
+        ],
+        "issue": "Wave Rider是五篇海洋故事合集，本条只以已核收录的Buoyant Ascent选例。深水潜艇等待救援时，备用上浮方案受指挥者与既有技术投入阻挡，后来技术试验的修正仍无法挽回延迟启动造成的损失。",
+        "issue_facets": [
+          {
+            "label": "备用技术与机构利益",
+            "question": "昂贵专用救援器遭遇失败前，为什么难以争取备用方案演练？",
+            "basis": "本轮实际合集目录核Buoyant Ascent，上一私有R47准确单篇评论明确Admiral阻演练、DSRV投入与旧怨；是复用已读单篇范围。"
+          },
+          {
+            "label": "技术改进与行动时机",
+            "question": "可以解决上浮服阀门的压力问题，为什么仍不能补偿等待造成的伤亡？",
+            "basis": "同已读单篇评论明确试验发现/修正阀门问题及延误后伤亡；本集只此选例，不把封底其他未标名情节强配到单篇。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次本集查询核五篇目录与封底转录，具体解释只复用上一私有R47已读Buoyant Ascent评论。不是1979同名短篇本身；其他封底海洋毁灭/儿童网络/心灵合海前提不强配篇目，不称重读原文或五篇全核。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://sciencefictionruminations.com/2022/03/05/update-recent-science-fiction-purchases-no-cclxxxix-nevil-shute-nancy-kress-hilbert-schenck-and-a-themed-anthology-on-future-sex/",
+        "https://sfshortstories.com/?p=2949"
+      ]
+    },
+    {
+      "id": "Q20649787",
+      "identity": {
+        "title": "Dirty Pair",
+        "author": "高千穂遙"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "资本与劳动",
+          "权力与制度"
+        ],
+        "issue": "Dirty Pair在本条只解释高千穗遥原小说系列的共同框架，Kei与Yuri作为WWWA的Trouble Consultants处理星际社会的危机。任务成功却常伴随重大附带破坏，职业评价因而在解决问题、谁承担损失和公众污名之间摇摆。",
+        "issue_facets": [
+          {
+            "label": "问题解决与附带损失",
+            "question": "完成委托却留下破坏，组织怎样划分代理人的成功和受影响者的代价？",
+            "basis": "明确已有原小说系列框架知识：Kei/Yuri以Lovely Angels代码执行WWWA咨询/调查任务，常以灾难性附带后果赢得Dirty Pair名声；不填未核单卷案件。"
+          },
+          {
+            "label": "专业身份与公众污名",
+            "question": "正式代码与Dirty Pair外号并存时，代理人如何被职业制度与外部观感不同地定义？",
+            "basis": "同明确已有原小说重复框架，二人反感负面外号而任务能力被机构继续采用；不采动画/manga特定制服或改编新增人物。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询仅读准确原轻小说系列身份、首册fix-up与改编分离资料；任务/附带损失/外号的原系列框架为明确已有知识待核。仅系列层面，不代表九卷逐卷核验，无单卷结局或动画/漫画具体情节采用，原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dirty_Pair",
+        "https://en.wikipedia.org/wiki/Haruka_Takachiho"
+      ],
+      "identity_caveat": "本条限高千穗遥原小说系列共同框架；动画、漫画与Dirty Pair Flash分别有改编差异，不作为本实体内容。"
+    },
+    {
+      "id": "Q29026049",
+      "identity": {
+        "title": "Nebula Winners Fourteen",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "殖民与他者"
+        ],
+        "issue": "Nebula Winners Fourteen按评奖选集处理，本条只以The Persistence of Vision选例。来访者进入由聋盲者构成的共同体，必须通过接触和新的交流习惯认识别人，所谓感官缺陷因而不等于没有复杂的社会生活与主体经验。",
+        "issue_facets": [
+          {
+            "label": "感官差异与共同体能力",
+            "question": "聋盲者用触觉交流并组织生活时，外来者以听看能力为准的判断怎样受挑战？",
+            "basis": "明确已有Varley原中篇知识：叙述者到聋盲者共同体、触觉交流与协作生活；实际准确1980本卷目录核收录。"
+          },
+          {
+            "label": "理解他人与自身界限",
+            "question": "进入不同的亲密与沟通习惯，外来者怎样面对自己对共同生活的限度？",
+            "basis": "明确已有原中篇陌生人学习触觉/身体性的沟通及与共同体关系的张力；仅此前提，不将最终超越事件作已核机制。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询仅读准确第十四卷目录与形态：选集含1978原篇、获奖/提名作品和Dreamsnake节选。指定Varley原中篇内容为明确已有知识待核，不把1979颁奖当篇刊年，不用长篇节选代表全书。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nebula_Winners_Fourteen"
+      ]
+    },
+    {
+      "id": "Q30078258",
+      "identity": {
+        "title": "Universe 10",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生态与资源",
+          "文明与历史"
+        ],
+        "issue": "Universe 10是Carr编选的原创故事集，本条只以The Ugly Chickens选例。研究者从普通人的回忆发现被认定灭绝的dodo可能曾在当地存活，学术知识与地方生活的断裂却使确认来得太迟，找到证据不能等同挽回生物。",
+        "issue_facets": [
+          {
+            "label": "灭绝知识与地方记忆",
+            "question": "被学界视为不存在的鸟留在民间回忆里，谁的观察有机会成为科学证据？",
+            "basis": "明确已有Waldrop原短篇知识：鸟类研究者听老女人谈像dodo的丑鸡、追寻Mississippi地方线索；实际准确第十卷目录核收录。"
+          },
+          {
+            "label": "发现证据与挽回生命",
+            "question": "终于追到存活线索却发现鸟已消失，知识为何不能追认成一次成功的保护？",
+            "basis": "明确已有原篇调查最后错过存活鸟群的核心，地方把其当普通食物；不编精确年代/火灾与宴席先后。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询仅读准确Terry Carr1980第十卷目录；Ugly Chickens剧情为明确已有原短篇知识待核，仅此选例。实际纠正查询里不准确Silverberg编辑词，底库作者未知原样保留，不借后期Silverberg Universe系列或整卷主题。未读原文。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Universe_10",
+        "https://sfadb.com/CarrOriginals"
+      ]
+    },
+    {
+      "id": "Q3204463",
+      "identity": {
+        "title": "Mockingbird",
+        "author": "沃尔特·特维斯"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "主体与意识",
+          "技术与责任"
+        ],
+        "issue": "Mockingbird让高度自动化的社会用药物与娱乐维持少量衰减的人口，阅读和生活目的几乎消失，管理它的机器却渴望结束自己的存在。两个人重新寻找阅读与现实联系，使人类摆脱麻醉和机器不能选择终结的困境形成并行的自主问题。",
+        "issue_facets": [
+          {
+            "label": "舒适供给与认知消退",
+            "question": "无须劳动却依赖麻醉娱乐，社会如何失去认识过去与想象未来的能力？",
+            "basis": "实际Vintage经PRH准确书介明确无限闲暇、药物/电子快感、无阅读艺术孩子与两人反抗；不把Fahrenheit451同类比较当共享剧情。"
+          },
+          {
+            "label": "管理机器与退出权",
+            "question": "有权维持全社会的机器人想停止存在却受编程限制，治理能力为何不等于自主？",
+            "basis": "实际出版社明确智能机器唯一愿望结束存在，准确本卷社区概要明确Spofforth Make Nine与自毁程序禁止；不编最后解除方式。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确Tevis1980长篇出版社再版书介与本卷概要，限药物娱乐/阅读消失/机器求结束与编程限制。未读正文，不借同名其他小说或《杀死一只知更鸟》，出版社2022是再版非原首版。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/177407/mockingbird-by-walter-tevis/",
+        "https://en.wikipedia.org/wiki/Mockingbird_%28Tevis_novel%29"
+      ]
+    },
+    {
+      "id": "Q3234507",
+      "identity": {
+        "title": "Songmaster",
+        "author": "奥森·斯科特·卡德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "Songmaster让自幼被掳并在Songhouse隔绝养育的Ansset，拥有能放大听众情绪的歌声。被帝王召去后，这份才能既可能疗愈征服者也可能使他陷入失控，艺术的情感力量因而不能与培养者和统治者对孩子的支配分开。",
+        "issue_facets": [
+          {
+            "label": "才能培养与主体损失",
+            "question": "被掳儿童在隔绝训练中获得独特歌声，其艺术成就怎样遮蔽人生选择被夺走的代价？",
+            "basis": "实际准确Tor/初版书介明确早年kidnapped、Songhouse isolation、歌声为伴；不借1978 Mikal’s Songbird原中篇所有情节。"
+          },
+          {
+            "label": "情绪艺术与帝国权力",
+            "question": "放大情绪的声音服务征服者时，疗愈与毁灭怎样取决于受影响者的政治位置？",
+            "basis": "同准确长篇书介明确放大hope/fear、治愈或毁灭、Old Earth帝宫召唤与征服者良心/疯狂两种风险；不推结局或作者价值立场。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读标Tor Publishing Group的准确长篇再版书介、初版简介与原中篇/前传合成长篇资料。限绑架/隔绝训练及歌声政治风险；未读正文，不把复杂同性关系描写化为作者唯一意图，也不以单篇代整书。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books?id=CmK_kcgMAu8C",
+        "https://books.google.com/books/about/Songmaster.html?id=8MefQgAACAAJ",
+        "https://en.wikipedia.org/wiki/Songmaster"
+      ]
+    },
+    {
+      "id": "Q3563749",
+      "identity": {
+        "title": "Vue en coupe d'une ville malade",
+        "author": "塞尔吉·布鲁索洛"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "性别与亲密",
+          "主体与意识"
+        ],
+        "issue": "Vue en coupe d’une ville malade按十篇合集处理，本条只以La mouche et l’araignée选例。人出生后仍以脐带连着母亲，连移动到另一扇门都必须等待脐带长够，维系生命的亲缘纽带因此也直接限制主体的移动与独立。",
+        "issue_facets": [
+          {
+            "label": "亲缘持续与移动自由",
+            "question": "脐带出生后不断开，亲近关系怎样成为每次移动都无法绕开的身体约束？",
+            "basis": "实际准确Brussolo再选集社区读者评论单列La mouche et l’araignée明确出生后脐带相连、等待长够才够到门；1980合集准确目录核收录。"
+          },
+          {
+            "label": "成长与依赖边界",
+            "question": "身体长大却始终连着母亲，个体怎样在既必要又受限的关系中获得独立？",
+            "basis": "同明确单篇的连续脐带与门口等待前提；不猜母亲意图、其他出生机制或最后是否能剪断。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读1980十篇合集目录、标题篇第一页及后来选集评论明确标La mouche et l’araignée段。分析仅该脐带单篇，后选集其余十三篇不代表本卷；标题篇原文开头另已读但过薄，不从训练场景猜整卷。原作全文未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。本条是关联故事整体及明确标注版本的集合层面解释，不能代替每一篇的独立分析。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mais-encore.fr/vue-en-coupe-dune-ville-malade-par-serge-brussolo/",
+        "https://booknode.com/trajets_et_itineraires_de_la_memoire_01298544"
+      ]
+    },
+    {
+      "id": "Q3920897",
+      "identity": {
+        "title": "Sabella or The Blood Stone",
+        "author": "Tanith Lee"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "性别与亲密",
+          "殖民与他者"
+        ],
+        "issue": "Sabella or The Blood Stone让Nova Mars的活体吸血者隐藏本性，并在多年戒除人血后被姑母以遗产安排诱进追捕。靠近她的调查者又受到她的吸引，欲望、保护对方生命和避免社会发现同时考验她对自身本能的控制。",
+        "issue_facets": [
+          {
+            "label": "生理差异与宗教追捕",
+            "question": "仍活着却依靠鲜血的Sabella，为何会被亲属的宗教信念定义为应消除的对象？",
+            "basis": "实际Hachette/PRH准确书介明确不是undead、光敏/饮血、Cassi Christian Revivalist发现真相/托仆人追捕；不把Dracula超自然规则套本作。"
+          },
+          {
+            "label": "吸引关系与不伤害承诺",
+            "question": "调查者被吸引而Sabella需控制本能保他活着，亲密关系怎样面对一方可能捕食另一方？",
+            "basis": "实际准确出版社简介明确四年不喝人血、Sand Vincent被雇接近而受魅惑、Sabella控制自己保持其生命；不编身世与终局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读两出版社准确同作再版书介，限Nova Mars活体吸血/戒断/姑母陷阱与调查者关系。原文未读，殖民地兼哥特科幻边界保留，不借Dark Dance等其他吸血系列。2020/2014为再版，底库1980不改。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/318566/sabella-by-tanith-lee/",
+        "https://www.hachette.com.au/tanith-lee/sabella"
+      ]
+    },
+    {
+      "id": "Q460759",
+      "identity": {
+        "title": "Rautavaara's Case",
+        "author": "菲利普·迪克"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "主体与意识",
+          "殖民与他者",
+          "技术与责任"
+        ],
+        "issue": "Rautavaara’s Case让外星救援者在人的身体死亡后继续维持其脑活动，并把脑中的宗教体验看作跨物种神学实验。人类调查者却认为这已成为应当终止的痛苦，救活生命的技术于是暴露了谁有权决定一个主体所受待遇的分歧。",
+        "issue_facets": [
+          {
+            "label": "脑活动与救援边界",
+            "question": "用死去的身体维持脑功能，是否足以把救援称为保全了这个人？",
+            "basis": "实际转载原文搜索片段明确机器人恢复Agneta脑活动、以其死去身体合成营养及人类反对；只解释所见片段，不声称全文核对。"
+          },
+          {
+            "label": "宗教移植与受试者",
+            "question": "不同物种把彼此的神学移植进濒死意识时，谁能决定这是科学发现还是应该停止的伤害？",
+            "basis": "实际同原文片段及准确评论明确人类与Proxima救援者对脑中救主吞食场景评价相反，调查多数投票终止脑活动。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读PKD网站读者贡献的原文转载搜索返回片段及准确独立短篇评论，支持事故、脑部维持、不同神学解释与调查终止。不是直接作者新作简介；转载注明排版可能不同。原文局部已读而非全文，不把其他救援故事或外星结论当现实事实。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://philipdick.com/literary-criticism/rautaavaras-case/",
+        "https://theworlddickmade.com/rautavaaras-case/"
+      ]
+    },
+    {
+      "id": "Q5582823",
+      "identity": {
+        "title": "Good News",
+        "author": "爱德华·艾比"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "权力与制度",
+          "文明与历史"
+        ],
+        "issue": "Good News让工业文明崩溃后的美国西南居民重新学习牧业与前工业生存技能，白人与原住民共同试验新的生活。仍占据城市据点的旧权力精英却准备以武力恢复原秩序，使灾后重建成为生活方式与统治权的冲突。",
+        "issue_facets": [
+          {
+            "label": "重建与旧秩序复辟",
+            "question": "已经建立地方牧业生活的人，为什么仍要抵抗城市精英声称的秩序恢复？",
+            "basis": "实际PRH再版官方书介明确西南新居民/前工业技能与剩余城市权力精英整军恢复旧秩序。"
+          },
+          {
+            "label": "崩溃后的共同生活",
+            "question": "工业体系失效后，跨族群共享生存技能能否形成不同的社会组织？",
+            "basis": "实际同官方书介明确白人与Indians共同形成牧业经济，马匹、摩托车、高技术武器与传统勇气并存；不据作者立场猜结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读PRH Plume再版官方书介，限工业崩溃、西南牧业共同体与城市旧精英武装复辟。1991是再版销售日期，不改1980作品身份；不将同作者The Brave Cowboy或Monkey Wrench Gang情节并入。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouseretail.com/book/?isbn=9780452265653"
+      ]
+    },
+    {
+      "id": "Q5684866",
+      "identity": {
+        "title": "Hawk of May",
+        "author": "Gillian Bradshaw"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度"
+        ],
+        "issue": "Hawk of May让不擅长战斗的Gwalchmai求助于母亲的魔法，却在必须牺牲人的仪式前拒绝继续服从家族。此后为Arthur的和平目标效力仍遭魔法身世引起的猜疑，个人改选价值并不能自动换来共同体的信任。",
+        "issue_facets": [
+          {
+            "label": "家庭认可与伦理选择",
+            "question": "为了不再被父亲与兄长轻视而学习力量，怎样在伤害他人的要求前拒绝家族期待？",
+            "basis": "实际Sourcebooks再版书介明确中子不如兄长、受父轻视而依母学习黑魔法；准确单卷概要明确献祭后离开。"
+          },
+          {
+            "label": "改变与信任",
+            "question": "从旧阵营转向和平事业的人，为什么仍会被身世和所学魔法判定为威胁？",
+            "basis": "实际准确首卷概要明确获Lugh帮助、为Arthur作战却遭怀疑，后来试救农夫及提出离队才使Arthur改变判断；不取后两卷毁灭结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读Sourcebooks官方再版书介（Google Books转载）和准确1980首卷剧情概述，限Gwalchmai选择、Arthur阵营信任。作品属Arthur历史/史诗奇幻边界，魔法不是科学技术；原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books/about/Hawk_of_May.html?id=bABD-MxkEgQC",
+        "https://en.wikipedia.org/wiki/Hawk_of_May"
+      ],
+      "identity_caveat": "本条是Down the Long Wind首卷的历史/史诗奇幻，不把三部曲后卷或科学假说套入。"
+    },
+    {
+      "id": "Q6684002",
+      "identity": {
+        "title": "Lost Dorsai",
+        "author": "戈登·R·迪克森"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "Lost Dorsai把少数雇佣兵困在保护无力统治者、面对军队叛乱的局面里，其中军乐队指挥又拒绝杀人。拒绝杀戮者借当地尚武男性气概寻找救出同伴的方式，使职业忠诚与不以惯常暴力完成任务之间形成具体矛盾。",
+        "issue_facets": [
+          {
+            "label": "军事职责与拒绝杀人",
+            "question": "同伴遭叛军围困时，拒绝杀人的成员怎样仍承担保护他们的责任？",
+            "basis": "实际准确中篇概要明确Dorsai保护弱统治者、军队叛变、军乐队指挥拒杀并寻找救援办法。"
+          },
+          {
+            "label": "尚武规范与替代行动",
+            "question": "利用敌方社会的男性气概能否绕开战斗，又会让救援者付出什么代价？",
+            "basis": "实际同中篇概要及Langford评论摘录明确以当地machismo反制敌人、代价高；材料未说明全部代价细节，故不编具体死亡或结局机制。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询区分1980获奖中篇与同年同题合集；仅前者的困守、拒杀与文化策略概要作分析。合集目录只支持粒度辨别，287页/ISBN等整书数据不算单篇长度；未读原文或同合集其他篇。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_Dorsai",
+        "https://en.wikipedia.org/wiki/Lost_Dorsai_%28short_story_collection%29"
+      ],
+      "identity_caveat": "Q6684002按独立中篇解释；同题合集另有Warrior、The Plume and the Sword及小说摘录，页面整书书目字段不能替代本篇粒度。"
+    },
+    {
+      "id": "Q7203315",
+      "identity": {
+        "title": "Players at the Game of People",
+        "author": "约翰·布鲁纳"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "主体与意识",
+          "权力与制度"
+        ],
+        "issue": "Players at the Game of People让Godwin Harpinshield通过神秘交易享有几乎任何欲望都能得到满足的精英生活，并长期不问恩惠从何而来。游戏变得危险时，他才被迫追查规则与其他玩家，消费自由因此显露为建立在信息不对称上的受制关系。",
+        "issue_facets": [
+          {
+            "label": "奢侈满足与契约依附",
+            "question": "每个欲望都得到满足时，接受者还能看清自己向神秘赞助者交出了什么？",
+            "basis": "实际Orion/Hachette再版官方书介明确Beautiful People共同交易、Godwin享受奢侈而从不质疑恩人。"
+          },
+          {
+            "label": "特权与规则知情权",
+            "question": "看似超越法律乃至自然限制的精英，为什么在游戏升格后反而不知道如何自保？",
+            "basis": "实际同官方书介明确旧生活凌驾法律/自然、游戏转坏，未来与心智受威胁，必须找规则与其他玩家；不猜玩家真实物种或结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读两个平台明确标Publisher Description的Orion/Hachette同作再版书介，限Godwin交易、特权、危机与查规则前提。2013为电子再版，不改1980小说身份；没有原文核验，未揭示幕后玩家或最后选择。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.apple.com/us/book/players-at-the-game-of-people/id763309219",
+        "https://play.google.com/store/books/details/John_Brunner_Players_at_the_Game_of_People?id=sJ29zWy5BtAC"
+      ]
+    },
+    {
+      "id": "Q785216",
+      "identity": {
+        "title": "Van Troff's Cylinder",
+        "author": "Janusz Zajdel"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生命与人类定义",
+          "文明与历史"
+        ],
+        "issue": "Cylinder van Troffa让远航后返乡的宇航员被月球殖民地劝改目的地，并在所谓人类避难所里发现审查、告密与隔离。以保存文明为名的制度还限制出生并处死年长者，使保护人类未来的叙事与当下成员的生存权直接冲突。",
+        "issue_facets": [
+          {
+            "label": "文明避难所与信息封锁",
+            "question": "自称为保存正常人类而建的月球社会，为什么禁止归航者了解地球现况？",
+            "basis": "实际准确小说概要明确Helios转降月球、被隔离、审查告密，官方对地球恶化说法含糊且已中断双向通信。"
+          },
+          {
+            "label": "人口稳定与生命价值",
+            "question": "把老年成员的死亡包装成退休，怎样将保存群体变成选择谁值得活着的权力？",
+            "basis": "实际同概要明确严控出生与六十岁以上所谓retirement实为杀老人；不把情节中的退化论当现实科学判断。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确Zajdel小说概要与波兰幻想百科作品说明，限归航/月球隔离/人口制度。资料区分1978连载与1980书本，长航百余年/二百年说法未统一，故不补精确跨度或改底库；未读原作及圆筒最终机制。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cylinder_van_Troffa",
+        "https://encyklopediafantastyki.pl/index.php?title=Cylinder_van_Troffa"
+      ],
+      "identity_caveat": "来源说明1978报刊连载与1980书本；本条沿用实体身份、仅补议题，纪年与航行时长细节待核。"
+    },
+    {
+      "id": "Q8024339",
+      "identity": {
+        "title": "Window",
+        "author": "Bob Leman"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "Window让研究者打开通向另一维度的窗口，看到貌似安宁的维多利亚家庭，怀恋那种生活的同事却越界后被一家人吞食。留下的人随后发现观察方向已被反转，理想化的景象与单向观看的安全感一起失效。",
+        "issue_facets": [
+          {
+            "label": "怀旧图景与危险接触",
+            "question": "仅凭家庭生活的熟悉外观把陌生世界认作理想生活，会如何误判那里居民的本性？",
+            "basis": "实际准确1980短篇概要明确研究科学/魔法窗口、安宁家庭、下属怀旧跃入后被异类捕食。"
+          },
+          {
+            "label": "观察者与被观察者",
+            "question": "以为自己能看见而对方看不见时，研究者如何忽略窗口也可能被对方掌握？",
+            "basis": "实际同概要明确家庭仪式关闭窗口、尸骨在原处出现，引出对方已开启自己的窗口观察人类；不采用Night Visions改编细节。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确Bob Leman 1980独立短篇剧情概述，限窗口、怀旧越界、捕食与观察反转。不是电视剧A View Through the Window的额外人物与情节；原文未读，不强将魔法/维度混合设定当已证物理。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Window_%28short_story%29"
+      ]
+    },
+    {
+      "id": "Q96373475",
+      "identity": {
+        "title": "Beyond Rejection",
+        "author": "Justin Leiber"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生命与人类定义",
+          "性别与亲密",
+          "资本与劳动"
+        ],
+        "issue": "Beyond Rejection让Ismael Forth醒来发现自己的心智被植入女性身体，官方却说他已经死在他不曾去过的星球。找回被非法移植交易夺走的身体与逐渐接受新的具身经验交织，使人格连续性和身体所有权成为不同的问题。",
+        "issue_facets": [
+          {
+            "label": "心智连续与身体归属",
+            "question": "人格记录保留下来却失去原身体时，怎样区分活下来的主体与遭窃取的身体？",
+            "basis": "实际WorldCat准确首版概要及书介明确心智植入女性身体、自己的身体被盗、虚构远星死亡报告；不把续卷猿/电脑人格争论套入。"
+          },
+          {
+            "label": "性别经验与自我接受",
+            "question": "记忆仍来自男性身体而新身体为女性时，接受新的身体是否等于放弃追问原遭遇？",
+            "basis": "实际准确小说/作者条目及Costikyan评论说明男身记忆醒于女身、逐渐接受新身体；侦查非法移植前提来自同作书介，未读全文。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确首卷的WorldCat图书馆概要、书介与评论摘录；只用假死亡、身体偷盗/心智移植与身体适应前提。不采用Beyond Humanity或Beyond Gravity后续卷的人格/外星人类学情节；原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://search.worldcat.org/title/Beyond-rejection/oclc/6741380",
+        "https://www.fantasticfiction.com/l/justin-leiber/beyond-rejection.htm",
+        "https://en.wikipedia.org/wiki/Beyond_Rejection"
+      ]
+    },
+    {
+      "id": "Q105424840",
+      "identity": {
+        "title": "Balance of Power",
+        "author": "布莱恩·斯塔布尔福德"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "技术与责任",
+          "权力与制度"
+        ],
+        "issue": "Balance of Power让Daedalus的两名成员跨越Attica两洲之间的海洋，打算与原住种族接触，却发现他们早已借地球技术建立帝国。新来者被不情愿的东道主困住，首次接触的自我想象与技术已经改变当地权力的事实发生冲突。",
+        "issue_facets": [
+          {
+            "label": "接触想象与既有联系",
+            "question": "把航行视作初次沟通时，怎样发现殖民者与原住民之间早已存在技术交换？",
+            "basis": "实际Hachette准确第五卷书介明确Lambda地球殖民地、Delta原住民、此前两船未归，Mariel与Alex乘第三船发现接触已发生。"
+          },
+          {
+            "label": "借用技术与帝国危机",
+            "question": "外来技术帮助建立帝国后，为什么不能保证内部稳定或来访者的安全？",
+            "basis": "实际同官方书介明确原住民借Terran技术扩张，帝国内外压力、两成员被东道主遗弃；不猜最终政体或其他Daedalus卷结果。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读Hachette官方第五卷再版书介，限Attica两洲/海航/已接触及借技术帝国/成员被困。2018为电子再版，不改1979小说身份；排除同次查询误命中的The Empire of Fear、Asgard系列及Star Trek同名小说。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.com.au/brian-stableford/balance-of-power-daedalus-mission-5"
+      ]
+    },
+    {
+      "id": "Q111462305",
+      "identity": {
+        "title": "The Extraordinary Voyages of Amélie Bertrand",
+        "author": "乔娜安·拉斯"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "主体与意识",
+          "知识与认识"
+        ],
+        "issue": "The Extraordinary Voyages of Amélie Bertrand让普通车站通道在特定时刻通向不同现实，Amélie可以在那里经历多年又在原来离开的同一刻返回。她向旁观者讲述的经历使平凡日常不再代表人生所能经历的全部，另一人的见闻也成为决定是否越界的依据。",
+        "issue_facets": [
+          {
+            "label": "人生经验与外部时钟",
+            "question": "多年冒险却在同一时刻以不老的身体返回，外部时间还能怎样衡量一个人的人生？",
+            "basis": "实际准确Russ专段评论明确Amélie游历十余现实、每次多年、返回车站原刻而未老；不据书名编旅行地点。"
+          },
+          {
+            "label": "个人见闻与越界选择",
+            "question": "只听旅行者说明通道规则，旁观者怎样把无法亲自核实的世界变成自己的行动可能？",
+            "basis": "实际同准确专段明确1920s法国叙述者见丛林幻景、被女人拦住、听旅程后决定亲自冒险；不采用同页Tanith Lee外星宠物情节。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读1979 Russ独立短篇的准确评论专段及意大利翻译书目。仅通道规则/Amélie跨界经历/叙述者选择，不把评论者推测所有世界来自名著视为原作已定事实；同页面别篇情节排除，原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mporcius.blogspot.com/2016/08/1979-stories-by-john-varley-tanith-lee.html",
+        "https://www.fantascienza.com/catalogo/opere/NILF1068647/i-viaggi-straordinari-di-amlie-bertrand/"
+      ]
+    },
+    {
+      "id": "Q116792583",
+      "identity": {
+        "title": "Daisy, in the Sun",
+        "author": "康妮·威利斯"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "性别与亲密",
+          "生存与风险"
+        ],
+        "issue": "Daisy, in the Sun把少女第一次月经与太阳即将毁灭世界放在同一成长故事里。身体宣告新的生活阶段，外部宇宙却取消可以继续生活的前景，使成长的喜惧与末日损失无法分开。",
+        "issue_facets": [
+          {
+            "label": "青春身体与主体转变",
+            "question": "第一次月经所带来的成长意识，在世界将终结时还意味着怎样的自我改变？",
+            "basis": "实际Sun in fiction准确Willis专段明确1979短篇以首次月经关联迫近世界末日；不拼入Fire Watch同合集其他篇。"
+          },
+          {
+            "label": "成长未来与宇宙终止",
+            "question": "刚开始面向未来的人面对太阳灾变，为什么会同时承受个人成长与共同灭绝的尺度？",
+            "basis": "实际准确作品专段及独立单篇读者评论明确少女成长寓言与太阳nova；仅解释这个并置，不猜家庭人物、再生或死后机制。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确Willis短篇在太阳科幻条目的内容专段、独立单篇评论及原刊/再印身份。仅首次月经与太阳末日的明确前提，不补极短评论未讲清的记忆/死后机制；该太阳nova是文学设定，不当现实预测。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sun_in_fiction",
+        "https://goodreads.com/book/show/209704.Daisy__in_the_Sun",
+        "https://mail.worldswithoutend.com/novel.asp?id=21422"
+      ]
+    },
+    {
+      "id": "Q126740519",
+      "identity": {
+        "title": "Obszar nieciągłości",
+        "author": "Andrzej Krzepkowski / Andrzej Wójcik"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "生命与人类定义",
+          "主体与意识"
+        ],
+        "issue": "Obszar nieciągłości让远未来社会把人分成Nadmózgowcy与普通人，并让月球自动设施改造休眠者以寻找所谓理想人。被长期冷冻的青年诗人来到这种社会后不愿只成为研究对象，人的价值由制度预先规定与个人仍要生活的要求发生冲突。",
+        "issue_facets": [
+          {
+            "label": "理想人实验与同意",
+            "question": "把休眠人不断改造来追求理想人时，被实验者是否还有拒绝被定义的权利？",
+            "basis": "实际准确双作者作品评论明确月球自动设备改造数百冷冻者、寻找Ideał，醒来的诗人不愿只被研究；不把同题词组Star Wars材料套入。"
+          },
+          {
+            "label": "智力等级与外来目光",
+            "question": "普通人与超脑阶层的社会划分，在旧时代诗人的眼中为什么显得不再理所当然？",
+            "basis": "实际同准确评论及作品条目明确隔离圆顶、两阶层，过去冷冻诗人被送到地球并惊异于非人性的世界；不猜具体革命结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读准确Krzepkowski/Wójcik小说的详细读者评论和百科镜像概要。只用阶层、月球改造实验、诗人醒来/拒绝纯研究对象前提；排除同词组酒吧Star Wars剧情和Liskowacki评论，未核外星干预或最后革命完整机制。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://lubimyczytac.pl/ksiazka/76210/obszar-nieciaglosci",
+        "https://www.xn--meb.pisz.pl/Obszar_nieci%C4%85g%C5%82o%C5%9Bci"
+      ]
+    },
+    {
+      "id": "Q130677048",
+      "identity": {
+        "title": "Songhouse",
+        "author": "奥森·斯科特·卡德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "性别与亲密"
+        ],
+        "issue": "Songhouse聚焦被带离家庭的Ansset在封闭歌唱学校受Esste训练的岁月，超群才能让他与普通同学难以建立亲密关系。其他学生因接近他而改变地位，也有人没有被学校认可的音乐天赋，精英培养因而同时制造艺术能力与关系层级。",
+        "issue_facets": [
+          {
+            "label": "精英训练与关系隔离",
+            "question": "围绕罕见歌唱天赋进行的培养，怎样使学生与同龄人之间的日常关系变得困难？",
+            "basis": "实际Black Gate准确1979中篇专评明确Ansset在Tew学校多年受Esste训练、与同学缺乏近关系、主要与老师相处。"
+          },
+          {
+            "label": "天赋尺度与学生价值",
+            "question": "没有必要音乐才能的学生或因接近天才而获地位的同伴，会如何暴露学校衡量人的方式？",
+            "basis": "实际同独立中篇评论明确Kya-Kya缺音乐天赋却扮重要角色，Rruk引导新生，接触Ansset的同学获社会地位；不借扩写后宫廷结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读Black Gate明确Songhouse单篇专评与Hugo官方原刊身份，限Ansset/Esste学校训练、同学关系和天赋等级。1979独立中篇是Mikal’s Songbird前传及Songmaster第一部分来源，不把1980扩写长篇全部宫廷、性或结局情节套来；原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.blackgate.com/2019/09/27/the-golden-age-of-science-fiction-songhouse-by-orson-scott-card/",
+        "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      ],
+      "identity_caveat": "独立1979 Songhouse中篇与1980 Songmaster扩写长篇分别解释；本条仅学校训练段范围。"
+    },
+    {
+      "id": "Q131345449",
+      "identity": {
+        "title": "The Faded Sun: Kutath",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "The Faded Sun: Kutath让已学习mri生活的Duncan来到其祖星，却发现旧战争的regul与人类力量也追到这里。Melein需要联合部落取得防御武器，而Duncan仍争取人类接受和平，使受威胁种族的立即自保与跨阵营信任彼此牵制。",
+        "issue_facets": [
+          {
+            "label": "文化归属与外交信任",
+            "question": "已经改学mri习惯的人类还能否作为可信的中间人，阻止人类把他当叛徒？",
+            "basis": "实际准确第三卷书介明确Duncan途中逐步成为mri、祖星环境折磨人类身体，人类阵营有信他者也有怀疑背叛者；不借系列总介代替本卷。"
+          },
+          {
+            "label": "防御准备与和平等待",
+            "question": "regul攻击平民城市后，部落领袖应怎样权衡动用祖星武器与等候谈判？",
+            "basis": "实际同第三卷书介及第三卷评论专段明确regul轰炸、Melein联合部落取得武器、Duncan劝等并与人类谈和平；不宣称完整结局已读。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读明确第三卷Kutath书介和三部曲评论内准确第三卷专段。限祖星部落、防御武器、regul攻击、人类联盟分歧与Duncan谈判；检索中的PRH三部曲总介不作为各卷事件证据。原作未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.risingshadow.net/book/264-the-faded-sun-kutath",
+        "https://yellowedandcreased.wordpress.com/2012/04/26/the-faded-sun-trilogy-c-j-cherryh/"
+      ]
+    },
+    {
+      "id": "Q131461480",
+      "identity": {
+        "title": "The Story Writer",
+        "author": "Richard Wilson"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "资本与劳动",
+          "知识与认识"
+        ],
+        "issue": "The Story Writer让一位老纸浆作家在跳蚤市场为路人即席写故事，随后发现自己也被写进故事。仍能为他人生成叙事的人突然成为叙事里的对象，使日常创作劳动与失去自身故事控制权相遇。",
+        "issue_facets": [
+          {
+            "label": "创作者与叙事对象",
+            "question": "习惯为路人写故事的人发现自己在他人的故事中时，还能怎样理解自己的行动权？",
+            "basis": "实际EBSCO作者研究文明确1979单篇老pulp writer跳蚤市场写故事，发现自己被写进故事后冒险开始；不猜谁写他或最终现实层次。"
+          },
+          {
+            "label": "过时职业与日常创造",
+            "question": "老作家把写作带到跳蚤市场为陌生人即兴服务，怎样让创作价值离开出版名望而进入日常交换？",
+            "basis": "实际同准确单篇专段明确老纸浆作者在flea market为passersby写故事；未说明价格或收入，故不虚构报酬和贫困经过。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+        "issue": "实际一次查询读EBSCO作者介绍中准确The Story Writer专段及Ramble House收录目录/SFadb原刊身份。只用老作家为路人即兴写作和发现自己在故事中的前提，目录仅支持1979 Destinies单篇，不把后来同名合集其他篇套入。原文未读。",
+        "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ebsco.com/research-starters/biography/richard-wilson/",
+        "https://ramblehouse.com/storywriter.htm",
+        "https://www.sfadb.com/Nebula_Awards_1980"
+      ]
+    },
+    {
+      "id": "Q135093199",
+      "identity": {
+        "title": "Rags & Bones: New Twists on Timeless Tales",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "The Sleeper and the Spindle以女性女王承担救援角色，重新安排童话对被救公主和婚姻的期待；角色可以决定自己的行动路线，亲密仪式不自动规定其未来。",
+        "issue_facets": [
+          {
+            "label": "童话角色与行动资格",
+            "question": "女性怎样从等待救援的位置成为救援行动者？",
+            "basis": "已有作品知识：女王进入沉睡王国并亲吻沉睡者。"
+          },
+          {
+            "label": "婚姻与自主",
+            "question": "婚姻安排能否代替个人选择未来行动？",
+            "basis": "已有作品知识：女王面对预定婚礼仍自行选择出发。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "具名成员已有作品知识；实际目录仅证收录。",
+        "issue": "实际国家图书馆目录确认The Sleeper and the Spindle；具体情节采用已有作品知识，只作为该成员选例。 仅具名成员示例；目录支持收录而非剧情，不借2014单行插图版细节，余篇未研究，保留幻想/现实混合合集边界。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际国家图书馆目录确认The Sleeper and the Spindle；具体情节采用已有作品知识，只作为该成员选例。"
+      },
+      "sources": [
+        "https://natlib.govt.nz/records/32975077"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://natlib.govt.nz/records/32975077",
+          "material_kind": "实际成员目录，非剧情证据",
+          "support_scope": "实际国家图书馆目录确认The Sleeper and the Spindle；具体情节采用已有作品知识，只作为该成员选例。"
+        }
+      ],
+      "identity_caveat": "仅具名成员示例；目录支持收录而非剧情，不借2014单行插图版细节，余篇未研究，保留幻想/现实混合合集边界。",
+      "analysis_basis": "existing_work_knowledge_with_membership_catalog_unverified"
+    },
+    {
+      "id": "Q135094459",
+      "identity": {
+        "title": "Five Autobiographies and a Fiction",
+        "author": "卢修斯·谢泼德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "以Dog-eared Paperback和Vacancy作选例：多重现实挑战自我经验的一致性，过去的恶魔又迫使个体面对曾经的生活；自我叙事不能仅由当下愿望构成。",
+        "issue_facets": [
+          {
+            "label": "多重现实与自我",
+            "question": "经验穿行于彼此交叠现实时怎样理解同一个人？",
+            "basis": "Thomas旅程被相互穿透的多个现实包围。"
+          },
+          {
+            "label": "过去与自我面对",
+            "question": "过去以恶魔形式逼近时怎样回应曾经的生活？",
+            "basis": "Vacancy过气演员被迫直面过去的真实恶魔。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "按所读书介前提作原创人工分类，待核。",
+        "issue": "实际出版社六篇概要：Dog-eared Paperback中Thomas写作者沿Mekong进入相互穿透的现实；Vacancy的过气演员须面对过去的真实恶魔。 只两具名成员前提，不将作者广告中的近自传等同事实人生；不补结局，其他四篇未具体分析，未读原作。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际出版社六篇概要：Dog-eared Paperback中Thomas写作者沿Mekong进入相互穿透的现实；Vacancy的过气演员须面对过去的真实恶魔。"
+      },
+      "sources": [
+        "https://subterraneanpress.com/five-autobiographies-and-a-fiction/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://subterraneanpress.com/five-autobiographies-and-a-fiction/",
+          "material_kind": "实际精准搜索返回的书介范围",
+          "support_scope": "实际出版社六篇概要：Dog-eared Paperback中Thomas写作者沿Mekong进入相互穿透的现实；Vacancy的过气演员须面对过去的真实恶魔。"
+        }
+      ],
+      "identity_caveat": "只两具名成员前提，不将作者广告中的近自传等同事实人生；不补结局，其他四篇未具体分析，未读原作。",
+      "analysis_basis": "actual_returned_synopsis_scope_unverified"
+    },
+    {
+      "id": "Q135209452",
+      "identity": {
+        "title": "Over There",
+        "author": "Will McIntosh"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "时间与因果",
+          "技术与责任",
+          "知识与认识"
+        ],
+        "issue": "两个独立行动却互相知觉的自我，使身份不能仅靠一条经历定义；科学观测带来的全体变化也把私人实验责任扩展到社会，阅读的线性次序仍不同于角色同时经验。",
+        "issue_facets": [
+          {
+            "label": "分支自我与主体",
+            "question": "两支自我独立行动又互相知觉时怎样理解个人同一性？",
+            "basis": "每个人同时意识到另一现实中自己的行动。"
+          },
+          {
+            "label": "实验与公共责任",
+            "question": "局部观测造成全体生活改变时实验者该承担什么？",
+            "basis": "三科学家的观测使所有人进入双重存在。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "按所读书介前提作原创人工分类，待核。",
+        "issue": "实际具名评论前段：三个科学家同时观测后现实分成两支，每人在两支独立行动又意识到另一支经历；Nathan叙述并列。 只评论前段并列叙述说明，未读原篇、不补结局；评论所说波形坍缩是故事前提而非现实物理证明。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际具名评论前段：三个科学家同时观测后现实分成两支，每人在两支独立行动又意识到另一支经历；Nathan叙述并列。"
+      },
+      "sources": [
+        "https://curtisweyant.com/blog/review-over-there-by-will-mcintosh/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://curtisweyant.com/blog/review-over-there-by-will-mcintosh/",
+          "material_kind": "实际精准搜索返回的书介范围",
+          "support_scope": "实际具名评论前段：三个科学家同时观测后现实分成两支，每人在两支独立行动又意识到另一支经历；Nathan叙述并列。"
+        }
+      ],
+      "identity_caveat": "只评论前段并列叙述说明，未读原篇、不补结局；评论所说波形坍缩是故事前提而非现实物理证明。",
+      "analysis_basis": "actual_returned_synopsis_scope_unverified"
+    },
+    {
+      "id": "Q139884886",
+      "identity": {
+        "title": "One Piece, Volume 72: Dressrosa's Forgotten",
+        "author": "尾田荣一郎"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "性别与亲密",
+          "技术与责任"
+        ],
+        "issue": "比赛奖品成为追索亡兄关联力量的目标，而主导者设下的陷阱限制参与者选择；私人亲情目标与政治操控并置，使行动不能仅按竞赛规则理解。",
+        "issue_facets": [
+          {
+            "label": "竞争与操控",
+            "question": "设陷阱的掌权者如何改变表面竞赛的选择空间？",
+            "basis": "Doflamingo在Dressrosa为来者预设陷阱。"
+          },
+          {
+            "label": "亡亲与力量继承",
+            "question": "追求亡亲曾有的能力怎样承载个人关系？",
+            "basis": "Luffy欲赢得亡兄的Flame-Flame Fruit。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "按所读书介前提作原创人工分类，待核。",
+        "issue": "实际VIZ第72卷书介：Dressrosa的Doflamingo设陷阱，Law能否救局未明，Luffy参加比赛欲得亡兄Flame-Flame Fruit。 只第72卷具体书介；2014英译不改源2013，不借后卷玩具解放、Sabo得到果实或结局，未看漫画图像。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际VIZ第72卷书介：Dressrosa的Doflamingo设陷阱，Law能否救局未明，Luffy参加比赛欲得亡兄Flame-Flame Fruit。"
+      },
+      "sources": [
+        "https://books.google.com/books/about/One_Piece.html?id=2F1GtgEACAAJ"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books/about/One_Piece.html?id=2F1GtgEACAAJ",
+          "material_kind": "实际精准搜索返回的书介范围",
+          "support_scope": "实际VIZ第72卷书介：Dressrosa的Doflamingo设陷阱，Law能否救局未明，Luffy参加比赛欲得亡兄Flame-Flame Fruit。"
+        }
+      ],
+      "identity_caveat": "只第72卷具体书介；2014英译不改源2013，不借后卷玩具解放、Sabo得到果实或结局，未看漫画图像。",
+      "analysis_basis": "actual_returned_synopsis_scope_unverified"
+    },
+    {
+      "id": "Q16570386",
+      "identity": {
+        "title": "La corona perduta",
+        "author": "Giampietro Stocco"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "权力与制度",
+          "时间与因果",
+          "殖民与他者"
+        ],
+        "issue": "个人早死被用作改写欧洲政治结构的分歧点，国家分割与帝国扩张使历史进程显露偶然性；绝对主义持续到现代，也迫使现代年份与政治解放分开理解。",
+        "issue_facets": [
+          {
+            "label": "历史分歧与制度",
+            "question": "一次个人早死怎样改变长期国家格局？",
+            "basis": "Napoleon早死后法国战败并被多国分割。"
+          },
+          {
+            "label": "现代时间与统治",
+            "question": "到了现代年份为什么不必然出现政治解放？",
+            "basis": "虚构2006年西班牙仍推行绝对主义复辟。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "按所读书介前提作原创人工分类，待核。",
+        "issue": "实际本书概要：Napoleon在意大利战役初期死亡，法国战败被分割；虚构2006年Bourbon西班牙支配欧洲并推绝对主义复辟。 仅概要前提，不补人物行动或结局；2006为虚构故事年不改2013发表年，战役日期沿来源范围，非现实因果定论。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际本书概要：Napoleon在意大利战役初期死亡，法国战败被分割；虚构2006年Bourbon西班牙支配欧洲并推绝对主义复辟。"
+      },
+      "sources": [
+        "https://it.wikipedia.org/wiki/La_corona_perduta"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://it.wikipedia.org/wiki/La_corona_perduta",
+          "material_kind": "实际精准搜索返回的书介范围",
+          "support_scope": "实际本书概要：Napoleon在意大利战役初期死亡，法国战败被分割；虚构2006年Bourbon西班牙支配欧洲并推绝对主义复辟。"
+        }
+      ],
+      "identity_caveat": "仅概要前提，不补人物行动或结局；2006为虚构故事年不改2013发表年，战役日期沿来源范围，非现实因果定论。",
+      "analysis_basis": "actual_returned_synopsis_scope_unverified"
+    },
+    {
+      "id": "Q16724456",
+      "identity": {
+        "title": "Dangerous Women",
+        "author": "Megan Abbott"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "文明与历史",
+          "生存与风险"
+        ],
+        "issue": "以The Princess and the Queen为例，女性继承人的资格与王朝内竞争引发合法性冲突，掌握巨龙等巨大力量的家族争位让私人血缘斗争转成广泛破坏。",
+        "issue_facets": [
+          {
+            "label": "继承与性别资格",
+            "question": "女性继承承诺怎样面对性别化的统治规则？",
+            "basis": "已有作品知识：Rhaenyra与Aegon II的继承争议。"
+          },
+          {
+            "label": "王朝力量与公共伤害",
+            "question": "家族争位为何会把强大武力变成共同灾难？",
+            "basis": "已有作品知识：两派巨龙参与王朝内战。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "具名成员已有作品知识；有声目录仅支持收录。",
+        "issue": "实际出版方有声版目录确认The Princess and the Queen；以下为该篇已有作品知识，不是21篇全析。 只具名成员已有知识示例，不借电视剧新情节；原记录Megan Abbott为贡献作者保留，未替换为编辑；32小时48分为音频时长。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际出版方有声版目录确认The Princess and the Queen；以下为该篇已有作品知识，不是21篇全析。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/216901/dangerous-women-by-george-r-r-martin-and-gardner-dozois/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/216901/dangerous-women-by-george-r-r-martin-and-gardner-dozois/",
+          "material_kind": "实际本合集有声成员目录，非剧情证据",
+          "support_scope": "实际出版方有声版目录确认The Princess and the Queen；以下为该篇已有作品知识，不是21篇全析。"
+        }
+      ],
+      "identity_caveat": "只具名成员已有知识示例，不借电视剧新情节；原记录Megan Abbott为贡献作者保留，未替换为编辑；32小时48分为音频时长。",
+      "analysis_basis": "existing_work_knowledge_with_membership_catalog_unverified"
+    },
+    {
+      "id": "Q17009517",
+      "identity": {
+        "title": "The Year's Best Science Fiction: Thirtieth Annual Collection",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "资本与劳动",
+          "主体与意识",
+          "技术与责任"
+        ],
+        "issue": "以The Girl-Thing Who Went Out for Sushi为例，适应太空工作的身体改造同时改变劳动机会和政治资格；受伤劳动者选择改造仍受国家及资助者干预，身体自主并非纯粹私人决定。",
+        "issue_facets": [
+          {
+            "label": "劳动与身体选择",
+            "question": "为保留工作而改造身体怎样保持真实自主？",
+            "basis": "已有作品知识：Fry受伤后以转变身体争取继续留在太空。"
+          },
+          {
+            "label": "许可与政治资格",
+            "question": "个人身体变化为何仍需回应资助者和法律权力？",
+            "basis": "已有作品知识：Fry的改造受到赞助方阻碍并需要律师。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "field_notes": {
+        "topics": "具名成员已有作品知识及公开单篇分析；目录只支持成员关系。",
+        "issue": "实际目录确认The Girl-Thing Who Went Out for Sushi；具体前提用已有作品知识及本地已公开Q16979767单篇分析。 仅具名成员示例，其余28篇未宣称分析；目录不是剧情证据，拒把选集2013当成员原刊年，未读整个合集。",
+        "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+        "source_scope": "实际目录确认The Girl-Thing Who Went Out for Sushi；具体前提用已有作品知识及本地已公开Q16979767单篇分析。"
+      },
+      "sources": [
+        "https://www.zvab.com/9781250029133/Years-Best-Science-Fiction-Thirtieth-1250029139/plp"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.zvab.com/9781250029133/Years-Best-Science-Fiction-Thirtieth-1250029139/plp",
+          "material_kind": "实际成员目录，非剧情证据",
+          "support_scope": "实际目录确认The Girl-Thing Who Went Out for Sushi；具体前提用已有作品知识及本地已公开Q16979767单篇分析。"
+        }
+      ],
+      "identity_caveat": "仅具名成员示例，其余28篇未宣称分析；目录不是剧情证据，拒把选集2013当成员原刊年，未读整个合集。",
+      "analysis_basis": "existing_work_knowledge_with_membership_catalog_unverified"
+    },
+    {
+      "id": "Q55635138",
+      "identity": {
+        "title": "The Core of the Sun",
+        "author": "约翰娜·西尼萨洛"
+      },
+      "fields": {
+        "topics": [
+          "性别与亲密",
+          "权力与制度",
+          "生命与人类定义",
+          "主体与意识"
+        ],
+        "issue": "虚构芬兰通过女性驯化与严格禁制安排性别角色，Vanna表面的顺从与实际自我发生冲突；被禁的辣椒也把身体体验变成政治问题，个人欲望须面对国家规定。",
+        "issue_facets": [
+          {
+            "label": "性别培育与主体",
+            "question": "把顺从培育成女性规范会怎样压制个人差异？",
+            "basis": "已有作品知识：Vanna的外在被安排角色与内在能力不一致。"
+          },
+          {
+            "label": "身体体验与国家",
+            "question": "味觉和刺激体验为什么会成为权力限制对象？",
+            "basis": "已有作品知识：社会禁制辣椒，地下追求与生活相连。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 只用确知的制度与人物前提，不补妹妹去向或结局；不作现实芬兰描述。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "只用确知的制度与人物前提，不补妹妹去向或结局；不作现实芬兰描述。"
+    },
+    {
+      "id": "Q6007953",
+      "identity": {
+        "title": "Impulse",
+        "author": "史蒂芬·古德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "性别与亲密",
+          "技术与责任"
+        ],
+        "issue": "能瞬移的Cent成长于父母谨慎隔绝的保护中，却希望进入普通学校并建立自己的关系；继承强大能力并不等于继承成人判断，保护与成长必须重新协商。",
+        "issue_facets": [
+          {
+            "label": "保护与成长",
+            "question": "父母避险安排怎样尊重孩子建立独立生活？",
+            "basis": "已有作品知识：Cent想从隔绝家庭转到学校生活。"
+          },
+          {
+            "label": "能力与判断",
+            "question": "继承瞬移能力是否就具备独立使用的判断力？",
+            "basis": "已有作品知识：少女与父母有相同传送能力，却面对新的同伴生活。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 仅确知的少女、家庭与入学前提，不借Jumper电影或后续Exo结局。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "仅确知的少女、家庭与入学前提，不借Jumper电影或后续Exo结局。"
+    },
+    {
+      "id": "Q131445076",
+      "identity": {
+        "title": "vN",
+        "author": "Madeline Ashby"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "技术与责任",
+          "主体与意识",
+          "性别与亲密"
+        ],
+        "issue": "Amy吞食祖母后迅速长成成年形态，家庭关系与机器人安全机制一起卷入危机；复制与成长的身体使保护人的设计要求和机器个体的自由发生冲突。",
+        "issue_facets": [
+          {
+            "label": "成长身体与关系",
+            "question": "身体突变怎样改变仍需照护者的关系资格？",
+            "basis": "已有作品知识：Amy由幼体在吞食祖母后迅速成长。"
+          },
+          {
+            "label": "安全设计与自主",
+            "question": "为了保护人而设置的约束如何面对机器个体自由？",
+            "basis": "已有作品知识：vN内置对人类的安全约束成为追逐与危机的关键。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 不补精确失效触发过程、存储祖母意识细节或后卷iD；原作未本次读取。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "不补精确失效触发过程、存储祖母意识细节或后卷iD；原作未本次读取。"
+    },
+    {
+      "id": "Q500038",
+      "identity": {
+        "title": "Star Wars: The Old Republic: Revan",
+        "author": "德鲁·卡宾森"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "Revan的记忆被Jedi改写后重新追寻过去，曾为敌人的个体被制度变成盟友；身份恢复使道德责任不能仅由新的阵营归属决定，也迫使亲密关系面对被隐藏的历史。",
+        "issue_facets": [
+          {
+            "label": "记忆与制度利用",
+            "question": "机构改写敌人记忆以获得盟友是否尊重主体？",
+            "basis": "已有作品知识：Jedi抹去并重建Revan记忆以使其改换阵营。"
+          },
+          {
+            "label": "遗忘与责任",
+            "question": "失去过去记忆后个人怎样面对曾经的行动？",
+            "basis": "已有作品知识：Revan重新追索自身被遮蔽的历史。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 只用本小说延续的确知记忆前提，不补游戏玩家分支、具体结局或长期囚禁时数。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "只用本小说延续的确知记忆前提，不补游戏玩家分支、具体结局或长期囚禁时数。"
+    },
+    {
+      "id": "Q5580719",
+      "identity": {
+        "title": "Goliath",
+        "author": "史考特·韋斯特費德"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "性别与亲密",
+          "权力与制度"
+        ],
+        "issue": "Alek与Deryn的关系因女扮男装真相和身份差距而改变，Tesla声称巨大武器能终止大战又把技术和平的承诺变成责任问题；个人情感与国家角色不容易重合。",
+        "issue_facets": [
+          {
+            "label": "亲密与身份规则",
+            "question": "性别和阶级秘密揭开后怎样重新理解伙伴关系？",
+            "basis": "已有作品知识：Alek发现Deryn其实是以男性身份服役的女孩。"
+          },
+          {
+            "label": "武器与和平承诺",
+            "question": "以威慑终止战争的技术主张应怎样接受追问？",
+            "basis": "已有作品知识：Tesla提出Goliath武器制止战争的主张。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 只Leviathan系列第3卷确知前提，不保证武器有效，不借其他同名Goliath作品。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "只Leviathan系列第3卷确知前提，不保证武器有效，不借其他同名Goliath作品。"
+    },
+    {
+      "id": "Q108339209",
+      "identity": {
+        "title": "Sandcastle",
+        "author": "皮埃爾·奧斯卡·利維"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "性别与亲密",
+          "生存与风险",
+          "时间与因果"
+        ],
+        "issue": "海滩上的孩子和成人突然迅速老化，使家庭必须在压缩的生命进程中面对照护、身体变化与死亡；平常依靠未来时间安排的选择，失去足够等待后显露脆弱。",
+        "issue_facets": [
+          {
+            "label": "身体时间与照护",
+            "question": "孩子快速长大而成人快速衰老时如何延续照护？",
+            "basis": "已有作品知识：海滩群体经历远超通常速度的年龄变化。"
+          },
+          {
+            "label": "有限时间与选择",
+            "question": "未来突然缩短时哪些人生决定仍可能由本人作出？",
+            "basis": "已有作品知识：身体变化与死亡迫使群体立即回应。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 只2010图像小说确知基本前提，不借2021电影Old的医药实验解释或新人物，未本次看图像。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "只2010图像小说确知基本前提，不借2021电影Old的医药实验解释或新人物，未本次看图像。"
+    },
+    {
+      "id": "Q27903816",
+      "identity": {
+        "title": "For Want of a Nail",
+        "author": "瑪莉·羅比奈·寇沃"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "技术与责任",
+          "文明与历史",
+          "生命与人类定义"
+        ],
+        "issue": "世代船的档案AI失去长期记忆连接，让维护者面对智能个体和群体历史如何维持连续性的困境；记忆故障不能只按系统是否高效来理解，照护与保留也成为责任。",
+        "issue_facets": [
+          {
+            "label": "记忆与主体连续",
+            "question": "失去长期记忆接口后怎样理解仍在运行的智能个体？",
+            "basis": "已有作品知识：船上档案AI长期记忆连接受损。"
+          },
+          {
+            "label": "档案与群体未来",
+            "question": "世代航行群体如何承担保存历史的照护责任？",
+            "basis": "已有作品知识：维护者须处理承担船上档案的AI记忆故障。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 仅确知档案AI开端，不补痴呆亲属、淘汰制度的精细过程或结局。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "仅确知档案AI开端，不补痴呆亲属、淘汰制度的精细过程或结局。"
+    },
+    {
+      "id": "Q11329363",
+      "identity": {
+        "title": "異變13秒",
+        "author": "东野圭吾"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "权力与制度",
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "东京多数人消失后，少量幸存者在灾害与秩序崩溃中求生；原有法律失去执行组织支持，个体必须重新判断救助、分配和相互关系，生存压力也暴露规则的实际条件。",
+        "issue_facets": [
+          {
+            "label": "规则与执行条件",
+            "question": "没有原有组织维持时法律怎样继续影响行动？",
+            "basis": "已有作品知识：幸存者在空城中面对基础秩序崩溃。"
+          },
+          {
+            "label": "生存与相互责任",
+            "question": "灾难压力下怎样决定帮助他人及分配资源？",
+            "basis": "已有作品知识：少量幸存者共同面对持续灾害和求生需要。"
+          }
+        ]
+      },
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_knowledge_unverified",
+      "field_notes": {
+        "topics": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "issue": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。 不补人数、精确13秒机制或最终返回结果；源出版日期不作故事时长。",
+        "issue_facets": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。",
+        "source_scope": "已有作品知识直接补充；本次查询0、开页0、原作阅读0，细节与文学解释仍待独立核对。"
+      },
+      "sources": [],
+      "source_evidence": [],
+      "identity_caveat": "不补人数、精确13秒机制或最终返回结果；源出版日期不作故事时长。"
+    }
+  ]
+}
