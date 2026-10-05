@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {registeredValues,CLASSIFICATION_REGISTRY} from '../dist/assets/classifications.mjs';
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
@@ -29,9 +30,9 @@ for(const r of sourceSearch.records){
  if(!canonicalIds.has(r.id)||sourceSearchMap.has(r.id)||!r.identity?.title||!r.identity?.author||!titles.includes(norm(r.identity.title))||!authors.includes(norm(r.identity.author))||!Array.isArray(r.queries)||r.queries.some(q=>typeof q!=='string'||!q.trim())||!Array.isArray(r.materials_checked)||r.materials_checked.some(m=>!/^https?:\/\//.test(m.url)||typeof m.result!=='string'||!m.result.trim())||!r.attempt_state||!r.reason_unconfirmed||!r.next_step)throw new Error('Invalid actual source-search log: '+r.id);
  sourceSearchMap.set(r.id,{input_file:'research/issue-source-searches.json',log_date:sourceSearch.metadata.created_at,...r});
 }
-const topics=new Set(catalog.works.flatMap(r=>r.topics)),spaces=new Set(['earth','planetary','interstellar','galactic','cosmic','abstract','unknown']);
-const durations=new Set(['日—月','年—一生','多代—百年','千年—文明史','百万年—宇宙尺度','多尺度或非线性','待核']);
-const sciences=new Set(['近现实外推','依赖未证技术','强反事实设定','混合或不适用']);
+const topics=new Set([...catalog.works.flatMap(r=>r.topics),...registeredValues('topic')]),spaces=new Set(['earth','planetary','interstellar','galactic','cosmic','abstract','unknown']);
+const durations=new Set(CLASSIFICATION_REGISTRY.field_values.duration);
+const sciences=new Set(CLASSIFICATION_REGISTRY.field_values.science_class);
 const knowledge=new Map(),knowledgeInputs=[];
 const issueInputs=await listIssueInputs(root);
 const spatialInputs=await listSpatialInputs(root);
@@ -94,9 +95,10 @@ for(const correction of issueCorrections.records){
  if(createHash('sha256').update(bytes).digest('hex')!==note.corrects_component_sha256)throw new Error('Issue correction target digest mismatch: '+correction.id);
  const original=JSON.parse(bytes).records.find(r=>r.id===correction.id);
  const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
- if(!original||!equal(correction.identity,original.identity)||!prior.assertions.some(a=>{const {input_file,...raw}=a;return equal(raw,original);})||!equal(Object.keys(correction.fields).sort(),['issue','issue_facets','topics'])||!equal(correction.fields.topics,original.fields.topics)||prior.fields.issue!==original.fields.issue||correction.fields.issue.length<30||correction.fields.issue_facets.length<2||correction.fields.issue_facets.some(f=>!f.label||!f.question||!f.basis)||!correction.source_evidence?.length||correction.source_evidence.some(e=>!correction.sources?.includes(e.url)||!e.support_scope)||Object.keys(correction.fields).some(k=>!correction.field_notes?.[k]))throw new Error('Issue correction must match an exact original assertion and scoped evidence: '+correction.id);
+ if(!original||!equal(correction.identity,original.identity)||!prior.assertions.some(a=>{const {input_file,...raw}=a;return equal(raw,original);})||!equal(Object.keys(correction.fields).sort(),['issue','issue_facets','topics'])||(!equal(correction.fields.topics,original.fields.topics)&&note.allow_topic_replacement!==true)||prior.fields.issue!==original.fields.issue||correction.fields.issue.length<30||correction.fields.issue_facets.length<2||correction.fields.issue_facets.some(f=>!f.label||!f.question||!f.basis)||!correction.source_evidence?.length||correction.source_evidence.some(e=>!correction.sources?.includes(e.url)||!e.support_scope)||Object.keys(correction.fields).some(k=>!correction.field_notes?.[k]))throw new Error('Issue correction must match an exact original assertion and scoped evidence: '+correction.id);
  const remaining=(prior.fields.issue_facets||[]).filter(f=>!original.fields.issue_facets.some(old=>equal(f,old)));
- knowledge.set(correction.id,{...prior,fields:{...prior.fields,issue:correction.fields.issue,issue_facets:[...remaining,...correction.fields.issue_facets]},field_notes:{...prior.field_notes,issue:correction.field_notes.issue,issue_facets:correction.field_notes.issue_facets},sources:[...new Set([...prior.sources,...correction.sources])],assertions:[...prior.assertions,{input_file:'research/issue-corrections.json',...correction}],corrections:[...(prior.corrections||[]),correction],superseded_issue_fields:[...(prior.superseded_issue_fields||[]),{input_file:note.corrects_component,sha256:note.corrects_component_sha256,fields:original.fields,reason:note.reason}]});
+ const correctedTopics=note.allow_topic_replacement===true?[...new Set([...prior.assertions.filter(a=>{const {input_file,...raw}=a;return !equal(raw,original);}).flatMap(a=>a.fields?.topics||[]),...correction.fields.topics])]:prior.fields.topics;
+ knowledge.set(correction.id,{...prior,fields:{...prior.fields,topics:correctedTopics,issue:correction.fields.issue,issue_facets:[...remaining,...correction.fields.issue_facets]},field_notes:{...prior.field_notes,topics:correction.field_notes.topics,issue:correction.field_notes.issue,issue_facets:correction.field_notes.issue_facets},sources:[...new Set([...prior.sources,...correction.sources])],assertions:[...prior.assertions,{input_file:'research/issue-corrections.json',...correction}],corrections:[...(prior.corrections||[]),correction],superseded_issue_fields:[...(prior.superseded_issue_fields||[]),{input_file:note.corrects_component,sha256:note.corrects_component_sha256,fields:original.fields,reason:note.reason}]});
  correctedIssueIds.add(correction.id);
 }
 // Explicit subject headings generate navigation candidates only. Never infer

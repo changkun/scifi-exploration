@@ -1,0 +1,26 @@
+import {CLASSIFICATION_REGISTRY} from './classification-data.mjs';
+export {CLASSIFICATION_REGISTRY};
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const byId = new Map(CLASSIFICATION_REGISTRY.categories.map(category => [category.id, category]));
+const byWork = new Map();
+for (const category of byId.values()) for (const member of category.members) {
+  if (!byWork.has(member.work_id)) byWork.set(member.work_id, []);
+  byWork.get(member.work_id).push({...member, id: category.id, axis: category.axis, label: category.label, revision: category.revision});
+}
+export const classificationLabel = value => value.split('|').map(id => byId.get(id)?.label || id).join(' ∩ ');
+export const registeredValues = axis => CLASSIFICATION_REGISTRY.categories.filter(category => category.axis === axis).map(category => category.label);
+export function applyClassifications(work) {
+  work.classification_assignments = (byWork.get(work.id) || []).map(assignment => ({...assignment}));
+  for (const axis of ['topic', 'branch']) {
+    const field = axis === 'topic' ? 'topics' : 'branches';
+    work[field] = [...new Set([...work[field], ...work.classification_assignments.filter(assignment => assignment.axis === axis).map(assignment => assignment.label)])];
+  }
+}
+export function classificationDetail(work) {
+  if (!work.classification_assignments?.length) return '';
+  return `<section class="detail-section"><h3>新增分类与跨维度关联</h3><p>研究分类 · 暂定待核。每个入口保留具体依据；不替代原来源标签。</p>${work.classification_assignments.map(assignment => `<article><button class="tag" data-filter="classification" data-value="${esc(assignment.id)}">${esc(assignment.label)} ↗</button><p>${esc(assignment.basis)}</p></article>`).join('')}</section>`;
+}
+export function renderClassifications(works) {
+  const covered = works.filter(work => work.classification_assignments?.length).length;
+  return `<section class="detail-section"><span class="eyebrow">OPEN CLASSIFICATION / V${CLASSIFICATION_REGISTRY.metadata.version}</span><h3>从作品中生长的新分类</h3><p>议题、分支、叙事、时间、空间、科学设定、现实关系与表达形态均可扩展。首批 ${CLASSIFICATION_REGISTRY.categories.length} 个暂定入口；当前范围 ${covered.toLocaleString('zh-CN')} 条有人工种子关联，其余尚未按新维度整理。一部作品可跨类，点击不同入口可叠加筛选，旧分类与细分问题保留。</p>${CLASSIFICATION_REGISTRY.axes.map(axis => `<details><summary>${esc(axis.label)} · ${CLASSIFICATION_REGISTRY.categories.filter(category => category.axis === axis.id).length} 个新增入口</summary><p>${esc(axis.definition)}</p><div class="issue-example-grid">${CLASSIFICATION_REGISTRY.categories.filter(category => category.axis === axis.id).map(category => {const members = works.filter(work => work.classification_assignments?.some(assignment => assignment.id === category.id)); return `<article><h4>${esc(category.label)}</h4><p>${esc(category.definition)}</p><p>${members.length} 条当前记录 · ${esc(category.status)}</p><div class="tag-list">${members.slice(0,4).map(work => `<button class="tag" data-work="${esc(work.id)}">${esc(work.title_zh)}</button>`).join('')}</div><button class="browse-button" data-filter="classification" data-value="${esc(category.id)}">按此分类浏览 →</button></article>`;}).join('')}</div></details>`).join('')}<p class="issue-scope">这是研究提出的组织方式，不宣称它们都是文学史上已命名的流派。保留版本、定义、相关议题、逐作品依据和撤销空间；分组不提高补全度或核验等级。</p><a href="./assets/classification-registry.json" download>下载可扩展分类与逐作品依据 ↓</a></section>`;
+}
