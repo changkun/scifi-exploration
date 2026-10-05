@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 11,
+    "version": 12,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v10.json",
-      "sha256": "1ab3209599069132fd3b23556d763cbf2aa110a51e13e9d381e5400de5dac576"
+      "file": "research/classification-registry-history/v11.json",
+      "sha256": "eec9499a5910d836823a7f3c4d2f014b0ca5b1b32cbe38d2801debd0e39fefdb"
     },
-    "revision_note": "第79批坚持网站所有研究内容可扩展。五个新方向跨文本形式、时间机制、生态议题与反向技术史；维度、类别、字段取值及跨维度关联均可继续增加、拆分或修订，孤例暂列比较，不自动传播或提高核验等级。八维34入口及旧60项候选完整保留。",
+    "revision_note": "第80批继续全网站研究维度开放。八项新发现跨虚构批评文章、虚构访谈、自传拟态、秘密实验纪实声称、跨类群生态设定、科学随笔与同题虚构、文化模仿危险及跨代文本见证；八维34入口及旧65候选完整保留，全部新方向先比较，不自动传播或增加核验等级。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -128,6 +128,26 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round6.json",
         "sha256": "e8d975315cb8bb5fbf412b181ed72a818c8d3b4984210ffde4574f73ef7db365"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-early-classification-candidates-round2.json",
+        "sha256": "4423bc811f021f4f0c1286b1fdfe71dca0b7df8982d0e14b2bf061b4c31b9cf6"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r7.json",
+        "sha256": "3f21119f1410bd2d318af73d26e87ad4262e73214e6b1f181b4b9efbd568edd8"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r8.json",
+        "sha256": "42472d761b4b1644b3c478661a08da4549d85be9f50fbe6b2c7ef17eb85d4c1e"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r9.json",
+        "sha256": "f5c33bd8021c34d413a4bab9553f59d18ab9690c05c51b7e66c4ab7323a9a9d0"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round8.json",
+        "sha256": "06dbb2228323f70703ccaa46e0ab0e1d9d04a83b41b26bf462c05021bf780431"
       }
     ]
   },
@@ -2979,6 +2999,213 @@
       ],
       "comparison_status": "single_seed_pending_comparison",
       "id": "discovery:quick-retry-root-classification-candidates-round6:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "dimension": "形式",
+      "label": "虚构批评文章",
+      "status": "single_seed_pending_comparison",
+      "definition": "作品以虚构世界中的批评文章评论尚不存在的艺术媒介及作品；须是叙事采用批评文体，不是现实读者评论。",
+      "boundaries": [
+        "不把一般元小说或人物谈论艺术自动收入。",
+        "集合身份只由明确选篇提供种子，不能把其余作品或整集判为此形式。"
+      ],
+      "seeds": [
+        {
+          "id": "Q30078240",
+          "title": "Universe 7",
+          "analyzed_member": "People Reviews — Robert Chilson",
+          "basis": "实际评论明确这篇九页故事本身是讨论思想录制品的批评文章；头戴设备可记录思想，形成销售行业。",
+          "url": "https://mporcius.blogspot.com/2016/09/1977-stories-from-fritz-leiber-brian.html",
+          "source_type": "reader_review_limited_page",
+          "support_scope": "已实际打开L13确认集合、L42–46确认选篇及文体；未读原篇。",
+          "read_date": "2026-10-05",
+          "verification_status": "knowledge_added_unverified"
+        }
+      ],
+      "id": "discovery:quick-retry-early-classification-candidates-round2:1",
+      "proposed_label": "虚构批评文章",
+      "definition_boundary": "作品以虚构世界中的批评文章评论尚不存在的艺术媒介及作品；须是叙事采用批评文体，不是现实读者评论。 不把一般元小说或人物谈论艺术自动收入。 集合身份只由明确选篇提供种子，不能把其余作品或整集判为此形式。",
+      "proposed_dimension": "形式",
+      "work_evidence": [
+        {
+          "id": "Q30078240",
+          "identity": {
+            "title": "Universe 7",
+            "author": "作者未知"
+          },
+          "basis": "实际评论明确这篇九页故事本身是讨论思想录制品的批评文章；头戴设备可记录思想，形成销售行业。",
+          "sources": [
+            "https://mporcius.blogspot.com/2016/09/1977-stories-from-fritz-leiber-brian.html"
+          ],
+          "exact_support_scope": "已实际打开L13确认集合、L42–46确认选篇及文体；未读原篇。",
+          "analyzed_member": "People Reviews — Robert Chilson",
+          "source_type": "reader_review_limited_page",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "虚构访谈中的艺术自述",
+      "definition_boundary": "以虚构艺术家接受访谈的问答呈现创作身份和媒介观念；只依据已见原文问答，不把所有现实作家访谈或带对话的小说纳入。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131471998",
+          "identity": {
+            "title": "The Best and the Rest of James Joyce",
+            "author": "伊恩·麥當勞"
+          },
+          "basis": "原文片段以采访者提问和Jimmy Joyce回答推进，讨论录音、市场期待、风格改变及音乐潜在形式；全篇形式未读尽。",
+          "sources": [
+            "https://www.negrophonic.com/pdfs/Ian%20McDonald%20-%20%20The%20Best%20and%20the%20Rest%20of%20James%20Joyce.pdf"
+          ],
+          "exact_support_scope": "实际搜索返回题名对应PDF的访谈式原作片段，仅Joyce论风格、录音、自由意志与市场的部分文字；没有直接打开或读完整PDF，未推定全篇世界背景、科技机制与结局。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r7:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "声称纪实的秘密实验叙述",
+      "definition_boundary": "以个人经历、隐秘机构与实验宣称构成事实口吻的叙述；候选用于媒介/真实性边界，不把此类主张当已证实科学，不传播到所有阴谋题材小说。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q17081784",
+          "identity": {
+            "title": "The Montauk Project: Experiments in Time",
+            "author": "作者未知"
+          },
+          "basis": "出版书介明确以Nichols的个人视角声称秘密雷达研究及心智控制；目录包括Philadelphia Experiment与Montauk。只读书介和目录，非实验核验。",
+          "sources": [
+            "https://www.barnesandnoble.com/w/the-montauk-project-preston-nichols/1129906856"
+          ],
+          "exact_support_scope": "实际读取Barnes & Noble银周年版书介与目录，仅书中自称的秘密项目框架，不验证实验存在、时间旅行或心智控制能力，也未读完整书。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r7:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "自传身份拟态的虚构叙述",
+      "definition_boundary": "使用第一人称并呈现仿佛作者本人的家庭生活，从而让真实承诺与虚构许可冲突；不把所有第一人称故事或真实回忆录纳入。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131308032",
+          "identity": {
+            "title": "Lost Boys",
+            "author": "奥森·斯科特·卡德"
+          },
+          "basis": "Alouette明确写1989原短篇仿佛关于Card自己的生活和家庭，并因叙述身份遭批评；扩写长篇改用第三人称明确虚构人物。仅此叙述契约证据，不借长篇剧情。",
+          "sources": [
+            "https://fanac.org/fanzines/Alouette/alouette_7_sawyer_1993-03.pdf"
+          ],
+          "exact_support_scope": "实际读取Alouette所载Andrew Weiner文章前导，只有1989短篇的自传式第一人称及其批评争议；不借1992长篇人物、失踪儿童或结局，未阅读原短篇。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r8:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "跨类群繁殖的生态设定",
+      "definition_boundary": "一个生物类群的繁殖过程产出另一类群，例如植物结种产出动物；按明确作品现象建候选，不推定现实可行性、设计起源或全系列通用机制。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131471734",
+          "identity": {
+            "title": "The Loch Moose Monster",
+            "author": "Janet Kagan"
+          },
+          "basis": "Baen原篇开头明确水仙产出咬人蟑螂，红水仙基因读数可能产出螳螂或萤火虫，并引发生态清除与抢救。只读返回开头，不声称掌握全部基因机制。",
+          "sources": [
+            "https://www.baen.com/Chapters/9781625795342/9781625795342___1.htm"
+          ],
+          "exact_support_scope": "实际直接读取Baen出版页返回的此独立篇开头原文，限定水仙、蟑螂、基因检测与湖怪初始通报；返回未至结尾，不称全文，也不借Mirabile其他篇的具体危机。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r8:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "科学随笔与同题虚构并置",
+      "definition_boundary": "以同一天体/主题将事实随笔、小说及艺术配对，明确区分科学描述和虚构探索；不同于一般科普书带插图或小说前言，不将书中全部假设当科学结论。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q135092822",
+          "identity": {
+            "title": "The Planets",
+            "author": "作者未知"
+          },
+          "basis": "theLogBook实际评述The Planets各天体的科学随笔与虚构并置，点名天王星观测将更新既有知识；Dreadsong用于小说选例，不代表全册主题。",
+          "sources": [
+            "https://www.thelogbook.com/planets-anthology/"
+          ],
+          "exact_support_scope": "实际直接读取theLogBook对此集合的详细评述，支持各天体科学/小说/艺术并置，小说选例仅Dreadsong；不是全部故事共同剧情，也不验证1985科学结论的当代正确性，未读书全文。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r9:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "议题",
+      "proposed_label": "文化崇拜与自毁模式传播",
+      "definition_boundary": "某群体主动崇拜和模仿另一个已自毁文明的文化，却可能连同其危险模式一起接受；只在具体作品并列崇拜、幸存者和重复自毁趋势时成立，不把所有文化交流等同病害。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134706081",
+          "identity": {
+            "title": "Listening to Brahms",
+            "author": "Suzy McKee Charnas"
+          },
+          "basis": "Listening to Brahms的实际单篇评论明确外星蜥蜴族迷恋人类广播文化、带走自毁后幸存者；模仿未治愈幸存者创伤，蜥蜴文化也出现重走人类道路的趋势。",
+          "sources": [
+            "https://www.goodreads.com/book/show/1169857.Listening_to_Brahms"
+          ],
+          "exact_support_scope": "实际读取Goodreads此独立篇的具体评论，只取文化广播、迟来救援、幸存者名人化与古典音乐锚点；未读原篇，不借Charnas其他作品，外星社会重复自毁是评论所示趋势而非已证结局。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r9:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "后代阅读祖先文本的嵌套见证",
+      "definition_boundary": "后代人物发现并阅读祖先留下的文本，由当前阅读层进入过去苦难和抵抗的记录；需明确两代与文本中介，不等同一般第三人称历史叙述、侦探拼合机构卷宗或真实案件裁定。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134207260",
+          "identity": {
+            "title": "49 302",
+            "author": "Nathalie Le Gendre"
+          },
+          "basis": "2006 Bifrost书评明确Elora在祖母物件中发现名为49 302的文本，阅读祖先Loïk的监狱苦难及抵抗；本轮只看到评论所述结构。",
+          "sources": [
+            "https://belial.fr/blog/49302"
+          ],
+          "exact_support_scope": "实际一次搜索返回本书独立书评段；没有原小说全文，不推断记录者是否可靠、是否导致正式平反或现实Seznec案件结果。"
+        }
+      ],
+      "id": "discovery:quick-retry-root-classification-candidates-round8:1",
       "review_status": "pending_further_comparison",
       "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
     }
