@@ -5,6 +5,7 @@ import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
 import {completionChunks,completionDelivery} from './completion-delivery.mjs';
+import {validateSpatialEvidence} from './spatial-evidence.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [audit,library,source,catalog,links]=await Promise.all([gz('research/record-audit.json.gz'),gz('research/library-crosschecks.json.gz'),gz('research/structured-bibliography.json.gz'),read('dist/assets/catalog.json'),read('dist/assets/research-links.json')]);
@@ -55,7 +56,7 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
       if(Object.keys(r.fields).some(k=>!['spatial_primary','spatial_secondary','spatial_rationale'].includes(k)))throw new Error('Spatial batch changes unrelated field: '+r.id);
       if(!spaces.has(r.fields.spatial_primary)||r.fields.spatial_primary==='unknown'||!r.fields.spatial_rationale?.trim())throw new Error('Spatial judgment absent: '+r.id);
       if(r.fields.spatial_secondary&&(!Array.isArray(r.fields.spatial_secondary)||r.fields.spatial_secondary.some(s=>!spaces.has(s)||s==='unknown'||s===r.fields.spatial_primary)))throw new Error('Invalid secondary space: '+r.id);
-      if(!r.source_evidence?.length||r.source_evidence.some(s=>!s.url?.startsWith('https://')||!s.support_scope?.trim()||!r.sources?.includes(s.url)))throw new Error('Spatial reading scope absent: '+r.id);
+      validateSpatialEvidence(r,{issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id)});
     }
     if(r.fields.duration&&!durations.has(r.fields.duration))throw new Error('Invalid duration: '+r.id);
     if(r.fields.science_class&&!sciences.has(r.fields.science_class))throw new Error('Invalid science: '+r.id);

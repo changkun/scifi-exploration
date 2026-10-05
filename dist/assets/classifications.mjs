@@ -1,4 +1,4 @@
-import {CLASSIFICATION_REGISTRY} from './classification-data.mjs';
+import {CLASSIFICATION_REGISTRY} from './classification-data.mjs?v=registry4';
 export {CLASSIFICATION_REGISTRY};
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId = new Map(CLASSIFICATION_REGISTRY.categories.map(category => [category.id, category]));
@@ -22,9 +22,10 @@ export function classificationDetail(work) {
 }
 function renderDiscoveries(works) {
   const byId = new Map(works.map(work => [work.id, work]));
+  const dimensionLabel = candidate => CLASSIFICATION_REGISTRY.axes.find(axis => axis.id === (candidate.dimension || candidate.axis))?.label || candidate.proposed_dimension || candidate.dimension || candidate.axis || '待比较维度';
   const candidates = (CLASSIFICATION_REGISTRY.discovery_candidates || []).filter(candidate => candidate.work_evidence.some(evidence => byId.has(evidence.id)));
   if (!candidates.length) return '';
-  return `<details><summary>新发现 · ${candidates.length} 个待比较方向</summary><p>已有具体作品依据，尚未形成正式分类。保留细节，不把单个例子自动推广到其他作品。</p><div class="issue-example-grid">${candidates.map(candidate => `<article><h4>${esc(candidate.proposed_label)}</h4><p>${esc(candidate.definition_boundary)}</p><p>发现候选 · 待比较与核对</p>${candidate.work_evidence.filter(evidence => byId.has(evidence.id)).map(evidence => `<button class="tag" data-work="${esc(evidence.id)}">${esc(byId.get(evidence.id).title_zh)} ↗</button><p>${esc(evidence.basis)}</p><details><summary>这条发现的资料范围</summary><p>${esc(evidence.exact_support_scope)}</p>${evidence.sources.map(url => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">所读材料 ↗</a>`).join(' · ')}</details>`).join('')}</article>`).join('')}</div></details>`;
+  return `<details><summary>新发现 · ${candidates.length} 个待比较方向</summary><p>已有具体作品依据，尚未形成正式分类。现有维度也可以继续增加；每项保留提出时的维度、定义边界和资料范围。</p><div class="issue-example-grid">${candidates.map(candidate => `<article><h4>${esc(candidate.proposed_label)}</h4><p class="issue-scope">${esc(dimensionLabel(candidate))} · 发现候选 · 待比较与核对</p><p>${esc(candidate.definition_boundary)}</p>${candidate.work_evidence.filter(evidence => byId.has(evidence.id)).map(evidence => `<button class="tag" data-work="${esc(evidence.id)}">${esc(byId.get(evidence.id).title_zh)} ↗</button><p>${esc(evidence.basis)}</p><details><summary>这条发现的资料范围</summary><p>${esc(evidence.exact_support_scope)}</p>${evidence.sources.map(url => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">所读材料 ↗</a>`).join(' · ')}</details>`).join('')}</article>`).join('')}</div></details>`;
 }
 export function renderClassifications(works) {
   const covered = works.filter(work => work.classification_assignments?.length).length;

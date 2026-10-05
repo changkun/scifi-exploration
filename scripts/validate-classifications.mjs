@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
 import {CLASSIFICATION_REGISTRY,classificationDetail,renderClassifications} from '../dist/assets/classifications.mjs';
 import {DEFAULT_STATE,filterWorks,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 const works=JSON.parse(gunzipSync(await readFile(new URL('../research/canonical-universe.json.gz',import.meta.url)))).works;
@@ -8,7 +9,9 @@ const byId=new Map(works.map(work=>[work.id,work]));
 const registry=JSON.parse(await readFile(new URL('../research/classification-registry.json',import.meta.url),'utf8'));
 assert.deepEqual(CLASSIFICATION_REGISTRY,registry);
 if(registry.metadata.previous_version){
-  const previous=JSON.parse(await readFile(new URL('../'+registry.metadata.previous_version.file,import.meta.url),'utf8'));
+  const previousBytes=await readFile(new URL('../'+registry.metadata.previous_version.file,import.meta.url));
+  assert.equal(createHash('sha256').update(previousBytes).digest('hex'),registry.metadata.previous_version.sha256);
+  const previous=JSON.parse(previousBytes);
   assert(registry.metadata.version>previous.metadata.version);
   for(const old of previous.categories){
     const current=registry.categories.find(category=>category.id===old.id);
@@ -16,7 +19,10 @@ if(registry.metadata.previous_version){
     assert.equal(current.definition,old.definition);
     assert.deepEqual(current.members.slice(0,old.members.length),old.members);
   }
+  assert.deepEqual(registry.discovery_candidates.slice(0,previous.discovery_candidates.length),previous.discovery_candidates);
 }
+for(const input of registry.metadata.discovery_inputs){assert.equal(createHash('sha256').update(await readFile(new URL('../'+input.file,import.meta.url))).digest('hex'),input.sha256);}
+assert.equal(new Set(registry.discovery_candidates.map(candidate=>candidate.id)).size,registry.discovery_candidates.length);
 assert.equal(works.length,14564);
 assert.equal(registry.axes.length,8);
 for(const category of registry.categories){
@@ -45,6 +51,7 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
+    assert(evidence.sources.every(url=>work.knowledge?.sources.includes(url)));
     assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
     assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
     assert.equal(work.completion.source_verified,false);

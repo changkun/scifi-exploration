@@ -5,6 +5,7 @@ import {FIELD_LABELS,buildCanonicalUniverse} from '../dist/assets/canonical.mjs'
 import {loadBibliographySource,loadCompletionSource,loadLibraryDetail} from '../dist/assets/data-loader.mjs';
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {listSpatialInputs} from './issue-inputs.mjs';
+import {validateSpatialEvidence} from './spatial-evidence.mjs';
 import {completionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
@@ -42,8 +43,21 @@ check('spatial batches preserve exact assertions, scoped evidence and field isol
   assert(w.knowledge.assertions.some(a=>{const {input_file,...raw}=a;return input_file===spatialFiles[i]&&JSON.stringify(raw)===JSON.stringify(r);}));
   assert(Object.keys(r.fields).every(k=>spatialKeys.includes(k)));
   assert.notEqual(r.fields.spatial_primary,'unknown');assert(r.fields.spatial_rationale.trim());
-  assert(r.source_evidence.length);for(const e of r.source_evidence){assert(e.support_scope.trim());assert(r.sources.includes(e.url));}
+  validateSpatialEvidence(r,{issueAssertions:w.knowledge.assertions,sourceSearchLog:w.source_search_log});
   assert.equal(r.verification_status,'knowledge_added_unverified');
+ }
+});
+check('existing spatial knowledge retains zero-query provenance and rejects invented or unscoped support',()=>{
+ const records=spatialInputs.flatMap(input=>input.records).filter(record=>record.analysis_basis==='existing_knowledge_unverified');
+ assert(records.some(record=>record.id==='Q5619311'));
+ for(const record of records){
+  const work=works.find(work=>work.id===record.id),context={issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log};
+  assert.equal(validateSpatialEvidence(record,context),'existing_knowledge_unverified');
+  assert.equal(work.completion.source_verified,false);
+  assert.throws(()=>validateSpatialEvidence({...record,analysis_basis:undefined},context));
+  assert.throws(()=>validateSpatialEvidence(record,{...context,issueAssertions:[]}));
+  assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,queries:['unperformed search']}}));
+  assert.throws(()=>validateSpatialEvidence({...record,sources:['https://example.invalid/unread']},context));
  }
 });
 check('spatial judgments fill missing placement and preserve every original known placement',()=>{
