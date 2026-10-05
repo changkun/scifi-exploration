@@ -516,3 +516,11 @@ Stars Are the Styx只开篇、Fires of Azeroth只序章、Carnelian Throne只后
 Three anthology examples are explicitly bounded: Rags & Bones uses The Sleeper and the Spindle; Dangerous Women uses The Princess and the Queen; the thirtieth Year's Best collection uses The Girl-Thing Who Went Out for Sushi. The read catalogs support membership, while story premises come from existing knowledge and, for the Cadigan example, the already public single-story analysis. No entire anthology is treated as read. House of Steel remains deferred because companion specifications do not establish the attached novel's specific conflict. Sandcastle does not borrow the film Old's added explanations. The Core of the Sun describes fictional Finland, not factual contemporary policy.
 
 Key Word的实际材料为普通推理、Children的Blish/J. A. Lawrence署名不同、Commandos源年冲突均保留。五组85项校验及原身份、来源、日期、粒度、旧解释、空间、冻结输入字节和设计守恒通过。R52已部署v54并在公开页面核对7,310核心、7,806议题分类、1,370空间、7,089过程及固定提交下载；R53待推送和公开确认，其余分片继续首遍。
+
+### 2026-10-05：R54 一遍过的内容先补，难项继续后置
+
+五份互斥冻结输入新增119条核心、238项具体问题及18条原未知空间。154个首遍身份中35条后置。累计14,564身份、7,549核心、7,015核心缺口、8,039议题分类、16,213细分、1,405空间、7,397份过程；50次较早尝试完整保留。所有新增仍knowledge_added_unverified；完整原作读取0，目录、已有知识、书介、授权开头与局部材料各按真实范围记录。
+
+The She-Wolf’s Hidden Grin只读实际返回的授权开头，不把4931词全文算已读。The Best Laid Plans只取短篇介绍和开头的采花安排，A Very Klingon Khristmas按韵文图画书戏仿；Gundam AGE: Memories of Sid只取原漫画连载前提。译名Leinster候选、Concertos的2012 novella与2019 roman区别未获情节确认而后置。Dibell、Brust、Attanasio等日期与版本口径保持原值，L’Incal拍卖图录单页描述不升级整章阅读。
+
+五组85项校验与身份顺序、原始来源、日期、文本粒度、既有研究、空间、冻结字节及设计守恒检查通过。R53已部署v55，并在公开浏览器确认7,430核心、7,922议题分类、1,387空间、7,243过程及固定提交下载；R54待固定提交推送和公开确认。各分片继续首遍，不等待发布。
