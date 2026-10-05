@@ -1,3 +1,4 @@
+import {readProcessLogGitSnapshot,PROCESS_GZIP_PATH} from './process-log-storage.mjs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {readFile, readdir, stat} from 'node:fs/promises';
@@ -12,9 +13,12 @@ const repo = process.cwd();
 const base = join(repo, 'dist');
 assert.match(metadata.dataset_commit, /^[a-f0-9]{40}$/);
 const processLogicalFile = 'research/issue-source-searches.json';
-const processMainURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/main/${processLogicalFile}`;
-const processSnapshotURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/${metadata.dataset_commit}/${processLogicalFile}`;
-const processSnapshotBytes = execFileSync('git', ['show', `${metadata.dataset_commit}:${processLogicalFile}`], {cwd: repo, maxBuffer: 256 * 1024 * 1024});
+const processMainURLs = [PROCESS_GZIP_PATH,processLogicalFile].map(path => `https://raw.githubusercontent.com/changkun/scifi-exploration/main/${path}`);
+const processSnapshotStorage = readProcessLogGitSnapshot(repo,metadata.dataset_commit);
+const processSnapshotURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/${metadata.dataset_commit}/${processSnapshotStorage.storage_path}`;
+const processSnapshotBytes = processSnapshotStorage.rawBytes;
+const {data:_data,rawBytes:_raw,storageBytes:_storage,...processStorageProof} = processSnapshotStorage;
+assert.deepEqual(metadata.research_source_storage?.[processLogicalFile],processStorageProof);
 assert.equal(metadata.research_source_sha256?.[processLogicalFile], createHash('sha256').update(processSnapshotBytes).digest('hex'));
 assert.equal(metadata.research_source_bytes?.[processLogicalFile], processSnapshotBytes.length);
 assert.equal(metadata.process_archive_download_url, processSnapshotURL);
@@ -84,12 +88,12 @@ assert.equal(newBody, expectedBody, 'Design body must remain unchanged except co
 for (const file of ['assets/completion.mjs', 'assets/issues.mjs']) {
   let expected = await readFile(join(base, file), 'utf8');
   for (const remote of metadata.remote_files) expected = expected.replaceAll('./' + remote, metadata.dataset_origin + remote);
-  if (file === 'assets/completion.mjs') expected = expected.replace(processMainURL, processSnapshotURL);
+  if (file === 'assets/completion.mjs') for(const url of processMainURLs) expected = expected.replace(`href="${url}"`, `href="${processSnapshotURL}"`);
   assert.equal(await readFile(join(delivery, file), 'utf8'), expected);
 }
 const deliveredCompletion = await readFile(join(delivery, 'assets/completion.mjs'), 'utf8');
 assert.equal(deliveredCompletion.split(processSnapshotURL).length, 2, 'The complete process archive must use the exact published commit');
-assert.ok(!deliveredCompletion.includes(processMainURL) && !deliveredCompletion.includes('./assets/issue-source-searches.json'), 'No evolving or stale process download in immutable delivery');
+assert.ok(processMainURLs.every(url => !deliveredCompletion.includes(url)) && !deliveredCompletion.includes('./assets/issue-source-searches.json'), 'No evolving or stale process download in immutable delivery');
 assert.ok(deliveredCompletion.includes(metadata.dataset_origin + 'assets/issue-research-queue.json.gz'), 'The full research queue must remain downloadable from the exact commit');
 const wrongWork = {source_id: 'Q1', source_index: {detail_url: './assets/bibliography-details/../../../secret.json'}};
 await assert.rejects(generated.loadSourceDetail(wrongWork, remoteFetch), /路径/);

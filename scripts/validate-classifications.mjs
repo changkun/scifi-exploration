@@ -1,3 +1,5 @@
+import {resolveR89PreservedScopedCandidateLog} from './round89-preserved-scoped-candidate-log.mjs';
+import {validateR89FormHistoryCandidate} from './round89-form-history-validator.mjs';
 import {validateR88AuthorCreationHistoryCandidate} from './round88-author-creation-history-validator.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -133,7 +135,9 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
-    if(validateR88AuthorCreationHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
+    if(validateR89FormHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
+      assert(renderClassifications(works).includes('媒介与出版史 · 目标情节待核'));
+    }else if(validateR88AuthorCreationHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
       assert(renderClassifications(works).includes('作者自传与创作背景 · 目标小说情节待核'));
     }else if(evidence.discovery_source_mode==='bibliographic_candidate_no_core_analysis'){
       assert.equal(evidence.actual_bibliographic_source_read,true);
@@ -145,6 +149,7 @@ for(const candidate of registry.discovery_candidates||[]){
         material.url===url && material.actual_bibliographic_source_read===true &&
         material.actual_content_source_read===false && material.reading_scope)));
     }else if(evidence.discovery_source_mode==='scoped_candidate_no_core_analysis'){
+      const scopedCandidateLog=resolveR89PreservedScopedCandidateLog(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)}).log;
       assert.equal(evidence.actual_content_source_read,true);
       assert.equal(evidence.knowledge_analysis,false);
       assert.equal(work.issue_analysis_status,'missing');
@@ -156,13 +161,13 @@ for(const candidate of registry.discovery_candidates||[]){
       if(evidence.private_raw_source.provenance==='actual_search_return'){
         const proof=evidence.private_raw_source;
         assert(proof.actual_query&&proof.record_sha256&&Number.isInteger(proof.record_index));
-        assert(work.source_search_log.raw_reading_log.queries.includes(proof.actual_query));
+        assert(scopedCandidateLog.queries.includes(proof.actual_query));
         assert(evidence.sources.every(url=>work.source_search_log.materials_checked.some(material=>
           material.url===url && material.scope_actual_query===proof.actual_query &&
           material.scope_record_sha256===proof.record_sha256 &&
           material.scope_evidence_sha256===proof.sha256)));
       }else{
-        assert(evidence.sources.every(url=>work.source_search_log.raw_reading_log.direct_page_reads?.some(read=>
+        assert(evidence.sources.every(url=>scopedCandidateLog.direct_page_reads?.some(read=>
           read.url===url && read.sha256===evidence.private_raw_source.sha256 &&
           read.outcome==='actually_read_limited_page_return_not_full_original')));
       }

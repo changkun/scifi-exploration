@@ -1,3 +1,4 @@
+import {readProcessLogGitSnapshot,PROCESS_GZIP_PATH} from './process-log-storage.mjs';
 import {execFileSync} from 'node:child_process';
 import {mkdir, readdir, readFile, rm, writeFile} from 'node:fs/promises';
 import {resolve, join} from 'node:path';
@@ -17,10 +18,12 @@ export async function buildSiteDelivery(repository, commit, output) {
   const dist = join(output, 'dist');
   const origin = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/dist/`;
   const processLogicalFile = 'research/issue-source-searches.json';
-  const processMainURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/main/${processLogicalFile}`;
-  const processSnapshotURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/${processLogicalFile}`;
-  const processSnapshotBytes = execFileSync('git', ['show', `${commit}:${processLogicalFile}`], {cwd: repository, maxBuffer: 256 * 1024 * 1024});
-  const processSnapshotSHA = createHash('sha256').update(processSnapshotBytes).digest('hex');
+  const processMainURLs = [PROCESS_GZIP_PATH,processLogicalFile].map(path => `https://raw.githubusercontent.com/changkun/scifi-exploration/main/${path}`);
+  const processSnapshot = readProcessLogGitSnapshot(repository,commit);
+  const processSnapshotURL = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/${processSnapshot.storage_path}`;
+  const processSnapshotBytes = processSnapshot.rawBytes;
+  const processSnapshotSHA = processSnapshot.raw_sha256;
+  const {data:_data,rawBytes:_raw,storageBytes:_storage,...processStorageProof} = processSnapshot;
   const sourceHashes = {};
   async function fingerprint(directory, prefix = '') {
     for (const entry of await readdir(directory, {withFileTypes: true})) {
@@ -59,8 +62,9 @@ export async function buildSiteDelivery(repository, commit, output) {
     let text = await readFile(path, 'utf8');
     for (const remote of remoteFiles) text = text.replaceAll('./' + remote, origin + remote);
     if (file === 'assets/completion.mjs') {
-      if (text.split(processMainURL).length !== 2) throw new Error('Complete process archive download boundary changed');
-      text = text.replace(processMainURL, processSnapshotURL);
+      const hits = processMainURLs.filter(url => text.includes(`href="${url}"`));
+      if (hits.length !== 1 || text.split(`href="${hits[0]}"`).length !== 2) throw new Error('Complete process archive download boundary changed');
+      text = text.replace(`href="${hits[0]}"`, `href="${processSnapshotURL}"`);
     }
     await writeFile(path, text);
   }
@@ -85,6 +89,7 @@ export async function buildSiteDelivery(repository, commit, output) {
     research_source_sha256: {[processLogicalFile]: processSnapshotSHA},
     research_source_bytes: {[processLogicalFile]: processSnapshotBytes.length},
     process_archive_download_url: processSnapshotURL,
+    research_source_storage: {[processLogicalFile]:processStorageProof},
     note: 'All record fields, detail shards and complete compressed exports remain at dataset_origin. Resolve relative shard paths against that origin. Export links use the exact commit. The pre-existing main-branch full-corpus download link is the evolving corpus, not this frozen snapshot.'
   };
   await writeFile(join(dist, 'assets/site-delivery.json'), JSON.stringify(metadata, null, 2) + '\n');

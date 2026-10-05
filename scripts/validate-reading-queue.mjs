@@ -1,3 +1,4 @@
+import {readProcessLog} from './process-log-storage.mjs';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
 import assertStrict from 'node:assert/strict';
@@ -21,7 +22,7 @@ assert(JSON.stringify(counts)===JSON.stringify(queue.metadata.stages),'阶段统
 const revised=canonical.works.filter(w=>w.content_corrections.length);
 assert(revised.every(w=>w.content_corrections.every(c=>w.source_first_year===c.original_source_value&&w.source_index.first_year===c.original_source_value&&w.sort_year===c.proposed_value&&w.completion.field_statuses.publication_date==='primary_date_correction'&&w.completion.has_conflict)),'原刊日期更正保留源值和差异并更新当前纪年');
 assert(revised.every(w=>w.content_corrections.every(c=>w.sources.includes(c.source_url)&&c.inspection_method&&c.support_scope)),'日期更正保留实际查读范围与一手链接');
-const searchLogs=JSON.parse(await readFile(new URL('research/issue-source-searches.json',root),'utf8'));
+const searchLogs=(await readProcessLog(root)).data;
 const logged=canonical.works.filter(w=>w.source_search_log);
 assert(logged.length===searchLogs.records.length&&new Set(logged.map(w=>w.id)).size===logged.length,'补充与查读过程逐身份归档，原始空查询记录保留');
 for(const r of searchLogs.records){

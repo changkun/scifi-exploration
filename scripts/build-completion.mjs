@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {readProcessLog} from './process-log-storage.mjs';
 import {registeredValues,CLASSIFICATION_REGISTRY} from '../dist/assets/classifications.mjs';
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
@@ -23,7 +24,7 @@ const canonicalIds=new Set(audit.records.map(r=>r.id)),researchIds=new Set(links
 const auditMap=new Map(audit.records.map(r=>[r.id,r])),researchByCanonical=new Map(links.links.map(l=>[l.canonical_id,catalog.works.find(w=>w.id===l.research_id)]));
 const norm=v=>String(v||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
 let sourceSearch={metadata:null,records:[]};
-try{sourceSearch=await read('research/issue-source-searches.json');}catch(error){if(error.code!=='ENOENT')throw error;}
+try{sourceSearch=(await readProcessLog(root)).data;}catch(error){if(error.code!=='ENOENT')throw error;}
 const sourceSearchMap=new Map();
 for(const r of sourceSearch.records){
  const baseline=auditMap.get(r.id),original=sourceMap.get(r.id),prior=researchByCanonical.get(r.id);
