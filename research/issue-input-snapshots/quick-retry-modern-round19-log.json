@@ -1,0 +1,2706 @@
+{
+  "metadata": {
+    "method": "knowledge-based-v1",
+    "status": "frozen_checkpoint",
+    "lane": 2,
+    "ownership_file": "work/evidence/quick-retry-lane-2.json",
+    "ownership_sha256": "f1e3bce7c91b9744ab300726ea85acd26e5f195553ce022a63559cc16e04bda5",
+    "note": "已有过程且核心仍missing的互斥复查；每身份一次不同旧查询的精准检索，至多一次容易直接打开。已有知识、目录与内容范围分开，解释全待独立核验；失败累计后置，不将延期称为完成。",
+    "record_count": 18,
+    "deferred_count": 14,
+    "actual_direct_open_request_count": 7,
+    "shared_open_identity_count": 4,
+    "direct_open_count_definition": "opens记录为取得对应内容的身份数量；4项复用同组页面，实际发出7个直接打开请求，不把共享读取当新增请求。",
+    "checkpoint": "quick-retry-modern-round19",
+    "scope_note": "复查首32等互斥身份；旧查询/材料与失败次数逐条保留，新查询不同旧式。普通书介足够时短核心+两问题，目录选例用明确已有知识；局部原文、社区材料、译版与预告范围分别标记。所有解释仍未独立核验，延期不是补全。",
+    "field_count": 54,
+    "facet_count": 36,
+    "retry_identity_count": 32,
+    "actual_query_count": 32,
+    "zero_query_knowledge_count": 0,
+    "bibliographic_only_plus_knowledge_count": 0,
+    "actual_content_analysis_count": 18,
+    "partial_original_excerpt_count": 1,
+    "original_full_text_count": 0,
+    "ownership_unprocessed_after_checkpoint": 60,
+    "next_retry_queue_index": 607,
+    "direct_open_count": 11,
+    "direct_open_failed_count": 1
+  },
+  "records": [
+    {
+      "id": "Q64831621",
+      "identity": {
+        "title": "Life's Lessons",
+        "author": "Christina F. York"
+      },
+      "pool_index": 576,
+      "queries": [
+        "\"Life's Lessons\" \"Christina York\" Star Trek summary"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64831621",
+        "identity": {
+          "title": "Life's Lessons",
+          "author": "Christina F. York"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Life's Lessons\" \"Christina F York\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询只目录、极薄内容或错篇材料，不足当前实体具体冲突；延期不计核心完成。",
+        "reason_unconfirmed": "只有短评论“Ferengi kid”及目录，没具体Life’s Lessons故事；不凭低俗评论推性别成长剧情。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64831621",
+          "identity": {
+            "title": "Life's Lessons",
+            "author": "Christina F. York"
+          },
+          "queries": [
+            "\"Life's Lessons\" \"Christina F York\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "只有短评论“Ferengi kid”及目录，没具体Life’s Lessons故事；不凭低俗评论推性别成长剧情。",
+          "exact_support_scope": "一次实际查询只目录、极薄内容或错篇材料，不足当前实体具体冲突；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-c.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+          "support_scope": "本条新查询未取得有效剧情，但同组对 Deep Space Spines 的一次共享页面读取实际包含 Life’s Lessons 这一节；分析据该节具体评论，不把该共享读取计作第二次新请求，未读原短篇。"
+        }
+      ],
+      "exact_support_scope": "本条新查询未取得有效剧情，但同组对 Deep Space Spines 的一次共享页面读取实际包含 Life’s Lessons 这一节；分析据该节具体评论，不把该共享读取计作第二次新请求，未读原短篇。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": [
+        {
+          "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-a.json",
+          "shared_open_with": "Q64831636",
+          "actual_new_request_for_this_identity": false
+        }
+      ]
+    },
+    {
+      "id": "Q64831636",
+      "identity": {
+        "title": "I, Voyager",
+        "author": "Jackee Crowell"
+      },
+      "pool_index": 577,
+      "queries": [
+        "\"I, Voyager\" Crowell Strange New Worlds plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64831636",
+        "identity": {
+          "title": "I, Voyager",
+          "author": "Jackee Crowell"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"I, Voyager\" \"Jackee Crowell\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+            "scope": "查询片段主要是相邻Fiction；一次打开仅读L0–129，未到I,Voyager段。",
+            "result": "insufficient_narrative_material",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本轮只有所记目录/相邻作品/有限未到正文页面，未读本篇内容；不凭题名作者猜，首轮延后。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q64831636",
+          "identity": {
+            "title": "I, Voyager",
+            "author": "Jackee Crowell"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"I, Voyager\" \"Jackee Crowell\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+              "scope": "查询片段主要是相邻Fiction；一次打开仅读L0–129，未到I,Voyager段。",
+              "result": "insufficient_narrative_material"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本轮只有所记目录/相邻作品/有限未到正文页面，未读本篇内容；不凭题名作者猜，首轮延后。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+          "support_scope": "实际直接打开 Deep Space Spines 的合集中 I Voyager 单篇评论；明确只据无形生命救援与排斥前提，结尾与舰船结合仅保留评论者的不确定判断，不把同页另一篇坠落行星情节误套入。"
+        }
+      ],
+      "exact_support_scope": "实际直接打开 Deep Space Spines 的合集中 I Voyager 单篇评论；明确只据无形生命救援与排斥前提，结尾与舰船结合仅保留评论者的不确定判断，不把同页另一篇坠落行星情节误套入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": [
+        {
+          "url": "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q64875926",
+      "identity": {
+        "title": "The Fourth Toast",
+        "author": "Kelly Cairo"
+      },
+      "pool_index": 581,
+      "queries": [
+        "\"The Fourth Toast\" Cairo Strange New Worlds review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64875926",
+        "identity": {
+          "title": "The Fourth Toast",
+          "author": "Kelly Cairo"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Fourth Toast\" \"Kelly Cairo\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+        "reason_unconfirmed": "只是Strange New Worlds III The Fourth Toast目录，没有当前Kelly Cairo篇情节；不借其他三种祝酒传统或相近书册。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64875926",
+          "identity": {
+            "title": "The Fourth Toast",
+            "author": "Kelly Cairo"
+          },
+          "queries": [
+            "\"The Fourth Toast\" \"Kelly Cairo\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "只是Strange New Worlds III The Fourth Toast目录，没有当前Kelly Cairo篇情节；不借其他三种祝酒传统或相近书册。",
+          "exact_support_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii",
+          "support_scope": "实际搜索返回 CZ Kontinuum 对 The Fourth Toast 的单篇摘要；只据替代时间线及恋情提前结束的两项前提，不借 Yesterday’s Enterprise 电视结局补短篇细节。"
+        }
+      ],
+      "exact_support_scope": "实际搜索返回 CZ Kontinuum 对 The Fourth Toast 的单篇摘要；只据替代时间线及恋情提前结束的两项前提，不借 Yesterday’s Enterprise 电视结局补短篇细节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64875962",
+      "identity": {
+        "title": "The Ones Left Behind",
+        "author": "Mary Wiecek"
+      },
+      "pool_index": 583,
+      "queries": [
+        "\"The Ones Left Behind\" Wiecek Strange New Worlds plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64875962",
+        "identity": {
+          "title": "The Ones Left Behind",
+          "author": "Mary Wiecek"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Ones Left Behind\" \"Mary Wiecek\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://memory-beta.fandom.com/wiki/Strange_New_Worlds_III",
+            "support_scope": "实际准确选集目录列Voyager/TheOnesLeftBehind/MaryWiecek，非情节。",
+            "source_kind": "franchise_community_exact_anthology_contents_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确选集目录列Voyager/TheOnesLeftBehind/MaryWiecek，非情节。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确SNWIII目录确认Wiecek的Voyager成员，但没有该篇具体事件，不能用TheOnesLeftBehind题名猜家属或幸存者。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q64875962",
+          "identity": {
+            "title": "The Ones Left Behind",
+            "author": "Mary Wiecek"
+          },
+          "ownership_index": 61,
+          "new_pool_index": 61,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"The Ones Left Behind\" \"Mary Wiecek\""
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://memory-beta.fandom.com/wiki/Strange_New_Worlds_III",
+              "support_scope": "实际准确选集目录列Voyager/TheOnesLeftBehind/MaryWiecek，非情节。",
+              "source_kind": "franchise_community_exact_anthology_contents_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-61.json",
+            "sha256": "3b88c0e96dc5b9a6f116eb15cfe5f46b3a0d63f52ea5f70fa2b023596c3c7f25",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确SNWIII目录确认Wiecek的Voyager成员，但没有该篇具体事件，不能用TheOnesLeftBehind题名猜家属或幸存者。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii",
+          "support_scope": "实际搜索读取 CZ Kontinuum 对 The Ones Left Behind 的具体单篇摘要；这是社区书目梗概，未读原短篇，不推定家属最终获得什么消息。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 CZ Kontinuum 对 The Ones Left Behind 的具体单篇摘要；这是社区书目梗概，未读原短篇，不推定家属最终获得什么消息。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64910021",
+      "identity": {
+        "title": "Prodigal Father",
+        "author": "Robert J. Mendenhall"
+      },
+      "pool_index": 584,
+      "queries": [
+        "\"Prodigal Father\" Mendenhall Star Trek summary"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64910021",
+        "identity": {
+          "title": "Prodigal Father",
+          "author": "Robert J. Mendenhall"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Prodigal Father\" \"Robert J. Mendenhall\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "查询未命中本短篇内容，主要无关档案与合刊列表。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-modern-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q64910021",
+          "identity": {
+            "title": "Prodigal Father",
+            "author": "Robert J. Mendenhall"
+          },
+          "queries": [
+            "\"Prodigal Father\" \"Robert J. Mendenhall\""
+          ],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "knowledge_analysis": false,
+          "first_pass_only": true,
+          "original_full_text_read": false,
+          "status": "deferred_first_pass",
+          "failure_count": 1,
+          "reason": "查询未命中本短篇内容，主要无关档案与合刊列表。",
+          "raw_search_artifact": "work/evidence/root-assist-modern-r2-search-b.json",
+          "opens": []
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://robertjmendenhall.com/star-trek/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://robertjmendenhall.com/star-trek/",
+          "support_scope": "实际搜索读取 Robert J Mendenhall 官网对 Prodigal Father 的本人书介；只分析这篇故事的 David 与 Kirk 关系前提，不将其官网其他篇章或整部电影剧情混入。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 Robert J Mendenhall 官网对 Prodigal Father 的本人书介；只分析这篇故事的 David 与 Kirk 关系前提，不将其官网其他篇章或整部电影剧情混入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q65259631",
+      "identity": {
+        "title": "太陽風交点",
+        "author": "Akira Hori"
+      },
+      "pool_index": 588,
+      "queries": [
+        "\"太陽風交点\" 堀晃 あらすじ 短編集"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q65259631",
+        "identity": {
+          "title": "太陽風交点",
+          "author": "Akira Hori"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"太陽風交点\" \"堀晃\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://ndlsearch.ndl.go.jp/books/R100000039-I12481144",
+            "scope": "NDL书目及迷宮の風等目录线索。",
+            "result": "insufficient_or_identity_uncertain",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "目录显示作品粒度或为选集而非统一长篇，未读本体叙事；不按Solar Wind题名套航天情节。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q65259631",
+          "identity": {
+            "title": "太陽風交点",
+            "author": "Akira Hori"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"太陽風交点\" \"堀晃\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://ndlsearch.ndl.go.jp/books/R100000039-I12481144",
+              "scope": "NDL书目及迷宮の風等目录线索。",
+              "result": "insufficient_or_identity_uncertain"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "目录显示作品粒度或为选集而非统一长篇，未读本体叙事；不按Solar Wind题名套航天情节。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.tsogen.co.jp/web_m/hori0709.html",
+        "https://www5a.biglobe.ne.jp/~sakatam/book/trinity.html",
+        "https://www.jushosaku.jp/w/%E5%A4%AA%E9%99%BD%E9%A2%A8%E4%BA%A4%E7%82%B9"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.tsogen.co.jp/web_m/hori0709.html",
+          "support_scope": "实际查询确认同名短篇集及表题篇；直接读到东京创元社刊载的作者系列后记，另读社区介绍对「太陽風交点」与 Trinity 的对应。集合层面仅以该表题篇及作者明确系列背景为选例，未读全集或表题篇全文。"
+        },
+        {
+          "url": "https://www5a.biglobe.ne.jp/~sakatam/book/trinity.html",
+          "support_scope": "实际查询确认同名短篇集及表题篇；直接读到东京创元社刊载的作者系列后记，另读社区介绍对「太陽風交点」与 Trinity 的对应。集合层面仅以该表题篇及作者明确系列背景为选例，未读全集或表题篇全文。"
+        },
+        {
+          "url": "https://www.jushosaku.jp/w/%E5%A4%AA%E9%99%BD%E9%A2%A8%E4%BA%A4%E7%82%B9",
+          "support_scope": "实际查询确认同名短篇集及表题篇；直接读到东京创元社刊载的作者系列后记，另读社区介绍对「太陽風交点」与 Trinity 的对应。集合层面仅以该表题篇及作者明确系列背景为选例，未读全集或表题篇全文。"
+        }
+      ],
+      "exact_support_scope": "实际查询确认同名短篇集及表题篇；直接读到东京创元社刊载的作者系列后记，另读社区介绍对「太陽風交点」与 Trinity 的对应。集合层面仅以该表题篇及作者明确系列背景为选例，未读全集或表题篇全文。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.tsogen.co.jp/web_m/hori0709.html",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q6945265",
+      "identity": {
+        "title": "我的真理美眉",
+        "author": "望月智充"
+      },
+      "pool_index": 591,
+      "queries": [
+        "\"ぼくのマリー\" \"望月智充\" あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q6945265",
+        "identity": {
+          "title": "我的真理美眉",
+          "author": "望月智充"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "My Dear Marie manga OVA identity Hiroshi android"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/My_Dear_Marie",
+            "result": "catalog_only",
+            "reading_scope": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 原作未全文阅读。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 原作未全文阅读。",
+        "reason_unconfirmed": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 有限材料与文学分析未独立核验。",
+        "next_step": "首次材料不足立即延后，待后续按失败次数和准确身份继续查。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-undated-query-round5-log.json",
+        "raw_reading_log": {
+          "id": "Q6945265",
+          "identity": {
+            "title": "我的真理美眉",
+            "author": "望月智充"
+          },
+          "attempt_state": "source_search_attempted",
+          "queries": [
+            "My Dear Marie manga OVA identity Hiroshi android"
+          ],
+          "actual_search_performed": true,
+          "actual_search_actor": "root",
+          "saved_return_review_actor": "root",
+          "page_open_attempt_count": 0,
+          "failed_page_open_count": 0,
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/My_Dear_Marie",
+              "result": "catalog_only",
+              "reading_scope": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 原作未全文阅读。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 原作未全文阅读。",
+          "analysis_basis": "specific_content_or_identity_insufficient",
+          "reason_unconfirmed": "输入作者望月智充对应OVA导演，返回漫画作者Sakura Takeuchi；共同页面的Story未独立区分原漫画和OVA，先保留身份疑点，未挪用漫画剧情。 有限材料与文学分析未独立核验。",
+          "issue_result": "not_added_specific_content_or_identity_needed",
+          "failure_count": 1,
+          "next_step": "首次材料不足立即延后，待后续按失败次数和准确身份继续查。",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-undated-query5-Q6945265.txt",
+            "scope": "root实际一次精准查询保存返回；额外打开见同id open5文件。"
+          }
+        },
+        "actual_search_performed": true,
+        "analysis_basis": "specific_content_or_identity_insufficient",
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.allcinema.net/cinema/pdf/88202"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.allcinema.net/cinema/pdf/88202",
+          "support_scope": "实际搜索读取 AllCinema 对望月智充执导 OVA 的内容介绍；资料明确为漫画改编且只抵达原作开头，分析限定这段共同开端，不借原作后半或声称读过漫画。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 AllCinema 对望月智充执导 OVA 的内容介绍；资料明确为漫画改编且只抵达原作开头，分析限定这段共同开端，不借原作后半或声称读过漫画。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q7086669",
+      "identity": {
+        "title": "Olga Romanoff",
+        "author": "喬治·格里菲斯"
+      },
+      "pool_index": 592,
+      "queries": [
+        "\"Olga Romanoff\" Griffith Natas Natasha synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7086669",
+        "identity": {
+          "title": "Olga Romanoff",
+          "author": "喬治·格里菲斯"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Olga Romanoff\" \"George Griffith\" plot"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Olga_Romanoff",
+            "scope": "查询社区只返回飞艇兄弟会战争及彗星末日概括，原文结果仅题页/目录。",
+            "result": "read_insufficient",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "两句通用概括未给本篇人物与制度矛盾；原文未实际连续读，不为熟悉飞艇题材推剧情。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round60-log.json",
+        "raw_reading_log": {
+          "id": "Q7086669",
+          "identity": {
+            "title": "Olga Romanoff",
+            "author": "喬治·格里菲斯"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Olga Romanoff\" \"George Griffith\" plot"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Olga_Romanoff",
+              "scope": "查询社区只返回飞艇兄弟会战争及彗星末日概括，原文结果仅题页/目录。",
+              "result": "read_insufficient"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "两句通用概括未给本篇人物与制度矛盾；原文未实际连续读，不为熟悉飞艇题材推剧情。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": true,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.gutenberg.org/cache/epub/54096/pg54096-images.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.gutenberg.org/cache/epub/54096/pg54096-images.html",
+          "support_scope": "实际搜索返回 Project Gutenberg 的 Olga Romanoff 原作文字片段；只读取搜索展示的政治意图片段，未打开或读完整部原作，不混入前作 The Angel of the Revolution 的完整情节。"
+        }
+      ],
+      "exact_support_scope": "实际搜索返回 Project Gutenberg 的 Olga Romanoff 原作文字片段；只读取搜索展示的政治意图片段，未打开或读完整部原作，不混入前作 The Angel of the Revolution 的完整情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q7318648",
+      "identity": {
+        "title": "Revolution",
+        "author": "作者未知"
+      },
+      "pool_index": 593,
+      "queries": [
+        "\"Revolution\" IDW 2016 crossover Ore-13 plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7318648",
+        "identity": {
+          "title": "Revolution",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_identity_review_after_first_pass",
+        "queries": [
+          "\"Revolution\" 2016 comic storyline synopsis IDW"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Revolution_(IDW_Publishing)",
+            "scope": "一次打开社区Plot Main Story L149–151；只IDW 2016跨刊主线开场，不读结局/tie-ins。",
+            "result": "read_identity_unconfirmed",
+            "reading_scope": "一次打开社区Plot Main Story L149–151；只IDW 2016跨刊主线开场，不读结局/tie-ins。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次打开社区Plot Main Story L149–151；只IDW 2016跨刊主线开场，不读结局/tie-ins。",
+        "reason_unconfirmed": "查询使用了2016/IDW限定，虽然取得该同名跨刊事件的具体简介，但canonical题名Revolution与作者未知不足确认此ID就是IDW版本；不能把检索限定反过来当身份依据。",
+        "next_step": "后轮先核实体外链/出版社/精确版本，再决定是否采用已取得的IDW简介。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round60-log.json",
+        "raw_reading_log": {
+          "id": "Q7318648",
+          "identity": {
+            "title": "Revolution",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_identity_review_after_first_pass",
+          "queries": [
+            "\"Revolution\" 2016 comic storyline synopsis IDW"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Revolution_(IDW_Publishing)",
+              "scope": "一次打开社区Plot Main Story L149–151；只IDW 2016跨刊主线开场，不读结局/tie-ins。",
+              "result": "read_identity_unconfirmed"
+            }
+          ],
+          "reading_scope": "一次打开社区Plot Main Story L149–151；只IDW 2016跨刊主线开场，不读结局/tie-ins。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "查询使用了2016/IDW限定，虽然取得该同名跨刊事件的具体简介，但canonical题名Revolution与作者未知不足确认此ID就是IDW版本；不能把检索限定反过来当身份依据。",
+          "next_step": "后轮先核实体外链/出版社/精确版本，再决定是否采用已取得的IDW简介。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Revolution_%28IDW_Publishing%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Revolution_%28IDW_Publishing%29",
+          "support_scope": "实际直接打开英文维基的 2016 IDW Revolution 主线剧情概述；只分析该漫画交叉事件所述资源与主权冲突，不用同名系列、玩具包装或各子系列全部历史。"
+        }
+      ],
+      "exact_support_scope": "实际直接打开英文维基的 2016 IDW Revolution 主线剧情概述；只分析该漫画交叉事件所述资源与主权冲突，不用同名系列、玩具包装或各子系列全部历史。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Revolution_%28IDW_Publishing%29",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q7389512",
+      "identity": {
+        "title": "武者番長風雲錄",
+        "author": "一式正人"
+      },
+      "pool_index": 594,
+      "queries": [
+        "\"武者番長風雲録\" \"一式\" あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7389512",
+        "identity": {
+          "title": "武者番長風雲錄",
+          "author": "一式正人"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "SD Gundam Musha Bancho Fuunroku manga Masato Isshiki story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://gundam.fandom.com/wiki/SD_Gundam_Musha_Banchou_Fuuunroku",
+            "result": "catalog_only",
+            "reading_scope": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 原作未全文阅读。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 原作未全文阅读。",
+        "reason_unconfirmed": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 有限材料与文学分析未独立核验。",
+        "next_step": "首次材料不足立即延后，待后续按失败次数和准确身份继续查。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-undated-query-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q7389512",
+          "identity": {
+            "title": "武者番長風雲錄",
+            "author": "一式正人"
+          },
+          "attempt_state": "source_search_attempted",
+          "queries": [
+            "SD Gundam Musha Bancho Fuunroku manga Masato Isshiki story"
+          ],
+          "actual_search_performed": true,
+          "actual_search_actor": "root",
+          "saved_return_review_actor": "root",
+          "page_open_attempt_count": 0,
+          "failed_page_open_count": 0,
+          "materials_checked": [
+            {
+              "url": "https://gundam.fandom.com/wiki/SD_Gundam_Musha_Banchou_Fuuunroku",
+              "result": "catalog_only",
+              "reading_scope": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 原作未全文阅读。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 原作未全文阅读。",
+          "analysis_basis": "specific_content_or_identity_insufficient",
+          "reason_unconfirmed": "返回只有原漫画编目与人物图谱入口，未见具体情节；武者番长未借其他Gundam系列战争背景。 有限材料与文学分析未独立核验。",
+          "issue_result": "not_added_specific_content_or_identity_needed",
+          "failure_count": 1,
+          "next_step": "首次材料不足立即延后，待后续按失败次数和准确身份继续查。",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-undated-query6-Q7389512.txt",
+            "scope": "root实际一次精准查询保存返回；额外打开见同id open6文件。"
+          }
+        },
+        "actual_search_performed": true,
+        "analysis_basis": "specific_content_or_identity_insufficient",
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://wiki.biligame.com/gundam/SD%E9%AB%98%E8%BE%BE%EF%BC%9A%E6%AD%A6%E8%80%85%E7%95%AA%E9%95%BF%E9%A3%8E%E4%BA%91%E5%BD%95"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://wiki.biligame.com/gundam/SD%E9%AB%98%E8%BE%BE%EF%BC%9A%E6%AD%A6%E8%80%85%E7%95%AA%E9%95%BF%E9%A3%8E%E4%BA%91%E5%BD%95",
+          "support_scope": "实际搜索读取 Gundam BWiki 对一式正人漫画的共同前提；只用小学、番长与迎击坏人的明确书介，不推定单卷事件、结局或其他 SD Gundam 的战争设定。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 Gundam BWiki 对一式正人漫画的共同前提；只用小学、番长与迎击坏人的明确书介，不推定单卷事件、结局或其他 SD Gundam 的战争设定。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q7605253",
+      "identity": {
+        "title": "Steal Moon",
+        "author": "立野真琴"
+      },
+      "pool_index": 596,
+      "queries": [
+        "\"Steal Moon\" \"Makoto Tateno\" Nozomi Coyote plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7605253",
+        "identity": {
+          "title": "Steal Moon",
+          "author": "立野真琴"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Steal Moon\" manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Steal_Moon",
+            "support_scope": "实际准确漫画Plot将Nozomi描述为输去自由者，与授权平台摘要角色方向冲突。",
+            "source_kind": "community_exact_manga_plot_with_character_conflict",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确漫画Plot将Nozomi描述为输去自由者，与授权平台摘要角色方向冲突。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://comics.inkr.com/title/2817-steal-moon",
+            "support_scope": "实际授权平台摘要称Coyote输了并被Nozomi拘禁，和Wiki反向；仅记录身份/剧情对应疑点。",
+            "source_kind": "licensed_comics_platform_synopsis_with_character_conflict",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际授权平台摘要称Coyote输了并被Nozomi拘禁，和Wiki反向；仅记录身份/剧情对应疑点。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确漫画资料给出街头赌博/在线窥视房前提，但Wiki与授权INKR简介对Nozomi/Coyote谁输谁被奴役互相颠倒；为避免角色因果错配，本轮延后独立核对。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q7605253",
+          "identity": {
+            "title": "Steal Moon",
+            "author": "立野真琴"
+          },
+          "ownership_index": 105,
+          "new_pool_index": 105,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Steal Moon\" manga synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Steal_Moon",
+              "support_scope": "实际准确漫画Plot将Nozomi描述为输去自由者，与授权平台摘要角色方向冲突。",
+              "source_kind": "community_exact_manga_plot_with_character_conflict",
+              "reading_status": "actually_read_support_scope_only"
+            },
+            {
+              "url": "https://comics.inkr.com/title/2817-steal-moon",
+              "support_scope": "实际授权平台摘要称Coyote输了并被Nozomi拘禁，和Wiki反向；仅记录身份/剧情对应疑点。",
+              "source_kind": "licensed_comics_platform_synopsis_with_character_conflict",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r2-search-105.json",
+            "sha256": "5e1ba3c764b72eec99e445c52a401e47b3d605f7b58f7149bdc23ef104a7ae4f",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确漫画资料给出街头赌博/在线窥视房前提，但Wiki与授权INKR简介对Nozomi/Coyote谁输谁被奴役互相颠倒；为避免角色因果错配，本轮延后独立核对。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Steal_Moon"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Steal_Moon",
+          "support_scope": "实际搜索读取英文维基 Steal Moon 漫画系列的完整短梗概；不声称读过两卷原漫画，关系和行动均限定该梗概。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取英文维基 Steal Moon 漫画系列的完整短梗概；不声称读过两卷原漫画，关系和行动均限定该梗概。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q7727962",
+      "identity": {
+        "title": "The Crash of the Elysium",
+        "author": "湯·麥克雷"
+      },
+      "pool_index": 597,
+      "queries": [
+        "\"The Crash of the Elysium\" Doctor Who immersive theatre plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7727962",
+        "identity": {
+          "title": "The Crash of the Elysium",
+          "author": "湯·麥克雷"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"The Crash of the Elysium\" \"Tom MacRae\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Crash_of_the_Elysium",
+            "scope": "查询实际返回儿童沉浸戏剧形态、Victorian steamer失踪、Doctor调查与Weeping Angels；评论更少，限制25词。",
+            "result": "read_insufficient",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "只有演出形式与秘密梗概，未得两项具体情节矛盾；不套Doctor Who其他集。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round61-log.json",
+        "raw_reading_log": {
+          "id": "Q7727962",
+          "identity": {
+            "title": "The Crash of the Elysium",
+            "author": "湯·麥克雷"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"The Crash of the Elysium\" \"Tom MacRae\" story"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Crash_of_the_Elysium",
+              "scope": "查询实际返回儿童沉浸戏剧形态、Victorian steamer失踪、Doctor调查与Weeping Angels；评论更少，限制25词。",
+              "result": "read_insufficient"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "只有演出形式与秘密梗概，未得两项具体情节矛盾；不套Doctor Who其他集。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://factoryinternational.org/whats-on/the-crash-of-the-elysium/",
+        "https://en.wikipedia.org/wiki/The_Crash_of_the_Elysium"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://factoryinternational.org/whats-on/the-crash-of-the-elysium/",
+          "support_scope": "实际直接读取 Factory International 的官方节目介绍，另读检索返回的舞台作品身份；只分析官方公布的儿童参与、倒计时及救援框架，未观看演出或读取剧本，不借电视剧单集结局。"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Crash_of_the_Elysium",
+          "support_scope": "实际直接读取 Factory International 的官方节目介绍，另读检索返回的舞台作品身份；只分析官方公布的儿童参与、倒计时及救援框架，未观看演出或读取剧本，不借电视剧单集结局。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取 Factory International 的官方节目介绍，另读检索返回的舞台作品身份；只分析官方公布的儿童参与、倒计时及救援框架，未观看演出或读取剧本，不借电视剧单集结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://factoryinternational.org/whats-on/the-crash-of-the-elysium/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q80354307",
+      "identity": {
+        "title": "The Slow Knife",
+        "author": "詹姆斯·斯瓦羅"
+      },
+      "pool_index": 599,
+      "queries": [
+        "\"The Slow Knife\" Swallow Prophecy Change Cardassia"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q80354307",
+        "identity": {
+          "title": "The Slow Knife",
+          "author": "詹姆斯·斯瓦羅"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Slow Knife\" \"James Swallow\" Star Trek"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.simonandschuster.co.uk/books/Star-Trek-Seven-Deadly-Sins/Margaret-Clark/Star-Trek-Deep-Space-Nine/9781439123423",
+            "support_scope": "实际官方选集检索摘要只列SwallowTheSlowKnife及envy对应，未给成员剧情。",
+            "source_kind": "official_publisher_exact_anthology_member_theme_label_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际官方选集检索摘要只列SwallowTheSlowKnife及envy对应，未给成员剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确选集官方简介仅把TheSlowKnife对应Cardassian嫉妒，没给具体角色或事件，不能以文明刻板母题代替单篇分析。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q80354307",
+          "identity": {
+            "title": "The Slow Knife",
+            "author": "詹姆斯·斯瓦羅"
+          },
+          "ownership_index": 66,
+          "new_pool_index": 66,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"The Slow Knife\" \"James Swallow\" Star Trek"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.simonandschuster.co.uk/books/Star-Trek-Seven-Deadly-Sins/Margaret-Clark/Star-Trek-Deep-Space-Nine/9781439123423",
+              "support_scope": "实际官方选集检索摘要只列SwallowTheSlowKnife及envy对应，未给成员剧情。",
+              "source_kind": "official_publisher_exact_anthology_member_theme_label_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-66.json",
+            "sha256": "9df870f3c4ea7bd5085a85ee773b619ce1eb6cfa2ba7d8be7de93453fc61de21",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确选集官方简介仅把TheSlowKnife对应Cardassian嫉妒，没给具体角色或事件，不能以文明刻板母题代替单篇分析。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.simonandschuster.com/books/Star-Trek-Seven-Deadly-Sins/Margaret-Clark/Star-Trek-Deep-Space-Nine/9781439123423"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/Star-Trek-Seven-Deadly-Sins/Margaret-Clark/Star-Trek-Deep-Space-Nine/9781439123423",
+          "support_scope": "实际搜索读取 Simon and Schuster Seven Deadly Sins 中明确对应 James Swallow 单篇的官方前提；只分析匮乏、邻居对照与羡妒，不虚构人物、谋杀事件或结局。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 Simon and Schuster Seven Deadly Sins 中明确对应 James Swallow 单篇的官方前提；只分析匮乏、邻居对照与羡妒，不虚构人物、谋杀事件或结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q885903",
+      "identity": {
+        "title": "青之6号",
+        "author": "Satoru Ozawa"
+      },
+      "pool_index": 600,
+      "queries": [
+        "\"青の6号\" \"小沢さとる\" 原作 あらすじ 漫画"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q885903",
+        "identity": {
+          "title": "青之6号",
+          "author": "Satoru Ozawa"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Blue Submarine No. 6\" \"Ozawa\" manga story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Blue_Submarine_No._6",
+            "support_scope": "实际读原漫画与AO6/OVA书目并列，以及混种/洪水剧情块；出处媒介不一致，未采用为原漫画分析。",
+            "source_kind": "community_manga_and_ova_shared_entry_identity_difference_search_return",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际读原漫画与AO6/OVA书目并列，以及混种/洪水剧情块；出处媒介不一致，未采用为原漫画分析。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确条目并列1967漫画、AO6和OVA；可用剧情明确是Zorndyke混种/海平面OVA线，不能自动给原Ozawa漫画。保留原实体，后续需原漫画资料。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q885903",
+          "identity": {
+            "title": "青之6号",
+            "author": "Satoru Ozawa"
+          },
+          "ownership_index": 23,
+          "new_pool_index": 23,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Blue Submarine No. 6\" \"Ozawa\" manga story"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Blue_Submarine_No._6",
+              "support_scope": "实际读原漫画与AO6/OVA书目并列，以及混种/洪水剧情块；出处媒介不一致，未采用为原漫画分析。",
+              "source_kind": "community_manga_and_ova_shared_entry_identity_difference_search_return",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r2-search-23.json",
+            "sha256": "c4c5c8b3becc7fedb40828fe48738d7c39315e6502bea93df4c0908170217a37",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确条目并列1967漫画、AO6和OVA；可用剧情明确是Zorndyke混种/海平面OVA线，不能自动给原Ozawa漫画。保留原实体，后续需原漫画资料。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/%E9%9D%92%E3%81%AE6%E5%8F%B7"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E3%81%AE6%E5%8F%B7",
+          "support_scope": "实际直接读取日文维基原漫画部分，包括 Max 与原版潜艇事件；资料明确 1990年代重画版和 OVA 与原作剧情不同，此处只采用原版漫画部分，不借动画的洪水、Zorndyke 或改造人战争。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取日文维基原漫画部分，包括 Max 与原版潜艇事件；资料明确 1990年代重画版和 OVA 与原作剧情不同，此处只采用原版漫画部分，不借动画的洪水、Zorndyke 或改造人战争。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E3%81%AE6%E5%8F%B7",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q9303667",
+      "identity": {
+        "title": "Rakietowe szlaki",
+        "author": "作者未知"
+      },
+      "pool_index": 602,
+      "queries": [
+        "\"Rakietowe szlaki\" \"opowiadania\" recenzja"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q9303667",
+        "identity": {
+          "title": "Rakietowe szlaki",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Rakietowe szlaki\" anthology stories"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://encyklopediafantastyki.pl/index.php?title=Rakietowe_szlaki",
+            "support_scope": "实际准确选集/系列书目与出版史，成员目录未给可用具体剧情。",
+            "source_kind": "genre_reference_exact_anthology_publication_scope_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确选集/系列书目与出版史，成员目录未给可用具体剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确资料仅说明同名1958选集与后来七卷系列的目录/译介史，未读具体成员情节，不用一个未知成员代表系列。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round1-log.json",
+        "raw_reading_log": {
+          "id": "Q9303667",
+          "identity": {
+            "title": "Rakietowe szlaki",
+            "author": "作者未知"
+          },
+          "ownership_index": 0,
+          "new_pool_index": 0,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Rakietowe szlaki\" anthology stories"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://encyklopediafantastyki.pl/index.php?title=Rakietowe_szlaki",
+              "support_scope": "实际准确选集/系列书目与出版史，成员目录未给可用具体剧情。",
+              "source_kind": "genre_reference_exact_anthology_publication_scope_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r1-search-0.json",
+            "sha256": "7d6caa0cbbe1f679e68acf071db8194ec5320c1f809f3179a8dc3b32a22960c9",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确资料仅说明同名1958选集与后来七卷系列的目录/译介史，未读具体成员情节，不用一个未知成员代表系列。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://obliczakultury.pl/2012/02/rakietowe-szlaki-1-recenzja/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://obliczakultury.pl/2012/02/rakietowe-szlaki-1-recenzja/",
+          "support_scope": "实际搜索读取 Oblicza kultury 对 Rakietowe szlaki I 的评论；本条源为丛书/系列，此处集合层面只用明确列出的两篇，不把 1958 年旧版和2010年代多卷全部目录视为一致，也不声称读过全部原篇。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 Oblicza kultury 对 Rakietowe szlaki I 的评论；本条源为丛书/系列，此处集合层面只用明确列出的两篇，不把 1958 年旧版和2010年代多卷全部目录视为一致，也不声称读过全部原篇。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q96279358",
+      "identity": {
+        "title": "Professor Shonku o Raktamatsya Rahasya",
+        "author": "萨蒂亚吉特·雷伊"
+      },
+      "pool_index": 603,
+      "queries": [
+        "\"Raktamatsya\" Shonku mystery red fish synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q96279358",
+        "identity": {
+          "title": "Professor Shonku o Raktamatsya Rahasya",
+          "author": "萨蒂亚吉特·雷伊"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Professor Shonku\" \"Raktamatsya\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询空、编目或不同作品/媒介，无当前实体自身足够内容；延期不计核心完成。",
+        "reason_unconfirmed": "社区本篇页面只有创作、刊期、人物和地点，无Red Fishes具体情节；不凭标题推生物研究危机。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round67-log.json",
+        "raw_reading_log": {
+          "id": "Q96279358",
+          "identity": {
+            "title": "Professor Shonku o Raktamatsya Rahasya",
+            "author": "萨蒂亚吉特·雷伊"
+          },
+          "queries": [
+            "\"Professor Shonku\" \"Raktamatsya\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "社区本篇页面只有创作、刊期、人物和地点，无Red Fishes具体情节；不凭标题推生物研究危机。",
+          "exact_support_scope": "一次实际查询空、编目或不同作品/媒介，无当前实体自身足够内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r67-search-a.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://professor-shonku.fandom.com/wiki/Professor_Shonku_o_Raktamatsya_Rahasya",
+        "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://professor-shonku.fandom.com/wiki/Professor_Shonku_o_Raktamatsya_Rahasya",
+          "support_scope": "本次实际查询读单篇及 Abinashbabu 社区介绍；同组对 Shonku adventures 的一次共享读取又提供本篇开头、两次新闻与下潜前提。只读社区梗概开头，未读原短篇或核验红鱼成因与结局。"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures",
+          "support_scope": "本次实际查询读单篇及 Abinashbabu 社区介绍；同组对 Shonku adventures 的一次共享读取又提供本篇开头、两次新闻与下潜前提。只读社区梗概开头，未读原短篇或核验红鱼成因与结局。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读单篇及 Abinashbabu 社区介绍；同组对 Shonku adventures 的一次共享读取又提供本篇开头、两次新闻与下潜前提。只读社区梗概开头，未读原短篇或核验红鱼成因与结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json",
+          "shared_open_with": "Q96279867",
+          "actual_new_request_for_this_identity": false
+        }
+      ]
+    },
+    {
+      "id": "Q96279867",
+      "identity": {
+        "title": "Shanku o Aadim Manush",
+        "author": "萨蒂亚吉特·雷伊"
+      },
+      "pool_index": 605,
+      "queries": [
+        "\"Shonku\" \"Adim Manush\" plot primitive man"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q96279867",
+        "identity": {
+          "title": "Shanku o Aadim Manush",
+          "author": "萨蒂亚吉特·雷伊"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Shanku o Aadim Manush\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确原篇题名查询只得到Ray作品表，没有AadimManush成员具体事件；不把前一Gorilla查询中的CochabambaGuha古人情节移入本篇。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q96279867",
+          "identity": {
+            "title": "Shanku o Aadim Manush",
+            "author": "萨蒂亚吉特·雷伊"
+          },
+          "ownership_index": 70,
+          "new_pool_index": 70,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Shanku o Aadim Manush\" story"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-70.json",
+            "sha256": "d5e3e0ced9edbe6998481b23a92b1bdb58e55d07ce6b8a62039ea003d06dd0fb",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "精确原篇题名查询只得到Ray作品表，没有AadimManush成员具体事件；不把前一Gorilla查询中的CochabambaGuha古人情节移入本篇。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.researchgate.net/publication/404373182_Human-Wildlife_Conflict_and_Figurations_of_Nonhuman_Precarity_and_Death_in_Satyajit_Ray%27s_Short_Stories"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.researchgate.net/publication/404373182_Human-Wildlife_Conflict_and_Figurations_of_Nonhuman_Precarity_and_Death_in_Satyajit_Ray%27s_Short_Stories",
+          "support_scope": "实际搜索返回 Human Wildlife Conflict and Figurations of Nonhuman Precarity and Death in Satyajit Ray’s Short Stories 对本篇的具名评论段落；共享目录只核对题名，不支持剧情。未取得原篇，未确定具体变形药物、参与人物或结局，不把论文前段其他故事的灭绝情节套入。"
+        }
+      ],
+      "exact_support_scope": "实际搜索返回 Human Wildlife Conflict and Figurations of Nonhuman Precarity and Death in Satyajit Ray’s Short Stories 对本篇的具名评论段落；共享目录只核对题名，不支持剧情。未取得原篇，未确定具体变形药物、参与人物或结局，不把论文前段其他故事的灭绝情节套入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q96279887",
+      "identity": {
+        "title": "Dr. Danielir Abiskar",
+        "author": "萨蒂亚吉特·雷伊"
+      },
+      "pool_index": 606,
+      "queries": [
+        "\"Dr Daniel\" \"Shonku\" invention story"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q96279887",
+        "identity": {
+          "title": "Dr. Danielir Abiskar",
+          "author": "萨蒂亚吉特·雷伊"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Dr. Danielir Abiskar\" \"Satyajit Ray\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "只有作者作品名单；英文转写未获得本短篇情节，不猜博士发明是什么。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-modern-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q96279887",
+          "identity": {
+            "title": "Dr. Danielir Abiskar",
+            "author": "萨蒂亚吉特·雷伊"
+          },
+          "queries": [
+            "\"Dr. Danielir Abiskar\" \"Satyajit Ray\""
+          ],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "knowledge_analysis": false,
+          "first_pass_only": true,
+          "original_full_text_read": false,
+          "status": "deferred_first_pass",
+          "failure_count": 1,
+          "reason": "只有作者作品名单；英文转写未获得本短篇情节，不猜博士发明是什么。",
+          "raw_search_artifact": "work/evidence/root-assist-modern-r2-search-b.json",
+          "opens": []
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.theantonymmag.com/locating-postcolonial-hero-in-bangla-speculative-fiction-part-i-debraj-moulick/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.theantonymmag.com/locating-postcolonial-hero-in-bangla-speculative-fiction-part-i-debraj-moulick/",
+          "support_scope": "实际搜索读取 The Antonym 对该具体短篇的 X 与 Anti X 评论说明；共享目录只给 Multiple personality Drug 分类。尚未读原篇，药物实际发明者、变化机制及结局待核，分析明确采用所见评论解释而非已独立确认的原文事实。"
+        }
+      ],
+      "exact_support_scope": "实际搜索读取 The Antonym 对该具体短篇的 X 与 Anti X 评论说明；共享目录只给 Multiple personality Drug 分类。尚未读原篇，药物实际发明者、变化机制及结局待核，分析明确采用所见评论解释而非已独立确认的原文事实。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json",
+          "shared_open_with": "Q96279867",
+          "actual_new_request_for_this_identity": false
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "id": "Q64831610",
+      "identity": {
+        "title": "The Naked Truth",
+        "author": "Jerry M. Wolfe"
+      },
+      "pool_index": 575,
+      "queries": [
+        "\"The Naked Truth\" \"Jerry M. Wolfe\" review Star Trek"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64831610",
+        "identity": {
+          "title": "The Naked Truth",
+          "author": "Jerry M. Wolfe"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Naked Truth\" Jerry M. Wolfe Star Trek story synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次查询仅StrangeNewWorlds整体介绍和本中篇目录；不把十八篇的范围继承TheNakedTruth。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q64831610",
+          "identity": {
+            "title": "The Naked Truth",
+            "author": "Jerry M. Wolfe"
+          },
+          "ownership_index": 300,
+          "new_pool_index": 300,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"The Naked Truth\" Jerry M. Wolfe Star Trek story synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r6-search-300.json",
+            "sha256": "3527a6ece3d9e5d35b00ec5a1d1e5a6163477248211d78cd1eae5e599234920d",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "一次查询仅StrangeNewWorlds整体介绍和本中篇目录；不把十八篇的范围继承TheNakedTruth。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "本次搜索及同组实际打开的合集评论只说明 Barclay 出场和评价，没有可可靠总结的 The Naked Truth 具体情节；不据裸体题名或角色背景猜写。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64848326",
+      "identity": {
+        "title": "The First Law of Metaphysics",
+        "author": "Michael S. Poteet"
+      },
+      "pool_index": 578,
+      "queries": [
+        "\"The First Law of Metaphysics\" Poteet Strange New Worlds review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64848326",
+        "identity": {
+          "title": "The First Law of Metaphysics",
+          "author": "Michael S. Poteet"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The First Law of Metaphysics\" \"Poteet\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+        "reason_unconfirmed": "作者本人文章确认The First Law of Metaphysics以Saavik为主角及写作选角，但其余是Wrath of Khan电影评价，没本篇具体剧情；不借电影。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64848326",
+          "identity": {
+            "title": "The First Law of Metaphysics",
+            "author": "Michael S. Poteet"
+          },
+          "queries": [
+            "\"The First Law of Metaphysics\" \"Poteet\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "作者本人文章确认The First Law of Metaphysics以Saavik为主角及写作选角，但其余是Wrath of Khan电影评价，没本篇具体剧情；不借电影。",
+          "exact_support_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询取得作者关于 Saavik 演员想象的创作说明及合集目录，但没有 The First Law of Metaphysics 的具体故事冲突；不把作者谈演员的文本或电影剧情当该短篇。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64848348",
+      "identity": {
+        "title": "A Ribbon for Rosie",
+        "author": "Ilsa J. Bick"
+      },
+      "pool_index": 579,
+      "queries": [
+        "\"A Ribbon for Rosie\" Ilsa Bick Star Trek synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64848348",
+        "identity": {
+          "title": "A Ribbon for Rosie",
+          "author": "Ilsa J. Bick"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"A Ribbon for Rosie\" \"Bick\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+        "reason_unconfirmed": "只有Bick作者书目/奖项与选集目录，虽对应身份但无A Ribbon for Rosie故事；不凭Ribbon猜疾病或纪念。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64848348",
+          "identity": {
+            "title": "A Ribbon for Rosie",
+            "author": "Ilsa J. Bick"
+          },
+          "queries": [
+            "\"A Ribbon for Rosie\" \"Bick\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "只有Bick作者书目/奖项与选集目录，虽对应身份但无A Ribbon for Rosie故事；不凭Ribbon猜疾病或纪念。",
+          "exact_support_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询返回 Ilsa J Bick 官方书目，确认 A Ribbon for Rosie 的发表与重印身份，但未提供剧情；不从名字或奖项进行分类。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64869379",
+      "identity": {
+        "title": "jubHa'",
+        "author": "Lawrence M. Schoen"
+      },
+      "pool_index": 580,
+      "queries": [
+        "\"jubHa\" Schoen Strange New Worlds plot Klingon"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64869379",
+        "identity": {
+          "title": "jubHa'",
+          "author": "Lawrence M. Schoen"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"jubHa'\" Lawrence M. Schoen Star Trek story synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次查询仅确认Schoen的Klingon语短篇与合集成员身份，未取得内容；语言形式本身不足写剧情分析。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q64869379",
+          "identity": {
+            "title": "jubHa'",
+            "author": "Lawrence M. Schoen"
+          },
+          "ownership_index": 308,
+          "new_pool_index": 308,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"jubHa'\" Lawrence M. Schoen Star Trek story synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r6-search-308.json",
+            "sha256": "bd92219e231304992da69669466fe1f80568075180b37e53241ac44a4a20e246",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "一次查询仅确认Schoen的Klingon语短篇与合集成员身份，未取得内容；语言形式本身不足写剧情分析。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "实际查询读到 Schoen 对 jubHa 原创克林贡语及无附译出版、拟多人朗读的说明，但没有故事内具体情节；语言形式发现另存候选，不把它算作已获得核心剧情分析。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64875938",
+      "identity": {
+        "title": "Out of the Box, Thinking",
+        "author": "Jerry M. Wolfe"
+      },
+      "pool_index": 582,
+      "queries": [
+        "\"Out of the Box, Thinking\" Wolfe Star Trek synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64875938",
+        "identity": {
+          "title": "Out of the Box, Thinking",
+          "author": "Jerry M. Wolfe"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Out of the Box Thinking\" \"Jerry Wolfe\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+        "reason_unconfirmed": "查询主要犯罪作者档案“outside the box thinking”错配，无Jerry M Wolfe对应短篇；立即延期。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64875938",
+          "identity": {
+            "title": "Out of the Box, Thinking",
+            "author": "Jerry M. Wolfe"
+          },
+          "queries": [
+            "\"Out of the Box Thinking\" \"Jerry Wolfe\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "查询主要犯罪作者档案“outside the box thinking”错配，无Jerry M Wolfe对应短篇；立即延期。",
+          "exact_support_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "搜索只返回 Barclay 调出某个全息教授的截断片段；一次打开明确合集页面失败。没有足够情节确认教授身份或冲突，不借 Moriarty 电视剧剧情填空。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii",
+          "outcome": "failed_fetch",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q64910032",
+      "identity": {
+        "title": "The Name of the Cat",
+        "author": "Steven Scott Ripley"
+      },
+      "pool_index": 585,
+      "queries": [
+        "\"The Name of the Cat\" Ripley Strange New Worlds plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64910032",
+        "identity": {
+          "title": "The Name of the Cat",
+          "author": "Steven Scott Ripley"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Name of the Cat\" \"Steven Scott Ripley\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+        "reason_unconfirmed": "社区该短篇Summary标incomplete，只余跨剧参考列表及纪念Kelley说明；参考并非完整故事，不推McCoy结局。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round66-log.json",
+        "raw_reading_log": {
+          "id": "Q64910032",
+          "identity": {
+            "title": "The Name of the Cat",
+            "author": "Steven Scott Ripley"
+          },
+          "queries": [
+            "\"The Name of the Cat\" \"Steven Scott Ripley\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "社区该短篇Summary标incomplete，只余跨剧参考列表及纪念Kelley说明；参考并非完整故事，不推McCoy结局。",
+          "exact_support_scope": "一次实际查询仅身份/目录、创作媒介信息或错配结果，没有本篇具体内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r66-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "实际评论确认故事以 McCoy 为重心、主要在 Next Generation 时代并影响 Picard 的生活，但没有具体事件或选择；关键词目录也不是情节，故保留待补。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64910050",
+      "identity": {
+        "title": "Seeing Forever",
+        "author": "Jeff Suess"
+      },
+      "pool_index": 586,
+      "queries": [
+        "\"Seeing Forever\" Suess Strange New Worlds synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64910050",
+        "identity": {
+          "title": "Seeing Forever",
+          "author": "Jeff Suess"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Seeing Forever\" \"Jeff Suess\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.jeffsuess.com/books",
+            "scope": "作者书目页仅证Seeing Forever收入身份，主要内容为其他历史书。",
+            "result": "insufficient_narrative_material",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本轮只有所记目录/相邻作品/有限未到正文页面，未读本篇内容；不凭题名作者猜，首轮延后。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q64910050",
+          "identity": {
+            "title": "Seeing Forever",
+            "author": "Jeff Suess"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Seeing Forever\" \"Jeff Suess\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.jeffsuess.com/books",
+              "scope": "作者书目页仅证Seeing Forever收入身份，主要内容为其他历史书。",
+              "result": "insufficient_narrative_material"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本轮只有所记目录/相邻作品/有限未到正文页面，未读本篇内容；不凭题名作者猜，首轮延后。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询读到 Jeff Suess 本人书目，确认 Seeing Forever 属于 Strange New Worlds IV 的 TNG 故事；没有题内剧情，不借作者其他历史或恐怖作品。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q64910096",
+      "identity": {
+        "title": "Black Hats",
+        "author": "William Leisner"
+      },
+      "pool_index": 587,
+      "queries": [
+        "\"Black Hats\" Leisner Strange New Worlds review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q64910096",
+        "identity": {
+          "title": "Black Hats",
+          "author": "William Leisner"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Black Hats\" \"William Leisner\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://unreality-sf.net/2009/05/25/william-leisner-interview/",
+            "scope": "作者访谈仅称作品入选，其他结果是目录或别篇开头；未读Black Hats情节。",
+            "result": "bibliography_or_thin_description",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "作者访谈仅称作品入选，其他结果是目录或别篇开头；未读Black Hats情节。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "root-assist-early-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q64910096",
+          "identity": {
+            "title": "Black Hats",
+            "author": "William Leisner"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Black Hats\" \"William Leisner\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://unreality-sf.net/2009/05/25/william-leisner-interview/",
+              "scope": "作者访谈仅称作品入选，其他结果是目录或别篇开头；未读Black Hats情节。",
+              "result": "bibliography_or_thin_description"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "作者访谈仅称作品入选，其他结果是目录或别篇开头；未读Black Hats情节。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询找到 Black Hats 的 Captain Proton 设定及评论者对黑白价值观的评价，但没有这篇独立故事的事件；不借 Bride of Chaotica 或 Moriarty 电视情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q65556126",
+      "identity": {
+        "title": "Home Soil",
+        "author": "Jim Johnson"
+      },
+      "pool_index": 589,
+      "queries": [
+        "\"Home Soil\" \"Jim Johnson\" Strange New Worlds review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q65556126",
+        "identity": {
+          "title": "Home Soil",
+          "author": "Jim Johnson"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Home Soil\" Jim Johnson Star Trek story synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "主要返回同题TNG电视剧改造行星情节，没有JimJohnson准确短篇内容，不把影视Plot移入本实体。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q65556126",
+          "identity": {
+            "title": "Home Soil",
+            "author": "Jim Johnson"
+          },
+          "ownership_index": 320,
+          "new_pool_index": 320,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Home Soil\" Jim Johnson Star Trek story synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r6-search-320.json",
+            "sha256": "d279aa84c8d4a6aba8f68a665733b1009ef2759563651af4a53e532200fd788a",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "主要返回同题TNG电视剧改造行星情节，没有JimJohnson准确短篇内容，不把影视Plot移入本实体。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询的读者评论只给 Data 在 Breen 袭击时位于地球，缺少本篇独立事件和具体选择；不把电视战争背景或另一篇 Eleven Hours Out 借来分析。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q68094261",
+      "identity": {
+        "title": "Akasha's memories",
+        "author": "作者未知"
+      },
+      "pool_index": 590,
+      "queries": [
+        "\"Akasha's memories\" book author synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q68094261",
+        "identity": {
+          "title": "Akasha's memories",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Akasha's memories\" science fiction novel"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "原作者未知，精确英文题只命中YuGiOh同人章节中Akasha角色记忆，无法确认原文学实体，不据无关角色片段分析。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q68094261",
+          "identity": {
+            "title": "Akasha's memories",
+            "author": "作者未知"
+          },
+          "ownership_index": 64,
+          "new_pool_index": 64,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Akasha's memories\" science fiction novel"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-64.json",
+            "sha256": "d112a4fdd1a001d35ec72de289a54313426027b9430a340e88851656f0ec1a11",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "原作者未知，精确英文题只命中YuGiOh同人章节中Akasha角色记忆，无法确认原文学实体，不据无关角色片段分析。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询主要返回 Queen of the Damned 中名为 Akasha 的角色及其他同词文本，与底库 Akasha’s memories 身份未对应；不套用吸血鬼小说的情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q74693401",
+      "identity": {
+        "title": "The Calling",
+        "author": "安德魯·羅賓森"
+      },
+      "pool_index": 595,
+      "queries": [
+        "\"The Calling\" \"Andrew J. Robinson\" Prophecy Change summary"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q74693401",
+        "identity": {
+          "title": "The Calling",
+          "author": "安德魯·羅賓森"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Calling\" Andrew Robinson Star Trek story synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "主要AStitchInTime小说与游戏TheCalling命中；ProphecyAndChange成员目录不足，Robinson准确TheCalling短篇情节未取得。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q74693401",
+          "identity": {
+            "title": "The Calling",
+            "author": "安德魯·羅賓森"
+          },
+          "ownership_index": 324,
+          "new_pool_index": 324,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"The Calling\" Andrew Robinson Star Trek story synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r6-search-324.json",
+            "sha256": "172c48105904231277fb61cbf6b60c4b72eb0d19d3f69f6b1a16e8ac8e0b23ae",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "主要AStitchInTime小说与游戏TheCalling命中；ProphecyAndChange成员目录不足，Robinson准确TheCalling短篇情节未取得。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次新查询主要返回无关宗教及职业使命材料，没有 Andrew Robinson 这篇 The Calling 的可用内容；不把 A Stitch in Time 或 Garak 的已知来历套入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q7758619",
+      "identity": {
+        "title": "The Protomen",
+        "author": "作者未知"
+      },
+      "pool_index": 598,
+      "queries": [
+        "The Protomen rock opera fictional personas plot Megaman"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q7758619",
+        "identity": {
+          "title": "The Protomen",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "The Protomen band conceptual story rock opera"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际精准查询仅获得编辑/实体/媒介资料，未取得可用于该实体的具体故事前提；未读原作，不计核心完成。",
+        "reason_unconfirmed": "原实体对应现实乐队，搜索区分同名概念专辑但未取得明确剧情；不直接套Mega Man游戏或另一专辑。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q7758619",
+          "identity": {
+            "title": "The Protomen",
+            "author": "作者未知"
+          },
+          "queries": [
+            "The Protomen band conceptual story rock opera"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "原实体对应现实乐队，搜索区分同名概念专辑但未取得明确剧情；不直接套Mega Man游戏或另一专辑。",
+          "exact_support_scope": "一次实际精准查询仅获得编辑/实体/媒介资料，未取得可用于该实体的具体故事前提；未读原作，不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r64-search-a.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次检索明确区分乐队实体 The Protomen 与同名首张概念专辑。底库本条包含乐队及虚构舞台人格等类型，不能把某一专辑剧情直接当整支乐队的统一作品分析；保留非单作粒度，相关音乐形式材料另存候选。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q90831605",
+      "identity": {
+        "title": "Sora o Kakeru Shōjo R",
+        "author": "作者未知"
+      },
+      "pool_index": 601,
+      "queries": [
+        "\"宇宙をかける少女R\" 漫画 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q90831605",
+        "identity": {
+          "title": "Sora o Kakeru Shōjo R",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Sora o Kakeru Shoujo R\" manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际查询空、编目或不同作品/媒介，无当前实体自身足够内容；延期不计核心完成。",
+        "reason_unconfirmed": "明确Sora Kake Girl R漫画署Okada/Kabocha但正文概述介绍Sunrise动画总体，未得R漫画独立前提；媒介边界保持。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round67-log.json",
+        "raw_reading_log": {
+          "id": "Q90831605",
+          "identity": {
+            "title": "Sora o Kakeru Shōjo R",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Sora o Kakeru Shoujo R\" manga synopsis"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "明确Sora Kake Girl R漫画署Okada/Kabocha但正文概述介绍Sunrise动画总体，未得R漫画独立前提；媒介边界保持。",
+          "exact_support_scope": "一次实际查询空、编目或不同作品/媒介，无当前实体自身足够内容；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r67-search-a.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询确认 Sora o Kakeru Shojo R 漫画的刊载与作者线索，但主要剧情来自同名电视系列，甚至有其他外传条目混入；未取得 R 漫画独有或可靠共同情节，暂缓。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q96279497",
+      "identity": {
+        "title": "Compu",
+        "author": "萨蒂亚吉特·雷伊"
+      },
+      "pool_index": 604,
+      "queries": [
+        "\"Compu\" Ray computer story Professor Shonku synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q96279497",
+        "identity": {
+          "title": "Compu",
+          "author": "萨蒂亚吉特·雷伊"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Compu\" \"Satyajit Ray\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.satyajitraysociety.org/fiction.html",
+            "scope": "官方选集目录确认Compu；其他仅AI标签或评论标题。",
+            "result": "insufficient_narrative_or_boundary_uncertain",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "无具体Compu冲突；不把当下Claude风险借为小说情节。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q96279497",
+          "identity": {
+            "title": "Compu",
+            "author": "萨蒂亚吉特·雷伊"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Compu\" \"Satyajit Ray\" story"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.satyajitraysociety.org/fiction.html",
+              "scope": "官方选集目录确认Compu；其他仅AI标签或评论标题。",
+              "result": "insufficient_narrative_or_boundary_uncertain"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "无具体Compu冲突；不把当下Claude风险借为小说情节。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "一次查询及同组共享目录读取只给 Compu 的计算机脑设定、人工智能分类与题名 Tellus 的对应，没有该短篇具体情节；不把其他 Shonku 机器人的行为借来补写。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r19-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Professor_Shonku_adventures",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r19-open-b.json",
+          "shared_open_with": "Q96279867",
+          "actual_new_request_for_this_identity": false
+        }
+      ]
+    }
+  ]
+}

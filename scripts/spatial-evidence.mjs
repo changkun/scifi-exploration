@@ -43,6 +43,29 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
   const note = record.field_notes?.spatial_primary || '';
   const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书|此卷)?已有知识|明确已有知识|准确熟悉本书/.test(note);
   if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !explicitKnowledge) fail();
+  if (record.knowledge_provenance_mode === 'existing_knowledge_from_frozen_analysis') {
+    // The older frozen input used a Chinese knowledge scope rather than an
+    // analysis_basis token. Preserve that raw input and its previous attempts.
+    if (record.integration_relation !== 'published_core' ||
+        !record.source_analysis_archive?.startsWith('research/issue-input-snapshots/') ||
+        !record.source_analysis_sha256 || !record.source_analysis_record_sha256 ||
+        !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw) ||
+        raw.attempt_state !== 'content_read_quick_retry' || raw.issue_result !== 'added_unverified' ||
+        raw.actual_search_performed !== false || raw.actual_search_count !== 0 || raw.actual_open_count !== 0 ||
+        raw.queries?.length || raw.materials_checked?.length || raw.sources?.length ||
+        raw.reading_scope !== '确切作品既有知识；零查询、零打开、未读原作全文。' ||
+        sourceSearchLog.actual_search_performed !== false) fail();
+    const previous = sourceSearchLog.previous_attempts?.at(-1);
+    if (!previous || !sameIdentity(previous) ||
+        JSON.stringify(raw.prior_source_log?.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(raw.prior_source_log?.materials_checked) !== JSON.stringify(previous.materials_checked) ||
+        JSON.stringify(sourceSearchLog.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(sourceSearchLog.materials_checked) !== JSON.stringify(previous.materials_checked)) fail();
+    if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue &&
+        assertion.verification_status === 'knowledge_added_unverified' && !assertion.sources?.length &&
+        assertion.field_notes?.issue?.startsWith('原创解释基于既有知识，未读本轮原作全文；'))) fail();
+    return 'existing_knowledge_unverified';
+  }
   if (record.knowledge_provenance_mode === 'existing_knowledge_after_scoped_lookup') {
     if (!record.field_notes.evidence_provenance || !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw)) fail();
     if (!raw.queries?.length || raw.actual_search_performed === false || sourceSearchLog.actual_search_performed === false || !raw.queries.every(query => sourceSearchLog.queries.includes(typeof query === 'string' ? query : query.query))) fail();
@@ -52,6 +75,8 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
   }
   if (!sourceSearchLog || !sameIdentity(sourceSearchLog) || sourceSearchLog.analysis_basis !== 'existing_work_specific_knowledge_unverified' || sourceSearchLog.actual_search_performed !== false || sourceSearchLog.queries.length || sourceSearchLog.materials_checked.length) fail();
   if (!raw || !sameIdentity(raw) || raw.analysis_basis !== 'existing_work_specific_knowledge_unverified' || raw.queries?.length || raw.sources?.length || raw.actual_search_performed === true) fail();
-  if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue && Array.isArray(assertion.sources) && !assertion.sources.length && assertion.field_notes?.issue?.includes('existing knowledge') && assertion.verification_status === 'knowledge_added_unverified')) fail();
+  const explicitIssueKnowledge = assertion => assertion.field_notes?.issue?.includes('existing knowledge') ||
+    assertion.field_notes?.issue?.startsWith('原创解释基于既有知识，未读本轮原作全文；');
+  if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue && Array.isArray(assertion.sources) && !assertion.sources.length && explicitIssueKnowledge(assertion) && assertion.verification_status === 'knowledge_added_unverified')) fail();
   return 'existing_knowledge_unverified';
 }

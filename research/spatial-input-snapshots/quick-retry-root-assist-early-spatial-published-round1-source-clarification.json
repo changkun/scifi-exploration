@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "saved-query-provenance-clarification-v1",
+    "record_count": 1,
+    "new_core_count": 0,
+    "new_spatial_identity_count": 0,
+    "actual_search_count": 0,
+    "actual_open_count": 0,
+    "note": "不新检索、不提高核验等级；只纠正已保存检索片段与URL对应。原冻结文件完整保留。",
+    "ownership_file": "quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "delegation_file": "quick-retry-root-assist-early-ownership.json",
+    "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790"
+  },
+  "records": [
+    {
+      "id": "Q4035235",
+      "identity": {
+        "title": "紅い牙 ブルー・ソネット",
+        "author": "作者未知"
+      },
+      "ownership_index": 546,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确漫画卷1简介明确Sonnet在纽约East Harlem生活，已读各卷说明另涉及当地组织和人物；据具体纽约场景标地球，不借OVA地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "同次漫画第1卷第1部简介明确ニューヨーク・イーストハーレム；母亲伤亡/Talon段为已冻结核心依据，未读漫画页。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://manba.co.jp/boards/188364/books",
+        "https://comic.iowl.jp/titles/35794/volumes"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://manba.co.jp/boards/188364/books",
+          "type": "saved_licensed_manga_description_search_excerpt",
+          "support_scope": "原R5同次查询实际返回的ORIGINAL第1卷第1部简介：ニューヨーク・イーストハーレム与16岁的Sonnet；未打开曼巴详情、未读漫画页。它支持具体地球舞台。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        },
+        {
+          "url": "https://comic.iowl.jp/titles/35794/volumes",
+          "type": "saved_licensed_manga_volume_description_search_excerpt",
+          "support_scope": "原R5查询的母亲伤亡/Talon吸收段，只支持原核心分析；此次不声称这条ComicFesta URL单独支持纽约。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round5.json",
+      "source_analysis_sha256": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+      "source_analysis_record_sha256": "9f16b87c05f2b71a71217f4ec0cf7154a168a27d3ee2b9c7b4486104749c78b7",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "采用漫画授权书店描述，未借OVA学校潜入线或全19卷结局。",
+      "source_cache_file": "quick-retry-root-assist-early-round5-responses-private.json",
+      "source_cache_sha256": "06161a95b97b8d4034203cd7746782c0846727daa650ff596b0af50d5b4ec663",
+      "source_cache_location": "searches, exact id Q4035235, response entry turn13663search3 for Manba; turn13663search5 for ComicFesta",
+      "corrects": {
+        "input_file": "quick-retry-root-assist-early-spatial-published-round1.json",
+        "input_sha256": "2ea992eec7e35a353860dd86de4393e46fdb42f4b3ea4053dcec6fe98f4b4944",
+        "id": "Q4035235",
+        "fields": [
+          "sources",
+          "source_evidence"
+        ],
+        "reason": "空间位置本身与原实际查询一致，但初次输出误把支持母亲/Talon的ComicFesta URL也当成纽约地点出处。此文件只精确纠正出处对应，原输入字节及3个空间字段均保留。"
+      }
+    }
+  ]
+}

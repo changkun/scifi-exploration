@@ -27,6 +27,41 @@ check('generic literary entity type does not masquerade as a confirmed text form
 check('missing language and identity-review filters match their field/state flags',()=>{for(const value of ['language_statements','relationships','external_identifiers'])assert.equal(filterWorks(works,{...DEFAULT_STATE,boundary:true,missing:value}).length,works.filter(w=>w.completion.missing_fields.includes(value)).length);assert(filterWorks(works,{...DEFAULT_STATE,boundary:true,missing:'language_statements'}).length>1300);assert.equal(filterWorks(works,{...DEFAULT_STATE,boundary:true,audit:'identity'}).length,works.filter(w=>w.completion.has_identity_review).length);});
 check('knowledge and review state is shareable across views',()=>{const state={...DEFAULT_STATE,boundary:true,audit:'knowledge',missing:'publication_date',level:'enriched'};assert.deepEqual(stateFromURL('?'+searchFromState(state),works),state);});
 const spatialFiles=await listSpatialInputs(root),spatialInputs=await Promise.all(spatialFiles.map(read));
+const sortedJSON=value=>Array.isArray(value)?value.map(sortedJSON):value&&typeof value==='object'?
+ Object.fromEntries(Object.keys(value).sort().map(key=>[key,sortedJSON(value[key])])):value;
+let frozenSpatialProvenance=0;
+for(const input of spatialInputs)for(const record of input.records){
+ if(!record.source_analysis_archive)continue;
+ const sourceBytes=await readFile(new URL(record.source_analysis_archive,root));
+ assert.equal(createHash('sha256').update(sourceBytes).digest('hex'),record.source_analysis_sha256);
+ const source=JSON.parse(sourceBytes),assertion=source.records.find(item=>item.id===record.id);
+ assert(assertion?.fields.issue&&assertion.fields.issue_facets.length>=2);
+ assert.deepEqual(assertion.identity,record.identity);
+ assert.equal(assertion.verification_status,'knowledge_added_unverified');
+ assert.equal(createHash('sha256').update(JSON.stringify(sortedJSON(assertion))).digest('hex'),record.source_analysis_record_sha256);
+ assert.equal(source.metadata.ownership_sha256,record.original_ownership_sha256);
+ assert.equal(source.metadata.delegation_sha256,record.delegation_sha256);
+ assert(['published_core','same_batch_core'].includes(record.integration_relation));
+ const ownerBytes=await readFile(new URL('research/issue-input-snapshots/'+record.original_ownership_file,root));
+ assert.equal(createHash('sha256').update(ownerBytes).digest('hex'),record.original_ownership_sha256);
+ assert.equal(JSON.parse(ownerBytes).records[record.ownership_index].id,record.id);
+ if(record.source_scope_clarification_archive){
+  const correctionBytes=await readFile(new URL(record.source_scope_clarification_archive,root));
+  assert.equal(createHash('sha256').update(correctionBytes).digest('hex'),record.source_scope_clarification_sha256);
+  const correction=JSON.parse(correctionBytes).records.find(item=>item.id===record.id);
+  assert.deepEqual(correction.sources,record.sources);
+  assert.deepEqual(correction.source_evidence,record.source_evidence);
+  assert.deepEqual(correction.fields,record.fields);
+  const originalBytes=await readFile(new URL('research/spatial-input-snapshots/'+correction.corrects.input_file,root));
+  assert.equal(createHash('sha256').update(originalBytes).digest('hex'),correction.corrects.input_sha256);
+  assert.deepEqual(JSON.parse(originalBytes).records.find(item=>item.id===record.id).fields,record.fields);
+  const work=works.find(item=>item.id===record.id);
+  assert(work.source_search_log.raw_reading_log.queries.includes(record.source_cache_actual_query));
+  assert(record.source_cache_sha256&&record.source_cache_record_sha256);
+ }else assert(record.sources.every(url=>assertion.sources.includes(url)));
+ frozenSpatialProvenance++;
+}
+console.log('PASS exact frozen analysis, original ownership and scope corrections for '+frozenSpatialProvenance+' spatial supplements');
 for(const input of spatialInputs){
  const preserved=input.metadata.preserved_scope_original;
  if(!preserved)continue;

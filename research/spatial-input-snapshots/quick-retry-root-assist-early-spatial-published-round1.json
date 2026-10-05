@@ -1,0 +1,3391 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "frozen-analysis-explicit-setting-and-exact-knowledge-spatial-v1",
+    "read_date": "2026-10-05",
+    "lane": 0,
+    "helper": "early_history",
+    "delegate": "early_history",
+    "ownership_file": "quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "delegation_file": "quick-retry-root-assist-early-ownership.json",
+    "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+    "integration_relation": "published_core",
+    "record_count": 23,
+    "field_count": 69,
+    "actual_search_count": 0,
+    "actual_open_count": 0,
+    "new_core_count": 0,
+    "new_process_coverage_count": 0,
+    "canonical_check_sha256": "5d4abf5b1076dfebf1f4d2d7797ef91e1fb51853b7faef0c71fd4682b0a818ef",
+    "canonical_scope_note": "读当前canonical仍unknown；扫描work/evidence与研究归档中的spatial JSON，任何已有同ID空间断言均保守排除。",
+    "source_analysis_record_hash_method": "UTF-8 JSON, ensure_ascii=False, sort_keys=True, separators=(comma,colon)，哈希为SHA256。",
+    "note": "只补同身份空间导航，不改原A/L、原日期、核心、已知空间或地图坐标。取冻结分析已有明确剧情/精确已有知识；单星球不因太空品牌升为银河，目标、角色来源和虚拟地点不混作到访场所。选集单篇舞台不代替全选集。",
+    "manual_scope_exclusions": [
+      {
+        "id": "Q140396795",
+        "reason": "已冻结核心只有南部家族庄园；缺确切世界定位，本轮不把作者国别替代舞台。"
+      },
+      {
+        "id": "Q140640929",
+        "reason": "已冻结范围仅船、云海、继承及猎获；同页另一段虽然提到行星，本轮不扩已公开核心范围。"
+      }
+    ],
+    "input_component_audit": [
+      {
+        "file": "quick-retry-root-spatial-round1.json",
+        "sha256": "70e2fa5b243587ba366e98ec5ab5bf0b9dfdc9d09b3a3d5323074b59c92b7c75",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-spatial-round4.json",
+        "sha256": "6ad3a23f463d4ba4f4decb752f377892bda2936c0484078575c53bf283839ee2",
+        "status": "frozen",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round42.json",
+        "sha256": "9992a9d2d47bc6e2dd671807789220335ce89885630fb95c128cfc0c093fe705",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round21.json",
+        "sha256": "107ca8b1cf3ffb0cbcea8bf53d161079ff23fec151fbf79c65dfac52151fa59a",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round15.json",
+        "sha256": "656381708cbef387058395997c5da33e413db49b0635f20baa7ed57b6062d3f7",
+        "status": "frozen",
+        "record_count": 23
+      },
+      {
+        "file": "root-known-year-spatial-round8-corrected.json",
+        "sha256": "1ef8dda493fe7ab4f40f1a0e717cb30dd17144c9aa0c61b25ef87c76da01f35b",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round2.json",
+        "sha256": "11fd02db4135daf26ad8aed68b8010a84a739e9c105b76e2f3e4b416d347a25c",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "root-spatial-round1.json",
+        "sha256": "72e6195c944521f14e73e0c0b81813e5881998fd113e805d2f3dd43fee62676a",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-fast-spatial-round7.json",
+        "sha256": "c8055e92e3b5a29b62a4b3e9b92bf4ad1e9cbb4fcf3b7dd5ad7d6f0328f20b20",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-known-year-spatial-round7.json",
+        "sha256": "7e3f7a30292f2d9818eb4add9a6d8f79439f3ff73073f597b98ac92726a05cd8",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "known-year-global-spatial-round8.json",
+        "sha256": "903b1433a56053b7a100fb7d41ee8b47a854b98768b983a4e3fdd0f5e4d7f8fe",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round39.json",
+        "sha256": "680ad1dd40625655b287eda5bfe6751122ad6bab2861294401b14f6c5058d69e",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "root-cached-spatial-round6.json",
+        "sha256": "ddc46523106359b23219485245064d64149a9d24913d92fd2e5d2bc1d4575b0b",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round2.json",
+        "sha256": "15010dd09523e18d76de9cc01330427b71aba09b10d88274b6b0caa59acf92d7",
+        "status": "frozen",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round19.json",
+        "sha256": "f0879fba2f4a5fd9f463426a509a380ca0c6edb7888588b44ebecd91baf2fc05",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "modern-recent-spatial-round10.json",
+        "sha256": "d59eb2233bef3549905fdf52d16fffaa6176038382371800aa9761a9e728db1d",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "modern-spatial-round1.json",
+        "sha256": "232aa67333750453a4c4be666c18ec5e8e859e1449ef2c14433e0795fab21f73",
+        "status": "frozen_checkpoint",
+        "record_count": 29
+      },
+      {
+        "file": "known-year-global-spatial-round10.json",
+        "sha256": "18c03d1c35c782c46a80fcfc647af51d909209fd82493d8e11c6372b92cb9a8b",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "modern-recent-spatial-round6.json",
+        "sha256": "7e5dcf3a18845fa35cf446243d69a3526b7aec7c4fd011ffaba8f06f7c1c3ba4",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round23.json",
+        "sha256": "ed93d2f24806502c8e54b59e8ea8441e63ecded0f8af920c849a38eff7b06067",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "quick-retry-global-spatial-round17.json",
+        "sha256": "1d5c59a3da8505447daea00161825d4c8fbf03dd01a053fd98da105b6e6ddaf8",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round35.json",
+        "sha256": "ce9cb1c504ef1e779af82709dfb7df5da3d5c60885bc3392c199c6ad811d5ae9",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "known-year-global-spatial-round4.json",
+        "sha256": "fed7a448c36134cc21413333ad40e59fd32376853e8ecf9a6a5e4416ad158016",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "known-year-global-spatial-round5.json",
+        "sha256": "4db76e4a1e423897fe603ff9cf5922d9d37e3916669948ca1244c536ac83b9f8",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "early-spatial-round1.json",
+        "sha256": "3c618d864de915cc3967bb1bfc9898292807b8cd46a674eedad82f76e9509922",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round34.json",
+        "sha256": "3a886fa91b7350e9b85df0dff5f58e7608e34c90e5dbcb5fcdddf325ce23a0ad",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round16.json",
+        "sha256": "ffcf6a174969a6c3c14b50a9dfea6f6a38500da3be2e6d63c1f7e167272af5ec",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round22.json",
+        "sha256": "c89bef1a5fd7f44fa137bea0ee549244c8b65cf45ac82bb685ba4f27b6ea3f0e",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "modern-recent-spatial-round7.json",
+        "sha256": "6f6c34165b9d084b371cc2dfa32d072bc45af6e78fa184f964f1ab7ca5740119",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "known-year-global-spatial-round11.json",
+        "sha256": "cfae99bd8bda6f6b50d2397a67b8a8ecb0bb1a89c4b94e71286c254cf3574e6f",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round18.json",
+        "sha256": "c73b6a9f9533099e035719443a76b12b6345dc27701f0c4557062d723f5873b3",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "modern-recent-spatial-round11.json",
+        "sha256": "d9ace52d478fc255351b2fcf2d51dd4d0573df7e1e50ef22f1040d250ec3b75b",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round38.json",
+        "sha256": "a3d853aab7125f4175c90b7148d4071ea5f704b9772e6b3b6e707e4e78ed5003",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "global-recent-spatial-round3.json",
+        "sha256": "3eea1d1e70045a948b0d70fc627c7539c023eadb4e7ee4b07db1ffa06e937310",
+        "status": "frozen",
+        "record_count": 9
+      },
+      {
+        "file": "known-year-global-spatial-round9.json",
+        "sha256": "28b7e5dee0e39a93eea2282508430be8c6f89421128c59d7d6f0b91f0dc2e6d4",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round34-corrected.json",
+        "sha256": "07cbc24e309998aa5ddb36076d67a641f8d77766c93edbb7d2d65f9da1874a79",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "root-known-year-spatial-round6.json",
+        "sha256": "5cc5bfe275526037af5590b1c6f1ba139b2cae482a7ee53406503c7aa185154a",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "root-fast-spatial-round6.json",
+        "sha256": "38d55676a4302c2f925fd97a5a5bf8f576dd8c57a5ff677bf61ff21e5e09ca24",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "known-year-root-assist-global-spatial-round2.json",
+        "sha256": "ad51ae8142fbb61689697b936d4df45916b5b10cb3028f4ff3c83ab506327e33",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "quick-retry-global-spatial-round3.json",
+        "sha256": "2664366795a8b26210b392334f6efdd00773a3d9f8fd7de40c4744758387b663",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round14.json",
+        "sha256": "ab1086591d82fd9bb31405db7f872ffdab011d951a363cf041d8be30898a6ade",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "quick-retry-global-spatial-round20.json",
+        "sha256": "4044304412d907e09fb8cf476bd85d378693687ac904899ada8a839d6b92f77a",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "global-spatial-round5.json",
+        "sha256": "00cdec819e1f0dc3997efff3964d3989a1918a6495bf21ddaad7c55038fc4057",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round43.json",
+        "sha256": "f85fc6493b5b5f591d589b816e67e42a2b9ad44ac3941897e47fba4cedb69901",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round8.json",
+        "sha256": "95e0a6b4acdd1d9a1b3a647131c99a09a53acb3dd3faf4c78bdbe94aae1b2080",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round25.json",
+        "sha256": "a7753ca3f2e015fbc7de3ca09cc0c2c370f1febf234dca32a13b1d6e45bc1a5e",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-global-spatial-round11.json",
+        "sha256": "92b1f5a1ce865f0f98baabb7f730e34c10ada5661513ac69718017e6ef7cf7fb",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round33.json",
+        "sha256": "83039ae23869b907a3e1dd3cac6ba36adace5389327ab001c5ee89edabde1cbe",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "global-recent-spatial-round8.json",
+        "sha256": "7dfb9edc0864c99dc7282570b0f09d0c9da0f0f45365be5755f5b690115f7a13",
+        "status": "frozen",
+        "record_count": 12
+      },
+      {
+        "file": "quick-retry-root-spatial-round10.json",
+        "sha256": "b4e5eabf3249674c06216eb580b689ad70ed50edd0cd661346e281bd64b70adb",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "known-year-global-spatial-round2.json",
+        "sha256": "53dbf27df0fc8176acd05fe1dd01ff9e89ec78967b154953e390a1a73b4c3e93",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-root-spatial-round7.json",
+        "sha256": "c8da3906df737e5b64b5937ac950f9f42856f3cbb16ac4bb564029fce6732a8a",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-spatial-round2.json",
+        "sha256": "d00bdfe1b4f5e61ea4822b9f65f4e3adf40577a0e69b3a54cec8957540deab13",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-recent-spatial-round44.json",
+        "sha256": "9bf683f881ec57af402638d4014c0c8590fb3e14e7f2e6beb7dc366ce42f0d0f",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-undated-spatial-round6.json",
+        "sha256": "9adf238fe0f0d913007178d30bac1adf10d340b851db3ef03e3a703834b59570",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round13.json",
+        "sha256": "79068bfc99c109bbd703e0afaad9a15b6fdb2a6b54e2bd90ef7cf71f3c013555",
+        "status": "frozen",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-global-spatial-round4.json",
+        "sha256": "0c084765e6d568d5ef19ac35d609cf31bdfcb4da6b559b8bceaeb298ea47f6b3",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round52.json",
+        "sha256": "3711039c862dfffed67627a979985d827f82e1888262cfbef0027554e915eca4",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "root-spatial-round7.json",
+        "sha256": "f55b5f3134d75bb2c8c55f14b8182b4ff798b30f00a6494e714f68289c2425b7",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "root-known-year-spatial-round1.json",
+        "sha256": "41382eb01a53093a19258b9def3c11f871b17f7e7201c2a37828910ff7ed83e7",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round29.json",
+        "sha256": "6590db90d6f1d4dc7fec546c8dc9122cca9cd6c2dd14715ee729f6c3b90c14d2",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "early-recent-spatial-round1.json",
+        "sha256": "c2ae711093577a14d2ad98630a4c1417902f9c9145918cb9f1e427e1be8e81d1",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round4.json",
+        "sha256": "0becdc0a86ef24b8ce884d3866eb4644395155d8120230c04ae6f1e2336df020",
+        "status": "frozen",
+        "record_count": 11
+      },
+      {
+        "file": "global-recent-spatial-round5.json",
+        "sha256": "73bd8dcb9cd9969ab7daae84a598efb8d759fcad607b0793caef756da14843dd",
+        "status": "frozen",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round28.json",
+        "sha256": "4edb8f0349fae876dbb1ab749462296ce4aeed19eaf37a1ac59b42bd5c8849e9",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "global-recent-spatial-round53.json",
+        "sha256": "d4c0ee292ee4293717a0c409ee2024cf57f14d6a2c56f0de974ad19ebbb0b783",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "root-spatial-round6.json",
+        "sha256": "a84fe426cba731d49361c71faa3f23e5cab6030c864231352497705ede8a9d29",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "quick-retry-global-spatial-round5.json",
+        "sha256": "3b5bde0402262f3e4cd1900dfc0b14421906ab0ee43d58d77379a22f9c8fa8bd",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "global-recent-spatial-round12.json",
+        "sha256": "6ccf3125642eea0c6d713b5082f7539af4c9b96217a2ae181d0e9edeb7cac1a9",
+        "status": "frozen",
+        "record_count": 31
+      },
+      {
+        "file": "global-undated-spatial-round7.json",
+        "sha256": "a0ce3a1292bd90d1112a0e63772450c8706ef186802463d199099746ab76dfa6",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-early-spatial-round2.json",
+        "sha256": "13e2fd74955284a66b170980678c950afa1c4b18fea06859686c7843959772f4",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-spatial-round3.json",
+        "sha256": "4551087e2d1d3c4ee710bd81b3da4284c415ecdbd7fdba757122279831a3f8dd",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round45.json",
+        "sha256": "2be7217fd0db686ddd696fc87e7583c215e73ae95cdf1339124b8b8f5ce7c63b",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "quick-retry-root-spatial-round6.json",
+        "sha256": "4f546123031396a435ac73ed230aa61e91ae8a6ea544b07ae4778a297274a294",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-root-spatial-round11.json",
+        "sha256": "d4bc537b8c224b0705b46f5e12fbeb758a2dc026ca30c9b8faa32d6c861458d7",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "known-year-global-spatial-round3.json",
+        "sha256": "1aeeb3765237d9e8bbcc9020b1e1a654b23b5b69ced234da7c7d11416b7d637a",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round32.json",
+        "sha256": "c97fbcef502aaf8dca6c4cf9898037301bc087d71ce54d24468ab69b207219c0",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "global-recent-spatial-round9.json",
+        "sha256": "112e93d0c0c34abc5f17e3fd886a574eeefd7e7893a30037e3cc39f52c29c1f1",
+        "status": "frozen",
+        "record_count": 12
+      },
+      {
+        "file": "root-assist-global-spatial-round1.json",
+        "sha256": "86cda6cd7b8c468aec6945c111bd061eb37a26235d7a823cf5c7a4564457dfd0",
+        "status": "frozen_checkpoint",
+        "record_count": 25
+      },
+      {
+        "file": "quick-retry-global-spatial-round10.json",
+        "sha256": "ef25caf789761f2c5234a5b02496014ec72e67df480975717427ee09a57b7078",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round24.json",
+        "sha256": "7938431bd3f9100597e6670cebcec00f56f1d9017e80d39d19c852e22c3e50b9",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "modern-recent-spatial-round1.json",
+        "sha256": "02ec53bf8a5bffea4ba6c35607f4501d408be1adf288045721a5e6fc95da6db0",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round9.json",
+        "sha256": "43dfdbae41ea91dfbbc4c953c36958367281f81465bfaaf9dbdc109a118a75bf",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "modern-spatial-round6.json",
+        "sha256": "bd39f41efdac826a0c5d639afbf44fbe45d25e47d3e61ac5fc4b51048e9fa870",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round49.json",
+        "sha256": "69febb7209fd99949b803e616404e06941a031b26cc6ed5a5c4d0361e2366c12",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "quick-retry-root-spatial-round12.json",
+        "sha256": "1dfa0967e0f31c0e15d8b42e536207d251feaddb09c4253e49cfc9a7599c79c6",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "early-spatial-round4.json",
+        "sha256": "1720cf32c30e99a04b39fa65cfdc0c0f53e4b5bc9cf8eeef86a9ee27e599e029",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-recent-spatial-round31.json",
+        "sha256": "fd9e0dbcfaa043fbd7214d864ad2f0e4075adb2df6111b7c7d6c36a7efcc3124",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "root-assist-global-spatial-round2.json",
+        "sha256": "53a2f01e961b66b24614107bc7abed8f9a8785a9792e739c7029b60a7b796782",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "known-year-global-spatial-round6-corrected.json",
+        "sha256": "62d3198905706ada1e57595b0b4b3e1815ede3102fe980a3a8b98f42d8ea94fd",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "quick-retry-global-spatial-round13.json",
+        "sha256": "1718f7a83469c261999bc3a3f986e1b7fe03f4cd730c9044d592a6d86ca9d162",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round27.json",
+        "sha256": "cec676d1e8a7fc35928bb5db81b599d5e6a40eb0d7aa99dbab5a45fea681a933",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "modern-recent-spatial-round2.json",
+        "sha256": "863e52bcf7509f73bb4ab986f8622f91db36708362b4d3fa1c4113289d06b5ba",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "root-spatial-round9.json",
+        "sha256": "c1d1ffb39d964d8257c2bf2c34a3045ea7e42b47bac6259a13b0370f092569fd",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "modern-spatial-round5.json",
+        "sha256": "4262bcca802794684fa188348805a1d09a0ae4c54bf44ef22d764f668c762dde",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-undated-spatial-round8.json",
+        "sha256": "84a5054ad5c1747e9a176ebc2ad73626ebfb8092faeb358729f8d55520ff16e9",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-root-spatial-round9.json",
+        "sha256": "8ba7d0e7197201209afcac2f3c87ab70ef73af6ffc0beb2d7926a167eb7ab781",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round6.json",
+        "sha256": "17fb15aaebb54cb36ac37af213d0b1764c3c40e2e273f199495193b0ee31884f",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "early-recent-spatial-round3.json",
+        "sha256": "618349f7732388b85bb49a6815e350c6092fc8ebdc3d90cd02db84f94a39e0fe",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-recent-spatial-round1.json",
+        "sha256": "b9af41a3fdaba2e981f2223c4551e9c426d4e7b3eda8552a4b7758ae7247ca4c",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "root-known-year-spatial-round3.json",
+        "sha256": "f02ce5af1e8850374f39f7e528b548516570eca277c711ac72ae3f04daf099cd",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "root-fast-spatial-round3.json",
+        "sha256": "f423f829df4fb931d5c6c477047cd98d5cdae7e66b69e0ec65f394eef9ae3734",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "root-spatial-round5.json",
+        "sha256": "2ed55bfccd0bf48cb954ff26fc94dbc8c0f550ba6ee716d2f28a8f91b0acb5ce",
+        "status": "frozen_checkpoint",
+        "record_count": 1
+      },
+      {
+        "file": "global-recent-spatial-round50.json",
+        "sha256": "f603e57a32fbd72a2ce08cf997503caee7dca2bd4d7a959046480e88ec38ebb5",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "quick-retry-global-spatial-round6.json",
+        "sha256": "a6a24043511d99832448f6bc84099f4324c8ec7f9e4258aa4fb4f156ec0e36b9",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round11.json",
+        "sha256": "cc1e243f48afab94cf9d3331eab5e05571167e994a6fb188f4af4007e869279f",
+        "status": "frozen",
+        "record_count": 15
+      },
+      {
+        "file": "quick-retry-early-spatial-round1.json",
+        "sha256": "796ee6bc685160e480265e4082787a86df4978c5aed6c73447d47c940477e88c",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-undated-spatial-round4.json",
+        "sha256": "321d30c7d9c200c1aebb0cc8b2b735e14478e1d28c05c070a48cd7aefd6be383",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "global-recent-spatial-round46.json",
+        "sha256": "b5d0235338a44b8ba9b1deb521a068de132a6693d66f9137fe4f39eaa69e2474",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "quick-retry-root-spatial-round5.json",
+        "sha256": "9bfed51bd89e17a04c3c1f32f29223993542b29372cf083752c9e91c0c4a381a",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-root-spatial-round4.json",
+        "sha256": "86db252d213307fa9f866dd32b953be512fe9fa14d9629d4e929d75e1c17f484",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-spatial-round1.json",
+        "sha256": "881972dde5d74aeed767f14ec118ebfedf1420b6fcc85e0c3c80a3c6a5b988d9",
+        "status": "frozen_checkpoint",
+        "record_count": 29
+      },
+      {
+        "file": "global-undated-spatial-round5.json",
+        "sha256": "10cc4db911bd2dffcd618dce735af544197c9b6d4b805ac9c3d6b9781944af41",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round10.json",
+        "sha256": "a18efea6b22dfb7ce516e1d8c1d24984fd1b1dee812ba2c222c306f41db0b821",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "quick-retry-global-spatial-round7.json",
+        "sha256": "a31da38b231472d872344b2a6c1b9cbdf51728c0517779c2d695ef4dd7b3e3cf",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-spatial-round4.json",
+        "sha256": "4578bdd1fa64f46dc6c717e28a2f758906cdba44423b6076b9db4c6948fbe73c",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round51.json",
+        "sha256": "917bee1230cc73befb1dd65e3429d4722c96b3fd109791cd708c556159a8665f",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-fast-spatial-round2.json",
+        "sha256": "6521f624c97913ec01f5083d311ae48a35bae05bbf9099941e70d0c9471c5b4a",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "early-recent-spatial-round2.json",
+        "sha256": "a1d89104836bbc93d17c02814c92bf905fb3d39deca017b70d98b8a8cd530482",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "global-recent-spatial-round7.json",
+        "sha256": "0ea3b926db64bac03d0c734515278afad3b4d28f7305913ea3a7699ba0738cc6",
+        "status": "frozen",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-root-spatial-round8.json",
+        "sha256": "903660853aeddc007095dace6d18bdb5376579910f76d5fb9dc0fb8a8cb3ec02",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-known-year-spatial-round2-v2.json",
+        "sha256": "ccdf5feb4ade45fcc6f081d13fbc7e45967b82bef3d7d32cf9900287db040eff",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "modern-spatial-round4.json",
+        "sha256": "bba7e8268c4219d7e0643448e78783eb752ec09bbf487b94d3a67ab0202596b8",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-spatial-round8.json",
+        "sha256": "f7a84c0bbef4c0f964d09817f7285b794e4588f0a50569fed62b4934178e7cb6",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "modern-recent-spatial-round3.json",
+        "sha256": "4e82cac46fffa11b41f202de61934ebcba6b4447d9f0424e4efb8162b8f0b913",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round26.json",
+        "sha256": "48738c4584a2377aca9d953f716e38499345ace160be32e6403362f484768d7b",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round12.json",
+        "sha256": "8d0665cda607855d3ccc03403c5b3aaa8aa23745c5d3e7b1aaec2feab4c06c49",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-recent-spatial-round30.json",
+        "sha256": "a6f82e0643851b29a257a21736be9ed7dcad66b296ee511e5c97535938bea422",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-root-spatial-round13.json",
+        "sha256": "33778320d3b8a6cb842b35ed853e6ef4e66a1e0eab50006dc2b93a59abd579e3",
+        "status": "frozen_checkpoint",
+        "record_count": 1
+      },
+      {
+        "file": "known-year-global-spatial-round1.json",
+        "sha256": "dbdc3d5721c2a8507746d90bdb988db434f15c8b88552a58a1f5445d626e9282",
+        "status": "frozen_checkpoint",
+        "record_count": 35
+      },
+      {
+        "file": "root-known-year-spatial-round5.json",
+        "sha256": "544cbf74c65d09e38b460974d44db966ebc77d19f8c0d885c33560ad90224184",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "quick-retry-global-spatial-round19.json",
+        "sha256": "cd76f08dcdd9c8f1e592523fbf1433cff2c56f75b9e1a4a2420fcf3610f890ac",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-fast-spatial-round5.json",
+        "sha256": "e340e1a61a0adf05a96324e2c672b61e21c76f60a65a2a7a61cc4be5c4c24aec",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "root-spatial-round3.json",
+        "sha256": "4eb9badfd2084581f147accb575d2b00a2332a8e8403429bb4e406f54bdbfd3c",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "modern-recent-spatial-round8.json",
+        "sha256": "7f2408b40963a01a0f683954694b6886f88b8d58aa8a150a0c69e881e39309b2",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "known-year-root-assist-global-spatial-round1.json",
+        "sha256": "29e20be1b121e83c827259a09a24abcfa30c06d3073746322c637ff5de1a4a81",
+        "status": "frozen_checkpoint",
+        "record_count": 27
+      },
+      {
+        "file": "global-recent-spatial-round17.json",
+        "sha256": "d8c2e279d76d655586cdb84ee536e2575add29cfa2383f553673643832fe369e",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "global-recent-spatial-round40.json",
+        "sha256": "20ecd57c5ca13486b311271eb96bc026ad0b8bb2d4f5b2fcee4912371a666883",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-spatial-round6.json",
+        "sha256": "4dc71dc379789c4e457f609229341da9ed6e129c973e3deb3464441935edb0ba",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-root-spatial-round3.json",
+        "sha256": "5ae61df9baf9c57688dca477883509ee2597ce3e9c424abff2584501b75b319e",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "known-year-global-spatial-round6.json",
+        "sha256": "7f5b66a00839135c779fbd544708cfc6c274faae118186b267e4232f813c4d65",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "early-spatial-round2.json",
+        "sha256": "f8b07f88f464276fa1cad21829eac8488731614b6878519927a17dae3293b06e",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round37.json",
+        "sha256": "419be404c274fe3e2672532e83a6ed3e1dc3d3555607fa15a95869c2729d838b",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "quick-retry-global-spatial-round15.json",
+        "sha256": "0d1aefb13f16197a9d14b7a4722aad9003ab0a83224f4b05f3f78345432223c8",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round21.json",
+        "sha256": "6814dd9dfe9ad197845f49477ab20e6acc8511625652e3e25c36860109b6ac0e",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-known-year-spatial-round9.json",
+        "sha256": "c10256877831008c56baa5362fa4d295bec2a2d63bda64b14aaaf3de34ebde70",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "modern-recent-spatial-round4.json",
+        "sha256": "33213a17103ecbf4103f9508c8969febaa3753abf01fee21f916459365e6e004",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "known-year-global-spatial-round12.json",
+        "sha256": "d75dbb1db686d2fb01a01104f32008c9ecb5362245b59c8068512e0c09398358",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "modern-spatial-round3.json",
+        "sha256": "6d83a57e8c0baf40493c1e5c655a4e16c2cbc0b6b2d8f681b80d337fde353700",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "modern-spatial-round2.json",
+        "sha256": "209b190206739167c1fd2f436feb861c3caf21b41e71ca0eef51f6f1d1a9e10b",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "known-year-global-spatial-round13.json",
+        "sha256": "7449eaa3fc169e12c0696dcd99afc139a432dd98a5b16ce9ed6165519bf8bdf0",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "modern-recent-spatial-round5.json",
+        "sha256": "295a5965aeeb0fb92e51408e2970cf5f0b5a821982351ebd331b8da56c6337b7",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round20.json",
+        "sha256": "175f37d44164fa7d9ca1f432e6b43f613c532977f270969e5d8e2990e5afbbb8",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "root-known-year-spatial-round8.json",
+        "sha256": "e05b9a68cfdd79132ed33cfbf613a96a84571c135a517b21fb4c6f8784c597ad",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round14.json",
+        "sha256": "459bb90de0a403f339f64b209ae2fe02a152322610455d507d1eec53b3e64446",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "early-spatial-round3.json",
+        "sha256": "eca05adeb63f60ebb1b224102cd1132836125dfdfd5c5efbce8db52ec9c6ef4c",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round36.json",
+        "sha256": "a545bf245a2e9ebc16bd2f82a3522572774a450b6d68042b179b5bcefa74b0a5",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "known-year-global-spatial-round7.json",
+        "sha256": "661763d06bf1cb34b88b1591a99a5862d4452a58b520d54520af4621e962e026",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-root-spatial-round2.json",
+        "sha256": "1754ff6ef5ace628e4f24cbf58fbc6925adcf8115029cff939b641e0edbc42a9",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round41.json",
+        "sha256": "e31f77acd4b083a3e328e530ad35d10625e4524b9e00c4f945d62dc2074bbf76",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-spatial-round7.json",
+        "sha256": "fbd69d99eb7f79d3a74bf6945f14b58148cccb4dda86d052af2ee03638671c86",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "global-undated-spatial-round3.json",
+        "sha256": "a74c0b67ca1eca45e107d4768805ff9561a69f124d0066471ac8acb19b8f7f64",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round16.json",
+        "sha256": "239ca5ece4623d2a8cd195ee95ffe16d3006cc24c3b70e050c9eef9241a71871",
+        "status": "frozen",
+        "record_count": 16
+      },
+      {
+        "file": "root-spatial-round10.json",
+        "sha256": "389325a9d6bd77ed7392f6463b3210b4f6341c95979efafaf41d530df0586e67",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "quick-retry-global-spatial-round1.json",
+        "sha256": "b107b1f9b14f34674f0e0865e650d00777c01160cc324a5f33bed120a59d6f6a",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "modern-recent-spatial-round9.json",
+        "sha256": "646dd5e9c1201f69b5c07e0687e6421481ddd2dbea0d8c5cc45215ddded147b4",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "root-spatial-round2.json",
+        "sha256": "1bd59786fd57284ca3ec1582ce9aa5616a9704f7514d6c474532b2210be46115",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-global-spatial-round18.json",
+        "sha256": "431ba757561f537764cbe5dd109f9868647601cd3be18ebbd0ecd5acb0040560",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "root-fast-spatial-round4.json",
+        "sha256": "83e5f62cbb74ca0627e517d0d4345062a4a93996f4d37afbdd27de8734e21ffd",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-known-year-spatial-round4.json",
+        "sha256": "913f6a2c90bab892d99db98cca9659b1676914ce846f3b858e37b8b7223615b4",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "root-known-year-spatial-round10.json",
+        "sha256": "288a18664863833e349009442cd901127ed5047de794b1e56ab04b357e773946",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "early-recent-spatial-round4.json",
+        "sha256": "3f1381a8f825460611cdc17594c6c6638f682b6d80bb4dfb08c37f7c73086545",
+        "status": "frozen_checkpoint",
+        "record_count": 27
+      },
+      {
+        "file": "global-recent-spatial-round1.json",
+        "sha256": "22ac77703fcbc1a2afa5812d536f414a646e9dbf1cad6275ec09f40d4f1b6187",
+        "status": "frozen",
+        "record_count": 6
+      },
+      {
+        "file": "spatial-reading-round46.json",
+        "sha256": "1bc79f3c7cf9c68f4ea339b0b284ebe1473db52ba89c89d87f0ec5b4f05929c9",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "spatial-reading-round11.json",
+        "sha256": "48fc6d499cfbbf78e44404934be2f4a9e80c757b2082b88b4c624e2486cb4b1f",
+        "status": "frozen_checkpoint",
+        "record_count": 34
+      },
+      {
+        "file": "spatial-reading-round66.json",
+        "sha256": "afc0099be912380afb192483d74e849f58c4e976d3df5db03131296d03fd7614",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "spatial-reading-round2.json",
+        "sha256": "94b233c86b2f45032e5a90d302a91929069806492bf3a51d8165d7697fed5afc",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "spatial-reading-round31.json",
+        "sha256": "b171c9ebcbaf20040fc7ec877866909cbefa93856197b6e8bbb891a6485bf44c",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "spatial-reading-round27.json",
+        "sha256": "48bf02263292649d23819801515d4f3183f8d038a9a0a19171910684bbe439f4",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round26.json",
+        "sha256": "82788b77d8a02ff4a2001d75d9f9d40d7eb24ee4edc1c153c645d19955cf835b",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "spatial-reading-round30.json",
+        "sha256": "4790b46858eabe287dc53a8547526522ab330e95672f2dddfadc6043512943dd",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round67.json",
+        "sha256": "1731cf158e2d90bd43d6a46b21c82c20c7f100ba72a1aeaf7c485aef6dac6abe",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round3.json",
+        "sha256": "cc574a746ecf31a1a1ab32c05a0128ca0edd4fdcfaf5800c908d559727ffce1b",
+        "status": "frozen_checkpoint",
+        "record_count": 42
+      },
+      {
+        "file": "spatial-reading-round10.json",
+        "sha256": "172d137371a96fa83da70141d7284954e3479590a098b43d6852dc7a9a9f7668",
+        "status": "frozen_checkpoint",
+        "record_count": 83
+      },
+      {
+        "file": "spatial-reading-round47.json",
+        "sha256": "d626ce6100b9baca384c182014a100417b56179156ec79ffeaa08f438da36fdb",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "spatial-reading-round60.json",
+        "sha256": "7ef4efb578c11ee9bb3a9d1a45bec321f3143f839087e8285d27839ec4be08e3",
+        "status": "frozen_checkpoint",
+        "record_count": 77
+      },
+      {
+        "file": "spatial-reading-round4.json",
+        "sha256": "5dc9d1c99c68e4e3864b145c08e71884a07fcf49278410fa79d621f2aa855a22",
+        "status": "frozen_checkpoint",
+        "record_count": 26
+      },
+      {
+        "file": "spatial-reading-round37.json",
+        "sha256": "da611e83bc0b5e33dd78b21f8dd9ee4925ef40fd4677b68c02d306a9beb7f680",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "spatial-reading-round21.json",
+        "sha256": "5670447e30a9b147a702acd258794c786d7bfc87a211941fd73fb140944147a9",
+        "status": "frozen_checkpoint",
+        "record_count": 48
+      },
+      {
+        "file": "spatial-reading-round56.json",
+        "sha256": "b1fc5da824039a5f47e58cc8be7cb9c79c7fb39e24001e12c965571f24bc968d",
+        "status": "frozen_checkpoint",
+        "record_count": 68
+      },
+      {
+        "file": "spatial-reading-round40.json",
+        "sha256": "5f1c5782d9f9c1b4368423a5d74f0f1c01c3251f9b36a9f8ac623b37bb370b33",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round17.json",
+        "sha256": "48aa4e49ed56462db7f5b4f4c6f4f6007760bd2941532cac7b731c607edfbc62",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "spatial-reading-round8.json",
+        "sha256": "cf8b727ab6d7747076a67aa25db0ed3d5b4c46d2bb0e02a1c105e76e3e75d764",
+        "status": "frozen_checkpoint",
+        "record_count": 29
+      },
+      {
+        "file": "spatial-reading-round9.json",
+        "sha256": "91d46e2157873b69bb6ce57829eace0ecdfb98188552a99795b690c0c285f514",
+        "status": "frozen_checkpoint",
+        "record_count": 63
+      },
+      {
+        "file": "spatial-reading-round16.json",
+        "sha256": "2e94d94d205552e81d0216b3cb9631cd8a6aaab82f05b6ea1c05513d04a9c653",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "spatial-reading-round41.json",
+        "sha256": "86969fb04270c880d4a2b66c9087b6762b7984dc4178f7e76d0360a6b4d2d36f",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "spatial-reading-round57.json",
+        "sha256": "d767378f546f1b30cc00bb995a2fd7c9c70ad666293498da11ccbca200280236",
+        "status": "frozen_checkpoint",
+        "record_count": 38
+      },
+      {
+        "file": "spatial-reading-round20.json",
+        "sha256": "b8e5fe017501546e8539c0b9438ed675c45f41525b18fd1b16752d42a36ce385",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "spatial-reading-round61.json",
+        "sha256": "94eaa98a3b0d609770a91841eb853ae7415711502f45c00171535bf42c554cc4",
+        "status": "frozen_checkpoint",
+        "record_count": 66
+      },
+      {
+        "file": "spatial-reading-round5.json",
+        "sha256": "2767b52e12ad9b6a11dd91b95204e02330b4984bca7c4a7b7cdb6438d3e4e253",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "spatial-reading-round23.json",
+        "sha256": "b4a6f1e1c9bc3f2eb0c916168cfd8f48eff0b1e8eaa2e5499f55f83efd9cc49a",
+        "status": "frozen_checkpoint",
+        "record_count": 36
+      },
+      {
+        "file": "spatial-reading-round35.json",
+        "sha256": "9b750cc082076cbf6a1cd9d9e608d64cfdd9c8f834533cc70be751f57896aa56",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "spatial-reading-round6.json",
+        "sha256": "1280e9bbc8b5e520c87b65949f506271566a25318be63b922ee52cd364a5575e",
+        "status": "frozen_checkpoint",
+        "record_count": 36
+      },
+      {
+        "file": "spatial-reading-round62.json",
+        "sha256": "9d2037944c322fe2da047e1ebf510c3e04c9be5f8ebd54121c8b7d47205980ba",
+        "status": "frozen_checkpoint",
+        "record_count": 41
+      },
+      {
+        "file": "spatial-reading-round19.json",
+        "sha256": "9a7e2131ab665a0ddbb1439fb7b2cbc2415fa53d7e06826ad1696aba97ea0683",
+        "status": "frozen_checkpoint",
+        "record_count": 30
+      },
+      {
+        "file": "spatial-reading-round58.json",
+        "sha256": "743f4ca546fe3936a84ed6c9738ebcd50b4794e841681e8edab6c9fd78435d07",
+        "status": "frozen_checkpoint",
+        "record_count": 54
+      },
+      {
+        "file": "spatial-reading-round39.json",
+        "sha256": "0e6220d09d043b06505e876e7fc58e2d6c1af8015cd591ede6240f3a4044cbe5",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round15.json",
+        "sha256": "ca3d0d675f94add6fb46ad8040385e32045629105dcf47dc2ee456184bf22ea8",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "spatial-reading-round42.json",
+        "sha256": "6c7c2875437932fca89b8905e3b2f6b37d414337d2ae062b70fb40994c75da47",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "spatial-reading-round54.json",
+        "sha256": "1327fcaf0ac5c728ecf2624c8048bf95a52fd9a50bb8abbf99f7cf1b0ec3f6ef",
+        "status": "frozen_checkpoint",
+        "record_count": 36
+      },
+      {
+        "file": "spatial-reading-round55.json",
+        "sha256": "611f02e9b5dbd8c30284604b97fd88dd537692a6a38394788970465fcd035304",
+        "status": "frozen_checkpoint",
+        "record_count": 45
+      },
+      {
+        "file": "spatial-reading-round43.json",
+        "sha256": "f423861543148f452f238eff9fa9001699e34791310b6421cf09ddf92b057fae",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "spatial-reading-round14.json",
+        "sha256": "74988038f5d3452b97d4c6471e6bb367c4d7c7d9946b250b6979b0112db34d94",
+        "status": "frozen_checkpoint",
+        "record_count": 77
+      },
+      {
+        "file": "spatial-reading-round38.json",
+        "sha256": "a27df8cbab7bd093ff3e717aa819bd4b0aeaf8cdfea9be7e11caf37ceaad42b5",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "spatial-reading-round59.json",
+        "sha256": "c741f82aa79010b8e6b062d6723ef1a069e4b7607cc921e809f5a318c658e6b7",
+        "status": "frozen_checkpoint",
+        "record_count": 57
+      },
+      {
+        "file": "spatial-reading-round18.json",
+        "sha256": "966d76e8a45e139f866e0ffcafebcd48211247e9b5312eb917d95395da966f0e",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "spatial-reading-round7.json",
+        "sha256": "3652028867dea1273e4dc4b0f6c6d6089d47052f8405f73545541a9c0549b5eb",
+        "status": "frozen_checkpoint",
+        "record_count": 43
+      },
+      {
+        "file": "spatial-reading-round63.json",
+        "sha256": "08f0268170be9a14b96b1f3609012815f05c2542b35d793d4fdcede4ecb19988",
+        "status": "frozen_checkpoint",
+        "record_count": 32
+      },
+      {
+        "file": "spatial-reading-round34.json",
+        "sha256": "809f72b035b4939673700dde9e793f0fcdd5d41b837474dec6435b4de16304d3",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "spatial-reading-round22.json",
+        "sha256": "7ec3a12f081252276e26967597fb987f7ae550116471d37577788f8123d8a788",
+        "status": "frozen_checkpoint",
+        "record_count": 57
+      },
+      {
+        "file": "spatial-reading-round29.json",
+        "sha256": "d2624d3a95b4ef549efbaf0cdfc5f9919686ec64ca3e82ef3cd6ff860906259b",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "spatial-reading-round13.json",
+        "sha256": "7d92db0beaf0f37c24688f0c64c5a42da0b92fcad2a300b771334a1d12ee9a07",
+        "status": "frozen_checkpoint",
+        "record_count": 27
+      },
+      {
+        "file": "spatial-reading-round52.json",
+        "sha256": "8062908e97b1fcc843dc0283cf3c08c948468e0b5ac5249c61254e3c9a3e1c18",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "spatial-reading-round25.json",
+        "sha256": "af8ed2119efa8ae409f15e9bc023b53e0ed691277f56ee55760b412fb15e3e2a",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "spatial-reading-round33.json",
+        "sha256": "78fe6e0024d89f86a72fa16c251a4b3a17772fae45a0480c76c670e0bde38245",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "spatial-reading-round64.json",
+        "sha256": "7741919bcf0aa07d27a31e9d4812ba6ab99a4894ae83d2072229763868bff713",
+        "status": "frozen_checkpoint",
+        "record_count": 26
+      },
+      {
+        "file": "spatial-reading-round48.json",
+        "sha256": "fcfc0c0ac242bb4dc582dce8172c4a0af65361537b52f7cbdefb96e7f7c1927f",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "spatial-reading-round49.json",
+        "sha256": "9d27b0a0f0d6607c114fd17140803cb3a01d8ecd4cf3af1c423c28c4c0bc9bd1",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "spatial-reading-round1.json",
+        "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
+        "status": "frozen_checkpoint",
+        "record_count": 66
+      },
+      {
+        "file": "spatial-reading-round65.json",
+        "sha256": "c33c5d93cbe5025113842c726989fe0005213356d4dc55943d7eb5a6df364fa1",
+        "status": "frozen_checkpoint",
+        "record_count": 30
+      },
+      {
+        "file": "spatial-reading-round32.json",
+        "sha256": "80849b84dc24dce08e631bf25a841237106434d36499e51b0fd21848860368ec",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "spatial-reading-round24.json",
+        "sha256": "a36e756755af30da5ebe2634e8df4aed954bf3477359d79fd0452bc5f19f0317",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "spatial-reading-round53.json",
+        "sha256": "11d5772cd05e31cc9c78524705a68dccc53faa3fc0e9d7409a0ae4095105b960",
+        "status": "frozen_checkpoint",
+        "record_count": 37
+      },
+      {
+        "file": "spatial-reading-round12.json",
+        "sha256": "24374abe774249322e470ddeaa6806f25cec17749ddc60c0c126bfaf93ca6c4d",
+        "status": "frozen_checkpoint",
+        "record_count": 26
+      },
+      {
+        "file": "spatial-reading-round28.json",
+        "sha256": "e2c467a831c4abc43b6065d33fdcbd45350efc70fa7e09cb0099291d57be74c3",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "quick-retry-root-spatial-round1.json",
+        "sha256": "70e2fa5b243587ba366e98ec5ab5bf0b9dfdc9d09b3a3d5323074b59c92b7c75",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-spatial-round4.json",
+        "sha256": "6ad3a23f463d4ba4f4decb752f377892bda2936c0484078575c53bf283839ee2",
+        "status": "frozen",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round42.json",
+        "sha256": "9992a9d2d47bc6e2dd671807789220335ce89885630fb95c128cfc0c093fe705",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "global-recent-spatial-round15.json",
+        "sha256": "656381708cbef387058395997c5da33e413db49b0635f20baa7ed57b6062d3f7",
+        "status": "frozen",
+        "record_count": 23
+      },
+      {
+        "file": "root-known-year-spatial-round8-corrected.json",
+        "sha256": "1ef8dda493fe7ab4f40f1a0e717cb30dd17144c9aa0c61b25ef87c76da01f35b",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round2.json",
+        "sha256": "11fd02db4135daf26ad8aed68b8010a84a739e9c105b76e2f3e4b416d347a25c",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "root-spatial-round1.json",
+        "sha256": "72e6195c944521f14e73e0c0b81813e5881998fd113e805d2f3dd43fee62676a",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-fast-spatial-round7.json",
+        "sha256": "c8055e92e3b5a29b62a4b3e9b92bf4ad1e9cbb4fcf3b7dd5ad7d6f0328f20b20",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-known-year-spatial-round7.json",
+        "sha256": "7e3f7a30292f2d9818eb4add9a6d8f79439f3ff73073f597b98ac92726a05cd8",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "known-year-global-spatial-round8.json",
+        "sha256": "903b1433a56053b7a100fb7d41ee8b47a854b98768b983a4e3fdd0f5e4d7f8fe",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round39.json",
+        "sha256": "680ad1dd40625655b287eda5bfe6751122ad6bab2861294401b14f6c5058d69e",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "root-cached-spatial-round6.json",
+        "sha256": "ddc46523106359b23219485245064d64149a9d24913d92fd2e5d2bc1d4575b0b",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round2.json",
+        "sha256": "15010dd09523e18d76de9cc01330427b71aba09b10d88274b6b0caa59acf92d7",
+        "status": "frozen",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round19.json",
+        "sha256": "f0879fba2f4a5fd9f463426a509a380ca0c6edb7888588b44ebecd91baf2fc05",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "modern-recent-spatial-round10.json",
+        "sha256": "d59eb2233bef3549905fdf52d16fffaa6176038382371800aa9761a9e728db1d",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "modern-spatial-round1.json",
+        "sha256": "232aa67333750453a4c4be666c18ec5e8e859e1449ef2c14433e0795fab21f73",
+        "status": "frozen_checkpoint",
+        "record_count": 29
+      },
+      {
+        "file": "known-year-global-spatial-round10.json",
+        "sha256": "18c03d1c35c782c46a80fcfc647af51d909209fd82493d8e11c6372b92cb9a8b",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "modern-recent-spatial-round6.json",
+        "sha256": "7e5dcf3a18845fa35cf446243d69a3526b7aec7c4fd011ffaba8f06f7c1c3ba4",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round23.json",
+        "sha256": "ed93d2f24806502c8e54b59e8ea8441e63ecded0f8af920c849a38eff7b06067",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "quick-retry-global-spatial-round17.json",
+        "sha256": "1d5c59a3da8505447daea00161825d4c8fbf03dd01a053fd98da105b6e6ddaf8",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round35.json",
+        "sha256": "ce9cb1c504ef1e779af82709dfb7df5da3d5c60885bc3392c199c6ad811d5ae9",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "known-year-global-spatial-round4.json",
+        "sha256": "fed7a448c36134cc21413333ad40e59fd32376853e8ecf9a6a5e4416ad158016",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "known-year-global-spatial-round5.json",
+        "sha256": "4db76e4a1e423897fe603ff9cf5922d9d37e3916669948ca1244c536ac83b9f8",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "early-spatial-round1.json",
+        "sha256": "3c618d864de915cc3967bb1bfc9898292807b8cd46a674eedad82f76e9509922",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round34.json",
+        "sha256": "3a886fa91b7350e9b85df0dff5f58e7608e34c90e5dbcb5fcdddf325ce23a0ad",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round16.json",
+        "sha256": "ffcf6a174969a6c3c14b50a9dfea6f6a38500da3be2e6d63c1f7e167272af5ec",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round22.json",
+        "sha256": "c89bef1a5fd7f44fa137bea0ee549244c8b65cf45ac82bb685ba4f27b6ea3f0e",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "modern-recent-spatial-round7.json",
+        "sha256": "6f6c34165b9d084b371cc2dfa32d072bc45af6e78fa184f964f1ab7ca5740119",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "known-year-global-spatial-round11.json",
+        "sha256": "cfae99bd8bda6f6b50d2397a67b8a8ecb0bb1a89c4b94e71286c254cf3574e6f",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round18.json",
+        "sha256": "c73b6a9f9533099e035719443a76b12b6345dc27701f0c4557062d723f5873b3",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "modern-recent-spatial-round11.json",
+        "sha256": "d9ace52d478fc255351b2fcf2d51dd4d0573df7e1e50ef22f1040d250ec3b75b",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round38.json",
+        "sha256": "a3d853aab7125f4175c90b7148d4071ea5f704b9772e6b3b6e707e4e78ed5003",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "global-recent-spatial-round3.json",
+        "sha256": "3eea1d1e70045a948b0d70fc627c7539c023eadb4e7ee4b07db1ffa06e937310",
+        "status": "frozen",
+        "record_count": 9
+      },
+      {
+        "file": "known-year-global-spatial-round9.json",
+        "sha256": "28b7e5dee0e39a93eea2282508430be8c6f89421128c59d7d6f0b91f0dc2e6d4",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round34-corrected.json",
+        "sha256": "07cbc24e309998aa5ddb36076d67a641f8d77766c93edbb7d2d65f9da1874a79",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "root-known-year-spatial-round6.json",
+        "sha256": "5cc5bfe275526037af5590b1c6f1ba139b2cae482a7ee53406503c7aa185154a",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "root-fast-spatial-round6.json",
+        "sha256": "38d55676a4302c2f925fd97a5a5bf8f576dd8c57a5ff677bf61ff21e5e09ca24",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "known-year-root-assist-global-spatial-round2.json",
+        "sha256": "ad51ae8142fbb61689697b936d4df45916b5b10cb3028f4ff3c83ab506327e33",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "quick-retry-global-spatial-round3.json",
+        "sha256": "2664366795a8b26210b392334f6efdd00773a3d9f8fd7de40c4744758387b663",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round14.json",
+        "sha256": "ab1086591d82fd9bb31405db7f872ffdab011d951a363cf041d8be30898a6ade",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "global-spatial-round5.json",
+        "sha256": "00cdec819e1f0dc3997efff3964d3989a1918a6495bf21ddaad7c55038fc4057",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round43.json",
+        "sha256": "f85fc6493b5b5f591d589b816e67e42a2b9ad44ac3941897e47fba4cedb69901",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round8.json",
+        "sha256": "95e0a6b4acdd1d9a1b3a647131c99a09a53acb3dd3faf4c78bdbe94aae1b2080",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round25.json",
+        "sha256": "a7753ca3f2e015fbc7de3ca09cc0c2c370f1febf234dca32a13b1d6e45bc1a5e",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-global-spatial-round11.json",
+        "sha256": "92b1f5a1ce865f0f98baabb7f730e34c10ada5661513ac69718017e6ef7cf7fb",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "spatial-reading-round58-scope-original.json",
+        "sha256": "34a21c31c9ce13546d22ab1d7be239d4569ab1292c436d219db537e7f7f08fae",
+        "status": "frozen_checkpoint",
+        "record_count": 54
+      },
+      {
+        "file": "global-recent-spatial-round33.json",
+        "sha256": "83039ae23869b907a3e1dd3cac6ba36adace5389327ab001c5ee89edabde1cbe",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "global-recent-spatial-round8.json",
+        "sha256": "7dfb9edc0864c99dc7282570b0f09d0c9da0f0f45365be5755f5b690115f7a13",
+        "status": "frozen",
+        "record_count": 12
+      },
+      {
+        "file": "quick-retry-root-spatial-round10.json",
+        "sha256": "b4e5eabf3249674c06216eb580b689ad70ed50edd0cd661346e281bd64b70adb",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "known-year-global-spatial-round2.json",
+        "sha256": "53dbf27df0fc8176acd05fe1dd01ff9e89ec78967b154953e390a1a73b4c3e93",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-root-spatial-round7.json",
+        "sha256": "c8da3906df737e5b64b5937ac950f9f42856f3cbb16ac4bb564029fce6732a8a",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-spatial-round2.json",
+        "sha256": "d00bdfe1b4f5e61ea4822b9f65f4e3adf40577a0e69b3a54cec8957540deab13",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-recent-spatial-round44.json",
+        "sha256": "9bf683f881ec57af402638d4014c0c8590fb3e14e7f2e6beb7dc366ce42f0d0f",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-undated-spatial-round6.json",
+        "sha256": "9adf238fe0f0d913007178d30bac1adf10d340b851db3ef03e3a703834b59570",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round13.json",
+        "sha256": "79068bfc99c109bbd703e0afaad9a15b6fdb2a6b54e2bd90ef7cf71f3c013555",
+        "status": "frozen",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-global-spatial-round4.json",
+        "sha256": "0c084765e6d568d5ef19ac35d609cf31bdfcb4da6b559b8bceaeb298ea47f6b3",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round52.json",
+        "sha256": "3711039c862dfffed67627a979985d827f82e1888262cfbef0027554e915eca4",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "root-spatial-round7.json",
+        "sha256": "f55b5f3134d75bb2c8c55f14b8182b4ff798b30f00a6494e714f68289c2425b7",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "root-known-year-spatial-round1.json",
+        "sha256": "41382eb01a53093a19258b9def3c11f871b17f7e7201c2a37828910ff7ed83e7",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round29.json",
+        "sha256": "6590db90d6f1d4dc7fec546c8dc9122cca9cd6c2dd14715ee729f6c3b90c14d2",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "early-recent-spatial-round1.json",
+        "sha256": "c2ae711093577a14d2ad98630a4c1417902f9c9145918cb9f1e427e1be8e81d1",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round4.json",
+        "sha256": "0becdc0a86ef24b8ce884d3866eb4644395155d8120230c04ae6f1e2336df020",
+        "status": "frozen",
+        "record_count": 11
+      },
+      {
+        "file": "global-recent-spatial-round5.json",
+        "sha256": "73bd8dcb9cd9969ab7daae84a598efb8d759fcad607b0793caef756da14843dd",
+        "status": "frozen",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round28.json",
+        "sha256": "4edb8f0349fae876dbb1ab749462296ce4aeed19eaf37a1ac59b42bd5c8849e9",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "global-recent-spatial-round53.json",
+        "sha256": "d4c0ee292ee4293717a0c409ee2024cf57f14d6a2c56f0de974ad19ebbb0b783",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "root-spatial-round6.json",
+        "sha256": "a84fe426cba731d49361c71faa3f23e5cab6030c864231352497705ede8a9d29",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "quick-retry-global-spatial-round5.json",
+        "sha256": "3b5bde0402262f3e4cd1900dfc0b14421906ab0ee43d58d77379a22f9c8fa8bd",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "global-recent-spatial-round12.json",
+        "sha256": "6ccf3125642eea0c6d713b5082f7539af4c9b96217a2ae181d0e9edeb7cac1a9",
+        "status": "frozen",
+        "record_count": 31
+      },
+      {
+        "file": "global-undated-spatial-round7.json",
+        "sha256": "a0ce3a1292bd90d1112a0e63772450c8706ef186802463d199099746ab76dfa6",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "quick-retry-early-spatial-round2.json",
+        "sha256": "13e2fd74955284a66b170980678c950afa1c4b18fea06859686c7843959772f4",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-spatial-round3.json",
+        "sha256": "4551087e2d1d3c4ee710bd81b3da4284c415ecdbd7fdba757122279831a3f8dd",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "global-recent-spatial-round45.json",
+        "sha256": "2be7217fd0db686ddd696fc87e7583c215e73ae95cdf1339124b8b8f5ce7c63b",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "quick-retry-root-spatial-round6.json",
+        "sha256": "4f546123031396a435ac73ed230aa61e91ae8a6ea544b07ae4778a297274a294",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-root-spatial-round11.json",
+        "sha256": "d4bc537b8c224b0705b46f5e12fbeb758a2dc026ca30c9b8faa32d6c861458d7",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "known-year-global-spatial-round3.json",
+        "sha256": "1aeeb3765237d9e8bbcc9020b1e1a654b23b5b69ced234da7c7d11416b7d637a",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-recent-spatial-round32.json",
+        "sha256": "c97fbcef502aaf8dca6c4cf9898037301bc087d71ce54d24468ab69b207219c0",
+        "status": "frozen_checkpoint",
+        "record_count": 22
+      },
+      {
+        "file": "global-recent-spatial-round9.json",
+        "sha256": "112e93d0c0c34abc5f17e3fd886a574eeefd7e7893a30037e3cc39f52c29c1f1",
+        "status": "frozen",
+        "record_count": 12
+      },
+      {
+        "file": "root-assist-global-spatial-round1.json",
+        "sha256": "86cda6cd7b8c468aec6945c111bd061eb37a26235d7a823cf5c7a4564457dfd0",
+        "status": "frozen_checkpoint",
+        "record_count": 25
+      },
+      {
+        "file": "quick-retry-global-spatial-round10.json",
+        "sha256": "ef25caf789761f2c5234a5b02496014ec72e67df480975717427ee09a57b7078",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round24.json",
+        "sha256": "7938431bd3f9100597e6670cebcec00f56f1d9017e80d39d19c852e22c3e50b9",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "modern-recent-spatial-round1.json",
+        "sha256": "02ec53bf8a5bffea4ba6c35607f4501d408be1adf288045721a5e6fc95da6db0",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round9.json",
+        "sha256": "43dfdbae41ea91dfbbc4c953c36958367281f81465bfaaf9dbdc109a118a75bf",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "modern-spatial-round6.json",
+        "sha256": "bd39f41efdac826a0c5d639afbf44fbe45d25e47d3e61ac5fc4b51048e9fa870",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round49.json",
+        "sha256": "69febb7209fd99949b803e616404e06941a031b26cc6ed5a5c4d0361e2366c12",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "quick-retry-root-spatial-round12.json",
+        "sha256": "1dfa0967e0f31c0e15d8b42e536207d251feaddb09c4253e49cfc9a7599c79c6",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "early-spatial-round4.json",
+        "sha256": "1720cf32c30e99a04b39fa65cfdc0c0f53e4b5bc9cf8eeef86a9ee27e599e029",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-recent-spatial-round31.json",
+        "sha256": "fd9e0dbcfaa043fbd7214d864ad2f0e4075adb2df6111b7c7d6c36a7efcc3124",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "root-assist-global-spatial-round2.json",
+        "sha256": "53a2f01e961b66b24614107bc7abed8f9a8785a9792e739c7029b60a7b796782",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "known-year-global-spatial-round6-corrected.json",
+        "sha256": "62d3198905706ada1e57595b0b4b3e1815ede3102fe980a3a8b98f42d8ea94fd",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "quick-retry-global-spatial-round13.json",
+        "sha256": "1718f7a83469c261999bc3a3f986e1b7fe03f4cd730c9044d592a6d86ca9d162",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round27.json",
+        "sha256": "cec676d1e8a7fc35928bb5db81b599d5e6a40eb0d7aa99dbab5a45fea681a933",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "modern-recent-spatial-round2.json",
+        "sha256": "863e52bcf7509f73bb4ab986f8622f91db36708362b4d3fa1c4113289d06b5ba",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "root-spatial-round9.json",
+        "sha256": "c1d1ffb39d964d8257c2bf2c34a3045ea7e42b47bac6259a13b0370f092569fd",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "modern-spatial-round5.json",
+        "sha256": "4262bcca802794684fa188348805a1d09a0ae4c54bf44ef22d764f668c762dde",
+        "status": "frozen_checkpoint",
+        "record_count": 14
+      },
+      {
+        "file": "global-undated-spatial-round8.json",
+        "sha256": "84a5054ad5c1747e9a176ebc2ad73626ebfb8092faeb358729f8d55520ff16e9",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-root-spatial-round9.json",
+        "sha256": "8ba7d0e7197201209afcac2f3c87ab70ef73af6ffc0beb2d7926a167eb7ab781",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round6.json",
+        "sha256": "17fb15aaebb54cb36ac37af213d0b1764c3c40e2e273f199495193b0ee31884f",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "early-recent-spatial-round3.json",
+        "sha256": "618349f7732388b85bb49a6815e350c6092fc8ebdc3d90cd02db84f94a39e0fe",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-recent-spatial-round1.json",
+        "sha256": "b9af41a3fdaba2e981f2223c4551e9c426d4e7b3eda8552a4b7758ae7247ca4c",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "root-known-year-spatial-round3.json",
+        "sha256": "f02ce5af1e8850374f39f7e528b548516570eca277c711ac72ae3f04daf099cd",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "root-fast-spatial-round3.json",
+        "sha256": "f423f829df4fb931d5c6c477047cd98d5cdae7e66b69e0ec65f394eef9ae3734",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "root-spatial-round5.json",
+        "sha256": "2ed55bfccd0bf48cb954ff26fc94dbc8c0f550ba6ee716d2f28a8f91b0acb5ce",
+        "status": "frozen_checkpoint",
+        "record_count": 1
+      },
+      {
+        "file": "global-recent-spatial-round50.json",
+        "sha256": "f603e57a32fbd72a2ce08cf997503caee7dca2bd4d7a959046480e88ec38ebb5",
+        "status": "frozen_checkpoint",
+        "record_count": 15
+      },
+      {
+        "file": "quick-retry-global-spatial-round6.json",
+        "sha256": "a6a24043511d99832448f6bc84099f4324c8ec7f9e4258aa4fb4f156ec0e36b9",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "global-recent-spatial-round11.json",
+        "sha256": "cc1e243f48afab94cf9d3331eab5e05571167e994a6fb188f4af4007e869279f",
+        "status": "frozen",
+        "record_count": 15
+      },
+      {
+        "file": "quick-retry-early-spatial-round1.json",
+        "sha256": "796ee6bc685160e480265e4082787a86df4978c5aed6c73447d47c940477e88c",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-undated-spatial-round4.json",
+        "sha256": "321d30c7d9c200c1aebb0cc8b2b735e14478e1d28c05c070a48cd7aefd6be383",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "global-recent-spatial-round46.json",
+        "sha256": "b5d0235338a44b8ba9b1deb521a068de132a6693d66f9137fe4f39eaa69e2474",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "quick-retry-root-spatial-round5.json",
+        "sha256": "9bfed51bd89e17a04c3c1f32f29223993542b29372cf083752c9e91c0c4a381a",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-root-spatial-round4.json",
+        "sha256": "86db252d213307fa9f866dd32b953be512fe9fa14d9629d4e929d75e1c17f484",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-spatial-round1.json",
+        "sha256": "881972dde5d74aeed767f14ec118ebfedf1420b6fcc85e0c3c80a3c6a5b988d9",
+        "status": "frozen_checkpoint",
+        "record_count": 29
+      },
+      {
+        "file": "global-undated-spatial-round5.json",
+        "sha256": "10cc4db911bd2dffcd618dce735af544197c9b6d4b805ac9c3d6b9781944af41",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "global-recent-spatial-round10.json",
+        "sha256": "a18efea6b22dfb7ce516e1d8c1d24984fd1b1dee812ba2c222c306f41db0b821",
+        "status": "frozen",
+        "record_count": 13
+      },
+      {
+        "file": "quick-retry-global-spatial-round7.json",
+        "sha256": "a31da38b231472d872344b2a6c1b9cbdf51728c0517779c2d695ef4dd7b3e3cf",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-spatial-round4.json",
+        "sha256": "4578bdd1fa64f46dc6c717e28a2f758906cdba44423b6076b9db4c6948fbe73c",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "global-recent-spatial-round51.json",
+        "sha256": "917bee1230cc73befb1dd65e3429d4722c96b3fd109791cd708c556159a8665f",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-fast-spatial-round2.json",
+        "sha256": "6521f624c97913ec01f5083d311ae48a35bae05bbf9099941e70d0c9471c5b4a",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "early-recent-spatial-round2.json",
+        "sha256": "a1d89104836bbc93d17c02814c92bf905fb3d39deca017b70d98b8a8cd530482",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "global-recent-spatial-round7.json",
+        "sha256": "0ea3b926db64bac03d0c734515278afad3b4d28f7305913ea3a7699ba0738cc6",
+        "status": "frozen",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-root-spatial-round8.json",
+        "sha256": "903660853aeddc007095dace6d18bdb5376579910f76d5fb9dc0fb8a8cb3ec02",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "root-known-year-spatial-round2-v2.json",
+        "sha256": "ccdf5feb4ade45fcc6f081d13fbc7e45967b82bef3d7d32cf9900287db040eff",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "modern-spatial-round4.json",
+        "sha256": "bba7e8268c4219d7e0643448e78783eb752ec09bbf487b94d3a67ab0202596b8",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "root-spatial-round8.json",
+        "sha256": "f7a84c0bbef4c0f964d09817f7285b794e4588f0a50569fed62b4934178e7cb6",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "modern-recent-spatial-round3.json",
+        "sha256": "4e82cac46fffa11b41f202de61934ebcba6b4447d9f0424e4efb8162b8f0b913",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "global-recent-spatial-round26.json",
+        "sha256": "48738c4584a2377aca9d953f716e38499345ace160be32e6403362f484768d7b",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-global-spatial-round12.json",
+        "sha256": "8d0665cda607855d3ccc03403c5b3aaa8aa23745c5d3e7b1aaec2feab4c06c49",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "global-recent-spatial-round30.json",
+        "sha256": "a6f82e0643851b29a257a21736be9ed7dcad66b296ee511e5c97535938bea422",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "known-year-global-spatial-round1.json",
+        "sha256": "dbdc3d5721c2a8507746d90bdb988db434f15c8b88552a58a1f5445d626e9282",
+        "status": "frozen_checkpoint",
+        "record_count": 35
+      },
+      {
+        "file": "root-known-year-spatial-round5.json",
+        "sha256": "544cbf74c65d09e38b460974d44db966ebc77d19f8c0d885c33560ad90224184",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "root-fast-spatial-round5.json",
+        "sha256": "e340e1a61a0adf05a96324e2c672b61e21c76f60a65a2a7a61cc4be5c4c24aec",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "root-spatial-round3.json",
+        "sha256": "4eb9badfd2084581f147accb575d2b00a2332a8e8403429bb4e406f54bdbfd3c",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "modern-recent-spatial-round8.json",
+        "sha256": "7f2408b40963a01a0f683954694b6886f88b8d58aa8a150a0c69e881e39309b2",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "known-year-root-assist-global-spatial-round1.json",
+        "sha256": "29e20be1b121e83c827259a09a24abcfa30c06d3073746322c637ff5de1a4a81",
+        "status": "frozen_checkpoint",
+        "record_count": 27
+      },
+      {
+        "file": "global-recent-spatial-round17.json",
+        "sha256": "d8c2e279d76d655586cdb84ee536e2575add29cfa2383f553673643832fe369e",
+        "status": "frozen_checkpoint",
+        "record_count": 23
+      },
+      {
+        "file": "global-recent-spatial-round40.json",
+        "sha256": "20ecd57c5ca13486b311271eb96bc026ad0b8bb2d4f5b2fcee4912371a666883",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-spatial-round6.json",
+        "sha256": "4dc71dc379789c4e457f609229341da9ed6e129c973e3deb3464441935edb0ba",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "quick-retry-root-spatial-round3.json",
+        "sha256": "5ae61df9baf9c57688dca477883509ee2597ce3e9c424abff2584501b75b319e",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "known-year-global-spatial-round6.json",
+        "sha256": "7f5b66a00839135c779fbd544708cfc6c274faae118186b267e4232f813c4d65",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "early-spatial-round2.json",
+        "sha256": "f8b07f88f464276fa1cad21829eac8488731614b6878519927a17dae3293b06e",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round37.json",
+        "sha256": "419be404c274fe3e2672532e83a6ed3e1dc3d3555607fa15a95869c2729d838b",
+        "status": "frozen_checkpoint",
+        "record_count": 20
+      },
+      {
+        "file": "quick-retry-global-spatial-round15.json",
+        "sha256": "0d1aefb13f16197a9d14b7a4722aad9003ab0a83224f4b05f3f78345432223c8",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round21.json",
+        "sha256": "6814dd9dfe9ad197845f49477ab20e6acc8511625652e3e25c36860109b6ac0e",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-known-year-spatial-round9.json",
+        "sha256": "c10256877831008c56baa5362fa4d295bec2a2d63bda64b14aaaf3de34ebde70",
+        "status": "frozen_checkpoint",
+        "record_count": 6
+      },
+      {
+        "file": "modern-recent-spatial-round4.json",
+        "sha256": "33213a17103ecbf4103f9508c8969febaa3753abf01fee21f916459365e6e004",
+        "status": "frozen_checkpoint",
+        "record_count": 5
+      },
+      {
+        "file": "known-year-global-spatial-round12.json",
+        "sha256": "d75dbb1db686d2fb01a01104f32008c9ecb5362245b59c8068512e0c09398358",
+        "status": "frozen_checkpoint",
+        "record_count": 21
+      },
+      {
+        "file": "modern-spatial-round3.json",
+        "sha256": "6d83a57e8c0baf40493c1e5c655a4e16c2cbc0b6b2d8f681b80d337fde353700",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "modern-spatial-round2.json",
+        "sha256": "209b190206739167c1fd2f436feb861c3caf21b41e71ca0eef51f6f1d1a9e10b",
+        "status": "frozen_checkpoint",
+        "record_count": 16
+      },
+      {
+        "file": "known-year-global-spatial-round13.json",
+        "sha256": "7449eaa3fc169e12c0696dcd99afc139a432dd98a5b16ce9ed6165519bf8bdf0",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "modern-recent-spatial-round5.json",
+        "sha256": "295a5965aeeb0fb92e51408e2970cf5f0b5a821982351ebd331b8da56c6337b7",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round20.json",
+        "sha256": "175f37d44164fa7d9ca1f432e6b43f613c532977f270969e5d8e2990e5afbbb8",
+        "status": "frozen_checkpoint",
+        "record_count": 19
+      },
+      {
+        "file": "root-known-year-spatial-round8.json",
+        "sha256": "e05b9a68cfdd79132ed33cfbf613a96a84571c135a517b21fb4c6f8784c597ad",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "quick-retry-global-spatial-round14.json",
+        "sha256": "459bb90de0a403f339f64b209ae2fe02a152322610455d507d1eec53b3e64446",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "early-spatial-round3.json",
+        "sha256": "eca05adeb63f60ebb1b224102cd1132836125dfdfd5c5efbce8db52ec9c6ef4c",
+        "status": "frozen_checkpoint",
+        "record_count": 8
+      },
+      {
+        "file": "global-recent-spatial-round36.json",
+        "sha256": "a545bf245a2e9ebc16bd2f82a3522572774a450b6d68042b179b5bcefa74b0a5",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "known-year-global-spatial-round7.json",
+        "sha256": "661763d06bf1cb34b88b1591a99a5862d4452a58b520d54520af4621e962e026",
+        "status": "frozen_checkpoint",
+        "record_count": 18
+      },
+      {
+        "file": "quick-retry-root-spatial-round2.json",
+        "sha256": "1754ff6ef5ace628e4f24cbf58fbc6925adcf8115029cff939b641e0edbc42a9",
+        "status": "frozen_checkpoint",
+        "record_count": 3
+      },
+      {
+        "file": "global-recent-spatial-round41.json",
+        "sha256": "e31f77acd4b083a3e328e530ad35d10625e4524b9e00c4f945d62dc2074bbf76",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "global-spatial-round7.json",
+        "sha256": "fbd69d99eb7f79d3a74bf6945f14b58148cccb4dda86d052af2ee03638671c86",
+        "status": "frozen_checkpoint",
+        "record_count": 12
+      },
+      {
+        "file": "global-undated-spatial-round3.json",
+        "sha256": "a74c0b67ca1eca45e107d4768805ff9561a69f124d0066471ac8acb19b8f7f64",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "global-recent-spatial-round16.json",
+        "sha256": "239ca5ece4623d2a8cd195ee95ffe16d3006cc24c3b70e050c9eef9241a71871",
+        "status": "frozen",
+        "record_count": 16
+      },
+      {
+        "file": "root-spatial-round10.json",
+        "sha256": "389325a9d6bd77ed7392f6463b3210b4f6341c95979efafaf41d530df0586e67",
+        "status": "frozen_checkpoint",
+        "record_count": 7
+      },
+      {
+        "file": "quick-retry-global-spatial-round1.json",
+        "sha256": "b107b1f9b14f34674f0e0865e650d00777c01160cc324a5f33bed120a59d6f6a",
+        "status": "frozen_checkpoint",
+        "record_count": 17
+      },
+      {
+        "file": "modern-recent-spatial-round9.json",
+        "sha256": "646dd5e9c1201f69b5c07e0687e6421481ddd2dbea0d8c5cc45215ddded147b4",
+        "status": "frozen_checkpoint",
+        "record_count": 11
+      },
+      {
+        "file": "root-spatial-round2.json",
+        "sha256": "1bd59786fd57284ca3ec1582ce9aa5616a9704f7514d6c474532b2210be46115",
+        "status": "frozen_checkpoint",
+        "record_count": 2
+      },
+      {
+        "file": "quick-retry-global-spatial-round18.json",
+        "sha256": "431ba757561f537764cbe5dd109f9868647601cd3be18ebbd0ecd5acb0040560",
+        "status": "frozen_checkpoint",
+        "record_count": 4
+      },
+      {
+        "file": "root-fast-spatial-round4.json",
+        "sha256": "83e5f62cbb74ca0627e517d0d4345062a4a93996f4d37afbdd27de8734e21ffd",
+        "status": "frozen_checkpoint",
+        "record_count": 13
+      },
+      {
+        "file": "root-known-year-spatial-round4.json",
+        "sha256": "913f6a2c90bab892d99db98cca9659b1676914ce846f3b858e37b8b7223615b4",
+        "status": "frozen_checkpoint",
+        "record_count": 10
+      },
+      {
+        "file": "root-known-year-spatial-round10.json",
+        "sha256": "288a18664863833e349009442cd901127ed5047de794b1e56ab04b357e773946",
+        "status": "frozen_checkpoint",
+        "record_count": 9
+      },
+      {
+        "file": "early-recent-spatial-round4.json",
+        "sha256": "3f1381a8f825460611cdc17594c6c6638f682b6d80bb4dfb08c37f7c73086545",
+        "status": "frozen_checkpoint",
+        "record_count": 27
+      },
+      {
+        "file": "global-recent-spatial-round1.json",
+        "sha256": "22ac77703fcbc1a2afa5812d536f414a646e9dbf1cad6275ec09f40d4f1b6187",
+        "status": "frozen",
+        "record_count": 6
+      }
+    ],
+    "excluded_duplicate_or_known_records": []
+  },
+  "records": [
+    {
+      "id": "Q125359707",
+      "identity": {
+        "title": "Ein anderes Japan",
+        "author": "豐田有恒"
+      },
+      "ownership_index": 404,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际学术概述明确未来日本政府造给游客的展览式日本；据具体日本场景标地球，不把文化主题当空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "APuZ引用Toyoda/Ein anderes Japan的开头概述及注1；未来日本的游客展示园，非原篇全文。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.bpb.de/system/files/apuz_files/1984-09-10/APuZ_1984_09-10.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.bpb.de/system/files/apuz_files/1984-09-10/APuZ_1984_09-10.pdf",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "APuZ引用Toyoda/Ein anderes Japan的开头概述及注1；未来日本的游客展示园，非原篇全文。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round1.json",
+      "source_analysis_sha256": "722c00efac6b838e69e7c8108f55f027d1de4830f155414e9284ea07f7dfec81",
+      "source_analysis_record_sha256": "67803b9cf73a5c289e00d323427d4b4632a667f8581b4d82928353211f052b7c",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "论文概述支持作品前提；周围关于Koestler、日本现代化的论述不当作本短篇情节，原年不改。"
+    },
+    {
+      "id": "Q130617852",
+      "identity": {
+        "title": "The World Outside",
+        "author": "羅伯特·西爾柏格"
+      },
+      "ownership_index": 420,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "Urbmon 116属于本单篇所在的地球城市社会；已读评论确认Michael居住及逃出楼宇看海。地球归属为研究者确知的本篇/World Inside共同设定，待核。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "实际评论The World Outside专段的Urbmon116、Edinburgh楼层、看海目标；地球归属来自精确既有知识，不把目标海岸当已抵达事实。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/september-8-1970-the-world-outside-october-1970-galaxy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/september-8-1970-the-world-outside-october-1970-galaxy/",
+          "type": "existing_knowledge_and_saved_source_spatial",
+          "support_scope": "实际评论The World Outside专段的Urbmon116、Edinburgh楼层、看海目标；地球归属来自精确既有知识，不把目标海岸当已抵达事实。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "knowledge_plus_source",
+      "source_analysis_file": "quick-retry-root-assist-early-round1.json",
+      "source_analysis_sha256": "722c00efac6b838e69e7c8108f55f027d1de4830f155414e9284ea07f7dfec81",
+      "source_analysis_record_sha256": "3e868975f62c0e7a3a554c0103ad7599b9b9ddc5aa272c3f5d94c2c234f8d77f",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "分析原单篇，不以The World Inside长篇全部社会事件替代，也未把评论区数字质疑当小说情节。"
+    },
+    {
+      "id": "Q131517279",
+      "identity": {
+        "title": "Runesmith",
+        "author": "席奧多爾·史鐸金 / 哈兰·艾里森"
+      },
+      "ownership_index": 421,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际本篇简介明确纽约城废墟中的Smith与追捕者；以纽约地面场景标地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Harlan Ellison Directory的Runesmith专段，明确New York City废墟；不用同页其他作品。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.ndhfilms.com/other/ellison/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ndhfilms.com/other/ellison/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Harlan Ellison Directory的Runesmith专段，明确New York City废墟；不用同页其他作品。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round1.json",
+      "source_analysis_sha256": "722c00efac6b838e69e7c8108f55f027d1de4830f155414e9284ea07f7dfec81",
+      "source_analysis_record_sha256": "b6af280c200e08156a304bbf36d39f63db1c312c2ab93afbf9166ffb67e517fa",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "实际资料注明Ellison与Sturgeon合作；献给Cordwainer Smith不表示故事处于Instrumentality宇宙。"
+    },
+    {
+      "id": "Q3207042",
+      "identity": {
+        "title": "The Winds of Darkover",
+        "author": "瑪麗恩·季默·布拉德利"
+      },
+      "ownership_index": 423,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷行动位于Darkover：Dan的太空港工作及Storn城堡事件。Darkover为作品中的异星，标单行星，不因其系列属于太空题材而扩大成星系。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "既有本卷准确舞台知识；实际本卷摘要确认Dan技术员及Storn家族事件，来源不证明科学上真实天体。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Winds_of_Darkover"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Winds_of_Darkover",
+          "type": "existing_knowledge_and_saved_source_spatial",
+          "support_scope": "既有本卷准确舞台知识；实际本卷摘要确认Dan技术员及Storn家族事件，来源不证明科学上真实天体。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "knowledge_plus_source",
+      "source_analysis_file": "quick-retry-root-assist-early-round1.json",
+      "source_analysis_sha256": "722c00efac6b838e69e7c8108f55f027d1de4830f155414e9284ea07f7dfec81",
+      "source_analysis_record_sha256": "24642235c2e9247c9ccb713158d05ecf3193f6660ba1fd98dbe1a50175b843f9",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790"
+    },
+    {
+      "id": "Q134706029",
+      "identity": {
+        "title": "The Guerrilla Trees",
+        "author": "H. H. Hollis"
+      },
+      "ownership_index": 430,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际专篇评论明确记者来到B44(3)/La Selva并见证当地树人战争；单星球为已见舞台。地球是介入方来源，不作为已读到的实地舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "The Guerrilla Trees专段明确has come to planet B44(3)、La Selva、当地林地焚毁。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/may-2-1968-the-thing-with-feathers-june-1968-if/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/may-2-1968-the-thing-with-feathers-june-1968-if/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "The Guerrilla Trees专段明确has come to planet B44(3)、La Selva、当地林地焚毁。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round1.json",
+      "source_analysis_sha256": "722c00efac6b838e69e7c8108f55f027d1de4830f155414e9284ea07f7dfec81",
+      "source_analysis_record_sha256": "65ee3acfcfc9195093c0683a7e2ab3140e01e06e9842baa7c4eb1c06ce2002e9",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790"
+    },
+    {
+      "id": "Q134694482",
+      "identity": {
+        "title": "The Mercurymen",
+        "author": "C. C. MacApp"
+      },
+      "ownership_index": 442,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际本篇评论明确水星殖民者在藤蔓内部及无空气地表生活和迁移；以水星单行星标导航。书中潮汐锁定设定不当作现实水星事实。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "The Mercurymen专段的Mercury、藤蔓居住、Lem迁徙；只用本篇。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/november-10-1965-strangers-in-strange-lands-december-1965-galaxy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/november-10-1965-strangers-in-strange-lands-december-1965-galaxy/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "The Mercurymen专段的Mercury、藤蔓居住、Lem迁徙；只用本篇。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round2.json",
+      "source_analysis_sha256": "5315e7b069acb237f39fe5c38ba63db09a51a0cbb91501426f85c62e15f33ffe",
+      "source_analysis_record_sha256": "d3803d978298bc63981c540ed8adf7759ca29441fdd5e1a9d58cc216235cde52",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "故事采用当时水星潮汐锁定想象；评论紧接现实自转新发现，现实发现不写成故事事件。"
+    },
+    {
+      "id": "Q134706038",
+      "identity": {
+        "title": "Planet of Forgetting",
+        "author": "James H. Schmitz"
+      },
+      "ownership_index": 443,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际开场评论明确Colgrave在有异样动物的外星球醒来并求生；仅标该单星球，不把先前任务经过的帝国当全部实际航线。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Planet of Forgetting专段明确Earth intelligence operative wakes up on an alien planet；限已读开场。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://galacticjourney.org/january-6-1965-plus-cest-la-meme-chose-february-1965-galaxy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://galacticjourney.org/january-6-1965-plus-cest-la-meme-chose-february-1965-galaxy/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Planet of Forgetting专段明确Earth intelligence operative wakes up on an alien planet；限已读开场。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round2.json",
+      "source_analysis_sha256": "5315e7b069acb237f39fe5c38ba63db09a51a0cbb91501426f85c62e15f33ffe",
+      "source_analysis_record_sha256": "6bf150a488742d3408151a1a46b04965bdfacb3c66ee053f876bdb847d7e4be7",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "本轮核心仅解释明确开場前提，不声称新查到了旧日志缺失的失忆机制或全文。"
+    },
+    {
+      "id": "Q3233673",
+      "identity": {
+        "title": "Les Mangeurs d'atomes",
+        "author": "亨利·华尼斯"
+      },
+      "ownership_index": 457,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "本卷具体任务关联法国外交部门、冷战中的Confédération Balkanique及向西方逃离；以这些地球政治地区构成的舞台标地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Les Mangeurs d’atomes本卷摘要：法国外交任务、仿苏联的Balkanique及冷战逃往西方；不套人物其他冒险。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Les_Mangeurs_d%27atomes"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Les_Mangeurs_d%27atomes",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Les Mangeurs d’atomes本卷摘要：法国外交任务、仿苏联的Balkanique及冷战逃往西方；不套人物其他冒险。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round2.json",
+      "source_analysis_sha256": "5315e7b069acb237f39fe5c38ba63db09a51a0cbb91501426f85c62e15f33ffe",
+      "source_analysis_record_sha256": "9f1582b19b745b52da3b52a654f2080e66a53eec268c2172ecbc4de1989dbbf1",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790"
+    },
+    {
+      "id": "Q104114011",
+      "identity": {
+        "title": "The Astronauts",
+        "author": "J.-H. Rosny"
+      },
+      "ownership_index": 458,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [
+          "earth"
+        ],
+        "spatial_rationale": "明确续篇让人类重返火星及Tripeds访问地球，属于地火两地舞台；两种相互到访是实际续篇概述，不把前篇爱情情节纳入。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "准确以Rosny wrote a sequel, The Astronauts开头的返回火星、Tripeds到访地球句。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.parisupdate.com/french-science-fiction/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.parisupdate.com/french-science-fiction/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "准确以Rosny wrote a sequel, The Astronauts开头的返回火星、Tripeds到访地球句。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round2.json",
+      "source_analysis_sha256": "5315e7b069acb237f39fe5c38ba63db09a51a0cbb91501426f85c62e15f33ffe",
+      "source_analysis_record_sha256": "d54ebe3b51b1c8140ecac4c15d3785708271b9584a3ba2003e484ff466f8d630",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "当前1960出版续篇，前作1920年代内容不直接继承为已读；原年与粒度保留。"
+    },
+    {
+      "id": "Q134354769",
+      "identity": {
+        "title": "The Priests of Psi",
+        "author": "弗兰克·赫伯特"
+      },
+      "ownership_index": 459,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际1960单篇简介明确Lewis Orne受派前往Amel行星并应召到场；只标该行星，不把担忧此地的银河中心当他已到访的地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Les Prêtres du psi专条的sur la planète Amel、Lewis受派与到场；非1972 The Godmakers全部。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://wikiuatu.ddns.net/content/wikipedia_fr_all_maxi_2025-06/Liste_des_nouvelles_de_Frank_Herbert"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://wikiuatu.ddns.net/content/wikipedia_fr_all_maxi_2025-06/Liste_des_nouvelles_de_Frank_Herbert",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Les Prêtres du psi专条的sur la planète Amel、Lewis受派与到场；非1972 The Godmakers全部。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round2.json",
+      "source_analysis_sha256": "5315e7b069acb237f39fe5c38ba63db09a51a0cbb91501426f85c62e15f33ffe",
+      "source_analysis_record_sha256": "bf4900aa65ac41969eb9513466b1ecf1e137007c788bedf2f3612453dee8c27c",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "仅1960单篇开场，虽后编入The Godmakers，不以1972拼成长篇或1980同名集总体替代。"
+    },
+    {
+      "id": "Q99198118",
+      "identity": {
+        "title": "Volver a empezar",
+        "author": "Enrique Sánchez Pascual"
+      },
+      "ownership_index": 465,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "实际本卷评论把核战、地球首富建避难城和支配战后地球相连；地球是具体受灾和避难舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "明确Volver a empezar评论段的hombre más rico de la Tierra与核战避难城；不使用所附Miss Stanley外星短篇。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.goodreads.com/book/show/67354318-volver-a-empezar"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/book/show/67354318-volver-a-empezar",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "明确Volver a empezar评论段的hombre más rico de la Tierra与核战避难城；不使用所附Miss Stanley外星短篇。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round3.json",
+      "source_analysis_sha256": "2d3c1349c1c2afdb5fc3d72ce256c3af5c5a522d0ce5ff8a8a24b9572096e25e",
+      "source_analysis_record_sha256": "7a3b0b96c8519c781909394b0887762e0c842ee0f474a603ca3b12302a4a29d8",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "同一评论尾部谈Law Space另一作Miss Stanley；不借其剧情，核爆改变轴线等仅小说设定非现实判断。"
+    },
+    {
+      "id": "Q4449942",
+      "identity": {
+        "title": "The Secrets of Two Oceans",
+        "author": "Grigory Adamov"
+      },
+      "ownership_index": 486,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "原小说条目明确潜艇由列宁格勒驶往太平洋；这是地球海洋路线，不把先进潜艇技术误归深空。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Adamov原小说专条的列宁格勒至太平洋舰队任务；空间不依赖电影版本的人物区别。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0_%D0%B4%D0%B2%D1%83%D1%85_%D0%BE%D0%BA%D0%B5%D0%B0%D0%BD%D0%BE%D0%B2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0_%D0%B4%D0%B2%D1%83%D1%85_%D0%BE%D0%BA%D0%B5%D0%B0%D0%BD%D0%BE%D0%B2",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Adamov原小说专条的列宁格勒至太平洋舰队任务；空间不依赖电影版本的人物区别。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round3.json",
+      "source_analysis_sha256": "2d3c1349c1c2afdb5fc3d72ce256c3af5c5a522d0ce5ff8a8a24b9572096e25e",
+      "source_analysis_record_sha256": "994cf92eded06e4cf89261f7009a09d856a9df1f95419858e2784a19b5f4417e",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "按原书Gorelov本人受胁迫背叛，不把电影中的被替换者身份写进小说。"
+    },
+    {
+      "id": "Q2043958",
+      "identity": {
+        "title": "The Chessmen of Mars",
+        "author": "埃德加·赖斯·巴勒斯"
+      },
+      "ownership_index": 498,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确既有原长篇知识：Tara、Gahan、Kaldanes和活人棋局事件在Barsoom，即作品中的火星。导航只表文学舞台，不验证真实火星生命。"
+      },
+      "field_notes": {
+        "spatial_primary": "精确既有作品知识；不虚构查询或本轮全文阅读。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "零新查询的本卷准确已有知识，非系列整体或电影；本空间声明待独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "analysis_basis": "knowledge",
+      "source_analysis_file": "quick-retry-root-assist-early-round4.json",
+      "source_analysis_sha256": "0fb13ae4963d1988067a50b667ef05d48775d4aef035e8a59d4c840476b0acbe",
+      "source_analysis_record_sha256": "96ac8f17906ffd5bf03a721f7fd3c6476300d8606610dbf78ba275efcbfee9c3",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "确切The Chessmen of Mars小说知识，不取其他Barsoom卷的战争情节。"
+    },
+    {
+      "id": "Q11502640",
+      "identity": {
+        "title": "新機動戰記GUNDAM W DUAL STORY G-UNIT",
+        "author": "時田洸一"
+      },
+      "ownership_index": 506,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确既有原漫画知识：主要防卫目标为地球圈的工业殖民地MO-V；只标殖民地所处行星空间，不推星系战争规模。"
+      },
+      "field_notes": {
+        "spatial_primary": "精确既有作品知识；不虚构查询或本轮全文阅读。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "零新查询原G-UNIT的MO-V/OZ Prize情节知识；不套Wing电视剧情或后续扩展漫画。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "analysis_basis": "knowledge",
+      "source_analysis_file": "quick-retry-root-assist-early-round4.json",
+      "source_analysis_sha256": "0fb13ae4963d1988067a50b667ef05d48775d4aef035e8a59d4c840476b0acbe",
+      "source_analysis_record_sha256": "026ff78585f28393b4b35022f2882637fbec4646106cf559ea4b111f7a534e7c",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "仅原Gundam Wing Dual Story G-UNIT漫画共同前提，不取后续Operation Galiarest。"
+    },
+    {
+      "id": "Q135069699",
+      "identity": {
+        "title": "The Star Witches",
+        "author": "John Lymington"
+      },
+      "ownership_index": 516,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "已读本作书介的教堂、宅邸与围观村民构成地面场景，评论明确实验打开入侵地球的通路；地球为当前受侵入舞台。外星来路只作来源，不当实际到访。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "The Star Witches明确鬼屋trance实验、Earth invasion path及村庄现场；未读全书。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.goodreads.com/en/book/show/6241468-the-star-witches"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/en/book/show/6241468-the-star-witches",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "The Star Witches明确鬼屋trance实验、Earth invasion path及村庄现场；未读全书。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round4.json",
+      "source_analysis_sha256": "0fb13ae4963d1988067a50b667ef05d48775d4aef035e8a59d4c840476b0acbe",
+      "source_analysis_record_sha256": "03eef0e1eb99a54fbae14c052da2a4ae25dd9c374c6f9419c5a6903ea421ba51",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790"
+    },
+    {
+      "id": "Q135639468",
+      "identity": {
+        "title": "Brigadoon: Marin & Melan",
+        "author": "渡瀨希美"
+      },
+      "ownership_index": 517,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "原漫画卷1出版社简介明确Brigadoon的生命兵器袭来地球，Marin在此受袭和获救；外来世界是入侵来源，不直接标作主舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "KADOKAWA漫画卷1书介的モノマキアが地球に襲来；授权卷1简介的Marin/Melan救助。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kadokawa.co.jp/product/301507000846/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kadokawa.co.jp/product/301507000846/",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "KADOKAWA漫画卷1书介的モノマキアが地球に襲来；授权卷1简介的Marin/Melan救助。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round4.json",
+      "source_analysis_sha256": "0fb13ae4963d1988067a50b667ef05d48775d4aef035e8a59d4c840476b0acbe",
+      "source_analysis_record_sha256": "ae2d8d9aae2c3833b10f450e11733c3c5de4d8577da13f9917f4aac9dda2d896",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "对应渡瀬漫画，不把26集动画全剧情替代；仅第一卷公开简介。"
+    },
+    {
+      "id": "Q140190823",
+      "identity": {
+        "title": "Ikoku Shōjo to Sumire no Hanataba",
+        "author": "作者未知"
+      },
+      "ownership_index": 528,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确漫画简介将Masaki由现代日本带到十九世纪英国/伦敦；这是地球内的跨时代场景，不因时间旅行归为异星。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "本作みずせ希跡简介的19世紀のイギリス；同次明确作者的London段，不使用污染的Ichikawa前段。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://w.atwiki.jp/2otu_kirara/pages/235.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://w.atwiki.jp/2otu_kirara/pages/235.html",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "本作みずせ希跡简介的19世紀のイギリス；同次明确作者的London段，不使用污染的Ichikawa前段。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round5.json",
+      "source_analysis_sha256": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+      "source_analysis_record_sha256": "5e798f7c85a4bdb85fe0a886aba8302c70ab0d30c2663388d901bff83d9afa9d",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "Mangahelpers同页前段误挂相同题名却署ICHIKAWA Ryunosuke并谈Hinata花店；只用明确MIZUSE Kiseki/Masaki段，不借花店故事。"
+    },
+    {
+      "id": "Q141630736",
+      "identity": {
+        "title": "Le Vaisseau des Racine : Tome 2 - Retour sur Terre",
+        "author": "Michel Degrève"
+      },
+      "ownership_index": 532,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "作者明确卷2简介把Genesis船员返回的受灾故土标为地球；只据此和船内植被场景定位返乡主线。数世纪流亡是背景，未读完航路，不推恒星际距离。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "作者Tome2/Retour sur Terre的明确简介和已读ActeI开头；不把未分析的后段当已读全卷。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.michel-degreve.com/vaisseau-racines-t2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.michel-degreve.com/vaisseau-racines-t2",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "作者Tome2/Retour sur Terre的明确简介和已读ActeI开头；不把未分析的后段当已读全卷。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round5.json",
+      "source_analysis_sha256": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+      "source_analysis_record_sha256": "eb275236620ee79829742c1397586abf0084852d0b4a904c02975191feaab4a7",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "本次找到准确作者第二卷页面，取代旧日志异常电商材料；保留源年未知，不用网页发表日期补首发。"
+    },
+    {
+      "id": "Q4035235",
+      "identity": {
+        "title": "紅い牙 ブルー・ソネット",
+        "author": "作者未知"
+      },
+      "ownership_index": 546,
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确漫画卷1简介明确Sonnet在纽约East Harlem生活，已读各卷说明另涉及当地组织和人物；据具体纽约场景标地球，不借OVA地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "同次漫画第1卷第1部简介明确ニューヨーク・イーストハーレム；母亲伤亡/Talon段为已冻结核心依据，未读漫画页。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://comic.iowl.jp/titles/35794/volumes"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://comic.iowl.jp/titles/35794/volumes",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "同次漫画第1卷第1部简介明确ニューヨーク・イーストハーレム；母亲伤亡/Talon段为已冻结核心依据，未读漫画页。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round5.json",
+      "source_analysis_sha256": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+      "source_analysis_record_sha256": "9f16b87c05f2b71a71217f4ec0cf7154a168a27d3ee2b9c7b4486104749c78b7",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "采用漫画授权书店描述，未借OVA学校潜入线或全19卷结局。"
+    },
+    {
+      "id": "Q5236881",
+      "identity": {
+        "title": "Shin Daa! Daa! Daa!",
+        "author": "川村美香"
+      },
+      "ownership_index": 550,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "明确续篇简介让Miu实际迷入Otto星；只标已读到达的单星球。地球是她想回去却被告知不能回去的目标，故不新增次要地球场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Yahoo聚合中的准确续篇卷1/Palcy重复简介：未宇迷入オット星、被告知不能送回地球；不套前作地球育儿剧情。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://search.yahoo.co.jp/search?ei=UTF-8&fr=mashup_krank&p=%E6%96%B0%E3%81%A0%E3%81%81%E3%81%A0%E3%81%81%E3%81%A0%E3%81%81&rs=3&x=nl"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://search.yahoo.co.jp/search?ei=UTF-8&fr=mashup_krank&p=%E6%96%B0%E3%81%A0%E3%81%81%E3%81%A0%E3%81%81%E3%81%A0%E3%81%81&rs=3&x=nl",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Yahoo聚合中的准确续篇卷1/Palcy重复简介：未宇迷入オット星、被告知不能送回地球；不套前作地球育儿剧情。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round5.json",
+      "source_analysis_sha256": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+      "source_analysis_record_sha256": "66756b13f85b45caa322e5d1e3f1d119c701400528a740791dc8815cbb54a12c",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "聚合转述来源层级较弱，需后续独立核对；仅续篇漂流前提，不借原作照护外星婴儿情节。"
+    },
+    {
+      "id": "Q55230413",
+      "identity": {
+        "title": "Highest Score",
+        "author": "凱文·詹姆士·安德森 / 蕾貝卡·莫斯塔 / Kem Antilles"
+      },
+      "ownership_index": 563,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确小说梗概明确Jake与Nog前往Citra轨道站，所操控机器实际采掘星球并伤害居民；以轨道站与行星矿区标单行星。游戏图形是掩饰，不把受害城市当全息虚构地点。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "Highest Score的本作Summary：station orbiting planet Citra、excavators、居民与房屋受害；直接打开主要导航，空间依实际查询梗概。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://memory-beta.fandom.com/wiki/Highest_Score"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://memory-beta.fandom.com/wiki/Highest_Score",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "Highest Score的本作Summary：station orbiting planet Citra、excavators、居民与房屋受害；直接打开主要导航，空间依实际查询梗概。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round6.json",
+      "source_analysis_sha256": "1c30f8260bb9136bf5cc4a56006dc18da58309ccc00a804ad54822144e78db58",
+      "source_analysis_record_sha256": "be6c7cf9e806c7706f6212f767279bf870ac58202ead57251b00087b332f5ba8",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "当前列Kem Antilles及Anderson/Moesta关联作者，保留原署名；只本第8卷，不取DS9电视剧情。"
+    },
+    {
+      "id": "Q64762519",
+      "identity": {
+        "title": "See No Evil",
+        "author": "Jill Sherwin"
+      },
+      "ownership_index": 573,
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_secondary": [],
+        "spatial_rationale": "准确单篇梗概明确企业号抵达Donico II并发生广播、能源网与Scotty受罚事件；仅标这颗行星，不借企业号品牌扩大空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "See No Evil/Jill Sherwin准确段：求救来自planet Donico II、企业号抵达，后续能源网危机。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.free-ebooks.net/sci-fi-fantasy/A-Trekkie-s-Unofficial-Book-Summaries/html/40"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.free-ebooks.net/sci-fi-fantasy/A-Trekkie-s-Unofficial-Book-Summaries/html/40",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "See No Evil/Jill Sherwin准确段：求救来自planet Donico II、企业号抵达，后续能源网危机。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round6.json",
+      "source_analysis_sha256": "1c30f8260bb9136bf5cc4a56006dc18da58309ccc00a804ad54822144e78db58",
+      "source_analysis_record_sha256": "59149b9ebeda58785ad20c82ca9d658df0be4107812dc160900d371ed0163fcb",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "不是SCE系列；采用准确单篇概要及Constellations书目对应，不把上方邻篇2286时间标注套入本篇。"
+    },
+    {
+      "id": "Q64875955",
+      "identity": {
+        "title": "The Best Defense…",
+        "author": "John Takis"
+      },
+      "ownership_index": 583,
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_secondary": [],
+        "spatial_rationale": "已读具体概要将本篇战略试验放在Alamo全息模拟中；导航标虚拟历史场景。真实Dominion战争只是Bashir带入的经验，模拟不证明人物到了历史上的得克萨斯。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅冻结核心的既有明确设定/实际材料，独立核验尚未完成；导航分类不是坐标。",
+        "spatial_secondary": "只保留已明确实际舞台；空数组不保证没有其他地点。",
+        "spatial_rationale": "同批Q64875967实际查询返回的准确Takis/The Best Defense段：Bashir在Alamo模拟器试用战争经验；未读原篇。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kontinuum.cz/databaze/knihy/391/strange-new-worlds-iii",
+          "type": "saved_source_explicit_setting",
+          "support_scope": "同批Q64875967实际查询返回的准确Takis/The Best Defense段：Bashir在Alamo模拟器试用战争经验；未读原篇。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true
+        }
+      ],
+      "analysis_basis": "source",
+      "source_analysis_file": "quick-retry-root-assist-early-round6.json",
+      "source_analysis_sha256": "1c30f8260bb9136bf5cc4a56006dc18da58309ccc00a804ad54822144e78db58",
+      "source_analysis_record_sha256": "f3d7eae541eefa17416724cfac31c3a15d9486a75ba3cbcf8ff6cc126f6ca9d9",
+      "integration_relation": "published_core",
+      "original_ownership_file": "quick-retry-lane-0.json",
+      "original_ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+      "delegation_file": "quick-retry-root-assist-early-ownership.json",
+      "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+      "identity_caveat": "如实保留本ID无益查询，采用确实读到的同批精确段；不借电视剧另加具体模拟结局。"
+    }
+  ]
+}
