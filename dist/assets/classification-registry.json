@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 21,
+    "version": 22,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v20.json",
-      "sha256": "49635bf7c8c83759e325e4a6c7a7dbfbb4f485518ceebe905360fd5787ff817a"
+      "file": "research/classification-registry-history/v21.json",
+      "sha256": "c5e8115f5d6518dc94940c458f775c09f9991b20c302a0c88f44bf5c8fe2944f"
     },
-    "revision_note": "保留V20所有八维入口、种子、145候选、11审阅与历史资料补充，追加13个待比较方向，不晋升、不自动传播；4条无核心的漫画形式/平台/出版史单独显示，目标情节仍未知。",
+    "revision_note": "逐值保留V21的158候选、11旧审阅、39旧类、102旧关系与全部历史资料；追加已审阅的10研究导航入口和28限定成员关系，不新增核心或核验，不改原genre、科学可行性或时间空间值。 另保留3个限定叙事机制候选，共161候选；只追加待比较，不把单例推广为新类别。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -316,6 +316,14 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r11.json",
         "sha256": "54e90a42e92804e00329a89487102078922628f1912a94bf59fa8107a07aa4a3"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round4.json",
+        "sha256": "2756e35064712432cd87e1c10367fb6247daf1b346e536ec12805a37e8aa9348"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round6.json",
+        "sha256": "03f19842bb069f4fb155ed186a3678d79ee142f0a7b61d25d5e83ee016ead95a"
       }
     ],
     "review_inputs": [
@@ -326,6 +334,10 @@
       {
         "file": "research/classification-discovery-audits/classification-v18-promotion-audit-modern.json",
         "sha256": "7dfc548c96ff6d04e35194c6adceb530b5cc4713ca70dd44637c90e5fa58a118"
+      },
+      {
+        "file": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+        "sha256": "ea386c5bd4f45fe8d7ba5cefe6c58157ce579bb091f9972868d0b754e22fb0ae"
       }
     ],
     "evidence_update_inputs": [
@@ -333,7 +345,11 @@
         "file": "research/classification-discovery-audits/round87-historical-discovery-evidence-updates.json",
         "sha256": "2e746c44992851c2594c7df276fe02133e86bab07ae27e0e2b6e3734e891bb02"
       }
-    ]
+    ],
+    "navigation_semantic_review": {
+      "file": "research/classification-discovery-audits/round90-root-semantic-navigation-review.json",
+      "sha256": "958045b55541224d9ee285c7f51ded0e0843ae15e7d0a87cf2a4118a777474a6"
+    }
   },
   "axes": [
     {
@@ -1907,6 +1923,832 @@
           "status": "interpretive_grouping_unverified",
           "evidence_mode": "scoped_form_source_without_core",
           "original_candidate_id": "discovery:quick-retry-root-assist-early-classification-candidates-round1:2"
+        }
+      ]
+    },
+    {
+      "id": "topic:punishment-and-life-purpose",
+      "axis": "topic",
+      "label": "惩罚与生活目的",
+      "definition": "作品明确把惩罚制度与被惩罚者的生活目的、照护或自我保留相对置。比较劳动刑罚结束后的失落、处决前的幸福安排与来世机构的人格改造；不把三种制度当成相同惩罚。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "topic:care",
+        "branch:institutional"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "需要具体刑罚或准入改造安排及其生活后果；不能仅因故事有监狱而纳入。",
+        "超自然来世实例保持其原类型边界，不变成科学预测。",
+        "保留各篇身份，不把同题短篇与1994合集合并。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "劳动终止与目的失落",
+          "members": [
+            "Q64831605"
+          ]
+        },
+        {
+          "label": "幸福照料与既定处决",
+          "members": [
+            "Q134715431"
+          ]
+        },
+        {
+          "label": "言语规训与来世准入",
+          "members": [
+            "Q24069503"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q64831605",
+          "title_at_review": "The Last Tribble",
+          "author_at_review": "Keith Davis",
+          "basis": "短篇回读：Jones完成近十八年清tribble惩罚时失去人生目的，劳动有健康/知识意外收益。",
+          "evidence_scope": "一次实际查询读Deep Space Spines该选集中明确The Last Tribble短篇回读段，支持任务终点、目的失落与劳动意外收益；评论非原作，不分析同页其他短篇或借TV全集。",
+          "membership_boundary": "仅distinct_short_story范围；需要具体刑罚或准入改造安排及其生活后果；不能仅因故事有监狱而纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "distinct_short_story",
+          "sources": [
+            "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:2"
+        },
+        {
+          "work_id": "Q134715431",
+          "title_at_review": "Keep Them Happy",
+          "author_at_review": "Robert Rohrer",
+          "basis": "Keep Them Happy 的死刑制度让囚犯尽量幸福，负责人亲自成为女囚爱人，却不改变处决命运。",
+          "evidence_scope": "实际直接读取 Rich Horton 对 Keep Them Happy 的独立评论段落，另读到作者评论补充发表背景；未读原篇，不推断性关系细节或不同结局。",
+          "membership_boundary": "仅distinct_short_story范围；需要具体刑罚或准入改造安排及其生活后果；不能仅因故事有监狱而纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "distinct_short_story",
+          "sources": [
+            "https://rrhorton.blogspot.com/2021/03/the-complete-stories-of-robert-h-rohrer.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r9:3"
+        },
+        {
+          "work_id": "Q24069503",
+          "title_at_review": "The Calvin Coolidge Home for Dead Comedians",
+          "author_at_review": "Bradley Denton",
+          "basis": "Leonard死后进入一所收容喜剧演员的机构，必须消除粗鲁、冒犯和亵渎等被视为不适合天堂的性格，才能离开。喜剧表达与人格被置于道德改造制度下，使归属资格、言语边界和个人保留自我的权利发生冲突。",
+          "evidence_scope": "只读实际查询返回的极短本篇Plot summary及身份，不读正文，不把1994同名合集整体当本篇。 原作全文新读0，解释待独立核对。",
+          "membership_boundary": "仅distinct_short_story_not_same_title_collection范围；需要具体刑罚或准入改造安排及其生活后果；不能仅因故事有监狱而纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "distinct_short_story_not_same_title_collection",
+          "sources": [
+            "https://en.wikipedia.org/wiki/The_Calvin_Coolidge_Home_for_Dead_Comedians"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:root-known-year-classification-candidates-r10:3"
+        }
+      ]
+    },
+    {
+      "id": "branch:embodied-governance",
+      "axis": "branch",
+      "label": "身体治理科幻（研究分支）",
+      "definition": "以对身体状态、寿命欲望或医疗依赖的组织控制推动制度冲突的研究分支。制度的力量落实在人的生理生命条件中；保留临床依赖、遗传人口工程与年龄操控的不同机制。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "branch:institutional",
+        "science:lifemaking"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "这是跨作品比较形成的研究分支，不声称已有通行文学史命名。",
+        "必须有具体机构与身体控制的联系；不把所有疾病、基因或身体变化题材自动收入。",
+        "Masters of Time只关联已确认Recruiting Station选篇，不给The Changeling或整部范·沃格特作品传播标签。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "医疗依赖转为统治",
+          "members": [
+            "Q133800908"
+          ]
+        },
+        {
+          "label": "遗传设计死亡欲望",
+          "members": [
+            "Q122581014"
+          ]
+        },
+        {
+          "label": "年龄操控服务战争招募",
+          "members": [
+            "Q2943384"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q133800908",
+          "title_at_review": "L'Ordre établi",
+          "author_at_review": "Christopher Stork",
+          "basis": "灾变幸存者依赖医生，随后身体、精神、亲密生活全部交由医师组织掌管。",
+          "evidence_scope": "实际读取Librairie Scylla本卷Quatrième de couverture，支持灾变、医疗依赖及医师政治统治；书店转录封底，不是原作全文。",
+          "membership_boundary": "仅exact_novel_cover_premise范围；这是跨作品比较形成的研究分支，不声称已有通行文学史命名。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_cover_premise",
+          "sources": [
+            "https://scylla.fr/legacy/a/christopher-stork/l-ordre-etabli-636"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r6:1"
+        },
+        {
+          "work_id": "Q122581014",
+          "title_at_review": "The Doomsday Gene",
+          "author_at_review": "John Boyd",
+          "basis": "Doomsday Gene的人口治理制造强烈活动而短命的人类，以死亡欲望的遗传基础实现早逝。",
+          "evidence_scope": "实际读取Don D’Ammassa2016评论中单列The Doomsday Gene段落，支持人口镇压、社会工程与死亡欲望的遗传设计；未读地震预测谜底或小说。评论标1973，与canonical1972不一，保留不改。",
+          "membership_boundary": "仅exact_novel_commentary范围；这是跨作品比较形成的研究分支，不声称已有通行文学史命名。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_commentary",
+          "sources": [
+            "https://dondammassa.com/R1D2016.htm"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r8:3"
+        },
+        {
+          "work_id": "Q2943384",
+          "title_at_review": "Masters of Time",
+          "author_at_review": "范·沃格特",
+          "basis": "仅合集标题篇Recruiting Station：Norma遭Lell的未来战争招募机制操纵，年龄变化与恢复构成对行动自由的控制。",
+          "evidence_scope": "实际直接读取本册评论，采用明确Norma/Dr.Lell/Garson招募情节；检索目录确认1950册含Masters of Time/Recruiting Station和The Changeling两篇。评论猜合订为mash-up不作为形式事实，本条只取对应招募故事，不推广到另一篇。未读正文。",
+          "membership_boundary": "仅named_member:Masters of Time / Recruiting Station范围；这是跨作品比较形成的研究分支，不声称已有通行文学史命名。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "named_member:Masters of Time / Recruiting Station",
+          "sources": [
+            "https://sfcrowsnest.info/masters-of-time-by-a-e-van-vogt-book-review/",
+            "https://www.goodreads.com/en/book/show/6945145-masters-of-time"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r15:2"
+        }
+      ],
+      "branch_status_note": "此为比较具体身体治理安排的研究分支入口，不声称为公认文学genre。"
+    },
+    {
+      "id": "narrative:rule-bound-participation",
+      "axis": "narrative",
+      "label": "读者与观众的参与规则",
+      "definition": "媒介明确为读者、玩家或现场观众分配任务与行动权限，使接触故事的过程本身成为规则化的参与。比较可选择路径、只能观察解释与限时现场任务，不将参与一概视为控制角色。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "narrative:rules",
+        "form:performance"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "以材料明确说明的参与方式为限；没有实际游玩、走完分支或观看演出的新增声明。",
+        "读者重开阅读不是故事角色获得时间重启能力。",
+        "现场倒计时属于表演框架，不称真实生命危险或已核结局。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "选择路径并重开",
+          "members": [
+            "Q55230567"
+          ]
+        },
+        {
+          "label": "观察角色而不能操控",
+          "members": [
+            "Q52153354"
+          ]
+        },
+        {
+          "label": "现场限时任务",
+          "members": [
+            "Q7727962"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q55230567",
+          "title_at_review": "Voyage to Adventure",
+          "author_at_review": "約翰·M·福特 / Michael J. Dodge",
+          "basis": "VoyageToAdventure宣传说明读者扮Enterprise少尉选择不同任务路径，不满走向时可以回去重开。",
+          "evidence_scope": "准确互动书社区Description已读；未读全部分支，未推断固定结局。",
+          "membership_boundary": "仅exact_interactive_book_description范围；以材料明确说明的参与方式为限；没有实际游玩、走完分支或观看演出的新增声明。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_interactive_book_description",
+          "sources": [
+            "https://memory-beta.fandom.com/wiki/Voyage_to_Adventure"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:reader-choice-and-branch-reading"
+        },
+        {
+          "work_id": "Q52153354",
+          "title_at_review": "Target of Desire: Episode 1",
+          "author_at_review": "Osgoode Media",
+          "basis": "发行方说明玩家不能操控Maia，须理解她被追踪的处境及大学研究者Maria的网络日志。",
+          "evidence_scope": "实际查询返回Osgoode Media的Google Play应用说明；未游玩，不称实际分支或完整结局已核。",
+          "membership_boundary": "仅exact_game_episode_publisher_description范围；以材料明确说明的参与方式为限；没有实际游玩、走完分支或观看演出的新增声明。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_game_episode_publisher_description",
+          "sources": [
+            "https://play.google.com/store/apps/details?hl=en_US&id=com.Osgoode.TargetOfDesire1"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r1-r3:2"
+        },
+        {
+          "work_id": "Q7727962",
+          "title_at_review": "The Crash of the Elysium",
+          "author_at_review": "湯·麥克雷",
+          "basis": "官方节目把6–12岁观众置于星际行动中心，要求60分钟内拯救世界，说明身体与情绪参与。",
+          "evidence_scope": "实际直接读取 Factory International 的官方节目介绍，另读检索返回的舞台作品身份；只分析官方公布的儿童参与、倒计时及救援框架，未观看演出或读取剧本，不借电视剧单集结局。",
+          "membership_boundary": "仅exact_participatory_stage_programme范围；以材料明确说明的参与方式为限；没有实际游玩、走完分支或观看演出的新增声明。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_participatory_stage_programme",
+          "sources": [
+            "https://factoryinternational.org/whats-on/the-crash-of-the-elysium/",
+            "https://en.wikipedia.org/wiki/The_Crash_of_the_Elysium"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r19:3"
+        }
+      ]
+    },
+    {
+      "id": "time:access-permissions",
+      "axis": "time",
+      "label": "跨时访问与权限",
+      "definition": "跨时能力有明确的组织者、所有者或访问窗口，时间通道因此不是对所有人均等开放的背景设定。比较政府独占历史干预、家族经营过去与有时地限制的脑内访问服务。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "time:intervention",
+        "time:asynchronous-experience"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "不预先把历史保护与时间殖民判为同一种政治行为。",
+        "脑内访问实例只限第2册已见服务说明，不推定身体穿越、模拟或改史机制。",
+        "该入口不改变故事跨度、纪年或原发表日期。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "国家历史保护机构",
+          "members": [
+            "Q18223835"
+          ]
+        },
+        {
+          "label": "家族占有过去资产",
+          "members": [
+            "Q133790242"
+          ]
+        },
+        {
+          "label": "限年月与城市的体验窗口",
+          "members": [
+            "Q11416145"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q18223835",
+          "title_at_review": "Lungo i vicoli del tempo",
+          "author_at_review": "Lanfranco Fabriani",
+          "basis": "UCCI秘密政府机构独占时间旅行，保护既定意大利历史。",
+          "evidence_scope": "实际一次查询返回的本卷机构与主角概述；未打开或读取完整原作，未采用2005年续篇情节。 原作全文新读0，文学解释仍待核。",
+          "membership_boundary": "仅exact_novel_not_2005_sequel范围；不预先把历史保护与时间殖民判为同一种政治行为。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_not_2005_sequel",
+          "sources": [
+            "https://it.wikipedia.org/wiki/Lungo_i_vicoli_del_tempo"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:institutional-possession-of-time-access"
+        },
+        {
+          "work_id": "Q133790242",
+          "title_at_review": "Colonies parallèles",
+          "author_at_review": "Nicolas Bouchard",
+          "basis": "家族以时间通道殖民过去，把历史城市当作可以买卖的资产。",
+          "evidence_scope": "一次实际查询返回的本卷具体评论及封底转录，限时间殖民、Marie-Aïno与Sumer；未读小说原文。 原作全文新读0，文学解释仍待核。",
+          "membership_boundary": "仅exact_novel_premise范围；不预先把历史保护与时间殖民判为同一种政治行为。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_premise",
+          "sources": [
+            "https://www.litteraturesdelimaginaire.com/IMAGINAIRE/BouchCol.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:institutional-possession-of-time-access"
+        },
+        {
+          "work_id": "Q11416145",
+          "title_at_review": "你和我的足跡~時空旅行‧春日研究所~",
+          "author_at_review": "吉附久道",
+          "basis": "准确漫画第2册书店あらすじ明示研究所经营二十年以内、市内限定的脑内时间旅行，并接待因后悔无法前进的人；这是一种时间窗、地点窗和体验方式同时受限的机制。",
+          "evidence_scope": "仅一次实际直接返回的あらすじL119–121，不是试读漫画或服务机制全文核验；不采用后续评论无法定位的震灾/失踪情节。",
+          "membership_boundary": "仅series_entry_by_explicit_volume_2_service_premise范围；不预先把历史保护与时间殖民判为同一种政治行为。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "series_entry_by_explicit_volume_2_service_premise",
+          "sources": [
+            "https://booklive.jp/review/list/title_id/265539/vol_no/002"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-global-classification-candidates-round4:1"
+        }
+      ]
+    },
+    {
+      "id": "space:multiple-world-connectivity",
+      "axis": "space",
+      "label": "多重世界的连通与回归",
+      "definition": "空间关系涉及不同世界之间的共同通道或失去归属后的回归目标。比较两组三维文明共享高维航路与平行世界困居者寻找自身人民和土地，不把两种空间理论或路径当成相同机制。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [],
+      "related_topics": [],
+      "boundaries": [
+        "保持原导航主尺度；不将平行世界、高维或岛屿自动改为abstract或cosmic。",
+        "Subspace Encounter不借Subspace Explorers前卷；Higg岛不借同系列或同名他作。",
+        "回归目标不等于材料已说明成功路线、传送技术或结局。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "共享高维通道的文明接触",
+          "members": [
+            "Q7632036"
+          ]
+        },
+        {
+          "label": "平行世界中的归属与回归目标",
+          "members": [
+            "Q134526907"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q7632036",
+          "title_at_review": "Subspace Encounter",
+          "author_at_review": "愛德華·艾默·史密斯",
+          "basis": "Subspace Encounter明确两组三维空间通过共同第四维的航行被超能力者察觉并接触。",
+          "evidence_scope": "实际单次查询返回对应小说具体空间机制摘要；未读原文，不借前卷Subspace Explorers，不替代当前主空间分类。",
+          "membership_boundary": "仅exact_sequel_not_previous_volume范围；保持原导航主尺度；不将平行世界、高维或岛屿自动改为abstract或cosmic。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_sequel_not_previous_volume",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Subspace_Encounter"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-root-assist-modern-classification-candidates-r3:1"
+        },
+        {
+          "work_id": "Q134526907",
+          "title_at_review": "L'île aux enragés",
+          "author_at_review": "皮埃尔·佩洛特",
+          "basis": "Arian Dhaye被困平行宇宙Higg岛，与两名岛顶隐士寻找自己的人民和土地；依据准确1973封底开端，未解释全文的遗传战争和结局。",
+          "evidence_scope": "实际一次新查询读取Ecrivosges本书书目页的Sujet1973封底、Dateetlieu与仅极短第一页面开头。采用Higg岛、平行宇宙困境和与两名隐士结伴，不借同系列首卷或其他作者同名岛屿故事；未读全文，不把原纪年更新为网页内部年代。",
+          "membership_boundary": "仅exact_1973_book_cover_premise范围；保持原导航主尺度；不将平行世界、高维或岛屿自动改为abstract或cosmic。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_1973_book_cover_premise",
+          "sources": [
+            "https://ecrivosges.com/auteurs/pelotp/romans/041_ileauxenrages.php"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r7:4"
+        }
+      ]
+    },
+    {
+      "id": "science:military-life-storage",
+      "axis": "science",
+      "label": "生命与心智的战备存档",
+      "definition": "军队把士兵的生存状态或心智作为可保存、重新调用的战争资源。比较冻结士兵的库存与反复冷冻、心智存档、新身体及副本敌对的明确选篇；物理身体与人格副本的机制继续分开。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "science:carrier"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "不认定现实冷冻复苏、心智上传或身份复制技术已实现。",
+        "普通长途旅行休眠没有已知军用库存关系时不纳入。",
+        "Universe 5只关联Stephen Goldin的But as a Soldier, For His Country，作者未知的底库字段保留，不推广到其余十一篇。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "冻结士兵的战争库存",
+          "members": [
+            "Q3257490"
+          ]
+        },
+        {
+          "label": "老兵反复调用与心智副本",
+          "members": [
+            "Q30078237"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q3257490",
+          "title_at_review": "Llana of Gathol",
+          "author_at_review": "埃德加·赖斯·巴勒斯",
+          "basis": "Llana卷内Pankor把士兵冻结，在战争需要时取用。",
+          "evidence_scope": "实际单轮查询读到Wikipedia整卷Plot summary；支持Llana解救链及催眠保存、冻结战备两个具体场景，未核读各篇原文，不推广到Barsoom全系列。",
+          "membership_boundary": "仅exact_novel_scene:Pankor_soldier_storage范围；不认定现实冷冻复苏、心智上传或身份复制技术已实现。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_scene:Pankor_soldier_storage",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Llana_of_Gathol"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r11:2"
+        },
+        {
+          "work_id": "Q30078237",
+          "title_at_review": "Universe 5",
+          "author_at_review": "作者未知",
+          "basis": "选篇But as a Soldier, For His Country中老兵被反复唤醒参战，后来心智装入新身体，最终与朋友及自身副本交战。",
+          "evidence_scope": "实际一次新查询及一次直接读取MPorcius对Universe5成员的评论L29–32，并用同次检索本卷目录核对收入。只StephenGoldin具名选篇的冷冻、心智存储/新身体与副本交战，不代表全部十二篇；不借同页NightWind或Russ另一篇。未读原篇或全书。",
+          "membership_boundary": "仅named_member:But as a Soldier, For His Country范围；不认定现实冷冻复苏、心智上传或身份复制技术已实现。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "named_member:But as a Soldier, For His Country",
+          "sources": [
+            "https://mporcius.blogspot.com/2025/02/more-1974-dazzlers-j-j-russ-e-pangborn.html",
+            "https://en.wikipedia.org/wiki/Universe_5"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r7:3"
+        }
+      ]
+    },
+    {
+      "id": "reality:creator-experience-transposition",
+      "axis": "reality",
+      "label": "现实经历的创作转写",
+      "definition": "作者明确说明自身经历、现实场所或生活被转写成作品的材料。比较战争经验的写出、工业厂区的奇幻转置和外星人生平的自传伪装；只登记创作关联，不把作者经历当成虚构事件已真实发生。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "topic:trauma-and-recovery"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "以保存材料中的作者指名说明为限，不从军事、工业或外星题材反推作者经历。",
+        "Cold Iron仅作者明确讨论的第一部分；Agénor仅指名章节的自传转写说明。",
+        "不把作者自述当独立事实核验，也不证明写作有临床疗效。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "战争见闻与写作自我疗愈",
+          "members": [
+            "Q5645591"
+          ]
+        },
+        {
+          "label": "现实厂区的空间转置",
+          "members": [
+            "Q134694501"
+          ]
+        },
+        {
+          "label": "生活经历的非人角色伪装",
+          "members": [
+            "Q121850248"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q5645591",
+          "title_at_review": "Hammer's Slammers",
+          "author_at_review": "戴维·德雷克",
+          "basis": "Drake自述Slammers故事让他写出所见所闻、战友及变化后的自己，作为自我疗愈并使其他退伍者感到不孤立。",
+          "evidence_scope": "实际打开作者本人1979合集说明的创作经历段落；支持作者自述与原版合集身份，不支持逐篇事件或读者疗效的独立检验。",
+          "membership_boundary": "仅author_statement_about_1979_collection范围；以保存材料中的作者指名说明为限，不从军事、工业或外星题材反推作者经历。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "author_statement_about_1979_collection",
+          "sources": [
+            "https://david-drake.com/2000/hammers-slammers-1979/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r6:4"
+        },
+        {
+          "work_id": "Q134694501",
+          "title_at_review": "Cold Iron",
+          "author_at_review": "迈克尔·斯万维克",
+          "basis": "作者明确ColdIron是第一部分，其dragonfactory建筑布局取自NorthPhiladelphia的BaldwinLocomotiveWorks，并承认Dickens影响；这是取材声明，非历史劳工事实逐条核验。",
+          "evidence_scope": "一次查询实际返回作者存档讨论ColdIron部分及龙工厂现实厂区取材；直接openTimeout失败，原篇未读，不把长篇其它大学/商场部分推广到ColdIron。",
+          "membership_boundary": "仅author_statement_about_first_part_Cold_Iron范围；以保存材料中的作者指名说明为限，不从军事、工业或外星题材反推作者经历。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "author_statement_about_first_part_Cold_Iron",
+          "sources": [
+            "https://michaelswanwick.com/revan/idda.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r4:1"
+        },
+        {
+          "work_id": "Q121850248",
+          "title_at_review": "Agénor, Agénor, Agénor et Agénor",
+          "author_at_review": "弗朗索瓦·巴塞洛",
+          "basis": "作者明示外星人没有特殊能力，其Histoire d’Agénor章节生平几乎是作者本人伪装；以具体自传转写而非通用外星题材为依据。",
+          "evidence_scope": "实际一次检索返回 Québec français 1990年第78期 François Barcelo 访谈第63页；采用作者指名本书外星人和 Histoire d’Agénor 章节的自传转写说明。没有阅读四百余页小说，不把相邻2006书评双栏的“barbarie”段落、其他作品或整个Agénor系列剧情套入单本。",
+          "membership_boundary": "仅author_statement_about_Histoire_d_Agenor_chapter范围；以保存材料中的作者指名说明为限，不从军事、工业或外星题材反推作者经历。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "author_statement_about_Histoire_d_Agenor_chapter",
+          "sources": [
+            "https://www.erudit.org/fr/revues/qf/1990-n78-qf1224780/44700ac.pdf"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r6:1"
+        }
+      ]
+    },
+    {
+      "id": "form:in-world-expository-guides",
+      "axis": "form",
+      "label": "虚构世界的指南与论述",
+      "definition": "以指南、手册或拟非虚构论述的外形组织虚构世界，而不是把一段说明作为连续小说的附属信息。比较虚构角色的服务指南、第二人称朝圣导览与虚构未来的社会手册，保留不同文本任务。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "form:reference-documentation",
+        "form:compiled-fictional-records"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "来源必须说明虚构世界或角色框架；真实未来学著作不因谈未来而自动进入。",
+        "The Road to Dune只1985图文单作，不是2005同名创作资料集。",
+        "简介与目录不等于已读全部章节、图像或手册规则。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "角色口吻的服务指南",
+          "members": [
+            "Q54807340"
+          ]
+        },
+        {
+          "label": "第二人称旅行与朝圣导览",
+          "members": [
+            "Q118104912"
+          ]
+        },
+        {
+          "label": "拟非虚构的未来社会手册",
+          "members": [
+            "Q5399966"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q54807340",
+          "title_at_review": "The Hologram's Handbook",
+          "author_at_review": "罗伯特·皮卡多 / Robert Picardo",
+          "basis": "Doctor口吻的指南讨论有机人相处、服务轻慢、自我发展与停用/删除；当前仅简介和目录。",
+          "evidence_scope": "实际一次查询返回的特定参考页简介与目录，仅目录主题和简介，不是章节全文或原作剧情阅读。 原作全文新读0，文学解释仍待核。",
+          "membership_boundary": "仅exact_published_guide_overview_and_contents范围；来源必须说明虚构世界或角色框架；真实未来学著作不因谈未来而自动进入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_published_guide_overview_and_contents",
+          "sources": [
+            "https://memory-alpha.fandom.com/wiki/The_Hologram%27s_Handbook"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:in-universe-humorous-service-guide"
+        },
+        {
+          "work_id": "Q118104912",
+          "title_at_review": "The Road to Dune",
+          "author_at_review": "弗兰克·赫伯特",
+          "basis": "1985图文文本以第二人称引导Arrakis朝圣者参观Arrakeen宫殿、Alia神庙并购买纪念物；用导览形式安排读者进入帝国及宗教秩序的方式。",
+          "evidence_scope": "实际读取评论L11–27，明确1985单作/收入Eye、20页图文和第二人称朝圣指南；未读原图文，区别于2005同名合编资料集。",
+          "membership_boundary": "仅exact_1985_illustrated_text_not_2005_collection范围；来源必须说明虚构世界或角色框架；真实未来学著作不因谈未来而自动进入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_1985_illustrated_text_not_2005_collection",
+          "sources": [
+            "https://www.planocritico.com/critica-o-caminho-para-duna-de-frank-herbert/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-early-classification-candidates-round1:1"
+        },
+        {
+          "work_id": "Q5399966",
+          "title_at_review": "Est: The Steersman Handbook",
+          "author_at_review": "莱斯利·史蒂文斯",
+          "basis": "Est: The Steersman Handbook来源明确称科幻以非虚构研究形式呈现，描绘Electronic Social Transformation与postliterate新一代社会；这里按论述形态分析，不虚构常规角色冒险。",
+          "evidence_scope": "实际一次精准查询返回作品简介与Synopsis段，未打开原作，也未核全本。",
+          "membership_boundary": "仅whole_work_form_from_explicit_fictional_summary范围；来源必须说明虚构世界或角色框架；真实未来学著作不因谈未来而自动进入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "whole_work_form_from_explicit_fictional_summary",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Est%3A_The_Steersman_Handbook"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-global-classification-candidates-round14:1"
+        }
+      ]
+    },
+    {
+      "id": "form:fiction-nonfiction-compilation",
+      "axis": "form",
+      "label": "虚构与非虚构的同册编排",
+      "definition": "一册明确并置虚构文本与批评、世界规格、访谈或其他非虚构材料，保留其阅读关系与编选范围。比较文学理论读本、设定研讨、跨体裁自选与章节节选合集，不把全册视为统一连续小说。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "form:reference-documentation"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "需有保存的目录或出版说明；仅小说附带普通前言不据此纳入。",
+        "Stars and Gods只目录层面形式，核心继续待补；不借节选对应长篇的全书剧情。",
+        "Medea的共建设定不表示全书同一剧情，Scribblings的诗与格言不自动取得Probability Zero选篇的时间议题。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "文学节选与理论批评",
+          "members": [
+            "Q7620247"
+          ]
+        },
+        {
+          "label": "世界规格研讨与虚构外推",
+          "members": [
+            "Q6805210"
+          ]
+        },
+        {
+          "label": "章节节选与文章访谈",
+          "members": [
+            "Q21161141"
+          ]
+        },
+        {
+          "label": "小说诗歌非虚构格言自选",
+          "members": [
+            "Q7439139"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q7620247",
+          "title_at_review": "Storming the Reality Studio",
+          "author_at_review": "作者未知",
+          "basis": "Duke出版社说明及目录并置Gibson、Cadigan等虚构文本与Derrida、Jameson等评论，分析对象为读本编排与论旨。",
+          "evidence_scope": "实际读取Duke University Press本书书介及目录；分析对象为文学案例/批评读本的编排与明确论旨，未把其中任何原长篇全书情节视为本读本的连续剧情。",
+          "membership_boundary": "仅whole_book_compilation_from_publisher_contents范围；需有保存的目录或出版说明；仅小说附带普通前言不据此纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "whole_book_compilation_from_publisher_contents",
+          "sources": [
+            "https://www.dukeupress.edu/storming-the-reality-studio"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r4:2"
+        },
+        {
+          "work_id": "Q6805210",
+          "title_at_review": "Medea: Harlan's World",
+          "author_at_review": "作者未知",
+          "basis": "目录明确包含Part I The Specs、Part II The Concept Seminar、Part III The Extrapolations/The Questions与多作者同一卫星小说。",
+          "evidence_scope": "实际读取Wikipedia本书简介、1975共建讨论背景与Parts I–IV目录；分析只属协作世界构建/编创层面，未读取单篇故事，不把同一卫星的设定推定为全书同一个剧情。",
+          "membership_boundary": "仅whole_book_specs_seminar_and_fiction_parts范围；需有保存的目录或出版说明；仅小说附带普通前言不据此纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "whole_book_specs_seminar_and_fiction_parts",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Medea%3A_Harlan%27s_World"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r5:1"
+        },
+        {
+          "work_id": "Q21161141",
+          "title_at_review": "Stars and Gods",
+          "author_at_review": "拉瑞·尼文",
+          "basis": "StarsandGods本次实际返回的目录列RingworldsChildren第1章等具名章节节选、Stories、Space.com非虚构、DracoTavernStories与访谈/通信。",
+          "evidence_scope": "本轮单次查询返回本集出版介绍与读者详细目录；仅读混合载体/节选范围，未读正文，核心保持延期。目录不是节选内容核验。",
+          "membership_boundary": "仅whole_book_mixed_contents_only_no_core_plot范围；需有保存的目录或出版说明；仅小说附带普通前言不据此纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "whole_book_mixed_contents_only_no_core_plot",
+          "sources": [
+            "https://www.allbookstores.com/Stars-Gods-Larry-Niven/9780765330055"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "bibliographic_form_review_without_core",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r2:2"
+        },
+        {
+          "work_id": "Q7439139",
+          "title_at_review": "Scribblings",
+          "author_at_review": "里昂·斯普拉格·德坎普",
+          "basis": "书评明确1972BoskoneIX荣誉嘉宾纪念出版，作者自行选辑四类写作；ProbabilityZero四篇、九诗、六非虚构、六十格言分别列出，未读全部部分。",
+          "evidence_scope": "实际一次新查询及一次直接读取BrianKunde书评L54–67：Scribblings是小说、诗、非虚构、格言的跨体裁自选集；只明确ProbabilityZero四故事组为解释选例，重点TheEffectsOfTimeTravel与TheNegativeWugug。不以诗歌或全书都涉时间旅行，未读四原篇或全部九诗；无歌词/诗句转录。",
+          "membership_boundary": "仅whole_book_cross_genre_form_only范围；需有保存的目录或出版说明；仅小说附带普通前言不据此纳入。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "whole_book_cross_genre_form_only",
+          "sources": [
+            "https://spraguedecampfan.wordpress.com/2022/10/12/book-review-scribblings/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r8:1"
+        }
+      ]
+    },
+    {
+      "id": "reality:claimed-supernormal-reports",
+      "axis": "reality",
+      "label": "异常报告的真实性包装",
+      "definition": "材料把异常技术或外星接触叙述包装为非虚构报告、个人经验或秘密实验，而不是仅作为明确虚构的故事前提。入口比较真实性主张与材料边界，不认可报告中的超常能力或接触事件。",
+      "status": "研究分类·暂定待核",
+      "revision": 22,
+      "related_categories": [
+        "form:in-world-expository-guides"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "保持两书原有非虚构／边界身份，不把它们改称纯科幻小说。",
+        "出版书介与目录证明叙述包装，不证明时间实验、心智控制或UFO存在。",
+        "明确虚构手册、普通阴谋小说与一切谈外星人的作品不自动纳入。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "秘密实验的个人经验宣称",
+          "members": [
+            "Q17081784"
+          ]
+        },
+        {
+          "label": "非虚构接触者报告与人类解释",
+          "members": [
+            "Q134733959"
+          ]
+        }
+      ],
+      "comparison_note": "新增可浏览研究入口；保留单篇、卷、版本、集合成员与来源声称范围。科学机制和现实关联不改原可行性／核验字段。",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
+      "members": [
+        {
+          "work_id": "Q17081784",
+          "title_at_review": "The Montauk Project: Experiments in Time",
+          "author_at_review": "作者未知",
+          "basis": "出版书介明确以Nichols的个人视角声称秘密雷达研究及心智控制；目录包括Philadelphia Experiment与Montauk。只读书介和目录，非实验核验。",
+          "evidence_scope": "实际读取Barnes & Noble银周年版书介与目录，仅书中自称的秘密项目框架，不验证实验存在、时间旅行或心智控制能力，也未读完整书。",
+          "membership_boundary": "仅claimed_nonfiction_book_blurb_and_contents_not_experiment_validation范围；保持两书原有非虚构／边界身份，不把它们改称纯科幻小说。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "claimed_nonfiction_book_blurb_and_contents_not_experiment_validation",
+          "sources": [
+            "https://www.barnesandnoble.com/w/the-montauk-project-preston-nichols/1129906856"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r7:2"
+        },
+        {
+          "work_id": "Q134733959",
+          "title_at_review": "Those Sexy Saucer People",
+          "author_at_review": "佐治·亨利·史密夫",
+          "basis": "再版书介自称历史非虚构接触报告，介绍家庭关系事件，并指出部分所谓太空袭击者实为人类。",
+          "evidence_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。",
+          "membership_boundary": "仅claimed_nonfiction_contact_report_packaging_not_contact_validation范围；保持两书原有非虚构／边界身份，不把它们改称纯科幻小说。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "claimed_nonfiction_contact_report_packaging_not_contact_validation",
+          "sources": [
+            "https://books.google.com/books?id=hVSaygEACAAJ",
+            "https://en.wikipedia.org/wiki/George_H._Smith_%28fiction_author%29"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r17:2"
         }
       ]
     }
@@ -8293,6 +9135,230 @@
       "unregistered_dimension_proposals": [
         "历史脉络"
       ]
+    },
+    {
+      "id": "discovery:quick-retry2-early-classification-candidates-round4:Q20875540-scoped-narrative-r4",
+      "dimension": "narrative",
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "作者自身与历史作家的对话式科幻",
+      "definition_boundary": "仅本集It's Only a Story选篇；不把整集归入同一机制，也不证明实际时间旅行。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q20875540",
+          "identity": {
+            "title": "Bridging the Galaxies",
+            "author": "拉瑞·尼文"
+          },
+          "basis": "关联站本篇说明明确角色Larry Niven与Charles Dickens讨论太空探索、危险实验应远离地球生物圈。",
+          "sources": [
+            "https://www.temp.larryniven.net/?q=short-stories-by-collection",
+            "https://larryniven.net/?q=bibliographic-reference%2Fprocrustes",
+            "https://larryniven.net/?q=bibliographic-reference%2Fits-only-a-story"
+          ],
+          "exact_support_scope": "仅本集It's Only a Story选篇；不把整集归入同一机制，也不证明实际时间旅行。 实际读Niven关联站的本集目录与Procrustes、It's Only a Story各自书目摘要。只解释这两项选篇，不声称本集其他小说、论文、诗、天文馆脚本或整集已读；异星孤岛的原作正文未读。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": false,
+          "target_work_content_read": true,
+          "knowledge_analysis": false,
+          "core_analysis_added": true,
+          "discovery_source_mode": "scoped_candidate_with_core_analysis",
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r4-responses-a-private.json",
+            "sha256": "4ce40d3bf78cb1bc00c6c21d1d940a2de196f12c1ea2fcc2c1c01ea4681e1a61",
+            "container": "records",
+            "record_index": 13,
+            "record_sha256": "4583ae90eec977da0974a6b04eb5a32474b805e7d1d3e533c9061381c770e442",
+            "actual_query": "site:larryniven.net \"Bridging the Galaxies\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "private_raw_source": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r4-responses-a-private.json",
+            "sha256": "4ce40d3bf78cb1bc00c6c21d1d940a2de196f12c1ea2fcc2c1c01ea4681e1a61",
+            "container": "records",
+            "record_index": 13,
+            "record_sha256": "4583ae90eec977da0974a6b04eb5a32474b805e7d1d3e533c9061381c770e442",
+            "actual_query": "site:larryniven.net \"Bridging the Galaxies\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "new_core_count": 0,
+          "no_new_request": true,
+          "frozen_analysis_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round4.json",
+            "sha256": "a80977588b4c2bb24559605baebd399d0e19eb742421765d927b387a69cca434",
+            "record_sha256": "c5d99df7dbceebbb4d37f52f3975cab507d8fe844aa6f87b8af463fb3b401cf4"
+          },
+          "frozen_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round4-log.json",
+            "sha256": "0bb3defa445db8adb7ef5f5356477a7f8a9a99ff3736bc1b82d3d4f4d8bf9510",
+            "record_sha256": "2265d9536e20650919a05c9fe5036fed6a99410798643149f72cf07203b99fa1"
+          },
+          "original_candidate_input": {
+            "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round4.json",
+            "sha256": "2756e35064712432cd87e1c10367fb6247daf1b346e536ec12805a37e8aa9348",
+            "record_index": 0,
+            "record_sha256": "dbd4f8549ba0ff814adb4151aa14460a74e5cd77c69ec3e43e8df299f9023a8b"
+          },
+          "ownership_index": 109,
+          "membership_scope_not_assigned": "仅本集It's Only a Story选篇；不把整集归入同一机制，也不证明实际时间旅行。"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "review_note": "保留本次明确的单篇／集合成员／系列共同前提，待与其他作品比较；不自动分配、不扩展到全集、不增加核心或核验。"
+    },
+    {
+      "id": "discovery:quick-retry2-early-classification-candidates-round4:Q106772869-scoped-narrative-r4",
+      "dimension": "narrative",
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "连续异星遭遇中的宇宙冒险戏仿",
+      "definition_boundary": "仅官方系列共同介绍；未读分回，不能给每个回合指定同一种讽刺目标。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q106772869",
+          "identity": {
+            "title": "Runna-hime Hōrōki",
+            "author": "Eiji Yokoyama"
+          },
+          "basis": "早川出版社明确王女携僵尸、机器人宇宙漫游并遇见各星球外星人，称作品为parody。",
+          "sources": [
+            "https://www.hayakawa-online.co.jp/shop/g/g0000611976/"
+          ],
+          "exact_support_scope": "仅官方系列共同介绍；未读分回，不能给每个回合指定同一种讽刺目标。 实际读早川书房同题漫画电子再版页的共同宇宙旅行与随行人物前提及SFマガジン连载说明；2017页面是再版，不替换底库1990源年，也不声称各回或全漫画读过。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": false,
+          "target_work_content_read": true,
+          "knowledge_analysis": false,
+          "core_analysis_added": true,
+          "discovery_source_mode": "scoped_candidate_with_core_analysis",
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r4-responses-b-private.json",
+            "sha256": "0997304ded0ce5fde91e629f99cb77fd5297cca1ff623e4515a48dfeb429f086",
+            "container": "records",
+            "record_index": 5,
+            "record_sha256": "e7705b208289bdc80486cd93991d35a7f065513e3b68662ae4a0d507ad965aa3",
+            "actual_query": "\"ルンナ姫放浪記\" \"横山えいじ\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "private_raw_source": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r4-responses-b-private.json",
+            "sha256": "0997304ded0ce5fde91e629f99cb77fd5297cca1ff623e4515a48dfeb429f086",
+            "container": "records",
+            "record_index": 5,
+            "record_sha256": "e7705b208289bdc80486cd93991d35a7f065513e3b68662ae4a0d507ad965aa3",
+            "actual_query": "\"ルンナ姫放浪記\" \"横山えいじ\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "new_core_count": 0,
+          "no_new_request": true,
+          "frozen_analysis_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round4.json",
+            "sha256": "a80977588b4c2bb24559605baebd399d0e19eb742421765d927b387a69cca434",
+            "record_sha256": "04275035a5fdb3e1d01059a5e1178d82cb1d06a9577c914544bed10079ad121a"
+          },
+          "frozen_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round4-log.json",
+            "sha256": "0bb3defa445db8adb7ef5f5356477a7f8a9a99ff3736bc1b82d3d4f4d8bf9510",
+            "record_sha256": "74483060404fb3792f4b94a964117e77f9f1750c9e5e203b28d33cf1ad41cf8c"
+          },
+          "original_candidate_input": {
+            "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round4.json",
+            "sha256": "2756e35064712432cd87e1c10367fb6247daf1b346e536ec12805a37e8aa9348",
+            "record_index": 1,
+            "record_sha256": "09479686ff66c6c2840d9a811388f3820e54d701c0d3437d6469ceb128e8283d"
+          },
+          "ownership_index": 117,
+          "membership_scope_not_assigned": "仅官方系列共同介绍；未读分回，不能给每个回合指定同一种讽刺目标。"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "review_note": "保留本次明确的单篇／集合成员／系列共同前提，待与其他作品比较；不自动分配、不扩展到全集、不增加核心或核验。"
+    },
+    {
+      "id": "discovery:quick-retry2-early-classification-candidates-round6:Q5877926-scoped-narrative-r6",
+      "dimension": "narrative",
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "扮演历史角色成为集体行动",
+      "definition_boundary": "仅一篇已确认成员的限定前提；不将Hoka全系列或本卷四篇都自动归入同一机制，也不表示真历史拿破仑来到异星。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q5877926",
+          "identity": {
+            "title": "Hoka!",
+            "author": "波尔·安德森 / 戈登·R·迪克森"
+          },
+          "basis": "明确属于本1983卷的The Napoleon Crime让Hoka拿破仑与Hoka军队对抗好战外星人，借来的历史角色构成实际防御组织。",
+          "sources": [
+            "https://www.flayrah.com/4476/review-earthmans-burden-poul-anderson-and-gordon-r-dickson"
+          ],
+          "exact_support_scope": "仅一篇已确认成员的限定前提；不将Hoka全系列或本卷四篇都自动归入同一机制，也不表示真历史拿破仑来到异星。 实际读1983 Hoka!四篇目录、Risingshadow中Undiplomatic Immunity到地球请求升级Toka的句子，以及Flayrah明确1983新篇/本卷成员的Hoka拿破仑对抗外星人段。只分析这两篇的限定前提，不借旧Earthman's Burden其他篇，也不表示本卷或任一篇全文已读。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": false,
+          "target_work_content_read": true,
+          "knowledge_analysis": false,
+          "core_analysis_added": true,
+          "discovery_source_mode": "scoped_candidate_with_core_analysis",
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r6-responses-a-private.json",
+            "sha256": "18647b50d3e461237b805776d1fbcb6c4f268be93b34e03d0b264315b1742457",
+            "container": "records",
+            "record_index": 0,
+            "record_sha256": "5b12c4d87a97e8ca4df978ed3df27f78c4f18e623981b43b6f3826fc686c108f",
+            "actual_query": "\"Hoka!\" \"1983\" \"Undiplomatic Immunity\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "private_raw_source": {
+            "private_raw_file": "work/evidence/quick-retry2-early-r6-responses-a-private.json",
+            "sha256": "18647b50d3e461237b805776d1fbcb6c4f268be93b34e03d0b264315b1742457",
+            "container": "records",
+            "record_index": 0,
+            "record_sha256": "5b12c4d87a97e8ca4df978ed3df27f78c4f18e623981b43b6f3826fc686c108f",
+            "actual_query": "\"Hoka!\" \"1983\" \"Undiplomatic Immunity\"",
+            "provenance": "actual_search_return",
+            "new_queries": 0,
+            "new_opens": 0
+          },
+          "original_full_text_read": false,
+          "independently_verified": false,
+          "new_core_count": 0,
+          "no_new_request": true,
+          "frozen_analysis_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round6.json",
+            "sha256": "3b9ef33c8e7035a3e722b90ac36a169eeffc39dc9ea5047393d81e99b7cf1d45",
+            "record_sha256": "c645221552ee701bc9c2a9bf6215d52853c079c6e7458dd8fd8b5bb09df6743e"
+          },
+          "frozen_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round6-log.json",
+            "sha256": "c0256a85846b565b7d53cdc786e74b1b5757c33e7988ed6d323ddbe850df49c4",
+            "record_sha256": "0f225c4814a7062126f59149918cbcfe46a35b8c073a8b9709df41d92a2eb761"
+          },
+          "original_candidate_input": {
+            "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round6.json",
+            "sha256": "03f19842bb069f4fb155ed186a3678d79ee142f0a7b61d25d5e83ee016ead95a",
+            "record_index": 0,
+            "record_sha256": "9149cb970fe0210ff049210eff6aa47eb38c4b17b058bcfc9cb9754fb200606f"
+          },
+          "ownership_index": 160,
+          "membership_scope_not_assigned": "仅一篇已确认成员的限定前提；不将Hoka全系列或本卷四篇都自动归入同一机制，也不表示真历史拿破仑来到异星。"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "review_note": "保留本次明确的单篇／集合成员／系列共同前提，待与其他作品比较；不自动分配、不扩展到全集、不增加核心或核验。"
     }
   ],
   "promoted_discoveries": [
@@ -8570,6 +9636,398 @@
       "support_scope": "官方创作者页面的实际历史检索返回；未读漫画页或播放音乐。",
       "membership_extent": "creator_comic_soundtrack_project",
       "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:2",
+      "category_id": "topic:punishment-and-life-purpose",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q64831605",
+      "original_candidate_record_sha256": "71301bdb8655858c69fcd4598840e67829b649d45c091ce45d1e30d840842477",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "一次实际查询读Deep Space Spines该选集中明确The Last Tribble短篇回读段，支持任务终点、目的失落与劳动意外收益；评论非原作，不分析同页其他短篇或借TV全集。",
+      "membership_extent": "distinct_short_story",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r9:3",
+      "category_id": "topic:punishment-and-life-purpose",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q134715431",
+      "original_candidate_record_sha256": "46273132ff09a9abaf0aab3f8f291a2307bc5293fe3d4364964207cd61e3e4dc",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际直接读取 Rich Horton 对 Keep Them Happy 的独立评论段落，另读到作者评论补充发表背景；未读原篇，不推断性关系细节或不同结局。",
+      "membership_extent": "distinct_short_story",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:root-known-year-classification-candidates-r10:3",
+      "category_id": "topic:punishment-and-life-purpose",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q24069503",
+      "original_candidate_record_sha256": "6b558516f23b75a59eb6c1842ab65e1550aa540f75d802720600960a03df02cc",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "只读实际查询返回的极短本篇Plot summary及身份，不读正文，不把1994同名合集整体当本篇。 原作全文新读0，解释待独立核对。",
+      "membership_extent": "distinct_short_story_not_same_title_collection",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r6:1",
+      "category_id": "branch:embodied-governance",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q133800908",
+      "original_candidate_record_sha256": "29f2df888c040b981f89c0d333ba2678a1944f4cb397759dbd96c4adc68dad95",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取Librairie Scylla本卷Quatrième de couverture，支持灾变、医疗依赖及医师政治统治；书店转录封底，不是原作全文。",
+      "membership_extent": "exact_novel_cover_premise",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r8:3",
+      "category_id": "branch:embodied-governance",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q122581014",
+      "original_candidate_record_sha256": "9da11a6b23e3d5c21b1c9b96366274a875f308b8953f14f4e85a362736217f06",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取Don D’Ammassa2016评论中单列The Doomsday Gene段落，支持人口镇压、社会工程与死亡欲望的遗传设计；未读地震预测谜底或小说。评论标1973，与canonical1972不一，保留不改。",
+      "membership_extent": "exact_novel_commentary",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r15:2",
+      "category_id": "branch:embodied-governance",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q2943384",
+      "original_candidate_record_sha256": "ffcc39b56bb985d1cc6485e26e93cf08dffc749951e56bf22188981e073aeec6",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际直接读取本册评论，采用明确Norma/Dr.Lell/Garson招募情节；检索目录确认1950册含Masters of Time/Recruiting Station和The Changeling两篇。评论猜合订为mash-up不作为形式事实，本条只取对应招募故事，不推广到另一篇。未读正文。",
+      "membership_extent": "named_member:Masters of Time / Recruiting Station",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:reader-choice-and-branch-reading",
+      "category_id": "narrative:rule-bound-participation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q55230567",
+      "original_candidate_record_sha256": "42c0b7ab130fe4917a047bea3bf00982f0fbd651e5eda6649e49d4410009afd7",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "准确互动书社区Description已读；未读全部分支，未推断固定结局。",
+      "membership_extent": "exact_interactive_book_description",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r1-r3:2",
+      "category_id": "narrative:rule-bound-participation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q52153354",
+      "original_candidate_record_sha256": "a0646c4ebe406f8a549ba6da0cc382067ba463ded9415493641dc9df982a506c",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际查询返回Osgoode Media的Google Play应用说明；未游玩，不称实际分支或完整结局已核。",
+      "membership_extent": "exact_game_episode_publisher_description",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r19:3",
+      "category_id": "narrative:rule-bound-participation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q7727962",
+      "original_candidate_record_sha256": "bb58f6c38049ae9ea8d50918a303c02e2799e97826849fc0add6cafb561b0f22",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际直接读取 Factory International 的官方节目介绍，另读检索返回的舞台作品身份；只分析官方公布的儿童参与、倒计时及救援框架，未观看演出或读取剧本，不借电视剧单集结局。",
+      "membership_extent": "exact_participatory_stage_programme",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:institutional-possession-of-time-access",
+      "category_id": "time:access-permissions",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q18223835",
+      "original_candidate_record_sha256": "dc77e0d66994a789c843ba1b50840a13df364d02a60c39bdd60baab47a97b801",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次查询返回的本卷机构与主角概述；未打开或读取完整原作，未采用2005年续篇情节。 原作全文新读0，文学解释仍待核。",
+      "membership_extent": "exact_novel_not_2005_sequel",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:institutional-possession-of-time-access",
+      "category_id": "time:access-permissions",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q133790242",
+      "original_candidate_record_sha256": "dc77e0d66994a789c843ba1b50840a13df364d02a60c39bdd60baab47a97b801",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "一次实际查询返回的本卷具体评论及封底转录，限时间殖民、Marie-Aïno与Sumer；未读小说原文。 原作全文新读0，文学解释仍待核。",
+      "membership_extent": "exact_novel_premise",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-global-classification-candidates-round4:1",
+      "category_id": "time:access-permissions",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q11416145",
+      "original_candidate_record_sha256": "369059e58a9b806b12d2fc8c6b31809b21e2b900507572fce2128a7737426575",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "仅一次实际直接返回的あらすじL119–121，不是试读漫画或服务机制全文核验；不采用后续评论无法定位的震灾/失踪情节。",
+      "membership_extent": "series_entry_by_explicit_volume_2_service_premise",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-assist-modern-classification-candidates-r3:1",
+      "category_id": "space:multiple-world-connectivity",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q7632036",
+      "original_candidate_record_sha256": "05e46370ee1e13d48486277f62bc1ef2ab2e85e3031830c5291751cf7f6da649",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际单次查询返回对应小说具体空间机制摘要；未读原文，不借前卷Subspace Explorers，不替代当前主空间分类。",
+      "membership_extent": "exact_sequel_not_previous_volume",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r7:4",
+      "category_id": "space:multiple-world-connectivity",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q134526907",
+      "original_candidate_record_sha256": "614a90ad9179276529a7b0eddde6e7c230432d0b1f434fa4d8c45769c335848f",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次新查询读取Ecrivosges本书书目页的Sujet1973封底、Dateetlieu与仅极短第一页面开头。采用Higg岛、平行宇宙困境和与两名隐士结伴，不借同系列首卷或其他作者同名岛屿故事；未读全文，不把原纪年更新为网页内部年代。",
+      "membership_extent": "exact_1973_book_cover_premise",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r11:2",
+      "category_id": "science:military-life-storage",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q3257490",
+      "original_candidate_record_sha256": "d548fcef69fa3e2788d9e73485a3e9015743091dfb6406926b32a01d12c70964",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际单轮查询读到Wikipedia整卷Plot summary；支持Llana解救链及催眠保存、冻结战备两个具体场景，未核读各篇原文，不推广到Barsoom全系列。",
+      "membership_extent": "exact_novel_scene:Pankor_soldier_storage",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r7:3",
+      "category_id": "science:military-life-storage",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q30078237",
+      "original_candidate_record_sha256": "2016ed9cd8d523b22624bcdbdd097b334ec3cf22e9541868ec9ffd26fb0fb417",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次新查询及一次直接读取MPorcius对Universe5成员的评论L29–32，并用同次检索本卷目录核对收入。只StephenGoldin具名选篇的冷冻、心智存储/新身体与副本交战，不代表全部十二篇；不借同页NightWind或Russ另一篇。未读原篇或全书。",
+      "membership_extent": "named_member:But as a Soldier, For His Country",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r6:4",
+      "category_id": "reality:creator-experience-transposition",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q5645591",
+      "original_candidate_record_sha256": "7e75f235fcdb105574d9d1d9cdb7d2808e1b7e103e58645ee5badb846f68ff85",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际打开作者本人1979合集说明的创作经历段落；支持作者自述与原版合集身份，不支持逐篇事件或读者疗效的独立检验。",
+      "membership_extent": "author_statement_about_1979_collection",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r4:1",
+      "category_id": "reality:creator-experience-transposition",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q134694501",
+      "original_candidate_record_sha256": "83601b833db48942324609f1593c6b5010c37b1acca9854330c128236df6ba66",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "一次查询实际返回作者存档讨论ColdIron部分及龙工厂现实厂区取材；直接openTimeout失败，原篇未读，不把长篇其它大学/商场部分推广到ColdIron。",
+      "membership_extent": "author_statement_about_first_part_Cold_Iron",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r6:1",
+      "category_id": "reality:creator-experience-transposition",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q121850248",
+      "original_candidate_record_sha256": "bb540645e16da409e5219997bfaca8a5e0e414527c87e6b1e158df94b72ff80b",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次检索返回 Québec français 1990年第78期 François Barcelo 访谈第63页；采用作者指名本书外星人和 Histoire d’Agénor 章节的自传转写说明。没有阅读四百余页小说，不把相邻2006书评双栏的“barbarie”段落、其他作品或整个Agénor系列剧情套入单本。",
+      "membership_extent": "author_statement_about_Histoire_d_Agenor_chapter",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:in-universe-humorous-service-guide",
+      "category_id": "form:in-world-expository-guides",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q54807340",
+      "original_candidate_record_sha256": "f760591f381f76e3dffbc9f6acea8a2243b39bdb09d41cb3379c3669a9723317",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次查询返回的特定参考页简介与目录，仅目录主题和简介，不是章节全文或原作剧情阅读。 原作全文新读0，文学解释仍待核。",
+      "membership_extent": "exact_published_guide_overview_and_contents",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-early-classification-candidates-round1:1",
+      "category_id": "form:in-world-expository-guides",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q118104912",
+      "original_candidate_record_sha256": "f0de4f4a64f2e0152a38fa4e5c09f0ed926882811ba07fe9f76c02212f4483d5",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取评论L11–27，明确1985单作/收入Eye、20页图文和第二人称朝圣指南；未读原图文，区别于2005同名合编资料集。",
+      "membership_extent": "exact_1985_illustrated_text_not_2005_collection",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-global-classification-candidates-round14:1",
+      "category_id": "form:in-world-expository-guides",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q5399966",
+      "original_candidate_record_sha256": "f49542b4cc9ccd915b58a6b58fe9bbc7ad8651a65ff2a3ec8e2b8f8b8ed17ebd",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次精准查询返回作品简介与Synopsis段，未打开原作，也未核全本。",
+      "membership_extent": "whole_work_form_from_explicit_fictional_summary",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r4:2",
+      "category_id": "form:fiction-nonfiction-compilation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q7620247",
+      "original_candidate_record_sha256": "955c10be799e4557e67fc8681acfa4b398bd19a67cff3e99545b69ff3dfd9160",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取Duke University Press本书书介及目录；分析对象为文学案例/批评读本的编排与明确论旨，未把其中任何原长篇全书情节视为本读本的连续剧情。",
+      "membership_extent": "whole_book_compilation_from_publisher_contents",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r5:1",
+      "category_id": "form:fiction-nonfiction-compilation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q6805210",
+      "original_candidate_record_sha256": "adbaceb99beaae199ae1213620df9fe3b7973d8956c9f949a7f622777cd75eff",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取Wikipedia本书简介、1975共建讨论背景与Parts I–IV目录；分析只属协作世界构建/编创层面，未读取单篇故事，不把同一卫星的设定推定为全书同一个剧情。",
+      "membership_extent": "whole_book_specs_seminar_and_fiction_parts",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r2:2",
+      "category_id": "form:fiction-nonfiction-compilation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q21161141",
+      "original_candidate_record_sha256": "5bae7dc7da822561dd15a4078f80e47ddfb035ebfd3df353457c713686fc87a0",
+      "evidence_mode": "bibliographic_form_review_without_core",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "本轮单次查询返回本集出版介绍与读者详细目录；仅读混合载体/节选范围，未读正文，核心保持延期。目录不是节选内容核验。",
+      "membership_extent": "whole_book_mixed_contents_only_no_core_plot",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r8:1",
+      "category_id": "form:fiction-nonfiction-compilation",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q7439139",
+      "original_candidate_record_sha256": "24570d9352826e91559638f7b0c4acbda5098614698692a713d1cb286e35db9e",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际一次新查询及一次直接读取BrianKunde书评L54–67：Scribblings是小说、诗、非虚构、格言的跨体裁自选集；只明确ProbabilityZero四故事组为解释选例，重点TheEffectsOfTimeTravel与TheNegativeWugug。不以诗歌或全书都涉时间旅行，未读四原篇或全部九诗；无歌词/诗句转录。",
+      "membership_extent": "whole_book_cross_genre_form_only",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r7:2",
+      "category_id": "reality:claimed-supernormal-reports",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q17081784",
+      "original_candidate_record_sha256": "ee0a223fe1d6f7ebf3cf05b2dfb2455c381d2a5b3d1f0703212f339c86330d69",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际读取Barnes & Noble银周年版书介与目录，仅书中自称的秘密项目框架，不验证实验存在、时间旅行或心智控制能力，也未读完整书。",
+      "membership_extent": "claimed_nonfiction_book_blurb_and_contents_not_experiment_validation",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r17:2",
+      "category_id": "reality:claimed-supernormal-reports",
+      "status": "promoted_unverified",
+      "revision": 22,
+      "work_id": "Q134733959",
+      "original_candidate_record_sha256": "4f22aacda832e78ae4d828be689af264eb58930b0216ae2a232592fc91cfbbf1",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。",
+      "membership_extent": "claimed_nonfiction_contact_report_packaging_not_contact_validation",
+      "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
     }
   ],
   "discovery_evidence_updates": [

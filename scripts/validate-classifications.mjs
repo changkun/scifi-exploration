@@ -1,3 +1,4 @@
+import {isV22BibliographicFormReview,validateV22BibliographicFormReview} from './classification-v22-bibliographic-review-guard.mjs';
 import {resolveR89PreservedScopedCandidateLog} from './round89-preserved-scoped-candidate-log.mjs';
 import {validateR89FormHistoryCandidate} from './round89-form-history-validator.mjs';
 import {validateR88AuthorCreationHistoryCandidate} from './round88-author-creation-history-validator.mjs';
@@ -249,7 +250,9 @@ for (const review of registry.discovery_reviews || []) {
       assert.deepEqual(record.identity, original.identity);
     }
   }
-  if (review.evidence_mode === 'scoped_form_source_without_core') {
+  if (isV22BibliographicFormReview(review)) {
+    await validateV22BibliographicFormReview(review,{repoDir:new URL('../',import.meta.url).pathname,candidate,category,original,member,work});
+  } else if (review.evidence_mode === 'scoped_form_source_without_core') {
     assert.equal(category.axis, 'form');
     assert.equal(work.issue_analysis_status, 'missing');
     assert.equal(original.original_analysis_inputs.length, 0);
