@@ -1,12 +1,12 @@
-import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry7';
-import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs?v=round75-single-pass';
+import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry8';
+import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs?v=round76-single-pass';
 import {mountUniverse} from './universe.mjs';
 import {mountChronology} from './chronology.mjs?v=round4-context';
 import {mountBibliography} from './bibliography.mjs';
 import {mountTaxonomy} from './taxonomy.mjs';
-import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs?v=round75-single-pass';
-import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round75-single-pass';
-import {completionDetail,renderCompletion} from './completion.mjs?v=round75-single-pass';
+import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs?v=round76-single-pass';
+import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round76-single-pass';
+import {completionDetail,renderCompletion} from './completion.mjs?v=round76-single-pass';
 import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs';
 const $=id=>document.getElementById(id);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

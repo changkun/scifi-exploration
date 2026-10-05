@@ -1,0 +1,919 @@
+{
+  "metadata": {
+    "method": "actual-first-pass-reading-log-v1",
+    "status": "frozen",
+    "lane": 0,
+    "read_date": "2026-10-05",
+    "source_lane_file": "known-year-first-pass-lane-0.json",
+    "source_lane_sha256": "077a719fe2f381730b263d4de580902b409476dbeeb36e570c8c3008c1ec63b6",
+    "original_lane": 0,
+    "delegate": "early_history",
+    "delegation_index_start_inclusive": 225,
+    "delegation_index_end_exclusive": 353,
+    "integration_batch": "R76_or_later_unsealed",
+    "assignment_total": 128,
+    "actual_single_query_count": 32,
+    "actual_open_attempt_count": 7,
+    "actual_open_success_count": 6,
+    "actual_open_failure_count": 1,
+    "original_full_text_read_count": 0,
+    "original_opening_excerpt_read_count": 1,
+    "selected_stories_with_existing_knowledge_count": 4,
+    "read_scope_note": "出版社/作者简介、社区摘要、参考评论与注释书目限实际所读范围；Pelot第一页片段不称全文，4合集目录仅支持收入，剧情另依既有知识。所有文学分析仍待独立核验。",
+    "ownership_file": "known-year-root-delegation-early_history.json",
+    "ownership_sha256": "9cf9b452f9acf49ebc40b21901d9d1e9ffba7e5c5796355c5364eaa28c143bb7",
+    "attempted_count": 32,
+    "added_count": 20,
+    "not_added_count": 12,
+    "frozen_date": "2026-10-05",
+    "assignment_cumulative_attempted": 128,
+    "assignment_cumulative_added_count": 82,
+    "assignment_cumulative_facet_count": 164,
+    "assignment_cumulative_deferred_count": 46,
+    "assignment_remaining_unattempted": 0,
+    "validation_note": "32独立查询与7次打开均对齐实际日志；20身份仍为当前missing，3字段/2facets/合法topics/待核状态/原身份一致；3组共128身份互斥守恒，0未触达，不称延期项已补。"
+  },
+  "records": [
+    {
+      "id": "Q24934146",
+      "identity": {
+        "title": "Pour sauver le diamant noir",
+        "author": "Philippe Ebly"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Pour sauver le diamant noir\" \"Philippe Ebly\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Pour_sauver_le_Diamant_Noir",
+          "scope": "本轮查询实际返回时间悖论讨论及任务、偷换、自救、交还卢浮宫的剧情摘要；未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "本轮查询实际返回时间悖论讨论及任务、偷换、自救、交还卢浮宫的剧情摘要；未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q3790665",
+      "identity": {
+        "title": "The Dancers of Noyo",
+        "author": "马哈雷特·圣·克莱尔"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Dancers of Noyo\" \"Margaret St. Clair\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/margaret-st-clair/the-dancers-of-noyo",
+          "scope": "出版社简介的培育来源、催眠统治、被迫寻找幻景与额外人生前提；未读正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "出版社简介的培育来源、催眠统治、被迫寻找幻景与额外人生前提；未读正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q4975653",
+      "identity": {
+        "title": "Brothers",
+        "author": "戈登·R·迪克森"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Brothers\" \"Gordon R. Dickson\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.fantasticfiction.com/d/gordon-r-dickson/far-call.htm",
+          "scope": "查询返回另一部Far Call条目，并混入Debbie Allen/Sassy芭蕾内容。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "检索内容明显是异作及无关非虚构简介污染，不能对应Dickson的Brothers。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q56300295",
+      "identity": {
+        "title": "In the Group",
+        "author": "羅伯特·西爾柏格"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"In the Group\" \"Robert Silverberg\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.fantasticfiction.com/s/robert-silverberg/in-group.htm",
+          "scope": "实际返回作者创作前言：性实验背景、写作时间及旧情绪侵入未来自由的评论。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "前言未提供足够明确的本作人物行动或群体机制；不由性自由评论猜出两项剧情依据。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q7560174",
+      "identity": {
+        "title": "Something Up There Likes Me",
+        "author": "阿尔弗雷德·贝斯特"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Something Up There Likes Me\" \"Alfred Bester\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Something_Up_There_Likes_Me",
+          "scope": "查询实际返回修复、智能出现、跨国卫星通信和自毁争执摘要；未使用被截断的结尾。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "查询实际返回修复、智能出现、跨国卫星通信和自毁争执摘要；未使用被截断的结尾。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q7762564",
+      "identity": {
+        "title": "The Science Fiction Hall of Fame, Volume Two",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Science Fiction Hall of Fame, Volume Two\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Science_Fiction_Hall_of_Fame,_Volume_Two",
+          "scope": "实际打开目录L130–153，确认Who Goes There?在2A；目录不支持剧情。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开目录L130–153，确认Who Goes There?在2A；目录不支持剧情。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有目录支持；情节另依既有知识，未在本轮独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Science_Fiction_Hall_of_Fame%2C_Volume_Two",
+          "scope": "目录L130–153",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q7833045",
+      "identity": {
+        "title": "Traitor to the Living",
+        "author": "菲利浦·荷西·法默"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Traitor to the Living\" \"Philip Jose Farmer\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://pjfarmer.com/works-books-traitor-to-the-living/",
+          "scope": "作者作品站简介的MEDIUM主张、亲属发明权争议及未展开的能力提示；未读正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "作者作品站简介的MEDIUM主张、亲属发明权争议及未展开的能力提示；未读正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q115680607",
+      "identity": {
+        "title": "Hero",
+        "author": "乔·霍尔德曼"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Hero\" \"Joe Haldeman\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/news-and-features/articles/joe-haldemans-i-forever-wari/",
+          "scope": "阅读创作史与开头杀人训练句的摘要，后段进入整部The Forever War。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "能确认Hero与长篇的关系，但训练事故、后续战役与相对论情节的单篇边界未在所读材料中明确；不整部倒填。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q130619617",
+      "identity": {
+        "title": "The Mercenary",
+        "author": "傑里·波奈爾"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"The Mercenary\" \"Jerry Pournelle\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/the-mercenary.html",
+          "scope": "出版社营销简介针对后来的The Mercenary单行本。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "当前1972单篇与后来的组合/扩编小说粒度不同，简介未分开各篇情节；不挪用全书行动。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q131461613",
+      "identity": {
+        "title": "Seventy Years of Decpop",
+        "author": "菲利浦·荷西·法默"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Seventy Years of Decpop\" \"Philip Jose Farmer\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.philipjosefarmer.com/ShoFic/SFsyod.htm",
+          "scope": "作者国际书目的本篇DESCRIPTION及1972原刊条目；只取强制绝育与少量生育前提，不补人口比例或结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "作者国际书目的本篇DESCRIPTION及1972原刊条目；只取强制绝育与少量生育前提，不补人口比例或结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q133801491",
+      "identity": {
+        "title": "L'Enfant qui marchait sur le ciel",
+        "author": "皮埃尔·佩洛特"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"L'Enfant qui marchait sur le ciel\" \"Pierre Pelot\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.ecrivosges.com/auteurs/pelotp/romans/037_lenfantquimarchait.php",
+          "scope": "实际查询返回封底和Première page：死亡法规、Horan/47编号和姓名阶层；这是开篇片段，未读整书。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际查询返回封底和Première page：死亡法规、Horan/47编号和姓名阶层；这是开篇片段，未读整书。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q135089150",
+      "identity": {
+        "title": "A Day in the Life",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"A Day in the Life\" 1972 anthology contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.baen.com/Chapters/9781618249203/9781618249203_toc.htm",
+          "scope": "出版社目录L11–25确认A Happy Day in2381收入；本轮只读目录，情节另依既有知识。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "出版社目录L11–25确认A Happy Day in2381收入；本轮只读目录，情节另依既有知识。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有目录支持；情节另依既有知识，未在本轮独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://www.baen.com/Chapters/9781618249203/9781618249203_toc.htm",
+          "scope": "完整短目录L0–27；没有故事正文",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q135089564",
+      "identity": {
+        "title": "New Worlds Quarterly 4",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"New Worlds Quarterly 4\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://moorcography.org/new-worlds-quarterly-4/",
+          "scope": "查询返回目录及Disch的334在pp58–156。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "所列334是局部文本，不足证明整部长篇所有情节均收入；其余篇目尚无确知剧情，不按新波风格猜议题。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q19913348",
+      "identity": {
+        "title": "Real-Time World",
+        "author": "克里斯多夫·普利斯特"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Real-Time World\" \"Christopher Priest\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://christopher-priest.co.uk/grimgrin-studio/real-time-world",
+          "scope": "作者网站的再版说明及所引Times Literary Supplement评语，只支持The Head and the Hand表演前提；未读本篇正文或全合集。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "作者网站的再版说明及所引Times Literary Supplement评语，只支持The Head and the Hand表演前提；未读本篇正文或全合集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q3202879",
+      "identity": {
+        "title": "L'Empire du Baphomet",
+        "author": "Pierre Barbet"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"L'Empire du Baphomet\" \"Pierre Barbet\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/L%27Empire_du_Baphomet",
+          "scope": "查询实际返回1118坠落、核武器承诺及隐藏支配意图的剧情摘要；未读正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "查询实际返回1118坠落、核武器承诺及隐藏支配意图的剧情摘要；未读正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q5281504",
+      "identity": {
+        "title": "Disclosures in Scarlet",
+        "author": "卡爾·理查德·雅可比"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Disclosures in Scarlet\" \"Carl Jacobi\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Disclosures_in_Scarlet",
+          "scope": "查询结果为17篇目录和合集出版信息。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "尚无具体选篇情节依据；恐怖与科幻混合的体裁信息不能代替作品特定问题。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q54942544",
+      "identity": {
+        "title": "The Lights of Zetar",
+        "author": "詹姆斯·布利什"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Lights of Zetar\" \"James Blish\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://trekipedia.com/file/Star_Trek_6_%28Novel%29",
+          "scope": "社区小说卷条目The Lights of Zetar小节摘要；只取占据宿主及资料库毁失的明确前提，未读Blish改写正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "社区小说卷条目The Lights of Zetar小节摘要；只取占据宿主及资料库毁失的明确前提，未读Blish改写正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q6150937",
+      "identity": {
+        "title": "Jandar of Callisto",
+        "author": "林·卡特"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Jandar of Callisto\" \"Lin Carter\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jandar_of_Callisto",
+          "scope": "本作首卷剧情摘要的传送井、投射幻象、奴役与反抗；不使用搜索同时返回的后续Callisto卷剧情。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "本作首卷剧情摘要的传送井、投射幻象、奴役与反抗；不使用搜索同时返回的后续Callisto卷剧情。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q7738024",
+      "identity": {
+        "title": "The Greatest Asset",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Greatest Asset\" \"Isaac Asimov\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Greatest_Asset",
+          "scope": "查询实际返回本篇完整剧情摘要；未读原作正文，不混入同次查询的2430A.D.宠物绝灭情节。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "查询实际返回本篇完整剧情摘要；未读原作正文，不混入同次查询的2430A.D.宠物绝灭情节。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q104208327",
+      "identity": {
+        "title": "New Kings Are Not for Laughing",
+        "author": "David R. Bunch"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"New Kings Are Not for Laughing\" \"David R. Bunch\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/en/book/show/2699898-moderan",
+          "scope": "Moderan总书简介与目录确认该篇收入。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "所读金属强堡/战争情节针对整部Moderan，尚未分离New Kings Are Not for Laughing的单篇情节。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q122580999",
+      "identity": {
+        "title": "The Forest of Forever",
+        "author": "Thomas Burnett Swann"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Forest of Forever\" \"Thomas Burnett Swann\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.ebsco.com/research-starters/literature-and-writing/minotaur-trilogy-thomas-burnett-swann",
+          "scope": "实际打开三部曲研究条目，只取The Forest of Forever明确段落L41–42（重复L65–66）；未套用相邻两卷事件。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开三部曲研究条目，只取The Forest of Forever明确段落L41–42（重复L65–66）；未套用相邻两卷事件。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://www.ebsco.com/research-starters/literature-and-writing/minotaur-trilogy-thomas-burnett-swann",
+          "scope": "只取明确本卷剧情L41–42，区分三卷边界",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q131301486",
+      "identity": {
+        "title": "The Autumn Land",
+        "author": "克利福德·D·西马克"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"The Autumn Land\" \"Clifford D. Simak\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.reddit.com/r/Fantasy/comments/vdhmft",
+          "scope": "论坛概称本篇有末世威胁与欺骗性天堂；另有大学个人页目录。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "只有氛围与抽象标签，缺具体人物行动和天堂机制；不据这些泛评编造情节。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q134602479",
+      "identity": {
+        "title": "Poor Man, Beggar Man",
+        "author": "乔娜安·拉斯"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Poor Man, Beggar Man\" \"Joanna Russ\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://galacticjourney.org/the-scrap-bag-universe-1/",
+          "scope": "实际打开Poor Man,Beggar Man段落L83–88及下一篇L89–93。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "目标段仅评价历史准确性与尾声；查询摘要所接Ted电视编剧情节实属下一篇The Romance of Dr.Tanner，不能使用。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://galacticjourney.org/the-scrap-bag-universe-1/",
+          "scope": "目标段L83–88与相邻篇L89–93",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q135089151",
+      "identity": {
+        "title": "Partners in Wonder",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Partners in Wonder\" 1971 Ellison contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://socialistjazz.blogspot.com/2009/06/fridays-forgotten-books-partners-in.html",
+          "scope": "实际打开书评目录L10–27，确认The Human Operators由Ellison与A.E.vanVogt合写并收入；未读故事正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开书评目录L10–27，确认The Human Operators由Ellison与A.E.vanVogt合写并收入；未读故事正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有目录支持；情节另依既有知识，未在本轮独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://socialistjazz.blogspot.com/2009/06/fridays-forgotten-books-partners-in.html",
+          "scope": "目录L10–27确认收入；剧情另依既有知识",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q135089561",
+      "identity": {
+        "title": "New Worlds Quarterly 1",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"New Worlds Quarterly 1\" 1971 contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://sfmagazines.com/?p=452",
+          "scope": "实际打开目录及评论L40–43，只用The God House与Exit from City5的具体前提；未读原作或全刊。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开目录及评论L40–43，只用The God House与Exit from City5的具体前提；未读原作或全刊。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://sfmagazines.com/?p=452",
+          "scope": "本刊目录及评论L28–43；只用两篇",
+          "result": "read"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q23307164",
+      "identity": {
+        "title": "The Science Fiction Bestiary",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Science Fiction Bestiary\" 1971 contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Science_Fiction_Bestiary",
+          "scope": "查询实际返回九篇目录，确认A Martian Odyssey收入；未读选篇正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "查询实际返回九篇目录，确认A Martian Odyssey收入；未读选篇正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有目录支持；情节另依既有知识，未在本轮独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q30961798",
+      "identity": {
+        "title": "The Star Corsair",
+        "author": "Oles Berdnyk"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Star Corsair\" \"Oles Berdnyk\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Star_Corsair",
+          "scope": "查询返回Plot/PartOne的UR育儿、Iswari关系与构造人体片段；本分析仅此支线，未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "查询返回Plot/PartOne的UR育儿、Iswari关系与构造人体片段；本分析仅此支线，未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q3881932",
+      "identity": {
+        "title": "Beyond Capella",
+        "author": "John T. Phillifent"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Beyond Capella\" \"John T. Phillifent\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/John_T._Phillifent",
+          "scope": "查询返回作者书目、AceDouble清单和公开PDF目录入口。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "能确认John Rackham署名与题名，尚无本作情节；不继续追扫图，不用太空题名泛填。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q5459280",
+      "identity": {
+        "title": "Flight from Rebirth",
+        "author": "J. T. McIntosh"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Flight from Rebirth\" \"J. T. McIntosh\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/j-t-mcintosh/flight-from-rebirth",
+          "scope": "出版社简介的资格品质、智力排除与危机重审前提；未读正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "出版社简介的资格品质、智力排除与危机重审前提；未读正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q6012759",
+      "identity": {
+        "title": "In the Pocket: And Other SF Stories",
+        "author": "Barry N. Malzberg"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"In the Pocket: And Other SF Stories\" \"Barry N. Malzberg\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://mporcius.blogspot.com/2017/04/?m=0",
+          "scope": "查询有合集书评入口；一次打开返回Cache miss，另有同AceDouble的相邻小说简介。",
+          "result": "failed_fetch"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "精确合集正文评论未成功读取；不能把Gather in the Hall of the Planets的科幻大会情节移入本合集。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 1,
+      "actual_open_attempts": [
+        {
+          "url": "https://mporcius.blogspot.com/2017/04/?m=0",
+          "scope": "Cache miss，未取得正文",
+          "result": "failed_fetch"
+        }
+      ],
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q7601563",
+      "identity": {
+        "title": "Stardrift and Other Fantastic Flotsam",
+        "author": "Emil Petaja"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Stardrift and Other Fantastic Flotsam\" \"Emil Petaja\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Stardrift_and_Other_Fantastic_Flotsam",
+          "scope": "查询返回合集出版信息和15项目录。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "未取得熟悉选篇的具体情节，仅目录不足以作两个作品特定问题。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    },
+    {
+      "id": "Q110785608",
+      "identity": {
+        "title": "The Weed of Time",
+        "author": "諾曼·斯賓拉德"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Weed of Time\" \"Norman Spinrad\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikisource.org/wiki/Drug_Themes_in_Science_Fiction/Annotated_Bibliography-Contemporary_Period",
+          "scope": "读取Drug Themes in Science Fiction注释书目The weed of time条目，经Wikisource转录；非原小说正文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "读取Drug Themes in Science Fiction注释书目The weed of time条目，经Wikisource转录；非原小说正文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。",
+      "single_query_count": 1,
+      "actual_open_count": 0,
+      "response_cache_file": "known-year-root-assist-early-r3-web-responses-private.json"
+    }
+  ]
+}
