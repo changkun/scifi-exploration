@@ -24,7 +24,9 @@ if(registry.metadata.previous_version){
 for(const input of registry.metadata.discovery_inputs){assert.equal(createHash('sha256').update(await readFile(new URL('../'+input.file,import.meta.url))).digest('hex'),input.sha256);}
 assert.equal(new Set(registry.discovery_candidates.map(candidate=>candidate.id)).size,registry.discovery_candidates.length);
 assert.equal(works.length,14564);
-assert.equal(registry.axes.length,8);
+assert.equal(new Set(registry.axes.map(axis=>axis.id)).size,registry.axes.length);
+assert(registry.axes.every(axis=>axis.open===true&&axis.label&&axis.definition));
+for(const id of ['topic','branch','narrative','time','space','science','reality','form'])assert(registry.axes.some(axis=>axis.id===id));
 for(const category of registry.categories){
   const state={...DEFAULT_STATE,boundary:true,classification:category.id};
   const expected=category.members.map(member=>member.work_id).sort();
@@ -43,7 +45,24 @@ assert.equal(filterWorks(synthetic,added).length,1);
 for(const id of ['Q1012716','Q108806401']){const work=byId.get(id),correction=work.knowledge.corrections.find(item=>item.id===id);assert.equal(work.issue,correction.fields.issue);assert.deepEqual(work.knowledge_topics,correction.fields.topics);assert(work.knowledge.superseded_issue_fields.length);assert.equal(work.completion.source_verified,false);assert(!work.issue.includes(id==='Q1012716'?'Jomy':'First Sister'));}
 const sample=works.find(work=>work.classification_assignments.length);
 assert(classificationDetail(sample).includes('新增分类'));
+assert(classificationDetail(sample).includes('这项分类的资料范围'));
 for(const c of registry.categories)assert(renderClassifications(works).includes('data-value="'+c.id+'"'));
+for(const promoted of registry.promoted_discoveries||[]){
+  const category=registry.categories.find(item=>item.id===promoted.category_id);
+  assert(category);
+  assert.equal(category.label,promoted.original_candidate.label);
+  assert.equal(category.definition,promoted.original_candidate.definition);
+  assert(registry.metadata.discovery_inputs.some(input=>input.file===category.discovery_input));
+  for(const evidence of promoted.original_candidate.work_evidence){
+    const work=byId.get(evidence.id),member=category.members.find(item=>item.work_id===evidence.id);
+    assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
+    assert.equal(member.basis,evidence.basis);
+    assert.equal(member.evidence_scope,evidence.support_scope);
+    assert.deepEqual(member.sources,evidence.sources);
+    assert(evidence.sources.every(url=>work.knowledge.sources.includes(url)));
+    assert.equal(work.completion.source_verified,false);
+  }
+}
 for(const candidate of registry.discovery_candidates||[]){
   assert.equal(candidate.review_status,'pending_further_comparison');
   assert(candidate.definition_boundary&&candidate.work_evidence.length);

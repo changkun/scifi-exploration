@@ -1,4 +1,4 @@
-import {applyClassifications} from './classifications.mjs?v=registry4';
+import {applyClassifications} from './classifications.mjs?v=registry6';
 const unique = values => [...new Set(values.filter(Boolean))];
 const labels = values => (values || []).map(value => typeof value === 'string' ? value : value.label || value.id).filter(Boolean);
 export const UNKNOWN = '待分类';

@@ -1,0 +1,1238 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-or-knowledge-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-05",
+    "record_count": 38,
+    "field_count": 76,
+    "source_commit": "8d42bdc4c10c50e9a4da838e00446f58f2ecbe57",
+    "source_snapshot_sha256": "64d6e688d45f347e789309d739145b1a3fe930037395167a8d99e052abbe8afb",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/known-year-global-spatial-round2.json",
+        "sha256": "53dbf27df0fc8176acd05fe1dd01ff9e89ec78967b154953e390a1a73b4c3e93",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "helper": "global",
+          "phase": "known-year-exclusive-first-pass",
+          "ownership_file": "work/evidence/known-year-first-pass-lane-1.json",
+          "ownership_sha256": "c4f5abbb4b3f5b116c9f627a6a4f0d8408a90b5c5d091360dd76e4c4cbff3730",
+          "ownership_count": 573,
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "5d09dd703a017403a9cdbb97658079e6960d6b4530edc8bbecf0dda69e12e218",
+          "complete_original_text_reads": 0,
+          "method": "先扫全互斥分片准确熟悉具体作品，已有知识零查询待核；陌生作品16独立short精准查询并行，前提足够即短核心及两facet，薄弱或身份错配延期。",
+          "selection_strategy": "existing_exact_work_knowledge_first_then_newest_to_oldest",
+          "verification": "全部knowledge_added_unverified；当前身份读取、新搜索和新剧情材料阅读分别记，不作原作全文核验。",
+          "scope": "只顺手保存当前未知空间的确切舞台；已有知识与实际材料依据区分，合集不以单例代表整体。",
+          "record_count": 19,
+          "facet_count": 64,
+          "attempted_count": 37,
+          "deferred_count": 5,
+          "existing_knowledge_count": 2,
+          "actual_source_supported_count": 26,
+          "source_query_count": 32,
+          "direct_page_read_count": 10,
+          "direct_page_read_limited_content_count": 9,
+          "direct_page_read_failed_count": 1,
+          "spatial_count": 19,
+          "owned_pool_first_pass_count": 86,
+          "owned_pool_remaining_unattempted_count": 487,
+          "next_source_order_index": 56,
+          "cached_library_synopsis_count": 3,
+          "existing_selected_member_knowledge_after_catalogue_read_count": 1,
+          "audit_current_snapshot_sha256": "5d09dd703a017403a9cdbb97658079e6960d6b4530edc8bbecf0dda69e12e218",
+          "audit_result": "格式、互斥归属、37身份无重复且与R1互斥、题名作者守恒、已知源年守恒、三字段限制、64具体facet、32实际查询及10打开raw哈希、3缓存简介原SHA和URL范围、空间未知守恒均通过；这只是结构与材料范围自检，非独立书目／原作核验。",
+          "ownership_indices": [
+            16,
+            17,
+            18,
+            21,
+            23,
+            24,
+            25,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            22,
+            19,
+            28,
+            38,
+            53,
+            37,
+            35,
+            36,
+            40,
+            42,
+            43,
+            44,
+            47,
+            48,
+            49,
+            52,
+            55,
+            39,
+            41,
+            50,
+            51,
+            54
+          ],
+          "selection_summary": "沿近到旧游标处理；2准确已有知识、3缓存OL简介、26实际查询得到的简介或评论、1目录确认后已有选例知识。32单查询、10单页打开，5薄弱或失败项后置；无完整原作阅读。",
+          "limitations": "合集Mon nom est Titan、Years in the Making仅实际资料限定选例；Year’s Best SF 11目录只确认成员身份，剧情为既有知识。Fullmetal Alchemist标准卷8非新版卷8。3缓存OL简介保留identity_or_scope_needs_review且题名作者与dump一致。所有来源纪年保留。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/known-year-global-spatial-round3.json",
+        "sha256": "1aeeb3765237d9e8bbcc9020b1e1a654b23b5b69ced234da7c7d11416b7d637a",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "helper": "global",
+          "phase": "known-year-exclusive-first-pass",
+          "ownership_file": "work/evidence/known-year-first-pass-lane-1.json",
+          "ownership_sha256": "c4f5abbb4b3f5b116c9f627a6a4f0d8408a90b5c5d091360dd76e4c4cbff3730",
+          "ownership_count": 573,
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "64d6e688d45f347e789309d739145b1a3fe930037395167a8d99e052abbe8afb",
+          "complete_original_text_reads": 0,
+          "method": "先扫全互斥分片准确熟悉具体作品，已有知识零查询待核；陌生作品16独立short精准查询并行，前提足够即短核心及两facet，薄弱或身份错配延期。",
+          "selection_strategy": "existing_exact_work_knowledge_first_then_newest_to_oldest",
+          "verification": "全部knowledge_added_unverified；当前身份读取、新搜索和新剧情材料阅读分别记，不作原作全文核验。",
+          "scope": "只顺手保存当前未知空间的确切舞台；已有知识与实际材料依据区分，合集不以单例代表整体。",
+          "record_count": 14,
+          "facet_count": 58,
+          "attempted_count": 43,
+          "deferred_count": 14,
+          "existing_knowledge_count": 3,
+          "actual_source_supported_count": 15,
+          "source_query_count": 32,
+          "direct_page_read_count": 9,
+          "direct_page_read_limited_content_count": 5,
+          "direct_page_read_failed_count": 4,
+          "spatial_count": 14,
+          "owned_pool_first_pass_count": 129,
+          "owned_pool_remaining_unattempted_count": 444,
+          "next_source_order_index": 98,
+          "cached_library_synopsis_count": 8,
+          "existing_selected_member_knowledge_after_catalogue_read_count": 3,
+          "audit_current_snapshot_sha256": "64d6e688d45f347e789309d739145b1a3fe930037395167a8d99e052abbe8afb",
+          "audit_result": "格式、互斥归属、43身份无重复且与R1/R2互斥、题名作者守恒、已知源年守恒、三字段限制、58具体facet、32实际查询及9打开raw哈希、8缓存简介原SHA和URL范围、空间未知守恒均通过；这只是结构与材料范围自检，非独立书目／原作核验。",
+          "ownership_indices": [
+            64,
+            75,
+            79,
+            57,
+            59,
+            61,
+            68,
+            58,
+            62,
+            63,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            78,
+            80,
+            56,
+            60,
+            65,
+            66,
+            77,
+            96,
+            101,
+            104,
+            109,
+            82,
+            87,
+            88,
+            89,
+            90,
+            93,
+            95,
+            81,
+            83,
+            84,
+            85,
+            86,
+            91,
+            92,
+            94,
+            97
+          ],
+          "selection_summary": "3准确已有知识、8缓存OL简介、15实际简介或评论、3目录确认后的已有选例知识。32实际单查询、9次单页打开，14薄弱／错配项后置，0原作全文阅读。",
+          "limitations": "Masterpieces、Immortals、Nebula Awards 31只目录确认单篇成员，剧情来自已有知识，非新剧情阅读；不填整集空间。Saluti dal lago di Mandelbrot源为1998合集，但出版社页为2018同题独立故事，无法确认原选例范围故延后。House Harkonnen(part)不套整本；Le groupe不套新版Return卷3。8缓存原对应范围待审保留。"
+        }
+      },
+      {
+        "file": "research/spatial-input-snapshots/root-known-year-spatial-round6.json",
+        "sha256": "5cc5bfe275526037af5590b1c6f1ba139b2cae482a7ee53406503c7aa185154a",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "method": "sixteen-parallel-known-year-single-query-v1",
+          "lane": 0,
+          "created_at": "2026-10-05",
+          "freeze_date": "2026-10-05",
+          "ownership_file": "known-year-first-pass-lane-0.json",
+          "ownership_sha256": "077a719fe2f381730b263d4de580902b409476dbeeb36e570c8c3008c1ec63b6",
+          "source_snapshot_sha256": "64d6e688d45f347e789309d739145b1a3fe930037395167a8d99e052abbe8afb",
+          "record_count": 5,
+          "facet_count": 20,
+          "attempted_count": 16,
+          "deferred_count": 6,
+          "actual_search_attempt_count": 16,
+          "page_open_attempt_count": 2,
+          "failed_page_open_count": 1,
+          "partial_original_material_read_count": 1,
+          "licensed_original_read_count": 0,
+          "original_fulltext_read_count": 0,
+          "scope": "5条明确空间或跨世界关系；同批已有读取，不新增查询，不采用题材标签或全部合集推断位置。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 2,
+      "cosmic": 1,
+      "earth": 16,
+      "galactic": 3,
+      "interstellar": 4,
+      "planetary": 12
+    },
+    "scope": "只补原unknown且有实际有限材料或准确已有作品知识明确场所支持的条目；已有知识项均须有同身份零查询冻结日志且明确待核，未虚构来源尝试。未知不由题名或议题推断，已有定位保持不动。"
+  },
+  "records": [
+    {
+      "id": "Q134722237",
+      "identity": {
+        "title": "Icarus",
+        "author": "Roger Levy"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "地球与彼此分离的遥远殖民行星形成跨恒星空间关系。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books?id=AsdQawqRT9EC"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?id=AsdQawqRT9EC",
+          "support_scope": "实际查询返回Gollancz授权图书简介：遥远殖民地彼此隔绝、适应不同环境并失去历史联系，致命辐射行星的采矿者发现岩层中飞船，引出跨殖民地阴谋。2007是展示版，源2006保留。",
+          "source_kind": "publisher_description_on_google_books_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q41093795",
+      "identity": {
+        "title": "End of the World Blues",
+        "author": "Jon Courtenay Grimwood"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "退伍兵的东京酒吧及来客救援是简介明确的主要生活舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/72083/end-of-the-world-blues-by-jon-courtenay-grimwood/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/72083/end-of-the-world-blues-by-jon-courtenay-grimwood/",
+          "support_scope": "实际查询返回官方简介：东京酒吧合伙人及伊拉克老兵Kit Nouveau、携赃款逃跑的少女Lady Neku救他，其命运连过去及前女友遗书；未读样章。",
+          "source_kind": "publisher_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7740505",
+      "identity": {
+        "title": "The House Beyond Your Sky",
+        "author": "Benjamin Rosenbaum"
+      },
+      "fields": {
+        "spatial_primary": "cosmic",
+        "spatial_rationale": "明确为衰亡宇宙中管理虚拟宇宙并建造真实新宇宙，不由年代推尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_House_Beyond_Your_Sky"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_House_Beyond_Your_Sky",
+          "support_scope": "实际查询返回本篇摘要：冷却衰亡宇宙中的Matthias维护虚拟宇宙馆藏、观看受父亲虐待女孩，并建真实新宇宙吸引强者来访；未打开Strange Horizons全文。",
+          "source_kind": "encyclopedia_exact_story_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q106407733",
+      "identity": {
+        "title": "In the Quake Zone",
+        "author": "大衛·傑洛德"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "时间震裂发生在洛杉矶，调查目标是西好莱坞的失踪男孩。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://storybundle.com/books/3726"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://storybundle.com/books/3726",
+          "support_scope": "实际查询返回正版电子书组合销售页简介：1960s Los Angeles时间震裂，Time Ravelers跨时空查灾，一名Vietnam老兵寻找West Hollywood失踪男孩；未读电子书。",
+          "source_kind": "licensed_book_bundle_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q1131434",
+      "identity": {
+        "title": "Tom Clancy's Splinter Cell: Operation Barracuda",
+        "author": "David Michaels"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "官方简介明确香港至洛杉矶之间的跨大陆隐蔽行动。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/295551/tom-clancys-splinter-cell-operation-barracuda-by-david-michaels/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/295551/tom-clancys-splinter-cell-operation-barracuda-by-david-michaels/",
+          "support_scope": "实际单次打开出版社页L185–186：香港至洛杉矶、NSA Sam Fisher及Third Echelon无限授权、隐形飞机被毁及旧望远镜线索，跨大陆暗杀与帮派；仅本小说书介。",
+          "source_kind": "publisher_synopsis_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q133800882",
+      "identity": {
+        "title": "Sur les pistes de Scar",
+        "author": "Jean-Pierre Hubert"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "CircumScar是围绕斯卡行星进行的比赛，主要场景在该行星。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.les-notes.fr/analyse/sur-les-pistes-de-scar/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.les-notes.fr/analyse/sur-les-pistes-de-scar/",
+          "support_scope": "实际查询返回书评完整可用介绍：第75 CircumScar环星球赛、Léan独立队及speedosaure、企业赞助强队、当地污染与广告电视；只评论，未读原著。",
+          "source_kind": "literary_review_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q14476443",
+      "identity": {
+        "title": "The Last of the Jedi: Underworld",
+        "author": "Jude Watson"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "救援深入科洛桑行星的地下世界，非由系列背景泛推星系。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.disney.com/book/underworld-volume-3/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.disney.com/book/underworld-volume-3/",
+          "support_scope": "实际查询返回Lucasfilm官方第3卷简介：Ferus与街头少年Trever进入Coruscant深处解救Jedi，当地盗贼与难民都躲避皇帝；不采用同返第9卷页面。",
+          "source_kind": "official_licensed_publisher_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131518725",
+      "identity": {
+        "title": "Synthetic Serendipity",
+        "author": "弗诺·文奇"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "所见开篇明确San Diego North County上学路径与穿戴叠景。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.cs.cmu.edu/~jasonh/courses/ubicomp-sp2007/papers/02-synthetic-serendipity.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.cs.cmu.edu/~jasonh/courses/ubicomp-sp2007/papers/02-synthetic-serendipity.pdf",
+          "support_scope": "实际查询返回CMU课程镜像IEEE Spectrum原篇的有限开篇，阅读至Mike Villas穿戴Epiphany叠景、Radner兄弟新scam邀请、San Diego上学路径；未下载PDF、未读后文，镜像许可未独立核对。",
+          "source_kind": "university_course_mirror_original_story_limited_query_excerpt",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q140451236",
+      "identity": {
+        "title": "Fullmetal Alchemist, Volume 8",
+        "author": "荒川弘"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "标准卷明确亚美斯多利斯与新国，但物理天体位置未定，不强放地球。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-8/product/609"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-8/product/609",
+          "support_scope": "实际单次打开标准单卷8官方书介L84：Bradley带军队屠杀Greed半人部众、Greed见创造者、Mei与Ling从Xing来寻Philosopher’s Stone；非Fullmetal Edition8或3in1第8合卷。",
+          "source_kind": "licensed_publisher_exact_manga_volume_synopsis_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q2834025",
+      "identity": {
+        "title": "La Mélancolie des sirènes par trente mètres de fond",
+        "author": "塞尔吉·布鲁索洛"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "河警调查河水淹没地铁的灾难，以人类城市水下设施为主要场所。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.hachette.fr/livre/la-melancolie-des-sirenes-par-30-metres-de-fond-9782702431924/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.fr/livre/la-melancolie-des-sirenes-par-30-metres-de-fond-9782702431924/",
+          "support_scope": "实际单次打开出版方页L289–291：女潜水员Lize Unke属河警，调查地铁隧道破裂被河水淹没、数千死亡及妹妹遇难；只本版简介。",
+          "source_kind": "publisher_synopsis_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q55230379",
+      "identity": {
+        "title": "Engines of Destiny",
+        "author": "Gene DeWeese"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "缓存本卷明确Alpha Quadrant多物种、Borg与联邦缺席的文明网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本轮所读简介／评论／有限原篇开端的明示场所或定位缺口；未额外追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL2761301W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL2761301W",
+          "support_scope": "本轮实际读已保存Open Library月度work dump对应简介；same_dump_title/authors均true，原record_status仍identity_or_scope_needs_review保留；社区书目简介非出版社直接页、非原作全文。",
+          "source_kind": "cached_openlibrary_work_dump_synopsis",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7721976",
+      "identity": {
+        "title": "The Cestus Deception",
+        "author": "史蒂文·巴恩斯"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "已有知识明确塞斯图斯行星的机器人生产与共和国任务。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q3821807",
+      "identity": {
+        "title": "Sandstorm",
+        "author": "詹姆斯·罗林斯"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "大英博物馆爆炸与沙中失城追索，主要为地球考古及危险能源调查。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://jamesrollins.com/books/sandstorm-a-sigma-force-novel/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://jamesrollins.com/books/sandstorm-a-sigma-force-novel/",
+          "support_scope": "实际查询返回作者第1卷书介：British Museum爆炸、Painter Crowe解读致命遗物寻找沙中Atlantis古能源、旧事相关雇佣兵追捕；只本卷简介。",
+          "source_kind": "author_exact_novel_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q27826749",
+      "identity": {
+        "title": "Explorer",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "出版社明确凤凰号前往遥远恒星系统及团聚站救援。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://astrapublishinghouse.com/product/explorer-9780756401313/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://astrapublishinghouse.com/product/explorer-9780756401313/",
+          "support_scope": "实际单次打开出版社第6卷简介L44–48：Phoenix舰长临终承认Reunion只毁损非全毁，船员强迫救援；Bren、Ilisidi至远星系统燃料短缺，与隐藏事实的Pilot Guild及敌船面对战争；非全系列。",
+          "source_kind": "publisher_exact_novel_synopsis_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3638870",
+      "identity": {
+        "title": "Scarecrow",
+        "author": "Matthew Reilly"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "出版方明确目标与国际赏金猎人在地球全球追逃。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://us.macmillan.com/books/9781593973889/scarecrow/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://us.macmillan.com/books/9781593973889/scarecrow/",
+          "support_scope": "实际单次打开出版方有声版书介L45–47：全球精锐被列赏金目标、今日正午限时、每人近2000万、Schofield被国际赏金猎人追杀；未听有声本。",
+          "source_kind": "publisher_exact_novel_audiobook_synopsis_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5124921",
+      "identity": {
+        "title": "Clade",
+        "author": "Mark Budz"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "本卷出版社明确未来San Jose的生物管理社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/20876/clade-by-mark-budz/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/20876/clade-by-mark-budz/",
+          "support_scope": "实际查询返回出版方本书简介前部：未来San Jose灾后基因设计全生物、信息素社会秩序、Rigo工作公寓伴侣及故地认为出卖者；不采用相邻Crache书介。",
+          "source_kind": "publisher_exact_novel_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7763555",
+      "identity": {
+        "title": "The Shadow Trap",
+        "author": "Jude Watson"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "本卷粮燃争夺与地下平民的危机集中于Mawan行星。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://starwars.fandom.com/wiki/Jedi_Quest%3A_The_Shadow_Trap"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://starwars.fandom.com/wiki/Jedi_Quest%3A_The_Shadow_Trap",
+          "support_scope": "实际查询返回Fandom明确标Publisher’s summary：Mawan战争使民众地下避难、三个犯罪头目争粮燃、Jedi调停与陷阱；不用下方完整Plot summary的Yaddle牺牲。",
+          "source_kind": "fan_wiki_reproduced_publisher_summary_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134482923",
+      "identity": {
+        "title": "Freedom's Ransom",
+        "author": "安妮·麥考菲利"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "本卷明确地球与Botany行星的技术重建任务，未由宇宙措辞自动推更远尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/287199/freedoms-ransom-by-anne-mccaffrey/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/287199/freedoms-ransom-by-anne-mccaffrey/",
+          "support_scope": "实际查询返回出版方第4卷书介：Botany解放后须建立联盟，Earth被掠夺技术，Kris和Zainal需追回赃物支持Earth及Botany未来；不采用前卷解放过程细节。",
+          "source_kind": "publisher_exact_novel_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5236430",
+      "identity": {
+        "title": "The Only Witness",
+        "author": "Jude Watson"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "简介明确保护证人的任务发生在一个敌对行星。"
+      },
+      "field_notes": {
+        "spatial_primary": "Cestus为准确已有知识（无新剧情资料）；其余仅本轮实际简介明示场所，尚待独立核验。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books/about/The_Only_Witness.html?id=vI4pPwAACAAJ"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books/about/The_Only_Witness.html?id=vI4pPwAACAAJ",
+          "support_scope": "实际查询返回Scholastic本书简介：Qui-Gon心不在工作、与Obi-Wan去敌对行星保护唯一愿指证犯罪家族的人；不采用后半作者其他系列介绍。",
+          "source_kind": "publisher_description_on_google_books_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q15034500",
+      "identity": {
+        "title": "The Iron Woman",
+        "author": "泰德·休斯"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "已有知识明确工业工厂、河流及污染动物构成地球社会舞台。"
+      },
+      "field_notes": {
+        "spatial_primary": "准确本书已有知识；本轮零查询、无新剧情／空间材料阅读，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q662493",
+      "identity": {
+        "title": "Starfighters of Adumar",
+        "author": "Aaron Allston"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "已有知识明确阿杜马行星的外交任务与当地飞行决斗。"
+      },
+      "field_notes": {
+        "spatial_primary": "准确本书已有知识；本轮零查询、无新剧情／空间材料阅读，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_evidence": [],
+      "analysis_basis": "existing_knowledge_unverified"
+    },
+    {
+      "id": "Q55230345",
+      "identity": {
+        "title": "Chainmail",
+        "author": "Diane Carey"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "网关明确连接Alpha Quadrant与银河远端，涉及跨银河区域交通网络。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL3561044W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL3561044W",
+          "support_scope": "本轮实际读已保存Open Library月度work dump对应简介；same_dump_title/authors均true，原record_status仍identity_or_scope_needs_review保留；社区书目简介非出版社直接页、非原作全文。",
+          "source_kind": "cached_openlibrary_work_dump_synopsis",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q4883696",
+      "identity": {
+        "title": "Belle Terre",
+        "author": "迪安·韦斯利·史密斯 / Diane Carey"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "主要危机围绕贝尔泰尔行星与可能爆炸的卫星。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL3561053W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL3561053W",
+          "support_scope": "本轮实际读已保存Open Library月度work dump对应简介；same_dump_title/authors均true，原record_status仍identity_or_scope_needs_review保留；社区书目简介非出版社直接页、非原作全文。",
+          "source_kind": "cached_openlibrary_work_dump_synopsis",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q27825200",
+      "identity": {
+        "title": "Defender",
+        "author": "C·J·彻里"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "本卷主要调解阿泰维地面社会、航天飞机与在轨空间站。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/290825/defender-by-c-j-cherryh/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/290825/defender-by-c-j-cherryh/",
+          "support_scope": "实际查询返回第5卷书介：atevi航天工程、三架航天飞机、亲反太空阵营，远站袭击真相隐瞒、船员反抗及Bren调解；非第6卷旅程或全文。",
+          "source_kind": "publisher_exact_volume_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q69741399",
+      "identity": {
+        "title": "The First Protector",
+        "author": "詹姆斯·懷特"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "本卷明确古代地球、爱尔兰战士及围绕地球的外来者观察。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.fictiondb.com/book/the-first-protector~james-white~110777.htm",
+        "https://www.publishersweekly.com/9780312848903"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.fictiondb.com/book/the-first-protector~james-white~110777.htm",
+          "support_scope": "实际查询返回James White第二本Earth: Final Conflict书介，Ma’el来到古代地球、凯尔特战士与女祭司陪同游历；只作品身份及简介。",
+          "source_kind": "bibliography_exact_novel_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780312848903",
+          "support_scope": "实际查询返回具体评论：四世纪Ma’el、逃亡王子Declan与实际为Sinead的Sean同行，预知能力引出外星技术与First Protector职责；页面并列Saberhagen是系列关联，未认定本作共同作者。",
+          "source_kind": "trade_review_exact_novel_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7751615",
+      "identity": {
+        "title": "The Miocene Arrow",
+        "author": "Sean McMullen"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "明确未来地球美国王国与澳大利亚人之间的技术战争。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books/about/The_Miocene_Arrow.html?id=TE3JUr43ZOAC"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books/about/The_Miocene_Arrow.html?id=TE3JUr43ZOAC",
+          "support_scope": "实际查询返回Macmillan书介：四十世纪美国世袭工程行会与战争秩序，澳洲渗入者、人力与柴油飞行器的技术差及Miocene Arrow末日装置；非整套结局。",
+          "source_kind": "publisher_description_on_google_books_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q949016",
+      "identity": {
+        "title": "Bételgeuse",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "所读五册报告明确贝特尔吉斯行星、轨道殖民船与当地生态调查。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://ecolitt.univ-angers.fr/fr/ressources-pour-tous/fiches-de-lecture/leo-betelgeuse.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ecolitt.univ-angers.fr/fr/ressources-pour-tous/fiches-de-lecture/leo-betelgeuse.html",
+          "support_scope": "实际一次打开大学EcoLitt五册漫画阅读报告L84–94：殖民船病毒、Kim调查智慧生命条件、Iums及mantrisses要求离开；仅报告摘要与分析，原作小引文非全文。",
+          "source_kind": "university_literary_reading_report_exact_comic_cycle_direct_page_read",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134080769",
+      "identity": {
+        "title": "Le Successeur de pierre",
+        "author": "Jean-Michel Truong"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "书介明确核灾后地球、中国手稿报告及Vatican网络追查。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.label-emmaus.co/fr/9782266101905-le-successeur-de-pierre/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.label-emmaus.co/fr/9782266101905-le-successeur-de-pierre/",
+          "support_scope": "实际查询返回本书版次书介：两千年手稿、核灾后2032Grand Renfermement、网上中国纸草报告引来Pact/Vatican及Calvin调查；不采用作者其他AI作品。",
+          "source_kind": "bookseller_exact_edition_publisher_style_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7758548",
+      "identity": {
+        "title": "The Promise of Eden",
+        "author": "Eric Durchholz"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "简介明确Indiana的New Harmony及儿童与当地幽灵关系。"
+      },
+      "field_notes": {
+        "spatial_primary": "仅本輪已读本卷／周期简介或阅读报告的明示场所；未另查空间，仍待核。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.lulu.com/shop/eric-durchholz/the-promise-of-eden/hardcover/product-1kv8j95.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.lulu.com/shop/eric-durchholz/the-promise-of-eden/hardcover/product-1kv8j95.html",
+          "support_scope": "实际查询返回作者自出版平台本书简介：Gregory、幽灵Anna、Sylvia、Indiana New Harmony的Joseph及媒介训练、复活教派；只是简介，2006显示版不替底库。",
+          "source_kind": "author_self_published_book_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q17040582",
+      "identity": {
+        "title": "Worldwar: Tilting the Balance",
+        "author": "哈利·托特達夫"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "明确入侵发生在美国、欧亚与地球国家之间，未按入侵者来源泛扩空间。"
+      },
+      "field_notes": {
+        "spatial_primary": "只用本輪实际缓存／查询本卷简介的明确场所，不另追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://openlibrary.org/works/OL16545W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL16545W",
+          "support_scope": "本轮实际读已保存Open Library月度work dump对应简介；same_dump_title/authors均true，原record_status仍identity_or_scope_needs_review保留；社区书目简介非出版社直接页、非原作全文。",
+          "source_kind": "cached_openlibrary_work_dump_synopsis",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q110677880",
+      "identity": {
+        "title": "Time Gypsy",
+        "author": "Ellen Klages"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "现代博士后回到1956人类社会拜访科学家，舞台为地球社会。"
+      },
+      "field_notes": {
+        "spatial_primary": "只用本輪实际缓存／查询本卷简介的明确场所，不另追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://tachyonpublications.com/product/time-gypsy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tachyonpublications.com/product/time-gypsy/",
+          "support_scope": "实际查询返回出版社单篇书介：博士后Carol McCullough回到1956拜访科学偶像Sara Baxter Clarke，女性科学、学术竞争、酷儿历史与爱情；非全文。",
+          "source_kind": "publisher_exact_story_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q4838500",
+      "identity": {
+        "title": "Babylon 5: Legions of Fire – Armies of Light and Dark",
+        "author": "彼得·大卫"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "本卷主要冲突在森陶里主星重建与统治，其他星际关系作为背景。"
+      },
+      "field_notes": {
+        "spatial_primary": "只用本輪实际缓存／查询本卷简介的明确场所，不另追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.worldswithoutend.com/novel.asp?ID=15043"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.worldswithoutend.com/novel.asp?ID=15043",
+          "support_scope": "实际查询返回本卷书介：Drakh渗透Centauri Prime、keeper监控皇帝、Durla被利用、Vir组织抵抗，Sheridan派Garibaldi查；只Legions of Fire2。",
+          "source_kind": "community_bibliography_exact_volume_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5518152",
+      "identity": {
+        "title": "Galaxy of Fear: Clones",
+        "author": "John Whitman"
+      },
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "第11卷明确丹图因行星的遗迹、克隆营及逃脱危机。"
+      },
+      "field_notes": {
+        "spatial_primary": "只用本輪实际缓存／查询本卷简介的明确场所，不另追空间。",
+        "spatial_rationale": "地点和导航尺度判断，和时间跨度及题材标签分开；尚未独立核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://starwars.fandom.com/wiki/Galaxy_of_Fear%3A_Clones"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://starwars.fandom.com/wiki/Galaxy_of_Fear%3A_Clones",
+          "support_scope": "实际查询返回第11卷出版社摘要及社区本卷短剧情：Dantooine遗迹、Tash受黑暗诱惑、克隆营及亲属复制品；只本卷，非系列结局。",
+          "source_kind": "community_exact_volume_publisher_summary_and_synopsis_query_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q85761075",
+      "identity": {
+        "title": "First and Only",
+        "author": "丹·阿布尼特"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "本卷摘要明确失去Tanith故乡并在Fortis Binary作战，出版社明确Sabbat Worlds多世界战争；限跨世界行动，不用整个40K宇宙推断全银河尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "依本轮已实际读取材料的明确发生地或跨世界关系作导航，待核。",
+        "spatial_rationale": "本卷摘要明确失去Tanith故乡并在Fortis Binary作战，出版社明确Sabbat Worlds多世界战争；限跨世界行动，不用整个40K宇宙推断全银河尺度。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.blacklibrary.com/downloads/product/pdf/f/firstandonly.pdf",
+        "https://en.wikipedia.org/wiki/First_and_Only"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.blacklibrary.com/downloads/product/pdf/f/firstandonly.pdf",
+          "support_scope": "本卷摘要明确失去Tanith故乡并在Fortis Binary作战，出版社明确Sabbat Worlds多世界战争；限跨世界行动，不用整个40K宇宙推断全银河尺度。 实际查询返回出版社本卷单页宣传资料和确切小说社区摘要，仅内斗、战争与失乡军团前提；不采用相邻Necropolis或整个系列结局。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/First_and_Only",
+          "support_scope": "本卷摘要明确失去Tanith故乡并在Fortis Binary作战，出版社明确Sabbat Worlds多世界战争；限跨世界行动，不用整个40K宇宙推断全银河尺度。 实际查询返回出版社本卷单页宣传资料和确切小说社区摘要，仅内斗、战争与失乡军团前提；不采用相邻Necropolis或整个系列结局。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        }
+      ]
+    },
+    {
+      "id": "Q131380866",
+      "identity": {
+        "title": "Cosm",
+        "author": "傑格瑞·班福德"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "实际所读书评明确Brookhaven国家实验室及大学实验室为研究场所；只标明地球上的研究地点，不由虫洞名称推成宇宙尺度。"
+      },
+      "field_notes": {
+        "spatial_primary": "依本轮已实际读取材料的明确发生地或跨世界关系作导航，待核。",
+        "spatial_rationale": "实际所读书评明确Brookhaven国家实验室及大学实验室为研究场所；只标明地球上的研究地点，不由虫洞名称推成宇宙尺度。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.publishersweekly.com/9780380974351"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.publishersweekly.com/9780380974351",
+          "support_scope": "实际所读书评明确Brookhaven国家实验室及大学实验室为研究场所；只标明地球上的研究地点，不由虫洞名称推成宇宙尺度。 实际一次查询后单次打开本卷Publishers Weekly书评L10—12；支持Brookhaven事故、球体虫洞、机构干预及大学研究压力，不把评论的科学可信评价当真实物理核验。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        }
+      ]
+    },
+    {
+      "id": "Q16010768",
+      "identity": {
+        "title": "The Mandalorian Armor",
+        "author": "K•W•傑特"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "出版社明确银河中的赏金猎人、帝国与反抗势力的跨势力冲突；只作本册银河背景导航，不声称全部场所已逐项核实。"
+      },
+      "field_notes": {
+        "spatial_primary": "依本轮已实际读取材料的明确发生地或跨世界关系作导航，待核。",
+        "spatial_rationale": "出版社明确银河中的赏金猎人、帝国与反抗势力的跨势力冲突；只作本册银河背景导航，不声称全部场所已逐项核实。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/87310/the-mandalorian-armor-star-wars-legends-the-bounty-hunter-wars-by-kw-jeter/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/87310/the-mandalorian-armor-star-wars-legends-the-bounty-hunter-wars-by-kw-jeter/",
+          "support_scope": "出版社明确银河中的赏金猎人、帝国与反抗势力的跨势力冲突；只作本册银河背景导航，不声称全部场所已逐项核实。 实际查询返回PRH本册完整Book Description，限工会分化、Fett竞争与被操纵前提；未读正文、不采用AI摘要、续册或影视剧情。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        }
+      ]
+    },
+    {
+      "id": "Q4674570",
+      "identity": {
+        "title": "Acorna's Quest",
+        "author": "安妮·麥考菲利 / Margaret Ball"
+      },
+      "fields": {
+        "spatial_primary": "interstellar",
+        "spatial_rationale": "本册摘要与书评明确航行寻找同族，并因飞船问题到达Rushima殖民地；限跨空间旅行与具体殖民地，不推成全系列场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "依本轮已实际读取材料的明确发生地或跨世界关系作导航，待核。",
+        "spatial_rationale": "本册摘要与书评明确航行寻找同族，并因飞船问题到达Rushima殖民地；限跨空间旅行与具体殖民地，不推成全系列场景。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Acorna%27s_Quest",
+        "https://www.publishersweekly.com/9780061052972"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Acorna%27s_Quest",
+          "support_scope": "本册摘要与书评明确航行寻找同族，并因飞船问题到达Rushima殖民地；限跨空间旅行与具体殖民地，不推成全系列场景。 实际查询返回确切第二册摘要与书评，仅寻族、Rushima天气勒索和保护关系；未采用Acorna's Search、People、World或第一册全部剧情。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780061052972",
+          "support_scope": "本册摘要与书评明确航行寻找同族，并因飞船问题到达Rushima殖民地；限跨空间旅行与具体殖民地，不推成全系列场景。 实际查询返回确切第二册摘要与书评，仅寻族、Rushima天气勒索和保护关系；未采用Acorna's Search、People、World或第一册全部剧情。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        }
+      ]
+    },
+    {
+      "id": "Q5223630",
+      "identity": {
+        "title": "Darkfall",
+        "author": "Isobelle Carmody"
+      },
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "本卷明示现实希腊与Keltor平行世界的跨界关系；抽象航区表示异世界关系，不据world一词猜测Keltor物理天体大小。"
+      },
+      "field_notes": {
+        "spatial_primary": "依本轮已实际读取材料的明确发生地或跨世界关系作导航，待核。",
+        "spatial_rationale": "本卷明示现实希腊与Keltor平行世界的跨界关系；抽象航区表示异世界关系，不据world一词猜测Keltor物理天体大小。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Darkfall_%28Carmody_novel%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Darkfall_%28Carmody_novel%29",
+          "support_scope": "本卷明示现实希腊与Keltor平行世界的跨界关系；抽象航区表示异世界关系，不据world一词猜测Keltor物理天体大小。 实际查询返回Carmody确切首卷摘要，限双胞胎失散、记忆和预言身份；不采用Dean Koontz同题小说或Darksong续册，不把脑肿瘤与治愈愿望当医学事实。 原作全文新读0，解释待独立核对。",
+          "read_date": "2026-10-05",
+          "material_kind": "同身份本轮已读取有限材料，没有另作新查询"
+        }
+      ]
+    }
+  ]
+}

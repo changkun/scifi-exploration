@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
 import {FIELD_LABELS,buildCanonicalUniverse} from '../dist/assets/canonical.mjs';
 import {loadBibliographySource,loadCompletionSource,loadLibraryDetail} from '../dist/assets/data-loader.mjs';
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
@@ -26,6 +27,13 @@ check('generic literary entity type does not masquerade as a confirmed text form
 check('missing language and identity-review filters match their field/state flags',()=>{for(const value of ['language_statements','relationships','external_identifiers'])assert.equal(filterWorks(works,{...DEFAULT_STATE,boundary:true,missing:value}).length,works.filter(w=>w.completion.missing_fields.includes(value)).length);assert(filterWorks(works,{...DEFAULT_STATE,boundary:true,missing:'language_statements'}).length>1300);assert.equal(filterWorks(works,{...DEFAULT_STATE,boundary:true,audit:'identity'}).length,works.filter(w=>w.completion.has_identity_review).length);});
 check('knowledge and review state is shareable across views',()=>{const state={...DEFAULT_STATE,boundary:true,audit:'knowledge',missing:'publication_date',level:'enriched'};assert.deepEqual(stateFromURL('?'+searchFromState(state),works),state);});
 const spatialFiles=await listSpatialInputs(root),spatialInputs=await Promise.all(spatialFiles.map(read));
+for(const input of spatialInputs){
+ const preserved=input.metadata.preserved_scope_original;
+ if(!preserved)continue;
+ const original=await readFile(new URL(preserved.file,root));
+ assert.equal(createHash('sha256').update(original).digest('hex'),preserved.sha256);
+ assert.deepEqual(JSON.parse(original).records,input.records);
+}
 const spatialKeys=['spatial_primary','spatial_secondary','spatial_rationale'],spatialIds=new Set(spatialInputs.flatMap(d=>d.records.map(r=>r.id)));
 const noSpatial=completion.records.map(s=>{
  if(!spatialIds.has(s.id))return s;
@@ -47,17 +55,23 @@ check('spatial batches preserve exact assertions, scoped evidence and field isol
   assert.equal(r.verification_status,'knowledge_added_unverified');
  }
 });
-check('existing spatial knowledge retains zero-query provenance and rejects invented or unscoped support',()=>{
+check('existing spatial knowledge separates zero-query and scoped-lookup provenance and rejects invented support',()=>{
  const records=spatialInputs.flatMap(input=>input.records).filter(record=>record.analysis_basis==='existing_knowledge_unverified');
  assert(records.some(record=>record.id==='Q5619311'));
  for(const record of records){
   const work=works.find(work=>work.id===record.id),context={issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log};
-  assert.equal(validateSpatialEvidence(record,context),'existing_knowledge_unverified');
+  const afterLookup=record.knowledge_provenance_mode==='existing_knowledge_after_scoped_lookup';
+  assert.equal(validateSpatialEvidence(record,context),afterLookup?'existing_knowledge_after_scoped_lookup_unverified':'existing_knowledge_unverified');
   assert.equal(work.completion.source_verified,false);
   assert.throws(()=>validateSpatialEvidence({...record,analysis_basis:undefined},context));
   assert.throws(()=>validateSpatialEvidence(record,{...context,issueAssertions:[]}));
   assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,queries:['unperformed search']}}));
   assert.throws(()=>validateSpatialEvidence({...record,sources:['https://example.invalid/unread']},context));
+  if(afterLookup){
+    assert.throws(()=>validateSpatialEvidence({...record,field_notes:{...record.field_notes,evidence_provenance:''}},context));
+    assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,actual_search_performed:false}}));
+    assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...context.sourceSearchLog,raw_reading_log:{...context.sourceSearchLog.raw_reading_log,queries:[]}}}));
+  }
  }
 });
 check('spatial judgments fill missing placement and preserve every original known placement',()=>{

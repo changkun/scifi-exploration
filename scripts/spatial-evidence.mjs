@@ -9,7 +9,16 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
   }
   const sameIdentity = assertion => assertion.id === record.id && JSON.stringify(assertion.identity) === JSON.stringify(record.identity);
   const raw = sourceSearchLog?.raw_reading_log;
-  if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !record.field_notes?.spatial_primary?.includes('existing knowledge')) fail();
+  const note = record.field_notes?.spatial_primary || '';
+  const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书)?已有知识|明确已有知识/.test(note);
+  if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !explicitKnowledge) fail();
+  if (record.knowledge_provenance_mode === 'existing_knowledge_after_scoped_lookup') {
+    if (!record.field_notes.evidence_provenance || !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw)) fail();
+    if (!raw.queries?.length || raw.actual_search_performed === false || sourceSearchLog.actual_search_performed === false || !raw.queries.every(query => sourceSearchLog.queries.includes(typeof query === 'string' ? query : query.query))) fail();
+    const materialUrls = new Set(sourceSearchLog.materials_checked.map(material => material.url));
+    if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue && assertion.verification_status === 'knowledge_added_unverified' && assertion.sources?.length && assertion.sources.every(url => materialUrls.has(url)))) fail();
+    return 'existing_knowledge_after_scoped_lookup_unverified';
+  }
   if (!sourceSearchLog || !sameIdentity(sourceSearchLog) || sourceSearchLog.analysis_basis !== 'existing_work_specific_knowledge_unverified' || sourceSearchLog.actual_search_performed !== false || sourceSearchLog.queries.length || sourceSearchLog.materials_checked.length) fail();
   if (!raw || !sameIdentity(raw) || raw.analysis_basis !== 'existing_work_specific_knowledge_unverified' || raw.queries?.length || raw.sources?.length || raw.actual_search_performed === true) fail();
   if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue && Array.isArray(assertion.sources) && !assertion.sources.length && assertion.field_notes?.issue?.includes('existing knowledge') && assertion.verification_status === 'knowledge_added_unverified')) fail();
