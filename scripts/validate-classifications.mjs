@@ -7,6 +7,16 @@ const works=JSON.parse(gunzipSync(await readFile(new URL('../research/canonical-
 const byId=new Map(works.map(work=>[work.id,work]));
 const registry=JSON.parse(await readFile(new URL('../research/classification-registry.json',import.meta.url),'utf8'));
 assert.deepEqual(CLASSIFICATION_REGISTRY,registry);
+if(registry.metadata.previous_version){
+  const previous=JSON.parse(await readFile(new URL('../'+registry.metadata.previous_version.file,import.meta.url),'utf8'));
+  assert(registry.metadata.version>previous.metadata.version);
+  for(const old of previous.categories){
+    const current=registry.categories.find(category=>category.id===old.id);
+    assert(current);
+    assert.equal(current.definition,old.definition);
+    assert.deepEqual(current.members.slice(0,old.members.length),old.members);
+  }
+}
 assert.equal(works.length,14564);
 assert.equal(registry.axes.length,8);
 for(const category of registry.categories){
@@ -28,6 +38,18 @@ for(const id of ['Q1012716','Q108806401']){const work=byId.get(id),correction=wo
 const sample=works.find(work=>work.classification_assignments.length);
 assert(classificationDetail(sample).includes('新增分类'));
 for(const c of registry.categories)assert(renderClassifications(works).includes('data-value="'+c.id+'"'));
+for(const candidate of registry.discovery_candidates||[]){
+  assert.equal(candidate.review_status,'pending_further_comparison');
+  assert(candidate.definition_boundary&&candidate.work_evidence.length);
+  for(const evidence of candidate.work_evidence){
+    const work=byId.get(evidence.id);
+    assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
+    assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
+    assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
+    assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
+    assert.equal(work.completion.source_verified,false);
+  }
+}
 assert(renderClassifications(works).includes('未按新维度整理'));
 assert(!classificationDetail({...sample,classification_assignments:[{...sample.classification_assignments[0],basis:'<script>bad</script>'}]}).includes('<script>'));
 console.log('PASS versioned registry, exact evidence, multi-axis intersections, shareable URLs, extensible values, identity corrections and escaped UI');

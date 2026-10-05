@@ -2,11 +2,20 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 1,
+    "version": 2,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
-    "coverage_note": "首批人工种子只是入口，不代表已把全部14,564身份按新维度归类；未映射表示尚未整理。",
-    "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。"
+    "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
+    "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
+    "previous_version": {
+      "file": "research/classification-registry-history/v1.json",
+      "sha256": "ec6d1bb8d6545579c04acdd97838373f276312de9e1ae53959e9addeee60b6bd"
+    },
+    "revision_note": "第68批增加创伤恢复、历史证据与集体身份、强制真理三个入口，扩展维护入口，并公开保留三种有作品依据的待比较发现；分组不增加核心补全计数。",
+    "discovery_input": {
+      "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
+      "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
+    }
   },
   "axes": [
     {
@@ -139,7 +148,7 @@
         "技术与责任",
         "生存与风险"
       ],
-      "revision": 1,
+      "revision": 2,
       "members": [
         {
           "work_id": "Q287448",
@@ -167,6 +176,16 @@
           "title_at_review": "Computer One",
           "basis": "Computer One让管理生产、交通和商业的全球网络开始以辐射改变地球环境，教授Yakuda因提出它可能把人类当竞争者而遭攻击，转与脱离网络的居民合作。日常便利依赖同一控制系统时，发现危险还需要能够在系统外行动的组织；把维护能力交给技术也并不保证其目标始终保护使用者。",
           "evidence_scope": "依据本条已归档的有限作品解释；未重新阅读全文或升级核验。",
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q64698435",
+          "title_at_review": "Distant Early Warning",
+          "basis": "赶建Vanguard导致技术问题，Lovell团队必须使其按计划运行。",
+          "evidence_scope": "一次实际查询读出版社Distant Early Warning独立电子书书介，支持赶建Vanguard与Lovell维修任务；不补具体故障或最后工期，未读原作。 文学分类暂定；未升级核验。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Star-Trek-Distant-Early-Warning/Dayton-Ward/Star-Trek-Starfleet-Corps-of-Engineers/9781416533092"
+          ],
           "status": "interpretive_grouping_unverified"
         }
       ]
@@ -929,6 +948,103 @@
           "facet_label": "植入物与家庭隐私"
         }
       ]
+    },
+    {
+      "id": "topic:trauma-and-recovery",
+      "axis": "topic",
+      "label": "创伤与心理恢复",
+      "definition": "关注灾后失落、职业精神压力与重新承担共同责任；只讨论作品披露的处境，不作现实心理诊断。",
+      "status": "研究分类·暂定待核",
+      "related_topics": [
+        "照护与依赖",
+        "生存与风险"
+      ],
+      "revision": 1,
+      "members": [
+        {
+          "work_id": "Q64705488",
+          "title_at_review": "Breakdowns",
+          "basis": "Gold/Gomez灾后回家恢复困难并冲突；只独立篇书介。",
+          "evidence_scope": "一次实际查询读搜索返回中的DeCandido独立SCE #28 Breakdowns出版社书介；先返回同名合订本，但本条只用独立书介Gold/Gomez，不含Corsi/P8其他篇，未读正文。 文学分类暂定；未升级核验。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Star-Trek-Breakdowns/Keith-R-A-DeCandido/Star-Trek-Starfleet-Corps-of-Engineers/9780743474566"
+          ],
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q64705778",
+          "title_at_review": "Oaths",
+          "basis": "Lense低落、委托EMH、瘟疫中重新承担医责；不做现实诊断。",
+          "evidence_scope": "一次实际查询读出版社Oaths独立篇书介，支持Lense状态、EMH委托与瘟疫；不判断现实诊断或补疗法结果，未读小说。 文学分类暂定；未升级核验。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Star-Trek-Oaths/Glenn-Hauman/Star-Trek-Starfleet-Corps-of-Engineers/9780743456715"
+          ],
+          "status": "interpretive_grouping_unverified"
+        }
+      ]
+    },
+    {
+      "id": "topic:historical-evidence-and-collective-identity",
+      "axis": "topic",
+      "label": "历史证据与集体身份",
+      "definition": "关注政治力量怎样通过改写或毁去历史证据，控制群体对自身来历与合法性的理解。",
+      "status": "研究分类·暂定待核",
+      "related_topics": [
+        "文明与历史",
+        "知识与认识",
+        "权力与制度"
+      ],
+      "revision": 1,
+      "members": [
+        {
+          "work_id": "Q64705726",
+          "title_at_review": "Past Life",
+          "basis": "独立篇书介：孤立派毁古外星来访证据及调查人员。",
+          "evidence_scope": "一次实际查询读出版社Past Life书介并见Captain Gold晨间生活的短原文开头，分析只用古装置和孤立派书介；局部原文不当全篇核验，未补设备功能。 文学分类暂定；未升级核验。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Star-Trek-Past-Life/Robert-Greenberger/Star-Trek-Starfleet-Corps-of-Engineers/9780743428811"
+          ],
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q208460",
+          "title_at_review": "一九八四",
+          "basis": "Winston的工作涉及改写和销毁历史记录；党的真理要求及对他的强制改造，使证据判断与思想自主同时受到权力控制。",
+          "evidence_scope": "初始研究已列权力控制语言、证据与记忆的问题；补充准确已有作品知识作暂定聚类，本轮未新读正文。",
+          "status": "interpretive_grouping_unverified"
+        }
+      ]
+    },
+    {
+      "id": "topic:coercive-truth-and-thought",
+      "axis": "topic",
+      "label": "思想自由与强制真理",
+      "definition": "关注权力以技术、暴力或强制改造，将多种判断压成唯一可被承认的真理。",
+      "status": "研究分类·暂定待核",
+      "related_topics": [
+        "知识与认识",
+        "权力与制度"
+      ],
+      "revision": 1,
+      "members": [
+        {
+          "work_id": "Q55230554",
+          "title_at_review": "The Weight of Worlds",
+          "basis": "小说官方书介：Crusade用引力武器强加单一Truth并扭曲思想。",
+          "evidence_scope": "一次实际查询读官方The Weight of Worlds发布页内出版社梗概，支持研究所、单一Truth与引力武器；不补反派源头或Uhura具体选择，未读小说。 文学分类暂定；未升级核验。",
+          "sources": [
+            "https://www.startrek.com/news/new-tos-novel-the-weight-of-worlds-out-today"
+          ],
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q208460",
+          "title_at_review": "一九八四",
+          "basis": "Winston的工作涉及改写和销毁历史记录；党的真理要求及对他的强制改造，使证据判断与思想自主同时受到权力控制。",
+          "evidence_scope": "初始研究已列权力控制语言、证据与记忆的问题；补充准确已有作品知识作暂定聚类，本轮未新读正文。",
+          "status": "interpretive_grouping_unverified"
+        }
+      ]
     }
   ],
   "field_values": {
@@ -947,5 +1063,76 @@
       "强反事实设定",
       "混合或不适用"
     ]
-  }
+  },
+  "discovery_candidates": [
+    {
+      "proposed_dimension": "底层议题",
+      "proposed_label": "种族化与未来代表性",
+      "definition_boundary": "从种族排斥进入谁有权被写为未来主体，而非将一切包入异星接触。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q64831026",
+          "identity": {
+            "title": "Far Beyond the Stars",
+            "author": "史蒂文·巴恩斯"
+          },
+          "basis": "Barnes小说出版书介：1950年代Harlem的黑人作者不被允许讲黑人未来英雄。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Far-Beyond-the-Stars/Steven-Barnes/Star-Trek-Deep-Space-Nine/9780743420846"
+          ],
+          "exact_support_scope": "一次实际查询并单次打开出版社Far Beyond the Stars小说书介，支持两重身份、黑人作家与坚持写作；未读Barnes扩写正文，不借同名TV其他场景或后续Sisko精神状态。"
+        }
+      ],
+      "id": "discovery:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留首次具体作品依据，尚不向其余作品传播标签；点击作品继续查阅。"
+    },
+    {
+      "proposed_dimension": "底层议题",
+      "proposed_label": "惩罚劳动与生活目的",
+      "definition_boundary": "刑罚期限终结、重复劳动形成目的和自由恢复的张力。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q64831605",
+          "identity": {
+            "title": "The Last Tribble",
+            "author": "Keith Davis"
+          },
+          "basis": "短篇回读：Jones完成近十八年清tribble惩罚时失去人生目的，劳动有健康/知识意外收益。",
+          "sources": [
+            "https://deepspacespines.com/2024/07/05/264-strange-new-worlds-1/"
+          ],
+          "exact_support_scope": "一次实际查询读Deep Space Spines该选集中明确The Last Tribble短篇回读段，支持任务终点、目的失落与劳动意外收益；评论非原作，不分析同页其他短篇或借TV全集。"
+        }
+      ],
+      "id": "discovery:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留首次具体作品依据，尚不向其余作品传播标签；点击作品继续查阅。"
+    },
+    {
+      "proposed_dimension": "底层议题",
+      "proposed_label": "人口融合与社会共处",
+      "definition_boundary": "生育技术、迁移安排和长期共处，避免只按克隆技术分类。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q64706681",
+          "identity": {
+            "title": "Out of the Cocoon",
+            "author": "William Leisner"
+          },
+          "basis": "独立篇书介：无家Bringloidi与克隆生育危机Mariposans合并，十多年后仍有社会问题。",
+          "sources": [
+            "https://www.simonandschuster.com/books/Star-Trek-Out-of-the-Cocoon/William-Leisner/Star-Trek-Starfleet-Corps-of-Engineers/9780743496926"
+          ],
+          "exact_support_scope": "一次实际查询读搜索中Leisner独立Out of the Cocoon书介，支持两群体合并与后续问题；首结果同名多作者合订本不用于本条其他线，未读正文。"
+        }
+      ],
+      "id": "discovery:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留首次具体作品依据，尚不向其余作品传播标签；点击作品继续查阅。"
+    }
+  ]
 }
