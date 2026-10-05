@@ -1,7 +1,8 @@
 import {readProcessLogGitSnapshot,PROCESS_GZIP_PATH} from './process-log-storage.mjs';
 import {execFileSync} from 'node:child_process';
-import {mkdir, readdir, readFile, rm, writeFile} from 'node:fs/promises';
+import {mkdir, mkdtemp, readdir, readFile, rm, writeFile} from 'node:fs/promises';
 import {resolve, join} from 'node:path';
+import {tmpdir} from 'node:os';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
@@ -13,8 +14,14 @@ export async function buildSiteDelivery(repository, commit, output) {
   if (resolved !== commit) throw new Error('Dataset commit mismatch');
   await mkdir(output, {recursive: true});
   if ((await readdir(output)).length) throw new Error('Delivery output must be empty');
-  const archive = execFileSync('git', ['archive', commit, 'dist'], {cwd: repository, maxBuffer: 256 * 1024 * 1024});
-  execFileSync('tar', ['-xf', '-', '-C', output], {input: archive, maxBuffer: 1024 * 1024});
+  const temporary = await mkdtemp(join(tmpdir(), 'scifi-delivery-'));
+  try {
+    const archive = join(temporary, 'dist.tar');
+    execFileSync('git', ['archive', '--output', archive, commit, 'dist'], {cwd: repository, maxBuffer: 1024 * 1024});
+    execFileSync('tar', ['-xf', archive, '-C', output], {maxBuffer: 1024 * 1024});
+  } finally {
+    await rm(temporary, {recursive: true, force: true});
+  }
   const dist = join(output, 'dist');
   const origin = `https://raw.githubusercontent.com/changkun/scifi-exploration/${commit}/dist/`;
   const processLogicalFile = 'research/issue-source-searches.json';
