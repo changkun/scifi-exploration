@@ -7,7 +7,7 @@ import {mountTaxonomy} from './taxonomy.mjs';
 import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs?v=round88-single-pass';
 import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round88-single-pass';
 import {completionDetail,renderCompletion} from './completion.mjs?v=round88-single-pass';
-import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-102c3b3461b6';
+import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-9a78be253340';
 const $=id=>document.getElementById(id);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unique=arr=>[...new Set(arr)].sort((a,b)=>a.localeCompare(b,'zh-CN'));
