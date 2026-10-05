@@ -1,3 +1,4 @@
+import {applyClassifications} from './classifications.mjs';
 const unique = values => [...new Set(values.filter(Boolean))];
 const labels = values => (values || []).map(value => typeof value === 'string' ? value : value.label || value.id).filter(Boolean);
 export const UNKNOWN = '待分类';
@@ -60,7 +61,9 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
     };
     const supplement=supplements.get(id);
     if(supplement)applySupplement(w,supplement);
+    applyClassifications(w);
     w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, ...w.issue_facets.flatMap(f=>[f.label,f.question,f.basis]), ...(w.issue_alternatives||[]).map(a=>a.value), w.story_era, w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
+    w.search_text += ' ' + w.classification_assignments.map(assignment=>assignment.label).join(' ');
     return w;
   });
   return { works, aliases, spatial: { ...spatial, works: works.map(w => ({ ...(w.spatial_evidence || { primary: 'unknown', secondary: [], confidence: '未知', rationale: '没有足够的空间分类证据，保留待分类。' }), id: w.id })) } };

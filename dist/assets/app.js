@@ -1,12 +1,13 @@
-import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs';
+import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs';
+import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs?v=round65-single-pass';
 import {mountUniverse} from './universe.mjs';
 import {mountChronology} from './chronology.mjs?v=round4-context';
 import {mountBibliography} from './bibliography.mjs';
 import {mountTaxonomy} from './taxonomy.mjs';
-import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs?v=round64-single-pass';
-import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round64-single-pass';
-import {completionDetail,renderCompletion} from './completion.mjs?v=round64-single-pass';
-import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-e58eef94d622';
+import {buildCanonicalUniverse,coverageOf,FIELD_LABELS} from './canonical.mjs?v=round65-single-pass';
+import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round65-single-pass';
+import {completionDetail,renderCompletion} from './completion.mjs?v=round65-single-pass';
+import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-99510b497dd8';
 const $=id=>document.getElementById(id);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unique=arr=>[...new Set(arr)].sort((a,b)=>a.localeCompare(b,'zh-CN'));
@@ -26,7 +27,7 @@ function saveComparison(){try{localStorage.setItem('sf-atlas-comparison',JSON.st
 function updateFilters(){for(const key of ['level','space','yearStatus','audit','missing','issueStatus','facet'])$(`global-${key}`).value=state[key];$('global-search').value=state.query;for(const key of Object.keys(filterNames))$(`filter-${key}`).value=state[key];$('search-input').value=state.query;$('include-boundary').checked=state.boundary;$('chronology-boundary').checked=state.boundary;$('sort').value=state.sort;}
 function syncVisuals(){
  const filtered=filterWorks(works,state);
- const scopeSelections=Object.entries(state).filter(([key,value])=>value&&['query','topic','branch','duration','science','language','form','level','space','genre','type','audit','missing','issueStatus','facet','yearStatus','era'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);return `${({query:'搜索',level:'研究层级',space:'空间',yearStatus:'年份状态',audit:'核对状态',missing:'缺失字段',issueStatus:'议题分析',facet:'细分议题',genre:'来源分支',type:'来源类型',...filterNames})[key]}：${control?.selectedOptions?.[0]?.textContent||value}`;});
+ const scopeSelections=Object.entries(state).filter(([key,value])=>value&&['query','topic','branch','duration','science','language','form','level','space','genre','type','audit','missing','issueStatus','facet','classification','yearStatus','era'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);return `${({query:'搜索',level:'研究层级',space:'空间',yearStatus:'年份状态',audit:'核对状态',missing:'缺失字段',issueStatus:'议题分析',facet:'细分议题',classification:'新增分类',genre:'来源分支',type:'来源类型',...filterNames})[key]}：${(key==='classification'?classificationLabel(value):control?.selectedOptions?.[0]?.textContent||value)}`;});
  universe?.update(filtered,state.topic);universe?.setZone(state.space||'all');
  chronology?.update(filterWorks(works,{...state,yearMin:null,yearMax:null}),{works:filterWorks(works,{...DEFAULT_STATE,boundary:state.boundary}),label:scopeSelections.length?`当前条件：${scopeSelections.join('；')}`:'当前条件：全部记录'});
  if(state.yearStatus==='unknown')chronology?.setUnknown();else chronology?.setRange(state.yearMin,state.yearMax);
@@ -34,7 +35,7 @@ function syncVisuals(){
  $('chronology-filter-status').textContent=`当前匹配 ${filtered.length.toLocaleString('zh-CN')} / 底库 ${works.length.toLocaleString('zh-CN')} 条${state.space?` · 空间：${$('global-space').selectedOptions[0]?.textContent}`:''}；所有视图共用筛选。`;
  renderThemes(filtered);
  $('global-count').textContent=`${filtered.length.toLocaleString('zh-CN')} / ${works.length.toLocaleString('zh-CN')} 条`;
- $('global-active').innerHTML=Object.entries(state).filter(([key,value])=>value&&['query','level','space','yearStatus','topic','branch','era','duration','science','language','form','genre','type','yearMin','yearMax','audit','missing','issueStatus','facet'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);const label=key==='missing'?FIELD_LABELS[value]:control?.selectedOptions?.[0]?.textContent||value;const prefix=({query:'搜索：',level:'研究层级：',space:'空间：',yearStatus:'年份状态：'})[key]||'';return `<button data-clear="${key}" aria-label="移除筛选：${escape(prefix+label)}">${escape(prefix+label)} ×</button>`;}).join('');
+ $('global-active').innerHTML=Object.entries(state).filter(([key,value])=>value&&['query','level','space','yearStatus','topic','branch','era','duration','science','language','form','genre','type','yearMin','yearMax','audit','missing','issueStatus','facet','classification'].includes(key)).map(([key,value])=>{const control=$(`global-${key}`)||$(`filter-${key}`);const label=key==='missing'?FIELD_LABELS[value]:(key==='classification'?classificationLabel(value):control?.selectedOptions?.[0]?.textContent||value);const prefix=({query:'搜索：',level:'研究层级：',space:'空间：',yearStatus:'年份状态：'})[key]||'';return `<button data-clear="${key}" aria-label="移除筛选：${escape(prefix+label)}">${escape(prefix+label)} ×</button>`;}).join('');
 }
 function renderLibrary(){
  const filtered=filterWorks(works,state),pageCount=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
@@ -63,7 +64,7 @@ function renderContent(){
 }
 function renderThemes(themeWorks){
  renderIssueExplorer($('issue-explorer'),themeWorks);
- $('theme-list').innerHTML=content.topics.map((topic,i)=>`<article class="theme-item"><div class="theme-top"><span>${String(i+1).padStart(2,'0')} / QUESTION</span><span>${themeWorks.filter(w=>w.research_topics.includes(topic.title)).length} 条研究 / ${themeWorks.filter(w=>w.knowledge_topics.includes(topic.title)).length} 条知识补充 / ${themeWorks.filter(w=>w.topic_candidates.some(t=>t.topic===topic.title)).length} 条候选</span></div><h3>${escape(topic.title)}</h3><p>${escape(topic.core_question)}</p><div class="theme-examples">${themeWorks.filter(w=>w.topics.includes(topic.title)&&w.issue_analysis_status!=='missing').slice(0,4).map(w=>anchor(w.id)).join('')}</div><button class="browse-button" data-filter="topic" data-value="${escape(topic.title)}">按这一议题浏览 →</button></article>`).join('');
+ $('theme-list').innerHTML=content.topics.map((topic,i)=>`<article class="theme-item"><div class="theme-top"><span>${String(i+1).padStart(2,'0')} / QUESTION</span><span>${themeWorks.filter(w=>w.research_topics.includes(topic.title)).length} 条研究 / ${themeWorks.filter(w=>w.knowledge_topics.includes(topic.title)).length} 条知识补充 / ${themeWorks.filter(w=>w.topic_candidates.some(t=>t.topic===topic.title)).length} 条候选 / ${themeWorks.filter(w=>w.classification_assignments?.some(c=>c.axis==='topic'&&c.label===topic.title)).length} 条新增分类</span></div><h3>${escape(topic.title)}</h3><p>${escape(topic.core_question)}</p><div class="theme-examples">${themeWorks.filter(w=>w.topics.includes(topic.title)&&w.issue_analysis_status!=='missing').slice(0,4).map(w=>anchor(w.id)).join('')}</div><button class="browse-button" data-filter="topic" data-value="${escape(topic.title)}">按这一议题浏览 →</button></article>`).join('');
  $('theme-list').insertAdjacentHTML('beforeend',`<article class="theme-item"><h3>保留尚未整理的问题</h3><p>${themeWorks.filter(w=>!w.topics.length).length.toLocaleString('zh-CN')} 条尚无议题分类；${themeWorks.filter(w=>w.issue_analysis_status==='missing').length.toLocaleString('zh-CN')} 条尚无作品分析。分类标签与核心问题分析分别登记。</p><button class="browse-button" data-filter="issueStatus" data-value="missing">浏览分析尚未补充的作品 →</button></article>`);
 }
 function safeSource(url){try{const u=new URL(url);return u.protocol==='https:'||u.protocol==='http:'?u:null;}catch{return null;}}
@@ -87,7 +88,7 @@ function showComparison(){
  $('comparison-content').innerHTML=`<div class="table-scroll"><table class="comparison-table"><thead><tr><th scope="col">比较维度</th>${selected.map(w=>`<th scope="col">${escape(w.title_zh)}<small>${escape(w.author)}</small></th>`).join('')}</tr></thead><tbody>${rows.map(([label,render])=>`<tr><th scope="row">${label}</th>${selected.map(w=>`<td>${render(w)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;$('comparison-dialog').showModal();
 }
 function showToast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
-function applyFilter(key,value){if(location.hash!=='#library')location.hash='library';closeWork();if($('comparison-dialog').open)$('comparison-dialog').close();state[key]=['yearMin','yearMax'].includes(key)?(value===''?null:Number(value)):value;if(key==='era'&&value){state.yearStatus='';state.yearMin=null;state.yearMax=null;}state.page=1;renderNavigation();updateFilters();renderLibrary();$('library-view').scrollIntoView({behavior:'smooth',block:'start'});}
+function applyFilter(key,value){if(location.hash!=='#library')location.hash='library';closeWork();if($('comparison-dialog').open)$('comparison-dialog').close();state[key]=key==='classification'?[...new Set([...state.classification.split('|').filter(Boolean),value])].join('|'):['yearMin','yearMax'].includes(key)?(value===''?null:Number(value)):value;if(key==='era'&&value){state.yearStatus='';state.yearMin=null;state.yearMax=null;}state.page=1;renderNavigation();updateFilters();renderLibrary();$('library-view').scrollIntoView({behavior:'smooth',block:'start'});}
 function resetFilters(){state={...SITE_DEFAULT_STATE,layout:state.layout};updateFilters();renderLibrary();}
 function clearFilter(key){closeWork();state[key]=['yearMin','yearMax'].includes(key)?null:'';state.page=1;updateFilters();renderLibrary();}
 function registerEvents(){
@@ -113,12 +114,12 @@ async function init(){try{
  catalog.works.forEach((w,i)=>w.report_index=i+1);
  const [source,completion]=await Promise.all([loadBibliographySource(),loadCompletionSource()]);sourceMetadata=source.metadata;
  const canonical=buildCanonicalUniverse(source.records,catalog.works,spaceData,links,completion.records);
- works=canonical.works;aliases=canonical.aliases;content=navigation;spatial=canonical.spatial;
+ works=canonical.works;aliases=canonical.aliases;content={...navigation,topics:[...navigation.topics,...CLASSIFICATION_REGISTRY.categories.filter(c=>c.axis==='topic').map(c=>({title:c.label,core_question:c.definition}))]};spatial=canonical.spatial;
  allCoverage=coverageOf(works);spatialById=new Map(spatial.works.map(w=>[w.id,w]));byId=new Map(works.map(w=>[w.id,w]));
  renderCompletion($('completion-root'),works,completion.metadata);setOptions('global-facet',unique(works.flatMap(w=>w.issue_facets.map(f=>f.label))));setOptions('global-missing',Object.entries(FIELD_LABELS).map(([id,label])=>({id,label})));
 
  state=stateFromURL(location.search,works);if(!new URLSearchParams(location.search).has('boundary'))state.boundary=true;compareIds=readComparison();
- setOptions('filter-topic',[...content.topics.map(t=>t.title),{id:'__unknown__',label:'议题待分类'}]);setOptions('filter-branch',unique(works.flatMap(w=>w.branches)));setOptions('filter-era',ERA_BOUNDS);setOptions('filter-duration',[...DURATIONS,{id:'__unknown__',label:'跨度待分类 / 待核'}]);setOptions('filter-science',[...SCIENCES,{id:'__unknown__',label:'科学前提待分类'}]);setOptions('filter-language',unique(works.flatMap(w=>w.languages)));setOptions('filter-form',unique(works.flatMap(w=>w.forms)));
+ setOptions('filter-topic',[...content.topics.map(t=>t.title),{id:'__unknown__',label:'议题待分类'}]);setOptions('filter-branch',unique(works.flatMap(w=>w.branches)));setOptions('filter-era',ERA_BOUNDS);setOptions('filter-duration',[...unique([...DURATIONS,...works.map(w=>w.duration)]),{id:'__unknown__',label:'跨度待分类 / 待核'}]);setOptions('filter-science',[...unique([...SCIENCES,...works.map(w=>w.science_class)]),{id:'__unknown__',label:'科学前提待分类'}]);setOptions('filter-language',unique(works.flatMap(w=>w.languages)));setOptions('filter-form',unique(works.flatMap(w=>w.forms)));
  universe=mountUniverse($('universe-root'),{works,spatial,onWork:openWork,onTopic:value=>{state.topic=value;state.page=1;updateFilters();renderLibrary();},onReset:resetFilters,onZone:value=>{state.space=value==='all'?'':value;state.page=1;updateFilters();renderLibrary();},onTimeline:()=>{location.hash='chronology';renderNavigation();}});
  chronology=mountChronology($('chronology-root'),{works,onWork:openWork,onRange:(min,max)=>{state.yearMin=min;state.yearMax=max;state.yearStatus='';state.era='';state.page=1;updateFilters();renderLibrary();},onUnknownYear:()=>{state.yearStatus='unknown';state.yearMin=null;state.yearMax=null;state.era='';state.page=1;updateFilters();renderLibrary();}});
  bibliography=mountBibliography($('bibliography-root'),{onWork:openWork,onChange:patch=>{Object.assign(state,patch);state.page=1;updateFilters();renderLibrary();}});
