@@ -1,5 +1,5 @@
 // Complete data is served from this immutable, published repository commit.
-const DATASET_ORIGIN = "https://raw.githubusercontent.com/changkun/scifi-exploration/e8e4f037818d3cf06fed11bb7a70ccf60b608afa/dist/";
+const DATASET_ORIGIN = "https://raw.githubusercontent.com/changkun/scifi-exploration/eeb5b2b9fbfaad1249fa5bcb8b24648611f2f65d/dist/";
 function datasetURL(relative) {
  if(typeof relative !== 'string' || !/^\.\/assets\/[A-Za-z0-9_/-]+\.json$/.test(relative) || relative.includes('..')) throw new Error('Dataset path is invalid');
  return DATASET_ORIGIN + relative.slice(2);
