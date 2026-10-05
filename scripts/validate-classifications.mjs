@@ -7,6 +7,68 @@ import {DEFAULT_STATE,filterWorks,stateFromURL,searchFromState} from '../dist/as
 const works=JSON.parse(gunzipSync(await readFile(new URL('../research/canonical-universe.json.gz',import.meta.url)))).works;
 const byId=new Map(works.map(work=>[work.id,work]));
 const registry=JSON.parse(await readFile(new URL('../research/classification-registry.json',import.meta.url),'utf8'));
+// A historical bibliography-only discovery remains immutable when separate,
+// later evidence adds core analysis. Validate that continuation independently.
+const historicalHash = value => {
+  const sort = value => Array.isArray(value) ? value.map(sort) : value && typeof value === 'object'
+    ? Object.fromEntries(Object.keys(value).sort().map(key => [key, sort(value[key])])) : value;
+  return createHash('sha256').update(JSON.stringify(sort(value))).digest('hex');
+};
+const historicalUpdates = new Map();
+const updateInputs = [];
+for (const input of registry.metadata.evidence_update_inputs || []) {
+  assert(input.file.startsWith('research/classification-discovery-audits/') && !input.file.includes('..'));
+  const bytes = await readFile(new URL('../' + input.file, import.meta.url));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), input.sha256);
+  const audit = JSON.parse(bytes);
+  assert.equal(audit.new_queries_from_annotation, 0);
+  assert.equal(audit.new_core_from_annotation, 0);
+  updateInputs.push(...audit.updates);
+}
+assert.deepEqual(registry.discovery_evidence_updates || [], updateInputs);
+for (const update of updateInputs) {
+  const candidate = registry.discovery_candidates.find(item => item.id === update.candidate_id);
+  const evidence = candidate?.work_evidence.find(item => item.id === update.work_id);
+  const work = byId.get(update.work_id);
+  assert(candidate && evidence && work);
+  assert.equal(historicalHash(candidate), update.original_candidate_record_sha256);
+  assert.equal(historicalHash(evidence), update.original_work_evidence_sha256);
+  assert.equal(evidence.discovery_source_mode, update.original_source_mode);
+  assert.equal(update.status, 'later_separate_core_analysis_added_unverified');
+  for (const field of ['historical_bibliographic_scope_unchanged', 'classification_still_pending']) assert.equal(update[field], true);
+  for (const field of ['independent_verification_upgrade', 'original_full_text_read']) assert.equal(update[field], false);
+  const records = [];
+  for (const ref of [update.analysis_input, update.log_input]) {
+    assert(ref.file.startsWith('research/issue-input-snapshots/') && !ref.file.includes('..'));
+    const bytes = await readFile(new URL('../' + ref.file, import.meta.url));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), ref.file_sha256);
+    assert(Number.isInteger(ref.record_index));
+    const record = JSON.parse(bytes).records[ref.record_index];
+    assert.equal(historicalHash(record), ref.record_sha256);
+    assert.equal(record.id, work.id);
+    assert.deepEqual(record.identity, update.identity);
+    records.push(record);
+  }
+  const [analysis, log] = records;
+  assert.deepEqual(update.identity, {title: work.title_zh, author: work.author});
+  assert.equal(analysis.verification_status, 'knowledge_added_unverified');
+  assert(analysis.fields.issue && analysis.fields.issue_facets.length >= 2);
+  assert.deepEqual(analysis.sources, update.sources);
+  assert.equal(analysis.source_evidence[0].support_scope, update.support_scope);
+  assert.deepEqual(log.sources, analysis.source_evidence);
+  assert(log.queries.length > 0);
+  assert(update.sources.every(url => !evidence.sources.includes(url)));
+  assert(analysis.source_evidence.every(item => item.reading_status === 'actually_read_support_scope_only'));
+  const active = work.knowledge.assertions.find(item => item.input_file === update.active_analysis_input && item.id === work.id);
+  const {input_file, ...activeRecord} = active || {};
+  assert.deepEqual(activeRecord, analysis);
+  assert.deepEqual(work.source_search_log.raw_reading_log, log);
+  assert.equal(work.issue, analysis.fields.issue);
+  assert.equal(work.completion.source_verified, false);
+  const key = update.candidate_id + ':' + update.work_id;
+  assert(!historicalUpdates.has(key));
+  historicalUpdates.set(key, update);
+}
 assert.deepEqual(CLASSIFICATION_REGISTRY,registry);
 if(registry.metadata.previous_version){
   const previousBytes=await readFile(new URL('../'+registry.metadata.previous_version.file,import.meta.url));
@@ -74,7 +136,8 @@ for(const candidate of registry.discovery_candidates||[]){
       assert.equal(evidence.actual_bibliographic_source_read,true);
       assert.equal(evidence.actual_content_source_read,false);
       assert.equal(evidence.knowledge_analysis,false);
-      assert.equal(work.issue_analysis_status,'missing');
+      if (!historicalUpdates.has(candidate.id + ':' + evidence.id)) assert.equal(work.issue_analysis_status,'missing');
+      else assert.notEqual(work.issue_analysis_status,'missing');
       assert(evidence.sources.every(url=>work.source_search_log?.materials_checked.some(material=>
         material.url===url && material.actual_bibliographic_source_read===true &&
         material.actual_content_source_read===false && material.reading_scope)));
@@ -111,3 +174,99 @@ for(const candidate of registry.discovery_candidates||[]){
 assert(renderClassifications(works).includes('未按新维度整理'));
 assert(!classificationDetail({...sample,classification_assignments:[{...sample.classification_assignments[0],basis:'<script>bad</script>'}]}).includes('<script>'));
 console.log('PASS versioned registry, exact evidence, multi-axis intersections, shareable URLs, extensible values, identity corrections and escaped UI');
+
+// Appended to the existing registry validator. Original candidate history and
+// original promoted-discovery checks remain intact; reviews are additive.
+const canonicalRecordHash = value => {
+  const sorted = value => Array.isArray(value) ? value.map(sorted) : value && typeof value === 'object'
+    ? Object.fromEntries(Object.keys(value).sort().map(key => [key, sorted(value[key])])) : value;
+  return createHash('sha256').update(JSON.stringify(sorted(value))).digest('hex');
+};
+const resolveRecordPointer = (value, pointer) => {
+  assert(pointer.startsWith('$'));
+  for (const [, key, index] of pointer.slice(1).matchAll(/\.([A-Za-z_][A-Za-z_0-9]*)|\[(\d+)\]/g)) {
+    value = key ? value[key] : value[Number(index)];
+  }
+  return value;
+};
+const reviewDocuments = new Map();
+for (const input of registry.metadata.review_inputs || []) {
+  const bytes = await readFile(new URL('../' + input.file, import.meta.url));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), input.sha256);
+  reviewDocuments.set(input.file, JSON.parse(bytes));
+}
+const latestReviews = new Map();
+for (const review of registry.discovery_reviews || []) {
+  assert.equal(review.status, 'promoted_unverified');
+  assert.equal(review.independent_verification_upgrade, false);
+  assert.equal(review.core_result_unchanged, true);
+  const candidate = registry.discovery_candidates.find(item => item.id === review.candidate_id);
+  assert(candidate);
+  assert.equal(canonicalRecordHash(candidate), review.original_candidate_record_sha256);
+  const proposal = reviewDocuments.get(review.review_input)?.proposals.find(item => item.category_id === review.category_id);
+  assert(proposal);
+  const original = proposal.work_memberships.find(item => item.id === review.work_id && item.original_candidate_id === review.candidate_id);
+  assert(original);
+  const category = registry.categories.find(item => item.id === review.category_id);
+  assert.equal(category.label, proposal.label);
+  assert.equal(category.definition, proposal.definition);
+  assert.deepEqual(category.boundaries, proposal.boundaries);
+  assert.deepEqual(category.retained_subtypes, proposal.retained_subtypes);
+  const member = category.members.find(item => item.work_id === review.work_id);
+  const work = byId.get(review.work_id);
+  assert.deepEqual(original.identity, {title: work.title_zh, author: work.author});
+  assert.equal(member.title_at_review, original.identity.title);
+  assert.equal(member.author_at_review, original.identity.author);
+  assert.equal(member.basis, original.membership_basis);
+  assert.equal(member.evidence_scope, original.adoption_support_scope);
+  assert.equal(member.membership_extent, original.membership_extent);
+  assert.equal(member.membership_boundary, original.membership_boundary);
+  assert.deepEqual(member.sources, original.source_urls);
+  assert.equal(review.support_scope, member.evidence_scope);
+  assert.equal(review.membership_extent, member.membership_extent);
+  assert.equal(work.issue_analysis_status, original.canonical_core_status);
+  assert.equal(work.completion.source_verified, false);
+  for (const ref of [...original.original_candidate_inputs, ...original.original_analysis_inputs, original.original_log_input]) {
+    assert(ref.file.startsWith('research/') && !ref.file.includes('..'));
+    const bytes = await readFile(new URL('../' + ref.file, import.meta.url));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), ref.file_sha256);
+    const record = resolveRecordPointer(JSON.parse(bytes), ref.record_pointer);
+    assert.equal(canonicalRecordHash(record), ref.record_sha256);
+    if (original.original_analysis_inputs.includes(ref)) {
+      assert.deepEqual(record.identity, original.identity);
+      assert.equal(record.fields.issue, work.issue);
+    }
+    if (ref === original.original_log_input) {
+      assert.equal(record.id, work.id);
+      assert.deepEqual(record.identity, original.identity);
+    }
+  }
+  if (review.evidence_mode === 'scoped_form_source_without_core') {
+    assert.equal(category.axis, 'form');
+    assert.equal(work.issue_analysis_status, 'missing');
+    assert.equal(original.original_analysis_inputs.length, 0);
+    const evidence = candidate.work_evidence.find(item => item.id === work.id);
+    assert.equal(evidence.discovery_source_mode, 'scoped_candidate_no_core_analysis');
+    assert.equal(evidence.actual_content_source_read, true);
+    assert.equal(evidence.knowledge_analysis, false);
+    assert(member.sources.every(url => work.source_search_log.materials_checked.some(material =>
+      material.url === url && material.actual_content_source_read === true &&
+      material.knowledge_analysis === false && material.reading_scope &&
+      material.scope_evidence_sha256 === evidence.private_raw_source.sha256)));
+  } else {
+    assert.equal(review.evidence_mode, 'frozen_core_scoped_interpretation');
+    assert(original.original_analysis_inputs.length);
+    assert(member.sources.every(url => work.knowledge.sources.includes(url)));
+  }
+  assert(classificationDetail(work).includes('本条适用范围'));
+  assert(work.classification_assignments.some(item => item.id === category.id && item.membership_boundary === member.membership_boundary));
+  latestReviews.set(review.candidate_id, review);
+}
+if (registry.metadata.previous_version) {
+  const previous = JSON.parse(await readFile(new URL('../' + registry.metadata.previous_version.file, import.meta.url)));
+  assert.deepEqual((registry.discovery_reviews || []).slice(0, (previous.discovery_reviews || []).length), previous.discovery_reviews || []);
+}
+const currentlyPending = registry.discovery_candidates.filter(candidate => !latestReviews.has(candidate.id));
+assert(renderClassifications(works).includes(currentlyPending.length + ' 个待比较方向'));
+assert(renderClassifications(works).includes('分类边界与细分机制'));
+console.log('PASS additive discovery reviews, frozen public input hashes, exact memberships and visible work/member/version/project boundaries');

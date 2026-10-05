@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "method": "work-specific-classification-proposals-v1",
+    "status": "private_frozen_candidate_checkpoint",
+    "assignment_status": "frozen_retry_assignment",
+    "lane": 2,
+    "delegate": "modern_history",
+    "ownership_file": "work/evidence/quick-retry2-lane-2.json",
+    "ownership_sha256": "1d0623bb95ec95be038d68eeeda5404a04ebc150f86e82133086b36d194428ae",
+    "source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+    "source_analysis_file": "work/evidence/quick-retry2-modern-round4.json",
+    "source_analysis_sha256": "f08e5ddea11ad6cf18e072f877bfd2a443dc986b720ad486c68989d78d1fc8f5",
+    "source_log_file": "work/evidence/quick-retry2-modern-round4-log.json",
+    "source_log_sha256": "bfdc770b01fd72083c1e988199a11297293b0b306dbd4f4075e49376217f9beb",
+    "note": "只补同批实际官方设定明确且R85原unknown的场所；无新检索，不由宇宙危机主题或现实厂区取材推舞台。",
+    "candidate_count": 2,
+    "public_registry_modified": false,
+    "scope": "一项作者明确取材机制，一项仅书目支持的版本阶段；不自动分类、不改变原媒体/日期/身份或核心统计。"
+  },
+  "records": [
+    {
+      "proposed_dimension": "现实与未来关系 / 历史脉络",
+      "proposed_label": "现实工业设施的奇幻转置",
+      "definition_boundary": "作者明确把真实工业厂区的空间组织和劳动经验转成非现实生命/装置的生产场景；区别于泛泛工业风格，不由真实取材推定虚构发生在地球。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134694501",
+          "identity": {
+            "title": "Cold Iron",
+            "author": "迈克尔·斯万维克"
+          },
+          "basis": "作者明确ColdIron是第一部分，其dragonfactory建筑布局取自NorthPhiladelphia的BaldwinLocomotiveWorks，并承认Dickens影响；这是取材声明，非历史劳工事实逐条核验。",
+          "sources": [
+            "https://michaelswanwick.com/revan/idda.html"
+          ],
+          "exact_support_scope": "一次查询实际返回作者存档讨论ColdIron部分及龙工厂现实厂区取材；直接openTimeout失败，原篇未读，不把长篇其它大学/商场部分推广到ColdIron。",
+          "raw_query": "\"Cold Iron\" site:michaelswanwick.com",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r4-search-batch1.json",
+          "raw_search_sha256": "e0a7ebe54dd78b47cc1005e7e517f7fc397a36f951fc2c714fa6a53cfa427c3d",
+          "raw_search_record_sha256": "3db486ee7e97f9e6d8e67ffada51bd25c0771e31f684a0e8babfbcc7b2e52e75",
+          "bibliographic_scope_only": false,
+          "actual_content_source_read": true,
+          "core_analysis_added": true
+        }
+      ]
+    },
+    {
+      "proposed_dimension": "文本形式 / 媒介版本与历史脉络",
+      "proposed_label": "脚本、试播与漫画版本的分阶段转写",
+      "definition_boundary": "作者书目明确区分脚本写作、试播拍摄、录像发行和后来漫画改编的不同日期/形态；只有书目对应不足以证明不同版本情节相同，须保留当前实体归属疑点。",
+      "verification_status": "candidate_from_bibliographic_material_identity_boundary_unverified",
+      "work_evidence": [
+        {
+          "id": "Q102076237",
+          "identity": {
+            "title": "Doorways",
+            "author": "乔治·R·R·马丁"
+          },
+          "basis": "作者书目列Doorways写于1991、拍于1992、视频1993；本人2010说明漫画与视频人物造型不同，2010–2011漫画是后来的转写。",
+          "sources": [
+            "https://georgerrmartin.com/bibliography/",
+            "https://georgerrmartin.com/notablog/tag/doorways/"
+          ],
+          "exact_support_scope": "一次官网定向查询读到作者书目和改编说明；只支持日期/载体差异，当前1992literary实体的具体文本仍未解决，核心延期；不采用试播/漫画剧情。",
+          "raw_query": "\"Doorways\" site:georgerrmartin.com",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r4-search-batch1.json",
+          "raw_search_sha256": "e0a7ebe54dd78b47cc1005e7e517f7fc397a36f951fc2c714fa6a53cfa427c3d",
+          "raw_search_record_sha256": "d734955bd7cdb83e35ee212b6ac88221315588cff775716cdd642b3b49ce89f1",
+          "bibliographic_scope_only": true,
+          "actual_content_source_read": false,
+          "core_analysis_added": false
+        }
+      ]
+    }
+  ]
+}

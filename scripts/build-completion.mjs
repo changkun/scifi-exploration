@@ -3,6 +3,7 @@ import {registeredValues,CLASSIFICATION_REGISTRY} from '../dist/assets/classific
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
 import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
 import {completionChunks,completionDelivery} from './completion-delivery.mjs';
 import {validateSpatialEvidence} from './spatial-evidence.mjs';
@@ -31,6 +32,9 @@ for(const r of sourceSearch.records){
  if(!canonicalIds.has(r.id)||sourceSearchMap.has(r.id)||!r.identity?.title||!r.identity?.author||!titles.includes(norm(r.identity.title))||!authors.includes(norm(r.identity.author))||!Array.isArray(r.queries)||r.queries.some(q=>typeof q!=='string'||!q.trim())||!Array.isArray(r.materials_checked)||r.materials_checked.some(m=>!/^https?:\/\//.test(m.url)||typeof m.result!=='string'||!m.result.trim())||!r.attempt_state||!r.reason_unconfirmed||!r.next_step)throw new Error('Invalid actual source-search log: '+r.id);
  sourceSearchMap.set(r.id,{input_file:'research/issue-source-searches.json',log_date:sourceSearch.metadata.created_at,...r});
 }
+// Canonical identity/grain is retained while each spatial input is checked
+// against the core assertions and process history assembled in this build.
+const canonicalSpatialContext=new Map((await gz('research/canonical-universe.json.gz')).works.map(work=>[work.id,work]));
 const topics=new Set([...catalog.works.flatMap(r=>r.topics),...registeredValues('topic')]),spaces=new Set(['earth','planetary','interstellar','galactic','cosmic','abstract','unknown']);
 const durations=new Set(CLASSIFICATION_REGISTRY.field_values.duration);
 const sciences=new Set(CLASSIFICATION_REGISTRY.field_values.science_class);
@@ -56,7 +60,9 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
       if(Object.keys(r.fields).some(k=>!['spatial_primary','spatial_secondary','spatial_rationale'].includes(k)))throw new Error('Spatial batch changes unrelated field: '+r.id);
       if(!spaces.has(r.fields.spatial_primary)||r.fields.spatial_primary==='unknown'||!r.fields.spatial_rationale?.trim())throw new Error('Spatial judgment absent: '+r.id);
       if(r.fields.spatial_secondary&&(!Array.isArray(r.fields.spatial_secondary)||r.fields.spatial_secondary.some(s=>!spaces.has(s)||s==='unknown'||s===r.fields.spatial_primary)))throw new Error('Invalid secondary space: '+r.id);
-      validateSpatialEvidence(r,{issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id)});
+      const priorSpatialContext=canonicalSpatialContext.get(r.id);
+      const currentWork=priorSpatialContext ? {...priorSpatialContext,knowledge:{...priorSpatialContext.knowledge,assertions:knowledge.get(r.id)?.assertions},source_search_log:sourceSearchMap.get(r.id)} : undefined;
+      validateSpatialEvidence(r,{issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id),currentWork,repoDir:fileURLToPath(root)});
     }
     if(r.fields.duration&&!durations.has(r.fields.duration))throw new Error('Invalid duration: '+r.id);
     if(r.fields.science_class&&!sciences.has(r.fields.science_class))throw new Error('Invalid science: '+r.id);

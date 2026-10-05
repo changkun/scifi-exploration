@@ -1,0 +1,56 @@
+{
+  "round": 87,
+  "status": "all_checks_passed_before_source_commit",
+  "checks": [
+    {
+      "validator": "scripts/validate.mjs",
+      "log_sha256": "0a05a0736182b5ab7292b38b25046a93730abbabb1913527a24ab3cf838f6e6c",
+      "exit_code": 0
+    },
+    {
+      "validator": "scripts/validate-unified.mjs",
+      "log_sha256": "195ca7cd5dca8e19c95769ecaa2bb87d1253b75b6acbcccb43088c4a0d543495",
+      "exit_code": 0
+    },
+    {
+      "validator": "scripts/validate-issues.mjs",
+      "log_sha256": "dd5a164a6e5efaf4af4e0563bf706b4a86a406ce68bac3841c7c8cd3f23992ee",
+      "exit_code": 0
+    },
+    {
+      "validator": "scripts/validate-reading-queue.mjs",
+      "log_sha256": "db82a7163e643322064293a6eaa460851766d3187816208e555b5f5d4fadef36",
+      "exit_code": 0
+    },
+    {
+      "validator": "scripts/validate-classifications.mjs",
+      "log_sha256": "739964e48a9b03626096d277c1780b5cb2b9267140557195754648f40ad1067c",
+      "exit_code": 0
+    },
+    {
+      "validator": "scripts/validate-completion.mjs",
+      "log_sha256": "909b38969e3663f36bb5c3a053007382eba582a4c59748b6b16de200e722beed",
+      "exit_code": 0
+    }
+  ],
+  "preservation": {
+    "status": "passed",
+    "baseline_commit": "999045e668f208951346e0990aca3f2dba637d8d",
+    "new_core": 49,
+    "new_spatial": 279,
+    "retry_logs": 256,
+    "new_categories": 5,
+    "new_category_links": 11,
+    "new_pending_candidates": 4,
+    "all_original_candidate_records": 133,
+    "current_pending_candidates": 126,
+    "identity_and_date_and_grain_preserved": true,
+    "all_other_fields_preserved": true,
+    "design_preserved": true,
+    "changed_record_count": 533
+  },
+  "historical_source_scope_unchanged": true,
+  "first_pass_metadata_absence_handled_by_strict_frozen_adapter": true,
+  "new_validation_failure_repair_queries": 0,
+  "original_inputs_immutable": true
+}

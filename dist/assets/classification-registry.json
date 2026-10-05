@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 18,
+    "version": 19,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v17.json",
-      "sha256": "5e082363261ea94a1f3ddcad83c6c66ab95e9ee3fdfea01ea7614ac6d00dcc1a"
+      "file": "research/classification-registry-history/v18.json",
+      "sha256": "4a6956b55e6c39f939177ff8e37006a213555d56f76a802ead5c6d839d8990e5"
     },
-    "revision_note": "第86批保留V17八维34入口、67人工种子/91关联及125旧候选；追加8个准确原缓存支持的跨维待比较方向。目录与剧情范围分开，不自动标签，不增加核心或核验等级。",
+    "revision_note": "保留V18八维34入口及133原候选；经逐身份资料范围比较增加5个暂定分类入口和11条关联，原候选通过附加review留存；另追加4个待比较方向。形式资料不能替代核心剧情补全，选篇/版本/项目限定逐项保留。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -276,6 +276,34 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r2.json",
         "sha256": "66d1b7fa5600866d9f1797baeaecd53e43cabefcb0ee2a82484b45c1a47d1b82"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-global-classification-candidates-round3.json",
+        "sha256": "cda35fc8474ac11578d522529d0c37553f3f5b62cc324cb625e9d9ec6867a86d"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-global-classification-candidates-round4.json",
+        "sha256": "11fa9a0aab23af88f7240fba3205c0935ba91d0c08288f4ac4fe590eb5265d30"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r4.json",
+        "sha256": "78d45dc29260a85a5d2dd46367f7de0f9a3b24d929bf2de1cbf825b8ed6faf16"
+      }
+    ],
+    "review_inputs": [
+      {
+        "file": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+        "sha256": "cb046ed8439e8ea7832ec31c9ef6bbff3eca070ea353e286fe79c1197ecbe33d"
+      },
+      {
+        "file": "research/classification-discovery-audits/classification-v18-promotion-audit-modern.json",
+        "sha256": "7dfc548c96ff6d04e35194c6adceb530b5cc4713ca70dd44637c90e5fa58a118"
+      }
+    ],
+    "evidence_update_inputs": [
+      {
+        "file": "research/classification-discovery-audits/round87-historical-discovery-evidence-updates.json",
+        "sha256": "2e746c44992851c2594c7df276fe02133e86bab07ae27e0e2b6e3734e891bb02"
       }
     ]
   },
@@ -1492,6 +1520,365 @@
             "https://www.kawade.co.jp/np/isbn/9784309277011/"
           ],
           "status": "interpretive_grouping_unverified"
+        }
+      ]
+    },
+    {
+      "id": "time:asynchronous-experience",
+      "axis": "time",
+      "label": "异步时间经验",
+      "definition": "角色的清醒经验、心智过程或自身活动时间与身体时钟／共享外部纪年明确失同步。按具体因果机制保留细分，不把较大的年份或长寿自动归入。",
+      "status": "研究分类·暂定待核",
+      "revision": 19,
+      "related_categories": [
+        "time:intervention",
+        "time:repetition",
+        "science:carrier",
+        "topic:asynchronous-backup-and-consent"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "不等同发表年、故事年代或叙事duration；三者原值不变。",
+        "与跨时代干预、循环重演各自独立；没有干预或循环也可能异步。",
+        "相对时间差、反事实身心分离、上传意识间歇运行不能合成同一种科学机制或可行性判断。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "旅程与故乡时钟差",
+          "members": [
+            "Q3223030"
+          ]
+        },
+        {
+          "label": "反事实身体／心智时间分离",
+          "members": [
+            "Q134706316"
+          ]
+        },
+        {
+          "label": "意识间歇运行",
+          "members": [
+            "Q131472325"
+          ]
+        }
+      ],
+      "comparison_note": "Grownups的合集与单篇是同一故事证据，不能冒充两个独立支持；成长变化不必具有主客观时间差。倒序叙述与阅读路径顺序属于表达机制，并不自动说明角色经历异步时间。",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+      "members": [
+        {
+          "work_id": "Q3223030",
+          "title_at_review": "Starmasters' Gambit",
+          "author_at_review": "Gérard Klein",
+          "basis": "被招募的Jerg航行十个自身年份时，地球已过去千年；归乡脱同步由旅程的相对时间差造成。",
+          "evidence_scope": "单作起始概述；未读正文，招募制度是本作的附加细分，不传播到另外两作。",
+          "membership_boundary": "有身体/故乡两套时钟；不把该小说表述当相对论参数的现实验证。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://fr.wikipedia.org/wiki/Le_Gambit_des_%C3%A9toiles"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r10:2"
+        },
+        {
+          "work_id": "Q134706316",
+          "title_at_review": "The Life of Your Time",
+          "author_at_review": "波尔·安德森",
+          "basis": "Tau Ceti旅程中，故事反事实地让身体遵循相对论时间效应而心智不遵循。",
+          "evidence_scope": "逐篇评论中本篇的明确前提；不借相邻Time Heals等篇的冷冻剧情。",
+          "membership_boundary": "身体/心智分离是虚构例外，不是现实相对论推论；未确知精确主观时长。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://strangerthansf.com/reviews/anderson-dialoguewithdarkness.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r14:1"
+        },
+        {
+          "work_id": "Q131472325",
+          "title_at_review": "Utriusque Cosmi",
+          "author_at_review": "羅伯特·查爾斯·威爾森",
+          "basis": "上传意识以关闭与再启的间歇运行形成saccades，使千年外部间隔仅对应几秒清醒经验。",
+          "evidence_scope": "两篇评论针对Wilson本篇的timesliding说明，原篇未全文读。",
+          "membership_boundary": "意识停启，不把同页其他作品的肉身休眠、The Island等设定套入。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://phantazine.blogspot.com/2012/01/",
+            "https://ayearofstoriespirate.blogspot.com/2009/07/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry2-modern-classification-candidates-r2:1"
+        }
+      ]
+    },
+    {
+      "id": "science:chemical-experience-narration",
+      "axis": "science",
+      "label": "化学介入的记忆与故事经验",
+      "definition": "材料明确让药物／制剂成为借入记忆或个体想象故事经验的介入媒介；保留记忆输入与想象激发两种不同机制。",
+      "status": "研究分类·暂定待核",
+      "revision": 19,
+      "related_categories": [
+        "science:carrier",
+        "topic:memory",
+        "topic:replayable-experience-consent"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "两份证据均仅支持合集中的明确选篇，展示应显著附选篇范围。",
+        "不声称制剂现实可行，不改变science_class；Iluzyt仅为转录对话里的设想。",
+        "一般失忆、任意精神药物、现实创作软件或未经资料指明的药物故事不自动入类。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "他人记忆药物与叙述人称切换",
+          "members": [
+            "Q20740464"
+          ]
+        },
+        {
+          "label": "想象刺激与个体故事差异",
+          "members": [
+            "Q11711771"
+          ]
+        }
+      ],
+      "comparison_note": "共享梦境、AI实际写作工具、工作后清除记忆各有不同材料，不因都涉及体验而归入化学机制。第二人称仅在2045选篇有证据，不传播给Iluzyt。",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+      "members": [
+        {
+          "work_id": "Q20740464",
+          "title_at_review": "2045 - Thirty years from now",
+          "author_at_review": "作者未知",
+          "basis": "Alvilágosodás以他人的记忆制作纳米药物；作者说明药物掌控主角心智时切换第二/第三人称。",
+          "evidence_scope": "仅2045选集中的Sümegi Attila单篇创作说明，未读该篇全文或另十五篇。",
+          "membership_boundary": "收录单位为合集ID；成员层面支持，不能称整个合集每篇均有药物机制。",
+          "membership_extent": "collection_selected_member:Alvilágosodás",
+          "sources": [
+            "https://sumegiattila.blogspot.com/2015/05/alvilagosodas-avagy-koncepcio.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-root-classification-candidates-round4:1"
+        },
+        {
+          "work_id": "Q11711771",
+          "title_at_review": "Iluzyt",
+          "author_at_review": "Janusz Zajdel",
+          "basis": "同名短篇转录对话设想刺激想象的制剂，让同一提示在不同脑中形成不同故事，另一人称其为iluzyt。",
+          "evidence_scope": "仅同名集里同名篇L64–67的转录对话；不是整篇或全合集核验。",
+          "membership_boundary": "对话里的条件性设想；不补制剂被实际服用、临床有效或AI生成机制。",
+          "membership_extent": "collection_selected_member:Iluzyt",
+          "sources": [
+            "https://iluzyt.pl/autor"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r12:1"
+        }
+      ]
+    },
+    {
+      "id": "form:compiled-fictional-records",
+      "axis": "form",
+      "label": "虚构记录的拼编叙事",
+      "definition": "故事通过多类世界内部记录及其编排来呈现：研究日志、笔记、录音，或译录、监听、报道和文书卷宗；编辑中介构成形态的一部分。",
+      "status": "研究分类·暂定待核",
+      "revision": 19,
+      "related_categories": [
+        "narrative:investigation",
+        "topic:historical-evidence-and-collective-identity",
+        "form:reference-documentation"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "不是仅含一封信或一个新闻片段即归入。",
+        "资料发生在虚构世界；真实批评合集、百科或创作档案不等于这种叙事形态。",
+        "单作的报告框架与司法卷宗保留细分；不把二者都改称警方调查。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "研究报告与记录编排",
+          "members": [
+            "Q130629234"
+          ]
+        },
+        {
+          "label": "多文书司法卷宗",
+          "members": [
+            "Q134080768"
+          ]
+        }
+      ],
+      "comparison_note": "人物拟传记另列；通信主导的一种文书、单音频记录、后代阅读祖辈文本尚不证明异质资料拼编。真实小说／评论混合选集的编辑结构也不等于虚构文书。",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+      "members": [
+        {
+          "work_id": "Q130629234",
+          "title_at_review": "Death and Designation Among the Asadi",
+          "author_at_review": "邁克爾·畢曉普",
+          "basis": "1973独立中篇明确由Chaney个人日志、研究笔记与现场录音，经Thomas Benedict编排呈现。",
+          "evidence_scope": "针对1973中篇的评论形态说明；后来Transfigurations只用于身份边界。",
+          "membership_boundary": "研究资料的编辑框架，不借扩写后女儿与改造猿的六年后行动。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://sciencefictionruminations.com/2014/04/22/guest-post-death-and-designation-among-the-asadi-michael-bishop-1973/",
+            "https://www.baen.com/transfigurations.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-global-classification-candidates-round8:1"
+        },
+        {
+          "work_id": "Q134080768",
+          "title_at_review": "Reproduction interdite",
+          "author_at_review": "Jean-Michel Truong",
+          "basis": "本作将计算机译录、监听、报道、报告与信件等约百件文书拼成调查卷宗。",
+          "evidence_scope": "作者保存的媒体评论页里Gérard Hirsinger所写卷宗描述；未读小说正文。",
+          "membership_boundary": "约百件文书的依据归Hirsinger段落，而非移给Werber评论或相邻Josh/Max小说。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://jean-michel-truong.com/reproduction_interdite/page/media.html",
+            "https://www.jean-michel-truong.com/reproduction_interdite/page/articles/werber.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:root-known-year-classification-candidates-r10:2"
+        }
+      ]
+    },
+    {
+      "id": "form:fictional-person-documentary-biography",
+      "axis": "form",
+      "label": "虚构人物的文献式拟传记",
+      "definition": "将虚构人物当作可被记录、研究的传主，用其世界内部文件或已出版的虚构故事作为生平证据来组织角色传记。",
+      "status": "研究分类·暂定待核",
+      "revision": 19,
+      "related_categories": [
+        "form:reference-documentation",
+        "narrative:investigation"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "不是现实作家传记；不是直接把虚构家谱或人物生平当历史事实。",
+        "与案件／人类学卷宗拼编的主要组织目的不同：此处以人物的一生与性格为中心。",
+        "不把系列中的所有成员、电影小说化或作者半自传小说自动归入。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "既刊虚构故事作为传记证据",
+          "members": [
+            "Q5287115"
+          ]
+        },
+        {
+          "label": "世界内部解密文书拟传记集合",
+          "members": [
+            "Q54807299"
+          ]
+        }
+      ],
+      "comparison_note": "批评文章、伪艺术评论、声称真实外星接触或半自传取材不能因此归为角色文献传记。Doc Savage关联Wold Newton，但此批只支持这一部。",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+      "members": [
+        {
+          "work_id": "Q5287115",
+          "title_at_review": "Doc Savage: His Apocalyptic Life",
+          "author_at_review": "菲利浦·荷西·法默",
+          "basis": "Farmer将Doc Savage当作真实传主，将Robeson小说设为小说化回忆，以181小说和虚构家谱重构生平。",
+          "evidence_scope": "单作百科概述；未读Farmer正文或逐版对比增补材料。",
+          "membership_boundary": "虚构人物的拟证据传记，不称真实历史，不向整个Wold Newton企划传播。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Doc_Savage%3A_His_Apocalyptic_Life"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:known-year-modern-classification-candidates-r8:1"
+        },
+        {
+          "work_id": "Q54807299",
+          "title_at_review": "Star Trek II: Biographies",
+          "author_at_review": "威廉·羅茨勒",
+          "basis": "Rotsler的角色传记集合以世界内部的官方书信、记录、航行日志、日记与解密资料展示企业号成员生平。",
+          "evidence_scope": "准确书封文案的社区转录；一次打开失败不计阅读，非全书。",
+          "membership_boundary": "Rotsler这本传记集合，不套电影The Wrath of Khan或普通小说化情节。",
+          "membership_extent": "exact_work",
+          "sources": [
+            "https://memory-alpha.fandom.com/wiki/Star_Trek_II%3A_Biographies"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:quick-retry-global-classification-candidates-round18:1"
+        }
+      ]
+    },
+    {
+      "id": "form:co-designed-text-image-music",
+      "axis": "form",
+      "label": "图文与音乐的共同设计",
+      "definition": "具体版本或创作项目明确把图像／漫画、文字与配套原创或选编音乐共同组织为作品安排；重点是媒介设计而非题材中出现音乐。",
+      "status": "研究分类·暂定待核",
+      "revision": 19,
+      "related_categories": [
+        "form:visual",
+        "form:performance",
+        "topic:artistic-media-and-action"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "两个身份是版本／项目层面的支持，保留这些限定，不声称读图与音乐严密同步。",
+        "HITLESS仍无核心剧情分析；形式已知与核心missing可以同时成立。",
+        "音乐改编、宣传歌曲、一般有声动画、舞台剧或任何视听网页不自动归入。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "2015版本的小说／插图／选编音乐",
+          "members": [
+            "Q7746409"
+          ]
+        },
+        {
+          "label": "作者漫画与原创配乐项目",
+          "members": [
+            "Q138661885"
+          ]
+        }
+      ],
+      "comparison_note": "若界面只能展示整作、无法呈现版本／项目限定，这项暂保留provisional，不把全版本推广或完整剧情阅读作为入门条件。线性视觉小说、舞台演出和儿童任务文本保留独立形态。",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json",
+      "members": [
+        {
+          "work_id": "Q7746409",
+          "title_at_review": "The Law of Love",
+          "author_at_review": "劳拉·埃斯基韦尔",
+          "basis": "所见2015版封底明确将文字、插图、意大利歌剧咏叹调与墨西哥danzón共同组织。",
+          "evidence_scope": "墨西哥文学机构的2015版封底与书目说明；没有逐页观看或播放。",
+          "membership_boundary": "版本层面的明确媒介安排，不推广到1995初版、所有译本或严密画格配音同步。",
+          "membership_extent": "documented_2015_edition",
+          "sources": [
+            "https://www.elem.mx/obra/datos/83370"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "frozen_core_scoped_interpretation",
+          "original_candidate_id": "discovery:root-known-year-r8:0"
+        },
+        {
+          "work_id": "Q138661885",
+          "title_at_review": "HITLESS",
+          "author_at_review": "ZOOLOOK",
+          "basis": "创作者把HITLESS组织为结合原创音乐和漫画的Comic Book Soundtrack Series，并列具体音乐曲目。",
+          "evidence_scope": "官方创作者页面的实际历史检索返回；未读漫画页或播放音乐。",
+          "membership_boundary": "仅项目/载体安排；本作核心仍missing，不把媒介材料当剧情阅读或独立核验。",
+          "membership_extent": "creator_comic_soundtrack_project",
+          "sources": [
+            "https://www.zoolook.com/hitless/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "scoped_form_source_without_core",
+          "original_candidate_id": "discovery:quick-retry-root-assist-early-classification-candidates-round1:2"
         }
       ]
     }
@@ -5437,6 +5824,158 @@
       "id": "discovery:quick-retry2-modern-classification-candidates-r2:2",
       "review_status": "pending_further_comparison",
       "review_note": "开放维度与限定作品证据只作待比较候选，不自动建立标签、传播分类或增加补全/核验计数。"
+    },
+    {
+      "proposed_dimension": "作品形态与历史脉络",
+      "proposed_label": "奖项策展与文学场域自评",
+      "definition_boundary": "奖项合集在同册编选获奖或入围虚构，并加入文学商业化、特许使用等行业自评；须有准确本集组成与论述依据，不自动包括所有年度最佳或只列奖项的目录。",
+      "verification_status": "candidate_from_source_reading_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q28419405",
+          "identity": {
+            "title": "Nebula Awards 32",
+            "author": "作者未知"
+          },
+          "basis": "Kirkus本集评论同时列获奖／入围虚构与诗歌，并明确Spinrad批评世界出租、Hand评文学在娱乐产业中的位置。",
+          "sources": [
+            "https://www.kirkusreviews.com/book-reviews/jack-dann/nebula-awards-32/"
+          ],
+          "exact_support_scope": "一次查询实际返回本集评论中的Spinrad与Hand两项非虚构论述及获奖／入围虚构、诗歌组成；未读成员全文，不拿Slow River整卷代表所收Yaguara。",
+          "actual_content_source_read": true,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-global-r3-search-89.json",
+            "sha256": "43b919ad6cc9a33f4564dc7e095ef1569cff8aad5477c1fdb0a08418cc8adb0a",
+            "record_sha256": "21fbf85f869eb021259fd196b0d706a99942d00f231c881746f01cb6631b304e",
+            "query": "\"Nebula Awards 32\" \"Lifeboat\" review Kirkus",
+            "source_url": "https://www.kirkusreviews.com/book-reviews/jack-dann/nebula-awards-32/",
+            "new_queries": 0,
+            "new_opens": 0,
+            "corresponding_frozen_log": "work/evidence/quick-retry2-global-round3-log.json",
+            "corresponding_frozen_log_sha256": "3ee9f020c6353e58820926da5250aa0704d521644b406bdd3418bc6b0dc930b7"
+          },
+          "source_analysis_file": "work/evidence/quick-retry2-global-round3.json",
+          "source_analysis_file_sha256": "17cac5ddeb9fc608452a6f7fdd565317a364ae4bc86996b444c29645041d6d8b",
+          "integration_relation": "same_batch_core"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "id": "discovery:quick-retry2-global-classification-candidates-round3:1",
+      "dimension": "form",
+      "discovery_input": "research/classification-discovery-inputs/quick-retry2-global-classification-candidates-round3.json"
+    },
+    {
+      "proposed_dimension": "作品形态",
+      "proposed_label": "短篇合集与作者问题自注",
+      "definition_boundary": "同册短篇之外还并列针对故事所提出问题的作者说明，明确把创作文本和作者反思放在一起；一般简介、单一编辑前言或外部评论不自动归此类，版本差异须单独保留。",
+      "verification_status": "candidate_from_source_reading_not_independently_verified",
+      "identity_caveat": "作者实际书目列Burning Sky（1998）二十七篇版；底库1989纪年与该版关系待核。候选仅描述作者列出的版本组成，不改底库日期或声称读了成员故事。",
+      "work_evidence": [
+        {
+          "id": "Q105404494",
+          "identity": {
+            "title": "Burning Sky",
+            "author": "Rachel Pollack"
+          },
+          "basis": "作者本人书目明确Burning Sky二十七短篇之外有针对故事问题的说明，并另有Samuel R. Delany前言。",
+          "sources": [
+            "https://www.rachelpollack.com/writing/booklist.html"
+          ],
+          "exact_support_scope": "一次查询实际返回作者书目Burning Sky（1998）专项：二十七短篇、针对故事问题的自注、Delany前言；这里只证该版本组成，原1989纪年关系待核；相邻Godmother Night具体剧情排除。",
+          "bibliographic_scope_only": true,
+          "actual_content_source_read": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "core_analysis_added": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/quick-retry2-global-r4-search-122.json",
+            "sha256": "ac360f1fd98326ce6cc5820b2574b29a93054cfa1f9faa2044e2f2a15ff0eb78",
+            "record_sha256": "3b66675651576545541a1d9046985273759070fbe254d8915d9fa143111b515d",
+            "query": "\"Burning Sky\" \"Pollack\" Kirkus",
+            "source_url": "https://www.rachelpollack.com/writing/booklist.html",
+            "new_queries": 0,
+            "new_opens": 0,
+            "corresponding_frozen_log": "work/evidence/quick-retry2-global-round4-log.json",
+            "corresponding_frozen_log_sha256": "3c4127d6dc0d05fcb6ee60f36ee2bbb8541552dc4268d2745bc712e17f3e3ddb"
+          },
+          "integration_relation": "no_core_bibliographic_scope",
+          "discovery_source_mode": "bibliographic_candidate_no_core_analysis"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "id": "discovery:quick-retry2-global-classification-candidates-round4:1",
+      "dimension": "form",
+      "discovery_input": "research/classification-discovery-inputs/quick-retry2-global-classification-candidates-round4.json"
+    },
+    {
+      "proposed_dimension": "现实与未来关系 / 历史脉络",
+      "proposed_label": "现实工业设施的奇幻转置",
+      "definition_boundary": "作者明确把真实工业厂区的空间组织和劳动经验转成非现实生命/装置的生产场景；区别于泛泛工业风格，不由真实取材推定虚构发生在地球。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134694501",
+          "identity": {
+            "title": "Cold Iron",
+            "author": "迈克尔·斯万维克"
+          },
+          "basis": "作者明确ColdIron是第一部分，其dragonfactory建筑布局取自NorthPhiladelphia的BaldwinLocomotiveWorks，并承认Dickens影响；这是取材声明，非历史劳工事实逐条核验。",
+          "sources": [
+            "https://michaelswanwick.com/revan/idda.html"
+          ],
+          "exact_support_scope": "一次查询实际返回作者存档讨论ColdIron部分及龙工厂现实厂区取材；直接openTimeout失败，原篇未读，不把长篇其它大学/商场部分推广到ColdIron。",
+          "raw_query": "\"Cold Iron\" site:michaelswanwick.com",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r4-search-batch1.json",
+          "raw_search_sha256": "e0a7ebe54dd78b47cc1005e7e517f7fc397a36f951fc2c714fa6a53cfa427c3d",
+          "raw_search_record_sha256": "3db486ee7e97f9e6d8e67ffada51bd25c0771e31f684a0e8babfbcc7b2e52e75",
+          "bibliographic_scope_only": false,
+          "actual_content_source_read": true,
+          "core_analysis_added": true,
+          "knowledge_analysis": false,
+          "actual_bibliographic_source_read": true
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r4:1",
+      "dimension": "reality",
+      "review_status": "pending_further_comparison",
+      "discovery_input": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r4.json"
+    },
+    {
+      "proposed_dimension": "文本形式 / 媒介版本与历史脉络",
+      "proposed_label": "脚本、试播与漫画版本的分阶段转写",
+      "definition_boundary": "作者书目明确区分脚本写作、试播拍摄、录像发行和后来漫画改编的不同日期/形态；只有书目对应不足以证明不同版本情节相同，须保留当前实体归属疑点。",
+      "verification_status": "candidate_from_bibliographic_material_identity_boundary_unverified",
+      "work_evidence": [
+        {
+          "id": "Q102076237",
+          "identity": {
+            "title": "Doorways",
+            "author": "乔治·R·R·马丁"
+          },
+          "basis": "作者书目列Doorways写于1991、拍于1992、视频1993；本人2010说明漫画与视频人物造型不同，2010–2011漫画是后来的转写。",
+          "sources": [
+            "https://georgerrmartin.com/bibliography/",
+            "https://georgerrmartin.com/notablog/tag/doorways/"
+          ],
+          "exact_support_scope": "一次官网定向查询读到作者书目和改编说明；只支持日期/载体差异，当前1992literary实体的具体文本仍未解决，核心延期；不采用试播/漫画剧情。",
+          "raw_query": "\"Doorways\" site:georgerrmartin.com",
+          "raw_search_artifact": "work/evidence/quick-retry2-modern-r4-search-batch1.json",
+          "raw_search_sha256": "e0a7ebe54dd78b47cc1005e7e517f7fc397a36f951fc2c714fa6a53cfa427c3d",
+          "raw_search_record_sha256": "d734955bd7cdb83e35ee212b6ac88221315588cff775716cdd642b3b49ce89f1",
+          "bibliographic_scope_only": true,
+          "actual_content_source_read": false,
+          "core_analysis_added": false,
+          "knowledge_analysis": false,
+          "actual_bibliographic_source_read": true,
+          "discovery_source_mode": "bibliographic_candidate_no_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry2-modern-classification-candidates-r4:2",
+      "dimension": "form",
+      "review_status": "pending_further_comparison",
+      "discovery_input": "research/classification-discovery-inputs/quick-retry2-modern-classification-candidates-r4.json"
     }
   ],
   "promoted_discoveries": [
@@ -5558,6 +6097,198 @@
       },
       "review_status": "provisional_category_from_two_exact_work_scopes",
       "review_note": "对照科幻书目百科与艺术创作档案，按明确的参照资料组织方式建立表达形态入口。普通故事合集不自动纳入；原书目类型和核验等级保留。"
+    }
+  ],
+  "discovery_reviews": [
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r10:2",
+      "category_id": "time:asynchronous-experience",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q3223030",
+      "original_candidate_record_sha256": "5dcd749a3667c66316e924992505eab6d47a19ca0d0ce0e55995b0aa290fa8ec",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "单作起始概述；未读正文，招募制度是本作的附加细分，不传播到另外两作。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r14:1",
+      "category_id": "time:asynchronous-experience",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q134706316",
+      "original_candidate_record_sha256": "6922a267b4c4c566a9d8a6d701dbc456797e2aa8177ee29b46e5aa81d37818ba",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "逐篇评论中本篇的明确前提；不借相邻Time Heals等篇的冷冻剧情。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-modern-classification-candidates-r2:1",
+      "category_id": "time:asynchronous-experience",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q131472325",
+      "original_candidate_record_sha256": "35d3ca2e9dad18f40b0bd4a44b72e0ab15d040dbcda8481fecc2a54f3d30ee67",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "两篇评论针对Wilson本篇的timesliding说明，原篇未全文读。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-classification-candidates-round4:1",
+      "category_id": "science:chemical-experience-narration",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q20740464",
+      "original_candidate_record_sha256": "5a32f6a617991e6fc505240b456e8a35a3c29a6a15dcb2ffb9788153db5cf9f1",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "仅2045选集中的Sümegi Attila单篇创作说明，未读该篇全文或另十五篇。",
+      "membership_extent": "collection_selected_member:Alvilágosodás",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-modern-classification-candidates-r12:1",
+      "category_id": "science:chemical-experience-narration",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q11711771",
+      "original_candidate_record_sha256": "b97c33a28027af8f8839a5be9ff5963cb3aa3b41f5c624899fc48db1eef7fec0",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "仅同名集里同名篇L64–67的转录对话；不是整篇或全合集核验。",
+      "membership_extent": "collection_selected_member:Iluzyt",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-global-classification-candidates-round8:1",
+      "category_id": "form:compiled-fictional-records",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q130629234",
+      "original_candidate_record_sha256": "9da3e510361884152aea0d2eb1b7c3ed042a5104e1292ec497a848f6d2a24fb6",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "针对1973中篇的评论形态说明；后来Transfigurations只用于身份边界。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:root-known-year-classification-candidates-r10:2",
+      "category_id": "form:compiled-fictional-records",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q134080768",
+      "original_candidate_record_sha256": "d4cadda0cac471d5ead56f0e3fb3f07b65b6b8cf9786e47ef14572a2cd0a65e8",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "作者保存的媒体评论页里Gérard Hirsinger所写卷宗描述；未读小说正文。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:known-year-modern-classification-candidates-r8:1",
+      "category_id": "form:fictional-person-documentary-biography",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q5287115",
+      "original_candidate_record_sha256": "9037e75da6e37c1379eb053f0cc4a4a7c18101f0824fd1beb67f6c766c049818",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "单作百科概述；未读Farmer正文或逐版对比增补材料。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-global-classification-candidates-round18:1",
+      "category_id": "form:fictional-person-documentary-biography",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q54807299",
+      "original_candidate_record_sha256": "21b33beb898fd6eaaade17cf31ae4c9ee83b652c8d53e44ec173c72bc166ebb6",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "准确书封文案的社区转录；一次打开失败不计阅读，非全书。",
+      "membership_extent": "exact_work",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:root-known-year-r8:0",
+      "category_id": "form:co-designed-text-image-music",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q7746409",
+      "original_candidate_record_sha256": "a2dc62ed9129f8a94b82932fdbcdad2b89409f91779764a71acbca747bdb181b",
+      "evidence_mode": "frozen_core_scoped_interpretation",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "墨西哥文学机构的2015版封底与书目说明；没有逐页观看或播放。",
+      "membership_extent": "documented_2015_edition",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-assist-early-classification-candidates-round1:2",
+      "category_id": "form:co-designed-text-image-music",
+      "status": "promoted_unverified",
+      "revision": 19,
+      "work_id": "Q138661885",
+      "original_candidate_record_sha256": "5a86eb090d4c69f6484d15cb588f9f6109d842721f08bd99525bc1f02200b334",
+      "evidence_mode": "scoped_form_source_without_core",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "官方创作者页面的实际历史检索返回；未读漫画页或播放音乐。",
+      "membership_extent": "creator_comic_soundtrack_project",
+      "review_input": "research/classification-discovery-audits/classification-v18-promotion-proposal-modern.json"
+    }
+  ],
+  "discovery_evidence_updates": [
+    {
+      "candidate_id": "discovery:quick-retry-root-assist-modern-classification-candidates-r3:2",
+      "work_id": "Q138338058",
+      "original_candidate_record_sha256": "80519f18bdbaaa2538bfe94877810f85039e03aa509dff1a86a660df7de930f0",
+      "original_work_evidence_sha256": "434b8489fd6e950b4f0e6c9b3e58c095d695a1c4d1d7983b6dba89b72940e87d",
+      "original_source_mode": "bibliographic_candidate_no_core_analysis",
+      "status": "later_separate_core_analysis_added_unverified",
+      "analysis_input": {
+        "file": "research/issue-input-snapshots/quick-retry2-global-round5.json",
+        "file_sha256": "427889ebbccbf3f9d4e0d45b11d6241c0977a1a7f4f8ac89e45282cb7965c375",
+        "record_index": 2,
+        "record_sha256": "98483439d2c9923ddf020eb6a0943174764cce21d371fde087206c717ae0d6c1"
+      },
+      "log_input": {
+        "file": "research/issue-input-snapshots/quick-retry2-global-round5-log.json",
+        "file_sha256": "c1219542d1b632b15c3a32e81ef1d4eff36ff708c7249d54ef65ff33a9fefcd1",
+        "record_index": 17,
+        "record_sha256": "997ada1f36283d100760fa6f5ad95669ce830b3d7770db7353ab15af810ecc3a"
+      },
+      "active_analysis_input": "research/issues-source-reading-round87.json",
+      "identity": {
+        "title": "Ce qui est en haut : Vitavil H²0",
+        "author": "作者未知"
+      },
+      "support_scope": "密歇根州立大学漫画馆索引的Book Four That Which Is Above、Chapter One Vitavil H2O十五页摘要；只用这一章水下城/克隆/暗影卵的内容，排除后接Chapter Two及其他册摘要。",
+      "sources": [
+        "https://comics.lib.msu.edu/rri/irri/inca.htm"
+      ],
+      "historical_bibliographic_scope_unchanged": true,
+      "classification_still_pending": true,
+      "independent_verification_upgrade": false,
+      "original_full_text_read": false,
+      "note": "原发现只确认具名章节和15页粒度，核心在当时延期。后来独立一次查询取得大学漫画馆这一章的限定摘要，新增核心解释仍待核；原书目发现、阅读范围、失败历史及分类候选状态全部保留。"
     }
   ]
 }

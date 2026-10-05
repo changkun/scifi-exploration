@@ -1,4 +1,4 @@
-import {classificationDetail,renderClassifications} from './classifications.mjs?v=registry18';
+import {classificationDetail,renderClassifications} from './classifications.mjs?v=registry19';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=v=>Number(v).toLocaleString('zh-CN');
 export function issueDetail(w){
