@@ -476,3 +476,11 @@ Robot Visions仅已有知识确知所收Robbie与The Bicentennial Man，Does a B
 选集只按明确成员或例篇：第10年度科幻奇幻选集目录只确认Hungry Daughters of Starving Mothers，其情节为已有作品知识而明示未当次读取。单期Descender宣传只支持秘密或联系被揭露，不补未给的内容。Red Sprite以第1卷前提补系列，不借结篇；Ivory and Bone明确史前历史/奇幻边界，Sakešvili明确戏剧而非小说及论文实际第3页范围，戏内观众遇害不作现实事件。Pulphagus最具体简介属图像改编，Q123044923来源为轻小说系列却仅取得OVA剧情，均延后不移植内容。Life on the Tether拒绝社区提问者错误回忆；Final Flight的1988/源1986、白教皇1985/1986差异继续保留。Omni人物万年背景、Cataclysm五年旧事均不冒作主体叙事跨度。
 
 所有新增仍knowledge_added_unverified，完整原作读取0。五组85项校验及全部身份顺序、原来源、日期、粒度、既有解释及空间、冻结输入和设计守恒检查通过。完整字段、下载与来源保留；R47已成功部署v49，公开浏览器确认6,648核心、7,169议题分类及1,293空间，6,264过程记录中5,852含实际查询/材料读取、412为知识或身份处理。R48待后续固定提交推送与公开版本确认，各研究分片不等待发布继续首遍。
+
+### 2026-10-05：R49 单遍优先，身份和版本差异保留
+
+六份互斥冻结输入新增128条核心、256项细分问题及20条原未知空间。154个处理身份中26条材料不足或身份错配后置。累计核心6,899条、缺口7,665条、议题分类7,411条、细分14,913项、空间1,333条；6,578个身份有过程归档，50次较早尝试保留。
+
+Bannerless仅2015短篇，作者访谈和实际非连续原篇片段不替代2017长篇；Scintillements仅Mat, mat, mat开头，Grand Crusades仅具名三选例。The Postman保留1982单篇与后续扩写区别；Nightflyers合集只按标题成员，不移入改编情节。Rainbow Chili只用漫画开头，Beyond the Fall of Night只用续作范围；Tales of Planet Earth的错配散文书介被拒绝。血与宇宙所读版日期、Arachne、Angel Station、Pawn's Gambit和Erasmus版本边界继续明示。The Gifted只找到改编，Warrior Women只有目录，均后置。
+
+全部新增仍knowledge_added_unverified，完整原作读取0。五组85项校验及全部身份顺序、原来源、日期、粒度、既有解释和空间、冻结输入字节与设计守恒检查通过。R48已成功部署v50，公开浏览器确认6,771核心、7,287议题分类和1,313空间；R49待固定提交推送及公开版本确认。各分片持续首遍，不等待发布。
