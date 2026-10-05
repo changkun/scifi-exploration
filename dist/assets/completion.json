@@ -497,6 +497,11 @@
         "count": 114
       },
       {
+        "file": "research/issues-source-reading-round45.json",
+        "sha256": "c026c6661d356098d355f54aa3959fb9ddf00f244cf91ce5291be41b91ecf429",
+        "count": 127
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -640,9 +645,14 @@
         "file": "research/spatial-reading-round29.json",
         "sha256": "d2624d3a95b4ef549efbaf0cdfc5f9919686ec64ca3e82ef3cd6ff860906259b",
         "count": 18
+      },
+      {
+        "file": "research/spatial-reading-round30.json",
+        "sha256": "4790b46858eabe287dc53a8547526522ab330e95672f2dddfadc6043512943dd",
+        "count": 18
       }
     ],
-    "knowledge_added": 6094,
+    "knowledge_added": 6221,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -696,14 +706,14 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 5662,
-      "actual_source_attempt_count": 5264,
-      "process_without_source_attempt_count": 398,
+      "record_count": 5817,
+      "actual_source_attempt_count": 5415,
+      "process_without_source_attempt_count": 402,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 5662,
+        "record_count": 5817,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -5717,6 +5727,184 @@
               "original_fulltext_read_count": 0,
               "scope": "八个2019身份单查询并行；七项可据有限材料或明确已有知识补，韩国长篇只有作者书目即后移。Takamine目录只支持身份，剧情已有知识待核；Faunes只读短宣传引句，未读全文。"
             }
+          },
+          {
+            "file": "early-recent-round35-log.json",
+            "sha256": "e9e640f3eb99cab8ad4677a5387d536e0453646f37ce47ba019c7f7fb04f5657",
+            "metadata": {
+              "method": "actual-first-pass-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "lane": 3,
+              "read_date": "2026-10-05",
+              "attempted_count": 50,
+              "added_count": 38,
+              "not_added_count": 12,
+              "frozen_date": "2026-10-05",
+              "record_count": 38,
+              "facet_count": 76,
+              "priority_range": [
+                5481,
+                5686
+              ],
+              "canonical_gzip_sha256_at_freeze": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "remaining_selected_ids": [],
+              "continuation_note": "50项首遍形成38条/76细分；12项材料或身份不足已延期，冻结后立即继续私有R36，lane3不变。"
+            }
+          },
+          {
+            "file": "global-recent-round34-log-corrected.json",
+            "sha256": "c17421034ea72d67ade4cc7bd15f0844fecfcb34a923ec1e2d4e7f4a36e277fd",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "date": "2026-10-05",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "starts_at_fast_index": 1156,
+              "record_count": 30,
+              "facet_count": 60,
+              "attempted_count": 36,
+              "deferred_count": 6,
+              "skipped_existing_count": 0,
+              "ends_at_fast_index": 1191,
+              "next_fast_index": 1192,
+              "freeze_date": "2026-10-05",
+              "session_inherited_baseline_sha256": "4cad36f0ac198ef5bff0c038cb7b5fccecf98471a0f9376e28bf1f4c9d96bf9a",
+              "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+              "audit_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。",
+              "derivation": {
+                "from_private_frozen_file": "global-recent-round34-log.json",
+                "sha256": "044f0cf8edec9f206e3731cf8230c9c01ba8507ec7b0289642c1e99d38d1c4da",
+                "reason": "只修正Q5327194实际已读简介的URL归属与支持范围；原冻结字节保留。",
+                "same_core_ids_and_topics": true,
+                "same_issue_text": true,
+                "same_spatial_fields": true
+              },
+              "source_scope_final_check": "Q5327194完整简介为Google Books实际返回，Macmillan实际返回较短，Hachette再版另支持修复计划；分清二手简介与原文，全文核验仍0。",
+              "recovered_original_file": "global-recent-round34-log.json",
+              "recovered_original_sha256": "044f0cf8edec9f206e3731cf8230c9c01ba8507ec7b0289642c1e99d38d1c4da",
+              "correction_note": "仅Q5327194实际简介来源归属更正；不改原冻结稿、核心issue文字或空间字段。"
+            }
+          },
+          {
+            "file": "modern-recent-round36-log.json",
+            "sha256": "00b0b5de919c55f7a9f0f118c1f6f6bc166b311b0ef5e91060cf36026561d984",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 32,
+              "facet_count": 64,
+              "field_count": 96,
+              "new_core_issue_count": 32,
+              "source_read_record_count": 29,
+              "record_with_actual_material_count": 29,
+              "actual_content_source_record_count": 26,
+              "actual_identity_source_record_count": 3,
+              "search_attempted_record_count": 29,
+              "knowledge_plot_record_count": 6,
+              "knowledge_only_zero_query_count": 3,
+              "community_dump_read_count": 0,
+              "original_partial_text_record_count": 2,
+              "original_full_text_count": 0,
+              "collection_scope_count": 3,
+              "single_work_count": 29,
+              "deferred_count": 3,
+              "actual_query_deferred_count": 3,
+              "zero_query_identity_deferred_count": 0,
+              "total_lane_actual_query_record_count": 32,
+              "total_actual_query_record_count": 32,
+              "total_actual_query_material_record_count": 31,
+              "supplementary_query_record_count": 0,
+              "deferred_original_partial_text_record_count": 0,
+              "scope": "lane2近期首轮1993—1992自然组32新核心/64细分。29条实际单身份一次查询，26条实际具体内容资料、3条选集目录仅核收录；6条含明确已有知识，其中Rising Sun、Steel Beach和Only You Can Save Mankind三条零查询。3集合（Year’s Best第十年度、Invaders!、Best of Astounding）仅选例、不冒充各篇核查，29单卷/单篇。2条仅可见原篇开头/短引：La Saison de l’exil与Georgia on My Mind；完整原作0。3条Close Encounter、Doorways、Time and Again因材料薄弱/媒介粒度/错配完整后置。Chanur’s Legacy1992/1993、Stopping at Slowyear1991/1992、La Mémoire du crime1992/2009版差距、短篇/同名合集及They Fly at Çiron扩写边界逐条保留。Breakfast Cereal Killers与Lennon Spex只有简短准确专句，解释限前提；Rising Sun犯罪惊悚与Death and Lady历史奇幻边界不强改成科幻。全部文学解释待独立核验。"
+            }
+          },
+          {
+            "file": "root-fast-round45-log.json",
+            "sha256": "bcd38645925b17f8100e2bde3bcbdc58b74ec50c45a53381dbfc058f52920d85",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "c13a977b155f3606267731ce9b9ef89d708d7843",
+              "source_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 6,
+              "facet_count": 12,
+              "attempted_count": 8,
+              "deferred_count": 2,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八个2019身份各一次查询，六项明示内容/具名既有知识先补，两个只有目录后移；系列卷次、合集选例和漫画单期严格限范围，未读完整原作。"
+            }
+          },
+          {
+            "file": "root-fast-round46-log.json",
+            "sha256": "306ee0e7f8cafd10822cc19bfbaf284574d8f67de5a155d8ffdd40a90cb80d65",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "4b4bd52c0a8e63e862829e6ed655af612028b83a",
+              "source_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 8,
+              "facet_count": 16,
+              "attempted_count": 9,
+              "deferred_count": 1,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 1,
+              "original_fulltext_read_count": 0,
+              "scope": "八个陌生身份一次精准查询，另一个开刊身份复用已有准确开端不再查。一本单卷只有展示题名后移；Morjegrad只打开一次评论L46–49，其他明确有限前提即补。全部原作全文0。"
+            }
+          },
+          {
+            "file": "root-fast-round47-log.json",
+            "sha256": "9c65bc7d5cfece13a011c6ccb284562f09a76749d2868fbaa078980ed1d95b6b",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "4b4bd52c0a8e63e862829e6ed655af612028b83a",
+              "source_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 6,
+              "facet_count": 12,
+              "attempted_count": 8,
+              "deferred_count": 2,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 1,
+              "original_fulltext_read_count": 0,
+              "scope": "八个2018实体首轮单查询并行，六项明示有限前提先补；百科词典边界和只有类型词的短篇后移。MEG只读返回授权开头；Phosphorus一次打开现成评论本作段，原作全文0。"
+            }
+          },
+          {
+            "file": "root-fast-round48-log.json",
+            "sha256": "e2ddc9d83d725ac4919638102c2638e1651925ce84f837b544e201bd2f2a56d3",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "4b4bd52c0a8e63e862829e6ed655af612028b83a",
+              "source_snapshot_sha256": "73b274aee5aee431d8d0f12edca80dee8bdff3a581e71f0a39a5587eee733a2e",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 7,
+              "facet_count": 14,
+              "attempted_count": 9,
+              "deferred_count": 2,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八个2018身份一次查询，六有明确有限前提，二只有身份/抽象研究摘要后移；另熟悉Blackfish City零查询直接补待核。合集限两具名例，漫画单册及中篇译版范围保留，全文0。"
+            }
           }
         ],
         "updated_at": "2026-10-05",
@@ -6258,6 +6446,11 @@
         "file": "research/issues-source-reading-round44.json",
         "sha256": "a7a8ca6f88badd67f19b0035041948ed4683800976f8898cb62eb1535c2282a8",
         "count": 114
+      },
+      {
+        "file": "research/issues-source-reading-round45.json",
+        "sha256": "c026c6661d356098d355f54aa3959fb9ddf00f244cf91ce5291be41b91ecf429",
+        "count": 127
       }
     ],
     "spatial_batches": [
@@ -6405,10 +6598,15 @@
         "file": "research/spatial-reading-round29.json",
         "sha256": "d2624d3a95b4ef549efbaf0cdfc5f9919686ec64ca3e82ef3cd6ff860906259b",
         "count": 18
+      },
+      {
+        "file": "research/spatial-reading-round30.json",
+        "sha256": "4790b46858eabe287dc53a8547526522ab330e95672f2dddfadc6043512943dd",
+        "count": 18
       }
     ],
-    "issue_facet_records": 5997,
-    "issue_facet_count": 13413,
+    "issue_facet_records": 6124,
+    "issue_facet_count": 13667,
     "full_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/completion-overlay.json.gz"
   },
   "chunks": [
