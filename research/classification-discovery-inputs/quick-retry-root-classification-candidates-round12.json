@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "status": "private_frozen_candidate_checkpoint",
+    "date": "2026-10-05",
+    "lane": 0,
+    "ownership_file": "work/evidence/quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "record_count": 2,
+    "candidate_count": 2,
+    "new_core_count": 0,
+    "new_search_count": 0,
+    "new_open_count": 0,
+    "public_registry_modified": false,
+    "method": "R12已有真实返回中的文本粒度及跨篇人物关系；两身份继续核心后置，仅提出待比较候选。"
+  },
+  "records": [
+    {
+      "proposed_dimension": "表达与文本形态 / 文本粒度",
+      "proposed_label": "短篇纳入长篇的扩写单元",
+      "definition_boundary": "作者或目录明确说明独立短篇被纳入后来的长篇某一部分；保留两种文本粒度，不自动把长篇新增情节、人物或结局归给原篇。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134705721",
+          "identity": {
+            "title": "The Mendelian Lamp Case",
+            "author": "保羅·萊文森"
+          },
+          "basis": "Paul Levinson的采访搜索返回明确说将The Mendelian Lamp Case纳入The Silk Code第一部分。",
+          "sources": [
+            "https://michaelaventrella.com/2016/08/15/interview-with-author-paul-levinson/"
+          ],
+          "exact_support_scope": "实际搜索只返回作者关于组成关系的短段；直接打开只见页头，没有采访正文。只确认短篇到长篇的编排关系，不称已读两文本。",
+          "actual_content_source_read": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/root-quick-retry12-group2.json",
+            "sha256": "7738ff8bd4d5b3e3e9d94f2634d0b1ef3e6f3dd2290956dc460d79dbae469384",
+            "new_queries": 0,
+            "new_opens": 0
+          }
+        }
+      ]
+    },
+    {
+      "proposed_dimension": "时间组织 / 表达与文本形态",
+      "proposed_label": "独立短篇中的共同人物连续性",
+      "definition_boundary": "资料明确多个独立题名短篇共享同一人物；允许连看人物线索，但没有证据时不推断事件先后、续集关系或统一故事时间。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131517214",
+          "identity": {
+            "title": "Winter Fire",
+            "author": "杰弗里·兰迪斯"
+          },
+          "basis": "Ann Cecil评论明确Ecopoiesis中的Leah，也出现在Winter Fire的暗色记忆及Into the Blue Abyss的探索中。",
+          "sources": [
+            "https://www.cs.cmu.edu/afs/cs/user/roboman/www/sigma/review/impactparam.html"
+          ],
+          "exact_support_scope": "实际返回集合评论的明确三篇人物关联段；本条Winter Fire仍缺具体行动，另外两篇的经历不可挪入。没有事件纪年或原篇正文阅读。",
+          "actual_content_source_read": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "same_return_evidence": {
+            "private_raw_file": "work/evidence/root-quick-retry12-group1.json",
+            "sha256": "39deae810bf7c6ebd3d3929f9d1ed9a662233eab6cd7d5b156d17ee33fce272b",
+            "new_queries": 0,
+            "new_opens": 0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "freeze_date": "2026-10-05",
+    "method": "source-assisted-classification-candidate-v1",
+    "lane": 0,
+    "helper": "early_history",
+    "ownership_file": "quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "delegation_file": "quick-retry-root-assist-early-ownership.json",
+    "delegation_sha256": "f6d03523986bdec595c7939f41fae7b9d494d16a8050123b3053e63d9576d790",
+    "note": "全维度开放候选；本组单种子仅供比较，不自动注册、不更改原字段；实际读取仅所述来源范围，文学解释未独立核验。"
+  },
+  "candidates": [
+    {
+      "dimension": "议题",
+      "label": "复合主体的创作权",
+      "status": "single_seed_pending_comparison",
+      "definition": "人格边界可以组合或变化时，艺术创造的署名与权利归属仍依赖法律上的独立主体，作品具体呈现两者冲突。",
+      "boundaries": [
+        "不将多人合作、普通共同署名或作者模糊自动视为人格复合。",
+        "集合只以明确Datazee选篇提供种子，不代表整部Ganymedes21。"
+      ],
+      "seeds": [
+        {
+          "id": "Q136684682",
+          "title": "Ganymedes 21",
+          "analyzed_member": "Datazee — Charles van Wettum",
+          "basis": "实际评论L89说明人与人边界可模糊，复合人格所创艺术仍引发版权归属问题。",
+          "url": "https://boekenkrant.com/recensie/ganymedes-21/",
+          "source_type": "anthology_review_named_selected_story",
+          "support_scope": "本轮实际打开评论L88–89，未读原篇或全集。",
+          "read_date": "2026-10-05",
+          "verification_status": "knowledge_added_unverified"
+        }
+      ]
+    },
+    {
+      "dimension": "形式",
+      "label": "漫画与原创配乐共构",
+      "status": "single_seed_pending_comparison",
+      "definition": "创作者将漫画与原创音乐作为共同的叙事项目或作品系列组织，不只给既有漫画提供无关宣传歌曲。",
+      "boundaries": [
+        "目前只确认作者声明combine music and comics及Comic Book Soundtrack Series，不声称读图与播放严格同步。",
+        "不把动画有声改编、同人歌曲或任何带音乐的网页自动归入。",
+        "未读取HITLESS人物与故事情节，不把媒体说明计作核心分析完成。"
+      ],
+      "seeds": [
+        {
+          "id": "Q138661885",
+          "title": "HITLESS",
+          "basis": "ZOOLOOK官网明确HITLESS为spy-thriller comic book series与Comic Book Soundtrack Series，结合音乐和漫画；列Ambush等原作曲目。",
+          "url": "https://www.zoolook.com/hitless/",
+          "source_type": "creator_official_series_and_soundtrack_description_search_excerpt",
+          "support_scope": "实际R4查询读取作者官方系列说明及Track1、2介绍，未读漫画页、未播放完整音乐。",
+          "read_date": "2026-10-05",
+          "verification_status": "knowledge_added_unverified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2717 @@
+{
+  "metadata": {
+    "method": "knowledge-based-v1",
+    "status": "frozen_checkpoint",
+    "lane": 2,
+    "ownership_file": "work/evidence/quick-retry-lane-2.json",
+    "ownership_sha256": "f1e3bce7c91b9744ab300726ea85acd26e5f195553ce022a63559cc16e04bda5",
+    "note": "已有过程且核心仍missing的互斥复查；每身份一次不同旧查询的精准检索，至多一次容易直接打开。已有知识、目录与内容范围分开，解释全待独立核验；失败累计后置，不将延期称为完成。",
+    "record_count": 19,
+    "deferred_count": 13,
+    "checkpoint": "quick-retry-modern-round17",
+    "scope_note": "复查首32等互斥身份；旧查询/材料与失败次数逐条保留，新查询不同旧式。普通书介足够时短核心+两问题，目录选例用明确已有知识；局部原文、社区材料、译版与预告范围分别标记。所有解释仍未独立核验，延期不是补全。",
+    "field_count": 57,
+    "facet_count": 38,
+    "retry_identity_count": 32,
+    "actual_query_count": 32,
+    "zero_query_knowledge_count": 0,
+    "bibliographic_only_plus_knowledge_count": 1,
+    "actual_content_analysis_count": 18,
+    "partial_original_excerpt_count": 1,
+    "original_full_text_count": 0,
+    "ownership_unprocessed_after_checkpoint": 124,
+    "next_retry_queue_index": 543,
+    "direct_open_count": 12,
+    "direct_open_failed_count": 2,
+    "corrects_previous_input": {
+      "analysis": {
+        "file": "work/evidence/quick-retry-modern-round17.json",
+        "sha256": "ad0cf1a0fdb279e46b6616e7d07292089e65db411adbb11b99bcaefe69a1408b"
+      },
+      "log": {
+        "file": "work/evidence/quick-retry-modern-round17-log.json",
+        "sha256": "394c6220ae108134ccdc15a6fd4381bd2d11c5a3a9aaf28fd510cae5d121dba6"
+      },
+      "correction_audit": {
+        "file": "work/evidence/quick-retry-modern-r17-open-outcome-audit.json",
+        "sha256": "9d1f65947e016520064b82192cd1c6949a28a95578661204bf0a0b5c33de4c09"
+      }
+    },
+    "correction_scope": "仅Ganymedes15验证页打开状态与失败统计；作品分析、32查询、12打开及所有身份次数不变。"
+  },
+  "records": [
+    {
+      "id": "Q131745146",
+      "identity": {
+        "title": "Star Trek 9",
+        "author": "詹姆斯·布利什"
+      },
+      "pool_index": 511,
+      "queries": [
+        "\"Star Trek 9\" James Blish \"Metamorphosis\" stories"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131745146",
+        "identity": {
+          "title": "Star Trek 9",
+          "author": "詹姆斯·布利什"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Star Trek 9\" \"Blish\" contents"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://books.google.com/books/about/Star_Trek_9.html?hl=en&id=hlvCmDLCaiIC&output=html_text",
+            "scope": "Blish书页部分目录含The Ultimate Computer、That Which Survives、Obsession。",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "目录支持收入身份但未提供本小说化选篇具体情节；不以TV版本替代正文。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round65-log.json",
+        "raw_reading_log": {
+          "id": "Q131745146",
+          "identity": {
+            "title": "Star Trek 9",
+            "author": "詹姆斯·布利什"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Star Trek 9\" \"Blish\" contents"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://books.google.com/books/about/Star_Trek_9.html?hl=en&id=hlvCmDLCaiIC&output=html_text",
+              "scope": "Blish书页部分目录含The Ultimate Computer、That Which Survives、Obsession。",
+              "result": "contents_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "目录支持收入身份但未提供本小说化选篇具体情节；不以TV版本替代正文。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "bibliography_only_plus_existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://archives.trekcollective.com/2011/09/bantams-novelizations-by-james-blish.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://archives.trekcollective.com/2011/09/bantams-novelizations-by-james-blish.html",
+          "support_scope": "本轮实际检索只确认本集目录含The Ultimate Computer，剧情来自准确已有知识的共同改编前提，未新读Blish散文或原作正文；不采用检索邻列的Metamorphosis（属第7集），不覆盖本集其余五篇。"
+        }
+      ],
+      "exact_support_scope": "本轮实际检索只确认本集目录含The Ultimate Computer，剧情来自准确已有知识的共同改编前提，未新读Blish散文或原作正文；不采用检索邻列的Metamorphosis（属第7集），不覆盖本集其余五篇。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q132160161",
+      "identity": {
+        "title": "8月31日的無盡夏天",
+        "author": "作者未知"
+      },
+      "pool_index": 512,
+      "queries": [
+        "\"8月31日的無盡夏天\" 小説 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q132160161",
+        "identity": {
+          "title": "8月31日的無盡夏天",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"8月31日的無盡夏天\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://gnn.gamer.com.tw/detail.php?sn=310769",
+            "scope": "改编新闻搜索标题；一次open返回403。",
+            "result": "open_failed_403",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://gnn.gamer.com.tw/detail.php?sn=310769",
+            "scope": "一次open 403，未补。",
+            "result": "simple_open_failed",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "检索仅连载/改编记录，新闻页403，尚无足够具体循环情节，立即延后。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round65-log.json",
+        "raw_reading_log": {
+          "id": "Q132160161",
+          "identity": {
+            "title": "8月31日的無盡夏天",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"8月31日的無盡夏天\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://gnn.gamer.com.tw/detail.php?sn=310769",
+              "scope": "改编新闻搜索标题；一次open返回403。",
+              "result": "open_failed_403"
+            },
+            {
+              "url": "https://gnn.gamer.com.tw/detail.php?sn=310769",
+              "scope": "一次open 403，未补。",
+              "result": "simple_open_failed"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "检索仅连载/改编记录，新闻页403，尚无足够具体循环情节，立即延后。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://gnn.gamer.com.tw/detail.php?sn=310769"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://gnn.gamer.com.tw/detail.php?sn=310769",
+          "support_scope": "实际检索读取2026年8月31日改编公告中对原漫画的共同前提；只用循环、记忆保持及合作，未读漫画、不采用未播动画或真人剧新情节。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取2026年8月31日改编公告中对原漫画的共同前提；只用循环、记忆保持及合作，未读漫画、不采用未播动画或真人剧新情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q134469248",
+      "identity": {
+        "title": "Heat Guy J",
+        "author": "作者未知"
+      },
+      "pool_index": 514,
+      "queries": [
+        "\"Heat Guy J\" manga Chiaki Ogishima Daisuke android"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134469248",
+        "identity": {
+          "title": "Heat Guy J",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Heat Guy J\" manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://mangabaka.org/manga/58855/Heat-Guy-J",
+            "support_scope": "实际准确ChiakiOgishima原漫画目录只给完成/一卷/授权信息；动画Plot不用于本单位。",
+            "source_kind": "manga_community_exact_adaptation_identity_directory_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确ChiakiOgishima原漫画目录只给完成/一卷/授权信息；动画Plot不用于本单位。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "当前源漫画单位，实际强剧情返回是HeatGuyJ动画，准确MangaBaka仅一卷漫画目录而无具体剧情；不借动画Daisuke/J城市案件充漫画核验。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q134469248",
+          "identity": {
+            "title": "Heat Guy J",
+            "author": "作者未知"
+          },
+          "ownership_index": 85,
+          "new_pool_index": 85,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Heat Guy J\" manga synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://mangabaka.org/manga/58855/Heat-Guy-J",
+              "support_scope": "实际准确ChiakiOgishima原漫画目录只给完成/一卷/授权信息；动画Plot不用于本单位。",
+              "source_kind": "manga_community_exact_adaptation_identity_directory_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-85.json",
+            "sha256": "9ab551408e0ebfc8f3f6ba2807b795b3ecdc36bb3993d4f5d4552c9d3590e92e",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "当前源漫画单位，实际强剧情返回是HeatGuyJ动画，准确MangaBaka仅一卷漫画目录而无具体剧情；不借动画Daisuke/J城市案件充漫画核验。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://onisaga.com/manga/heat-guy-j"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://onisaga.com/manga/heat-guy-j",
+          "support_scope": "实际检索读取标为漫画及Chiaki Ogishima的社区书介，只有搭档、治安部门与黑帮继承前提；非直接出版社正文阅读，不借动画独有案件或结局。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取标为漫画及Chiaki Ogishima的社区书介，只有搭档、治安部门与黑帮继承前提；非直接出版社正文阅读，不借动画独有案件或结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q134733959",
+      "identity": {
+        "title": "Those Sexy Saucer People",
+        "author": "佐治·亨利·史密夫"
+      },
+      "pool_index": 515,
+      "queries": [
+        "\"Those Sexy Saucer People\" Smith story Earth"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134733959",
+        "identity": {
+          "title": "Those Sexy Saucer People",
+          "author": "佐治·亨利·史密夫"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Those Sexy Saucer People\" \"George H. Smith\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "作者书目与博客藏书介绍，未取得足够本书具体情节；不将真实UFO说法套成小说事实。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-modern-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q134733959",
+          "identity": {
+            "title": "Those Sexy Saucer People",
+            "author": "佐治·亨利·史密夫"
+          },
+          "queries": [
+            "\"Those Sexy Saucer People\" \"George H. Smith\""
+          ],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "knowledge_analysis": false,
+          "first_pass_only": true,
+          "original_full_text_read": false,
+          "status": "deferred_first_pass",
+          "failure_count": 1,
+          "reason": "作者书目与博客藏书介绍，未取得足够本书具体情节；不将真实UFO说法套成小说事实。",
+          "raw_search_artifact": "work/evidence/root-assist-modern-r2-search-c.json",
+          "opens": []
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://books.google.com/books?id=hVSaygEACAAJ",
+        "https://en.wikipedia.org/wiki/George_H._Smith_%28fiction_author%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books?id=hVSaygEACAAJ",
+          "support_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/George_H._Smith_%28fiction_author%29",
+          "support_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://books.google.com/books?id=hVSaygEACAAJ",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q135508423",
+      "identity": {
+        "title": "Mobile Fighter G Gundam",
+        "author": "時田洸一"
+      },
+      "pool_index": 516,
+      "queries": [
+        "\"機動武闘伝Gガンダム\" ときた洸一 漫画 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135508423",
+        "identity": {
+          "title": "Mobile Fighter G Gundam",
+          "author": "時田洸一"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"G Fighter Gundam\" \"Koichi Tokita\" manga plot"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.gkcnexus.com/",
+            "scope": "本次查询主要Gundam新闻与其他Tokita新漫画，未取得本Tokita G Gundam漫画单作简介；不借动画或重制Chokyu版情节。",
+            "result": "unrelated_or_thin_result",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本次查询主要Gundam新闻与其他Tokita新漫画，未取得本Tokita G Gundam漫画单作简介；不借动画或重制Chokyu版情节。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "root-assist-early-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q135508423",
+          "identity": {
+            "title": "Mobile Fighter G Gundam",
+            "author": "時田洸一"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"G Fighter Gundam\" \"Koichi Tokita\" manga plot"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.gkcnexus.com/",
+              "scope": "本次查询主要Gundam新闻与其他Tokita新漫画，未取得本Tokita G Gundam漫画单作简介；不借动画或重制Chokyu版情节。",
+              "result": "unrelated_or_thin_result"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本次查询主要Gundam新闻与其他Tokita新漫画，未取得本Tokita G Gundam漫画单作简介；不借动画或重制Chokyu版情节。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://mangapedia.com/%E6%A9%9F%E5%8B%95%E6%AD%A6%E9%97%98%E4%BC%9DG%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0-jayxoyny0",
+        "https://www.kodansha.co.jp/comic/products/0000032177"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mangapedia.com/%E6%A9%9F%E5%8B%95%E6%AD%A6%E9%97%98%E4%BC%9DG%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0-jayxoyny0",
+          "support_scope": "实际直接读取明确署Tokita漫画的MangaPedia概述与格斗制度段，并用讲谈社目录确认作者；仅共同制度前提，不读全漫画、不借动画角色命运或后来的超級重作情节。"
+        },
+        {
+          "url": "https://www.kodansha.co.jp/comic/products/0000032177",
+          "support_scope": "实际直接读取明确署Tokita漫画的MangaPedia概述与格斗制度段，并用讲谈社目录确认作者；仅共同制度前提，不读全漫画、不借动画角色命运或后来的超級重作情节。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取明确署Tokita漫画的MangaPedia概述与格斗制度段，并用讲谈社目录确认作者；仅共同制度前提，不读全漫画、不借动画角色命运或后来的超級重作情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://mangapedia.com/%E6%A9%9F%E5%8B%95%E6%AD%A6%E9%97%98%E4%BC%9DG%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0-jayxoyny0",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q135669254",
+      "identity": {
+        "title": "Muteki-Ō Tri-Zenon: Blaze",
+        "author": "作者未知"
+      },
+      "pool_index": 517,
+      "queries": [
+        "\"トライゼノン\" \"BLAZE\" 小説 神威"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135669254",
+        "identity": {
+          "title": "Muteki-Ō Tri-Zenon: Blaze",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"無敵王トライゼノン BLAZE\" あらすじ"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+        "reason_unconfirmed": "BLAZE不同卷推广仅败北、主角觉醒和最终形态名称，缺敌人/行动具体前提；不借同名动画补齐。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q135669254",
+          "identity": {
+            "title": "Muteki-Ō Tri-Zenon: Blaze",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"無敵王トライゼノン BLAZE\" あらすじ"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "BLAZE不同卷推广仅败北、主角觉醒和最终形态名称，缺敌人/行动具体前提；不借同名动画补齐。",
+          "exact_support_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-b.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://dragonage-comic.com/product/trizenon/",
+        "https://dragonage-comic.com/product/trizenon/200106000262.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://dragonage-comic.com/product/trizenon/",
+          "support_scope": "实际检索读取Dragon Age官方BLAZE1/2书介；它是Seta Noriyasu独立漫画故事，不借Fire漫画或ZP等小说、TV动画结局。"
+        },
+        {
+          "url": "https://dragonage-comic.com/product/trizenon/200106000262.html",
+          "support_scope": "实际检索读取Dragon Age官方BLAZE1/2书介；它是Seta Noriyasu独立漫画故事，不借Fire漫画或ZP等小说、TV动画结局。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取Dragon Age官方BLAZE1/2书介；它是Seta Noriyasu独立漫画故事，不借Fire漫画或ZP等小说、TV动画结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q136279303",
+      "identity": {
+        "title": "Ganymedes 24",
+        "author": "作者未知"
+      },
+      "pool_index": 518,
+      "queries": [
+        "\"Ganymedes 24\" recensie verhalen"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136279303",
+        "identity": {
+          "title": "Ganymedes 24",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ganymedes 24\" verhalen"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.ncsf.nl/blog/2024/09/07/ganymedes-24/",
+            "support_scope": "实际准确年鉴评论书目、诗篇名单和首成员提及；未读可分析成员剧情。",
+            "source_kind": "genre_community_exact_anthology_review_contents_scope_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确年鉴评论书目、诗篇名单和首成员提及；未读可分析成员剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确第24年鉴评论实际可见部分是编辑/作者成员目录及评论者虚构时间旅行开场，未得具体成员情节；不把评论者开场当年鉴原篇。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q136279303",
+          "identity": {
+            "title": "Ganymedes 24",
+            "author": "作者未知"
+          },
+          "ownership_index": 89,
+          "new_pool_index": 89,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Ganymedes 24\" verhalen"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.ncsf.nl/blog/2024/09/07/ganymedes-24/",
+              "support_scope": "实际准确年鉴评论书目、诗篇名单和首成员提及；未读可分析成员剧情。",
+              "source_kind": "genre_community_exact_anthology_review_contents_scope_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-89.json",
+            "sha256": "110c776158c00eef85e3b78b0839fdc62d3d96a1f173853f64e595c610ed5b73",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确第24年鉴评论实际可见部分是编辑/作者成员目录及评论者虚构时间旅行开场，未得具体成员情节；不把评论者开场当年鉴原篇。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://johankleinhaneveld.blogspot.com/2024/11/verhalen-in-ganymedes-edgezero-en-nog.html?m=1"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://johankleinhaneveld.blogspot.com/2024/11/verhalen-in-ganymedes-edgezero-en-nog.html?m=1",
+          "support_scope": "实际检索读取作者Johan Klein Haneveld本人文章，明确本篇收录Ganymedes24及其前提；未读原篇，不推定记忆交易机制、海盗行动或结局，不概括全册。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取作者Johan Klein Haneveld本人文章，明确本篇收录Ganymedes24及其前提；未读原篇，不推定记忆交易机制、海盗行动或结局，不概括全册。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q136684680",
+      "identity": {
+        "title": "Ganymedes 23",
+        "author": "作者未知"
+      },
+      "pool_index": 519,
+      "queries": [
+        "\"Ganymedes 23\" recensie verhalen"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136684680",
+        "identity": {
+          "title": "Ganymedes 23",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ganymedes 23\" verhalen"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+        "reason_unconfirmed": "Ganymedes23出版社年刊目录明确集合身份但没有入选故事梗概；不从短篇题名如Dysonzwerm推剧情或给整集一个主题。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q136684680",
+          "identity": {
+            "title": "Ganymedes 23",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Ganymedes 23\" verhalen"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "Ganymedes23出版社年刊目录明确集合身份但没有入选故事梗概；不从短篇题名如Dysonzwerm推剧情或给整集一个主题。",
+          "exact_support_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-b.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.ncsf.nl/blog/2023/09/02/ganymedes-23/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ncsf.nl/blog/2023/09/02/ganymedes-23/",
+          "support_scope": "实际直接读取NCSF逐篇评论，准确署Finn Audenaert及该篇；仅这段具体补员前提，不用评论者开头自称时间旅行的幽默文字当本集剧情，不读全册。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取NCSF逐篇评论，准确署Finn Audenaert及该篇；仅这段具体补员前提，不用评论者开头自称时间旅行的幽默文字当本集剧情，不读全册。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.ncsf.nl/blog/2023/09/02/ganymedes-23/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q136684684",
+      "identity": {
+        "title": "Ganymedes 19",
+        "author": "作者未知"
+      },
+      "pool_index": 520,
+      "queries": [
+        "\"Ganymedes 19\" recensie verhalen"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136684684",
+        "identity": {
+          "title": "Ganymedes 19",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ganymedes 19\" verhalen"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+        "reason_unconfirmed": "Ganymedes19出版社目录只有短篇/诗歌题名与编者，未获具体篇内容；不借别年度合集或标题猜议题。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q136684684",
+          "identity": {
+            "title": "Ganymedes 19",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Ganymedes 19\" verhalen"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "Ganymedes19出版社目录只有短篇/诗歌题名与编者，未获具体篇内容；不借别年度合集或标题猜议题。",
+          "exact_support_scope": "一次精准查询，只有来源所述身份/目录、极薄前提或其他媒介内容；当前目标缺具体情节，延期不算完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-b.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.ncsf.nl/blog/2019/10/22/ganymedes-19/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ncsf.nl/blog/2019/10/22/ganymedes-19/",
+          "support_scope": "实际直接读取Ganymedes19的NCSF评论，只用其明确归于Guido Eekhaut的未给篇名开篇故事；不猜故事标题、AI具体动作或结尾，不把其他作者短句串成同一情节。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取Ganymedes19的NCSF评论，只用其明确归于Guido Eekhaut的未给篇名开篇故事；不猜故事标题、AI具体动作或结尾，不把其他作者短句串成同一情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.ncsf.nl/blog/2019/10/22/ganymedes-19/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q137029463",
+      "identity": {
+        "title": "Mama wa Shōgaku 4 Nensei",
+        "author": "作者未知"
+      },
+      "pool_index": 523,
+      "queries": [
+        "\"ママは小学4年生\" 漫画 中森衣都 未来"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137029463",
+        "identity": {
+          "title": "Mama wa Shōgaku 4 Nensei",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"ママは小学4年生\" 漫画 あらすじ"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+        "reason_unconfirmed": "Mama wa Shōgaku 4 Nensei结果主要动画介绍，未取得当前漫画具体内容；不将50集动画的养育/未来子女事件移入未知漫画。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q137029463",
+          "identity": {
+            "title": "Mama wa Shōgaku 4 Nensei",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"ママは小学4年生\" 漫画 あらすじ"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "Mama wa Shōgaku 4 Nensei结果主要动画介绍，未取得当前漫画具体内容；不将50集动画的养育/未来子女事件移入未知漫画。",
+          "exact_support_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-c.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.sunrise-world.net/titles/pickup_140.php",
+        "https://www.sunrise-inc.co.jp/work/detail.php?cid=140"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.sunrise-world.net/titles/pickup_140.php",
+          "support_scope": "实际检索读取Sunrise官方共同前提及官方明确同时刊载Nakamori漫画的信息；只用托付未来女儿的共同开端，未读漫画独有章节，不把TV单集内容当漫画阅读。"
+        },
+        {
+          "url": "https://www.sunrise-inc.co.jp/work/detail.php?cid=140",
+          "support_scope": "实际检索读取Sunrise官方共同前提及官方明确同时刊载Nakamori漫画的信息；只用托付未来女儿的共同开端，未读漫画独有章节，不把TV单集内容当漫画阅读。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取Sunrise官方共同前提及官方明确同时刊载Nakamori漫画的信息；只用托付未来女儿的共同开端，未读漫画独有章节，不把TV单集内容当漫画阅读。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q137640904",
+      "identity": {
+        "title": "Two Contours on a Winter Day",
+        "author": "安里朝戶"
+      },
+      "pool_index": 524,
+      "queries": [
+        "\"Two Contours on a Winter Day\" Asato 86 story"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137640904",
+        "identity": {
+          "title": "Two Contours on a Winter Day",
+          "author": "安里朝戶"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Two Contours on a Winter Day\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://musicbrainz.org/series/4cd4df03-de0f-4f4a-8e84-e3a7a1b50a65",
+            "scope": "86系列英文短篇/音频作者翻译者与收入列表。",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "只有Two Contours独立收入身份，无本短篇情节，不从86整体战争设定套用。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round65-log.json",
+        "raw_reading_log": {
+          "id": "Q137640904",
+          "identity": {
+            "title": "Two Contours on a Winter Day",
+            "author": "安里朝戶"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Two Contours on a Winter Day\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://musicbrainz.org/series/4cd4df03-de0f-4f4a-8e84-e3a7a1b50a65",
+              "scope": "86系列英文短篇/音频作者翻译者与收入列表。",
+              "result": "contents_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "只有Two Contours独立收入身份，无本短篇情节，不从86整体战争设定套用。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": true,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://tapas.io/episode/3730317"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tapas.io/episode/3730317",
+          "support_scope": "实际直接读取Tapas授权英文连载本短篇开头约L41—69，只有该篇双场景；未读86全系列或后续战事，不采用同页接续别篇内容。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取Tapas授权英文连载本短篇开头约L41—69，只有该篇双场景；未读86全系列或后续战事，不采用同页接续别篇内容。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://tapas.io/episode/3730317",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q137988507",
+      "identity": {
+        "title": "Space Ace",
+        "author": "吉田竜夫"
+      },
+      "pool_index": 525,
+      "queries": [
+        "\"宇宙エース\" 吉田竜夫 漫画 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137988507",
+        "identity": {
+          "title": "Space Ace",
+          "author": "吉田竜夫"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Space Ace\" Tatsuo Yoshida manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "SpaceAce原漫画身份存在，但具体故事结果是TVSeries与Tatsunoko动画；未确认漫画开端事件，后置不继承。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round8-log.json",
+        "raw_reading_log": {
+          "id": "Q137988507",
+          "identity": {
+            "title": "Space Ace",
+            "author": "吉田竜夫"
+          },
+          "ownership_index": 416,
+          "new_pool_index": 416,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Space Ace\" Tatsuo Yoshida manga synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r8-search-416.json",
+            "sha256": "19675bd93078ab3b47e10ceb87f2b5a0cc77f91f5f0f2cf3ca81a8c762e2c900",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "SpaceAce原漫画身份存在，但具体故事结果是TVSeries与Tatsunoko动画；未确认漫画开端事件，后置不继承。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.mangashop.jp/bin/showprod?c=9784775913710"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.mangashop.jp/bin/showprod?c=9784775913710",
+          "support_scope": "实际直接读取漫画完全版出版社首卷的第一、二故事简介与明确原漫画收录范围；不采用页面另述动画广告食品或TV单集情节，未读漫画正文。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取漫画完全版出版社首卷的第一、二故事简介与明确原漫画收录范围；不采用页面另述动画广告食品或TV单集情节，未读漫画正文。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.mangashop.jp/bin/showprod?c=9784775913710",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q141048548",
+      "identity": {
+        "title": "The Girl from Mars",
+        "author": "罗伯特·布勒希"
+      },
+      "pool_index": 529,
+      "queries": [
+        "\"The Girl from Mars\" \"Bloch\" story review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141048548",
+        "identity": {
+          "title": "The Girl from Mars",
+          "author": "罗伯特·布勒希"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Girl from Mars\" Robert Bloch synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "GirlFromMars结果主要1991同名电影及1929期刊作品，没取得RobertBloch确切短篇剧情；不移用同题他作。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round8-log.json",
+        "raw_reading_log": {
+          "id": "Q141048548",
+          "identity": {
+            "title": "The Girl from Mars",
+            "author": "罗伯特·布勒希"
+          },
+          "ownership_index": 428,
+          "new_pool_index": 428,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"The Girl from Mars\" Robert Bloch synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r8-search-428.json",
+            "sha256": "3d692a5c3ece3145a445bfb96f8fc05552b12957f571e6523202a9df6dbecf66",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "GirlFromMars结果主要1991同名电影及1929期刊作品，没取得RobertBloch确切短篇剧情；不移用同题他作。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://mporcius.blogspot.com/2025/03/robert-bloch-proxy-head-girl-from-mars.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mporcius.blogspot.com/2025/03/robert-bloch-proxy-head-girl-from-mars.html",
+          "support_scope": "实际直接读取MPorcius评论中本篇独立段落，明确马戏、招牌、饥饿与肉食反转；不是作者原文阅读，不借邻篇Proxy Head或Method for Murder剧情。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取MPorcius评论中本篇独立段落，明确马戏、招牌、饥饿与肉食反转；不是作者原文阅读，不借邻篇Proxy Head或Method for Murder剧情。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": [
+        {
+          "url": "https://mporcius.blogspot.com/2025/03/robert-bloch-proxy-head-girl-from-mars.html",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q16070470",
+      "identity": {
+        "title": "De helden van de highway",
+        "author": "哈兰·艾里森"
+      },
+      "pool_index": 533,
+      "queries": [
+        "\"De helden van de highway\" \"Shattered Like a Glass Goblin\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q16070470",
+        "identity": {
+          "title": "De helden van de highway",
+          "author": "哈兰·艾里森"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"De helden van de highway\" Ellison verhalen"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://deboekenplank.nl/naslag/aut/e/ellison_h.htm",
+            "support_scope": "实际准确荷兰选集十成员英文对应书目，未读成员情节或原作。",
+            "source_kind": "literary_bibliography_exact_translated_collection_contents_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际准确荷兰选集十成员英文对应书目，未读成员情节或原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确荷兰Ellison短篇集目录列十篇；这轮未取得所收单篇具体情节，不把同题篇名或作者常见主题当全书分析。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round1-log.json",
+        "raw_reading_log": {
+          "id": "Q16070470",
+          "identity": {
+            "title": "De helden van de highway",
+            "author": "哈兰·艾里森"
+          },
+          "ownership_index": 7,
+          "new_pool_index": 7,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"De helden van de highway\" Ellison verhalen"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://deboekenplank.nl/naslag/aut/e/ellison_h.htm",
+              "support_scope": "实际准确荷兰选集十成员英文对应书目，未读成员情节或原作。",
+              "source_kind": "literary_bibliography_exact_translated_collection_contents_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r1-search-7.json",
+            "sha256": "224a956b007a23f4c2663733371685efd8bb43acbce95159943df3c003984a83",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确荷兰Ellison短篇集目录列十篇；这轮未取得所收单篇具体情节，不把同题篇名或作者常见主题当全书分析。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://adeeplookbydavehook.wordpress.com/2025/02/07/deathbird-stories-by-harlan-ellison-1975-harper-row/",
+        "https://adeeplookbydavehook.wordpress.com/2025/12/31/the-beast-that-shouted-love-at-the-heart-of-the-world-harlan-ellison-collection-1969-avon/comment-page-1/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://adeeplookbydavehook.wordpress.com/2025/02/07/deathbird-stories-by-harlan-ellison-1975-harper-row/",
+          "support_scope": "实际检索读取Deathbird Stories逐篇评论中本短篇的事件，并在另一合集评论确认其重印于De helden van de highway；直接打开后一评论失败。只用明确选篇，不读荷译全册，不推定变化的客观／幻觉解释或未读结局。"
+        },
+        {
+          "url": "https://adeeplookbydavehook.wordpress.com/2025/12/31/the-beast-that-shouted-love-at-the-heart-of-the-world-harlan-ellison-collection-1969-avon/comment-page-1/",
+          "support_scope": "实际检索读取Deathbird Stories逐篇评论中本短篇的事件，并在另一合集评论确认其重印于De helden van de highway；直接打开后一评论失败。只用明确选篇，不读荷译全册，不推定变化的客观／幻觉解释或未读结局。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取Deathbird Stories逐篇评论中本短篇的事件，并在另一合集评论确认其重印于De helden van de highway；直接打开后一评论失败。只用明确选篇，不读荷译全册，不推定变化的客观／幻觉解释或未读结局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": [
+        {
+          "url": "https://adeeplookbydavehook.wordpress.com/2025/12/31/the-beast-that-shouted-love-at-the-heart-of-the-world-harlan-ellison-collection-1969-avon/comment-page-1/",
+          "outcome": "failed_fetch",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q17146956",
+      "identity": {
+        "title": "The Future Boys Trilogy",
+        "author": "Stephen Jordan"
+      },
+      "pool_index": 534,
+      "queries": [
+        "\"The Future Boys\" \"Stephen Jordan\" time"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q17146956",
+        "identity": {
+          "title": "The Future Boys Trilogy",
+          "author": "Stephen Jordan"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Future Boys Trilogy\" \"Stephen Jordan\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Stephen_Jordan_%28writer%29",
+            "scope": "作者生涯中三部舞台剧与后来音频情景喜剧的区别",
+            "result": "read_bibliographic_context",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "只有第一剧两名陌生人在深空剩一小时的极短前提；其他两剧无具体情节，不能据此填整个三部曲两项问题。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round61-log.json",
+        "raw_reading_log": {
+          "id": "Q17146956",
+          "identity": {
+            "title": "The Future Boys Trilogy",
+            "author": "Stephen Jordan"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Future Boys Trilogy\" \"Stephen Jordan\" synopsis"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Stephen_Jordan_%28writer%29",
+              "scope": "作者生涯中三部舞台剧与后来音频情景喜剧的区别",
+              "result": "read_bibliographic_context"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "只有第一剧两名陌生人在深空剩一小时的极短前提；其他两剧无具体情节，不能据此填整个三部曲两项问题。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stephen_Jordan_%28writer%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Stephen_Jordan_%28writer%29",
+          "support_scope": "实际检索读取作者条目，明确三部曲是Dead Static、Pilgrim Shadow、King Chaos舞台剧，并仅给首作生存前提；分析限首作，不把2017音频喜剧或另外两剧的未知事件填入。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取作者条目，明确三部曲是Dead Static、Pilgrim Shadow、King Chaos舞台剧，并仅给首作生存前提；分析限首作，不把2017音频喜剧或另外两剧的未知事件填入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q19857129",
+      "identity": {
+        "title": "Real-Time World",
+        "author": "克里斯多夫·普利斯特"
+      },
+      "pool_index": 536,
+      "queries": [
+        "\"Real-Time World\" Priest \"The Head and the Hand\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q19857129",
+        "identity": {
+          "title": "Real-Time World",
+          "author": "克里斯多夫·普利斯特"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Real-Time World\" \"Priest\" contents synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.worldswithoutend.com/novel.asp?id=24487",
+            "support_scope": "实际短篇集目录含HeadAndHand、FireStorm等，页面明示无excerpt；只目录非全书。",
+            "source_kind": "genre_community_exact_collection_contents_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际短篇集目录含HeadAndHand、FireStorm等，页面明示无excerpt；只目录非全书。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确RealTimeWorld明确短篇集并列十篇，但未取得具体单篇情节、亦无可靠已有篇情节知识；不从同题篇或Priest常见母题批填。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round3-log.json",
+        "raw_reading_log": {
+          "id": "Q19857129",
+          "identity": {
+            "title": "Real-Time World",
+            "author": "克里斯多夫·普利斯特"
+          },
+          "ownership_index": 159,
+          "new_pool_index": 159,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Real-Time World\" \"Priest\" contents synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.worldswithoutend.com/novel.asp?id=24487",
+              "support_scope": "实际短篇集目录含HeadAndHand、FireStorm等，页面明示无excerpt；只目录非全书。",
+              "source_kind": "genre_community_exact_collection_contents_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r3-search-159.json",
+            "sha256": "dcffa12e8857f6f3be64db7039f45be696152feebfcc6c8dc530af7db2162153",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确RealTimeWorld明确短篇集并列十篇，但未取得具体单篇情节、亦无可靠已有篇情节知识；不从同题篇或Priest常见母题批填。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://christopher-priest.co.uk/grimgrin-studio/real-time-world"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://christopher-priest.co.uk/grimgrin-studio/real-time-world",
+          "support_scope": "实际检索读取Priest作者官网，明确本集包含The Head and the Hand，并转引TLS评论中的人体表演前提；并非独立读取TLS全文或原篇。只分析这一篇，不扩大为十篇全集。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取Priest作者官网，明确本集包含The Head and the Hand，并转引TLS评论中的人体表演前提；并非独立读取TLS全文或原篇。只分析这一篇，不扩大为十篇全集。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q20477997",
+      "identity": {
+        "title": "Poem of Utnoa",
+        "author": "Abel Montagut"
+      },
+      "pool_index": 537,
+      "queries": [
+        "\"Poema de Utnoa\" Montagut extraterrestres diluvi"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q20477997",
+        "identity": {
+          "title": "Poem of Utnoa",
+          "author": "Abel Montagut"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Poem of Utnoa\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.icip.cat/wp-content/uploads/2021/01/wp_2012_03_ang_esperanto.pdf",
+            "support_scope": "实际学术机构论文提及本史诗诗体与和平主题，但不包含足够具体故事；不称已读原诗。",
+            "source_kind": "academic_esperanto_literature_theme_reference_only",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "实际来源材料",
+            "result": "catalog_only",
+            "reading_scope": "实际学术机构论文提及本史诗诗体与和平主题，但不包含足够具体故事；不称已读原诗。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确世界语史诗资料仅明确和平/非暴力主题及诗体，未给具体人物/事件，不能从Utnoa题名继承Noah或Gilgamesh故事。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round3-log.json",
+        "raw_reading_log": {
+          "id": "Q20477997",
+          "identity": {
+            "title": "Poem of Utnoa",
+            "author": "Abel Montagut"
+          },
+          "ownership_index": 162,
+          "new_pool_index": 162,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Poem of Utnoa\" synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.icip.cat/wp-content/uploads/2021/01/wp_2012_03_ang_esperanto.pdf",
+              "support_scope": "实际学术机构论文提及本史诗诗体与和平主题，但不包含足够具体故事；不称已读原诗。",
+              "source_kind": "academic_esperanto_literature_theme_reference_only",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r3-search-162.json",
+            "sha256": "dd85a63938284a2e41d7715ec64de16725cfcae38a1363ba45cc568ede27db90",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确世界语史诗资料仅明确和平/非暴力主题及诗体，未给具体人物/事件，不能从Utnoa题名继承Noah或Gilgamesh故事。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.elkraken.com/Ressenyes_Cat/G/R-Gesta_Utnoa.html",
+        "https://www.casadellibro.com.co/libro-utnoa-poema-epico/9788494823435/6392352"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.elkraken.com/Ressenyes_Cat/G/R-Gesta_Utnoa.html",
+          "support_scope": "实际检索读取加泰罗尼亚评论的原星系毁灭、伦理限制与洪水预警，并读取西译史诗书介；未读Esperanto原诗或西译全文，不将宇宙来访者说法当历史事实。"
+        },
+        {
+          "url": "https://www.casadellibro.com.co/libro-utnoa-poema-epico/9788494823435/6392352",
+          "support_scope": "实际检索读取加泰罗尼亚评论的原星系毁灭、伦理限制与洪水预警，并读取西译史诗书介；未读Esperanto原诗或西译全文，不将宇宙来访者说法当历史事实。"
+        }
+      ],
+      "exact_support_scope": "实际检索读取加泰罗尼亚评论的原星系毁灭、伦理限制与洪水预警，并读取西译史诗书介；未读Esperanto原诗或西译全文，不将宇宙来访者说法当历史事实。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q23307469",
+      "identity": {
+        "title": "The Star Conquerors",
+        "author": "班·保華"
+      },
+      "pool_index": 539,
+      "queries": [
+        "\"Star Conquerors\" Bova Geoffrey Knowland aliens"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q23307469",
+        "identity": {
+          "title": "The Star Conquerors",
+          "author": "班·保華"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"The Star Conquerors\" \"Ben Bova\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Star_Conquerors",
+            "scope": "少年军官/与受Masters控制Saurians战争简介，无进一步具体行动。",
+            "result": "thin_book_summary",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://www.kirkusreviews.com/book-reviews/ben-bova/the-star-conquerors/",
+            "scope": "一次准确书评路径open不可访问。",
+            "result": "simple_open_failed",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "短框架尚不足区分本作具体矛盾，书评不可访问；保留后续，不编和平谈判或结局。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "root-assist-early-round1-log-v2.json",
+        "raw_reading_log": {
+          "id": "Q23307469",
+          "identity": {
+            "title": "The Star Conquerors",
+            "author": "班·保華"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"The Star Conquerors\" \"Ben Bova\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Star_Conquerors",
+              "scope": "少年军官/与受Masters控制Saurians战争简介，无进一步具体行动。",
+              "result": "thin_book_summary"
+            },
+            {
+              "url": "https://www.kirkusreviews.com/book-reviews/ben-bova/the-star-conquerors/",
+              "scope": "一次准确书评路径open不可访问。",
+              "result": "simple_open_failed"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "短框架尚不足区分本作具体矛盾，书评不可访问；保留后续，不编和平谈判或结局。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Star_Conquerors"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Star_Conquerors",
+          "support_scope": "实际直接读取本小说条目完整梗概，明确撤离、责备与胜利后责任转移；未读原书，不据其夸张星系数字推科学有效性或空间尺度，不借Star Watchman后续。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取本小说条目完整梗概，明确撤离、责备与胜利后责任转移；未读原书，不据其夸张星系数字推科学有效性或空间尺度，不借Star Watchman后续。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Star_Conquerors",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q28664357",
+      "identity": {
+        "title": "Марсианское зелье",
+        "author": "柯·布利乔夫"
+      },
+      "pool_index": 541,
+      "queries": [
+        "\"Марсианское зелье\" Булычев рассказ сюжет"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q28664357",
+        "identity": {
+          "title": "Марсианское зелье",
+          "author": "柯·布利乔夫"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Марсианское зелье\" Булычев"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "搜索只给年轻化装置片段与大量书目，事件关系不足，暂不据极短片段扩写核心。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-modern-round1-log.json",
+        "raw_reading_log": {
+          "id": "Q28664357",
+          "identity": {
+            "title": "Марсианское зелье",
+            "author": "柯·布利乔夫"
+          },
+          "queries": [
+            "\"Марсианское зелье\" Булычев"
+          ],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "knowledge_analysis": false,
+          "first_pass_only": true,
+          "original_full_text_read": false,
+          "status": "deferred_first_pass",
+          "failure_count": 1,
+          "reason": "搜索只给年轻化装置片段与大量书目，事件关系不足，暂不据极短片段扩写核心。",
+          "raw_search_artifact": "work/evidence/root-assist-modern-r1-search-a.json",
+          "opens": []
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%B7%D0%B5%D0%BB%D1%8C%D0%B5"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%B7%D0%B5%D0%BB%D1%8C%D0%B5",
+          "support_scope": "实际直接读取俄文小说条目，明确青春药、长寿记忆及末段装置故障；只分析独立повесть，不读同名合集其他篇目，不采用Chance电影剧情或硬推生物机制。"
+        }
+      ],
+      "exact_support_scope": "实际直接读取俄文小说条目，明确青春药、长寿记忆及末段装置故障；只分析独立повесть，不读同名合集其他篇目，不采用Chance电影剧情或硬推生物机制。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": [
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%B7%D0%B5%D0%BB%D1%8C%D0%B5",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-b.json"
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "id": "Q133528185",
+      "identity": {
+        "title": "1976... the Year of Terror",
+        "author": "佐治·亨利·史密夫"
+      },
+      "pool_index": 513,
+      "queries": [
+        "\"1976\" \"Year of Terror\" George Smith novel review"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q133528185",
+        "identity": {
+          "title": "1976... the Year of Terror",
+          "author": "佐治·亨利·史密夫"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"1976 the Year of Terror\" \"Smith\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询只有当前身份、他媒介/其他卷内容或一般形态；缺当前实体足够对应情节，延期不算核心完成。",
+        "reason_unconfirmed": "1976…The Year of Terror只获George H. Smith书目与异名The Year for Love，没有该作内容；不从标题或作者其他小说的Yellow Peril情节推断。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q133528185",
+          "identity": {
+            "title": "1976... the Year of Terror",
+            "author": "佐治·亨利·史密夫"
+          },
+          "queries": [
+            "\"1976 the Year of Terror\" \"Smith\" synopsis"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "1976…The Year of Terror只获George H. Smith书目与异名The Year for Love，没有该作内容；不从标题或作者其他小说的Yellow Peril情节推断。",
+          "exact_support_scope": "一次精准查询只有当前身份、他媒介/其他卷内容或一般形态；缺当前实体足够对应情节，延期不算核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-a.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "只取得SFE作者书目与笼统软色情评论，无这部独立小说具体前提。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q136684688",
+      "identity": {
+        "title": "Ganymedes 15",
+        "author": "作者未知"
+      },
+      "pool_index": 521,
+      "queries": [
+        "\"Ganymedes 15\" recensie verhalen"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136684688",
+        "identity": {
+          "title": "Ganymedes 15",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ganymedes 15\" verhalen"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+        "reason_unconfirmed": "Ganymedes15所获出版社年刊目录没有入选故事梗概；不由题名或编者判断全书议题。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q136684688",
+          "identity": {
+            "title": "Ganymedes 15",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Ganymedes 15\" verhalen"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "Ganymedes15所获出版社年刊目录没有入选故事梗概；不由题名或编者判断全书议题。",
+          "exact_support_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-c.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "取得整册评价但没有具体选篇事件；指定评论打开失败，不按合集体裁填。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": [
+        {
+          "url": "https://boekenkrant.com/recensie/ganymedes-15/",
+          "outcome": "failed_fetch",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json",
+          "outcome_note": "实际为验证页，正文不可得；没有新增请求。"
+        }
+      ]
+    },
+    {
+      "id": "Q136804822",
+      "identity": {
+        "title": "Detex",
+        "author": "作者未知"
+      },
+      "pool_index": 522,
+      "queries": [
+        "\"Detex\" BD Teodoruzu synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136804822",
+        "identity": {
+          "title": "Detex",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Detex\" bande dessinée résumé"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+        "reason_unconfirmed": "Detex精确查询主要误中软件技术DETEX与一般漫画材料，没有可确定同名法语漫画的剧情；身份不足。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round68-log.json",
+        "raw_reading_log": {
+          "id": "Q136804822",
+          "identity": {
+            "title": "Detex",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Detex\" bande dessinée résumé"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "Detex精确查询主要误中软件技术DETEX与一般漫画材料，没有可确定同名法语漫画的剧情；身份不足。",
+          "exact_support_scope": "一次精准查询只有当前身份/目录、极薄或他媒介内容；未获当前实体足够具体前提，延期不算核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r68-search-c.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "检索失配为TeX过滤程序Detex手册，没有准确漫画情节材料。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q138497816",
+      "identity": {
+        "title": "Cámara oscura",
+        "author": "Julián Isaza"
+      },
+      "pool_index": 526,
+      "queries": [
+        "\"Cámara oscura\" \"Julián Isaza\" cuentos"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q138497816",
+        "identity": {
+          "title": "Cámara oscura",
+          "author": "Julián Isaza"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Cámara oscura\" \"Julián Isaza\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.reynaranjo.net/libros/camara-oscura/",
+            "scope": "出版社本书短篇集宣传，camera/book比喻、Lovecraft/Poe影响，无单篇明确故事。",
+            "result": "metaphorical_collection_description",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "宣传把书比作暗箱，无法确认是真实叙事装置；无具体选篇，不强填命运窥视技术或全合集议题。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round65-log.json",
+        "raw_reading_log": {
+          "id": "Q138497816",
+          "identity": {
+            "title": "Cámara oscura",
+            "author": "Julián Isaza"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Cámara oscura\" \"Julián Isaza\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.reynaranjo.net/libros/camara-oscura/",
+              "scope": "出版社本书短篇集宣传，camera/book比喻、Lovecraft/Poe影响，无单篇明确故事。",
+              "result": "metaphorical_collection_description"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "宣传把书比作暗箱，无法确认是真实叙事装置；无具体选篇，不强填命运窥视技术或全合集议题。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "取得十一篇怪异故事汇编书介，仅泛称外星与时间旅行，未定位具体篇目或事件。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q139850992",
+      "identity": {
+        "title": "Anticipated Witness: Lost Chronicles from the Thresholds of Time",
+        "author": "Bernardo González-Aréchiga Ramírez-Wiella / Bernardo González-Aréchiga Ramírez Wiella"
+      },
+      "pool_index": 527,
+      "queries": [
+        "\"Anticipated Witness\" González-Aréchiga novel time chronicles"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139850992",
+        "identity": {
+          "title": "Anticipated Witness: Lost Chronicles from the Thresholds of Time",
+          "author": "Bernardo González-Aréchiga Ramírez-Wiella / Bernardo González-Aréchiga Ramírez Wiella"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Anticipated Witness\" \"Bernardo\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精准题名作者查询未命中该Bernardo小说实际剧情，主结果是无关音乐剧材料，保留缺口不据题名推时间主题。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-assist-global-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q139850992",
+          "identity": {
+            "title": "Anticipated Witness: Lost Chronicles from the Thresholds of Time",
+            "author": "Bernardo González-Aréchiga Ramírez-Wiella / Bernardo González-Aréchiga Ramírez Wiella"
+          },
+          "ownership_index": 95,
+          "new_pool_index": 95,
+          "ownership_file": "work/evidence/root-undated-assist-global.json",
+          "ownership_sha256": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Anticipated Witness\" \"Bernardo\" synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/root-assist-global-r2-search-95.json",
+            "sha256": "573033d0823d9f1c4e2447907dcd74c577d4b2aacba8fa1f06dc9e214faef8e2",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "精准题名作者查询未命中该Bernardo小说实际剧情，主结果是无关音乐剧材料，保留缺口不据题名推时间主题。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "本次精确题名作者检索失配司法证人资料，没有确切作品前提。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q140358290",
+      "identity": {
+        "title": "階層都市片段集",
+        "author": "Tsukumizu"
+      },
+      "pool_index": 528,
+      "queries": [
+        "\"階層都市片段集\" つくみず 日記 漫画"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q140358290",
+        "identity": {
+          "title": "階層都市片段集",
+          "author": "Tsukumizu"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"階層都市片段集\" つくみず synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "Tsukumizu新作只在GirlsLastTour相关文章中有前传地点/发布信息，没有本作具体事件；不继承少女终末旅行剧情。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round8-log.json",
+        "raw_reading_log": {
+          "id": "Q140358290",
+          "identity": {
+            "title": "階層都市片段集",
+            "author": "Tsukumizu"
+          },
+          "ownership_index": 426,
+          "new_pool_index": 426,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"階層都市片段集\" つくみず synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r8-search-426.json",
+            "sha256": "585c6c4cd49e6713757dbf5e28a720c2a31853072ad9e99c11f98181b9367f97",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "Tsukumizu新作只在GirlsLastTour相关文章中有前传地点/发布信息，没有本作具体事件；不继承少女终末旅行剧情。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "仅确认新作是Girl’s Last Tour层级城市的过去故事，检索主要返回旧作剧情，未取得新作具体事件；不能跨作品复制。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q141514716",
+      "identity": {
+        "title": "YAT Anshin! Uchū Ryokō",
+        "author": "作者未知"
+      },
+      "pool_index": 530,
+      "queries": [
+        "\"YAT安心 宇宙旅行\" 漫画 西川伸司"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141514716",
+        "identity": {
+          "title": "YAT Anshin! Uchū Ryokō",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"YAT Anshin\" manga"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.geneworld.net/episodes-list-8735-yat-anshin-uchu-ryokou.html",
+            "scope": "75集动画目录。",
+            "result": "television_episode_list",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "只有动画集数及标题，无法支持漫画本体具体情节。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round65-log.json",
+        "raw_reading_log": {
+          "id": "Q141514716",
+          "identity": {
+            "title": "YAT Anshin! Uchū Ryokō",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"YAT Anshin\" manga"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.geneworld.net/episodes-list-8735-yat-anshin-uchu-ryokou.html",
+              "scope": "75集动画目录。",
+              "result": "television_episode_list"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "只有动画集数及标题，无法支持漫画本体具体情节。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "只读到电视动画旅游公司欠债劳动与找父亲的说明，未确认该漫画实体具体内容，不借动画案件。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q141611829",
+      "identity": {
+        "title": "Zoids: New Century",
+        "author": "溝淵誠"
+      },
+      "pool_index": 531,
+      "queries": [
+        "\"ゾイド新世紀／ゼロ\" \"溝淵誠\" 漫画 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141611829",
+        "identity": {
+          "title": "Zoids: New Century",
+          "author": "溝淵誠"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Zoids: New Century\" Makoto Mizobuchi manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "ZoidsNewCentury结果具体比赛剧情为动画，不能把Mizobuchi漫画作者与TV导演错误混合字段当对应证据；未得漫画梗概。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round8-log.json",
+        "raw_reading_log": {
+          "id": "Q141611829",
+          "identity": {
+            "title": "Zoids: New Century",
+            "author": "溝淵誠"
+          },
+          "ownership_index": 432,
+          "new_pool_index": 432,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Zoids: New Century\" Makoto Mizobuchi manga synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r8-search-432.json",
+            "sha256": "44e2ea896aadb65e08c398d2935d028da9913635f1c75a0245d09c473bae0073",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "ZoidsNewCentury结果具体比赛剧情为动画，不能把Mizobuchi漫画作者与TV导演错误混合字段当对应证据；未得漫画梗概。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "本次题名与漫画作者精确查询无结果，未获得情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q141636198",
+      "identity": {
+        "title": "Starship Girl Yamamoto Yohko",
+        "author": "作者未知"
+      },
+      "pool_index": 532,
+      "queries": [
+        "\"それゆけ 宇宙戦艦ヤマモトヨーコ\" 漫画 庄司卓"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141636198",
+        "identity": {
+          "title": "Starship Girl Yamamoto Yohko",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Starship Girl Yamamoto Yohko\" manga synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "StarshipGirlYamamotoYohko最强页面显式TVPlotSummary，原漫画版本与剧情对应未证；不移用电玩召唤/RedSnappers电视过程。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round8-log.json",
+        "raw_reading_log": {
+          "id": "Q141636198",
+          "identity": {
+            "title": "Starship Girl Yamamoto Yohko",
+            "author": "作者未知"
+          },
+          "ownership_index": 436,
+          "new_pool_index": 436,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Starship Girl Yamamoto Yohko\" manga synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r8-search-436.json",
+            "sha256": "cf758d116401682f02ef0ed9453eda8d784cdb7dacd6c9ec11b2917fbc53c9fc",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "StarshipGirlYamamotoYohko最强页面显式TVPlotSummary，原漫画版本与剧情对应未证；不移用电玩召唤/RedSnappers电视过程。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "仅取得漫画/小说/动画编目并混列不同版本，没有准确漫画前提。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q18548369",
+      "identity": {
+        "title": "Săritorii în gol",
+        "author": "Mihail Grămescu"
+      },
+      "pool_index": 535,
+      "queries": [
+        "\"Săritorii în gol\" Grămescu povestire plot"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q18548369",
+        "identity": {
+          "title": "Săritorii în gol",
+          "author": "Mihail Grămescu"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Săritorii în gol\" \"Grămescu\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际精准查询无结果或只有身份/不匹配内容，当前实体剧情仍未解；延期不计核心完成。",
+        "reason_unconfirmed": "出版社描述所称是科幻/奇幻选集，canonical则短中篇候选，缺具体篇目剧情；不把审查史与作品故事等同。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q18548369",
+          "identity": {
+            "title": "Săritorii în gol",
+            "author": "Mihail Grămescu"
+          },
+          "queries": [
+            "\"Săritorii în gol\" \"Grămescu\""
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "出版社描述所称是科幻/奇幻选集，canonical则短中篇候选，缺具体篇目剧情；不把审查史与作品故事等同。",
+          "exact_support_scope": "一次实际精准查询无结果或只有身份/不匹配内容，当前实体剧情仍未解；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r64-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "出版页面说明科幻／奇幻选集及审查历史，尚未确认底库短篇与同名合集粒度，也无明确标题篇事件。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q20901898",
+      "identity": {
+        "title": "Lighthouse on the Cliff of the Dolphins",
+        "author": "柯·布利乔夫 / Gennady Gor / Valentina Zhuravleva"
+      },
+      "pool_index": 538,
+      "queries": [
+        "\"Маяк на дельфиньем\" Журавлева Гор рассказы"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q20901898",
+        "identity": {
+          "title": "Lighthouse on the Cliff of the Dolphins",
+          "author": "柯·布利乔夫 / Gennady Gor / Valentina Zhuravleva"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "Lighthouse on the Cliff of the Dolphins anthology contents"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "一次实际精准查询无结果或只有身份/不匹配内容，当前实体剧情仍未解；延期不计核心完成。",
+        "reason_unconfirmed": "检索返回多数Clarke海豚岛及儿童灯塔合集，与当前Bulychev/Gor/Zhuravleva作者组合不匹配，不套错书。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round64-log.json",
+        "raw_reading_log": {
+          "id": "Q20901898",
+          "identity": {
+            "title": "Lighthouse on the Cliff of the Dolphins",
+            "author": "柯·布利乔夫 / Gennady Gor / Valentina Zhuravleva"
+          },
+          "queries": [
+            "Lighthouse on the Cliff of the Dolphins anthology contents"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "original_partial_text_read": false,
+          "original_full_text_read": false,
+          "failure_count": 1,
+          "reason": "检索返回多数Clarke海豚岛及儿童灯塔合集，与当前Bulychev/Gor/Zhuravleva作者组合不匹配，不套错书。",
+          "exact_support_scope": "一次实际精准查询无结果或只有身份/不匹配内容，当前实体剧情仍未解；延期不计核心完成。",
+          "status": "deferred_first_pass",
+          "raw_search_artifact": "work/evidence/modern-r64-search-d.json"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "命中同名Vladimir Osinsky个人合集，作者与底库三位贡献者不合；无对应目标合集的选篇剧情，后置身份范围。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q2703745",
+      "identity": {
+        "title": "アーシアン外伝 秘密の花園",
+        "author": "高河弓"
+      },
+      "pool_index": 540,
+      "queries": [
+        "\"アーシアン\" \"秘密の花園\" あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q2703745",
+        "identity": {
+          "title": "アーシアン外伝 秘密の花園",
+          "author": "高河弓"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"アーシアン外伝\" \"秘密の花園\" あらすじ"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "准确Gaiden秘密の花園只获作者目录与独立外传书目；不能把Earthian本传天使评判地球剧情自动套此外传。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round2-log.json",
+        "raw_reading_log": {
+          "id": "Q2703745",
+          "identity": {
+            "title": "アーシアン外伝 秘密の花園",
+            "author": "高河弓"
+          },
+          "ownership_index": 46,
+          "new_pool_index": 46,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"アーシアン外伝\" \"秘密の花園\" あらすじ"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r2-search-46.json",
+            "sha256": "e15ddda39349103d2fd5ff583672ecea90fe79d414426b69b63b31da4d8fe991",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "准确Gaiden秘密の花園只获作者目录与独立外传书目；不能把Earthian本传天使评判地球剧情自动套此外传。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "读到准确别卷书介与三个角色隐秘爱情概述，但没有具体冲突事件；不借Earthian主线人类灭绝评价剧情。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": [
+        {
+          "url": "https://www.chil-chil.net/goodsDetail/goods_id/28239/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q30599817",
+      "identity": {
+        "title": "Dr. Jekyll and Mr. Hyde",
+        "author": "作者未知"
+      },
+      "pool_index": 542,
+      "queries": [
+        "\"Dr. Jekyll and Mr. Hyde\" \"Q30599817\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q30599817",
+        "identity": {
+          "title": "Dr. Jekyll and Mr. Hyde",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Dr Jekyll and Mr Hyde\" \"manga\" novel"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "源作者/语言/版本未知且题名极泛，一次查询命中原人物、各漫画与计划改编，未确定当前文学实体具体版本；不继承已收录Stevenson原著或任一漫画改编。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-undated-round3-log.json",
+        "raw_reading_log": {
+          "id": "Q30599817",
+          "identity": {
+            "title": "Dr. Jekyll and Mr. Hyde",
+            "author": "作者未知"
+          },
+          "ownership_index": 176,
+          "new_pool_index": 176,
+          "ownership_file": "work/evidence/undated-first-lane-1.json",
+          "ownership_sha256": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+          "source_sort_year": null,
+          "publication_status": "source_year_unknown_preserved",
+          "queries": [
+            "\"Dr Jekyll and Mr Hyde\" \"manga\" novel"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-undated-r3-search-176.json",
+            "sha256": "6fc110cd776a715f433f59383c639bf6b399756d640ec92d6576e3562386dac6",
+            "scope": "实际一次short精准查询完整原返回，只采用日志所述材料范围。"
+          },
+          "status": "deferred_identity_or_material",
+          "no_material_reason": "源作者/语言/版本未知且题名极泛，一次查询命中原人物、各漫画与计划改编，未确定当前文学实体具体版本；不继承已收录Stevenson原著或任一漫画改编。"
+        },
+        "publication_status": "source_year_unknown_preserved",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "精确QID题名检索无结果，作者未知且具体版本未明；不将Stevenson原小说或任一漫画改编直接套入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r17-search-b.json",
+      "opens": []
+    }
+  ]
+}

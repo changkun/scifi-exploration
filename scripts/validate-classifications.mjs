@@ -87,9 +87,19 @@ for(const candidate of registry.discovery_candidates||[]){
         material.url===url && material.actual_content_source_read===true &&
         material.knowledge_analysis===false && material.reading_scope &&
         material.scope_evidence_sha256===evidence.private_raw_source.sha256)));
-      assert(evidence.sources.every(url=>work.source_search_log.raw_reading_log.direct_page_reads?.some(read=>
-        read.url===url && read.sha256===evidence.private_raw_source.sha256 &&
-        read.outcome==='actually_read_limited_page_return_not_full_original')));
+      if(evidence.private_raw_source.provenance==='actual_search_return'){
+        const proof=evidence.private_raw_source;
+        assert(proof.actual_query&&proof.record_sha256&&Number.isInteger(proof.record_index));
+        assert(work.source_search_log.raw_reading_log.queries.includes(proof.actual_query));
+        assert(evidence.sources.every(url=>work.source_search_log.materials_checked.some(material=>
+          material.url===url && material.scope_actual_query===proof.actual_query &&
+          material.scope_record_sha256===proof.record_sha256 &&
+          material.scope_evidence_sha256===proof.sha256)));
+      }else{
+        assert(evidence.sources.every(url=>work.source_search_log.raw_reading_log.direct_page_reads?.some(read=>
+          read.url===url && read.sha256===evidence.private_raw_source.sha256 &&
+          read.outcome==='actually_read_limited_page_return_not_full_original')));
+      }
     }else{
       assert(evidence.sources.every(url=>work.knowledge?.sources.includes(url)));
     }

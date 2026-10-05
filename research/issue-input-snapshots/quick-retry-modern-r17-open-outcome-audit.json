@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "status": "frozen_read_scope_correction",
+    "corrects_previous_input": {
+      "file": "work/evidence/quick-retry-modern-round17-log.json",
+      "sha256": "394c6220ae108134ccdc15a6fd4381bd2d11c5a3a9aaf28fd510cae5d121dba6"
+    },
+    "scope": "只更正一项打开状态，不改变核心分析或查询数；原冻结字节保持。"
+  },
+  "corrections": [
+    {
+      "id": "Q136684688",
+      "url": "https://boekenkrant.com/recensie/ganymedes-15/",
+      "raw_open_artifact": "work/evidence/quick-retry-modern-r17-open-a.json",
+      "old_outcome": "content_read",
+      "new_outcome": "failed_fetch",
+      "reason": "实际返回One moment, please验证页及Please wait while your request is being verified，非正文；本身份仍为deferred且actual_content_source_read=false。",
+      "metadata_effect": {
+        "direct_open_count_unchanged": 12,
+        "direct_open_failed_count": 2
+      }
+    }
+  ]
+}
