@@ -70,7 +70,17 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
-    assert(evidence.sources.every(url=>work.knowledge?.sources.includes(url)));
+    if(evidence.discovery_source_mode==='bibliographic_candidate_no_core_analysis'){
+      assert.equal(evidence.actual_bibliographic_source_read,true);
+      assert.equal(evidence.actual_content_source_read,false);
+      assert.equal(evidence.knowledge_analysis,false);
+      assert.equal(work.issue_analysis_status,'missing');
+      assert(evidence.sources.every(url=>work.source_search_log?.materials_checked.some(material=>
+        material.url===url && material.actual_bibliographic_source_read===true &&
+        material.actual_content_source_read===false && material.reading_scope)));
+    }else{
+      assert(evidence.sources.every(url=>work.knowledge?.sources.includes(url)));
+    }
     assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
     assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
     assert.equal(work.completion.source_verified,false);

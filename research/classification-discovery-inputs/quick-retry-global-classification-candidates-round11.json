@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "status": "private_frozen_candidate_checkpoint",
+    "date": "2026-10-05",
+    "lane": 1,
+    "ownership_file": "work/evidence/quick-retry-lane-1.json",
+    "ownership_sha256": "6ac6307da6880daa689e10a48c35466fac9ed028ea6a42764b0ab4af29d072bb",
+    "candidate_count": 1,
+    "record_count": 1,
+    "public_registry_modified": false,
+    "method": "从准确目录中的comic story及页数识别作品形态候选，不推断剧情，不合并身份。"
+  },
+  "records": [
+    {
+      "proposed_dimension": "作品形态",
+      "proposed_label": "原册内漫画章节",
+      "definition_boundary": "上级单行漫画册目录明确索引的短章节或comic story单元，区别整册、连载期号与全系列。当前只单例来源；题名拼接及Wikidata实体是否对应章节仍待核，不能按标题冒号自动推广。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q138332790",
+          "identity": {
+            "title": "Incal noir : Techniques technos",
+            "author": "作者未知"
+          },
+          "basis": "GCD在1981 L’Incal Noir第一册目录把Techniques technos列为Table of Contents 4、John Difool / comic story / 6 pages，当前底库题名同时含原册名与该单元。",
+          "sources": [
+            "https://my.comics.org/issue/1106809/"
+          ],
+          "exact_support_scope": "一次真实搜索返回准确第一册目录及六页comic story索引；不是该六页剧情、全册或实体对应关系核验。该身份核心留后置，不借全册情节。",
+          "actual_content_source_read": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false
+        }
+      ]
+    }
+  ]
+}

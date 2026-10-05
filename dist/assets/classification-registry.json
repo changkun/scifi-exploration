@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 12,
+    "version": 13,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v11.json",
-      "sha256": "eec9499a5910d836823a7f3c4d2f014b0ca5b1b32cbe38d2801debd0e39fefdb"
+      "file": "research/classification-registry-history/v12.json",
+      "sha256": "3bd5921361cdd8bcea01074345e96b4a3e8a90835eb259705daa82c7f175cda5"
     },
-    "revision_note": "第80批继续全网站研究维度开放。八项新发现跨虚构批评文章、虚构访谈、自传拟态、秘密实验纪实声称、跨类群生态设定、科学随笔与同题虚构、文化模仿危险及跨代文本见证；八维34入口及旧65候选完整保留，全部新方向先比较，不自动传播或增加核验等级。",
+    "revision_note": "第81批继续全网站研究维度开放；原八维34入口73候选完整保留，新增漫画册内章节、创造力与不朽、开放寓言、化学叙事生成、音频证据歧义、共生通行、非虚构预测参照、情绪供能及测量演示认知冲突九方向，全部先比较，不自动传播或增加核验。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -148,6 +148,22 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round8.json",
         "sha256": "06dbb2228323f70703ccaa46e0ab0e1d9d04a83b41b26bf462c05021bf780431"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-global-classification-candidates-round11.json",
+        "sha256": "a179f1fbef0f535c64aa0a00a235200abe2da1e425c5702b8d3c015c3577c18d"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r11.json",
+        "sha256": "0b05518d8ed09c31adac4db397f6a56b63a4fdae0f6963288c746fde486555aa"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r12.json",
+        "sha256": "98c58eecac71c906d5bc797d24c4b586177168c4993d231a2ee86394bf9b27df"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r13.json",
+        "sha256": "13d93c133e07c728f7c1ee8ada71dc4f06a092610a8129ea0ab87a6177c53e0b"
       }
     ]
   },
@@ -3206,6 +3222,218 @@
         }
       ],
       "id": "discovery:quick-retry-root-classification-candidates-round8:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "作品形态",
+      "proposed_label": "原册内漫画章节",
+      "definition_boundary": "上级单行漫画册目录明确索引的短章节或comic story单元，区别整册、连载期号与全系列。当前只单例来源；题名拼接及Wikidata实体是否对应章节仍待核，不能按标题冒号自动推广。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q138332790",
+          "identity": {
+            "title": "Incal noir : Techniques technos",
+            "author": "作者未知"
+          },
+          "basis": "GCD在1981 L’Incal Noir第一册目录把Techniques technos列为Table of Contents 4、John Difool / comic story / 6 pages，当前底库题名同时含原册名与该单元。",
+          "sources": [
+            "https://my.comics.org/issue/1106809/"
+          ],
+          "exact_support_scope": "一次真实搜索返回准确第一册目录及六页comic story索引；不是该六页剧情、全册或实体对应关系核验。该身份核心留后置，不借全册情节。",
+          "actual_content_source_read": false,
+          "actual_bibliographic_source_read": true,
+          "knowledge_analysis": false,
+          "discovery_source_mode": "bibliographic_candidate_no_core_analysis"
+        }
+      ],
+      "id": "discovery:quick-retry-global-classification-candidates-round11:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "不朽与创造力的排斥设定",
+      "definition_boundary": "明确设定生物不死伴随创造力丧失，并让人物面对凡人创作或不朽的选择；不是现实心理定律，也不向一切永生小说传播。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131471827",
+          "identity": {
+            "title": "Variation on a Theme from Beethoven",
+            "author": "Sharon Webb"
+          },
+          "basis": "Webb本篇具体评论明确人类不朽却失去创造力，年轻艺术候选者面对凡人创作与不朽的二择；音乐与写作人物呈现各自选择。",
+          "sources": [
+            "https://featuredfutures.wordpress.com/tag/sharon-webb/"
+          ],
+          "exact_support_scope": "实际查询返回Featured Futures的Sharon Webb专段对本篇的具体评论；采用该专段，而非页面前方另一作者脱离肉体与无限多宇宙故事。未读原文全文。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r11:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "开放寓言中的读者补结论",
+      "definition_boundary": "组篇明确提前停在道德结论之前，要求读者反思科学假设的后果；只依已读前言解释集合结构，不声称每篇相同结局或已读正文。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q136750216",
+          "identity": {
+            "title": "Smutek spełnionych baśni",
+            "author": "Józef Kozielecki"
+          },
+          "basis": "实际读取Lem前言转录，明确虚构小郡编年史的故事常在结论前停止，由读者填补末句后的沉默。",
+          "sources": [
+            "https://polter.pl/ksiazki/Smutek-spelnionych-basni-n19472"
+          ],
+          "exact_support_scope": "实际直接读取POLTERGEIST转录的Lem前言摘录（返回L65–69）；只支持小郡编年史、科学假设与开放式结论等集合叙事方式，不称各篇正文已读或逐篇情节已核。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r11:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "化学介导的个人叙事生成",
+      "definition_boundary": "具体假设制剂使同一提示在个体脑中形成不同故事，保留个人联想差异；只依已读对话，不当作现实效力或AI生成。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q11711771",
+          "identity": {
+            "title": "Iluzyt",
+            "author": "Janusz Zajdel"
+          },
+          "basis": "实际转录对话中，刺激想象的制剂让一条线索唤起千人千种联想，另一人说该制剂名为iluzyt。",
+          "sources": [
+            "https://iluzyt.pl/autor"
+          ],
+          "exact_support_scope": "实际直接读取Iluzyt.pl转录Janusz Zajdel同名短篇对话L64–67，页面注明收录1976同名集；只读转录片段，非作者/出版社原页或整篇全文。分析限同名篇选例，不代表合集其他篇目。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r12:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "黑匣子音频中的证据歧义",
+      "definition_boundary": "事件以只有声音的记录呈现，人物明确担心记录可塑造不同的官方解释；不限所有广播剧，不把怀疑视为事实。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q16672458",
+          "identity": {
+            "title": "Lunnaya noch",
+            "author": "斯坦尼斯瓦夫·莱姆"
+          },
+          "basis": "Lem广播剧的具体梗概说明空间站黑匣子音频与Blopp担心Mills操控自卫/失常叙事。",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%83%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BD%D0%BE%D1%87%D1%8C_%28%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%BF%D1%8C%D0%B5%D1%81%D0%B0%29"
+          ],
+          "exact_support_scope": "实际查询返回俄文Wikipedia对Lem同名一幕广播剧的明确梗概，支持黑匣子、音频证据与Blopp怀疑；未听2000广播演出或读完整剧本。保留底库1976来源日期，不默改为原始写作/播出年代。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r12:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "共生转化作为星际通行条件",
+      "definition_boundary": "高速星际旅行要求人与其他存在融合，并付出身份或人性变化代价；只在作品明确将通行与共生转化相绑定时成立。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q136773495",
+          "identity": {
+            "title": "Fast-Friend",
+            "author": "乔治·R·R·马丁"
+          },
+          "basis": "Fast-Friend具体读者评论明确人类与Darks融合才能快速旅行，所爱的女人接受该转化。",
+          "sources": [
+            "https://www.goodreads.com/en/book/show/2903475-starlady-and-fast-friend"
+          ],
+          "exact_support_scope": "实际查询返回两篇合订页面中明确Fast-Friend的评论；采用融合、身份代价和Brand的亲密关系，不用相邻Starlady的Thisrock卖淫情节，未读原篇全文。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r12:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "可证伪灾难预测的非虚构参照",
+      "definition_boundary": "以现实灾难预告和机制论证为对象、保留非虚构身份；仅研究书中主张及其纠错，不把预测当已发生事实或通用于灾难小说。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q6314599",
+          "identity": {
+            "title": "木星效應",
+            "author": "焦恩·格瑞宾 / Stephen Plagemann"
+          },
+          "basis": "1974书以行星排列—太阳活动—地震因果链作有日期预测；1982年同期报道记录作者撤回关键基础。",
+          "sources": [
+            "https://www.upi.com/Archives/1982/03/08/The-Jupiter-Effect-hits-Wednesday/5758384411600/"
+          ],
+          "exact_support_scope": "实际检索返回1982年3月8日UPI同期报道，支持本书预测机制概要及作者撤回的事实；未读全书，不把预测视为成立的科学规律，也不以其他1990年代书或灾难小说补情节。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r13:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "人类情绪作为宇宙运行资源",
+      "definition_boundary": "设定明确把人类情绪作为宇宙系统的动力或资源，并存在对情绪的系统操纵；不从情感描写泛化，也不传播到整部选集。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q135089162",
+          "identity": {
+            "title": "Down in the Black Gang and Other Stories",
+            "author": "菲利浦·荷西·法默"
+          },
+          "basis": "本集同名篇简介明确ET用人类情绪为宇宙供能，一名负责操纵的人拒绝继续并逃离。",
+          "sources": [
+            "https://pjfarmer.com/works-story-collections/",
+            "https://readerfool.blogspot.com/2020/01/down-in-black-gang.html"
+          ],
+          "exact_support_scope": "实际检索返回作者官网本册目录，确认同名篇收录；另返回Readerfool逐篇简介，支持情绪供能与操纵者逃离两项前提。只作同名篇选例，官网目录不支持剧情，未读原篇或全册。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r13:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "公开测量演示制造认知冲突",
+      "definition_boundary": "通过具体仪器演示和异常输出使知识体系发生冲突；不假定仪器必正确，不把虚构的测年讽刺作为现实结论。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q131518315",
+          "identity": {
+            "title": "Barnaby's Clock",
+            "author": "R·A·拉夫爾提"
+          },
+          "basis": "专篇评论具体描述魔法钟的投入口与打印答案，并给出化石被测为近代导致科学家抗议的演示。",
+          "sources": [
+            "https://www.arriveateasterwine.com/post/barnaby-s-clock-1972-1973"
+          ],
+          "exact_support_scope": "实际直接读取专篇评论的演示段落及其中短引文；仅覆盖魔法钟宣称、测试方式与异常化石年代，不认定钟必正确，不把小说对测年技术的讽刺当成现实科学结论；未完整读原篇。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r13:3",
       "review_status": "pending_further_comparison",
       "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
     }
