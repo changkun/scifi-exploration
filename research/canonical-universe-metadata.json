@@ -4,15 +4,15 @@
   "source_record_count": 14532,
   "total": 14564,
   "researched": 168,
-  "topic_known": 6477,
-  "topic_unknown": 8087,
-  "issue_analyzed": 5921,
-  "issue_missing": 8643,
-  "issue_facet_records": 5769,
-  "issue_facets": 12957,
+  "topic_known": 6585,
+  "topic_unknown": 7979,
+  "issue_analyzed": 6035,
+  "issue_missing": 8529,
+  "issue_facet_records": 5883,
+  "issue_facets": 13185,
   "year_unknown": 1901,
-  "space_unknown": 13363,
-  "knowledge_added": 5866,
+  "space_unknown": 13341,
+  "knowledge_added": 5980,
   "library_correspondence": 2251,
   "conflicts": 454,
   "with_missing": 14428,
@@ -545,6 +545,11 @@
         "count": 116
       },
       {
+        "file": "research/issues-source-reading-round43.json",
+        "sha256": "e96863885b11a057cb33f08dd8442d333b314e09e3a5c9971fc88e07dd01bdd9",
+        "count": 114
+      },
+      {
         "file": "research/spatial-reading-round1.json",
         "sha256": "b5ce6a9a6f896ee9a462f9464ad85d9475275539c0cd491dafb7a948fa4a4d85",
         "count": 66
@@ -678,9 +683,14 @@
         "file": "research/spatial-reading-round27.json",
         "sha256": "48bf02263292649d23819801515d4f3183f8d038a9a0a19171910684bbe439f4",
         "count": 18
+      },
+      {
+        "file": "research/spatial-reading-round28.json",
+        "sha256": "e2c467a831c4abc43b6065d33fdcbd45350efc70fa7e09cb0099291d57be74c3",
+        "count": 22
       }
     ],
-    "knowledge_added": 5866,
+    "knowledge_added": 5980,
     "library": {
       "provider": "Open Library",
       "method": "existing-P648-batched-search-v1",
@@ -734,14 +744,14 @@
       "record_count": 4524
     },
     "source_search_logs": {
-      "record_count": 5373,
-      "actual_source_attempt_count": 4984,
-      "process_without_source_attempt_count": 389,
+      "record_count": 5523,
+      "actual_source_attempt_count": 5130,
+      "process_without_source_attempt_count": 393,
       "metadata": {
         "format": "actual-source-search-log-v1",
         "created_at": "2026-10-04",
         "status": "frozen_checkpoint",
-        "record_count": 5373,
+        "record_count": 5523,
         "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
         "inputs": [
           {
@@ -5495,6 +5505,140 @@
               "original_fulltext_read_count": 0,
               "scope": "八条单次精准查询并行，已有明确本篇/本册有限剧情即补。保留原实体、故事年份/版本年份差异、小说与漫画/正传与外传区别；自动生成摘要、读者评论和宣传纪录未采，原作未完整阅读。"
             }
+          },
+          {
+            "file": "early-recent-round33-log.json",
+            "sha256": "47012f612a3b9a8cdd863dd1241b8508e7fa7c4901840c33f492f313198dfcb2",
+            "metadata": {
+              "method": "actual-first-pass-reading-log-v1",
+              "status": "frozen_checkpoint",
+              "lane": 3,
+              "read_date": "2026-10-05",
+              "attempted_count": 50,
+              "added_count": 36,
+              "not_added_count": 14,
+              "frozen_date": "2026-10-05",
+              "record_count": 36,
+              "facet_count": 72,
+              "priority_range": [
+                5020,
+                5227
+              ],
+              "canonical_gzip_sha256_at_freeze": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+              "remaining_selected_ids": [],
+              "continuation_note": "50项首遍形成36条/72细分；14项材料或身份不足已延期，冻结后立即继续私有R34，lane3不变。"
+            }
+          },
+          {
+            "file": "global-recent-round32-log.json",
+            "sha256": "065fccf3c1a2a4493fda54eefdb23b11aa5b1df05ec756c19856a214c676ad04",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "date": "2026-10-05",
+              "lane": 1,
+              "queue": "fast-first-lane-1.json",
+              "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+              "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+              "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+              "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+              "source_snapshot": "research/canonical-universe.json.gz",
+              "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+              "starts_at_fast_index": 1077,
+              "record_count": 33,
+              "facet_count": 66,
+              "attempted_count": 42,
+              "deferred_count": 9,
+              "skipped_existing_count": 0,
+              "non_queue_searches": [
+                {
+                  "query": "\"Dreaming in Smoke\" \"Tricia Sullivan\" publisher",
+                  "reason": "第1118查询题名录入错误，实际lane1118是Einstein’s Bridge；返回资料未用于任何本批分析，随后已按真实identity作一次查询。",
+                  "actually_returned_material_url": "https://www.hachette.com.au/tricia-sullivan/dreaming-in-smoke",
+                  "support_scope": "本轮只读返回简介的Ganesh/梦境程序故障片段；未读全书，未给该身份新增分析。"
+                }
+              ],
+              "ends_at_fast_index": 1118,
+              "next_fast_index": 1119,
+              "freeze_date": "2026-10-05",
+              "session_inherited_baseline_sha256": "9aa6098babee3e563946678c679d0ee55c1bab95ab9b17d40437aa0708a6c472",
+              "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+              "audit_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+              "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+            }
+          },
+          {
+            "file": "modern-recent-round34-log.json",
+            "sha256": "0f62b4121af78aac6b1607b3ee644755aecbdae3ae0f8aad7c5ffb40f3655713",
+            "metadata": {
+              "method": "actual-source-reading-scope-v1",
+              "lane": 2,
+              "status": "frozen_checkpoint",
+              "record_count": 35,
+              "facet_count": 70,
+              "field_count": 105,
+              "new_core_issue_count": 35,
+              "source_read_record_count": 31,
+              "record_with_actual_material_count": 31,
+              "actual_content_source_record_count": 29,
+              "actual_identity_source_record_count": 2,
+              "search_attempted_record_count": 31,
+              "knowledge_plot_record_count": 6,
+              "knowledge_only_zero_query_count": 4,
+              "community_dump_read_count": 0,
+              "original_partial_text_record_count": 5,
+              "original_full_text_count": 0,
+              "collection_scope_count": 3,
+              "single_work_count": 32,
+              "deferred_count": 7,
+              "actual_query_deferred_count": 7,
+              "zero_query_identity_deferred_count": 0,
+              "total_lane_actual_query_record_count": 38,
+              "total_actual_query_record_count": 38,
+              "total_actual_query_material_record_count": 38,
+              "supplementary_query_record_count": 0,
+              "deferred_original_partial_text_record_count": 0,
+              "scope": "lane2近期首轮1995—1994自然组35新核心/70细分。31条实际单身份单查询（分组并行），29条具体内容源，2条目录/访谈只支持身份；6条含明确已有知识，其中Slow River、Darksaber、Earthfall与Caldé为4条零查询。3集合仅解释明确选篇，32单卷/单篇。5原文仅引段或开头：Grand fleuve、Sawyer选篇、Kataryniarz改订开头（未用于剧情）、Barnaby短引、Narcissus二手评论引原文；完整原作0。7仅书目/极薄或版本不清者完整后置，不计完成。Shattered Sphere1994版权/1995印次、Martian Childhood1993小说首章/1994摘篇、Saguenal长篇/中篇候选等日期和形态边界保留；电影、续篇、同名小说与漫画不挪填。全部文学解释仍待独立核验。"
+            }
+          },
+          {
+            "file": "root-fast-round41-log.json",
+            "sha256": "a5149048d2e19c9ff5545555b0bca96e0ead930a577bbf4a33d7a7e8c7c78781",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "3e6a830d3be8cc9d9ad13d2b6fd8310389dac2f9",
+              "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 2,
+              "facet_count": 4,
+              "attempted_count": 8,
+              "deferred_count": 6,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八条单身份精确查询并行：两条本卷官方简介直接补，六条世界语短篇只见合集/辞典/作者影响或同刊别篇、未明确单篇剧情，逐项保存后置；不补造情节或按题名分空间。"
+            }
+          },
+          {
+            "file": "root-fast-round42-log.json",
+            "sha256": "a4bf435322d725461b000216b7eaba685774548523dbe400a6e7fa147dc89eac",
+            "metadata": {
+              "status": "frozen_checkpoint",
+              "lane": 0,
+              "created_at": "2026-10-05",
+              "source_commit": "3e6a830d3be8cc9d9ad13d2b6fd8310389dac2f9",
+              "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+              "method": "parallel-single-query-easy-first-v1",
+              "record_count": 8,
+              "facet_count": 16,
+              "attempted_count": 8,
+              "deferred_count": 0,
+              "actual_search_attempt_count": 8,
+              "page_open_count": 0,
+              "original_fulltext_read_count": 0,
+              "scope": "八个2020实体各一次精准查询并行，明示有限前提即补；漫画卷次、合集选例、第二卷与第一卷、游戏改编与原作分开。Duke只读返回的授权开头，其他未完整研读原作。"
+            }
           }
         ],
         "updated_at": "2026-10-05",
@@ -6026,6 +6170,11 @@
         "file": "research/issues-source-reading-round42.json",
         "sha256": "40281a477853eb6ad615c93aea688d82aaede24b30fb95d9b4381cb37c0cba66",
         "count": 116
+      },
+      {
+        "file": "research/issues-source-reading-round43.json",
+        "sha256": "e96863885b11a057cb33f08dd8442d333b314e09e3a5c9971fc88e07dd01bdd9",
+        "count": 114
       }
     ],
     "spatial_batches": [
@@ -6163,21 +6312,26 @@
         "file": "research/spatial-reading-round27.json",
         "sha256": "48bf02263292649d23819801515d4f3183f8d038a9a0a19171910684bbe439f4",
         "count": 18
+      },
+      {
+        "file": "research/spatial-reading-round28.json",
+        "sha256": "e2c467a831c4abc43b6065d33fdcbd45350efc70fa7e09cb0099291d57be74c3",
+        "count": 22
       }
     ],
-    "issue_facet_records": 5769,
-    "issue_facet_count": 12957,
+    "issue_facet_records": 5883,
+    "issue_facet_count": 13185,
     "full_download_url": "https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/completion-overlay.json.gz"
   },
   "source_search_logs": {
-    "record_count": 5373,
-    "actual_source_attempt_count": 4984,
-    "process_without_source_attempt_count": 389,
+    "record_count": 5523,
+    "actual_source_attempt_count": 5130,
+    "process_without_source_attempt_count": 393,
     "metadata": {
       "format": "actual-source-search-log-v1",
       "created_at": "2026-10-04",
       "status": "frozen_checkpoint",
-      "record_count": 5373,
+      "record_count": 5523,
       "scope": "实际过程已归档的早期及逐轮作品；原作、出版方材料、编目、社区概要和失败分别记录，未覆盖的身份不补造查读过程。",
       "inputs": [
         {
@@ -10931,6 +11085,140 @@
             "original_fulltext_read_count": 0,
             "scope": "八条单次精准查询并行，已有明确本篇/本册有限剧情即补。保留原实体、故事年份/版本年份差异、小说与漫画/正传与外传区别；自动生成摘要、读者评论和宣传纪录未采，原作未完整阅读。"
           }
+        },
+        {
+          "file": "early-recent-round33-log.json",
+          "sha256": "47012f612a3b9a8cdd863dd1241b8508e7fa7c4901840c33f492f313198dfcb2",
+          "metadata": {
+            "method": "actual-first-pass-reading-log-v1",
+            "status": "frozen_checkpoint",
+            "lane": 3,
+            "read_date": "2026-10-05",
+            "attempted_count": 50,
+            "added_count": 36,
+            "not_added_count": 14,
+            "frozen_date": "2026-10-05",
+            "record_count": 36,
+            "facet_count": 72,
+            "priority_range": [
+              5020,
+              5227
+            ],
+            "canonical_gzip_sha256_at_freeze": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+            "remaining_selected_ids": [],
+            "continuation_note": "50项首遍形成36条/72细分；14项材料或身份不足已延期，冻结后立即继续私有R34，lane3不变。"
+          }
+        },
+        {
+          "file": "global-recent-round32-log.json",
+          "sha256": "065fccf3c1a2a4493fda54eefdb23b11aa5b1df05ec756c19856a214c676ad04",
+          "metadata": {
+            "status": "frozen_checkpoint",
+            "date": "2026-10-05",
+            "lane": 1,
+            "queue": "fast-first-lane-1.json",
+            "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+            "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+            "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+            "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+            "source_snapshot": "research/canonical-universe.json.gz",
+            "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+            "starts_at_fast_index": 1077,
+            "record_count": 33,
+            "facet_count": 66,
+            "attempted_count": 42,
+            "deferred_count": 9,
+            "skipped_existing_count": 0,
+            "non_queue_searches": [
+              {
+                "query": "\"Dreaming in Smoke\" \"Tricia Sullivan\" publisher",
+                "reason": "第1118查询题名录入错误，实际lane1118是Einstein’s Bridge；返回资料未用于任何本批分析，随后已按真实identity作一次查询。",
+                "actually_returned_material_url": "https://www.hachette.com.au/tricia-sullivan/dreaming-in-smoke",
+                "support_scope": "本轮只读返回简介的Ganesh/梦境程序故障片段；未读全书，未给该身份新增分析。"
+              }
+            ],
+            "ends_at_fast_index": 1118,
+            "next_fast_index": 1119,
+            "freeze_date": "2026-10-05",
+            "session_inherited_baseline_sha256": "9aa6098babee3e563946678c679d0ee55c1bab95ab9b17d40437aa0708a6c472",
+            "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+            "audit_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+            "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+          }
+        },
+        {
+          "file": "modern-recent-round34-log.json",
+          "sha256": "0f62b4121af78aac6b1607b3ee644755aecbdae3ae0f8aad7c5ffb40f3655713",
+          "metadata": {
+            "method": "actual-source-reading-scope-v1",
+            "lane": 2,
+            "status": "frozen_checkpoint",
+            "record_count": 35,
+            "facet_count": 70,
+            "field_count": 105,
+            "new_core_issue_count": 35,
+            "source_read_record_count": 31,
+            "record_with_actual_material_count": 31,
+            "actual_content_source_record_count": 29,
+            "actual_identity_source_record_count": 2,
+            "search_attempted_record_count": 31,
+            "knowledge_plot_record_count": 6,
+            "knowledge_only_zero_query_count": 4,
+            "community_dump_read_count": 0,
+            "original_partial_text_record_count": 5,
+            "original_full_text_count": 0,
+            "collection_scope_count": 3,
+            "single_work_count": 32,
+            "deferred_count": 7,
+            "actual_query_deferred_count": 7,
+            "zero_query_identity_deferred_count": 0,
+            "total_lane_actual_query_record_count": 38,
+            "total_actual_query_record_count": 38,
+            "total_actual_query_material_record_count": 38,
+            "supplementary_query_record_count": 0,
+            "deferred_original_partial_text_record_count": 0,
+            "scope": "lane2近期首轮1995—1994自然组35新核心/70细分。31条实际单身份单查询（分组并行），29条具体内容源，2条目录/访谈只支持身份；6条含明确已有知识，其中Slow River、Darksaber、Earthfall与Caldé为4条零查询。3集合仅解释明确选篇，32单卷/单篇。5原文仅引段或开头：Grand fleuve、Sawyer选篇、Kataryniarz改订开头（未用于剧情）、Barnaby短引、Narcissus二手评论引原文；完整原作0。7仅书目/极薄或版本不清者完整后置，不计完成。Shattered Sphere1994版权/1995印次、Martian Childhood1993小说首章/1994摘篇、Saguenal长篇/中篇候选等日期和形态边界保留；电影、续篇、同名小说与漫画不挪填。全部文学解释仍待独立核验。"
+          }
+        },
+        {
+          "file": "root-fast-round41-log.json",
+          "sha256": "a5149048d2e19c9ff5545555b0bca96e0ead930a577bbf4a33d7a7e8c7c78781",
+          "metadata": {
+            "status": "frozen_checkpoint",
+            "lane": 0,
+            "created_at": "2026-10-05",
+            "source_commit": "3e6a830d3be8cc9d9ad13d2b6fd8310389dac2f9",
+            "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+            "method": "parallel-single-query-easy-first-v1",
+            "record_count": 2,
+            "facet_count": 4,
+            "attempted_count": 8,
+            "deferred_count": 6,
+            "actual_search_attempt_count": 8,
+            "page_open_count": 0,
+            "original_fulltext_read_count": 0,
+            "scope": "八条单身份精确查询并行：两条本卷官方简介直接补，六条世界语短篇只见合集/辞典/作者影响或同刊别篇、未明确单篇剧情，逐项保存后置；不补造情节或按题名分空间。"
+          }
+        },
+        {
+          "file": "root-fast-round42-log.json",
+          "sha256": "a4bf435322d725461b000216b7eaba685774548523dbe400a6e7fa147dc89eac",
+          "metadata": {
+            "status": "frozen_checkpoint",
+            "lane": 0,
+            "created_at": "2026-10-05",
+            "source_commit": "3e6a830d3be8cc9d9ad13d2b6fd8310389dac2f9",
+            "source_snapshot_sha256": "6ce9f0d5b436053adcd9b0d674d2f05176b49942bcea94b612746a7d9b9889d5",
+            "method": "parallel-single-query-easy-first-v1",
+            "record_count": 8,
+            "facet_count": 16,
+            "attempted_count": 8,
+            "deferred_count": 0,
+            "actual_search_attempt_count": 8,
+            "page_open_count": 0,
+            "original_fulltext_read_count": 0,
+            "scope": "八个2020实体各一次精准查询并行，明示有限前提即补；漫画卷次、合集选例、第二卷与第一卷、游戏改编与原作分开。Duke只读返回的授权开头，其他未完整研读原作。"
+          }
         }
       ],
       "updated_at": "2026-10-05",
@@ -10995,9 +11283,9 @@
   "issue_research_queue": {
     "record_count": 14564,
     "stages": {
-      "analysis_present": 5921,
-      "source_search_next": 8042,
-      "identity_then_content": 558,
+      "analysis_present": 6035,
+      "source_search_next": 7931,
+      "identity_then_content": 555,
       "content_reading_next": 43
     },
     "url": "./assets/issue-research-queue.json.gz"
