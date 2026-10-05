@@ -1,0 +1,1005 @@
+{
+  "metadata": {
+    "status": "private_frozen_audit_checkpoint",
+    "date": "2026-10-05",
+    "purpose": "R85严格例外审计：原root援助R2有32真实查询，只有30个不同旧查询方向；完整保留两次操作瑕疵、旧失败与真实返回。",
+    "lane": 0,
+    "delegate": "global_history",
+    "ownership_file": "work/evidence/quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "delegation_file": "work/evidence/quick-retry-root-assist-global-ownership.json",
+    "delegation_sha256": "c243599fd396fff892420309a458bcaa07e5c5c05b0288e73d7fa837cc644d1e",
+    "frozen_analysis_file": "work/evidence/quick-retry-root-assist-global-round2.json",
+    "frozen_analysis_file_sha256": "747b02e71c49b66058211699a83853d8ec869f6f5ffd11e2caa2969cf7c0329e",
+    "frozen_log_file": "work/evidence/quick-retry-root-assist-global-round2-log.json",
+    "frozen_log_file_sha256": "688cc49d3381f0fa92bafbae6c016a32cb715ce73d1af7097efd710e2f4ec1aa",
+    "actual_search_request_count_in_frozen_batch": 32,
+    "different_direction_retry_count": 30,
+    "exact_repeat_query_count": 1,
+    "quote_only_same_direction_count": 1,
+    "unchanged_direction_total": 2,
+    "unique_existing_retry_ids_in_frozen_batch": 32,
+    "new_direction_process_identity_count": 30,
+    "new_first_pass_identity_count": 0,
+    "core_in_original_batch": 8,
+    "core_from_two_repeated_queries": 0,
+    "deferred_in_original_batch": 24,
+    "direct_page_request_count_in_original_batch": 3,
+    "limited_successful_direct_page_read_count": 1,
+    "failed_direct_page_request_count": 2,
+    "new_queries_for_this_proof": 0,
+    "new_opens_for_this_proof": 0,
+    "new_core_for_this_proof": 0,
+    "original_files_modified": false,
+    "complete_original_text_reads": 0,
+    "record_hash_encoding": "json.dumps(ensure_ascii=False,sort_keys=True,separators=(comma,colon)) UTF-8。",
+    "string_hash_scope": "query/return SHA仅对应保存的文字UTF-8表示，不声称原网络传输字节。",
+    "count_definition": "actual_search_request保留所有真正请求；不同方向过程排除339完全重复和337仅移除作者引号；不追加请求掩盖，不把旧失败改为成功。"
+  },
+  "exceptions": [
+    {
+      "id": "Q130676878",
+      "ownership_index": 337,
+      "actual_query": "\"The Battle of the Abaco Reefs\" Schenck story",
+      "prior_queries": [
+        "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 0,
+      "comparison": "quote_only_change_substantively_same",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 0,
+      "frozen_log_record_sha256": "04135789dc6797a75887b2c4590292a89627db2b7bfaa933991ce32d6134f547",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-337.json",
+      "private_raw_file_sha256": "98c8d2b5099e5a66e0531a1a2cfcbf226c07a78d679e0765af1d1bb80a10ecba",
+      "query_text_utf8_sha256": "406722ad5086adb193336e79a73f59195cd9e4c2706e9f67a3498c931205ca15",
+      "return_text_utf8_sha256": "c218814c80494257bb05c89bc3dd3ad8ab015705178a6d7679dc1befeeab258b",
+      "identity": {
+        "title": "The Battle of the Abaco Reefs",
+        "author": "Hilbert Schenck"
+      },
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q130676878",
+        "identity": {
+          "title": "The Battle of the Abaco Reefs",
+          "author": "Hilbert Schenck"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://nebulas.sfwa.org/nominees/hilbert-schenck/",
+            "material_kind": "official_award_and_author_bibliography_only",
+            "support_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "official_award_and_author_bibliography_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次检索只有奖项、作者目录和原刊题名记录，没有具体事件；不由Abaco礁或作者海洋工程背景猜生态战争。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round50-log.json",
+        "raw_reading_log": {
+          "id": "Q130676878",
+          "identity": {
+            "title": "The Battle of the Abaco Reefs",
+            "author": "Hilbert Schenck"
+          },
+          "fast_index": 1783,
+          "lane_index": 1789,
+          "source_sort_year": 1979,
+          "priority_rank": 7218,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://nebulas.sfwa.org/nominees/hilbert-schenck/",
+              "material_kind": "official_award_and_author_bibliography_only",
+              "support_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "一次检索只有奖项、作者目录和原刊题名记录，没有具体事件；不由Abaco礁或作者海洋工程背景猜生态战争。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "private_raw_search_return": {
+            "path": "work/evidence/global-recent-r50-search-1783.json",
+            "sha256": "2f706fbc0a50cbdacd83c3f504b3df5be1661c11d4bb834de621c82db3fb472c",
+            "scope": "实际一次short精准查询原返回，只有列明材料块用于解释或延期。"
+          }
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "frozen_current_log_record": {
+        "id": "Q130676878",
+        "identity": {
+          "title": "The Battle of the Abaco Reefs",
+          "author": "Hilbert Schenck"
+        },
+        "ownership_index": 337,
+        "new_pool_index": 337,
+        "ownership_file": "work/evidence/quick-retry-lane-0.json",
+        "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+        "source_sort_year": 1979,
+        "publication_status": "source_year_preserved_not_independently_verified",
+        "queries": [
+          "\"The Battle of the Abaco Reefs\" Schenck story"
+        ],
+        "local_material_lookup": null,
+        "sources": [],
+        "failure_count": 2,
+        "verification_status": "knowledge_added_unverified",
+        "private_raw_search_return": {
+          "path": "work/evidence/quick-retry-root-assist-global-r2-search-337.json",
+          "sha256": "98c8d2b5099e5a66e0531a1a2cfcbf226c07a78d679e0765af1d1bb80a10ecba",
+          "scope": "本身份一次short精准查询完整真实返回；只采用日志中明确所述范围。"
+        },
+        "prior_unsuccessful_attempts": 1,
+        "prior_source_log": {
+          "input_file": "research/issue-source-searches.json",
+          "log_date": "2026-10-04",
+          "id": "Q130676878",
+          "identity": {
+            "title": "The Battle of the Abaco Reefs",
+            "author": "Hilbert Schenck"
+          },
+          "attempt_state": "source_search_attempted",
+          "queries": [
+            "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+          ],
+          "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+          "materials_checked": [
+            {
+              "url": "https://nebulas.sfwa.org/nominees/hilbert-schenck/",
+              "material_kind": "official_award_and_author_bibliography_only",
+              "support_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+              "reading_status": "actually_read_support_scope_only",
+              "material_type": "official_award_and_author_bibliography_only",
+              "result": "catalog_only",
+              "reading_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+          "reason_unconfirmed": "一次检索只有奖项、作者目录和原刊题名记录，没有具体事件；不由Abaco礁或作者海洋工程背景猜生态战争。",
+          "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+          "issue_result": "not_added_specific_content_or_identity_needed",
+          "attempt_input": "global-recent-round50-log.json",
+          "raw_reading_log": {
+            "id": "Q130676878",
+            "identity": {
+              "title": "The Battle of the Abaco Reefs",
+              "author": "Hilbert Schenck"
+            },
+            "fast_index": 1783,
+            "lane_index": 1789,
+            "source_sort_year": 1979,
+            "priority_rank": 7218,
+            "status": "deferred_identity_or_material",
+            "publication_status": "source_candidate_year_not_independently_verified",
+            "queries": [
+              "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+            ],
+            "local_material_lookup": null,
+            "sources": [
+              {
+                "url": "https://nebulas.sfwa.org/nominees/hilbert-schenck/",
+                "material_kind": "official_award_and_author_bibliography_only",
+                "support_scope": "实际读SFWA作者/奖项页本篇提名与出版刊物说明；不提供剧情。",
+                "reading_status": "actually_read_support_scope_only"
+              }
+            ],
+            "no_material_reason": "一次检索只有奖项、作者目录和原刊题名记录，没有具体事件；不由Abaco礁或作者海洋工程背景猜生态战争。",
+            "failure_count": 1,
+            "verification_status": "knowledge_added_unverified",
+            "private_raw_search_return": {
+              "path": "work/evidence/global-recent-r50-search-1783.json",
+              "sha256": "2f706fbc0a50cbdacd83c3f504b3df5be1661c11d4bb834de621c82db3fb472c",
+              "scope": "实际一次short精准查询原返回，只有列明材料块用于解释或延期。"
+            }
+          },
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "failure_count": 1,
+          "local_material_lookup": null
+        },
+        "prior_queries": [
+          "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+        ],
+        "new_unsuccessful_attempts": 1,
+        "repeat_old_query": false,
+        "substantive_query_direction_unchanged": true,
+        "new_direction_retry": false,
+        "new_process_identity": false,
+        "query_correction_note": "本次仅移除了作者名的引号，检索方向实质未改变；保留实际请求与返回，不追加请求，不计不同方向复查身份。",
+        "status": "deferred_identity_or_material",
+        "no_material_reason": "本次只移除作者引号，实质重复旧检索方向；仅得到准确提名与书目，没有本篇明确情节，不追加请求掩盖。",
+        "delegate": "global_history",
+        "delegation_file": "work/evidence/quick-retry-root-assist-global-ownership.json",
+        "delegation_sha256": "c243599fd396fff892420309a458bcaa07e5c5c05b0288e73d7fa837cc644d1e",
+        "query_text_utf8_sha256": "406722ad5086adb193336e79a73f59195cd9e4c2706e9f67a3498c931205ca15",
+        "return_text_utf8_sha256": "c218814c80494257bb05c89bc3dd3ad8ab015705178a6d7679dc1befeeab258b",
+        "hash_scope": "完整private JSON的SHA另列；query/return文字SHA仅为真实保存文字UTF-8表示，不声称网络传输字节。"
+      },
+      "previous_attempt_file": "work/evidence/global-recent-round50-log.json",
+      "previous_attempt_file_sha256": "f81a762ce901bc1f806f60f6fd45eac061a57d20f830172b9fa2cc3a85ad54be",
+      "previous_attempt_record_sha256": "8f656cf388dd9e39eba164889b1bd1dec3e992dd1231a45b3b6fcf5ef07d3e30",
+      "old_query_source": "原冻结prior_source_log以及实际旧attempt_input同一record均逐值相等；不补造旧网络返回。",
+      "actual_outcome": "仍为延期，无新增核心；真实新失败保留，原日志不改。",
+      "operation_error_note": "本次仅移除了作者名的引号，检索方向实质未改变；保留实际请求与返回，不追加请求，不计不同方向复查身份。",
+      "prior_unsuccessful_attempts": 1,
+      "new_unsuccessful_attempts": 1,
+      "current_failure_count": 2
+    },
+    {
+      "id": "Q131516602",
+      "ownership_index": 339,
+      "actual_query": "\"You're Welcome\" \"Alan Ryan\" robot snowflakes",
+      "prior_queries": [
+        "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 0,
+      "comparison": "exact_same_query",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 0,
+      "frozen_log_record_sha256": "a3a6f45c43eb4c9d9ed041d24f6752b9dc9a9585ad8a49ecda7b0a164d3ecc61",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-339.json",
+      "private_raw_file_sha256": "9e7996c6ba2b7ef0059c525c8827b2206c31cb098ceca2975ee547ee9066358c",
+      "query_text_utf8_sha256": "f6dbb2c0d3dc7964ae1ed67bb6c8079e602b7272c5cc37478c339f9b0c60e149",
+      "return_text_utf8_sha256": "0d01a5ca80255cbf17992c2ebc31afba3e112a5a66c8ee640aa2491263d5195c",
+      "identity": {
+        "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+        "author": "Alan Ryan"
+      },
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131516602",
+        "identity": {
+          "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+          "author": "Alan Ryan"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://sfadb.com/Locus_Awards_1980",
+            "scope": "实际获奖编目确认Alan Ryan题名与1979出处。",
+            "result": "read",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "没有该篇具体机器人事件，不能由标题推断关怀或意识。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "known-year-early-round6-log.json",
+        "raw_reading_log": {
+          "id": "Q131516602",
+          "identity": {
+            "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+            "author": "Alan Ryan"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://sfadb.com/Locus_Awards_1980",
+              "scope": "实际获奖编目确认Alan Ryan题名与1979出处。",
+              "result": "read"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "没有该篇具体机器人事件，不能由标题推断关怀或意识。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "frozen_current_log_record": {
+        "id": "Q131516602",
+        "identity": {
+          "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+          "author": "Alan Ryan"
+        },
+        "ownership_index": 339,
+        "new_pool_index": 339,
+        "ownership_file": "work/evidence/quick-retry-lane-0.json",
+        "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+        "source_sort_year": 1979,
+        "publication_status": "source_year_preserved_not_independently_verified",
+        "queries": [
+          "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+        ],
+        "local_material_lookup": null,
+        "sources": [],
+        "failure_count": 2,
+        "verification_status": "knowledge_added_unverified",
+        "private_raw_search_return": {
+          "path": "work/evidence/quick-retry-root-assist-global-r2-search-339.json",
+          "sha256": "9e7996c6ba2b7ef0059c525c8827b2206c31cb098ceca2975ee547ee9066358c",
+          "scope": "本身份一次short精准查询完整真实返回；只采用日志中明确所述范围。"
+        },
+        "prior_unsuccessful_attempts": 1,
+        "prior_source_log": {
+          "input_file": "research/issue-source-searches.json",
+          "log_date": "2026-10-04",
+          "id": "Q131516602",
+          "identity": {
+            "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+            "author": "Alan Ryan"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+          ],
+          "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+          "materials_checked": [
+            {
+              "url": "https://sfadb.com/Locus_Awards_1980",
+              "scope": "实际获奖编目确认Alan Ryan题名与1979出处。",
+              "result": "read",
+              "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "reason_unconfirmed": "没有该篇具体机器人事件，不能由标题推断关怀或意识。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+          "issue_result": "not_added",
+          "attempt_input": "known-year-early-round6-log.json",
+          "raw_reading_log": {
+            "id": "Q131516602",
+            "identity": {
+              "title": "\"You're Welcome,\" Said the Robot and Turned to Watch the Snowflakes",
+              "author": "Alan Ryan"
+            },
+            "attempt_state": "deferred_first_pass",
+            "queries": [
+              "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+            ],
+            "materials_checked": [
+              {
+                "url": "https://sfadb.com/Locus_Awards_1980",
+                "scope": "实际获奖编目确认Alan Ryan题名与1979出处。",
+                "result": "read"
+              }
+            ],
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "issue_result": "not_added",
+            "unsuccessful_attempt_count": 1,
+            "reason_unconfirmed": "没有该篇具体机器人事件，不能由标题推断关怀或意识。",
+            "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+          },
+          "unsuccessful_attempt_count": 1
+        },
+        "prior_queries": [
+          "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+        ],
+        "new_unsuccessful_attempts": 1,
+        "repeat_old_query": true,
+        "substantive_query_direction_unchanged": true,
+        "new_direction_retry": false,
+        "new_process_identity": false,
+        "query_correction_note": "本次请求与旧查询完全相同，是实际操作瑕疵；保留真实请求和完整返回SHA，不追加请求掩盖，不计不同方向复查身份。",
+        "status": "deferred_identity_or_material",
+        "no_material_reason": "实际请求与旧查询完全相同；返回只有题名作者／提名，无本篇情节。保留请求返回SHA，不计新方向或新过程身份。",
+        "delegate": "global_history",
+        "delegation_file": "work/evidence/quick-retry-root-assist-global-ownership.json",
+        "delegation_sha256": "c243599fd396fff892420309a458bcaa07e5c5c05b0288e73d7fa837cc644d1e",
+        "query_text_utf8_sha256": "f6dbb2c0d3dc7964ae1ed67bb6c8079e602b7272c5cc37478c339f9b0c60e149",
+        "return_text_utf8_sha256": "0d01a5ca80255cbf17992c2ebc31afba3e112a5a66c8ee640aa2491263d5195c",
+        "hash_scope": "完整private JSON的SHA另列；query/return文字SHA仅为真实保存文字UTF-8表示，不声称网络传输字节。"
+      },
+      "previous_attempt_file": "work/evidence/known-year-early-round6-log.json",
+      "previous_attempt_file_sha256": "b137f0f10b10a03d9bdc134e57c174803c4c2a94796c1605cbf9105ed2921dd7",
+      "previous_attempt_record_sha256": "48f0c8efeef407ff677c60859ecab4b41888108e9bb565e093c0f7cfeac31329",
+      "old_query_source": "原冻结prior_source_log以及实际旧attempt_input同一record均逐值相等；不补造旧网络返回。",
+      "actual_outcome": "仍为延期，无新增核心；真实新失败保留，原日志不改。",
+      "operation_error_note": "本次请求与旧查询完全相同，是实际操作瑕疵；保留真实请求和完整返回SHA，不追加请求掩盖，不计不同方向复查身份。",
+      "prior_unsuccessful_attempts": 1,
+      "new_unsuccessful_attempts": 1,
+      "current_failure_count": 2
+    }
+  ],
+  "batch_request_manifest": [
+    {
+      "id": "Q130676878",
+      "ownership_index": 337,
+      "actual_query": "\"The Battle of the Abaco Reefs\" Schenck story",
+      "prior_queries": [
+        "\"The Battle of the Abaco Reefs\" \"Schenck\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 0,
+      "comparison": "quote_only_change_substantively_same",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 0,
+      "frozen_log_record_sha256": "04135789dc6797a75887b2c4590292a89627db2b7bfaa933991ce32d6134f547",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-337.json",
+      "private_raw_file_sha256": "98c8d2b5099e5a66e0531a1a2cfcbf226c07a78d679e0765af1d1bb80a10ecba",
+      "query_text_utf8_sha256": "406722ad5086adb193336e79a73f59195cd9e4c2706e9f67a3498c931205ca15",
+      "return_text_utf8_sha256": "c218814c80494257bb05c89bc3dd3ad8ab015705178a6d7679dc1befeeab258b"
+    },
+    {
+      "id": "Q131471933",
+      "ownership_index": 338,
+      "actual_query": "\"The Relic\" \"Gary Jennings\" 1979 review",
+      "prior_queries": [
+        "\"The Relic\" \"Gary Jennings\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "8581e972470e3792ad6aa7e5a75372b68af1c273b9a553d7bc21289d35e2061b",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-338.json",
+      "private_raw_file_sha256": "eee04e7da1ea7665388ffb0c7eef646fbb831158edcbf1ff7aeec614ce89b833",
+      "query_text_utf8_sha256": "1c1c48f90dd3a14b236dd1939afd75063141c5a5face70c34ae9d2b9ba0bb525",
+      "return_text_utf8_sha256": "0ebf7c5b62d3b925bad9049be818119923fe280c6543ed08b53c89bcf61bf225"
+    },
+    {
+      "id": "Q131516602",
+      "ownership_index": 339,
+      "actual_query": "\"You're Welcome\" \"Alan Ryan\" robot snowflakes",
+      "prior_queries": [
+        "\"You're Welcome\" \"Alan Ryan\" robot snowflakes"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 0,
+      "comparison": "exact_same_query",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 0,
+      "frozen_log_record_sha256": "a3a6f45c43eb4c9d9ed041d24f6752b9dc9a9585ad8a49ecda7b0a164d3ecc61",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-339.json",
+      "private_raw_file_sha256": "9e7996c6ba2b7ef0059c525c8827b2206c31cb098ceca2975ee547ee9066358c",
+      "query_text_utf8_sha256": "f6dbb2c0d3dc7964ae1ed67bb6c8079e602b7272c5cc37478c339f9b0c60e149",
+      "return_text_utf8_sha256": "0d01a5ca80255cbf17992c2ebc31afba3e112a5a66c8ee640aa2491263d5195c"
+    },
+    {
+      "id": "Q134581967",
+      "ownership_index": 340,
+      "actual_query": "\"Ombre dans la vallée\" \"Le May\" histoire",
+      "prior_queries": [
+        "\"L'Ombre dans la vallée\" \"Jean-Louis Le May\" synopsis plot"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "dd546993c5f3a099604ec2fad4f2db756f53082f68b1d1b6ae5f8d674c22793e",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-340.json",
+      "private_raw_file_sha256": "bc396af0462e3c003db031b3bfbe72a51cd64345c65a6b28b2b9d7fa0842c8ec",
+      "query_text_utf8_sha256": "3d49ed1c919e5e816c550500e1396530aa0e7c387fb595ba904ca5c634c7f163",
+      "return_text_utf8_sha256": "1ccf9ceea411976fd5f57942b5ac374ff38e472a4d3fe316ff7e8596f2d695b2"
+    },
+    {
+      "id": "Q135094113",
+      "ownership_index": 341,
+      "actual_query": "\"San Diego Lightfoot Sue and Other Stories\" Reamy review",
+      "prior_queries": [
+        "\"San Diego Lightfoot Sue and Other Stories\" Reamy contents"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "bd52cfb64e3ab0d40da470cd9807a39a489dc5e7593f51aa17e4d115192da21f",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-341.json",
+      "private_raw_file_sha256": "bef660599a2f175de9cb1e0a3eab8cc37b56567f75d2253c5c83ce9c0ff27c22",
+      "query_text_utf8_sha256": "4a9ee0ffa24465c879f5c2b6d1949bd418db13d2ae8fd0e1fb57ab36d9afce5f",
+      "return_text_utf8_sha256": "39d589757d614b5ffeeece886a58d7e2a1aba0957b6f346191ddfdc9d4b8f14a"
+    },
+    {
+      "id": "Q19862518",
+      "ownership_index": 342,
+      "actual_query": "\"Ganymedes 4\" \"novellit\"",
+      "prior_queries": [
+        "\"Ganymedes 4\" 1979 inhoud"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "768d581a254b8fefd4584c5535e0c0913cbd6a131788b3201c9e719a46961c78",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-342.json",
+      "private_raw_file_sha256": "6fbefa57b0d3314ad098cada0919b7964ba6051f7e2f01e64acb449f367e15d6",
+      "query_text_utf8_sha256": "2d6ad5ca7b6870fbcc7ab19c16cb10c85e12fc7e764746209d94250087928f36",
+      "return_text_utf8_sha256": "3470b94e61354b067063fbadf1ee51537ae9353fe955d830d8bbb33277dc442e"
+    },
+    {
+      "id": "Q5166395",
+      "ownership_index": 343,
+      "actual_query": "\"Convergent Series\" Niven contents review",
+      "prior_queries": [
+        "\"Convergent Series\" Larry Niven contents"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "0399ee6a1f2a896ea9a28747792aa0c79cd28272b794988badc1f412449a4f6f",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-343.json",
+      "private_raw_file_sha256": "be10e348b1cbb861fe5ae0eeec43b8f5386f4d9ce2cccb96b2d12e47beef3cb6",
+      "query_text_utf8_sha256": "dd1f4ff6ff32964c2a9cc3b54697ba7d6f113906b273966e8037abc2e8e2b5ae",
+      "return_text_utf8_sha256": "1778509da7e0942b997d9a615b185c7ca8477da2bdf84c6de89dda082eecc9b3"
+    },
+    {
+      "id": "Q9275104",
+      "ownership_index": 344,
+      "actual_query": "\"Gość z głębin\" opowiadanie fabuła",
+      "prior_queries": [
+        "\"Gość z głębin\" powieść"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "26cff37d425d10683274c340e830aeb79ae779a6d36d7417809655b02c78374d",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-344.json",
+      "private_raw_file_sha256": "6a579cc74de5727250f21aa27bb0df30be91c138ed8106988442e1e0b6cb89bb",
+      "query_text_utf8_sha256": "6bb8c9df75e04c6fb70360d4e5f94919f8a1495ce0e3adb65527d1e00fa1ec05",
+      "return_text_utf8_sha256": "238f96ff1813a51291a5dde5291479664af0ccdd40bcfccc368297ab62da8246"
+    },
+    {
+      "id": "Q131461471",
+      "ownership_index": 345,
+      "actual_query": "\"Old Folks at Home\" \"Bishop\" 1978 review",
+      "prior_queries": [
+        "\"Old Folks at Home\" Michael Bishop story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "925fd462257c75705670e2641c2362ccc880be44acaf8600f3d99f7c20f6f298",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-345.json",
+      "private_raw_file_sha256": "5d8fa8afc590b2cda0864a31100c94bd5ded5c6baff92a0fc130a6ae0f7c5443",
+      "query_text_utf8_sha256": "988df4241cca6a705c02c0ce3aed78046d49f9e1847cc3b89fe43006a03d5181",
+      "return_text_utf8_sha256": "baf0c593172e06a1808be940a962411d51a6875abbfe237cf86915fc054c3be8"
+    },
+    {
+      "id": "Q131471943",
+      "ownership_index": 346,
+      "actual_query": "\"Swanilda's Song\" \"Pohl\" opera",
+      "prior_queries": [
+        "\"Swanilda’s Song\" \"Pohl\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "ce1374df3feb5de9dd35982b3a52588150fc9cf7d335e413ebc77aa11aca50a7",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-346.json",
+      "private_raw_file_sha256": "dee30c35c0a8c4f80857aaa2847529d566686165cd75b869713627661d66ae8e",
+      "query_text_utf8_sha256": "cdb67917754341fe5a11aade6dd17ed96a9cc7d65d1fb204e8b12d16b23017ef",
+      "return_text_utf8_sha256": "4a571a4d5b271581830708264a404012bbd2a6eb72a79d28d216f3b0603f5077"
+    },
+    {
+      "id": "Q131518066",
+      "ownership_index": 347,
+      "actual_query": "\"Vernalfest Morning\" \"Bishop\" story review",
+      "prior_queries": [
+        "\"Vernalfest Morning\" \"Michael Bishop\" plot"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "2791b7d7753651221d458c74eb6955cc12d595a4dc273a16c345be94279ec48a",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-347.json",
+      "private_raw_file_sha256": "16f6b6fe8bf3c11b70092f5fcb7c72296d4ad0e5fe9a3a406c26c3c2c360f1f7",
+      "query_text_utf8_sha256": "1d98063d6f595a70fd17bf1a0a005653bd53fe54a7c600e944125c6aafeaa708",
+      "return_text_utf8_sha256": "827df1f281054cb3c2db7c7a662ca5a6a3053b6b87882a7ddc22bc0a70a51e4a"
+    },
+    {
+      "id": "Q135093011",
+      "ownership_index": 348,
+      "actual_query": "\"New Dimensions 8\" anthology review contents",
+      "prior_queries": [
+        "\"New Dimensions\" \"Number 8\" 1978 contents"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "bf5b82261d96fe969f18605eb8da50fb0545e6d6eb245e42c3845a482ef857aa",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-348.json",
+      "private_raw_file_sha256": "ebfa587ec5a16e233aed6fc40e89111939cb60c2b9d05d1be334ba5d9e668181",
+      "query_text_utf8_sha256": "d85de368a080d55e2ee65f4601237614ec9f84ce192ebc3291e5572924036038",
+      "return_text_utf8_sha256": "e53b169d2dcef72eaa9f2bd678cec3e37ff53dfa4d2030f5b665956b470f83ef"
+    },
+    {
+      "id": "Q135094137",
+      "ownership_index": 349,
+      "actual_query": "\"Fireship\" \"Joan Vinge\" Ethan Ring",
+      "prior_queries": [
+        "\"Fireship\" \"Joan Vinge\" 1978"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "bdbcd724c7cf00b9fd01aa730465a36a6c1b5e41bf02b0d221afc4e342a499ae",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-349.json",
+      "private_raw_file_sha256": "9dfd0576642bd50af9b455baac65c3897373cc3333a482f73d3fbe7d4b720320",
+      "query_text_utf8_sha256": "6b88e5e82f7ed468d1e10b248905f32e0eb2498786bfe8c608db27ed9703c21a",
+      "return_text_utf8_sha256": "c846953cf5fe9fbfc7a3cca1f477f317f5c63b99d1ef105bcf4e6bca75383de7"
+    },
+    {
+      "id": "Q5146456",
+      "ownership_index": 350,
+      "actual_query": "\"Sabotørene\" \"Myhre\" science fiction handling",
+      "prior_queries": [
+        "\"Sabotørene\" Øyvind Myhre"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "90850081c4dce051505bfe7d8cf2239442dd2da2d4f95583a967decf9cd1ea63",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-350.json",
+      "private_raw_file_sha256": "5c88a3ff5489e64334a18c34b9350599ee5e3cb31b751121717231f9787a34e0",
+      "query_text_utf8_sha256": "6b2dc85f13e5e3956053bdccfc6b93b2f45161bfeaa6d265281c6afc23b3fb41",
+      "return_text_utf8_sha256": "45e3e23c7392e053952d4de05e38b6fcfb910c6f71726c4646a6d109e6bad265"
+    },
+    {
+      "id": "Q55609439",
+      "ownership_index": 351,
+      "actual_query": "\"Devil You Don't Know\" \"Dean Ing\" review",
+      "prior_queries": [
+        "\"Devil You Don’t Know\" Dean Ing story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "80a1219c65ec8116483d24b9c203404e3b54ea0fbadf25f406d12f5249dee0c7",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-351.json",
+      "private_raw_file_sha256": "f7d585f4c633ca0c3f64f0094b9ab03cc18d2ac30175e2b939c814afd4cc5551",
+      "query_text_utf8_sha256": "18c12485dde21cfe11907d24e5a52a9ad9d912a476afa1e882243968a90d2ce5",
+      "return_text_utf8_sha256": "f3e9d7b8fe5b15c17bf6305fd47068c0825ec86b9a91b8d88fd796dcec67ec98"
+    },
+    {
+      "id": "Q121560938",
+      "ownership_index": 353,
+      "actual_query": "\"ノーラの箱舟\" 御厨哲美 あらすじ",
+      "prior_queries": [
+        "\"Nora no Hakobune\" Mikuriya story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "440c3245731947ba7e5b16504573846b043502347515548a8f65d7853b7e31c0",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-353.json",
+      "private_raw_file_sha256": "5d94eb85612a7c662688a17f1c3758233504999e5df141b220f446ed5e0a12fc",
+      "query_text_utf8_sha256": "eefd9db350ba092c42fa74012b72dad6a0fc58b9e294628bedd0bda696f49c39",
+      "return_text_utf8_sha256": "9759bbdad4a95609df1e820e46b8867c32116f6574fca72df94836e43bcd7526"
+    },
+    {
+      "id": "Q131302865",
+      "ownership_index": 354,
+      "actual_query": "\"Lauralyn\" \"Garrett\" \"1977\" plot",
+      "prior_queries": [
+        "\"Lauralyn\" Randall Garrett story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "92a1074976b9189bb381afbfe37afdd5ce370c3cb188c678e10b4c94eeea1ff5",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-354.json",
+      "private_raw_file_sha256": "223a5d6548dd95495345ba168b45e5de0ebfba51e7297ff7036839382e935d21",
+      "query_text_utf8_sha256": "a10c7b1f815781bcb0cb35a4eb8743541a49e6d708b04ef5571cf69409268257",
+      "return_text_utf8_sha256": "f2d94ca6af56ab787bab90756ebc21e4f067849abe9e5717cd7eb9bff0663655"
+    },
+    {
+      "id": "Q131461599",
+      "ownership_index": 355,
+      "actual_query": "\"Cold Cash War\" \"1977\" short story Asprin",
+      "prior_queries": [
+        "\"Cold Cash War\" \"Asprin\" \"1977\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "4cb175cd4768d984fb3087461ab6b71f130f23c781f28079cc00966128fc6b62",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-355.json",
+      "private_raw_file_sha256": "935cdaefcd692aa72e3576b5ee44a90db0e2f0595a8f64ec648112ce1c678458",
+      "query_text_utf8_sha256": "7524dde33f0e4ec06ce2f7fe8819e4413b6303b2b3e0ee51c2ed3f200c1440c6",
+      "return_text_utf8_sha256": "7a3364bbbba1a749d78e1218021f22119e3cb9e428b24af3ec268e90a09bacf4"
+    },
+    {
+      "id": "Q131518596",
+      "ownership_index": 356,
+      "actual_query": "\"A Rain of Pebbles\" \"Leigh\" short story review",
+      "prior_queries": [
+        "\"A Rain of Pebbles\" Stephen Leigh story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "b7ee7a4f2aab188bc7f643a03e2513128f8dcf6d6fcfd183476210ca841e7ab1",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-356.json",
+      "private_raw_file_sha256": "a650c0325dc148f17f35b864f5a8fcf4211ba6927c84b241b9a66e4f18a65b3d",
+      "query_text_utf8_sha256": "cf843a055cd0c223a2cfa024301b1a4da419c12515f4be28bf49b607f57d4d8d",
+      "return_text_utf8_sha256": "4afbe8e3a2c76277f636c78bec89e7055568eea79b7b791140bb0e55656adba5"
+    },
+    {
+      "id": "Q134715515",
+      "ownership_index": 357,
+      "actual_query": "\"The Hibakusha Gallery\" \"Bryant\" fiction review",
+      "prior_queries": [
+        "\"The Hibakusha Gallery\" \"Bryant\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "6ffdf7f85d54f9ac567abd0dfad5eb60a69ea74775b74d3c47917bda297e88bb",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-357.json",
+      "private_raw_file_sha256": "12962d88e575dcd8d99896a2d714afc160d30c0103ca7d56bbd2c1249a02a138",
+      "query_text_utf8_sha256": "cb3d6fb697241ad0d745d7ed9fe932f1fcb9cf3f73f3b3174e5da5a3da49e8d1",
+      "return_text_utf8_sha256": "bcfb1c0136fe9df50d85a890d770b1d2be50bd53ac3a0c9ed43f173055c6846d"
+    },
+    {
+      "id": "Q19862425",
+      "ownership_index": 358,
+      "actual_query": "\"Ganymedes 2\" anthology review stories",
+      "prior_queries": [
+        "\"Ganymedes 2\" inhoud"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "d2cacc20b4dafa642ca6dc7892c7de660f4224eb5322901053ce9d88c13951fd",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-358.json",
+      "private_raw_file_sha256": "31b235578e18882e472c4fec9f2c4a58549a4b184e325e473e2834a8dcfb3bd9",
+      "query_text_utf8_sha256": "09a92e946eb6df11e00f454b4f7708a5a33023bdc2248a7049bbc40ff0d25755",
+      "return_text_utf8_sha256": "23f99900690fcd3334e87ce214e538cd998317a78760c51324f89a31aa75ce86"
+    },
+    {
+      "id": "Q3899599",
+      "ownership_index": 359,
+      "actual_query": "\"Per tutti i diavoli dell’universo\" antologia racconti",
+      "prior_queries": [
+        "\"Per tutti i diavoli dell’universo\" indice"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "cd893fd1238f646879016410531f39b1b1ac18debd1ba9ec389060af26ff84f2",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-359.json",
+      "private_raw_file_sha256": "26ca398cd4e1fc91628514ef267811fa2de6fe2592df57ba9413e305cc6f745e",
+      "query_text_utf8_sha256": "75e33a8532625b28d5bf57ff331b61a9a03d06c06bc962a5eefcc10aab9243ca",
+      "return_text_utf8_sha256": "6ace7455a0f8585069628808b0669acd276b1047abdd97a17b76c117452a1550"
+    },
+    {
+      "id": "Q6733442",
+      "ownership_index": 360,
+      "actual_query": "\"মহাসংকটে শঙ্কু\" গল্প",
+      "prior_queries": [
+        "\"Mahasankatey Shonku\" stories synopsis"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "d86be6d561b9594b59eb07d4b3dd38d28d536690ac426481373f8e15570fb78b",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-360.json",
+      "private_raw_file_sha256": "71e128118265b66a0f284e95efb158a156a3c55939414062ede71265a891582b",
+      "query_text_utf8_sha256": "05105ed2d2c9d36e4ded34c68e52063579682d2f86b2e8a1ef89d7dc45a0e413",
+      "return_text_utf8_sha256": "f2575520df23003445798353d7e89644214d0bc77422d7efd3cb1dae0ee6dbcc"
+    },
+    {
+      "id": "Q112999016",
+      "ownership_index": 361,
+      "actual_query": "\"Nor the Many-Colored Fires\" \"Martin\" space story",
+      "prior_queries": [
+        "\"Nor the Many-Colored Fires of a Star Ring\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "5b5292cebe7fa075961cde1af45fbebf86fca47c7e87b8106af15bf2b36e3c68",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-361.json",
+      "private_raw_file_sha256": "ff3f3afa76428e9269ae8e8198997f8e29e40455dcedf6e47c09647a5131f7a9",
+      "query_text_utf8_sha256": "5cde0d9e16274fcf3e3aa8ea4f6b92c4f74b607db6eb8906496e7536a7d53c5c",
+      "return_text_utf8_sha256": "cd61a6c0e99bcfde469421123f559f3925f84793ba0c425042752ffac7790a46"
+    },
+    {
+      "id": "Q131302858",
+      "ownership_index": 362,
+      "actual_query": "\"Custom Fitting\" \"James White\" hospital plot",
+      "prior_queries": [
+        "\"Custom Fitting\" \"James White\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "47bd6b363c2ebc0a5ab7b86704887854b02e16df21c0d602c240d9dbf93f41e7",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-362.json",
+      "private_raw_file_sha256": "7ea8742508aa1aecdcba9aad75b23d607fff2242cd876649269d1c246f959219",
+      "query_text_utf8_sha256": "b38e2848dfdb524dc9c3126c161e8e3cc12febec55d9bf54dbb6adc8276bf7e2",
+      "return_text_utf8_sha256": "efefa753a9be415fa6fd5fce6a6da5e6ec2e424f06016f3f7a1f64a4129f2390"
+    },
+    {
+      "id": "Q131461636",
+      "ownership_index": 363,
+      "actual_query": "\"Plutonium\" \"Darnay\" short fiction review",
+      "prior_queries": [
+        "\"Plutonium\" Arsen Darnay story synopsis"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "45dd247bf74bddc1c705d65672ba6a9a39f228956f773a866360c7bc299f5929",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-363.json",
+      "private_raw_file_sha256": "d4c970329bc840aa1060712a5fe3b6acfa423e3cb986084f7017ab12b65e6fae",
+      "query_text_utf8_sha256": "151a9bd01227463fb55c772d397151be1391ed2b01009f57ac85c56e2c84d5f3",
+      "return_text_utf8_sha256": "cf9046b3af0802b0b5c8e6850f9adfd7202c8ad4984d4f4de7ea3dca7b31efcd"
+    },
+    {
+      "id": "Q131518225",
+      "ownership_index": 364,
+      "actual_query": "\"The Con Artist\" \"Plauger\" 1976 robot",
+      "prior_queries": [
+        "\"The Con Artist\" P J Plauger story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "353fbebbaa0d8828ada64842a17ff16ddb417be147d49a5e8a67c4f2f8e7455f",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-364.json",
+      "private_raw_file_sha256": "60248f76629ae3eb18821ab52719510f7c48bcdcbc737c79b2bd4690e9d99592",
+      "query_text_utf8_sha256": "ebfdf1b6213421d1354c4974d66b922392696c7a14940fc950d0d8775d9aec22",
+      "return_text_utf8_sha256": "75ec723fb16c452986124060b2b1b7a24b1d20d0014b680e1a1570997d355704"
+    },
+    {
+      "id": "Q133801395",
+      "ownership_index": 365,
+      "actual_query": "\"Orbite d'attente\" \"Jacques Acar\" histoire",
+      "prior_queries": [
+        "\"Orbite d’attente\" \"Acar\" résumé"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "cad79f26660c65c9c88f35c537e9ebeed01140ea94756d1151b23080466e203b",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-365.json",
+      "private_raw_file_sha256": "5f76abeb1979a27890119b27813d711335d6fd3b56fbb19f2106fee56053c303",
+      "query_text_utf8_sha256": "ebef25903690ac9edf27de49122a8cb83f0a6d476ca5bcb776b81dd30f4c88ff",
+      "return_text_utf8_sha256": "a152a9c7b839214d03c02d165f4e2217c1400bdff7e5c84a40533bb7f435d187"
+    },
+    {
+      "id": "Q134520403",
+      "ownership_index": 366,
+      "actual_query": "\"Back to Earth, Finally\" \"Philippe Goy\" story summary",
+      "prior_queries": [
+        "\"Retour à la terre, définitif\" \"Goy\" résumé"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "7dc7e5c308978619b5959f58c668fb3252c351afe3686161efc868bae3aaed9c",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-366.json",
+      "private_raw_file_sha256": "20c5dd2e5f1752b6d4c30cc6174f0c0c66febb43168294387c6f01c78dc79f16",
+      "query_text_utf8_sha256": "624572c2802fb60d5d43fdfde6e692484e8be5c28b5fdc4dafe70ef38e8b9dc4",
+      "return_text_utf8_sha256": "da3a8678bd2a247f49c5e455cfa534423952fb1f946f9548868736239480715a"
+    },
+    {
+      "id": "Q134706026",
+      "ownership_index": 367,
+      "actual_query": "\"His Hour Upon the Stage\" \"Carrington\" review",
+      "prior_queries": [
+        "\"His Hour Upon the Stage\" \"Carrington\" story"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "ee75201c92b8ceb1299535ad0d8bc35518a76917046773e6912b00f0f23fdd7b",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-367.json",
+      "private_raw_file_sha256": "3f4d748bb0b520a15f8c9f58acdea78d877e36588ddda9f426d00776803d8e9d",
+      "query_text_utf8_sha256": "227439ba582780beff148ae505c73fd590693b0fc094e881e590e5f519814559",
+      "return_text_utf8_sha256": "fb7f47701ecc0cdcc5ca8f86b1dc3ae9641cb6a33d22d328a3ec32a1a0beb1df"
+    },
+    {
+      "id": "Q135092995",
+      "ownership_index": 368,
+      "actual_query": "\"Science Fiction Discoveries\" 1976 anthology stories review",
+      "prior_queries": [
+        "\"Science Fiction Discoveries\" 1976 contents"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "0060754328ad5db485c06a8fe17ac3010b4eda9f394e4b8bc1ccc86ea675f9ab",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-368.json",
+      "private_raw_file_sha256": "68551e3286c9f491d8740b61cd79519ab3222556aa9b35aa412dc62006744ad1",
+      "query_text_utf8_sha256": "ace43e677093a856f3f179ef569ed1194e3b5f458f817cf7eabcd2f1317eb52f",
+      "return_text_utf8_sha256": "ec6e8dd79cdd464f54593f4bb434fd6f30db483c6b9a56f063d3f586262f6d82"
+    },
+    {
+      "id": "Q136762350",
+      "ownership_index": 369,
+      "actual_query": "\"Nobody Leaves New Pittsburg\" Martin zombies",
+      "prior_queries": [
+        "\"Nobody Leaves New Pittsburg\" \"George R. R. Martin\" plot synopsis"
+      ],
+      "actual_search_request_count": 1,
+      "new_different_direction_count": 1,
+      "comparison": "different_query_direction",
+      "new_first_pass_identity_count": 0,
+      "new_process_identity_count": 1,
+      "frozen_log_record_sha256": "0943974f1fcc24e36c17eedac6d10d4a78dfd81e7edf5f0c92c4361734b93223",
+      "private_raw_file": "work/evidence/quick-retry-root-assist-global-r2-search-369.json",
+      "private_raw_file_sha256": "0bacb3bcea2a3b969910eeb8d239a2041e5c856ecea5c13eb5c30ff5619ae0c8",
+      "query_text_utf8_sha256": "2466ce2e584d4cf053b6b5c38bec7471ae176c824c260b3c64f570acf987ab40",
+      "return_text_utf8_sha256": "4d7a60b4dfba5c9276ac193d40dc3325c57e412d08aa5b490707bb9047773854"
+    }
+  ]
+}

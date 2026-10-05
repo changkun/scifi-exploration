@@ -58,6 +58,25 @@ for(const input of spatialInputs)for(const record of input.records){
   const work=works.find(item=>item.id===record.id);
   assert(work.source_search_log.raw_reading_log.queries.includes(record.source_cache_actual_query));
   assert(record.source_cache_sha256&&record.source_cache_record_sha256);
+ }else if(record.same_query_source_scope_proof_archive){
+  const proofBytes=await readFile(new URL(record.same_query_source_scope_proof_archive,root));
+  assert.equal(createHash('sha256').update(proofBytes).digest('hex'),record.same_query_source_scope_proof_sha256);
+  const proof=JSON.parse(proofBytes).records.find(item=>item.id===record.id);
+  assert.deepEqual(proof.identity,record.identity);
+  assert.equal(proof.frozen_core_record_sha256,record.source_analysis_record_sha256);
+  const originalBytes=await readFile(new URL('research/spatial-input-snapshots/'+proof.frozen_spatial_component,root));
+  assert.equal(createHash('sha256').update(originalBytes).digest('hex'),proof.frozen_spatial_component_sha256);
+  const original=JSON.parse(originalBytes).records.find(item=>item.id===record.id);
+  assert.equal(createHash('sha256').update(JSON.stringify(sortedJSON(original))).digest('hex'),proof.frozen_spatial_record_sha256);
+  assert.deepEqual(original.fields,record.fields);assert.deepEqual(original.sources,record.sources);
+  const cacheBytes=await readFile(new URL(record.source_cache_archive,root));
+  assert.equal(createHash('sha256').update(cacheBytes).digest('hex'),record.source_cache_sha256);
+  const extra=proof.extra_source_proofs[0],ref=extra.cache_evidence[0];
+  const actual=JSON.parse(cacheBytes)[ref.section][ref.index];
+  assert.equal(actual.id,record.id);assert.equal(actual.q,record.source_cache_actual_query);
+  assert.equal(createHash('sha256').update(JSON.stringify(sortedJSON(actual))).digest('hex'),record.source_cache_record_sha256);
+  const work=works.find(item=>item.id===record.id);assert(work.source_search_log.raw_reading_log.queries.includes(actual.q));
+  assert(record.sources.every(url=>assertion.sources.includes(url)||url===extra.url&&actual.response.includes(url)));
  }else assert(record.sources.every(url=>assertion.sources.includes(url)));
  frozenSpatialProvenance++;
 }

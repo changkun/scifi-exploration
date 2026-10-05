@@ -3,10 +3,26 @@
     "method": "source-reading-issue-correction-v1",
     "status": "frozen_checkpoint",
     "read_date": "2026-10-04",
-    "record_count": 4,
-    "facet_count": 9,
-    "scope_note": "保留三项旧更正；新增Lance行星际术语更正，原冻结断言、散列及实际批评材料范围完整保留。更正不增加核心或问题数，不升级核验。",
-    "updated_at": "2026-10-05"
+    "record_count": 6,
+    "facet_count": 13,
+    "scope_note": "保留三项旧更正；新增Lance行星际术语更正，原冻结断言、散列及实际批评材料范围完整保留。更正不增加核心或问题数，不升级核验。 Bloody Marie仅补同一真实查询漏列URL；分析字段与问题均不改变。",
+    "updated_at": "2026-10-05",
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/quick-retry-early-walk-moons-core-correction-round1.json",
+        "sha256": "bc5a200601454b8f5f743c07b7c0d417dedcca4a83506fec6fc3374b15877863",
+        "new_queries": 0,
+        "new_opens": 0,
+        "new_core": 0
+      },
+      {
+        "file": "research/issue-input-snapshots/global-lane1-source-corrections-round1.json",
+        "sha256": "ed596e078909cd55ccc29fc1bcd78d9fa67b169e8096edbe6681eb75817793f6",
+        "new_queries": 0,
+        "new_opens": 0,
+        "new_core": 0
+      }
+    ]
   },
   "records": [
     {
@@ -232,6 +248,263 @@
         "original_frozen_input": "work/evidence/known-year-root-assist-modern-round4.json",
         "original_frozen_input_sha256": "ad8df98b6f4f046b21900dbace70eaea3b674570aea1fdb25851cb5d3824519c",
         "correction_audit": "research/issue-input-snapshots/lance-interplanetary-correction.json"
+      }
+    },
+    {
+      "id": "Q131445245",
+      "identity": {
+        "title": "Walk the Moons Road",
+        "author": "Jim Aikin"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "人类海船船长兼冒险者Salas Tarag着手营救一位失踪的lilith；她是蒙面戴兜帽的Vli祭司，失踪前承担赴Falnerescu的外交使命。个人营救因此牵连使者身份与群体往来：需要帮助的人既不能只被看作神秘的异族，也不能只被当作外交任务的工具；这里只解释简介给出的前提，不判定失踪原因和营救结果。",
+        "issue_facets": [
+          {
+            "label": "外交使命中的个体保护",
+            "question": "一位承担外交使命的祭司失踪后，营救怎样兼顾她的个体安全与使命所关联的群体往来？",
+            "basis": "同次准确标题/作者简介明确Vli祭司在赴Falnerescu的外交使命中失踪，Salas Tarag着手营救；没有读到具体派系、责任归属或结局。"
+          },
+          {
+            "label": "神秘外观与他者认识",
+            "question": "人类营救者面对一位蒙面戴兜帽的Vli祭司时，怎样避免用神秘外观替代对她具体身份与处境的理解？",
+            "basis": "本作准确简介以人类船长/冒险者与蒙面戴兜帽的Vli祭司建立营救关系；外观与身份是明示前提，交流方式及双方内心尚未读到。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "按同次查询中本作准确书目简介原创分类，未独立核验。",
+        "issue": "仅用Salas Tarag/Vli祭司营救与外交使命摘要；撤回Bentley、Truck、佛罗里达入口、类浣熊手势语言及复位情节。未读原作全文，不推断失踪原因、人物动机、世界地点或结局。",
+        "issue_facets": "两项问题是对明确营救前提的研究解释；不是对未读情节的断言。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.fantasticfiction.com/a/jim-aikin/walk-moons-road.htm",
+        "https://www.abebooks.com/9780345321695/Walk-Moons-Road-Aikin-Jim-0345321693/plp"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.fantasticfiction.com/a/jim-aikin/walk-moons-road.htm",
+          "type": "saved_query_bibliographic_description_excerpt",
+          "support_scope": "同一次查询 turn11978search5：人类海船船长/冒险者Salas Tarag营救失踪lilith；该人物为蒙面戴兜帽的Vli祭司，原在赴Falnerescu的外交使命中。只读该简介句，不是原作全文。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true,
+          "source_cache_reference": {
+            "file": "quick-retry-early-round9-responses-private.json",
+            "sha256": "db496185008f7da7bb47dd8cee92f0e1840523ce278d99669909430a7adf1543",
+            "section": "searches",
+            "index": 13,
+            "record_sha256": "785d6310aee4a7a1d08a40dac57048a3f25270859d63e42318ff49293cc1ec92",
+            "actual_query": "\"Walk the Moons Road\" Aikin novel rescue princess review"
+          }
+        },
+        {
+          "url": "https://www.abebooks.com/9780345321695/Walk-Moons-Road-Aikin-Jim-0345321693/plp",
+          "type": "saved_query_retail_bibliographic_description_excerpt",
+          "support_scope": "同次查询 turn11978search7：同一标题/作者/ISBN关联的相同营救简介；用于精确身份与前提对照，不能算独立全文或出版社直接核验。",
+          "read_date": "2026-10-05",
+          "no_new_network_read": true,
+          "source_cache_reference": {
+            "file": "quick-retry-early-round9-responses-private.json",
+            "sha256": "db496185008f7da7bb47dd8cee92f0e1840523ce278d99669909430a7adf1543",
+            "section": "searches",
+            "index": 13,
+            "record_sha256": "785d6310aee4a7a1d08a40dac57048a3f25270859d63e42318ff49293cc1ec92",
+            "actual_query": "\"Walk the Moons Road\" Aikin novel rescue princess review"
+          }
+        }
+      ],
+      "source_analysis_file": "quick-retry-early-round9.json",
+      "source_analysis_sha256": "f4f5c9d0538cbbde7ad2550d60b758b6413b439c0dfe1605e33b68a1615069f2",
+      "source_analysis_record_sha256": "7a21d49ff63bd348054e765af2737806c75d0611ff0d97c874d844a6ed19c227",
+      "source_log_reference": {
+        "file": "quick-retry-early-round9-log.json",
+        "sha256": "99c4a2041c8389838636dd41240d6cf67803027adb7dc60d775aefdc2645303c",
+        "record_sha256": "731508386c36be73e5f0dc37346c5ff4b23771c5eba784fad6ab9380e14e42de"
+      },
+      "source_cache_reference": {
+        "file": "quick-retry-early-round9-responses-private.json",
+        "sha256": "db496185008f7da7bb47dd8cee92f0e1840523ce278d99669909430a7adf1543",
+        "section": "searches",
+        "index": 13,
+        "record_sha256": "785d6310aee4a7a1d08a40dac57048a3f25270859d63e42318ff49293cc1ec92",
+        "actual_query": "\"Walk the Moons Road\" Aikin novel rescue princess review"
+      },
+      "original_ownership_file": "quick-retry-lane-3.json",
+      "original_ownership_sha256": "ac16324a0ef149c7042828b0988fb133af9f30d08c6b8bc5b1a3e5be26af026c",
+      "original_ownership_index": 269,
+      "integration_relation": "published_core_correction",
+      "supersedes": {
+        "input_file": "quick-retry-early-round9.json",
+        "input_sha256": "f4f5c9d0538cbbde7ad2550d60b758b6413b439c0dfe1605e33b68a1615069f2",
+        "input_record_sha256": "7a21d49ff63bd348054e765af2737806c75d0611ff0d97c874d844a6ed19c227",
+        "id": "Q131445245",
+        "fields": [
+          "topics",
+          "issue",
+          "issue_facets"
+        ],
+        "replace_current_interpretation": true,
+        "retain_original_assertions_for_audit": true
+      },
+      "correction_note": {
+        "corrects_component": "quick-retry-early-round9.json",
+        "corrects_component_sha256": "f4f5c9d0538cbbde7ad2550d60b758b6413b439c0dfe1605e33b68a1615069f2",
+        "reason": "同一PDF的检索OCR混排将Steven R. Boyett的The Architect of Sleep类浣熊/复位书评段塞进Jim Aikin本作标题段；旧本作分析及材料范围说明因此错配。此更正只采用同次查询实际返回、题名作者明确匹配的Salas Tarag/Vli摘要，不将错误段转为另一书的新分析。",
+        "old_fields": {
+          "topics": [
+            "殖民与他者",
+            "权力与制度",
+            "知识与认识"
+          ],
+          "issue": "Jim Bentley在佛罗里达探洞时穿过入口，遇到被推翻的类浣熊统治者Truck；后者曾梦见这个陌生的秃猿。同行寻求复位的过程还需要学习对方的手势语言，使跨物种友谊与政治工具化发生在同一旅程。",
+          "issue_facets": [
+            {
+              "label": "预见中的他者与政治用途",
+              "question": "把外来者认作梦中复位关键时，怎样避免只按自身政治需要理解他？",
+              "basis": "评论明确Truck为睡眠建筑师，曾梦见Bentley并认为其对恢复王位重要。"
+            },
+            {
+              "label": "语言学习与结盟",
+              "question": "没有共同语言的伙伴怎样建立合作，而非只以各自称谓替代对方？",
+              "basis": "Bentley学习类浣熊手势语言，Truck则沿途寻找帮助其回归权力的旧友。"
+            }
+          ]
+        },
+        "replacement_fields": {
+          "topics": [
+            "殖民与他者",
+            "知识与认识",
+            "权力与制度"
+          ],
+          "issue": "人类海船船长兼冒险者Salas Tarag着手营救一位失踪的lilith；她是蒙面戴兜帽的Vli祭司，失踪前承担赴Falnerescu的外交使命。个人营救因此牵连使者身份与群体往来：需要帮助的人既不能只被看作神秘的异族，也不能只被当作外交任务的工具；这里只解释简介给出的前提，不判定失踪原因和营救结果。",
+          "issue_facets": [
+            {
+              "label": "外交使命中的个体保护",
+              "question": "一位承担外交使命的祭司失踪后，营救怎样兼顾她的个体安全与使命所关联的群体往来？",
+              "basis": "同次准确标题/作者简介明确Vli祭司在赴Falnerescu的外交使命中失踪，Salas Tarag着手营救；没有读到具体派系、责任归属或结局。"
+            },
+            {
+              "label": "神秘外观与他者认识",
+              "question": "人类营救者面对一位蒙面戴兜帽的Vli祭司时，怎样避免用神秘外观替代对她具体身份与处境的理解？",
+              "basis": "本作准确简介以人类船长/冒险者与蒙面戴兜帽的Vli祭司建立营救关系；外观与身份是明示前提，交流方式及双方内心尚未读到。"
+            }
+          ]
+        },
+        "old_source_evidence": [
+          {
+            "url": "https://www.fanac.org/fanzines/Lans_Lantern/Lans_Lantern22.pdf",
+            "type": "fanzine_review_search_excerpt",
+            "support_scope": "实际查询返回Maia Cowan明确本小说的独立书评段：Florida入口、Truck、梦、手势语言与复位；未读原小说，不借相邻Pindharee种族剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "old_log_reading_scope": "实际查询返回Maia Cowan明确本小说的独立书评段：Florida入口、Truck、梦、手势语言与复位；未读原小说，不借相邻Pindharee种族剧情。",
+        "corrected_source_scope": "同次搜索返回的两条精确书目简介句；没有新查询/打开，没有完整原作阅读，文学解释仍待核。",
+        "old_claim": "Jim Bentley在佛罗里达探洞时穿过入口，遇到被推翻的类浣熊统治者Truck；后者曾梦见这个陌生的秃猿。同行寻求复位的过程还需要学习对方的手势语言，使跨物种友谊与政治工具化发生在同一旅程。",
+        "allow_topic_replacement": true,
+        "source_scope": "同次搜索返回的两条精确书目简介句；没有新查询/打开，没有完整原作阅读，文学解释仍待核。",
+        "correction_audit": "research/issue-input-snapshots/quick-retry-early-walk-moons-core-audit-round1.json"
+      },
+      "publication_note": "保留当前canonical作者/标题/原年份与版本粒度；不更改Jim Aikin身份，不增新核心计数。",
+      "derivation_note": "规范字段old_claim与allow_topic_replacement仅适配既有纠错读取契约；原冻结更正及原topic顺序对照均归档，不新增查询、打开或核心。"
+    },
+    {
+      "id": "Q134112698",
+      "identity": {
+        "title": "Bloody Marie",
+        "author": "Jacques Martel"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "银河新贸易航路的繁荣同时吸引海盗，Bloody Marie则因父亲十五年前被联盟陷害而发动最后一次袭击。私人复仇搭上了公共贸易网络，使个人不肯遗忘的伤害与依赖航路生活的人群利益产生冲突。",
+        "issue_facets": [
+          {
+            "label": "繁荣与掠夺",
+            "question": "贸易网络的扩张为何也可能创造新的海盗机会？",
+            "basis": "准确书介把新的银河贸易路线繁荣与海盗获利明确联系起来。"
+          },
+          {
+            "label": "复仇与他人代价",
+            "question": "为父亲复仇的最后袭击，应怎样面对无关贸易参与者的风险？",
+            "basis": "本卷介绍说联盟十五年前陷害其父，Marie驾驶LongJohn展开最后一次袭击。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+        "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+        "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+        "entity_identity": "只JacquesMartel本长篇的贸易航路与最后袭击；未采用未读结尾反转。",
+        "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。 同一实际查询第二条Scylla本书书介URL原先漏列，现只补来源与限定范围，三项分析不变。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://scylla.fr/legacy/a/jacques-martel/bloody-marie_49230",
+        "https://scylla.fr/legacy/a/jacques-martel/bloody-marie"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://scylla.fr/legacy/a/jacques-martel/bloody-marie_49230",
+          "support_scope": "实际查询准确书店本卷书介：新银河贸易航路、海盗、父亲死亡复仇与LongJohn最后袭击。",
+          "source_kind": "exact_work_synopsis_or_review_search_return",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://scylla.fr/legacy/a/jacques-martel/bloody-marie",
+          "support_scope": "原R20一次查询已实际返回的准确本书Scylla另一页面：联盟十五年前陷害Marie之父，Marie持续愤怒并回归；仅读原保存的搜索返回，未新开网页或读全书。",
+          "source_kind": "exact_work_synopsis_search_return",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "correction_note": {
+        "corrects_component": "quick-retry-global-round20.json",
+        "corrects_component_sha256": "879d61f85c3898242397f3776348f77980f7accf97b5cbb415bc5a8cad29e630",
+        "reason": "原核心提及联盟十五年前陷害父亲，这个细节确在同一实际缓存的第二条Scylla本书页面，原sources未列此URL。第一条_49230已正确支持银河航路、海盗、为父复仇、Long John最后袭击；不改原3项分析字段。",
+        "correction_type": "append_missing_actual_support_url_only",
+        "analysis_fields_unchanged": true,
+        "old_fields": {
+          "topics": [
+            "权力与制度",
+            "主体与意识"
+          ],
+          "issue": "银河新贸易航路的繁荣同时吸引海盗，Bloody Marie则因父亲十五年前被联盟陷害而发动最后一次袭击。私人复仇搭上了公共贸易网络，使个人不肯遗忘的伤害与依赖航路生活的人群利益产生冲突。",
+          "issue_facets": [
+            {
+              "label": "繁荣与掠夺",
+              "question": "贸易网络的扩张为何也可能创造新的海盗机会？",
+              "basis": "准确书介把新的银河贸易路线繁荣与海盗获利明确联系起来。"
+            },
+            {
+              "label": "复仇与他人代价",
+              "question": "为父亲复仇的最后袭击，应怎样面对无关贸易参与者的风险？",
+              "basis": "本卷介绍说联盟十五年前陷害其父，Marie驾驶LongJohn展开最后一次袭击。"
+            }
+          ]
+        },
+        "original_analysis_record_sha256": "a1d355824ca092a448ec28e51fe65d669f6632f2d5f63d5630137b46f21755c5",
+        "original_log_record_sha256": "a88c16af50e5d89300d6d6989759b7c10fbda112a54ad62246aade09b921be4c",
+        "source_scope": "只重新核对同一已缓存搜索返回中两条准确本书书介；没有新请求、直接开页或全本读取。",
+        "same_return_evidence": {
+          "private_raw_file": "research/source-review-snapshots/quick-retry-global-r20-search-619.json",
+          "sha256": "42907e85e5ba145dbd763d0746e7128f1817836331c106be7c821cf0dab7cdfd",
+          "query": "\"Bloody Marie\" Martel histoire pirates roman",
+          "source_url": "https://scylla.fr/legacy/a/jacques-martel/bloody-marie",
+          "new_queries": 0,
+          "new_opens": 0,
+          "corresponding_frozen_log": "research/issue-input-snapshots/quick-retry-global-round20-log.json",
+          "corresponding_frozen_log_sha256": "6bbae955e0cef2064739aa6ffc0781249c37dead3780e9aac6803980cdad9998"
+        },
+        "new_queries": 0,
+        "new_opens": 0,
+        "new_core": 0
       }
     }
   ]

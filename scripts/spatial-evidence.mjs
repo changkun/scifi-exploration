@@ -1,3 +1,5 @@
+import {createHash} from 'node:crypto';
+
 // A spatial assertion may come from a scoped reading or explicit existing
 // knowledge. The latter must never manufacture a source or a search attempt.
 export function validateSpatialEvidence(record, {issueAssertions = [], sourceSearchLog} = {}) {
@@ -8,6 +10,14 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
     return 'scoped_reading';
   }
   const sameIdentity = assertion => assertion.id === record.id && JSON.stringify(assertion.identity) === JSON.stringify(record.identity);
+  const sorted = value => Array.isArray(value) ? value.map(sorted) : value && typeof value === 'object' ?
+    Object.fromEntries(Object.keys(value).sort().map(key => [key, sorted(value[key])])) : value;
+  const matchesFrozenAssertion = assertion => {
+    const {input_file, ...original} = assertion;
+    // Consolidated batches use their batch path, while the provenance names
+    // the archived contributor. Their exact record content must be identical.
+    return createHash('sha256').update(JSON.stringify(sorted(original))).digest('hex') === record.source_analysis_record_sha256;
+  };
   // A later real query can coexist with an earlier zero-query judgment.
   // It does not retroactively become support for that judgment.
   const currentRaw = sourceSearchLog?.raw_reading_log;
@@ -64,6 +74,72 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
     if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue &&
         assertion.verification_status === 'knowledge_added_unverified' && !assertion.sources?.length &&
         assertion.field_notes?.issue?.startsWith('原创解释基于既有知识，未读本轮原作全文；'))) fail();
+    return 'existing_knowledge_unverified';
+  }
+  if (record.knowledge_provenance_mode === 'existing_knowledge_from_original_retry') {
+    // The original lane used its own explicit zero-query scope. Check it against
+    // the exact archived assertion while retaining the previous failed lookup.
+    if (record.integration_relation !== 'published_core' ||
+        !record.source_analysis_archive?.startsWith('research/issue-input-snapshots/') ||
+        !record.source_analysis_sha256 || !record.source_analysis_record_sha256 ||
+        !record.frozen_knowledge_reading_scope || !record.frozen_knowledge_issue_note ||
+        !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw) ||
+        raw.attempt_state !== 'existing_knowledge_quick_retry' || raw.issue_result !== 'added_unverified' ||
+        raw.actual_search_performed !== false || raw.actual_search_count !== 0 || raw.actual_open_count !== 0 ||
+        raw.queries?.length || raw.materials_checked?.length || raw.sources?.length ||
+        raw.reading_scope !== record.frozen_knowledge_reading_scope ||
+        sourceSearchLog.actual_search_performed !== false) fail();
+    const previous = sourceSearchLog.previous_attempts?.at(-1);
+    if (!previous || !sameIdentity(previous) ||
+        JSON.stringify(raw.prior_source_log?.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(raw.prior_source_log?.materials_checked) !== JSON.stringify(previous.materials_checked) ||
+        JSON.stringify(sourceSearchLog.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(sourceSearchLog.materials_checked) !== JSON.stringify(previous.materials_checked)) fail();
+    if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue &&
+        matchesFrozenAssertion(assertion) &&
+        assertion.verification_status === 'knowledge_added_unverified' && !assertion.sources?.length &&
+        assertion.field_notes?.issue === record.frozen_knowledge_issue_note)) fail();
+    return 'existing_knowledge_unverified';
+  }
+  if (record.knowledge_provenance_mode === 'existing_knowledge_from_confirmed_member') {
+    if (!record.field_notes.evidence_provenance || record.integration_relation !== 'same_batch_core' ||
+        !record.source_analysis_archive?.startsWith('research/issue-input-snapshots/') ||
+        !record.source_analysis_sha256 || !record.source_analysis_record_sha256 ||
+        !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw) ||
+        raw.analysis_basis !== 'existing_confirmed_collection_member_knowledge_unverified' ||
+        raw.queries?.length || raw.sources?.length || raw.materials_checked?.length ||
+        raw.actual_search_performed === true || sourceSearchLog.actual_search_performed !== false) fail();
+    const previous = sourceSearchLog.previous_attempts?.at(-1);
+    if (!previous || !sameIdentity(previous) ||
+        JSON.stringify(raw.prior_source_log?.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(raw.prior_source_log?.materials_checked) !== JSON.stringify(previous.materials_checked) ||
+        JSON.stringify(sourceSearchLog.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(sourceSearchLog.materials_checked) !== JSON.stringify(previous.materials_checked)) fail();
+    if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue &&
+        matchesFrozenAssertion(assertion) &&
+        assertion.verification_status === 'knowledge_added_unverified' && !assertion.sources?.length &&
+        assertion.field_notes?.issue?.includes('existing knowledge'))) fail();
+    return 'existing_knowledge_unverified';
+  }
+  if (record.knowledge_provenance_mode === 'existing_knowledge_after_nonadopted_query') {
+    if (!record.field_notes.evidence_provenance || record.integration_relation !== 'same_batch_core' ||
+        !record.source_analysis_archive?.startsWith('research/issue-input-snapshots/') ||
+        !record.source_analysis_sha256 || !record.source_analysis_record_sha256 ||
+        !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw) ||
+        raw.analysis_basis !== 'existing_work_specific_knowledge_after_nonadopted_query_unverified' ||
+        !raw.queries?.length || raw.sources?.length || raw.materials_checked?.length ||
+        raw.actual_search_performed === false || sourceSearchLog.actual_search_performed === false) fail();
+    const previous = sourceSearchLog.previous_attempts?.at(-1);
+    const queries = [...new Set([...(previous?.queries || []), ...raw.queries])];
+    if (!previous || !sameIdentity(previous) ||
+        JSON.stringify(raw.prior_source_log?.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(raw.prior_source_log?.materials_checked) !== JSON.stringify(previous.materials_checked) ||
+        JSON.stringify(sourceSearchLog.queries) !== JSON.stringify(queries) ||
+        JSON.stringify(sourceSearchLog.materials_checked) !== JSON.stringify(previous.materials_checked)) fail();
+    if (!issueAssertions.some(assertion => sameIdentity(assertion) && assertion.fields?.issue &&
+        matchesFrozenAssertion(assertion) &&
+        assertion.verification_status === 'knowledge_added_unverified' && !assertion.sources?.length &&
+        assertion.field_notes?.issue?.startsWith('existing knowledge；'))) fail();
     return 'existing_knowledge_unverified';
   }
   if (record.knowledge_provenance_mode === 'existing_knowledge_after_scoped_lookup') {
