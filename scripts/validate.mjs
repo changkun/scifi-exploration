@@ -128,13 +128,14 @@ if (flags.has('--help') || flags.has('-h')) {
       const resources = ['index.html', 'report.html', 'assets/app.js', 'assets/model.mjs', 'assets/style.css', 'assets/cosmos.css', 'assets/universe.mjs', 'assets/chronology.mjs', 'assets/chronology.css', 'assets/bibliography.mjs', 'assets/bibliography.css', 'assets/taxonomy.mjs', 'assets/genre-hierarchy.json', 'assets/catalog.json', 'assets/catalog.csv', 'assets/content.json', 'assets/spatial.json', 'assets/bibliography.json', 'assets/report.md', 'assets/icon.svg', 'assets/earth-day.jpg', 'assets/earth-attribution.json', 'assets/vendor/three.module.min.js', 'assets/vendor/three.core.min.js', 'assets/vendor/three-LICENSE.txt'];
       await Promise.all(resources.map(async resource => { const info = await stat(path.join(dist, resource)); assert(info.isFile() && info.size > 0, `Missing or empty resource: ${resource}`); }));
     });
-    await run('resources: every dist file is at most 5 MiB', async () => {
+    await run('resources: runtime files and shards are at most 5 MiB; whole exports stay in repository', async () => {
+      const repositoryExports = new Set(['assets/issue-analysis.json.gz']);
       async function walk(directory) {
         const entries = await readdir(directory, { withFileTypes: true });
         for (const entry of entries) {
           const filename = path.join(directory, entry.name);
           if (entry.isDirectory()) await walk(filename);
-          else { const info = await stat(filename); assert(info.isFile(), `Unsupported dist entry: ${filename}`); assert(info.size <= 5 * 1024 * 1024, `${path.relative(dist, filename)} exceeds 5 MiB (${info.size} bytes)`); }
+          else { const info = await stat(filename); assert(info.isFile(), `Unsupported dist entry: ${filename}`); const relative = path.relative(dist, filename); assert(repositoryExports.has(relative) || info.size <= 5 * 1024 * 1024, `${relative} exceeds 5 MiB (${info.size} bytes)`); }
         }
       }
       await walk(dist);
