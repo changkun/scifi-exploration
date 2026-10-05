@@ -1,0 +1,568 @@
+{
+  "metadata": {
+    "method": "source-assisted-knowledge-issue-facets-v1",
+    "status": "frozen_checkpoint",
+    "lane": 3,
+    "read_date": "2026-10-05",
+    "queue": "known-year-first-pass-lane-3.json",
+    "ownership_file": "known-year-first-pass-lane-3.json",
+    "ownership_sha256": "b193cb6e5cbf290ee699db0a540b6b05c6c1855dccf59651ecb3eacfaa865e0c",
+    "ownership_note": "已知年份lane3互斥572项；本轮只处理该分配表的精确身份，原纪年与来源粒度不变。",
+    "first_pass_policy": "一轮精准查询与至多一次简单来源读取；实际简介范围足够即补两项问题；困难/身份疑点延后。不称原书全文已读。",
+    "record_count": 11,
+    "facet_count": 22,
+    "attempted_count": 13,
+    "not_added_count": 2,
+    "actual_query_count": 13,
+    "actual_open_attempt_count": 4,
+    "actual_open_success_count": 2,
+    "actual_open_failed_count": 2,
+    "full_original_text_read_count": 0,
+    "partial_original_material_identity_count": 5,
+    "cumulative_owned_first_pass_count": 572,
+    "remaining_owned_unattempted_count": 0,
+    "owned_first_pass_summary": {
+      "attempted_count": 572,
+      "core_added_count": 441,
+      "facet_added_count": 882,
+      "deferred_count": 131,
+      "remaining_unattempted_count": 0
+    },
+    "freeze_notes": [
+      "11核心/22 facets；13身份实际单次查询，4次简单open（2成功、2Cache miss）；0原作全文。",
+      "John Jones依据1915转录L106–174，不用Gutenberg自动摘要的再刊日期/结局；Renard仅L121–163。",
+      "猫电力公司仅实际公司/专利计划与绝缘猫鞋局部；gyro-hats/Coming of Sea只查询返回原片段，open失败不假称续读成功。",
+      "Frerichs只有精确原刊引言，Salgari只有飞行器和续作身份，两项延期，不凭题名填剧情。",
+      "自有572身份首遍全部尝试并留下日志，不等于所有身份核心已补或原作已核验；后续困难项继续保留。"
+    ],
+    "self_check": {
+      "passed": true,
+      "checks": [
+        "current 11 missing",
+        "identity exact",
+        "only three fields",
+        "two concrete facets",
+        "unverified status",
+        "actual queries matched",
+        "ownership SHA",
+        "no prior 559 log overlap",
+        "572 exact ownership union covered",
+        "no date/form changes"
+      ]
+    }
+  },
+  "records": [
+    {
+      "id": "Q106739638",
+      "identity": {
+        "title": "Trois Ombres sur Paris",
+        "author": "Henri-Georges Jeanne"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "主体与意识",
+          "生命与人类定义"
+        ],
+        "issue": "Fringue把大气中的思想流体浓缩成增强智力的技术，希望以此推进平等。支配沉睡民众的精英却追捕这些超人，因为普遍智力提升会破坏其特权，能力增强与政治解放由此发生直接冲突。",
+        "issue_facets": [
+          {
+            "label": "认知增强与统治基础",
+            "question": "当被统治者获得更强理解能力，精英维持特权的机制还能照常运作吗？",
+            "basis": "简介明确既有精英控制沉睡人民，因害怕失去权力而追捕高智力者。"
+          },
+          {
+            "label": "平等理想与超人路径",
+            "question": "以制造超人来追求平等，怎样面对能力差异与政治排斥并存的处境？",
+            "basis": "Fringue的浓缩思想流体实验意在平等乌托邦，却使受增强者成为政治追捕对象。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.culturetheque.com/fr/trois-ombres-sur-paris"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.culturetheque.com/fr/trois-ombres-sur-paris",
+          "type": "library_reproduced_publisher_description_search_excerpt",
+          "support_scope": "实际检索返回Institut Français图书馆转载Saga Egmont简介：Fringue思想流体、精英统治、超人追捕；未读原作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "H. J. Magog为Henri-Georges Jeanne笔名；所见2021电子版简介不证明底库1920的全球首发。"
+    },
+    {
+      "id": "Q3222907",
+      "identity": {
+        "title": "Le Formidable Événement",
+        "author": "莫理斯·卢布朗"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "性别与亲密",
+          "生存与风险"
+        ],
+        "issue": "Simon因平民出身被拒绝婚配，却在连接法国与英国的新陆地出现后，通过穿越和营救证明自身价值。地理巨变给个人打破阶级限制的机会，也吸引掳人和劫掠者，冒险成功与新空间的失序同时发生。",
+        "issue_facets": [
+          {
+            "label": "阶级门槛与英雄资格",
+            "question": "被出身排除的求婚者，为何必须通过灾变中的冒险取得认可？",
+            "basis": "所读评论明确Isabel父亲因Simon平民出身拒婚，灾变让他以穿越和营救证明价值。"
+          },
+          {
+            "label": "新生土地与社会秩序",
+            "question": "地理上的新机会，为什么也能成为绑架和劫掠的空间？",
+            "basis": "实际返回介绍说明新陆地吸引brigands/marauders，Isabel遭掳后Simon展开营救。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Le_Formidable_%C3%89v%C3%A9nement"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Formidable_%C3%89v%C3%A9nement",
+          "type": "secondary_plot_and_literary_analysis_search_excerpt",
+          "support_scope": "实际检索返回本作分析：平民拒婚、英法陆地桥、Simon穿越/营救、盗匪；未读原作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。"
+    },
+    {
+      "id": "Q7128673",
+      "identity": {
+        "title": "Palos of the Dog Star Pack",
+        "author": "John Ulrich Giesy"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "生命与人类定义",
+          "知识与认识"
+        ],
+        "issue": "所读简介开头中，精神科医生面对陷入僵直状态却维持生命的男子，并发现他试图将灵魂与身体分离的笔记。身体的临床状态与旅行者式的自述材料不能互相替代，精神超越的主张因此仍需要说明与可观察生命的关系。",
+        "issue_facets": [
+          {
+            "label": "精神超越与身体存续",
+            "question": "声称灵魂能够离体，如何解释仍留在医院的活体状态？",
+            "basis": "简介明确医院病例的身体处于cataleptic trance却保持活力，并有控制星体投射的笔记。"
+          },
+          {
+            "label": "临床观察与私人记录",
+            "question": "医生能以怎样的证据标准判断笔记中的离体经验？",
+            "basis": "医生调查身体异常并发现日记/笔记，记录主体的主张与临床所见是两种证据来源。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.barnesandnoble.com/w/palos-of-the-dog-star-pack-j-u-giesy/1100540655"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.barnesandnoble.com/w/palos-of-the-dog-star-pack-j-u-giesy/1100540655",
+          "type": "book_retailer_supplied_synopsis_search_excerpt",
+          "support_scope": "实际检索返回商品Overview的医院框架及病例笔记；未读Palos上的后续情节或原书。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只取本作开头框架；商品分类词“short story collections”不能改判本作粒度，也不套用Jason Croft续作。"
+    },
+    {
+      "id": "Q133825988",
+      "identity": {
+        "title": "John Jones's Dollar",
+        "author": "Harry Stephen Keeler"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "文明与历史",
+          "权力与制度"
+        ],
+        "issue": "John Jones把一美元留给按长子传承的第四十代后裔，并要求银行每年复利累积。所读未来课堂用几个世纪的增长讲述这项安排，使财富资格脱离领取者自己的劳动，也让一个当时很小的私人约定成为跨代制度问题。",
+        "issue_facets": [
+          {
+            "label": "复利增长与财富尺度",
+            "question": "永久复利的私人债权，如何在时间中改变原本微不足道的金额？",
+            "basis": "实际原刊转录开头明确一美元按3%年复利增长，并逐世纪展示账户变化。"
+          },
+          {
+            "label": "未出生继承人与劳动资格",
+            "question": "尚未存在的远代继承者，凭什么获得先代制度积累的财富？",
+            "basis": "存款指定第四十代、每代长子的后裔为领取者；不补未读后段的最终处置。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "仅1915原刊转录L106–174实际范围；Gutenberg自动摘要与后段不作情节依据，不称完整单篇已读。",
+        "issue": "仅1915原刊转录L106–174实际范围；Gutenberg自动摘要与后段不作情节依据，不称完整单篇已读。",
+        "issue_facets": "仅1915原刊转录L106–174实际范围；Gutenberg自动摘要与后段不作情节依据，不称完整单篇已读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikisource.org/wiki/The_Black_Cat/Volume_20/Number_11/John_Jones%27s_Dollar"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikisource.org/wiki/The_Black_Cat/Volume_20/Number_11/John_Jones%27s_Dollar",
+          "type": "original_text_partial_opened",
+          "support_scope": "实际打开1915原刊转录，只读L106–174：3214课堂框架、1914存款、第四十代继承、复利与数个世纪账户；未读后段。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "未采用Gutenberg自动摘要的3221/1921日期和结局；1915转录与1956再刊日期修订差异保留，不改底库年。"
+    },
+    {
+      "id": "Q19179731",
+      "identity": {
+        "title": "L’Homme au corps subtil",
+        "author": "莫里斯·雷纳德"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "Bouvancourt刚取得科学发现，夜行时仍本能惧怕歹徒，但攻击者的身体竟能穿过他而不造成预想伤害。已读片段中，新的身体状态与旧有恐惧不一致，歹徒又把异常解释成光线错觉或超自然现象，显示能力变化并不自动带来共同理解。",
+        "issue_facets": [
+          {
+            "label": "身体能力与旧有恐惧",
+            "question": "身体已经不按旧规则受伤时，主体的防御直觉为何仍沿用过去？",
+            "basis": "Bouvancourt先预想自己被勒死，实际袭击穿过身体后才想起自身的新状态。"
+          },
+          {
+            "label": "异常观察与解释惯性",
+            "question": "面对穿体而过的事件，观察者怎样把新证据塞回熟悉的解释？",
+            "basis": "Julot先怀疑光影，另一歹徒逃跑时划十字；解释没有直接转为对科学机制的理解。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限实际原作片段L121–163；不补机制解释、后半事件或结局。",
+        "issue": "限实际原作片段L121–163；不补机制解释、后半事件或结局。",
+        "issue_facets": "限实际原作片段L121–163；不补机制解释、后半事件或结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikisource.org/wiki/L%E2%80%99Homme_au_corps_subtil"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikisource.org/wiki/L%E2%80%99Homme_au_corps_subtil",
+          "type": "original_text_partial_opened",
+          "support_scope": "实际打开1913合集内本篇转录，只读L121–163：科学发现后的夜行、两名歹徒的穿体攻击与反应；未读其后解释和结局。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "只对应本单篇；提到X射线研究不证明已读范围明确给出了穿体机制，不把合集其他故事补入。"
+    },
+    {
+      "id": "Q133306415",
+      "identity": {
+        "title": "The Feline Light and Power Company Is Organized",
+        "author": "Jacque Morgan"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "技术与责任",
+          "生存与风险"
+        ],
+        "issue": "Fosdick试图把猫毛静电转成商业电力，股东在基本专利尚未取得时就规划控制全国未来公司。所读转载的收尾局部又出现高度带电的猫与绝缘鞋实验，商业扩张的许诺因而与仍未解决的安全后果并置。",
+        "issue_facets": [
+          {
+            "label": "发现许诺与专利垄断",
+            "question": "发明尚未充分证实时，为什么已经开始规划以基础专利控制整个行业？",
+            "basis": "实际正文片段明确六人出资、董事会及Fosdick承诺以将取得的专利控制全国后续公司。"
+          },
+          {
+            "label": "电力利用与活体风险",
+            "question": "把猫当作发电资源，怎样处理设备之外持续带电的生命危险？",
+            "basis": "所读转载收尾局部用橡胶鞋使带电猫落地存活，并立即指出实验造成另一错误；不补未返回的后续。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikisource.org/wiki/The_Feline_Light_and_Power_Company_Is_Organized",
+        "https://www.pulpmags.org/collections/html/ams192607.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikisource.org/wiki/The_Feline_Light_and_Power_Company_Is_Organized",
+          "type": "original_text_fragments_search_excerpt",
+          "support_scope": "实际检索返回本篇编辑引言、公司成立与基本专利计划；另读PulpMags本期转录所返回的绝缘猫鞋收尾局部。",
+          "read_date": "2026-10-05"
+        },
+        {
+          "url": "https://www.pulpmags.org/collections/html/ams192607.html",
+          "type": "original_issue_transcription_fragment_search_excerpt",
+          "support_scope": "实际检索返回本篇p383 Concluded局部：带电猫、橡胶绝缘鞋、围观及错误；相邻Fotheringay段不作本篇。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "实际所见为1926转载，保留底库1912标记；首刊对应待核。不是完整单篇读取。"
+    },
+    {
+      "id": "Q133270178",
+      "identity": {
+        "title": "An Experiment in Gyro-Hats",
+        "author": "Ellis Parker Butler"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "生命与人类定义",
+          "资本与劳动"
+        ],
+        "issue": "陀螺帽把船舶稳定技术转成身体平衡的实验，所读片段中的测试者甚至能在栅栏尖上被拉斜后回到直立。另一方面，唯一原型机的持有者担心别人试用会损坏它，技术证明的机会同时受到财产保护和身体风险的约束。",
+        "issue_facets": [
+          {
+            "label": "机械稳定与身体能力",
+            "question": "把陀螺稳定移到帽子上，会怎样改写人体原本做不到的平衡动作？",
+            "basis": "实际转载图注叙述脚尖立在栅栏尖上、身体被拉至水平后重新直立。"
+          },
+          {
+            "label": "原型所有权与验证条件",
+            "question": "保护唯一原型机的价值，是否足以决定哪些人能参与测试？",
+            "basis": "实际检索摘录中持有者拒绝让普通醉酒者实验，理由包括可能毁坏唯一陀螺帽。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikisource.org/wiki/An_Experiment_in_Gyro-Hats"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikisource.org/wiki/An_Experiment_in_Gyro-Hats",
+          "type": "original_caption_and_fragments_search_excerpt",
+          "support_scope": "实际检索返回1926转载的图注/编辑引言及唯一原型测试顾虑的原作摘录；随后一次open Cache miss；未读原篇全文。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "底库1910保留；Gutenberg自动简介中人物病因和结尾不采用；不把真实陀螺原理直接当作帽子设定的现实验证。"
+    },
+    {
+      "id": "Q105539379",
+      "identity": {
+        "title": "War of the Vampires",
+        "author": "Gustave Le Rouge"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "殖民与他者",
+          "技术与责任"
+        ],
+        "issue": "Alberte与同伴试图救回被困火星的Darvel，他却自行回到地球，并把几只看不见的火星生物带了回来。个人救援成功与新的跨世界风险相伴，归乡并不自动意味着探索危机已经结束。",
+        "issue_facets": [
+          {
+            "label": "救援成功与风险转移",
+            "question": "被困者回到家园，为什么也可能把新危险带给未参与冒险的人？",
+            "basis": "本作简介明确Darvel返回时把火星Vampires带到地球。"
+          },
+          {
+            "label": "不可见生命与接触防护",
+            "question": "当陌生生物不能被直接看见，返回者怎样识别自己携带了什么？",
+            "basis": "所读Intrigue把这些火星生物明确描述为invisibles；不补未读的检测办法或战争结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/La_Guerre_des_vampires"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/La_Guerre_des_vampires",
+          "type": "secondary_plot_summary_search_excerpt",
+          "support_scope": "实际检索返回本续作Intrigue开头：Alberte救援、Darvel自行返回、携带不可见火星Vampires；未读全篇。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1909第二部，不以1908《Le Prisonnier de la planète Mars》情节替代；1912另题再刊与全集边界待核。"
+    },
+    {
+      "id": "Q74368077",
+      "identity": {
+        "title": "The Coming of the Sea",
+        "author": "Dunsany勋爵"
+      },
+      "fields": {
+        "topics": [
+          "文明与历史",
+          "知识与认识",
+          "生态与资源"
+        ],
+        "issue": "所读神话开篇中，原本没有海的世界被新神Slid及随行波浪进入，既有诸神听见无法归入生命或死亡的陌生声响。海的出现被写成世界关系和认知框架的改变，旧有统治者也必须面对超出原分类的自然力量。",
+        "issue_facets": [
+          {
+            "label": "自然到来与世界秩序",
+            "question": "海由新神带来时，原先以陆地为基础的世界还能被视为固定不变吗？",
+            "basis": "实际开篇先断言世界没有海，随后Slid带着大量波浪降临并在谷地驻留。"
+          },
+          {
+            "label": "旧有分类与新现象",
+            "question": "当声音既不像生命又不像死亡，诸神如何理解尚未进入其经验的存在？",
+            "basis": "旧诸神听到新哭声，明确无法按原有生命/死亡类别辨认。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.readbookonline.org/readOnLine/36990/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.readbookonline.org/readOnLine/36990/",
+          "type": "original_opening_search_excerpt",
+          "support_scope": "实际检索返回单篇开头，止于诸神讨论新声不是生命也非死亡；随后一次open Cache miss，未读后段。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "神话/幻想文本边界保留；不当作海洋物理起源理论、气候预测或1906现实未来故事。"
+    },
+    {
+      "id": "Q105403562",
+      "identity": {
+        "title": "Le Voyage",
+        "author": "J.-H. Rosny"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "殖民与他者",
+          "知识与认识"
+        ],
+        "issue": "法国探险队在非洲陌生地区遇到人类与大型厚皮动物组成的队伍，后者看起来才是真正的支配者。探险者熟悉的人类优先秩序因此受到挑战，而“未知地区”的定义也取决于谁拥有描述和命名的视角。",
+        "issue_facets": [
+          {
+            "label": "跨物种权威与人类优先",
+            "question": "如果大型动物支配人类，探险者如何重新判断理性与权力的位置？",
+            "basis": "简介明确队伍中的pachydermes似乎是真正的主人，甚至指挥一支人类部落。"
+          },
+          {
+            "label": "探险命名与知识视角",
+            "question": "某片地区被西方探险者称为未知，是否等于当地生命还没有自身秩序？",
+            "basis": "简介从法国探险者进入所谓未被西方了解的非洲地区写起，却让他们遇到既有的人兽共同队伍。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Le_Voyage_%28nouvelle%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Voyage_%28nouvelle%29",
+          "type": "secondary_plot_summary_search_excerpt",
+          "support_scope": "实际检索返回Intrigue/Analyse：法国探险队、非洲陌生地区、人类与厚皮动物权力关系；未读原篇。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "原署名J.-H. Rosny及双胞兄弟合作时期语境保留；后续文学约定归aîné不自动更改底库作者。"
+    },
+    {
+      "id": "Q11558925",
+      "identity": {
+        "title": "海島冐險奇譚 海底軍艦",
+        "author": "押川春浪"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "文明与历史",
+          "殖民与他者"
+        ],
+        "issue": "本作以装甲、撞角潜艇介入想象中的日俄战争，把新式海战能力与日本未来国家地位联系起来。它的未来叙述因此既展示工程想象，也把军事力量转成扩张前景，而不是对后来战争结果的中立预测。",
+        "issue_facets": [
+          {
+            "label": "潜艇创新与战争目标",
+            "question": "装甲及撞角这样的工程设计，在叙事中为哪种国家行动提供力量？",
+            "basis": "所读作品简述明确装备装甲和撞角的潜艇卷入未来日俄战争。"
+          },
+          {
+            "label": "未来战争与国家想象",
+            "question": "把尚未发生的战争写成冒险，如何使军事实力成为国家未来的正当期待？",
+            "basis": "作品简述把本作置于当时日本帝国扩张想象与未来日俄冲突中；解释不称其预言已被现实完全兑现。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "根据实际读取的本作有限简介作人工分类，待独立核对。",
+        "issue": "核心解释限source_evidence实际读取范围；未读原作全文，不补资料未支持的结局或制度细节。",
+        "issue_facets": "细分问题由研究者原创，依据为所读简介的明确内容。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Invasion_literature"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Invasion_literature",
+          "type": "encyclopedia_exact_work_description_search_excerpt",
+          "support_scope": "实际检索返回明确Kaitō Bōken Kidan: Kaitei Gunkan本作段：装甲撞角潜艇、未来日俄战争及帝国想象；未读日文原作。",
+          "read_date": "2026-10-05"
+        }
+      ],
+      "publication_note": "保留统一库原纪年及文本粒度；此简介或后续译版日期不证明全球首发。",
+      "identity_caveat": "仅1900原作；不采用1963《Atragon》电影的Mu帝国、飞行钻头舰等改编情节，也不把后续六部冒险整合为本篇。"
+    }
+  ]
+}

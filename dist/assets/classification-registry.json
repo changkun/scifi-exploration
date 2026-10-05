@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 6,
+    "version": 7,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v5.json",
-      "sha256": "3fc9634e08e5c76b8dc4f743641ef9376688f23c0b00cfe0207a8321835ab336"
+      "file": "research/classification-registry-history/v6.json",
+      "sha256": "22ca773729f30341bba00ffdb8ef254d57196a4c499e0a2ba6d120479715a285"
     },
-    "revision_note": "第74批从两部明确作品的有限材料整理健康差异与照护义务、人工栖居地与内部生活两个入口，并保留代谢社会科幻、拟传记、真假未定未来、设计死亡欲望、未来观览、身体形态与社会进入、成年突变、碰撞造星等八个跨维度方向。全部网站维度及新维度可扩展，原分类、十九项发现、作品粒度与未知主空间保留。",
+    "revision_note": "第75批保留全部八维、33暂定入口及旧27项发现，增加17项跨维度比较方向：科学机制、未来语言、时间脱同步、语言文化互斥未来、人工土地主权、休眠战备、虚构公开书信、行星文明层、研究报告拼编、内心地理、时间碰撞、多媒体阅读、自然史分岔、跨世诗人相遇等。每一方向保留具体作品与有限读取范围；所有现有维度和新维度均可扩展，未将孤例传播或提升核验。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -60,6 +60,26 @@
       {
         "file": "research/classification-discovery-inputs/root-known-year-classification-candidates-r7.json",
         "sha256": "7866e31b253aaed57a56caf7075cd05709b3889b1d7a28f2f8362c087666885d"
+      },
+      {
+        "file": "research/classification-discovery-inputs/known-year-modern-classification-candidates-r9.json",
+        "sha256": "f96f109ed2cdd28ed1d05f5f275c3d5a17bfb33afd6b692fb1c267de2bebb1ed"
+      },
+      {
+        "file": "research/classification-discovery-inputs/known-year-modern-classification-candidates-r10.json",
+        "sha256": "d026045ca10606f2de96f6af2b5e61b87b424dff00a2a291c1a0c20f8fadfd59"
+      },
+      {
+        "file": "research/classification-discovery-inputs/known-year-global-classification-candidates-round8.json",
+        "sha256": "e55b736df10b920d94b2aac0145db1a9e28b2dbce476b0a1de0ca4050ad11c0d"
+      },
+      {
+        "file": "research/classification-discovery-inputs/root-known-year-classification-candidates-r8.json",
+        "sha256": "1f4eecc18856b22fecbc102295a4397aef2a71bb36e06737efe0ac62aaefbbb9"
+      },
+      {
+        "file": "research/classification-discovery-inputs/known-year-modern-classification-candidates-r11.json",
+        "sha256": "6a6623b643e7dae2939965fd2674c4fec4003441e318420af0cf0b7705362e78"
       }
     ]
   },
@@ -1916,6 +1936,445 @@
         }
       ],
       "review_note": "具体作品依据及原提议维度完整保留；孤例先比较，不自动传播或增加核心补全与核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "周期性现实重排",
+      "definition_boundary": "宇宙或环境现象以固定周期改变物理现实；不同于通常的昼夜季节，也不以本条推及一般时间旅行。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q7033667",
+          "identity": {
+            "title": "Night of Light",
+            "author": "菲利浦·荷西·法默"
+          },
+          "basis": "本作双星辐射每七年持续两周，重排物理现实，居民通过药物睡眠规避。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Night_of_Light"
+          ],
+          "exact_support_scope": "实际查询返回明确的 1966 扩写小说条目和共同核心设定；未读正文、未补 1957 短版独有细节或角色宗教转变结局。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r9:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "现实关联",
+      "proposed_label": "付费灾后避难",
+      "definition_boundary": "灾难保护通过高昂费用形成排他性生存资格；仅明确讨论这种制度前提的作品，非所有灾难小说。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q21684478",
+          "identity": {
+            "title": "Laatste uitweg",
+            "author": "Sven Holm"
+          },
+          "basis": "Termush 宣称核战中的绝对保护，昂贵收费使富人隔绝辐射和外部人群。",
+          "sources": [
+            "https://www.boekmeter.nl/book/68028",
+            "https://www.goodreads.com/work/editions/98442262-termush-atlanterhavskysten"
+          ],
+          "exact_support_scope": "实际查询返回 BoekMeter 的具体书介及 Goodreads 版本对应信息；分析限富人、核灾与旅馆隔离的共同前提，未读原作或完整管理情节。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r9:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "照料中的惩罚矛盾",
+      "definition_boundary": "制度用照料或幸福安排减轻既定惩罚，却维持剥夺生命或自由的决定；仅按作品具体制度确认。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q134715431",
+          "identity": {
+            "title": "Keep Them Happy",
+            "author": "Robert Rohrer"
+          },
+          "basis": "Keep Them Happy 的死刑制度让囚犯尽量幸福，负责人亲自成为女囚爱人，却不改变处决命运。",
+          "sources": [
+            "https://rrhorton.blogspot.com/2021/03/the-complete-stories-of-robert-h-rohrer.html"
+          ],
+          "exact_support_scope": "实际直接读取 Rich Horton 对 Keep Them Happy 的独立评论段落，另读到作者评论补充发表背景；未读原篇，不推断性关系细节或不同结局。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r9:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "未来语言作为叙事对象",
+      "definition_boundary": "文字表达本身构成未来人的认知差异，无法在普通语言中无损抽取设定；不同于只是给技术换新名词。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q120728699",
+          "identity": {
+            "title": "Surface de la planète",
+            "author": "Daniel Drode"
+          },
+          "basis": "Drode以词语变形区分未来心理、机械养育诗歌和不同生命的表达；Simon Bréan说明全书语言本身成为科幻对象。",
+          "sources": [
+            "https://resf.hypotheses.org/5266",
+            "https://fr.wikipedia.org/wiki/Daniel_Drode"
+          ],
+          "exact_support_scope": "实际一次直接读取 Simon Bréan 在 ReS Futurae 的学术分析及其中机器人养育段落的原作短引；另查询作者条目确认地下系统前提。局部引文与研究分析，不读全文、不把结局简单判为虚拟梦境。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r10:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "时间",
+      "proposed_label": "招募造成归乡时间脱同步",
+      "definition_boundary": "机构招募或契约同时使劳动者的主观时间与故乡历时产生巨大差距；不泛称一切相对论航行。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q3223030",
+          "identity": {
+            "title": "Starmasters' Gambit",
+            "author": "Gérard Klein"
+          },
+          "basis": "Jerg在用药后被骗取先驱合同；其十年航程对应地球千年，强制劳动伴随社会归属切断。",
+          "sources": [
+            "https://fr.wikipedia.org/wiki/Le_Gambit_des_%C3%A9toiles"
+          ],
+          "exact_support_scope": "实际查询读取 Le Gambit des étoiles 的起始情节，明确招募、合法药物与十年/千年差别；未读正文，不借后段星际操盘者结局。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r10:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "现实关联",
+      "proposed_label": "语言文化的互斥未来",
+      "definition_boundary": "明确并置同一社会语言存续与消亡的未来，以比较当下政治选择；不将所有另类未来自动归此。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q8040667",
+          "identity": {
+            "title": "Wythnos yng Nghymru Fydd",
+            "author": "Islwyn Ffowc Elis"
+          },
+          "basis": "同一Ifan先到繁荣双语自治的威尔士，再到威尔士语/身份消失的Western England；回归后决定选择行动。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Wythnos_yng_Nghymru_Fydd"
+          ],
+          "exact_support_scope": "实际一次直接读取本书独立完整梗概；不读原威尔士语正文，不把作品所主张的自治与社会和谐因果当成已证历史规律，未借影视改编。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r10:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "娱乐仿真意外成为真实武器",
+      "definition_boundary": "用于娱乐的假技术在升级竞赛中产生有效破坏装置，随后被军事机构索取；仅按具体作品确认，非通常视觉特效。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q16238710",
+          "identity": {
+            "title": "Armaments Race",
+            "author": "亞瑟·查理斯·克拉克"
+          },
+          "basis": "Blumberg为Captain Zoom正反角色升级仿武器，真实装置使制片厂消失，军方反复追问方法。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Armaments_Race"
+          ],
+          "exact_support_scope": "实际查询读取本篇明确剧情梗概；只用Captain Zoom特效竞争、真实装置及军方追问，不借其他White Hart故事或现实武器设计。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r10:4",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "dimension": "form",
+      "label": "研究报告与记录拼编",
+      "definition": "以研究日志、笔记、现场录音及后来的编排构成故事；关注观察内容如何受记录者和编辑中介影响，不等同全书独立书目核验。",
+      "status": "candidate_unreviewed",
+      "overlap_with_existing": [
+        "调查与证据推动",
+        "拟传记"
+      ],
+      "work_evidence": [
+        {
+          "id": "Q130629234",
+          "identity": {
+            "title": "Death and Designation Among the Asadi",
+            "author": "邁克爾·畢曉普"
+          },
+          "basis": "本篇被明确介绍为Chaney日志、研究笔记和现场录音，由Thomas Benedict编排呈现。",
+          "support_scope": "1973中篇／单篇，是后来Transfigurations第一部分；不把后作女儿、改造猿和六年后行动继承给原篇。；实际材料范围见本轮日志，0原文全文。",
+          "sources": [
+            "https://sciencefictionruminations.com/2014/04/22/guest-post-death-and-designation-among-the-asadi-michael-bishop-1973/",
+            "https://www.baen.com/transfigurations.html"
+          ],
+          "exact_support_scope": "1973中篇／单篇，是后来Transfigurations第一部分；不把后作女儿、改造猿和六年后行动继承给原篇。；实际材料范围见本轮日志，0原文全文。"
+        }
+      ],
+      "id": "discovery:known-year-global-classification-candidates-round8:1",
+      "proposed_label": "研究报告与记录拼编",
+      "definition_boundary": "以研究日志、笔记、现场录音及后来的编排构成故事；关注观察内容如何受记录者和编辑中介影响，不等同全书独立书目核验。",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "dimension": "space",
+      "label": "内心地理与想象航行",
+      "definition": "人物明确在内心构造、体验的异域空间；与作品世界中的实际旅行、虚拟技术界面分开，不改变主空间导航尺度。",
+      "status": "candidate_unreviewed",
+      "overlap_with_existing": [
+        "意识接口环境",
+        "媒介与注意力"
+      ],
+      "work_evidence": [
+        {
+          "id": "Q30737530",
+          "identity": {
+            "title": "Schwartz Between the Galaxies",
+            "author": "羅伯特·西爾柏格"
+          },
+          "basis": "现实中的全球讲学处处同质，Schwartz在内心星船想象多种外星生命；明确in his mind而非物理星际航行。",
+          "support_scope": "1974具体单篇，采用2023 Open Road短篇电子版简介；船上经历在简介中明确是内心想象，不断言物理星际航行。；实际材料范围见本轮日志，0原文全文。",
+          "sources": [
+            "https://books.google.com/books/about/Schwartz_Between_the_Galaxies.html?hl=en&id=8jjFEAAAQBAJ&output=html_text"
+          ],
+          "exact_support_scope": "1974具体单篇，采用2023 Open Road短篇电子版简介；船上经历在简介中明确是内心想象，不断言物理星际航行。；实际材料范围见本轮日志，0原文全文。"
+        }
+      ],
+      "id": "discovery:known-year-global-classification-candidates-round8:2",
+      "proposed_label": "内心地理与想象航行",
+      "definition_boundary": "人物明确在内心构造、体验的异域空间；与作品世界中的实际旅行、虚拟技术界面分开，不改变主空间导航尺度。",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "dimension": "science",
+      "label": "时间碰撞",
+      "definition": "把时间关系作为可发生碰撞的虚构条件，使危机改变遗迹来源和常规因果解释；单例机制候选，不当现实科学成立。",
+      "status": "candidate_unreviewed",
+      "overlap_with_existing": [
+        "时间旅行",
+        "时间与因果"
+      ],
+      "work_evidence": [
+        {
+          "id": "Q5147491",
+          "identity": {
+            "title": "Collision Course",
+            "author": "Barrington J. Bayley"
+          },
+          "basis": "被视为古代外敌痕迹的地球遗迹指向地球未来，时间机器研究揭示迫近的时间本身碰撞。",
+          "support_scope": "具体小说Collision Course又名Collision with Chronos；只用本书书介，不将The Fall of Chronopolis另卷机制移入。；实际材料范围见本轮日志，0原文全文。",
+          "sources": [
+            "https://www.goodreads.com/book/show/2826082-collision-course"
+          ],
+          "exact_support_scope": "具体小说Collision Course又名Collision with Chronos；只用本书书介，不将The Fall of Chronopolis另卷机制移入。；实际材料范围见本轮日志，0原文全文。"
+        }
+      ],
+      "id": "discovery:known-year-global-classification-candidates-round8:3",
+      "proposed_label": "时间碰撞",
+      "definition_boundary": "把时间关系作为可发生碰撞的虚构条件，使危机改变遗迹来源和常规因果解释；单例机制候选，不当现实科学成立。",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "id": "discovery:root-known-year-r8:0",
+      "axis": "form",
+      "proposed_dimension": "表达与文本形态",
+      "proposed_label": "音乐与图像的协同阅读",
+      "definition_boundary": "某些版本将小说文字、插图与配套音乐共同编排为阅读作品；区别于小说中仅提到音乐，不能由一版的配套元素推广到全部译本。",
+      "review_status": "pending_further_comparison",
+      "work_evidence": [
+        {
+          "id": "Q7746409",
+          "identity": {
+            "title": "The Law of Love",
+            "author": "劳拉·埃斯基韦尔"
+          },
+          "basis": "所读墨西哥文学机构收录封底说明《La ley del amor》同时配插图、意大利歌剧咏叹调与墨西哥danzón；本次未播放或逐页对读。",
+          "sources": [
+            "https://www.elem.mx/obra/datos/83370"
+          ],
+          "exact_support_scope": "只读实际返回的2015版封底与该条书目说明，非1995原刊或全书；只记录明示跨转生与历史失衡前提，不把宇宙哲学作现实科学。 原作全文新读0，解释待独立核对。"
+        }
+      ],
+      "review_note": "单例只保留待比较提议，不自动扩散到相似题名、整个系列或其他版本。"
+    },
+    {
+      "id": "discovery:root-known-year-r8:1",
+      "axis": "science",
+      "proposed_dimension": "科学设定机制",
+      "proposed_label": "自然史分岔塑造人类文明",
+      "definition_boundary": "以地质或生态历史的分歧构建另一种人类社会，而非只改写一场人为政治事件；只登记文学设定，其真实演化机制需另核。",
+      "review_status": "pending_further_comparison",
+      "work_evidence": [
+        {
+          "id": "Q27980709",
+          "identity": {
+            "title": "Down in the Bottomlands",
+            "author": "哈利·托特達夫"
+          },
+          "basis": "本篇书评说明大西洋未重新淹入地中海盆地，沙漠生态和地理屏障改变了人类与政治环境。",
+          "sources": [
+            "https://fantasyliterature.com/reviews/down-in-the-bottomlands/"
+          ],
+          "exact_support_scope": "实际本篇书评/音频评论及其独立书介；对象限1993中篇，不把1999三篇合集中的de Camp与Turtledove其他两篇纳入本条。 原作全文新读0，解释待独立核对。"
+        }
+      ],
+      "review_note": "单例只保留待比较提议，不自动扩散到相似题名、整个系列或其他版本。"
+    },
+    {
+      "id": "discovery:root-known-year-r8:2",
+      "axis": "narrative",
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "跨世诗人的虚构相遇",
+      "definition_boundary": "历史上的文学人物经超自然或时间机制在同一虚构现场相遇，重新组织其关系；不是对真实作者生平或作品影响关系的史实断言。",
+      "review_status": "pending_further_comparison",
+      "work_evidence": [
+        {
+          "id": "Q131461455",
+          "identity": {
+            "title": "Walt and Emily",
+            "author": "Paul Di Filippo"
+          },
+          "basis": "具体Walt and Emily段让Whitman与Dickinson在暂停时间的灵界见到未来诗人亡灵；不采用同集其他两篇。",
+          "sources": [
+            "https://www.kirkusreviews.com/book-reviews/paul-di-filippo/the-steampunk-trilogy/?page=2",
+            "https://sf-encyclopedia.com/entry/di_filippo_paul"
+          ],
+          "exact_support_scope": "只用合集书评及SFE中明确指向Walt and Emily的段，不混入Victoria/Hottentots；1993连载信息与1995合集粒度分开，原篇未读。 原作全文新读0，解释待独立核对。"
+        }
+      ],
+      "review_note": "单例只保留待比较提议，不自动扩散到相似题名、整个系列或其他版本。"
+    },
+    {
+      "proposed_dimension": "现实关联",
+      "proposed_label": "人工土地的主权空隙",
+      "definition_boundary": "具体人为新增陆地的控制权依赖已有地物的主权归属与程序空隙；不泛称一切资源战争。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q7727467",
+          "identity": {
+            "title": "The Continent Makers",
+            "author": "里昂·斯普拉格·德坎普"
+          },
+          "basis": "围绕Ascension Island造大陆，阴谋者试图借岛屿没有主权政府来控制新大陆。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/The_Continent_Makers"
+          ],
+          "exact_support_scope": "实际单轮查询并一次打开Wikipedia的Plot summary；支持造陆项目、主权空隙、绑架与行政阻碍，未核读原作，不把同名1953合集当1951中篇。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r11:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "科学设定",
+      "proposed_label": "休眠生命作为战争库存",
+      "definition_boundary": "国家保存士兵的生命状态直到战争需要；不自动归入所有长途休眠航行。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q3257490",
+          "identity": {
+            "title": "Llana of Gathol",
+            "author": "埃德加·赖斯·巴勒斯"
+          },
+          "basis": "Llana卷内Pankor把士兵冻结，在战争需要时取用。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Llana_of_Gathol"
+          ],
+          "exact_support_scope": "实际单轮查询读到Wikipedia整卷Plot summary；支持Llana解救链及催眠保存、冻结战备两个具体场景，未核读各篇原文，不推广到Barsoom全系列。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r11:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "虚构权威的公开训诫书信",
+      "definition_boundary": "以虚构公共权威向不同现实社会群体发出书信，作为全书伦理干预的表达结构；不泛指普通人物信件。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q17635438",
+          "identity": {
+            "title": "Lettere agli uomini del Papa Celestino VI",
+            "author": "乔瓦尼·帕皮尼"
+          },
+          "basis": "虚构教皇Celestino VI分别向神职人员、统治者、知识者和劳动者发出战后道德改革信件。",
+          "sources": [
+            "https://it.wikipedia.org/wiki/Lettere_agli_uomini_del_Papa_Celestino_VI",
+            "https://www.lettereadioealluomo.com/Papini_Lett_Celestino_VI%C2%B0_Preti.htm"
+          ],
+          "exact_support_scope": "实际单轮查询与一次打开意大利Wikipedia情节/书目，另查询直接读到《给神父的信》原文短摘；支持虚构教皇书信与机构道德责任，未读全书。不把它称技术未来故事。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r11:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "空间",
+      "proposed_label": "同一行星的生理不相容文明层",
+      "definition_boundary": "明确同一行星不同深度的文明，在各自温度和压力环境中生活，接触本身可造成生理毁灭；仅特定设定候选，不据地下题材传播。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q130487071",
+          "identity": {
+            "title": "The Fires Within",
+            "author": "亞瑟·查理斯·克拉克"
+          },
+          "basis": "人类地表与热岩中的智慧生物互相误以为对方环境不宜生命，热接触给人类带来危险。",
+          "sources": [
+            "https://arthur-clarke-fansite.blogspot.com/2007/04/fires-within-aliens-that-are-not-aliens.html"
+          ],
+          "exact_support_scope": "实际单轮查询后一次打开Clarke Fansite评论，读到探测、双向生命误认与热接触结局概述；原文未核读。评论标1949与底库1947有日期冲突，保留疑点，不填准确叙事尺度。",
+          "knowledge_analysis": false,
+          "actual_content_source_read": true
+        }
+      ],
+      "id": "discovery:known-year-modern-classification-candidates-r11:4",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
     }
   ],
   "promoted_discoveries": [

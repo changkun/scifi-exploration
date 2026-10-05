@@ -1,6 +1,7 @@
-import {CLASSIFICATION_REGISTRY} from './classification-data.mjs?v=registry6';
+import {CLASSIFICATION_REGISTRY} from './classification-data.mjs?v=registry7';
 export {CLASSIFICATION_REGISTRY};
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const displayBasis = value => esc(String(value ?? '').replaceAll('primary unknown', '空间位置待确认').replaceAll('spatial_primary=unknown', '空间位置待确认'));
 const byId = new Map(CLASSIFICATION_REGISTRY.categories.map(category => [category.id, category]));
 const byWork = new Map();
 for (const category of byId.values()) for (const member of category.members) {
@@ -18,7 +19,7 @@ export function applyClassifications(work) {
 }
 export function classificationDetail(work) {
   if (!work.classification_assignments?.length) return '';
-  return `<section class="detail-section"><h3>新增分类与跨维度关联</h3><p>研究分类 · 暂定待核。每个入口保留具体依据；不替代原来源标签。</p>${work.classification_assignments.map(assignment => `<article><button class="tag" data-filter="classification" data-value="${esc(assignment.id)}">${esc(assignment.label)} ↗</button><p>${esc(assignment.basis)}</p><details><summary>这项分类的资料范围</summary><p>${esc(assignment.evidence_scope)}</p>${(assignment.sources || []).map(url => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">支持材料 ↗</a>`).join(' · ')}</details></article>`).join('')}</section>`;
+  return `<section class="detail-section"><h3>新增分类与跨维度关联</h3><p>研究分类 · 暂定待核。每个入口保留具体依据；不替代原来源标签。</p>${work.classification_assignments.map(assignment => `<article><button class="tag" data-filter="classification" data-value="${esc(assignment.id)}">${esc(assignment.label)} ↗</button><p>${displayBasis(assignment.basis)}</p><details><summary>这项分类的资料范围</summary><p>${esc(assignment.evidence_scope)}</p>${(assignment.sources || []).map(url => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">支持材料 ↗</a>`).join(' · ')}</details></article>`).join('')}</section>`;
 }
 function renderDiscoveries(works) {
   const byId = new Map(works.map(work => [work.id, work]));

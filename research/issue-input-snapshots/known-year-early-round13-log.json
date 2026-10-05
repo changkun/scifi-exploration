@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "method": "actual-first-pass-reading-log-v1",
+    "status": "frozen_checkpoint",
+    "lane": 3,
+    "read_date": "2026-10-05",
+    "ownership_file": "known-year-first-pass-lane-3.json",
+    "ownership_sha256": "b193cb6e5cbf290ee699db0a540b6b05c6c1855dccf59651ecb3eacfaa865e0c",
+    "attempted_count": 13,
+    "added_count": 11,
+    "not_added_count": 2,
+    "actual_query_count": 13,
+    "actual_open_attempt_count": 4,
+    "actual_open_success_count": 2,
+    "actual_open_failed_count": 2,
+    "full_original_text_read_count": 0,
+    "checkpoint_notes": [
+      "11核心/22 facets；13身份实际单次查询，4次简单open（2成功、2Cache miss）；0原作全文。",
+      "John Jones依据1915转录L106–174，不用Gutenberg自动摘要的再刊日期/结局；Renard仅L121–163。",
+      "猫电力公司仅实际公司/专利计划与绝缘猫鞋局部；gyro-hats/Coming of Sea只查询返回原片段，open失败不假称续读成功。",
+      "Frerichs只有精确原刊引言，Salgari只有飞行器和续作身份，两项延期，不凭题名填剧情。",
+      "自有572身份首遍全部尝试并留下日志，不等于所有身份核心已补或原作已核验；后续困难项继续保留。"
+    ],
+    "owned_first_pass_summary": {
+      "attempted_count": 572,
+      "core_added_count": 441,
+      "facet_added_count": 882,
+      "deferred_count": 131,
+      "remaining_unattempted_count": 0
+    }
+  },
+  "records": [
+    {
+      "id": "Q106739638",
+      "identity": {
+        "title": "Trois Ombres sur Paris",
+        "author": "Henri-Georges Jeanne"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Trois Ombres sur Paris\" \"Henri-Georges Jeanne\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.culturetheque.com/fr/trois-ombres-sur-paris",
+          "scope": "实际检索返回Institut Français图书馆转载Saga Egmont简介：Fringue思想流体、精英统治、超人追捕；未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回Institut Français图书馆转载Saga Egmont简介：Fringue思想流体、精英统治、超人追捕；未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q3222907",
+      "identity": {
+        "title": "Le Formidable Événement",
+        "author": "莫理斯·卢布朗"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Le Formidable Événement\" \"Maurice Leblanc\" intrigue"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Formidable_%C3%89v%C3%A9nement",
+          "scope": "实际检索返回本作分析：平民拒婚、英法陆地桥、Simon穿越/营救、盗匪；未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回本作分析：平民拒婚、英法陆地桥、Simon穿越/营救、盗匪；未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q43097159",
+      "identity": {
+        "title": "Hier Mars – Hier Erde",
+        "author": "O. Frerichs"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Hier Mars\" \"Hier Erde\" \"Frerichs\""
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.radiomuseum.org/forumdata/users/5100/TZ_3Jg_Nr17_1v1_v12.pdf",
+          "scope": "实际检索返回1919 Telefunken-Zeitung p84标题、O. Frerichs署名及关于Marconi/火星无线通信的引言；正文只见实验室开头。",
+          "result": "original_intro_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "找到精确原刊身份，但已读引言和实验室开头不足以支持两项具体人物矛盾；不把现实Marconi传闻或无线通信条件当全文情节。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q7128673",
+      "identity": {
+        "title": "Palos of the Dog Star Pack",
+        "author": "John Ulrich Giesy"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Palos of the Dog Star Pack\" \"J. U. Giesy\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.barnesandnoble.com/w/palos-of-the-dog-star-pack-j-u-giesy/1100540655",
+          "scope": "实际检索返回商品Overview的医院框架及病例笔记；未读Palos上的后续情节或原书。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回商品Overview的医院框架及病例笔记；未读Palos上的后续情节或原书。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q133825988",
+      "identity": {
+        "title": "John Jones's Dollar",
+        "author": "Harry Stephen Keeler"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"John Jones's Dollar\" \"Harry Stephen Keeler\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikisource.org/wiki/The_Black_Cat/Volume_20/Number_11/John_Jones%27s_Dollar",
+          "scope": "实际打开1915原刊转录，只读L106–174：3214课堂框架、1914存款、第四十代继承、复利与数个世纪账户；未读后段。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开1915原刊转录，只读L106–174：3214课堂框架、1914存款、第四十代继承、复利与数个世纪账户；未读后段。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q19179731",
+      "identity": {
+        "title": "L’Homme au corps subtil",
+        "author": "莫里斯·雷纳德"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"L’Homme au corps subtil\" \"Maurice Renard\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikisource.org/wiki/L%E2%80%99Homme_au_corps_subtil",
+          "scope": "实际打开1913合集内本篇转录，只读L121–163：科学发现后的夜行、两名歹徒的穿体攻击与反应；未读其后解释和结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际打开1913合集内本篇转录，只读L121–163：科学发现后的夜行、两名歹徒的穿体攻击与反应；未读其后解释和结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q133306415",
+      "identity": {
+        "title": "The Feline Light and Power Company Is Organized",
+        "author": "Jacque Morgan"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Feline Light and Power Company Is Organized\" \"Jacque Morgan\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikisource.org/wiki/The_Feline_Light_and_Power_Company_Is_Organized",
+          "scope": "实际检索返回本篇编辑引言、公司成立与基本专利计划；另读PulpMags本期转录所返回的绝缘猫鞋收尾局部。",
+          "result": "read"
+        },
+        {
+          "url": "https://www.pulpmags.org/collections/html/ams192607.html",
+          "scope": "实际检索返回本篇p383 Concluded局部：带电猫、橡胶绝缘鞋、围观及错误；相邻Fotheringay段不作本篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回本篇编辑引言、公司成立与基本专利计划；另读PulpMags本期转录所返回的绝缘猫鞋收尾局部。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q133270178",
+      "identity": {
+        "title": "An Experiment in Gyro-Hats",
+        "author": "Ellis Parker Butler"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"An Experiment in Gyro-Hats\" \"Ellis Parker Butler\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikisource.org/wiki/An_Experiment_in_Gyro-Hats",
+          "scope": "实际检索返回1926转载的图注/编辑引言及唯一原型测试顾虑的原作摘录；随后一次open Cache miss；未读原篇全文。",
+          "result": "read"
+        },
+        {
+          "url": "https://en.wikisource.org/wiki/An_Experiment_in_Gyro-Hats",
+          "scope": "一次打开完整转录。",
+          "result": "failed_cache_miss"
+        }
+      ],
+      "reading_scope": "实际检索返回1926转载的图注/编辑引言及唯一原型测试顾虑的原作摘录；随后一次open Cache miss；未读原篇全文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q105539379",
+      "identity": {
+        "title": "War of the Vampires",
+        "author": "Gustave Le Rouge"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"La Guerre des vampires\" \"Gustave Le Rouge\" intrigue"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/La_Guerre_des_vampires",
+          "scope": "实际检索返回本续作Intrigue开头：Alberte救援、Darvel自行返回、携带不可见火星Vampires；未读全篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回本续作Intrigue开头：Alberte救援、Darvel自行返回、携带不可见火星Vampires；未读全篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q3795480",
+      "identity": {
+        "title": "Il re dell'aria",
+        "author": "埃米利奥·萨尔加里"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Il re dell aria\" \"Salgari\" trama"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.emiliosalgari.it/appunti_di_viaggio/bisanti_romanzi_africa.htm",
+          "scope": "实际作者研究网站返回仅说明本作是I figli dell’aria续作并共用液态气体飞行器Sparviero；主要评论是另一部非洲小说。",
+          "result": "series_identity_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "只有飞行器与续作身份，没有本作明确人物冲突；不能把前篇或La Montagna d’oro的冒险挪用。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q74368077",
+      "identity": {
+        "title": "The Coming of the Sea",
+        "author": "Dunsany勋爵"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Coming of the Sea\" \"Lord Dunsany\" plot story"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.readbookonline.org/readOnLine/36990/",
+          "scope": "实际检索返回单篇开头，止于诸神讨论新声不是生命也非死亡；随后一次open Cache miss，未读后段。",
+          "result": "read"
+        },
+        {
+          "url": "https://www.readbookonline.org/readOnLine/36990/",
+          "scope": "一次打开单篇转载。",
+          "result": "failed_cache_miss"
+        }
+      ],
+      "reading_scope": "实际检索返回单篇开头，止于诸神讨论新声不是生命也非死亡；随后一次open Cache miss，未读后段。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q105403562",
+      "identity": {
+        "title": "Le Voyage",
+        "author": "J.-H. Rosny"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Le Voyage\" \"Rosny\" 1901 intrigue"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Voyage_%28nouvelle%29",
+          "scope": "实际检索返回Intrigue/Analyse：法国探险队、非洲陌生地区、人类与厚皮动物权力关系；未读原篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回Intrigue/Analyse：法国探险队、非洲陌生地区、人类与厚皮动物权力关系；未读原篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q11558925",
+      "identity": {
+        "title": "海島冐險奇譚 海底軍艦",
+        "author": "押川春浪"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Undersea Battleship\" \"Oshikawa\" novel plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Invasion_literature",
+          "scope": "实际检索返回明确Kaitō Bōken Kidan: Kaitei Gunkan本作段：装甲撞角潜艇、未来日俄战争及帝国想象；未读日文原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际检索返回明确Kaitō Bōken Kidan: Kaitei Gunkan本作段：装甲撞角潜艇、未来日俄战争及帝国想象；未读日文原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    }
+  ]
+}

@@ -74,6 +74,18 @@ check('existing spatial knowledge separates zero-query and scoped-lookup provena
   }
  }
 });
+check('a repeated real query preserves the earlier zero-query spatial provenance',()=>{
+ const record=spatialInputs.flatMap(input=>input.records).find(record=>record.id==='Q131471966');
+ const work=works.find(work=>work.id===record.id), log=work.source_search_log;
+ assert.equal(log.raw_reading_log.status,'skipped_already_analyzed');
+ assert(log.queries.length>0);
+ const context={issueAssertions:work.knowledge.assertions,sourceSearchLog:log};
+ assert.equal(validateSpatialEvidence(record,context),'existing_knowledge_unverified');
+ assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...log,previous_attempts:[]}}));
+ assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...log,queries:['unperformed search']}}));
+ assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...log,actual_search_performed:false}}));
+ assert.throws(()=>validateSpatialEvidence(record,{...context,sourceSearchLog:{...log,raw_reading_log:{...log.raw_reading_log,id:'different-work'}}}));
+});
 check('spatial judgments fill missing placement and preserve every original known placement',()=>{
  for(const w of works){
   const old=priorSpatial.get(w.id);

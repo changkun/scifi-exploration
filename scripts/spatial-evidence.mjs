@@ -8,9 +8,27 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
     return 'scoped_reading';
   }
   const sameIdentity = assertion => assertion.id === record.id && JSON.stringify(assertion.identity) === JSON.stringify(record.identity);
+  // A later real query can coexist with an earlier zero-query judgment.
+  // It does not retroactively become support for that judgment.
+  const currentRaw = sourceSearchLog?.raw_reading_log;
+  if (currentRaw?.status === 'skipped_already_analyzed') {
+    if (!sameIdentity(sourceSearchLog) || !sameIdentity(currentRaw) ||
+        sourceSearchLog.issue_result !== 'existing_analysis_retained_no_new_core' ||
+        currentRaw.analysis_basis !== 'identity_and_existing_completion_checked' ||
+        !currentRaw.queries?.length || currentRaw.failure_count !== 0) fail();
+    const previous = sourceSearchLog.previous_attempts?.find(attempt =>
+      sameIdentity(attempt) && attempt.analysis_basis === 'existing_work_specific_knowledge_unverified' &&
+      attempt.actual_search_performed === false && !attempt.queries?.length && !attempt.materials_checked?.length);
+    if (!previous) fail();
+    const actualQueries = currentRaw.queries.map(query => typeof query === 'string' ? query : query.query);
+    if (sourceSearchLog.queries.length !== new Set(actualQueries).size ||
+        !sourceSearchLog.queries.every(query => actualQueries.includes(query)) ||
+        sourceSearchLog.materials_checked.length || sourceSearchLog.actual_search_performed === false) fail();
+    sourceSearchLog = previous;
+  }
   const raw = sourceSearchLog?.raw_reading_log;
   const note = record.field_notes?.spatial_primary || '';
-  const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书)?已有知识|明确已有知识/.test(note);
+  const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书)?已有知识|明确已有知识|准确熟悉本书/.test(note);
   if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !explicitKnowledge) fail();
   if (record.knowledge_provenance_mode === 'existing_knowledge_after_scoped_lookup') {
     if (!record.field_notes.evidence_provenance || !sourceSearchLog || !sameIdentity(sourceSearchLog) || !raw || !sameIdentity(raw)) fail();

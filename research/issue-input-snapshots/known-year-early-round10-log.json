@@ -1,0 +1,1221 @@
+{
+  "metadata": {
+    "method": "actual-first-pass-reading-log-v1",
+    "status": "frozen",
+    "lane": 3,
+    "read_date": "2026-10-05",
+    "ownership_file": "known-year-first-pass-lane-3.json",
+    "ownership_sha256": "b193cb6e5cbf290ee699db0a540b6b05c6c1855dccf59651ecb3eacfaa865e0c",
+    "attempted_count": 48,
+    "added_count": 38,
+    "not_added_count": 10,
+    "record_count": 38,
+    "facet_count": 76,
+    "actual_query_count": 48,
+    "unique_query_identity_count": 48,
+    "zero_query_existing_knowledge_count": 0,
+    "selected_story_existing_knowledge_count": 7,
+    "actual_simple_open_count": 4,
+    "successful_simple_open_count": 2,
+    "failed_simple_open_count": 2,
+    "full_original_read_count": 0,
+    "partial_original_scope_count": 9,
+    "partial_original_ids": [
+      "Q7767354",
+      "Q140396409",
+      "Q3796149",
+      "Q133985033",
+      "Q6056337",
+      "Q17300233",
+      "Q139884982",
+      "Q7574519",
+      "Q139890156"
+    ],
+    "queue_total": 572,
+    "queue_attempted_cumulative": 472,
+    "queue_unattempted_remaining": 100,
+    "scope_note": "38条限真实检索的出版简介、独立评论、有限原作片段及7个确知选篇。目录只支持收入身份，选篇剧情来自既有知识待核；不声称全合集阅读。原创问题与依据分别保存。",
+    "partial_original_scope_note": "9个身份仅首段、末段或短引文：Sun Saboteurs/Wind/Rogue/Monsieur/Special Delivery只有限开头；Hunter只评论中极短见面引句；Outside/Ghetto只结尾译文；Riya只搜索呈现首尾片段。没有完整原篇连续阅读。",
+    "open_scope_note": "一次打开Worlds of Tomorrow目录与Paradox Men出版社简介成功；Fleurs de Venus及Abominations of Yondo准确页面各一次Cache miss，失败不算正文已读。其他材料仅读实际检索返回。",
+    "identity_boundary_note": "And Now the News的疑似生成描述与2003同名合集延后，不移用于1956单篇。Hoofer不取Death of a Spaceman；Lets Not不取Lets Get Together。Johannis1954本作不吸收1955续作人类起源；Rose单篇不等同1966集。Paradox Men保留多版纪年差异，只取明确共同前提。Nobody Here But不采用较新社区页停机结局。Ghetto的治疗仅角色念头，未称执行；不把Starfarers整体设定移来。Children of Light只小说与改编共同明确前提，人物名分开。",
+    "deferred_ids": [
+      "Q120728713",
+      "Q140053325",
+      "Q7712132",
+      "Q133985036",
+      "Q109774475",
+      "Q139884638",
+      "Q16386665",
+      "Q5512076",
+      "Q23307441",
+      "Q7580188"
+    ],
+    "self_check": "38当前missing身份/互斥归属/原题名作者纪年不动/只3字段/合法议题/两句核心/2具体facets/unverified通过；48真实一次查询与424既有日志无重复；有限原文与目录/评论/失败阅读范围分开。"
+  },
+  "records": [
+    {
+      "id": "Q7767354",
+      "identity": {
+        "title": "The Sun Saboteurs",
+        "author": "Damon Knight"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Sun Saboteurs\" \"Damon Knight\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Sun_Saboteurs",
+          "scope": "实际读1961长篇Synopsis检索正文；未读全书，未以1955较短The Earth Quarter代替。",
+          "result": "read"
+        },
+        {
+          "url": "https://www.everand.com/book/489765296/The-Sun-Saboteurs",
+          "scope": "另实际读本书第一节短开头：Cudyk望Earth Quarter与异族城市，感觉联系家乡又似监禁；未读后续，不用于扩展结局。",
+          "result": "read_original_opening_only"
+        }
+      ],
+      "reading_scope": "实际读1961长篇Synopsis检索正文；未读全书，未以1955较短The Earth Quarter代替。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q120728713",
+      "identity": {
+        "title": "Les Fleurs de Vénus",
+        "author": "Philippe Curval"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Les Fleurs de Vénus\" \"Philippe Curval\" résumé"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://booknode.com/les_fleurs_de_venus_085223/descriptions",
+          "scope": "准确本作出版简介链接仅标题；一次open为Cache miss。",
+          "result": "read"
+        },
+        {
+          "url": "https://booknode.com/les_fleurs_de_venus_085223/descriptions",
+          "scope": "实际一次open失败，无正文。",
+          "result": "open_failed_cache_miss"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "未读到具体情节；学术表只有智力优先于物理行动的评价，不足以说明本作情节，不能套相邻Carsac/Jeury战争。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q140053325",
+      "identity": {
+        "title": "Beyond",
+        "author": "席奧多爾·史鐸金"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Beyond\" \"Theodore Sturgeon\" 1960 contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://s3.us-west-1.wasabisys.com/luminist/SF/IF/IF_1960_11.pdf",
+          "scope": "实际检索返回1960评论列Beyond部分选篇；未打开PDF。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "只目录与评价，没有可靠熟悉选篇剧情；不把同页Invisible Men/Shottle Bop另一选集收入关系套入Beyond。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q3748988",
+      "identity": {
+        "title": "The Children of Light",
+        "author": "Henry Lionel Lawrence"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Children of Light\" \"H L Lawrence\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.murrayewing.co.uk/mewsings/2022/02/05/the-children-of-light-by-h-l-lawrence/",
+          "scope": "实际读小说/电影比较评论检索正文的共同孩子设定及书中Simon Largwell说明；未读小说或观看影片。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读小说/电影比较评论检索正文的共同孩子设定及书中Simon Largwell说明；未读小说或观看影片。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7712132",
+      "identity": {
+        "title": "The Abominations of Yondo",
+        "author": "克拉克·阿什顿·史密斯"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"The Abominations of Yondo\" \"Clark Ashton Smith\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Abominations_of_Yondo",
+          "scope": "本题为1960集的编目；同名1926故事与意大利译集不同。",
+          "result": "read"
+        },
+        {
+          "url": "https://library.squarepolka.com/content/wikipedia_en_all_maxi_2025-07/The_Abominations_of_Yondo",
+          "scope": "准确合集百科镜像一次open返回Cache miss，无目录。",
+          "result": "open_failed_cache_miss"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "准确1960集目录未读到，不能把同名1926故事、另一意大利选集或未确认收入的Vaults of Yoh-Vombis套给本集。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q1226583",
+      "identity": {
+        "title": "Ossian's Ride",
+        "author": "弗雷德·霍伊尔"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Ossians Ride\" \"Fred Hoyle\" plot synopsis"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.culanth.org/fieldsights/on-ossians-ride",
+          "scope": "实际读学术文章开头明确介绍原小说的段落；未读原书，不取后面现实Ireland发展评论作为虚构情节。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读学术文章开头明确介绍原小说的段落；未读原书，不取后面现实Ireland发展评论作为虚构情节。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q140396409",
+      "identity": {
+        "title": "Alguien mora en el viento",
+        "author": "Hugo Correa"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Alguien mora en el viento\" \"Hugo Correa\" resumen"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.ciencia-ficcion.com/opinion/op02753.htm",
+          "scope": "实际读ALGUIEN MORA EN EL VIENTO独立短评检索正文；未取上方巴斯克超常孩子时间旅行的另一故事。",
+          "result": "read"
+        },
+        {
+          "url": "https://cuentoconustedes.blogspot.com/2024/09/alguien-mora-en-el-viento.html?m=0",
+          "scope": "另实际读重刊检索返回的极短开头：Bob、Igor被点名及船内紧张；未读后续，不作为完整单篇阅读。",
+          "result": "read_original_opening_only"
+        }
+      ],
+      "reading_scope": "实际读ALGUIEN MORA EN EL VIENTO独立短评检索正文；未取上方巴斯克超常孩子时间旅行的另一故事。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q3618113",
+      "identity": {
+        "title": "周年纪念日",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Anniversary\" \"Isaac Asimov\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Anniversary_%28short_story%29",
+          "scope": "实际读Anniversary Plot summary开头检索正文；未读原篇，不补Opticon装置和最后发现。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读Anniversary Plot summary开头检索正文；未读原篇，不补Opticon装置和最后发现。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7390012",
+      "identity": {
+        "title": "SF '59: The Year's Greatest Science Fiction and Fantasy",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"SF 59\" \"Judith Merril\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/SF_%2759%3A_The_Year%27s_Greatest_Science_Fiction_and_Fantasy",
+          "scope": "实际目录确认Sheckley选篇收入；情节为已有知识待核，未读原篇或全文选集。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际目录确认Sheckley选篇收入；情节为已有知识待核，未读原篇或全文选集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "具体选篇剧情既有知识，外部只核本集收入关系。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q103357184",
+      "identity": {
+        "title": "The Monster",
+        "author": "Gérard Klein"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Monster\" \"Gérard Klein\" 1958 plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://edquitssmoking.blogspot.com/2021/08/the-big-book-of-science-fiction.html",
+          "scope": "实际读The Monster (1958/65, Gérard Klein)独立段检索正文；另一个review只印开场。未读原篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读The Monster (1958/65, Gérard Klein)独立段检索正文；另一个review只印开场。未读原篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q134523056",
+      "identity": {
+        "title": "The Blue Atom",
+        "author": "Robert Moore Williams"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Blue Atom\" \"Robert Moore Williams\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/The_Blue_Atom.html?id=Ka0wAAAAIAAJ",
+          "scope": "实际读1958本书出版简介检索正文；未读正文，不补装置物理机制、叛徒或胜负。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读1958本书出版简介检索正文；未读正文，不补装置物理机制、叛徒或胜负。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q22061041",
+      "identity": {
+        "title": "Nine Yards of Other Cloth",
+        "author": "曼利·韦德·威尔曼"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Nine Yards of Other Cloth\" \"Manly Wade Wellman\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nine_Yards_of_Other_Cloth",
+          "scope": "实际读本篇Plot summary检索正文；未读原篇，不采用不同概要互相不一致的最终结合细节。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读本篇Plot summary检索正文；未读原篇，不采用不同概要互相不一致的最终结合细节。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q3428550",
+      "identity": {
+        "title": "Triggerman",
+        "author": "Jesse Franklin Bone"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Triggerman\" \"Jesse F Bone\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://sf-encyclopedia.com/entry/bone_j_f",
+          "scope": "实际读本作者条目明确点名Triggerman的简述；未读原篇或Bone选集。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读本作者条目明确点名Triggerman的简述；未读原篇或Bone选集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7730600",
+      "identity": {
+        "title": "The Domes of Pico",
+        "author": "هيو والترز"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Domes of Pico\" \"Hugh Walters\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Domes_of_Pico",
+          "scope": "实际读第二部Plot summary检索正文；未读原书，不补锥体来源或任务结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读第二部Plot summary检索正文；未读原书，不补锥体来源或任务结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q133985036",
+      "identity": {
+        "title": "Pas de planète pour les Terriens",
+        "author": "Maurice Limat"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Pas de planète pour les Terriens\" \"Maurice Limat\" résumé"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.numilog.com/1232205/pas-de-planete-pour-les-terriens.ebook",
+          "scope": "数字再版题名、作者、格式和编目，无剧情简介；其他返回也只书目。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "确切剧情未读到，不凭题名推地球毁灭、种族排斥或无家可归；首轮延后。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q24964594",
+      "identity": {
+        "title": "The Pod in the Barrier",
+        "author": "席奧多爾·史鐸金"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Pod and the Barrier\" \"Theodore Sturgeon\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://kiwix.drnathanhutchins.com/content/wikipedia_en_all_maxi_2026-02/The_Pod_in_the_Barrier",
+          "scope": "实际读本篇Plot开头检索正文；未读原篇，另读Casual Debris该篇短评开场。",
+          "result": "read"
+        },
+        {
+          "url": "https://casualdebris.blogspot.com/2019/10/?m=0",
+          "scope": "只The Pod and the Barrier对应开场短评：Luanae引导、人类求生、专家自负；未取前后其他Sturgeon故事。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读本篇Plot开头检索正文；未读原篇，另读Casual Debris该篇短评开场。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q3796149",
+      "identity": {
+        "title": "Rogue in Space",
+        "author": "弗雷德里克·布朗"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Rogue in Space\" \"Fredric Brown\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rogue_in_Space",
+          "scope": "实际读取1957扩写长篇简介：有意识小行星、罪犯与腐败法官、新世界与进入控制；未读全书。",
+          "result": "read"
+        },
+        {
+          "url": "https://pages.di.unipi.it/ceragioli/Automi_Cellulari_una_rassegna.pdf",
+          "scope": "实际读大学PDF搜索结果复现的Rogue in Space开头约段落：有意识岩石的材料与偶然形成；仅开篇引文，不是小说全文。",
+          "result": "read_original_opening_only"
+        }
+      ],
+      "reading_scope": "实际读取1957扩写长篇简介：有意识小行星、罪犯与腐败法官、新世界与进入控制；未读全书。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q6723307",
+      "identity": {
+        "title": "Mach 1: A Story of Planet Ionus",
+        "author": "Allen Adler"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Mach 1\" \"Allen Adler\" \"Ionus\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mach_1%3A_A_Story_of_Planet_Ionus",
+          "scope": "实际读取1957小说简介中的绑架、Ionus怪兽与跟随返地球前提；未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取1957小说简介中的绑架、Ionus怪兽与跟随返地球前提；未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q109774475",
+      "identity": {
+        "title": "And Now the News...",
+        "author": "席奧多爾·史鐸金"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"And Now the News\" \"Theodore Sturgeon\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://fixquotes.com/works/and-now-the-news/",
+          "scope": "检索返回标1950的自动化新闻系统描述，与本记录1956单篇身份存在明显疑点。",
+          "result": "scope_or_identity_unreliable"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/175000/and-now-the-news----by-theodore-sturgeon/hardcover/",
+          "scope": "实际返回2003年同名合集简介，未提供本单篇具体情节。",
+          "result": "collection_not_single_story"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "未获得可可靠对应1956单篇的具体剧情；可疑描述及同名2003合集均不移用。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q133985033",
+      "identity": {
+        "title": "Monsieur Cosmos",
+        "author": "Maurice Limat"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Monsieur Cosmos\" \"Maurice Limat\" résumé"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://mais-encore.fr/monsieur-cosmos-par-maurice-limat/",
+          "scope": "实际读取页面明确标为Première page的法语原作开篇摘录：飞船、博士与三学生、宇宙边界及曲线解释；只读这一页片段，不判断小说后续或现实物理正确性。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取页面明确标为Première page的法语原作开篇摘录：飞船、博士与三学生、宇宙边界及曲线解释；只读这一页片段，不判断小说后续或现实物理正确性。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q17036562",
+      "identity": {
+        "title": "What Goes Up",
+        "author": "亞瑟·查理斯·克拉克"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"What Goes Up\" \"Arthur Clarke\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.scribd.com/document/763192835/arthur-c-clarke-9780252041938-9780252083594-compress",
+          "scope": "实际读取学术专著关于What Goes Up的独立段落：反应堆反重力、可达性困难与致命坠落；不是原作全文，不移用相邻其他White Hart故事。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取学术专著关于What Goes Up的独立段落：反应堆反重力、可达性困难与致命坠落；不是原作全文，不移用相邻其他White Hart故事。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q6056337",
+      "identity": {
+        "title": "Interplanetary Hunter",
+        "author": "Arthur K. Barnes"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Interplanetary Hunter\" \"Arthur Barnes\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://rosamondpress.com/2025/08/19/why-i-write-bond-novels/",
+          "scope": "实际读取博客复现的Interplanetary Hunter(1956)评论，限Gerry的捕捉任务、智慧接触与人类敌手共同前提；未逐篇读合集。",
+          "result": "read"
+        },
+        {
+          "url": "https://rosamondpress.com/2025/12/12/the-california-barrel-company-and-mary-rosamond/",
+          "scope": "实际读取复现评论的动物园任务段落，以及Tommy初见船舱中女子的短原文引句；原文片段不支持全集情节。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取博客复现的Interplanetary Hunter(1956)评论，限Gerry的捕捉任务、智慧接触与人类敌手共同前提；未逐篇读合集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7740815",
+      "identity": {
+        "title": "The Human Angle",
+        "author": "威廉·泰恩"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Human Angle\" \"William Tenn\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/william-tenn/the-human-angle",
+          "scope": "实际读取出版社目录，确认收入The Discovery of Morniel Mathaway；目录不提供剧情。情节为既有知识待核，不代表合集全文已读。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取出版社目录，确认收入The Discovery of Morniel Mathaway；目录不提供剧情。情节为既有知识待核，不代表合集全文已读。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有所读目录支持；剧情来自既有知识，未本轮核原作。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q131074622",
+      "identity": {
+        "title": "Home There's No Returning",
+        "author": "C·L·摩爾 / 亨利·库特纳"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Home There Is No Returning\" \"Kuttner\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/book/show/7924833-no-boundaries",
+          "scope": "实际读取读者评论中明确以Home there's no returning为第三篇的段落，限基地、Ego、赢得战争的命令、制造者抗议和失控；未读原作，不移用邻篇或Earth's Last Citadel。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取读者评论中明确以Home there's no returning为第三篇的段落，限基地、Ego、赢得战争的命令、制造者抗议和失控；未读原作，不移用邻篇或Earth's Last Citadel。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q139884638",
+      "identity": {
+        "title": "The Hoofer",
+        "author": "小沃尔特·M·米勒"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"The Hoofer\" \"Walter Miller\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://sciencefictionruminations.com/2020/11/28/short-story-review-walter-m-miller-jr-s-death-of-a-spaceman-variant-title-momento-homo-1954-and/",
+          "scope": "实际读评论及讨论；主体剧情为Death of a Spaceman，The Hoofer只是讨论中提及。",
+          "result": "neighbor_story_not_target"
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Walter_M._Miller%2C_Jr.",
+          "scope": "书目列出The Hoofer(1955)，没有本作具体情节。",
+          "result": "bibliographic_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "本作只有书目或提及；不将同作者Death of a Spaceman的垂死航天员情节移用。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q17300233",
+      "identity": {
+        "title": "Outside",
+        "author": "布莱恩·阿尔迪斯"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Outside\" \"Brian Aldiss\" 1955 plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://maestrosdelsaber.com/wp-content/uploads/ftp-files/Novela%2C%20Cuentos%20y%20Teatro/Nov%20Ciencia%20Ficcion%20y%20Fantas%C3%ADa/Aldiss%2C%20Brian%20W/Nov%20Aldiss%2C%20Brian%20W%20-%20Seleccion%20De%20Relatos%20Cortos.pdf",
+          "scope": "实际读取搜索返回的西语译文结尾片段，合集PDF印页11，明确原题Outside(1955)；只读结尾，未读完整短篇。",
+          "result": "read"
+        },
+        {
+          "url": "https://andrewdarlington.blogspot.com/2020/07/sf-history-brian-aldiss-nebula-years.html?showComment=1605048546762",
+          "scope": "实际读取1955 Outside的独立一句条目，六人住封闭环境、只有Harley探索出路。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取搜索返回的西语译文结尾片段，合集PDF印页11，明确原题Outside(1955)；只读结尾，未读完整短篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q4395124",
+      "identity": {
+        "title": "Les Robinsons du cosmos",
+        "author": "François Bordes"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Les Robinsons du cosmos\" \"Francis Carsac\" résumé"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.mollat.com/livres/283176/francis-carsac-les-robinsons-du-cosmos",
+          "scope": "实际读取书店所载Electre简介：地球法国碎片及居民、动物、房屋、田地树木转入未知星球；限此设定，页面1988译印/再版日期不改底库1955纪年。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取书店所载Electre简介：地球法国碎片及居民、动物、房屋、田地树木转入未知星球；限此设定，页面1988译印/再版日期不改底库1955纪年。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7600881",
+      "identity": {
+        "title": "Star Science Fiction Stories No.3",
+        "author": "弗雷德里克·波爾"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Star Science Fiction Stories No 3\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://openlibrary.org/works/OL20114059W/Star_Science_Fiction_Stories_No._3",
+          "scope": "实际读取本集目录，确认收入Asimov的It's Such a Beautiful Day；剧情来自既有知识，未本轮读原篇或全合集。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取本集目录，确认收入Asimov的It's Such a Beautiful Day；剧情来自既有知识，未本轮读原篇或全合集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "收入身份有所读目录支持；剧情来自既有知识，未本轮核原作。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q131075117",
+      "identity": {
+        "title": "The End of Summer",
+        "author": "Algis Budrys"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The End of Summer\" \"Algis Budrys\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://rrhorton.blogspot.com/2019/01/birthday-review-early-short-stories-and.html",
+          "scope": "实际读取评论中The End of Summer独立段落：Fay返乡、不死与记忆记录、撞死狗及擦除决定；未读原作。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取评论中The End of Summer独立段落：Fay返乡、不死与记忆记录、撞死狗及擦除决定；未读原作。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q139884982",
+      "identity": {
+        "title": "Ghetto",
+        "author": "波尔·安德森"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Ghetto\" \"Poul Anderson\" 1954 plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://maestrosdelsaber.com/wp-content/uploads/ftp-files/Novela%2C%20Cuentos%20y%20Teatro/Nov%20Ciencia%20Ficcion%20y%20Fantas%C3%ADa/Anderson%20Poul/Nov%20Anderson%2C%20Poul%20-%20Gheto.pdf",
+          "scope": "实际读取西语译文PDF印页25结尾片段，页尾明确Ghetto(1954)及F&SF May1954；只读离别与治疗念头，不借用1998 Starfarers的整体Kith设定。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取西语译文PDF印页25结尾片段，页尾明确Ghetto(1954)及F&SF May1954；只读离别与治疗念头，不借用1998 Starfarers的整体Kith设定。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q16386665",
+      "identity": {
+        "title": "Let's Not",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Lets Not\" \"Isaac Asimov\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://musicofjessicamurray.blogspot.com/2021/11/?m=0",
+          "scope": "实际读返回的简短评价，未提供本诗具体内容；其他结果为不同作品或标题词语碰撞。",
+          "result": "evaluation_without_specific_content"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "未得到Let's Not的准确诗文或具体内容，不将Let's Get Together剧情移用，也不按标题猜核战主题。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q5512076",
+      "identity": {
+        "title": "G.O.G. 666",
+        "author": "埃里克·坦普尔·贝尔"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"G O G 666\" \"John Taine\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.abebooks.com/book-search/title/g-o-g-666/author/john-taine/",
+          "scope": "实际读取精确题名作者旧书列表及1954版装帧信息，没有具体情节。",
+          "result": "bibliographic_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "只有目录和销售装帧信息，不按书名或作者其他科学设定补剧情。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q7574519",
+      "identity": {
+        "title": "Special Delivery",
+        "author": "Damon Knight"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Special Delivery\" \"Damon Knight\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Special_Delivery_%28short_story%29",
+          "scope": "实际读取本短篇简介中的胎内沟通、学习要求、母亲听写投稿与父亲职业受损；未读全篇，不借同名小说或电影。",
+          "result": "read"
+        },
+        {
+          "url": "https://www.gutenberg.org/files/32011/32011-h/32011-h.htm",
+          "scope": "另实际读搜索返回的原作极短开头，Len/Moira的租屋与未出生孩子的导语；仅开篇片段，不称全文阅读。",
+          "result": "read_original_opening_only"
+        }
+      ],
+      "reading_scope": "实际读取本短篇简介中的胎内沟通、学习要求、母亲听写投稿与父亲职业受损；未读全篇，不借同名小说或电影。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7805447",
+      "identity": {
+        "title": "Time to Come",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Time to Come\" 1954 anthology contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Time_to_Come",
+          "scope": "实际读取1954合集目录确认收入Arthur C.Clarke的No Morning After；剧情来自既有知识，本轮未读原篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取1954合集目录确认收入Arthur C.Clarke的No Morning After；剧情来自既有知识，本轮未读原篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "所读目录支持收入身份；本选篇剧情来自既有知识，待独立核对。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q96461191",
+      "identity": {
+        "title": "C'era una volta un pianeta...",
+        "author": "L. R. Johannis"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"C’era una volta un pianeta\" \"Johannis\" trama"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.openstarts.units.it/server/api/core/bitstreams/ed9aa839-34da-4e93-bafb-5f4b1cde5113/content",
+          "scope": "实际读取Giulia Iannuzzi学术论述对本作的独立段落：遥远过去、先进物种、核战毁星与小行星带解释；段末明确幸存者与尼安德特人结合属于1955续作，故不写入本篇剧情。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取Giulia Iannuzzi学术论述对本作的独立段落：遥远过去、先进物种、核战毁星与小行星带解释；段末明确幸存者与尼安德特人结合属于1955续作，故不写入本篇剧情。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q130644337",
+      "identity": {
+        "title": "The Rose",
+        "author": "Charles L. Harness"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Rose\" \"Charles Harness\" novella plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.co.uk/titles/charles-l-harness/the-rose/9780575125568/",
+          "scope": "实际读取出版社对The Rose的作品简介，限Anna与Ruy身体异变、艺术与妻子武器研究冲突；未读结尾。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取出版社对The Rose的作品简介，限Anna与Ruy身体异变、艺术与妻子武器研究冲突；未读结尾。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q139890156",
+      "identity": {
+        "title": "Riya's Foundling",
+        "author": "Algis Budrys"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Riya's Foundling\" \"Algis Budrys\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.gutenberg.org/files/34420/34420-h/34420-h.htm",
+          "scope": "实际读取搜索呈现的原作开篇设定及结尾片段：近人智能牛形生物、Phildee、雷达和射击危险、War Orphans' Relocation Farm、相互回应；未连续阅读全篇。不采用PG自动摘要误称长篇。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取搜索呈现的原作开篇设定及结尾片段：近人智能牛形生物、Phildee、雷达和射击危险、War Orphans' Relocation Farm、相互回应；未连续阅读全篇。不采用PG自动摘要误称长篇。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q15033442",
+      "identity": {
+        "title": "Missing Men of Saturn",
+        "author": "Robert S. Richardson"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Missing Men of Saturn\" \"Richardson\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Missing_Men_of_Saturn",
+          "scope": "实际读取小说简介和Plot段落：Dale毕业、老船、Dearborn旧任务、抵达Titan与设备人员消失；不补消失原因或结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取小说简介和Plot段落：Dale毕业、老船、Dearborn旧任务、抵达Titan与设备人员消失；不补消失原因或结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q23307441",
+      "identity": {
+        "title": "Crossroads in Time",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Crossroads in Time\" 1953 anthology contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Crossroads_in_Time",
+          "scope": "实际读1953合集的目录与出版说明；没有可靠熟悉选篇的具体剧情可直接使用。",
+          "result": "contents_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "目录可以确认选篇，但本轮不熟悉足以写两具体问题的准确剧情；不按合集题名归为时间旅行。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q3905452",
+      "identity": {
+        "title": "Costigan's Needle",
+        "author": "傑瑞·索爾"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Costigan's Needle\" \"Jerry Sohl\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://m.reanimus.com/store/?item=1359",
+          "scope": "实际读取ReAnimus Press再版简介：医学用途、Inland融资、扩大入口、员工抽签测试与失踪；不补装置确切异世界机制或结尾。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取ReAnimus Press再版简介：医学用途、Inland融资、扩大入口、员工抽签测试与失踪；不补装置确切异世界机制或结尾。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q5416949",
+      "identity": {
+        "title": "Everest",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Everest\" \"Asimov\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Everest_%28short_story%29",
+          "scope": "实际读取1953短篇Plot段落：飞机送顶、两周后接回、火星前哨与雪人解释；不把故事当真实登山史或确已预测未来。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取1953短篇Plot段落：飞机送顶、两周后接回、火星前哨与雪人解释；不把故事当真实登山史或确已预测未来。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7045959",
+      "identity": {
+        "title": "Nobody Here But—",
+        "author": "艾萨克·阿西莫夫"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Nobody Here But\" \"Asimov\" story plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://a.osmarks.net/content/wikipedia_en_all_maxi_2020-08/A/Nobody_Here_But%E2%80%94",
+          "scope": "实际读取2020社区条目镜像Plot段落：Junior自改、模仿Cliff催求婚；另Fandom结果称停机等细节未获一致支持，故不写停机结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取2020社区条目镜像Plot段落：Junior自改、模仿Cliff催求婚；另Fandom结果称停机等细节未获一致支持，故不写停机结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7433534",
+      "identity": {
+        "title": "Science Fiction Carnival",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Science Fiction Carnival\" 1953 contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books?id=ByJEAAAAYAAJ",
+          "scope": "实际读取1953合集Google Books目录，确认收入Murray Leinster的A Logic Named Joe；剧情为既有知识待核，未本轮读全文。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取1953合集Google Books目录，确认收入Murray Leinster的A Logic Named Joe；剧情为既有知识待核，未本轮读全文。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "所读目录支持收入身份；本选篇剧情来自既有知识，待独立核对。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7580188",
+      "identity": {
+        "title": "Sprague de Camp's New Anthology of Science Fiction",
+        "author": "里昂·斯普拉格·德坎普"
+      },
+      "attempt_state": "deferred_first_pass",
+      "queries": [
+        "\"Sprague de Camp's New Anthology of Science Fiction\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sprague_de_Camp%27s_New_Anthology_of_Science_Fiction",
+          "scope": "实际读六篇目录与编辑/作者说明；没有准确熟悉可解释的选篇情节。",
+          "result": "contents_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "只有六篇目录和概评，不足以支持具体文学问题；题名虽称Anthology，本体是de Camp单一作者合集，不挪用其他Viagens故事。",
+      "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+    },
+    {
+      "id": "Q7716783",
+      "identity": {
+        "title": "The Best Science Fiction Stories: 1953",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Best Science Fiction Stories: 1953\" contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Best_Science_Fiction_Stories%3A_1953",
+          "scope": "实际读取目录确认收入Fritz Leiber的The Moon Is Green；仅上述确知前提来自既有知识，未本轮核原文，不补外来者身份或结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取目录确认收入Fritz Leiber的The Moon Is Green；仅上述确知前提来自既有知识，未本轮核原文，不补外来者身份或结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "所读目录支持收入身份；本选篇剧情来自既有知识，待独立核对。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q7756067",
+      "identity": {
+        "title": "The Paradox Men",
+        "author": "Charles L. Harness"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"The Paradox Men\" \"Harness\" plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.hachette.com.au/charles-l-harness/the-paradox-men",
+          "scope": "实际一次打开出版社页面，读取行128–131的奴隶国家、盗贼购买自由、Alar失忆与自主疑虑简介；不补1984修订版新增情节或复杂时间回环结局。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际一次打开出版社页面，读取行128–131的奴隶国家、盗贼购买自由、Alar失忆与自主疑虑简介；不补1984修订版新增情节或复杂时间回环结局。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q8036741",
+      "identity": {
+        "title": "Worlds of Tomorrow",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Worlds of Tomorrow\" 1953 anthology contents"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Worlds_of_Tomorrow",
+          "scope": "实际一次打开1953合集目录，行122确认收入Clarke的Superiority；剧情来自既有知识，本轮未读选篇原作或全合集。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际一次打开1953合集目录，行122确认收入Clarke的Superiority；剧情来自既有知识，本轮未读选篇原作或全合集。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "所读目录支持收入身份；本选篇剧情来自既有知识，待独立核对。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    },
+    {
+      "id": "Q110462386",
+      "identity": {
+        "title": "Conditionally Human",
+        "author": "小沃尔特·M·米勒"
+      },
+      "attempt_state": "content_read_first_pass",
+      "queries": [
+        "\"Conditionally Human\" \"Walter Miller\" 1952 plot"
+      ],
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/book/show/29359275-condicionalmente-humano",
+          "scope": "实际读取合集读者评论中明确标Conditionally Human(1952)的独立段落：生育等级、替代宠物、改造猩猩与Terry动物管制职责；对应1952单篇，不把1962同名合集整体代入。",
+          "result": "read"
+        },
+        {
+          "url": "https://lubimyczytac.pl/ksiazka/5094382/galaxy-science-fiction-vol-1",
+          "scope": "实际读波兰语评论中明确Conditionally Human(1952)段落：替代儿童的改造动物、智能超过标准者被清除；此前Barlow与Venus段落属于别作，不采用。",
+          "result": "read"
+        }
+      ],
+      "reading_scope": "实际读取合集读者评论中明确标Conditionally Human(1952)的独立段落：生育等级、替代宠物、改造猩猩与Terry动物管制职责；对应1952单篇，不把1962同名合集整体代入。",
+      "issue_result": "added_unverified",
+      "unsuccessful_attempt_count": 0,
+      "reason_unconfirmed": "仅有限简介支持；解释未独立核验。",
+      "next_step": "后续核原作与文本粒度，不阻塞首轮。"
+    }
+  ]
+}
