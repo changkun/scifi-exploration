@@ -1,0 +1,601 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "source-assisted-spatial-navigation-v1",
+    "created_at": "2026-10-05",
+    "record_count": 20,
+    "field_count": 40,
+    "source_commit": "fd9db2448618bbb05925ffb3bb5d11df481e1b1f",
+    "source_snapshot_sha256": "f05679399a692eae9f17bc6857872609b66833cdb0d1e6b055fe2e755c1b3d4e",
+    "inputs": [
+      {
+        "file": "research/spatial-input-snapshots/global-recent-spatial-round39.json",
+        "sha256": "680ad1dd40625655b287eda5bfe6751122ad6bab2861294401b14f6c5058d69e",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-05",
+          "lane": 1,
+          "queue": "fast-first-lane-1.json",
+          "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+          "scope": "本轮同实体已读材料明确且canonical未知的空间，不为导航追加阅读。",
+          "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+          "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+          "source_snapshot": "research/canonical-universe.json.gz",
+          "source_snapshot_sha256": "f05679399a692eae9f17bc6857872609b66833cdb0d1e6b055fe2e755c1b3d4e",
+          "starts_at_fast_index": 1358,
+          "record_count": 20,
+          "ends_at_fast_index": 1405,
+          "next_fast_index": 1406,
+          "freeze_date": "2026-10-05",
+          "session_inherited_baseline_sha256": "c74049f5b2b7677458b301875f159f877e94d5912c7c58bad2267bd3aef1de0b",
+          "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+          "audit_snapshot_sha256": "f05679399a692eae9f17bc6857872609b66833cdb0d1e6b055fe2e755c1b3d4e",
+          "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+        }
+      }
+    ],
+    "zone_counts": {
+      "abstract": 2,
+      "cosmic": 0,
+      "earth": 8,
+      "galactic": 2,
+      "interstellar": 0,
+      "planetary": 8
+    },
+    "scope": "只补原unknown且有明示场所支持的条目；未知不由题名或议题推断，已有定位保持不动。"
+  },
+  "records": [
+    {
+      "id": "Q134521588",
+      "identity": {
+        "title": "La Porte au fond du parc entre le cèdre et les chênes",
+        "author": "Jean-Pierre Andrevon"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Cyril通过巴黎地区公园的时间门，在2015任务中遇到濒死老妇。"
+      },
+      "field_notes": {
+        "spatial_primary": "本篇出版社专段直接明示région parisienne与2015，时间门户不自动归多维/宇宙主空间。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://belial.fr/p/jean-pierre-andrevon/?p=1"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://belial.fr/p/jean-pierre-andrevon/?p=1",
+          "support_scope": "实际读出版社列表本篇独立专段：巴黎时间门、Transtemps/Cyril 2015任务与濒死老妇识认；相邻故事不作为剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q21009313",
+      "identity": {
+        "title": "Les Psychopompes de Klash",
+        "author": "Red Deff"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "调查与三族共居/战争危机围绕Klash星展开。"
+      },
+      "field_notes": {
+        "spatial_primary": "确切本书摘要直接指定planète Klash与四名冒险者前往调查，银河秩序预言不作主空间。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Les_Psychopompes_de_Klash"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Les_Psychopompes_de_Klash",
+          "support_scope": "实际读本书1990/Red Deff书目及Contexte/前两章人物：三族共居、人类有限战争计划、Thaks求派少年chronopathe；后续结局未用于本条。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q23307350",
+      "identity": {
+        "title": "Twistor",
+        "author": "John G. Cramer"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "David与两个孩子通过实验场进入另一版本的地球，并尝试与原世界联系。"
+      },
+      "field_notes": {
+        "spatial_primary": "作者单书说明直接写alternate Earth/another universe，两世界关系是导航依据，不由硬科幻标签推空间。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://faculty.washington.edu/jcramer/Twistor.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://faculty.washington.edu/jcramer/Twistor.html",
+          "support_scope": "实际读作者单书简介和About剧情说明：物质交换、企业夺装置、两孩子意外同行、另类地球生物与求返；未读链接首章或小说。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3211243",
+      "identity": {
+        "title": "La Nuit du bombardier",
+        "author": "塞尔吉·布鲁索洛"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "David在法国Landes的Triviana-sur-Mer寄宿学校面对排斥与当地旧灾。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书社区开局明确Landes小城和寄宿地，不由bombardier题名或战争史推地点。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://fr.wikipedia.org/wiki/La_Nuit_du_bombardier",
+        "https://www.label-emmaus.co/fr/9782070345489-la-nuit-du-bombardier/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/La_Nuit_du_bombardier",
+          "support_scope": "实际读本书1989身份和完整开局摘要：寄宿排斥、Moochie及战争坠机历史；未读原书。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.label-emmaus.co/fr/9782070345489-la-nuit-du-bombardier/",
+          "support_scope": "实际读卖家转载本书书介：家庭暴力后寄宿、秘密残酷入会与社区灾难气氛；非出版社直接页，所提疑问不当答案。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3232678",
+      "identity": {
+        "title": "Gypsies",
+        "author": "羅伯特·查爾斯·威爾森"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "abstract",
+        "spatial_rationale": "Karen与Michael穿过宇宙间的门，逃往Laura生活的另一现实。"
+      },
+      "field_notes": {
+        "spatial_primary": "官方简介直接写doors between universes及Laura’s reality，来自明确跨现实行动而非标题或genre推断。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.hachette.co.nz/robert-charles-wilson/gypsies"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.hachette.co.nz/robert-charles-wilson/gypsies",
+          "support_scope": "实际读确切单书官方再版完整简介：家族开门能力、Michael/Grey Man、逃往Laura现实和追查过去；未读原书。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q5278644",
+      "identity": {
+        "title": "Dinosaur Park",
+        "author": "Hayford Peirce"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Kerryl在Stohlson’s Redemption受家庭惩罚，复仇机会涉及地球中生代场景。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书书介直接指定殖民星与Earth Mesozoic，银河百万世界为背景，未据背景外推主要星系舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://books.apple.com/gb/audiobook/dinosaur-park-unabridged/id743087354"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.apple.com/gb/audiobook/dinosaur-park-unabridged/id743087354",
+          "support_scope": "实际读Wildside授权音频Publisher Description完整：Stohlson殖民仪式、Kerryl家庭惩罚、十六年复仇/时间机器与外族远古视频；未听全书。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q54800825",
+      "identity": {
+        "title": "The Captains' Honor",
+        "author": "David Dvorkin"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "两艘联邦星船支援遭袭的Tenara星，其居民面临和平或战争选择。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介直接指planet Tenara与其受袭/受援决定。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL4632469W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL4632469W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "62b94f602bc05d26bcf0ccf41d8c1c9fcc98cc98c289513f69ae5d774f012a84"
+        }
+      ]
+    },
+    {
+      "id": "Q55597558",
+      "identity": {
+        "title": "L'Or bleu",
+        "author": "Danielle Martinigol"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Bruce从Saturn附近来访地球，卷入地球水资源控制与反抗。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书阅读报告直接写Bruce visite la Terre及地球资源政治，Saturn为其出发背景，未知chirium星不补坐标。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://ecolitt.univ-angers.fr/fr/ressources-pour-tous/fiches-de-lecture/danielle-martinigol-l-or-bleu.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ecolitt.univ-angers.fr/fr/ressources-pour-tous/fiches-de-lecture/danielle-martinigol-l-or-bleu.html",
+          "support_scope": "实际读Angers大学本书Résumé：缺水、O.S.T./Jaspes、Bruce与chirium筹资和开放结尾；未读报告引述以外原著。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7695276",
+      "identity": {
+        "title": "TekWar",
+        "author": "威廉·夏特纳 / 润·古拉特"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Jake从未来Los Angeles警员处境出发，追查到Mexico的Tek研究者。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷官方介绍直接写Greater Los Angeles与Mexico，虚拟体验不作为本条主要抽象舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://books.apple.com/us/book/tekwar/id573074162"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.apple.com/us/book/tekwar/id573074162",
+          "support_scope": "实际直接打开并读Open Road首卷Publisher Description：Los Angeles Jake成瘾、机器陪审团、十五年冻结/四年醒、Mexico科学家；非电影或游戏，未读小说。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q7728306",
+      "identity": {
+        "title": "The Cry of the Onlies",
+        "author": "Judy Klass"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Kirk在Boaca Six星谈判，当地船遭攻击后追查被盗联邦实验船。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷简介直接写planet Boaca Six和其议会谈判，galaxy genius为人物评价不作星系主舞台。本实体实际阅读范围，导航而非物理坐标，待核。",
+        "spatial_rationale": "空间与时间跨度分开；未读原作全文。"
+      },
+      "sources": [
+        "https://openlibrary.org/works/OL480295W"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://openlibrary.org/works/OL480295W",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "837401c9755200c87eacdb372118b759129486d1aa5849bd95e2eaa89360574d"
+        }
+      ]
+    },
+    {
+      "id": "Q7745856",
+      "identity": {
+        "title": "The Last Legends of Earth",
+        "author": "A. A. Attanasio"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "复原的人类生活于Chalco-Doror人工行星系统，寻人行动也进入Overworld。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书PRH简介直接指定artificial planetary system为舞台；时间长度、宇宙毁灭背景不自动当cosmic主要场所。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/6033/the-last-legends-of-earth-by-aa-attanasio/",
+        "https://www.publishersweekly.com/9780385263931"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/6033/the-last-legends-of-earth-by-aa-attanasio/",
+          "support_scope": "实际读本书出版短介：Chalco-Doror人工行星系统、外族控制与创造/毁灭机器；不含详细人物。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.publishersweekly.com/9780385263931",
+          "support_scope": "实际读1989本书具名评论：复活人类为棋子、Chan-ti/Ned与zotl及Overworld寻人；未读原著。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q109330313",
+      "identity": {
+        "title": "Mobile Suit Gundam: Char's Counterattack - Beltorchika's Children",
+        "author": "富野由悠季"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "战争围绕向地球投落天体制造冰期、以及阻止这一计划展开。"
+      },
+      "field_notes": {
+        "spatial_primary": "本小说专页直接明确Earth与落天体计划；不按整部Gundam系列外推星际舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.novelupdates.com/series/kidou-senshi-gundam-gyakushuu-no-char-beltorchikas-children/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.novelupdates.com/series/kidou-senshi-gundam-gyakushuu-no-char-beltorchikas-children/",
+          "support_scope": "实际读本小说专页的Type/作者/一卷与Description，UC0093、落天体制冰期及Amuro阻止；该页1998与底库1988不一致，不采其年份。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q121990690",
+      "identity": {
+        "title": "Temps mort",
+        "author": "Charles Montpetit"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Marianne为解除嫌疑，须把同学带回1984年的Sainte-Anne-des-Monts。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷评论直接指定地球上的加拿大故乡；年代变化和无形实体不自动作为抽象空间。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.revue-solaris.com/1989/01/charles-montpetit-temps-mort-fa/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.revue-solaris.com/1989/01/charles-montpetit-temps-mort-fa/",
+          "support_scope": "实际读Solaris1989本书评论的完整剧情段及1988 Paulines书目信息，跨身体洗冤、Entité移动和碰撞；未读原著。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131215320",
+      "identity": {
+        "title": "Do Ya, Do Ya, Wanna Dance?",
+        "author": "霍華·華德羅普"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "同学二十周年重聚与乐队重演，对照早年Miami音乐会被中断的经历。"
+      },
+      "field_notes": {
+        "spatial_primary": "本篇已读评论明确美国城市Miami与同学聚会；没有把音乐期待推成时间旅行舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.capclave.org/capclave/capclave13/images/Capclave_2013_Convention_Guide_Final.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.capclave.org/capclave/capclave13/images/Capclave_2013_Convention_Guide_Final.pdf",
+          "support_scope": "实际读2013大会导刊检索返回的本篇评论段：1969届20周年、Miami拘捕与乐队重演；非原篇全文，不采用WaPo受限页面作为本条剧情依据。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131376311",
+      "identity": {
+        "title": "Hellspark",
+        "author": "Janet Kagan"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "Tocohl在新发现的Lassti星球卷入勘探队死亡与原住民智慧的调查。"
+      },
+      "field_notes": {
+        "spatial_primary": "Baen本书简介直接明确planet Lassti为疑案与政治冲突中心。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.baen.com/hellspark.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.baen.com/hellspark.html",
+          "support_scope": "实际读Baen本书完整出版简介，Lassti物理学家死亡、鸟形居民智慧疑问、Tocohl受袭/救人/调查；未读原著。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q131380335",
+      "identity": {
+        "title": "The Earth Doth Like a Snake Renew",
+        "author": "小詹姆斯·提普奇"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "年轻女子与被人格化为男性的地球构成这篇故事的中心关系。"
+      },
+      "field_notes": {
+        "spatial_primary": "研究导读本篇专段明确Earth角色；寓言表达不当现实地理或整个宇宙主舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.ebsco.com/research-starters/literature-and-writing/crown-stars-james-tiptree/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.ebsco.com/research-starters/literature-and-writing/crown-stars-james-tiptree/",
+          "support_scope": "实际读Amy Clarke集合研究导读中的本篇专段：女性与男性化Earth、取悦与玩物关系；未把全选集各篇Locales或其他故事情节给本篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q134464010",
+      "identity": {
+        "title": "Les racines de l'oubli",
+        "author": "Christian Léourier"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "planetary",
+        "spatial_rationale": "故事集中于Borgoet监狱星，囚犯受记忆药控制并与森林推进搏斗。"
+      },
+      "field_notes": {
+        "spatial_primary": "本单卷摘要直接写planète-bagne Borgoet；Lanmeur母星背景与合订其他星球不扩成主要星系舞台。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.critiqueslibres.com/livre/33616-les-racines-de-l-oubli-leourier-christian",
+        "https://www.bookenstock.fr/2013/09/les-racines-de-loubli-de-christian.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.critiqueslibres.com/livre/33616-les-racines-de-l-oubli-leourier-christian",
+          "support_scope": "实际读本题名Résumé具体情节，Borgoet/Garth、记忆药、森林苦役、记忆兄弟反抗及流放原因；读者评分和个人情节补述不作断言。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.bookenstock.fr/2013/09/les-racines-de-loubli-de-christian.html",
+          "support_scope": "实际读本书专列摘要与合订目录说明：Les enfants du léthé另含La Loi du monde/Le secret，仅确认单卷与合订边界，不采用另一卷支线。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q138338099",
+      "identity": {
+        "title": "La cinquième essence, première partie : Galaxie qui songe",
+        "author": "作者未知"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "受黑暗侵染的银河君主与殖民行星联盟围绕Techno战争星展开行动。"
+      },
+      "field_notes": {
+        "spatial_primary": "本册明确银河君主、colonial planets league与战争星政治网络，非仅凭Galaxie题名。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.senscritique.com/bd/la_cinquieme_essence_galaxie_qui_songe_l_incal_tome_5/361223",
+        "https://www.bdphile.fr/album/bd/66789-l-incal-5-la-cinquieme-essence-galaxie-qui-songe"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.senscritique.com/bd/la_cinquieme_essence_galaxie_qui_songe_l_incal_tome_5/361223",
+          "support_scope": "实际读本册1988/创作者身份与Résumé，感染君主、殖民行星联盟和攻战争星；未采用全系列评论。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.bdphile.fr/album/bd/66789-l-incal-5-la-cinquieme-essence-galaxie-qui-songe",
+          "support_scope": "实际读本册剧情摘要与1988原版信息，Difool想度假/战争星内外合作方案；不采数据库其他册通用简介。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q24934082",
+      "identity": {
+        "title": "Les Dix Jours impossibles",
+        "author": "Philippe Ebly"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "Thierry和同伴拟返回法国三剑客时代，秘密计划进入著名历史人物的角色。"
+      },
+      "field_notes": {
+        "spatial_primary": "本卷出版简介直接写Histoire de France，时间旅行只改变时代，不自动改变空间类别。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://kids.vivlio.com/index.php/product/9782014615142_9782014615142_1/les-dix-jours-impossibles"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://kids.vivlio.com/index.php/product/9782014615142_9782014615142_1/les-dix-jours-impossibles",
+          "support_scope": "实际读Hachette Jeunesse/FeniXX授权数字再版Résumé与书目信息，Thierry1597计划/三同伴/隐瞒进入历史人物；未读原著或把1986写作草案当已出版结局。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    },
+    {
+      "id": "Q3156335",
+      "identity": {
+        "title": "Ivory",
+        "author": "迈克尔•雷斯尼克"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "象牙在分布于星际的多种人类与异族文化间流转，研究者追索其历史。"
+      },
+      "field_notes": {
+        "spatial_primary": "本书两方出版简介明确人类离地赴星、跨worlds与异族象牙历史；资料调查不冒称Duncan本人逐星实际旅行。",
+        "spatial_rationale": "只取实际已读同实体材料的地点/航行范围，不从类型、年份或风险外推。"
+      },
+      "sources": [
+        "https://www.simonandschuster.com/books/Ivory/Mike-Resnick/9781591025467",
+        "https://openroadmedia.com/ebook/ivory/9781504077262"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/Ivory/Mike-Resnick/9781591025467",
+          "support_scope": "实际读Pyr/S&S本书About the Book，Duncan/Bukoba、最后Maasai、象牙失踪与委托变个人追索；2007为再版资料。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://openroadmedia.com/ebook/ivory/9781504077262",
+          "support_scope": "实际读Open Road本书完整简介，象牙跨文化/世界历史与具体权力用途；未读小说或将出版社绝灭措辞当科学核验。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ]
+    }
+  ]
+}

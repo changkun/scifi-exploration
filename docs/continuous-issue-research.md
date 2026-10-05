@@ -484,3 +484,11 @@ Robot Visions仅已有知识确知所收Robbie与The Bicentennial Man，Does a B
 Bannerless仅2015短篇，作者访谈和实际非连续原篇片段不替代2017长篇；Scintillements仅Mat, mat, mat开头，Grand Crusades仅具名三选例。The Postman保留1982单篇与后续扩写区别；Nightflyers合集只按标题成员，不移入改编情节。Rainbow Chili只用漫画开头，Beyond the Fall of Night只用续作范围；Tales of Planet Earth的错配散文书介被拒绝。血与宇宙所读版日期、Arachne、Angel Station、Pawn's Gambit和Erasmus版本边界继续明示。The Gifted只找到改编，Warrior Women只有目录，均后置。
 
 全部新增仍knowledge_added_unverified，完整原作读取0。五组85项校验及全部身份顺序、原来源、日期、粒度、既有解释和空间、冻结输入字节与设计守恒检查通过。R48已成功部署v50，公开浏览器确认6,771核心、7,287议题分类和1,313空间；R49待固定提交推送及公开版本确认。各分片持续首遍，不等待发布。
+
+### 2026-10-05：R50 先完成可用材料，未确认内容后置
+
+七份互斥冻结输入新增160条核心、320项细分问题及20条原未知空间。202个处理身份中42条后置。累计核心7,059条、缺口7,505条、议题分类7,565条、细分15,233项、空间1,353条；6,780个身份有过程归档，50次较早尝试完整保留。
+
+Morning Child仅这一篇实际打开授权重刊并完整阅读；其他条目仍按书介、目录、已有准确知识或原作局部范围记录。Ender: Préludes限法语五篇合集书介的具名例；Venus siegt用原Hablizel出版社前提，不纳入2016增加150页的结尾。Dodoma只取首卷，The Sorcerer of the Wildeeps不补模糊结局。Maabas的千年背景及The V'Dan比另一系列早200年，不填主体故事跨度。K-9 and Company的电视试播与小说化疑点、Incal的单册/章节粒度、Valentina短篇/扩写和Space Demons日期差异仍明示；Shadow Ship大增补、Across the Sea of Suns追加结尾未借用。
+
+R39选集成员计数的修正输入与第一次冻结原件均保存，records相同；Chrononauts删除没有具体资本或劳动依据的过宽议题，第一次冻结原件也单独保存。所有新增仍knowledge_added_unverified，授权短篇全文阅读不自动提升独立核验状态。五组85项校验及全部身份顺序、来源、日期、粒度、既有解释与空间、冻结字节和设计守恒检查通过。R49已部署v51，公开浏览器确认6,899核心、7,411议题分类、1,333空间及6,578过程记录；R50待固定提交推送和公开版本确认，研究继续首遍。
