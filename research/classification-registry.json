@@ -2,20 +2,30 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 2,
+    "version": 3,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v1.json",
-      "sha256": "ec6d1bb8d6545579c04acdd97838373f276312de9e1ae53959e9addeee60b6bd"
+      "file": "research/classification-registry-history/v2.json",
+      "sha256": "22aea499b79faca47c3a0d1efacfd536af18de187219610a5f0523bbd289cc14"
     },
-    "revision_note": "第68批增加创伤恢复、历史证据与集体身份、强制真理三个入口，扩展维护入口，并公开保留三种有作品依据的待比较发现；分组不增加核心补全计数。",
+    "revision_note": "第69批按两部作品明示的文字造物和音乐武器前提新增艺术媒介与行动能力；互动书的读者选择作为表达形态候选保留，不推断全部分支或向其他作品传播。旧分类和发现逐字保留，聚合不增加核心补全。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
-    }
+    },
+    "discovery_inputs": [
+      {
+        "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
+        "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
+      },
+      {
+        "file": "research/classification-discovery-inputs/global-classification-candidates-undated.json",
+        "sha256": "3603f37aeec5eefea5c9d078577ba154667681f1386fad8f31810fbfd98bafe7"
+      }
+    ]
   },
   "axes": [
     {
@@ -1045,6 +1055,41 @@
           "status": "interpretive_grouping_unverified"
         }
       ]
+    },
+    {
+      "id": "topic:artistic-media-and-action",
+      "axis": "topic",
+      "label": "艺术媒介与行动能力",
+      "definition": "关注文字、音乐等表达媒介如何获得创造实体或直接干预冲突的能力；只取作品明示的行动功能，不推断艺术价值或全书美学立场。",
+      "status": "研究分类·暂定待核",
+      "revision": 1,
+      "related_topics": [
+        "媒介与注意力",
+        "技术与责任",
+        "主体与意识"
+      ],
+      "members": [
+        {
+          "work_id": "Q16540038",
+          "title_at_review": "City Hall",
+          "basis": "CityHall原manfra设定中，纸上文字能够创造实体，写作者能力与创造物自主性相联系。",
+          "evidence_scope": "已读社区具体设定简介，非原漫画全文。 只聚合表达媒介的明示行动功能，不推断全书美学理论；文学分类暂定待核。",
+          "sources": [
+            "https://fr.wikipedia.org/wiki/City_Hall_%28bande_dessin%C3%A9e%29"
+          ],
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q20044281",
+          "title_at_review": "Koko ga Genkai no Oval Gakuen",
+          "basis": "OvalGakuen准确正版简介把音乐作为抵抗敌人的武器，表达媒介承担直接行动功能。",
+          "evidence_scope": "已读正版电子漫画简介；只支持音乐作为武器，不证明全书审美论题。 只聚合表达媒介的明示行动功能，不推断全书美学理论；文学分类暂定待核。",
+          "sources": [
+            "https://comic.iowl.jp/titles/33924"
+          ],
+          "status": "interpretive_grouping_unverified"
+        }
+      ]
     }
   ],
   "field_values": {
@@ -1133,6 +1178,28 @@
       "id": "discovery:3",
       "review_status": "pending_further_comparison",
       "review_note": "保留首次具体作品依据，尚不向其余作品传播标签；点击作品继续查阅。"
+    },
+    {
+      "id": "discovery:reader-choice-and-branch-reading",
+      "dimension": "form",
+      "proposed_label": "读者选择与分支阅读",
+      "definition_boundary": "互动书让读者选择路径并重开阅读，属于表达形态和叙事参与的候选；不把宣传说明当全部分支的实际阅读，也不直接认定为作品角色具有时间重启能力。",
+      "work_evidence": [
+        {
+          "id": "Q55230567",
+          "identity": {
+            "title": "Voyage to Adventure",
+            "author": "約翰·M·福特 / Michael J. Dodge"
+          },
+          "basis": "VoyageToAdventure宣传说明读者扮Enterprise少尉选择不同任务路径，不满走向时可以回去重开。",
+          "sources": [
+            "https://memory-beta.fandom.com/wiki/Voyage_to_Adventure"
+          ],
+          "exact_support_scope": "准确互动书社区Description已读；未读全部分支，未推断固定结局。"
+        }
+      ],
+      "review_status": "pending_further_comparison",
+      "review_note": "目前只有这一精确身份的具体材料，保留待比较入口，未向其他作品传播标签。"
     }
   ]
 }
