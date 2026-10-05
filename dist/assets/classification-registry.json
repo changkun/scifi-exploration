@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 9,
+    "version": 10,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v8.json",
-      "sha256": "7b9a4a193040ad123eba2dca4684b28356c2406d89673e580dc2cd5cdd6f8ad4"
+      "file": "research/classification-registry-history/v9.json",
+      "sha256": "437a00425dca5cc4384d0c026f5ed8dfa387cf99d46193cfd143c5132ed3ef37"
     },
-    "revision_note": "第77批保留八维、33入口和全部53旧方向，新增科幻批评的命名政治、机器参与的小说生成两项比较；新维度提议保留实际评论、作者工具与虚构叙事的边界，继续比较，不由孤例自动传播。",
+    "revision_note": "第78批所有研究维度继续开放；比较两部明确资料集后新增科幻参考资料与创作档案入口，新增五项跨形式、叙事与设定方向。具体原材料范围、旧注册表和55项旧方向原样保留，不把组织方式计为补全或独立核验。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -100,6 +100,18 @@
       {
         "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round2.json",
         "sha256": "94a2c0e7bae0db7bef872a87a35d87efb5bc42f3e47557ebf290d7cecce4fed2"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-modern-classification-candidates-r1-r3.json",
+        "sha256": "2e03ce98868c7d205075d52cceba5742afc08aad0ff34e219459ae09ec096c1d"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round4.json",
+        "sha256": "a7e9ff1b06aeef55a6f2b423191157746e7c083eac3d5dab8eb3a34d3465abae"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-reference-form-promotion-round78.json",
+        "sha256": "b0918a5d300090c4fd6197a24e7baf377a46853b5bc197f1283967c5ed7431cb"
       }
     ]
   },
@@ -1276,6 +1288,44 @@
           "sources": [
             "https://strangehorizons.com/wordpress/non-fiction/reviews/wind-angels-by-leigh-kennedy/",
             "https://www.birminghamsfgroup.org.uk/reviews4.html"
+          ],
+          "status": "interpretive_grouping_unverified"
+        }
+      ]
+    },
+    {
+      "id": "form:reference-documentation",
+      "axis": "form",
+      "label": "科幻参考资料与创作档案",
+      "definition": "非虚构资料集通过作品条目、解说、主题索引或创作年表组织科幻材料；包括书目百科与创作档案，不包括只有虚构故事或图片而没有参照资料结构的集合。",
+      "status": "研究分类·暂定待核",
+      "revision": 1,
+      "related_topics": [
+        "知识与认识",
+        "文明与历史"
+      ],
+      "related_categories": [
+        "form:visual"
+      ],
+      "discovery_input": "research/classification-discovery-inputs/quick-retry-reference-form-promotion-round78.json",
+      "members": [
+        {
+          "work_id": "Q106125995",
+          "title_at_review": "Rétrofictions, encyclopédie de la conjecture romanesque rationnelle francophone",
+          "basis": "两卷百科整理1532–1951法语科幻，以逐项摘录说明纳入原因，并配置主题索引与多媒介图像。",
+          "evidence_scope": "实际查询并直接读取Les Belles Lettres精确两卷书介；只评书目组织，不假称读完两卷或逐条核验所引作品。",
+          "sources": [
+            "https://www.lesbelleslettres.com/livre/9782251448510/retrofictions"
+          ],
+          "status": "interpretive_grouping_unverified"
+        },
+        {
+          "work_id": "Q109809999",
+          "title_at_review": "Hagio Moto esuefu ātowākusu = Hagio Moto SF artworks",
+          "basis": "四十年科幻彩图配作品资料、解说，目录分年代与合作作品并附工作年表。",
+          "evidence_scope": "实际打开L81–148的内容说明、五章目录及相关工作年表；未读画册正文或全部图片。",
+          "sources": [
+            "https://www.kawade.co.jp/np/isbn/9784309277011/"
           ],
           "status": "interpretive_grouping_unverified"
         }
@@ -2675,6 +2725,122 @@
       "id": "discovery:quick-retry-root-classification-candidates-round2:1",
       "review_status": "pending_further_comparison",
       "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "形式",
+      "proposed_label": "证据导向的科幻书目百科",
+      "definition_boundary": "非虚构参照作品以条目、作品摘录和主题索引组织推想文学史；不把所引作品或一般小说合集自动归入此形式。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q106125995",
+          "identity": {
+            "title": "Rétrofictions, encyclopédie de la conjecture romanesque rationnelle francophone",
+            "author": "Joseph Altairac / Guy Costes"
+          },
+          "basis": "两卷百科整理1532–1951法语科幻，以逐项摘录说明纳入原因，并配置主题索引与多媒介图像。",
+          "sources": [
+            "https://www.lesbelleslettres.com/livre/9782251448510/retrofictions"
+          ],
+          "exact_support_scope": "实际查询并直接读取Les Belles Lettres精确两卷书介；只评书目组织，不假称读完两卷或逐条核验所引作品。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r1-r3:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "不可控人物的观察解释型游戏",
+      "definition_boundary": "游戏明确不允许玩家操控主角，任务侧重理解角色所处现实与行为；与分支选择、模拟经营或所有游戏实体区分。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q52153354",
+          "identity": {
+            "title": "Target of Desire: Episode 1",
+            "author": "Osgoode Media"
+          },
+          "basis": "发行方说明玩家不能操控Maia，须理解她被追踪的处境及大学研究者Maria的网络日志。",
+          "sources": [
+            "https://play.google.com/store/apps/details?hl=en_US&id=com.Osgoode.TargetOfDesire1"
+          ],
+          "exact_support_scope": "实际查询返回Osgoode Media的Google Play应用说明；未游玩，不称实际分支或完整结局已核。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r1-r3:2",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "艺术媒介",
+      "proposed_label": "科研图像与科幻旧插图叠合",
+      "definition_boundary": "同一作品明确把科研照片与虚构作品旧图像叠印或合成，形成观看结构；不据作者背景推及一般科学插图、电影或小说。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q102348065",
+          "identity": {
+            "title": "Voyage au cœur du vivant",
+            "author": "柏納·韋柏"
+          },
+          "basis": "项目以29幅图像叠印Inserm Serimedis照片与凡尔纳小说旧插图，Werber另配故事。",
+          "sources": [
+            "https://www.hachette.fr/livre/voyage-au-coeur-du-vivant-inserm-3010000008736/",
+            "https://www.inserm.fr/culture-scientifique/sciencefiction-voyage-coeur-vivant/"
+          ],
+          "exact_support_scope": "实际查询返回出版方和Inserm项目说明；只支持视觉结构，未读Werber配写全文，保留图册署名及媒介边界。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r1-r3:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制",
+      "proposed_label": "倒序揭露的跨时侦探调查",
+      "definition_boundary": "调查在跨时人物之间进行，叙述从结尾/后记逆向到起点；一般时间旅行、插叙或无侦探线的逆序作品不自动传播该组合。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q130942504",
+          "identity": {
+            "title": "The Plural of Helen of Troy",
+            "author": "John C. Wright"
+          },
+          "basis": "Jake Frontino受现在JFK委托保护Helen，袭击者是未来JFK；叙述从Afterword到Prologue to a New Beginning倒序。",
+          "sources": [
+            "https://ora.ox.ac.uk/objects/uuid%3Aa94ed3a1-9143-41eb-8a34-217cae15afea/files/mb5ce37497495750237a5234a97b5be69",
+            "https://fontfolly.net/2015/06/15/hugo-ballot-reviews-novella/"
+          ],
+          "exact_support_scope": "实际查询返回Oxford论文对该中篇的具体段落；未读原作全文，不由评论对规则的评价宣称时间设定已验证。"
+        }
+      ],
+      "id": "discovery:quick-retry-modern-classification-candidates-r1-r3:4",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "叙事机制 / 科学设定机制 / 表达形态",
+      "proposed_label": "借入记忆药物与叙述人称切换",
+      "definition_boundary": "作品明确以他人的记忆制成药物，并在人格受药物控制时切换第二、第三人称，使意识前提进入叙述形式；普通失忆故事、任意第二人称和所有药物题材不自动归入。",
+      "work_evidence": [
+        {
+          "id": "Q20740464",
+          "identity": {
+            "title": "2045 - Thirty years from now",
+            "author": "作者未知"
+          },
+          "basis": "选集中的Alvilágosodás以他人记忆制成纳米药物，药物控制主角意识时用第二人称，其余转第三人称。",
+          "sources": [
+            "https://sumegiattila.blogspot.com/2015/05/alvilagosodas-avagy-koncepcio.html"
+          ],
+          "exact_support_scope": "实际查询返回Sümegi Attila确认本篇收录与创作形式的自述；只一篇、未读原作，不给整本或其他十五篇贴标签。"
+        }
+      ],
+      "id": "discovery:quick-retry-root-classification-candidates-round4:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留具体作品、原维度、定义边界和实际资料范围；继续比较，不自动传播标签、不增加核心补全或核验等级。"
     }
   ],
   "promoted_discoveries": [
@@ -2760,6 +2926,42 @@
       },
       "review_status": "provisional_category_from_two_exact_work_scopes",
       "review_note": "两个具体作品构成暂定比较入口；选例依据、原维度及边界保留，不把分类填值当作原作或现实技术核验。人工栖居地分类不会为主导航unknown补猜位置。"
+    },
+    {
+      "category_id": "form:reference-documentation",
+      "original_candidate": {
+        "dimension": "form",
+        "label": "科幻参考资料与创作档案",
+        "definition": "非虚构资料集通过作品条目、解说、主题索引或创作年表组织科幻材料；包括书目百科与创作档案，不包括只有虚构故事或图片而没有参照资料结构的集合。",
+        "work_evidence": [
+          {
+            "id": "Q106125995",
+            "identity": {
+              "title": "Rétrofictions, encyclopédie de la conjecture romanesque rationnelle francophone",
+              "author": "Joseph Altairac / Guy Costes"
+            },
+            "basis": "两卷百科整理1532–1951法语科幻，以逐项摘录说明纳入原因，并配置主题索引与多媒介图像。",
+            "sources": [
+              "https://www.lesbelleslettres.com/livre/9782251448510/retrofictions"
+            ],
+            "support_scope": "实际查询并直接读取Les Belles Lettres精确两卷书介；只评书目组织，不假称读完两卷或逐条核验所引作品。"
+          },
+          {
+            "id": "Q109809999",
+            "identity": {
+              "title": "Hagio Moto esuefu ātowākusu = Hagio Moto SF artworks",
+              "author": "萩尾望都"
+            },
+            "basis": "四十年科幻彩图配作品资料、解说，目录分年代与合作作品并附工作年表。",
+            "sources": [
+              "https://www.kawade.co.jp/np/isbn/9784309277011/"
+            ],
+            "support_scope": "实际打开L81–148的内容说明、五章目录及相关工作年表；未读画册正文或全部图片。"
+          }
+        ]
+      },
+      "review_status": "provisional_category_from_two_exact_work_scopes",
+      "review_note": "对照科幻书目百科与艺术创作档案，按明确的参照资料组织方式建立表达形态入口。普通故事合集不自动纳入；原书目类型和核验等级保留。"
     }
   ]
 }
