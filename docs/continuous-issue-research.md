@@ -393,3 +393,12 @@ Merged 11 frozen, disjoint researcher groups: 342 new core analyses, 684 concret
 Every interpretation remains `knowledge_added_unverified`. Existing knowledge is distinguished from actual searches and material reading. Frozen inputs, raw attempt objects, previous attempts, exact identities and all source/version fields remain. One complete original short story was read: *Two Dreams on Trains* at Strange Horizons (2,994 words, lines 14–128 including the ending). That record's original generic “not full text” template contradicts its specific evidence/log; the merged `source_scope` states the actual range while retaining the original frozen bytes. Other records use only their individually documented reading scope.
 
 All five validators passed (85 checks), as did the preservation comparison against `664bc4afed13e252125e95c18e0dc51078d27ce4`. The redesign and body structure remain unchanged. Publication now uses an immutable GitHub data pin: full data remains on `main`, generated runtime source on `site-delivery`. Round 36 was successfully deployed as version 38 from delivery source `44cc0f31f3fcd728b20f1b4cdc63ba6537e3d9c5`, with all 14,564 records loading in the live browser. The earlier roughly 39 MB archive repeatedly timed out; the complete-data delivery package is about 3.8 MB. See `docs/site-delivery.md`. Round 37 still needs a confirmed repository push and advancement of that deployment pin; a local build is not a live release.
+
+
+### 2026-10-05：R38 一遍过继续，研究与交付并行
+
+合并十二份冻结分析：新增224条核心、448项细分问题及36条原未知空间；294个处理身份中70条资料不足或文本粒度疑点后置。全库核心5,429条、缺口9,135条、议题分类6,026条、细分11,973项、空间1,123条。4,696个身份保留过程，4,371有实际查询或材料处理，325仅记已有知识或身份边界；49个身份保留较早尝试。
+
+熟悉作品按确知范围直接补，陌生作品一次精准查询和有限简单材料；不足者当即后置。漫画单卷、小说当卷、合集具名选篇和系列开篇范围逐项保存，全部文学解释仍为knowledge_added_unverified，新增原作完整阅读0。The Deep Blue Jump实际读取Asimov PDF返回的开篇范围，作者页面与PDF刊期不一致两值并存，原2023纪年不覆盖。Prophet仅出版方简介；Better Living Through Algorithms原刊打开失败保留失败，不伪装正文阅读。版本或身份疑点保持原字段与限制说明。
+
+五组85项校验及原始身份顺序、来源、纪年、粒度、既有分析和空间、冻结输入字节及设计文件守恒检查均通过。全量14,564身份、1,901未知纪年和454日期差异没有缩减。完整研究继续保存在main，网站由不可变GitHub数据提交载入。R37已经确认上线为v39，浏览器复验5,205核心；本轮源提交及网站数据指针尚需确认发布，发布检查点另行保存。研究不等待每次网站交付。
