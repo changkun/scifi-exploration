@@ -384,3 +384,12 @@ The Magical Properties of Unicorn Ivory仅此原授权单篇实际读取至末�
 全库3,969个身份有过程记录，3,693含实际查询或外部材料处理，276只记已有知识、本地身份与边界处置；42个身份保留更早过程。五组85项校验及全部原身份顺序、原始来源字段、粒度、纪年、已有分析与空间、冻结输入和设计文件守恒检查通过；14,564实体、1,901未知纪年、454日期差异均保留。
 
 R35源提交3af7adc已确认同步GitHub。网站发布包连续三次上传在300秒处超时，最新确认的公开版本仍为v37、4,394核心；上传失败不计为已上线，研究和批次校验继续。各次发布结果另在私有运行检查点保留。
+
+
+## Single-pass round 37 — 2026-10-05
+
+Merged 11 frozen, disjoint researcher groups: 342 new core analyses, 684 concrete facets, 440 processed identities and 98 deferred identities. Added 57 spatial placements only where the source states an actual setting. The unified corpus now contains 14,564 identities, 5,205 core analyses, 9,359 remaining core gaps, 5,823 records with topic information and 11,525 fine questions. Spatial information covers 1,087 records; all 1,901 unknown years and 454 date conflicts are preserved.
+
+Every interpretation remains `knowledge_added_unverified`. Existing knowledge is distinguished from actual searches and material reading. Frozen inputs, raw attempt objects, previous attempts, exact identities and all source/version fields remain. One complete original short story was read: *Two Dreams on Trains* at Strange Horizons (2,994 words, lines 14–128 including the ending). That record's original generic “not full text” template contradicts its specific evidence/log; the merged `source_scope` states the actual range while retaining the original frozen bytes. Other records use only their individually documented reading scope.
+
+All five validators passed (85 checks), as did the preservation comparison against `664bc4afed13e252125e95c18e0dc51078d27ce4`. The redesign and body structure remain unchanged. Publication now uses an immutable GitHub data pin: full data remains on `main`, generated runtime source on `site-delivery`. Round 36 was successfully deployed as version 38 from delivery source `44cc0f31f3fcd728b20f1b4cdc63ba6537e3d9c5`, with all 14,564 records loading in the live browser. The earlier roughly 39 MB archive repeatedly timed out; the complete-data delivery package is about 3.8 MB. See `docs/site-delivery.md`. Round 37 still needs a confirmed repository push and advancement of that deployment pin; a local build is not a live release.

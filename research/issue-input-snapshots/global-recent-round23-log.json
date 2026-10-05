@@ -1,0 +1,1331 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "date": "2026-10-05",
+    "lane": 1,
+    "queue": "fast-first-lane-1.json",
+    "queue_sha256": "6b98a14c536f5668385f5eea35f448c2548e6d9cdd2f4a7574e83234747b6233",
+    "scope": "保留原lane所有权，优先已有且题名作者对应的OL简介，再按来源年近往远。",
+    "method": "快速首遍：准确熟悉作品用existing knowledge明确待核；其他每身份一轮精准搜索/简单来源读取，困难延后；只填作品特定短核心和两facet，原字段保留。",
+    "verification": "knowledge_added_unverified；社区/图书馆作品简介只支持以下明确内容，非独立核验或全书阅读。",
+    "source_snapshot": "research/canonical-universe.json.gz",
+    "source_snapshot_sha256": "38becbe9f840483ed0cc4b5835c9adce074998b870b554b745904558f3d25806",
+    "starts_at_fast_index": 717,
+    "record_count": 32,
+    "facet_count": 64,
+    "attempted_count": 43,
+    "deferred_count": 10,
+    "skipped_existing_count": 1,
+    "unassigned_read_only_searches": [
+      {
+        "query": "\"The Last Reef\" \"Gareth Powell\" story synopsis",
+        "reason": "恢复下一队列时错误假设题名，仅只读检索；不映射本lane身份，不据此新增分析。"
+      },
+      {
+        "query": "\"The Inheritance\" \"Paul McAuley\" \"2007\" story",
+        "reason": "恢复下一队列时错误假设题名，仅只读检索；不映射本lane身份，不据此新增分析。"
+      },
+      {
+        "query": "\"The Illustrated Biography of Lord Grimm\" \"Daryl Gregory\" story review",
+        "reason": "恢复下一队列时错误假设题名，仅只读检索；不映射本lane身份，不据此新增分析。"
+      },
+      {
+        "query": "\"The Merchant and the Alchemist's Gate\" \"Strahan\"",
+        "reason": "恢复下一队列时错误假设题名，仅只读检索；不映射本lane身份，不据此新增分析。"
+      }
+    ],
+    "ends_at_fast_index": 759,
+    "next_fast_index": 760,
+    "freeze_date": "2026-10-05",
+    "session_inherited_baseline_sha256": "0e689c13dbc0516dcb1ebb1b6c48b5780225ce0ae212d60680548930cba26282",
+    "snapshot_point": "冻结自查时读取的完整统一快照；不声称与批次开始同一版本。",
+    "audit_snapshot_sha256": "38becbe9f840483ed0cc4b5835c9adce074998b870b554b745904558f3d25806",
+    "self_check": "原身份与当前缺口、唯一lane索引、合法topics、三议题字段、两项具体facet、实际URL范围与知识声明、独立空间仅原未知字段检查通过；不是独立书目、全文或科学核验。"
+  },
+  "records": [
+    {
+      "id": "Q106102664",
+      "identity": {
+        "title": "The Accord",
+        "author": "Keith Brooke"
+      },
+      "fast_index": 717,
+      "lane_index": 602,
+      "source_sort_year": 2007,
+      "priority_rank": 2927,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Accord\" \"Keith Brooke\" \"2007\" story"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.keithbrooke.co.uk/bibliography.php?type=short",
+          "material_kind": "author_short_story_bibliography_identity_only",
+          "support_scope": "实际读作者单篇书目，The Accord为2007 Solaris首刊及后续重印，身份/发表范围；不支持2007单篇具体情节。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "作者书目确认2007单篇The Accord，检索却主要返回2009扩写长篇简介；没有本篇可对应情节，不能以Noah/Priscilla长篇情节替代，首轮延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q106129089",
+      "identity": {
+        "title": "Stray",
+        "author": "Benjamin Rosenbaum / David Ackert"
+      },
+      "fast_index": 718,
+      "lane_index": 603,
+      "source_sort_year": 2007,
+      "priority_rank": 2931,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Stray\" \"Benjamin Rosenbaum\" \"David Ackert\" story review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.eyrie.org/~eagle/reviews/magazines/fsf-2007-12.html",
+          "material_kind": "specific_story_community_review_passage",
+          "support_scope": "实际读Russ Allbery对Stray的专段，fae在人类间生活、压抑反应、诱惑与排斥；未读原篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://plaidspots.plaidscape.net/2018/04/101-short-stories-in-101-days-part-2/",
+          "material_kind": "specific_story_reader_review_passage",
+          "support_scope": "实际读Stray专段，主角的力量与为好理由操纵他人的挣扎；不取同页其他故事。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q108292511",
+      "identity": {
+        "title": "Kyōran Kazoku Nikki",
+        "author": "日日日"
+      },
+      "fast_index": 719,
+      "lane_index": 604,
+      "source_sort_year": 2007,
+      "priority_rank": 2935,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Kyōran Kazoku Nikki\" \"2007\" manga Akira synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ky%C5%8Dran_Kazoku_Nikki",
+          "material_kind": "community_cross_media_identity_metadata",
+          "support_scope": "实际读轻小说/漫画/动画形态与署名表及通行原作剧情开局；用于发现改编粒度差异，不作为本漫画具体情节核验。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "底库为2007日语漫画系列且署Akira，检索页区分2005轻小说、2007 Eshika/Shogo漫画及2008动画；只得到通行原作家庭计划梗概，不能未经对应继承给漫画全系列，首轮延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q11748410",
+      "identity": {
+        "title": "Krucjata: Księga I",
+        "author": "Eugeniusz Dębski"
+      },
+      "fast_index": 720,
+      "lane_index": 605,
+      "source_sort_year": 2007,
+      "priority_rank": 2939,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Krucjata\" \"Księga I\" \"Eugeniusz Dębski\" opis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.eugeniuszdebski.pl/powies.php",
+          "material_kind": "author_novel_bibliography_identity_only",
+          "support_scope": "实际读作者长篇书目列Krucjata I及II，只有题名/版本身份，不支持剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "作者书目仅列Krucjata:Księga I/II，其他返回为书目而没有第1卷具体事件；不由十字军题名或续卷推剧情，快速延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q122085083",
+      "identity": {
+        "title": "Élise",
+        "author": "Michel Vézina"
+      },
+      "fast_index": 721,
+      "lane_index": 606,
+      "source_sort_year": 2007,
+      "priority_rank": 2942,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Élise\" \"Michel Vézina\" résumé"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://festival-fil.qc.ca/wp-content/uploads/2023/08/FIL_programme_2014.pdf",
+          "material_kind": "literary_festival_program_specific_bibliographic_passage",
+          "support_scope": "实际读FIL节目册返回Michel Vézina/Élise书目发展与2014 Les derniers vivants末卷演出段，只支持版本/系列疑点。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "实际资料说明2007重写1985作品并向多作者系列发展，但只描述2014末卷演出；缺2007 Élise本书情节，不能把末卷或整系列计划代补，首轮延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q131381649",
+      "identity": {
+        "title": "Shelter",
+        "author": "Susan Palwick"
+      },
+      "fast_index": 722,
+      "lane_index": 607,
+      "source_sort_year": 2007,
+      "priority_rank": 2946,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Shelter\" \"Susan Palwick\" publisher synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://us.macmillan.com/books/9781429959650/shelter/",
+          "material_kind": "publisher_exact_novel_synopsis_and_returned_opening_location",
+          "support_scope": "实际读Macmillan Book Details完整简介及返回Chapter 1开头的San Francisco/Telegraph Hill地点；未读整章或小说全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q133262311",
+      "identity": {
+        "title": "Superheld auf See",
+        "author": "Carlo Panaro"
+      },
+      "fast_index": 723,
+      "lane_index": 608,
+      "source_sort_year": 2007,
+      "priority_rank": 2950,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Superheld auf See\" \"Carlo Panaro\" story"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://buchwurm.org/lustiges-taschenbuch-90-jahre-donald-band-2/",
+          "material_kind": "specific_comic_story_review_and_identity",
+          "support_scope": "实际读本篇专段、原题/码/2007/25页及热带邮轮、Scrooge交易、Maharaja不认可情节；其他漫画段落不采用。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.lustiges-taschenbuch.de/ausgaben/nebenreihen/ultimate-phantomias/band-32",
+          "material_kind": "official_comic_contents_exact_story_identity_only",
+          "support_scope": "实际读官方目录本篇Superheld auf See及I PKC 27-1身份行；只支持篇名/原版日期和页数，不支持独立剧情阅读。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q134700882",
+      "identity": {
+        "title": "The Tomb Wife",
+        "author": "Gwyneth Jones"
+      },
+      "fast_index": 724,
+      "lane_index": 609,
+      "source_sort_year": 2007,
+      "priority_rank": 2954,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Tomb Wife\" \"Gwyneth Jones\" review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://tangentonline.com/print-monthly/fasf/the-magazine-of-fantasy-a-science-fiction-august-2007/",
+          "material_kind": "professional_issue_review_exact_story_passage",
+          "support_scope": "实际读Alex Dally MacFarlane评论The Tomb Wife专段，Lar’sz’墓、配偶词义、无骨骸、Elen听脚步与货船；未读原篇。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://aqueductpress.blogspot.com/2009/05/gwyneth-joness-buonarotti-quartet.html?showComment=1241224200000",
+          "material_kind": "publisher_author_statement_exact_story_setting_passage",
+          "support_scope": "实际读Aqueduct公告内作者说明，明确本篇在星船、共享现实及导航可能失常段；仅作作者设定解释，不是原篇全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q136343989",
+      "identity": {
+        "title": "A Certain Magical Index SS",
+        "author": "镰池和马"
+      },
+      "fast_index": 725,
+      "lane_index": 610,
+      "source_sort_year": 2007,
+      "priority_rank": 2958,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"A Certain Magical Index SS\" Yen Press synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://yenpress.com/titles/9781975317980-a-certain-magical-index-ss-vol-1-light-novel",
+          "material_kind": "publisher_first_side_story_volume_identity_and_opening_only",
+          "support_scope": "实际读Yen Press第一册简介/署名/2020英译版资料，只支持SS第一册与railgun母亲来访，不支持本分析已有知识中的Skill-Out具体事件。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_specific_knowledge_unverified"
+    },
+    {
+      "id": "Q139406930",
+      "identity": {
+        "title": "To Love Ru, Volume 2: The Steamy, Heart-Pounding Mood of a Traveler",
+        "author": "长谷见沙贵"
+      },
+      "fast_index": 726,
+      "lane_index": 611,
+      "source_sort_year": 2007,
+      "priority_rank": 2962,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"To Love Ru Vol. 2\" Seven Seas synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://books.apple.com/us/book/to-love-ru-vol-2/id1448793953",
+          "material_kind": "publisher_supplied_comic_volume_generic_series_synopsis",
+          "support_scope": "实际读Apple Books中Seven Seas供应第2卷简介，内容为全系列通用开局与2019英译元数据，不能确认本卷特定情节。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "实际Seven Seas提供的第2卷商店简介仍是全系列通用的浴缸相遇/订婚开局，没有第2卷独立事件；不直接继承首卷或全系列情节，延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q139406970",
+      "identity": {
+        "title": "To Love Ru, Volume 6: Starting Once Again",
+        "author": "长谷见沙贵"
+      },
+      "fast_index": 727,
+      "lane_index": 612,
+      "source_sort_year": 2007,
+      "priority_rank": 2966,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"To Love Ru\" \"Starting Once Again\" volume 6"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.comics.org/issue/1791822/",
+          "material_kind": "comic_bibliographic_contents_search_return_only",
+          "support_scope": "实际读检索返回第5-6英译合订本的第6卷题页/重印身份与章节目录；直接打开失败，未读内页或剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "GCD返回确认第6卷Starting Once Again、重印身份及章节目录，但没有足够具体章节事件，直接打开亦失败；不按章节名Clinic of Darkness推剧情，延后。",
+      "failure_count": 2,
+      "verification_status": "knowledge_added_unverified",
+      "failed_source_reads": [
+        {
+          "url": "https://www.comics.org/issue/1791822/",
+          "reason": "web open Internal Error; no additional content used"
+        }
+      ]
+    },
+    {
+      "id": "Q139858844",
+      "identity": {
+        "title": "One Piece, Volume 48: Adventures of Oars",
+        "author": "尾田荣一郎"
+      },
+      "fast_index": 728,
+      "lane_index": 613,
+      "source_sort_year": 2007,
+      "priority_rank": 2970,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q139858844",
+        "work_id": "OL16803860W",
+        "record_sha256": "4369a062170883e7f83ead850b7d46658175ce1f24c29f5c8c748023521e9872"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL16803860W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "4369a062170883e7f83ead850b7d46658175ce1f24c29f5c8c748023521e9872",
+          "work_id": "OL16803860W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q140523041",
+      "identity": {
+        "title": "The Dragon Who Ate His Tail",
+        "author": "雷·布拉德伯里"
+      },
+      "fast_index": 729,
+      "lane_index": 614,
+      "source_sort_year": 2007,
+      "priority_rank": 2974,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Dragon Who Ate His Tail\" Bradbury 2007 contents"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Dragon_Who_Ate_His_Tail",
+          "material_kind": "community_collection_contents_selected_story_identity_only",
+          "support_scope": "实际读2007混合小册形态及To the Future、Fox and Forest剧本片段等目录；只证明选篇收录，具体逃亡情节为已有知识。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_specific_knowledge_unverified"
+    },
+    {
+      "id": "Q16956245",
+      "identity": {
+        "title": "The Year's Best Science Fiction: Twenty-Fourth Annual Collection",
+        "author": "作者未知"
+      },
+      "fast_index": 730,
+      "lane_index": 615,
+      "source_sort_year": 2007,
+      "priority_rank": 2978,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Year's Best Science Fiction\" \"Twenty-Fourth\" contents"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Year%27s_Best_Science_Fiction%3A_Twenty-Fourth_Annual_Collection",
+          "material_kind": "community_anthology_contents_selected_story_identity_only",
+          "support_scope": "实际读2007第24集目录明确收录Cory Doctorow I, Row-boat与2006故事范围；只支持集合/选篇关系，不支持本篇具体剧情核验。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://us.macmillan.com/books/9780312363352/theyearsbestsciencefictiontwentyfourthannualcollection/",
+          "material_kind": "publisher_anthology_identity_and_contributor_list_only",
+          "support_scope": "实际读Macmillan第24集简介、28篇及作者列表/2007版元数据；只支持选集身份，不提供Robbie情节。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_specific_knowledge_unverified"
+    },
+    {
+      "id": "Q2609207",
+      "identity": {
+        "title": "Halo: Ghosts of Onyx",
+        "author": "艾瑞克·尼伦德"
+      },
+      "fast_index": 731,
+      "lane_index": 617,
+      "source_sort_year": 2007,
+      "priority_rank": 2983,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": null,
+      "sources": [],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_specific_knowledge_unverified"
+    },
+    {
+      "id": "Q30078122",
+      "identity": {
+        "title": "Nebula Awards Showcase 2007",
+        "author": "作者未知"
+      },
+      "fast_index": 732,
+      "lane_index": 618,
+      "source_sort_year": 2007,
+      "priority_rank": 2986,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Nebula Awards Showcase 2007\" contents"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nebula_Awards_Showcase_2007",
+          "material_kind": "community_anthology_contents_selected_story_identity_only",
+          "support_scope": "实际读本卷混合选集说明与目录，确认Kelly Link Magic for Beginners完整篇收录；只支持集合/选篇身份，情节来自已有知识。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "analysis_basis": "existing_work_specific_knowledge_unverified"
+    },
+    {
+      "id": "Q3149820",
+      "identity": {
+        "title": "Incarceron",
+        "author": "Catherine Fisher"
+      },
+      "fast_index": 733,
+      "lane_index": 619,
+      "source_sort_year": 2007,
+      "priority_rank": 2989,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q3149820",
+        "work_id": "OL3116570W",
+        "record_sha256": "cfc82df91561241a047167de15a6cecb13f00ceef58883826870417f06ef92d2"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL3116570W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "cfc82df91561241a047167de15a6cecb13f00ceef58883826870417f06ef92d2",
+          "work_id": "OL3116570W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q3233120",
+      "identity": {
+        "title": "Les Guetteurs d'Azulis",
+        "author": "Éric Boisset"
+      },
+      "fast_index": 734,
+      "lane_index": 621,
+      "source_sort_year": 2007,
+      "priority_rank": 2994,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Les Guetteurs d'Azulis\" Boisset résumé"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.mollat.com/livres/1031320/eric-boisset-les-guetteurs-d-azulis",
+          "material_kind": "bookseller_search_return_short_opening_only",
+          "support_scope": "实际读检索返回本书Abel/Éa逃出法国短句及作者，直接页面Internal Error；不足完整具体分析。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "检索只返回Abel与Éa被迫逃出法国的短句，直接Mollat读取失败；缺追索者及行动条件，不从外星停电通用镜像补入，快速延后。",
+      "failure_count": 2,
+      "verification_status": "knowledge_added_unverified",
+      "failed_source_reads": [
+        {
+          "url": "https://www.mollat.com/livres/1031320/eric-boisset-les-guetteurs-d-azulis",
+          "reason": "web open Internal Error; no additional content used"
+        }
+      ]
+    },
+    {
+      "id": "Q3757443",
+      "identity": {
+        "title": "Galaxy Blues",
+        "author": "艾倫‧史提爾"
+      },
+      "fast_index": 735,
+      "lane_index": 622,
+      "source_sort_year": 2007,
+      "priority_rank": 2997,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Galaxy Blues\" \"Allen Steele\" publisher"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.publishersweekly.com/978-0-441-01564-1",
+          "material_kind": "professional_exact_novel_review_search_cache",
+          "support_scope": "实际读PW本卷完整评论剧情段，Jules开除/偷渡、富翁驾驶工作、hjadd贸易与Talus太空城；略过评论审美评价，未读原作。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q3817800",
+      "identity": {
+        "title": "Kôt. Un enigma lungo mille anni",
+        "author": "Rafael Ábalos"
+      },
+      "fast_index": 736,
+      "lane_index": 623,
+      "source_sort_year": 2007,
+      "priority_rank": 3001,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Kôt\" \"Rafael Ábalos\" sinopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.wook.pt/livro/kot-rafael-abalos/225464",
+          "material_kind": "bookseller_search_return_short_opening_only",
+          "support_scope": "实际读搜索返回神经学家死亡与手掌标记短句，直接页Cache miss；未读完整简介。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": "检索只读到神经学家无伤死亡/手掌Kôt标记的短句，Wook直接打开失败；缺人物行动与千年谜团的对应，首轮延后，不以科技术语猜情节。",
+      "failure_count": 2,
+      "verification_status": "knowledge_added_unverified",
+      "failed_source_reads": [
+        {
+          "url": "https://www.wook.pt/livro/kot-rafael-abalos/225464",
+          "reason": "web open Cache miss; no additional content used"
+        }
+      ]
+    },
+    {
+      "id": "Q437349",
+      "identity": {
+        "title": "Sandworms of Dune",
+        "author": "凱文·詹姆士·安德森 / 布萊恩·帕特里克·赫伯特"
+      },
+      "fast_index": 737,
+      "lane_index": 625,
+      "source_sort_year": 2007,
+      "priority_rank": 3008,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Sandworms of Dune\" publisher synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://us.macmillan.com/books/9781427201133/sandwormsofdune/",
+          "material_kind": "publisher_exact_novel_audio_edition_synopsis",
+          "support_scope": "实际读Macmillan Audio本书Book Details，Ithaca逃亡者重建Paul/Jessica并使用才能；未听有声原作或读样章。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://www.hachette.co.uk/titles/brian-herbert-2/sandworms-of-dune/9780340837528/",
+          "material_kind": "publisher_exact_book_synopsis_search_cache",
+          "support_scope": "实际读Hachette本书完整简介，thinking machines流亡而非消灭/重返及Ithaca幸存威胁；2008平装元数据不覆盖原2007。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q48805142",
+      "identity": {
+        "title": "Melma",
+        "author": "Eraldo Baldini"
+      },
+      "fast_index": 738,
+      "lane_index": 627,
+      "source_sort_year": 2007,
+      "priority_rank": 3015,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Melma\" \"Eraldo Baldini\" trama"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.edizioniambiente.it/catalogo/melma",
+          "material_kind": "publisher_exact_book_synopsis_search_cache",
+          "support_scope": "实际打开并读官方Descrizione完整剧情、2050意大利/Dipartimento/Area 1/Cattelan及2007元数据；作者环保声明作为说明而非额外剧情，未读小说。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q5162401",
+      "identity": {
+        "title": "Conqueror",
+        "author": "斯蒂芬·巴科斯特"
+      },
+      "fast_index": 739,
+      "lane_index": 628,
+      "source_sort_year": 2007,
+      "priority_rank": 3018,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Conqueror\" \"Stephen Baxter\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/299467/conqueror-by-stephen-baxter/",
+          "material_kind": "publisher_exact_book_synopsis_search_cache",
+          "support_scope": "实际读PRH本卷完整Book Description，Lindisfarne女孩伪装、Vikings毁卷、家族记忆和William；未读Read Sample。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q5420270",
+      "identity": {
+        "title": "Exile",
+        "author": "Aaron Allston"
+      },
+      "fast_index": 740,
+      "lane_index": 630,
+      "source_sort_year": 2007,
+      "priority_rank": 3025,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Exile\" \"Aaron Allston\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.goodreads.com/book/show/37858542",
+          "material_kind": "bibliographic_site_exact_novel_publisher_synopsis_search_cache",
+          "support_scope": "实际读Goodreads本卷完整出版简介检索缓存；直接打开Internal Error，未得额外内容，不把用户评论当本轮材料。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "failed_source_reads": [
+        {
+          "url": "https://www.goodreads.com/book/show/37858542",
+          "reason": "direct open Internal Error; search returned full synopsis used"
+        }
+      ]
+    },
+    {
+      "id": "Q5452000",
+      "identity": {
+        "title": "Firestorm",
+        "author": "Dan Cragg / David Sherman"
+      },
+      "fast_index": 741,
+      "lane_index": 631,
+      "source_sort_year": 2007,
+      "priority_rank": 3029,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Firestorm\" \"Dan Cragg\" \"David Sherman\" synopsis"
+      ],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q5452000",
+        "work_id": "OL14963616W",
+        "record_sha256": "802c320e2810735cb097698ff0f2a4de001991d93afff059dd384680bfef40a1"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL14963616W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "802c320e2810735cb097698ff0f2a4de001991d93afff059dd384680bfef40a1",
+          "work_id": "OL14963616W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q54802865",
+      "identity": {
+        "title": "Reap the Whirlwind",
+        "author": "大衛·艾倫·麥克"
+      },
+      "fast_index": 742,
+      "lane_index": 632,
+      "source_sort_year": 2007,
+      "priority_rank": 3030,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Reap the Whirlwind\" \"David Mack\" Simon Schuster"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://davidmack.pro/writing/reap-the-whirlwind/",
+          "material_kind": "author_exact_novel_synopsis_search_cache",
+          "support_scope": "实际读作者本卷完整正式简介与2007出版资料，Jinoteur4/三势力/Shedai苏醒与船员牺牲；不取引文审美评价或另页annotations。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q55230367",
+      "identity": {
+        "title": "Demands of Honor",
+        "author": "Kevin J. Ryan"
+      },
+      "fast_index": 743,
+      "lane_index": 633,
+      "source_sort_year": 2007,
+      "priority_rank": 3034,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Demands of Honor\" \"Kevin Ryan\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.goodreads.com/book/show/12355339-demands-of-honor",
+          "material_kind": "bibliographic_site_exact_novel_publisher_synopsis_search_cache",
+          "support_scope": "实际读Goodreads本卷完整出版简介检索缓存；直接页面Internal Error，仅缓存支持舰船对峙及三个人物本卷处境。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified",
+      "failed_source_reads": [
+        {
+          "url": "https://www.goodreads.com/book/show/12355339-demands-of-honor",
+          "reason": "direct open Internal Error; full search synopsis used"
+        }
+      ]
+    },
+    {
+      "id": "Q5554685",
+      "identity": {
+        "title": "Getting to Know You",
+        "author": "David Marusek"
+      },
+      "fast_index": 744,
+      "lane_index": 634,
+      "source_sort_year": 2007,
+      "priority_rank": 3038,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Getting to Know You\" \"David Marusek\" \"Wedding Album\""
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://subterraneanpress.com/getting-to-know-you/",
+          "material_kind": "publisher_collection_contents_and_reprinted_specific_story_review",
+          "support_scope": "实际读官方集合页目录及所载Dave Itzkoff评论The Wedding Album专段；转载评论支持复制者与世纪衰变，不是原篇全文或NYT直接读取。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q6058079",
+      "identity": {
+        "title": "Into the Looking Glass",
+        "author": "John Ringo"
+      },
+      "fast_index": 745,
+      "lane_index": 635,
+      "source_sort_year": 2007,
+      "priority_rank": 3042,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Into the Looking Glass\" \"John Ringo\" Baen synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.simonandschuster.com/books/Into-the-Looking-Glass/John-Ringo/9780743498807",
+          "material_kind": "publisher_exact_book_synopsis_search_cache",
+          "support_scope": "实际读Baen/S&S完整本书About the Book，无辐射爆炸/实验门户、Weaver/Miller、Dreen与友方灭地球压力；未读Sample。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7157601",
+      "identity": {
+        "title": "Peacemaker",
+        "author": "詹姆斯·斯瓦羅"
+      },
+      "fast_index": 746,
+      "lane_index": 637,
+      "source_sort_year": 2007,
+      "priority_rank": 3048,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Peacemaker\" \"James Swallow\" Doctor Who synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [],
+      "no_material_reason": "一次精确James Swallow/Doctor Who Peacemaker查询未返回可用本书具体情节；不以同名和平使者或旁卷代补，首轮延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7507564",
+      "identity": {
+        "title": "Sick Building",
+        "author": "保罗·马规茨"
+      },
+      "fast_index": 747,
+      "lane_index": 638,
+      "source_sort_year": 2007,
+      "priority_rank": 3051,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Sick Building\" \"Paul Magrs\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sick_Building",
+          "material_kind": "community_exact_novel_short_plot_summary",
+          "support_scope": "实际打开并定位Plot summary完整短段，Tiermann家庭/Dreamhome力场/Craw/住宅反叛/冰冻地景；二手社区摘要，未读原作。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7601544",
+      "identity": {
+        "title": "Starcross",
+        "author": "菲利普·雷夫"
+      },
+      "fast_index": 748,
+      "lane_index": 639,
+      "source_sort_year": 2007,
+      "priority_rank": 3054,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q7601544",
+        "work_id": "OL15840082W",
+        "record_sha256": "83dcc7f2957fad05c253603e3a3c45e6f4469bbb2861491c4bb956109c5ebc51"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL15840082W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "83dcc7f2957fad05c253603e3a3c45e6f4469bbb2861491c4bb956109c5ebc51",
+          "work_id": "OL15840082W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7745704",
+      "identity": {
+        "title": "The Last Dodo",
+        "author": "Jacqueline Rayner"
+      },
+      "fast_index": 749,
+      "lane_index": 641,
+      "source_sort_year": 2007,
+      "priority_rank": 3061,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Last Dodo\" Jacqueline Rayner synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.penguin.co.uk/books/396330/doctor-who-the-last-dodo-by-jacqueline-rayner/9781409074007",
+          "material_kind": "publisher_exact_book_synopsis_search_cache",
+          "support_scope": "实际打开并读完整官方简介及2010电子版元数据，Museum/Earth区停滞生物/寻找Time Lord；未读小说正文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7748623",
+      "identity": {
+        "title": "The Lost Fleet: Fearless",
+        "author": "John G. Hemry"
+      },
+      "fast_index": 750,
+      "lane_index": 642,
+      "source_sort_year": 2007,
+      "priority_rank": 3065,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "fast-first-lane-1.json",
+        "id": "Q7748623",
+        "work_id": "OL8126364W",
+        "record_sha256": "ef3b3f2bab9fac5d31ae370ae544ff1f186ed31d19727d06ae4d7c04df46c280"
+      },
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL8126364W",
+          "material_kind": "openlibrary_official_dump_community_synopsis",
+          "support_scope": "实际读本ID的Open Library work dump完整description；社区维护简介，原文未独立核验，未读原作全文或直接出版社页。",
+          "reading_status": "actually_read_support_scope_only",
+          "record_sha256": "ef3b3f2bab9fac5d31ae370ae544ff1f186ed31d19727d06ae4d7c04df46c280",
+          "work_id": "OL8126364W",
+          "same_dump_title": true,
+          "same_dump_authors": true
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7757251",
+      "identity": {
+        "title": "The Pirate Loop",
+        "author": "Simon Guerrier"
+      },
+      "fast_index": 751,
+      "lane_index": 643,
+      "source_sort_year": 2007,
+      "priority_rank": 3069,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Pirate Loop\" Simon Guerrier synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Pirate_Loop",
+          "material_kind": "community_exact_novel_plot_synopsis",
+          "support_scope": "实际打开并定位本书Plot全文二手摘要，Brilliant实验引擎、循环复活/资源消耗及结尾退出选择；未读小说原文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7765299",
+      "identity": {
+        "title": "The Sons of Heaven",
+        "author": "Kage Baker"
+      },
+      "fast_index": 752,
+      "lane_index": 644,
+      "source_sort_year": 2007,
+      "priority_rank": 3072,
+      "status": "skipped_existing_canonical_analysis",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [],
+      "local_material_lookup": {
+        "manifest": "research/canonical-universe.json.gz",
+        "id": "Q7765299",
+        "lookup_result": "existing_issue_analysis"
+      },
+      "sources": [],
+      "no_material_reason": "当前统一库已knowledge_added_unverified，不重复补入。",
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q7898054",
+      "identity": {
+        "title": "Up from the Bottomless Pit and Other Stories",
+        "author": "菲利浦·荷西·法默"
+      },
+      "fast_index": 753,
+      "lane_index": 645,
+      "source_sort_year": 2007,
+      "priority_rank": 3076,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Up from the Bottomless Pit and Other Stories\" publisher"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.philipjosefarmer.com/NovCol/NCuftbp2.htm",
+          "material_kind": "author_bibliography_selected_novel_cover_synopsis_and_collection_relation",
+          "support_scope": "实际读官方作者书目本篇Cover Text及2007集合收录/2020单行版历史；1970年代架空激光石油灾难为封底，不是原文。",
+          "reading_status": "actually_read_support_scope_only"
+        },
+        {
+          "url": "https://subterraneanpress.com/up-from-the-bottomless-pit/",
+          "material_kind": "publisher_mixed_collection_scope_only",
+          "support_scope": "实际读Subterranean集合说明，含完整novel、短篇、novel beginning、nonfiction；只用于集合粒度，不提供其它篇剧情。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q8027613",
+      "identity": {
+        "title": "Wishing Well",
+        "author": "Trevor Baxendale"
+      },
+      "fast_index": 754,
+      "lane_index": 647,
+      "source_sort_year": 2007,
+      "priority_rank": 3082,
+      "status": "deferred_identity_or_material",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Wishing Well\" \"Trevor Baxendale\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [],
+      "no_material_reason": "一次精确作者/题名查询未返回可对应本书事件，不能从Wishing Well愿望井题名或相邻Doctor Who卷猜机制，首轮延后。",
+      "failure_count": 1,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q92431026",
+      "identity": {
+        "title": "The Skysailor's Tale",
+        "author": "迈克尔·斯万维克"
+      },
+      "fast_index": 755,
+      "lane_index": 648,
+      "source_sort_year": 2007,
+      "priority_rank": 3086,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Skysailor's Tale\" \"Michael Swanwick\" synopsis"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.sffchronicles.com/threads/528840/",
+          "material_kind": "community_anthology_review_exact_story_passage",
+          "support_scope": "实际读所列The Skysailor’s Tale专段，青年、另类独立战争美国、英国氢气球千人飞行器；二手社区阅读记录，不取同帖其它篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q105722739",
+      "identity": {
+        "title": "The Cartesian Theater",
+        "author": "羅伯特·查爾斯·威爾森"
+      },
+      "fast_index": 756,
+      "lane_index": 649,
+      "source_sort_year": 2006,
+      "priority_rank": 3090,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"The Cartesian Theater\" \"Robert Charles Wilson\" story review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://speculiction.blogspot.com/2014/08/review-of-cartesian-theater-by-robert.html",
+          "material_kind": "community_exact_short_story_review_search_cache",
+          "support_scope": "实际读Jesse本篇完整评论的具体开局，机器人替代、Toby灰色工作、祖父神经义体认知；不取其哲学评价为原文事实，未读故事。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q105728354",
+      "identity": {
+        "title": "Life on the Preservation",
+        "author": "Jack Skillingstead"
+      },
+      "fast_index": 757,
+      "lane_index": 650,
+      "source_sort_year": 2006,
+      "priority_rank": 3094,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Life on the Preservation\" \"2006\" \"Skillingstead\" story review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.thebooksmugglers.com/2013/05/life-on-the-preservation-jack-skillingstead-on-inspirations-influences.html",
+          "material_kind": "author_statement_original_short_story_synopsis_and_expansion_boundary",
+          "support_scope": "实际读作者署名Transforming the Preservation中回顾2005创作/2006刊行原单篇的完整情节概述与扩写区分；非原篇全文或2013长篇继承。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q106238091",
+      "identity": {
+        "title": "In the River",
+        "author": "Justin Stanchfield"
+      },
+      "fast_index": 758,
+      "lane_index": 651,
+      "source_sort_year": 2006,
+      "priority_rank": 3098,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"In the River\" \"Justin Stanchfield\" story review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://www.sfrevu.com/php/Review-id.php?id=5519",
+          "material_kind": "professional_anthology_review_exact_story_passages",
+          "support_scope": "实际读具名年度24集评论In the River两个专段，研究者变形学异族数学/返回人的困难和工作婚姻裂痕；只取本篇，未读原篇。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    },
+    {
+      "id": "Q106273978",
+      "identity": {
+        "title": "Home Movies",
+        "author": "Mary Rosenblum"
+      },
+      "fast_index": 759,
+      "lane_index": 652,
+      "source_sort_year": 2006,
+      "priority_rank": 3102,
+      "status": "analysis_added_unverified",
+      "publication_status": "source_candidate_year_not_independently_verified",
+      "queries": [
+        "\"Home Movies\" \"Mary Rosenblum\" story review"
+      ],
+      "local_material_lookup": null,
+      "sources": [
+        {
+          "url": "https://tangentonline.com/print-monthly/asimovs/asimovs-aprilmay-2006/",
+          "material_kind": "professional_issue_review_exact_story_passage",
+          "support_scope": "实际读Janice Clark评论Home Movies完整本篇返回段，Kayla感官纳米记录/遗忘/匿名泄漏和家庭录制恋爱；未读原篇全文。",
+          "reading_status": "actually_read_support_scope_only"
+        }
+      ],
+      "no_material_reason": null,
+      "failure_count": 0,
+      "verification_status": "knowledge_added_unverified"
+    }
+  ]
+}
