@@ -1,4 +1,4 @@
-import {CLASSIFICATION_REGISTRY} from './classifications.mjs?v=registry10';
+import {CLASSIFICATION_REGISTRY} from './classifications.mjs?v=registry11';
 export const ERA_BOUNDS = [
  {id:'before1800',label:'1800 年以前',min:-Infinity,max:1799},
  {id:'1800',label:'1800—1899',min:1800,max:1899},
