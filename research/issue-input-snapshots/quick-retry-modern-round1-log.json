@@ -1,0 +1,2689 @@
+{
+  "metadata": {
+    "method": "knowledge-based-v1",
+    "status": "frozen_checkpoint",
+    "lane": 2,
+    "ownership_file": "work/evidence/quick-retry-lane-2.json",
+    "ownership_sha256": "f1e3bce7c91b9744ab300726ea85acd26e5f195553ce022a63559cc16e04bda5",
+    "note": "已有过程且核心仍missing的互斥复查；每身份一次不同旧查询的精准检索，至多一次容易直接打开。已有知识、目录与内容范围分开，解释全待独立核验；失败累计后置，不将延期称为完成。",
+    "record_count": 22,
+    "deferred_count": 10,
+    "checkpoint": "quick-retry-modern-round1",
+    "scope_note": "复查首32等互斥身份；旧查询/材料与失败次数逐条保留，新查询不同旧式。普通书介足够时短核心+两问题，目录选例用明确已有知识；局部原文、社区材料、译版与预告范围分别标记。所有解释仍未独立核验，延期不是补全。",
+    "field_count": 66,
+    "facet_count": 44,
+    "retry_identity_count": 32,
+    "actual_query_count": 31,
+    "zero_query_knowledge_count": 1,
+    "bibliographic_only_plus_knowledge_count": 4,
+    "actual_content_analysis_count": 17,
+    "partial_original_excerpt_count": 1,
+    "original_full_text_count": 0,
+    "ownership_unprocessed_after_checkpoint": 635,
+    "next_retry_queue_index": 32,
+    "direct_open_count": 12,
+    "direct_open_failed_count": 2
+  },
+  "records": [
+    {
+      "id": "Q139888331",
+      "identity": {
+        "title": "One Piece, Volume 111: Adventure in Elbaph",
+        "author": "尾田荣一郎"
+      },
+      "pool_index": 1,
+      "queries": [
+        "\"One Piece\" \"111\" site:viz.com Elbaph"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139888331",
+        "identity": {
+          "title": "One Piece, Volume 111: Adventure in Elbaph",
+          "author": "尾田荣一郎"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"One Piece\" \"Vol. 111\" publisher Elbaph"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://discover.bklynlibrary.org/item?b=12931254",
+            "material_type": "public_library_catalog_search_return",
+            "result": "catalog_only",
+            "reading_scope": "实际搜索返回111卷题名、Eiichiro Oda及译者，未含单卷剧情。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://discover.bklynlibrary.org/item?b=12931254",
+            "material_type": "public_library_direct_open",
+            "result": "fetch_failed",
+            "reading_scope": "实际打开L0–6仅导航与需要启用JavaScript，未读剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "仅所列实际搜索返回或打开范围；无原作阅读。",
+        "reason_unconfirmed": "缺可读取的111卷确切剧情；未把只见到的读者章节号、动画或整个Elbaph后续套为本卷。",
+        "next_step": "延后查可读取的精确单卷或选篇材料；首轮继续其他身份。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "root-fast-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q139888331",
+          "identity": {
+            "title": "One Piece, Volume 111: Adventure in Elbaph",
+            "author": "尾田荣一郎"
+          },
+          "attempt_state": "source_search_attempted",
+          "queries": [
+            "\"One Piece\" \"Vol. 111\" publisher Elbaph"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://discover.bklynlibrary.org/item?b=12931254",
+              "material_type": "public_library_catalog_search_return",
+              "result": "catalog_only",
+              "reading_scope": "实际搜索返回111卷题名、Eiichiro Oda及译者，未含单卷剧情。",
+              "read_date": "2026-10-05"
+            },
+            {
+              "url": "https://discover.bklynlibrary.org/item?b=12931254",
+              "material_type": "public_library_direct_open",
+              "result": "fetch_failed",
+              "reading_scope": "实际打开L0–6仅导航与需要启用JavaScript，未读剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "actual_search_performed": true,
+          "reading_scope": "仅所列实际搜索返回或打开范围；无原作阅读。",
+          "issue_result": "not_added_specific_content_or_identity_needed",
+          "reason_unconfirmed": "缺可读取的111卷确切剧情；未把只见到的读者章节号、动画或整个Elbaph后续套为本卷。",
+          "failure_count": 1,
+          "unsuccessful_attempt_count": 1,
+          "next_step": "延后查可读取的精确单卷或选篇材料；首轮继续其他身份。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1,
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.viz.com/manga-books/manga/one-piece-volume-111/product/8750"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.viz.com/manga-books/manga/one-piece-volume-111/product/8750",
+          "support_scope": "本次实际查询读到 VIZ 精确111卷书介，支持贝加庞克消息与五老星围攻；未读漫画正文，不借112卷罗宾与萨乌罗重逢或整个艾尔巴夫后续。英文版标2026，底库2025原标签保持。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读到 VIZ 精确111卷书介，支持贝加庞克消息与五老星围攻；未读漫画正文，不借112卷罗宾与萨乌罗重逢或整个艾尔巴夫后续。英文版标2026，底库2025原标签保持。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q134525267",
+      "identity": {
+        "title": "Not Till We Are Lost",
+        "author": "Dennis E. Taylor"
+      },
+      "pool_index": 3,
+      "queries": [
+        "\"Not Till We Are Lost\" publisher Bobiverse description"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134525267",
+        "identity": {
+          "title": "Not Till We Are Lost",
+          "author": "Dennis E. Taylor"
+        },
+        "attempt_state": "deferred_single_search_insufficient",
+        "queries": [
+          "\"Not Till We Are Lost\" \"Dennis E. Taylor\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://catalog.spokanelibrary.org/catalog/Record/49ad3ef5-3631-4ba2-a5ee-0d5aa651be82",
+            "result": "catalog_only_or_page_fetch_failed",
+            "reading_scope": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+        "reason_unconfirmed": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+        "next_step": "首轮其他身份之后再重试明确本卷内容。",
+        "issue_result": "not_added",
+        "attempt_input": "root-fast-round12-log.json",
+        "raw_reading_log": {
+          "id": "Q134525267",
+          "identity": {
+            "title": "Not Till We Are Lost",
+            "author": "Dennis E. Taylor"
+          },
+          "attempt_state": "deferred_single_search_insufficient",
+          "queries": [
+            "\"Not Till We Are Lost\" \"Dennis E. Taylor\" synopsis"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://catalog.spokanelibrary.org/catalog/Record/49ad3ef5-3631-4ba2-a5ee-0d5aa651be82",
+              "result": "catalog_only_or_page_fetch_failed",
+              "reading_scope": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+              "read_date": "2026-10-04"
+            }
+          ],
+          "reading_scope": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+          "issue_result": "not_added",
+          "reason_unconfirmed": "搜索只给图书馆书目行，打开cache miss，不能从Bobiverse其他卷继承本卷剧情。",
+          "next_step": "首轮其他身份之后再重试明确本卷内容。"
+        }
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.simonandschuster.com/books/Not-Till-We-Are-Lost/Dennis-E-Taylor/Bobiverse/9781668221655"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.simonandschuster.com/books/Not-Till-We-Are-Lost/Dennis-E-Taylor/Bobiverse/9781668221655",
+          "support_scope": "本次查询后直接读取 Simon & Schuster 第五卷书介，支持议会分裂、Skippies实验和银河核心发现；非原作全文。2026纸本版与底库2024音频口径不同，不默改纪年。"
+        }
+      ],
+      "exact_support_scope": "本次查询后直接读取 Simon & Schuster 第五卷书介，支持议会分裂、Skippies实验和银河核心发现；非原作全文。2026纸本版与底库2024音频口径不同，不默改纪年。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.simonandschuster.com/books/Not-Till-We-Are-Lost/Dennis-E-Taylor/Bobiverse/9781668221655",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q139955606",
+      "identity": {
+        "title": "The Will. Vol.3",
+        "author": "作者未知"
+      },
+      "pool_index": 4,
+      "queries": [
+        "\"Воля\" \"3\" \"комікс\" 2024 сюжет"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139955606",
+        "identity": {
+          "title": "The Will. Vol.3",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"The Will\" \"Vol. 3\" comic Ukraine 2024"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "检索结果落到Saga的The Will等异作，没有本乌克兰漫画第3卷情节；不套其他同名角色。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round15-log.json",
+        "raw_reading_log": {
+          "id": "Q139955606",
+          "identity": {
+            "title": "The Will. Vol.3",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"The Will\" \"Vol. 3\" comic Ukraine 2024"
+          ],
+          "materials_checked": [],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "检索结果落到Saga的The Will等异作，没有本乌克兰漫画第3卷情节；不套其他同名角色。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://thewill.com.ua/komiks-volia-3/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://thewill.com.ua/komiks-volia-3/",
+          "support_scope": "本次实际直接读取 The Will Production 的2024第三卷乌克兰文出版简介；支持替代1919、超级武器、僵尸中继器任务。非漫画正文，不借前卷或同名 Saga 人物。"
+        }
+      ],
+      "exact_support_scope": "本次实际直接读取 The Will Production 的2024第三卷乌克兰文出版简介；支持替代1919、超级武器、僵尸中继器任务。非漫画正文，不借前卷或同名 Saga 人物。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://thewill.com.ua/komiks-volia-3/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q123122936",
+      "identity": {
+        "title": "The Best American Science Fiction and Fantasy 2023",
+        "author": "凯瑟琳·M·瓦伦特 / John Joseph Adams / Stephen Graham Jones / Susan Palwick / Theodora Goss / Sofia Samatar / Kim Fu / Malka Older / S. L. Huang / Nathan Ballingrud / 匡灵秀 / 查理·珍·安德絲 / Chris Willrich / Isabel Cañas / Shingai Njeri Kagunda / Kristina Ten / Isabel J. Kim / Samantha Mills / Linda Raquel Nieves Peréz / Maria Dong / KT Bryski / MKRNYILGLD"
+      },
+      "pool_index": 5,
+      "queries": [
+        "\"Best American Science Fiction and Fantasy 2023\" \"Rabbit Test\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q123122936",
+        "identity": {
+          "title": "The Best American Science Fiction and Fantasy 2023",
+          "author": "凯瑟琳·M·瓦伦特 / John Joseph Adams / Stephen Graham Jones / Susan Palwick / Theodora Goss / Sofia Samatar / Kim Fu / Malka Older / S. L. Huang / Nathan Ballingrud / 匡灵秀 / 查理·珍·安德絲 / Chris Willrich / Isabel Cañas / Shingai Njeri Kagunda / Kristina Ten / Isabel J. Kim / Samantha Mills / Linda Raquel Nieves Peréz / Maria Dong / KT Bryski / MKRNYILGLD"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"The Best American Science Fiction and Fantasy 2023\" contents"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "本组只有社区提名/讨论提到本合集，没有实际返回可核的选篇目录与剧情。",
+        "reason_unconfirmed": "不因有熟悉作者而假定某篇入选，不能把合集名称作为统一剧情。",
+        "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round38-log.json",
+        "raw_reading_log": {
+          "id": "Q123122936",
+          "identity": {
+            "title": "The Best American Science Fiction and Fantasy 2023",
+            "author": "凯瑟琳·M·瓦伦特 / John Joseph Adams / Stephen Graham Jones / Susan Palwick / Theodora Goss / Sofia Samatar / Kim Fu / Malka Older / S. L. Huang / Nathan Ballingrud / 匡灵秀 / 查理·珍·安德絲 / Chris Willrich / Isabel Cañas / Shingai Njeri Kagunda / Kristina Ten / Isabel J. Kim / Samantha Mills / Linda Raquel Nieves Peréz / Maria Dong / KT Bryski / MKRNYILGLD"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"The Best American Science Fiction and Fantasy 2023\" contents"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [],
+          "reading_scope": "本组只有社区提名/讨论提到本合集，没有实际返回可核的选篇目录与剧情。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "不因有熟悉作者而假定某篇入选，不能把合集名称作为统一剧情。",
+          "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "bibliography_only_plus_existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.johnjosephadams.com/projects/best-american-science-fiction-and-fantasy-2023/2023-table-of-contents/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.johnjosephadams.com/projects/best-american-science-fiction-and-fantasy-2023/2023-table-of-contents/",
+          "support_scope": "本次实际读编辑官网目录确认 Rabbit Test 被本集收录；具体选篇前提来自已有知识，不是本次原篇内容读取，未读整集。其他19篇不继承该分析。"
+        }
+      ],
+      "exact_support_scope": "本次实际读编辑官网目录确认 Rabbit Test 被本集收录；具体选篇前提来自已有知识，不是本次原篇内容读取，未读整集。其他19篇不继承该分析。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q134974715",
+      "identity": {
+        "title": "86: Alter",
+        "author": "安里朝戶"
+      },
+      "pool_index": 6,
+      "queries": [
+        "\"86--EIGHTY-SIX Alter\" site:yenpress.com"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134974715",
+        "identity": {
+          "title": "86: Alter",
+          "author": "安里朝戶"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"86: Alter\" \"Asato\" stories"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://verasia.eu/reading/5145-86-eighty-six-alter-vol1-novel-by-asato-asato-9784049149876.html",
+            "material_kind": "实际同题候选内容或目录",
+            "result": "identity_or_text_scope_insufficient",
+            "reading_scope": "只读精准搜索返回第1卷与次要角色短篇的概述，未打开商品页、未取得明确篇名与剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读精准搜索返回第1卷与次要角色短篇的概述，未打开商品页、未取得明确篇名与剧情。",
+        "reason_unconfirmed": "只知道番外短篇构成，不足提取具体本合集问题，不能把86正传战斗前提套给每一篇。",
+        "next_step": "首轮后优先确认作者、单册及版本，再取得明确篇目内容；不重复首轮困难查询。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round31-log.json",
+        "raw_reading_log": {
+          "id": "Q134974715",
+          "identity": {
+            "title": "86: Alter",
+            "author": "安里朝戶"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"86: Alter\" \"Asato\" stories"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://verasia.eu/reading/5145-86-eighty-six-alter-vol1-novel-by-asato-asato-9784049149876.html",
+              "material_kind": "实际同题候选内容或目录",
+              "result": "identity_or_text_scope_insufficient",
+              "reading_scope": "只读精准搜索返回第1卷与次要角色短篇的概述，未打开商品页、未取得明确篇名与剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "只读精准搜索返回第1卷与次要角色短篇的概述，未打开商品页、未取得明确篇名与剧情。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "只知道番外短篇构成，不足提取具体本合集问题，不能把86正传战斗前提套给每一篇。",
+          "next_step": "首轮后优先确认作者、单册及版本，再取得明确篇目内容；不重复首轮困难查询。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://yenpress.com/series/86-eighty-six-alter-light-novel"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://yenpress.com/series/86-eighty-six-alter-light-novel",
+          "support_scope": "本次实际查询读到 Yen Press Alter.1 的具体集体书介；分析只针对“战斗间隙的青春片段”共同范围，未读逐篇，不套整个86正传战争或 Alter.2 魔法少女/宇宙舰番外。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读到 Yen Press Alter.1 的具体集体书介；分析只针对“战斗间隙的青春片段”共同范围，未读逐篇，不套整个86正传战争或 Alter.2 魔法少女/宇宙舰番外。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q117204380",
+      "identity": {
+        "title": "人造人100",
+        "author": "江之島大輔"
+      },
+      "pool_index": 9,
+      "queries": [
+        "\"Fabricant 100\" \"Daisuke Enoshima\" synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q117204380",
+        "identity": {
+          "title": "人造人100",
+          "author": "江之島大輔"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Android Type One-Hundred\" \"Daisuke\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "本组未返回此标题/作者匹配的剧情材料，没有打开原作或候选页。",
+        "reason_unconfirmed": "源中文人造人100与外文检索名尚未确认，不据android题名推出意识议题。",
+        "next_step": "首遍后再查精确原题与作者的官方简介；当前停止扩查。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round37-log.json",
+        "raw_reading_log": {
+          "id": "Q117204380",
+          "identity": {
+            "title": "人造人100",
+            "author": "江之島大輔"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Android Type One-Hundred\" \"Daisuke\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [],
+          "reading_scope": "本组未返回此标题/作者匹配的剧情材料，没有打开原作或候选页。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "源中文人造人100与外文检索名尚未确认，不据android题名推出意识议题。",
+          "next_step": "首遍后再查精确原题与作者的官方简介；当前停止扩查。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fabricant_100"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Fabricant_100",
+          "support_scope": "本次实际查询取得 Fabricant 100 的日文题名、作者和2022连载对应，以及具体系列前提；不是漫画正文。底库人造人100保留，不借2021试读单篇或动画情节。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询取得 Fabricant 100 的日文题名、作者和2022连载对应，以及具体系列前提；不是漫画正文。底库人造人100保留，不借2021试读单篇或动画情节。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q124975608",
+      "identity": {
+        "title": "For the Benefit of Mankind",
+        "author": "作者未知"
+      },
+      "pool_index": 10,
+      "queries": [
+        "\"For the Benefit of Mankind\" science fiction 2022 author"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q124975608",
+        "identity": {
+          "title": "For the Benefit of Mankind",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"For the Benefit of Mankind\" \"2022\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确题名与2022/story检索未取得可确认作者和具体情节；原作者未知保持，不从为人类利益的题名推伦理。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round13-log.json",
+        "raw_reading_log": {
+          "id": "Q124975608",
+          "identity": {
+            "title": "For the Benefit of Mankind",
+            "author": "作者未知"
+          },
+          "fast_index": 257,
+          "lane_index": 82,
+          "source_sort_year": 2022,
+          "priority_rank": 1087,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"For the Benefit of Mankind\" \"2022\" story"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确题名与2022/story检索未取得可确认作者和具体情节；原作者未知保持，不从为人类利益的题名推伦理。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://theslingsandarrows.com/for-the-benefit-of-mankind/",
+        "https://books.google.com/books/about/Cixin_Liu_s_For_the_Benefit_of_Mankind.html?id=XQGfEAAAQBAJ"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://theslingsandarrows.com/for-the-benefit-of-mankind/",
+          "support_scope": "本次查询并直接读取 Slings & Arrows 针对2022 Runberg/Montlló 图像改编的具体评论；非刘慈欣原短篇全文，不借原篇被改编删去的细节。Google Books 同年图像小说书目亦支持媒介身份。"
+        },
+        {
+          "url": "https://books.google.com/books/about/Cixin_Liu_s_For_the_Benefit_of_Mankind.html?id=XQGfEAAAQBAJ",
+          "support_scope": "本次查询并直接读取 Slings & Arrows 针对2022 Runberg/Montlló 图像改编的具体评论；非刘慈欣原短篇全文，不借原篇被改编删去的细节。Google Books 同年图像小说书目亦支持媒介身份。"
+        }
+      ],
+      "exact_support_scope": "本次查询并直接读取 Slings & Arrows 针对2022 Runberg/Montlló 图像改编的具体评论；非刘慈欣原短篇全文，不借原篇被改编删去的细节。Google Books 同年图像小说书目亦支持媒介身份。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://theslingsandarrows.com/for-the-benefit-of-mankind/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q135093189",
+      "identity": {
+        "title": "The Best American Science Fiction and Fantasy 2022",
+        "author": "Nalo Hopkinson / 凯瑟琳·M·瓦伦特 / Elizabeth Bear / 凯利·林克 / 卡倫·羅素 / John Joseph Adams / Stephen Graham Jones / Sam J. Miller / Meg Elison / 雷貝嘉·羅恩霍爾斯 / Caroline M. Yoachim / José Pablo Iriarte / P. Djèlí Clark / Aimee Ogden / Rich Larson / C. L. Clark / Peng Shepherd / Maria Dong / Justin C. Key / Kel Coleman / Fargo Tbakhi / Tonya Liburd"
+      },
+      "pool_index": 11,
+      "queries": [
+        "\"Best American Science Fiction and Fantasy 2022\" publisher stories"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135093189",
+        "identity": {
+          "title": "The Best American Science Fiction and Fantasy 2022",
+          "author": "Nalo Hopkinson / 凯瑟琳·M·瓦伦特 / Elizabeth Bear / 凯利·林克 / 卡倫·羅素 / John Joseph Adams / Stephen Graham Jones / Sam J. Miller / Meg Elison / 雷貝嘉·羅恩霍爾斯 / Caroline M. Yoachim / José Pablo Iriarte / P. Djèlí Clark / Aimee Ogden / Rich Larson / C. L. Clark / Peng Shepherd / Maria Dong / Justin C. Key / Kel Coleman / Fargo Tbakhi / Tonya Liburd"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"The Best American Science Fiction and Fantasy 2022\" contents"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "本组社区发售单和推荐只给书名/编辑，没有可用选篇目录或剧情。",
+        "reason_unconfirmed": "没有确认本合集中的具体选篇，首轮停止扩查。",
+        "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round38-log.json",
+        "raw_reading_log": {
+          "id": "Q135093189",
+          "identity": {
+            "title": "The Best American Science Fiction and Fantasy 2022",
+            "author": "Nalo Hopkinson / 凯瑟琳·M·瓦伦特 / Elizabeth Bear / 凯利·林克 / 卡倫·羅素 / John Joseph Adams / Stephen Graham Jones / Sam J. Miller / Meg Elison / 雷貝嘉·羅恩霍爾斯 / Caroline M. Yoachim / José Pablo Iriarte / P. Djèlí Clark / Aimee Ogden / Rich Larson / C. L. Clark / Peng Shepherd / Maria Dong / Justin C. Key / Kel Coleman / Fargo Tbakhi / Tonya Liburd"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"The Best American Science Fiction and Fantasy 2022\" contents"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [],
+          "reading_scope": "本组社区发售单和推荐只给书名/编辑，没有可用选篇目录或剧情。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "没有确认本合集中的具体选篇，首轮停止扩查。",
+          "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "bibliography_only_plus_existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.johnjosephadams.com/projects/basff2022/2022-table-of-contents/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.johnjosephadams.com/projects/basff2022/2022-table-of-contents/",
+          "support_scope": "本次实际直接读编辑官网目录确认 José Pablo Iriarte 数学选篇收录；目录写 Proof of Induction，已有知识识别为通常题名 Proof by Induction，题名措辞待核，分析限明确作者及数学家/父亲模拟人格前提。未读原篇或整集。"
+        }
+      ],
+      "exact_support_scope": "本次实际直接读编辑官网目录确认 José Pablo Iriarte 数学选篇收录；目录写 Proof of Induction，已有知识识别为通常题名 Proof by Induction，题名措辞待核，分析限明确作者及数学家/父亲模拟人格前提。未读原篇或整集。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://www.johnjosephadams.com/projects/basff2022/2022-table-of-contents/",
+          "outcome": "bibliography_only",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q139004608",
+      "identity": {
+        "title": "Purgatory",
+        "author": "史蒂夫·阿尔滕"
+      },
+      "pool_index": 12,
+      "queries": [
+        "\"Purgatory\" \"Steve Alten\" book 2022 publisher"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139004608",
+        "identity": {
+          "title": "Purgatory",
+          "author": "史蒂夫·阿尔滕"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Purgatory\" \"Steve Alten\" 2022 synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.stevealten.com/books/meg/",
+            "result": "identity_announcement_only_after_open",
+            "reading_scope": "实际打开作者页L0–60，其中L51只列MEG Purgatory coming in 2021；L37–39是第一本MEG简介，未作为本作剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次查询与一次作者页打开；只找到旧预告，没有Purgatory本册内容。",
+        "reason_unconfirmed": "旧预告不能证实2022首发，也不能借第一册剧情补此卷；保留原日期和未确认状态。",
+        "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round38-log.json",
+        "raw_reading_log": {
+          "id": "Q139004608",
+          "identity": {
+            "title": "Purgatory",
+            "author": "史蒂夫·阿尔滕"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Purgatory\" \"Steve Alten\" 2022 synopsis"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://www.stevealten.com/books/meg/",
+              "result": "identity_announcement_only_after_open",
+              "reading_scope": "实际打开作者页L0–60，其中L51只列MEG Purgatory coming in 2021；L37–39是第一本MEG简介，未作为本作剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "一次查询与一次作者页打开；只找到旧预告，没有Purgatory本册内容。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "旧预告不能证实2022首发，也不能借第一册剧情补此卷；保留原日期和未确认状态。",
+          "next_step": "首次快速扫描继续，后核此书内容、精确版次或非小说身份。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "publication_date_conflicting_announcement_scope_only",
+      "sources": [
+        "https://bookshop.org/p/books/meg-purgatory-steve-alten/d4f33bcdfed76562"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://bookshop.org/p/books/meg-purgatory-steve-alten/d4f33bcdfed76562",
+          "support_scope": "本次实际直接读取 Bookshop 的本卷出版预告；仅支持乔纳斯、捕获后发现更多深海生物的计划前提，未读成书。书目仍列2022，作者实际返回材料却预告2026版本，出版状态和精确版本未核，不称已完成出版。"
+        }
+      ],
+      "exact_support_scope": "本次实际直接读取 Bookshop 的本卷出版预告；仅支持乔纳斯、捕获后发现更多深海生物的计划前提，未读成书。书目仍列2022，作者实际返回材料却预告2026版本，出版状态和精确版本未核，不称已完成出版。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://bookshop.org/p/books/meg-purgatory-steve-alten/d4f33bcdfed76562",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q139955612",
+      "identity": {
+        "title": "The Will: The Legacy of Professor Pulyui",
+        "author": "Ihor Silivra"
+      },
+      "pool_index": 13,
+      "queries": [
+        "\"Воля\" \"Спадок професора Пулюя\" сюжет"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139955612",
+        "identity": {
+          "title": "The Will: The Legacy of Professor Pulyui",
+          "author": "Ihor Silivra"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Will\" \"The Legacy of Professor Pulyui\" plot"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精准英文查询未返回对应具体内容，不熟悉该乌克兰图像小说，不按科学家姓名推断剧情。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139955612",
+          "identity": {
+            "title": "The Will: The Legacy of Professor Pulyui",
+            "author": "Ihor Silivra"
+          },
+          "queries": [
+            "\"The Will\" \"The Legacy of Professor Pulyui\" plot"
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "一次精准英文查询未返回对应具体内容，不熟悉该乌克兰图像小说，不按科学家姓名推断剧情。"
+        }
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://thewill.com.ua/copyknyha-volia.-spadok-profesora-puliuia.-utsinka/",
+        "https://www.rozhkov.me/the-will-legacy-of-professor-puliuy/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://thewill.com.ua/copyknyha-volia.-spadok-profesora-puliuia.-utsinka/",
+          "support_scope": "本次实际查询取得 The Will Production 小说书介、Google Play 小说说明及定向评论；支持文件遗产、学生传讯与替代历史共同前提。明确是 Ihor Silivra 的衍生小说，未借同宇宙漫画的僵尸或人物故事，未读全书。"
+        },
+        {
+          "url": "https://www.rozhkov.me/the-will-legacy-of-professor-puliuy/",
+          "support_scope": "本次实际查询取得 The Will Production 小说书介、Google Play 小说说明及定向评论；支持文件遗产、学生传讯与替代历史共同前提。明确是 Ihor Silivra 的衍生小说，未借同宇宙漫画的僵尸或人物故事，未读全书。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询取得 The Will Production 小说书介、Google Play 小说说明及定向评论；支持文件遗产、学生传讯与替代历史共同前提。明确是 Ihor Silivra 的衍生小说，未借同宇宙漫画的僵尸或人物故事，未读全书。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q110128150",
+      "identity": {
+        "title": "侏羅紀世界：統霸天下序章",
+        "author": "作者未知"
+      },
+      "pool_index": 15,
+      "queries": [],
+      "actual_search_performed": false,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q110128150",
+        "identity": {
+          "title": "侏羅紀世界：統霸天下序章",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "底库明确为Jurassic World Dominion序章短片，当前lane文学首轮不能把电影情节当小说；需非文学实体边界审计，未伪造检索。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q110128150",
+          "identity": {
+            "title": "侏羅紀世界：統霸天下序章",
+            "author": "作者未知"
+          },
+          "queries": [],
+          "urls_read": [],
+          "attempt_count": 0,
+          "status": "deferred",
+          "reason": "底库明确为Jurassic World Dominion序章短片，当前lane文学首轮不能把电影情节当小说；需非文学实体边界审计，未伪造检索。"
+        }
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [],
+      "source_evidence": [],
+      "exact_support_scope": "准确已有知识补充2021《Jurassic World Dominion》序章短片的白垩纪/现代两段前提，零外部查询、零本轮原片阅读。保留非文学媒介边界，不借2022正片主线或小说化内容。",
+      "raw_search_artifact": null,
+      "opens": []
+    },
+    {
+      "id": "Q123521638",
+      "identity": {
+        "title": "Home: Habitat, Range, Niche, Territory",
+        "author": "玛莎·威尔斯"
+      },
+      "pool_index": 16,
+      "queries": [
+        "\"Home: Habitat, Range, Niche, Territory\" Mensah Wells story"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q123521638",
+        "identity": {
+          "title": "Home: Habitat, Range, Niche, Territory",
+          "author": "玛莎·威尔斯"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://openlibrary.org/works/OL24349461W",
+            "material_kind": "openlibrary_official_dump_community_synopsis",
+            "support_scope": "实际读本ID完整社区简介，但具体情节不足，未填分析。",
+            "reading_status": "actually_read_support_scope_only",
+            "record_sha256": "436a1708b8a085b53efdf58fbc22ff4812a8ee0756fec563843e0a9038d14298",
+            "material_type": "openlibrary_official_dump_community_synopsis",
+            "result": "catalog_only",
+            "reading_scope": "实际读本ID完整社区简介，但具体情节不足，未填分析。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "本地102字简介仅给Dr. Mensah视角和Exit Strategy之后，不给独立事件；Home题名/作者虽对应，来源原状态仍需粒度核对，首轮延后，不继承Exit Strategy剧情。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round13-log.json",
+        "raw_reading_log": {
+          "id": "Q123521638",
+          "identity": {
+            "title": "Home: Habitat, Range, Niche, Territory",
+            "author": "玛莎·威尔斯"
+          },
+          "fast_index": 278,
+          "lane_index": 106,
+          "source_sort_year": 2021,
+          "priority_rank": 1174,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [],
+          "local_material_lookup": {
+            "manifest": "fast-first-lane-1.json",
+            "id": "Q123521638",
+            "work_id": "OL24349461W",
+            "record_sha256": "436a1708b8a085b53efdf58fbc22ff4812a8ee0756fec563843e0a9038d14298"
+          },
+          "sources": [
+            {
+              "url": "https://openlibrary.org/works/OL24349461W",
+              "material_kind": "openlibrary_official_dump_community_synopsis",
+              "support_scope": "实际读本ID完整社区简介，但具体情节不足，未填分析。",
+              "reading_status": "actually_read_support_scope_only",
+              "record_sha256": "436a1708b8a085b53efdf58fbc22ff4812a8ee0756fec563843e0a9038d14298"
+            }
+          ],
+          "no_material_reason": "本地102字简介仅给Dr. Mensah视角和Exit Strategy之后，不给独立事件；Home题名/作者虽对应，来源原状态仍需粒度核对，首轮延后，不继承Exit Strategy剧情。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": {
+          "manifest": "fast-first-lane-1.json",
+          "id": "Q123521638",
+          "work_id": "OL24349461W",
+          "record_sha256": "436a1708b8a085b53efdf58fbc22ff4812a8ee0756fec563843e0a9038d14298"
+        }
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": true,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://reactormag.com/home-habitat-range-niche-territory-martha-wells/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://reactormag.com/home-habitat-range-niche-territory-martha-wells/",
+          "support_scope": "本次查询并直接读取 Reactor 重刊原篇的局部段落（约L128–159），支持议员争论、门萨创伤视角和保护类别空隙；只定向读此段，不称原篇全文核验，不把 Exit Strategy 主线当成独立事件。原文版权2020与网页2021重刊日期口径保留。"
+        }
+      ],
+      "exact_support_scope": "本次查询并直接读取 Reactor 重刊原篇的局部段落（约L128–159），支持议员争论、门萨创伤视角和保护类别空隙；只定向读此段，不称原篇全文核验，不把 Exit Strategy 主线当成独立事件。原文版权2020与网页2021重刊日期口径保留。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://reactormag.com/home-habitat-range-niche-territory-martha-wells/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q136831489",
+      "identity": {
+        "title": "Fantastic Four: Life Story #2",
+        "author": "作者未知"
+      },
+      "pool_index": 17,
+      "queries": [
+        "\"Fantastic Four Life Story\" \"2\" 1970s Galactus synopsis"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136831489",
+        "identity": {
+          "title": "Fantastic Four: Life Story #2",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Fantastic Four: Life Story #2\" Marvel story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确第2期/Marvel检索只有转售和发行列表，无官方具体事件；首轮延后，不把Fantastic Four或Life Story其他期作为本期。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q136831489",
+          "identity": {
+            "title": "Fantastic Four: Life Story #2",
+            "author": "作者未知"
+          },
+          "fast_index": 287,
+          "lane_index": 115,
+          "source_sort_year": 2021,
+          "priority_rank": 1207,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Fantastic Four: Life Story #2\" Marvel story"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确第2期/Marvel检索只有转售和发行列表，无官方具体事件；首轮延后，不把Fantastic Four或Life Story其他期作为本期。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.marvel.com/comics/issue/91616/fantastic_four_life_story_2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.marvel.com/comics/issue/91616/fantastic_four_life_story_2",
+          "support_scope": "本次实际查询取得 Marvel 精确第2期官方简介；支持1970年代、苏的社会行动及里德对吞星者的执念，未读本期漫画正文，不借后续各期或原版神奇四侠时间线。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询取得 Marvel 精确第2期官方简介；支持1970年代、苏的社会行动及里德对吞星者的执念，未读本期漫画正文，不借后续各期或原版神奇四侠时间线。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q139922513",
+      "identity": {
+        "title": "Ĉu vi murdas mojose ?",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 20,
+      "queries": [
+        "\"Ĉu vi murdas mojose\" recenzo"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922513",
+        "identity": {
+          "title": "Ĉu vi murdas mojose ?",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Ĉu vi murdas mojose\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://katalogo.uea.org/katalogo.php/viaf/96994048?id=1739&inf=9930&recenzo=montru",
+            "result": "collection_review_without_item_plot_mapping",
+            "reading_scope": "UEA合集评论引用题名式表达，但其他血钟、祖母悖论和Mila情节没有明确对应此篇。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "实际返回合集评论，单篇身份及其情节未明示。",
+        "reason_unconfirmed": "不能把同合集的祖母悖论借给本篇。",
+        "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round41-log.json",
+        "raw_reading_log": {
+          "id": "Q139922513",
+          "identity": {
+            "title": "Ĉu vi murdas mojose ?",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Ĉu vi murdas mojose\" \"Laure Patas\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://katalogo.uea.org/katalogo.php/viaf/96994048?id=1739&inf=9930&recenzo=montru",
+              "result": "collection_review_without_item_plot_mapping",
+              "reading_scope": "UEA合集评论引用题名式表达，但其他血钟、祖母悖论和Mila情节没有明确对应此篇。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "实际返回合集评论，单篇身份及其情节未明示。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "不能把同合集的祖母悖论借给本篇。",
+          "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.esperanto-sumoo.pl/recenzojan2023.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.esperanto-sumoo.pl/recenzojan2023.html",
+          "support_scope": "本次实际查询读到 Esperanto Sumoo 2023年1月精确第9篇读者梗概；随后网页直接打开502失败，未读原篇。具体人物和事件仅依这份社区读者材料，不用同集祖母悖论故事。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读到 Esperanto Sumoo 2023年1月精确第9篇读者梗概；随后网页直接打开502失败，未读原篇。具体人物和事件仅依这份社区读者材料，不用同集祖母悖论故事。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://www.esperanto-sumoo.pl/recenzojan2023.html",
+          "outcome": "failed_fetch",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q139922517",
+      "identity": {
+        "title": "Asteroido",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 21,
+      "queries": [
+        "\"Asteroido\" \"Patas d'Illiers\" rakonto resumo"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922517",
+        "identity": {
+          "title": "Asteroido",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Asteroido\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.lulu.com/es/shop/laure-patas-dilliers-and-liven-dek-and-fran%C3%A7ois-lo-jacomo/sur-bluaj-planedoj/paperback/product-q8r2p9.html",
+            "result": "collection_blurb_unmapped_prompts",
+            "reading_scope": "合集卖页问冰地中小行星藏着什么，但未把问题明确连到Asteroido的角色、行动及篇章。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读合集的多篇宣传问题，未读单篇原文。",
+        "reason_unconfirmed": "题材同名和宣传问句不足以形成该篇两项具体情节依据。",
+        "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round41-log.json",
+        "raw_reading_log": {
+          "id": "Q139922517",
+          "identity": {
+            "title": "Asteroido",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Asteroido\" \"Laure Patas\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://www.lulu.com/es/shop/laure-patas-dilliers-and-liven-dek-and-fran%C3%A7ois-lo-jacomo/sur-bluaj-planedoj/paperback/product-q8r2p9.html",
+              "result": "collection_blurb_unmapped_prompts",
+              "reading_scope": "合集卖页问冰地中小行星藏着什么，但未把问题明确连到Asteroido的角色、行动及篇章。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "只读合集的多篇宣传问题，未读单篇原文。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "题材同名和宣传问句不足以形成该篇两项具体情节依据。",
+          "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.esperanto-sumoo.pl/recenzojan2023.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.esperanto-sumoo.pl/recenzojan2023.html",
+          "support_scope": "本次本ID查询先得同集宣传问句；同批另一精确查询实际返回并读取 Esperanto Sumoo 第13篇Asteroido具体梗概，复用已取得材料，非额外原篇读取。只据该社区梗概，不断言孵化后的物种或后果。"
+        }
+      ],
+      "exact_support_scope": "本次本ID查询先得同集宣传问句；同批另一精确查询实际返回并读取 Esperanto Sumoo 第13篇Asteroido具体梗概，复用已取得材料，非额外原篇读取。只据该社区梗概，不断言孵化后的物种或后果。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q105359432",
+      "identity": {
+        "title": "Lady Astronaute",
+        "author": "瑪莉·羅比奈·寇沃"
+      },
+      "pool_index": 24,
+      "queries": [
+        "\"Lady Astronaute\" Kowal Gallimard \"sommaire\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q105359432",
+        "identity": {
+          "title": "Lady Astronaute",
+          "author": "瑪莉·羅比奈·寇沃"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Lady Astronaute\" Kowal omnibus"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.cercle-enseignement.com/Contributeurs/Mary-Robinette-Kowal/%28tri%29/titres",
+            "material_kind": "publisher_author_bibliography_metadata_only",
+            "support_scope": "实际读Gallimard作者书目中2020 Lady Astronaute版元数据，仅用于区别Vers les étoiles等书，未获合集故事材料。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "publisher_author_bibliography_metadata_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读Gallimard作者书目中2020 Lady Astronaute版元数据，仅用于区别Vers les étoiles等书，未获合集故事材料。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次检索显示2020法文Lady Astronaute为多篇短篇选集，Gallimard目录/作者页未给各篇事件；不是2012同题短篇或2018长篇，延后以免粒度继承。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q105359432",
+          "identity": {
+            "title": "Lady Astronaute",
+            "author": "瑪莉·羅比奈·寇沃"
+          },
+          "fast_index": 302,
+          "lane_index": 130,
+          "source_sort_year": 2020,
+          "priority_rank": 1266,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Lady Astronaute\" Kowal omnibus"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.cercle-enseignement.com/Contributeurs/Mary-Robinette-Kowal/%28tri%29/titres",
+              "material_kind": "publisher_author_bibliography_metadata_only",
+              "support_scope": "实际读Gallimard作者书目中2020 Lady Astronaute版元数据，仅用于区别Vers les étoiles等书，未获合集故事材料。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "一次检索显示2020法文Lady Astronaute为多篇短篇选集，Gallimard目录/作者页未给各篇事件；不是2012同题短篇或2018长篇，延后以免粒度继承。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "bibliography_only_plus_existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.bdfi.net/recueils/pages/lady_astronaute.php"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.bdfi.net/recueils/pages/lady_astronaute.php",
+          "support_scope": "本次实际查询读到 BDFI 的2020 Gallimard 五篇法文集目录，确认 The Lady Astronaut of Mars 收录；情节来自该2012原短篇的已有知识，不称本次剧情读取，不把2018长篇开局套给法文合集。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读到 BDFI 的2020 Gallimard 五篇法文集目录，确认 The Lady Astronaut of Mars 收录；情节来自该2012原短篇的已有知识，不称本次剧情读取，不把2018长篇开局套给法文合集。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q132223021",
+      "identity": {
+        "title": "20020: The Future of College Football",
+        "author": "Jon Bois"
+      },
+      "pool_index": 25,
+      "queries": [
+        "\"20020\" \"Jon Bois\" Nick Manny San Diego State"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q132223021",
+        "identity": {
+          "title": "20020: The Future of College Football",
+          "author": "Jon Bois"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"20020\" \"Jon Bois\" story football",
+          "\"20020\" site:sbnation.com \"Nick\" \"Manny\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "实际结果主要是读者讨论、系列体量与前作对照，未取得足以对应本作两具体行动的作者简介；不借17776剧情。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q132223021",
+          "identity": {
+            "title": "20020: The Future of College Football",
+            "author": "Jon Bois"
+          },
+          "queries": [
+            "\"20020\" \"Jon Bois\" story football",
+            "\"20020\" site:sbnation.com \"Nick\" \"Manny\""
+          ],
+          "urls_read": [],
+          "attempt_count": 2,
+          "status": "deferred",
+          "reason": "实际结果主要是读者讨论、系列体量与前作对照，未取得足以对应本作两具体行动的作者简介；不借17776剧情。"
+        }
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.dailyprincetonian.com/article/2020/11/review-17776-20020-jon-bois-futuristic-football-speculative-fiction?ct=content_open&cv=cbox_featured"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.dailyprincetonian.com/article/2020/11/review-17776-20020-jon-bois-futuristic-football-speculative-fiction?ct=content_open&cv=cbox_featured",
+          "support_scope": "本次实际查询读取 Princetonian 对20020的定向具体评论；支持本作统一场地/规则与两位伴侣冲击排名，不是作者正文全文，不借17776分散比赛或同人作品剧情。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读取 Princetonian 对20020的定向具体评论；支持本作统一场地/规则与两位伴侣冲击排名，不是作者正文全文，不借17776分散比赛或同人作品剧情。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q141152492",
+      "identity": {
+        "title": "I'm in Love with the Villainess, Novel 3",
+        "author": "Inori."
+      },
+      "pool_index": 26,
+      "queries": [
+        "\"I'm in Love with the Villainess\" \"Vol. 3\" novel empire"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141152492",
+        "identity": {
+          "title": "I'm in Love with the Villainess, Novel 3",
+          "author": "Inori."
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"I'm in Love with the Villainess\" \"Novel 3\" seven seas"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确Novel 3/Seven Seas查询未见足够本卷情节，延后；不借原系列、漫画或动画改编的开局作为第3卷。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q141152492",
+          "identity": {
+            "title": "I'm in Love with the Villainess, Novel 3",
+            "author": "Inori."
+          },
+          "fast_index": 318,
+          "lane_index": 146,
+          "source_sort_year": 2020,
+          "priority_rank": 1326,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"I'm in Love with the Villainess\" \"Novel 3\" seven seas"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确Novel 3/Seven Seas查询未见足够本卷情节，延后；不借原系列、漫画或动画改编的开局作为第3卷。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/690166/im-in-love-with-the-villainess-light-novel-vol-3-by-inori-illustrated-by-hanagata/9781648275579/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/690166/im-in-love-with-the-villainess-light-novel-vol-3-by-inori-illustrated-by-hanagata/9781648275579/",
+          "support_scope": "本次查询并直接读取 PRH/Airship 轻小说第3卷书介L169–172；支持革命后家庭、新帝国危机及游戏续篇知识。非漫画/动画，不借侧故事She's So Cheeky Vol.3。英文2021与原底库2020日期口径保留。"
+        }
+      ],
+      "exact_support_scope": "本次查询并直接读取 PRH/Airship 轻小说第3卷书介L169–172；支持革命后家庭、新帝国危机及游戏续篇知识。非漫画/动画，不借侧故事She's So Cheeky Vol.3。英文2021与原底库2020日期口径保留。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/690166/im-in-love-with-the-villainess-light-novel-vol-3-by-inori-illustrated-by-hanagata/9781648275579/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q98085278",
+      "identity": {
+        "title": "Непобедимое солнце",
+        "author": "维克多·佩列文"
+      },
+      "pool_index": 27,
+      "queries": [
+        "\"Непобедимое солнце\" \"Саша\" аннотация"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q98085278",
+        "identity": {
+          "title": "Непобедимое солнце",
+          "author": "维克多·佩列文"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Непобедимое солнце\" Пелевин сюжет издательство"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次俄语题名/出版剧情查询只得到百科剧情和文学论文片段，未有简明可用出版介绍；不追非授权PDF或据作者风格推本书，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q98085278",
+          "identity": {
+            "title": "Непобедимое солнце",
+            "author": "维克多·佩列文"
+          },
+          "fast_index": 321,
+          "lane_index": 149,
+          "source_sort_year": 2020,
+          "priority_rank": 1336,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Непобедимое солнце\" Пелевин сюжет издательство"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次俄语题名/出版剧情查询只得到百科剧情和文学论文片段，未有简明可用出版介绍；不追非授权PDF或据作者风格推本书，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://ast.ru/book/nepobedimoe-solntse-888579/",
+        "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D0%BC%D0%BE%D0%B5_%D0%A1%D0%BE%D0%BB%D0%BD%D1%86%D0%B5_%28%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://ast.ru/book/nepobedimoe-solntse-888579/",
+          "support_scope": "本次实际查询取得 AST 具体出版简介与俄文百科剧情；AST直接打开403失败，但搜索返回的出版段落已读。只据旅行、Sol Invictus石头/投影及模拟解释，不称原作全文，不采用作者通行风格推理。"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D0%BC%D0%BE%D0%B5_%D0%A1%D0%BE%D0%BB%D0%BD%D1%86%D0%B5_%28%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%29",
+          "support_scope": "本次实际查询取得 AST 具体出版简介与俄文百科剧情；AST直接打开403失败，但搜索返回的出版段落已读。只据旅行、Sol Invictus石头/投影及模拟解释，不称原作全文，不采用作者通行风格推理。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询取得 AST 具体出版简介与俄文百科剧情；AST直接打开403失败，但搜索返回的出版段落已读。只据旅行、Sol Invictus石头/投影及模拟解释，不称原作全文，不采用作者通行风格推理。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://ast.ru/book/nepobedimoe-solntse-888579/",
+          "outcome": "failed_fetch",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q114554866",
+      "identity": {
+        "title": "さよならの儀式",
+        "author": "宫部美幸"
+      },
+      "pool_index": 28,
+      "queries": [
+        "\"さよならの儀式\" \"ロボット\" あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q114554866",
+        "identity": {
+          "title": "さよならの儀式",
+          "author": "宫部美幸"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"さよならの儀式\" \"宮部美幸\" 河出"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://ci.nii.ac.jp/author/DA04257880?l=ja&p=1",
+            "scope": "检索编目，作者、2019.7及河出书目信息",
+            "result": "bibliography_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://zh.wikipedia.org/wiki/%E5%AE%AB%E9%83%A8%E7%BE%8E%E5%B9%B8",
+            "scope": "检索到本合集八篇目录",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "仅确认合集身份和目录，未读对应篇章情节；不能把目录当全书议题依据。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q114554866",
+          "identity": {
+            "title": "さよならの儀式",
+            "author": "宫部美幸"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"さよならの儀式\" \"宮部美幸\" 河出"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://ci.nii.ac.jp/author/DA04257880?l=ja&p=1",
+              "scope": "检索编目，作者、2019.7及河出书目信息",
+              "result": "bibliography_only"
+            },
+            {
+              "url": "https://zh.wikipedia.org/wiki/%E5%AE%AB%E9%83%A8%E7%BE%8E%E5%B9%B8",
+              "scope": "检索到本合集八篇目录",
+              "result": "contents_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "仅确认合集身份和目录，未读对应篇章情节；不能把目录当全书议题依据。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.kawade.co.jp/np/isbn/9784309028071/",
+        "https://ara-suji.com/novel/2803/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kawade.co.jp/np/isbn/9784309028071/",
+          "support_scope": "本次实际查询确认2019短篇集，直接读取题名篇的具体日文读者梗概约L55–92；未读原篇。只分析题名篇，不将同集《母の法律》消除记忆或其他故事情节串入。"
+        },
+        {
+          "url": "https://ara-suji.com/novel/2803/",
+          "support_scope": "本次实际查询确认2019短篇集，直接读取题名篇的具体日文读者梗概约L55–92；未读原篇。只分析题名篇，不将同集《母の法律》消除记忆或其他故事情节串入。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询确认2019短篇集，直接读取题名篇的具体日文读者梗概约L55–92；未读原篇。只分析题名篇，不将同集《母の法律》消除记忆或其他故事情节串入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://ara-suji.com/novel/2803/",
+          "outcome": "content_read",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    },
+    {
+      "id": "Q131610624",
+      "identity": {
+        "title": "一觉醒来就有了最强装备跟太空船 决定以自家独栋建筑为目标当佣兵自由过活",
+        "author": "作者未知"
+      },
+      "pool_index": 29,
+      "queries": [
+        "\"Reborn as a Space Mercenary\" light novel Hiro Krishna"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": true,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131610624",
+        "identity": {
+          "title": "一觉醒来就有了最强装备跟太空船 决定以自家独栋建筑为目标当佣兵自由过活",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Reborn as a Space Mercenary\" \"Volume 1\" Seven Seas"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://sevenseasentertainment.com/2021/02/08/seven-seas-blasts-off-again-with-license-of-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship-manga-series/",
+            "scope": "漫画改编授权公告检索摘要：游戏爱好者醒于飞船；不是本轻小说条目正文",
+            "result": "adaptation_description_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://sevenseasentertainment.com/books/reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship-light-novel-vol-1/",
+            "scope": "尝试打开轻小说第一卷出版页",
+            "result": "403 Forbidden",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "统一身份为日本轻小说系列；现读到的是漫画改编公告，原小说出版页访问失败，保留层级差别后延。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q131610624",
+          "identity": {
+            "title": "一觉醒来就有了最强装备跟太空船 决定以自家独栋建筑为目标当佣兵自由过活",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Reborn as a Space Mercenary\" \"Volume 1\" Seven Seas"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://sevenseasentertainment.com/2021/02/08/seven-seas-blasts-off-again-with-license-of-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship-manga-series/",
+              "scope": "漫画改编授权公告检索摘要：游戏爱好者醒于飞船；不是本轻小说条目正文",
+              "result": "adaptation_description_only"
+            },
+            {
+              "url": "https://sevenseasentertainment.com/books/reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship-light-novel-vol-1/",
+              "scope": "尝试打开轻小说第一卷出版页",
+              "result": "403 Forbidden"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "统一身份为日本轻小说系列；现读到的是漫画改编公告，原小说出版页访问失败，保留层级差别后延。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "search_returned_source_content",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://reborn-space-mercenary.fandom.com/wiki/Light_Novel",
+        "https://reborn-space-mercenary.fandom.com/wiki/Spaceship_-_Krishna"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://reborn-space-mercenary.fandom.com/wiki/Light_Novel",
+          "support_scope": "本次实际查询读到原轻小说对应页与Krishna船设定的社区概述；系列共同前提亦有准确已有知识。未读各卷，不借同名漫画改编或动画扩散，不以第17卷事件代表开局。"
+        },
+        {
+          "url": "https://reborn-space-mercenary.fandom.com/wiki/Spaceship_-_Krishna",
+          "support_scope": "本次实际查询读到原轻小说对应页与Krishna船设定的社区概述；系列共同前提亦有准确已有知识。未读各卷，不借同名漫画改编或动画扩散，不以第17卷事件代表开局。"
+        }
+      ],
+      "exact_support_scope": "本次实际查询读到原轻小说对应页与Krishna船设定的社区概述；系列共同前提亦有准确已有知识。未读各卷，不借同名漫画改编或动画扩散，不以第17卷事件代表开局。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q135093366",
+      "identity": {
+        "title": "The Very Best of the Best: 35 Years of The Year's Best Science Fiction",
+        "author": "作者未知"
+      },
+      "pool_index": 30,
+      "queries": [
+        "\"The Very Best of the Best\" 2019 table contents Dozois"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": true,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135093366",
+        "identity": {
+          "title": "The Very Best of the Best: 35 Years of The Year's Best Science Fiction",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Very Best of the Best\" 2019 \"35 Years\" publisher stories"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://academic.macmillan.com/academictrade/9781250296207/theverybestofthebest/",
+            "material_kind": "publisher_anthology_metadata_and_one_story_intro_only",
+            "support_scope": "实际读Macmillan集合信息及The Potter of Bones导语，只有科学方法诞生/女性与时代不合的一般介绍，未读具体事件或全书。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "publisher_anthology_metadata_and_one_story_intro_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读Macmillan集合信息及The Potter of Bones导语，只有科学方法诞生/女性与时代不合的一般介绍，未读具体事件或全书。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一轮出版检索确认Dozois编辑合集并返回The Potter of Bones导语，但没有足够各篇具体事件；本轮不让单一导语代表35年集合，不把编辑当创作者。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q135093366",
+          "identity": {
+            "title": "The Very Best of the Best: 35 Years of The Year's Best Science Fiction",
+            "author": "作者未知"
+          },
+          "fast_index": 334,
+          "lane_index": 165,
+          "source_sort_year": 2019,
+          "priority_rank": 1396,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"The Very Best of the Best\" 2019 \"35 Years\" publisher stories"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://academic.macmillan.com/academictrade/9781250296207/theverybestofthebest/",
+              "material_kind": "publisher_anthology_metadata_and_one_story_intro_only",
+              "support_scope": "实际读Macmillan集合信息及The Potter of Bones导语，只有科学方法诞生/女性与时代不合的一般介绍，未读具体事件或全书。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "一轮出版检索确认Dozois编辑合集并返回The Potter of Bones导语，但没有足够各篇具体事件；本轮不让单一导语代表35年集合，不把编辑当创作者。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 0,
+      "original_partial_text_read": false,
+      "original_full_text_read": false,
+      "material_kind": "bibliography_only_plus_existing_knowledge",
+      "publication_status": "not_independently_verified",
+      "sources": [
+        "https://www.blackgate.com/2019/07/03/a-final-gift-from-gardner-the-very-best-of-the-best-35-years-of-the-years-best-science-fiction-edited-by-gardner-dozois/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.blackgate.com/2019/07/03/a-final-gift-from-gardner-the-very-best-of-the-best-35-years-of-the-years-best-science-fiction-edited-by-gardner-dozois/",
+          "support_scope": "本次查询并直接读取 Black Gate 本集完整目录，确认 The Things 收录；该2010独立短篇情节来自准确已有知识。未读整集或原篇；虽然短篇改写已有影视世界，未以电影情节直接代替沃茨叙述角度。"
+        }
+      ],
+      "exact_support_scope": "本次查询并直接读取 Black Gate 本集完整目录，确认 The Things 收录；该2010独立短篇情节来自准确已有知识。未读整集或原篇；虽然短篇改写已有影视世界，未以电影情节直接代替沃茨叙述角度。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": [
+        {
+          "url": "https://www.blackgate.com/2019/07/03/a-final-gift-from-gardner-the-very-best-of-the-best-35-years-of-the-years-best-science-fiction-edited-by-gardner-dozois/",
+          "outcome": "bibliography_only",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-b.json"
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "id": "Q140695024",
+      "identity": {
+        "title": "The Thought Thief",
+        "author": "P.G. Lark"
+      },
+      "pool_index": 0,
+      "queries": [
+        "\"The Thought Thief\" \"Lark\" \"Book 3\""
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q140695024",
+        "identity": {
+          "title": "The Thought Thief",
+          "author": "P.G. Lark"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Thought Thief\" \"P.G. Lark\"",
+          "\"The Thought Thief\" Lark novel 2026",
+          "\"The Thought Thief\" \"Lark\" book",
+          "\"P.G. Lark\" book",
+          "\"The Thought Thief\" \"P.G.\" novel"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.pglark.com/",
+            "material_type": "作者官网",
+            "result": "catalog_only",
+            "reading_scope": "实际读Quantum Pizza首页及后两卷2026计划；首页没有The Thought Thief题名与具体简介，不能继承第一卷内容。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.pglark.com/books",
+            "material_type": "作者各卷官网",
+            "result": "catalog_only",
+            "reading_scope": "实际读Book3的Mindscape读心武器简介及2026年9月预告；页面正文未明确The Thought Thief题名，只有嵌入封面，需要再核对应身份。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "找到同作者Book3具体简介，但文本题名与底库The Thought Thief尚未明确对上；没有把Quantum Pizza或未核Book3情节填给本ID。定向失败原因是身份对应不足，不是宣称作品不存在。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round1-log.json",
+        "raw_reading_log": {
+          "id": "Q140695024",
+          "identity": {
+            "title": "The Thought Thief",
+            "author": "P.G. Lark"
+          },
+          "lane_index": 7,
+          "source_sort_year": 2026,
+          "status": "deferred_identity_or_material",
+          "publication_status": "unknown",
+          "queries": [
+            "\"The Thought Thief\" \"P.G. Lark\"",
+            "\"The Thought Thief\" Lark novel 2026",
+            "\"The Thought Thief\" \"Lark\" book",
+            "\"P.G. Lark\" book",
+            "\"The Thought Thief\" \"P.G.\" novel"
+          ],
+          "sources": [
+            {
+              "url": "https://www.pglark.com/",
+              "material_kind": "作者官网",
+              "support_scope": "实际读Quantum Pizza首页及后两卷2026计划；首页没有The Thought Thief题名与具体简介，不能继承第一卷内容。",
+              "reading_status": "actually_read_support_scope_only"
+            },
+            {
+              "url": "https://www.pglark.com/books",
+              "material_kind": "作者各卷官网",
+              "support_scope": "实际读Book3的Mindscape读心武器简介及2026年9月预告；页面正文未明确The Thought Thief题名，只有嵌入封面，需要再核对应身份。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "找到同作者Book3具体简介，但文本题名与底库The Thought Thief尚未明确对上；没有把Quantum Pizza或未核Book3情节填给本ID。定向失败原因是身份对应不足，不是宣称作品不存在。",
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "unknown"
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "不同旧式的新查询仍主要返回异作，没有把 Thought Thief 题名与作者 Book3 简介明确对上；原身份疑点和旧材料保留，新增一次失败后置。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q141451589",
+      "identity": {
+        "title": "Le problème à trois corps, tome 1",
+        "author": "作者未知"
+      },
+      "pool_index": 2,
+      "queries": [
+        "\"Le problème à trois corps\" \"tome 1\" \"2025\" auteur"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141451589",
+        "identity": {
+          "title": "Le problème à trois corps, tome 1",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Le problème à trois corps\" \"tome 1\" 2025 bande dessinée"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.hachette.fr/livre/le-probleme-trois-corps-tome-1-9782017885580/",
+            "material_kind": "实际同题候选内容或目录",
+            "result": "identity_or_text_scope_insufficient",
+            "reading_scope": "实际打开Hachette2024图像改编第1卷介绍L280–335，取得Wang调查科学家死亡和进入三体游戏的明确内容；源2025、作者未知及所属系列未对应。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "实际打开Hachette2024图像改编第1卷介绍L280–335，取得Wang调查科学家死亡和进入三体游戏的明确内容；源2025、作者未知及所属系列未对应。",
+        "reason_unconfirmed": "同题有2024 Hachette和2026另一出版版本，源2025中文漫画系列无作者或ISBN，不能确认究竟对应哪一种；不以小说或候选漫画内容覆盖原实体。",
+        "next_step": "首轮后优先确认作者、单册及版本，再取得明确篇目内容；不重复首轮困难查询。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round31-log.json",
+        "raw_reading_log": {
+          "id": "Q141451589",
+          "identity": {
+            "title": "Le problème à trois corps, tome 1",
+            "author": "作者未知"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Le problème à trois corps\" \"tome 1\" 2025 bande dessinée"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://www.hachette.fr/livre/le-probleme-trois-corps-tome-1-9782017885580/",
+              "material_kind": "实际同题候选内容或目录",
+              "result": "identity_or_text_scope_insufficient",
+              "reading_scope": "实际打开Hachette2024图像改编第1卷介绍L280–335，取得Wang调查科学家死亡和进入三体游戏的明确内容；源2025、作者未知及所属系列未对应。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "实际打开Hachette2024图像改编第1卷介绍L280–335，取得Wang调查科学家死亡和进入三体游戏的明确内容；源2025、作者未知及所属系列未对应。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "同题有2024 Hachette和2026另一出版版本，源2025中文漫画系列无作者或ISBN，不能确认究竟对应哪一种；不以小说或候选漫画内容覆盖原实体。",
+          "next_step": "首轮后优先确认作者、单册及版本，再取得明确篇目内容；不重复首轮困难查询。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "新查询仍出现Hachette2024版与另一漫画作者组合；源2025且作者未知，无法证明哪一种图像改编单卷对应本ID，不借小说或候选漫画内容。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q137806735",
+      "identity": {
+        "title": "Répercussions",
+        "author": "作者未知"
+      },
+      "pool_index": 7,
+      "queries": [
+        "\"Répercussions\" \"Sillage\" résumé"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137806735",
+        "identity": {
+          "title": "Répercussions",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Répercussions\" \"2023\" Sillage Delcourt"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确题名/年份/Sillage出版社检索未取得可确认的本册具体内容；不借Nävis或整套Sillage背景，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round13-log.json",
+        "raw_reading_log": {
+          "id": "Q137806735",
+          "identity": {
+            "title": "Répercussions",
+            "author": "作者未知"
+          },
+          "fast_index": 244,
+          "lane_index": 68,
+          "source_sort_year": 2023,
+          "priority_rank": 1037,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Répercussions\" \"2023\" Sillage Delcourt"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确题名/年份/Sillage出版社检索未取得可确认的本册具体内容；不借Nävis或整套Sillage背景，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "新式查询仍主要返回书中“sillage”用语或其他同题作品，没有精确单册剧情；不假定原实体必属Sillage系列。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q141093642",
+      "identity": {
+        "title": "1949 #3",
+        "author": "作者未知"
+      },
+      "pool_index": 8,
+      "queries": [
+        "\"1949\" \"#3\" comic Ukraine 2023"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141093642",
+        "identity": {
+          "title": "1949 #3",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"1949 #3\" comics 2023"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "搜索只返回历史年份/ISBN巧合等，未定位本漫画第3期；作者原标签未知，不归入假定同名系列。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round15-log.json",
+        "raw_reading_log": {
+          "id": "Q141093642",
+          "identity": {
+            "title": "1949 #3",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"1949 #3\" comics 2023"
+          ],
+          "materials_checked": [],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "搜索只返回历史年份/ISBN巧合等，未定位本漫画第3期；作者原标签未知，不归入假定同名系列。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "新查询仍返回1949年的旧杂志与数字巧合，未确认2023漫画第3期及作者；新增一次实际失败，未补猜测。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": []
+    },
+    {
+      "id": "Q107404913",
+      "identity": {
+        "title": "Planetary Adventures",
+        "author": "作者未知"
+      },
+      "pool_index": 14,
+      "queries": [
+        "\"Planetary Adventures\" anthology comic 2021 contents"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q107404913",
+        "identity": {
+          "title": "Planetary Adventures",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Planetary Adventures\" \"2021\" comic"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://dmrbooks.com/test-blog/2021/5/31/classic-sci-fi-anthology-planetary-adventures-coming-this-summer",
+            "result": "actual_collection_contents_only",
+            "reading_scope": "出版方明示五篇再印目录，包括Anderson、Hamilton、Kuttner等；没有返回各篇剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次查询确认合集目录，query中comic没有变成实体形式；未读五篇正文。",
+        "reason_unconfirmed": "已有目录而无确切选篇剧情知识，不从星际冒险题名生成人类殖民问题。",
+        "next_step": "第一遍后选确切原篇查读；源合集与各篇原刊年代分别保留。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round39-log.json",
+        "raw_reading_log": {
+          "id": "Q107404913",
+          "identity": {
+            "title": "Planetary Adventures",
+            "author": "作者未知"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Planetary Adventures\" \"2021\" comic"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://dmrbooks.com/test-blog/2021/5/31/classic-sci-fi-anthology-planetary-adventures-coming-this-summer",
+              "result": "actual_collection_contents_only",
+              "reading_scope": "出版方明示五篇再印目录，包括Anderson、Hamilton、Kuttner等；没有返回各篇剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "一次查询确认合集目录，query中comic没有变成实体形式；未读五篇正文。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "已有目录而无确切选篇剧情知识，不从星际冒险题名生成人类殖民问题。",
+          "next_step": "第一遍后选确切原篇查读；源合集与各篇原刊年代分别保留。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "直接出版页确认五篇剑与行星选集与目录，但没有这些选篇的可靠剧情或准确已有知识；不借同名Star Trek RPG或仅由体裁生成议题。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-a.json",
+      "opens": [
+        {
+          "url": "https://dmrbooks.com/print-books/planetary-adventures",
+          "outcome": "bibliography_only",
+          "raw_open_artifact": "work/evidence/quick-retry-modern-r1-open-a.json"
+        }
+      ]
+    },
+    {
+      "id": "Q139922386",
+      "identity": {
+        "title": "Kontakto",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 18,
+      "queries": [
+        "\"Kontakto\" \"Patas d’Illiers\" rakonto"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922386",
+        "identity": {
+          "title": "Kontakto",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Kontakto\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://eduinf.waw.pl/esp/lern/librejo/0305/0026.php",
+            "result": "different_text_title_returned",
+            "reading_scope": "返回文本实际标题SERVI VIN，Kontakto仅出现在2020/07-08刊载说明；该剧场段落未当作Kontakto故事。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "本组返回另一标题的原文开头，没有源篇名对应内容。",
+        "reason_unconfirmed": "Kontakto可能是刊物字段误当题名，需后核原身份；不能把智能助手剧情填入。",
+        "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round41-log.json",
+        "raw_reading_log": {
+          "id": "Q139922386",
+          "identity": {
+            "title": "Kontakto",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Kontakto\" \"Laure Patas\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://eduinf.waw.pl/esp/lern/librejo/0305/0026.php",
+              "result": "different_text_title_returned",
+              "reading_scope": "返回文本实际标题SERVI VIN，Kontakto仅出现在2020/07-08刊载说明；该剧场段落未当作Kontakto故事。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "本组返回另一标题的原文开头，没有源篇名对应内容。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "Kontakto可能是刊物字段误当题名，需后核原身份；不能把智能助手剧情填入。",
+          "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "新查询仍将Kontakto显示为发表刊物，并返回作者另篇戏剧Servi Vin；未确定本ID原题与原篇，不把智能助手剧套入。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q139922507",
+      "identity": {
+        "title": "Nekonatoj",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 19,
+      "queries": [
+        "\"Nekonatoj\" \"Patas d'Illiers\" rakonto resumo"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922507",
+        "identity": {
+          "title": "Nekonatoj",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_deferred",
+        "queries": [
+          "\"Nekonatoj\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://fr.wiktionary.org/wiki/kurso",
+            "result": "tiny_original_quotation_only",
+            "reading_scope": "辞典只引用本篇p29教授进入课堂的一句，不足以形成两项作品问题。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次查询只找到辞典用例及2021合集/页码说明，未读完整篇章。",
+        "reason_unconfirmed": "课堂单句不能推出陌生人或外星故事，不造剧情。",
+        "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+        "issue_result": "deferred_without_analysis",
+        "attempt_input": "root-fast-round41-log.json",
+        "raw_reading_log": {
+          "id": "Q139922507",
+          "identity": {
+            "title": "Nekonatoj",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "source_search_deferred",
+          "queries": [
+            "\"Nekonatoj\" \"Laure Patas\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://fr.wiktionary.org/wiki/kurso",
+              "result": "tiny_original_quotation_only",
+              "reading_scope": "辞典只引用本篇p29教授进入课堂的一句，不足以形成两项作品问题。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "一次查询只找到辞典用例及2021合集/页码说明，未读完整篇章。",
+          "issue_result": "deferred_without_analysis",
+          "reason_unconfirmed": "课堂单句不能推出陌生人或外星故事，不造剧情。",
+          "next_step": "首遍后定位确切篇名的作者原文或目录，不借合集的其他篇。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "本次不同旧式的精确题名/作者查询为空，未取得具体情节；实际新增一次失败后置。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q139922524",
+      "identity": {
+        "title": "Vanila kremaĵo",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 22,
+      "queries": [
+        "\"Vanila kremaĵo\" rakonto recenzo"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922524",
+        "identity": {
+          "title": "Vanila kremaĵo",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Vanila kremaĵo\" \"Laure\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确篇名/作者检索未见本篇具体材料；不从食物题名猜消费、生物或虚拟体验，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q139922524",
+          "identity": {
+            "title": "Vanila kremaĵo",
+            "author": "Laure Patas d'Illiers"
+          },
+          "fast_index": 297,
+          "lane_index": 125,
+          "source_sort_year": 2021,
+          "priority_rank": 1247,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Vanila kremaĵo\" \"Laure\""
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确篇名/作者检索未见本篇具体材料；不从食物题名猜消费、生物或虚拟体验，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "只取得其他香草甜点文本及评论极短片段，没有本篇人物/行动依据；不靠食物题名补消费或生物问题。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q139922529",
+      "identity": {
+        "title": "Ekde la komenco",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 23,
+      "queries": [
+        "\"Ekde la komenco\" \"Patas\" rakonto recenzo"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922529",
+        "identity": {
+          "title": "Ekde la komenco",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ekde la komenco\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确篇名/作者检索只返回同作者其他故事或合集评价；没有本篇明确事件，不以作者风格补出因果，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q139922529",
+          "identity": {
+            "title": "Ekde la komenco",
+            "author": "Laure Patas d'Illiers"
+          },
+          "fast_index": 298,
+          "lane_index": 126,
+          "source_sort_year": 2021,
+          "priority_rank": 1251,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Ekde la komenco\" \"Laure Patas\""
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确篇名/作者检索只返回同作者其他故事或合集评价；没有本篇明确事件，不以作者风格补出因果，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "查询中的“从开始”仍为其他评论行文用语，没有精确同篇梗概；不把合集共同题材或其他故事归给此篇。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    },
+    {
+      "id": "Q136750829",
+      "identity": {
+        "title": "Sentient #5",
+        "author": "作者未知"
+      },
+      "pool_index": 31,
+      "queries": [
+        "\"Sentient #5\" Lemire Walta synopsis children"
+      ],
+      "actual_search_performed": true,
+      "actual_content_source_read": false,
+      "knowledge_analysis": false,
+      "retry_pass_only": true,
+      "prior_unsuccessful_attempts": 1,
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136750829",
+        "identity": {
+          "title": "Sentient #5",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_catalog_only",
+        "queries": [
+          "\"Sentient\" \"#5\" TKO Lemire"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.goodreads.com/book/show/54014344-sentient-5",
+            "material_kind": "实际返回目录/身份条目",
+            "result": "catalog_only",
+            "reading_scope": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。 原作未读。",
+        "reason_unconfirmed": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。",
+        "next_step": "首轮继续，后续找到准确选篇或本期内容再补。",
+        "issue_result": "deferred_no_analysis",
+        "attempt_input": "root-fast-round45-log.json",
+        "raw_reading_log": {
+          "id": "Q136750829",
+          "identity": {
+            "title": "Sentient #5",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_catalog_only",
+          "queries": [
+            "\"Sentient\" \"#5\" TKO Lemire"
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://www.goodreads.com/book/show/54014344-sentient-5",
+              "material_kind": "实际返回目录/身份条目",
+              "result": "catalog_only",
+              "reading_scope": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。 原作未读。",
+          "reason_unconfirmed": "本第5期只有题名、作者、页数及笼统评论，没有具体本期剧情；2020Kindle与源2019差异保留，不借第1期开端或全书替代。",
+          "issue_result": "deferred_no_analysis",
+          "next_step": "首轮继续，后续找到准确选篇或本期内容再补。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "current_unsuccessful_attempt_count": 1,
+      "failure_count": 2,
+      "original_full_text_read": false,
+      "status": "deferred_retry_pass",
+      "reason": "本次主要取得Sentient整套的统一宣传梗概，第5期自身仍只有书目；不以全套殖民船开局替代精确单期事件。",
+      "raw_search_artifact": "work/evidence/quick-retry-modern-r1-search-b.json",
+      "opens": []
+    }
+  ]
+}

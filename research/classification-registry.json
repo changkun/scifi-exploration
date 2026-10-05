@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 8,
+    "version": 9,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v7.json",
-      "sha256": "09987c09cf0836e32f1145219fc905ef805aaf639a59cee7438de7f19f191aba"
+      "file": "research/classification-registry-history/v8.json",
+      "sha256": "7b9a4a193040ad123eba2dca4684b28356c2406d89673e580dc2cd5cdd6f8ad4"
     },
-    "revision_note": "第76批保留八维、33入口和全部44旧方向，新增9项具体跨维度比较：战损义肢童话、亲历证言反驳流言、人工语义标注翻译、地图空白污名、卫生设施控制行动、史实文学人物混编、非人机器人愿望、卷宗调查叙事与死后言语规训。每项保留确切作品、定义边界和实际读取范围，未传播孤例或升级核验。",
+    "revision_note": "第77批保留八维、33入口和全部53旧方向，新增科幻批评的命名政治、机器参与的小说生成两项比较；新维度提议保留实际评论、作者工具与虚构叙事的边界，继续比较，不由孤例自动传播。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -92,6 +92,14 @@
       {
         "file": "research/classification-discovery-inputs/root-known-year-classification-candidates-r10.json",
         "sha256": "b1852199e0530b04269c55b5de108e8077f3dcd5b2aedef35359e3b41697c685"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round1.json",
+        "sha256": "ae42191780dd8c2ee4082de953d83c013557f7e651c0e90c8768878fdbbe464f"
+      },
+      {
+        "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round2.json",
+        "sha256": "94a2c0e7bae0db7bef872a87a35d87efb5bc42f3e47557ebf290d7cecce4fed2"
       }
     ]
   },
@@ -2612,6 +2620,59 @@
         }
       ],
       "id": "discovery:root-known-year-classification-candidates-r10:3",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "研究与分类实践",
+      "proposed_label": "科幻批评的命名政治",
+      "definition_boundary": "作品的批评论述明确把类型称谓或角色评价词的性别/文化权力作为研究对象；与小说里出现语言技术或一般分类标签不同，可跨研究方法与表达形态。当前仅一个批评选集范围，不直接推广到其他论文。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q139738264",
+          "identity": {
+            "title": "Hijas del futuro",
+            "author": "Lola Robles / Cristina Jurado"
+          },
+          "basis": "所读出版社保存评论明确Enerio Dima讨论Mary Sue的性别歧视含义，C.B. Estruch讨论afrofuturismo/futurismo africano概念；这是批评论述，不是虚构事件。",
+          "sources": [
+            "https://es.wikipedia.org/wiki/Hijas_del_futuro",
+            "https://consonni.org/sites/default/files/2022-05/diez-reflexiones-sobre-la-ciencia-ficcion-desde-el-feminismo.pdf",
+            "https://www.puvill.com/toc/9788416205752.pdf"
+          ],
+          "exact_support_scope": "仅实际查询返回的论文介绍与书目页，未读十篇论文全文；版权页2021与源2022保留。",
+          "actual_content_source_read": true,
+          "knowledge_analysis": false
+        }
+      ],
+      "id": "discovery:quick-retry-root-classification-candidates-round1:1",
+      "review_status": "pending_further_comparison",
+      "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
+    },
+    {
+      "proposed_dimension": "创作与生成方式",
+      "proposed_label": "机器参与的小说生成",
+      "definition_boundary": "实际小说创作采用程序生成诗歌、世界或事件，并将其纳入人工叙事；区别于小说角色使用AI或诗歌，不据虚构装置推断现实作者工具，也不认定全书为自动生成。当前一个明确案例，保留作者前言经评论转述的证据层级。",
+      "verification_status": "candidate_from_read_material_not_independently_verified",
+      "work_evidence": [
+        {
+          "id": "Q111182873",
+          "identity": {
+            "title": "The Salvage Crew",
+            "author": "Yudhanjaya Wijeratne"
+          },
+          "basis": "两篇实际返回的本书评论明确作者使用开源AI诗歌、行星生成器及随机事件程序；Strange Horizons将其联系到读者在随机事件中形成意义的创作实验。虚构Amber写诗与实际生成过程分别记。",
+          "sources": [
+            "https://strangehorizons.com/non-fiction/the-salvage-crew-by-yudhanjaya-wijeratne/",
+            "https://mithilareview.com/review-yudhanjaya-wijeratnes-the-salvage-crew/"
+          ],
+          "exact_support_scope": "仅评论实际查询返回的原书前言/创作方法讨论；未直接读原书前言、生成代码或小说全文，不作作者工具独立核验。",
+          "actual_content_source_read": true,
+          "knowledge_analysis": false
+        }
+      ],
+      "id": "discovery:quick-retry-root-classification-candidates-round2:1",
       "review_status": "pending_further_comparison",
       "review_note": "保留原提议维度、具体作品、定义边界和实际资料范围；孤例先比较，不自动传播标签、不增加核心补全或核验等级。"
     }

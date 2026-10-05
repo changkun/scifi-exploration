@@ -1,0 +1,2711 @@
+{
+  "metadata": {
+    "lane": 3,
+    "ownership_file": "quick-retry-lane-3.json",
+    "ownership_sha256": "ac16324a0ef149c7042828b0988fb133af9f30d08c6b8bc5b1a3e5be26af026c",
+    "read_date": "2026-10-05",
+    "status": "frozen_checkpoint",
+    "method": "exact-identity-quick-retry-source-assisted-knowledge-v1",
+    "queue_index_start": 32,
+    "queue_index_end_exclusive": 64,
+    "note": "仅原创topics、issue与issue_facets；保留源年和文本粒度。先读旧日志，一次不同精准查询，至多一次简单打开，足够即止。未读原作全文，解释待独立核验。",
+    "record_count": 32,
+    "analysis_count": 23,
+    "facet_count": 46,
+    "attempted_count": 32,
+    "not_added_count": 9,
+    "actual_search_count": 32,
+    "actual_open_count": 18,
+    "full_original_text_read_count": 0,
+    "frozen_date": "2026-10-05",
+    "next_queue_index": 64,
+    "checks": "32 exclusive exact IDs; all 23 currently missing, unchanged title/author; 3 issue fields/2 facets/unverified; old actual logs retained; new queries distinct; original snippets distinct from fulltext",
+    "actual_open_failed_count": 8,
+    "actual_open_returned_content_count": 10,
+    "scope_cautions": [
+      "One Piece93章节与剧情知识分开；不补下卷SMILE说明",
+      "Tamales检索开篇及结尾，中段未完整返回，0全文",
+      "Heart’s Filthy Lesson只读授权转载开篇与检索风险句",
+      "Force Awakens仅小说改编共享前提既有知识，非新增小说场景阅读",
+      "Three Moments选篇收入与剧情来自既有知识，外部只支持合集身份",
+      "Number Nine Moon排除评论者对资源危机的假设"
+    ]
+  },
+  "records": [
+    {
+      "id": "Q139888293",
+      "identity": {
+        "title": "One Piece, Volume 93: The Star of Ebisu",
+        "author": "尾田荣一郎"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"One Piece\" \"93\" \"The Star of Ebisu\" description smiles"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://onepiece.fandom.com/wiki/Volume_93",
+          "scope": "社群第93卷页检索确认章节932–942和中英卷名；剧情来自准确本卷既有知识，打开402失败。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://onepiece.fandom.com/wiki/Volume_93",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "社群第93卷页检索确认章节932–942和中英卷名；剧情来自准确本卷既有知识，打开402失败。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139888293",
+        "identity": {
+          "title": "One Piece, Volume 93: The Star of Ebisu",
+          "author": "尾田荣一郎"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "site:viz.com \"One Piece\" \"Volume 93\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确VIZ第93卷检索未返回可用该卷简介，延后，不借整个Wano篇、前后卷或动画。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q139888293",
+          "identity": {
+            "title": "One Piece, Volume 93: The Star of Ebisu",
+            "author": "尾田荣一郎"
+          },
+          "fast_index": 338,
+          "lane_index": 170,
+          "source_sort_year": 2019,
+          "priority_rank": 1415,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "site:viz.com \"One Piece\" \"Volume 93\""
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确VIZ第93卷检索未返回可用该卷简介，延后，不借整个Wano篇、前后卷或动画。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q110662515",
+      "identity": {
+        "title": "The Martian Simulacra",
+        "author": "Eric Brown"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"The Martian Simulacra\" Brown Holmes murder review"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://iansales.com/2018/04/14/reading-diary-2018-6/",
+          "scope": "Ian Sales阅读日记中《The Martian Simulacra》完整短评段；不读原中篇，不借同页《The Martian Job》。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "Ian Sales阅读日记中《The Martian Simulacra》完整短评段；不读原中篇，不借同页《The Martian Job》。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q110662515",
+        "identity": {
+          "title": "The Martian Simulacra",
+          "author": "Eric Brown"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Martian Simulacra\" \"Eric Brown\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://ericbrown.co.uk/novellas/",
+            "result": "catalog_only",
+            "reading_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。",
+        "reason_unconfirmed": "作者页只给1907 Martian Ambassador 委托 Holmes 调查谋杀的极短设定，不足两项有区别的具体矛盾；同页其他书情节不用。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q110662515",
+          "identity": {
+            "title": "The Martian Simulacra",
+            "author": "Eric Brown"
+          },
+          "queries": [
+            "\"The Martian Simulacra\" \"Eric Brown\" story"
+          ],
+          "urls_read": [
+            "https://ericbrown.co.uk/novellas/"
+          ],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "作者页只给1907 Martian Ambassador 委托 Holmes 调查谋杀的极短设定，不足两项有区别的具体矛盾；同页其他书情节不用。",
+          "exact_support_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q134731850",
+      "identity": {
+        "title": "Tamales in Space, and Other Phrases for the Beginning Speaker",
+        "author": "Gabriela Santiago"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Tamales in Space, and Other Phrases\" story language review"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://strangehorizons.com/fiction/tamales-in-space-and-other-phrases-for-the-beginning-speaker/",
+          "scope": "Strange Horizons原篇检索返回开篇店铺/气味段及Old Tatters吃tamales的结尾段；中段不完整，标2351词不表示已全文读取；一次打开Cache miss。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://strangehorizons.com/fiction/tamales-in-space-and-other-phrases-for-the-beginning-speaker/",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "Strange Horizons原篇检索返回开篇店铺/气味段及Old Tatters吃tamales的结尾段；中段不完整，标2351词不表示已全文读取；一次打开Cache miss。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134731850",
+        "identity": {
+          "title": "Tamales in Space, and Other Phrases for the Beginning Speaker",
+          "author": "Gabriela Santiago"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Tamales in Space\" \"Gabriela Santiago\" 2018"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://strangehorizons.com/fiction/tamales-in-space-and-other-phrases-for-the-beginning-speaker/",
+            "scope": "检索看到开篇食物感官描述与空间站空气维修待办；一次正文打开失败",
+            "result": "opening_search_excerpt_only; Internal Error on open",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "只得到短开篇，lenguas与食品/语言的具体关系未读清；不由比喻推断外星感官或整篇冲突。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q134731850",
+          "identity": {
+            "title": "Tamales in Space, and Other Phrases for the Beginning Speaker",
+            "author": "Gabriela Santiago"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Tamales in Space\" \"Gabriela Santiago\" 2018"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://strangehorizons.com/fiction/tamales-in-space-and-other-phrases-for-the-beginning-speaker/",
+              "scope": "检索看到开篇食物感官描述与空间站空气维修待办；一次正文打开失败",
+              "result": "opening_search_excerpt_only; Internal Error on open"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "只得到短开篇，lenguas与食品/语言的具体关系未读清；不由比喻推断外星感官或整篇冲突。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137126735",
+      "identity": {
+        "title": "Descender #27",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Descender\" \"27\" Jeff Lemire issue review Harvester"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://comicbook.com/comics/news/review-descender-27/",
+          "scope": "Chase Magnett本期评论L89–101；仅第27期回溯开局，不使用28/29期揭晓。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://comicbook.com/comics/news/review-descender-27/",
+          "scope": "Chase Magnett本期评论L89–101；仅第27期回溯开局，不使用28/29期揭晓。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "Chase Magnett本期评论L89–101；仅第27期回溯开局，不使用28/29期揭晓。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137126735",
+        "identity": {
+          "title": "Descender #27",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "site:imagecomics.com \"Descender #27\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/descender-27",
+            "material_kind": "official_comic_issue_promotion_metadata_only",
+            "support_scope": "实际读Image本期完整宣传与创作者/2018发行元数据，仅起源将揭示，没有具体发生方式。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "official_comic_issue_promotion_metadata_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读Image本期完整宣传与创作者/2018发行元数据，仅起源将揭示，没有具体发生方式。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "本期官方简介只宣传古老机器/Harvesters起源与Tim-21联系将揭示，无实际事件和选择可具体分析；保留漫画期号后置。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round15-log.json",
+        "raw_reading_log": {
+          "id": "Q137126735",
+          "identity": {
+            "title": "Descender #27",
+            "author": "作者未知"
+          },
+          "fast_index": 354,
+          "lane_index": 190,
+          "source_sort_year": 2018,
+          "priority_rank": 1489,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "site:imagecomics.com \"Descender #27\""
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://imagecomics.com/comics/releases/descender-27",
+              "material_kind": "official_comic_issue_promotion_metadata_only",
+              "support_scope": "实际读Image本期完整宣传与创作者/2018发行元数据，仅起源将揭示，没有具体发生方式。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "本期官方简介只宣传古老机器/Harvesters起源与Tim-21联系将揭示，无实际事件和选择可具体分析；保留漫画期号后置。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139881240",
+      "identity": {
+        "title": "Renegades",
+        "author": "Craig Alanson"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Renegades\" Craig Alanson Expeditionary Force book seven description"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.fantasticfiction.com/a/craig-alanson/renegades.htm",
+          "scope": "Fantastic Fiction本卷书介L14–16，精确Expeditionary Force第7卷开局；未读后续行动。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://www.fantasticfiction.com/a/craig-alanson/renegades.htm",
+          "scope": "Fantastic Fiction本卷书介L14–16，精确Expeditionary Force第7卷开局；未读后续行动。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "Fantastic Fiction本卷书介L14–16，精确Expeditionary Force第7卷开局；未读后续行动。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139881240",
+        "identity": {
+          "title": "Renegades",
+          "author": "Craig Alanson"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Renegades\" \"Craig Alanson\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Craig_Alanson",
+            "scope": "实际检索到Expeditionary Force第7卷/2018书目",
+            "result": "bibliography_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "精准查询没有可靠本卷简介；零散读者讨论和伪装PDF链接未打开，不据主系列泛化。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q139881240",
+          "identity": {
+            "title": "Renegades",
+            "author": "Craig Alanson"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Renegades\" \"Craig Alanson\" synopsis"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Craig_Alanson",
+              "scope": "实际检索到Expeditionary Force第7卷/2018书目",
+              "result": "bibliography_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "精准查询没有可靠本卷简介；零散读者讨论和伪装PDF链接未打开，不据主系列泛化。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q77838859",
+      "identity": {
+        "title": "Bionautas",
+        "author": "Cristina Jurado"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Bionautas\" Cristina Jurado sinopsis Cerbero"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.microsiervos.com/archivo/libros/bionautas-novela-primer-contacto.html",
+          "scope": "Wicho署名本书评论L27–31；不把评论对现实疫情的联想当作品出版时事实。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://www.microsiervos.com/archivo/libros/bionautas-novela-primer-contacto.html",
+          "scope": "Wicho署名本书评论L27–31；不把评论对现实疫情的联想当作品出版时事实。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "Wicho署名本书评论L27–31；不把评论对现实疫情的联想当作品出版时事实。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q77838859",
+        "identity": {
+          "title": "Bionautas",
+          "author": "Cristina Jurado"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Bionautas\" \"Cristina Jurado\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确题名作者查询主要返回作者传记对疫情的概述，没有具体人物行动或冲突材料；不从题名和作者标签猜剧情，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round15-log.json",
+        "raw_reading_log": {
+          "id": "Q77838859",
+          "identity": {
+            "title": "Bionautas",
+            "author": "Cristina Jurado"
+          },
+          "fast_index": 366,
+          "lane_index": 204,
+          "source_sort_year": 2018,
+          "priority_rank": 1537,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Bionautas\" \"Cristina Jurado\""
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确题名作者查询主要返回作者传记对疫情的概述，没有具体人物行动或冲突材料；不从题名和作者标签猜剧情，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q110217957",
+      "identity": {
+        "title": "The Wind Walkers",
+        "author": "阿兰·达马西奥 / Éric Henninot"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"La Horde du Contrevent\" Henninot Delcourt résumé bande dessinée"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.creabulles.be/chroniques/la-horde-du-contrevant.html",
+          "scope": "准确Henninot漫画第一卷评论的第34队伍从童年训练、Aberlaas及持续风；附Delcourt视频简介检索和LesComics漫画第一卷风向段，不观看视频。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_P6nf1fXK-o",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_P6nf1fXK-o",
+          "scope": "Delcourt视频文本检索简介：严酷训练、儿童时离开Aberlaas；直接打开失败，未观看。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://www.lescomics.fr/recueil-vf/la-horde-du-contrevent-tome-1-delcourt/",
+          "scope": "Henninot第一卷改编评论，狭长世界与东向西持续风段。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "准确Henninot漫画第一卷评论的第34队伍从童年训练、Aberlaas及持续风；附Delcourt视频简介检索和LesComics漫画第一卷风向段，不观看视频。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q110217957",
+        "identity": {
+          "title": "The Wind Walkers",
+          "author": "阿兰·达马西奥 / Éric Henninot"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Wind Walkers\" \"Henninot\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "真实查询和上述可见书目信息，未读完整原作，未形成分析。",
+        "reason_unconfirmed": "本次未得该漫画改编具体材料，不把 Damasio 原小说全文情节直接复制到漫画系列实体。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q110217957",
+          "identity": {
+            "title": "The Wind Walkers",
+            "author": "阿兰·达马西奥 / Éric Henninot"
+          },
+          "queries": [
+            "\"The Wind Walkers\" \"Henninot\" synopsis"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "本次未得该漫画改编具体材料，不把 Damasio 原小说全文情节直接复制到漫画系列实体。",
+          "exact_support_scope": "真实查询和上述可见书目信息，未读完整原作，未形成分析。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q131466687",
+      "identity": {
+        "title": "Ubo",
+        "author": "Steve Rasnic Tem"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Ubo\" Steve Rasnic Tem Solaris book description"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://play.google.com/store/books/details/Steve_Rasnic_Tem_Ubo?id=29kQEgAAQBAJ",
+          "scope": "Google Play转载本书About this ebook检索段：Daniel被囚、日常角色实验、身份消解；未读免费样本。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "Google Play转载本书About this ebook检索段：Daniel被囚、日常角色实验、身份消解；未读免费样本。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131466687",
+        "identity": {
+          "title": "Ubo",
+          "author": "Steve Rasnic Tem"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ubo\" \"Steve Rasnic Tem\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "实际搜索与上述可见材料范围，不是本篇全文或独立核验；未形成核心分析。",
+        "reason_unconfirmed": "本轮查询仅有作者书目，未返回明确剧情；不从恐怖类型或作者其他作品推测。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q131466687",
+          "identity": {
+            "title": "Ubo",
+            "author": "Steve Rasnic Tem"
+          },
+          "queries": [
+            "\"Ubo\" \"Steve Rasnic Tem\" synopsis"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "本轮查询仅有作者书目，未返回明确剧情；不从恐怖类型或作者其他作品推测。",
+          "exact_support_scope": "实际搜索与上述可见材料范围，不是本篇全文或独立核验；未形成核心分析。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139960038",
+      "identity": {
+        "title": "Trouble on Paradise",
+        "author": "Craig Alanson"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Trouble on Paradise\" Expeditionary Force Perkins novella mission"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://expeditionary-force-by-craig-alanson.fandom.com/wiki/ExForce_3.5%3A_Trouble_on_Paradise",
+          "scope": "本作社群页面检索摘要中的投射器重启及Kristang护卫舰局部事件；不读全篇、不推定最后任务成败。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "本作社群页面检索摘要中的投射器重启及Kristang护卫舰局部事件；不读全篇、不推定最后任务成败。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139960038",
+        "identity": {
+          "title": "Trouble on Paradise",
+          "author": "Craig Alanson"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Trouble on Paradise\" \"Craig Alanson\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.goodreads.com/book/show/34670700",
+            "result": "catalog_only",
+            "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "简介只明确Major Perkins及滞留部队，其他读者短评零散；首轮不足两个可靠具体矛盾，延后而不采自动聚合。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q139960038",
+          "identity": {
+            "title": "Trouble on Paradise",
+            "author": "Craig Alanson"
+          },
+          "queries": [
+            "\"Trouble on Paradise\" \"Craig Alanson\""
+          ],
+          "urls_read": [
+            "https://www.goodreads.com/book/show/34670700"
+          ],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "简介只明确Major Perkins及滞留部队，其他读者短评零散；首轮不足两个可靠具体矛盾，延后而不采自动聚合。",
+          "first_pass_only": true,
+          "original_full_text_read": false
+        },
+        "actual_search_performed": true
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q60762073",
+      "identity": {
+        "title": "信長老師的年幼妻子",
+        "author": "紺野安須"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"ノブナガ先生の幼な妻\" 双葉社 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://mantan-web.jp/article/20190822dog00m200090000c.html",
+          "scope": "MANTANWEB漫画完结报道L27–31所述原漫画开局；动画仅发行背景，不用其剧情。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://mantan-web.jp/article/20190822dog00m200090000c.html",
+          "scope": "MANTANWEB漫画完结报道L27–31所述原漫画开局；动画仅发行背景，不用其剧情。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "MANTANWEB漫画完结报道L27–31所述原漫画开局；动画仅发行背景，不用其剧情。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q60762073",
+        "identity": {
+          "title": "信長老師的年幼妻子",
+          "author": "紺野安須"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"信長先生の幼な妻\" あらすじ"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "实际查询只返回不可靠镜像条目，原刊题为ノブナガ先生の幼な妻；未补造另一次改写查询，同名与改编边界延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round20-log.json",
+        "raw_reading_log": {
+          "id": "Q60762073",
+          "identity": {
+            "title": "信長老師的年幼妻子",
+            "author": "紺野安須"
+          },
+          "queries": [
+            "\"信長先生の幼な妻\" あらすじ"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "实际查询只返回不可靠镜像条目，原刊题为ノブナガ先生の幼な妻；未补造另一次改写查询，同名与改编边界延后。",
+          "first_pass_only": true,
+          "original_full_text_read": false
+        },
+        "actual_search_performed": true
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q102348064",
+      "identity": {
+        "title": "La cité de tous les avenirs",
+        "author": "柏納·韋柏"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"La cité de tous les avenirs\" Bernard Werber histoire nouvelle"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://booknode.com/la_cite_de_tous_les_avenirs_03677005/extraits",
+          "scope": "社群原文首句：建筑师Romulus Wells向联合国介绍未来城市；后段未返回。",
+          "result": "opening_sentence_only"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q102348064",
+        "identity": {
+          "title": "La cité de tous les avenirs",
+          "author": "柏納·韋柏"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"La cité de tous les avenirs\" Werber synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次题名检索只有社区出版描述与作者列表，缺准确本题名形态/事件；不据Werber风格推未来城市故事。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q102348064",
+          "identity": {
+            "title": "La cité de tous les avenirs",
+            "author": "柏納·韋柏"
+          },
+          "fast_index": 343,
+          "lane_index": 178,
+          "source_sort_year": 2018,
+          "priority_rank": 1442,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"La cité de tous les avenirs\" Werber synopsis"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次题名检索只有社区出版描述与作者列表，缺准确本题名形态/事件；不据Werber风格推未来城市故事。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "新查询找到准确首句和图书馆短篇身份，但实际未读到计划内容或发生的冲突，不能用未来城市标题和联合国场景填两项问题。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q48817839",
+      "identity": {
+        "title": "Denver Moon",
+        "author": "喬許·比奧拉"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Denver Moon\" \"2018\" \"Minds of Mars\" description"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.kirkusreviews.com/book-reviews/warren-hammond/denver-moon/",
+          "scope": "2018第一部小说The Minds of Mars的Kirkus评论，不是此前Metamorphosis漫画。",
+          "result": "more_specific_work_but_entity_scope_unconfirmed"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q48817839",
+        "identity": {
+          "title": "Denver Moon",
+          "author": "喬許·比奧拉"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Denver Moon\" \"Josh Viola\" publisher synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://joshuaviola.com/publication-denver-moon-metamorphosis-graphic-novel.html",
+            "result": "catalog_only",
+            "reading_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://www.westword.com/arts-culture/denver-moon-the-minds-of-mars-ready-to-blast-off-10304334/",
+            "result": "catalog_only",
+            "reading_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。",
+        "reason_unconfirmed": "作者页描述Metamorphosis漫画，访谈说明Denver Moon是小说/漫画/音乐跨媒介计划；canonical仅literary work，不能确认本实体粒度，不移用该漫画案件。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q48817839",
+          "identity": {
+            "title": "Denver Moon",
+            "author": "喬許·比奧拉"
+          },
+          "queries": [
+            "\"Denver Moon\" \"Josh Viola\" publisher synopsis"
+          ],
+          "urls_read": [
+            "https://joshuaviola.com/publication-denver-moon-metamorphosis-graphic-novel.html",
+            "https://www.westword.com/arts-culture/denver-moon-the-minds-of-mars-ready-to-blast-off-10304334/"
+          ],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "作者页描述Metamorphosis漫画，访谈说明Denver Moon是小说/漫画/音乐跨媒介计划；canonical仅literary work，不能确认本实体粒度，不移用该漫画案件。",
+          "exact_support_scope": "仅上述实际材料与局限；未形成核心分析，未读完整原作。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "新来源可说明首部小说剧情，但原Denver Moon本体可能是跨媒介系列、作者单列Viola；未精确确认该QID粒度，保留疑点不以小说首卷替代整个项目。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q134458836",
+      "identity": {
+        "title": "The Crimson King",
+        "author": "格雷厄姆·麦克尼尔"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"The Crimson King\" Black Library Magnus shards"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.blacklibrary.com/the-horus-heresy/HH-Novel-Series/hh-the-crimson-king-ebook.html",
+          "scope": "官方精确第44卷检索只有Thousand Sons与Magnus被放逐追猎；一次打开403。",
+          "result": "thin_search_excerpt"
+        },
+        {
+          "url": "https://www.blacklibrary.com/the-horus-heresy/HH-Novel-Series/hh-the-crimson-king-ebook.html",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134458836",
+        "identity": {
+          "title": "The Crimson King",
+          "author": "格雷厄姆·麦克尼尔"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Crimson King\" \"Graham McNeill\" synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "实际搜索与上述可见材料范围，不是本篇全文或独立核验；未形成核心分析。",
+        "reason_unconfirmed": "本次搜索多为系列粉丝讨论与一般主题，未取得可完整归属本卷的明确书介；不借其他 Magnus/Ahriman 小说填充。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q134458836",
+          "identity": {
+            "title": "The Crimson King",
+            "author": "格雷厄姆·麦克尼尔"
+          },
+          "queries": [
+            "\"The Crimson King\" \"Graham McNeill\" synopsis"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "本次搜索多为系列粉丝讨论与一般主题，未取得可完整归属本卷的明确书介；不借其他 Magnus/Ahriman 小说填充。",
+          "exact_support_scope": "实际搜索与上述可见材料范围，不是本篇全文或独立核验；未形成核心分析。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "新查询大量返回跨书Magnus人物页，官方本作书介过薄且打开403；不从King of Ashes或其他Ahriman卷移植碎片任务。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q134731833",
+      "identity": {
+        "title": "Weather Girl",
+        "author": "E. J. Swift"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Weather Girl\" Swift short story review Infinity Wars"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://ejswift.co.uk/2017/09/15/infinity-wars-2084-and-zui-found/",
+          "scope": "作者确认Weather Girl收入Infinity Wars，军事SF叙述为合集范围。",
+          "result": "contents_not_story_plot"
+        },
+        {
+          "url": "https://starshipsofa.com/starshipsofa-no-564-e-j-swift/",
+          "scope": "朗读节目目录；未听音频。",
+          "result": "audio_entry_not_read"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134731833",
+        "identity": {
+          "title": "Weather Girl",
+          "author": "E. J. Swift"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Weather Girl\" \"E. J. Swift\" 2017"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本轮精准查询没有返回可明确对应本篇的具体剧情材料；题名不足以推定天气控制设定。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q134731833",
+          "identity": {
+            "title": "Weather Girl",
+            "author": "E. J. Swift"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Weather Girl\" \"E. J. Swift\" 2017"
+          ],
+          "materials_checked": [],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本轮精准查询没有返回可明确对应本篇的具体剧情材料；题名不足以推定天气控制设定。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "准确篇名仍只有合集目录、作者简介和朗读入口；不能把合集战争描述或作者气候小说当本篇。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137126808",
+      "identity": {
+        "title": "Paklis #4",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Paklis\" \"4\" Dustin Weaver review Zoohurst"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/book/show/36148805-paklis-4",
+          "scope": "精确第4期Zoohurst目的地、巨型动物建筑与Wing Store选篇说明。",
+          "result": "same_thin_description"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137126808",
+        "identity": {
+          "title": "Paklis #4",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Paklis #4\" image comics"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/paklis-4",
+            "scope": "实际打开L36–53：Tara目的地Zoohurst、神秘传输出现Shana Tyson姓名，以及另篇朋友到Wing Store。",
+            "result": "read_limited_description",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "精确单期简介已取得，但只给到目的地与异店访问，尚不足形成两项有具体矛盾依据的问题；不使用#1或整个系列剧情代填。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q137126808",
+          "identity": {
+            "title": "Paklis #4",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Paklis #4\" image comics"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://imagecomics.com/comics/releases/paklis-4",
+              "scope": "实际打开L36–53：Tara目的地Zoohurst、神秘传输出现Shana Tyson姓名，以及另篇朋友到Wing Store。",
+              "result": "read_limited_description"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "精确单期简介已取得，但只给到目的地与异店访问，尚不足形成两项有具体矛盾依据的问题；不使用#1或整个系列剧情代填。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "新来源仍是旧官方简介转载，没有Tara搜索或Wing Store内具体冲突；不能把目的地与建筑样式变成未经读取的制度剧情。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q141093598",
+      "identity": {
+        "title": "1949 #1",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"1949\" \"#1\" comic synopsis publisher"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/1949_in_comics",
+          "scope": "1949年漫画历史而非2017单期1949 #1。",
+          "result": "wrong_entity"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q141093598",
+        "identity": {
+          "title": "1949 #1",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"1949 #1\" comic 2017"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "精准单期查询没有返回可确认情节的匹配来源；不把历史年份或漫画总标题作为剧情。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q141093598",
+          "identity": {
+            "title": "1949 #1",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"1949 #1\" comic 2017"
+          ],
+          "materials_checked": [],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "精准单期查询没有返回可确认情节的匹配来源；不把历史年份或漫画总标题作为剧情。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "改写查询仍受历史年份同名干扰，未确认2017本期作者/出版方与情节；不挪用历史漫画。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q106093586",
+      "identity": {
+        "title": "S: Kimi to, Kanojo to, Unmei to",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"S 君と、彼女と、運命と\" 漫画 あらすじ"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://honcierge.jp/articles/shelf_story/6290",
+          "scope": "Honcierge本漫画评论开局あらすじ段，Epoch/S/R与NOIR邮件；不读全集，避免后续成人内容与结局。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "Honcierge本漫画评论开局あらすじ段，Epoch/S/R与NOIR邮件；不读全集，避免后续成人内容与结局。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q106093586",
+        "identity": {
+          "title": "S: Kimi to, Kanojo to, Unmei to",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"S:Kimi to, Kanojo to, Unmei to\" novel"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.reddit.com/r/manga/comments/1ga78u4/slrequest_s_kimi_to_kanojo_to_unmei_to/",
+            "scope": "社区翻译请求帖中的漫画简介：2045脑植通信、VR性体验、AI与恋爱困难。",
+            "result": "community_setting_excerpt",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "材料只描述时代技术与恋爱前提，未给具体人物选择和冲突，且本轮未独立确认13卷原漫画层级；延后，不根据标题或通用设定强补两项问题。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round18-log.json",
+        "raw_reading_log": {
+          "id": "Q106093586",
+          "identity": {
+            "title": "S: Kimi to, Kanojo to, Unmei to",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"S:Kimi to, Kanojo to, Unmei to\" novel"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.reddit.com/r/manga/comments/1ga78u4/slrequest_s_kimi_to_kanojo_to_unmei_to/",
+              "scope": "社区翻译请求帖中的漫画简介：2045脑植通信、VR性体验、AI与恋爱困难。",
+              "result": "community_setting_excerpt"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "材料只描述时代技术与恋爱前提，未给具体人物选择和冲突，且本轮未独立确认13卷原漫画层级；延后，不根据标题或通用设定强补两项问题。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q131472487",
+      "identity": {
+        "title": "Number Nine Moon",
+        "author": "亞歷山大·艾爾文"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Number Nine Moon\" Irvine Analog review Mars"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://amazingstories.com/2016/01/magazine-review-fsf-for-janfeb-2016/",
+          "scope": "Amazing Stories精确Irvine本篇段的地球放弃火星及人物退缩意象；相邻两篇不使用，评论者资源危机假设不作为本篇情节。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "Amazing Stories精确Irvine本篇段的地球放弃火星及人物退缩意象；相邻两篇不使用，评论者资源危机假设不作为本篇情节。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131472487",
+        "identity": {
+          "title": "Number Nine Moon",
+          "author": "亞歷山大·艾爾文"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Number Nine Moon\" \"Alexander Irvine\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "真实查询和上述可见书目信息，未读完整原作，未形成分析。",
+        "reason_unconfirmed": "本轮未保留可明确解释本篇矛盾的内容材料，后置而不从题名推测。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q131472487",
+          "identity": {
+            "title": "Number Nine Moon",
+            "author": "亞歷山大·艾爾文"
+          },
+          "queries": [
+            "\"Number Nine Moon\" \"Alexander Irvine\" story"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "本轮未保留可明确解释本篇矛盾的内容材料，后置而不从题名推测。",
+          "exact_support_scope": "真实查询和上述可见书目信息，未读完整原作，未形成分析。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q134462801",
+      "identity": {
+        "title": "Latium : tome I",
+        "author": "Romain Lucazeau"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Latium\" \"1\" \"Lucazeau\" Denoël résumé"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.herbefol.com/2016/10/19/latium-1-de-romain-lucazeau/",
+          "scope": "Herbefol署名第1卷评论首段剧情；不拿两卷合订或第2卷结局填本卷。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "Herbefol署名第1卷评论首段剧情；不拿两卷合订或第2卷结局填本卷。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q134462801",
+        "identity": {
+          "title": "Latium : tome I",
+          "author": "Romain Lucazeau"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Latium\" \"tome I\" \"Lucazeau\" éditeur"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次精确Latium tome I作者出版查询未返回足够本卷具体情节，先延后，不把同名两卷合订或泛机器人长篇介绍继承第1卷。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q134462801",
+          "identity": {
+            "title": "Latium : tome I",
+            "author": "Romain Lucazeau"
+          },
+          "fast_index": 411,
+          "lane_index": 257,
+          "source_sort_year": 2016,
+          "priority_rank": 1724,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Latium\" \"tome I\" \"Lucazeau\" éditeur"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次精确Latium tome I作者出版查询未返回足够本卷具体情节，先延后，不把同名两卷合订或泛机器人长篇介绍继承第1卷。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137079064",
+      "identity": {
+        "title": "Descender #10",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Descender\" \"10\" comic review Between"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://comicbookroundup.com/comic-books/reviews/image-comics/descender/10",
+          "scope": "第10期聚合页发行简介及Enrique Rea短评L47–49；未打开被链接的完整评论或漫画。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://comicbookroundup.com/comic-books/reviews/image-comics/descender/10",
+          "scope": "第10期聚合页发行简介及Enrique Rea短评L47–49；未打开被链接的完整评论或漫画。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "第10期聚合页发行简介及Enrique Rea短评L47–49；未打开被链接的完整评论或漫画。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137079064",
+        "identity": {
+          "title": "Descender #10",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Descender #10\" Image comics"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/descender-10",
+            "scope": "本单期简介仅给Machine Moon谜题和Between群体初见。",
+            "result": "brief_issue_description",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本期明确描述有限但未给谜题、Between关系具体矛盾；不套用整套角色后续或第19/23期。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q137079064",
+          "identity": {
+            "title": "Descender #10",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Descender #10\" Image comics"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://imagecomics.com/comics/releases/descender-10",
+              "scope": "本单期简介仅给Machine Moon谜题和Between群体初见。",
+              "result": "brief_issue_description"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本期明确描述有限但未给谜题、Between关系具体矛盾；不套用整套角色后续或第19/23期。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137079549",
+      "identity": {
+        "title": "Descender #16",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Descender\" \"16\" review Driller crime"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.mdpi.com/2076-0787/14/4/91",
+          "scope": "研究论文中明确标D16的Driller/Scoops矿区回溯段：替代、失修、泄漏、摧毁及报复；不把全文其他期与Ascender部分算本期。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "研究论文中明确标D16的Driller/Scoops矿区回溯段：替代、失修、泄漏、摧毁及报复；不把全文其他期与Ascender部分算本期。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137079549",
+        "identity": {
+          "title": "Descender #16",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "site:imagecomics.com \"Descender #16\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/descender-16",
+            "material_kind": "official_comic_issue_promotion_insufficient_plot",
+            "support_scope": "实际读Image第16期完整检索宣传及2016署名，未具体说明secret sins是谁/如何发生。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "official_comic_issue_promotion_insufficient_plot",
+            "result": "catalog_only",
+            "reading_scope": "实际读Image第16期完整检索宣传及2016署名，未具体说明secret sins是谁/如何发生。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "官方第16期简介只说某主要角色秘密罪行将改变阵营，没有具体人物和行动；后置，不能以类型概述写两项情节依据。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q137079549",
+          "identity": {
+            "title": "Descender #16",
+            "author": "作者未知"
+          },
+          "fast_index": 416,
+          "lane_index": 262,
+          "source_sort_year": 2016,
+          "priority_rank": 1744,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "site:imagecomics.com \"Descender #16\""
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://imagecomics.com/comics/releases/descender-16",
+              "material_kind": "official_comic_issue_promotion_insufficient_plot",
+              "support_scope": "实际读Image第16期完整检索宣传及2016署名，未具体说明secret sins是谁/如何发生。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "官方第16期简介只说某主要角色秘密罪行将改变阵营，没有具体人物和行动；后置，不能以类型概述写两项情节依据。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q23011443",
+      "identity": {
+        "title": "Star Wars: The Force Awakens",
+        "author": "艾伦·迪安·福斯特"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Star Wars The Force Awakens\" Foster novel description Rey Finn"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.penguinrandomhouse.com/books/530125/the-force-awakens-star-wars-by-alan-dean-foster/",
+          "scope": "PRH L200–204确认Foster官方小说改编身份；共享基本前提来自准确既有知识，出版介绍不支持具体全部情节。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://www.penguinrandomhouse.com/books/530125/the-force-awakens-star-wars-by-alan-dean-foster/",
+          "scope": "PRH L200–204确认Foster官方小说改编身份；共享基本前提来自准确既有知识，出版介绍不支持具体全部情节。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "PRH L200–204确认Foster官方小说改编身份；共享基本前提来自准确既有知识，出版介绍不支持具体全部情节。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q23011443",
+        "identity": {
+          "title": "Star Wars: The Force Awakens",
+          "author": "艾伦·迪安·福斯特"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Force Awakens\" \"Alan Dean Foster\" publisher"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "实际查询未得到足够本卷内容，不是零查询处置；未形成核心分析。",
+        "reason_unconfirmed": "本轮明确小说改编身份与电子2015/纸本2016日期，却没有小说本身的具体情节资料；不直接用电影剧情当作文字版阅读。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q23011443",
+          "identity": {
+            "title": "Star Wars: The Force Awakens",
+            "author": "艾伦·迪安·福斯特"
+          },
+          "queries": [
+            "\"The Force Awakens\" \"Alan Dean Foster\" publisher"
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "status": "deferred",
+          "failure_count": 1,
+          "reason": "本轮明确小说改编身份与电子2015/纸本2016日期，却没有小说本身的具体情节资料；不直接用电影剧情当作文字版阅读。",
+          "exact_support_scope": "实际查询未得到足够本卷内容，不是零查询处置；未形成核心分析。"
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q28670866",
+      "identity": {
+        "title": "Il futuro è finito",
+        "author": "Federico De Caroli"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Il futuro è finito\" \"Federico De Caroli\" romanzo sinossi"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://ilmiolibro.kataweb.it/libro/narrativa/227156/il-futuro-e-finito/",
+          "scope": "作者自出版平台Presentazione dell’opera L75–80；不读样本，不补书介未揭示的终局。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://ilmiolibro.kataweb.it/libro/narrativa/227156/il-futuro-e-finito/",
+          "scope": "作者自出版平台Presentazione dell’opera L75–80；不读样本，不补书介未揭示的终局。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "作者自出版平台Presentazione dell’opera L75–80；不读样本，不补书介未揭示的终局。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q28670866",
+        "identity": {
+          "title": "Il futuro è finito",
+          "author": "Federico De Caroli"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Le futur est fini\" \"Federico De Caroli\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "本次实际查询使用法译标题但未命中；原源题Il futuro è finito，未补造另一次意语查询。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q28670866",
+          "identity": {
+            "title": "Il futuro è finito",
+            "author": "Federico De Caroli"
+          },
+          "queries": [
+            "\"Le futur est fini\" \"Federico De Caroli\""
+          ],
+          "urls_read": [],
+          "actual_search_performed": true,
+          "actual_content_source_read": false,
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "本次实际查询使用法译标题但未命中；原源题Il futuro è finito，未补造另一次意语查询。",
+          "first_pass_only": true,
+          "original_full_text_read": false
+        },
+        "actual_search_performed": true
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q54864176",
+      "identity": {
+        "title": "في ممر الفئران",
+        "author": "艾哈迈德·哈立德·陶菲克"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"في ممر الفئران\" رواية ملخص ظلام الشرقاوي"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://jawak.com/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D9%85%D9%84%D8%AE%D8%B5-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D9%85%D8%B1-%D8%A7%D9%84%D9%81%D8%A6%D8%B1%D8%A7%D9%86-%D8%A7%D8%AD%D9%85%D8%AF-%D8%AE%D8%A7%D9%84%D8%AF-%D8%AA%D9%88%D9%81%D9%8A%D9%82-83467",
+          "scope": "Jawak针对本书检索摘要的Sharkawi昏迷转入及领导反抗段；直接打开只返回挑战页，未读其全文或小说。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://jawak.com/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D9%85%D9%84%D8%AE%D8%B5-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D9%85%D8%B1-%D8%A7%D9%84%D9%81%D8%A6%D8%B1%D8%A7%D9%86-%D8%A7%D8%AD%D9%85%D8%AF-%D8%AE%D8%A7%D9%84%D8%AF-%D8%AA%D9%88%D9%81%D9%8A%D9%82-83467",
+          "scope": "打开只返回One moment, please挑战页，无评论正文",
+          "result": "access_challenge_not_read"
+        }
+      ],
+      "reading_scope": "Jawak针对本书检索摘要的Sharkawi昏迷转入及领导反抗段；直接打开只返回挑战页，未读其全文或小说。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q54864176",
+        "identity": {
+          "title": "في ممر الفئران",
+          "author": "艾哈迈德·哈立德·陶菲克"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"في ممر الفئران\" توفيق دار"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://jssa.journals.ekb.eg/article_322350_d031e5f5a1fa50a4b34ce336e30fb250.pdf",
+            "scope": "检索返回的学术论文参考书目信息，作者/出版社/2016年份；未读论文正文。",
+            "result": "bibliography_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://www.reddit.com/r/EgyReaders/comments/1qbu1xm/",
+            "scope": "社区检索摘要仅提主人公Al-Sharqawi昏迷及象征性评论，没有足够具体世界规则。",
+            "result": "insufficient_plot",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "已得到题名书目信息与非常有限的昏迷开篇，不能据此把另一部《乌托邦》的阶级情节移植到本作，也不足支持两个具体问题。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q54864176",
+          "identity": {
+            "title": "في ممر الفئران",
+            "author": "艾哈迈德·哈立德·陶菲克"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"في ممر الفئران\" توفيق دار"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://jssa.journals.ekb.eg/article_322350_d031e5f5a1fa50a4b34ce336e30fb250.pdf",
+              "scope": "检索返回的学术论文参考书目信息，作者/出版社/2016年份；未读论文正文。",
+              "result": "bibliography_only"
+            },
+            {
+              "url": "https://www.reddit.com/r/EgyReaders/comments/1qbu1xm/",
+              "scope": "社区检索摘要仅提主人公Al-Sharqawi昏迷及象征性评论，没有足够具体世界规则。",
+              "result": "insufficient_plot"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "已得到题名书目信息与非常有限的昏迷开篇，不能据此把另一部《乌托邦》的阶级情节移植到本作，也不足支持两个具体问题。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q100588063",
+      "identity": {
+        "title": "The Heart's Filthy Lesson",
+        "author": "Elizabeth Bear"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"The Heart’s Filthy Lesson\" Bear story Venus Picard"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.lightspeedmagazine.com/fiction/hearts-filthy-lesson/",
+          "scope": "作者授权Lightspeed转载原篇检索返回开篇Dharthi/adaptshell段及野外风险句；页面9690词元数据不表示实际全文已读，原2015版权/Old Venus首刊说明保留。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "作者授权Lightspeed转载原篇检索返回开篇Dharthi/adaptshell段及野外风险句；页面9690词元数据不表示实际全文已读，原2015版权/Old Venus首刊说明保留。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q100588063",
+        "identity": {
+          "title": "The Heart's Filthy Lesson",
+          "author": "Elizabeth Bear"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Heart's Filthy Lesson\" \"Elizabeth Bear\" review"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://rrhorton.blogspot.com/2018/09/birthday-review-elizabeth-bear-stories.html",
+            "material_kind": "professional_review_setting_only",
+            "support_scope": "实际检索仅返回Rich Horton本篇一行高科技金星/失落原住族背景，直接读失败。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "professional_review_setting_only",
+            "result": "catalog_only",
+            "reading_scope": "实际检索仅返回Rich Horton本篇一行高科技金星/失落原住族背景，直接读失败。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "专业评论检索只返回高科技金星背景，直接读取评论失败；未获具体人物行为，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q100588063",
+          "identity": {
+            "title": "The Heart's Filthy Lesson",
+            "author": "Elizabeth Bear"
+          },
+          "fast_index": 433,
+          "lane_index": 285,
+          "source_sort_year": 2015,
+          "priority_rank": 1820,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"The Heart's Filthy Lesson\" \"Elizabeth Bear\" review"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://rrhorton.blogspot.com/2018/09/birthday-review-elizabeth-bear-stories.html",
+              "material_kind": "professional_review_setting_only",
+              "support_scope": "实际检索仅返回Rich Horton本篇一行高科技金星/失落原住族背景，直接读失败。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "专业评论检索只返回高科技金星背景，直接读取评论失败；未获具体人物行为，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified",
+          "failed_source_reads": [
+            {
+              "url": "https://rrhorton.blogspot.com/2018/09/birthday-review-elizabeth-bear-stories.html",
+              "reason": "直接读取Internal Error，无重试。"
+            }
+          ]
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q131518481",
+      "identity": {
+        "title": "When Your Child Strays from God",
+        "author": "Sam J. Miller"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"When Your Child Strays from God\" story Miller drug parent"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://samjmiller.com/2015/",
+          "scope": "作者2015发表公告中精确本篇内容介绍；不把同页其他故事或插画当本篇。",
+          "result": "read_search_excerpt"
+        }
+      ],
+      "reading_scope": "作者2015发表公告中精确本篇内容介绍；不把同页其他故事或插画当本篇。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q131518481",
+        "identity": {
+          "title": "When Your Child Strays from God",
+          "author": "Sam J. Miller"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"When Your Child Strays from God\" \"Sam Miller\" review"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://samjmiller.com/category/awards-anthologies/",
+            "material_kind": "author_quoted_reviews_general_premise_only",
+            "support_scope": "实际读检索作者页引用评论，牧师妻子/儿子/药物与出版提名；未读原篇或药物具体机制。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "author_quoted_reviews_general_premise_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读检索作者页引用评论，牧师妻子/儿子/药物与出版提名；未读原篇或药物具体机制。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "首轮作者页只引评论说牧师妻子/叛逆儿子与虚构药物，没有药物作用方式与具体后果，先延后，不凭亲子主题猜读心或和解。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q131518481",
+          "identity": {
+            "title": "When Your Child Strays from God",
+            "author": "Sam J. Miller"
+          },
+          "fast_index": 443,
+          "lane_index": 295,
+          "source_sort_year": 2015,
+          "priority_rank": 1859,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"When Your Child Strays from God\" \"Sam Miller\" review"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://samjmiller.com/category/awards-anthologies/",
+              "material_kind": "author_quoted_reviews_general_premise_only",
+              "support_scope": "实际读检索作者页引用评论，牧师妻子/儿子/药物与出版提名；未读原篇或药物具体机制。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "首轮作者页只引评论说牧师妻子/叛逆儿子与虚构药物，没有药物作用方式与具体后果，先延后，不凭亲子主题猜读心或和解。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q136770245",
+      "identity": {
+        "title": "Chrononauts #2",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Chrononauts\" \"#2\" review Corbin Danny"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://aiptcomics.com/2015/04/13/is-it-good-chrononauts-2-review/",
+          "scope": "David Brooke第2期评论L144–152，区分开头对上期回顾与本期生活选择/武器实例；不读漫画。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://aiptcomics.com/2015/04/13/is-it-good-chrononauts-2-review/",
+          "scope": "David Brooke第2期评论L144–152，区分开头对上期回顾与本期生活选择/武器实例；不读漫画。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "David Brooke第2期评论L144–152，区分开头对上期回顾与本期生活选择/武器实例；不读漫画。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136770245",
+        "identity": {
+          "title": "Chrononauts #2",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "site:imagecomics.com \"Chrononauts #2\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/news/chrononauts-ahead-of-its-time",
+            "material_kind": "publisher_series_announcement_issue_identity_only",
+            "support_scope": "实际读Image系列公告只确认第2期上市与第一期总设定，非第2期正文或具体剧情。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "publisher_series_announcement_issue_identity_only",
+            "result": "catalog_only",
+            "reading_scope": "实际读Image系列公告只确认第2期上市与第一期总设定，非第2期正文或具体剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确第2期查询只返回Image整系列与第1期宣传，缺本期具体事件，不把time-travel首步宣传当第2期情节。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q136770245",
+          "identity": {
+            "title": "Chrononauts #2",
+            "author": "作者未知"
+          },
+          "fast_index": 448,
+          "lane_index": 300,
+          "source_sort_year": 2015,
+          "priority_rank": 1878,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "site:imagecomics.com \"Chrononauts #2\""
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://imagecomics.com/news/chrononauts-ahead-of-its-time",
+              "material_kind": "publisher_series_announcement_issue_identity_only",
+              "support_scope": "实际读Image系列公告只确认第2期上市与第一期总设定，非第2期正文或具体剧情。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "精确第2期查询只返回Image整系列与第1期宣传，缺本期具体事件，不把time-travel首步宣传当第2期情节。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137077507",
+      "identity": {
+        "title": "Descender #7",
+        "author": "作者未知"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Descender\" \"#7\" review Tim Andy"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://bigcomicpage.com/2015/11/11/review-descender-7-image-comics/",
+          "scope": "Martin Doyle本期评论L48–49；不使用其对前六期的泛化作本期新事件。",
+          "result": "read_limited_range"
+        },
+        {
+          "url": "https://bigcomicpage.com/2015/11/11/review-descender-7-image-comics/",
+          "scope": "Martin Doyle本期评论L48–49；不使用其对前六期的泛化作本期新事件。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "Martin Doyle本期评论L48–49；不使用其对前六期的泛化作本期新事件。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137077507",
+        "identity": {
+          "title": "Descender #7",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "site.imagecomics.com \"Descender #7\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/descender-7",
+            "scope": "官方单期检索只预告Tim过去神秘人物出现，未说明人物及冲突内容。",
+            "result": "insufficient_plot",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://imagecomics.com/press-releases/postal-embarks-on-a-new-story-arc",
+            "scope": "官方宣传/作者引语介绍整个第二story arc：Hardwire星球/Tim-22等；未明确这些全部发生于#7。",
+            "result": "arc_scope_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "单期简介缺具体身份；作者引语是完整story arc范围，不能套成该期已发生的两项核心矛盾。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q137077507",
+          "identity": {
+            "title": "Descender #7",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "site.imagecomics.com \"Descender #7\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://imagecomics.com/comics/releases/descender-7",
+              "scope": "官方单期检索只预告Tim过去神秘人物出现，未说明人物及冲突内容。",
+              "result": "insufficient_plot"
+            },
+            {
+              "url": "https://imagecomics.com/press-releases/postal-embarks-on-a-new-story-arc",
+              "scope": "官方宣传/作者引语介绍整个第二story arc：Hardwire星球/Tim-22等；未明确这些全部发生于#7。",
+              "result": "arc_scope_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "单期简介缺具体身份；作者引语是完整story arc范围，不能套成该期已发生的两项核心矛盾。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "实际范围可支持核心解释；文学分析尚未独立核验。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q19627594",
+      "identity": {
+        "title": "Three Moments of an Explosion",
+        "author": "柴納·米耶維"
+      },
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"Three Moments of an Explosion\" table of contents stories China Mieville"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books/about/Three_Moments_of_an_Explosion.html?hl=en&id=ZHDWBQAAQBAJ&output=html_text",
+          "scope": "Google Books检索仅确认本合集题名/作者；选篇收入与剧情来自确切既有知识，目录/正文未本轮独立读到，直接打开失败。",
+          "result": "read_search_excerpt"
+        },
+        {
+          "url": "https://books.google.com/books/about/Three_Moments_of_an_Explosion.html?hl=en&id=ZHDWBQAAQBAJ&output=html_text",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "Google Books检索仅确认本合集题名/作者；选篇收入与剧情来自确切既有知识，目录/正文未本轮独立读到，直接打开失败。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q19627594",
+        "identity": {
+          "title": "Three Moments of an Explosion",
+          "author": "柴納·米耶維"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://openlibrary.org/works/OL20788218W",
+            "result": "catalog_only",
+            "reading_scope": "实际读取本地OLdump description；合集简介仅有风格与人类濒危的概括，无可确认具体故事或集合层面事件；延后。未追加网络搜索。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "实际读取本地OLdump description；合集简介仅有风格与人类濒危的概括，无可确认具体故事或集合层面事件；延后。未追加网络搜索。",
+        "reason_unconfirmed": "合集简介仅有风格与人类濒危的概括，无可确认具体故事或集合层面事件；延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round13-log.json",
+        "raw_reading_log": {
+          "id": "Q19627594",
+          "identity": {
+            "title": "Three Moments of an Explosion",
+            "author": "柴納·米耶維"
+          },
+          "queries": [],
+          "urls_read": [
+            "https://openlibrary.org/works/OL20788218W"
+          ],
+          "result": "deferred",
+          "failure_count": 1,
+          "reason": "合集简介仅有风格与人类濒危的概括，无可确认具体故事或集合层面事件；延后。",
+          "material_kind": "community_bibliographic_description_from_official_dump",
+          "record_sha256": "9e56bc4548f15e12e32bd26fd67b5c3012a2f6b9c2d789bdede158c153901c4d",
+          "material_work_id": "OL20788218W",
+          "exact_support_scope": "实际读取本地OLdump description；合集简介仅有风格与人类濒危的概括，无可确认具体故事或集合层面事件；延后。未追加网络搜索。"
+        },
+        "failure_count": 1,
+        "record_sha256": "9e56bc4548f15e12e32bd26fd67b5c3012a2f6b9c2d789bdede158c153901c4d",
+        "material_work_id": "OL20788218W",
+        "material_kind": "community_bibliographic_description_from_official_dump"
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "检索身份已有，选篇分析来自既有知识，尚未独立核对，不冒充原篇阅读。",
+      "next_step": "具体分析后续独立核对。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q110277047",
+      "identity": {
+        "title": "Descender #5",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Descender\" \"5\" comic review Tim Jin Quon"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://aiptcomics.com/2015/07/08/is-it-good-descender-5-review/",
+          "scope": "第5期评论检索只称Quon秘密改变TIM-21，打开失败。",
+          "result": "unrevealed_secret"
+        },
+        {
+          "url": "https://aiptcomics.com/2015/07/08/is-it-good-descender-5-review/",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q110277047",
+        "identity": {
+          "title": "Descender #5",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "site.imagecomics.com/comics/releases/descender-5 \"Tim\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://imagecomics.com/comics/releases/descender-5",
+            "scope": "实际打开官方单期页L21–44：Quon揭示改变Tim-21生命的秘密，但没有秘密内容。",
+            "result": "insufficient_plot",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "官方只预告秘密将被揭示，没有给出秘密本身，无法支持该期两个具体矛盾；不以系列总体情节补该期。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q110277047",
+          "identity": {
+            "title": "Descender #5",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "site.imagecomics.com/comics/releases/descender-5 \"Tim\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://imagecomics.com/comics/releases/descender-5",
+              "scope": "实际打开官方单期页L21–44：Quon揭示改变Tim-21生命的秘密，但没有秘密内容。",
+              "result": "insufficient_plot"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "官方只预告秘密将被揭示，没有给出秘密本身，无法支持该期两个具体矛盾；不以系列总体情节补该期。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "本期具体秘密仍未在实际读到的材料中揭示，评论称联系改变未说明内容；不借后续或模糊系列知识。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q135093246",
+      "identity": {
+        "title": "The Best Science Fiction & Fantasy of the Year: Volume Nine",
+        "author": "作者未知"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"The Best Science Fiction & Fantasy of the Year Volume Nine\" Jonathan Strahan table contents Solaris"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://books.google.com/books?id=F-ThCAAAQBAJ",
+          "scope": "精确第9卷的部分目录；一次打开Cache miss。",
+          "result": "contents_partial"
+        },
+        {
+          "url": "https://books.google.com/books?id=F-ThCAAAQBAJ",
+          "scope": "直接打开未返回正文",
+          "result": "failed"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135093246",
+        "identity": {
+          "title": "The Best Science Fiction & Fantasy of the Year: Volume Nine",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"The Best Science Fiction and Fantasy of the Year\" \"Volume Nine\" contents 2015"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://books.google.com/books/about/The_Best_Science_Fiction_and_Fantasy_of.html?id=F-ThCAAAQBAJ",
+            "scope": "检索产品简介泛述28篇及部分目录Moriabe’s Children/The Vaporization Enthalpy…/The Lady and the Fox；未读选篇正文。",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "已确认2015第九卷与若干选篇身份，但这些返回片段没有足够具体情节；本次对所见选篇也不熟悉到可安全给出两项细分问题。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round19-log.json",
+        "raw_reading_log": {
+          "id": "Q135093246",
+          "identity": {
+            "title": "The Best Science Fiction & Fantasy of the Year: Volume Nine",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"The Best Science Fiction and Fantasy of the Year\" \"Volume Nine\" contents 2015"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://books.google.com/books/about/The_Best_Science_Fiction_and_Fantasy_of.html?id=F-ThCAAAQBAJ",
+              "scope": "检索产品简介泛述28篇及部分目录Moriabe’s Children/The Vaporization Enthalpy…/The Lady and the Fox；未读选篇正文。",
+              "result": "contents_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "已确认2015第九卷与若干选篇身份，但这些返回片段没有足够具体情节；本次对所见选篇也不熟悉到可安全给出两项细分问题。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "实际目录只返回Moriabe’s Children、The Lady and the Fox等及截断长题，本次不足以准确解释这些选篇；不以28篇和作者名单填剧情。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q24934105",
+      "identity": {
+        "title": "Te voy a recordar: relatos de ciencia ficción",
+        "author": "Jessica Clark Cohen"
+      },
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Te voy a recordar\" relatos UNED cuento Jessica Clark"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://editorial.uned.ac.cr/gpd-te-voy-a-recordar-9789968484145.html",
+          "scope": "EUNED合集出版页L138总说明与2015版本信息；没有单篇具体情节。",
+          "result": "anthology_general_description"
+        },
+        {
+          "url": "https://editorial.uned.ac.cr/gpd-te-voy-a-recordar-9789968484145.html",
+          "scope": "只读所列检索摘要/失败页，未读原作。",
+          "result": "read_limited_range"
+        }
+      ],
+      "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q24934105",
+        "identity": {
+          "title": "Te voy a recordar: relatos de ciencia ficción",
+          "author": "Jessica Clark Cohen"
+        },
+        "attempt_state": "deferred_catalog_only",
+        "queries": [
+          "\"Te voy a recordar\" \"Jessica Clark Cohen\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://editorial.uned.ac.cr/gpd-te-voy-a-recordar-9789968484145.html",
+            "result": "catalog_only",
+            "reading_scope": "实际出版社多人作者名单和合集泛介，没有具名选篇情节。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次返回，未开页或读原篇。",
+        "reason_unconfirmed": "源Jessica为多人合集成员；目录主题不足以支持具体故事议题。",
+        "next_step": "首遍继续，后核具名选篇具体内容及贡献者身份。",
+        "issue_result": "deferred_no_analysis",
+        "attempt_input": "root-fast-round60-log.json",
+        "raw_reading_log": {
+          "id": "Q24934105",
+          "identity": {
+            "title": "Te voy a recordar: relatos de ciencia ficción",
+            "author": "Jessica Clark Cohen"
+          },
+          "attempt_state": "deferred_catalog_only",
+          "queries": [
+            "\"Te voy a recordar\" \"Jessica Clark Cohen\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://editorial.uned.ac.cr/gpd-te-voy-a-recordar-9789968484145.html",
+              "result": "catalog_only",
+              "reading_scope": "实际出版社多人作者名单和合集泛介，没有具名选篇情节。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "一次返回，未开页或读原篇。",
+          "reason_unconfirmed": "源Jessica为多人合集成员；目录主题不足以支持具体故事议题。",
+          "issue_result": "deferred_no_analysis",
+          "next_step": "首遍继续，后核具名选篇具体内容及贡献者身份。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "仅取旧日志显式failure/unsuccessful字段；无明示保留null，不假设零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "已确认多人合集而非Jessica Clark个人单作；官方只有时间空间泛说明，其他概述仅列克隆/AI/治疗题材，缺准确单篇事件，保持缺口。",
+      "next_step": "仍属缺口，保留实际原因，困难后移。",
+      "full_original_text_read": false
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "exact-identity-quick-retry-source-assisted-knowledge-v1",
+    "lane": 0,
+    "read_date": "2026-10-05",
+    "ownership_file": "quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "queue_index_start": 0,
+    "queue_index_end_exclusive": 16,
+    "next_queue_index": 16,
+    "analysis_count": 9,
+    "facet_count": 18,
+    "attempted_count": 16,
+    "not_added_count": 7,
+    "actual_search_count": 16,
+    "actual_open_count": 4,
+    "actual_open_failed_count": 2,
+    "actual_open_returned_count": 2,
+    "full_original_text_read_count": 0,
+    "scope": "16身份各一次不同查询；4次普通打开，2失败。9核心仅3合法字段/18问题，2明确空间；选篇、漫画、论文、版本和未见结尾边界保持，旧日志完整。",
+    "record_count": 2
+  },
+  "records": [
+    {
+      "id": "Q135517521",
+      "identity": {
+        "title": "Fantastic Four: First Steps",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "earth",
+        "spatial_rationale": "本漫画明确回到地球，随后纽约与地下Subterranea相互冲突；宇宙辐射起源不改变主体故事在地球的导航。"
+      },
+      "field_notes": {
+        "spatial_primary": "明示地理/权力范围的导航分类，待核。",
+        "spatial_rationale": "本漫画明确回到地球，随后纽约与地下Subterranea相互冲突；宇宙辐射起源不改变主体故事在地球的导航。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fantastic_Four%3A_First_Steps_%28comic%29",
+        "https://www.marvel.com/comics/issue/128004/read"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Fantastic_Four%3A_First_Steps_%28comic%29",
+          "type": "search_returned_content",
+          "support_scope": "实际查询返回本2025单篇漫画Plot；只读二手梗概，不读漫画页。",
+          "read_date": "2026-10-05"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/128004/read",
+          "type": "publisher_issue_description_search_return",
+          "support_scope": "Marvel本2025第1期条目返回书目、创作者及回述最初救城的官方书介；不含详细剧情。",
+          "read_date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "Q131244274",
+      "identity": {
+        "title": "Cosmopirates",
+        "author": "作者未知"
+      },
+      "fields": {
+        "spatial_primary": "galactic",
+        "spatial_rationale": "本书出版社明确七名Magnobankers控制整个银河，人口灭绝和刺客行动被置于这一政治范围；不由space opera标签推断。"
+      },
+      "field_notes": {
+        "spatial_primary": "明示地理/权力范围的导航分类，待核。",
+        "spatial_rationale": "本书出版社明确七名Magnobankers控制整个银河，人口灭绝和刺客行动被置于这一政治范围；不由space opera标签推断。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://store.humanoids.com/products/cosmopirates-dlx-digital"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://store.humanoids.com/products/cosmopirates-dlx-digital",
+          "type": "publisher_description_open",
+          "support_scope": "实际打开出版社本书L41–46简介；不是原作正文，不借同页The Incal情节。",
+          "read_date": "2026-10-05"
+        }
+      ]
+    }
+  ]
+}

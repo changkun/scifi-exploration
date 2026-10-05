@@ -3,9 +3,10 @@
     "method": "source-reading-issue-correction-v1",
     "status": "frozen_checkpoint",
     "read_date": "2026-10-04",
-    "record_count": 3,
-    "facet_count": 7,
-    "scope_note": "纠正Flashfire主语与根侧两条确知知识对象错配；旧冻结字节、错误断言与本次依据均保留，现行解释仍待核。"
+    "record_count": 4,
+    "facet_count": 9,
+    "scope_note": "保留三项旧更正；新增Lance行星际术语更正，原冻结断言、散列及实际批评材料范围完整保留。更正不增加核心或问题数，不升级核验。",
+    "updated_at": "2026-10-05"
   },
   "records": [
     {
@@ -174,6 +175,63 @@
         "reason": "根侧误把Lewis的The First Sister前提写入Dayton Ward的Moments Asunder，现以正确出版社首卷简介更正核心和议题，保留原错误冻结断言。",
         "old_claim": "First Sister作为舰上宗教制度的一员被剥夺公开表达自身声音的机会，她的亲密关系和忠诚又受到军事与教会安排影响。 制度把照护与服从相连时，个人如何说出自己的愿望也成为争取主体地位的条件。",
         "source_scope": "一次精确题名与Dayton Ward查询，读取Simon & Schuster首卷About the Book；只读出版社简介，不读原作，不借其他Coda卷结局。"
+      }
+    },
+    {
+      "id": "Q130724558",
+      "identity": {
+        "title": "Lance",
+        "author": "弗拉基米尔·纳博科夫"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "性别与亲密"
+        ],
+        "issue": "兰斯加入首次载人行星际探索，留在地球的父母只能等待他的归来；技术壮举被叙述成一个家庭无法消除的担忧。文本同时借中古传奇和登山意象讲述新的航行，使未知空间与旧有语言之间形成一种难以直接译成工程事实的关系。",
+        "issue_facets": [
+          {
+            "label": "探索者亲属的风险",
+            "question": "被英雄叙事赞美的远航，如何同时成为留守父母无法控制的私人危机？",
+            "basis": "实际学术讨论描述兰斯远征以及父母焦虑等待他返家。"
+          },
+          {
+            "label": "旧语言描述新技术",
+            "question": "面对前所未有的航行，旧传奇和攀登意象会怎样塑造我们想象未知的方式？",
+            "basis": "学术讨论具体分析故事的中古传奇、登山隐喻及时间空间的互换。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "文学议题分析，依据本条明确设定；分类与解释待独立核对。",
+        "issue": "实际读取 The Nabokovian 1989年第22期关于 Lance 的定向学术讨论；支持家庭等待和叙述意象，不是原篇全文。另一学术PDF打开失败。未据评论推断目的行星或完整航行结局。 术语依实际批评材料中的interplanetary修正为行星际，未新增地点、原作读取或核验等级。",
+        "issue_facets": "实际读取 The Nabokovian 1989年第22期关于 Lance 的定向学术讨论；支持家庭等待和叙述意象，不是原篇全文。另一学术PDF打开失败。未据评论推断目的行星或完整航行结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.thenabokovian.org/nabokovian-back-issues/22-1989-sp"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.thenabokovian.org/nabokovian-back-issues/22-1989-sp",
+          "support_scope": "实际读取 The Nabokovian 1989年第22期关于 Lance 的定向学术讨论；支持家庭等待和叙述意象，不是原篇全文。另一学术PDF打开失败。未据评论推断目的行星或完整航行结局。"
+        },
+        {
+          "url": "https://www.thenabokovian.org/nabokovian-back-issues/22-1989-sp",
+          "raw_search_artifact": "work/evidence/known-year-root-assist-modern-r4-search-b.json",
+          "support_scope": "实际查询返回该期第43页相关段落，先叙首次载人赴行星远征，随即称此旅行为interplanetary travel；定向批评材料，不是原篇全文。",
+          "short_excerpt": "description of interplanetary travel"
+        }
+      ],
+      "correction_note": {
+        "corrects_component": "issues-source-reading-round77.json",
+        "corrects_component_sha256": "cc23c9e956b5758068d01ae9b831aecc0d4608adcbf4e8681d8acf7ce4000c14",
+        "reason": "星际容易被理解为跨恒星，而源材料具体使用interplanetary，宜用行星际。该修订不新增目标星球或空间分类。",
+        "old_claim": "兰斯加入首次载人星际探索，留在地球的父母只能等待他的归来；技术壮举被叙述成一个家庭无法消除的担忧。文本同时借中古传奇和登山意象讲述新的航行，使未知空间与旧有语言之间形成一种难以直接译成工程事实的关系。",
+        "source_scope": "实际查询返回该期第43页相关段落，先叙首次载人赴行星远征，随即称此旅行为interplanetary travel；定向批评材料，不是原篇全文。",
+        "original_frozen_input": "work/evidence/known-year-root-assist-modern-round4.json",
+        "original_frozen_input_sha256": "ad8df98b6f4f046b21900dbace70eaea3b674570aea1fdb25851cb5d3824519c",
+        "correction_audit": "research/issue-input-snapshots/lance-interplanetary-correction.json"
       }
     }
   ]

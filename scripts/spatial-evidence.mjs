@@ -27,6 +27,19 @@ export function validateSpatialEvidence(record, {issueAssertions = [], sourceSea
     sourceSearchLog = previous;
   }
   const raw = sourceSearchLog?.raw_reading_log;
+  // A zero-query knowledge judgment can follow an unsuccessful catalogue
+  // lookup. The retained history is not evidence for the new placement.
+  if (sourceSearchLog?.previous_attempts?.length &&
+      raw?.analysis_basis === 'existing_work_specific_knowledge_unverified' &&
+      !raw.queries?.length && !raw.sources?.length && !raw.materials_checked?.length &&
+      raw.actual_search_performed !== true) {
+    const previous = sourceSearchLog.previous_attempts.at(-1);
+    if (!sameIdentity(raw) || !sameIdentity(previous) ||
+        sourceSearchLog.actual_search_performed !== false ||
+        JSON.stringify(sourceSearchLog.queries) !== JSON.stringify(previous.queries) ||
+        JSON.stringify(sourceSearchLog.materials_checked) !== JSON.stringify(previous.materials_checked)) fail();
+    sourceSearchLog = {...sourceSearchLog, queries: [], materials_checked: []};
+  }
   const note = record.field_notes?.spatial_primary || '';
   const explicitKnowledge = note.includes('existing knowledge') || /准确(?:具体作品|本篇|本书)?已有知识|明确已有知识|准确熟悉本书/.test(note);
   if (record.analysis_basis !== 'existing_knowledge_unverified' || record.verification_status !== 'knowledge_added_unverified' || record.sources.length || !explicitKnowledge) fail();

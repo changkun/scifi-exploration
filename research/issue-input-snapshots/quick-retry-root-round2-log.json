@@ -1,0 +1,1339 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "method": "exact-identity-quick-retry-source-assisted-knowledge-v1",
+    "lane": 0,
+    "read_date": "2026-10-05",
+    "ownership_file": "quick-retry-lane-0.json",
+    "ownership_sha256": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "queue_index_start": 16,
+    "queue_index_end_exclusive": 32,
+    "next_queue_index": 32,
+    "analysis_count": 4,
+    "facet_count": 8,
+    "attempted_count": 16,
+    "not_added_count": 12,
+    "actual_search_count": 16,
+    "actual_open_count": 6,
+    "actual_open_failed_count": 4,
+    "actual_fetch_failed_count": 3,
+    "actual_verification_challenge_count": 1,
+    "actual_open_returned_count": 2,
+    "full_original_text_read_count": 0,
+    "scope": "16不同单查询；4内容入口+2原始P179关系入口打开，2有限出版社书介返回、3读取失败、1验证挑战；4核心/8问题、3空间、12延期，所有旧日志与文本/版本边界完整保留。",
+    "record_count": 16
+  },
+  "records": [
+    {
+      "id": "Q113865780",
+      "identity": {
+        "title": "Wasureenu Majo no Monogatari",
+        "author": "Naraharu Usa"
+      },
+      "pool_index": 16,
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"忘れえぬ魔女の物語\" \"宇佐楢春\" GA文庫"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://ga.sbcr.jp/product/9784815607708/",
+          "scope": "实际打开GA文库首卷L50–59书介，未打开试读；原语署名宇佐楢春与源Naraharu Usa对应。",
+          "result": "read_limited_publisher_description"
+        },
+        {
+          "url": "https://ga.sbcr.jp/product/9784815607708/",
+          "scope": "实际打开GA文库首卷L50–59书介，未打开试读；原语署名宇佐楢春与源Naraharu Usa对应。",
+          "result": "read_publisher_description"
+        }
+      ],
+      "reading_scope": "实际打开GA文库首卷L50–59书介，未打开试读；原语署名宇佐楢春与源Naraharu Usa对应。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q113865780",
+        "identity": {
+          "title": "Wasureenu Majo no Monogatari",
+          "author": "Naraharu Usa"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"忘れえぬ魔女の物語\" あらすじ"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "单轮查询没有对应具体情节材料，不熟悉该系列，直接延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q113865780",
+          "identity": {
+            "title": "Wasureenu Majo no Monogatari",
+            "author": "Naraharu Usa"
+          },
+          "queries": [
+            "\"忘れえぬ魔女の物語\" あらすじ"
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "单轮查询没有对应具体情节材料，不熟悉该系列，直接延后。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "具体范围支持原创解释，原作全文0，仍待独立核对。",
+      "next_step": "后续独立核对明示范围。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q133790248",
+      "identity": {
+        "title": "Le Temple du Milieu",
+        "author": "Nicolas Bouchard"
+      },
+      "pool_index": 17,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Le Temple du Milieu\" Bouchard Babelio"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.gibert.com/le-temple-du-milieu-14206338.html",
+          "scope": "本书介检索仅说一群人反抗并寻找旧地球/传说神殿；直接打开失败。",
+          "result": "insufficient_or_identity_unconfirmed"
+        },
+        {
+          "url": "https://www.gibert.com/le-temple-du-milieu-14206338.html",
+          "scope": "直接打开未到目标正文/身份内容",
+          "result": "fetch_failed"
+        }
+      ],
+      "reading_scope": "本书介检索仅说一群人反抗并寻找旧地球/传说神殿；直接打开失败。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q133790248",
+        "identity": {
+          "title": "Le Temple du Milieu",
+          "author": "Nicolas Bouchard"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Le Temple du Milieu\" \"Nicolas Bouchard\" résumé"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确查询只有作者书目列名；结果中Rachel Farhner剧情属其他小说，不能错套本题，延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q133790248",
+          "identity": {
+            "title": "Le Temple du Milieu",
+            "author": "Nicolas Bouchard"
+          },
+          "queries": [
+            "\"Le Temple du Milieu\" \"Nicolas Bouchard\" résumé"
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "精确查询只有作者书目列名；结果中Rachel Farhner剧情属其他小说，不能错套本题，延后。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "未有具体人物与制度安排，不能以一句space opera式宣传扩写两项作品冲突；出版社目录只确认身份。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137752664",
+      "identity": {
+        "title": "Ceux qui restent",
+        "author": "作者未知"
+      },
+      "pool_index": 18,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Ceux qui restent\" 2021 Alter \"On Mars\" Q137752664"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.planetebd.com/bd/daniel-maghen/on-mars/on-mars-t3/43899.html",
+          "scope": "实际返回On Mars第3卷具体评论；本Q身份对应尚未确证。",
+          "result": "insufficient_or_identity_unconfirmed"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q137752658",
+          "scope": "直接打开未到目标正文/身份内容",
+          "result": "identity_relation_fetch_failed"
+        }
+      ],
+      "reading_scope": "实际返回On Mars第3卷具体评论；本Q身份对应尚未确证。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137752664",
+        "identity": {
+          "title": "Ceux qui restent",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Ceux qui restent\" \"2021\" bande dessinée science-fiction"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.danielmaghen-editions.com/catalogue/ceux-qui-restent/",
+            "material_kind": "publisher_candidate_same_title_identity_unresolved",
+            "support_scope": "实际读On Mars T3出版简介：Mars监狱、Rojas宗教战、Jasmine联盟；未确定它对应本QID，未填剧情。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "publisher_candidate_same_title_identity_unresolved",
+            "result": "catalog_only",
+            "reading_scope": "实际读On Mars T3出版简介：Mars监狱、Rojas宗教战、Jasmine联盟；未确定它对应本QID，未填剧情。",
+            "read_date": "2026-10-04"
+          },
+          {
+            "url": "https://www.pieuvre.ca/2021/01/03/culturel-bande-dessinee-alter-tome-2/",
+            "material_kind": "professional_review_different_same_title_candidate",
+            "support_scope": "实际读同题Alter第2册评论检索缓存，两个地球/并行现实与Hybris探索，与On Mars为不同候选；仅用于身份排疑。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "professional_review_different_same_title_candidate",
+            "result": "catalog_only",
+            "reading_scope": "实际读同题Alter第2册评论检索缓存，两个地球/并行现实与Hybris探索，与On Mars为不同候选；仅用于身份排疑。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "同题检索返回On Mars第3册和Alter第2册两部科幻漫画，底库作者未知且本次未见区分关系；虽读到On Mars明确简介，不能只凭同题/2021将其附到该QID，首轮身份延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q137752664",
+          "identity": {
+            "title": "Ceux qui restent",
+            "author": "作者未知"
+          },
+          "fast_index": 288,
+          "lane_index": 116,
+          "source_sort_year": 2021,
+          "priority_rank": 1211,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"Ceux qui restent\" \"2021\" bande dessinée science-fiction"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://www.danielmaghen-editions.com/catalogue/ceux-qui-restent/",
+              "material_kind": "publisher_candidate_same_title_identity_unresolved",
+              "support_scope": "实际读On Mars T3出版简介：Mars监狱、Rojas宗教战、Jasmine联盟；未确定它对应本QID，未填剧情。",
+              "reading_status": "actually_read_support_scope_only"
+            },
+            {
+              "url": "https://www.pieuvre.ca/2021/01/03/culturel-bande-dessinee-alter-tome-2/",
+              "material_kind": "professional_review_different_same_title_candidate",
+              "support_scope": "实际读同题Alter第2册评论检索缓存，两个地球/并行现实与Hybris探索，与On Mars为不同候选；仅用于身份排疑。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "同题检索返回On Mars第3册和Alter第2册两部科幻漫画，底库作者未知且本次未见区分关系；虽读到On Mars明确简介，不能只凭同题/2021将其附到该QID，首轮身份延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "全量原始来源保留P179=Q137752658，但父系列标签未收录，直接读取失败；On Mars与Alter同题竞争未解，不只靠同题/日期借用剧情。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false,
+      "local_relation_lookup": {
+        "file": "dist/assets/bibliography-full.json.gz",
+        "property": "P179",
+        "target_id": "Q137752658",
+        "scope": "实际读取原始单项关系，不含父系列标签；未把关系读取算新剧情来源。"
+      }
+    },
+    {
+      "id": "Q139922505",
+      "identity": {
+        "title": "Orbito",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 19,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Orbito\" \"Patas d’Illiers\" rakontoj"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://s1d89dd5f9bc1d4bc.jimcontent.com/download/version/1706058791/module/14122366290/name/NT389oktobro.pdf",
+          "scope": "查询只返回Sur bluaj planedoj合集活动的极短简介。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "查询只返回Sur bluaj planedoj合集活动的极短简介。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922505",
+        "identity": {
+          "title": "Orbito",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Orbito\" \"Laure Patas d’Illiers\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确标题/作者查询只出现整部世界语合集读书活动与非对应片段，没有本篇具体内容，立即延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139922505",
+          "identity": {
+            "title": "Orbito",
+            "author": "Laure Patas d'Illiers"
+          },
+          "queries": [
+            "\"Orbito\" \"Laure Patas d’Illiers\""
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "精确标题/作者查询只出现整部世界语合集读书活动与非对应片段，没有本篇具体内容，立即延后。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "未返回Orbito本篇具体内容；orbit词和合集宣传不能确定本篇情节。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139922510",
+      "identity": {
+        "title": "Indiĝena",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 20,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Indiĝena\" \"Laure\" 2021"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://esperanto-france.org/kongreso/libro-sur-bluaj-planedoj",
+          "scope": "只返回22篇合集宣传和无关原住民材料。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "只返回22篇合集宣传和无关原住民材料。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922510",
+        "identity": {
+          "title": "Indiĝena",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Indiĝena\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确查询无该短篇具体材料，集合其他故事内容不能对应。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139922510",
+          "identity": {
+            "title": "Indiĝena",
+            "author": "Laure Patas d'Illiers"
+          },
+          "queries": [
+            "\"Indiĝena\" \"Laure Patas\""
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "精确查询无该短篇具体材料，集合其他故事内容不能对应。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "未取得Indiĝena具体内容，不由题名或无关巴西文献补殖民剧情。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139922515",
+      "identity": {
+        "title": "Rekomendo",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 21,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Rekomendo\" \"Laure\" Esperanto"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://esperanto-france.org/kongreso/libro-sur-bluaj-planedoj",
+          "scope": "仅合集宣传与作者介绍。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "仅合集宣传与作者介绍。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922515",
+        "identity": {
+          "title": "Rekomendo",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Rekomendo\" \"Laure Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "精确查询无对应短篇剧情，不按词义recommendation推题。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139922515",
+          "identity": {
+            "title": "Rekomendo",
+            "author": "Laure Patas d'Illiers"
+          },
+          "queries": [
+            "\"Rekomendo\" \"Laure Patas\""
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "精确查询无对应短篇剧情，不按词义recommendation推题。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "未取得Rekomendo具体内容，不按推荐词义或合集其他题问造情节。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139922521",
+      "identity": {
+        "title": "Kiel vi vidas",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 22,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Kiel vi vidas\" \"Laure\" rakonto"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://esperanto-france.org/kongreso/libro-sur-bluaj-planedoj",
+          "scope": "仅合集宣传与作者介绍。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "仅合集宣传与作者介绍。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922521",
+        "identity": {
+          "title": "Kiel vi vidas",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Kiel vi vidas\" \"Patas\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://esperanto-france.org/spip/libro-sur-bluaj-planedoj",
+            "scope": "同组搜索所读合集宣传题问，无本单篇正文或确切情节对应",
+            "result": "collection_scope_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本单篇精准检索无明确情节；合集宣传题问不能可靠映射到这一题名，不借合集情节替代。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139922521",
+          "identity": {
+            "title": "Kiel vi vidas",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Kiel vi vidas\" \"Patas\""
+          ],
+          "materials_checked": [
+            {
+              "url": "https://esperanto-france.org/spip/libro-sur-bluaj-planedoj",
+              "scope": "同组搜索所读合集宣传题问，无本单篇正文或确切情节对应",
+              "result": "collection_scope_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本单篇精准检索无明确情节；合集宣传题问不能可靠映射到这一题名，不借合集情节替代。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "未取得Kiel vi vidas具体内容，未把其他故事的AI或身体贸易题问对上本篇。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q139922527",
+      "identity": {
+        "title": "Mila",
+        "author": "Laure Patas d'Illiers"
+      },
+      "pool_index": 23,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Mila\" \"Patas d’Illiers\" Esperanto"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://katalogo.uea.org/katalogo.php/viaf/96994048?id=1739&inf=9930&recenzo=montru",
+          "scope": "合集评论提及Mila与虚拟模特现实报道，出版社只问Mila为何离网。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "合集评论提及Mila与虚拟模特现实报道，出版社只问Mila为何离网。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q139922527",
+        "identity": {
+          "title": "Mila",
+          "author": "Laure Patas d'Illiers"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Mila\" \"Laure Patas\" rakonto"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://esperanto-france.org/spip/libro-sur-bluaj-planedoj",
+            "scope": "同组搜索所读合集宣传题问，无本单篇正文或确切情节对应",
+            "result": "collection_scope_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "本单篇精准检索无明确情节；合集宣传题问不能可靠映射到这一题名，不借合集情节替代。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q139922527",
+          "identity": {
+            "title": "Mila",
+            "author": "Laure Patas d'Illiers"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Mila\" \"Laure Patas\" rakonto"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://esperanto-france.org/spip/libro-sur-bluaj-planedoj",
+              "scope": "同组搜索所读合集宣传题问，无本单篇正文或确切情节对应",
+              "result": "collection_scope_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "本单篇精准检索无明确情节；合集宣传题问不能可靠映射到这一题名，不借合集情节替代。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "可保留本篇关联线索，但缺实际人物与过程；虚拟模特报道不是本篇全文，未推断Mila身份或消失原因。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q101003953",
+      "identity": {
+        "title": "The Planet of Cats",
+        "author": "柏納·韋柏"
+      },
+      "pool_index": 24,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Planète des chats\" \"Bernard Werber\" résumé"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Sa_Majest%C3%A9_des_chats",
+          "scope": "返回猫三部曲其他卷和混杂书目。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "返回猫三部曲其他卷和混杂书目。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q101003953",
+        "identity": {
+          "title": "The Planet of Cats",
+          "author": "柏納·韋柏"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Planet of Cats\" \"Bernard Werber\" publisher"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次英文题名/作者/出版检索未返回可确认本卷的具体情节；不借猫三部曲另卷内容，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q101003953",
+          "identity": {
+            "title": "The Planet of Cats",
+            "author": "柏納·韋柏"
+          },
+          "fast_index": 300,
+          "lane_index": 128,
+          "source_sort_year": 2020,
+          "priority_rank": 1259,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"The Planet of Cats\" \"Bernard Werber\" publisher"
+          ],
+          "local_material_lookup": null,
+          "sources": [],
+          "no_material_reason": "一次英文题名/作者/出版检索未返回可确认本卷的具体情节；不借猫三部曲另卷内容，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "没有本2020 Planète des chats确切内容，仍不挪用Demain les chats或Sa Majesté des chats。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q111182873",
+      "identity": {
+        "title": "The Salvage Crew",
+        "author": "Yudhanjaya Wijeratne"
+      },
+      "pool_index": 25,
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"The Salvage Crew\" Wijeratne review AI poetry"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://strangehorizons.com/non-fiction/the-salvage-crew-by-yudhanjaya-wijeratne/",
+          "scope": "实际查询返回Amber、PCS送死计划与道德规则段，另有评论对原书前言及程序生成的说明；未打开评论或原作。",
+          "result": "read_search_return"
+        },
+        {
+          "url": "https://mithilareview.com/review-yudhanjaya-wijeratnes-the-salvage-crew/",
+          "scope": "同次查询返回监督者与Simon/Anna/Milo、机器与人的工作矛盾及AI参与诗歌和世界生成的评论范围；未读原作。",
+          "result": "read_search_return"
+        }
+      ],
+      "reading_scope": "实际查询返回Amber、PCS送死计划与道德规则段，另有评论对原书前言及程序生成的说明；未打开评论或原作。；同次查询返回监督者与Simon/Anna/Milo、机器与人的工作矛盾及AI参与诗歌和世界生成的评论范围；未读原作。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q111182873",
+        "identity": {
+          "title": "The Salvage Crew",
+          "author": "Yudhanjaya Wijeratne"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Salvage Crew\" \"Yudhanjaya Wijeratne\" publisher"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://yudhanjaya.com/docs/books/",
+            "material_kind": "author_bibliography_short_teaser_only",
+            "support_scope": "实际直接读作者书目，The Salvage Crew只有C-team、backwater planet、routine salvage和inhabited的短截介绍，未进入正文或子页面。",
+            "reading_status": "actually_read_support_scope_only",
+            "material_type": "author_bibliography_short_teaser_only",
+            "result": "catalog_only",
+            "reading_scope": "实际直接读作者书目，The Salvage Crew只有C-team、backwater planet、routine salvage和inhabited的短截介绍，未进入正文或子页面。",
+            "read_date": "2026-10-04"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "一次检索及作者书目直接读取仅给C-team后水星球例行打捞、发现有人等短预告，缺足够具体互动；未借百科长剧情补，首轮延后。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "global-recent-round14-log.json",
+        "raw_reading_log": {
+          "id": "Q111182873",
+          "identity": {
+            "title": "The Salvage Crew",
+            "author": "Yudhanjaya Wijeratne"
+          },
+          "fast_index": 307,
+          "lane_index": 135,
+          "source_sort_year": 2020,
+          "priority_rank": 1285,
+          "status": "deferred_identity_or_material",
+          "publication_status": "source_candidate_year_not_independently_verified",
+          "queries": [
+            "\"The Salvage Crew\" \"Yudhanjaya Wijeratne\" publisher"
+          ],
+          "local_material_lookup": null,
+          "sources": [
+            {
+              "url": "https://yudhanjaya.com/docs/books/",
+              "material_kind": "author_bibliography_short_teaser_only",
+              "support_scope": "实际直接读作者书目，The Salvage Crew只有C-team、backwater planet、routine salvage和inhabited的短截介绍，未进入正文或子页面。",
+              "reading_status": "actually_read_support_scope_only"
+            }
+          ],
+          "no_material_reason": "一次检索及作者书目直接读取仅给C-team后水星球例行打捞、发现有人等短预告，缺足够具体互动；未借百科长剧情补，首轮延后。",
+          "failure_count": 1,
+          "verification_status": "knowledge_added_unverified"
+        },
+        "publication_status": "source_candidate_year_not_independently_verified",
+        "failure_count": 1,
+        "local_material_lookup": null
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "具体范围支持原创解释，原作全文0，仍待独立核对。",
+      "next_step": "后续独立核对明示范围。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q137806627",
+      "identity": {
+        "title": "Expiation",
+        "author": "作者未知"
+      },
+      "pool_index": 26,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Expiation\" BD 2020 résumé"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://www.wikidata.org/wiki/Q137805076",
+          "scope": "直接打开未到目标正文/身份内容",
+          "result": "identity_relation_fetch_failed"
+        }
+      ],
+      "reading_scope": "本漫画精确检索没有可靠同作内容，返回McEwan同名小说等。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q137806627",
+        "identity": {
+          "title": "Expiation",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Expiation\" \"2020\" \"bande dessinée\" science fiction"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "一次精确题名/日期/媒介检索没有本条目具体作者与剧情；题名通用、未知作者，不借同名小说或相关作者作品推断。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round16-log.json",
+        "raw_reading_log": {
+          "id": "Q137806627",
+          "identity": {
+            "title": "Expiation",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Expiation\" \"2020\" \"bande dessinée\" science fiction"
+          ],
+          "materials_checked": [],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "一次精确题名/日期/媒介检索没有本条目具体作者与剧情；题名通用、未知作者，不借同名小说或相关作者作品推断。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "原来源P179=Q137805076未带标签，父系列读取也失败；不由同名小说、作者或猜测系列填本漫画。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false,
+      "local_relation_lookup": {
+        "file": "dist/assets/bibliography-full.json.gz",
+        "property": "P179",
+        "target_id": "Q137805076",
+        "scope": "实际读取原始单项关系，不含父系列标签；未把关系读取算新剧情来源。"
+      }
+    },
+    {
+      "id": "Q88898423",
+      "identity": {
+        "title": "The Pursuit of the Pankera",
+        "author": "羅伯特·海萊因"
+      },
+      "pool_index": 27,
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"The Pursuit of the Pankera\" Pankera plot"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Pursuit_of_the_Pankera",
+          "scope": "实际查询返回本2020变体Plot开头四人、Gay Deceiver和暗杀逃亡前提及与另一版本分歧说明；不采用泛化的主反派、结局或归乡段落。",
+          "result": "read_search_return"
+        }
+      ],
+      "reading_scope": "实际查询返回本2020变体Plot开头四人、Gay Deceiver和暗杀逃亡前提及与另一版本分歧说明；不采用泛化的主反派、结局或归乡段落。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q88898423",
+        "identity": {
+          "title": "The Pursuit of the Pankera",
+          "author": "羅伯特·海萊因"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"The Pursuit of the Pankera\" Heinlein publisher"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/newly-discovered-heinlein-novel-to-be-published-300945555.html",
+            "scope": "出版方新闻稿与作品版本关系，find four未找到具体剧情",
+            "result": "publication_scope_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Pursuit_of_the_Pankera",
+            "scope": "搜索摘录主要说明旧稿与The Number of the Beast的分歧",
+            "result": "version_history_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "现材料主要说明遗稿、许可及版本分歧；本轮不熟悉该具体变体全文，不以The Number of the Beast另一版本情节替代。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q88898423",
+          "identity": {
+            "title": "The Pursuit of the Pankera",
+            "author": "羅伯特·海萊因"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"The Pursuit of the Pankera\" Heinlein publisher"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.prnewswire.com/news-releases/newly-discovered-heinlein-novel-to-be-published-300945555.html",
+              "scope": "出版方新闻稿与作品版本关系，find four未找到具体剧情",
+              "result": "publication_scope_only"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Pursuit_of_the_Pankera",
+              "scope": "搜索摘录主要说明旧稿与The Number of the Beast的分歧",
+              "result": "version_history_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "现材料主要说明遗稿、许可及版本分歧；本轮不熟悉该具体变体全文，不以The Number of the Beast另一版本情节替代。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "具体范围支持原创解释，原作全文0，仍待独立核对。",
+      "next_step": "后续独立核对明示范围。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q111542076",
+      "identity": {
+        "title": "A Broken Bridge",
+        "author": "Cheon Seonran"
+      },
+      "pool_index": 28,
+      "attempt_state": "content_read_quick_retry",
+      "queries": [
+        "\"무너진 다리\" \"천선란\" 줄거리"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://m.yes24.com/Goods/Detail/78590141",
+          "scope": "实际打开Yes24 L435–437的本书出版社书介，保留2019书目和2091故事设定的区别；未读原作500页或其他小说。",
+          "result": "read_limited_publisher_description"
+        },
+        {
+          "url": "https://m.yes24.com/Goods/Detail/78590141",
+          "scope": "实际打开Yes24 L435–437的本书出版社书介，保留2019书目和2091故事设定的区别；未读原作500页或其他小说。",
+          "result": "read_publisher_description"
+        }
+      ],
+      "reading_scope": "实际打开Yes24 L435–437的本书出版社书介，保留2019书目和2091故事设定的区别；未读原作500页或其他小说。",
+      "issue_result": "added_unverified",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q111542076",
+        "identity": {
+          "title": "A Broken Bridge",
+          "author": "Cheon Seonran"
+        },
+        "attempt_state": "deferred_identity_only",
+        "queries": [
+          "\"A Broken Bridge\" \"Cheon Seonran\""
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://library.ltikorea.or.kr/writer/404757",
+            "material_kind": "实际返回韩国文学翻译院作者书目",
+            "result": "catalog_only",
+            "reading_scope": "列本长篇英文题名与韩文무너진 다리，只有身份/形态信息；未得到本书剧情。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "一次查询只得作者书目；同轮剧场结果对应另一作品，不借来补本书。",
+        "reason_unconfirmed": "无本作具体情节，不能用作者其他小说的机器人或桥意象代填。",
+        "next_step": "首轮继续，后续查原韩文出版社本书简介。",
+        "issue_result": "deferred_no_analysis",
+        "attempt_input": "root-fast-round44-log.json",
+        "raw_reading_log": {
+          "id": "Q111542076",
+          "identity": {
+            "title": "A Broken Bridge",
+            "author": "Cheon Seonran"
+          },
+          "attempt_state": "deferred_identity_only",
+          "queries": [
+            "\"A Broken Bridge\" \"Cheon Seonran\""
+          ],
+          "actual_search_performed": true,
+          "materials_checked": [
+            {
+              "url": "https://library.ltikorea.or.kr/writer/404757",
+              "material_kind": "实际返回韩国文学翻译院作者书目",
+              "result": "catalog_only",
+              "reading_scope": "列本长篇英文题名与韩文무너진 다리，只有身份/形态信息；未得到本书剧情。",
+              "read_date": "2026-10-05"
+            }
+          ],
+          "reading_scope": "一次查询只得作者书目；同轮剧场结果对应另一作品，不借来补本书。",
+          "reason_unconfirmed": "无本作具体情节，不能用作者其他小说的机器人或桥意象代填。",
+          "issue_result": "deferred_no_analysis",
+          "next_step": "首轮继续，后续查原韩文出版社本书简介。",
+          "failure_count": 1
+        },
+        "actual_search_performed": true,
+        "failure_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 0,
+      "unsuccessful_attempt_count": 0,
+      "cumulative_known_unsuccessful_attempt_count": 1,
+      "reason_unconfirmed": "具体范围支持原创解释，原作全文0，仍待独立核对。",
+      "next_step": "后续独立核对明示范围。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q130467808",
+      "identity": {
+        "title": "The Wisdom of Crowds",
+        "author": "彼得·沃茨"
+      },
+      "pool_index": 29,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Peter Watts\" \"The Wisdom of Crowds\" Tor"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 1,
+      "materials_checked": [
+        {
+          "url": "https://sumrevija.si/en/eng-peter-watts-the-wisdom-of-crowds-sum11/",
+          "scope": "找到本篇发表页但检索仅一行对话，直接打开为验证挑战，未到正文。",
+          "result": "insufficient_or_identity_unconfirmed"
+        },
+        {
+          "url": "https://sumrevija.si/en/eng-peter-watts-the-wisdom-of-crowds-sum11/",
+          "scope": "直接打开未到目标正文/身份内容",
+          "result": "verification_challenge_no_content"
+        }
+      ],
+      "reading_scope": "找到本篇发表页但检索仅一行对话，直接打开为验证挑战，未到正文。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q130467808",
+        "identity": {
+          "title": "The Wisdom of Crowds",
+          "author": "彼得·沃茨"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"The Wisdom of Crowds\" \"Peter Watts\" story"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "单轮检索只返回作者书目及俄语合集讨论，未获本篇具体情节，不凭作者常写意识问题批填。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q130467808",
+          "identity": {
+            "title": "The Wisdom of Crowds",
+            "author": "彼得·沃茨"
+          },
+          "queries": [
+            "\"The Wisdom of Crowds\" \"Peter Watts\" story"
+          ],
+          "urls_read": [],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "单轮检索只返回作者书目及俄语合集讨论，未获本篇具体情节，不凭作者常写意识问题批填。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "只有Letitia一句不知道的回应，不能由Crowds题名或Watts常见意识主题造剧情。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q135093252",
+      "identity": {
+        "title": "Mission Critical",
+        "author": "作者未知"
+      },
+      "pool_index": 30,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Mission Critical\" \"Peter F. Hamilton\" 2019 review anthology"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://www.goodreads.com/en/book/show/42201476-mission-critical",
+          "scope": "返回合集具体篇名、有限读者评价和技术批评，范围不足。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "返回合集具体篇名、有限读者评价和技术批评，范围不足。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q135093252",
+        "identity": {
+          "title": "Mission Critical",
+          "author": "作者未知"
+        },
+        "attempt_state": "deferred_first_pass",
+        "queries": [
+          "\"Mission Critical\" anthology 2019 contents Solaris"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.bigskylibrary.net/anthologies/mission-critical.html",
+            "scope": "检索到Jonathan Strahan/Solaris2019与十五篇目录",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          },
+          {
+            "url": "https://www.baen.com/Chapters/9781982192600/9781982192600_toc.htm",
+            "scope": "检索返回同题目录；未打开",
+            "result": "contents_only",
+            "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+        "reason_unconfirmed": "确认科幻合集而非同年Greaney同名惊险小说，但目录没有情节；未将泛化任务危机替代选篇内容。",
+        "next_step": "后轮定位确切文本或具体作品简介；困难项后移。",
+        "issue_result": "not_added",
+        "attempt_input": "early-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q135093252",
+          "identity": {
+            "title": "Mission Critical",
+            "author": "作者未知"
+          },
+          "attempt_state": "deferred_first_pass",
+          "queries": [
+            "\"Mission Critical\" anthology 2019 contents Solaris"
+          ],
+          "materials_checked": [
+            {
+              "url": "https://www.bigskylibrary.net/anthologies/mission-critical.html",
+              "scope": "检索到Jonathan Strahan/Solaris2019与十五篇目录",
+              "result": "contents_only"
+            },
+            {
+              "url": "https://www.baen.com/Chapters/9781982192600/9781982192600_toc.htm",
+              "scope": "检索返回同题目录；未打开",
+              "result": "contents_only"
+            }
+          ],
+          "reading_scope": "只读所列检索摘要/失败页，未读原作。",
+          "issue_result": "not_added",
+          "unsuccessful_attempt_count": 1,
+          "reason_unconfirmed": "确认科幻合集而非同年Greaney同名惊险小说，但目录没有情节；未将泛化任务危机替代选篇内容。",
+          "next_step": "后轮定位确切文本或具体作品简介；困难项后移。"
+        },
+        "unsuccessful_attempt_count": 1
+      },
+      "prior_known_failure_count": 1,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": 2,
+      "reason_unconfirmed": "评价可确认若干篇名，但没有可可靠展开的完整行动冲突；不把探险危机标签或无署名片段当全选集分析。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    },
+    {
+      "id": "Q136750816",
+      "identity": {
+        "title": "Sentient #3",
+        "author": "作者未知"
+      },
+      "pool_index": 31,
+      "attempt_state": "deferred_quick_retry",
+      "queries": [
+        "\"Sentient #3\" Wal review"
+      ],
+      "actual_search_performed": true,
+      "actual_search_count": 1,
+      "actual_open_count": 0,
+      "materials_checked": [
+        {
+          "url": "https://nerd-mit-nadel.de/sentient-rezension/",
+          "scope": "返回整集评论和其他同名系列，而非本第3期内容。",
+          "result": "insufficient_or_identity_unconfirmed"
+        }
+      ],
+      "reading_scope": "返回整集评论和其他同名系列，而非本第3期内容。",
+      "issue_result": "not_added",
+      "prior_source_log": {
+        "input_file": "research/issue-source-searches.json",
+        "log_date": "2026-10-04",
+        "id": "Q136750816",
+        "identity": {
+          "title": "Sentient #3",
+          "author": "作者未知"
+        },
+        "attempt_state": "source_search_attempted",
+        "queries": [
+          "\"Sentient #3\" Lemire synopsis"
+        ],
+        "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+        "materials_checked": [
+          {
+            "url": "https://www.keycollectorcomics.com/issue/sentient-3-656408%2C656408/",
+            "result": "catalog_only",
+            "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+            "read_date": "2026-10-05"
+          }
+        ],
+        "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+        "reason_unconfirmed": "返回第3期身份与创作者，未有可对应此期的具体事件，不移入整集AI养育孩子的其他章节。",
+        "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+        "issue_result": "not_added_specific_content_or_identity_needed",
+        "attempt_input": "modern-recent-round17-log.json",
+        "raw_reading_log": {
+          "id": "Q136750816",
+          "identity": {
+            "title": "Sentient #3",
+            "author": "作者未知"
+          },
+          "queries": [
+            "\"Sentient #3\" Lemire synopsis"
+          ],
+          "urls_read": [
+            "https://www.keycollectorcomics.com/issue/sentient-3-656408%2C656408/"
+          ],
+          "attempt_count": 1,
+          "status": "deferred",
+          "reason": "返回第3期身份与创作者，未有可对应此期的具体事件，不移入整集AI养育孩子的其他章节。"
+        }
+      },
+      "prior_known_failure_count": null,
+      "prior_failure_count_note": "只取旧日志明确次数，无明示为null；不把未知当零。",
+      "new_unsuccessful_attempt_count": 1,
+      "unsuccessful_attempt_count": 1,
+      "cumulative_known_unsuccessful_attempt_count": null,
+      "reason_unconfirmed": "本次未取得#3明确剧情，不以整个Sentient AI照料孩子的故事覆盖精确漫画期号。",
+      "next_step": "困难后置；保留身份与材料线索，下次换来源不重复本查询。",
+      "full_original_text_read": false
+    }
+  ]
+}
