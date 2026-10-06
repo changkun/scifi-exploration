@@ -62,7 +62,7 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
     const supplement=supplements.get(id);
     if(supplement)applySupplement(w,supplement);
     applyClassifications(w);
-    w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, ...w.issue_facets.flatMap(f=>[f.label,f.question,f.basis]), ...(w.issue_alternatives||[]).map(a=>a.value), w.story_era, w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
+    w.search_text = [w.title_zh, w.title_original, w.author, detail?.series_name, w.issue, ...w.issue_facets.flatMap(f=>[f.label,f.question,f.basis]), ...(w.issue_alternatives||[]).map(a=>a.value), w.story_era, ...Object.keys(DIMENSION_LABELS).map(key=>w[key]), w.language_tradition, index?.title_en, index?.title_zh, ...(index?.title_aliases || []), ...(index?.author_names_en || []), ...(index?.author_names_zh || []), ...(w.library_checks||[]).flatMap(c=>[c.title,...(c.authors||[])]), ...w.topics, ...w.branches].flat().filter(Boolean).join(' ').normalize('NFKC').toLocaleLowerCase();
     w.search_text += ' ' + w.classification_assignments.map(assignment=>assignment.label).join(' ');
     return w;
   });
@@ -70,6 +70,8 @@ export function buildCanonicalUniverse(sourceRecords, researchWorks, spatial, li
 }
 const unknown = v => v==null || v==='' || /^(待分类|待核|年份未知|作者未知|标题未知|形态未知|语言未知|故事时代未知|最大时间视野未知|原题待核)/.test(String(v));
 export const FIELD_LABELS={title:'展示题名',original_title:'原题',author:'作者',publication_date:'发表时间',original_language:'原语',language_statements:'来源语言',form:'文本形态',spatial:'空间范围',story_era:'故事时代',story_duration:'主体叙事跨度',temporal_reach:'最大时间视野',science:'科学前提',topics:'底层议题',issue:'核心问题',branches:'分支',relationships:'系列与版本关系',external_identifiers:'外部标识'};
+export const DIMENSION_LABELS={narrative_mechanism:'叙事机制',scientific_premise:'故事关键设定',reality_relation:'现实关联',expression_form:'表达形式'};
+export const MISSING_FIELD_LABELS={...FIELD_LABELS,...DIMENSION_LABELS};
 const knowledgeKeys={title_zh:'title',title_original:'original_title',original_language:'original_language',author:'author',spatial_primary:'spatial',duration:'story_duration',story_era:'story_era',reach:'temporal_reach',science_class:'science',issue:'issue',topics:'topics',branches:'branches'};
 function applySupplement(w,s){
   w.knowledge=s.knowledge||null;w.knowledge_topics=s.knowledge?.fields?.topics||[];
@@ -77,6 +79,7 @@ function applySupplement(w,s){
   w.knowledge_identity_notes=unique((s.knowledge?.assertions||[]).map(a=>a.identity_caveat));
   w.issue_evidence_notes=unique((s.knowledge?.assertions||[]).map(a=>a.evidence_scope));
   w.reading_materials=s.reading_materials||[];
+  if(s.spatial_scope_annotation)w.spatial_scope_annotation=s.spatial_scope_annotation;
   w.source_search_log=s.source_search_log||null;
   w.issue_facets_status=w.issue_facets.length?'knowledge_added_unverified':'missing';
   w.issue_alternatives=s.knowledge?.issue_alternatives||[];
@@ -102,6 +105,9 @@ function applySupplement(w,s){
       w.spatial_primary=k.spatial_primary;w.spatial_evidence={primary:k.spatial_primary,secondary:k.spatial_secondary||[],rationale:k.spatial_rationale||s.knowledge.field_notes?.spatial_primary||'已有剧情知识补充；待独立核对。',confidence:'已有知识补充 · 待独立核对'};fields.spatial='knowledge_added_unverified';applied.push('spatial_primary');
     }
     if(k.science_note&&applied.includes('science_class'))w.science_note=k.science_note;
+    for(const key of Object.keys(DIMENSION_LABELS)){
+      if(typeof k[key]==='string'&&k[key].trim())w[key]=k[key];
+    }
     if(k.topics?.length)fields.topics=w.research_topics.length?fields.topics:'knowledge_added_unverified';
     if(k.branches?.length&&!w.research)fields.branches='knowledge_added_unverified';
   }
@@ -130,6 +136,7 @@ function applySupplement(w,s){
   if(!w.source_id&&!w.series_name)missing.push('relationships');
   for(const f of missing)fields[f]=['original_title','original_language'].includes(f)?'unconfirmed':'missing';
   w.completion={structural_checked:true,structural_result:s.structural_result,source_verified:false,field_statuses:fields,missing_fields:missing,knowledge_applied_fields:applied,has_knowledge:!!s.knowledge,has_library_correspondence:w.library_checks.some(c=>c.status==='title_author_correspondence'),has_conflict:w.content_corrections.length>0||conflicts.length>0||fields.publication_date==='conflict_needs_review',has_identity_review:w.library_checks.some(c=>c.status==='identity_or_scope_needs_review'||c.status==='not_returned'),issues:s.issues||[],research_source_comparisons:s.research_source_comparisons||[]};
+  w.completion.extended_dimension_statuses=Object.fromEntries(Object.keys(DIMENSION_LABELS).map(key=>[key,w[key]?'knowledge_added_unverified':'missing']));
   if(s.knowledge&&!w.research)w.research_level='enriched';
   else if(!w.research&&w.topics.length)w.research_level='candidate';
   w.sources=unique([...w.sources,...(s.knowledge?.sources||[]),...w.library_checks.map(c=>c.source_url)]);
@@ -155,5 +162,6 @@ export function coverageOf(works) {
     knowledge_added:works.filter(w=>w.knowledge).length,
     library_correspondence:works.filter(w=>w.completion?.has_library_correspondence).length,
     conflicts:works.filter(w=>w.completion?.has_conflict).length,
-    with_missing:works.filter(w=>w.completion?.missing_fields.length).length };
+    with_missing:works.filter(w=>w.completion?.missing_fields.length).length,
+    extended_dimensions:Object.fromEntries(Object.keys(DIMENSION_LABELS).map(key=>{const known=works.filter(w=>w[key]).length;return [key,{known,missing:works.length-known,independently_verified:0}];})) };
 }

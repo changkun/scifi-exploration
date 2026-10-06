@@ -1,4 +1,5 @@
-import {CLASSIFICATION_REGISTRY} from './classifications.mjs?v=registry20';
+import {CLASSIFICATION_REGISTRY} from './classifications.mjs?v=registry22';
+import {DIMENSION_LABELS} from './canonical.mjs?v=round91-single-pass';
 export const ERA_BOUNDS = [
  {id:'before1800',label:'1800 年以前',min:-Infinity,max:1799},
  {id:'1800',label:'1800—1899',min:1800,max:1899},
@@ -12,7 +13,7 @@ export const ERA_BOUNDS = [
 ];
 export const DURATIONS=['日—月','年—一生','多代—百年','千年—文明史','百万年—宇宙尺度','多尺度或非线性','待核'];
 export const SCIENCES=['近现实外推','依赖未证技术','强反事实设定','混合或不适用'];
-export const DEFAULT_STATE={query:'',topic:'',branch:'',era:'',duration:'',science:'',language:'',form:'',boundary:false,yearMin:null,yearMax:null,sort:'oldest',layout:'cards',page:1,level:'',space:'',yearStatus:'',genre:'',type:'',audit:'',missing:'',issueStatus:'',facet:'',classification:''};
+export const DEFAULT_STATE={query:'',topic:'',branch:'',era:'',duration:'',science:'',language:'',form:'',boundary:false,yearMin:null,yearMax:null,sort:'oldest',layout:'cards',page:1,level:'',space:'',yearStatus:'',genre:'',type:'',audit:'',missing:'',issueStatus:'',facet:'',classification:'',dimension:''};
 export const languageOf=w=>(w.language_tradition||'语言未知').split(/[·／]/)[0];
 export function filterWorks(works,state){
  const query=state.query.trim().normalize('NFKC').toLocaleLowerCase();
@@ -22,7 +23,7 @@ export function filterWorks(works,state){
   if(!state.boundary&&['科幻前史','混合与边界参照'].includes(w.inclusion_status))return false;
   if(state.level&&w.research_level!==state.level)return false;
   if(state.space&&w.spatial_primary!==state.space)return false;
-  if(state.audit==='missing'&&!w.completion?.missing_fields.length)return false;
+  if(state.audit==='missing'&&!w.completion?.missing_fields.length&&!Object.values(w.completion?.extended_dimension_statuses||{}).includes('missing'))return false;
   if(state.audit==='knowledge'&&!w.knowledge)return false;
   if(state.audit==='crosschecked'&&!w.completion?.has_library_correspondence)return false;
   if(state.audit==='conflict'&&!w.completion?.has_conflict)return false;
@@ -30,9 +31,10 @@ export function filterWorks(works,state){
   if(state.audit==='pending'&&w.completion?.source_verified===true)return false;
   if(state.issueStatus==='analyzed'&&w.issue_analysis_status==='missing')return false;
   if(state.issueStatus==='missing'&&w.issue_analysis_status!=='missing')return false;
-  if(state.facet&&!(w.issue_facets||[]).some(f=>f.label===state.facet))return false;
+  if(state.dimension&&!w[state.dimension])return false;
+ if(state.facet&&!(w.issue_facets||[]).some(f=>f.label===state.facet))return false;
   if(state.classification&&!state.classification.split('|').every(id=>(w.classification_assignments||[]).some(c=>c.id===id)))return false;
-  if(state.missing&&!w.completion?.missing_fields.includes(state.missing))return false;
+  if(state.missing&&(state.missing in DIMENSION_LABELS?w.completion?.extended_dimension_statuses?.[state.missing]!=='missing':!w.completion?.missing_fields.includes(state.missing)))return false;
   if(state.genre&&!(w.source_subject||[]).some(g=>g.id===state.genre||g.label===state.genre))return false;
   if(state.type&&!(w.source_types||[]).some(t=>t.label===state.type||t.id===state.type))return false;
   const year=w.sort_year??w.first_year;
@@ -54,7 +56,7 @@ export function filterWorks(works,state){
 }
 export function stateFromURL(search,works){
  const params=new URLSearchParams(search),state={...DEFAULT_STATE};
- for(const key of ['query','topic','branch','era','duration','science','language','form','level','space','yearStatus','genre','type','audit','missing','issueStatus','facet','classification'])if(params.has(key))state[key]=params.get(key);
+ for(const key of ['query','topic','branch','era','duration','science','language','form','level','space','yearStatus','genre','type','audit','missing','issueStatus','facet','classification','dimension'])if(params.has(key))state[key]=params.get(key);
  state.boundary=params.get('boundary')==='1';
  for(const key of ['yearMin','yearMax']){const value=params.get(key);if(value!==null&&/^-?\d{1,6}$/.test(value))state[key]=Number(value);}
  if(state.yearMin!=null&&state.yearMax!=null&&state.yearMin>state.yearMax){state.yearMin=null;state.yearMax=null;}
@@ -65,13 +67,15 @@ export function stateFromURL(search,works){
  allowed.issueStatus=['analyzed','missing'];allowed.facet=[...new Set(works.flatMap(w=>(w.issue_facets||[]).map(f=>f.label)))];
  allowed.topic.push('__unknown__');allowed.branch.push('__unknown__');allowed.duration.push('__unknown__');allowed.science.push('__unknown__');allowed.level=['researched','enriched','candidate','bibliographic'];allowed.space=['earth','planetary','interstellar','galactic','cosmic','abstract','unknown'];allowed.yearStatus=['known','unknown'];allowed.genre=[...new Set(works.flatMap(w=>(w.source_subject||[]).flatMap(g=>[g.id,g.label])))];allowed.type=[...new Set(works.flatMap(w=>(w.source_types||[]).flatMap(t=>[t.id,t.label])))];allowed.language=[...new Set(works.flatMap(w=>w.languages||[languageOf(w)]))];allowed.form=[...new Set(works.flatMap(w=>w.forms||[w.form]))];allowed.audit=['missing','knowledge','crosschecked','conflict','identity','pending'];allowed.missing=['title','original_title','author','publication_date','original_language','language_statements','form','spatial','story_era','story_duration','temporal_reach','science','topics','issue','branches','relationships','external_identifiers'];
  const classificationIds=new Set(CLASSIFICATION_REGISTRY.categories.map(c=>c.id));
+ allowed.dimension=Object.keys(DIMENSION_LABELS);
+ allowed.missing.push(...Object.keys(DIMENSION_LABELS));
  if(state.classification){const ids=[...new Set(state.classification.split('|'))];state.classification=ids.every(id=>classificationIds.has(id))?ids.join('|'):'';}
  for(const key of Object.keys(allowed))if(state[key]&&!allowed[key].includes(state[key]))state[key]='';
  return state;
 }
 export function searchFromState(state,workId){
  const p=new URLSearchParams();
- for(const key of ['query','topic','branch','era','duration','science','language','form','level','space','yearStatus','genre','type','audit','missing','issueStatus','facet','classification'])if(state[key])p.set(key,state[key]);
+ for(const key of ['query','topic','branch','era','duration','science','language','form','level','space','yearStatus','genre','type','audit','missing','issueStatus','facet','classification','dimension'])if(state[key])p.set(key,state[key]);
  if(state.boundary)p.set('boundary','1');
  for(const key of ['yearMin','yearMax'])if(state[key]!=null)p.set(key,String(state[key]));
  if(state.sort!==DEFAULT_STATE.sort)p.set('sort',state.sort);

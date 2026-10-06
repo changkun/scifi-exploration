@@ -1,0 +1,1087 @@
+{
+  "metadata": {
+    "status": "frozen_private_composed_fixed_R91_guard_integration_v3",
+    "baseline_sha256": "9312762981425e67eb4a66b917c326e319fe82efd4d905b87b4d5252ac11b86b",
+    "samebatch_count": 25,
+    "published_count": 100,
+    "old_guard_payload_preserved": true,
+    "fixed_topic_adapter_record_count": 5,
+    "selected_S_changed_topic_count": 4,
+    "legacy_original_hash_algorithm_records": 7,
+    "scope": "Only R91 early15+root10 plus separately frozen modernselection4. No generic owner/filename alias or marker fallback; no source/public writes. Private cache data not copied.",
+    "new_query_count": 0,
+    "new_open_count": 0,
+    "new_core_count": 0,
+    "new_verification_count": 0,
+    "fixed100_and25_routes_before_missing_archive_skip": true,
+    "guard_test_scope": "25 actual pre +8 representative rejects; 25 actual structural-stage records; no extra negative matrix. Simulated positive checks marked explicitly, counts not content verification."
+  },
+  "new_samebatch_module": {
+    "source": "work/evidence/r91-fixed-samebatch-spatial-evidence-v2.mjs",
+    "target": "scripts/r91-fixed-samebatch-spatial-evidence-v2.mjs",
+    "sha256": "eab59c2ba6021c2af4209d5dd6abd98bd49f18187b65dbba105d0d00e25b57d7",
+    "api": [
+      "r91FixedSameBatchSpatialIds(context)",
+      "isR91FixedSameBatchSpatialRecord(record,context)",
+      "validateR91FixedSameBatchSpatialEvidence(record,context)",
+      "r91SameBatchExpectedNormalizedSource(L,A,prior,logfile)"
+    ]
+  },
+  "selection4_module": {
+    "source_file": "work/evidence/modern-published-spatial-selection4-evidence-v1.mjs",
+    "target": "scripts/modern-published-spatial-selection4-evidence-v1.mjs",
+    "sha256": "e46bb4e327fe4c63c7338df887fd260a8365bd651e5ee8a4a95c90239e172e76",
+    "api": [
+      "modernSelection4PublishedSpatialIds(context)",
+      "isModernSelection4PublishedSpatialRecord(record,context)",
+      "validateModernSelection4PublishedSpatialEvidence(record,context)",
+      "modernSelection4RecordSha(value)"
+    ]
+  },
+  "wrapper": {
+    "original_file": "work/science-fiction-site/scripts/spatial-evidence.mjs",
+    "original_sha256": "18459a4b549947ea2c43322e02f1bf871353b58b882b112ca277de6630be2e3d",
+    "derived_file": "work/evidence/r91-composed-fixed-spatial-wrapper-v2-private.mjs",
+    "derived_sha256": "a17d8ef2e269d5ec78a9b9d94f528b98dab99b792f05fa239849ad93c4752816",
+    "patch_file": "work/evidence/r91-composed-fixed-spatial-wrapper-v2-private.patch",
+    "patch_sha256": "b30ad0751f0d15126c1a0da6f6aa2386a4d1db241a4b211a5d0ae62c009e05bc"
+  },
+  "completion_validator": {
+    "original_file": "work/science-fiction-site/scripts/validate-completion.mjs",
+    "original_sha256": "fd5febfb38ca82b8864e927d96760cbbbdaccd8a6349a91cea9b6d534a946974",
+    "derived_file": "work/evidence/r91-composed-fixed-spatial-completion-validator-v3-private.mjs",
+    "derived_sha256": "a060d6bfc456e3d101a37b366cfed68fe3afd59ff50753e717f1f08b87d63b26",
+    "patch_file": "work/evidence/r91-composed-fixed-spatial-completion-validator-v3-private.patch",
+    "patch_sha256": "70bc34eba24601e0efc25aa4101aa18df226935afc4524633ab29e6fbb4e97c4"
+  },
+  "exact_archive_dependencies": [
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round40.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round40.json",
+      "sha256": "a525db69e54348ad0e7be64e423d5a0d3b50ee4e1cdb77c4ca85957719df1b34",
+      "bytes": 74568,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round40-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round40-log.json",
+      "sha256": "8eb7be919d942dba3f30474787f1590e2a3a0ccbce63d107d11bfebfa4b1e3a1",
+      "bytes": 45335,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round37.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round37.json",
+      "sha256": "eed14cc8e8837df5b404720e518ca3c4ee03ae838d5440b5784dd80f4eafb9ae",
+      "bytes": 63904,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round37-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round37-log.json",
+      "sha256": "0a33c4a7e454f2fe72d88f1ea9bcb237133929657d2153bd9157b1918c26b447",
+      "bytes": 38551,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round22.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round22.json",
+      "sha256": "cbe641324338e83e868b5a7fc600adbd12bcc68fc5713d056d87762815b46244",
+      "bytes": 74084,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round22-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round22-log.json",
+      "sha256": "29b960184380c9071f8b5b6212a6a2c406bfde47e87df1b814b3e10db0ffff4f",
+      "bytes": 53249,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round25.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round25.json",
+      "sha256": "fc962c402500f5c4f9c45f9993c04652dbdae60d66e22be32f81dc86e7eba6b7",
+      "bytes": 66078,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round25-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round25-log.json",
+      "sha256": "aac64c9a9556fbde9bf3e9dad7fd8127ed58e114d271c97e923859ac3435871f",
+      "bytes": 41824,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round63.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round63.json",
+      "sha256": "4b703d930b330cb970f42742cc11e85d8754bc131aa170e6e5713a213ab4cf86",
+      "bytes": 105519,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round63-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round63-log.json",
+      "sha256": "9fffc2e672aa438d07d24c4e5f94832cedb2573d4d571df66b67688e5d0b0693",
+      "bytes": 76447,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/undated-first-lane-2.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/undated-first-lane-2.json",
+      "sha256": "00dfa815b412cd05b2fb298887ed80515b62d90d547c6cbedb3a979903aa8a8e",
+      "bytes": 77728,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round51.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round51.json",
+      "sha256": "3ae8f438abd4154a033d43c393614c21a135c9eb4942333ce95b7cc12483ceb5",
+      "bytes": 66098,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round51-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round51-log.json",
+      "sha256": "08ae8ca7d490097fe394df818ec402583a94e71576aae302880274a4dde11b24",
+      "bytes": 46750,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round36.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round36.json",
+      "sha256": "c5ef9587cd9b14e8889a432032b21058ea7227b6a21c4b42d0ca4aecda517483",
+      "bytes": 66088,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round36-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round36-log.json",
+      "sha256": "00b0b5de919c55f7a9f0f118c1f6f6bc166b311b0ef5e91060cf36026561d984",
+      "bytes": 38732,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round9.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round9.json",
+      "sha256": "0d84ab2d74f91470cbcdc7ce88f24770d35f7a3f7cfb83e5b835a0d33c12566f",
+      "bytes": 44520,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round9-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round9-log.json",
+      "sha256": "d51122e4760e63b2b0ca80a9b8167164cf64af61b88bac05118264cf7c852972",
+      "bytes": 23058,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round2.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round2.json",
+      "sha256": "065be54f428916dd0311e0d71706c4a45137151eed487ac39582b23402e2f6be",
+      "bytes": 52817,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round2-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round2-log.json",
+      "sha256": "ad8ba4f3d7efe17e485a98c4d7985bb44a84e3a35745b199984af8d6600edd8d",
+      "bytes": 40142,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-delegation-modern_history.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-delegation-modern_history.json",
+      "sha256": "a60d6dce8a3a6f65b2a38b57aee6aa5e788fa2ac9c55e3ff352ee84e312dd351",
+      "bytes": 26997,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round6.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round6.json",
+      "sha256": "e562ae5e98280f2e0f06e75be5cfefe2e1165d2fe1ac91503295e726911b7a36",
+      "bytes": 61969,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round6-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round6-log.json",
+      "sha256": "641036183cee1843b2469514bcda13ace1524bcd66202f6f62171f6b0ed9bef3",
+      "bytes": 145409,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-lane-2.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-lane-2.json",
+      "sha256": "f1e3bce7c91b9744ab300726ea85acd26e5f195553ce022a63559cc16e04bda5",
+      "bytes": 3051256,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round55.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round55.json",
+      "sha256": "f4e3d79a14742648e994a83c340839d747a1820bec9150b6a30e197c7f16c18c",
+      "bytes": 143328,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round55-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round55-log.json",
+      "sha256": "2ec7e008295b3d3f04f43f83c73abaed1efdb0daf080346dc2defc8409a9be75",
+      "bytes": 77362,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round48.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round48.json",
+      "sha256": "d64c74dc49ec13e947244963878f66218bcfc22af8d3f4a1556567a214d2e0ff",
+      "bytes": 76397,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round48-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round48-log.json",
+      "sha256": "84a5ff49cf6b83acb096e832ebb64f5c06730f88f20d850718f6fb3b85c4a161",
+      "bytes": 46610,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round35.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round35.json",
+      "sha256": "6e46665b4d50010e8b76b47d953ffd2cc6647cd212f112517fe2cad38c519a2d",
+      "bytes": 61410,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round35-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round35-log.json",
+      "sha256": "7de6a20e5cc5677f443ff72e981f8f9e9358a5ec07ac92710dd79148de4ef044",
+      "bytes": 38670,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round10.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round10.json",
+      "sha256": "7d2d3c75586307231ef05eb46ea53977465a5f6c8da4fe529ac5b53abbde0b2f",
+      "bytes": 47638,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round10-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round10-log.json",
+      "sha256": "d4809ad8ac491acf98f0db3df2779a26137259bd8def210da6975d144849a166",
+      "bytes": 24305,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round41.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round41.json",
+      "sha256": "4d6255889b8396fc991abcb6a61df124527bef66182e3a5e0c460984bba8b4bf",
+      "bytes": 80085,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round41-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round41-log.json",
+      "sha256": "3067f2cb52bbc28eec8c9230da307550327cb335d62bff492f7754e89f5099df",
+      "bytes": 54709,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round62.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round62.json",
+      "sha256": "e5932023b4e19846840ae936f4192a23913e2ff5938ab9e2840bceae0081ebec",
+      "bytes": 122428,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round62-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round62-log.json",
+      "sha256": "4f86a252e091914e1b3e5c0db47424390ab687730e4f3255fcf0d16051354794",
+      "bytes": 59109,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round45.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round45.json",
+      "sha256": "b7651a5c34f117b4f45234a71a957aaab2f558a68a85d9a40a24043792cce308",
+      "bytes": 70212,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round45-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round45-log.json",
+      "sha256": "7ab176456c18270ae036cd7ce2be364554d7586a6d398f5e6a5e9b66f3d491fd",
+      "bytes": 46015,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round39.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round39.json",
+      "sha256": "c3666a1d87799fbcd4d0088476943f3117375caff8bc67200cf0f17ba88c8406",
+      "bytes": 70976,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round39-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round39-log.json",
+      "sha256": "6c0cf6fd5808d6d75706d59952c8d6226caf07cfb07a00c3a5afa42e3f3a511f",
+      "bytes": 40235,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round33.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round33.json",
+      "sha256": "933a28da7c364cf9fa15b69cd7f9232dd5be68925785c3a6d273ffd3909dc9cd",
+      "bytes": 68922,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round33-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round33-log.json",
+      "sha256": "5cdfc803b51628a91f28d995daca7d752a1675c8d4ccbdcc2251e51689722716",
+      "bytes": 53927,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round29.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round29.json",
+      "sha256": "a1452a63aad19ab12647ddc83e41774e1bf514f3d0a1f6203b0b000ff484083e",
+      "bytes": 64211,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round29-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round29-log.json",
+      "sha256": "ecc8ac4fbc42cf4af62969e921dc41b6ecb5725d86498d7d9605adfd25860a6a",
+      "bytes": 42071,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round52.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round52.json",
+      "sha256": "76c9d976ab04a4f845e2040c2e0f26ac1c1a9437b102ccda4e3f0fbf92417b10",
+      "bytes": 66618,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round52-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round52-log.json",
+      "sha256": "4f9f3d7a6e835f3c2038dae76de09d6065f19e589dc631067ab03c1790c3d6a7",
+      "bytes": 40172,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round24.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round24.json",
+      "sha256": "37ca1c76eb2b49ac0333f0d5410d8de344af4fbd24926b81007dd74dc04a63ed",
+      "bytes": 64435,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round24-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round24-log.json",
+      "sha256": "dbe0d07f043a23d6423caafd01c489895e212baf686ac4c66e90df9af5c2ce5c",
+      "bytes": 43800,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round6.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round6.json",
+      "sha256": "ead10ddb22f7e508232ce8112556982b170f5899f23d777c06d5c15076ee13e4",
+      "bytes": 43102,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round6-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round6-log.json",
+      "sha256": "7f2e044959f2dafd4e14d949e8db504ff592c5305e6d801cb70e97be70261bc3",
+      "bytes": 19419,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round12.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round12.json",
+      "sha256": "eade90c54f0ee45bc7a35baca044b509b7f06a81c42be34c503c532a35656ea8",
+      "bytes": 108355,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round12-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round12-log.json",
+      "sha256": "9ed16f6300ec6fa263f83ac150b6cd61f6b1ebbd7588688f6a3af11b66d50213",
+      "bytes": 71720,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round21.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round21.json",
+      "sha256": "2e3722530f4fc23da0517d872188cd7cd627353555d818b707132f83bf3b3dbf",
+      "bytes": 55342,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round21-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round21-log.json",
+      "sha256": "ed45d53920c05911d16d21a3954628ccd8c3dc2ed07860b912cbda1b7dc74483",
+      "bytes": 138871,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round11.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round11.json",
+      "sha256": "ded4b1e71c59350f397ccf81b127c597a75e76341ac72c4f43b13fdbe2fa7432",
+      "bytes": 47808,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round11-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round11-log.json",
+      "sha256": "0eddfaa3113f427b8453fe90f0933739473e82027976e8cdd07245e3212b5860",
+      "bytes": 23952,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round44.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round44.json",
+      "sha256": "4c2bfca1cd87973c413782bd6faaf7b04438873865712915b5f4a96eda02fba2",
+      "bytes": 69644,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round44-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round44-log.json",
+      "sha256": "3bd1493189a899457a3a032fa682e7d4e8be37388caaa55f0f4f5395980be338",
+      "bytes": 47376,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round30.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round30.json",
+      "sha256": "2c644ace8d66d8cb17de7c1fd37e7c2113105c97b25e5388b7cc0fcc5046d829",
+      "bytes": 68865,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round30-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round30-log.json",
+      "sha256": "8fb14fcda0df1ec0f58413df414d2fa1d2c06aec7971c2881444185bc5e65d6c",
+      "bytes": 50190,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round23.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round23.json",
+      "sha256": "8c8dffa2ab630adb6d2e1ea5dd9245bccd406a26a0f4857ad67adb62b0f852c6",
+      "bytes": 75659,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round23-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round23-log.json",
+      "sha256": "6d30b7cdc6bfba4c5f4d75d288cc2be7bc1e746bf8571cec0d2287bfffa4886c",
+      "bytes": 53665,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round26.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round26.json",
+      "sha256": "b974fbed3d980d9f398deb03ba373086d04aa7ad34f4ad9c4dbf632311de7b6d",
+      "bytes": 61388,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round26-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round26-log.json",
+      "sha256": "6311a25d39e46255ba2128be859d31228d027fdd59bad65bc5a2afc2fb50e104",
+      "bytes": 41841,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round14.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round14.json",
+      "sha256": "9ee92daff8b34fa656126dee246ed5eadefd52576528aabdd08bc0996d985bb2",
+      "bytes": 102444,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round14-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round14-log.json",
+      "sha256": "2b16aa45a405b90ad0d26701898fd140f59509d5b1552e7a11c19b80af09a82c",
+      "bytes": 74718,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round49.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round49.json",
+      "sha256": "60859a03ee268e0b64ea6438037ff5c93c81a7bb8f16fea234e734c310ed71ca",
+      "bytes": 81212,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round49-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round49-log.json",
+      "sha256": "b717a5dad08327fe238ca876cafb67b6da5cc5b63db4bb3d099c428289b148ad",
+      "bytes": 47184,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round3.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round3.json",
+      "sha256": "a5edd71a8e2f41bc3a38d3523007d065abac8c884ee9bb5964b8e62a478ba628",
+      "bytes": 74525,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round3-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round3-log.json",
+      "sha256": "117238a0e0b9f3cf03f2cd2becb514328629890e262b75c80cc9ca25aea55fe2",
+      "bytes": 145008,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round60.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round60.json",
+      "sha256": "c83095dbb3dcc42eab807c78f21aacd79e57551549dedb41b6e3b18e50506bc6",
+      "bytes": 62705,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round60-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round60-log.json",
+      "sha256": "0d7206262daeac19b0a611ef1f2ed6a22cfabdb555dbc46dcefe6b6bb52f7c2d",
+      "bytes": 44200,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round8.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round8.json",
+      "sha256": "42ae9a85e5ebb704dae7cd7a3a115f3208d99aaaefdd289572bf34f7e9ca7422",
+      "bytes": 49798,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round8-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round8-log.json",
+      "sha256": "a90e871eda464098fb922cae43c5dc2bb32de5fe2cb9f82026c70cfb6b28b4c2",
+      "bytes": 21736,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round27.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round27.json",
+      "sha256": "24c6c4d3e19e25db59fd712ef25f4af7f004ba886fbab48354575f1f981919b2",
+      "bytes": 65510,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round27-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round27-log.json",
+      "sha256": "341816c159ed52c5f27b33dd71487c5b44fb6622b82e1ab44d335e6117aecf76",
+      "bytes": 41108,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round28.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round28.json",
+      "sha256": "a46b7a36a6a35eca1a21de706db9f5c1456b9aa859fe94d2c324d072b8a12778",
+      "bytes": 65036,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round28-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round28-log.json",
+      "sha256": "d42f88b1501c55a4aa156d366710b840ea910da15e0d001ea773899b940cb80f",
+      "bytes": 44603,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round15.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round15.json",
+      "sha256": "85bec9393127f95db7ea1a2d5db7324241d9bbde4773e08ac3a6a8e6067bb553",
+      "bytes": 50386,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry-modern-round15-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/quick-retry-modern-round15-log.json",
+      "sha256": "6d42211a88f0541e51ac129cfffb9d8a8f0fd62989fc99e76e386c27a355fffb",
+      "bytes": 125581,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round1.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round1.json",
+      "sha256": "2142e755d9575bd12b8428ff36ab6fd75d703eb266c54d93cf1687b74756f530",
+      "bytes": 61869,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round1-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round1-log.json",
+      "sha256": "b40eabe61e37ac8d80bf40e95136ced9380c687b13b78b0cfc6fdf1d26e5ea88",
+      "bytes": 44180,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round61.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round61.json",
+      "sha256": "3a4d8080768e3c2dfc5f1aedbc94b7ab90f33a28f7481433254a25574ccc62c3",
+      "bytes": 32946,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round61-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round61-log.json",
+      "sha256": "279de335e300e7cdbde82cbae393b9d604801843042948dd146bdb6d1cc6a213",
+      "bytes": 26629,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round42.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round42.json",
+      "sha256": "20d822a35df2a79c6f6cf6be8420464ee4f072d5642bb660f137c557fc76cb08",
+      "bytes": 70725,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round42-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round42-log.json",
+      "sha256": "90647e1b3190a878ec257c3bf0a45a5e97b0a2cb9e01989e8a9c1801c8d55d0c",
+      "bytes": 46585,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round58.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round58.json",
+      "sha256": "84651a27b42358924a91db934cf970917b33461194e15c591d4ffa1875aa8b95",
+      "bytes": 67045,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round58-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round58-log.json",
+      "sha256": "db006b7ba2282a29a37839f453d36d1007857896a43447fda4d7d33a2e46fa4e",
+      "bytes": 52833,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round3.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round3.json",
+      "sha256": "fdb592fe7e29e52ba4497f2eb32abd7f9f64db8685cc5b952fdeae38c7dc2862",
+      "bytes": 63228,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-root-assist-modern-round3-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-root-assist-modern-round3-log.json",
+      "sha256": "724587958fed0ec01ab355888b5df6e2e9cb91f11642b39d16fcd64af52bf060",
+      "bytes": 44346,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-modern-round9.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-modern-round9.json",
+      "sha256": "91a797a616e792c4b55a3f213519dd6c59d150e7b461e9cd77d2e62cf76dcca6",
+      "bytes": 85165,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-modern-round9-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-modern-round9-log.json",
+      "sha256": "f568f147b123b47793214c0d5be65416f516f1551503400c131deadd9ab74715",
+      "bytes": 62882,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/known-year-first-pass-lane-2.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/known-year-first-pass-lane-2.json",
+      "sha256": "92c69332f1a7182f8453654971f569aaddb31bf4da9abd35cd47c8323ff40d29",
+      "bytes": 104507,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round15.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round15.json",
+      "sha256": "e92174609bd9f76275c40e30ceaac4d218db94b60aa3d76f6fb0734a3ab667bc",
+      "bytes": 54988,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/issue-input-snapshots/modern-recent-round15-log.json",
+      "source_file": "work/science-fiction-site/research/issue-input-snapshots/modern-recent-round15-log.json",
+      "sha256": "129e49533566c38c030030bef12112b38dba59064d26c75b23d375f22411ef06",
+      "bytes": 33091,
+      "action": "preserve_existing_exact_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/modern-published-spatial-expansion-selection4.json",
+      "source_file": "work/evidence/modern-published-spatial-expansion-selection4.json",
+      "sha256": "233adfeac079c40dde4953f07030e5b7900eb0d720d654404903e9990de3d105",
+      "bytes": 2386528,
+      "action": "add_exact_frozen_input_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/modern-published-spatial-expansion-round7.json",
+      "source_file": "work/evidence/modern-published-spatial-expansion-round7.json",
+      "sha256": "a09165b0afc492a5ef8608264ef8722add3a546f6166ec4a5246a005c1b328aa",
+      "bytes": 1042240,
+      "action": "add_exact_frozen_input_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/modern-published-spatial-expansion-round8.json",
+      "source_file": "work/evidence/modern-published-spatial-expansion-round8.json",
+      "sha256": "6a17bdcef5824e48851a000e8653cc990fb43d17fcfd1201968590b9338dd5f8",
+      "bytes": 667856,
+      "action": "add_exact_frozen_input_archive",
+      "contains_private_raw_return": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-early-spatial-round7.json",
+      "source_file": "work/evidence/quick-retry2-early-spatial-round7.json",
+      "sha256": "11d2da811c00031b4d12a7de2c5d37ec8674c962f3680097a4869a7d98caca6d",
+      "bytes": 10050,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round7.json",
+      "source_file": "work/evidence/quick-retry2-early-round7.json",
+      "sha256": "3ff3fc9586cb081283bb687fa1fa79ec3097176a145a5a324f54d6f4df2b196e",
+      "bytes": 19885,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round7-log.json",
+      "source_file": "work/evidence/quick-retry2-early-round7-log.json",
+      "sha256": "a544b2b992803ead3fbcf97138f27fbc729019b333d82efded5972d8ce304e64",
+      "bytes": 506074,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-lane-3.json",
+      "source_file": "work/evidence/quick-retry2-lane-3.json",
+      "sha256": "5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c",
+      "bytes": 5179625,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-early-spatial-round8.json",
+      "source_file": "work/evidence/quick-retry2-early-spatial-round8.json",
+      "sha256": "5916f64c8bd264a7572372c63a962de2f2fff12d40c71bac5d7f5df2b5457f77",
+      "bytes": 6431,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round8.json",
+      "source_file": "work/evidence/quick-retry2-early-round8.json",
+      "sha256": "e17329f78160256f8b567a2bdce5f73e1547b958dfa7aecf8bd1e99defd3f528",
+      "bytes": 27259,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round8-log.json",
+      "source_file": "work/evidence/quick-retry2-early-round8-log.json",
+      "sha256": "8ae9cc2e96a9d56bc4fbb26f7656508c33469308bc03465ecaaef682734bb353",
+      "bytes": 458865,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-early-spatial-round9.json",
+      "source_file": "work/evidence/quick-retry2-early-spatial-round9.json",
+      "sha256": "98d89841d756233b16d93b70194df15a9455c5075ce441525d572798ee6ba967",
+      "bytes": 9744,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round9.json",
+      "source_file": "work/evidence/quick-retry2-early-round9.json",
+      "sha256": "e66c5b353cd66dbad34b1faf11eeb51895221b903736792999e58dfce688b6a2",
+      "bytes": 21417,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round9-log.json",
+      "source_file": "work/evidence/quick-retry2-early-round9-log.json",
+      "sha256": "3d7eaa6a306ad25394308723e2cc84b1090450683ed4fd3bbde872443ebb21bf",
+      "bytes": 451966,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-early-spatial-round10.json",
+      "source_file": "work/evidence/quick-retry2-early-spatial-round10.json",
+      "sha256": "17eabf60c4ab4c2e4f8f121be85e70db5e1fe6c6a8138e5c5c3accb036b32df6",
+      "bytes": 14551,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round10.json",
+      "source_file": "work/evidence/quick-retry2-early-round10.json",
+      "sha256": "811e1b7b5b6fc48e49d0963b6dae0eddbb3534e7e0675b41497e7f96e4799ac1",
+      "bytes": 32605,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round10-log.json",
+      "source_file": "work/evidence/quick-retry2-early-round10-log.json",
+      "sha256": "cb035398af686310a27fa2a1de9126ebfe7986bcc9143fbf92802a6521a32cb2",
+      "bytes": 497237,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-early-spatial-round11.json",
+      "source_file": "work/evidence/quick-retry2-early-spatial-round11.json",
+      "sha256": "3c25ba3809af0ffd54dc64825622309c38f01c27b6e32f7baf27995fbc53ba24",
+      "bytes": 6774,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round11.json",
+      "source_file": "work/evidence/quick-retry2-early-round11.json",
+      "sha256": "70e8e33479a073ba3f3bd7307b98c21a6836fe9a39ac9eedbcb93921d178a180",
+      "bytes": 21383,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-early-round11-log.json",
+      "source_file": "work/evidence/quick-retry2-early-round11-log.json",
+      "sha256": "2b6c783f2611e74bd3ac805e4b66198c0714592145712b7c7eaceb5330424b85",
+      "bytes": 448638,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-root-spatial-round7.json",
+      "source_file": "work/evidence/quick-retry2-root-spatial-round7.json",
+      "sha256": "b69475631a1940158820cce6fb24fee569ac1676702f5e3d630e4f6d60de4587",
+      "bytes": 7582,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round7.json",
+      "source_file": "work/evidence/quick-retry2-root-round7.json",
+      "sha256": "e198dd7524d22f377f9eb6348665d9702efd6bb682cb7853484c3250197eba3a",
+      "bytes": 14647,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round7-log.json",
+      "source_file": "work/evidence/quick-retry2-root-round7-log.json",
+      "sha256": "c12f3445d43669423a30181e5e39ce48d9a33f388898f8b456ee838a9a68b30a",
+      "bytes": 234504,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-lane-0.json",
+      "source_file": "work/evidence/quick-retry2-lane-0.json",
+      "sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+      "bytes": 5187365,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-root-spatial-round8.json",
+      "source_file": "work/evidence/quick-retry2-root-spatial-round8.json",
+      "sha256": "42a2079af00664a4bb68356943dde8561bdcba65d4de2ff9b4f123dd40cbbbb4",
+      "bytes": 6942,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round8.json",
+      "source_file": "work/evidence/quick-retry2-root-round8.json",
+      "sha256": "0c2669bad6f0438c816509168e0724e7624c7a4ed7046a4cad130cf054111d6a",
+      "bytes": 9399,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round8-log.json",
+      "source_file": "work/evidence/quick-retry2-root-round8-log.json",
+      "sha256": "7db34317b6ee189e2a0a6c83296e02cb16902ced58cf210bd0d14ae3116be3da",
+      "bytes": 111727,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-root-spatial-round9.json",
+      "source_file": "work/evidence/quick-retry2-root-spatial-round9.json",
+      "sha256": "57c442d1b93796b1cdc03d1d0e84fa5bc0fcb247656693e698df535277982602",
+      "bytes": 2973,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round9.json",
+      "source_file": "work/evidence/quick-retry2-root-round9.json",
+      "sha256": "a2240c84a3495c88f674d4a59e0b8ea417f1ad0589c1bf66b670e9defd3a6e07",
+      "bytes": 3911,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round9-log.json",
+      "source_file": "work/evidence/quick-retry2-root-round9-log.json",
+      "sha256": "862ed7a5ecb94d2568cbb1dd0c9ceb2d4de409cd15b348da00ded7492b0431c4",
+      "bytes": 52832,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/quick-retry2-root-spatial-round10.json",
+      "source_file": "work/evidence/quick-retry2-root-spatial-round10.json",
+      "sha256": "da5bcafdf351189e15bb09e20ed869532d4fad23283b3a066d3ba41947d4015a",
+      "bytes": 8172,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round10.json",
+      "source_file": "work/evidence/quick-retry2-root-round10.json",
+      "sha256": "6a7f5a7b6cb88848fef1bb71bf842eee89b5cd28ecb213de482ed2ecfa2e48c6",
+      "bytes": 15357,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round10-log.json",
+      "source_file": "work/evidence/quick-retry2-root-round10-log.json",
+      "sha256": "f074ad43b48db9d9f2df322e76608f07f1320625ca5a5000eea29a02378a71fb",
+      "bytes": 229546,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/r91-samebatch-spatial-pre-adoption-context-v1.json",
+      "source_file": "work/evidence/r91-samebatch-spatial-pre-adoption-context-v1.json",
+      "sha256": "45027afb03c586dd53f32ad07a1a3b3ecabd0ab17ca111dad4346bfab9703744",
+      "bytes": 526490,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round7-corrected.json",
+      "source_file": "work/evidence/quick-retry2-root-round7-corrected.json",
+      "sha256": "979c4e84b5c11af9a6b86d22dcbe7e18da8eae2c7b4f6a708e1607604006edaa",
+      "bytes": 15007,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/issue-input-snapshots/quick-retry2-root-round8-corrected.json",
+      "source_file": "work/evidence/quick-retry2-root-round8-corrected.json",
+      "sha256": "7f58ca5127b3b40425e273b252fb53d76c0b49010dd0f5e0f167ad8ebe801a8f",
+      "bytes": 9738,
+      "private_raw_cache": false
+    },
+    {
+      "target": "research/spatial-input-snapshots/round91-root-topic-label-adapter.json",
+      "source_file": "work/evidence/round91-root-topic-label-adapter.json",
+      "sha256": "9c39250cf191e4e0e55f6cc552f4be0e0b6d830d6132c7880d79831649c4e899",
+      "bytes": 3398,
+      "private_raw_cache": false
+    }
+  ],
+  "original_R91_pins_file": "work/evidence/r91-samebatch-spatial-input-pins-v2-private.json",
+  "original_R91_pins_sha256": "f1d1a8118a836782ef621fe866cf628a7a2d60faec4bd255c219407efb2ec522",
+  "private_fixture": "work/evidence/r91-fixed-samebatch-spatial-guard-fixture-private",
+  "original_payload_composed_wrapper_reversible": true,
+  "original_payload_composed_validator_reversible": true,
+  "guard_proofs": [
+    {
+      "file": "work/evidence/modern-published-spatial-selection4-guard-proof-v1-private.json",
+      "sha256": "dfa1d0a131c144176efc1156efd56d28370b1db632810c940d79cd46fab6b455"
+    },
+    {
+      "file": "work/evidence/r91-fixed-samebatch-spatial-guard-proof-v2-private.json",
+      "sha256": "4c9eb52541f2ee77e34b926074ecc81c249b4e2e5e961eb0849a616838b62a5e"
+    },
+    {
+      "file": "work/evidence/r91-actual-stage-samebatch-spatial-guard-proof-v2-private.json",
+      "sha256": "aa780e2092cf59bc4cc96b8c109755974cfce4c6accdbea50f42ce9906e30481"
+    }
+  ],
+  "supersedes_manifest_file": "work/evidence/r91-composed-fixed-spatial-guard-integration-manifest-v2-private.json",
+  "supersedes_manifest_sha256": "44b59e90aa73d35e9140751413c58740416ca023711b9e617fb2f227c57cdf89"
+}

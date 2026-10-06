@@ -11,6 +11,8 @@ import {validateSpatialEvidence} from './spatial-evidence.mjs';
 import {isModernPublishedSpatialRecord} from './modern-published-spatial-evidence-v3.mjs';
 import {MODERN_SELECTION2_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION2_SPATIAL_SELECTION_SHA256,modernSelection2PublishedSpatialIds} from './modern-published-spatial-selection2-evidence-v1.mjs';
 import {MODERN_SELECTION3_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION3_SPATIAL_SELECTION_SHA256,modernSelection3PublishedSpatialIds} from './modern-published-spatial-selection3-evidence-v1.mjs';
+import {MODERN_SELECTION4_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION4_SPATIAL_SELECTION_SHA256,modernSelection4PublishedSpatialIds} from './modern-published-spatial-selection4-evidence-v1.mjs';
+import {R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,r91FixedSameBatchSpatialIds} from './r91-fixed-samebatch-spatial-evidence-v2.mjs';
 import {completionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
@@ -33,7 +35,9 @@ check('knowledge and review state is shareable across views',()=>{const state={.
 const spatialFiles=await listSpatialInputs(root),spatialInputs=await Promise.all(spatialFiles.map(read));
 const sortedJSON=value=>Array.isArray(value)?value.map(sortedJSON):value&&typeof value==='object'?
  Object.fromEntries(Object.keys(value).sort().map(key=>[key,sortedJSON(value[key])])):value;
-const newModernSpatialIds = new Set([...modernSelection2PublishedSpatialIds({repoDir:fileURLToPath(root)}),...modernSelection3PublishedSpatialIds({repoDir:fileURLToPath(root)})]);
+const newModernSpatialIds = new Set([...modernSelection2PublishedSpatialIds({repoDir:fileURLToPath(root)}),...modernSelection3PublishedSpatialIds({repoDir:fileURLToPath(root)}),...modernSelection4PublishedSpatialIds({repoDir:fileURLToPath(root)})]);
+const selection4FixedSpatialIds = modernSelection4PublishedSpatialIds({repoDir:fileURLToPath(root)});
+const r91SameBatchSpatialIds = r91FixedSameBatchSpatialIds({repoDir:fileURLToPath(root)});
 const earlyRetry2SameBatchSpatialInputs = Object.freeze({
  'quick-retry2-early-spatial-round4.json':'4d7b832261b58e97491a8869bc29d840007ca347f3feb79cf6aa469aae3e137f',
  'quick-retry2-early-spatial-round5.json':'b3718e76677353ac9484ce12b01f65251eced6b80f0588e62daaec514f7d4508',
@@ -43,9 +47,19 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
+ if(r91SameBatchSpatialIds.has(record.id)||Object.hasOwn(R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,record.source_spatial_input_file)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
+ if(selection4FixedSpatialIds.has(record.id)||Object.hasOwn(MODERN_SELECTION4_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
  if(!record.source_analysis_archive)continue;
  // New fixed inputs bind full original A/L/selection/history before generic ownership.
- if(newModernSpatialIds.has(record.id)||Object.hasOwn(MODERN_SELECTION2_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)||Object.hasOwn(MODERN_SELECTION3_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)||[MODERN_SELECTION2_SPATIAL_SELECTION_SHA256,MODERN_SELECTION3_SPATIAL_SELECTION_SHA256].includes(record.spatial_selection_sha256)){
+ if(newModernSpatialIds.has(record.id)||Object.hasOwn(MODERN_SELECTION2_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)||Object.hasOwn(MODERN_SELECTION3_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)||Object.hasOwn(MODERN_SELECTION4_PUBLISHED_SPATIAL_INPUTS,record.source_spatial_input_file)||[MODERN_SELECTION2_SPATIAL_SELECTION_SHA256,MODERN_SELECTION3_SPATIAL_SELECTION_SHA256,MODERN_SELECTION4_SPATIAL_SELECTION_SHA256].includes(record.spatial_selection_sha256)){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;

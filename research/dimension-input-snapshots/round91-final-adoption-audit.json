@@ -1,0 +1,120 @@
+{
+  "status": "actual_build_and_independent_preservation_passed",
+  "round": 91,
+  "source_base_commit": "eac590911137f0f859ded3741e61aeca77e661e8",
+  "canonical_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+  "classification_registry_sha256": "69006e0f712c771c93cbf289e7ee00f5608b15ec767fc88262c38abb8dda7ef8",
+  "process_storage_sha256": "d81b0eb476c44df7e9be5d85aa37c5b833f4d46046801d458280cadbcaf63927",
+  "new_core": 49,
+  "new_facets": 98,
+  "new_spatial": 125,
+  "new_dimension_works": 40,
+  "new_dimension_fields": 141,
+  "new_classification_candidates": 9,
+  "actual_queries": 200,
+  "actual_opens_including_failed_and_reopens": 21,
+  "new_full_original_reads": 0,
+  "new_independent_verification": 0,
+  "coverage": {
+    "total": 14564,
+    "issue_analyzed": 13467,
+    "issue_missing": 1097,
+    "topic_known": 13520,
+    "topic_unknown": 1044,
+    "issue_facets": 28049,
+    "space_unknown": 11114,
+    "year_unknown": 1901,
+    "conflicts": 454,
+    "extended_dimensions": {
+      "narrative_mechanism": {
+        "known": 40,
+        "missing": 14524,
+        "independently_verified": 0
+      },
+      "scientific_premise": {
+        "known": 40,
+        "missing": 14524,
+        "independently_verified": 0
+      },
+      "reality_relation": {
+        "known": 40,
+        "missing": 14524,
+        "independently_verified": 0
+      },
+      "expression_form": {
+        "known": 4,
+        "missing": 14560,
+        "independently_verified": 0
+      }
+    }
+  },
+  "standard_and_extension_checks": [
+    {
+      "script": "scripts/validate.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "0a05a0736182b5ab7292b38b25046a93730abbabb1913527a24ab3cf838f6e6c",
+      "last_result": "23 checks passed; 0 failed. Catalog: 168; external bibliography: 14532."
+    },
+    {
+      "script": "scripts/validate-unified.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "195ca7cd5dca8e19c95769ecaa2bb87d1253b75b6acbcccb43088c4a0d543495",
+      "last_result": "16 unified checks passed. 14564 canonical records."
+    },
+    {
+      "script": "scripts/validate-completion.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "b3550f7416dc9c7178405550025a6f2994c5f8304447d231df2ede8031840dfb",
+      "last_result": "22 completion checks passed."
+    },
+    {
+      "script": "scripts/validate-issues.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "d668c34d038e92e67063a14be0d93ad27a278f912023ceb9b92845db551fc46a",
+      "last_result": "10 issue checks passed; 13156 newly analyzed, 28049 fine questions."
+    },
+    {
+      "script": "scripts/validate-reading-queue.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "db82a7163e643322064293a6eaa460851766d3187816208e555b5f5d4fadef36",
+      "last_result": "PASS 实际查读与仅补充或身份处理分别统计且可复算"
+    },
+    {
+      "script": "scripts/validate-classifications.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "739964e48a9b03626096d277c1780b5cb2b9267140557195754648f40ad1067c",
+      "last_result": "PASS additive discovery reviews, frozen public input hashes, exact memberships and visible work/member/version/project boundaries"
+    },
+    {
+      "script": "scripts/validate-process-log-storage.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "488a96e9f496c3431b2ab53fe1d063750088e0849c02e53b4bc3a2bf38f2c80b",
+      "last_result": "{\"status\":\"passed\",\"integrityChecks\":20,\"records\":13166,\"rawSHA256\":\"a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f\",\"storageSHA256\":\"d81b0eb476c44df7e9be5d85aa37c5b833f4d46046801d458280cadbcaf63927\"}"
+    },
+    {
+      "script": "scripts/validate-dimensions.mjs",
+      "actual_exit_code": 0,
+      "log_sha256": "d338ca76e1ff6d3c6b66208a5278f1687430a367edf994ee39de570ba837f680",
+      "last_result": "PASS 40 actual adopted records / 141 fields; separate four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note"
+    }
+  ],
+  "independent_proofs": [
+    {
+      "file": "research/dimension-input-snapshots/round91-preservation-actual-public.json",
+      "sha256": "14ce823c602b4855561ec60b6f1311ca1c19064d5d3358710eb087adb1387422",
+      "scope": "Full14564 actual post before append-only C9"
+    },
+    {
+      "file": "research/classification-discovery-audits/round91-registry-preservation-final-private.json",
+      "sha256": "a425410865adf429f7e609c64707109abca562103d70c3f24844b41a18ed31fd",
+      "scope": "Final C9 registry/process/canonical delta"
+    },
+    {
+      "file": "research/classification-discovery-audits/round91-candidate-process-adapter-small-proof-early-private.json",
+      "sha256": "ef98a795ef1991db4a1322345b54f568e5dcfcdf64143fa908a0ccae1ef34ed1",
+      "scope": "9 real positives and8 tamper negatives"
+    }
+  ],
+  "overall_goal_complete": false,
+  "note": "Known availability, bibliography correspondence, structural checks and independent literary verification remain separate. Data publication receipt will be retained after actual native deployment."
+}

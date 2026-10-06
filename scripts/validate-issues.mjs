@@ -5,7 +5,9 @@ import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
 import {loadBibliographySource,loadCompletionSource} from '../dist/assets/data-loader.mjs';
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {issueDetail,renderIssueExplorer} from '../dist/assets/issues.mjs';
-import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
+import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
+import {createKnowledgeDimensionContext,validateKnowledgeDimensionEvidence} from './knowledge-dimensions-evidence.mjs';
+import {fileURLToPath} from 'node:url';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
@@ -22,6 +24,16 @@ const priorKnowledge=new Map(originals.flatMap(d=>d.records).map(r=>[r.id,r]));
 for(const input of await Promise.all((await listSpatialInputs(root)).map(read)))for(const r of input.records){
  const old=priorKnowledge.get(r.id);
  priorKnowledge.set(r.id,{...(old||r),fields:{...r.fields,...old?.fields},field_notes:{...r.field_notes,...old?.field_notes}});
+}
+// Hold separately guarded dimension additions constant in the issue-only
+// comparison, just as for spatial overlays. Original issue inputs remain exact.
+const dimensionContext=createKnowledgeDimensionContext({repoDir:fileURLToPath(root)});
+for(const inputFile of await listDimensionInputs(root))for(const record of (await read(inputFile)).records){
+ const currentWork=works.find(work=>work.id===record.id);
+ const evidence=validateKnowledgeDimensionEvidence(record,{trustedContext:dimensionContext,currentWork,inputFile,dimensionAdoptionPhase:'post'});
+ assert.equal(evidence.status,'knowledge_added_unverified',record.id+' guarded dimension overlay');
+ const old=priorKnowledge.get(record.id);
+ priorKnowledge.set(record.id,{...(old||record),fields:{...old?.fields,...record.fields},field_notes:{...old?.field_notes,...record.field_notes}});
 }
 const priorSupplements=completion.records.map(s=>({...s,knowledge:priorKnowledge.get(s.id)||null}));
 const prior=buildCanonicalUniverse(source.records,catalog.works,spatial,links,priorSupplements).works,priorMap=new Map(prior.map(w=>[w.id,w]));

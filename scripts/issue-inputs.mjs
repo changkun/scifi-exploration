@@ -20,3 +20,10 @@ export async function listSpatialInputs(root){
   .sort((a,b)=>Number(a.match(/round(\d+)/)[1])-Number(b.match(/round(\d+)/)[1]))
   .map(f=>'research/'+f);
 }
+
+export async function listDimensionInputs(root){
+ const files=await readdir(new URL('research/',root));
+ return files.filter(f=>/^knowledge-dimensions-round[1-9]\d*\.json$/.test(f))
+  .sort((a,b)=>Number(a.match(/round(\d+)/)[1])-Number(b.match(/round(\d+)/)[1]))
+  .map(f=>'research/'+f);
+}

@@ -5,7 +5,8 @@ import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {listIssueInputs,listSpatialInputs} from './issue-inputs.mjs';
+import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
+import {createKnowledgeDimensionContext,validateKnowledgeDimensionEvidence} from './knowledge-dimensions-evidence.mjs';
 import {completionChunks,completionDelivery} from './completion-delivery.mjs';
 import {validateSpatialEvidence,initialResearchSpatialBuildArguments} from './spatial-evidence.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
@@ -42,12 +43,14 @@ const sciences=new Set(CLASSIFICATION_REGISTRY.field_values.science_class);
 const knowledge=new Map(),knowledgeInputs=[];
 const issueInputs=await listIssueInputs(root);
 const spatialInputs=await listSpatialInputs(root);
-for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs,...spatialInputs]){
+const dimensionInputs=await listDimensionInputs(root);
+const dimensionContext=dimensionInputs.length?createKnowledgeDimensionContext({repoDir:fileURLToPath(root)}):null;
+for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs,...spatialInputs,...dimensionInputs]){
   let bytes;try{bytes=await readFile(new URL(p,root));}catch(e){if(e.code==='ENOENT'){console.log('Pending knowledge input: '+p);continue;}throw e;}
   const data=JSON.parse(bytes);knowledgeInputs.push({file:p,sha256:createHash('sha256').update(bytes).digest('hex'),count:data.records.length});
   const inputIds=new Set();
   for(const r of data.records){
-    if(!canonicalIds.has(r.id)||inputIds.has(r.id)||knowledge.has(r.id)&&!issueInputs.includes(p)&&!spatialInputs.includes(p))throw new Error('Invalid or duplicate knowledge identity: '+r.id);
+    if(!canonicalIds.has(r.id)||inputIds.has(r.id)||knowledge.has(r.id)&&!issueInputs.includes(p)&&!spatialInputs.includes(p)&&!dimensionInputs.includes(p))throw new Error('Invalid or duplicate knowledge identity: '+r.id);
     inputIds.add(r.id);
     if(!r.identity?.title||!r.identity?.author||r.verification_status!=='knowledge_added_unverified')throw new Error('Knowledge identity or status absent: '+r.id);
     if(r.identity_caveat!==undefined&&(typeof r.identity_caveat!=='string'||!r.identity_caveat.trim()))throw new Error('Invalid identity caveat: '+r.id);
@@ -56,6 +59,11 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     const authors=[...(original?.authors||[]),...(original?.author_names_en||[]),...(original?.author_names_zh||[]),(original?.authors||[]).join(' / '),prior?.author,baseline.fields.author.value].map(norm);
     if(!titles.includes(norm(r.identity.title))||!authors.includes(norm(r.identity.author)))throw new Error('Knowledge title/author do not match canonical identity: '+r.id);
     if(Object.keys(r.fields).some(k=>!r.field_notes?.[k]))throw new Error('Knowledge field note absent: '+r.id);
+    if(dimensionInputs.includes(p)){
+      const currentWork=canonicalSpatialContext.get(r.id);
+      const dimensionAdoptionPhase=currentWork?.knowledge?.assertions?.some(assertion=>assertion.input_file===p)?'post':'pre';
+      validateKnowledgeDimensionEvidence(r,{trustedContext:dimensionContext,currentWork,inputFile:p,dimensionAdoptionPhase});
+    }
     if(r.fields.spatial_primary&&!spaces.has(r.fields.spatial_primary))throw new Error('Invalid space: '+r.id);
     if(spatialInputs.includes(p)){
       if(Object.keys(r.fields).some(k=>!['spatial_primary','spatial_secondary','spatial_rationale'].includes(k)))throw new Error('Spatial batch changes unrelated field: '+r.id);
@@ -93,6 +101,17 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
 }
 // Explicit corrections replace a documented erroneous display assertion while
 // keeping every frozen input, old assertion and reading scope recoverable.
+const spatialScopeBytes=await readFile(new URL('research/spatial-scope-notes-round1.json',root));
+if(createHash('sha256').update(spatialScopeBytes).digest('hex')!=='17fac6d4cf9b9475cbc400d50f108c96b6491e9a6c5f1b4d55f5ad37864c6b98')throw new Error('Spatial boundary note changed without review');
+const spatialScopeNotes=JSON.parse(spatialScopeBytes),spatialScopeMap=new Map();
+if(spatialScopeNotes.records.length!==1)throw new Error('Unexpected spatial boundary note count');
+for(const r of spatialScopeNotes.records){
+ const bytes=await readFile(new URL(r.source_spatial_input_file,root));
+ if(createHash('sha256').update(bytes).digest('hex')!==r.source_spatial_input_sha256)throw new Error('Spatial boundary original input changed');
+ const original=JSON.parse(bytes).records.find(x=>x.id===r.id),k=knowledge.get(r.id);
+ if(r.id!=='Q3881194'||!original||JSON.stringify(original.fields)!==JSON.stringify(r.original_spatial_fields)||!k||k.fields.spatial_primary!==r.original_spatial_fields.spatial_primary||k.fields.spatial_rationale!==r.original_spatial_fields.spatial_rationale||r.verification_status!=='knowledge_added_unverified')throw new Error('Spatial boundary note does not match actual adopted setting');
+ spatialScopeMap.set(r.id,r);
+}
 let issueCorrections={records:[]};
 try{issueCorrections=await read('research/issue-corrections.json');}catch(error){if(error.code!=='ENOENT')throw error;}
 const correctedIssueIds=new Set();
@@ -151,9 +170,9 @@ const records=audit.records.map(a=>{
  if(topicMap.size)candidateCount++;if(checks.some(c=>c.status==='title_author_correspondence'))matchedCount++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='different'))dateConflicts++;
  if(checks.some(c=>c.status==='title_author_correspondence'&&c.year_comparison?.status==='missing_source'))libraryMissingYearCandidates++;
- return {id:a.id,source_search_log:sourceSearchMap.get(a.id)||null,content_corrections:correctionMap.get(a.id)||[],reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
+ return {id:a.id,...(spatialScopeMap.has(a.id)?{spatial_scope_annotation:spatialScopeMap.get(a.id)}:{}),source_search_log:sourceSearchMap.get(a.id)||null,content_corrections:correctionMap.get(a.id)||[],reading_materials:readingMap.get(a.id)||[],structural_result:a.verification.structural_result,field_statuses:Object.fromEntries(Object.entries(a.fields).map(([key,f])=>[key,f.status])),form_candidate:({novel_description:'长篇（来源描述候选）',short_text_description:'短篇／中篇（来源描述候选）',collection_or_fixup:'合集／组篇（来源描述候选）',series_description:'系列（来源描述候选）',series:'系列（来源类型候选）',chapter_or_serial_part:'章节／连载部分（来源类型候选）',edition_or_translation:'版本／译本（来源类型候选）'})[a.source_boundary.source_granularity_candidate]||null,form_basis:a.source_boundary,issues:a.issues,research_source_comparisons:a.research_source_comparisons,knowledge:knowledge.get(a.id)||null,library_checks,library_detail_url:detailUrls.get(a.id)||null,topic_candidates:[...topicMap].map(([topic,basis])=>({topic,basis,confidence:'外部书目主题词规则候选，待核'})),branch_candidates:[...branchMap].map(([branch,basis])=>({branch,basis,confidence:'外部书目主题词规则候选，待核'}))};
 });
-const metadata={format:'completion-overlay-v1',date:'2026-10-05',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
+const metadata={format:'completion-overlay-v1',date:'2026-10-06',record_count:records.length,structural_checked:audit.metadata.structural_checked_count,knowledge_inputs:knowledgeInputs,knowledge_added:knowledge.size,library:library.metadata,library_correspondence:matchedCount,library_subject_candidate_records:candidateCount,library_date_differences:dateConflicts,library_missing_year_candidates:libraryMissingYearCandidates,note:'知识补充与规则候选均待独立核对。跨来源一致仅表示部分书目字段对应，不能认定整条已核验；日期差异和源实体粒度原样保留。'};
 metadata.content_corrections=corrections.records.length;
 metadata.issue_corrections=issueCorrections.records.length;
 metadata.reading_materials=reading.metadata;
@@ -161,6 +180,8 @@ const hasSourceAttempt=r=>!!r&&(!!r.queries?.length||!!r.materials_checked?.some
 metadata.source_search_logs={record_count:sourceSearch.records.length,actual_source_attempt_count:sourceSearch.records.filter(hasSourceAttempt).length,process_without_source_attempt_count:sourceSearch.records.filter(r=>!hasSourceAttempt(r)).length,metadata:sourceSearch.metadata};
 metadata.issue_batches=knowledgeInputs.filter(i=>issueInputs.includes(i.file));
 metadata.spatial_batches=knowledgeInputs.filter(i=>spatialInputs.includes(i.file));
+metadata.dimension_batches=knowledgeInputs.filter(i=>dimensionInputs.includes(i.file));
+metadata.spatial_scope_annotations={file:'research/spatial-scope-notes-round1.json',record_count:spatialScopeMap.size};
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);
 const chunks=[];

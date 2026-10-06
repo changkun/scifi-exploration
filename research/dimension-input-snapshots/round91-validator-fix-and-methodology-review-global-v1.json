@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "status": "frozen_private_read_only_code_and_document_semantic_review",
+    "round": 91,
+    "public_files_written": false,
+    "new_network_requests": 0,
+    "full_validator_suite_run": false,
+    "scope": "Review of two validator fixes and public documentation; no claim that this review reran validator suites or independently verified literary content."
+  },
+  "files": [
+    {
+      "file": "scripts/validate-unified.mjs",
+      "sha256": "00d442467bbd2842f09dca15945172575ea8cb6420a57fc1a54dd37763c132b1"
+    },
+    {
+      "file": "scripts/validate-issues.mjs",
+      "sha256": "9e00b4aa65e7f2fb61f17110cae6e52feb9739a4cb4b6564e25722cf8f7118ac"
+    },
+    {
+      "file": "scripts/knowledge-dimensions-evidence.mjs",
+      "sha256": "518b25cdc131d83a0f880dcb4303d03a8c9c71a8349950e3ee6ead322576c134"
+    },
+    {
+      "file": "scripts/issue-inputs.mjs",
+      "sha256": "59efebfe5398c639b2685a5766648c35ed3020f4230140c0e1a37a1f1934770c"
+    },
+    {
+      "file": "docs/methodology.md",
+      "sha256": "37a52a0959ec6bf7c7987bcb0cd628d6b7e2aa7062186c5aae38345e20845a17"
+    },
+    {
+      "file": "docs/audit-methodology.md",
+      "sha256": "eb8dc1807634909d06fa98754cf8ed766c04780da651fc7fdc0486bde9a4872f"
+    },
+    {
+      "file": "research/knowledge-dimensions-round1.json",
+      "sha256": "e2f9005fe42336253e337852b3b2aad36074144436680431a0af594ec0c06dba"
+    }
+  ],
+  "actual_dimension_counts": {
+    "records": 40,
+    "fields": 141,
+    "narrative_mechanism": 40,
+    "scientific_premise": 40,
+    "reality_relation": 40,
+    "story_era": 17,
+    "expression_form": 4
+  },
+  "findings": [
+    {
+      "id": "coverage_nested_equality",
+      "result": "acceptable",
+      "location": "scripts/validate-unified.mjs:24",
+      "basis": "Every coverage key is still checked, using deepEqual. Scalar equality remains strict while the four-dimension nested known/missing/independently_verified objects are compared by their contents; no coverage key was removed."
+    },
+    {
+      "id": "closed_dimension_overlay_before_issue_prior",
+      "result": "acceptable",
+      "location": "scripts/validate-issues.mjs:30",
+      "basis": "Each dimension record first passes the public closed 40-record actual post guard against exact fixed input/proposal/original-file and record hashes, identity/grain, original active issue, exact top-level and knowledge values and the exact adopted assertion. Only after this succeeds are its exact fields and notes held constant on the prior side."
+    },
+    {
+      "id": "issue_fields_remain_three_only",
+      "result": "acceptable",
+      "location": "scripts/validate-issues.mjs:19",
+      "basis": "The original issue input archive assertion is still exact, all issue inputs must have only issue/issue_facets/topics, and remain unverified. An issue batch adding story_era, a new dimension, author or any other field still fails this three-field check; separately pinned dimension fields cannot be used to authorize extra issue fields."
+    },
+    {
+      "id": "unrelated_fields_and_old_issue_preserved",
+      "result": "acceptable",
+      "location": "scripts/validate-issues.mjs:40",
+      "basis": "The complete existing list of unrelated identity/source/bibliographic/spatial/temporal/science values and old issue assertions remains compared with the prior build. The four new descriptors are authorized only by the earlier closed guard and are not a generic exception. Original archive, correction and source_verified checks remain in place."
+    },
+    {
+      "id": "methodology_evidence_scope",
+      "result": "acceptable",
+      "location": "docs/methodology.md:109; docs/audit-methodology.md:131",
+      "basis": "Both additions state 40 records/141 fields with 40+40+40+17+4 breakdown, original 17-field baseline unchanged, unverified knowledge, no new core or reads, original URL scope unchanged, original missing owner/log/cache/counters unknown/null, and scientific premise/literary reality relation distinct from feasibility/prediction verification. Eight-axis extensions require exact work scope and keep old definitions and records."
+    }
+  ],
+  "blocking_findings": [],
+  "limits": [
+    "Static code/document review and exact input counting; no validator suite rerun.",
+    "The protection against issue writes to the four new descriptors continues to rely on the mandatory exact three-field issue-input whitelist plus the separately closed dimension guard; future changes to that whitelist must preserve equivalent isolation.",
+    "Actual 40-record post/model/UI evidence is the separately frozen round91-dimensions-actual-post-model-ui-audit-global-v1.json, not a synthetic test or independent literary verification."
+  ],
+  "actual_post_proof": {
+    "file": "work/evidence/round91-dimensions-actual-post-model-ui-audit-global-v1.json",
+    "sha256": "6e9d22b1155c3fc821b35493a5650eafd746fc715e8b2104e961c339b95da059"
+  }
+}
