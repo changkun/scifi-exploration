@@ -6,7 +6,7 @@ import {loadBibliographySource,loadCompletionSource} from '../dist/assets/data-l
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {issueDetail,renderIssueExplorer} from '../dist/assets/issues.mjs';
 import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
-import {createKnowledgeDimensionContext,validateKnowledgeDimensionEvidence} from './knowledge-dimensions-evidence.mjs';
+import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
 import {fileURLToPath} from 'node:url';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
@@ -27,10 +27,10 @@ for(const input of await Promise.all((await listSpatialInputs(root)).map(read)))
 }
 // Hold separately guarded dimension additions constant in the issue-only
 // comparison, just as for spatial overlays. Original issue inputs remain exact.
-const dimensionContext=createKnowledgeDimensionContext({repoDir:fileURLToPath(root)});
+const dimensionContext=createDimensionEvidenceContext({repoDir:fileURLToPath(root)});
 for(const inputFile of await listDimensionInputs(root))for(const record of (await read(inputFile)).records){
  const currentWork=works.find(work=>work.id===record.id);
- const evidence=validateKnowledgeDimensionEvidence(record,{trustedContext:dimensionContext,currentWork,inputFile,dimensionAdoptionPhase:'post'});
+ const evidence=validateDimensionEvidence(record,{context:dimensionContext,currentWork,inputFile,dimensionAdoptionPhase:'post'});
  assert.equal(evidence.status,'knowledge_added_unverified',record.id+' guarded dimension overlay');
  const old=priorKnowledge.get(record.id);
  priorKnowledge.set(record.id,{...(old||record),fields:{...old?.fields,...record.fields},field_notes:{...old?.field_notes,...record.field_notes}});

@@ -1,0 +1,1499 @@
+{
+  "metadata": {
+    "status": "frozen_checkpoint",
+    "created_at": "2026-10-06",
+    "source_commit": "c52a0cc26dabae5f1c261775bdbfbdc4e9a2ed92",
+    "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+    "local_parent_round": 91,
+    "verification": "knowledge_added_unverified; 不升级独立核验，不复制原作全文。",
+    "method": "disjoint-quick-retry-with-prior-history-v2",
+    "record_count": 17,
+    "field_count": 51,
+    "facet_count": 34,
+    "attempted_identity_count": 65,
+    "actual_query_count": 65,
+    "actual_open_count": 12,
+    "deferred_count": 48,
+    "original_fulltext_read_count": 0,
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round11-global-part1.json",
+        "sha256": "ffaa6c05fcaf8ab20cfd7ba364b66c455d5721dd6bbeffbdb467f7c7083fad01",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "global_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299
+          ],
+          "authorized_root_index_range": [
+            284,
+            316
+          ],
+          "delegation_basis": "Exact parent-authorized global_history range [284,316); no generic delegate override or access to other ranges.",
+          "selection_file": "work/evidence/quick-retry2-root-round11-global-selection.json",
+          "selection_sha256": "e434b389b9d2539b241c2ae438b06bf12d23efcea45b3fbcd59901d2440dc1be",
+          "source_snapshot_sha256": "7bf93b7f62a526d257e0caa4a1de93379964806a08f91f92a62bf6c01b0acfd6",
+          "current_prefreeze_canonical_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "record_count": 3,
+          "facet_count": 6,
+          "attempted_count": 16,
+          "deferred_count": 13,
+          "source_query_count": 16,
+          "actual_search_tool_call_count": 4,
+          "new_direction_query_count": 15,
+          "substantive_direction_unproven_count": 1,
+          "repeat_old_query_count": 0,
+          "direct_page_read_count": 3,
+          "actual_open_tool_call_count": 2,
+          "actual_failed_open_count": 2,
+          "complete_original_text_read_count": 0,
+          "independently_verified_count": 0,
+          "retry_identity_count": 3,
+          "next_source_order_index": 300,
+          "remaining_delegated_count": 16,
+          "checkpoint_scope": "Exact global delegate indices284–299, private R92 input; one actual query per identity, limited material/edition/member scope, no full original text or independent verification."
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round11-global-part1-log.json",
+        "sha256": "2491fc8ac62d653fb49675e713100c55b6601612bf4be878fd592284d4d1995f",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "global_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299
+          ],
+          "authorized_root_index_range": [
+            284,
+            316
+          ],
+          "delegation_basis": "Exact parent-authorized global_history range [284,316); no generic delegate override or access to other ranges.",
+          "selection_file": "work/evidence/quick-retry2-root-round11-global-selection.json",
+          "selection_sha256": "e434b389b9d2539b241c2ae438b06bf12d23efcea45b3fbcd59901d2440dc1be",
+          "source_snapshot_sha256": "7bf93b7f62a526d257e0caa4a1de93379964806a08f91f92a62bf6c01b0acfd6",
+          "current_prefreeze_canonical_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "record_count": 3,
+          "facet_count": 6,
+          "attempted_count": 16,
+          "deferred_count": 13,
+          "source_query_count": 16,
+          "actual_search_tool_call_count": 4,
+          "new_direction_query_count": 15,
+          "substantive_direction_unproven_count": 1,
+          "repeat_old_query_count": 0,
+          "direct_page_read_count": 3,
+          "actual_open_tool_call_count": 2,
+          "actual_failed_open_count": 2,
+          "complete_original_text_read_count": 0,
+          "independently_verified_count": 0,
+          "retry_identity_count": 3,
+          "next_source_order_index": 300,
+          "remaining_delegated_count": 16,
+          "checkpoint_scope": "Exact global delegate indices284–299, private R92 input; one actual query per identity, limited material/edition/member scope, no full original text or independent verification."
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round11-global-part2.json",
+        "sha256": "754a6d21d90b361ac0265bcece7b191aed602c6bc1547a7a6a9271bb9340eb96",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "global_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315
+          ],
+          "authorized_root_index_range": [
+            284,
+            316
+          ],
+          "delegation_basis": "Exact parent-authorized global_history range [284,316); no generic delegate override or access to other ranges.",
+          "selection_file": "work/evidence/quick-retry2-root-round11-global-selection.json",
+          "selection_sha256": "e434b389b9d2539b241c2ae438b06bf12d23efcea45b3fbcd59901d2440dc1be",
+          "source_snapshot_sha256": "7bf93b7f62a526d257e0caa4a1de93379964806a08f91f92a62bf6c01b0acfd6",
+          "current_prefreeze_canonical_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "record_count": 4,
+          "facet_count": 8,
+          "attempted_count": 16,
+          "deferred_count": 12,
+          "source_query_count": 16,
+          "actual_search_tool_call_count": 4,
+          "new_direction_query_count": 14,
+          "substantive_direction_unproven_count": 2,
+          "repeat_old_query_count": 0,
+          "direct_page_read_count": 4,
+          "actual_open_tool_call_count": 2,
+          "actual_failed_open_count": 3,
+          "complete_original_text_read_count": 0,
+          "independently_verified_count": 0,
+          "retry_identity_count": 4,
+          "next_source_order_index": 316,
+          "remaining_delegated_count": 0,
+          "checkpoint_scope": "Exact global delegate indices300–315, private R92 input; one actual query per identity, limited material/edition/member scope, no full original text or independent verification."
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round11-global-part2-log.json",
+        "sha256": "1ed5ea91865eb55272df6cb63d4b2bd8b36eb2cc98ddac8d33951d1ed85fc7d4",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "global_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315
+          ],
+          "authorized_root_index_range": [
+            284,
+            316
+          ],
+          "delegation_basis": "Exact parent-authorized global_history range [284,316); no generic delegate override or access to other ranges.",
+          "selection_file": "work/evidence/quick-retry2-root-round11-global-selection.json",
+          "selection_sha256": "e434b389b9d2539b241c2ae438b06bf12d23efcea45b3fbcd59901d2440dc1be",
+          "source_snapshot_sha256": "7bf93b7f62a526d257e0caa4a1de93379964806a08f91f92a62bf6c01b0acfd6",
+          "current_prefreeze_canonical_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "record_count": 4,
+          "facet_count": 8,
+          "attempted_count": 16,
+          "deferred_count": 12,
+          "source_query_count": 16,
+          "actual_search_tool_call_count": 4,
+          "new_direction_query_count": 14,
+          "substantive_direction_unproven_count": 2,
+          "repeat_old_query_count": 0,
+          "direct_page_read_count": 4,
+          "actual_open_tool_call_count": 2,
+          "actual_failed_open_count": 3,
+          "complete_original_text_read_count": 0,
+          "independently_verified_count": 0,
+          "retry_identity_count": 4,
+          "next_source_order_index": 316,
+          "remaining_delegated_count": 0,
+          "checkpoint_scope": "Exact global delegate indices300–315, private R92 input; one actual query per identity, limited material/edition/member scope, no full original text or independent verification."
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part1.json",
+        "sha256": "0f70242b307dedcac9cd23c3a12dafe027cf098b9ff611cae51312274394dada",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 5,
+          "facet_count": 10,
+          "attempted_count": 16,
+          "deferred_count": 11,
+          "source_query_count": 16,
+          "direct_page_read_count": 3,
+          "new_direction_query_count": 14,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 332,
+          "remaining_owned_pool_count": 17,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 5
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part1-log.json",
+        "sha256": "0322da776a67bc4661513e121329f46c416b6957822859386585e6f3e0aeea99",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 5,
+          "facet_count": 10,
+          "attempted_count": 16,
+          "deferred_count": 11,
+          "source_query_count": 16,
+          "direct_page_read_count": 3,
+          "new_direction_query_count": 14,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 332,
+          "remaining_owned_pool_count": 17,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 16
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part2.json",
+        "sha256": "a4ba08de1437061b70a821b431aa6869e855b447eed98e834f3d2d629142da95",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 5,
+          "facet_count": 10,
+          "attempted_count": 16,
+          "deferred_count": 11,
+          "source_query_count": 16,
+          "direct_page_read_count": 2,
+          "new_direction_query_count": 16,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 348,
+          "remaining_owned_pool_count": 1,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 5
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part2-log.json",
+        "sha256": "861176ba07cc415f92b24f67561c67ed261d0fcba02ee9402121411b6f03964d",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 5,
+          "facet_count": 10,
+          "attempted_count": 16,
+          "deferred_count": 11,
+          "source_query_count": 16,
+          "direct_page_read_count": 2,
+          "new_direction_query_count": 16,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 348,
+          "remaining_owned_pool_count": 1,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 16
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part3.json",
+        "sha256": "f07b50b7b96e1e4eff9c8c53126706bcfc5bd6cd501ee60e54cd1844e413cbb2",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            348
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 0,
+          "facet_count": 0,
+          "attempted_count": 1,
+          "deferred_count": 1,
+          "source_query_count": 1,
+          "direct_page_read_count": 0,
+          "new_direction_query_count": 1,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 349,
+          "remaining_owned_pool_count": 0,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 0
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/quick-retry2-root-round12-modern-part3-log.json",
+        "sha256": "068ac402c1b77dbf9ed6400630d2c327408281f06e0a44d64ddf47ced21140bf",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "date": "2026-10-06",
+          "lane": 0,
+          "delegate": "modern_history",
+          "phase": "second-disjoint-retry-after-original-pool",
+          "ownership_file": "work/evidence/quick-retry2-lane-0.json",
+          "ownership_sha256": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+          "ownership_count": 349,
+          "ownership_indices": [
+            348
+          ],
+          "delegated_scope": [
+            316,
+            349
+          ],
+          "source_snapshot_sha256": "eacb62430a90cc1cf8abf83b1322322cd68bf094da99dbdc596475759ead7cd9",
+          "source_process_raw_sha256": "a61a532a32f57f4e49e91491feced62f5b5259f86e4da8b9c4b5ca553a8fad1f",
+          "assignment_source_snapshot_sha256": "eb28f22eae2739df9ea0a6836b93d14ae4358af1408a78a7e9811ca66e95e57a",
+          "source_local_round": 91,
+          "analysis_count": 0,
+          "facet_count": 0,
+          "attempted_count": 1,
+          "deferred_count": 1,
+          "source_query_count": 1,
+          "direct_page_read_count": 0,
+          "new_direction_query_count": 1,
+          "complete_original_text_read_count": 0,
+          "independent_verification_count": 0,
+          "existing_knowledge_only_count": 0,
+          "repeat_old_query_count": 0,
+          "next_source_order_index": 349,
+          "remaining_owned_pool_count": 0,
+          "checkpoint_scope": "Private R92 delegated root-lane0 checkpoint. One actual query per identity; at most one easy direct-open. Exact saved return/synopsis/member scope only; no original fulltext or independent verification.",
+          "verification": "knowledge_added_unverified; original author/year/form/unknowns retained; raw cache private",
+          "record_count": 1
+        }
+      }
+    ],
+    "delegation_scope": "Original root owner preserved; exact parent-authorized global [284,316) / modern [316,349) execution.",
+    "exact_scope_adapters": [
+      {
+        "file": "research/issue-input-snapshots/round92-q90831606-sibling-count-exact-field-adapter-modern-private.json",
+        "sha256": "c8f4be6c9ad75a047fc96f081ec0da2aa2fad3cd1cf1a32a54ed3d129905cec2",
+        "field_count": 1,
+        "original_frozen_inputs_changed": false
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "Q12637934",
+      "identity": {
+        "title": "Na Pacifiku god. 2255.",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "未来社会声称克服种族偏见，却把John Cold与Satya Marble及其未来孩子设为遗传优越的理想；两人的最终知识又受到秘密团体控制。只限已读书评所述：普遍平等为何仍容纳血统等级，个人取得的知识为何不能顺利成为共同财富。",
+        "issue_facets": [
+          {
+            "label": "平等宣称与遗传等级",
+            "question": "声称克服种族偏见的社会为什么仍以某种血统衡量人的完美？",
+            "basis": "书评L72–73对照理想伴侣及孩子的遗传优越设定与社会克服种族主义的宣称。"
+          },
+          {
+            "label": "最终知识与秘密控制",
+            "question": "少数人获得最终知识后，谁决定它能否公开给社会？",
+            "basis": "书评L75明确Budarha团体希望知识保持秘密，Cold与Satya的公开愿望受到阻挠。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次新查询定位Matica hrvatska文学报Vijenac评论；一次实际打开读取L49–82，分析仅用L72–75的具名人物、遗传等级和秘密知识张力。非原著全文、非科学或种族理论的事实认可；出版年代及作者身份不填入原底库。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次新查询定位Matica hrvatska文学报Vijenac评论；一次实际打开读取L49–82，分析仅用L72–75的具名人物、遗传等级和秘密知识张力。非原著全文、非科学或种族理论的事实认可；出版年代及作者身份不填入原底库。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.matica.hr/vijenac/792%20-%20794/paradoksi-ultimativne-utopije-36673/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.matica.hr/vijenac/792%20-%20794/paradoksi-ultimativne-utopije-36673/",
+          "support_scope": "实际打开评论L49–82；本条仅用L72–75对John Cold、Satya Marble、理想遗传与秘密知识团体的具体评论。",
+          "type": "actual_limited_literary_review_direct_read",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "底库作者与年份仍未知；本次评论题署Milan Šufflay只是来源所述身份，不偷偷改原字段或视为独立书目核验。"
+    },
+    {
+      "id": "Q133984956",
+      "identity": {
+        "title": "Gueule de truie",
+        "author": "Justine Niogret"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "知识与认识"
+        ],
+        "issue": "灾后叙事经由宗教狂信者的视角展开，Gueule de Truie遇到一名携带破损铁盒的年轻女子，新的好奇打断了既有封闭视野。只限实际评论摘要所述：暴力如何在群体内部被解释，陌生相遇又怎样改变一个人愿意承认的经验。",
+        "issue_facets": [
+          {
+            "label": "狂信者视角与暴力解释",
+            "question": "从狂信者内部讲述故事，会怎样改变读者辨认宗教暴力的方式？",
+            "basis": "nooSFere评论明确宗教极端主义主题与狂信者视角；这里只分析这项叙述张力。"
+          },
+          {
+            "label": "陌生相遇与经验边界",
+            "question": "不同于原有环境的人出现时，新的好奇能怎样冲击封闭的经验范围？",
+            "basis": "Sueurs Froides评论明确主人公遇到携带破损铁盒的年轻女子，并激起人物与读者的好奇；不推定后续结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次新查询读取nooSFere和Sueurs Froides准确本书评论返回，分别限狂信者视角和女子/铁盒相遇的摘要。作者采访入口直接打开Cache miss失败，不能称采访已读或据其补剧情；没有原作全文阅读。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次新查询读取nooSFere和Sueurs Froides准确本书评论返回，分别限狂信者视角和女子/铁盒相遇的摘要。作者采访入口直接打开Cache miss失败，不能称采访已读或据其补剧情；没有原作全文阅读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.noosfere.org/livres/niourf.asp?NumLivre=2146612105",
+        "https://sueursfroides.net/gueule-de-truie"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.noosfere.org/livres/niourf.asp?NumLivre=2146612105",
+          "support_scope": "实际查询返回准确本书评论中宗教极端主义与狂信者视角说明，未打开整页。",
+          "type": "actual_limited_review_search_return",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://sueursfroides.net/gueule-de-truie",
+          "support_scope": "实际查询返回评论中年轻女子携破损铁盒、激起主人公好奇的明确段落，未打开整页。",
+          "type": "actual_limited_review_search_return",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "仅文学评论的有限前提；失败作者采访未作为成功依据，未将其他Niogret作品或评论比较书移入本书。"
+    },
+    {
+      "id": "Q141132932",
+      "identity": {
+        "title": "Overman King Gainer",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "主体与意识"
+        ],
+        "issue": "漫画第一卷中，西伯利亚穹顶都市的少年Gainer因涉嫌Exodus被铁路警备队带走，在牢中遇到Gain；这次相遇改变了他的处境。只限明确卷一读者评论：迁移意图怎样成为拘押理由，被限制的人又怎样在偶然结识中获得新的行动可能。",
+        "issue_facets": [
+          {
+            "label": "迁移意图与拘押权力",
+            "question": "把Exodus视为嫌疑时，管理交通的组织如何控制居民的流动？",
+            "basis": "出版社卷一页的读者评论明确Gainer因Exodus嫌疑被西伯利亚铁路警备队带走。"
+          },
+          {
+            "label": "受限处境与偶然结盟",
+            "question": "被关押的人怎样因遇到另一名行动者而改变自己的选择？",
+            "basis": "同一卷一评论明确牢内遇到Gain及其改变Gainer命运的开端，未借动画后续事件。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次新查询返回KADOKAWA准确漫画第一卷页。书目栏仅支持中村嘉宏漫画/富野原作与卷一对应；具体情节来自页面明确标为用户个人感想的卷一评论，不冒称出版社官方剧情简介、漫画全文或全系列结局。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次新查询返回KADOKAWA准确漫画第一卷页。书目栏仅支持中村嘉宏漫画/富野原作与卷一对应；具体情节来自页面明确标为用户个人感想的卷一评论，不冒称出版社官方剧情简介、漫画全文或全系列结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kadokawa.co.jp/product/201216015608/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kadokawa.co.jp/product/201216015608/",
+          "support_scope": "实际查询返回漫画卷一官方书目及用户评论；具体情节仅用户评论所述西伯利亚Urugusk、Exodus嫌疑、铁路警备队拘押与牢内遇Gain。",
+          "type": "publisher_page_user_review_search_return",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "原系列作者和年代缺值保留；本条仅漫画第1卷开端选例，不把TV动画或后续五卷的情节视为已读。"
+    },
+    {
+      "id": "Q519229",
+      "identity": {
+        "title": "戰鬥吧！！伊庫薩1",
+        "author": "Rei Aran"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "殖民与他者"
+        ],
+        "issue": "原漫画的两章结构从少女遭攻击并被Nyan／Iczer-1救下，转入两人抵抗外来入侵者，第二章围绕Iczer Robo作战。只限评论明确归给原漫画的部分：个体救援如何形成伙伴关系，私人危险又怎样被纳入共同防卫。",
+        "issue_facets": [
+          {
+            "label": "救援关系与伙伴自主",
+            "question": "被救者与力量更强的救援者如何形成有自主性的伙伴关系？",
+            "basis": "评论L6–9明确原两章的攻击、救援与共同抗敌结构，未借OVA人物情绪或同步设定。"
+          },
+          {
+            "label": "私人危险与共同防卫",
+            "question": "保护一个人的行动如何转为面对外来入侵的共同防卫？",
+            "basis": "评论L127明确原首章救援、第二章Iczer Robo作战；不移用OVA二三集或后来的THE ICZER ONE。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次新查询后实际打开Aaltomies比较评论。仅用L6–9、L73及博主回复L127–128明确归给Rei Aran原两章的结构与第二章机战；L17–72大部分为OVA分析，明确不采用。原作漫画和后来1990年代作品未读。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次新查询后实际打开Aaltomies比较评论。仅用L6–9、L73及博主回复L127–128明确归给Rei Aran原两章的结构与第二章机战；L17–72大部分为OVA分析，明确不采用。原作漫画和后来1990年代作品未读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://aaltomies.wordpress.com/2016/03/08/the-horror-of-iczer-1/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://aaltomies.wordpress.com/2016/03/08/the-horror-of-iczer-1/",
+          "support_scope": "实际打开比较评论，限L6–9、L73及博主回复L127–128的原漫画两章说明；不采用中部OVA三集剧情。",
+          "type": "actual_limited_comparison_review_and_author_of_review_reply",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "原漫画为分析对象，不把OVA具名人物、同步关系、后续三集结局或1990年代THE ICZER ONE套入。评论与回复不是原著或独立核验。"
+    },
+    {
+      "id": "Q54800519",
+      "identity": {
+        "title": "Survival",
+        "author": "彼得·大卫"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "技术与责任"
+        ],
+        "issue": "Starfleet Academy第三册《Survival》中，殖民地遇袭撤离后，五名Starfleet学员与三名Klingon学员自愿留在Dantar IV，Worf等人的滞留持续两周。只限明确书介与评论的前提：自愿承担危险如何改变学员的责任，多机构成员又怎样面对共同生存处境。",
+        "issue_facets": [
+          {
+            "label": "自愿留守与危险责任",
+            "question": "撤离时选择留下的人如何衡量救援或留守的责任与自身风险？",
+            "basis": "ERIC所收科幻书目简介明确八名学员在殖民地遭突袭撤离后自愿留下，未推定他们最后的命运。"
+          },
+          {
+            "label": "多机构学员与共同处境",
+            "question": "来自不同训练机构的学员怎样在共同滞留中确定合作责任？",
+            "basis": "同一准确第三册简介明确五名Starfleet与三名Klingon学员，评论另明确在Dantar滞留两周；不补猜具体文化冲突。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "实际一次查询返回ERIC教育资料中的准确Starfleet Academy#3简介以及Shared Universe Reviews对第三册两周滞留的说明。只读这些检索片段；后者一次打开Cache miss失败，不称成功整页阅读。未读小说或前两册。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "实际一次查询返回ERIC教育资料中的准确Starfleet Academy#3简介以及Shared Universe Reviews对第三册两周滞留的说明。只读这些检索片段；后者一次打开Cache miss失败，不称成功整页阅读。未读小说或前两册。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://files.eric.ed.gov/fulltext/ED384916.pdf",
+        "https://shareduniversereviews.blogspot.com/2013/11/star-trek-next-generation-starfleet_27.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://files.eric.ed.gov/fulltext/ED384916.pdf",
+          "support_scope": "实际查询返回准确Starfleet Academy#3:Survival书目简介，五名Starfleet与三名Klingon学员在Dantar IV殖民地遇袭撤离后自愿留下；未打开PDF。",
+          "type": "actual_limited_educational_bibliography_description_search_return",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://shareduniversereviews.blogspot.com/2013/11/star-trek-next-generation-starfleet_27.html",
+          "support_scope": "实际查询返回准确第三册评论中Worf等人在Dantar滞留两周；直接打开失败，只有检索范围。",
+          "type": "actual_limited_review_search_return",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "只限Starfleet Academy第3册，不与Peter David的New Frontier或前册Line of Fire混合；失败网页未记为成功查读。"
+    },
+    {
+      "id": "Q54806967",
+      "identity": {
+        "title": "The Counter-Clock Incident",
+        "author": "艾伦·迪安·福斯特"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "Foster为《The Counter-Clock Incident》增加的前置开篇中，年轻April被任命为尚在建造中的Enterprise舰长，查看设计并经历命名与首航，感到恐惧和兴奋。只限这个明确开篇：制度授予的职位何时转为具体责任，庞大技术系统又怎样通过仪式与命令建立行动秩序。",
+        "issue_facets": [
+          {
+            "label": "任命与具体责任",
+            "question": "被任命指挥尚在建造的飞船时，职位如何转为个人需要承担的责任？",
+            "basis": "Goodreads准确Log Seven读者评论逐页说明April获任命时的恐惧与兴奋，Foster Adaptation片段另明确van Anling任命他。"
+          },
+          {
+            "label": "技术系统与指挥秩序",
+            "question": "设计、命名仪式和首次指令怎样把建造中的机器组织成可执行任务的系统？",
+            "basis": "同一准确小说评论明确查看设计、命名仪式及首航指令；不移用后续科学家武器任务。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次新查询返回Goodreads准确Log Seven逐页评论、Wikipedia明确Novelization前置开篇的界限，以及Entropy Arbitrage明确Foster Adaptation第一章片段。仅分析Foster加入的任命/建造/首航开篇；博客一次打开失败，不采用失败页为新剧情。返老主段与后两部分科学家武器故事均未借入。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次新查询返回Goodreads准确Log Seven逐页评论、Wikipedia明确Novelization前置开篇的界限，以及Entropy Arbitrage明确Foster Adaptation第一章片段。仅分析Foster加入的任命/建造/首航开篇；博客一次打开失败，不采用失败页为新剧情。返老主段与后两部分科学家武器故事均未借入。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.goodreads.com/book/show/571890.Star_Trek",
+        "https://en.wikipedia.org/wiki/The_Counter-Clock_Incident",
+        "https://entropyarbitrage.com/blog/2022/02/10/counter.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/book/show/571890.Star_Trek",
+          "support_scope": "实际查询返回Rafeeq O.准确Log Seven评论，限页4、6、11之前所述April任命、Earth轨道建造、命名和首航。不是原小说页实际读取。",
+          "type": "actual_limited_novel_review_search_return",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Counter-Clock_Incident",
+          "support_scope": "实际查询仅用Novelization分项：Foster给动画故事增加任命/设计/命名/首航前置段，不采用电视Plot或后续新增武器任务。",
+          "type": "actual_limited_adaptation_scope_reference_search_return",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://entropyarbitrage.com/blog/2022/02/10/counter.html",
+          "support_scope": "实际查询仅Foster Adaptation分项第一章片段；直接打开Cache miss失败。",
+          "type": "actual_limited_novelization_commentary_search_return",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "底库单篇／中篇身份不改，分析仅Foster前置开篇，不代表整部Log Seven、动画或返老段已核验。"
+    },
+    {
+      "id": "Q54942528",
+      "identity": {
+        "title": "This Side of Paradise",
+        "author": "詹姆斯·布利什"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生存与风险"
+        ],
+        "issue": "Blish改写中，此行星前两批殖民者在恒星辐射危险被发现前已死亡；Kirk因失去船员而愤怒，在医务室用肾上腺素观察孢子消解。只限评论明确Blish改写的内容：殖民决策如何面对未识别风险，情绪与身体变化又怎样成为提出解释和实验的线索。",
+        "issue_facets": [
+          {
+            "label": "殖民决策与未知危险",
+            "question": "危险机制尚未被发现时，殖民计划怎样识别重复失败的原因？",
+            "basis": "Blish Adaptation分项明确当前为第三批殖民地，前两批死亡早于发现Omicron Ceti辐射。"
+          },
+          {
+            "label": "情绪观察与实验解释",
+            "question": "个人情绪似乎带来保护作用时，行动者怎样把经验变成可检验的解释？",
+            "basis": "准确改写分项明确Kirk把愤怒与自身安全联系起来，用肾上腺素观察孢子溶解；不升级为现实医学结论。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "限明确材料范围的原创分析，待核。",
+        "issue": "一次定向查询返回Entropy Arbitrage准确本篇Blish Adaptation分项；只使用Star Trek5改写中第三殖民地、辐射发现及医务室肾上腺素观察，不采用页面电视概述、电视剧结局或其他Blish篇目。没有原篇全文查读。",
+        "issue_facets": "两个具体问题及实际情节/设定依据，不等同作者定论。",
+        "source_scope": "一次定向查询返回Entropy Arbitrage准确本篇Blish Adaptation分项；只使用Star Trek5改写中第三殖民地、辐射发现及医务室肾上腺素观察，不采用页面电视概述、电视剧结局或其他Blish篇目。没有原篇全文查读。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://john.colagioia.net/blog/2020/06/25/para.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://john.colagioia.net/blog/2020/06/25/para.html",
+          "support_scope": "实际查询完整返回Blish Adaptation分项：第三批殖民地、前两批死亡早于发现辐射，以及Kirk在医务室用肾上腺素观察孢子溶解。非原篇全文。",
+          "type": "actual_limited_named_novelization_commentary_search_return",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "identity_caveat": "只分析James Blish在Star Trek5中的本篇改写，不将TV篇的完整事件或影视版差异当已核。"
+    },
+    {
+      "id": "Q54984239",
+      "identity": {
+        "title": "The Secret Heart of Zolaluz",
+        "author": "Robert T. Jeschonek"
+      },
+      "fields": {
+        "topics": [
+          "生命与人类定义",
+          "殖民与他者"
+        ],
+        "issue": "准确单篇评论称Seven获一名因疾病而受排斥的女子救助，把获救者与被社群拒绝者的处境连接起来。这里只据救助前提分析：一个人对他人的帮助能否改变以疾病划定的身份边界，接受帮助又要求她如何重估所谓正常者与局外人的关系。",
+        "issue_facets": [
+          {
+            "label": "疾病与社会排斥",
+            "question": "因疾病被排斥的女子提供救助时，社群对她的价值判断依据是什么？",
+            "basis": "David Switzer对本篇的独立句明确女子因疾病遭排斥并救助Seven。"
+          },
+          {
+            "label": "受助者的伦理回应",
+            "question": "接受局外人的救助是否要求获救者改变看待他人的方式？",
+            "basis": "同题单篇救助前提与Goodreads分篇评论所述慈善教训；不推定结局或病理机制。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际本次查询返回两篇评论中明确以The Secret Heart of Zolaluz命名的段落；只女子因病被排斥、救助Seven及慈善教训，不借相邻Closure、Brief Candle或其他篇情节，不读原篇。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.davidmswitzer.com/blog/2021/03/star-trek-voyager-distant-shores/",
+        "https://www.goodreads.com/book/show/184866.Distant_Shores_A_Tenth_Anniversary_Celebration__Star_Trek_Voyager_"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.davidmswitzer.com/blog/2021/03/star-trek-voyager-distant-shores/",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际本次查询返回两篇评论中明确以The Secret Heart of Zolaluz命名的段落；只女子因病被排斥、救助Seven及慈善教训，不借相邻Closure、Brief Candle或其他篇情节，不读原篇。",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://www.goodreads.com/book/show/184866.Distant_Shores_A_Tenth_Anniversary_Celebration__Star_Trek_Voyager_",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际本次查询返回两篇评论中明确以The Secret Heart of Zolaluz命名的段落；只女子因病被排斥、救助Seven及慈善教训，不借相邻Closure、Brief Candle或其他篇情节，不读原篇。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries316-319-private.json",
+          "sha256": "a6528d1c00830641b09dc597f6eb3f8ca1a2719669de668068c0ce812192f86a",
+          "section": "records",
+          "index": 0,
+          "record_sha256": "97bd65446b5f3595d22074a8d555bf7716a6167d4668d281abf31a773203c816"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q55162711",
+      "identity": {
+        "title": "The Magicks of Megas-Tu",
+        "author": "艾伦·迪安·福斯特"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者"
+        ],
+        "issue": "Foster《Log Three》的准确分篇书介让Kirk等人在神秘行星遇见名为Lucien的羊人，小说专页另称他救助船员并具有魔鬼般外观。只限这些改写篇前提：熟悉的宗教形象如何影响对陌生救助者的判断，而受助关系能否促使探索者重新检查外貌和身份之间的联系。",
+        "issue_facets": [
+          {
+            "label": "外貌与文化先入判断",
+            "question": "探索者如何避免把Lucien的熟悉外貌直接当作其道德身份？",
+            "basis": "准确Log Three书介明确羊人Lucien及为何似曾相识的问题；小说专页称魔鬼般外观。"
+          },
+          {
+            "label": "异者救助与认识修正",
+            "question": "救助船员这一行动如何改变他们评估陌生人的证据？",
+            "basis": "Trekipedia明确Log Three小说的The Magicks of Megas-Tu段中Lucien救助船员；不借动画后续审判或结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "本次实际查询返回Foster小说Log Three明确分篇书介及Trekipedia小说专页的救助句；只采用羊人Lucien/神秘行星/魔鬼般外观与救助，不读小说正文，不将Once Upon a Planet、Mudd's Passion或动画扩写内容继承。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://books.google.com/books/about/Star_Trek_Log_Three.html?id=TjKWiPqRb7kC",
+        "https://trekipedia.com/file/Star_Trek_Log_Three_%28Novel%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://books.google.com/books/about/Star_Trek_Log_Three.html?id=TjKWiPqRb7kC",
+          "type": "actual_limited_search_return",
+          "support_scope": "本次实际查询返回Foster小说Log Three明确分篇书介及Trekipedia小说专页的救助句；只采用羊人Lucien/神秘行星/魔鬼般外观与救助，不读小说正文，不将Once Upon a Planet、Mudd's Passion或动画扩写内容继承。",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://trekipedia.com/file/Star_Trek_Log_Three_%28Novel%29",
+          "type": "actual_limited_search_return",
+          "support_scope": "本次实际查询返回Foster小说Log Three明确分篇书介及Trekipedia小说专页的救助句；只采用羊人Lucien/神秘行星/魔鬼般外观与救助，不读小说正文，不将Once Upon a Planet、Mudd's Passion或动画扩写内容继承。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries316-319-private.json",
+          "sha256": "a6528d1c00830641b09dc597f6eb3f8ca1a2719669de668068c0ce812192f86a",
+          "section": "records",
+          "index": 1,
+          "record_sha256": "5cbc7328d40c0a809ddaf79eb2f4306fafdff7add6fe163f4e3c2e33b0a4f7a2"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q64706145",
+      "identity": {
+        "title": "Foundations, Book 2",
+        "author": "Kevin Dilmore / Dayton Ward"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "作者对第二册的书介同时列出da Vinci所救船只因电脑失效而无法运作，以及Scotty团队在关闭Landru后重建Beta III的往事。两个具体任务把摆脱计算机统治与恢复社会、设施运作放在一起：解除控制并不等于已经建立可持续的自主生活。",
+        "issue_facets": [
+          {
+            "label": "统治系统关闭后的重建",
+            "question": "关闭管理整个世界的电脑后，工程师承担哪些恢复社会运作的责任？",
+            "basis": "Dayton Ward本册专页明确Landru已停用，Scotty团队须让Beta III重新运作，旧影响仍在。"
+          },
+          {
+            "label": "功能依赖与自主能力",
+            "question": "当船只无法脱离电脑运行时，救援是否也应解决系统依赖？",
+            "basis": "同册作者书介明确da Vinci阻止失控船后仍需处理其电脑故障，船只无法自行工作。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际本次查询读作者Dayton Ward的Foundations, Book Two专页书介，明确第二册两时段前提；不借第一册边境前哨事故或第三册Kelvan飞船情节，不读第二册正文。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://daytonward.wordpress.com/2002/07/01/foundations-book-two/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://daytonward.wordpress.com/2002/07/01/foundations-book-two/",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际本次查询读作者Dayton Ward的Foundations, Book Two专页书介，明确第二册两时段前提；不借第一册边境前哨事故或第三册Kelvan飞船情节，不读第二册正文。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries320-323-private.json",
+          "sha256": "c90aa9cdf468bc8ba003619ca612e891061c187733e3844ff10fa8891e778308",
+          "section": "records",
+          "index": 3,
+          "record_sha256": "c1fc206f5c55e7f42c2d950bdb2d0ca25fd916f97d887c0e7633d97d6f4d3d48"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q64767087",
+      "identity": {
+        "title": "Trust Yourself When All Men Doubt You",
+        "author": "Michael Schuster / Steve Mollmann"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "文明与历史"
+        ],
+        "issue": "准确后篇评论让Picard给即将指挥Titan的Riker写建议，并回想Halloway曾给自己的信与放弃Enterprise指挥权的选择。指挥经验因此通过私人通信传递，但Picard对选择连锁后果和自我怀疑的认识，使建议不只是抽象的英雄式命令。",
+        "issue_facets": [
+          {
+            "label": "指挥经验的代际传递",
+            "question": "前任给新任舰长的私人建议如何传递制度无法写尽的经验？",
+            "basis": "评论明确Picard写信给Riker，并参照Halloway曾给自己的信；只限后篇。"
+          },
+          {
+            "label": "选择后果与自我怀疑",
+            "question": "舰长应如何理解自己无法预见的间接后果，而不把反事实责任变成无限自责？",
+            "basis": "准确评论在Trust Yourself后篇讨论Picard的自我怀疑、Halloway另择道路与Wolf 359后果；不借前篇独立事件。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "本次实际查询返回两篇合评中明确标为Trust Yourself When All Men Doubt You的后篇写信、Halloway建议与Picard自疑部分；不将合评前篇Meet with Triumph and Disaster的造舰/人物行为套入，不读原篇。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://them0vieblog.com/2014/01/09/star-trek-the-next-generation-the-skys-the-limit-meet-with-triumph-and-disaster-trust-yourself-when-all-men-doubt-you-by-michael-schuster-steve-mollmann-review/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://them0vieblog.com/2014/01/09/star-trek-the-next-generation-the-skys-the-limit-meet-with-triumph-and-disaster-trust-yourself-when-all-men-doubt-you-by-michael-schuster-steve-mollmann-review/",
+          "type": "actual_limited_search_return",
+          "support_scope": "本次实际查询返回两篇合评中明确标为Trust Yourself When All Men Doubt You的后篇写信、Halloway建议与Picard自疑部分；不将合评前篇Meet with Triumph and Disaster的造舰/人物行为套入，不读原篇。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries324-327-private.json",
+          "sha256": "bc5f12371ba4d419ae224d40d17edf53f9a2876a5d1d9cef5f619d9e6991d933",
+          "section": "records",
+          "index": 1,
+          "record_sha256": "697835f7745b7ad52680faf07c8bda05c2ec96544893b1ee59f5e605c02579f4"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q64831625",
+      "identity": {
+        "title": "Where I Fell Before My Enemy",
+        "author": "Vince Bonasso"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "Mervi对Bonasso本篇的独立段让Defiant进行导航测试时遇见求救的联邦船，目睹它爆炸后由Sisko追击疑似肇事的小船，却提示事情并非表面所见。只据这一开端分析，救援、追责与判断证据怎样在灾难发生的紧迫条件下互相牵制。",
+        "issue_facets": [
+          {
+            "label": "目击证据与归责",
+            "question": "目睹船只爆炸是否足以判断哪一方应承担责任？",
+            "basis": "本篇准确评论明确遇难船爆炸、Sisko追逐被认为负责的小船，并提示表象可能误导。"
+          },
+          {
+            "label": "救援任务向追击的转换",
+            "question": "舰长何时应从援助遇险者转向追击，如何保留重新判断的可能？",
+            "basis": "同段明确Defiant由导航测试转入求救事件，再转为追击；不推定审判、条约或结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际本次查询缓存中Mervi以Vince Bonasso和完整篇名标明的独立段，只有Defiant导航测试/遇险船爆炸/追击及表象疑点。一次直接打开Deep Space Spines仅返回合集评论前段与其他成员，不采用其作为本篇情节读取；不借TV Arena或相邻Life's Lessons。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://mervih.wordpress.com/2022/12/17/dean-wesley-smith-john-j-ordover-paula-m-block-ed-star-trek-strange-new-worlds/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://mervih.wordpress.com/2022/12/17/dean-wesley-smith-john-j-ordover-paula-m-block-ed-star-trek-strange-new-worlds/",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际本次查询缓存中Mervi以Vince Bonasso和完整篇名标明的独立段，只有Defiant导航测试/遇险船爆炸/追击及表象疑点。一次直接打开Deep Space Spines仅返回合集评论前段与其他成员，不采用其作为本篇情节读取；不借TV Arena或相邻Life's Lessons。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries324-327-private.json",
+          "sha256": "bc5f12371ba4d419ae224d40d17edf53f9a2876a5d1d9cef5f619d9e6991d933",
+          "section": "records",
+          "index": 2,
+          "record_sha256": "58fee4e78a30de45a0613f2824d498559675c6d84b44e1eab2b341effd750070"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q6844195",
+      "identity": {
+        "title": "Mighty Mutanimals",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度"
+        ],
+        "issue": "本系列以迷你系列第二期为例：变种动物因保护受伤的Cudley而彼此误认敌友，在Maligna的共同威胁前先打了起来。互助需要先修正对陌生同伴的判断，而女王以杀死报功飞行员回报服从，又把联盟与支配形成对照。",
+        "issue_facets": [
+          {
+            "label": "误认敌友与联盟形成",
+            "question": "保护同一朋友为何仍会造成彼此攻击？",
+            "basis": "第二期中Jagwar认出Cudley，Wingnut却攻击Dreadmon；Cudley要求双方停止内斗、面对Maligna的部下。"
+          },
+          {
+            "label": "统治者与服从者的价值",
+            "question": "为统治者完成任务是否意味着自身安全？",
+            "basis": "第二期中飞行员向Maligna报告击中Cudley，她的回报是咬死飞行员。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "只用Archie系列身份和迷你系列第二期明确选例；不把IDW重组、动画或后来TMNT Adventures剧情推广为全系列。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://archiecomics.fandom.com/wiki/Mighty_Mutanimals",
+        "https://mutantooze.org/wiki/archie-mighty-mutanimals-mini-series-number-2-under-a-big-black-sun/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://archiecomics.fandom.com/wiki/Mighty_Mutanimals",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际查询返回仅用于确认Archie漫画系列身份；后来TMNT Adventures中死亡不纳入本实体。",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://mutantooze.org/wiki/archie-mighty-mutanimals-mini-series-number-2-under-a-big-black-sun/",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际查询返回迷你系列第二期Under a Big Black Sun的具体评论概述，不等同读完整漫画。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries336-339-private.json",
+          "sha256": "bd10c0cd0f4df18df24e792571d5a48f958e95f8887d9e9a86a726a4b78451a4",
+          "section": "records",
+          "index": 0,
+          "record_sha256": "61678dc8256b46e70588a2685912ee6a9750d6b60b20013bd59cea3ef200ed56"
+        }
+      ],
+      "identity_caveat": "漫画系列层面的成员选例分析，只对应Archie迷你系列第二期；不变源未知作者，不覆盖全部期刊或后续跨刊事件。"
+    },
+    {
+      "id": "Q72820259",
+      "identity": {
+        "title": "The Axiom of Choice",
+        "author": "David W. Goldman"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "时间与因果",
+          "生命与人类定义"
+        ],
+        "issue": "已读原篇片段把音乐家遭遇的若干读者选择收回到飞机坠海和左手受伤的结果，选择形式并不保证改变后果。医院中的他又被迫把损伤的手重新看成自己的身体，行动自由因此同时受叙事规则和身体条件约束。",
+        "issue_facets": [
+          {
+            "label": "选择分支与既定后果",
+            "question": "出现可选路径时，读者是否真的能改变事件结果？",
+            "basis": "原篇编号304回收至307，310和312均到324，326明确取消该选择并回到325。"
+          },
+          {
+            "label": "身体损伤后的自我承认",
+            "question": "失去惯常演奏能力后，受伤的手还能怎样被承认为自我？",
+            "basis": "医院段落中护士让音乐家看自己的手，并反对把损伤的手称为外在的“那东西”；左手只剩部分手指。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际容易打开作者网站原篇，返回全621行中的0—213行：编号选择、坠海、医院手部损伤与哲学课开端。未读其余原篇和结局，不把收回的选择等同平行宇宙实存。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.davidwgoldman.com/The_Axiom_of_Choice.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.davidwgoldman.com/The_Axiom_of_Choice.html",
+          "type": "actual_limited_direct_open_return",
+          "support_scope": "实际容易打开作者网站原篇，返回全621行中的0—213行：编号选择、坠海、医院手部损伤与哲学课开端。未读其余原篇和结局，不把收回的选择等同平行宇宙实存。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries336-339-private.json",
+          "sha256": "bd10c0cd0f4df18df24e792571d5a48f958e95f8887d9e9a86a726a4b78451a4",
+          "section": "records",
+          "index": 2,
+          "record_sha256": "00b39a7cd64318c0f51363a016df3b6d568566d3bb66208579d6bb944f5b976b"
+        },
+        {
+          "file": "quick-retry2-root-round12-modern-opens338-343-private.json",
+          "sha256": "23d3c12784e933e5f56320d16215d2476e4ed08776ee7fc1c7b6fe1f2486903f",
+          "section": "records",
+          "index": 0,
+          "record_sha256": "f70667d54023d485446f08e1a7873aa68971bdaa64e5dba84e3dd0e6b9e4c27e"
+        }
+      ],
+      "identity_caveat": "不改源作者、年份和媒介；只对应本单篇/本册明示范围，不借相邻篇或其他媒介版本。"
+    },
+    {
+      "id": "Q7389510",
+      "identity": {
+        "title": "SD GUNDAM外傳",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "本企划只以讲谈社《骑士高达物语》第三、四卷书介中的漫画情节为例：控制传说巨人的心之石引发三方争夺，Sieg Zeon又借Coscon王发动侵略。力量的控制权和政治代理关系因此共同决定谁能把战争强加给他人。",
+        "issue_facets": [
+          {
+            "label": "控制力量的媒介垄断",
+            "question": "掌握控制巨人的器物是否使力量的使用权集中于少数争夺者？",
+            "basis": "第三卷书介明确骑士高达、Zeon与龙族围绕能控制传说巨人的心之石三方交战。"
+          },
+          {
+            "label": "代理统治与战争责任",
+            "question": "利用一个国王侵略邻国时，责任怎样分布于操纵者与名义统治者？",
+            "basis": "第四卷书介明确Sieg Zeon利用Munzo帝国Coscon王向Algus王国发动侵略。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际查询返回讲谈社漫画第三、四卷具体内容介绍；全SD GUNDAM外传企划只取明确漫画成员选例，不继承卡牌、游戏、动画或其余分支剧情。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.kodansha.co.jp/comic/products/0000049855",
+        "https://www.kodansha.co.jp/comic/products/0000049856"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.kodansha.co.jp/comic/products/0000049855",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际查询返回讲谈社漫画第三、四卷具体内容介绍；全SD GUNDAM外传企划只取明确漫画成员选例，不继承卡牌、游戏、动画或其余分支剧情。",
+          "read_date": "2026-10-06"
+        },
+        {
+          "url": "https://www.kodansha.co.jp/comic/products/0000049856",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际查询返回讲谈社漫画第三、四卷具体内容介绍；全SD GUNDAM外传企划只取明确漫画成员选例，不继承卡牌、游戏、动画或其余分支剧情。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries336-339-private.json",
+          "sha256": "bd10c0cd0f4df18df24e792571d5a48f958e95f8887d9e9a86a726a4b78451a4",
+          "section": "records",
+          "index": 3,
+          "record_sha256": "69b5cf6b0738f10a39c0f30da561c99c1db348416385d57fd89a574e23a1117b"
+        }
+      ],
+      "identity_caveat": "底库实体覆盖SD GUNDAM外传企划，本分析只对应Hoshino漫画骑士高达物语第三、四卷书介选例；源未知作者和年份不改。"
+    },
+    {
+      "id": "Q7728475",
+      "identity": {
+        "title": "The Curse of the Daleks",
+        "author": "泰瑞·内申 / 大卫·惠特克"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "舞台剧已见概述中，载有两名囚犯的Starfinder遭遇陨石风暴和疑似破坏，被迫降落警方禁止进入的Skaro。维持禁令、判断故障原因与保障受拘束者生存的责任，在同一场紧急事件中发生冲突。",
+        "issue_facets": [
+          {
+            "label": "禁入规则与紧急避险",
+            "question": "当维修是生存所需时，执行禁入规定应怎样权衡？",
+            "basis": "舞台剧概述明确Starfinder故障后选择Skaro维修，尽管Unispace Police已经宣布该星球禁入。"
+          },
+          {
+            "label": "故障、破坏与责任判断",
+            "question": "灾变中的技术损坏如何区分自然事故与人为破坏？",
+            "basis": "原舞台剧概述分别给出陨石风暴造成程序电路短路，以及无线图像设备中被投入铁屑的破坏证据。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际查询返回明确1965舞台剧页面的开端剧情和场景，非2008音频改编；不补未返回的复活、叛徒处置或结局。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://tardis.fandom.com/wiki/The_Curse_of_the_Daleks_%28stage_play%29"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tardis.fandom.com/wiki/The_Curse_of_the_Daleks_%28stage_play%29",
+          "type": "actual_limited_search_return",
+          "support_scope": "实际查询返回明确1965舞台剧页面的开端剧情和场景，非2008音频改编；不补未返回的复活、叛徒处置或结局。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries340-343-private.json",
+          "sha256": "61aca9e02113c7eca9b38911f621198bd0a66ccc8f02826857a14834cafb1796",
+          "section": "records",
+          "index": 1,
+          "record_sha256": "11d9f2b7c328e4f9b4af4ba298824d97b431034510a0c96a8e0b6ee57a454371"
+        }
+      ],
+      "identity_caveat": "本项是舞台剧的限定概述分析，保留底库实体形态与作者，不借2008音频改编剧情。"
+    },
+    {
+      "id": "Q90831606",
+      "identity": {
+        "title": "Sora o Kakeru Shōjo D",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "技术与责任"
+        ],
+        "issue": "漫画D第四话的书评中，贫困学生Tsutsu希望通过为Leopard安装蓝色球体实现愿望，却只恢复了机器的相机功能。随后靠写真挣钱的尝试又因相机不拍人物而失败，技术完成自身功能并未解决使用者的经济困境。",
+        "issue_facets": [
+          {
+            "label": "贫困与受教育机会",
+            "question": "成绩和减免学费能否抵消维持家庭生活的压力？",
+            "basis": "D第四话书评明确Tsutsu与三个妹妹住廉价住所，她成绩优秀、获学费减免，却担心贫穷阻断大学及职业目标。"
+          },
+          {
+            "label": "机器功能与人的目的错位",
+            "question": "设备被修复是否等于帮助请求者实现愿望？",
+            "basis": "安装蓝色球体只恢复Leopard相机；Tsutsu尝试作为写真模特挣钱时，相机只记录背景而不记录人。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "来自本次已保存限定资料的文学分析，仍待独立核对。",
+        "issue": "实际打开书评页29—47行，只取宇宙をかける少女D第四话和该漫画页59柱说明。旁边动画设定、同页Anthology的Leopard炎上以及其他评论不纳入本漫画。",
+        "issue_facets": "原创解释性问题，具体依据只取明示前提，不等同作者定论或全文核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://346zakki.blog.fc2.com/blog-entry-199.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://346zakki.blog.fc2.com/blog-entry-199.html",
+          "type": "actual_limited_direct_open_return",
+          "support_scope": "实际打开书评页29—47行，只取宇宙をかける少女D第四话和该漫画页59柱说明。旁边动画设定、同页Anthology的Leopard炎上以及其他评论不纳入本漫画。",
+          "read_date": "2026-10-06"
+        }
+      ],
+      "source_cache_references": [
+        {
+          "file": "quick-retry2-root-round12-modern-queries340-343-private.json",
+          "sha256": "61aca9e02113c7eca9b38911f621198bd0a66ccc8f02826857a14834cafb1796",
+          "section": "records",
+          "index": 3,
+          "record_sha256": "88453eeb3456de0d0f8520e58c6fc487903cf5c3b3ce6abd3081ff195b2d1f54"
+        },
+        {
+          "file": "quick-retry2-root-round12-modern-opens338-343-private.json",
+          "sha256": "23d3c12784e933e5f56320d16215d2476e4ed08776ee7fc1c7b6fe1f2486903f",
+          "section": "records",
+          "index": 1,
+          "record_sha256": "a34aa0473a8fe1f5fdcd24ddd89f7a93954b77f94dec52b0f581647900e15514"
+        }
+      ],
+      "identity_caveat": "只对应漫画D第四话的书评及该漫画柱设定，不将同页动画或其他漫画选篇事件复制到本实体。"
+    }
+  ]
+}

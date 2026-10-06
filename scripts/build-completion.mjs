@@ -6,7 +6,7 @@ import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
-import {createKnowledgeDimensionContext,validateKnowledgeDimensionEvidence} from './knowledge-dimensions-evidence.mjs';
+import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
 import {completionChunks,completionDelivery} from './completion-delivery.mjs';
 import {validateSpatialEvidence,initialResearchSpatialBuildArguments} from './spatial-evidence.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
@@ -44,7 +44,7 @@ const knowledge=new Map(),knowledgeInputs=[];
 const issueInputs=await listIssueInputs(root);
 const spatialInputs=await listSpatialInputs(root);
 const dimensionInputs=await listDimensionInputs(root);
-const dimensionContext=dimensionInputs.length?createKnowledgeDimensionContext({repoDir:fileURLToPath(root)}):null;
+const dimensionContext=dimensionInputs.length?createDimensionEvidenceContext({repoDir:fileURLToPath(root)}):null;
 for(const p of ['research/knowledge-existing.json','research/knowledge-additional.json',...issueInputs,...spatialInputs,...dimensionInputs]){
   let bytes;try{bytes=await readFile(new URL(p,root));}catch(e){if(e.code==='ENOENT'){console.log('Pending knowledge input: '+p);continue;}throw e;}
   const data=JSON.parse(bytes);knowledgeInputs.push({file:p,sha256:createHash('sha256').update(bytes).digest('hex'),count:data.records.length});
@@ -53,7 +53,7 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     if(!canonicalIds.has(r.id)||inputIds.has(r.id)||knowledge.has(r.id)&&!issueInputs.includes(p)&&!spatialInputs.includes(p)&&!dimensionInputs.includes(p))throw new Error('Invalid or duplicate knowledge identity: '+r.id);
     inputIds.add(r.id);
     if(!r.identity?.title||!r.identity?.author||r.verification_status!=='knowledge_added_unverified')throw new Error('Knowledge identity or status absent: '+r.id);
-    if(r.identity_caveat!==undefined&&(typeof r.identity_caveat!=='string'||!r.identity_caveat.trim()))throw new Error('Invalid identity caveat: '+r.id);
+    if(r.identity_caveat!=null&&(typeof r.identity_caveat!=='string'||!r.identity_caveat.trim()))throw new Error('Invalid identity caveat: '+r.id);
     const original=sourceMap.get(r.id),prior=researchByCanonical.get(r.id),baseline=auditMap.get(r.id);
     const titles=[original?.title,original?.title_en,original?.title_zh,...Object.values(original?.source_labels||{}),...(original?.title_statements||[]).map(t=>t.value),...Object.values(original?.source_aliases||{}).flat(),prior?.title_zh,prior?.title_original,baseline.title].map(norm);
     const authors=[...(original?.authors||[]),...(original?.author_names_en||[]),...(original?.author_names_zh||[]),(original?.authors||[]).join(' / '),prior?.author,baseline.fields.author.value].map(norm);
@@ -62,7 +62,7 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     if(dimensionInputs.includes(p)){
       const currentWork=canonicalSpatialContext.get(r.id);
       const dimensionAdoptionPhase=currentWork?.knowledge?.assertions?.some(assertion=>assertion.input_file===p)?'post':'pre';
-      validateKnowledgeDimensionEvidence(r,{trustedContext:dimensionContext,currentWork,inputFile:p,dimensionAdoptionPhase});
+      validateDimensionEvidence(r,{context:dimensionContext,currentWork,inputFile:p,dimensionAdoptionPhase});
     }
     if(r.fields.spatial_primary&&!spaces.has(r.fields.spatial_primary))throw new Error('Invalid space: '+r.id);
     if(spatialInputs.includes(p)){
@@ -70,7 +70,7 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
       if(!spaces.has(r.fields.spatial_primary)||r.fields.spatial_primary==='unknown'||!r.fields.spatial_rationale?.trim())throw new Error('Spatial judgment absent: '+r.id);
       if(r.fields.spatial_secondary&&(!Array.isArray(r.fields.spatial_secondary)||r.fields.spatial_secondary.some(s=>!spaces.has(s)||s==='unknown'||s===r.fields.spatial_primary)))throw new Error('Invalid secondary space: '+r.id);
       const priorSpatialContext=canonicalSpatialContext.get(r.id);
-      const currentWork=priorSpatialContext ? {...priorSpatialContext,knowledge:{...priorSpatialContext.knowledge,assertions:knowledge.get(r.id)?.assertions},source_search_log:sourceSearchMap.get(r.id)} : undefined;
+      const currentWork=priorSpatialContext ? {...priorSpatialContext,knowledge:{...priorSpatialContext.knowledge,assertions:knowledge.get(r.id)?.assertions},source_search_log:sourceSearchMap.has(r.id)?sourceSearchMap.get(r.id):priorSpatialContext.source_search_log} : undefined;
       validateSpatialEvidence(r,initialResearchSpatialBuildArguments(r,{repoDir:fileURLToPath(root),currentWork:priorSpatialContext}) || {issueAssertions:knowledge.get(r.id)?.assertions,sourceSearchLog:sourceSearchMap.get(r.id),currentWork,repoDir:fileURLToPath(root)});
     }
     if(r.fields.duration&&!durations.has(r.fields.duration))throw new Error('Invalid duration: '+r.id);

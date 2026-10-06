@@ -13,6 +13,8 @@ import {MODERN_SELECTION2_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION2_SPATIAL_SEL
 import {MODERN_SELECTION3_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION3_SPATIAL_SELECTION_SHA256,modernSelection3PublishedSpatialIds} from './modern-published-spatial-selection3-evidence-v1.mjs';
 import {MODERN_SELECTION4_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION4_SPATIAL_SELECTION_SHA256,modernSelection4PublishedSpatialIds} from './modern-published-spatial-selection4-evidence-v1.mjs';
 import {R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,r91FixedSameBatchSpatialIds} from './r91-fixed-samebatch-spatial-evidence-v2.mjs';
+import {isR92FixedSameBatchSpatialRecord} from './r92-fixed-samebatch-spatial-evidence-v1.mjs';
+import {isEarlySelection5PublishedSpatialRecord} from './early-published-spatial-selection5-evidence-v2.mjs';
 import {completionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
@@ -47,6 +49,11 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
+ if(isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
  if(r91SameBatchSpatialIds.has(record.id)||Object.hasOwn(R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,record.source_spatial_input_file)){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});

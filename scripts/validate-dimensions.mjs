@@ -2,27 +2,32 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
-import {createKnowledgeDimensionContext,validateKnowledgeDimensionEvidence,DIMENSION_INPUT_FILE} from './knowledge-dimensions-evidence.mjs';
+import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
 import {DIMENSION_LABELS,FIELD_LABELS} from '../dist/assets/canonical.mjs';
 import {DEFAULT_STATE,filterWorks,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 
 const root=new URL('../',import.meta.url);
 const canonical=JSON.parse(gunzipSync(await readFile(new URL('research/canonical-universe.json.gz',root))));
-const input=JSON.parse(await readFile(new URL(DIMENSION_INPUT_FILE,root),'utf8'));
-const trustedContext=createKnowledgeDimensionContext({repoDir:fileURLToPath(root)});
+const context=createDimensionEvidenceContext({repoDir:fileURLToPath(root)});
 const byId=new Map(canonical.works.map(w=>[w.id,w]));
-let fields=0;
-for(const record of input.records){
+const allIds=new Set();
+for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-dimensions-round1.json',40,141],['research/knowledge-dimensions-round2.json',100,311]]){
+ const input=JSON.parse(await readFile(new URL(inputFile,root),'utf8'));
+ let fields=0;
+ for(const record of input.records){
+ assert(!allIds.has(record.id));allIds.add(record.id);
  const work=byId.get(record.id);
- const result=validateKnowledgeDimensionEvidence(record,{trustedContext,currentWork:work,inputFile:DIMENSION_INPUT_FILE,dimensionAdoptionPhase:'post'});
+ const result=validateDimensionEvidence(record,{context,currentWork:work,inputFile,dimensionAdoptionPhase:'post'});
  fields+=result.field_count;
  assert.equal(work.completion.source_verified,false);
  for(const [key,value] of Object.entries(record.fields))assert(work.search_text.includes(value.normalize('NFKC').toLocaleLowerCase()));
+ }
+ assert.equal(input.records.length,expectedRecords);
+ assert.equal(fields,expectedFields);
 }
-assert.equal(input.records.length,40);
-assert.equal(fields,141);
+assert.equal(allIds.size,140);
 for(const [key,label] of Object.entries(DIMENSION_LABELS)){
- const expected=key==='expression_form'?4:40;
+ const expected={narrative_mechanism:140,scientific_premise:122,reality_relation:140,expression_form:18}[key];
  const known=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,dimension:key});
  const missing=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,missing:key});
  assert.equal(known.length,expected,label);
@@ -43,4 +48,4 @@ assert.deepEqual(scopeWork.spatial_scope_annotation.original_spatial_fields,{
  spatial_secondary:scopeWork.spatial_evidence.secondary,
  spatial_rationale:scopeWork.spatial_evidence.rationale
 });
-console.log('PASS 40 actual adopted records / 141 fields; separate four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');
+console.log('PASS independently guarded 40/141 and 100/311 actual adopted records/fields; four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');
