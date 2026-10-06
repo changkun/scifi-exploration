@@ -1,0 +1,877 @@
+{
+  "metadata": {
+    "status": "frozen_closed_selection11_exact112_dependency_pins",
+    "candidate_count": 200,
+    "raw_records": 112,
+    "adoptable_records": 112,
+    "unique_ids": 112,
+    "spatial_fields": 336,
+    "deferred_unknown_count": 88,
+    "primary_counts": {
+      "earth": 85,
+      "planetary": 20,
+      "galactic": 1,
+      "interstellar": 6
+    },
+    "raw_basis_modes": {
+      "saved_explicit_setting": 69,
+      "exact_existing_knowledge": 43
+    },
+    "original_companion_log_present": 83,
+    "original_companion_log_absent": 29,
+    "original_owner_absent": 33,
+    "original_selection_snapshot_sha256": "60d6f1f1d84244a01b721a1d1a3f15ff0d2b3b84c8f5d5424cb0f57474d2845c",
+    "actual_published_baseline_commit": "e81ba2baeea4f8c0d28076ea54563f0d3c209439",
+    "actual_published_baseline_git_blob": "e81ba2baeea4f8c0d28076ea54563f0d3c209439:research/canonical-universe.json.gz",
+    "actual_published_baseline_sha256": "60d6f1f1d84244a01b721a1d1a3f15ff0d2b3b84c8f5d5424cb0f57474d2845c",
+    "actual_receipt_file": "round97-published-site-v2.json",
+    "actual_receipt_sha256": "33266feb912bc79fb4f7c2dddea5c3c3fa1f36bc69134c2086fc36318addc42d",
+    "original_pending_metadata_unchanged": true,
+    "old_archives_not_copied": true,
+    "old_archive_count": 122,
+    "new_requests": 0,
+    "new_core": 0,
+    "new_verification": 0,
+    "missing_L_and_owner_not_fabricated": true
+  },
+  "new_archive_pins": {
+    "research/spatial-input-snapshots/early-published-spatial-expansion-selection11.json": "6cc76521ef13c846de0b5b14e096589915278c3bcb446d9f6f287998ebc44e5c",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-round1.json": "49b90206681f9c617544e1504d087542c18f953fdf6327dace61145bf9365524",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-round2.json": "7b80749b87ee68d9fbdec9ad415440dd6092dd6bdc72fb5376fd0d093ecedf73",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-round3.json": "f42aced5d91c4516db693a6fb72b9981ffa8a572ae5d0a65ed4cee5cd2b8119e",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-round4.json": "fdc62a012c7496ea13951b8bb7ab2a6ab5d777987139c14334ad620c413d0e29",
+    "research/spatial-input-snapshots/round98-selection11-proposed112-semantic-review-list-private.json": "72dad48ea315e7a8a57da6e4839188f7eacf727d9341bf07ca22a5ed4c061545",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-closed-source-role-scope-private.json": "714d9e270c18a6e41d4986aecbba51f3b4e6ba4ee50bfdc7ab93ecaadeb32390",
+    "research/spatial-input-snapshots/round98-root-selection11-scoped112-review-private.json": "42665a26cc79eff35b7208d24091a1a8e9efc98759f31d66715af8ff2d718137",
+    "research/spatial-input-snapshots/round97-published-site-v2.json": "33266feb912bc79fb4f7c2dddea5c3c3fa1f36bc69134c2086fc36318addc42d",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-round97-publication-receipt-binding-private.json": "e92a9f197346ac882acd175278bfd637c8c096af2a2f6be6b486c10be050ca93",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-light-pre-binding-proof-private.json": "bf1c6f62928a68f6553a70f553a054c7f44f41dee556f241bec30fda824502d6",
+    "research/spatial-input-snapshots/early-published-spatial-selection11-exact-proposal-scope-binding-supplement-private.json": "f3bbac26170f394ebc4f0435c8cedb26dfeb7e79f7a17fbb3570df02397868bd"
+  },
+  "existing_public_archive_pins": {
+    "research/issue-corrections.json": "f98ddb1978f403cb4720c7914b5f3efe1b6bdf26ed2620904156c3f35ea22d54",
+    "research/issue-input-snapshots/early-recent-round57-log.json": "35d722c53ba18d28375241a25ba3b8e6a2515aea388d02b719ec7a676ce2153b",
+    "research/issue-input-snapshots/early-recent-round57.json": "ce77d2e9bbae9ba5f6ded8e617ac8e3863065e61d65723e185253043c72db1ec",
+    "research/issue-input-snapshots/early-recent-round60-log.json": "d76a84b82537f299b7b88ec97733b8d3675efc9babae7762e0506f2c66dcca40",
+    "research/issue-input-snapshots/early-recent-round60.json": "0a8ab455f721cb6bdce93312b1668777e3edc3c0d6f90618d50598ff48db71d4",
+    "research/issue-input-snapshots/early-recent-round61-log.json": "2f0b010cec1a39d5c0b4ea3bd2f21dc29e0583486f37e33f15dcef2127598dd6",
+    "research/issue-input-snapshots/early-recent-round61.json": "878ab0f9642eb1f73d24e12970af93e20f5da8080ff54511084d718afc2ac82c",
+    "research/issue-input-snapshots/early-recent-round64-log.json": "b114a185621c92be5717db6e01183fdff41bce70ff451bf2a3b77e9108a31463",
+    "research/issue-input-snapshots/early-recent-round64.json": "ce6e8c80543ad4d21c6b28fc059c47f75aa71a2249be40d79a9fb2c3dc2104b0",
+    "research/issue-input-snapshots/early-recent-round65-log.json": "107648ec7c192499776f3d46901374ce671509fa7e19021d9224f8a67ea6fb95",
+    "research/issue-input-snapshots/early-recent-round65.json": "5ebee8c6c5caeb0f5e3922b04870cbc64f4afb2367c925b4a1dfb8d7b957038c",
+    "research/issue-input-snapshots/global-recent-round45-log.json": "14f68a7bd376feecb90e1a57441d05be87a84f224bd675d94f4d15d29a9a19be",
+    "research/issue-input-snapshots/global-recent-round45.json": "33112246cf56f2fd5c01c9c840292168ee036a372c8b2d0fd6f9cc94e6b6e6b8",
+    "research/issue-input-snapshots/global-undated-round2-log.json": "f959a9d2f2678b6ce9129341f3f628a774d780fabe95aadf7e1357abaa9c9c53",
+    "research/issue-input-snapshots/global-undated-round2.json": "0608b9754c213148d034d5793da4bcb096fd8aca87f3bd5ed64e8c1bdbe935bc",
+    "research/issue-input-snapshots/global-undated-round3-log.json": "43de42dbbbc023912e2216bb45b9ffbcd7b27762c71a1e2c7819b25337057132",
+    "research/issue-input-snapshots/global-undated-round3.json": "8fd3b9c7f18a5a6174250324661fffc1057c6d903a7f091199acb28a0e2a102b",
+    "research/issue-input-snapshots/global-undated-round7-log.json": "de605186bd3b84798d7ff56b48774f5a3b3b0244f3024af6901e2ace0766af0f",
+    "research/issue-input-snapshots/global-undated-round7.json": "6a8399b5fe76e6ef8dd6a54e509b3f0addfaf0e8d1519aca51f14ba72fcc12e1",
+    "research/issue-input-snapshots/known-year-early-round4-log.json": "cd3c463f03e03b3382d3f1e2977f224627f77cdb1852c0bd213e91108396d869",
+    "research/issue-input-snapshots/known-year-early-round4.json": "7aef51618a7f071fd90afd976bd54f11979cf9018b4cf7611cb5bb777af25e9c",
+    "research/issue-input-snapshots/known-year-early-round6-log.json": "b137f0f10b10a03d9bdc134e57c174803c4c2a94796c1605cbf9105ed2921dd7",
+    "research/issue-input-snapshots/known-year-early-round6.json": "30b1e3f3893144b9bd60cec219ed40878894fac64ebf95de8bdb490cb7139695",
+    "research/issue-input-snapshots/known-year-early-round7-log.json": "26c761d044580bf528115b80b54454b429cb5cabde18b62031ddcb9105acb441",
+    "research/issue-input-snapshots/known-year-early-round7.json": "6f8e2a61bbe1a047c44e9dc1c34ede0752f0a15f26a04a8bd74028bdf7445880",
+    "research/issue-input-snapshots/known-year-first-pass-lane-3.json": "b193cb6e5cbf290ee699db0a540b6b05c6c1855dccf59651ecb3eacfaa865e0c",
+    "research/issue-input-snapshots/known-year-root-assist-early-extra-round2-log.json": "4ed4b68549c3090080dc12b104393f1eba0ffaf46ce31bea5d9dc37613034086",
+    "research/issue-input-snapshots/known-year-root-assist-early-extra-round2.json": "86826ccb97e436e54ff6de40db322fb63289d1beac7020d9ce66e3cf979c8c63",
+    "research/issue-input-snapshots/known-year-root-assist-modern-round1-log.json": "b40eabe61e37ac8d80bf40e95136ced9380c687b13b78b0cfc6fdf1d26e5ea88",
+    "research/issue-input-snapshots/known-year-root-assist-modern-round1.json": "2142e755d9575bd12b8428ff36ab6fd75d703eb266c54d93cf1687b74756f530",
+    "research/issue-input-snapshots/known-year-root-assist-modern-round4-log.json": "a841537a4dc2e661c99cccd25a3f40efaa3df72a359ef1b792f66e6188c6a0c9",
+    "research/issue-input-snapshots/known-year-root-assist-modern-round4.json": "ad8df98b6f4f046b21900dbace70eaea3b674570aea1fdb25851cb5d3824519c",
+    "research/issue-input-snapshots/known-year-root-delegation-early_history-extra64.json": "cd120ff6d93d929276261de4c4baa12aee723243defd1c074909380e9aa31fd5",
+    "research/issue-input-snapshots/known-year-root-delegation-modern_history.json": "a60d6dce8a3a6f65b2a38b57aee6aa5e788fa2ac9c55e3ff352ee84e312dd351",
+    "research/issue-input-snapshots/modern-recent-round59-log.json": "672d05dea0055fb46270ce03bba04927ca4062cdce9bf66b59243051f6db2399",
+    "research/issue-input-snapshots/modern-recent-round59.json": "60c7eaf7e75e4cb5a14932216a409cc48e0b94ac224badf8335e263a9f446690",
+    "research/issue-input-snapshots/modern-recent-round62-log.json": "4f86a252e091914e1b3e5c0db47424390ab687730e4f3255fcf0d16051354794",
+    "research/issue-input-snapshots/modern-recent-round62.json": "e5932023b4e19846840ae936f4192a23913e2ff5938ab9e2840bceae0081ebec",
+    "research/issue-input-snapshots/modern-recent-round63-log.json": "9fffc2e672aa438d07d24c4e5f94832cedb2573d4d571df66b67688e5d0b0693",
+    "research/issue-input-snapshots/modern-recent-round63.json": "4b703d930b330cb970f42742cc11e85d8754bc131aa170e6e5713a213ab4cf86",
+    "research/issue-input-snapshots/modern-recent-round64-log.json": "1ce08cb80d6405cdfb496903aad2e4ee3078e96f85555a0eb7ef26555d5f93b4",
+    "research/issue-input-snapshots/modern-recent-round64.json": "2a72c42d03596be8346962f171ed90f9ae7678a1e74cd26b2cd91cc78ce71b4b",
+    "research/issue-input-snapshots/modern-recent-round67-log.json": "1068a1a4e2ecc236a6c5155bcab83f860567928b00885ebd488487343add923f",
+    "research/issue-input-snapshots/modern-recent-round67.json": "02b32fa5f2908977cbbe09e1fb9459570a44c25412633faddd2eebf7ddbdc39e",
+    "research/issue-input-snapshots/modern-recent-round68-log.json": "20ae4a7f3b2e43a324939f56202aa0d49d65fcd5af341e495a815a08a796285f",
+    "research/issue-input-snapshots/modern-recent-round68.json": "1e233f05a4bc627a47842fd8136abc716ed43ef8a700fb93f86aec9f682e6a8a",
+    "research/issue-input-snapshots/quick-retry-global-round17-log.json": "812daaab1c833bb1f39c9969ffeae7d64404a7c2764df0e5edc07d44c69d32e1",
+    "research/issue-input-snapshots/quick-retry-global-round17.json": "573949311d90a3df9fc53d05b9be74cbaf90d662b4c6d5711f2ee90458537399",
+    "research/issue-input-snapshots/quick-retry-lane-0.json": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "research/issue-input-snapshots/quick-retry-lane-1.json": "6ac6307da6880daa689e10a48c35466fac9ed028ea6a42764b0ab4af29d072bb",
+    "research/issue-input-snapshots/quick-retry-lane-2.json": "f1e3bce7c91b9744ab300726ea85acd26e5f195553ce022a63559cc16e04bda5",
+    "research/issue-input-snapshots/quick-retry-modern-round16-log.json": "ceec040c66a2719b0babdb9de0d095f96bc39550024b738d965ae5e3fb2d847b",
+    "research/issue-input-snapshots/quick-retry-modern-round16.json": "169d3e5510451218e7e5305edcabb71dd9fd88d1025ce1891491f46d17c2e829",
+    "research/issue-input-snapshots/quick-retry-modern-round17-corrected-log.json": "f8070d31047037837d46691319ff9f8dd7546b42cf98bb2f6ce0440290d08a46",
+    "research/issue-input-snapshots/quick-retry-modern-round17-corrected.json": "a1ea4f71a065d2bf4aa33f52ef18c721b941205442907ac239c917b1c34a008d",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round4-log.json": "d31266fd0c1821bdc6c8cccf5c19c641cc959812fbb2f96cc35e17245271a4fc",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round4.json": "0fb13ae4963d1988067a50b667ef05d48775d4aef035e8a59d4c840476b0acbe",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round5-log.json": "f084f6894dd727d0c71edd537f810b87429f2aaa024190a63e8c1919963f170b",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round5.json": "ac1f55d78ad6f826525970f573d147f1d22c8b149b456162c1b252761005c5d0",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round6-log.json": "13557898a8833bf44af9b8279dd402e2500dd2a821711af9c7d547948f2d7cf1",
+    "research/issue-input-snapshots/quick-retry-root-assist-early-round6.json": "1c30f8260bb9136bf5cc4a56006dc18da58309ccc00a804ad54822144e78db58",
+    "research/issue-input-snapshots/quick-retry2-early-round11-log.json": "2b6c783f2611e74bd3ac805e4b66198c0714592145712b7c7eaceb5330424b85",
+    "research/issue-input-snapshots/quick-retry2-early-round11.json": "70e8e33479a073ba3f3bd7307b98c21a6836fe9a39ac9eedbcb93921d178a180",
+    "research/issue-input-snapshots/quick-retry2-lane-0.json": "63042ce16ccdf6f42ce33b78c52284ce82e0efb2cb84e1ac6b7b2faf4b65c1f7",
+    "research/issue-input-snapshots/quick-retry2-lane-3.json": "5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c",
+    "research/issue-input-snapshots/quick-retry2-root-round7-corrected.json": "979c4e84b5c11af9a6b86d22dcbe7e18da8eae2c7b4f6a708e1607604006edaa",
+    "research/issue-input-snapshots/root-assist-early-round1-log.json": "b6d1066915a47a747baa0da84674b8711f58e7758499b3ee420230f47fc1c42f",
+    "research/issue-input-snapshots/root-assist-early-round1.json": "f500187940eb8b9adb539559a41b1ec95d35a9b0e2f009ab8973fdb96d5d5588",
+    "research/issue-input-snapshots/root-assist-global-round2-log.json": "3423783912b16a458cbff2d2baa5b13afb391ab8be5db941e5ea41367a4ecff8",
+    "research/issue-input-snapshots/root-assist-global-round2.json": "08024caac05b850ac68620cc92e0f061fe68053bde5942489981fb1b74d2316d",
+    "research/issue-input-snapshots/root-assist-modern-round1-log.json": "52f7c1b7280f99e0f4af645aefd22c7d7893475e4e35902fe5e1132d039e3494",
+    "research/issue-input-snapshots/root-assist-modern-round1.json": "1ae04c5ee1371b87dbc3fa696a63642e174d54a7ac18c559786c2c51ec761008",
+    "research/issue-input-snapshots/root-assist-modern-round2-log.json": "7752bd78db94a6d294d01ae659c79bd51a567f04f8b5f23bdf93f1dcc4b1699d",
+    "research/issue-input-snapshots/root-assist-modern-round2.json": "3a6b91cca31425cb4f7651f46e7454067a505eae35936221931f9dc65b283a6b",
+    "research/issue-input-snapshots/root-fast-round11-log.json": "e7035414ae43a58f7c13ac38b7931004ffee3ea2c90c41d2ca90d14751775e81",
+    "research/issue-input-snapshots/root-fast-round11.json": "954bbc725a2c8e90af9f1471ec000928cd7ad0dffdb78f784c5fb25101478c1c",
+    "research/issue-input-snapshots/root-fast-round17-log.json": "3c2e0141c402977bf4e2b2755e3dd9b9798b8570eb9681551e73cebe783ba17c",
+    "research/issue-input-snapshots/root-fast-round17.json": "88c7ecf06e20636c58c2b49c549bb6324842c21e056b0ec703874946840d03da",
+    "research/issue-input-snapshots/root-undated-assist-early.json": "f704d0baefc00f62091078c5c64c2777b4fcb735094cbfb3a272a3f933b40194",
+    "research/issue-input-snapshots/root-undated-assist-global.json": "21b6ce4800ce14dfe17d4935282b4ddc8db3ee5c69cd338c9aeaf69aaa252b99",
+    "research/issue-input-snapshots/root-undated-assist-modern.json": "ef9b96ede9641fc9a52e79fa2112707f3acff99002630e0741740647e4d1a308",
+    "research/issue-input-snapshots/root-undated-known-round1-log.json": "0bc240fe40a83e49ef7f403582a2746d2a7e5bea43d6ea5fc4e844363ecf91e1",
+    "research/issue-input-snapshots/root-undated-known-round1.json": "50584bd8f341f657a382bd57967bbec9dbf96f05488098163546413c42cd983a",
+    "research/issue-input-snapshots/root-undated-query-round1-log.json": "bc2703d29c6a2b651b105aac9b2b7644a6ff56bc557b037956a12ec3ba8adfe1",
+    "research/issue-input-snapshots/root-undated-query-round1.json": "702dd48e01ea1c4922d8d681170a613a67351efe15d7194975f0792b87bdb0b7",
+    "research/issue-input-snapshots/root-undated-query-round2-log.json": "a55a451ccd9c920351af766f879291c7d3455ca6a3c1b2d1da0d68b7ff5a162e",
+    "research/issue-input-snapshots/root-undated-query-round2.json": "88bdd1af3be11674e34cfadad9661e05c5c919464d973cccd7987f9dc4163726",
+    "research/issue-input-snapshots/undated-first-lane-0.json": "a7f63c8f602433456e8bd997beefc7a109a6d3b86d6c11127bf11e3efc14643d",
+    "research/issue-input-snapshots/undated-first-lane-1.json": "1ef0b8825ca4283a665d58a25660870940c86713f7170d540a61de83b8a2781d",
+    "research/issue-input-snapshots/undated-first-lane-2.json": "00dfa815b412cd05b2fb298887ed80515b62d90d547c6cbedb3a979903aa8a8e",
+    "research/issue-input-snapshots/undated-first-lane-3.json": "0abff0eb8d244017f248d695384df09678939f77caf2c2b3bef9d27991afd49a",
+    "research/issues-1900-1979-round11.json": "af1593171fdfd1a4f7dc804956ad8f737677d798f12f550ef360adbafead1565",
+    "research/issues-1900-1979-round12.json": "6a8f6066daabb4435de18e33ac78ac059551ac6fe2b24224c24799520b15daf7",
+    "research/issues-1900-1979-round14.json": "27fa7713176e42a594327f196dd62db7b622d8c422c866942e9020fe79397d7a",
+    "research/issues-before-1900-round2.json": "590eae36ab8cf4c50bac91e9bd449be7ba293d21a8dad43dfdae39bcd1838c3d",
+    "research/issues-before-1900-round3.json": "a7472e0cd2ecf6694c647e479a7fbe803408d8e0fa10ccb511462a9f2ae9fca1",
+    "research/issues-before-1900-round9.json": "a29a0e265e79c2159dad9222e659674338114e0406467cf58f5a4b49fa76ca27",
+    "research/issues-source-reading-round11.json": "896490728824032502741a55cd0afc1fe6cc003b77da861901a41e4df3df907f",
+    "research/issues-source-reading-round29.json": "506202638535957358bc47b31484861e67c1c067c7ec0e620f62bfe98c81bf83",
+    "research/issues-source-reading-round35.json": "79206b2c69c27e3938be8c3251500797972e01e1227c1ea97e721ed5d1782cf2",
+    "research/issues-source-reading-round4.json": "9dbc9be2f08455a36d0d6c122a7767d6ec8e35e6e1fc6548a422000a40ae00ff",
+    "research/issues-source-reading-round5.json": "a93c4e43ffce7ea589b0ed5d9f114592cf5111d430495a2c94b0b673fc39c86e",
+    "research/issues-source-reading-round57.json": "f5fc57232b839f8e11f5dd610e2c37ccb274fe7b6d8b02dc019eb4d96769b8ff",
+    "research/issues-source-reading-round6.json": "79958f6189e8ece7362d1f46f8854b2c9bfe43fce4373c2fb01d8a642bdef748",
+    "research/issues-source-reading-round63.json": "ffa8aa8aa8f584cb09a4c2ce1a574023b6e1f2b9858d732d27fc096608ed00e9",
+    "research/issues-source-reading-round64.json": "bf4e50a730bb4f33759729b62c49ea6660eed045f6fa0f0ea215212a2a54bcf4",
+    "research/issues-source-reading-round65.json": "3def16e91aca0ca8c4e81b4b053c4588993a627ec8980208ddafee96c2bba062",
+    "research/issues-source-reading-round66.json": "342baa92ef42e993d18a53de842c5376cec9c80ffcadf2d42566657bbd434f70",
+    "research/issues-source-reading-round68.json": "a0af5790628328624ec03a3ca6ccd44c90802bbacef5eaf690bcd6cba0ee64a7",
+    "research/issues-source-reading-round69.json": "f8e1dd3f45d96f9954e6a4e7d9fbc68704cd4899d17b5cc6eca0ce93a6094a85",
+    "research/issues-source-reading-round7.json": "dd43a05c70a68529f65e27d4bc3b924f5dd98abba4de5607436a1834a96bbaf8",
+    "research/issues-source-reading-round70.json": "2c680e2df3c92d54b14862a6f4a8534f3fc085e02b18c92c2d111b918f505178",
+    "research/issues-source-reading-round71.json": "c47cae33e17b1c31c037cc308e9b5dbf1dc6de75cb1aa8778edc5fe42cd22b17",
+    "research/issues-source-reading-round72.json": "3d89d465ed62a1a7e36508b75ee3574910bcbda734511e5f9508ab4dd4deaf59",
+    "research/issues-source-reading-round73.json": "e3793f7a9199f785c1d4344a606e20cc5be76371399153c2983c5d0940683175",
+    "research/issues-source-reading-round74.json": "7cda3635b7d34d1822a2b361f0a9260fb291676ed7330484b283ba4d1604b8d2",
+    "research/issues-source-reading-round76.json": "cbfad62fe210609781b16ec176940ebfd3a8a0de39cc9fc197cebfe2a0204935",
+    "research/issues-source-reading-round77.json": "cc23c9e956b5758068d01ae9b831aecc0d4608adcbf4e8681d8acf7ce4000c14",
+    "research/issues-source-reading-round8.json": "8d6cfcdf77347e135ffdf9f870207a0cfd213e2cc405600b48672c3a11f2b5bf",
+    "research/issues-source-reading-round82.json": "59261caea4d7bdcd84e9ce3e90fbab167670cd4c131d754f8630a5f6a1b3c3e1",
+    "research/issues-source-reading-round83.json": "e807b09a206aa337ea1604abf924309b55faead26c2178149d078efc1fb01650",
+    "research/issues-source-reading-round91.json": "718051f4032f7d9f62a5aa48f3e74d8315f61780cfff149501b26d2e71f8494c"
+  },
+  "fixed_id_to_file": {
+    "Q104904909": "early-published-spatial-selection11-round1.json",
+    "Q105962968": "early-published-spatial-selection11-round1.json",
+    "Q106594272": "early-published-spatial-selection11-round1.json",
+    "Q1070756": "early-published-spatial-selection11-round1.json",
+    "Q107723961": "early-published-spatial-selection11-round1.json",
+    "Q10911241": "early-published-spatial-selection11-round1.json",
+    "Q10928285": "early-published-spatial-selection11-round1.json",
+    "Q10932426": "early-published-spatial-selection11-round1.json",
+    "Q10937162": "early-published-spatial-selection11-round1.json",
+    "Q10942244": "early-published-spatial-selection11-round1.json",
+    "Q11042484": "early-published-spatial-selection11-round1.json",
+    "Q11122091": "early-published-spatial-selection11-round1.json",
+    "Q111804735": "early-published-spatial-selection11-round1.json",
+    "Q112223352": "early-published-spatial-selection11-round1.json",
+    "Q112687929": "early-published-spatial-selection11-round1.json",
+    "Q11286817": "early-published-spatial-selection11-round1.json",
+    "Q11291096": "early-published-spatial-selection11-round1.json",
+    "Q11352987": "early-published-spatial-selection11-round1.json",
+    "Q113630247": "early-published-spatial-selection11-round1.json",
+    "Q11502639": "early-published-spatial-selection11-round1.json",
+    "Q115477938": "early-published-spatial-selection11-round1.json",
+    "Q115592878": "early-published-spatial-selection11-round1.json",
+    "Q115596552": "early-published-spatial-selection11-round1.json",
+    "Q11625960": "early-published-spatial-selection11-round1.json",
+    "Q118732819": "early-published-spatial-selection11-round1.json",
+    "Q121085446": "early-published-spatial-selection11-round1.json",
+    "Q121382489": "early-published-spatial-selection11-round1.json",
+    "Q124819678": "early-published-spatial-selection11-round1.json",
+    "Q125123368": "early-published-spatial-selection11-round1.json",
+    "Q126377424": "early-published-spatial-selection11-round1.json",
+    "Q12728752": "early-published-spatial-selection11-round1.json",
+    "Q12732109": "early-published-spatial-selection11-round1.json",
+    "Q12810523": "early-published-spatial-selection11-round1.json",
+    "Q130237213": "early-published-spatial-selection11-round1.json",
+    "Q130297407": "early-published-spatial-selection11-round1.json",
+    "Q130343825": "early-published-spatial-selection11-round1.json",
+    "Q130542929": "early-published-spatial-selection11-round1.json",
+    "Q1314146": "early-published-spatial-selection11-round1.json",
+    "Q131994600": "early-published-spatial-selection11-round1.json",
+    "Q133311156": "early-published-spatial-selection11-round1.json",
+    "Q134007359": "early-published-spatial-selection11-round1.json",
+    "Q134556280": "early-published-spatial-selection11-round1.json",
+    "Q13471331": "early-published-spatial-selection11-round1.json",
+    "Q134885522": "early-published-spatial-selection11-round1.json",
+    "Q134931964": "early-published-spatial-selection11-round1.json",
+    "Q135185528": "early-published-spatial-selection11-round1.json",
+    "Q135298604": "early-published-spatial-selection11-round2.json",
+    "Q135508423": "early-published-spatial-selection11-round2.json",
+    "Q135525432": "early-published-spatial-selection11-round2.json",
+    "Q135990282": "early-published-spatial-selection11-round2.json",
+    "Q136709360": "early-published-spatial-selection11-round2.json",
+    "Q136956984": "early-published-spatial-selection11-round2.json",
+    "Q137988507": "early-published-spatial-selection11-round2.json",
+    "Q1383416": "early-published-spatial-selection11-round2.json",
+    "Q139750100": "early-published-spatial-selection11-round2.json",
+    "Q140128130": "early-published-spatial-selection11-round2.json",
+    "Q140722283": "early-published-spatial-selection11-round2.json",
+    "Q141265808": "early-published-spatial-selection11-round2.json",
+    "Q141514866": "early-published-spatial-selection11-round2.json",
+    "Q141630644": "early-published-spatial-selection11-round2.json",
+    "Q141630795": "early-published-spatial-selection11-round2.json",
+    "Q15033311": "early-published-spatial-selection11-round2.json",
+    "Q15033475": "early-published-spatial-selection11-round2.json",
+    "Q15638179": "early-published-spatial-selection11-round2.json",
+    "Q15875658": "early-published-spatial-selection11-round2.json",
+    "Q15885573": "early-published-spatial-selection11-round2.json",
+    "Q15907737": "early-published-spatial-selection11-round2.json",
+    "Q15912324": "early-published-spatial-selection11-round2.json",
+    "Q15930603": "early-published-spatial-selection11-round2.json",
+    "Q15935992": "early-published-spatial-selection11-round2.json",
+    "Q15936626": "early-published-spatial-selection11-round2.json",
+    "Q15938131": "early-published-spatial-selection11-round2.json",
+    "Q16068713": "early-published-spatial-selection11-round2.json",
+    "Q16344609": "early-published-spatial-selection11-round2.json",
+    "Q1883216": "early-published-spatial-selection11-round2.json",
+    "Q19520836": "early-published-spatial-selection11-round2.json",
+    "Q20514729": "early-published-spatial-selection11-round2.json",
+    "Q2070686": "early-published-spatial-selection11-round2.json",
+    "Q65040765": "early-published-spatial-selection11-round3.json",
+    "Q131517318": "early-published-spatial-selection11-round3.json",
+    "Q117321862": "early-published-spatial-selection11-round3.json",
+    "Q5755774": "early-published-spatial-selection11-round3.json",
+    "Q3138252": "early-published-spatial-selection11-round3.json",
+    "Q136490655": "early-published-spatial-selection11-round3.json",
+    "Q7759119": "early-published-spatial-selection11-round3.json",
+    "Q18418830": "early-published-spatial-selection11-round3.json",
+    "Q3227197": "early-published-spatial-selection11-round3.json",
+    "Q133954515": "early-published-spatial-selection11-round4.json",
+    "Q19916682": "early-published-spatial-selection11-round4.json",
+    "Q3571863": "early-published-spatial-selection11-round4.json",
+    "Q4660826": "early-published-spatial-selection11-round4.json",
+    "Q7493662": "early-published-spatial-selection11-round4.json",
+    "Q6929204": "early-published-spatial-selection11-round4.json",
+    "Q7718446": "early-published-spatial-selection11-round4.json",
+    "Q7741978": "early-published-spatial-selection11-round4.json",
+    "Q130724558": "early-published-spatial-selection11-round4.json",
+    "Q3504045": "early-published-spatial-selection11-round4.json",
+    "Q6929216": "early-published-spatial-selection11-round4.json",
+    "Q64495475": "early-published-spatial-selection11-round4.json",
+    "Q4676516": "early-published-spatial-selection11-round4.json",
+    "Q4010916": "early-published-spatial-selection11-round4.json",
+    "Q21400286": "early-published-spatial-selection11-round4.json",
+    "Q16677875": "early-published-spatial-selection11-round4.json",
+    "Q2838502": "early-published-spatial-selection11-round4.json",
+    "Q3226369": "early-published-spatial-selection11-round4.json",
+    "Q48899547": "early-published-spatial-selection11-round4.json",
+    "Q5287472": "early-published-spatial-selection11-round4.json",
+    "Q54800592": "early-published-spatial-selection11-round4.json",
+    "Q55163771": "early-published-spatial-selection11-round4.json",
+    "Q64831618": "early-published-spatial-selection11-round4.json",
+    "Q8025081": "early-published-spatial-selection11-round4.json",
+    "Q83884150": "early-published-spatial-selection11-round4.json"
+  },
+  "fixed_original_record_sha256": {
+    "Q104904909": "689212059d4c2f67ef9053e703e55400709a1344f3f60cb844aa3d8f616294c0",
+    "Q105962968": "bcd4bf30d8800b54d2cc8ef84f2d6f418ab139cb3caa1e8a72ed5a0fa5ed1732",
+    "Q106594272": "5ed8b099d876886a7be4fcc8721f1198894b7fd3904c70aab682f9b2e5ad9591",
+    "Q1070756": "69665e1c0ec46d0a7f22789efd06520db13b9b84e13ea8c39de6fb708c12399c",
+    "Q107723961": "434da90e46ee6743a399f7d1fc26a6ea728ff0c49329cdb065f004dfb7b08a50",
+    "Q10911241": "8b50a5e1402914de3f7e76b84725833ebeaf33b3ac47ee977a005fdd41395228",
+    "Q10928285": "23225ce49d6f3b6cf523768096740946ca9978f77caf2025783ce0f7863da943",
+    "Q10932426": "f6357cb82a26361689606550e8caa8277ce569182e45f5765d9b66fe7ef75031",
+    "Q10937162": "32dc86b42fc18eda0ac52723276af40e400acc722d186a7ccb0ca481073e4c79",
+    "Q10942244": "7430b462a5aa0911f462e29e5270b903f36c7307484fada2840025a6ae522070",
+    "Q11042484": "e0c08cb35814b9ed1a79d3966e838b492669f8b0b64006080b48f3a88d79fff9",
+    "Q11122091": "b7f58b542e8862d9302ba3c057f641e8cabc41268799c701accc153a1171111e",
+    "Q111804735": "de66357fe32bc494d8944c95739124a2ac0f1f38aa54665190fbfe00e76c121d",
+    "Q112223352": "83fd90641b96ab755f08516eb18bdc64d8fd93178bb645d6bef4865a8f76b071",
+    "Q112687929": "6fd8019c4efcafc24c6252294471ff1864ec7b19039412a4815dd1df928b67ae",
+    "Q11286817": "5cdc55fc56b62038fb99d3ad522256cabc8195d30691d964f5d0d22a47d7fe1c",
+    "Q11291096": "a8c811a93058b6dde3ff3e09f5b6a637b7dd20673541eeabb10b6d4c449e5ddf",
+    "Q11352987": "0eae7699698a412eb5c242e4440d56c5001b119cad2ab790a8655bd59ab29e80",
+    "Q113630247": "068dacb42ea9937329c9e760178e4636fa8201b1ea425a301a461e64a6c5eeb2",
+    "Q11502639": "c4a2c1800588e89e54d0fad37b00116ef5dda47e36867104096f7c942ef49f4e",
+    "Q115477938": "f8308978d42ac156a4dd009a0e0a8c2e737b1a71599496360620a2f15eee247e",
+    "Q115592878": "98a9f7bde3c70476cea514d2be962046eb8c6a5060e901ab5fbb8746ceaea77a",
+    "Q115596552": "c29ab094f0c918da7e23a41f8142eb2cba1d9a1374f266594654164abe868da7",
+    "Q11625960": "c733c9fb875d9a5fe51b360d89e61b16b7f6c7fd0ed596582953fb36d660368e",
+    "Q118732819": "13c68a638d0b8ff9962c56219d7d2bb56da9a624d13587e62a6d149b506fdf28",
+    "Q121085446": "c223b4e2b2a3efe14955bb24bfdc82d8fe6aae3236d356f012862bb0dc1b692d",
+    "Q121382489": "3188691f4e2dffc58e8cf1f2573431bed28e07837e8f060b6b7b03204401c3fe",
+    "Q124819678": "1bde0b03209f5efdbec5154d25eacacc29641fef27db3943e32ad548e488a776",
+    "Q125123368": "f0908050ef27c3fb9c242a15b2abe5aacc75fe41cafaf4544935c7c51be908bf",
+    "Q126377424": "cf3ccacc9dd81985aafef1b9b3a7da72444a8d772b66010db4ab8352ff691df6",
+    "Q12728752": "efbfc7dc7746b69f2cf30773d9d48fb9f1499e80528a85665410995c3f912785",
+    "Q12732109": "fec8bffe9638a2fbb4a7f9bfd25462a01c83675f13655d11a81c63fd48e94ef5",
+    "Q12810523": "272bcfb47244d9ffade6af3a40ab4e2d935cfdaa2991cb83ff9487d995985941",
+    "Q130237213": "5e7162d93eb46cad4e07e3c710130596afb74c86fd84187834748593e1fb8d9e",
+    "Q130297407": "b7de2649384960cfc07b0e706adb4636954117aa6d1c7a04cfaafc395b527943",
+    "Q130343825": "34caa0ab52a0fe1b3efef42b944cdafdbf5fdcdc63c30efe5a3a3d6238de6251",
+    "Q130542929": "b9b8a58862bf8225c516dfb255240e0004e9de7d4fab252ccd12a6b467402dab",
+    "Q1314146": "809927a24473cf16d52a100da0a446f1f620760cd8f9727eb88883250cb9e8ad",
+    "Q131994600": "366f0d90ca7c34376f3693e318f08d654e64f06a093a47dd3e5651f208e98e47",
+    "Q133311156": "e64f2c1fc0c23c84047a24c79745ae2c11e1f0851b43287f1be69cf37c7c8562",
+    "Q134007359": "c570b4f528ab79a3f5d8bd29ca01b97bc38ccbf2b117166b9706ce2c29c0ba4d",
+    "Q134556280": "d20c7801a62dc07869a6e8dee0fba9d42d89c7a304efff967c114be0aa64ee91",
+    "Q13471331": "67681254cd33f2f773001ed0fa2b957074f7401662d4fa4b960873a69f3373b4",
+    "Q134885522": "ba36711fc1dbde9a274313ef65b91b33351b2bebad236a7f31944182c85a81e7",
+    "Q134931964": "d2e152f6b1f33307297f9e8fa309954db54471634035360af751a461dd6273ad",
+    "Q135185528": "b57087fd39e803e68847883181464a6834530c6605779dd7cbb28929749ecd34",
+    "Q135298604": "1ada5bf5627ec5bcad0a341fbc8510aee0f6d1baff220886363b8ef104ba1e12",
+    "Q135508423": "986abe89fc57899fd883b5b8f94afc8e9af63d0d3d57f793eb2ed7ac3fab2cfd",
+    "Q135525432": "e3f889802317214daafcab1ed811bdafd445c0d76194ea6c4bbae9f5ff343ae3",
+    "Q135990282": "8162eedd223e41ccdf4efa43814c079f12c7163350ec71e770db710b00ff7464",
+    "Q136709360": "754a74b0365fcb547a143d9cc1c3f3219cb24efa8c12dd7ea121bd109d3a32e5",
+    "Q136956984": "9c5e1ac0fdaafdb9664c95fd1342df0c72cf60f79af1e08742fd365a40f37981",
+    "Q137988507": "e20a3a8f3d15436a921f37aa714e8d80ae4f8ba92f87ce0a10d72949d71fac0c",
+    "Q1383416": "5b2cbb6c362a3c48ed941ec92b9c4f29835fcb5c7beb5d25f16146c4c95cbbf5",
+    "Q139750100": "b553a2b46146ce1dc5d04d6830a5f9c91af353071ff5b41395584aa704908d67",
+    "Q140128130": "fa71a18ea07603471738c914f176ff6b6108631d41a59c3aa5e12078a2a8ad2d",
+    "Q140722283": "44b0acf97c93400647720724dec0cdc1f8d30519029c732118cd0a21cfadf786",
+    "Q141265808": "0193befaed935af23f84740b0ed6fcbe8ddff1738906263129237b5aedc172b9",
+    "Q141514866": "4e887b9a3a635562b64e6b1e17c5c43429f46de8d6b9528a8b5f43bbb607248e",
+    "Q141630644": "54ff7e15c6d92a67b12cce4bc0fd5805d6144720657518a537ba30009b259e5e",
+    "Q141630795": "6b9c591b55832380118eed1ee4f5bad120e4b50a908688c81fc831b3b99c216a",
+    "Q15033311": "fd5b592c9b89fc85e1d6794ba142782320156d45ec0fb2b913229e27eff1c81c",
+    "Q15033475": "c7b1a3e2a44df7cf58ed81023236352382b63727455f9e06c6cc7a243ab1f958",
+    "Q15638179": "6d82e374efa1bc1d09efef88e022beb3c507c8a7d9de306fe7ac712001b8a190",
+    "Q15875658": "51cc94308727741ccb5157731ecc62de8f1268a755591756a292377dd99d1341",
+    "Q15885573": "f948f84fdee76bd376d7c43ab615a6df9867d7f0cffb477a620c2d605b4fec79",
+    "Q15907737": "f87a84fedf8f36c5abfc31d13ea8f1c582d51edc212de37653996761dfa45227",
+    "Q15912324": "56e43ff9290b4278300dcfeff49c59efcd317c77ecd7f7b00d2f393a1ba1b81f",
+    "Q15930603": "bc0c5db4e37050b0ec52b23b8a05e3a823c0861abb9c677aa7ea68a92c98e4f1",
+    "Q15935992": "ab6ac654036c1db227a64fd98dfb232ff9129ff83b91612d3f03a29fbddbd18a",
+    "Q15936626": "f2fa7ff4319f350661a67028a0168b017591721a1d2401c370a0c3bcc46fcbaf",
+    "Q15938131": "d9611db1f4d055c7867c1f013fd6fdf89c8ace6bedbe6cf8b8906a438d2fa1f0",
+    "Q16068713": "530a05a9eded8da2ed92ea581a714d724525cb8849aee5b10fa224bf4e0cbad5",
+    "Q16344609": "30465804b224c5a06e9e464be94ef3b1a4111d06387babaced1d9bf08c728c03",
+    "Q1883216": "f961041bdae7cc0377da3e0f4a889da08adf8aab2854366ffe9d88f3aa9425f3",
+    "Q19520836": "70fe07e95c1d9bb9cfeea314aa3a60fb41415e91c372e46ff48ccb9bac2da75f",
+    "Q20514729": "c24468aadfd22bcb4774891d5dcd265d433ecd2b6c859fe92da7b38ff2a5ede0",
+    "Q2070686": "7f631d00e3b3f9afffa522a9efed326ad66bd0de0c5b97d7803d66dbfa0eb6a9",
+    "Q65040765": "f88a9310b65ef724f55ff1826ee6fbab357dd054765df4acb0b4f1407780dbfc",
+    "Q131517318": "a2fe8448e9bfc1d0b95cafc60113a9db9b5e5a2955437702a26cdbf35ebcdd39",
+    "Q117321862": "4ff1a5cb49e07ffff04ceb9a43915dc5a67f23dbbc1b4d2b6c4974aa3040120c",
+    "Q5755774": "fb9dad0e281a3413d2409495a3f245c5ecd1c66e043b99f1a447f12f53c18ec7",
+    "Q3138252": "2e8b7b5cded60c85b48e08dd20240a8864c759412f2ccb617efe481e40104659",
+    "Q136490655": "59d5dc93b6a0d29f3d58c518fb5b6fb4671328184d8d65b24c35ded42109e795",
+    "Q7759119": "3f555e837cec2286d9b5caa40e626a552295ff7086aa1de97a42849f74148229",
+    "Q18418830": "65ad93ec03c272ee363cd92543228a9030a68e6eb590618933e0e0ded9e8d92b",
+    "Q3227197": "dcbd57c09c7452d10f04540dfc96528e94cabc9e78e147e2d5b812902663ecea",
+    "Q133954515": "14932b0415451e80cee5e5adea98feaebcfcdc6813675459d55166e592813041",
+    "Q19916682": "8ac83db053f58b7ccf94f0ea9de51c98793fa168908fa92d9d4125c29dce56b0",
+    "Q3571863": "b374d5421c6ccebbf50012dff680142ad4c355aa7b65299133b1be6f689cd134",
+    "Q4660826": "6b8e2f18828ea37fd9bbc1a7d54c8c8a35ec94c97281ca71437a08351e12d24c",
+    "Q7493662": "e228ac9ede87e51d93a1ba4b375bba90be1be45003cf41e5d5cb9f7d260c8cce",
+    "Q6929204": "ece969823b64d1065d41b42598694d7e13ab08e1fe74139748e063cfb8f5a7fd",
+    "Q7718446": "c019ae67465936110cf88ed7731020ee1337a8b77ee409ddd274cd17b3a5737c",
+    "Q7741978": "2fd9c2c93f87a4d2b1f49679b5082e1f57ff008c8b581af537a6b672cda98785",
+    "Q130724558": "71689cfd12a4e6f4deb1c3f4ed49f5a4dc4499699c1475b14fb6ba3cd21a0214",
+    "Q3504045": "a47c52642cf549d492704121b79425729c48dc4c77e4a30e1fafab6beb568447",
+    "Q6929216": "dd26364b65375301cbb81bfa9519a190f8a9f856a90e06bc16212e0bd78e3f0b",
+    "Q64495475": "583b2e0dda5b5bf33061757bd82ab53e50c7af54e4239b5d896cee476327b371",
+    "Q4676516": "4f12798d27a660e86ee551353f728a004d98912ebcebff44d61a87ed0846e93e",
+    "Q4010916": "14015f60b2d8f5903bcb7be54a6683b2c82b9ac055606f2dbd70bd3d170c08ae",
+    "Q21400286": "ff9a7df3c092529b1341dfa080efd1b218f25c1d459b791bac9d584d57effc5c",
+    "Q16677875": "1c966098d9eae5e175b96e2b9b2fc63c947f30ab855de465fa2169c7b40c8b63",
+    "Q2838502": "603f3ebcff0f0191448e824070c9afe5c0d0e364b084cd998bd5a0b4dcebe11e",
+    "Q3226369": "79b3eb22ade5abfc6ea0b64d8bf5d4d081dd83d1416fec2ce2c4f2f05ab7d07e",
+    "Q48899547": "02533758116fa3ac38bc1a452951b5836a82156b2f4a7a1bdfee3a8d7dc995b4",
+    "Q5287472": "518cab1c9b7e8fa91759841a3641e67821094681cb7fc05d4c3095281d34c8bf",
+    "Q54800592": "487069030cbcb390c88e66b65213ad40bf9e7981ee166bba330c62bfcd5c00b3",
+    "Q55163771": "8a9a547d3b781db27752fdf8516cfb478ddf3dd52abd171ec3a5f5e725a47942",
+    "Q64831618": "9d37c998a1736a71e6bf33f1fbe05b29c02ea977ee59c497d7c932d25975be16",
+    "Q8025081": "393145e8095f1e70cbed9335665569834f1a8da67f7ff4cfdac4d9929ac06a2a",
+    "Q83884150": "b0dfcbcba15ce6c9ab5958de712401708df5236f5682bb9a28cf1ebbee7a7ff9"
+  },
+  "original_checkpoint_declarations": {
+    "early-published-spatial-selection11-round1.json": {
+      "file": "early-published-spatial-expansion-selection11.json",
+      "sha256": "6cc76521ef13c846de0b5b14e096589915278c3bcb446d9f6f287998ebc44e5c",
+      "start": 0,
+      "end": 50,
+      "record_count": 46,
+      "deferred_count": 4,
+      "metadata_sha256": "701338a2ec3617dd609f96dee2bf3b96300cdbba08a25e24254f9facc3479a9f",
+      "deferred_sha256": "79ac0ac0ffe3720569e2599b126f3ee0fd46055b6f476df63e470f8f1d8653af"
+    },
+    "early-published-spatial-selection11-round2.json": {
+      "file": "early-published-spatial-expansion-selection11.json",
+      "sha256": "6cc76521ef13c846de0b5b14e096589915278c3bcb446d9f6f287998ebc44e5c",
+      "start": 50,
+      "end": 100,
+      "record_count": 32,
+      "deferred_count": 18,
+      "metadata_sha256": "a666fb65d6a5eb17d6d4c0bfc72aa3ec87aca299b69fda0ae2fae659f534f6ba",
+      "deferred_sha256": "7f673251da47860398f8881e9102a464c7408dec8dcdf88582ec045545c09cb2"
+    },
+    "early-published-spatial-selection11-round3.json": {
+      "file": "early-published-spatial-expansion-selection11.json",
+      "sha256": "6cc76521ef13c846de0b5b14e096589915278c3bcb446d9f6f287998ebc44e5c",
+      "start": 100,
+      "end": 150,
+      "record_count": 9,
+      "deferred_count": 41,
+      "metadata_sha256": "4477b3593d0844030a8b567bb8a3f0d628a551df12dce2d0b9059e18638bb003",
+      "deferred_sha256": "9d1eb76373e9828b541778b6ae49d18cfde2539989f3aca4366c513740793d05"
+    },
+    "early-published-spatial-selection11-round4.json": {
+      "file": "early-published-spatial-expansion-selection11.json",
+      "sha256": "6cc76521ef13c846de0b5b14e096589915278c3bcb446d9f6f287998ebc44e5c",
+      "start": 150,
+      "end": 200,
+      "record_count": 25,
+      "deferred_count": 25,
+      "metadata_sha256": "01415310c72cf188f4672fed84d83b230e374dbd10e3b0e48442a5b9fd2dd1d4",
+      "deferred_sha256": "766203350c00353453d9bea260d678d2062b130aaeed7af30e1267ee11030d8b"
+    }
+  },
+  "fixed_review_by_id": {
+    "Q104904909": {
+      "record_sha256": "6e440d0723fbff6ac7cd0107d14d3d794589ded9a9b95e3d5f202636f682593c"
+    },
+    "Q105962968": {
+      "record_sha256": "50f8329e0a8b5da061356d7fd0adc4cddc384310e90806f9214541012957af27"
+    },
+    "Q106594272": {
+      "record_sha256": "3957e84bb076852d425ee9348f8dbe55d95cab1c07acdaa9e52875ac781a2604"
+    },
+    "Q1070756": {
+      "record_sha256": "8427267e4f05c1cd727aa4ee7c9dd79a3fa4beeec76a71cd26b48f287faa1589"
+    },
+    "Q107723961": {
+      "record_sha256": "53c1abf796e711bc45588931b70a4ffe48064dc1bfe4241762208d8fa635d2d1"
+    },
+    "Q10911241": {
+      "record_sha256": "ed4fc0bb0c73131dd6d6116e040788b2f4a97abef79a0acb94ae4d21aa1b029b"
+    },
+    "Q10928285": {
+      "record_sha256": "cb29a6dcee44aba766ef1b9502e03d170b10c439dcbdcfeda2c8c78f143cfa41"
+    },
+    "Q10932426": {
+      "record_sha256": "608e0e8541b9465ff61a771986c20aa53c5a8f4af8b2bb11f66556d53bcf195b"
+    },
+    "Q10937162": {
+      "record_sha256": "640653e48a2e8eee831f40c8387526d82ee21124d2e3c9f90e640eeef421abd0"
+    },
+    "Q10942244": {
+      "record_sha256": "74d3080b62452741eacde13dc9516639107e357075259d97d31d5e3a2596bd70"
+    },
+    "Q11042484": {
+      "record_sha256": "d05c9ed6f3fa7d560c6f7a541d69dde13a581327e9bff3d22d604a24f9281db7"
+    },
+    "Q11122091": {
+      "record_sha256": "fe8ae745e1809f1c9eab68699515b1aa2fa4bfbf4aaba863fd34d190ee8d68bd"
+    },
+    "Q111804735": {
+      "record_sha256": "16cf6f11d152501226692e14e017396bb1ca5945b3ca8aeceac1bded38a14dd6"
+    },
+    "Q112223352": {
+      "record_sha256": "010b26b8c825bbd96cfdb0ed7897fbc6c8d719ed29b523380efe4cbce61644dc"
+    },
+    "Q112687929": {
+      "record_sha256": "bf7182e5db65d51f19413c26e7b708dabe609a3ef4111595f6ab9832ea5a7c9f"
+    },
+    "Q11286817": {
+      "record_sha256": "7485daa67f6a7edd88a36df5c0d9ad5de94d052421a7a6c7ea07ca1bbc9052f1"
+    },
+    "Q11291096": {
+      "record_sha256": "d0a81a55394bf4f541cff5815a223ed8f13c7ac0b790d4ad51dd34ddc3d80e2c"
+    },
+    "Q11352987": {
+      "record_sha256": "cb979d32f6f3b033b32baf4cb635e3a77b99b94ad6628be00cc53c09698388f9"
+    },
+    "Q113630247": {
+      "record_sha256": "89f7adfb259fd2ce4de6ac18b64b4f72b5dad1f8165bf0170f769d0defec1f4f"
+    },
+    "Q11502639": {
+      "record_sha256": "5064dbf66882b62869f9a170537ef3401e4bf35857016157c65b5ca51b1380c5"
+    },
+    "Q115477938": {
+      "record_sha256": "4dcc923b3a79a5f5aa781784d3b80be90f222fefdef13b3b96449d222c5f70f1"
+    },
+    "Q115592878": {
+      "record_sha256": "94bec953b8610955d8345d0f604cd5732e74100c9df5f350a70e034f1aa2a8a3"
+    },
+    "Q115596552": {
+      "record_sha256": "daa01c3bb4eb60c0e8a75ff927662fe698c94ae78fbbe6547041f65a187b5efc"
+    },
+    "Q11625960": {
+      "record_sha256": "de96c721e8f05bf5d5db9379f11a669dfbb487600438982afba432d805d75bbf"
+    },
+    "Q118732819": {
+      "record_sha256": "18dd44600a33d3ec960b498d9520a151b4ec18641beac964d87e95d228736e45"
+    },
+    "Q121085446": {
+      "record_sha256": "d06183372cd6e67d9927cb4f74eb1f7ae0ea45eb314a59f422a41d2b88389251"
+    },
+    "Q121382489": {
+      "record_sha256": "6116625f38904dc6917acf17b5766c2747f8ccf4dab395d6f7f8ad65d06b97c1"
+    },
+    "Q124819678": {
+      "record_sha256": "94dc693da6070a9415603f5de900eaef157a6f205cb6a22e06fb9f2d28f29ea2"
+    },
+    "Q125123368": {
+      "record_sha256": "878f67e710ab25668f67a1b35a3b07d83f2dc705fbb4e1838627d63d5bd45644"
+    },
+    "Q126377424": {
+      "record_sha256": "f91a56493ee1117446c8f364eb122e3c9fd875542fc1fced16bb79da1c5916e6"
+    },
+    "Q12728752": {
+      "record_sha256": "dd3ec84fb6e7a7093acacc3023a48069cdf0a1e80c5d129730b39384bac32d58"
+    },
+    "Q12732109": {
+      "record_sha256": "156576523c0251126343d8b74f3edc143e0d9f1289aa34ca2d28574cbe457688"
+    },
+    "Q12810523": {
+      "record_sha256": "2ac767c0cf8040f46c1e2fb5a008d555c16192d8c1306cbe397071722d0c146b"
+    },
+    "Q130237213": {
+      "record_sha256": "85c365d9415e1ec864a81881db934ba8a0ec5e269679dec6b3999db095e6e22f"
+    },
+    "Q130297407": {
+      "record_sha256": "c8591619a8d0caf0295d9a930a7ee374f955c7b096b1f72aea71866b79462e19"
+    },
+    "Q130343825": {
+      "record_sha256": "73f1fe44c629657bff459f6f9c1aed3f653dc0fd9f3bc6376270ca114542db31"
+    },
+    "Q130542929": {
+      "record_sha256": "1aef26913f21b263d756c6f0ff79ef847cc71c8e768a7d5e4dc6d2025906025c"
+    },
+    "Q1314146": {
+      "record_sha256": "3a23cb88cf4a3e8cb011cc83fd115771be42d5f250484e738a45273accf7b435"
+    },
+    "Q131994600": {
+      "record_sha256": "b6fddff62413a602388991217f42aef69e332efc73b80ee3944a7d3cc81bc2a3"
+    },
+    "Q133311156": {
+      "record_sha256": "b08e0e2f1ed05b755ef0f7befcc25886cedb19190f543f80454d2c9ff34c611f"
+    },
+    "Q134007359": {
+      "record_sha256": "8eab979f46da8694be1e6231c636f5696387aff0d9468b48c17243d7b84034f8"
+    },
+    "Q134556280": {
+      "record_sha256": "0a8bbe59999f092838b8e1edd7a1a0d5ae0132978807be2354878d6a25081903"
+    },
+    "Q13471331": {
+      "record_sha256": "e2899d5984f729629ef79de28cd89123d99c8d774954bd1fcc788bce0044154e"
+    },
+    "Q134885522": {
+      "record_sha256": "45023b39550b0609c8c371c12162a05aab6e0614e0d33e3a2b2dbe2c909433b0"
+    },
+    "Q134931964": {
+      "record_sha256": "5f81494f9688de55db612f2ad355ed777598200020b23a412ab0cf638aaa4ddf"
+    },
+    "Q135185528": {
+      "record_sha256": "f286bac6bbce9d9b1a994c2d35120114c5e362fa7da6bb55c85d57dbcc1560a6"
+    },
+    "Q135298604": {
+      "record_sha256": "1246c81c3509632fefaa84954b91e8d2b647ac9e5af11628625a6c368f570930"
+    },
+    "Q135508423": {
+      "record_sha256": "9e9ccdec25901c85916e51383991e9dd316d839f01bb742448f1890d286e1775"
+    },
+    "Q135525432": {
+      "record_sha256": "e93a2f90d3988446c615f77025be4529a5f6b8942083c2ac940c22074fafc483"
+    },
+    "Q135990282": {
+      "record_sha256": "75102c03064174a85367550f8cc837cc3eb7e6a967bd492247fa8b30c6ab95ef"
+    },
+    "Q136709360": {
+      "record_sha256": "ddad7a3da6ffef85e60041c4df885c564c5c4e2df45a9e7fa775618daf9bec47"
+    },
+    "Q136956984": {
+      "record_sha256": "3b6ce3b27363c5e3a2fbf382a97763b11ba7d36080b00cbaedc5eb6c1051e7bf"
+    },
+    "Q137988507": {
+      "record_sha256": "f4ae4e3a5c5e71c225bce30a140728005dae4845f5be4d5226befdddb422dabe"
+    },
+    "Q1383416": {
+      "record_sha256": "cdee721dbf454b7ef52aaec7f724b8a766b5aa831504fa8489fd6407bafeb925"
+    },
+    "Q139750100": {
+      "record_sha256": "b550028608e794f4ab05cd92bd022f31d958f026996545c37132c485e9538ad9"
+    },
+    "Q140128130": {
+      "record_sha256": "5d1538290a81178011b658de202ba1ff3b21bb3508c9904e1e7d607232cd6f3f"
+    },
+    "Q140722283": {
+      "record_sha256": "2fcc3b9f464301f8a469e8184b373a62c895f76286665ecfc8a01e6fc6fcdd96"
+    },
+    "Q141265808": {
+      "record_sha256": "d3031bf97bcbdb4f7ceb98ac48ece7c384b3e0cdf15b86008f270e956f71e0a3"
+    },
+    "Q141514866": {
+      "record_sha256": "604bd27bac50565f21b27ad61e02c6de165f86ec603ae9485b5910c8d45d8b7e"
+    },
+    "Q141630644": {
+      "record_sha256": "07e086fcf95bb67d005cce894d251d49172971263e4a7464647bae314c419580"
+    },
+    "Q141630795": {
+      "record_sha256": "42e68dbbbdc62d5ea76e2b5c1f700be70215bd87d7509f952f85615394de5715"
+    },
+    "Q15033311": {
+      "record_sha256": "1f4d7033144f41dc5e34d70bf160b24ae2b45857701ccd61e2d683c11bb82762"
+    },
+    "Q15033475": {
+      "record_sha256": "96b41435286595bc6275667dd521e1887e389b67ef2574654bfa94e7986deba9"
+    },
+    "Q15638179": {
+      "record_sha256": "72438a7335ced7c5193d46e297653fa1e9580c3f467c04dc32cfb5131c6d6460"
+    },
+    "Q15875658": {
+      "record_sha256": "8fe48a33443dfafced865553b95a354f11492d59b49c2b2145068cfec9866ec5"
+    },
+    "Q15885573": {
+      "record_sha256": "5f76947b119a92547f64d3d01dff6fbb51971cd2ca4034ec5868cc22837cfef1"
+    },
+    "Q15907737": {
+      "record_sha256": "fd364b8e51ae2f20562193b8a6d8f37fdba3ff2e44bb663617dc9fe8cb544ec3"
+    },
+    "Q15912324": {
+      "record_sha256": "3a1f8e24b94338e51d5e2c8ed7172ad378feba69fba2c6a2a9d0062e1dcd18c5"
+    },
+    "Q15930603": {
+      "record_sha256": "831975159ec2a60f7805eb75d70f8691b521077683bb29b8dcf42daae2642820"
+    },
+    "Q15935992": {
+      "record_sha256": "e2ef95aa57bcab83a370bc5d188ac756a37b25a1ee2f326adeb91bd33905385c"
+    },
+    "Q15936626": {
+      "record_sha256": "14f92750508094aa643cca2ee3cf1a8ce0d70eebddf03b376ef60fe3828cfa44"
+    },
+    "Q15938131": {
+      "record_sha256": "6be77c48c0a24990683272edefcb5626a06416a508f108282d5fe962237d2907"
+    },
+    "Q16068713": {
+      "record_sha256": "a3ccce9232f914b91656a0206a80138019ae8b15483caa1135941faf05bbd62e"
+    },
+    "Q16344609": {
+      "record_sha256": "80d9cde96b916ca62ed545d70181366cdb8efdebbf7f77042538084fc51b5430"
+    },
+    "Q1883216": {
+      "record_sha256": "30a38989f29e9927a8d5081a354487f91aa8aef452dc8103ec1850eea136a6c9"
+    },
+    "Q19520836": {
+      "record_sha256": "c6523e86489a4b0fc40b61ce890c0b86369775cd9e337287f77ae4adf322d67b"
+    },
+    "Q20514729": {
+      "record_sha256": "3b427901b529d6feaa4011e991867f380391b7229064e05795427682a602a161"
+    },
+    "Q2070686": {
+      "record_sha256": "6d289a392f3ec8b269b5e78a60e176eea9fcd5972b2bcc0c81058e64a4811dca"
+    },
+    "Q65040765": {
+      "record_sha256": "6876dc83ff9f1cd0e0eb569c9dc1d269dbee54141dfeb01d94c3bbd7126b5400"
+    },
+    "Q131517318": {
+      "record_sha256": "e18d8d0d77dfe4ed597a8ca6124d01c69d2f57819cf9a4e4fdb63b8f4d00e5b7"
+    },
+    "Q117321862": {
+      "record_sha256": "0d09ce9582c19f260cf41cfc1bffab70d855f842009f3405868dc5b8aa7ccaa3"
+    },
+    "Q5755774": {
+      "record_sha256": "66319627fea09524aebe77cfb39b8e2bcae59d9e712cf2b42a064062cf79558f"
+    },
+    "Q3138252": {
+      "record_sha256": "49cbb217ad8a23a581bb6e36728b4b9b28ea601ec9418d2d45796a56d9166b66"
+    },
+    "Q136490655": {
+      "record_sha256": "d1dc4cdca0b9daa06dddfe331d4013136dcb87137e845ef042a0e46062461dee"
+    },
+    "Q7759119": {
+      "record_sha256": "0115eb27b31ca614c81a1192ae3c4c37a799f9f3bc83f5cb891ee4f828e4a0aa"
+    },
+    "Q18418830": {
+      "record_sha256": "8132b24c1384b98b6f82510baa9359122804def931aef18662973bc82241f1fd"
+    },
+    "Q3227197": {
+      "record_sha256": "1f418bd4d746d14ea247457f35adcdf66dd3a4229bff3803eeb66e53f106a54e"
+    },
+    "Q133954515": {
+      "record_sha256": "6bfa35669a32be1c10dd311f8e9ba5fb5f440cf31128f880d64984e2f5ebfabc"
+    },
+    "Q19916682": {
+      "record_sha256": "afbe03a64996b94fcedc9425ca693d037838c197bfbafe4a889701354ab153b9"
+    },
+    "Q3571863": {
+      "record_sha256": "0aa0353a1ab1c79c8d8e7e25ff018b3b7fe0c0e8c6b7d58ad0ba053e895b78e1"
+    },
+    "Q4660826": {
+      "record_sha256": "bcf3090dbdc47eeccd0061f613dbcf1939c1e77ce72636a58c3d0dd8c5e6f8fe"
+    },
+    "Q7493662": {
+      "record_sha256": "50e4b68f63e15234612bc051527eed2cd72746d0d7aa6b07c9829362549d841d"
+    },
+    "Q6929204": {
+      "record_sha256": "5d69e3cd02247b43cdeaac33512aaeb7ee3365f6d552c6fd95ab2e3032270d03"
+    },
+    "Q7718446": {
+      "record_sha256": "b4f9368eaad7680976a26f96915a15350eed2c517512b88d380f149d47436e79"
+    },
+    "Q7741978": {
+      "record_sha256": "fab10e542af487ed4971dce165bca5e9bcb0435d5f76abc0ba993206e1ce91a8"
+    },
+    "Q130724558": {
+      "record_sha256": "aca5da08a01452437eaa2ced0fa219f90feacfceef2b8eb4f8df786fe4fc0537"
+    },
+    "Q3504045": {
+      "record_sha256": "a0c5928aaf279113dcdadb73c9f1c2f53689e8511a156c275b90f94fc3b9da06"
+    },
+    "Q6929216": {
+      "record_sha256": "7bc7181e76a6765e02f6088115bc7f26aac987136bc6e509d46a0bcc4e4a8be8"
+    },
+    "Q64495475": {
+      "record_sha256": "0d6664166ebd9782c7f872565e80a0fe2fcf82fb276569a3ee4df0d72d629c99"
+    },
+    "Q4676516": {
+      "record_sha256": "0128a2efdaa0fc382a52b6a029b9e7f5b49ab44a02646bc11ee58e8f10fe6575"
+    },
+    "Q4010916": {
+      "record_sha256": "db24fd7c28da45cdcdc705ee635f4bee1f31402b34bad12fb193c986c17f9fad"
+    },
+    "Q21400286": {
+      "record_sha256": "24fe7a70d2602f4377ff45438a2790a9f3ee6c200a634981949b3f63120598e5"
+    },
+    "Q16677875": {
+      "record_sha256": "84ef60ad3e57b18143b6bbdfa3bab861261f529c04fbef55e28abc7ba4436826"
+    },
+    "Q2838502": {
+      "record_sha256": "fe7ad3828242bb825819eb764df671d94e728c35aa7b5d78e6f114310fc7e55c"
+    },
+    "Q3226369": {
+      "record_sha256": "073132e368d38952818eaba3adcc9f795fa89fc135a7835ec506eca7d2aaf2c9"
+    },
+    "Q48899547": {
+      "record_sha256": "e6862c8afa07aa20b5614d9b0fb14ecc832180b68b9b1ad3f7a2b8aaf568ed51"
+    },
+    "Q5287472": {
+      "record_sha256": "a4519613169468b368efaa83713cfe12698619cb10890a7b7e15f721ab1eff86"
+    },
+    "Q54800592": {
+      "record_sha256": "9853a12079d03f2a3a35e3422271eddfad467a78119b3936472b1aa8760d9fff"
+    },
+    "Q55163771": {
+      "record_sha256": "8d46464df5d8025a3ed1ef31ef78f6b0a3a840ec626d3392c5381c3fd0a17055"
+    },
+    "Q64831618": {
+      "record_sha256": "4a2f3104cb264c72dc6a216b58f8b4d1481f64dad7ca7184391234ff297bb89c"
+    },
+    "Q8025081": {
+      "record_sha256": "8f27def4bd439d6e78b91559bb95939bfaac315e864aac019b44664ee472d402"
+    },
+    "Q83884150": {
+      "record_sha256": "1921b04c469df153890e1d0ca23c10e8978d2a3e302cbec712c141a34c30395d"
+    }
+  },
+  "fixed_adapter_by_id": {},
+  "fixed_adapter_documents": {},
+  "fixed_peer_review_files": [],
+  "withheld_ids": [
+    "Q106811124",
+    "Q113495282",
+    "Q133790187",
+    "Q133799680",
+    "Q141189175",
+    "Q140307965",
+    "Q136242770",
+    "Q136804331",
+    "Q141429680",
+    "Q135010384",
+    "Q131461946",
+    "Q137737525",
+    "Q118497814",
+    "Q30096194",
+    "Q27891505",
+    "Q17986166",
+    "Q30002253",
+    "Q5571516",
+    "Q11298650",
+    "Q133800814",
+    "Q134715906",
+    "Q134207628",
+    "Q138643865",
+    "Q121982749",
+    "Q134612614",
+    "Q2861420",
+    "Q135185527",
+    "Q131471763",
+    "Q133790208",
+    "Q121924449",
+    "Q124809778",
+    "Q16622819",
+    "Q7750120",
+    "Q134583574",
+    "Q2413610",
+    "Q104784829",
+    "Q135094258",
+    "Q133954574",
+    "Q3138250",
+    "Q131445312",
+    "Q131472139",
+    "Q131308004",
+    "Q121742313",
+    "Q5473984",
+    "Q122581103",
+    "Q131471937",
+    "Q134583625",
+    "Q134459313",
+    "Q122581044",
+    "Q3924414",
+    "Q60771436",
+    "Q4262252",
+    "Q4811128",
+    "Q122581006",
+    "Q15876333",
+    "Q5521912",
+    "Q47044567",
+    "Q134583644",
+    "Q47007736",
+    "Q16385572",
+    "Q104144914",
+    "Q131300986",
+    "Q17114251",
+    "Q60838422",
+    "Q7012690",
+    "Q139781296",
+    "Q18414149",
+    "Q103891446",
+    "Q5265142",
+    "Q19109874",
+    "Q122150458",
+    "Q7730297",
+    "Q7736127",
+    "Q133801443",
+    "Q139884163",
+    "Q139884592",
+    "Q16386665",
+    "Q19678877",
+    "Q7727469",
+    "Q96461773",
+    "Q7751341",
+    "Q140043711",
+    "Q133849231",
+    "Q54806906",
+    "Q54807171",
+    "Q55082637",
+    "Q55230514",
+    "Q55230548"
+  ],
+  "deferred_original_records_sha256": "9b2963fb0020b8d34e2968ce19ca177df8095369315265b7f89f1a7d78fa39e6"
+}
