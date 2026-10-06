@@ -1,3 +1,4 @@
+import {resolveR93PreservedScopedCandidateLog} from './round93-preserved-scoped-candidate-log-v1.mjs';
 import {isV22BibliographicFormReview,validateV22BibliographicFormReview} from './classification-v22-bibliographic-review-guard.mjs';
 import {resolveR89PreservedScopedCandidateLog} from './round89-preserved-scoped-candidate-log.mjs';
 import {validateR89FormHistoryCandidate} from './round89-form-history-validator.mjs';
@@ -150,7 +151,7 @@ for(const candidate of registry.discovery_candidates||[]){
         material.url===url && material.actual_bibliographic_source_read===true &&
         material.actual_content_source_read===false && material.reading_scope)));
     }else if(evidence.discovery_source_mode==='scoped_candidate_no_core_analysis'){
-      const scopedCandidateLog=resolveR89PreservedScopedCandidateLog(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)}).log;
+      const scopedCandidateLog=resolveR93PreservedScopedCandidateLog(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)}).log;
       assert.equal(evidence.actual_content_source_read,true);
       assert.equal(evidence.knowledge_analysis,false);
       assert.equal(work.issue_analysis_status,'missing');

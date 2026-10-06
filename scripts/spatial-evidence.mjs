@@ -1,3 +1,5 @@
+import {isEarlySelection6PublishedSpatialRecord,validateEarlySelection6PublishedSpatialEvidence} from './early-published-spatial-selection6-evidence-v1.mjs';
+import {isR93FixedSameBatchSpatialRecord,validateR93FixedSameBatchSpatialEvidence} from './r93-fixed-samebatch-spatial-evidence-v1.mjs';
 // Isolated fixed-input extensions; earlier R88 and R87 guards are preserved.
 import {validateSpatialEvidence as validateEarlier,initialResearchSpatialBuildArguments as earlierBuildArguments} from './spatial-evidence-r88-preserved.mjs';
 import {isEarlyS7SpatialRecord,validateEarlyS7SpatialEvidence} from './early-s7-spatial-evidence-v2.mjs';
@@ -18,6 +20,8 @@ function modernIds(phase,getIds,options){
 }
 export function initialResearchSpatialBuildArguments(record,options={}){return earlierBuildArguments(record,options);}
 export function validateSpatialEvidence(record,options={}){
+ if(isEarlySelection6PublishedSpatialRecord(record))return validateEarlySelection6PublishedSpatialEvidence(record,options);
+ if(isR93FixedSameBatchSpatialRecord(record))return validateR93FixedSameBatchSpatialEvidence(record,options);
  if(isR92FixedSameBatchSpatialRecord(record))return validateR92FixedSameBatchSpatialEvidence(record,options);
  if(isEarlySelection5PublishedSpatialRecord(record,options))return validateEarlySelection5PublishedSpatialEvidence(record,options);
  if(Object.hasOwn(R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,record.source_spatial_input_file)||modernIds('r91-same-batch',r91FixedSameBatchSpatialIds,options).has(record.id))return validateR91FixedSameBatchSpatialEvidence(record,options);

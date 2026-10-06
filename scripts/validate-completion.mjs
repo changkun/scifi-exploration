@@ -1,3 +1,5 @@
+import {isEarlySelection6PublishedSpatialRecord} from './early-published-spatial-selection6-evidence-v1.mjs';
+import {isR93FixedSameBatchSpatialRecord} from './r93-fixed-samebatch-spatial-evidence-v1.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
@@ -49,7 +51,12 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
- if(isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isR93FixedSameBatchSpatialRecord(record)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
+ if(isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
