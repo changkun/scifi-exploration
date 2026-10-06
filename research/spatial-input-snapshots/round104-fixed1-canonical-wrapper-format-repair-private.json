@@ -1,0 +1,14 @@
+{
+  "status": "exact_two_canonical_wrapper_fields_repaired_original_inputs_and_v1_retained",
+  "first_actual_build_completion_exit_code": 1,
+  "first_log": "round104-build-completion.log",
+  "affected_identity": "Q125913273",
+  "raw_frozen_expected_row_retained": true,
+  "old_guard_v1_sha256": "53d6caaea64f0ad3d356c5dcf8815119201ceb246f3d5b3b83181f59a5e20c96",
+  "new_guard_v2_sha256": "67166d9865143b44bf45f6accf4aac27c867d1c759005f3d3731916920ca72ef",
+  "changed_guard_anchor": " const before=equal(currentWork.source_search_log,prior),after=equal(currentWork.source_search_log,expected);",
+  "replacement": " // The frozen expected record is the raw process row. Both canonical wrappers\n // are copied from the exact old canonical prior; no history or counter changes.\n const canonicalExpected={input_file:prior.input_file,log_date:prior.log_date,...expected};\n const before=equal(currentWork.source_search_log,prior),after=equal(currentWork.source_search_log,canonicalExpected);",
+  "changes_to_record_content_or_history": 0,
+  "source_verified_upgrade": false,
+  "actual_post_pending": true
+}

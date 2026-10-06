@@ -1,3 +1,5 @@
+import {isR104FixedSameBatchSpatialRecord,validateR104FixedSameBatchSpatialEvidence} from './r104-fixed-samebatch-spatial-evidence-v2.mjs';
+import {isEarlySelection17PublishedSpatialRecord,validateEarlySelection17PublishedSpatialEvidence} from './early-published-spatial-selection17-evidence-v1.mjs';
 import {isEarlySelection16PublishedSpatialRecord,validateEarlySelection16PublishedSpatialEvidence} from './early-published-spatial-selection16-evidence-v1.mjs';
 import {isEarlySelection15PublishedSpatialRecord,validateEarlySelection15PublishedSpatialEvidence} from './early-published-spatial-selection15-evidence-v1.mjs';
 import {isEarlySelection14PublishedSpatialRecord,validateEarlySelection14PublishedSpatialEvidence} from './early-published-spatial-selection14-evidence-v2.mjs';
@@ -35,13 +37,15 @@ function modernIds(phase,getIds,options){
  return fixedModernIds.get(key);
 }
 export function initialResearchSpatialBuildArguments(record,options={}){
- if(isEarlySelection16PublishedSpatialRecord(record)||isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
+ if(isEarlySelection17PublishedSpatialRecord(record)||isEarlySelection16PublishedSpatialRecord(record)||isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
   const currentWork=options.currentWork;
   return {...options,currentWork,issueAssertions:currentWork?.knowledge?.assertions,sourceSearchLog:currentWork?.source_search_log,spatialAdoptionPhase:currentWork?.spatial_primary==='unknown'?'pre':'post'};
  }
  return earlierBuildArguments(record,options);
 }
 export function validateSpatialEvidence(record,options={}){
+ if(isR104FixedSameBatchSpatialRecord(record))return validateR104FixedSameBatchSpatialEvidence(record,options);
+ if(isEarlySelection17PublishedSpatialRecord(record))return validateEarlySelection17PublishedSpatialEvidence(record,options);
  if(isEarlySelection16PublishedSpatialRecord(record))return validateEarlySelection16PublishedSpatialEvidence(record,options);
  if(isEarlySelection15PublishedSpatialRecord(record))return validateEarlySelection15PublishedSpatialEvidence(record,options);
  if(isEarlySelection14PublishedSpatialRecord(record))return validateEarlySelection14PublishedSpatialEvidence(record,options);

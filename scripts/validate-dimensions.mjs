@@ -11,7 +11,7 @@ const canonical=JSON.parse(gunzipSync(await readFile(new URL('research/canonical
 const context=createDimensionEvidenceContext({repoDir:fileURLToPath(root)});
 const byId=new Map(canonical.works.map(w=>[w.id,w]));
 const allIds=new Set();
-for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-dimensions-round1.json',40,141],['research/knowledge-dimensions-round2.json',100,311],['research/knowledge-dimensions-round3.json',200,648],['research/knowledge-dimensions-round4.json',300,992],['research/knowledge-dimensions-round5.json',600,1946],['research/knowledge-dimensions-round6.json',600,1970],['research/knowledge-dimensions-round7.json',600,2006],['research/knowledge-dimensions-round8.json',1000,3582],['research/knowledge-dimensions-round9.json',1000,3769],['research/knowledge-dimensions-round10.json',1000,3410],['research/knowledge-dimensions-round11.json',1000,3917],['research/knowledge-dimensions-round12.json',1000,4026],['research/knowledge-dimensions-round13.json',1000,4108]]){
+for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-dimensions-round1.json',40,141],['research/knowledge-dimensions-round2.json',100,311],['research/knowledge-dimensions-round3.json',200,648],['research/knowledge-dimensions-round4.json',300,992],['research/knowledge-dimensions-round5.json',600,1946],['research/knowledge-dimensions-round6.json',600,1970],['research/knowledge-dimensions-round7.json',600,2006],['research/knowledge-dimensions-round8.json',1000,3582],['research/knowledge-dimensions-round9.json',1000,3769],['research/knowledge-dimensions-round10.json',1000,3410],['research/knowledge-dimensions-round11.json',1000,3917],['research/knowledge-dimensions-round12.json',1000,4026],['research/knowledge-dimensions-round13.json',1000,4108],['research/knowledge-dimensions-round14.json',1000,3935]]){
  const input=JSON.parse(await readFile(new URL(inputFile,root),'utf8'));
  let fields=0;
  for(const record of input.records){
@@ -25,9 +25,9 @@ for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-di
  assert.equal(input.records.length,expectedRecords);
  assert.equal(fields,expectedFields);
 }
-assert.equal(allIds.size,8440);
+assert.equal(allIds.size,9440);
 for(const [key,label] of Object.entries(DIMENSION_LABELS)){
- const expected={narrative_mechanism:8439,scientific_premise:6706,reality_relation:8439,expression_form:5581}[key];
+ const expected={narrative_mechanism:9439,scientific_premise:7561,reality_relation:9439,expression_form:6505}[key];
  const known=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,dimension:key});
  const missing=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,missing:key});
  assert.equal(known.length,expected,label);
@@ -48,4 +48,4 @@ assert.deepEqual(scopeWork.spatial_scope_annotation.original_spatial_fields,{
  spatial_secondary:scopeWork.spatial_evidence.secondary,
  spatial_rationale:scopeWork.spatial_evidence.rationale
 });
-console.log('PASS independently guarded 40/141, 100/311, 200/648, 300/992, 600/1946, 600/1970, 600/2006, 1000/3582, 1000/3769, 1000/3410, 1000/3917 1000/4026 and R13 1000 processed / 999 described / 4108 fields; Q122581098 retains five missing fields; four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');
+console.log('PASS independently guarded 40/141, 100/311, 200/648, 300/992, 600/1946, 600/1970, 600/2006, 1000/3582, 1000/3769, 1000/3410, 1000/3917 1000/4026 and R13 1000 processed / 999 described / 4108 fields; R14 1000 processed / 1000 described / 3935 fields; Q122581098 retains five missing fields; four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');

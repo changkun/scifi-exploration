@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "status": "frozen_fixed80_S17_closed_dependencies_original80_candidates_unknown0",
+    "record_count": 80,
+    "field_count": 240,
+    "candidate_count": 80,
+    "original_proposal_count": 80,
+    "withheld_count": 0,
+    "actual_R103_canonical_sha256": "a15dacb0b305936403ce1c25c1fd458366adf4fa6cd1e61d9b1498cb791f119a",
+    "actual_R103_commit": "93c20a87f169a4783dd18d1ec124604c7ec85379",
+    "receipt_sha256": "9b88cc9a36adacfc16418cba4767f2dee3240156f93c1702adbc7be52686bdba",
+    "counts": {
+      "primary": {
+        "earth": 73,
+        "abstract": 1,
+        "planetary": 6
+      },
+      "basis_mode": {
+        "exact_existing_knowledge": 80
+      },
+      "companion_L_present": 14,
+      "companion_L_absent": 66,
+      "owner_present": 1,
+      "owner_absent": 79
+    },
+    "original_metadata_preserved": true,
+    "new_requests_core_fullread_verification": 0
+  },
+  "new_archive_pins": {
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint1-round1.json": "b45063d2c0e60eafbb151af688f7f3516c2f509b4e78ddce213dd37f6681427a",
+    "research/spatial-input-snapshots/early-published-spatial-expansion-selection17-checkpoint1.json": "913e49ecbd2684ab18c2c6855bb04cbdc8c798b436c1f50dcadba23799917da4",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json": "c13062a3144393dc5aaa2404a068f0984cfed7fda70fd7cdab42bfa85c613cd9",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint1-round1-scope-integrity-proof-private.json": "4cc905f8c5de62efefdfe88f96d0790dc62689b2b0354df8740c4c81f871d6da",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint1-candidate-binding-proof-private.json": "a9e3961f5373639f923b3d038faab8a381cdd79ebaacab4449c6224ae22953e4",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint2-round1.json": "edcb8193df513e3138ca6331e977c0187ec6fefc913fbb58cb8d309f732bf233",
+    "research/spatial-input-snapshots/early-published-spatial-expansion-selection17-checkpoint2.json": "b19c7b4314dd6f8acf06133736c2f624a2df8e1bf78a74951f1157d13735b7d3",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json": "e3c9e1f37e51e0ddb2d06bb84d7337b817a059cffeba2008350e20b3f94362ea",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint2-round1-scope-integrity-proof-private.json": "e00a6c5471479f66ef07a726c59ad3816b43752fff7b4f618f7fb3ad8160edc9",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-checkpoint2-candidate-binding-proof-private.json": "0cd5d22b78bc020172749c735382a663c757b959634c1a49a9f0bfca5f2650a5",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-first40-later-local-R103-compatibility-binding-private.json": "2bfe9d2c37803d6abc17a31297dded7d898ce9d60bdd23447524e24da0aa285e",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-first40-later-R103-actual-publication-binding-private.json": "4f9fe15e5806f4fa1d849ed0d4cda6bce8dbeb0184d1170362a10c3e4afca457",
+    "research/spatial-input-snapshots/round103-published-site.json": "9b88cc9a36adacfc16418cba4767f2dee3240156f93c1702adbc7be52686bdba",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-final80-scoped-semantic-list-private.json": "4c4e352eff0c9c03ebeb34104eee71a83c0d9cf2987ccddc4fd9a9c9ed6ef677",
+    "research/spatial-input-snapshots/early-published-spatial-selection17-original-template-label-clarification-private.json": "e236b6ebffeb3c96f6c852ba00d8f59867d544a402e1897ebc697a766e708170"
+  },
+  "existing_public_archive_pins": {
+    "research/issues-since-1980-round5.json": "680ed52c7bdf6d194a9e6d04223a01c32f26a61f2bc6ac77d1f8a7bbb52bbb74",
+    "research/issues-since-1980-round7.json": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+    "research/issue-input-snapshots/quick-retry-root-round7.json": "49a763282c25882da2b7dc5cff4e1a3d8dc7a45e4fffd372a9b0d1c992649627",
+    "research/issues-source-reading-round80.json": "3ba262b0f1528ddb6e4ab0cd5b2d47bcc295646690a784ea696fbfbd3c288e82",
+    "research/issue-input-snapshots/quick-retry-root-round7-log.json": "e0d389562f9f06526c6350c0ad3ca48c959a21a251802f0baf6c347c041a7eb6",
+    "research/issue-input-snapshots/quick-retry-lane-0.json": "5fce5b2b8279d784d7d141536d8e923508897fe00cf0f03aa907e610a8c23596",
+    "research/issues-since-1980-round4.json": "9fc4a4ca9145ecd01aca1773950d5ba8232377e49c7c4bc12161e678ddbbdb6c",
+    "research/issues-source-reading-round4.json": "9dbc9be2f08455a36d0d6c122a7767d6ec8e35e6e1fc6548a422000a40ae00ff",
+    "research/issues-since-1980-round2.json": "653dc9e28f3dfc42b2e1e72e781e1a03645c76400adaa9e6b9bf0df1a34ea0d6",
+    "research/issue-input-snapshots/root-fast-round80.json": "dab85ec72e0c11e71666c13aa31bec5807c7cde7b54056013f355b95314f94a1",
+    "research/issues-source-reading-round58.json": "2d76651ee874314fa3149a51182bb8d3344c62a96e713f692ecbf874cf855c6b",
+    "research/issue-input-snapshots/root-fast-round80-log.json": "d04368d12d9f3c5393a9094fdda4a8dfc295927af957602456595581f8497a85",
+    "research/issue-input-snapshots/root-fast-round8.json": "8b594633e68881ec2ed7f5516b92b70dbb239aec6c10cf74dd10e733f699680a",
+    "research/issues-source-reading-round26.json": "7a5404435262f2f7a188299ff309542af0f5d2c93361e8b5c776f9e1cc5a53fb",
+    "research/issue-input-snapshots/root-fast-round8-log.json": "39bb1333f519684f19dce732f058a111a1bbb3a892226b6271c107dda2d2aac8",
+    "research/issues-since-1980-round9.json": "1f82f41c467312401148650443c63281bed0e66d18ec5135167ad5abf023f259",
+    "research/issue-input-snapshots/modern-recent-round32.json": "5de29e4c3a43de8fd82ed9cbf04987f2d6c6a6510333cac88a05483fe5fd0047",
+    "research/issues-source-reading-round41.json": "9045d3e429574d788343c2bafeee25795da3ae18394b2078264698a9df3ebb3b",
+    "research/issue-input-snapshots/modern-recent-round32-log.json": "2feecce3eab1b8cd20acfffc284bbdb57ee6181b2f99c6e2791b5a125eebb51c",
+    "research/issues-since-1980.json": "0611838f8b04d53e85df2971eabf232f227c3c1ce6ec35c6ff2e7691db9eef58",
+    "research/issue-input-snapshots/global-recent-round47.json": "574c83c6ba02cfa0bd29fb6c706944a584bcc09acfb888da4fbba3ab4ee646a5",
+    "research/issues-source-reading-round59.json": "db8d6a351d684e35b249ee130a87f40d5006a77f45e1770a7bdb1bfe07ed26a9",
+    "research/issue-input-snapshots/global-recent-round47-log.json": "cfdb651ce56fe44f4ef1959ab891f0a55f87640f5e56440f0a8782c190f49793",
+    "research/issues-1900-1979.json": "2781f493620c79474ca28ced93019a42e63e6161bbcb92c7c5b316d5e5b01272",
+    "research/issue-input-snapshots/modern-recent-round51.json": "3ae8f438abd4154a033d43c393614c21a135c9eb4942333ce95b7cc12483ceb5",
+    "research/issues-source-reading-round56.json": "ae4e9e7cfb17638c86996cd6ca8022cc29548d378a6d82fc36195f9303316f8d",
+    "research/issue-input-snapshots/modern-recent-round51-log.json": "08ae8ca7d490097fe394df818ec402583a94e71576aae302880274a4dde11b24",
+    "research/issue-input-snapshots/early-recent-round11.json": "7dcfcab4ebe159ed6c4abc2daa90b3c86d929fc9a4b51a0f7140c75bdb573623",
+    "research/issues-source-reading-round27.json": "9deed743ee88a4a376c943212c0ec0517b45dc3273d9f2dccbd83a5354006eb2",
+    "research/issue-input-snapshots/early-recent-round11-log.json": "be1391da592be7badbeba8a77a7df8cb9356db724afb3479c0ae8fa01b091bb7",
+    "research/issues-1900-1979-round7.json": "0c4f277afa67574b8ed4b79f460db9f52ab24eb2a8755a616adc346313b4f04f",
+    "research/issue-input-snapshots/modern-recent-round52.json": "76c9d976ab04a4f845e2040c2e0f26ac1c1a9437b102ccda4e3f0fbf92417b10",
+    "research/issue-input-snapshots/modern-recent-round52-log.json": "4f9f3d7a6e835f3c2038dae76de09d6065f19e589dc631067ab03c1790c3d6a7",
+    "research/issue-input-snapshots/early-recent-round10.json": "5dfd820cbbf532eafd8f548d57d3fed46b61bc26828fcf24402f9493e69ffcbd",
+    "research/issue-input-snapshots/early-recent-round10-log.json": "f55812d72cd1a43e32d929ec118b5b21af83f215264f3921151d6596d88f865f",
+    "research/issue-input-snapshots/global-recent-round43.json": "1264adcc33cff6bc6d277f7120a0307b98be4baa2e905886446e337b4819d5e1",
+    "research/issues-source-reading-round55.json": "c92919012b73151b119de4abff1496f8befb3c743961394640c196d0466bab9c",
+    "research/issue-input-snapshots/global-recent-round43-log.json": "096883efd5b7ae154ce111291453fa64984ec9d1bfd87b5be4f03b1d263197c7",
+    "research/issues-1900-1979-round3.json": "17c11ccf05df8d652040298696683026a1c10e847d1942af317153ae16429168",
+    "research/issue-input-snapshots/modern-recent-round12.json": "eade90c54f0ee45bc7a35baca044b509b7f06a81c42be34c503c532a35656ea8",
+    "research/issue-input-snapshots/modern-recent-round12-log.json": "9ed16f6300ec6fa263f83ac150b6cd61f6b1ebbd7588688f6a3af11b66d50213",
+    "research/issues-1900-1979-round8.json": "d15d68cc8feb91b48b72d4063d86e39649deedd5a5be74b869e1083cb81a690b",
+    "research/issues-1900-1979-round4.json": "2b9ee417f8f45f196144fa5e4e6b6f5593b1ba9f160e520d15f49030e0180dc2",
+    "research/issue-input-snapshots/root-fast-round17.json": "88c7ecf06e20636c58c2b49c549bb6324842c21e056b0ec703874946840d03da",
+    "research/issues-source-reading-round35.json": "79206b2c69c27e3938be8c3251500797972e01e1227c1ea97e721ed5d1782cf2",
+    "research/issue-input-snapshots/root-fast-round17-log.json": "3c2e0141c402977bf4e2b2755e3dd9b9798b8570eb9681551e73cebe783ba17c",
+    "research/issue-input-snapshots/root-fast-round11.json": "954bbc725a2c8e90af9f1471ec000928cd7ad0dffdb78f784c5fb25101478c1c",
+    "research/issues-source-reading-round29.json": "506202638535957358bc47b31484861e67c1c067c7ec0e620f62bfe98c81bf83",
+    "research/issue-input-snapshots/root-fast-round11-log.json": "e7035414ae43a58f7c13ac38b7931004ffee3ea2c90c41d2ca90d14751775e81"
+  },
+  "fixed_id_to_file": {
+    "Q55608595": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q15035527": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q13530565": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q7754103": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q7732767": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q5458359": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q130236046": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q3791300": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q130259110": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q130259111": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q19588505": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q130259112": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q2759020": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q7770221": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q130259109": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q5278652": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q5402793": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q666405": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q2627355": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q2253255": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q3305528": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q4657695": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q23307127": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q7762713": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q831493": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q109727917": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q2077107": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q2267121": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q23038229": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q661438": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q831807": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q4657866": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q603705": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q7758023": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q465801": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q785091": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q831556": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q3209202": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q831586": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q896997": "early-published-spatial-selection17-checkpoint1-round1.json",
+    "Q17182944": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2357633": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q583366": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q29468815": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3416949": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3221761": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1708598": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3213661": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q832020": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q4631777": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q104907386": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1090238": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1106283": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3209038": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q6087208": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1059912": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q7734692": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q929608": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1236768": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3828987": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q41359": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2127756": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2051614": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3793866": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q4016617": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2294155": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3190256": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3392605": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2647714": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q4000825": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q498727": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1139149": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q467904": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q692374": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q831504": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q1090244": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q3931527": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q2079836": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q5306605": "early-published-spatial-selection17-checkpoint2-round1.json",
+    "Q4183317": "early-published-spatial-selection17-checkpoint2-round1.json"
+  },
+  "fixed_original_record_sha256": {
+    "Q55608595": "cf76606fcc4d3107840aff3cc4dd00ad374863a49e81da0ddd862f798fb798ce",
+    "Q15035527": "67470ba6948bc95e6e53e915046572f4baf562c6c503b2219534abea94f96199",
+    "Q13530565": "207dd3fcd3d08f5f33b354c149ff563e5a9f38dee28c065f83c240cd578b489a",
+    "Q7754103": "9414ad90cea43fa8bffb7f90b1caf4d05400d9efce1f7f1f08976cbc1db29a04",
+    "Q7732767": "3aa972d8e47d80aa110bf796297b037c5c1fa9ed0cd3b94b057c46abae3123ee",
+    "Q5458359": "90fe061305f9f4d5c6280689b5266e3616068a5bd92181263d8db9afa464f335",
+    "Q130236046": "9a88b380ca8ca626e7d90cfa9628966139fb455063e053836cf1b317c275586d",
+    "Q3791300": "36b17ddf8b7f4d3b15248fb409ea7e5d4d2f8ce4ece09f4539632b76ba5250e4",
+    "Q130259110": "5775c39d28cccdbc407281e77c7c8c75dfc3c547378de496eab99ede476ff6f4",
+    "Q130259111": "3a67c12187ca60c86387000e0c78b69c8400881a1b34420826cd9291a97b60f5",
+    "Q19588505": "3fba264bd948ca5c002636214344bf3cc7b4e0b3a5b76c2438d7893567c0a6b6",
+    "Q130259112": "88e749728e42c995d7fca21324db704b9274307b164fe30dab28e93964857171",
+    "Q2759020": "b1b570a6865ba175418e72a5f26fe53019058542031d0a20e96562f481fb3793",
+    "Q7770221": "eefefcce393ce84ffb3546889d901d3f861ffa0dc9b05007e1720bd282a2ab9e",
+    "Q130259109": "069aa16e7c3ad9956b52bd9c78a3c33bde4e9dc0d39fac4c220d5d17fc105e40",
+    "Q5278652": "29266966557f0cf1045bf63d5833547a4a261f854d98b5eaf6bc9ff6641161d7",
+    "Q5402793": "36a581f411ce206f4baa8305e73038e955d57516150f03c1d0b82e3fc3aee456",
+    "Q666405": "3882523c3fec239b0402582f9c2a7b55dadf3c615c6a52f0589431ab9f34e945",
+    "Q2627355": "4b0a2b885f1ce677e7a4a8d8aaa05f6e3c8132d2f1f30bf257e5a4582cdc41de",
+    "Q2253255": "6b9d8185a546a4abab8ac5794c168fb90fe23fb6b89c9c0e06f2fb1e760b992b",
+    "Q3305528": "d2584f47cf1087d473628f74f46b8f1d55edff75a20e2dbec636360ac26a8252",
+    "Q4657695": "65595d93a3140e179726c5e42b9df16267d0e56c7245d47692682033b00a7198",
+    "Q23307127": "5a9ee587ed0e5d8fd55e872ed634019879f9fbc55e2b33af939e9ccb95eaf965",
+    "Q7762713": "a38cbfed161468393abc4472815a4d12a3d14b1fe92a7a98431585fb2888350a",
+    "Q831493": "5378112af6e192ddd83672333cad3d20c0e7d0aa164dad0dc5d056273222e3e3",
+    "Q109727917": "676e1f8b80cb6f10bcf3d237414216c61b296f4b04a717570fbb3f2ba789221c",
+    "Q2077107": "02b22dfca47813d0d282efd70a34ee9a78d53e83fcfb2ceec91f92c87edf6a2c",
+    "Q2267121": "7d516573b055bad9d9aab122a4d9be23dcbc35023b622b2708141a67f1f82770",
+    "Q23038229": "ada699a889beb7544b05e44de04eebb46827523b583518eda9aa7f3597cbebbe",
+    "Q661438": "39a179ff5767112816e4f53888fa7ad5c553cea7473af0c14e6a11dc242df18e",
+    "Q831807": "82be162d7bf291409514c12965a29da9d4425e5e7c889d6706614df43b3294e4",
+    "Q4657866": "f13d62674f1680da328971b68a9c82a76b208ce36c39a235eb44d24ad37bec01",
+    "Q603705": "b4ddcc1dbd54fb92f58b47dba658bb091453738c8826619c1b2ae150a3ec5d4c",
+    "Q7758023": "6c6a2398fd918b337a9f3fff76b721a351a5a3553ae0ef6cd6d29b578e3daee6",
+    "Q465801": "06cb113b54e6eeb3080441444119927053c355b19a3238fc057aea74e9951ea2",
+    "Q785091": "532dfb9cb9a5fa233e829801256ed007b8b2f3f7b42022be82c413e9ec532f5b",
+    "Q831556": "47cb8d51025996c1a6de9b092c78e74a0d4ee7c3e72b903e6834c6c1f382bd70",
+    "Q3209202": "ade0dbbe45ed25d2ff5c894fd4793108aa95c8114aaa487e09f9faebc3f73c7b",
+    "Q831586": "c6a8bcc1304117125660b59fa68a95b23e9e601cc863acf2c2b4ccc3d34fbd46",
+    "Q896997": "75b298b2247c643ad82c55168d2adaa197aae7e1213269a7f2b26ec6a30edef3",
+    "Q17182944": "4563c08175cc87fb08f0e7a04d1e5f805de4e8e46d6e7ed76705ce5872bd7c1e",
+    "Q2357633": "7878f116d18b47589ddc24be747a862f557d9df3c08050e5095dbc1a3ca6dc7c",
+    "Q583366": "1027293e7c3d40008d56e5fa7140db8b16c9bed81b308aa8d4122307176c6f27",
+    "Q29468815": "750ee23032da0dd23fd5af193f46e1259e905c55da5638fc4d312b6436409678",
+    "Q3416949": "3270b86889e4cc3c784163f129efa57469d82019771208e2644fde5c7052a94c",
+    "Q3221761": "37420fbefab4666a1f42be0fefd332d2842dd3fe90e7940bfe35a33f3b4c40b7",
+    "Q1708598": "ff2651e987fb9a42b2711e8590b08228645325413922e0c519bb2838e35a172b",
+    "Q3213661": "16d5087710f46b01ff3aab692a7ed7badf17191af2250969b764334e98d3f712",
+    "Q832020": "aa70daafa09dff816a68b291f2110279b22c9cd0ccf8ec753526821485c03120",
+    "Q4631777": "70b6a24077f595b1e7e4814fddcb2a8b134e15d3a54fa04768a0b35063ec84ff",
+    "Q104907386": "8cc5bde56d515dce1c6b939c3b71a0f67bce37e8cc4c0c7ecb04907087a9baa1",
+    "Q1090238": "2a13d6c7ed1a0b84eae961a28b1a4b78cdd890ae5f937c0f92cbdaec2ff2e37e",
+    "Q1106283": "c5f1a438168f1f56a85ec7a4a2d7b045ed9f814c5ae2d532f101c4d333708546",
+    "Q3209038": "e5b712c6bd422a396f355da860b4cff3bf7c6ecfde2993e9f798b3b069395859",
+    "Q6087208": "97ba15f6880963bdb20845eee4a480180a4eaeb470934f8f0ee61a8f90cbd047",
+    "Q1059912": "01b9ce49a3b951bae4dd79ad048b2a4ee45f9f222f37d8f0614a187f8de2cb59",
+    "Q7734692": "2386b27bb4a47a623b905c7fcaf355477905e67974b1b1be854c3e51b861e796",
+    "Q929608": "5a0a15fc3804a99ba99ac975ef44e27f22e25b8f868ebc3bc0b95f448c23e950",
+    "Q1236768": "4eacc6f16ee760b223b9c1638bae156d011e6235407103db8139d7c3c4398f6d",
+    "Q3828987": "74a66092ba95a35a9ee602868cc323bad22bc5382492753a25675e7289164c72",
+    "Q41359": "32651b649d803210829c70b953c81d3701a82c64d12e524448f58b956d7cf0db",
+    "Q2127756": "692d131962f65e04b9eed67c258bc1667c1ba971eadb9830d3a78c585f17961c",
+    "Q2051614": "eeb03c73bdf7d5750639054e86ac701f81286c2d9563caeafd3222f1c1f56df0",
+    "Q3793866": "2af364999d7cc4229208ab7ae3fb67e78940114cfdc9d07f0ccd7b4c3dcdd42e",
+    "Q4016617": "4c7ccbb2fcff1bf6a5b2ee5850135aa497909ead3b0b2f6c78ed2adb7bf891e2",
+    "Q2294155": "7ec141f1d4ba7c63fc9733040eefbe74a0d226aeb4de940c7dc182eb1f920f51",
+    "Q3190256": "720111bda8c0e54fd826213cb75bd0ceae41a5c1417928aef301707e802cb881",
+    "Q3392605": "f2afe63d7d8def0cdb11564b8dce8577810429d76484381962390f57501d48ba",
+    "Q2647714": "3b8357c95fbdf20309b9a06a93470262ce8ffbd39bdaaaf715ffa28c3e8ee3fe",
+    "Q4000825": "29e7fd44be74737847611d82816376c832ad01b9fd9e57e7b089beb29275c79b",
+    "Q498727": "1277340c800fb9fa0dfda790e93217b6d0b5c59467a56c612a06f91140415c60",
+    "Q1139149": "bf4c983231d42541d14e059f128f7a9f959608ece7727e921e8f131b735e45a1",
+    "Q467904": "18b8fa3858d02c6f186302b468598f9c5d7a61068c433f0ad750a3623999ae5c",
+    "Q692374": "e77a716557eebe3069526f2687d4e7453dc0d6ea770699b68763a9ac1c41e2a5",
+    "Q831504": "986d3da77d3a256277c8f20cdd68f11c3ef2c0388b8b7e07141fbb5cf85ba8d0",
+    "Q1090244": "ab3e205b0a7d5f16e1ed0d35271908505fe30211efc8d42bc4181306fac250f9",
+    "Q3931527": "dd2bc2b8bc3aae47a9f3b6352372f71eb842928c0a4dfcd5f40ce33476535f65",
+    "Q2079836": "4f75506b0c2a5bee30961082b1db8cdee8892ddd7abfc97f5dc1b56e084cb367",
+    "Q5306605": "3a003fb28cd28fefa70d1fd0c29de033b701bfb95c80b760e9dcf32c783c857c",
+    "Q4183317": "c84d5756f8a8f1433cdb1280b41e10736d94b31938936580acbd87e93f48bfa1"
+  },
+  "original_checkpoint_declarations": {
+    "early-published-spatial-selection17-checkpoint1-round1.json": {
+      "record_count": 40,
+      "deferred_present": true,
+      "metadata_sha256": "52a0a5055ec0e9fd9806c16343dd18d7334a7370055f3fbddce9c92c4cc83688",
+      "deferred_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "sha256": "913e49ecbd2684ab18c2c6855bb04cbdc8c798b436c1f50dcadba23799917da4",
+      "selection_metadata_sha256": "d5567dc929142ae946180a1dfbf5b6737bb7ea921bbc7afa6bf40cbea14d44d1",
+      "selection_count": 40,
+      "checkpoint": 1
+    },
+    "early-published-spatial-selection17-checkpoint2-round1.json": {
+      "record_count": 40,
+      "deferred_present": true,
+      "metadata_sha256": "c7e5cd25a805c3aeaf08f7127a0a67fd79ee07a602835e1149ab015ef551b012",
+      "deferred_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "sha256": "b19c7b4314dd6f8acf06133736c2f624a2df8e1bf78a74951f1157d13735b7d3",
+      "selection_metadata_sha256": "4b2d5f06d57f8c6b2970f438049b1c13082b0b703cdc4d42a71f13e62fe7eede",
+      "selection_count": 40,
+      "checkpoint": 2
+    }
+  },
+  "fixed_selection_by_id": {
+    "Q55608595": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "de7b4265bf8975a872d0e7daac82ed0bfdadbf8c05eff9e846b208f728a22061"
+    },
+    "Q15035527": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "3e13cf1f1254d6481363fa74f5b7a1419129d679c2c21084b74048878b597400"
+    },
+    "Q13530565": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "cacd8cd93b318c9ffb01fcf892f1ed8dcba2f0d64d64feeb2a51b48180a56bb5"
+    },
+    "Q7754103": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "bba5e3ad3432de262734c2b2ee471e5e41b6585ca597861d064327d73b2d1260"
+    },
+    "Q7732767": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "6237128a5bd9e8594c240cc2c4f2a411c24695cae8334b964873d828f76c6ccd"
+    },
+    "Q5458359": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "4fd8020163c93e2b098542bef5ffb5586c6c139ce88c6ef16fe070811bf75a4d"
+    },
+    "Q130236046": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "7164402f793fcd27719764a75ddad405422e914c19d593bd98ffe915f2f9200a"
+    },
+    "Q3791300": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "77fb8c2f7a4224ae5c35ff2811b4a7d75f78f015a2a2b702edc1061ae325ce96"
+    },
+    "Q130259110": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "9877da82011afb19105f7941c671aaaae1ad7806ed3612e7cd89235fb351fb0a"
+    },
+    "Q130259111": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "ffee097d27354ec14172686e032b089dcebcd8ec9da0b3b81cfa72e4ac674720"
+    },
+    "Q19588505": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "7fe0e6b18e3a3246f07972ee8dfa39d1b71ba2af1302c886ab47a7baf0c0b8eb"
+    },
+    "Q130259112": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "ef201623a38aa2f4c1ff63d7878ab53aad9e73922650578c946c6d4828fe6c3a"
+    },
+    "Q2759020": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "f34b236dbbf9ed2df49db3eefb9204a9e6c4c8105a5d6a279aaa77401656000d"
+    },
+    "Q7770221": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "1b77d264f1b3053d4696670eb10b00fb599785642deb1b7cca426044faacaf52"
+    },
+    "Q130259109": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "278f55de7c65129c58064a2f2a81b96765e27e99c64ef03ff30ea1a006c92442"
+    },
+    "Q5278652": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "20cbc121e0d688d49636d8324763073ab34d46833739bc39fc1849ca62edfc1c"
+    },
+    "Q5402793": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "bfcf9e5a6f94b5f24b92c151e21189edc5514df32fc2077ab99ed8ffff81366d"
+    },
+    "Q666405": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "a20ed2609bbece86d3dcc06f02124aa02ad7951febd9f422d6a9756772b2669f"
+    },
+    "Q2627355": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "d3a436554f1441252c8cca537af88343763efc96081e0725c61a0cddd8135aab"
+    },
+    "Q2253255": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "3869d1e420ecde0c100da9d0fc0685ad6b6f9ccb8ce2b0a5b271d93230f01b1c"
+    },
+    "Q3305528": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "667668066a6ff7311614645a74931515aa975b5e0dea47c0322ce634a03e2005"
+    },
+    "Q4657695": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "8e8d7979bcd893a73f5730834e782782802a8a51df354252b184ff209a7da9a2"
+    },
+    "Q23307127": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "73c6e7264b250f238f7352b6c0006ce4fd3a51d44d1d7cb8ae0dce5c88839d3a"
+    },
+    "Q7762713": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "756a1490c94a04d8fc0265b46a153ac45860ec55213d16481bcbeaeae77ba861"
+    },
+    "Q831493": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "de5bab3a6edb54f91c96e66aaac69f24e00602eb3109b4fd06029620397ab1e8"
+    },
+    "Q109727917": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "6ba213596feb25ed8bc1b3521bd1a029a18fe3ec38c7520c7d2a8b66e0738547"
+    },
+    "Q2077107": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "1fcbcf53bb663b061b3f0f2e55d71ccf1b8b0c7a65165ee931a559da2b6f0126"
+    },
+    "Q2267121": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "f3defe826167f9e9ae29e0dc624985e1a14f7f7da0fd30b135c2f3b40ea9a028"
+    },
+    "Q23038229": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "e382b1ad32d8c615c0736f669932b9b8cc766c816f5fc5e73dfdbf381a055ff8"
+    },
+    "Q661438": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "7316130e0c3fa929b94ae70414aac6bfbbee96c5dbbce54ccfea77ecc6d4d6ce"
+    },
+    "Q831807": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "288fbffcbc42e511d8036197b60e9ff02b53b707957fee4b6c5cfb86e3a0204f"
+    },
+    "Q4657866": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "7fa6f5dd72f790cc782d94d8df29a4dfe1173704ef955941bdce598d7abaf960"
+    },
+    "Q603705": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "778c6e5684b33450f2ef740a0f7fb6c4b0221135e2cdb181c655ea3a1e9f1d2a"
+    },
+    "Q7758023": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "cb1d01293e16cb181e866665480f53f89ac08349bb0ce487a4e0b547ce956e2f"
+    },
+    "Q465801": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "981d74f54a6ff2b3ff626e67f8d082ca7966c4a92b3c2f062b34960d17ecb048"
+    },
+    "Q785091": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "d4618e34ce8c00a6a2e8bf549e8eb3bf7ddab3ecd35b776bcabdb88ce806fe7a"
+    },
+    "Q831556": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "75819d3744666084b3df3c61a3ae71362ab5b517ab64922120fb8b8ecfbae227"
+    },
+    "Q3209202": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "02b787c663d6f3822c41764c3ce2444524ce8215b64c6fcb64c27369150464a1"
+    },
+    "Q831586": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "ea403a0799ba9b605a02c06dd1c3d43a48974fce2e87ec7f94dc6f0dc266d380"
+    },
+    "Q896997": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint1.json",
+      "record_sha256": "045ab13409b9ca0a589218ad836d1ab7bdb7910aa3f6062ff6716205b07708df"
+    },
+    "Q17182944": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "ba933c3347f689a8d9a73a8a7894a875cdbbbef3dd77a80261e617e83e65133c"
+    },
+    "Q2357633": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "de4e30d73b12b608baf434d70ed1a2bbf9ee2e368a9e5d3ca8cf96d2fe63975d"
+    },
+    "Q583366": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "736c6ffd2c415c43a727191e85084435f12c963afa01765655ed960cf2495b59"
+    },
+    "Q29468815": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "7f5855f22dde16a1153e4d3afcee63b1742382d1ed38642026948734f95eab9f"
+    },
+    "Q3416949": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "15fb50a2f24e28ff96062988938a18338507f1909529eec5fa98011d27ec015c"
+    },
+    "Q3221761": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "3ce1facc78facb196ec8b94dade9929873aace89dd9dfe06f323cf84e81a3af4"
+    },
+    "Q1708598": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "6e6413dd45b8578a6af59c27a8e0a7f65bc36008664c14f95fb430a778157f16"
+    },
+    "Q3213661": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "481c0e561d401e5fa21343c6ff17ac870a694c352d38405c5f081bd30739b9be"
+    },
+    "Q832020": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "1dff5adb98c0faf26de34cdeedb3e5edc3eeb5c7c489f7780f523418d885dfa4"
+    },
+    "Q4631777": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "c8281a2d8771e91153b87ce8370e42b25b0e619bdd30f8120b8bd82268d5cdec"
+    },
+    "Q104907386": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "da050f5e0106165b5d7565b5d74bd25d2cae6309756079fc84b2b6acd1cc45ce"
+    },
+    "Q1090238": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "eac1581ebc60fe95f9bf1dd93ecb6b06ba7fd77d9970fe49e0a8c66db8dfe4bc"
+    },
+    "Q1106283": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "c0c52a12c60c51b779a1ba9e3fe38ad03800f82becae6bfad4b2f1219aee81ec"
+    },
+    "Q3209038": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "76dcfe48a94343f288be51ea0899b1f7af1a94f36b35ffa40c35972933cf2710"
+    },
+    "Q6087208": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "f45aad023460d489d4eb46047a4f162e8b8b38c5e0eb5a2e34642d1d8ea40d43"
+    },
+    "Q1059912": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "5ec862804e4b69de301d71cc0f4e43d785f99a31e93cd89fd230dae5a7f7ffe5"
+    },
+    "Q7734692": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "b63df1b9a50652a17a01a4b7db1da63e86166359327fed86984679deafbc1345"
+    },
+    "Q929608": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "69b1883a4eca7b4f9e9c38e00496ffc7cb2b7d5f57d9953210c1e1d9b2f6aaec"
+    },
+    "Q1236768": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "a1cd9b12a008be7b08cf5868b0fe50853b65802bd99e41a946538b1967459c0e"
+    },
+    "Q3828987": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "3093963a7b937f4a8d9c0abc46b6c1456fc5dce0fb904c71f513509a18be54be"
+    },
+    "Q41359": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "c4f7b88813ea20901fcebef8ddd2be537bb1572c00cbcd7a23e9bc45acb98682"
+    },
+    "Q2127756": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "eb7c79fb7a5a8bca9bfda3e86ec8bfe7da16f3d4f09c7c4fe6079e55aa7ba6f3"
+    },
+    "Q2051614": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "5362fb2e764de3cb652b06dd9f553bcc4d2ebf7a8f4302e5bf53e5da7e2859e2"
+    },
+    "Q3793866": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "b3c673605a8490e01349a6711402ae800988a7b092852c479d21535d8e697e7d"
+    },
+    "Q4016617": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "080a56fde096aa2e5ffac64cdbcf7586877d9302f33dd1f8aa65bb0c6996f27d"
+    },
+    "Q2294155": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "21a6009aa4d993de24b9bd1a930b58e2bbb656a7670885e9947565c35e028fde"
+    },
+    "Q3190256": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "f80735f3139a152ab2866f3035f2936d59ed7202a29b6264d291e9a9ad387498"
+    },
+    "Q3392605": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "10729287602efe004fd9d8bd7ea1de6ccf7f61389d199ea1e484e5e12c596c16"
+    },
+    "Q2647714": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "ce539475c7042ab80164502bb50d80f865e54349db3209f1079394dcc08a7ba4"
+    },
+    "Q4000825": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "bcb3636df57f1f56face0ab9b7377e15b1a4ee0ff39698a6313dba4b2a91d25f"
+    },
+    "Q498727": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "cecf2432a8b7456e2dff9fa7d239a24702d7462b980d17d8416baa7199f352ca"
+    },
+    "Q1139149": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "05e417e08370c5e6656182f7963f2d2606df735e69c8c5d0f82f2199ea8e371e"
+    },
+    "Q467904": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "be10ed1acbd233ea21bee39f72686b75cc07b96d385e8f6602644b42c5cda6ff"
+    },
+    "Q692374": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "0d78ed73198bf13412253a90c98bb3ebc9175a179669f505219994f90c2fd333"
+    },
+    "Q831504": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "6d20792c241019cc46536d7c70a020fff801cbed707d57616b4fa5363a684e23"
+    },
+    "Q1090244": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "733ff289d1327bba6034753d5881c2ef6e194fe2003769c63839b8a339b88193"
+    },
+    "Q3931527": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "e0f8bae29bb2177db773801b3b7beda861e5e95698e8d222921a12e372ae6c25"
+    },
+    "Q2079836": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "284c37f6bc10019954a52583363de9a413ceb387cb5d9d394b4bea1679a176d8"
+    },
+    "Q5306605": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "a1bd9f80db912262195324d8d118d2da4a476bd991ff3b8690b656e3259407fd"
+    },
+    "Q4183317": {
+      "file": "early-published-spatial-expansion-selection17-checkpoint2.json",
+      "record_sha256": "8586d76d99c75e86c6a6ef2d187d89921f0aa9a57ab5e05705343e1fb80ccec2"
+    }
+  },
+  "fixed_review_by_id": {
+    "Q55608595": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "b60bf3eac4553f770ec2d8d29595667edc9ddd747ed0a52b69f3c8e07b356e90"
+    },
+    "Q15035527": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "a65ec779fb25b0d895d0ede023dc1dd02609b940d79eec285c5ed4253647d9c1"
+    },
+    "Q13530565": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "fd672f2a533b596fc6b63cf4e0d6e149f7ad519e93277c6680a71c465f71ac18"
+    },
+    "Q7754103": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "35321f7d12d12691b1e1a40cef2a1d50c25c742033fc71c2ab7d2bfb1ebd0920"
+    },
+    "Q7732767": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "569db76f63805e047040b8ec47dc3b2b1a1003cc89ee1df6ed84332e5df4c981"
+    },
+    "Q5458359": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "6167b4c0659b4c0f645048b2c27b98a9ecad3f6d2f58a103fd10e748b8e13c18"
+    },
+    "Q130236046": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "969a089bf033a87e11e55041e253f47e1748b8522f8719d8580a1beb70b16adb"
+    },
+    "Q3791300": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "fca11b4be02734baa789b9ab79886449d8212843d4be36f2ae340d30448336bf"
+    },
+    "Q130259110": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "ce487c4b54d38565d2798071828cda1600598c20791175df52599c843ecff1b3"
+    },
+    "Q130259111": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "d0fe97c7e9f4c11d0232e90e217606dc92e598bacbb0a2b63bc6c39a7d98b297"
+    },
+    "Q19588505": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "7470f7aaf614b9e69e36f7f9bb112a325be5cd9045c542f8f608978d93af5236"
+    },
+    "Q130259112": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "9ca7ffb834aa8d1c0e2ca7cc56d46b6ec9a1deb312debd3db7246a1f3b1f944e"
+    },
+    "Q2759020": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "38f73244ce46d35f0894c92013fd513b04a2b5b9043fd6846ebb66e4352a0d8a"
+    },
+    "Q7770221": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "000f8f0c9c575756c33b96660c81959076bdf12abdc97bdcef800688755fa504"
+    },
+    "Q130259109": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "b6470faddf7371582092538c1cd4ca6faa4ee4e15a74945d71c0855b2b56b448"
+    },
+    "Q5278652": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "0dff5219d5689b7c40c2f59003f8deed52a2f9c3367b62155cca31690461dbe6"
+    },
+    "Q5402793": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "bddbb109bd73e165f1b1e674cbbe0fc56edd3d7ebc84b60044dffca4fae3448e"
+    },
+    "Q666405": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "5e562b107fc1ffe5e777e3f34181a1a5f46d3261e827413bdf0a026753b5726b"
+    },
+    "Q2627355": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "26d48f80e6af368b67eeee0a0b56b5a107394264b72696ec79887b51c8329410"
+    },
+    "Q2253255": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "6a91e67e841f5d946a093a1ba5789d9351a6bcfd9968e41ef42f1210953f8bee"
+    },
+    "Q3305528": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "3194f8fe3b20dc79a23f75a6475f5bc9bb29f7f7c50ffe29b673c93a5f43a120"
+    },
+    "Q4657695": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "82fb130f70aa09ef44be49ac41ce5dabe489b6e5fd2a49dd6d55bcab59a3f995"
+    },
+    "Q23307127": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "4d86d0abfb2c6a6cc821a88de6dbfdcebf06983a642d1112d45ffe421754bc02"
+    },
+    "Q7762713": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "712c39e876e91fd42043ca4c814297cc4b42fe020f3d2e8e6e4cf661cab9a934"
+    },
+    "Q831493": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "557bf4fce229a58f776e229b472f261f139d5182471599810fd19abc82fb61e9"
+    },
+    "Q109727917": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "e7f0d0e9053cc385c356dd264942658e04b62fcc1dd9faf8db6ee5140c78f3fb"
+    },
+    "Q2077107": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "a67eaed35f1df6cb6112623e6cce45f8a792a991a6be562dd152a0d44009453c"
+    },
+    "Q2267121": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "6b86fe860beb1bd4cedd246ed844f5796f324f82bed80ea73caf8f6f7d134c83"
+    },
+    "Q23038229": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "c5ae08b3f837007e02e17883504ed9646053ff839b2e0b0a6ebc902770d475a8"
+    },
+    "Q661438": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "463cbc8e69a06f8020aaea0014d74a483f857cc9d3d8d81dbdc1b72f6d0b43f9"
+    },
+    "Q831807": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "094ec431735b75e53b2d955629347e94fa66af0625f0332721af09bbb16ca797"
+    },
+    "Q4657866": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "577f0ecfc70c36e2686bb84d5c9b3d54806d25155e726aabb98b422067bc65e0"
+    },
+    "Q603705": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "68063fb07430615162da577d706e3f47e81939c3f23e438bfacbdb9a53efd0e2"
+    },
+    "Q7758023": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "8ac3143a6f3234ca69321aea32cbce5638df9f08dbc9e808d62c72ceab238946"
+    },
+    "Q465801": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "a8b43e242df444dd8f5e734f3581098e6a4a81cc96cc63c9663b56a72912fdf4"
+    },
+    "Q785091": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "b31f78982c0c7f4f382bfb8f2bcf665971bc61c103a65f4de780ba17e0089bb9"
+    },
+    "Q831556": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "f37d975f2e34b7022e8b6a496ec51ba7875c27791240d19cf45be8ac33cd2c40"
+    },
+    "Q3209202": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "9b85fd8413976754daf633a42cd908c6609e3b22a15f5925775522795a3a60ae"
+    },
+    "Q831586": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "525c4b1199e3e66ddaa3f7a769fe8cbb18fed00b9ab9c3220c8e69f2ff200696"
+    },
+    "Q896997": {
+      "file": "early-published-spatial-selection17-checkpoint1-40-scoped-semantic-list-private.json",
+      "record_sha256": "2c8b9459b8e572f40b3ea92429f686417cfb92e6b0296d2337860b42badfe630"
+    },
+    "Q17182944": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "e0f7d2a0ff401ca46e4a27436cfd9602bb790b3f875c61b485fb84b76eddb3ba"
+    },
+    "Q2357633": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "a59c51fa445e340e602f3a053b3e026e97cc7fd1093538a929ad0d7c0e7936a8"
+    },
+    "Q583366": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "afa455bfd0535669f81d26a4d2a4a5e352501dfab7d0a38ff608cbdcf895589e"
+    },
+    "Q29468815": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "29ea04e1cba5858166645e5803a9effa269adaa65e3c13918fdbfb2f4c5e400c"
+    },
+    "Q3416949": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "f52e72217595000307d6d4e4a9c8e7ff443948bce88288930d623feda5672577"
+    },
+    "Q3221761": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "27d48cbd130f201870991e8316e98af1cbb16ab5231f0c0fa51c23cdeb4573ad"
+    },
+    "Q1708598": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "39dc50455ef3ef5dca9ec3da831c6d5faf0b8b2b4eed978715637991a301db85"
+    },
+    "Q3213661": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "f5cffcd685f78f6bafbf5252de6230dacda5c85c8db20a85681c8cbb0282371a"
+    },
+    "Q832020": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "1838807ebfb5e1a76607bf44b4a8adcaab1e52949dbf328fc5f97e5628313567"
+    },
+    "Q4631777": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "8c6cd8e207dd3b71ed0c7e2f9939e6d76f841afd85da6de0be2d1d8cf342d45c"
+    },
+    "Q104907386": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "337986d2fecdc21ed7662b4c6535a3b252eca1dfc0977e7d5b9911675de1de1c"
+    },
+    "Q1090238": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "8b27e73cc7ab2e51604140f8e4eaefb020bbb67526bc6c45e338baeb2b62a6b8"
+    },
+    "Q1106283": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "58fd327cbaf6f4445536810190a31dd1280baae92f0afcaf58facebaac958de2"
+    },
+    "Q3209038": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "f2502e144bf70ee964f2d6ac7b97853f870b64e8fcf4eeaf101a635f2b4a3d53"
+    },
+    "Q6087208": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "067120af787afb12d66f261e3a510522d667354c20a557cac4875605eaa549b9"
+    },
+    "Q1059912": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "7b0403d13daa2cfd088a7830ffbaa4774b7de7f04bf276d0b0580ba66f46f49c"
+    },
+    "Q7734692": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "e93487678ce7f79da0c271e23e34c545faf155de6b97f3807bd8b3671aa10b10"
+    },
+    "Q929608": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "00f02f498549c40cec1ea4a39bb9b6b33a04f42f84f5def474b981f5e5048a34"
+    },
+    "Q1236768": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "837279d4690c29b32fd9b4a5532e7dcf90f3eba12cb54a903cfee60f14c644ff"
+    },
+    "Q3828987": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "a516a7a3da4f709590460bd365274bd01f19c23af0d66db1f23aa2767779980a"
+    },
+    "Q41359": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "bd8cec16e83f5a14e7be20d66a5075c896bc55ac417d183559e1533181eaf3a4"
+    },
+    "Q2127756": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "5023db1c5ef90f799e5ace5b40e26f7b07aa65a7ea48074a9a70117f44b08ddf"
+    },
+    "Q2051614": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "154a8dda89e802c2e2d188a30589e96a8a3cdaaaa3758d506a27728449622860"
+    },
+    "Q3793866": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "146fee65c18db0a5f9cfb756b4546f2683ca2ae7f50de77aad048acb5376fab6"
+    },
+    "Q4016617": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "d539bfcff318145da6803d811c13aa4958cfd765d343cd3dcff6b9e84916a89b"
+    },
+    "Q2294155": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "644d45fa46ec06e191cd130969521481760a49ce4d996ce96e266da31ad82a72"
+    },
+    "Q3190256": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "09439276769f341e317005704677ba242b8ed281779d6bdd0a3c547660573bd3"
+    },
+    "Q3392605": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "5965f160c05c7dcdfd6edae4d29059895884f6c5bcccf7bbc9212afbb4a06b36"
+    },
+    "Q2647714": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "bf85cb37131db8a93cfd668b036e02f6faa8c9a034a57c8768733977e98ccc33"
+    },
+    "Q4000825": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "d6ade4332e479c75fea2e05c2dbc6728b72511e9de43ab07f24a393993aa9941"
+    },
+    "Q498727": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "c8a6077c7bfed614369b9a503995926957fc8363cf9d89950d91512afcdf391d"
+    },
+    "Q1139149": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "e3e37a26d593dd05d6caee0c571b27004651706d97bd1b8843e735e599602bd4"
+    },
+    "Q467904": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "86b2800e33a6b9d2fa7e945a8e7d9ce363781e87519b342b3cecc5c87e8dab04"
+    },
+    "Q692374": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "1ab6a19f222e6e0795bcd3d4a2f1a22d756d29f6e7ca46075fa048c3f0715d54"
+    },
+    "Q831504": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "41a61b28dac4c09a11b3ba89d5e65f994ec32c88e7599fc730a7d44a75804d6a"
+    },
+    "Q1090244": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "7639cc82c9f17d3720615a2aa87e5974c1a4e8449854396e6cdb564690fd2592"
+    },
+    "Q3931527": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "ac5ca0a4cfebaf9dbe09b73bff9b01faea25bc45319746bde2213526c35aeb73"
+    },
+    "Q2079836": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "4d5972a3c3837425bf0897ec8787f71e15a0073d59469280468652305913dd8a"
+    },
+    "Q5306605": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "75e3faca22748a4fd69f4a208db5196d49f6784ed70f94d15fd7f63b6e2116a5"
+    },
+    "Q4183317": {
+      "file": "early-published-spatial-selection17-checkpoint2-40-scoped-semantic-list-private.json",
+      "record_sha256": "1f7f0536ad0616ab77ccfc4963f529de867031880ad03d981ad492243b06cff2"
+    }
+  },
+  "fixed_peer_by_id": {},
+  "fixed_adapter_by_id": {},
+  "fixed_adapter_documents": {},
+  "withheld_ids": []
+}
