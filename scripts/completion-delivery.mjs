@@ -15,13 +15,20 @@ export function completionDelivery(metadata, records, maxBytes = 5 * 1024 * 1024
     {...encode(REPOSITORY_COMPLETION_DOWNLOAD), local: false};
 }
 
-export function completionChunks(records, maxBytes = 4 * 1024 * 1024) {
+export function completionChunks(records, maxBytes = 4 * 1024 * 1024, allowOversizedRecord = false) {
   const chunks = [];
   const envelopeBytes = Buffer.byteLength('{"records":[]}');
   let current = [], size = envelopeBytes;
   for (const record of records) {
     const recordBytes = Buffer.byteLength(JSON.stringify(record));
-    if (recordBytes + envelopeBytes > maxBytes) throw new Error('A completion record exceeds the shard size limit: ' + record.id);
+    if (recordBytes + envelopeBytes > maxBytes) {
+      if (!allowOversizedRecord) throw new Error('A completion record exceeds the shard size limit: ' + record.id);
+      if (current.length) chunks.push(current);
+      chunks.push([record]);
+      current = [];
+      size = envelopeBytes;
+      continue;
+    }
     if (current.length && size + recordBytes + 1 > maxBytes) {
       chunks.push(current);
       current = [];
@@ -32,4 +39,14 @@ export function completionChunks(records, maxBytes = 4 * 1024 * 1024) {
   }
   if (current.length) chunks.push(current);
   return chunks;
+}
+
+// A growing complete history may exceed the raw JSON limit. Isolate it,
+// compress every shard losslessly and enforce the actual transmitted limit.
+export function compressedCompletionChunks(records, maxBytes = 4 * 1024 * 1024) {
+  return completionChunks(records, maxBytes, true).map(part => {
+    const bytes = gzipSync(JSON.stringify({records: part}), {level: 9});
+    if (bytes.length > maxBytes) throw new Error('A compressed completion shard exceeds the asset size limit: ' + part[0].id);
+    return bytes;
+  });
 }

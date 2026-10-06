@@ -1,3 +1,4 @@
+import {isEarlySelection13PublishedSpatialRecord} from './early-published-spatial-selection13-evidence-v3.mjs';
 import {isEarlySelection12PublishedSpatialRecord} from './early-published-spatial-selection12-evidence-v2.mjs';
 import {isEarlySelection11PublishedSpatialRecord} from './early-published-spatial-selection11-evidence-v1.mjs';
 import {isR99FixedSameBatchSpatialRecord} from './r99-fixed-samebatch-spatial-evidence-v1.mjs';
@@ -29,9 +30,9 @@ import {MODERN_SELECTION4_PUBLISHED_SPATIAL_INPUTS,MODERN_SELECTION4_SPATIAL_SEL
 import {R91_FIXED_SAME_BATCH_SPATIAL_INPUTS,r91FixedSameBatchSpatialIds} from './r91-fixed-samebatch-spatial-evidence-v2.mjs';
 import {isR92FixedSameBatchSpatialRecord} from './r92-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isEarlySelection5PublishedSpatialRecord} from './early-published-spatial-selection5-evidence-v2.mjs';
-import {completionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
+import {completionChunks,compressedCompletionChunks,completionDelivery,LOCAL_COMPLETION_DOWNLOAD,REPOSITORY_COMPLETION_DOWNLOAD} from './completion-delivery.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
-const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
+const fetcher=async p=>new Response(await readFile(new URL('dist/'+p,root)));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [source,completion,catalog,spatial,links,baseline,crosschecks]=await Promise.all([loadBibliographySource(fetcher),loadCompletionSource(fetcher),read('dist/assets/catalog.json'),read('dist/assets/spatial.json'),read('dist/assets/research-links.json'),gz('research/audit-baseline-universe.json.gz'),gz('research/library-crosschecks.json.gz')]);
 const {works}=buildCanonicalUniverse(source.records,catalog.works,spatial,links,completion.records),before=new Map(baseline.works.map(w=>[w.id,w]));
@@ -98,7 +99,7 @@ for(const input of spatialInputs)for(const record of input.records){
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
  }
- if(isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
@@ -320,6 +321,24 @@ check('completion shards stay within asset limits without losing or reordering r
  assert(parts.length>1);assert.deepEqual(parts.flat(),sample);
  for(const records of parts)assert(Buffer.byteLength(JSON.stringify({records}))<=limit);
  assert.throws(()=>completionChunks(sample,1),/exceeds the shard size limit/);
+});
+const legacyRecords=[{id:'Q1',note:'legacy exact'}],legacyPath='./assets/completion-index/000.json';
+const legacyFetch=async path=>new Response(JSON.stringify(path==='./assets/completion.json'
+ ? {format:'completion-manifest-v1',metadata:{record_count:1},chunks:[legacyPath]}
+ : {records:legacyRecords}));
+assert.deepEqual((await loadCompletionSource(legacyFetch)).records,legacyRecords);
+await assert.rejects(loadCompletionSource(async path=>path==='./assets/completion.json'
+ ? new Response(JSON.stringify({format:'completion-manifest-v1',metadata:{record_count:1},chunks:['./assets/completion-index/000.json.gz']}))
+ : new Response('invalid gzip')));
+passed++;console.log('PASS legacy JSON stays exact and corrupt compressed shards reject partial loading');
+check('oversized complete histories compress losslessly and retain the transmitted asset limit',()=>{
+ const sample=[{id:'Q1',history:'历史'.repeat(20000)},{id:'Q2',history:'last'}],limit=4096;
+ assert.throws(()=>completionChunks(sample,limit),/exceeds the shard size limit/);
+ const parts=compressedCompletionChunks(sample,limit);
+ assert(parts.every(bytes=>bytes.length<=limit));
+ assert.deepEqual(parts.flatMap(bytes=>JSON.parse(gunzipSync(bytes)).records),sample);
+ const dense=Array.from({length:2000},(_,i)=>createHash('sha256').update(String(i)).digest('hex')).join('');
+ assert.throws(()=>compressedCompletionChunks([{id:'Q1',history:dense}],limit),/compressed completion shard exceeds/);
 });
 const completeArchive=await gz('research/completion-overlay.json.gz');
 check('large completion downloads retain the full exact archive in the public repository',()=>{

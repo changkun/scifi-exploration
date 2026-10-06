@@ -50,7 +50,7 @@ export async function buildSiteDelivery(repository, commit, output) {
     return `fetcher(datasetURL(${argument}))`;
   });
   if (mapped !== 6) throw new Error('The data-loader interface changed; review the delivery mapping');
-  loader = `// Complete data is served from this immutable, published repository commit.\nconst DATASET_ORIGIN = ${JSON.stringify(origin)};\nfunction datasetURL(relative) {\n if(typeof relative !== 'string' || !/^\\.\\/assets\\/[A-Za-z0-9_/-]+\\.json$/.test(relative) || relative.includes('..')) throw new Error('Dataset path is invalid');\n return DATASET_ORIGIN + relative.slice(2);\n}\n` + loader;
+  loader = `// Complete data is served from this immutable, published repository commit.\nconst DATASET_ORIGIN = ${JSON.stringify(origin)};\nfunction datasetURL(relative) {\n if(typeof relative !== 'string' || !/^\\.\\/assets\\/[A-Za-z0-9_/-]+\\.json(?:\\.gz)?$/.test(relative) || relative.includes('..')) throw new Error('Dataset path is invalid');\n return DATASET_ORIGIN + relative.slice(2);\n}\n` + loader;
   await writeFile(loaderPath, loader);
   const tag = `delivery-${commit.slice(0, 12)}`;
   const appPath = join(dist, 'assets/app.js');

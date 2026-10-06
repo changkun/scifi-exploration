@@ -45,11 +45,11 @@ await checkHostedSizes(delivery);
 const original = await import(pathToFileURL(join(base, 'assets/data-loader.mjs')));
 const generated = await import(pathToFileURL(join(delivery, 'assets/data-loader.mjs')));
 let requests = 0;
-const localFetch = async relative => ({ok: true, json: async () => JSON.parse(await readFile(join(base, relative.slice(2)), 'utf8'))});
+const localFetch = async relative => new Response(await readFile(join(base, relative.slice(2))));
 const remoteFetch = async url => {
   assert.ok(url.startsWith(metadata.dataset_origin), 'Every data request must use the fixed commit');
   const relative = url.slice(metadata.dataset_origin.length);
-  assert.match(relative, /^assets\/[A-Za-z0-9_/-]+\.json$/);
+  assert.match(relative, /^assets\/[A-Za-z0-9_/-]+\.json(?:\.gz)?$/);
   requests++;
   return localFetch('./' + relative);
 };

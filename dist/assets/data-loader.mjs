@@ -14,7 +14,9 @@ const shardCache=new Map();
 export async function loadCompletionSource(fetcher=fetch){
  const r=await fetcher('./assets/completion.json');if(!r.ok)throw new Error('补全状态未载入');const manifest=await r.json();
  if(manifest.format!=='completion-manifest-v1'||!Array.isArray(manifest.chunks)||new Set(manifest.chunks).size!==manifest.chunks.length)throw new Error('补全清单无效');
- const records=(await Promise.all(manifest.chunks.map(async path=>{if(!/^\.\/assets\/completion-index\/\d{3}\.json$/.test(path))throw new Error('补全分片路径无效');const part=await fetcher(path);if(!part.ok)throw new Error('补全分片未完整载入');const data=await part.json();if(!Array.isArray(data.records))throw new Error('补全分片无效');return data.records;}))).flat();
+ const records=(await Promise.all(manifest.chunks.map(async path=>{if(!/^\.\/assets\/completion-index\/\d{3}\.json(?:\.gz)?$/.test(path))throw new Error('补全分片路径无效');const part=await fetcher(path);if(!part.ok)throw new Error('补全分片未完整载入');const data=path.endsWith('.gz')
+  ? await new Response(new Blob([await part.arrayBuffer()]).stream().pipeThrough(new DecompressionStream('gzip'))).json()
+  : await part.json();if(!Array.isArray(data.records))throw new Error('补全分片无效');return data.records;}))).flat();
  if(records.length!==manifest.metadata.record_count||new Set(records.map(r=>r.id)).size!==records.length)throw new Error('补全状态缺失或重复');
  return {records,metadata:manifest.metadata};
 }

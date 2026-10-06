@@ -7,7 +7,7 @@ import {loadBibliographySource,loadCompletionSource} from '../dist/assets/data-l
 import {filterWorks,DEFAULT_STATE,stateFromURL,searchFromState} from '../dist/assets/model.mjs';
 import {chronologyEraCounts} from '../dist/assets/chronology.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
-const fetcher=async p=>{try{return{ok:true,json:()=>read('dist/'+p)}}catch{return{ok:false}}};
+const fetcher=async p=>{try{return new Response(await readFile(new URL('dist/'+p,root)))}catch{return{ok:false}}};
 const [source,catalog,spatial,links]=await Promise.all([loadBibliographySource(fetcher),read('dist/assets/catalog.json'),read('dist/assets/spatial.json'),read('dist/assets/research-links.json')]);
 const completion=await loadCompletionSource(fetcher);
 const canonical=buildCanonicalUniverse(source.records,catalog.works,spatial,links,completion.records),works=canonical.works;

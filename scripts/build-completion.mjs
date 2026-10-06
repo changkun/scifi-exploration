@@ -8,7 +8,7 @@ import {isDeepStrictEqual} from 'node:util';
 import {fileURLToPath} from 'node:url';
 import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
 import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
-import {completionChunks,completionDelivery} from './completion-delivery.mjs';
+import {compressedCompletionChunks,completionDelivery} from './completion-delivery.mjs';
 import {validateSpatialEvidence,initialResearchSpatialBuildArguments} from './spatial-evidence.mjs';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
@@ -165,7 +165,7 @@ const rules=[
 ];
 const detailDir=new URL('dist/assets/library-details/',root),indexDir=new URL('dist/assets/completion-index/',root);
 await Promise.all([mkdir(detailDir,{recursive:true}),mkdir(indexDir,{recursive:true})]);
-for(const dir of [detailDir,indexDir])for(const f of await readdir(dir))if(f.endsWith('.json'))await unlink(new URL(f,dir));
+for(const dir of [detailDir,indexDir])for(const f of await readdir(dir))if(f.endsWith('.json')||f.endsWith('.json.gz'))await unlink(new URL(f,dir));
 const detailUrls=new Map();
 for(let start=0;start<library.records.length;start+=250){
  const n=String(start/250).padStart(3,'0'),url=`./assets/library-details/${n}.json`,part=library.records.slice(start,start+250);
@@ -202,9 +202,9 @@ metadata.spatial_scope_annotations={file:'research/spatial-scope-notes-round1.js
 metadata.issue_facet_records=records.filter(r=>r.knowledge?.fields.issue_facets?.length).length;
 metadata.issue_facet_count=records.reduce((n,r)=>n+(r.knowledge?.fields.issue_facets?.length||0),0);
 const chunks=[];
-const parts=completionChunks(records),delivery=completionDelivery(metadata,records);
+const parts=compressedCompletionChunks(records),delivery=completionDelivery(metadata,records);
 Object.assign(metadata,delivery.metadata);
-for(const [i,part] of parts.entries()){const n=String(i).padStart(3,'0');chunks.push(`./assets/completion-index/${n}.json`);await writeFile(new URL(n+'.json',indexDir),JSON.stringify({records:part}));}
+for(const [i,part] of parts.entries()){const n=String(i).padStart(3,'0');chunks.push(`./assets/completion-index/${n}.json.gz`);await writeFile(new URL(n+'.json.gz',indexDir),part);}
 await writeFile(new URL('dist/assets/completion.json',root),JSON.stringify({format:'completion-manifest-v1',metadata,chunks},null,2)+'\n');
 await writeFile(new URL('research/completion-overlay.json.gz',root),delivery.bytes);
 if(delivery.local)await writeFile(new URL('dist/assets/completion-overlay.json.gz',root),delivery.bytes);

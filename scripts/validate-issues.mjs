@@ -9,7 +9,7 @@ import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inp
 import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
 import {fileURLToPath} from 'node:url';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
-const fetcher=async p=>({ok:true,json:()=>read('dist/'+p)});
+const fetcher=async p=>new Response(await readFile(new URL('dist/'+p,root)));
 const gz=async p=>JSON.parse(gunzipSync(await readFile(new URL(p,root))));
 const [source,completion,catalog,spatial,links,archive,summary]=await Promise.all([loadBibliographySource(fetcher),loadCompletionSource(fetcher),read('dist/assets/catalog.json'),read('dist/assets/spatial.json'),read('dist/assets/research-links.json'),gz('research/issue-analysis.json.gz'),read('research/issue-completion-summary.json')]);
 const works=buildCanonicalUniverse(source.records,catalog.works,spatial,links,completion.records).works;
