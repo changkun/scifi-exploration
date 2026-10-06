@@ -1,7 +1,7 @@
 // Complete data is served from this immutable, published repository commit.
-const DATASET_ORIGIN = "https://raw.githubusercontent.com/changkun/scifi-exploration/75ae99e2a3ce1f4637899e3abbc353020505d93d/dist/";
+const DATASET_ORIGIN = "https://raw.githubusercontent.com/changkun/scifi-exploration/f9c91b28ece410f4643731ef5ddfac19e78cc8a8/dist/";
 function datasetURL(relative) {
- if(typeof relative !== 'string' || !/^\.\/assets\/[A-Za-z0-9_/-]+\.json$/.test(relative) || relative.includes('..')) throw new Error('Dataset path is invalid');
+ if(typeof relative !== 'string' || !/^\.\/assets\/[A-Za-z0-9_/-]+\.json(?:\.gz)?$/.test(relative) || relative.includes('..')) throw new Error('Dataset path is invalid');
  return DATASET_ORIGIN + relative.slice(2);
 }
 export async function loadBibliographySource(fetcher=fetch) {
@@ -20,7 +20,9 @@ const shardCache=new Map();
 export async function loadCompletionSource(fetcher=fetch){
  const r=await fetcher(datasetURL('./assets/completion.json'));if(!r.ok)throw new Error('补全状态未载入');const manifest=await r.json();
  if(manifest.format!=='completion-manifest-v1'||!Array.isArray(manifest.chunks)||new Set(manifest.chunks).size!==manifest.chunks.length)throw new Error('补全清单无效');
- const records=(await Promise.all(manifest.chunks.map(async path=>{if(!/^\.\/assets\/completion-index\/\d{3}\.json$/.test(path))throw new Error('补全分片路径无效');const part=await fetcher(datasetURL(path));if(!part.ok)throw new Error('补全分片未完整载入');const data=await part.json();if(!Array.isArray(data.records))throw new Error('补全分片无效');return data.records;}))).flat();
+ const records=(await Promise.all(manifest.chunks.map(async path=>{if(!/^\.\/assets\/completion-index\/\d{3}\.json(?:\.gz)?$/.test(path))throw new Error('补全分片路径无效');const part=await fetcher(datasetURL(path));if(!part.ok)throw new Error('补全分片未完整载入');const data=path.endsWith('.gz')
+  ? await new Response(new Blob([await part.arrayBuffer()]).stream().pipeThrough(new DecompressionStream('gzip'))).json()
+  : await part.json();if(!Array.isArray(data.records))throw new Error('补全分片无效');return data.records;}))).flat();
  if(records.length!==manifest.metadata.record_count||new Set(records.map(r=>r.id)).size!==records.length)throw new Error('补全状态缺失或重复');
  return {records,metadata:manifest.metadata};
 }
