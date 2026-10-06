@@ -13,7 +13,7 @@ if(records.length!==manifest.metadata.record_count||new Set(records.map(r=>r.id)
 catalog.works.forEach((w,i)=>w.report_index=i+1);
 const completion=JSON.parse(gunzipSync(await readFile(new URL('research/completion-overlay.json.gz',root))));
 const {works,aliases}=buildCanonicalUniverse(records,catalog.works,spatial,links,completion.records);
-const metadata={format:'canonical-work-universe-v1',research_date:'2026-10-04',source_record_count:records.length,...coverageOf(works),entity_linking:links.metadata,source_scope:manifest.metadata.scope,identity_note:'本版本统一已有来源实体及研究记录的网页身份，不宣称已完成全球书目。系列、章节、版本等源实体保持独立；未可靠链接的研究记录使用local编号。',field_note:'当前索引与研究层完整保留；每条source_index.detail_url指向完整源字段，所有来源详细记录、关系与related_entities另见bibliography-full.json.gz。unknown不作负面判断。',full_source_data:'./assets/bibliography-full.json.gz'};
+const metadata={format:'canonical-work-universe-v1',research_date:completion.metadata.date,source_record_count:records.length,...coverageOf(works),entity_linking:links.metadata,source_scope:manifest.metadata.scope,identity_note:'本版本统一已有来源实体及研究记录的网页身份，不宣称已完成全球书目。系列、章节、版本等源实体保持独立；未可靠链接的研究记录使用local编号。',field_note:'当前索引与研究层完整保留；每条source_index.detail_url指向完整源字段，所有来源详细记录、关系与related_entities另见bibliography-full.json.gz。unknown不作负面判断。',full_source_data:'./assets/bibliography-full.json.gz'};
 metadata.classification_registry={...CLASSIFICATION_REGISTRY.metadata,axes:CLASSIFICATION_REGISTRY.axes,categories:CLASSIFICATION_REGISTRY.categories.length,url:'./assets/classification-registry.json'};
 metadata.completion=completion.metadata;metadata.field_note+=' 知识补充待独立核对；跨来源一致仅限部分字段。所有缺口与差异保留在completion；原研究与source_index不覆盖。';
 const snapshot={metadata,aliases:Object.fromEntries(aliases),works};

@@ -1,3 +1,4 @@
+import {isR106FixedSameBatchSpatialRecord,validateR106FixedSameBatchSpatialEvidence} from './r106-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isR105FixedSameBatchSpatialRecord,validateR105FixedSameBatchSpatialEvidence} from './r105-fixed-samebatch-spatial-evidence-v3.mjs';
 import {isEarlySelection18PublishedSpatialRecord,validateEarlySelection18PublishedSpatialEvidence} from './early-published-spatial-selection18-evidence-v2.mjs';
 import {isR104FixedSameBatchSpatialRecord,validateR104FixedSameBatchSpatialEvidence} from './r104-fixed-samebatch-spatial-evidence-v2.mjs';
@@ -46,6 +47,7 @@ export function initialResearchSpatialBuildArguments(record,options={}){
  return earlierBuildArguments(record,options);
 }
 export function validateSpatialEvidence(record,options={}){
+ if(isR106FixedSameBatchSpatialRecord(record))return validateR106FixedSameBatchSpatialEvidence(record,options);
  if(isR105FixedSameBatchSpatialRecord(record))return validateR105FixedSameBatchSpatialEvidence(record,options);
  if(isEarlySelection18PublishedSpatialRecord(record))return validateEarlySelection18PublishedSpatialEvidence(record,options);
  if(isR104FixedSameBatchSpatialRecord(record))return validateR104FixedSameBatchSpatialEvidence(record,options);

@@ -5,7 +5,7 @@ import {mountChronology} from './chronology.mjs?v=round4-context';
 import {mountBibliography} from './bibliography.mjs';
 import {mountTaxonomy} from './taxonomy.mjs';
 import {buildCanonicalUniverse,coverageOf,FIELD_LABELS,DIMENSION_LABELS,MISSING_FIELD_LABELS} from './canonical.mjs?v=round91-single-pass';
-import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round90-single-pass';
+import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round106-scoped-basis';
 import {completionDetail,renderCompletion} from './completion.mjs?v=round91-single-pass';
 import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs';
 const $=id=>document.getElementById(id);

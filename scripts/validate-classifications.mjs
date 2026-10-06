@@ -1,3 +1,4 @@
+import {validateRound106ClosedPendingCandidate} from './round106-closed-two-pending-candidate-evidence-v2.mjs';
 import {validateRound105ClosedPendingCandidate} from './round105-closed-three-pending-candidate-evidence-v2.mjs';
 import {fileURLToPath} from 'node:url';
 import {validateRound97DoorwaysHistoricalUpdate} from './round97-doorways-historical-evidence.mjs';
@@ -9,6 +10,7 @@ import {validateRound99GlobalKnowledgeDimensionCandidate} from './round99-global
 import {validateR94PreservedV22BibliographicFormReview} from './round94-preserved-v22-stars-gods-review-v1.mjs';
 import {validateR94ModernScopedEditorialCandidate} from './round94-modern-scoped-editorial-candidate-v2.mjs';
 import {resolveR93PreservedScopedCandidateLog} from './round93-preserved-scoped-candidate-log-v1.mjs';
+import {resolveR106PreservedScopedCandidateLog} from './round106-fuller-scoped-history-continuation-v1.mjs';
 import {isV22BibliographicFormReview,validateV22BibliographicFormReview} from './classification-v22-bibliographic-review-guard.mjs';
 import {resolveR89PreservedScopedCandidateLog} from './round89-preserved-scoped-candidate-log.mjs';
 import {validateR89FormHistoryCandidate} from './round89-form-history-validator.mjs';
@@ -152,6 +154,12 @@ for(const candidate of registry.discovery_candidates||[]){
   for(const evidence of candidate.work_evidence){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
+    if(validateRound106ClosedPendingCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url)),registry})){
+      assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
+      assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
+      assert.equal(work.completion.source_verified,false);
+      continue;
+    }
     if(validateRound105ClosedPendingCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){
       assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
       assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
@@ -182,10 +190,12 @@ for(const candidate of registry.discovery_candidates||[]){
         material.url===url && material.actual_bibliographic_source_read===true &&
         material.actual_content_source_read===false && material.reading_scope)));
     }else if(evidence.discovery_source_mode==='scoped_candidate_no_core_analysis'){
-      const scopedCandidateLog=resolveR93PreservedScopedCandidateLog(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)}).log;
+      const scopedResolution=resolveR106PreservedScopedCandidateLog(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)});
+      const scopedCandidateLog=scopedResolution.log;
       assert.equal(evidence.actual_content_source_read,true);
       assert.equal(evidence.knowledge_analysis,false);
-      assert.equal(work.issue_analysis_status,'missing');
+      if(scopedResolution.later_separate_core_added_unverified===true) assert.notEqual(work.issue_analysis_status,'missing');
+      else assert.equal(work.issue_analysis_status,'missing');
       assert(evidence.private_raw_source?.sha256);
       assert(evidence.sources.every(url=>work.source_search_log?.materials_checked.some(material=>
         material.url===url && material.actual_content_source_read===true &&

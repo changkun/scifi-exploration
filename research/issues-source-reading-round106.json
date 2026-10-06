@@ -1,0 +1,1893 @@
+{
+  "metadata": {
+    "created_at": "2026-10-06",
+    "target_round": 106,
+    "status": "frozen_private_once_adoption_not_applied",
+    "source_commit": "44e13366c01ac963b64ac1e1cdafc62c9b78bbff",
+    "source_canonical_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+    "source_process_raw_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+    "source_process_gzip_sha256": "9e830e0d56b626de963ca7f89fbb64d66170f3bb346d648038ca7e1d545c20f7",
+    "actual_published_receipt": {
+      "file": "work/evidence/round105-published-site.json",
+      "sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+      "archive": "research/issue-input-snapshots/round105-published-site.json"
+    },
+    "processed_identity_count": 49,
+    "core_count": 19,
+    "facet_count": 40,
+    "deferred_count": 30,
+    "real_failure_increments": 30,
+    "zero_request_knowledge_core_count": 5,
+    "knowledge_core_with_identity_only_query": 1,
+    "actual_query_subrequest_count": 44,
+    "unique_shared_search_calls": 11,
+    "actual_open_subrequest_count": 5,
+    "unique_shared_open_calls": 3,
+    "failed_open_subrequest_count": 1,
+    "open_participating_identity_count": 6,
+    "actual_find_subrequest_count": 3,
+    "unique_shared_find_calls": 1,
+    "partial_original_identity_count": 1,
+    "partial_revised_translation_identity_count": 1,
+    "full_original_text_count": 0,
+    "independent_verification_count": 0,
+    "spatial_adoption_count": 0,
+    "originals_unchanged": true,
+    "counter_note": "44查询子请求=11唯一共享search调用；5打开请求=3唯一共享open调用，6身份参与打开材料。现代两Chrysalis共享同一个失败PDF请求，index5执行1、index6执行0。3find在1共享调用。缺失原counter不合成；旧URL不自动升级来源角色。",
+    "scope_note": "早期5条知识补充和Answer知识成员不伪称网页读情节。root开篇原文1、局部修订译文1，均非全文；全体未独立核验。root原查询先执行后审旧方向，不声称所有查询实质新方向。",
+    "method": "R106-exact49-raw-and-canonical-dualprior-original19-scoped-analysis-v1",
+    "record_count": 19,
+    "field_count": 57,
+    "source_inputs": [
+      {
+        "file": "work/evidence/round105-published-site.json",
+        "sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+        "archive": "research/issue-input-snapshots/round105-published-site.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-first2-proposals-private.json",
+        "sha256": "7215c85dcfc550500e38588e9f7e95491bac8a74660676b2daa16f6348cc1ef8",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-proposals-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-first2-log-private.json",
+        "sha256": "f980dfde0f1c53c854c90a66431c869f74d7f5ac003e6ee903423f6d02956a2b",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-log-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-first2-selection-private.json",
+        "sha256": "18513ac974557daa043541938d3053cf7475340564d1e937d3df1549e8b21cf6",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-selection-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-proposals-private.json",
+        "sha256": "2b618a7ead2fb35e954183ea8f2adc0ac587a74bca15f1c246cacd6483ea3e99",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-proposals-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-log-private.json",
+        "sha256": "5101c0ad3446dafe9e7f25da33cbfb25eac479a5262dd1634e16e23f7964414a",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-log-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-selection-private.json",
+        "sha256": "da2e34982b8f7767bed120c52a01ade8a32d68ff8414a3c694354eb8f93fbe10",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-selection-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-cultural-nonfiction1-proposals-private.json",
+        "sha256": "7fe932924ea3ef17b5be002201fa71b38d0070d6d960f16ca13f5f9d2b3f36a2",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-proposals-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-cultural-nonfiction1-log-private.json",
+        "sha256": "68d45cb3fc9c74ee50780b959033a21799e8d7a717265bce5d2832b5b5943add",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-log-private.json"
+      },
+      {
+        "file": "work/evidence/round106-early-familiar-cultural-nonfiction1-selection-private.json",
+        "sha256": "d7a56cab137d619f04efdce04dee9a6722d686842910c8f5aab0f18db892c588",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-selection-private.json"
+      },
+      {
+        "file": "work/evidence/round106-root-old4-core3-effective-cache-bound-private.json",
+        "sha256": "0771835688b82533886e23b9d5924fa83c4c8db9fd5c2eebfe8a14b3a7f4cae6",
+        "archive": "research/issue-input-snapshots/round106-root-old4-core3-effective-cache-bound-private.json"
+      },
+      {
+        "file": "work/evidence/round106-root-old4-source-log-private.json",
+        "sha256": "0d7b6d67b31e52f6aaf12b884c79240730ef745bc6142042cfa999adcd1a5bf8",
+        "archive": "research/issue-input-snapshots/round106-root-old4-source-log-private.json"
+      },
+      {
+        "file": "work/evidence/round106-root-old4-selection-later-freeze-private.json",
+        "sha256": "dacf6895f556d811b20acfa909a695b5094639311fd70669f144c23d968246e1",
+        "archive": "research/issue-input-snapshots/round106-root-old4-selection-later-freeze-private.json"
+      },
+      {
+        "file": "work/evidence/round106-root-old4-core3-provisional-private.json",
+        "sha256": "2053add0cb96f9cf095f52f55537178f8c080dd6ad686725007ccdbf3b86b12d",
+        "archive": "research/issue-input-snapshots/round106-root-old4-core3-provisional-private.json"
+      },
+      {
+        "file": "work/evidence/round106-root-old4-process-small-proof-private.json",
+        "sha256": "7108367842eddd300c66e04f17dbc63f1872fc665d5e4991625ae34d730ee795",
+        "archive": "research/issue-input-snapshots/round106-root-old4-process-small-proof-private.json"
+      },
+      {
+        "file": "work/evidence/round106-modern40-frozen-input-manifest-private.json",
+        "sha256": "8a17b991875f1272f5722e150915f8e718f49dfa06083e9537f2a0dca5a39e44",
+        "archive": "research/issue-input-snapshots/round106-modern40-frozen-input-manifest-private.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-selection-private.json",
+        "sha256": "a9a849ff29f7f36cb34be931c0d7485c6f07d3dff87da2b8bb667909cf113af6",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-selection-private.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part1-corrected.json",
+        "sha256": "704ddce1b3eb3b249af868eea3cc598f43f1d1f3efec10f49cff868b7f3d9130",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-corrected.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part1.json",
+        "sha256": "33884558e878dc6dd1db4910a81d75d1fb721edf74da7bc4524ac1b71c92e7d1",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1.json"
+      },
+      {
+        "file": "work/evidence/modern-easy-core-round106-part1-log.json",
+        "sha256": "0d7142ef0de00c95cec1f74a3593f17a25432715fb3edfc5f96c1152a06fdf0a",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log.json"
+      },
+      {
+        "file": "work/evidence/round106-modern-first20-cache-query-pointer-correction-private.json",
+        "sha256": "54490214c27f8e1d3397d0d9d8f085237c593abac7282dd3528240a74ea16d63",
+        "archive": "research/issue-input-snapshots/round106-modern-first20-cache-query-pointer-correction-private.json"
+      },
+      {
+        "file": "work/evidence/round106-modern11-root-finite-scope-review-private.json",
+        "sha256": "89909aae2ce6df5e12d13243fca34eb587aff3a18f40d95e79f126a0d7e17752",
+        "archive": "research/issue-input-snapshots/round106-modern11-root-finite-scope-review-private.json"
+      },
+      {
+        "file": "work/evidence/round106-knowledge-outer-six-exact-adapter-private.json",
+        "sha256": "8abe6f17f76da8493dc1b3609738baacc498fd22c9a54a64ed5f656df05c7442",
+        "archive": "research/issue-input-snapshots/round106-knowledge-outer-six-exact-adapter-private.json"
+      }
+    ],
+    "inputs": [
+      {
+        "file": "research/issue-input-snapshots/round106-early-familiar-first2-log-private.json",
+        "sha256": "f980dfde0f1c53c854c90a66431c869f74d7f5ac003e6ee903423f6d02956a2b",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "method": "existing_knowledge_familiar_exact_work_zero_request_v1",
+          "source_commit": "44e13366c01ac963b64ac1e1cdafc62c9b78bbff",
+          "canonical_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "publication_receipt_file": "round105-published-site.json",
+          "publication_receipt_sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+          "baseline_freeze_file": "round106-early-actual-published-baseline-freeze-private.json",
+          "baseline_freeze_sha256": "371576940eaa4f001421996a76b97812db13acf2883ab839fcc32c224704f6fb",
+          "title_scan_file": "round106-early-all927-familiar-title-notes-scan-private.json",
+          "title_scan_sha256": "645e5e9fb260273cf59710b7896d5df1454244e1c190aed378620146fff40055",
+          "title_author_year_rows_browsed": 927,
+          "original_missing_count": 927,
+          "record_count": 2,
+          "issue_facets_count": 4,
+          "new_query_count": 0,
+          "unique_web_tool_call_count": 0,
+          "new_open_count": 0,
+          "new_source_read_count": 0,
+          "new_original_full_text_count": 0,
+          "new_independent_verification_count": 0,
+          "new_failure_increment_count": 0,
+          "note": "仅确切熟悉的这两部单作使用已有知识补充；本轮没有网页查询、旧URL打开或原作重读。全部文学解释待独立核对；其余925个原缺口不因题名扫描算作已分析或失败。原年代、作者列表、粒度、旧失败及完整历史保持。",
+          "raw_process_storage_metadata": {
+            "format": "lossless-json-storage-v1",
+            "logical_path": "research/issue-source-searches.json",
+            "storage_path": "research/issue-source-searches.json.gz",
+            "codec": "gzip",
+            "raw_bytes": 248088939,
+            "raw_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+            "storage_bytes": 14359999,
+            "storage_sha256": "9e830e0d56b626de963ca7f89fbb64d66170f3bb346d648038ca7e1d545c20f7"
+          }
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-log-private.json",
+        "sha256": "5101c0ad3446dafe9e7f25da33cbfb25eac479a5262dd1634e16e23f7964414a",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "method": "existing_knowledge_familiar_exact_work_zero_request_v1",
+          "source_commit": "44e13366c01ac963b64ac1e1cdafc62c9b78bbff",
+          "canonical_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "publication_receipt_file": "round105-published-site.json",
+          "publication_receipt_sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+          "baseline_freeze_file": "round106-early-actual-published-baseline-freeze-private.json",
+          "baseline_freeze_sha256": "371576940eaa4f001421996a76b97812db13acf2883ab839fcc32c224704f6fb",
+          "title_scan_file": "round106-early-all927-familiar-title-notes-scan-private.json",
+          "title_scan_sha256": "645e5e9fb260273cf59710b7896d5df1454244e1c190aed378620146fff40055",
+          "title_author_year_rows_browsed": 927,
+          "original_missing_count": 927,
+          "record_count": 2,
+          "issue_facets_count": 4,
+          "new_query_count": 0,
+          "unique_web_tool_call_count": 0,
+          "new_open_count": 0,
+          "new_source_read_count": 0,
+          "new_original_full_text_count": 0,
+          "new_independent_verification_count": 0,
+          "new_failure_increment_count": 0,
+          "note": "仅确切熟悉的这两部非虚构单作使用已有知识补充；本轮没有网页查询、旧URL打开或原作重读。全部文学解释待独立核对；其余925个原缺口不因题名扫描算作已分析或失败。原年代、作者列表、粒度、旧失败及完整历史保持。",
+          "raw_process_storage_metadata": {
+            "format": "lossless-json-storage-v1",
+            "logical_path": "research/issue-source-searches.json",
+            "storage_path": "research/issue-source-searches.json.gz",
+            "codec": "gzip",
+            "raw_bytes": 248088939,
+            "raw_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+            "storage_bytes": 14359999,
+            "storage_sha256": "9e830e0d56b626de963ca7f89fbb64d66170f3bb346d648038ca7e1d545c20f7"
+          }
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-log-private.json",
+        "sha256": "68d45cb3fc9c74ee50780b959033a21799e8d7a717265bce5d2832b5b5943add",
+        "metadata": {
+          "status": "frozen_checkpoint",
+          "method": "existing_knowledge_familiar_exact_work_zero_request_v1",
+          "source_commit": "44e13366c01ac963b64ac1e1cdafc62c9b78bbff",
+          "canonical_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "publication_receipt_file": "round105-published-site.json",
+          "publication_receipt_sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+          "baseline_freeze_file": "round106-early-actual-published-baseline-freeze-private.json",
+          "baseline_freeze_sha256": "371576940eaa4f001421996a76b97812db13acf2883ab839fcc32c224704f6fb",
+          "title_scan_file": "round106-early-all927-familiar-title-notes-scan-private.json",
+          "title_scan_sha256": "645e5e9fb260273cf59710b7896d5df1454244e1c190aed378620146fff40055",
+          "title_author_year_rows_browsed": 927,
+          "original_missing_count": 927,
+          "record_count": 1,
+          "issue_facets_count": 2,
+          "new_query_count": 0,
+          "unique_web_tool_call_count": 0,
+          "new_open_count": 0,
+          "new_source_read_count": 0,
+          "new_original_full_text_count": 0,
+          "new_independent_verification_count": 0,
+          "new_failure_increment_count": 0,
+          "note": "仅确切熟悉的这部非虚构单作使用已有知识补充；本轮没有网页查询、旧URL打开或原作重读。全部文学解释待独立核对；其余926个原缺口不因题名扫描算作已分析或失败。原年代、作者列表、粒度、旧失败及完整历史保持。",
+          "raw_process_storage_metadata": {
+            "format": "lossless-json-storage-v1",
+            "logical_path": "research/issue-source-searches.json",
+            "storage_path": "research/issue-source-searches.json.gz",
+            "codec": "gzip",
+            "raw_bytes": 248088939,
+            "raw_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+            "storage_bytes": 14359999,
+            "storage_sha256": "9e830e0d56b626de963ca7f89fbb64d66170f3bb346d648038ca7e1d545c20f7"
+          }
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/round106-root-old4-source-log-private.json",
+        "sha256": "0d7b6d67b31e52f6aaf12b884c79240730ef745bc6142042cfa999adcd1a5bf8",
+        "metadata": {
+          "created_at": "2026-10-06",
+          "target_round": 106,
+          "status": "frozen_checkpoint_private_not_adopted",
+          "method": "actual_root_shared_query_open_find_scoped_log_v1",
+          "owner_delegate": "root",
+          "execution_delegate": "root",
+          "documented_by": "early_history",
+          "source_commit": "44e13366c01ac963b64ac1e1cdafc62c9b78bbff",
+          "source_canonical_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "actual_published_receipt_file": "round105-published-site.json",
+          "actual_published_receipt_sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768",
+          "raw_process_storage_metadata": {
+            "format": "lossless-json-storage-v1",
+            "logical_path": "research/issue-source-searches.json",
+            "storage_path": "research/issue-source-searches.json.gz",
+            "codec": "gzip",
+            "raw_bytes": 248088939,
+            "raw_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+            "storage_bytes": 14359999,
+            "storage_sha256": "9e830e0d56b626de963ca7f89fbb64d66170f3bb346d648038ca7e1d545c20f7"
+          },
+          "selection_timing": "4 targets selected from displayed current rows in conversation before actual first search; this file frozen later after requests while public source unchanged, not represented as a pre-request file",
+          "selection_reference": {
+            "file": "work/evidence/round106-root-old4-selection-later-freeze-private.json",
+            "sha256": "dacf6895f556d811b20acfa909a695b5094639311fd70669f144c23d968246e1",
+            "public_copy": true
+          },
+          "original_analysis_reference": {
+            "file": "work/evidence/round106-root-old4-core3-provisional-private.json",
+            "sha256": "2053add0cb96f9cf095f52f55537178f8c080dd6ad686725007ccdbf3b86b12d",
+            "public_copy": true
+          },
+          "record_count": 4,
+          "new_core_count": 3,
+          "facet_count": 8,
+          "actual_query_subrequest_count": 4,
+          "actual_unique_shared_search_call_count": 1,
+          "actual_open_subrequest_count": 4,
+          "actual_unique_shared_open_call_count": 2,
+          "actual_find_subrequest_count": 3,
+          "actual_unique_shared_find_call_count": 1,
+          "actual_failed_identity_increment_count": 1,
+          "original_text_partial_identity_count": 1,
+          "revised_translation_partial_identity_count": 1,
+          "complete_original_text_count": 0,
+          "independent_verification_count": 0,
+          "new_spatial_proposals": 0,
+          "private_raw_caches": {
+            "search": {
+              "file": "work/evidence/round106-root-old4-first-search-raw-private.json",
+              "sha256": "6319fbabe421793f6ccc8a6a403767c73c8662e49dded46e2dee83b1dbfe052b",
+              "public_copy": false
+            },
+            "open1": {
+              "file": "work/evidence/round106-root-old4-first-open-raw-private.json",
+              "sha256": "3c707ab048fed3a00ef153514b725e827227e4a30b72c56df249e107fac72347",
+              "public_copy": false
+            },
+            "find": {
+              "file": "work/evidence/round106-root-old4-publisher-find-raw-private.json",
+              "sha256": "f156b7b571e16ad626184514386ccffc18f50a8760bf1ef1e7fc86bb13e43731",
+              "public_copy": false
+            },
+            "open2": {
+              "file": "work/evidence/round106-root-old4-publisher-title-open-raw-private.json",
+              "sha256": "d90dd21eb164660393286b51136678400beb539fa69afba781eb7519ffdc7f3f",
+              "public_copy": false
+            }
+          },
+          "counter_note": "身份参与同一个共享工具调用不等于该身份执行独立调用；全局1search/2open/1find calls与4query/4open/3find subrequests分列。查找Inhalt未命中是单个find结果，不算新增作品失败；作品不足失败仅Kiss。",
+          "direction_note": "请求后才核对旧查询；完整保留实际查询，未声称四查询全部新实质方向。"
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "metadata": {
+          "status": "frozen_actual_shared_search_checkpoint",
+          "date": "2026-10-06",
+          "delegate": "modern_history",
+          "target_round": 106,
+          "source_snapshot_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "source_process_snapshot_logical_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+          "source_publication_pending_original_preserved": false,
+          "source_publication_pending": false,
+          "snapshot_phase": "actual_published_R105_canonical_and_complete_process",
+          "last_actual_published_round": 105,
+          "publication_receipt_binding": {
+            "file": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/round105-published-site.json",
+            "sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768"
+          },
+          "ownership_file": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-selection-private.json",
+          "ownership_sha256": "a9a849ff29f7f36cb34be931c0d7485c6f07d3dff87da2b8bb667909cf113af6",
+          "ownership_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "full_original_text_read_count": 0,
+          "partial_original_excerpt_read_count": 0,
+          "independent_verification_count": 0,
+          "no_raw_web_returns_public_copy": true,
+          "processed_identity_count": 20,
+          "analysis_count": 4,
+          "facet_count": 8,
+          "deferred_identity_count": 16,
+          "actual_unsuccessful_increment_count": 16,
+          "zero_query_boundary_count": 0,
+          "actual_query_subrequest_count": 20,
+          "actual_search_tool_call_count": 5,
+          "actual_open_subrequest_count": 1,
+          "actual_open_tool_call_count": 1,
+          "unique_actual_shared_search_tool_call_ids": [
+            "modern-r106-search-batch1",
+            "modern-r106-search-batch2",
+            "modern-r106-search-batch3",
+            "modern-r106-search-batch4",
+            "modern-r106-search-batch5"
+          ],
+          "unique_actual_shared_open_tool_call_ids": [
+            "modern-r106-open-batch1"
+          ],
+          "query_tool_call_participations_not_individual_calls": 20,
+          "actual_individual_search_tool_call_count": 0,
+          "corrects_previous_input": {
+            "file": "work/evidence/modern-easy-core-round106-part1-log.json",
+            "sha256": "0d7142ef0de00c95cec1f74a3593f17a25432715fb3edfc5f96c1152a06fdf0a",
+            "scope": "Only exact target query_subrequest_index references; core fields, source scopes, actual requests/returns/counters/full prior unchanged."
+          }
+        }
+      },
+      {
+        "file": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "metadata": {
+          "status": "frozen_actual_shared_search_checkpoint",
+          "date": "2026-10-06",
+          "delegate": "modern_history",
+          "target_round": 106,
+          "source_snapshot_sha256": "e52831d456da2b550be1dc138c1788a564cd19245880d8c7360a54a2aa20dacc",
+          "source_process_snapshot_logical_sha256": "dfe414f88ec8d97def801ee9bc1b0646f7e0e5a9e7eea24092ca0ca741d52301",
+          "source_publication_pending_original_preserved": false,
+          "source_publication_pending": false,
+          "snapshot_phase": "actual_published_R105_canonical_and_complete_process",
+          "last_actual_published_round": 105,
+          "publication_receipt_binding": {
+            "file": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/round105-published-site.json",
+            "sha256": "97e234adb2d97271133e8def31dc026e76f64904f6f8991b632762657767d768"
+          },
+          "ownership_file": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-selection-private.json",
+          "ownership_sha256": "a9a849ff29f7f36cb34be931c0d7485c6f07d3dff87da2b8bb667909cf113af6",
+          "ownership_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "full_original_text_read_count": 0,
+          "partial_original_excerpt_read_count": 0,
+          "independent_verification_count": 0,
+          "no_raw_web_returns_public_copy": true,
+          "processed_identity_count": 20,
+          "analysis_count": 7,
+          "facet_count": 14,
+          "deferred_identity_count": 13,
+          "actual_unsuccessful_increment_count": 13,
+          "zero_query_boundary_count": 0,
+          "actual_query_subrequest_count": 20,
+          "actual_search_tool_call_count": 5,
+          "actual_open_subrequest_count": 0,
+          "actual_open_tool_call_count": 0,
+          "unique_actual_shared_search_tool_call_ids": [
+            "modern-r106-search-batch6",
+            "modern-r106-search-batch7",
+            "modern-r106-search-batch8",
+            "modern-r106-search-batch9",
+            "modern-r106-search-batch10"
+          ],
+          "unique_actual_shared_open_tool_call_ids": [],
+          "query_tool_call_participations_not_individual_calls": 20,
+          "actual_individual_search_tool_call_count": 0
+        }
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "Q19947712",
+      "identity": {
+        "title": "Shadow of the Xel'Naga",
+        "author": "凱文·詹姆士·安德森"
+      },
+      "fields": {
+        "topics": [
+          "殖民与他者",
+          "权力与制度",
+          "技术与责任"
+        ],
+        "issue": "Bhekar Ro殖民地发现的萨尔纳加遗迹吸引人类、星灵和异虫力量，使本来处于边缘的居民卷入争夺。故事把遗迹的未知力量与武装势力抢先占有的冲动并置，问题是当地人的生存与决定权如何在这种竞争中被挤出。",
+        "issue_facets": [
+          {
+            "label": "遗迹争夺中的居民决定权",
+            "question": "当外来武装把殖民地变成遗迹争夺地点时，居民是否还有决定自身风险的权利？",
+            "basis": "Bhekar Ro居民发现遗迹后，人类、星灵与异虫力量相继介入，遗迹争夺直接威胁殖民地。"
+          },
+          {
+            "label": "先占有后理解的技术竞争",
+            "question": "各方尚未理解遗迹用途就试图控制它，军事优势是否能替代对未知技术后果的认识？",
+            "basis": "各方围绕萨尔纳加遗迹采取争夺行动，而遗迹并不是它们能随意理解和支配的普通资源。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本轮依据确切单作已有知识归纳，未新查来源，原类型与书目不改。",
+        "issue": "已有知识待独立核对；仅Shadow of the Xel'Naga这部小说的Bhekar Ro遗迹争夺前提；不分析StarCraft游戏整体、其他小说卷或游戏地图，不补战斗结局及遗迹机制的具体规则。",
+        "issue_facets": "两项问题均是上述限定前提的原创分析，不代表原作全文已读或外部事实已核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_scope": "仅Shadow of the Xel'Naga这部小说的Bhekar Ro遗迹争夺前提；不分析StarCraft游戏整体、其他小说卷或游戏地图，不补战斗结局及遗迹机制的具体规则。",
+      "source_selection_record_sha256": "bf9c36ae58966056810ce47f20f22e9e8903e13d706550f0c4ef8b379f494ba0",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-early-familiar-first2-proposals-private.json",
+        "sha256": "7215c85dcfc550500e38588e9f7e95491bac8a74660676b2daa16f6348cc1ef8",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-proposals-private.json",
+        "record_sha256": "62305e0141df8cd4bb6fce71053b4786ca0b58db2ef34b9f82b168c6bc758cb6"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-early-familiar-first2-log-private.json",
+        "sha256": "f980dfde0f1c53c854c90a66431c869f74d7f5ac003e6ee903423f6d02956a2b",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-log-private.json",
+        "record_sha256": "30de6df1850b888ae6048af90e31d7acfdae1a18c6900ef6b858b6ff1f57ecf9"
+      }
+    },
+    {
+      "id": "Q16385365",
+      "identity": {
+        "title": "Critical Mass",
+        "author": "亞瑟·查理斯·克拉克"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生存与风险"
+        ],
+        "issue": "原子风险的背景使一场冰淇淋车事故被误读为可能的核灾难。克拉克用危险想象与普通货物的落差追问：高度警觉何时开始替代对现场证据的判断，又如何把一个小事故放大成灾难预期。",
+        "issue_facets": [
+          {
+            "label": "核风险框架对证据的支配",
+            "question": "当人已经预期核灾难时，现场线索会被如何选择和解释？",
+            "basis": "事故引发的判断受原子风险背景影响，而冰淇淋车这一日常事实与核灾难解释形成反差。"
+          },
+          {
+            "label": "预防性警觉与误报的界线",
+            "question": "面对后果极严重但证据不足的危险，谨慎是否仍需要可纠正的判断程序？",
+            "basis": "短篇的讽刺由核灾难预期与普通车辆事故之间的落差构成，显示警觉和误认可以同时出现。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本轮依据确切单作已有知识归纳，未新查来源，原类型与书目不改。",
+        "issue": "已有知识待独立核对；仅Clarke的Critical Mass独立短篇中核灾难误判与冰淇淋车事故的讽刺；不使用同名其他作者故事，不补对白、人物姓名或修订版本差异。",
+        "issue_facets": "两项问题均是上述限定前提的原创分析，不代表原作全文已读或外部事实已核验。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_scope": "仅Clarke的Critical Mass独立短篇中核灾难误判与冰淇淋车事故的讽刺；不使用同名其他作者故事，不补对白、人物姓名或修订版本差异。",
+      "source_selection_record_sha256": "2aff5a5224e4088248c923a560380882296b2146dcd0f2a437e94bbec2e8953b",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-early-familiar-first2-proposals-private.json",
+        "sha256": "7215c85dcfc550500e38588e9f7e95491bac8a74660676b2daa16f6348cc1ef8",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-proposals-private.json",
+        "record_sha256": "afc336334790bd7c905bb78da31a6516a39aa7b65ed61539ce468c8fbb31805f"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-early-familiar-first2-log-private.json",
+        "sha256": "f980dfde0f1c53c854c90a66431c869f74d7f5ac003e6ee903423f6d02956a2b",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-first2-log-private.json",
+        "record_sha256": "ed4ebeacf5cf366fe4948653d37d09731a0629aa5e58236f6b3dfe9f704c6899"
+      }
+    },
+    {
+      "id": "Q6010745",
+      "identity": {
+        "title": "In Search of Wonder",
+        "author": "Damon Knight"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识"
+        ],
+        "issue": "Knight把科幻的惊异感放在具体的写作判断之下，在评论van Vogt的《非A的世界》时追问庞大设定、人物动机与事件衔接是否相互支持。这部批评论文集的核心矛盾是：类型作品的规模、术语和声望能否替代对叙事内部理由的检验。",
+        "issue_facets": [
+          {
+            "label": "惊异设定与叙事连贯性",
+            "question": "一个小说不断揭示更大设定时，这些揭示是否足以解释先前的人物行为和因果断裂？",
+            "basis": "Knight对van Vogt《非A的世界》的批评把设定的吸引力与故事逻辑、人物动机的可信性分开考察；这里是批评实例，不是虚构本书有同一剧情。"
+          },
+          {
+            "label": "类型声望与可检验的批评",
+            "question": "读者对重要科幻作家的认可，是否应阻止批评者逐项检查文本中的解释与矛盾？",
+            "basis": "文集对具体科幻作品作出明确的褒贬，并以van Vogt等作品为论证对象；这里只取原批评集已知讨论，不引用后来增订版的新对象。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本轮依据确切单作已有知识归纳，未新查来源，原类型与书目不改。",
+        "issue": "已有知识待独立核对；仅Knight批评论文集的叙事判断，以及对van Vogt《非A的世界》的批评实例；不是小说情节，不借1967/1996增订版新增篇目给原1956来源形态。具体批评定位仍待独立核对。",
+        "issue_facets": "两项问题均是上述限定前提的原创分析，不代表论著全文本轮已读或外部事实已核验；basis是批评或论证实例，叙事情节不适用。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_scope": "仅Knight批评论文集的叙事判断，以及对van Vogt《非A的世界》的批评实例；不是小说情节，不借1967/1996增订版新增篇目给原1956来源形态。具体批评定位仍待独立核对。",
+      "source_selection_record_sha256": "99588375b7c5961eaf69cafe4a4855160b026dd612f821e41355a51dd4f315e2",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-proposals-private.json",
+        "sha256": "2b618a7ead2fb35e954183ea8f2adc0ac587a74bca15f1c246cacd6483ea3e99",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-proposals-private.json",
+        "record_sha256": "7c98f3792b41408622983d836293e95cc109fc7d186aa40e696dd8b633364b2a"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-log-private.json",
+        "sha256": "5101c0ad3446dafe9e7f25da33cbfb25eac479a5262dd1634e16e23f7964414a",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-log-private.json",
+        "record_sha256": "edff4b28cb188c56031e089f8dfabfa0f29b10a259ac0e7fa1e139fc561d0f99"
+      }
+    },
+    {
+      "id": "Q7096686",
+      "identity": {
+        "title": "Operating Manual for Spaceship Earth",
+        "author": "巴克敏斯特·福乐"
+      },
+      "fields": {
+        "topics": [
+          "生态与资源",
+          "知识与认识",
+          "权力与制度"
+        ],
+        "issue": "Fuller用“地球飞船”的比喻把资源、自动化和人类协作放进同一个系统，并追问高度专门化为何让人失去理解整体的能力。他的论证把既有分工的局部有效性与整个星球的共同生存联系起来，核心矛盾是效率能否在缺乏总体责任时仍被称为进步。",
+        "issue_facets": [
+          {
+            "label": "专业分工与总体责任",
+            "question": "个人只掌握局部专业时，谁能对跨越专业边界的资源后果负责？",
+            "basis": "书中反思专业化，并通过综合设计、协同与系统思考讨论如何管理“地球飞船”；飞船是论述比喻，不是人物实际星际航行。"
+          },
+          {
+            "label": "自动化收益与共同资源",
+            "question": "自动化提高生产能力之后，社会如何使其成为共同生存的条件，而非继续按旧稀缺逻辑分配？",
+            "basis": "Fuller把自动化、资源利用及协同能力连在一起，讨论引导“地球飞船”的设计问题；本书是非虚构论述，没有捏造灾难剧情或操作手册里的航行事件。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本轮依据确切单作已有知识归纳，未新查来源，原类型与书目不改。",
+        "issue": "已有知识待独立核对；仅非虚构设计/资源论述中的反专门化、自动化与系统协作论证；地球飞船是框架比喻，不是宇宙航行故事。原1968纪年与出版社1969差异保留，不修改书目。",
+        "issue_facets": "两项问题均是上述限定前提的原创分析，不代表论著全文本轮已读或外部事实已核验；basis是批评或论证实例，叙事情节不适用。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_scope": "仅非虚构设计/资源论述中的反专门化、自动化与系统协作论证；地球飞船是框架比喻，不是宇宙航行故事。原1968纪年与出版社1969差异保留，不修改书目。",
+      "source_selection_record_sha256": "158d0d5ca1470604734b477a24bf2a8470b925aa9fa4825ff961ce9cdf1414a2",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-proposals-private.json",
+        "sha256": "2b618a7ead2fb35e954183ea8f2adc0ac587a74bca15f1c246cacd6483ea3e99",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-proposals-private.json",
+        "record_sha256": "9d248c2f87c9a8b531ecf4c4d7d625df115734f5e543f50cfffc24b26e4fc598"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-early-familiar-next2-nonfiction-log-private.json",
+        "sha256": "5101c0ad3446dafe9e7f25da33cbfb25eac479a5262dd1634e16e23f7964414a",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-next2-nonfiction-log-private.json",
+        "record_sha256": "c75403d1d7e46f3f45d6992559eb29d4eca4dc7b12be48fcac1d7ca3d1e67261"
+      }
+    },
+    {
+      "id": "Q132188991",
+      "identity": {
+        "title": "Korea Cool:  STRATEGI INOVATIF DI BALIK LEDAKAN BUDAYA POP KOREA",
+        "author": "Y. Euny Hong"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "资本与劳动",
+          "知识与认识"
+        ],
+        "issue": "Hong的非虚构论述把韩国流行文化的国际传播与国家扶持、商业投资和文化产品的组织生产联系起来，而不是把全球走红视为自发的品味变化。它追问文化成为出口战略以后，国家和企业的目标如何与受众的选择、创作者及从业者的处境相互作用。",
+        "issue_facets": [
+          {
+            "label": "文化吸引力的制度生产",
+            "question": "所谓国家的文化吸引力，有多少来自政府、基础设施和企业的持续组织投入？",
+            "basis": "本书讨论韩国文化产业的国际扩张，把流行文化出口与国家扶持和商业组织联系起来；这是非虚构论证，不是虚构韩国未来社会。"
+          },
+          {
+            "label": "文化出口与受众选择",
+            "question": "把文化当作出口产品时，国家和企业能否把全球受众的接受方式也纳入计划？",
+            "basis": "Hong以韩国流行文化走向国际市场为论证对象，同时涉及组织生产与国际消费接受；这里只取文化战略与接受之间的关系，不补具体合同、艺人经历或产业统计。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "本轮依据确切单作已有知识归纳，未新查来源，原类型与书目不改。",
+        "issue": "已有知识待独立核对；仅Euny Hong关于韩国文化国际传播/出口战略的非虚构论证。保留底库印尼文题名、Y. Euny Hong署名和年份未知，不核定译版ISBN或出版社；不能当作科幻小说、虚构世界或未来预测。",
+        "issue_facets": "两项问题均是上述限定前提的原创分析，不代表论著全文本轮已读或外部事实已核验；basis是批评或论证实例，叙事情节不适用。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [],
+      "source_scope": "仅Euny Hong关于韩国文化国际传播/出口战略的非虚构论证。保留底库印尼文题名、Y. Euny Hong署名和年份未知，不核定译版ISBN或出版社；不能当作科幻小说、虚构世界或未来预测。",
+      "source_selection_record_sha256": "bd0d7040c655c9368b9641b5e06654b6984466d8b25a6a41290cb8d287962d08",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-early-familiar-cultural-nonfiction1-proposals-private.json",
+        "sha256": "7fe932924ea3ef17b5be002201fa71b38d0070d6d960f16ca13f5f9d2b3f36a2",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-proposals-private.json",
+        "record_sha256": "dcb47fce8cb99ddb200ea8b4497fb342028f3011670e02a86b57dd05532cd87a"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-early-familiar-cultural-nonfiction1-log-private.json",
+        "sha256": "68d45cb3fc9c74ee50780b959033a21799e8d7a717265bce5d2832b5b5943add",
+        "archive": "research/issue-input-snapshots/round106-early-familiar-cultural-nonfiction1-log-private.json",
+        "record_sha256": "3b986c05c795e4f16e4c35aca091a686e8180450afded595b5a7fbb16170e3a6"
+      }
+    },
+    {
+      "id": "Q3819702",
+      "identity": {
+        "title": "The Inevitable Conflict",
+        "author": "Paul H. Lovering"
+      },
+      "fields": {
+        "topics": [
+          "权力与制度",
+          "性别与亲密",
+          "资本与劳动"
+        ],
+        "issue": "仅据开篇：美国的女性公司政体以禁言、强制劳动和婚配控制男性，劳动者反抗时，统治者依赖读心与射线技术压制。它把性别秩序、企业权力和技术监视连在一起；本次不判断战争结局或全书立场。",
+        "issue_facets": [
+          {
+            "label": "性别政体与公司统治",
+            "question": "性别秩序如何与企业的政治权力结合？",
+            "basis": "开篇统治者将女性经营公司的历史作为政体正当性，并禁止男性权利讨论。"
+          },
+          {
+            "label": "监视失灵与劳动反抗",
+            "question": "读心与镇压工具失效后，统治者怎样理解劳动者的反抗？",
+            "basis": "食品仓库前工人集结，读心装置和催眠射线失效，统治者准备动用死亡射线。"
+          },
+          {
+            "label": "婚配与政治剥夺",
+            "question": "强制婚配如何成为剥夺异议者公共权力的办法？",
+            "basis": "统治者计划使掌管电力公司的Mowbray结婚，以婚姻法让他失去经营权。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "据实际开篇场景的人工解释，待核。",
+        "issue": "实际读取有限开篇，不代表通读；仅开篇政治、劳工与婚配安排。",
+        "issue_facets": "三个原创解释，均限开篇已显示行动，不推断结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://files.spawningpool.net/docs/Vault2.0.-.TTRPG-Gamebooks/Call%20of%20Cthulhu/EXTRAS/Novel/The%20Inevitable%20Conflict%20-%20H.%20P.%20Lovecraft.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://files.spawningpool.net/docs/Vault2.0.-.TTRPG-Gamebooks/Call%20of%20Cthulhu/EXTRAS/Novel/The%20Inevitable%20Conflict%20-%20H.%20P.%20Lovecraft.pdf",
+          "source_type": "rehosted_original_text_finite_opening",
+          "reading_scope": "实际open返回L0–222/P0–6，含题名/正文署名和第一章；95页原作未通读。",
+          "exact_support_scope": "仅开篇公司政体、性别统治、劳动抗争、读心射线和强制婚配场景。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_direct_page_read_scoped",
+          "private_raw_cache": {
+            "path": "work/evidence/round106-root-old4-first-open-raw-private.json",
+            "section": "returns",
+            "sha256": "3c707ab048fed3a00ef153514b725e827227e4a30b72c56df249e107fac72347",
+            "section_utf8_sha256": "706d7134d5f0e5488cce73e16a323f354e87f251dcfe7f09babaaa42a37d00ef"
+          }
+        }
+      ],
+      "identity_caveat": "转载目录及文件名标Lovecraft，但实际PDF题名下署Paul H. Lovering，与本身份作者对应；保留原作者。PDF头部纪年1930/1931与另一个搜索命中的1932杂志扫描有差异，不更改原1931年字段或声称核定初刊。只据开篇，不代表原刊校勘或全书结论。",
+      "analysis_basis": "actual_scoped_original_fragment_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-root-old4-core3-effective-cache-bound-private.json",
+        "sha256": "0771835688b82533886e23b9d5924fa83c4c8db9fd5c2eebfe8a14b3a7f4cae6",
+        "archive": "research/issue-input-snapshots/round106-root-old4-core3-effective-cache-bound-private.json",
+        "record_sha256": "f4b49a6d887d49a9f0185fd799810f42fa85f81b7dd69e3d0b06c3638f497028"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-root-old4-source-log-private.json",
+        "sha256": "0d7b6d67b31e52f6aaf12b884c79240730ef745bc6142042cfa999adcd1a5bf8",
+        "archive": "research/issue-input-snapshots/round106-root-old4-source-log-private.json",
+        "record_sha256": "f190b30a3b4c99e2b0ae5601b151eefb5e040bd0edf4ec6777ef7fddb0803d95"
+      }
+    },
+    {
+      "id": "Q100375840",
+      "identity": {
+        "title": "The New Overworld",
+        "author": "Paul Scheerbart"
+      },
+      "fields": {
+        "topics": [
+          "生存与风险",
+          "生命与人类定义",
+          "知识与认识"
+        ],
+        "issue": "金星上的两类生命面对居住与共存问题：用热气建造空中居所虽扩充空间，却影响另一群体的日照。技术方案必须同时处理不同生命的需要；这里是寓言式安排，不能当作真实金星生态预测。",
+        "issue_facets": [
+          {
+            "label": "居住创新与负担转移",
+            "question": "扩充一群体居住空间的技术怎样改变另一群体的生活条件？",
+            "basis": "明确篇目评论提到利用喷发热气支撑气球居所，同时遮挡另一生命群体的阳光。"
+          },
+          {
+            "label": "不同生命的共同安排",
+            "question": "两类生活节奏不同的生命如何通过共同安排解决社会问题？",
+            "basis": "两篇明确同题同作者评论描述金星两类生命，且将合作与技术解决社会问题作为寓言前提。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "依明确篇目有限评论提炼，待核，不从作者或题名传播。",
+        "issue": "依据本篇读者评论的剧情概述，德语原作和英语译文未读。",
+        "issue_facets": "两项解释限评论描述的共存及居住冲突，不加入未述结局。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://classicsofsciencefiction.com/2021/08/26/the-new-overworld-by-paul-scheerbart/",
+        "https://mandiner.hu/kultura/2016/07/szaz-evesek-megis-utnek-a-sci-fi-nagykonyve-i"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://classicsofsciencefiction.com/2021/08/26/the-new-overworld-by-paul-scheerbart/",
+          "source_type": "named_reader_review_limited_premise",
+          "reading_scope": "实际直接open L3、8–9、13，明确题名作者、金星两类生命、合作与技术及寓言判断；未读原篇。",
+          "exact_support_scope": "两类金星生命与合作、技术解决社会问题的评论前提。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_direct_page_read_scoped",
+          "private_raw_cache": {
+            "path": "work/evidence/round106-root-old4-first-open-raw-private.json",
+            "section": "returns",
+            "sha256": "3c707ab048fed3a00ef153514b725e827227e4a30b72c56df249e107fac72347",
+            "section_utf8_sha256": "706d7134d5f0e5488cce73e16a323f354e87f251dcfe7f09babaaa42a37d00ef"
+          }
+        },
+        {
+          "url": "https://mandiner.hu/kultura/2016/07/szaz-evesek-megis-utnek-a-sci-fi-nagykonyve-i",
+          "source_type": "named_anthology_review_search_window",
+          "reading_scope": "实际first search返回本篇同题作者段落：两类金星生命、过多人口、热气气球居所和遮挡日照；未直接打开该评论或原篇。",
+          "exact_support_scope": "空中居所改善一类生命空间却遮挡另一类日照的冲突。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "private_raw_cache": {
+            "path": "work/evidence/round106-root-old4-first-search-raw-private.json",
+            "section": "returns",
+            "sha256": "6319fbabe421793f6ccc8a6a403767c73c8662e49dded46e2dee83b1dbfe052b",
+            "section_utf8_sha256": "1fb0f5f335761207a186870f3c9570bf80fa5d9fd9155f5429f13a67377a7648"
+          }
+        }
+      ],
+      "identity_caveat": "限两篇同题同作者评论所讨论的The Big Book of Science Fiction选入篇目；没有以Scheerbart其他作品替代。德语原作与该篇英语译文未读、译文逐项对应未核；搜索中另一条Goodreads材料描述Klips星体，未作本篇依据。",
+      "analysis_basis": "actual_scoped_named_story_reviews_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-root-old4-core3-effective-cache-bound-private.json",
+        "sha256": "0771835688b82533886e23b9d5924fa83c4c8db9fd5c2eebfe8a14b3a7f4cae6",
+        "archive": "research/issue-input-snapshots/round106-root-old4-core3-effective-cache-bound-private.json",
+        "record_sha256": "0e2e9b693ca8eff5c186c860650bd5e814ebf6f2b5ef245d04ca96799aa62d79"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-root-old4-source-log-private.json",
+        "sha256": "0d7b6d67b31e52f6aaf12b884c79240730ef745bc6142042cfa999adcd1a5bf8",
+        "archive": "research/issue-input-snapshots/round106-root-old4-source-log-private.json",
+        "record_sha256": "7e6ec83155ef943c79e04af90c2d702962da67f5daed4c0c8d25bd09bd315822"
+      }
+    },
+    {
+      "id": "Q7741764",
+      "identity": {
+        "title": "The Incredible Planet",
+        "author": "約翰·W·坎貝爾"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生命与人类定义",
+          "文明与历史"
+        ],
+        "issue": "仅据第一部译本预览：Munro等人在跨空间后失去归航位置，寻找能提供观测资料的生命，发现看似久已荒废的行星却遇到幸存者。科学推理既用于寻找家园，也会因对文明存亡的先入判断而受修正。",
+        "issue_facets": [
+          {
+            "label": "迷航与共同知识",
+            "question": "无法定位时，技术与跨群体共享观测资料怎样成为寻找家园的办法？",
+            "basis": "第一部人物希望比较邻近生命的望远镜照片与自身星表，确定太阳的位置。"
+          },
+          {
+            "label": "废墟与存亡判断",
+            "question": "发现废墟为何不足以断言一个文明已经灭绝？",
+            "basis": "人物在Myrya发现旧城遗迹，随后实际接触幸存的Myrya人。"
+          },
+          {
+            "label": "不同身体的共同探索",
+            "question": "不同重力环境塑造的身体能力怎样影响共同探索？",
+            "basis": "木星出生的Munro与来自地球的Spencer进入高重力地表时，行动承受能力明显不同。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "有限译本预览场景的人工解释，待核。",
+        "issue": "仅出版社2022修订德译本第一部片段，不覆盖全书三部、英文原版或全系列。",
+        "issue_facets": "只据当前第一部的片段；前言回顾前作战争不作本篇当前情节。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.bic-media.com/books/9783453322042/content/shortened/"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.bic-media.com/books/9783453322042/content/shortened/",
+          "source_type": "publisher_revised_translation_preview_partial",
+          "reading_scope": "实际版权页L19–44标原题THE INCREDIBLE PLANET、Otto Schrag译及2022完全修订版；find/open所显示第一部L166以后，重点迷航/星表L211–266、高重力行走L462–574和实际接触L693–773。未读全部41页预览、全译本或英文原版。",
+          "exact_support_scope": "第一部迷航、寻求共享星表、Myrya遗迹后遇到幸存者，以及不同重力适应；前言回顾L46–161不算当前剧情。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_direct_publisher_translation_fragment",
+          "private_raw_cache": {
+            "path": "work/evidence/round106-root-old4-publisher-find-raw-private.json",
+            "section": "returns",
+            "sha256": "f156b7b571e16ad626184514386ccffc18f50a8760bf1ef1e7fc86bb13e43731",
+            "section_utf8_sha256": "98d6ffc3f1db90085e3bc369ecff8f8ddd0ab95ee25a6c91af98633fedb77cc0"
+          }
+        }
+      ],
+      "identity_caveat": "本索引1949英文合集式长篇保留；采用的是出版社2022完全修订德译本的第一部预览，原题对应已实际见版权页，但没有逐字核对1949英文原版或原刊。第一部局部判断不代表The Interstellar Search、The Infinite Atom或全部系列；前言主要回顾前作，不把Penton/Blake系列或前作战争移入本部。",
+      "analysis_basis": "actual_scoped_publisher_translation_fragment_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/round106-root-old4-core3-effective-cache-bound-private.json",
+        "sha256": "0771835688b82533886e23b9d5924fa83c4c8db9fd5c2eebfe8a14b3a7f4cae6",
+        "archive": "research/issue-input-snapshots/round106-root-old4-core3-effective-cache-bound-private.json",
+        "record_sha256": "4afe4112e187bab272d1340a9878b89dc8419adb2b762a53532b63a567158317"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/round106-root-old4-source-log-private.json",
+        "sha256": "0d7b6d67b31e52f6aaf12b884c79240730ef745bc6142042cfa999adcd1a5bf8",
+        "archive": "research/issue-input-snapshots/round106-root-old4-source-log-private.json",
+        "record_sha256": "b761e6afc89cda6ddb4e72faf2c4d2cb06029cda85dc3c23060c4c5ac7f65da7"
+      }
+    },
+    {
+      "id": "Q133800871",
+      "identity": {
+        "title": "Mort à l'étouffée",
+        "author": "Jean-Pierre Hubert"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "评论明确将本作描绘为漂浮在空间中的封闭世界，生活其中的人彼此撕扯，并把这种封闭理解为资本主义制度的困局。仅据这一设定，逃离冲突不仅是寻找物理出口的问题，也涉及共同生活为何转为互相伤害；这里不继承同页另一故事的追踪器或逃亡情节。",
+        "issue_facets": [
+          {
+            "label": "封闭系统与结构性冲突",
+            "question": "生活世界被封闭后，成员的互相伤害怎样与制度困局联系？",
+            "basis": "本作具名评论把封闭漂浮世界、彼此撕扯与资本主义体系的封闭并置；不追加具体阶层、资源或统治者。"
+          },
+          {
+            "label": "共同生存与互相伤害",
+            "question": "同处一个难以脱离的世界，为什么未必产生共同生存的协作？",
+            "basis": "同一具名评论明示人在封闭世界内互相撕扯；没有材料交代解决方案，问题只由这一冲突提出。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://funambule.org/lectures/la_gueule_ouverte/lagueuleouverte-n274.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://funambule.org/lectures/la_gueule_ouverte/lagueuleouverte-n274.pdf",
+          "source_type": "contemporary_named_novel_review",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "仅Mort à l’étouffée具名段的资本主义封闭寓意、空间漂浮的封闭世界和其中相互伤害；不采用相邻叙事。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch1-private.json",
+            "sha256": "e49404ef15161a05cf3d3354f3f69ff82d8763dd7fb2123a1026ad7921ec8768",
+            "actual_shared_tool_call_id": "modern-r106-search-batch1",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "bf3273955725f0b58892a36c4c984c970df20a0c2588011a6644c4d9691e11ab",
+            "target_response_character_start": 3900,
+            "target_response_character_end_exclusive": 4425,
+            "target_response_slice_utf8_sha256": "0b7f8e86fd0b9616aeaccc26053a878854645a98c5206eb6486d8b1a17357aa7"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch1-private.json",
+          "sha256": "e49404ef15161a05cf3d3354f3f69ff82d8763dd7fb2123a1026ad7921ec8768",
+          "actual_shared_tool_call_id": "modern-r106-search-batch1",
+          "query_subrequest_index": 3,
+          "response_utf8_sha256": "bf3273955725f0b58892a36c4c984c970df20a0c2588011a6644c4d9691e11ab"
+        }
+      ],
+      "identity_caveat": "仅La Gueule ouverte第274期中Bernard Blanc的Mort à l’étouffée具名评论段。PDF检索返回存在双栏相邻故事，Algis、猎场看守与机械追踪段均排除；原小说未读，漂浮封闭世界不据此指定行星或恒星地图。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-corrected.json",
+        "sha256": "704ddce1b3eb3b249af868eea3cc598f43f1d1f3efec10f49cff868b7f3d9130",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-corrected.json",
+        "record_sha256": "2e9a4f8206ce89b41ece0c502040c642fdada1b66245b5a7f400e733c3d8bb8f"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json",
+        "record_sha256": "c0f5925e02cc09c5ba95c2da98cd3f876c654c1c8334f44db3c15d1cd9e85b71"
+      }
+    },
+    {
+      "id": "Q55163995",
+      "identity": {
+        "title": "The Patient Parasites",
+        "author": "Russell Bates"
+      },
+      "fields": {
+        "topics": [
+          "技术与责任",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "这个以脚本形式刊出的单作，已得梗概只明确Enterprise登陆队被机器人探测器扣为人质。探索者面对的不只是探测对象，也是一台能够控制其行动的机器；探测技术的用途和对人的保护，因这一挟持前提成为可以分开讨论的责任问题。",
+        "issue_facets": [
+          {
+            "label": "探测工具与强制权力",
+            "question": "能够扣留人的探测器怎样越过观察工具与强制行动者的界限？",
+            "basis": "本作准确社区梗概只给出机器人探测器扣住Enterprise登陆队作为人质；不推测探测器意图或所属文明。"
+          },
+          {
+            "label": "人质保护与技术责任",
+            "question": "人在机器控制下成为人质时，怎样把保护人的要求置于探索任务之前？",
+            "basis": "同一挟持前提支持保护与任务的冲突问题；来源未说明营救、武器、谈判或结局，均不补。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://memory-beta.fandom.com/wiki/The_Patient_Parasites"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://memory-beta.fandom.com/wiki/The_Patient_Parasites",
+          "source_type": "community_named_script_summary",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "本作脚本的准确一句梗概：USS Enterprise登陆队被机器人探测器扣为人质；不补原因、营救或结局。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch3-private.json",
+            "sha256": "00e4e79a5d44fbb27ce4e5bdebdb201e993d26803dc623e55a52279020946121",
+            "actual_shared_tool_call_id": "modern-r106-search-batch3",
+            "query_subrequest_index": 0,
+            "response_utf8_sha256": "0673beb2ef514632c682be0008e8ff83d8e6b02f27e14f631f01563831b5229c",
+            "target_response_character_start": 5888,
+            "target_response_character_end_exclusive": 6673,
+            "target_response_slice_utf8_sha256": "026cf8fb28dd9e5b7159c172542d68fc03da9b9d65499e156fac8de1eb85ce06"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch3-private.json",
+          "sha256": "00e4e79a5d44fbb27ce4e5bdebdb201e993d26803dc623e55a52279020946121",
+          "actual_shared_tool_call_id": "modern-r106-search-batch3",
+          "query_subrequest_index": 0,
+          "response_utf8_sha256": "0673beb2ef514632c682be0008e8ff83d8e6b02f27e14f631f01563831b5229c"
+        }
+      ],
+      "identity_caveat": "Memory Beta社区摘要只有一个挟持前提，非独立原作核验。单作脚本身份保留，不借同集其他篇或动画试播版本扩大剧情；登陆天体未明，不补空间。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-corrected.json",
+        "sha256": "704ddce1b3eb3b249af868eea3cc598f43f1d1f3efec10f49cff868b7f3d9130",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-corrected.json",
+        "record_sha256": "e9beeae13f06cfd7e228315e496b5113abaa2acd1f4ee73b6da5d9336915615d"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json",
+        "record_sha256": "a49355dd14efccfb5bef3129da8611ffbe8027f428735c233b3d2ab3035c3076"
+      }
+    },
+    {
+      "id": "Q7773411",
+      "identity": {
+        "title": "The Wanderer from Beyond",
+        "author": "Philippe Ebly"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "技术与责任"
+        ],
+        "issue": "本卷的Thierry、Didier与Kouroun在Cévennes徒步，被小酒馆经营者Frédéric引向峡谷，并重现那里留下的仪式，使来自黑暗世界的Noïm出现。学习并执行一种能够开启边界的知识，既意味着接触陌生者，也意味着承担被别人引导行动的风险；这里不把Noïm后来其他卷的冒险继承给本卷。",
+        "issue_facets": [
+          {
+            "label": "被引导的探索与知情行动",
+            "question": "在被人巧妙引向仪式地点后，探索者能否理解自己执行的步骤与后果？",
+            "basis": "本卷梗概明确Frédéric操纵三人去Oubrets峡谷，他们发现并重现Kouroun认识的仪式；不补其操纵动机。"
+          },
+          {
+            "label": "跨界接触与责任",
+            "question": "打开边界让陌生生命进入之后，谁应为这次接触承担责任？",
+            "basis": "同一梗概写重现仪式使Noïm获准跨越开启的边界来到我们的世界；不将其能力、威胁或结局当已知。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://wikipedia.cloudix.cabillot.eu/content/wikipedia_fr_all_maxi_2024-05/A/Le_Voyageur_de_l%27au-del%C3%A0",
+        "https://cnlj.bnf.fr/sites/default/files/revues_document_joint/PUBLICATION_2528.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://wikipedia.cloudix.cabillot.eu/content/wikipedia_fr_all_maxi_2024-05/A/Le_Voyageur_de_l%27au-del%C3%A0",
+          "source_type": "secondary_exact_original_title_synopsis",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "仅Cévennes徒步、经营者引导、峡谷仪式和Noïm跨界来访的本卷准确梗概；旧误猜法文题名排除。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch3-private.json",
+            "sha256": "00e4e79a5d44fbb27ce4e5bdebdb201e993d26803dc623e55a52279020946121",
+            "actual_shared_tool_call_id": "modern-r106-search-batch3",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "0673beb2ef514632c682be0008e8ff83d8e6b02f27e14f631f01563831b5229c",
+            "target_response_character_start": 943,
+            "target_response_character_end_exclusive": 1568,
+            "target_response_slice_utf8_sha256": "c715f1706578f68971a22311f0b44d62819be00058977fada3c7056681f23d7d"
+          }
+        },
+        {
+          "url": "https://cnlj.bnf.fr/sites/default/files/revues_document_joint/PUBLICATION_2528.pdf",
+          "source_type": "library_named_youth_book_review",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "BnF儿童书评具名本卷：三名青年在Cévennes露营，参与来自彼界且具有超常能力少年的神秘具身化；不读相邻Mon ami或Les ronces。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch3-private.json",
+            "sha256": "00e4e79a5d44fbb27ce4e5bdebdb201e993d26803dc623e55a52279020946121",
+            "actual_shared_tool_call_id": "modern-r106-search-batch3",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "0673beb2ef514632c682be0008e8ff83d8e6b02f27e14f631f01563831b5229c",
+            "target_response_character_start": 14055,
+            "target_response_character_end_exclusive": 14473,
+            "target_response_slice_utf8_sha256": "c39eee9379c90e04c4fce9070e9466c59530652ca3e228d4f394bdf8a70f388a"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch3-private.json",
+          "sha256": "00e4e79a5d44fbb27ce4e5bdebdb201e993d26803dc623e55a52279020946121",
+          "actual_shared_tool_call_id": "modern-r106-search-batch3",
+          "query_subrequest_index": 3,
+          "response_utf8_sha256": "0673beb2ef514632c682be0008e8ff83d8e6b02f27e14f631f01563831b5229c"
+        }
+      ],
+      "identity_caveat": "source原语题名明确Le Voyageur de l’au-delà；旧查询误猜Le Naufragé或Le Vagabond，均不采用。本次准确法文百科镜像梗概及BnF儿童书评只支持本卷开端、峡谷仪式与来访；原篇未读，超自然机制不作现实科学结论。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-corrected.json",
+        "sha256": "704ddce1b3eb3b249af868eea3cc598f43f1d1f3efec10f49cff868b7f3d9130",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-corrected.json",
+        "record_sha256": "f4b9008d6d6daa2264fb618176f224979e90ee19c6a190b2607961ca587c1dff"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json",
+        "record_sha256": "718cb4f175c89b25a63298a4f961a5882cf49e5674c55bf73e6f8f778f759f64"
+      }
+    },
+    {
+      "id": "Q131461599",
+      "identity": {
+        "title": "Cold Cash War",
+        "author": "羅伯特·阿斯普林"
+      },
+      "fields": {
+        "topics": [
+          "资本与劳动",
+          "权力与制度",
+          "生存与风险"
+        ],
+        "issue": "这里采用的是评论明确点名的Analog八月1977原中篇：大型公司相互交战，各国政府试图制止，却面对比正规军训练更强的雇佣兵。企业经济竞争因而转为暴力主权的竞争，而评论对人物同情和公众支持雇佣兵的质疑，提醒读者将叙述吸引力与伤害后果区分；不借同名扩写长篇的非致命战争规则。",
+        "issue_facets": [
+          {
+            "label": "企业暴力与国家主权",
+            "question": "当企业雇佣兵比正规军更善战时，国家能怎样限制公司的战争？",
+            "basis": "评论Analog August1977具名Cold Cash War段写公司交战、政府制止与雇佣兵训练优势；扩写长篇的制度背景和非致命规则不继承。"
+          },
+          {
+            "label": "叙事同情与暴力后果",
+            "question": "将可能有恶行的主要人物写得可同情，会怎样影响对受害者及公众立场的判断？",
+            "basis": "同段评论认为主角可能是坏人却被同情地描写，并质疑公众对伤害政府军的雇佣兵的支持；此是评论提出的阅读疑点，不确认每个人的动机。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://tpi-reads.blogspot.com/2009/03/?m=0"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://tpi-reads.blogspot.com/2009/03/?m=0",
+          "source_type": "reader_review_exact_original_magazine_story",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "明确Analog八月1977原Cold Cash War：公司交战、政府阻止、雇佣兵训练优势；另评论者质疑同情描写和公众支持，不采用扩写长篇条目。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch5-private.json",
+            "sha256": "392a957141bbda601760aa34ef7c1c000361584614dc0c09923841a8bd6bfa05",
+            "actual_shared_tool_call_id": "modern-r106-search-batch5",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "994a143634f67e24d99caa0a411204d1ab457305d71345b5583a1177c69f73cf",
+            "target_response_character_start": 388,
+            "target_response_character_end_exclusive": 1298,
+            "target_response_slice_utf8_sha256": "25b600c306cd1c6aaa83b1bb418346e23feeac6bfcc7fb17cb8b1e2440f5b4b4"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch5-private.json",
+          "sha256": "392a957141bbda601760aa34ef7c1c000361584614dc0c09923841a8bd6bfa05",
+          "actual_shared_tool_call_id": "modern-r106-search-batch5",
+          "query_subrequest_index": 3,
+          "response_utf8_sha256": "994a143634f67e24d99caa0a411204d1ab457305d71345b5583a1177c69f73cf"
+        }
+      ],
+      "identity_caveat": "单作为1977原中篇；只用Tpi阅读日记明确Analog August1977、题名与作者的段，不将The Cold Cash War扩写长篇条目的非致命战争或其他政治设定移入。来源对公众立场的判断作为评论者观点保留，原篇未读。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-corrected.json",
+        "sha256": "704ddce1b3eb3b249af868eea3cc598f43f1d1f3efec10f49cff868b7f3d9130",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-corrected.json",
+        "record_sha256": "3e3694d717590afbf962ce40bb40ef69620b617d150685f87cb16635349544b4"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part1-log-corrected.json",
+        "sha256": "85804acc6fc6c0434de4a71be5aae066c989ee33882b2903e2502e7216a65c72",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part1-log-corrected.json",
+        "record_sha256": "16c387a65ad63436868caa7420ee969b784e4b7a1523ac31f7746bb33a82ad14"
+      }
+    },
+    {
+      "id": "Q131517109",
+      "identity": {
+        "title": "A Rite of Spring",
+        "author": "弗里兹·雷伯"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "性别与亲密"
+        ],
+        "issue": "具名评论把本篇概述为数学家遇见一位陌生女子，她的到来回应了他的梦想。只据这一关系前提，愿望得到回应与理解来者的意愿并不是同一件事；这是对梦想和真实他者关系的提问，不补女子身份、实现方式或结局。",
+        "issue_facets": [
+          {
+            "label": "愿望实现与他者意愿",
+            "question": "一个来回应梦想的人，能否被理解为超出许愿者想象的主体？",
+            "basis": "准确评论点名Leiber本篇、数学家、陌生女子和回应梦想；未说明她的来历或内在意愿，问题保持开放。"
+          },
+          {
+            "label": "梦想与事实判断",
+            "question": "数学家怎样区分自己的期望与关于陌生来者的可知事实？",
+            "basis": "同一句本篇概述将数学家和梦想回应并置；没有材料证明梦成真机制或其判断结果，不新增超自然规则。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fanac.org/fanzines/Scientifriction/Scientifriction08.pdf"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fanac.org/fanzines/Scientifriction/Scientifriction08.pdf",
+          "source_type": "contemporary_named_story_review_premise",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "仅数学家与回应其梦想的陌生女子这一准确本篇关系前提，不补身份、规则或结局。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch6-private.json",
+            "sha256": "040e3a059a9955ebaa96d9e656eac31200fb63d0b19e5025a0f4277c22600f5b",
+            "actual_shared_tool_call_id": "modern-r106-search-batch6",
+            "query_subrequest_index": 0,
+            "response_utf8_sha256": "15498e0dcc6ca243a89c963230b1aa1e8b6b5b34a8942f3acf9ca608677c937f",
+            "target_response_character_start": 16052,
+            "target_response_character_end_exclusive": 16200,
+            "target_response_slice_utf8_sha256": "8dfe8fdec95da98eef534c6e1815eb8e6348a23742c6a61cca3a8a752133feb7"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch6-private.json",
+          "sha256": "040e3a059a9955ebaa96d9e656eac31200fb63d0b19e5025a0f4277c22600f5b",
+          "actual_shared_tool_call_id": "modern-r106-search-batch6",
+          "query_subrequest_index": 0,
+          "response_utf8_sha256": "15498e0dcc6ca243a89c963230b1aa1e8b6b5b34a8942f3acf9ca608677c937f"
+        }
+      ],
+      "identity_caveat": "仅Scientifriction8具名的一句半幽默故事概述，原篇未读；邻接Goulart评论不属于本篇，不以春季题名推仪式。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "0972cfe7bec860ebb04ac775b49173920798d7148a37f85f019af7787a239157"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "753d1e4d8e0c61b1007d51b3360994626f1ffe068b4a655aedf9af0a413eef97"
+      }
+    },
+    {
+      "id": "Q131518691",
+      "identity": {
+        "title": "Camera Obscura",
+        "author": "Thomas F. Monteleone"
+      },
+      "fields": {
+        "topics": [
+          "主体与意识",
+          "知识与认识",
+          "技术与责任"
+        ],
+        "issue": "摄影师Fred Lieberman因爆炸失明，接受复杂植入物恢复视力，却由此看到此前从未见过的东西。感官恢复因此也改变了他所能感知的内容；这种新看见的经验如何被解释，与植入物是否真正恢复原有视觉是两个不同问题。",
+        "issue_facets": [
+          {
+            "label": "修复与能力改变",
+            "question": "以恢复视力为目的的植入物，何时改变了被修复者能看到的世界？",
+            "basis": "Dark Stars评论准确点名Camera Obscura：爆炸失明、植入恢复视力、看见从未见过的事物；不判定为幻觉或新的客观物体。"
+          },
+          {
+            "label": "技术中介与视觉证据",
+            "question": "当感知依赖新植入物时，使用者怎样判断所见意味着什么？",
+            "basis": "同一本篇段给出新视觉经验，没有给出其性质和最终解释；不继承同页其他故事或电影改编。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://theporporbooksblog.blogspot.com/2022/12/book-review-dark-stars.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://theporporbooksblog.blogspot.com/2022/12/book-review-dark-stars.html",
+          "source_type": "reader_review_exact_named_collection_member",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "准确本篇摄影师爆炸后失明、植入物恢复视觉并出现此前未见的事物；此前Prodigal Son及其他成员均不采用。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch6-private.json",
+            "sha256": "040e3a059a9955ebaa96d9e656eac31200fb63d0b19e5025a0f4277c22600f5b",
+            "actual_shared_tool_call_id": "modern-r106-search-batch6",
+            "query_subrequest_index": 2,
+            "response_utf8_sha256": "15498e0dcc6ca243a89c963230b1aa1e8b6b5b34a8942f3acf9ca608677c937f",
+            "target_response_character_start": 18079,
+            "target_response_character_end_exclusive": 18291,
+            "target_response_slice_utf8_sha256": "b9c6c97e9f4bd783268bd50e2fe23e64a9f96979c3c5a3f706288dff337bc85a"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch6-private.json",
+          "sha256": "040e3a059a9955ebaa96d9e656eac31200fb63d0b19e5025a0f4277c22600f5b",
+          "actual_shared_tool_call_id": "modern-r106-search-batch6",
+          "query_subrequest_index": 2,
+          "response_utf8_sha256": "15498e0dcc6ca243a89c963230b1aa1e8b6b5b34a8942f3acf9ca608677c937f"
+        }
+      ],
+      "identity_caveat": "仅Dark Stars书评Camera Obscura具名段，原篇未读。Basil Copper同名作品及其Night Gallery改编均排除；首版1976/1977书目差异不改底库。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "ef8403559cb42970e0ded2a3089385348b5d2bfcaefbfeac385caa9bea66096e"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "6f46df93f0a0e5ea2326120811c06928ce1413145251d0d7eeb830229265444f"
+      }
+    },
+    {
+      "id": "Q19862425",
+      "identity": {
+        "title": "Ganymedes 2",
+        "author": "作者未知"
+      },
+      "fields": {
+        "topics": [
+          "时间与因果",
+          "文明与历史",
+          "生存与风险"
+        ],
+        "issue": "仅Ganymedes2所收Manuel van Loggem的《Horen jullie me?》选例：读者评论明确说故事跳至未来，展现一个灾后的社会。时间上的跃迁把文明变化变成需要重新理解的对象，但这一有限前提并未告诉我们灾难原因或社会的具体制度；其他成员的生殖技术、核威胁不能自动继承给它。",
+        "issue_facets": [
+          {
+            "label": "时间跃迁与文明认识",
+            "question": "进入灾后未来后，怎样理解此前不曾见到的社会变化？",
+            "basis": "本集目录点名Manuel van Loggem的Horen jullie me?，同页评论该成员发生未来跳跃并展现灾后社会；不补跃迁技术。"
+          },
+          {
+            "label": "灾后生活与历史缺口",
+            "question": "看到灾后社会，是否足以推定造成灾难的事件及其责任？",
+            "basis": "同一成员评论只给post-apocalyptic society，没有交代灾难种类和责任；本问题明确保留这两项未知。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.goodreads.com/nl/book/show/18971538-ganymedes-2"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.goodreads.com/nl/book/show/18971538-ganymedes-2",
+          "source_type": "community_named_anthology_member_review",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "目录明确Horen jullie me?作者，评论具名该篇跳至未来的灾后社会；只采用这一成员前提，其他成员/总体主题不继承。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch7-private.json",
+            "sha256": "6b5c4a621de79241bbb28a72a2b67b7b26f91b2a15fa1da71e849028ee5f5926",
+            "actual_shared_tool_call_id": "modern-r106-search-batch7",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "9721f74b9d5f8ccde7b42e32641b069a6198042fc887cce8b798aa09b95a1b22",
+            "target_response_character_start": 4447,
+            "target_response_character_end_exclusive": 8101,
+            "target_response_slice_utf8_sha256": "099ab0c0db65bd7195e4bf93821ba215ceb0df5d32aff3f6a1ff328ca3cb524a"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch7-private.json",
+          "sha256": "6b5c4a621de79241bbb28a72a2b67b7b26f91b2a15fa1da71e849028ee5f5926",
+          "actual_shared_tool_call_id": "modern-r106-search-batch7",
+          "query_subrequest_index": 3,
+          "response_utf8_sha256": "9721f74b9d5f8ccde7b42e32641b069a6198042fc887cce8b798aa09b95a1b22"
+        }
+      ],
+      "identity_caveat": "合集粒度保持，仅目录与读者评论共同锚定Horen jullie me?选例；原篇未读。评论说本集常见核威胁/IVF是集合意见，不当作这个成员具体机制。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "496c8fd61f93f0beb3a04820adfab759e094d9f3d79e7d0461ed8c7d10a55e2d"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "4f1496d4bd7f58b55865358868d41e562ad18c45f708338abd4480d04e558736"
+      }
+    },
+    {
+      "id": "Q3899599",
+      "identity": {
+        "title": "Per tutti i diavoli dell'universo",
+        "author": "多位作家"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "技术与责任",
+          "文明与历史"
+        ],
+        "issue": "仅本集确证收录的Fredric Brown《La risposta／Answer》选例，剧情使用准确已有知识：把许多星球的计算机连接成超级计算系统后，人向它提出上帝是否存在的问题，得到的回答指向系统连接所造成的新存在。把知识集中到单一系统并不只是提高回答效率，也可能改变谁有权解释问题以及人能否撤回自己的技术选择；不据此概括本集所有成员。",
+        "issue_facets": [
+          {
+            "label": "知识整合与解释权",
+            "question": "合并所有计算资源之后，回答者怎样可能从工具变为定义答案的权威？",
+            "basis": "准确已有知识中的Answer：跨星球计算系统被连通，随后回应上帝存在问题；本次目录只证收录，未新读原篇。"
+          },
+          {
+            "label": "技术连接与撤回能力",
+            "question": "发起一项连接工程的人是否仍保有终止系统的能力？",
+            "basis": "准确已有知识中Dwar Ev在回答后试图断开连接却未能完成；本次素材未读这一情节，明确待原作核对，不借别作的结局。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.catalogovegetti.com/catalogo/C0188.htm"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.catalogovegetti.com/catalogo/C0188.htm",
+          "source_type": "anthology_member_identity_only",
+          "supports_issue": false,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "实际目录的1977Editoriale Corno Per tutti i diavoli dell’universo条确认La risposta/Fredric Brown收录；只支持成员身份，不支持本次剧情分析。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch8-private.json",
+            "sha256": "91933be605c505d979f4759a669333228a6093a46cb67fe680469ba8fe3f4cea",
+            "actual_shared_tool_call_id": "modern-r106-search-batch8",
+            "query_subrequest_index": 2,
+            "response_utf8_sha256": "2a3867358697480e5f61c56c3cf68ce118c8eae852ce4d38be227bd921bdc9b2",
+            "target_response_character_start": 6147,
+            "target_response_character_end_exclusive": 8452,
+            "target_response_slice_utf8_sha256": "48d61c464394d110e62934f2bafbdae1adcd1404bc494bb36efdb32cd348a5db"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch8-private.json",
+          "sha256": "91933be605c505d979f4759a669333228a6093a46cb67fe680469ba8fe3f4cea",
+          "actual_shared_tool_call_id": "modern-r106-search-batch8",
+          "query_subrequest_index": 2,
+          "response_utf8_sha256": "2a3867358697480e5f61c56c3cf68ce118c8eae852ce4d38be227bd921bdc9b2"
+        }
+      ],
+      "identity_caveat": "本身份为1977多作者合集。实际本次Catalogo Vegetti确证La risposta由Fredric Brown写作并收入此集；剧情为准确已有知识，不假称目录支持剧情或已新读全文。相邻Scendendo选集及本集其他成员均不继承。",
+      "analysis_basis": "exact_existing_knowledge_with_bibliographic_lookup",
+      "existing_knowledge_scope": "明确准确已有知识限Fredric Brown Answer的计算系统连通、上帝问答和无法撤回连接的末段；本轮确有1query，所采用目录仅支持成员身份，不是新的剧情读取。",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "2b6d62d1e06f41299362f0264528ed0e952c2e82a81679230b52a313ac85fdb4"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "858f7f2d9737d95d0fefd7525d001e4574f4aa237d9e38865c6d5886b7ccc7a0"
+      }
+    },
+    {
+      "id": "Q7768996",
+      "identity": {
+        "title": "The Three Gates",
+        "author": "Philippe Ebly"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "殖民与他者",
+          "生存与风险"
+        ],
+        "issue": "本卷的Thierry与Didier身处一片无法辨认的野生山谷，发现自己进入了有陌生生物的世界，寻找回到人类世界的通道时遇到三扇挡路的神秘门。认识环境与寻找可安全通过的边界由此成为同一求生任务的两面；并不知道门的规则，就不能把看到入口等同于能够返回。",
+        "issue_facets": [
+          {
+            "label": "迷失环境与认识边界",
+            "question": "在无法辨认的环境中，怎样确定自己与熟悉世界的关系？",
+            "basis": "本卷封底式梗概明确两人迷失、野生山谷和陌生生物；不补其进入原因或其他卷地点。"
+          },
+          {
+            "label": "通道发现与安全返回",
+            "question": "发现神秘门之后，为什么仍需要区分通道存在和通行能力？",
+            "basis": "同一梗概明确寻找返回人类世界的通道，三扇门挡住道路；没有给出门的具体规则与通行结果。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://www.philippe-ebly.org/eblywiki_trois_portes.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://www.philippe-ebly.org/eblywiki_trois_portes.html",
+          "source_type": "author_heritage_site_preserved_book_synopsis",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "准确本卷梗概：Thierry/Didier迷失陌生山谷、陌生生物、返回人类世界的需求及挡路的三扇门；不补门规则/通行结果。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch9-private.json",
+            "sha256": "3cb794f6eaf73c050ab4637d6e1c59b7c21266248ec597019802d09523a7a57f",
+            "actual_shared_tool_call_id": "modern-r106-search-batch9",
+            "query_subrequest_index": 1,
+            "response_utf8_sha256": "b4a7b77ce6f2c6976c5aa612898a0a3bd091d4dd1144f2ac711b6b39a78cb736",
+            "target_response_character_start": 8814,
+            "target_response_character_end_exclusive": 9548,
+            "target_response_slice_utf8_sha256": "fea642d1029dc909d9782346c12457dcdc11322e6344f33d1a6d3ed3012124d3"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch9-private.json",
+          "sha256": "3cb794f6eaf73c050ab4637d6e1c59b7c21266248ec597019802d09523a7a57f",
+          "actual_shared_tool_call_id": "modern-r106-search-batch9",
+          "query_subrequest_index": 1,
+          "response_utf8_sha256": "b4a7b77ce6f2c6976c5aa612898a0a3bd091d4dd1144f2ac711b6b39a78cb736"
+        }
+      ],
+      "identity_caveat": "仅Ebly遗产站保存的Les trois portes本卷梗概；原篇未读，不借Noïm在下一卷出现的仪式或其他冒险。陌生世界的天体位置未明，暂不补空间。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "2b73bf4f4be03dad14e50bfe122eddad557a9250008fda0b6b2b05237928281c"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "c49ed1791f91507ea9c6d9a2dff8c78962e3a0c1c90704909594b2e1b5de6642"
+      }
+    },
+    {
+      "id": "Q112999016",
+      "identity": {
+        "title": "Nor the Many-Colored Fires of a Star Ring",
+        "author": "乔治·R·R·马丁"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "生存与风险",
+          "文明与历史"
+        ],
+        "issue": "具名评论把本篇的探索船放在已知空间边缘，那里未知的事物为船员带来认知上的难题和生命危险。探索的边界因而不仅是到达更远的位置，还包括人类怎样面对理解能力的限度；这里不把评论提到的其他Martin或Spinrad故事设定作为本篇事实。",
+        "issue_facets": [
+          {
+            "label": "探索边界与理解限度",
+            "question": "到达已知空间之外，是否等于已经具有理解未知对象的能力？",
+            "basis": "Speculiction具名本篇段明确探索船在已知空间边缘，未知造成intellectual problems；不补航行或未知实体机制。"
+          },
+          {
+            "label": "求知风险与生命保护",
+            "question": "当未知既产生认知困难又带来生命危险时，探索应如何衡量其代价？",
+            "basis": "同一段明示船员面临mortal problems；没有说明事故、牺牲或最终方案，全部保持未知。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://speculiction.blogspot.com/2018/10/review-of-nightflyers-by-george-r-r.html"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://speculiction.blogspot.com/2018/10/review-of-nightflyers-by-george-r-r.html",
+          "source_type": "reader_review_exact_named_story_premise",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "准确本篇探索船在已知空间边缘，未知造成认知与生命风险；同段与Spinrad比较仅评论类比，不继承其故事。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch9-private.json",
+            "sha256": "3cb794f6eaf73c050ab4637d6e1c59b7c21266248ec597019802d09523a7a57f",
+            "actual_shared_tool_call_id": "modern-r106-search-batch9",
+            "query_subrequest_index": 3,
+            "response_utf8_sha256": "b4a7b77ce6f2c6976c5aa612898a0a3bd091d4dd1144f2ac711b6b39a78cb736",
+            "target_response_character_start": 14606,
+            "target_response_character_end_exclusive": 15951,
+            "target_response_slice_utf8_sha256": "4a0c2c9e8c5fddc28d5a2eecda19cc562b41d5ac6d69e68dab9ba699463ae776"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch9-private.json",
+          "sha256": "3cb794f6eaf73c050ab4637d6e1c59b7c21266248ec597019802d09523a7a57f",
+          "actual_shared_tool_call_id": "modern-r106-search-batch9",
+          "query_subrequest_index": 3,
+          "response_utf8_sha256": "b4a7b77ce6f2c6976c5aa612898a0a3bd091d4dd1144f2ac711b6b39a78cb736"
+        }
+      ],
+      "identity_caveat": "仅Nightflyers评论中明确Nor the Many-Colored Fires of a Star Ring的段，非Nightflyers主篇、And Seven Times Never Kill Man或Riding the Torch剧情。原篇未读，不补人物关系、结局或具体宇宙尺度。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "059b7bca307d215f24ca6b71962030cf6ae75977fd2b18a7b744bec9c49e6caa"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "cb7bbedcebb8be1bdd0f2bcdd8f8654f7d41fb9e7a314429ce5e8539524b1b8b"
+      }
+    },
+    {
+      "id": "Q123134989",
+      "identity": {
+        "title": "Le Triptyque de Khor",
+        "author": "Christian Léourier"
+      },
+      "fields": {
+        "topics": [
+          "知识与认识",
+          "文明与历史",
+          "权力与制度"
+        ],
+        "issue": "梗概写Cynewulf在Kohr行星发现被解释为基督教上帝存在证据的三联画，带回其中两部分，第三部分尚未找到；已见部分记述一位号召彼此相爱并反抗不公占领者的先知。证据不完整时，对其宗教与历史意义的解释仍有边界，爱的号召与反抗压迫也使信念不只是私人认识问题。",
+        "issue_facets": [
+          {
+            "label": "残缺史料与信念判断",
+            "question": "只有三联画的两部分时，怎样区分材料所述故事与关于神存在的判断？",
+            "basis": "本篇梗概明确三部分中两部分被带回、第三部分未找到，以及Cynewulf的发现；不补缺失部分或最后结论。"
+          },
+          {
+            "label": "信念教导与反抗占领",
+            "question": "要求彼此相爱与号召反抗不公占领，怎样在同一历史叙述中相连？",
+            "basis": "已述三联画内容记载称为Fils de l’Unique的先知同时倡导爱与反抗不公占领者；不追加战争、死亡或具体政治制度。"
+          }
+        ]
+      },
+      "field_notes": {
+        "topics": "只据本身份有限明确前提人工选择，不按作者/系列传播；待独立核对。",
+        "issue": "有限实际检索返回的作品前提＋原创文学解释；原作全文未读，评论者判断和剧情事实分开。",
+        "issue_facets": "两项具体问题与所读设定依据；相邻篇/长篇扩写/其他卷不继承。"
+      },
+      "verification_status": "knowledge_added_unverified",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Le_Triptyque_de_Kohr"
+      ],
+      "source_evidence": [
+        {
+          "url": "https://fr.wikipedia.org/wiki/Le_Triptyque_de_Kohr",
+          "source_type": "secondary_exact_named_story_synopsis",
+          "supports_issue": true,
+          "result": "exact_scoped_search_return_read",
+          "reading_scope": "本篇开端：Kohr发现、被带回三联画两部分/第三部分未找到、先知倡导爱和反抗不公占领；未返回结局，不追加。",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "new_read_performed": true,
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch10-private.json",
+            "sha256": "70864e77df911cea8f3c97d979e8e4bfbbf7916f597fdb16f86aba10cbf70345",
+            "actual_shared_tool_call_id": "modern-r106-search-batch10",
+            "query_subrequest_index": 0,
+            "response_utf8_sha256": "bbe89263937df91386d0c6ab0108ee9a0d667901d11f7631bb420870b840f58c",
+            "target_response_character_start": 785,
+            "target_response_character_end_exclusive": 1315,
+            "target_response_slice_utf8_sha256": "5a578f4758cbad0310cec344ce367384cb8928eb2b1ca567d1e20f8b5d6494ac"
+          }
+        }
+      ],
+      "source_cache_references": [
+        {
+          "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round106-query-batch10-private.json",
+          "sha256": "70864e77df911cea8f3c97d979e8e4bfbbf7916f597fdb16f86aba10cbf70345",
+          "actual_shared_tool_call_id": "modern-r106-search-batch10",
+          "query_subrequest_index": 0,
+          "response_utf8_sha256": "bbe89263937df91386d0c6ab0108ee9a0d667901d11f7631bb420870b840f58c"
+        }
+      ],
+      "identity_caveat": "source原题含Khor/Kohr两种，本次准确Kohr具名摘要对应Christian Léourier本篇。只据返回的两段开端，不把故事中的信仰证据说成现实宗教证明，也不借Les Mosaïques邻篇时间塔。",
+      "analysis_basis": "actual_scoped_source_material_unverified",
+      "original_analysis_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2.json",
+        "sha256": "38be3040b627b430aa9c3c7eb5d6c653a2aef5e8e55366fc7aefc8a044b7d84c",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2.json",
+        "record_sha256": "f80756bc377c98f2afe57fbba41b32e428bc7576fdd84cd201b5605efcb0cc77"
+      },
+      "original_log_binding": {
+        "file": "work/evidence/modern-easy-core-round106-part2-log.json",
+        "sha256": "64aa84692922e793a60b8bb6fc3191267088d6249996ee9c263cf17a85dfbec9",
+        "archive": "research/issue-input-snapshots/modern-easy-core-round106-part2-log.json",
+        "record_sha256": "84ded89000b9c3b45b88079f84f19947b5ce8f65edcc352fafd49fdc02da53db"
+      }
+    }
+  ]
+}
