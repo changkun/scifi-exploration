@@ -63,7 +63,8 @@ export async function buildSiteDelivery(repository, commit, output) {
   await writeFile(indexPath, index.replace(/src="\.\/assets\/app\.js\?v=[^"]*"/, `src="./assets/app.js?v=${tag}"`));
   // Compressed exports duplicate the same full dataset. Keep them at the fixed
   // commit as well, and preserve their download links in the generated site.
-  const remoteFiles = Object.keys(sourceHashes).filter(file => file.endsWith('.json.gz'));
+  const remoteFiles = Object.keys(sourceHashes).filter(file => file.endsWith('.json.gz') &&
+    !REMOTE_DIRECTORIES.some(directory => file.startsWith(`assets/${directory}/`)));
   for (const file of ['index.html', 'assets/completion.mjs', 'assets/issues.mjs']) {
     const path = join(dist, file);
     let text = await readFile(path, 'utf8');
