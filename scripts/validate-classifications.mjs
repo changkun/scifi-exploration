@@ -1,3 +1,4 @@
+import {validateRound105ClosedPendingCandidate} from './round105-closed-three-pending-candidate-evidence-v2.mjs';
 import {fileURLToPath} from 'node:url';
 import {validateRound97DoorwaysHistoricalUpdate} from './round97-doorways-historical-evidence.mjs';
 import {validateRound96FixedHistoricalUpdate} from './round96-fixed-historical-update.mjs';
@@ -151,6 +152,12 @@ for(const candidate of registry.discovery_candidates||[]){
   for(const evidence of candidate.work_evidence){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
+    if(validateRound105ClosedPendingCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){
+      assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
+      assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
+      assert.equal(work.completion.source_verified,false);
+      continue;
+    }
     // A closed six-candidate route; the generic URL requirement below stays intact.
     if(validateRound99GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))}) || validateRound97GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))}) || validateRound95GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){
       assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));

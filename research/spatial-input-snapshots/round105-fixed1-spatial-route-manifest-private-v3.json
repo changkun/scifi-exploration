@@ -1,0 +1,129 @@
+{
+  "status": "frozen_private_R105_fixed1_route_v3_two_literal_pin_fixes_no_public_write",
+  "target_round": 105,
+  "spatial_record_count": 1,
+  "spatial_field_count": 3,
+  "copy_files": [
+    {
+      "private_file": "work/evidence/modern-easy-core-round105-derived-samebatch-spatial-private.json",
+      "target": "research/spatial-reading-round98.json",
+      "sha256": "1866e91b78bff6fd10189135e958296a7d15dac1033092cc8a6577fe8a6d38c9"
+    },
+    {
+      "private_file": "work/evidence/r105-samebatch-spatial-pre-context-private.json",
+      "target": "research/spatial-input-snapshots/r105-samebatch-spatial-pre-context-private.json",
+      "sha256": "397dd76e933f14ebc10a109357c69b112898f0e9849db506f875428062c67051"
+    },
+    {
+      "private_file": "work/evidence/r105-fixed-samebatch-adopted-binding-context-private.json",
+      "target": "research/spatial-input-snapshots/r105-fixed-samebatch-adopted-binding-context-private.json",
+      "sha256": "126c80dfef92f3d8030528a254e98e25413c61b5670f1fd77db023a488ccbecc"
+    },
+    {
+      "private_file": "work/evidence/r105-fixed-samebatch-spatial-evidence-v3.mjs",
+      "target": "scripts/r105-fixed-samebatch-spatial-evidence-v3.mjs",
+      "sha256": "292a3098280f35d285de06f8a8b8d0a01670996691d788631cbb4eaf089f233d"
+    }
+  ],
+  "dependencies_already_in_core_once_packet": [
+    {
+      "archive": "research/issue-input-snapshots/modern-easy-core-round105-selection-private.json",
+      "sha256": "02ea0b872176cf4c409d35376a12a47a53502f460629c0e88e8d87f54811e5b1"
+    },
+    {
+      "archive": "research/issue-input-snapshots/modern-easy-core-round105-part2-corrected.json",
+      "sha256": "e47d5ae16142c90fb64ae87550e4dbd40a2b907711056afd39221089bc9b829b"
+    },
+    {
+      "archive": "research/issue-input-snapshots/modern-easy-core-round105-part2-corrected-log.json",
+      "sha256": "4f2e5c5e07e01bf40fc5ff06c83ff3d753dcdfb1360a2f69fb7e1f7c8ce98eb6"
+    },
+    {
+      "archive": "research/spatial-input-snapshots/modern-easy-core-round105-spatial-part1-corrected.json",
+      "sha256": "2e12614d389c505ebc7157934ef5403ffc7b0c4f483f6d156b731805ffdab5e7",
+      "count": 1,
+      "analysis": {
+        "archive": "research/issue-input-snapshots/modern-easy-core-round105-part2-corrected.json",
+        "sha256": "e47d5ae16142c90fb64ae87550e4dbd40a2b907711056afd39221089bc9b829b"
+      },
+      "log": {
+        "archive": "research/issue-input-snapshots/modern-easy-core-round105-part2-corrected-log.json",
+        "sha256": "4f2e5c5e07e01bf40fc5ff06c83ff3d753dcdfb1360a2f69fb7e1f7c8ce98eb6"
+      }
+    },
+    {
+      "archive": "research/issue-input-snapshots/modern-easy-core-round105-derived12-root-scoped.json",
+      "sha256": "1a4442937915183b53d68389bc39ae7085a82ae1689289a8913c75215982e256"
+    },
+    {
+      "archive": "research/issue-input-snapshots/round104-published-site.json",
+      "sha256": "0f1d4397369e30394ac659f6f05cd8fbe840aa0ec58e5cf10939499aca37d0c5"
+    },
+    {
+      "archive": "research/issue-input-snapshots/round105-modern40-later-R104-publication-binding-private.json",
+      "sha256": "2fb3cb5f2687a873442c6f1fdc7549ce9473b298756ff0677e261a59398404aa"
+    },
+    {
+      "archive": "research/issues-source-reading-round105.json",
+      "sha256": "95b59b9831a4d12613ddfa39f36774f08e015fa74fe040b7d912e3cc86a58b38"
+    },
+    {
+      "archive": "research/issue-input-snapshots/round105-root-two-exact-core-scope-adapter-private.json",
+      "sha256": "8be518b2d9e0d4745309617988626a0631618529ef87561b0b263ce56e251353"
+    },
+    {
+      "archive": "research/issue-input-snapshots/round105-shipwright-exact-source-scope-adapter-private.json",
+      "sha256": "32590c94719cbee22080a845938d779a3350d981e91e7ccc2b89aa877b8e4732"
+    }
+  ],
+  "additive_anchor_patches": [
+    {
+      "file": "scripts/spatial-evidence.mjs",
+      "import_prepend": "import {isR105FixedSameBatchSpatialRecord,validateR105FixedSameBatchSpatialEvidence} from './r105-fixed-samebatch-spatial-evidence-v3.mjs';\n",
+      "route_anchor": "export function validateSpatialEvidence(record,options={}){\n",
+      "route_after": " if(isR105FixedSameBatchSpatialRecord(record))return validateR105FixedSameBatchSpatialEvidence(record,options);\n"
+    },
+    {
+      "file": "scripts/validate-completion.mjs",
+      "import_prepend": "import {isR105FixedSameBatchSpatialRecord} from './r105-fixed-samebatch-spatial-evidence-v3.mjs';\n",
+      "route_anchor": "for(const input of spatialInputs)for(const record of input.records){\n",
+      "route_after": " if(isR105FixedSameBatchSpatialRecord(record)){\n  const work=works.find(item=>item.id===record.id);\n  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});\n  frozenSpatialProvenance++;continue;\n }\n"
+    }
+  ],
+  "minimal_patch_file": "work/evidence/r105-fixed1-spatial-wrapper-v3-minimal-private.patch",
+  "minimal_patch_sha256": "7b133d2e33d1a6c9385424086e16ee1a323b261e9514d0e8dc84e101981693ad",
+  "wrapper_reversal_proof": [
+    {
+      "file": "scripts/spatial-evidence.mjs",
+      "preimage_sha256": "633587f06b4ba7c21d6ce7041fef4e64d6140bf3cb28805063b9fcd2e659059a",
+      "postimage_sha256": "cd74a8e3e403de38707486c631e00f41280ca85545b7403ca8748b86ada1cc7d",
+      "remove_only_R105_fixed1_additions_restores_exact_current_S18_and_older_routes": true
+    },
+    {
+      "file": "scripts/validate-completion.mjs",
+      "preimage_sha256": "d9fdda87b333e00ddd5bd55506cf497bbdc84717287db64a95b5e5a4550aa7a2",
+      "postimage_sha256": "20a91fdfc099a036f52973daf678cee686cfe35b558ac9c726dd16d4cd446c8b",
+      "remove_only_R105_fixed1_additions_restores_exact_current_S18_and_older_routes": true
+    }
+  ],
+  "no_old_route_replacement": true,
+  "no_raw_web_cache_copy": true,
+  "module_api": [
+    "isR105FixedSameBatchSpatialRecord(record)",
+    "validateR105FixedSameBatchSpatialEvidence(record,options)"
+  ],
+  "root_only_adoption": true,
+  "original_v2_guard_sha256": "da698a87966dac3fc0e1c45b2277aebdab8c9b7260995800d5603e308d16f002",
+  "exact_changes_from_v2": [
+    {
+      "old": "round105-modern40-later-R105-publication-binding-private.json",
+      "new": "round105-modern40-later-R104-publication-binding-private.json",
+      "count": 1
+    },
+    {
+      "old": "od.metadata.target_round!==104",
+      "new": "od.metadata.target_round!==105",
+      "count": 1
+    }
+  ]
+}

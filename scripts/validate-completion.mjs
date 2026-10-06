@@ -1,3 +1,5 @@
+import {isR105FixedSameBatchSpatialRecord} from './r105-fixed-samebatch-spatial-evidence-v3.mjs';
+import {isEarlySelection18PublishedSpatialRecord} from './early-published-spatial-selection18-evidence-v2.mjs';
 import {isEarlySelection17PublishedSpatialRecord} from './early-published-spatial-selection17-evidence-v1.mjs';
 import {isEarlySelection16PublishedSpatialRecord} from './early-published-spatial-selection16-evidence-v1.mjs';
 import {isEarlySelection15PublishedSpatialRecord} from './early-published-spatial-selection15-evidence-v1.mjs';
@@ -69,6 +71,11 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
+ if(isR105FixedSameBatchSpatialRecord(record)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
  if(isR104FixedSameBatchSpatialRecord(record)){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
@@ -109,7 +116,7 @@ for(const input of spatialInputs)for(const record of input.records){
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
  }
- if(isEarlySelection17PublishedSpatialRecord(record)||isEarlySelection16PublishedSpatialRecord(record)||isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isEarlySelection18PublishedSpatialRecord(record)||isEarlySelection17PublishedSpatialRecord(record)||isEarlySelection16PublishedSpatialRecord(record)||isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;

@@ -21,9 +21,13 @@ const originals=await Promise.all(['research/knowledge-existing.json','research/
 const priorKnowledge=new Map(originals.flatMap(d=>d.records).map(r=>[r.id,r]));
 // Keep the separate spatial overlay in both sides of the issue-only comparison.
 // This still rejects any spatial fields originating in an issue batch.
+const knownSpatialValues=new Set(['earth','planetary','interstellar','galactic','cosmic','abstract']);
 for(const input of await Promise.all((await listSpatialInputs(root)).map(read)))for(const r of input.records){
- const old=priorKnowledge.get(r.id);
- priorKnowledge.set(r.id,{...(old||r),fields:{...r.fields,...old?.fields},field_notes:{...r.field_notes,...old?.field_notes}});
+ const old=priorKnowledge.get(r.id),fields={...r.fields,...old?.fields};
+ // Replay the builder's validated spatial bundle rule, retaining the old raw assertions.
+ const fillUnknownSpatial=old?.fields.spatial_primary==='unknown'&&knownSpatialValues.has(r.fields.spatial_primary);
+ for(const [key,value] of Object.entries(r.fields))if(fields[key]==null||(fillUnknownSpatial&&['spatial_primary','spatial_secondary','spatial_rationale'].includes(key)))fields[key]=value;
+ priorKnowledge.set(r.id,{...(old||r),fields,field_notes:{...r.field_notes,...old?.field_notes}});
 }
 // Hold separately guarded dimension additions constant in the issue-only
 // comparison, just as for spatial overlays. Original issue inputs remain exact.

@@ -88,10 +88,13 @@ for(const p of ['research/knowledge-existing.json','research/knowledge-additiona
     const assertion={input_file:p,...r},priorKnowledge=knowledge.get(r.id);
     if(!priorKnowledge){knowledge.set(r.id,{...r,assertions:[assertion]});continue;}
     const merged={...priorKnowledge,fields:{...priorKnowledge.fields},field_notes:{...priorKnowledge.field_notes},sources:[...new Set([...(priorKnowledge.sources||[]),...(r.sources||[])])],assertions:[...priorKnowledge.assertions,assertion]};
+    // An explicit unknown spatial value is still a gap. Adopt the validated
+    // known setting as one bundle, while retaining every old assertion.
+    const fillUnknownSpatial=spatialInputs.includes(p)&&priorKnowledge.fields.spatial_primary==='unknown'&&r.fields.spatial_primary!=='unknown';
     for(const [key,value] of Object.entries(r.fields)){
       if(key==='topics')merged.fields.topics=[...new Set([...(merged.fields.topics||[]),...value])];
       else if(key==='issue_facets')merged.fields.issue_facets=[...(merged.fields.issue_facets||[]),...value];
-      else if(merged.fields[key]==null)merged.fields[key]=value;
+      else if(merged.fields[key]==null||(fillUnknownSpatial&&['spatial_primary','spatial_secondary','spatial_rationale'].includes(key)))merged.fields[key]=value;
       // Original interpretations remain the display value; later analyses stay
       // in the exact assertions and in the optional alternative interpretation.
       else if(key==='issue'&&merged.fields.issue!==value)merged.issue_alternatives=[...(merged.issue_alternatives||[]),{value,note:r.field_notes.issue,input_file:p}];

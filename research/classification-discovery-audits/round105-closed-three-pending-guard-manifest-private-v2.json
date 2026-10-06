@@ -1,0 +1,83 @@
+{
+  "status": "frozen_private_closed3_candidate_guard_v2_legacy_shared_mode_preserved",
+  "candidate_count": 3,
+  "work_evidence_count": 6,
+  "copy_files": [
+    {
+      "private_file": "work/evidence/round105-closed-three-pending-candidate-evidence-v2.mjs",
+      "target": "scripts/round105-closed-three-pending-candidate-evidence-v2.mjs",
+      "sha256": "de1921c8ba607e06ab53a800c8d12bd212a7cad517105c3ec6b1b058d73206f3"
+    },
+    {
+      "private_file": "work/evidence/round105-root-reviewed-three-pending-directions-private.json",
+      "target": "research/classification-discovery-inputs/round105-root-reviewed-three-pending-directions.json",
+      "sha256": "50527e2eebe57ca9431ee09d8d58e848fc2ee9158596a2e70f7e2cef1833019f"
+    }
+  ],
+  "old_refs_only": [
+    {
+      "file": "research/classification-discovery-inputs/round105-early-original-two-pending-directions.json",
+      "sha256": "3aa491122da3e72621d0d2bfd176c0c664e4a369990bce041bb261559fc1b1fa"
+    },
+    {
+      "file": "research/classification-discovery-inputs/round105-global-original-response-withdrawal-note.json",
+      "sha256": "8746045e55641778a6b63fa44f05bbc93454875188110ed381029e73c5495eec"
+    },
+    {
+      "file": "research/issues-before-1900.json",
+      "file_sha256": "e75c4823aa33b13ea16dc523802c370cd11ba6a3dc295ca0ed470d154140aa19",
+      "record_pointer": "$.records[50]",
+      "record_sha256": "71d586c365c3cbe3a857060f0dd6d8a2e354a17a937f3b7b9f05aef659bf232d"
+    },
+    {
+      "file": "research/issues-before-1900.json",
+      "file_sha256": "e75c4823aa33b13ea16dc523802c370cd11ba6a3dc295ca0ed470d154140aa19",
+      "record_pointer": "$.records[46]",
+      "record_sha256": "6b3ec16eddbd9bb20d31b0f25bcc2ae5af35a41de2b1ade08714eb22883fce3c"
+    },
+    {
+      "file": "research/issues-since-1980-round2.json",
+      "file_sha256": "653dc9e28f3dfc42b2e1e72e781e1a03645c76400adaa9e6b9bf0df1a34ea0d6",
+      "record_pointer": "$.records[16]",
+      "record_sha256": "83ec5d829914fd584d48c3ba01d523c476d0b9825444525aafa80488e570d84a"
+    },
+    {
+      "file": "research/issues-since-1980-round2.json",
+      "file_sha256": "653dc9e28f3dfc42b2e1e72e781e1a03645c76400adaa9e6b9bf0df1a34ea0d6",
+      "record_pointer": "$.records[59]",
+      "record_sha256": "bde45385cfe346fb668d7ac77263af7fa6ef6f4b4ec4d57870e73bebeee19733"
+    },
+    {
+      "file": "research/issues-1900-1979.json",
+      "file_sha256": "2781f493620c79474ca28ced93019a42e63e6161bbcb92c7c5b316d5e5b01272",
+      "record_pointer": "$.records[246]",
+      "record_sha256": "3700e141ffdbb779e97c595086b1ff225e4aba6a3f874022c8ea51877258e4e4"
+    },
+    {
+      "file": "research/issues-source-reading-round74.json",
+      "file_sha256": "7cda3635b7d34d1822a2b361f0a9260fb291676ed7330484b283ba4d1604b8d2",
+      "record_pointer": "$.records[105]",
+      "record_sha256": "fa0053b47b743d6d66edce464de4464a7ed85d91596841c2edefa6df08d58714"
+    }
+  ],
+  "additive_patch": {
+    "file": "scripts/validate-classifications.mjs",
+    "import_prepend": "import {validateRound105ClosedPendingCandidate} from './round105-closed-three-pending-candidate-evidence-v2.mjs';\n",
+    "route_anchor": "    // A closed six-candidate route; the generic URL requirement below stays intact.\n",
+    "route_before": "    if(validateRound105ClosedPendingCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){\n      assert(renderClassifications(works).includes('data-work=\"'+evidence.id+'\"'));\n      assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));\n      assert.equal(work.completion.source_verified,false);\n      continue;\n    }\n",
+    "preimage_sha256": "f9e1a1859d5d203c123df474a02e748b43defe852bc4575a9eb38dba8a1b19ac",
+    "postimage_sha256": "8d1095f5850e49c18c31ba84a1b733292205c363c121ff235e340344ef86620a",
+    "remove_only_new_import_and_call_restores_exact_old_validator": true
+  },
+  "minimal_patch_file": "work/evidence/round105-closed-three-pending-validator-v2-minimal-private.patch",
+  "minimal_patch_sha256": "c49c328a1da3d88d3eb3ef6477542c55a813f93d33d7e3fa406e80cc6095c28f",
+  "no_generic_sources_rule_change": true,
+  "no_original_counter_rewrite": true,
+  "private_pre_overlay_only_fixed_candidate_pack": true,
+  "new_queries": 0,
+  "new_opens": 0,
+  "formal_promotions": 0,
+  "assignments": 0,
+  "original_v1_guard_sha256": "fc893bc133f93b823c10297b7dd23b1ec039f780b18aaabfdb3237b5bfe13d54",
+  "only_guard_change": "Route by exact3 IDs or exact3 labels rather than shared old evidence mode; all validation body and fixed reviewed pack preserved."
+}
