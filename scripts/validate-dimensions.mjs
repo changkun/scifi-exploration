@@ -11,7 +11,7 @@ const canonical=JSON.parse(gunzipSync(await readFile(new URL('research/canonical
 const context=createDimensionEvidenceContext({repoDir:fileURLToPath(root)});
 const byId=new Map(canonical.works.map(w=>[w.id,w]));
 const allIds=new Set();
-for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-dimensions-round1.json',40,141],['research/knowledge-dimensions-round2.json',100,311],['research/knowledge-dimensions-round3.json',200,648],['research/knowledge-dimensions-round4.json',300,992],['research/knowledge-dimensions-round5.json',600,1946],['research/knowledge-dimensions-round6.json',600,1970],['research/knowledge-dimensions-round7.json',600,2006],['research/knowledge-dimensions-round8.json',1000,3582]]){
+for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-dimensions-round1.json',40,141],['research/knowledge-dimensions-round2.json',100,311],['research/knowledge-dimensions-round3.json',200,648],['research/knowledge-dimensions-round4.json',300,992],['research/knowledge-dimensions-round5.json',600,1946],['research/knowledge-dimensions-round6.json',600,1970],['research/knowledge-dimensions-round7.json',600,2006],['research/knowledge-dimensions-round8.json',1000,3582],['research/knowledge-dimensions-round9.json',1000,3769]]){
  const input=JSON.parse(await readFile(new URL(inputFile,root),'utf8'));
  let fields=0;
  for(const record of input.records){
@@ -25,9 +25,9 @@ for(const [inputFile,expectedRecords,expectedFields] of [['research/knowledge-di
  assert.equal(input.records.length,expectedRecords);
  assert.equal(fields,expectedFields);
 }
-assert.equal(allIds.size,3440);
+assert.equal(allIds.size,4440);
 for(const [key,label] of Object.entries(DIMENSION_LABELS)){
- const expected={narrative_mechanism:3440,scientific_premise:2602,reality_relation:3440,expression_form:1446}[key];
+ const expected={narrative_mechanism:4440,scientific_premise:3353,reality_relation:4440,expression_form:2267}[key];
  const known=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,dimension:key});
  const missing=filterWorks(canonical.works,{...DEFAULT_STATE,boundary:true,missing:key});
  assert.equal(known.length,expected,label);
@@ -48,4 +48,4 @@ assert.deepEqual(scopeWork.spatial_scope_annotation.original_spatial_fields,{
  spatial_secondary:scopeWork.spatial_evidence.secondary,
  spatial_rationale:scopeWork.spatial_evidence.rationale
 });
-console.log('PASS independently guarded 40/141, 100/311, 200/648, 300/992, 600/1946, 600/1970, 600/2006 and 1000/3582 actual adopted records/fields; four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');
+console.log('PASS independently guarded 40/141, 100/311, 200/648, 300/992, 600/1946, 600/1970, 600/2006 1000/3582 and 1000/3769 actual adopted records/fields; four-dimension coverage, search and URL filters; 17 baseline fields retained; scoped spatial boundary note');

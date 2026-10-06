@@ -1,4 +1,6 @@
+import {isEarlySelection12PublishedSpatialRecord} from './early-published-spatial-selection12-evidence-v2.mjs';
 import {isEarlySelection11PublishedSpatialRecord} from './early-published-spatial-selection11-evidence-v1.mjs';
+import {isR99FixedSameBatchSpatialRecord} from './r99-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isR98FixedSameBatchSpatialRecord} from './r98-fixed-samebatch-spatial-evidence-v2.mjs';
 import {isEarlySelection10PublishedSpatialRecord} from './early-published-spatial-selection10-evidence-v1.mjs';
 import {isR97FixedSameBatchSpatialRecord} from './r97-fixed-samebatch-spatial-evidence-v1.mjs';
@@ -61,6 +63,11 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
+ if(isR99FixedSameBatchSpatialRecord(record)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
  if(isR98FixedSameBatchSpatialRecord(record)){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
@@ -91,7 +98,7 @@ for(const input of spatialInputs)for(const record of input.records){
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
  }
- if(isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;

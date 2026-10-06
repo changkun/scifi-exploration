@@ -1,4 +1,6 @@
+import {isEarlySelection12PublishedSpatialRecord,validateEarlySelection12PublishedSpatialEvidence} from './early-published-spatial-selection12-evidence-v2.mjs';
 import {isEarlySelection11PublishedSpatialRecord,validateEarlySelection11PublishedSpatialEvidence} from './early-published-spatial-selection11-evidence-v1.mjs';
+import {isR99FixedSameBatchSpatialRecord,validateR99FixedSameBatchSpatialEvidence} from './r99-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isR98FixedSameBatchSpatialRecord,validateR98FixedSameBatchSpatialEvidence} from './r98-fixed-samebatch-spatial-evidence-v2.mjs';
 import {isEarlySelection10PublishedSpatialRecord,validateEarlySelection10PublishedSpatialEvidence} from './early-published-spatial-selection10-evidence-v1.mjs';
 import {isR97FixedSameBatchSpatialRecord,validateR97FixedSameBatchSpatialEvidence} from './r97-fixed-samebatch-spatial-evidence-v1.mjs';
@@ -29,14 +31,16 @@ function modernIds(phase,getIds,options){
  return fixedModernIds.get(key);
 }
 export function initialResearchSpatialBuildArguments(record,options={}){
- if(isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
+ if(isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
   const currentWork=options.currentWork;
   return {...options,currentWork,issueAssertions:currentWork?.knowledge?.assertions,sourceSearchLog:currentWork?.source_search_log,spatialAdoptionPhase:currentWork?.spatial_primary==='unknown'?'pre':'post'};
  }
  return earlierBuildArguments(record,options);
 }
 export function validateSpatialEvidence(record,options={}){
+ if(isEarlySelection12PublishedSpatialRecord(record))return validateEarlySelection12PublishedSpatialEvidence(record,options);
  if(isEarlySelection11PublishedSpatialRecord(record))return validateEarlySelection11PublishedSpatialEvidence(record,options);
+ if(isR99FixedSameBatchSpatialRecord(record))return validateR99FixedSameBatchSpatialEvidence(record,options);
  if(isR98FixedSameBatchSpatialRecord(record))return validateR98FixedSameBatchSpatialEvidence(record,options);
  if(isR97FixedSameBatchSpatialRecord(record))return validateR97FixedSameBatchSpatialEvidence(record,options);
  if(isR96FixedSameBatchSpatialRecord(record))return validateR96FixedSameBatchSpatialEvidence(record,options);

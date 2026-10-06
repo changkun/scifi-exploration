@@ -4,6 +4,7 @@ import {validateRound96FixedHistoricalUpdate} from './round96-fixed-historical-u
 import {isV23NavigationReview,validateV23NavigationReview} from './classification-v23-navigation-evidence.mjs';
 import {validateRound95GlobalKnowledgeDimensionCandidate} from './round95-global-knowledge-dimension-candidate-v1.mjs';
 import {validateRound97GlobalKnowledgeDimensionCandidate} from './round97-global-c5-knowledge-dimension-candidate-v1.mjs';
+import {validateRound99GlobalKnowledgeDimensionCandidate} from './round99-global-c4-knowledge-dimension-candidate-v1.mjs';
 import {validateR94PreservedV22BibliographicFormReview} from './round94-preserved-v22-stars-gods-review-v1.mjs';
 import {validateR94ModernScopedEditorialCandidate} from './round94-modern-scoped-editorial-candidate-v2.mjs';
 import {resolveR93PreservedScopedCandidateLog} from './round93-preserved-scoped-candidate-log-v1.mjs';
@@ -151,7 +152,7 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     // A closed six-candidate route; the generic URL requirement below stays intact.
-    if(validateRound97GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))}) || validateRound95GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){
+    if(validateRound99GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))}) || validateRound97GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))}) || validateRound95GlobalKnowledgeDimensionCandidate(candidate,evidence,work,{repoDir:fileURLToPath(new URL('../',import.meta.url))})){
       assert(renderClassifications(works).includes('data-work="'+evidence.id+'"'));
       assert(!work.classification_assignments.some(assignment=>assignment.label===candidate.proposed_label));
       assert.equal(work.completion.source_verified,false);
