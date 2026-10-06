@@ -4,6 +4,7 @@ import {registeredValues,CLASSIFICATION_REGISTRY} from '../dist/assets/classific
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
 import {gunzipSync,gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
+import {isDeepStrictEqual} from 'node:util';
 import {fileURLToPath} from 'node:url';
 import {listIssueInputs,listSpatialInputs,listDimensionInputs} from './issue-inputs.mjs';
 import {createDimensionEvidenceContext,validateDimensionEvidence} from './dimension-evidence.mjs';
@@ -127,6 +128,22 @@ for(const correction of issueCorrections.records){
  const correctedTopics=note.allow_topic_replacement===true?[...new Set([...prior.assertions.filter(a=>{const {input_file,...raw}=a;return !equal(raw,original);}).flatMap(a=>a.fields?.topics||[]),...correction.fields.topics])]:prior.fields.topics;
  knowledge.set(correction.id,{...prior,fields:{...prior.fields,topics:correctedTopics,issue:correction.fields.issue,issue_facets:[...remaining,...correction.fields.issue_facets]},field_notes:{...prior.field_notes,topics:correction.field_notes.topics,issue:correction.field_notes.issue,issue_facets:correction.field_notes.issue_facets},sources:[...new Set([...prior.sources,...correction.sources])],assertions:[...prior.assertions,{input_file:'research/issue-corrections.json',...correction}],corrections:[...(prior.corrections||[]),correction],superseded_issue_fields:[...(prior.superseded_issue_fields||[]),{input_file:note.corrects_component,sha256:note.corrects_component_sha256,fields:original.fields,reason:note.reason}]});
  correctedIssueIds.add(correction.id);
+}
+// Rebuilding input groups must not insert a new spatial assertion ahead of an
+// older descriptor. Retain every exact old assertion in its published order,
+// then append the remaining new assertions in their input order.
+for(const [id,work] of canonicalSpatialContext){
+ const oldAssertions=work.knowledge?.assertions||[];
+ if(!oldAssertions.length)continue;
+ const assembled=knowledge.get(id);
+ if(!assembled)throw new Error('Published knowledge missing from rebuild: '+id);
+ const remaining=[...assembled.assertions],preserved=[];
+ for(const old of oldAssertions){
+  const index=remaining.findIndex(item=>isDeepStrictEqual(item,old));
+  if(index===-1)throw new Error('Published assertion changed or removed: '+id);
+  preserved.push(remaining.splice(index,1)[0]);
+ }
+ assembled.assertions=[...preserved,...remaining];
 }
 // Explicit subject headings generate navigation candidates only. Never infer
 // plot duration, location or scientific plausibility from a heading or title.

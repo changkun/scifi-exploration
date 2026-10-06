@@ -1,3 +1,5 @@
+import {validateR94PreservedV22BibliographicFormReview} from './round94-preserved-v22-stars-gods-review-v1.mjs';
+import {validateR94ModernScopedEditorialCandidate} from './round94-modern-scoped-editorial-candidate-v2.mjs';
 import {resolveR93PreservedScopedCandidateLog} from './round93-preserved-scoped-candidate-log-v1.mjs';
 import {isV22BibliographicFormReview,validateV22BibliographicFormReview} from './classification-v22-bibliographic-review-guard.mjs';
 import {resolveR89PreservedScopedCandidateLog} from './round89-preserved-scoped-candidate-log.mjs';
@@ -137,7 +139,9 @@ for(const candidate of registry.discovery_candidates||[]){
     const work=byId.get(evidence.id);
     assert.deepEqual(evidence.identity,{title:work.title_zh,author:work.author});
     assert(evidence.basis&&evidence.exact_support_scope&&evidence.sources.length);
-    if(validateR89FormHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
+    if(validateR94ModernScopedEditorialCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
+      assert.equal(work.issue_analysis_status,'missing');
+    }else if(validateR89FormHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
       assert(renderClassifications(works).includes('媒介与出版史 · 目标情节待核'));
     }else if(validateR88AuthorCreationHistoryCandidate(candidate,evidence,work,{repoDir:new URL('../',import.meta.url)})){
       assert(renderClassifications(works).includes('作者自传与创作背景 · 目标小说情节待核'));
@@ -252,7 +256,7 @@ for (const review of registry.discovery_reviews || []) {
     }
   }
   if (isV22BibliographicFormReview(review)) {
-    await validateV22BibliographicFormReview(review,{repoDir:new URL('../',import.meta.url).pathname,candidate,category,original,member,work});
+    await validateR94PreservedV22BibliographicFormReview(review,{repoDir:new URL('../',import.meta.url).pathname,candidate,category,original,member,work});
   } else if (review.evidence_mode === 'scoped_form_source_without_core') {
     assert.equal(category.axis, 'form');
     assert.equal(work.issue_analysis_status, 'missing');

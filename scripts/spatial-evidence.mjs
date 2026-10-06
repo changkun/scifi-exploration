@@ -1,5 +1,7 @@
 import {isEarlySelection6PublishedSpatialRecord,validateEarlySelection6PublishedSpatialEvidence} from './early-published-spatial-selection6-evidence-v1.mjs';
 import {isR93FixedSameBatchSpatialRecord,validateR93FixedSameBatchSpatialEvidence} from './r93-fixed-samebatch-spatial-evidence-v1.mjs';
+import {isEarlySelection7PublishedSpatialRecord,validateEarlySelection7PublishedSpatialEvidence} from './early-published-spatial-selection7-evidence-v1.mjs';
+import {isR94FixedSameBatchSpatialRecord,validateR94FixedSameBatchSpatialEvidence} from './r94-fixed-samebatch-spatial-evidence-v1.mjs';
 // Isolated fixed-input extensions; earlier R88 and R87 guards are preserved.
 import {validateSpatialEvidence as validateEarlier,initialResearchSpatialBuildArguments as earlierBuildArguments} from './spatial-evidence-r88-preserved.mjs';
 import {isEarlyS7SpatialRecord,validateEarlyS7SpatialEvidence} from './early-s7-spatial-evidence-v2.mjs';
@@ -18,8 +20,16 @@ function modernIds(phase,getIds,options){
  if(!fixedModernIds.has(key))fixedModernIds.set(key,getIds(options));
  return fixedModernIds.get(key);
 }
-export function initialResearchSpatialBuildArguments(record,options={}){return earlierBuildArguments(record,options);}
+export function initialResearchSpatialBuildArguments(record,options={}){
+ if(isEarlySelection7PublishedSpatialRecord(record)){
+  const currentWork=options.currentWork;
+  return {...options,currentWork,issueAssertions:currentWork?.knowledge?.assertions,sourceSearchLog:currentWork?.source_search_log,spatialAdoptionPhase:currentWork?.spatial_primary==='unknown'?'pre':'post'};
+ }
+ return earlierBuildArguments(record,options);
+}
 export function validateSpatialEvidence(record,options={}){
+ if(isEarlySelection7PublishedSpatialRecord(record))return validateEarlySelection7PublishedSpatialEvidence(record,options);
+ if(isR94FixedSameBatchSpatialRecord(record))return validateR94FixedSameBatchSpatialEvidence(record,options);
  if(isEarlySelection6PublishedSpatialRecord(record))return validateEarlySelection6PublishedSpatialEvidence(record,options);
  if(isR93FixedSameBatchSpatialRecord(record))return validateR93FixedSameBatchSpatialEvidence(record,options);
  if(isR92FixedSameBatchSpatialRecord(record))return validateR92FixedSameBatchSpatialEvidence(record,options);
