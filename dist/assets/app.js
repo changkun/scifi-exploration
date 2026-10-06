@@ -1,4 +1,4 @@
-import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry22-round95';
+import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry23-round96';
 import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs?v=round91-single-pass';
 import {mountUniverse} from './universe.mjs';
 import {mountChronology} from './chronology.mjs?v=round4-context';
@@ -7,7 +7,7 @@ import {mountTaxonomy} from './taxonomy.mjs';
 import {buildCanonicalUniverse,coverageOf,FIELD_LABELS,DIMENSION_LABELS,MISSING_FIELD_LABELS} from './canonical.mjs?v=round91-single-pass';
 import {issueDetail,renderIssueExplorer} from './issues.mjs?v=round90-single-pass';
 import {completionDetail,renderCompletion} from './completion.mjs?v=round91-single-pass';
-import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-5c6639717c5f';
+import {loadBibliographySource,loadSourceDetail,loadCompletionSource,loadLibraryDetail} from './data-loader.mjs?v=delivery-01d5a6663cb8';
 const $=id=>document.getElementById(id);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unique=arr=>[...new Set(arr)].sort((a,b)=>a.localeCompare(b,'zh-CN'));

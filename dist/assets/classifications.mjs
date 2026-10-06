@@ -1,4 +1,4 @@
-import {CLASSIFICATION_REGISTRY} from './classification-data.mjs?v=registry22-round93';
+import {CLASSIFICATION_REGISTRY} from './classification-data.mjs?v=registry23-round96';
 export {CLASSIFICATION_REGISTRY};
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const displayBasis = value => esc(String(value ?? '').replaceAll('primary unknown', '空间位置待确认').replaceAll('spatial_primary=unknown', '空间位置待确认'));
