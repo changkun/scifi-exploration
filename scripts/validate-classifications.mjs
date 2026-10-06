@@ -1,4 +1,6 @@
 import {fileURLToPath} from 'node:url';
+import {validateRound96FixedHistoricalUpdate} from './round96-fixed-historical-update.mjs';
+import {isV23NavigationReview,validateV23NavigationReview} from './classification-v23-navigation-evidence.mjs';
 import {validateRound95GlobalKnowledgeDimensionCandidate} from './round95-global-knowledge-dimension-candidate-v1.mjs';
 import {validateR94PreservedV22BibliographicFormReview} from './round94-preserved-v22-stars-gods-review-v1.mjs';
 import {validateR94ModernScopedEditorialCandidate} from './round94-modern-scoped-editorial-candidate-v2.mjs';
@@ -40,6 +42,9 @@ for (const update of updateInputs) {
   const evidence = candidate?.work_evidence.find(item => item.id === update.work_id);
   const work = byId.get(update.work_id);
   assert(candidate && evidence && work);
+  if(validateRound96FixedHistoricalUpdate(update,{candidate,evidence,work,repoDir:fileURLToPath(new URL('../',import.meta.url))})){
+    const key=update.candidate_id+':'+update.work_id;assert(!historicalUpdates.has(key));historicalUpdates.set(key,update);continue;
+  }
   assert.equal(historicalHash(candidate), update.original_candidate_record_sha256);
   assert.equal(historicalHash(evidence), update.original_work_evidence_sha256);
   assert.equal(evidence.discovery_source_mode, update.original_source_mode);
@@ -264,7 +269,9 @@ for (const review of registry.discovery_reviews || []) {
       assert.deepEqual(record.identity, original.identity);
     }
   }
-  if (isV22BibliographicFormReview(review)) {
+  if (isV23NavigationReview(review)) {
+    validateV23NavigationReview(review,{repoDir:new URL('../',import.meta.url).pathname,registry,worksById:byId,phase:'post'});
+  } else if (isV22BibliographicFormReview(review)) {
     await validateR94PreservedV22BibliographicFormReview(review,{repoDir:new URL('../',import.meta.url).pathname,candidate,category,original,member,work});
   } else if (review.evidence_mode === 'scoped_form_source_without_core') {
     assert.equal(category.axis, 'form');

@@ -1,4 +1,4 @@
-import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry22-round95';
+import {CLASSIFICATION_REGISTRY,classificationLabel} from './classifications.mjs?v=registry23-round96';
 import {ERA_BOUNDS,DURATIONS,SCIENCES,DEFAULT_STATE,languageOf,filterWorks,stateFromURL,searchFromState} from './model.mjs?v=round91-single-pass';
 import {mountUniverse} from './universe.mjs';
 import {mountChronology} from './chronology.mjs?v=round4-context';

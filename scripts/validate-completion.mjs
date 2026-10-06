@@ -1,3 +1,5 @@
+import {isEarlySelection9PublishedSpatialRecord} from './early-published-spatial-selection9-evidence-v1.mjs';
+import {isR96FixedSameBatchSpatialRecord} from './r96-fixed-samebatch-spatial-evidence-v2.mjs';
 import {isR95FixedSameBatchSpatialRecord} from './r95-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isEarlySelection8PublishedSpatialRecord} from './early-published-spatial-selection8-evidence-v1.mjs';
 import {isEarlySelection7PublishedSpatialRecord} from './early-published-spatial-selection7-evidence-v1.mjs';
@@ -55,6 +57,11 @@ const earlyRetry2SameBatchOwner='quick-retry2-lane-3.json';
 const earlyRetry2SameBatchOwnerSHA='5047bf9f2c01bf298fa1b6fa839945fad465ebc2216baeb81a18eb39769e9e9c';
 let frozenSpatialProvenance=0;
 for(const input of spatialInputs)for(const record of input.records){
+ if(isR96FixedSameBatchSpatialRecord(record)){
+  const work=works.find(item=>item.id===record.id);
+  validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
+  frozenSpatialProvenance++;continue;
+ }
  if(isR95FixedSameBatchSpatialRecord(record)){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
@@ -70,7 +77,7 @@ for(const input of spatialInputs)for(const record of input.records){
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
  }
- if(isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;

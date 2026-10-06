@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "status": "frozen_root_reviewed_additive_navigation_unverified",
+    "revision": 23,
+    "base_registry_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+    "source_canonical_sha256": "7196660ba1ba4e72a3225740703bf10392f551873303f970e43acccea662a02f",
+    "original_proposal_file": "research/classification-discovery-audits/classification-v23-navigation-proposals-global-private.json",
+    "original_proposal_sha256": "84d623b81799f30a4afa86516e3821b24bf97f9b7914c0d97b93ae8894898ef1",
+    "root_semantic_review_file": "research/classification-discovery-audits/round96-root-v23-scoped-review-private.json",
+    "root_semantic_review_sha256": "553c8fb2a9eda8b8bb70ffc9b58edd71b7f222512f360ffdae4a417388cdc808",
+    "new_core": 0,
+    "new_queries": 0,
+    "new_opens": 0,
+    "independent_verification_upgrade": false,
+    "scope": "Six members, four distinct original candidates/projects. Five core-missing identities remain missing; compilation orders are not story dates and production claims are not tool reproduction."
+  },
+  "proposals": [
+    {
+      "category_id": "form:disclosed-generative-production",
+      "axis": "form",
+      "label": "创作生成与生产层的披露",
+      "definition": "材料明确把作品的创作或生产角色分层说明：生成程序参与诗歌、世界与事件，或人类原创与AI扩展、验证、声音及跨媒介生产分别披露。作为表达形成条件的研究入口，比较保存材料中的方法宣称，不把它当已复现的工具性能或全文自动生成事实。",
+      "boundaries": [
+        "需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。",
+        "The Salvage Crew只评论对原前言和方法的转述，未直接读前言、代码或复现生成。",
+        "The Great Parade只创作方项目自述和精确书目表项；其核心仍缺，不将生产宣称当目标小说情节。",
+        "跨媒介项目总体说明只取指名本书的对应；不推四本小说都采用相同文本生成方式。",
+        "传统出版编辑、一般配乐或共同署名，不因存在制作分工自动纳入。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "程序生成内容进入人工小说",
+          "members": [
+            "Q111182873"
+          ]
+        },
+        {
+          "label": "人类原创与AI生产管线分层自述",
+          "members": [
+            "Q140031394"
+          ]
+        }
+      ],
+      "independent_project_count": 2,
+      "independence_note": "Wijeratne小说与Ikki/Celestus Anarchus项目分别取一个指名作品；后者其他同项目卷不增加独立案例数。",
+      "work_memberships": [
+        {
+          "id": "Q111182873",
+          "identity": {
+            "title": "The Salvage Crew",
+            "author": "Yudhanjaya Wijeratne"
+          },
+          "original_candidate_id": "discovery:quick-retry-root-classification-candidates-round2:1",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[54]",
+              "record_sha256": "031c7c26c87155193f96ad7c775250f2cd16bd4aa751190b977191922350b0d4"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round2.json",
+              "file_sha256": "94a2c0e7bae0db7bef872a87a35d87efb5bc42f3e47557ebf290d7cecce4fed2",
+              "record_pointer": "$.records[0]",
+              "record_sha256": "7f9eec2a5ac5c3c8159fff6ed679650c52ab66b59728318ee874ccfb42350892"
+            }
+          ],
+          "original_analysis_inputs": [
+            {
+              "file": "research/issues-source-reading-round77.json",
+              "file_sha256": "cc23c9e956b5758068d01ae9b831aecc0d4608adcbf4e8681d8acf7ce4000c14",
+              "record_pointer": "$.records[296]",
+              "record_sha256": "54b28fd7d94fe7983624a305a4d71a53e3368fb3b675eb8a5e7dfd73d3c57425"
+            }
+          ],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry-root-round2-log.json",
+            "file_sha256": "aaa52d2056ed208106725a0454058da7d043ee9d0ea27535513e1b79136cbe38",
+            "record_pointer": "$.records[9]",
+            "record_sha256": "d567e9cf2f3e0a1b68dad32a9804753dc06ee7156a6360ccb71af1333f5f0dd8"
+          },
+          "source_urls": [
+            "https://strangehorizons.com/non-fiction/the-salvage-crew-by-yudhanjaya-wijeratne/",
+            "https://mithilareview.com/review-yudhanjaya-wijeratnes-the-salvage-crew/"
+          ],
+          "canonical_core_status": "knowledge_added_unverified",
+          "membership_basis": "两篇实际返回的本书评论明确作者使用开源AI诗歌、行星生成器及随机事件程序；Strange Horizons将其联系到读者在随机事件中形成意义的创作实验。虚构Amber写诗与实际生成过程分别记。",
+          "adoption_support_scope": "仅评论实际查询返回的原书前言/创作方法讨论；未直接读原书前言、生成代码或小说全文，不作作者工具独立核验。",
+          "membership_boundary": "仅exact_novel_production_claims_via_reviews_not_direct_preface_or_code范围；需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_production_claims_via_reviews_not_direct_preface_or_code",
+          "original_raw_member_pointer": "$.proposals[0].work_memberships[0]",
+          "original_raw_member_sha256": "7c718a68134cd3b48eb3cd94a1324ca1255c64bfa5570d187d3d71c64e63c82f",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        },
+        {
+          "id": "Q140031394",
+          "identity": {
+            "title": "The Great Parade",
+            "author": "作者未知"
+          },
+          "original_candidate_id": "discovery:quick-retry2-early-classification-candidates-round11:Q140031394-scoped-form-r11",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[169]",
+              "record_sha256": "d37c3dc6f81f07571740a0f3b6581f8546ca87cd4cd18d746a5b7af01d525cb4"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry2-early-classification-candidates-round11.json",
+              "file_sha256": "d3f744ef46c9654f6a470dc73f7bf4c2002d80d30b037505c1838ceed4149c11",
+              "record_pointer": "$.records[1]",
+              "record_sha256": "4a1d7321fd50fa6bc3f6338c8c18b5f2cc8b9e3f9020cf7a3123b3d5c835539b"
+            }
+          ],
+          "original_analysis_inputs": [],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry2-early-round11-log.json",
+            "file_sha256": "2b6c783f2611e74bd3ac805e4b66198c0714592145712b7c7eaceb5330424b85",
+            "record_pointer": "$.records[27]",
+            "record_sha256": "8efbffb82ef4e8717d6c0e223bf230bcde30cc19f984540291c051260aab79ea"
+          },
+          "source_urls": [
+            "https://www.ikki.io/blog/ai-worldbuilding-pipeline-codemachia"
+          ],
+          "canonical_core_status": "missing",
+          "membership_basis": "Ikki项目博客把The Great Parade单独列为WUKONG0/CelestusAnarchus小说，并自述四本小说及艺术方向由人创作，AI管线用于扩展、验证、声音和跨媒介生产。",
+          "adoption_support_scope": "只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。 Ikki项目博客把The Great Parade单独列为WUKONG0/CelestusAnarchus小说，并自述四本小说及艺术方向由人创作，AI管线用于扩展、验证、声音和跨媒介生产。 只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。",
+          "membership_boundary": "仅creator_project_method_claim_and_exact_book_table_no_target_plot范围；需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "creator_project_method_claim_and_exact_book_table_no_target_plot",
+          "original_raw_member_pointer": "$.proposals[0].work_memberships[1]",
+          "original_raw_member_sha256": "19286a77c775f51c1519622d5feb72d0bc07812eb6caa9e61333a5955dcb359e",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        }
+      ]
+    },
+    {
+      "category_id": "form:compiled-order-and-temporal-reference",
+      "axis": "form",
+      "label": "编选次序与多种纪年",
+      "definition": "准确编选资料明确说明排列依据或次序差异，使阅读次序、创作年月、首次发表与故事纪年须分别识别。比較Manna限定五篇的阅读/故事次序差异与Zajdel全集按创作年月编排，不把两种排序当同一标准，也不从目录推故事事件。",
+      "boundaries": [
+        "必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。",
+        "Manna只五篇具名Amber关联故事组，不覆盖全册22个目录单元或完整Amber系列。",
+        "Zajdel三卷只2014全集具体版本的创作年月编排，不能据此补故事年代、时长或首发年份。",
+        "三卷属于一个编辑项目，保留三个直接卷证据，但不计为三个独立支持传统。",
+        "成员正文未读，四实体核心均保持missing；形态入口不等于剧情补全。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "阅读次序与故事纪年错开",
+          "members": [
+            "Q6750709"
+          ],
+          "extent": "五篇具名关联故事组"
+        },
+        {
+          "label": "作者创作年月编排",
+          "members": [
+            "Q18424396",
+            "Q18424650",
+            "Q18430220"
+          ],
+          "extent": "2014全集一个编辑项目三卷"
+        }
+      ],
+      "independent_project_count": 2,
+      "independence_note": "Manna的特定故事组编排与Zajdel全集创作年月编排是两个独立编辑项目；Zajdel三册仍只算一个项目。",
+      "work_memberships": [
+        {
+          "id": "Q6750709",
+          "identity": {
+            "title": "Manna from Heaven",
+            "author": "羅傑·澤拉茲尼"
+          },
+          "original_candidate_id": "discovery:quick-retry-root-classification-candidates-round10:1",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[91]",
+              "record_sha256": "f11ba77bcaf0a251396e1e85a8fb769c9283a0025462690171069de821da59c9"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry-root-classification-candidates-round10.json",
+              "file_sha256": "ca838db9fb8c9e1956ab4462727da893aefd245edd6f1a2a3e05d6fa39ab5009",
+              "record_pointer": "$.records[0]",
+              "record_sha256": "528616b9514e076827ecf86c9df85741b2115bbf1407cbbf0ec257dcadb49674"
+            }
+          ],
+          "original_analysis_inputs": [],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry-root-round10-log.json",
+            "file_sha256": "5898221d29122c142a8ee7569b1310508731893814d71e604b4a4d00908073d6",
+            "record_pointer": "$.records[0]",
+            "record_sha256": "d59b4e0b9f5c788f0fcabd0e76fec64cbe383bf30dfb57021c4b8f9a31635758"
+          },
+          "source_urls": [
+            "https://www.fritzfreiheit.com/wiki/The_Chronicles_of_Amber"
+          ],
+          "canonical_core_status": "missing",
+          "membership_basis": "Manna把The Shroudling and the Guisel排在组内最后，资料称其故事纪年最早，延后阅读用以解释较后故事中的谜团。",
+          "adoption_support_scope": "真实搜索返回准确五篇关联故事的顺序段及Manna的不同编排说明；仅顺序与编辑解释，不读具体篇剧情，也不覆盖全部22个目录单元。",
+          "membership_boundary": "仅only_five_named_Amber_related_stories_order_note_not_all_22_units范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "only_five_named_Amber_related_stories_order_note_not_all_22_units",
+          "original_raw_member_pointer": "$.proposals[1].work_memberships[0]",
+          "original_raw_member_sha256": "2106c0f7dd7de886ae71f85d8e936d3903b83751bbcd4cddead6bb5207866b13",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        },
+        {
+          "id": "Q18424396",
+          "identity": {
+            "title": "Dziwny nieznany świat",
+            "author": "Janusz Zajdel"
+          },
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[197]",
+              "record_sha256": "20a25527ffc8483e49c4648b6360793e15ce5c1c4211854efdab1797370b6c51"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry3-modern-pool2-round3-classification-candidates.json",
+              "file_sha256": "e3791718a45840f69a0d04a9b273e5f2092f1ff2b466c1519f19d4a23445e51a",
+              "record_pointer": "$.records[0]",
+              "record_sha256": "78c12a8f9dbb68399bf7144d40a583a01807039016ded083d8189d6eae5bf41d"
+            }
+          ],
+          "original_analysis_inputs": [],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry3-modern-pool2-round3-log.json",
+            "file_sha256": "c1e4af2645039b0c5e57a59f5b82b9235dc0c987b1388a52cf7436fe202da27d",
+            "record_pointer": "$.records[10]",
+            "record_sha256": "b60b1e941a146799fc217138443302a21bd033b8d1d209e1b706ccde3d3529bf"
+          },
+          "source_urls": [
+            "https://kulturowskaz.esensja.pl/o2%2C21971.html"
+          ],
+          "canonical_core_status": "missing",
+          "membership_basis": "2014短篇全集第一卷按创作年月排列，说明为1960年代及更早作品，列26项目录。",
+          "adoption_support_scope": "2014短篇全集第一卷按创作年月排列，说明为1960年代及更早作品，列26项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "original_raw_member_pointer": "$.proposals[1].work_memberships[1]",
+          "original_raw_member_sha256": "a56583f16283465e9b3b5feeab20bf1e2869c6b11dec835d822ede8e637c5a09",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        },
+        {
+          "id": "Q18424650",
+          "identity": {
+            "title": "Felicitas",
+            "author": "Janusz Zajdel"
+          },
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[197]",
+              "record_sha256": "20a25527ffc8483e49c4648b6360793e15ce5c1c4211854efdab1797370b6c51"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry3-modern-pool2-round3-classification-candidates.json",
+              "file_sha256": "e3791718a45840f69a0d04a9b273e5f2092f1ff2b466c1519f19d4a23445e51a",
+              "record_pointer": "$.records[1]",
+              "record_sha256": "042bf8ee77d6577770ec6ca47932a0b8af05721466facde63cf2532e73d2f7c3"
+            }
+          ],
+          "original_analysis_inputs": [],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry3-modern-pool2-round3-log.json",
+            "file_sha256": "c1e4af2645039b0c5e57a59f5b82b9235dc0c987b1388a52cf7436fe202da27d",
+            "record_pointer": "$.records[11]",
+            "record_sha256": "9c319fc4d6eb20fc2b451d1d556e97c5a23001a0756ffed0bc030ed219d519d9"
+          },
+          "source_urls": [
+            "https://kulturowskaz.esensja.pl/o2%2C21973.html"
+          ],
+          "canonical_core_status": "missing",
+          "membership_basis": "2014短篇全集第三卷按创作年月排列，说明覆盖1976—1984创作作品，列22项目录。",
+          "adoption_support_scope": "2014短篇全集第三卷按创作年月排列，说明覆盖1976—1984创作作品，列22项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "original_raw_member_pointer": "$.proposals[1].work_memberships[2]",
+          "original_raw_member_sha256": "d34e660bc635f4a0eddf11472f1d75ea33ea01bb50864bed64fdc0c4093cc588",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        },
+        {
+          "id": "Q18430220",
+          "identity": {
+            "title": "Ten piękny dzień",
+            "author": "Janusz Zajdel"
+          },
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes",
+          "original_candidate_inputs": [
+            {
+              "file": "research/classification-registry-history/v22-before-v23-round96.json",
+              "file_sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2",
+              "record_pointer": "$.discovery_candidates[197]",
+              "record_sha256": "20a25527ffc8483e49c4648b6360793e15ce5c1c4211854efdab1797370b6c51"
+            },
+            {
+              "file": "research/classification-discovery-inputs/quick-retry3-modern-pool2-round3-classification-candidates.json",
+              "file_sha256": "e3791718a45840f69a0d04a9b273e5f2092f1ff2b466c1519f19d4a23445e51a",
+              "record_pointer": "$.records[2]",
+              "record_sha256": "e41dca638ce7d097c760ba8a248adab71229bb43d09e1d40d23d054db33151bc"
+            }
+          ],
+          "original_analysis_inputs": [],
+          "original_log_input": {
+            "file": "research/issue-input-snapshots/quick-retry3-modern-pool2-round3-log.json",
+            "file_sha256": "c1e4af2645039b0c5e57a59f5b82b9235dc0c987b1388a52cf7436fe202da27d",
+            "record_pointer": "$.records[12]",
+            "record_sha256": "9085ce4b134a0da5e66e8df5476d409a239fb2dfbb3d1e70c16e9a10fa053f83"
+          },
+          "source_urls": [
+            "https://kulturowskaz.esensja.pl/o2%2C21972.html"
+          ],
+          "canonical_core_status": "missing",
+          "membership_basis": "2014短篇全集第二卷按创作年月排列，说明覆盖1970—1975创作作品，列29项目录。",
+          "adoption_support_scope": "2014短篇全集第二卷按创作年月排列，说明覆盖1970—1975创作作品，列29项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "original_raw_member_pointer": "$.proposals[1].work_memberships[3]",
+          "original_raw_member_sha256": "88f7c7a056e5f7d42da62e4b9a94581badb1e236440dc16a7eeb2b31fd1264ec",
+          "evidence_role": "preserved_candidate_production_or_bibliographic_scope_not_new_target_plot_read",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "verification_status": "knowledge_added_unverified",
+          "new_core_from_membership": 0,
+          "independent_verification_upgrade": false
+        }
+      ]
+    }
+  ]
+}

@@ -2,16 +2,16 @@
   "metadata": {
     "format": "open-classification-registry-v1",
     "date": "2026-10-05",
-    "version": 22,
+    "version": 23,
     "status": "provisional_research_navigation",
     "policy": "所有维度均开放；新增、拆分、关联和撤销均保留定义、版本和作品依据。原来源标签及具体解释不删改。人工种子映射不以标题关键词自动生成，不把分类聚合算成补全或独立核验。",
     "coverage_note": "人工种子与未归类发现都是研究入口，不代表全部14,564身份已经按新维度整理；未映射仍待整理。",
     "values_policy": "跨度和科学关系值也在注册表登记，可增加；故事时间经验、科学机制与它们分别建模。原发表纪年保持连续数值；地图尺度区和时代导航编号是兼容入口，可在其下细化而不覆盖原字段。",
     "previous_version": {
-      "file": "research/classification-registry-history/v21.json",
-      "sha256": "c5e8115f5d6518dc94940c458f775c09f9991b20c302a0c88f44bf5c8fe2944f"
+      "file": "research/classification-registry-history/v22-before-v23-round96.json",
+      "sha256": "85ceebe6ceb46509ba8e85fd47e5c1ab8c52ac5c5c396232cde03baf6403e3f2"
     },
-    "revision_note": "逐值保留V21的158候选、11旧审阅、39旧类、102旧关系与全部历史资料；追加已审阅的10研究导航入口和28限定成员关系，不新增核心或核验，不改原genre、科学可行性或时间空间值。 另保留3个限定叙事机制候选，共161候选；只追加待比较，不把单例推广为新类别。 追加R91九个限定候选至170项（3叙事机制、6形式）；保留六项核心缺失及三项既有本轮分析，候选追加不增类别、成员、核心或核验。 R92追加2个限定候选，保持49类130成员与39项复核；不新增类别或核验。 R92另追加7个既有核心与维度的零新查读待比较候选至179项；Axiom同证据局部分支候选去重不新增，49类130成员39复核全部保持，不新增核心、请求或独立核验。 R93追加9个已有精确核心与限定描述的零新查读待比较方向至188项，涉及议题、时间、空间组织、科学机制和现实关联；49类130成员39复核及179旧候选逐值保持，不新增类别、分配标签、核心、请求或独立核验。 R94追加9个精确核心与限定R4描述的零新查读待比较方向至197项，涉及议题、叙事、时间、空间环境、科学机制、现实关联和形式；4方向有两部独立作品、5方向仅单例，49类130成员39复核及188旧候选逐值保持，不新增类别、分配标签、核心、请求或独立核验。 R94另将同一作者三卷创作年月编排去重为一方向，并保留一遗稿集文本状态方向，共199候选；四卷只读编辑/书目说明，不增目标核心、故事时间、成员、类别或核验，197旧候选逐值保持。 R95追加6个已有核心与限定R5描述的待比较方向至205项，涉及议题、叙事、空间组织、科学机制、现实关联和形式；3方向有两部独立作品、3方向仅单例，Umbernight仅比较不作成员，199旧候选、49类、130成员和39项复核逐值保持，不新增类别、成员、核心、请求或独立核验。",
+    "revision_note": "保留V22全部49类、205原候选、39审阅、130关系与全部历史；只追加2个暂定形式入口、6限定成员、4项目审阅。不提升核心或独立核验。 本轮另追加5个待比较方向／7个既有知识成员，Agent只2020修订版材料范围；不追加来源查读、核心或核验。",
     "discovery_input": {
       "file": "research/classification-discovery-inputs/modern-classification-candidates-r66.json",
       "sha256": "122387e192f340012b79029c11e4ccc13f8459f456beca4aab3337eb806d3439"
@@ -368,6 +368,10 @@
       {
         "file": "research/classification-discovery-inputs/round95-global-knowledge-dimension-candidates.json",
         "sha256": "bb954923cb18622a8e10aaa783dfb87a49e735aa46fa6cf1f2ca8b8917abb23a"
+      },
+      {
+        "file": "research/classification-discovery-inputs/round96-global-knowledge-dimension-candidates.json",
+        "sha256": "76b1182a8e3a79e19f1a02e0c257c7390a4bb27310738caeef5cd4dfc0bbc162"
       }
     ],
     "review_inputs": [
@@ -382,12 +386,20 @@
       {
         "file": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json",
         "sha256": "ea386c5bd4f45fe8d7ba5cefe6c58157ce579bb091f9972868d0b754e22fb0ae"
+      },
+      {
+        "file": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+        "sha256": "98d40b15559d97ff7696d884d9b927729fc2b0e22f24c5e9a666fa70da305f51"
       }
     ],
     "evidence_update_inputs": [
       {
         "file": "research/classification-discovery-audits/round87-historical-discovery-evidence-updates.json",
         "sha256": "2e746c44992851c2594c7df276fe02133e86bab07ae27e0e2b6e3734e891bb02"
+      },
+      {
+        "file": "research/classification-discovery-audits/round96-fixed-bibliography-to-core-updates.json",
+        "sha256": "7f8477f7f3dae2c0efa1c24b523ae13816815337888d2a6428833b7e6e48aef9"
       }
     ],
     "navigation_semantic_review": {
@@ -2793,6 +2805,178 @@
           "status": "interpretive_grouping_unverified",
           "evidence_mode": "frozen_core_scoped_interpretation",
           "original_candidate_id": "discovery:quick-retry-modern-classification-candidates-r17:2"
+        }
+      ]
+    },
+    {
+      "id": "form:disclosed-generative-production",
+      "axis": "form",
+      "label": "创作生成与生产层的披露",
+      "definition": "材料明确把作品的创作或生产角色分层说明：生成程序参与诗歌、世界与事件，或人类原创与AI扩展、验证、声音及跨媒介生产分别披露。作为表达形成条件的研究入口，比较保存材料中的方法宣称，不把它当已复现的工具性能或全文自动生成事实。",
+      "status": "研究分类·暂定待核",
+      "revision": 23,
+      "related_categories": [
+        "form:co-designed-text-image-music",
+        "form:reference-documentation"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。",
+        "The Salvage Crew只评论对原前言和方法的转述，未直接读前言、代码或复现生成。",
+        "The Great Parade只创作方项目自述和精确书目表项；其核心仍缺，不将生产宣称当目标小说情节。",
+        "跨媒介项目总体说明只取指名本书的对应；不推四本小说都采用相同文本生成方式。",
+        "传统出版编辑、一般配乐或共同署名，不因存在制作分工自动纳入。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "程序生成内容进入人工小说",
+          "members": [
+            "Q111182873"
+          ]
+        },
+        {
+          "label": "人类原创与AI生产管线分层自述",
+          "members": [
+            "Q140031394"
+          ]
+        }
+      ],
+      "comparison_note": "具体制作披露或编选次序的研究导航，保留资料声称、目录／选篇与编辑项目范围；不新增目标剧情、故事时长、工具复现或核验。",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "members": [
+        {
+          "work_id": "Q111182873",
+          "title_at_review": "The Salvage Crew",
+          "author_at_review": "Yudhanjaya Wijeratne",
+          "basis": "两篇实际返回的本书评论明确作者使用开源AI诗歌、行星生成器及随机事件程序；Strange Horizons将其联系到读者在随机事件中形成意义的创作实验。虚构Amber写诗与实际生成过程分别记。",
+          "evidence_scope": "仅评论实际查询返回的原书前言/创作方法讨论；未直接读原书前言、生成代码或小说全文，不作作者工具独立核验。",
+          "membership_boundary": "仅exact_novel_production_claims_via_reviews_not_direct_preface_or_code范围；需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_novel_production_claims_via_reviews_not_direct_preface_or_code",
+          "sources": [
+            "https://strangehorizons.com/non-fiction/the-salvage-crew-by-yudhanjaya-wijeratne/",
+            "https://mithilareview.com/review-yudhanjaya-wijeratnes-the-salvage-crew/"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "discovery:quick-retry-root-classification-candidates-round2:1"
+        },
+        {
+          "work_id": "Q140031394",
+          "title_at_review": "The Great Parade",
+          "author_at_review": "作者未知",
+          "basis": "Ikki项目博客把The Great Parade单独列为WUKONG0/CelestusAnarchus小说，并自述四本小说及艺术方向由人创作，AI管线用于扩展、验证、声音和跨媒介生产。",
+          "evidence_scope": "只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。 Ikki项目博客把The Great Parade单独列为WUKONG0/CelestusAnarchus小说，并自述四本小说及艺术方向由人创作，AI管线用于扩展、验证、声音和跨媒介生产。 只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。",
+          "membership_boundary": "仅creator_project_method_claim_and_exact_book_table_no_target_plot范围；需要指名作品与明确制作角色说明；作品角色是AI不代表现实作者使用AI。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "creator_project_method_claim_and_exact_book_table_no_target_plot",
+          "sources": [
+            "https://www.ikki.io/blog/ai-worldbuilding-pipeline-codemachia"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "discovery:quick-retry2-early-classification-candidates-round11:Q140031394-scoped-form-r11"
+        }
+      ]
+    },
+    {
+      "id": "form:compiled-order-and-temporal-reference",
+      "axis": "form",
+      "label": "编选次序与多种纪年",
+      "definition": "准确编选资料明确说明排列依据或次序差异，使阅读次序、创作年月、首次发表与故事纪年须分别识别。比較Manna限定五篇的阅读/故事次序差异与Zajdel全集按创作年月编排，不把两种排序当同一标准，也不从目录推故事事件。",
+      "status": "研究分类·暂定待核",
+      "revision": 23,
+      "related_categories": [
+        "form:reference-documentation",
+        "time:asynchronous-experience",
+        "form:compiled-fictional-records"
+      ],
+      "related_topics": [],
+      "boundaries": [
+        "必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。",
+        "Manna只五篇具名Amber关联故事组，不覆盖全册22个目录单元或完整Amber系列。",
+        "Zajdel三卷只2014全集具体版本的创作年月编排，不能据此补故事年代、时长或首发年份。",
+        "三卷属于一个编辑项目，保留三个直接卷证据，但不计为三个独立支持传统。",
+        "成员正文未读，四实体核心均保持missing；形态入口不等于剧情补全。"
+      ],
+      "retained_subtypes": [
+        {
+          "label": "阅读次序与故事纪年错开",
+          "members": [
+            "Q6750709"
+          ],
+          "extent": "五篇具名关联故事组"
+        },
+        {
+          "label": "作者创作年月编排",
+          "members": [
+            "Q18424396",
+            "Q18424650",
+            "Q18430220"
+          ],
+          "extent": "2014全集一个编辑项目三卷"
+        }
+      ],
+      "comparison_note": "具体制作披露或编选次序的研究导航，保留资料声称、目录／选篇与编辑项目范围；不新增目标剧情、故事时长、工具复现或核验。",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "members": [
+        {
+          "work_id": "Q6750709",
+          "title_at_review": "Manna from Heaven",
+          "author_at_review": "羅傑·澤拉茲尼",
+          "basis": "Manna把The Shroudling and the Guisel排在组内最后，资料称其故事纪年最早，延后阅读用以解释较后故事中的谜团。",
+          "evidence_scope": "真实搜索返回准确五篇关联故事的顺序段及Manna的不同编排说明；仅顺序与编辑解释，不读具体篇剧情，也不覆盖全部22个目录单元。",
+          "membership_boundary": "仅only_five_named_Amber_related_stories_order_note_not_all_22_units范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "only_five_named_Amber_related_stories_order_note_not_all_22_units",
+          "sources": [
+            "https://www.fritzfreiheit.com/wiki/The_Chronicles_of_Amber"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "discovery:quick-retry-root-classification-candidates-round10:1"
+        },
+        {
+          "work_id": "Q18424396",
+          "title_at_review": "Dziwny nieznany świat",
+          "author_at_review": "Janusz Zajdel",
+          "basis": "2014短篇全集第一卷按创作年月排列，说明为1960年代及更早作品，列26项目录。",
+          "evidence_scope": "2014短篇全集第一卷按创作年月排列，说明为1960年代及更早作品，列26项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "sources": [
+            "https://kulturowskaz.esensja.pl/o2%2C21971.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes"
+        },
+        {
+          "work_id": "Q18424650",
+          "title_at_review": "Felicitas",
+          "author_at_review": "Janusz Zajdel",
+          "basis": "2014短篇全集第三卷按创作年月排列，说明覆盖1976—1984创作作品，列22项目录。",
+          "evidence_scope": "2014短篇全集第三卷按创作年月排列，说明覆盖1976—1984创作作品，列22项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "sources": [
+            "https://kulturowskaz.esensja.pl/o2%2C21973.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes"
+        },
+        {
+          "work_id": "Q18430220",
+          "title_at_review": "Ten piękny dzień",
+          "author_at_review": "Janusz Zajdel",
+          "basis": "2014短篇全集第二卷按创作年月排列，说明覆盖1970—1975创作作品，列29项目录。",
+          "evidence_scope": "2014短篇全集第二卷按创作年月排列，说明覆盖1970—1975创作作品，列29项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+          "membership_boundary": "仅exact_2014_collected_volume_creation_date_order_only_no_member_plot范围；必须有明确编选说明；普通目录先后、封面年份或作品编号不足以证明排序逻辑。 不扩大原资料读取范围，不提升独立核验。",
+          "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+          "sources": [
+            "https://kulturowskaz.esensja.pl/o2%2C21972.html"
+          ],
+          "status": "interpretive_grouping_unverified",
+          "evidence_mode": "v23_exact_scoped_navigation_review",
+          "original_candidate_id": "pending:round94-modern-author-creation-order-collected-volumes"
         }
       ]
     }
@@ -28722,6 +28906,3817 @@
       ],
       "independent_work_support_count": 1,
       "independence_note": "孤例候选；暂不合并为正式类别，也不补第二个弱证据成员。"
+    },
+    {
+      "id": "pending:round96-global-posthumous-personality-use-and-autonomy",
+      "axis": "topic",
+      "proposed_dimension": "topic",
+      "proposed_label": "死后再现人格的使用权与自主",
+      "definition_boundary": "死者人格被再现后仍可形成判断，却被国家当作须关停的任务工具，或被法律认作可借财产。比较调用权、产权与主体拒绝权，不把两个作品的载体或法律制度合并。",
+      "negative_boundary": "一般复活、存档士兵、艺术人格授权或债务续命不自动纳入；材料须明确再现主体被持续当作工具或财产，并存在自主判断的冲突。",
+      "review_status": "pending_further_comparison",
+      "verification_status": "knowledge_added_unverified",
+      "adoption_scope": "Pending proposal only; no category/member assignment, core addition, feasibility judgment or verification upgrade.",
+      "work_evidence": [
+        {
+          "id": "Q131382353",
+          "identity": {
+            "title": "Agent of the Imperium",
+            "author": "Marc W. Miller"
+          },
+          "selection_index": 55,
+          "source_identity_grain": {
+            "title_zh": "Agent of the Imperium",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "Marc W. Miller",
+            "first_year": 2015,
+            "sort_year": 2015,
+            "source_first_year": 2015,
+            "year_display": "2015（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "英语",
+            "languages": [
+              "英语"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[55]",
+            "record_sha256": "a6e29a15a4f98ca6af6733930e483b452faf8d4fe3f33f2cc230b0edae143381"
+          },
+          "original_analysis": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "record_pointer": "$.records[68]",
+            "record_sha256": "5b78870807a1591a8719354af5908555ca30e76d39010c716f47ce24f90b04bf"
+          },
+          "original_analysis_record": {
+            "id": "Q131382353",
+            "identity": {
+              "title": "Agent of the Imperium",
+              "author": "Marc W. Miller"
+            },
+            "fields": {
+              "topics": [
+                "技术与责任",
+                "权力与制度",
+                "主体与意识"
+              ],
+              "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+              "issue_facets": [
+                {
+                  "label": "数字人格的征用",
+                  "question": "被复活以完成任务的记录人格，是否有拒绝再次被关闭的权利？",
+                  "basis": "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。"
+                },
+                {
+                  "label": "以杀戮救多数",
+                  "question": "“拯救更多人”的授权如何界定可以牺牲多少人的边界？",
+                  "basis": "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+              "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+              "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.baen.com/agent-of-the-imperium.html"
+            ],
+            "identity_caveat": "实际剧情材料是2020修订扩展版出版简介；原条目为2015，解释仅采用人物与记录人格的基础设定，版本新增内容待核。"
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-source-reading-round34.json",
+            "id": "Q131382353",
+            "identity": {
+              "title": "Agent of the Imperium",
+              "author": "Marc W. Miller"
+            },
+            "fields": {
+              "topics": [
+                "技术与责任",
+                "权力与制度",
+                "主体与意识"
+              ],
+              "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+              "issue_facets": [
+                {
+                  "label": "数字人格的征用",
+                  "question": "被复活以完成任务的记录人格，是否有拒绝再次被关闭的权利？",
+                  "basis": "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。"
+                },
+                {
+                  "label": "以杀戮救多数",
+                  "question": "“拯救更多人”的授权如何界定可以牺牲多少人的边界？",
+                  "basis": "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+              "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+              "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.baen.com/agent-of-the-imperium.html"
+            ],
+            "identity_caveat": "实际剧情材料是2020修订扩展版出版简介；原条目为2015，解释仅采用人物与记录人格的基础设定，版本新增内容待核。"
+          },
+          "active_core_assertion_sha256": "0c9045c1a3bc2b965ab7100f8542927615d1ff0fdda6721406ea04a393935208",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part1-proposals.json",
+            "file_sha256": "7f6b04216b87137b762d16b6b9d0e3bcca73340cf73bbad471c8d43634e0e7c5",
+            "record_pointer": "$.records[55]",
+            "record_sha256": "15e9466b4dbf41a2a7012700333c9980ac0bab86231be9f0c12c5dcb7ec1de68"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "死亡数百年后的Bland人格被反复调用作极端决策，完成危机后应返回无意识却仍有自己的打算。",
+            "scientific_premise": "人格记录能在本人死后重新启动与关闭；只原版与修订版共同核心，不说明记录或复活机制。",
+            "reality_relation": "可与国家授权的功利杀戮、保存人格作为工具及任务结束后的自主权比较。",
+            "story_era": "Jonathan Bland死后数百年的帝国危机；不推定各任务总时长。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "死亡数百年后的Bland人格被反复调用作极端决策，完成危机后应返回无意识却仍有自己的打算。",
+              "basis": {
+                "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+                "facet_bases": [
+                  "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。",
+                  "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[68]",
+                "record_sha256": "5b78870807a1591a8719354af5908555ca30e76d39010c716f47ce24f90b04bf"
+              },
+              "active_core_assertion_sha256": "0c9045c1a3bc2b965ab7100f8542927615d1ff0fdda6721406ea04a393935208",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.baen.com/agent-of-the-imperium.html"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "人格记录能在本人死后重新启动与关闭；只原版与修订版共同核心，不说明记录或复活机制。",
+              "basis": {
+                "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+                "facet_bases": [
+                  "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。",
+                  "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[68]",
+                "record_sha256": "5b78870807a1591a8719354af5908555ca30e76d39010c716f47ce24f90b04bf"
+              },
+              "active_core_assertion_sha256": "0c9045c1a3bc2b965ab7100f8542927615d1ff0fdda6721406ea04a393935208",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.baen.com/agent-of-the-imperium.html"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与国家授权的功利杀戮、保存人格作为工具及任务结束后的自主权比较。",
+              "basis": {
+                "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+                "facet_bases": [
+                  "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。",
+                  "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[68]",
+                "record_sha256": "5b78870807a1591a8719354af5908555ca30e76d39010c716f47ce24f90b04bf"
+              },
+              "active_core_assertion_sha256": "0c9045c1a3bc2b965ab7100f8542927615d1ff0fdda6721406ea04a393935208",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.baen.com/agent-of-the-imperium.html"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "story_era": {
+              "proposed_value": "Jonathan Bland死后数百年的帝国危机；不推定各任务总时长。",
+              "basis": {
+                "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+                "facet_bases": [
+                  "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。",
+                  "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[68]",
+                "record_sha256": "5b78870807a1591a8719354af5908555ca30e76d39010c716f47ce24f90b04bf"
+              },
+              "active_core_assertion_sha256": "0c9045c1a3bc2b965ab7100f8542927615d1ff0fdda6721406ea04a393935208",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.baen.com/agent-of-the-imperium.html"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "技术与责任",
+              "权力与制度",
+              "主体与意识"
+            ],
+            "issue": "帝国将死去的 Jonathan Bland 的人格记录一再启动，让他以大量杀戮来阻止更大的灾难，又要求他在危机后返回无意识状态。拯救多数人的权力与被复制主体的自主性同时受到追问：被国家授权作极端决定的人，是否也只能作为可随时关闭的工具。",
+            "issue_facets": [
+              {
+                "label": "数字人格的征用",
+                "question": "被复活以完成任务的记录人格，是否有拒绝再次被关闭的权利？",
+                "basis": "Baen 书介明确 Bland 死后数百年被反复激活，任务后应返回虚无，却有自己的打算。"
+              },
+              {
+                "label": "以杀戮救多数",
+                "question": "“拯救更多人”的授权如何界定可以牺牲多少人的边界？",
+                "basis": "书介把其 Decider 权力与杀死极多人以救百倍生命的功利判断直接相连。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+            "issue": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+            "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+          },
+          "sources": [
+            "https://www.baen.com/agent-of-the-imperium.html"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q131382353",
+            "identity": {
+              "title": "Agent of the Imperium",
+              "author": "Marc W. Miller"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "\"Agent of the Imperium\" \"Marc Miller\" publisher"
+            ],
+            "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+            "materials_checked": [
+              {
+                "url": "https://www.baen.com/agent-of-the-imperium.html",
+                "result": "actual_source_scope_read",
+                "reading_scope": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+                "read_date": "2026-10-05"
+              }
+            ],
+            "reading_scope": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+            "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+            "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+            "issue_result": "added_to_frozen_input_unverified",
+            "attempt_input": "modern-recent-round19-log.json",
+            "raw_reading_log": {
+              "id": "Q131382353",
+              "identity": {
+                "title": "Agent of the Imperium",
+                "author": "Marc W. Miller"
+              },
+              "queries": [
+                "\"Agent of the Imperium\" \"Marc Miller\" publisher"
+              ],
+              "urls_read": [
+                "https://www.baen.com/agent-of-the-imperium.html"
+              ],
+              "exact_support_scope": "实际搜索返回 Baen 2020 revised and expanded edition 书介，支持主人公与记录人格/帝国决策的基本设定。canonical实体为2015小说，本次不声称2020新增内容都在原版，原版与修订文本对应未逐章核验；分析仅限所示核心起点。",
+              "verification_status": "reading_scope_logged_not_full_verification",
+              "material_kind": "actual_publisher_named_review_or_community_content",
+              "actual_search_performed": true,
+              "first_pass_only": true,
+              "original_full_text_read": false
+            },
+            "actual_search_performed": true,
+            "material_kind": "actual_publisher_named_review_or_community_content"
+          },
+          "whole_prior_sha256": "09034c2aa44d87c6f96fecf44bc31c81d720e2475f182692426d046526254ed5",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": true,
+              "value": "实际剧情材料是2020修订扩展版出版简介；原条目为2015，解释仅采用人物与记录人格的基础设定，版本新增内容待核。"
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "pointer": "$.metadata",
+            "metadata_sha256": "7bb9e51e99cce28bd2d4be54c62a15622289b3b072b664e4059e0c8b75f92c10"
+          },
+          "source_index_sha256": "c6fc94b3bac347fcec5f2f38934b057a76d0d3f5264e06c94f88216e15820754",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "Bland死后数百年被反复激活处理帝国危机，任务后应回归无意识，却有自己的打算。",
+          "exact_support_scope": "实际材料为2020修订版出版书介；本候选只比较该简介所述的人格记录重启、关停及归属问题。2015原版与修订版尚未逐段比对，不把两个版本的共同核心当作已证，原身份与年版字段保持。"
+        },
+        {
+          "id": "Q29831547",
+          "identity": {
+            "title": "A Borrowed Man",
+            "author": "吉恩·沃尔夫"
+          },
+          "selection_index": 143,
+          "source_identity_grain": {
+            "title_zh": "A Borrowed Man",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "吉恩·沃尔夫",
+            "first_year": 2015,
+            "sort_year": 2015,
+            "source_first_year": 2015,
+            "year_display": "2015（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "英语",
+            "languages": [
+              "英语"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[143]",
+            "record_sha256": "073ac6c4137574d3da27f2bcea2d23966cbbc0d7b04ce44337592d30f7baf0bf"
+          },
+          "original_analysis": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "record_pointer": "$.records[18]",
+            "record_sha256": "3ba7b82b3f8d2ac193e56b04b259fb3752399ccdd5c789c73fbe0f512c6822b5"
+          },
+          "original_analysis_record": {
+            "id": "Q29831547",
+            "identity": {
+              "title": "A Borrowed Man",
+              "author": "吉恩·沃尔夫"
+            },
+            "fields": {
+              "topics": [
+                "生命与人类定义",
+                "主体与意识",
+                "资本与劳动",
+                "知识与认识"
+              ],
+              "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+              "issue_facets": [
+                {
+                  "label": "人格延续与财产身份",
+                  "question": "保存作者人格记忆的克隆能参与关系和调查，制度为何仍把他只当可借财产？",
+                  "basis": "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。"
+                },
+                {
+                  "label": "文学知识与财富工具",
+                  "question": "富人借走作家人格找其书中秘密，保存文化记忆怎样成为经济占有的工具？",
+                  "basis": "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+              "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+              "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+              "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+              "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+            ]
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-source-reading-round34.json",
+            "id": "Q29831547",
+            "identity": {
+              "title": "A Borrowed Man",
+              "author": "吉恩·沃尔夫"
+            },
+            "fields": {
+              "topics": [
+                "生命与人类定义",
+                "主体与意识",
+                "资本与劳动",
+                "知识与认识"
+              ],
+              "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+              "issue_facets": [
+                {
+                  "label": "人格延续与财产身份",
+                  "question": "保存作者人格记忆的克隆能参与关系和调查，制度为何仍把他只当可借财产？",
+                  "basis": "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。"
+                },
+                {
+                  "label": "文学知识与财富工具",
+                  "question": "富人借走作家人格找其书中秘密，保存文化记忆怎样成为经济占有的工具？",
+                  "basis": "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+              "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+              "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+              "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+              "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+            ]
+          },
+          "active_core_assertion_sha256": "a1b5f85897205bbd0aff785f8afaad16b24b942e2f9da1fee5667f9ff659aac3",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part2-proposals.json",
+            "file_sha256": "f5feec41732345a8d836a332bc3f98c7e9735d4a7f4117dc9f35c17292860c63",
+            "record_pointer": "$.records[43]",
+            "record_sha256": "cd5d1ba10b15d01c03247214f723b2d6ab9267f8db13ec831ff68a44d1f67043"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "Colette借走保有亡作家人格的Smithe查财富秘密，知识复制与图书馆财产身份共同限制调查者主体。",
+            "scientific_premise": "亡作家人格记录装入克隆，并可作为图书馆资源出借；不补上传或克隆技术细节。",
+            "reality_relation": "可与人格延续不获法律承认、知识作为可租财产及产权不能决定主体地位比较。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "Colette借走保有亡作家人格的Smithe查财富秘密，知识复制与图书馆财产身份共同限制调查者主体。",
+              "basis": {
+                "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+                "facet_bases": [
+                  "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。",
+                  "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[18]",
+                "record_sha256": "3ba7b82b3f8d2ac193e56b04b259fb3752399ccdd5c789c73fbe0f512c6822b5"
+              },
+              "active_core_assertion_sha256": "a1b5f85897205bbd0aff785f8afaad16b24b942e2f9da1fee5667f9ff659aac3",
+              "original_material_scope": {
+                "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+                "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+                "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+                "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+                "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "亡作家人格记录装入克隆，并可作为图书馆资源出借；不补上传或克隆技术细节。",
+              "basis": {
+                "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+                "facet_bases": [
+                  "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。",
+                  "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[18]",
+                "record_sha256": "3ba7b82b3f8d2ac193e56b04b259fb3752399ccdd5c789c73fbe0f512c6822b5"
+              },
+              "active_core_assertion_sha256": "a1b5f85897205bbd0aff785f8afaad16b24b942e2f9da1fee5667f9ff659aac3",
+              "original_material_scope": {
+                "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+                "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+                "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+                "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+                "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与人格延续不获法律承认、知识作为可租财产及产权不能决定主体地位比较。",
+              "basis": {
+                "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+                "facet_bases": [
+                  "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。",
+                  "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[18]",
+                "record_sha256": "3ba7b82b3f8d2ac193e56b04b259fb3752399ccdd5c789c73fbe0f512c6822b5"
+              },
+              "active_core_assertion_sha256": "a1b5f85897205bbd0aff785f8afaad16b24b942e2f9da1fee5667f9ff659aac3",
+              "original_material_scope": {
+                "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+                "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+                "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+                "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+                "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "生命与人类定义",
+              "主体与意识",
+              "资本与劳动",
+              "知识与认识"
+            ],
+            "issue": "A Borrowed Man把已故推理作家的人格记录装入克隆Smithe，让他作为图书馆财产被借走，富人Colette希望他找回父亲藏有财富秘密的作品。延续记忆并未使制度承认其为人，作家的知识也因作为可租资源而被卷入利益调查；信息复制与人格主体因此不能只由产权界定。",
+            "issue_facets": [
+              {
+                "label": "人格延续与财产身份",
+                "question": "保存作者人格记忆的克隆能参与关系和调查，制度为何仍把他只当可借财产？",
+                "basis": "Macmillan本书简介明确Smithe人格为亡故作家upload recording、在图书馆架上生活，是property not legal human。"
+              },
+              {
+                "label": "文学知识与财富工具",
+                "question": "富人借走作家人格找其书中秘密，保存文化记忆怎样成为经济占有的工具？",
+                "basis": "简介明确Colette父亲被杀、失踪Murder on Mars书含家族巨财秘密，她怕警察遂借Smithe找书与秘密。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "本实体实际读到的明确简介具体内容，解释待核。",
+            "issue": "出版/作者简介或明确评论的首轮分析，不是独立身份、全文或科学核验。",
+            "issue_facets": "每项具体材料依据与提问分开，不借同名/整系列扩情节。",
+            "entity_identity": "Gene Wolfe单书A Borrowed Man，所读出版简介对应2015书，不继承2020 Interlibrary Loan行动或未知门户结局。",
+            "source_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。"
+          },
+          "sources": [
+            "https://us.macmillan.com/books/9781466877993/aborrowedman/"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q29831547",
+            "identity": {
+              "title": "A Borrowed Man",
+              "author": "吉恩·沃尔夫"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "\"A Borrowed Man\" \"Gene Wolfe\" publisher"
+            ],
+            "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+            "materials_checked": [
+              {
+                "url": "https://us.macmillan.com/books/9781466877993/aborrowedman/",
+                "material_kind": "publisher_exact_book_synopsis_search_cache",
+                "support_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。",
+                "reading_status": "actually_read_support_scope_only",
+                "material_type": "publisher_exact_book_synopsis_search_cache",
+                "result": "actual_source_scope_read",
+                "reading_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。",
+                "read_date": "2026-10-05"
+              }
+            ],
+            "reading_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。",
+            "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+            "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+            "issue_result": "added_to_frozen_input_unverified",
+            "attempt_input": "global-recent-round17-log.json",
+            "raw_reading_log": {
+              "id": "Q29831547",
+              "identity": {
+                "title": "A Borrowed Man",
+                "author": "吉恩·沃尔夫"
+              },
+              "fast_index": 462,
+              "lane_index": 314,
+              "source_sort_year": 2015,
+              "priority_rank": 1926,
+              "status": "analysis_added_unverified",
+              "publication_status": "source_candidate_year_not_independently_verified",
+              "queries": [
+                "\"A Borrowed Man\" \"Gene Wolfe\" publisher"
+              ],
+              "local_material_lookup": null,
+              "sources": [
+                {
+                  "url": "https://us.macmillan.com/books/9781466877993/aborrowedman/",
+                  "material_kind": "publisher_exact_book_synopsis_search_cache",
+                  "support_scope": "实际读Macmillan本书完整检索Book Details，Smithe人格克隆/图书馆财产与Colette找书财富任务；未读正文。",
+                  "reading_status": "actually_read_support_scope_only"
+                }
+              ],
+              "no_material_reason": null,
+              "failure_count": 0,
+              "verification_status": "knowledge_added_unverified"
+            },
+            "publication_status": "source_candidate_year_not_independently_verified",
+            "failure_count": 0,
+            "local_material_lookup": null
+          },
+          "whole_prior_sha256": "f95aa3fb2f066ab4f8b5bfaee9ef04e66043244d9d1511ec78385853ef17ba4e",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "pointer": "$.metadata",
+            "metadata_sha256": "7bb9e51e99cce28bd2d4be54c62a15622289b3b072b664e4059e0c8b75f92c10"
+          },
+          "source_index_sha256": "5914dc88fbbdb83c71ad424fe6ca8af0c22c0752a1aedec64d3c184cc713c4f0",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "亡故作家人格记录装入Smithe克隆，在图书馆作为非法律人的财产被借出以寻找财富秘密。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。只2015 A Borrowed Man出版简介的Smithe/Colette起点，不继承Interlibrary Loan后续或未知门户结局。"
+        }
+      ],
+      "comparison_with_existing": [
+        {
+          "id": "science:military-life-storage",
+          "exact_existing_record_sha256": "88438ab1ed7429b4818b534c11d1e46bde4b00bc72ebf78000aa9ad59b3c947b",
+          "existing_label": "生命与心智的战备存档",
+          "existing_definition": "军队把士兵的生存状态或心智作为可保存、重新调用的战争资源。比较冻结士兵的库存与反复冷冻、心智存档、新身体及副本敌对的明确选篇；物理身体与人格副本的机制继续分开。",
+          "difference": "旧入口登记身体/心智保存为战备资源；此候选比较再现主体的使用权与拒绝权，包含图书馆财产而不只军事储备。"
+        },
+        {
+          "id": "topic:licensed-performing-personality",
+          "exact_existing_record_sha256": "2d4f11630b3c1302f8265b88cfe3d2850cc0133588e6d0f8bcceeec9de393a62",
+          "existing_label": "人格表演许可与活人艺术自主",
+          "existing_definition": "购买或获准复制表演人格，是否等于取得对演员本人的持续支配权？ 可重复使用的人格模型、心智交易和身体艺术改造把创作者/演员的活动分离为资产与仍会改变的主体。",
+          "difference": "旧入口关注表演人格许可与仍活着的艺术家；此候选不是表演授权，而是死后再现者被征用或作为财产。"
+        },
+        {
+          "id": "topic:debt-surviving-death",
+          "exact_existing_record_sha256": "dc4eb569d2f756cacf9ffd0a172a8bbd45bd81eefe9bb9bdcef708cfdb250143",
+          "existing_label": "债务与危险劳动能否越过死亡",
+          "existing_definition": "身体可再造以后，死亡还是结束劳动义务的边界吗？ 合同或债务把再生能力转成持续提供高风险劳动的条件。",
+          "difference": "旧入口要求债务或合同延续危险劳动；两例不靠死亡前债务说明其工具地位。"
+        }
+      ],
+      "independent_work_support_count": 2,
+      "independence_note": "两位作者的独立小说；Agent版本共同基础仍待核，不把版次当独立作品。"
+    },
+    {
+      "id": "pending:round96-global-scarce-technical-capability-and-emergency-delegation",
+      "axis": "topic",
+      "proposed_dimension": "topic",
+      "proposed_label": "专能独占下的紧急信任与授权",
+      "definition_boundary": "群体求生依赖独占技术知识或稀缺设备兼容性时，必须在无法充分复核警告或只能采用危险操作者的条件下决策。比较专业依赖、信任与紧急授权，不把知识独占和生理兼容视为同一机制。",
+      "negative_boundary": "一般技术故障、天才主角、职业分工或军人拥有武器不足以纳入；须明确共同生存被稀缺专能及其授权/信任难题所限制。",
+      "review_status": "pending_further_comparison",
+      "verification_status": "knowledge_added_unverified",
+      "adoption_scope": "Pending proposal only; no category/member assignment, core addition, feasibility judgment or verification upgrade.",
+      "work_evidence": [
+        {
+          "id": "Q131382300",
+          "identity": {
+            "title": "Dark Lightning",
+            "author": "约翰·瓦利"
+          },
+          "selection_index": 204,
+          "source_identity_grain": {
+            "title_zh": "Dark Lightning",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "约翰·瓦利",
+            "first_year": 2014,
+            "sort_year": 2014,
+            "source_first_year": 2014,
+            "year_display": "2014（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "英语",
+            "languages": [
+              "英语"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[204]",
+            "record_sha256": "cc847fe40c7bc1b92816ca09b985264840c0c25073cc8732a894b917e5142156"
+          },
+          "original_analysis": {
+            "file": "research/issues-source-reading-round51.json",
+            "file_sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+            "record_pointer": "$.records[106]",
+            "record_sha256": "6b114b0beadddb7bd1535705ec66029a79914ab2906143a94e9c037cab2222a5"
+          },
+          "original_analysis_record": {
+            "id": "Q131382300",
+            "identity": {
+              "title": "Dark Lightning",
+              "author": "约翰·瓦利"
+            },
+            "fields": {
+              "topics": [
+                "知识与认识",
+                "技术与责任",
+                "权力与制度",
+                "生存与风险"
+              ],
+              "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+              "issue_facets": [
+                {
+                  "label": "专知与公共安全",
+                  "question": "只有发明者懂动力时乘客怎样判断危险警告？",
+                  "basis": "无人理解能源，Jubal断言必须停船。"
+                },
+                {
+                  "label": "分歧与合作",
+                  "question": "事实未明时怎样避免信疑分裂变成兵变？",
+                  "basis": "双胞胎女儿须阻止兵变并寻找真相。"
+                }
+              ]
+            },
+            "verification_status": "knowledge_added_unverified",
+            "field_notes": {
+              "topics": "按所读书介前提作原创人工分类，待核。",
+              "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+              "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+              "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+            },
+            "sources": [
+              "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+            ],
+            "source_evidence": [
+              {
+                "url": "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/",
+                "material_kind": "实际精准搜索返回的书介范围",
+                "support_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+              }
+            ],
+            "identity_caveat": "仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+            "analysis_basis": "actual_returned_synopsis_scope_unverified"
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-source-reading-round51.json",
+            "id": "Q131382300",
+            "identity": {
+              "title": "Dark Lightning",
+              "author": "约翰·瓦利"
+            },
+            "fields": {
+              "topics": [
+                "知识与认识",
+                "技术与责任",
+                "权力与制度",
+                "生存与风险"
+              ],
+              "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+              "issue_facets": [
+                {
+                  "label": "专知与公共安全",
+                  "question": "只有发明者懂动力时乘客怎样判断危险警告？",
+                  "basis": "无人理解能源，Jubal断言必须停船。"
+                },
+                {
+                  "label": "分歧与合作",
+                  "question": "事实未明时怎样避免信疑分裂变成兵变？",
+                  "basis": "双胞胎女儿须阻止兵变并寻找真相。"
+                }
+              ]
+            },
+            "verification_status": "knowledge_added_unverified",
+            "field_notes": {
+              "topics": "按所读书介前提作原创人工分类，待核。",
+              "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+              "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+              "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+            },
+            "sources": [
+              "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+            ],
+            "source_evidence": [
+              {
+                "url": "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/",
+                "material_kind": "实际精准搜索返回的书介范围",
+                "support_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+              }
+            ],
+            "identity_caveat": "仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+            "analysis_basis": "actual_returned_synopsis_scope_unverified"
+          },
+          "active_core_assertion_sha256": "0133cc7e3bc439e85c5816579a17badc18a8550b3815b9fa76c4fd5e129ba316",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part3-proposals.json",
+            "file_sha256": "455dc580eb404e5c14f7f7647a0af8f26e56e6e3183e72d8eb508c8644e12c7c",
+            "record_pointer": "$.records[4]",
+            "record_sha256": "cfed9520805de23b0c4addf08f627a8a72371b132b4707f5076cf7b19e29d25b"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "唯一懂动力的Jubal要求停船，乘客信疑分裂，双胞胎须在求真同时维持合作以免兵变。",
+            "scientific_premise": "星船能源仅Jubal理解，继续航行致死是他的警告；原理及警告结论未在书介中揭示。",
+            "reality_relation": "可与稀缺专业知识成为治理依赖、危险警告中的信任及维持合作不能替代求真比较。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "唯一懂动力的Jubal要求停船，乘客信疑分裂，双胞胎须在求真同时维持合作以免兵变。",
+              "basis": {
+                "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+                "facet_bases": [
+                  "无人理解能源，Jubal断言必须停船。",
+                  "双胞胎女儿须阻止兵变并寻找真相。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round51.json",
+                "file_sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+                "record_pointer": "$.records[106]",
+                "record_sha256": "6b114b0beadddb7bd1535705ec66029a79914ab2906143a94e9c037cab2222a5"
+              },
+              "active_core_assertion_sha256": "0133cc7e3bc439e85c5816579a17badc18a8550b3815b9fa76c4fd5e129ba316",
+              "original_material_scope": {
+                "topics": "按所读书介前提作原创人工分类，待核。",
+                "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+                "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+                "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+              },
+              "retained_sources": [
+                "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "星船能源仅Jubal理解，继续航行致死是他的警告；原理及警告结论未在书介中揭示。",
+              "basis": {
+                "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+                "facet_bases": [
+                  "无人理解能源，Jubal断言必须停船。",
+                  "双胞胎女儿须阻止兵变并寻找真相。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round51.json",
+                "file_sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+                "record_pointer": "$.records[106]",
+                "record_sha256": "6b114b0beadddb7bd1535705ec66029a79914ab2906143a94e9c037cab2222a5"
+              },
+              "active_core_assertion_sha256": "0133cc7e3bc439e85c5816579a17badc18a8550b3815b9fa76c4fd5e129ba316",
+              "original_material_scope": {
+                "topics": "按所读书介前提作原创人工分类，待核。",
+                "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+                "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+                "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+              },
+              "retained_sources": [
+                "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与稀缺专业知识成为治理依赖、危险警告中的信任及维持合作不能替代求真比较。",
+              "basis": {
+                "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+                "facet_bases": [
+                  "无人理解能源，Jubal断言必须停船。",
+                  "双胞胎女儿须阻止兵变并寻找真相。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round51.json",
+                "file_sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+                "record_pointer": "$.records[106]",
+                "record_sha256": "6b114b0beadddb7bd1535705ec66029a79914ab2906143a94e9c037cab2222a5"
+              },
+              "active_core_assertion_sha256": "0133cc7e3bc439e85c5816579a17badc18a8550b3815b9fa76c4fd5e129ba316",
+              "original_material_scope": {
+                "topics": "按所读书介前提作原创人工分类，待核。",
+                "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+                "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+                "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+              },
+              "retained_sources": [
+                "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "知识与认识",
+              "技术与责任",
+              "权力与制度",
+              "生存与风险"
+            ],
+            "issue": "共同求生依赖少数人的技术知识，危险警告又把这种依赖变成信任与治理危机；女儿必须同时找出事实和避免群体因分歧失去合作。",
+            "issue_facets": [
+              {
+                "label": "专知与公共安全",
+                "question": "只有发明者懂动力时乘客怎样判断危险警告？",
+                "basis": "无人理解能源，Jubal断言必须停船。"
+              },
+              {
+                "label": "分歧与合作",
+                "question": "事实未明时怎样避免信疑分裂变成兵变？",
+                "basis": "双胞胎女儿须阻止兵变并寻找真相。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "按所读书介前提作原创人工分类，待核。",
+            "issue": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。",
+            "issue_facets": "仅限所列本卷/本作书介，不补未读结局。",
+            "source_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+          },
+          "sources": [
+            "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q131382300",
+            "identity": {
+              "title": "Dark Lightning",
+              "author": "约翰·瓦利"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "\"Dark Lightning\" \"John Varley\" publisher"
+            ],
+            "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+            "materials_checked": [
+              {
+                "url": "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/",
+                "material_kind": "实际精准搜索返回的书介范围",
+                "support_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。",
+                "result": "actual_returned_synopsis_read",
+                "reading_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。",
+                "read_date": "2026-10-05"
+              }
+            ],
+            "reading_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 未打开页面或原作预览；搜索返回不等于全文。",
+            "reason_unconfirmed": "仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。 情节前提及文学解释仍未独立核验。",
+            "next_step": "首遍覆盖继续，后核对应单册/版本与原作。",
+            "issue_result": "added_to_frozen_input_unverified",
+            "attempt_input": "root-fast-round63-log.json",
+            "raw_reading_log": {
+              "id": "Q131382300",
+              "identity": {
+                "title": "Dark Lightning",
+                "author": "约翰·瓦利"
+              },
+              "attempt_state": "content_material_read",
+              "queries": [
+                "\"Dark Lightning\" \"John Varley\" publisher"
+              ],
+              "actual_search_performed": true,
+              "materials_checked": [
+                {
+                  "url": "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/",
+                  "material_kind": "实际精准搜索返回的书介范围",
+                  "support_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。",
+                  "result": "actual_returned_synopsis_read",
+                  "reading_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。",
+                  "read_date": "2026-10-05"
+                }
+              ],
+              "reading_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。 未打开页面或原作预览；搜索返回不等于全文。",
+              "reason_unconfirmed": "仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。 情节前提及文学解释仍未独立核验。",
+              "issue_result": "added_to_frozen_input_unverified",
+              "next_step": "首遍覆盖继续，后核对应单册/版本与原作。",
+              "failure_count": 0
+            },
+            "actual_search_performed": true,
+            "failure_count": 0
+          },
+          "whole_prior_sha256": "917c794146b29e2b47833343a6df74b7ce72088293363dd89ad201de371fc40b",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": true,
+              "value": [
+                {
+                  "url": "https://www.penguinrandomhouse.com/books/303051/dark-lightning-by-john-varley/",
+                  "material_kind": "实际精准搜索返回的书介范围",
+                  "support_scope": "实际出版社书介：只有Jubal懂星船动力；他由冬眠醒来警告不停止航行全船将死，乘客信疑分裂，双胞胎女儿须止兵变求真。"
+                }
+              ]
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": true,
+              "value": "仅本卷书介，未补动力机制或结局；多年冬眠为重复背景，不推完整主体时长。"
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-source-reading-round51.json",
+            "file_sha256": "457d6b583b12ef8f7f37519e1a8fdb1d4676572bf8b2b93e0128370ff50afe73",
+            "pointer": "$.metadata",
+            "metadata_sha256": "9714c5355266335915749db5f653de01b57be77439ab89b2341c794d80d6d9f2"
+          },
+          "source_index_sha256": "e9db40d73287e23f43d429afd25d38d0fad9afe87c188c274ff70b90717d03b1",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "只有Jubal理解星船动力，他醒来要求停船，乘客信疑分裂；双胞胎必须求真并避免兵变。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。只Dark Lightning本卷书介，未补动力机制、危险是否最终属实或结局。"
+        },
+        {
+          "id": "Q136996320",
+          "identity": {
+            "title": "Black list",
+            "author": "作者未知"
+          },
+          "selection_index": 85,
+          "source_identity_grain": {
+            "title_zh": "Black list",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "作者未知",
+            "first_year": 2015,
+            "sort_year": 2015,
+            "source_first_year": 2015,
+            "year_display": "2015（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "法语",
+            "languages": [
+              "法语"
+            ],
+            "form": "漫画",
+            "forms": [
+              "漫画"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q1004",
+                "label": "漫画"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[85]",
+            "record_sha256": "168b274dc0f85a838bdae2b1ca9b343153fd620abcaebf82331f4232a2d9a9ee"
+          },
+          "original_analysis": {
+            "file": "research/issues-source-reading-round78.json",
+            "file_sha256": "de3229babd07f971eb1eeda5cd880c63077481b125843baa1901115d5671606d",
+            "record_pointer": "$.records[108]",
+            "record_sha256": "4cce37c8b7dfe420fa096807eac1b325f08bfb01d8224e788b3e61c33bbe52ff"
+          },
+          "original_analysis_record": {
+            "id": "Q136996320",
+            "identity": {
+              "title": "Black list",
+              "author": "作者未知"
+            },
+            "fields": {
+              "topics": [
+                "技术与责任",
+                "权力与制度",
+                "生存与风险"
+              ],
+              "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+              "issue_facets": [
+                {
+                  "label": "兼容性与资格",
+                  "question": "当合格驾驶员已经耗尽时，技术兼容性是否足以成为授权理由？",
+                  "basis": "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。"
+                },
+                {
+                  "label": "紧急授权的代价",
+                  "question": "为避免被敌人消灭，把最强武器交给危险操作者会产生什么责任？",
+                  "basis": "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+              "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+              "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+              "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+              "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+            ]
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-source-reading-round78.json",
+            "id": "Q136996320",
+            "identity": {
+              "title": "Black list",
+              "author": "作者未知"
+            },
+            "fields": {
+              "topics": [
+                "技术与责任",
+                "权力与制度",
+                "生存与风险"
+              ],
+              "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+              "issue_facets": [
+                {
+                  "label": "兼容性与资格",
+                  "question": "当合格驾驶员已经耗尽时，技术兼容性是否足以成为授权理由？",
+                  "basis": "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。"
+                },
+                {
+                  "label": "紧急授权的代价",
+                  "question": "为避免被敌人消灭，把最强武器交给危险操作者会产生什么责任？",
+                  "basis": "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+              "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+              "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+              "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+              "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+            ]
+          },
+          "active_core_assertion_sha256": "5a217319bff5a2a384740f9d6468b894d39edb1f5195382bd3ba7da176fe6c74",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part1-proposals.json",
+            "file_sha256": "7f6b04216b87137b762d16b6b9d0e3bcca73340cf73bbad471c8d43634e0e7c5",
+            "record_pointer": "$.records[85]",
+            "record_sha256": "1e0bc8794bde36ac6f9bfaf729bfdb900d3ebe80eb28cad067f6a70fbaf917dd"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "Black list本卷以最后兼容驾驶员阵亡后的授权危机为起点，地下委员会须在失败与危险操作者之间抉择。",
+            "scientific_premise": "Robot Unit依赖兼容驾驶员；不据毁灭能力补武器原理，也不与另一实体自动合并。",
+            "reality_relation": "可与高危技能的委托、紧急授权与可追责性及治理者面对缺乏可选人才比较。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "Black list本卷以最后兼容驾驶员阵亡后的授权危机为起点，地下委员会须在失败与危险操作者之间抉择。",
+              "basis": {
+                "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+                "facet_bases": [
+                  "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。",
+                  "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round78.json",
+                "file_sha256": "de3229babd07f971eb1eeda5cd880c63077481b125843baa1901115d5671606d",
+                "record_pointer": "$.records[108]",
+                "record_sha256": "4cce37c8b7dfe420fa096807eac1b325f08bfb01d8224e788b3e61c33bbe52ff"
+              },
+              "active_core_assertion_sha256": "5a217319bff5a2a384740f9d6468b894d39edb1f5195382bd3ba7da176fe6c74",
+              "original_material_scope": {
+                "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+                "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+                "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+                "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+                "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+              },
+              "retained_sources": [
+                "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "Robot Unit依赖兼容驾驶员；不据毁灭能力补武器原理，也不与另一实体自动合并。",
+              "basis": {
+                "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+                "facet_bases": [
+                  "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。",
+                  "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round78.json",
+                "file_sha256": "de3229babd07f971eb1eeda5cd880c63077481b125843baa1901115d5671606d",
+                "record_pointer": "$.records[108]",
+                "record_sha256": "4cce37c8b7dfe420fa096807eac1b325f08bfb01d8224e788b3e61c33bbe52ff"
+              },
+              "active_core_assertion_sha256": "5a217319bff5a2a384740f9d6468b894d39edb1f5195382bd3ba7da176fe6c74",
+              "original_material_scope": {
+                "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+                "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+                "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+                "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+                "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+              },
+              "retained_sources": [
+                "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与高危技能的委托、紧急授权与可追责性及治理者面对缺乏可选人才比较。",
+              "basis": {
+                "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+                "facet_bases": [
+                  "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。",
+                  "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round78.json",
+                "file_sha256": "de3229babd07f971eb1eeda5cd880c63077481b125843baa1901115d5671606d",
+                "record_pointer": "$.records[108]",
+                "record_sha256": "4cce37c8b7dfe420fa096807eac1b325f08bfb01d8224e788b3e61c33bbe52ff"
+              },
+              "active_core_assertion_sha256": "5a217319bff5a2a384740f9d6468b894d39edb1f5195382bd3ba7da176fe6c74",
+              "original_material_scope": {
+                "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+                "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+                "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+                "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+                "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+              },
+              "retained_sources": [
+                "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "技术与责任",
+              "权力与制度",
+              "生存与风险"
+            ],
+            "issue": "最后一位兼容Robot Unit的驾驶员阵亡后，十二都市委员会只能面对失败，或把毁灭性机器交给Black List中的危险人物。守护地下幸存社会的技术因此依赖难以信任的操作者，作品把紧急授权的必要与失控代价放在同一选择中。",
+            "issue_facets": [
+              {
+                "label": "兼容性与资格",
+                "question": "当合格驾驶员已经耗尽时，技术兼容性是否足以成为授权理由？",
+                "basis": "本卷最后兼容Robot Unit的驾驶员阵亡，委员会考虑向Black List中的危险人物求助。"
+              },
+              {
+                "label": "紧急授权的代价",
+                "question": "为避免被敌人消灭，把最强武器交给危险操作者会产生什么责任？",
+                "basis": "地下都市面临S-Cats威胁，委员会须在失败与授权Black List操控毁灭机器之间选择。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "依据本輪准确作品的简介／评论明示前提选题，未经独立核验。",
+            "issue": "只用实际返回的具体前提作短分析，未猜未给出的结局。",
+            "issue_facets": "两个问题依据日志中实际材料的具体对象与机制，非原作引文。",
+            "entity_identity": "明确R.U.S.T.第1卷Black List；当前原作者未知保留，只用本卷摘要，不借White Strike第3卷或同名影视。",
+            "source_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。"
+          },
+          "sources": [
+            "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q136996320",
+            "identity": {
+              "title": "Black list",
+              "author": "作者未知"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "\"R U S T\" \"Black list\" Delcourt",
+              "\"R.U.S.T.\" \"Black List\" résumé"
+            ],
+            "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+            "materials_checked": [
+              {
+                "url": "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529",
+                "support_scope": "新搜索返回准确2015漫画卷1Résumé：2100、十二都市、最后兼容驾驶员阵亡、S-Cats与Black List武器授权选择；未直接打开或漫画原作。",
+                "source_kind": "exact_comic_volume_synopsis_search_return",
+                "reading_status": "actually_read_support_scope_only",
+                "material_type": "实际来源材料",
+                "result": "actual_source_scope_read",
+                "reading_scope": "新搜索返回准确2015漫画卷1Résumé：2100、十二都市、最后兼容驾驶员阵亡、S-Cats与Black List武器授权选择；未直接打开或漫画原作。",
+                "read_date": "2026-10-05"
+              }
+            ],
+            "reading_scope": "实际查询、URL和读取范围见日志；来源纪年不自动改底库，非全本或独立书目核验。",
+            "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+            "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+            "issue_result": "added_to_frozen_input_unverified",
+            "attempt_input": "quick-retry-global-round2-log.json",
+            "raw_reading_log": {
+              "id": "Q136996320",
+              "identity": {
+                "title": "Black list",
+                "author": "作者未知"
+              },
+              "ownership_index": 61,
+              "new_pool_index": 61,
+              "ownership_file": "work/evidence/quick-retry-lane-1.json",
+              "ownership_sha256": "6ac6307da6880daa689e10a48c35466fac9ed028ea6a42764b0ab4af29d072bb",
+              "source_sort_year": 2015,
+              "publication_status": "source_year_preserved_not_independently_verified",
+              "queries": [
+                "\"R.U.S.T.\" \"Black List\" résumé"
+              ],
+              "local_material_lookup": null,
+              "sources": [
+                {
+                  "url": "https://www.senscritique.com/bd/Black_List_R_U_S_T_tome_1/16915529",
+                  "support_scope": "新搜索返回准确2015漫画卷1Résumé：2100、十二都市、最后兼容驾驶员阵亡、S-Cats与Black List武器授权选择；未直接打开或漫画原作。",
+                  "source_kind": "exact_comic_volume_synopsis_search_return",
+                  "reading_status": "actually_read_support_scope_only"
+                }
+              ],
+              "failure_count": 1,
+              "verification_status": "knowledge_added_unverified",
+              "private_raw_search_return": {
+                "path": "work/evidence/quick-retry-global-r2-search-61.json",
+                "sha256": "14315dde3de8d3bad5b0b351743e60e3737e8d8f6b9f3d79e4bf38a069cdae68",
+                "scope": "本身份一次short精准查询完整真实返回；只采用日志中明确所述范围。"
+              },
+              "prior_unsuccessful_attempts": 1,
+              "prior_source_log": {
+                "input_file": "research/issue-source-searches.json",
+                "log_date": "2026-10-04",
+                "id": "Q136996320",
+                "identity": {
+                  "title": "Black list",
+                  "author": "作者未知"
+                },
+                "attempt_state": "source_search_attempted",
+                "queries": [
+                  "\"R U S T\" \"Black list\" Delcourt"
+                ],
+                "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+                "materials_checked": [],
+                "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+                "reason_unconfirmed": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+                "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+                "issue_result": "not_added_specific_content_or_identity_needed",
+                "attempt_input": "global-recent-round16-log.json",
+                "raw_reading_log": {
+                  "id": "Q136996320",
+                  "identity": {
+                    "title": "Black list",
+                    "author": "作者未知"
+                  },
+                  "fast_index": 449,
+                  "lane_index": 301,
+                  "source_sort_year": 2015,
+                  "priority_rank": 1882,
+                  "status": "deferred_identity_or_material",
+                  "publication_status": "source_candidate_year_not_independently_verified",
+                  "queries": [
+                    "\"R U S T\" \"Black list\" Delcourt"
+                  ],
+                  "local_material_lookup": null,
+                  "sources": [],
+                  "no_material_reason": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+                  "failure_count": 1,
+                  "verification_status": "knowledge_added_unverified"
+                },
+                "publication_status": "source_candidate_year_not_independently_verified",
+                "failure_count": 1,
+                "local_material_lookup": null
+              },
+              "prior_queries": [
+                "\"R U S T\" \"Black list\" Delcourt"
+              ],
+              "new_unsuccessful_attempts": 0,
+              "status": "analysis_added_unverified",
+              "no_material_reason": null,
+              "analysis_basis": "actually_read_synopsis_or_review_unverified"
+            },
+            "publication_status": "source_year_preserved_not_independently_verified",
+            "analysis_basis": "actually_read_synopsis_or_review_unverified",
+            "failure_count": 1,
+            "local_material_lookup": null,
+            "prior_source_log": {
+              "input_file": "research/issue-source-searches.json",
+              "log_date": "2026-10-04",
+              "id": "Q136996320",
+              "identity": {
+                "title": "Black list",
+                "author": "作者未知"
+              },
+              "attempt_state": "source_search_attempted",
+              "queries": [
+                "\"R U S T\" \"Black list\" Delcourt"
+              ],
+              "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+              "materials_checked": [],
+              "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+              "reason_unconfirmed": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+              "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+              "issue_result": "not_added_specific_content_or_identity_needed",
+              "attempt_input": "global-recent-round16-log.json",
+              "raw_reading_log": {
+                "id": "Q136996320",
+                "identity": {
+                  "title": "Black list",
+                  "author": "作者未知"
+                },
+                "fast_index": 449,
+                "lane_index": 301,
+                "source_sort_year": 2015,
+                "priority_rank": 1882,
+                "status": "deferred_identity_or_material",
+                "publication_status": "source_candidate_year_not_independently_verified",
+                "queries": [
+                  "\"R U S T\" \"Black list\" Delcourt"
+                ],
+                "local_material_lookup": null,
+                "sources": [],
+                "no_material_reason": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+                "failure_count": 1,
+                "verification_status": "knowledge_added_unverified"
+              },
+              "publication_status": "source_candidate_year_not_independently_verified",
+              "failure_count": 1,
+              "local_material_lookup": null
+            },
+            "prior_unsuccessful_attempts": 1,
+            "new_unsuccessful_attempts": 0,
+            "previous_attempts": [
+              {
+                "id": "Q136996320",
+                "identity": {
+                  "title": "Black list",
+                  "author": "作者未知"
+                },
+                "attempt_state": "source_search_attempted",
+                "queries": [
+                  "\"R U S T\" \"Black list\" Delcourt"
+                ],
+                "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+                "materials_checked": [],
+                "reading_scope": "逐材料读取范围见列表；原作未全文读取。",
+                "reason_unconfirmed": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+                "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+                "issue_result": "not_added_specific_content_or_identity_needed",
+                "attempt_input": "global-recent-round16-log.json",
+                "raw_reading_log": {
+                  "id": "Q136996320",
+                  "identity": {
+                    "title": "Black list",
+                    "author": "作者未知"
+                  },
+                  "fast_index": 449,
+                  "lane_index": 301,
+                  "source_sort_year": 2015,
+                  "priority_rank": 1882,
+                  "status": "deferred_identity_or_material",
+                  "publication_status": "source_candidate_year_not_independently_verified",
+                  "queries": [
+                    "\"R U S T\" \"Black list\" Delcourt"
+                  ],
+                  "local_material_lookup": null,
+                  "sources": [],
+                  "no_material_reason": "一次RUST Black list精确出版查询未得到可确认本卷事件；源作者未知和卷名保持，不借White Strike第3卷。",
+                  "failure_count": 1,
+                  "verification_status": "knowledge_added_unverified"
+                },
+                "publication_status": "source_candidate_year_not_independently_verified",
+                "failure_count": 1,
+                "local_material_lookup": null
+              }
+            ]
+          },
+          "whole_prior_sha256": "5b50df1a0de1c7a409d3ac72bd43671faec3857c16dcfdf63d2a477901b72c2c",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-source-reading-round78.json",
+            "file_sha256": "de3229babd07f971eb1eeda5cd880c63077481b125843baa1901115d5671606d",
+            "pointer": "$.metadata",
+            "metadata_sha256": "1b83da93e9bba11d97273e09ca5f1c35f19ac1f9cab1b56b8bf9b3c275bdb1b6"
+          },
+          "source_index_sha256": "81a798497e0d05db1a336762cb8d68284150a624998254e3a62398674b92f34b",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "最后兼容Robot Unit的驾驶员死亡后，委员会须在失败与把毁灭机器交给Black List危险人物之间选择。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。只R.U.S.T.首卷Black List摘要；作者未知保留，系列Q136996317仅同一首卷材料，不另算独立支持。"
+        }
+      ],
+      "comparison_with_existing": [
+        {
+          "id": "topic:maintenance",
+          "exact_existing_record_sha256": "61cf50e32c3f487f14f0ba4cf8acfe97d2a76c25bb05605415e999b7d55c4107",
+          "existing_label": "基础设施与维护",
+          "existing_definition": "关注维持日常生活的系统、维护知识、集中控制与失效后果。",
+          "difference": "已有入口关注维护系统及集中控制；候选收窄为公众不能替代的知识/兼容性与紧急决策资格。"
+        },
+        {
+          "id": "discovery:known-year-modern-classification-candidates-r6:1",
+          "exact_existing_record_sha256": "29f2df888c040b981f89c0d333ba2678a1944f4cb397759dbd96c4adc68dad95",
+          "existing_label": "医疗依赖与政治支配",
+          "existing_definition": "照护或救命知识的不可替代性被转换为管理主体全部生活的政治权力；需要具体权力移交依据，不把所有医疗题材自动归入。",
+          "difference": "医疗依赖候选要求照护知识转为管理全部生活的政治权力；这里不声称专家已接管政治，只比较限定危机任务的信任和授权。"
+        },
+        {
+          "id": "discovery:known-year-modern-classification-candidates-r3:4",
+          "exact_existing_record_sha256": "2f39a48d07ff33dc58b5e91e21af49b6d61b0fcbc7e060f295194f736590d048",
+          "existing_label": "现实应急程序的反事实压力测试",
+          "existing_definition": "仅记录小说明确将真实机构流程放入假设威胁，不等于事件真实或程序已独立核验。",
+          "difference": "应急程序候选须明确真实机构流程的反事实测试；这里是虚构群体的专能稀缺，不作为现实流程核验。"
+        }
+      ],
+      "independent_work_support_count": 2,
+      "independence_note": "Dark Lightning与R.U.S.T.首卷为独立项目；R.U.S.T.系列与Black List原两实体共享首卷依据，只采用单卷一个种子。"
+    },
+    {
+      "id": "pending:round96-global-synchronised-hibernation-social-time",
+      "axis": "time",
+      "proposed_dimension": "time",
+      "proposed_label": "同步冬眠作为共同社会时间",
+      "definition_boundary": "多个世界通过长期沉睡和短暂同时苏醒使缓慢运输仍能维持共同社会，睡眠周期控制遂成为继承和统治权。只登记Lockstep明确的同步制度，不把冬眠本身都当时间同步。",
+      "negative_boundary": "一般移民冷冻、单人休眠、相对论异步或短暂意识开关不纳入；需要多方共享同一醒来周期的制度关系。",
+      "review_status": "pending_further_comparison",
+      "verification_status": "knowledge_added_unverified",
+      "adoption_scope": "Pending proposal only; no category/member assignment, core addition, feasibility judgment or verification upgrade.",
+      "work_evidence": [
+        {
+          "id": "Q135088692",
+          "identity": {
+            "title": "Lockstep",
+            "author": "卡爾·施羅德"
+          },
+          "selection_index": 221,
+          "source_identity_grain": {
+            "title_zh": "Lockstep",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "卡爾·施羅德",
+            "first_year": 2014,
+            "sort_year": 2014,
+            "source_first_year": 2014,
+            "year_display": "2014（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "英语",
+            "languages": [
+              "英语"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[221]",
+            "record_sha256": "e5873313afa4811fba5f8702af1fda516239bc84d0ee80014453fcbb9a2d9df2"
+          },
+          "original_analysis": {
+            "file": "research/issues-since-1980-round7.json",
+            "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+            "record_pointer": "$.records[27]",
+            "record_sha256": "5f68c5dba37adf8e4c137fd4d33e0c9a8fb3a1b369e20cc568fd7bae2cde2035"
+          },
+          "original_analysis_record": {
+            "id": "Q135088692",
+            "identity": {
+              "title": "Lockstep",
+              "author": "卡爾·施羅德"
+            },
+            "fields": {
+              "topics": [
+                "时间与因果",
+                "权力与制度",
+                "性别与亲密"
+              ],
+              "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+              "issue_facets": [
+                {
+                  "label": "时间基础设施的所有权",
+                  "question": "同步冬眠创造社会联系时，控制苏醒周期的权利应属于家族还是使用者？",
+                  "basis": "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。"
+                },
+                {
+                  "label": "亲情与王朝正当性",
+                  "question": "一个失散兄弟重新出现，为什么会被当作整个政治制度的威胁？",
+                  "basis": "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+              "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+              "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+              "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+              "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://us.macmillan.com/books/9781466833364/lockstep/"
+            ]
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-since-1980-round7.json",
+            "id": "Q135088692",
+            "identity": {
+              "title": "Lockstep",
+              "author": "卡爾·施羅德"
+            },
+            "fields": {
+              "topics": [
+                "时间与因果",
+                "权力与制度",
+                "性别与亲密"
+              ],
+              "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+              "issue_facets": [
+                {
+                  "label": "时间基础设施的所有权",
+                  "question": "同步冬眠创造社会联系时，控制苏醒周期的权利应属于家族还是使用者？",
+                  "basis": "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。"
+                },
+                {
+                  "label": "亲情与王朝正当性",
+                  "question": "一个失散兄弟重新出现，为什么会被当作整个政治制度的威胁？",
+                  "basis": "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+              "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+              "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+              "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+              "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://us.macmillan.com/books/9781466833364/lockstep/"
+            ]
+          },
+          "active_core_assertion_sha256": "7c352ae0c33f7ed2323b6c16336b3aefea02bb5cc46a5fdb8773f2a85f8858c2",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part3-proposals.json",
+            "file_sha256": "455dc580eb404e5c14f7f7647a0af8f26e56e6e3183e72d8eb508c8644e12c7c",
+            "record_pointer": "$.records[21]",
+            "record_sha256": "777f4dfc85743936417b7532aa7ac3bd70f9aebce7b38a91b95443c0962e985b"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "Toby沉睡后发现亲人以同步冬眠建帝国，弟弟的统治和继承争夺把家庭冲突变为时间基础设施控制。",
+            "scientific_premise": "长期冬眠及短暂同步苏醒使缓慢星际航行形成社会联系；不作现实人体冬眠认证。",
+            "reality_relation": "可与共享作息基础设施被私人继承、家庭资格成为政治威胁及统一时间不等于可问责统治比较。",
+            "story_era": "Toby漂流沉睡一万四千年后的帝国；背景跳跃不作主体旅程时长。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "Toby沉睡后发现亲人以同步冬眠建帝国，弟弟的统治和继承争夺把家庭冲突变为时间基础设施控制。",
+              "basis": {
+                "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+                "facet_bases": [
+                  "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。",
+                  "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[27]",
+                "record_sha256": "5f68c5dba37adf8e4c137fd4d33e0c9a8fb3a1b369e20cc568fd7bae2cde2035"
+              },
+              "active_core_assertion_sha256": "7c352ae0c33f7ed2323b6c16336b3aefea02bb5cc46a5fdb8773f2a85f8858c2",
+              "original_material_scope": {
+                "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+                "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+                "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+                "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+                "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466833364/lockstep/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "长期冬眠及短暂同步苏醒使缓慢星际航行形成社会联系；不作现实人体冬眠认证。",
+              "basis": {
+                "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+                "facet_bases": [
+                  "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。",
+                  "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[27]",
+                "record_sha256": "5f68c5dba37adf8e4c137fd4d33e0c9a8fb3a1b369e20cc568fd7bae2cde2035"
+              },
+              "active_core_assertion_sha256": "7c352ae0c33f7ed2323b6c16336b3aefea02bb5cc46a5fdb8773f2a85f8858c2",
+              "original_material_scope": {
+                "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+                "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+                "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+                "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+                "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466833364/lockstep/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与共享作息基础设施被私人继承、家庭资格成为政治威胁及统一时间不等于可问责统治比较。",
+              "basis": {
+                "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+                "facet_bases": [
+                  "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。",
+                  "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[27]",
+                "record_sha256": "5f68c5dba37adf8e4c137fd4d33e0c9a8fb3a1b369e20cc568fd7bae2cde2035"
+              },
+              "active_core_assertion_sha256": "7c352ae0c33f7ed2323b6c16336b3aefea02bb5cc46a5fdb8773f2a85f8858c2",
+              "original_material_scope": {
+                "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+                "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+                "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+                "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+                "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466833364/lockstep/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "story_era": {
+              "proposed_value": "Toby漂流沉睡一万四千年后的帝国；背景跳跃不作主体旅程时长。",
+              "basis": {
+                "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+                "facet_bases": [
+                  "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。",
+                  "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[27]",
+                "record_sha256": "5f68c5dba37adf8e4c137fd4d33e0c9a8fb3a1b369e20cc568fd7bae2cde2035"
+              },
+              "active_core_assertion_sha256": "7c352ae0c33f7ed2323b6c16336b3aefea02bb5cc46a5fdb8773f2a85f8858c2",
+              "original_material_scope": {
+                "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+                "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+                "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+                "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+                "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+              },
+              "retained_sources": [
+                "https://us.macmillan.com/books/9781466833364/lockstep/"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "时间与因果",
+              "权力与制度",
+              "性别与亲密"
+            ],
+            "issue": "托比一次漂流后的沉睡跨过一万四千年，醒来发现亲人建立了靠长期冬眠、短暂同步苏醒维持的星际帝国，而弟弟已成为防备他归来的暴君。共同作息让缓慢航行也能形成社会联系，但控制冬眠周期的继承权又使家庭纷争变成文明统治权；小说把可共享的时间基础设施与不可问责的私人支配放在同一制度中。",
+            "issue_facets": [
+              {
+                "label": "时间基础设施的所有权",
+                "question": "同步冬眠创造社会联系时，控制苏醒周期的权利应属于家族还是使用者？",
+                "basis": "帝国居民按长期沉睡、短暂苏醒的周期生活，托比的继承权也关系到这些冬眠周期的控制。"
+              },
+              {
+                "label": "亲情与王朝正当性",
+                "question": "一个失散兄弟重新出现，为什么会被当作整个政治制度的威胁？",
+                "basis": "托比归来时弟弟彼得已经统治帝国，亲属身份与继承资格同时使他成为被追捕的竞争者。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "根据该单卷具体设定归类，非由体裁或系列自动继承。",
+            "issue": "具体作品知识与已读材料支持范围分开；仍为知识补充待核。",
+            "issue_facets": "每项列明人物或社会设定依据，解释性归纳仍待独立核对。",
+            "entity_identity": "以本作单卷小说为单位；保留底库的首年、原语和版本关系。",
+            "source_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。"
+          },
+          "sources": [
+            "https://us.macmillan.com/books/9781466833364/lockstep/"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q135088692",
+            "identity": {
+              "title": "Lockstep",
+              "author": "卡爾·施羅德"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [],
+            "query_note": "只记录实际保存的查询；实际已读材料及支持范围逐项保留，未保存查询不补造。",
+            "materials_checked": [
+              {
+                "url": "https://us.macmillan.com/books/9781466833364/lockstep/",
+                "result": "actual_source_scope_read",
+                "material_type": "出版方简介与授权开篇选读",
+                "reading_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。",
+                "read_date": "2026-10-04"
+              }
+            ],
+            "reading_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。",
+            "reason_unconfirmed": "已读范围之外的细节与文学解释仍待独立核对；书目和简介不代表全书核验。",
+            "next_step": "继续按本条确切文本粒度对照原作，逐项核对具体解释与内容依据。",
+            "issue_result": "added_to_private_round7_unverified",
+            "raw_reading_log": {
+              "id": "Q135088692",
+              "identity": {
+                "title": "Lockstep",
+                "author": "卡爾·施羅德"
+              },
+              "sources": [
+                {
+                  "url": "https://us.macmillan.com/books/9781466833364/lockstep/",
+                  "material_kind": "出版方简介与授权开篇选读",
+                  "support_scope": "实际阅读出版方本书完整简介与开篇授权节选；简介明确长期冬眠、十四千年跨度、创始家族和彼得的统治。只支持所列设定，不等于全书核验。",
+                  "reading_status": "actually_read_support_scope_only"
+                }
+              ],
+              "queries": [],
+              "verification_status": "knowledge_added_unverified"
+            },
+            "attempt_input": "global-source-searches-round7.json"
+          },
+          "whole_prior_sha256": "eb5c9df2058e0555f3c9a1792fea05e5ba5aca0900086bd72e23db659466f702",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-since-1980-round7.json",
+            "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+            "pointer": "$.metadata",
+            "metadata_sha256": "65ea4bf3e4c31809deb2e6ee850be79dd64405ace5077545bce23463ec265eda"
+          },
+          "source_index_sha256": "28493a231ff18ede20c4f2e7d7e08e907e41be10541ec8db584ac22785db25b9",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "托比醒来发现家族建立按长期冬眠、短暂同步苏醒生活的帝国，继承权也关系到周期控制。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。仅Lockstep单卷明确原核心与有限出版简介/开篇范围；十四千年是所述背景跳跃，不在此推定完整故事主体时长。"
+        }
+      ],
+      "comparison_with_existing": [
+        {
+          "id": "time:asynchronous-experience",
+          "exact_existing_record_sha256": "c266af1d703fb4ce18d6884568b76c57ca5910599c7ac81ce8e2e5c1e93bd3eb",
+          "existing_label": "异步时间经验",
+          "existing_definition": "角色的清醒经验、心智过程或自身活动时间与身体时钟／共享外部纪年明确失同步。按具体因果机制保留细分，不把较大的年份或长寿自动归入。",
+          "difference": "旧入口处理主观经验与共享时钟失同步；本候选聚焦主动安排共同周期来同步分离社会及其治理。"
+        },
+        {
+          "id": "pending:round93-global-limited-awakening-migration",
+          "exact_existing_record_sha256": "b7eb133607fbae4e43ffd5fadf0c7a4ac498ea4b06eb74d2fab93c08c2479894",
+          "existing_label": "休眠迁徙中的有限醒来配额",
+          "existing_definition": "群体以冷冻睡眠迁往较远时代，代表只有四次醒来机会；限定漫画评论所述这一配额，不补全部年表、代表后来醒来的情节或原小说差异。",
+          "difference": "醒来配额候选限制迁徙代表的清醒次数；本例比较跨社会同步作息的控制权，不设四次配额。"
+        },
+        {
+          "id": "discovery:quick-retry2-modern-classification-candidates-r2:1",
+          "exact_existing_record_sha256": "35d3ca2e9dad18f40b0bd4a44b72e0ab15d040dbcda8481fecc2a54f3d30ee67",
+          "existing_label": "意识间歇运行跨越长纪年",
+          "existing_definition": "明确上传或可停启意识以可调的清醒间隔跨越长时段，外部年代与主观感知次数分离；一般睡眠、长寿、冷冻或相对论时间膨胀不自动算此类。",
+          "difference": "意识间歇活动候选强调上传心智主观次数；本例以身体冬眠和社会同步为条件，不假定上传。"
+        }
+      ],
+      "independent_work_support_count": 1,
+      "independence_note": "目前一个准确单卷；保留单例候选，不把其他冬眠题材强作第二支持。"
+    },
+    {
+      "id": "pending:round96-global-calendar-consensus-as-military-physical-condition",
+      "axis": "science",
+      "proposed_dimension": "science",
+      "proposed_label": "历法信念作为军用效力条件",
+      "definition_boundary": "作品明确使统一历法和集体仪式维持非常规武器效力，因此异端不仅挑战政治信念，还危及作战条件。只登记首卷的虚构前提，不能理解为现实集体信念可改写物理的证据。",
+      "negative_boundary": "普通战争宗教、历法节庆、魔法咒语或军事口号不足以归入；必须明确其与武器效力的技术/世界规则联系。",
+      "review_status": "pending_further_comparison",
+      "verification_status": "knowledge_added_unverified",
+      "adoption_scope": "Pending proposal only; no category/member assignment, core addition, feasibility judgment or verification upgrade.",
+      "work_evidence": [
+        {
+          "id": "Q56307799",
+          "identity": {
+            "title": "Ninefox Gambit",
+            "author": "李允夏"
+          },
+          "selection_index": 5,
+          "source_identity_grain": {
+            "title_zh": "Ninefox Gambit",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "李允夏",
+            "first_year": 2016,
+            "sort_year": 2016,
+            "source_first_year": 2016,
+            "year_display": "2016（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "英语",
+            "languages": [
+              "英语"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[5]",
+            "record_sha256": "755f56c57610fccf4e81e5cbfbe493ddec850c21c5836fcb2b6416bc1495643e"
+          },
+          "original_analysis": {
+            "file": "research/issues-since-1980-round7.json",
+            "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+            "record_pointer": "$.records[16]",
+            "record_sha256": "dca4bbb38be0ec0cc93976707adad1a56f828d9777725620f636fc1c33a8491c"
+          },
+          "original_analysis_record": {
+            "id": "Q56307799",
+            "identity": {
+              "title": "Ninefox Gambit",
+              "author": "李允夏"
+            },
+            "fields": {
+              "topics": [
+                "权力与制度",
+                "主体与意识",
+                "技术与责任"
+              ],
+              "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+              "issue_facets": [
+                {
+                  "label": "历法与现实的政治性",
+                  "question": "当武器依赖统一信念和历法，改变信念为什么会被当作叛乱？",
+                  "basis": "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。"
+                },
+                {
+                  "label": "屠杀者作为武器",
+                  "question": "保存卓越指挥能力，是否能够把过去的屠杀和当前主体性一并搁置？",
+                  "basis": "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。"
+                },
+                {
+                  "label": "借用意识的忠诚风险",
+                  "question": "与被控制的另一意识合作时，指挥官怎样保留自己的判断？",
+                  "basis": "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依具体人物冲突选择议题，属于解释性归类。",
+              "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+              "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+              "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+              "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.yoonhalee.com/?p=742"
+            ]
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-since-1980-round7.json",
+            "id": "Q56307799",
+            "identity": {
+              "title": "Ninefox Gambit",
+              "author": "李允夏"
+            },
+            "fields": {
+              "topics": [
+                "权力与制度",
+                "主体与意识",
+                "技术与责任"
+              ],
+              "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+              "issue_facets": [
+                {
+                  "label": "历法与现实的政治性",
+                  "question": "当武器依赖统一信念和历法，改变信念为什么会被当作叛乱？",
+                  "basis": "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。"
+                },
+                {
+                  "label": "屠杀者作为武器",
+                  "question": "保存卓越指挥能力，是否能够把过去的屠杀和当前主体性一并搁置？",
+                  "basis": "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。"
+                },
+                {
+                  "label": "借用意识的忠诚风险",
+                  "question": "与被控制的另一意识合作时，指挥官怎样保留自己的判断？",
+                  "basis": "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依具体人物冲突选择议题，属于解释性归类。",
+              "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+              "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+              "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+              "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.yoonhalee.com/?p=742"
+            ]
+          },
+          "active_core_assertion_sha256": "898b5c6828e4bef6125006e591fb2ce14eac8364e84a42dcdd3551fed4c48788",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part1-proposals.json",
+            "file_sha256": "7f6b04216b87137b762d16b6b9d0e3bcca73340cf73bbad471c8d43634e0e7c5",
+            "record_pointer": "$.records[5]",
+            "record_sha256": "68edaa25235fb23e3d7076f397ddd5c4079f1230dd79eceb12d02f6c07affded"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "切里斯夺回要塞的军事任务依赖被复活的杰道，两人的合作同时承受制度效忠与失控危险。",
+            "scientific_premise": "非常规武器效力依赖统一历法及集体仪式，杰道也被保存与复活；这是本书现实规则，不作现实技术认证。",
+            "reality_relation": "可与制度强制共同信念、把人才保存为工具及军事服从中的自主判断比较。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "切里斯夺回要塞的军事任务依赖被复活的杰道，两人的合作同时承受制度效忠与失控危险。",
+              "basis": {
+                "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+                "facet_bases": [
+                  "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。",
+                  "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。",
+                  "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[16]",
+                "record_sha256": "dca4bbb38be0ec0cc93976707adad1a56f828d9777725620f636fc1c33a8491c"
+              },
+              "active_core_assertion_sha256": "898b5c6828e4bef6125006e591fb2ce14eac8364e84a42dcdd3551fed4c48788",
+              "original_material_scope": {
+                "topics": "依具体人物冲突选择议题，属于解释性归类。",
+                "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+                "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+                "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+                "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+              },
+              "retained_sources": [
+                "https://www.yoonhalee.com/?p=742"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "非常规武器效力依赖统一历法及集体仪式，杰道也被保存与复活；这是本书现实规则，不作现实技术认证。",
+              "basis": {
+                "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+                "facet_bases": [
+                  "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。",
+                  "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。",
+                  "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[16]",
+                "record_sha256": "dca4bbb38be0ec0cc93976707adad1a56f828d9777725620f636fc1c33a8491c"
+              },
+              "active_core_assertion_sha256": "898b5c6828e4bef6125006e591fb2ce14eac8364e84a42dcdd3551fed4c48788",
+              "original_material_scope": {
+                "topics": "依具体人物冲突选择议题，属于解释性归类。",
+                "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+                "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+                "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+                "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+              },
+              "retained_sources": [
+                "https://www.yoonhalee.com/?p=742"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与制度强制共同信念、把人才保存为工具及军事服从中的自主判断比较。",
+              "basis": {
+                "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+                "facet_bases": [
+                  "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。",
+                  "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。",
+                  "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-since-1980-round7.json",
+                "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+                "record_pointer": "$.records[16]",
+                "record_sha256": "dca4bbb38be0ec0cc93976707adad1a56f828d9777725620f636fc1c33a8491c"
+              },
+              "active_core_assertion_sha256": "898b5c6828e4bef6125006e591fb2ce14eac8364e84a42dcdd3551fed4c48788",
+              "original_material_scope": {
+                "topics": "依具体人物冲突选择议题，属于解释性归类。",
+                "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+                "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+                "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+                "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+              },
+              "retained_sources": [
+                "https://www.yoonhalee.com/?p=742"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "文明与历史",
+              "权力与制度",
+              "主体与意识",
+              "技术与责任"
+            ],
+            "issue": "切里斯为夺回被异端占据的要塞，与复活并被控制的屠杀者杰道合作；六统体又依靠统一历法和集体仪式维持非常规武器的效力。叛教同时被当作军事和政治危机，优秀指挥官则被保存为可调用的武器；作品追问一种能改变现实规则的共同信念如何被制度强制，以及服从者是否还能重新判断自己效忠的秩序。",
+            "issue_facets": [
+              {
+                "label": "历法与现实的政治性",
+                "question": "当武器依赖统一信念和历法，改变信念为什么会被当作叛乱？",
+                "basis": "六统体的非常规军事能力依赖历法仪式，切里斯奉命从异端手中夺回关键要塞。"
+              },
+              {
+                "label": "屠杀者作为武器",
+                "question": "保存卓越指挥能力，是否能够把过去的屠杀和当前主体性一并搁置？",
+                "basis": "杰道曾屠杀敌我两军，却因军事才能被保存、复活并交给切里斯协同作战。"
+              },
+              {
+                "label": "借用意识的忠诚风险",
+                "question": "与被控制的另一意识合作时，指挥官怎样保留自己的判断？",
+                "basis": "切里斯依赖杰道赢得战役，又必须防范他脱离控制及毁灭自己的可能。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "依具体人物冲突选择议题，属于解释性归类。",
+            "issue": "实际来源阅读与作品知识结合，所有解释仍作为知识补充待核。",
+            "issue_facets": "逐项保留具体设定/行动依据与所读资料范围。",
+            "entity_identity": "以题名指定的独立作品为单位，保留单篇/长篇/合集边界及全部原来源字段。",
+            "source_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。"
+          },
+          "sources": [
+            "https://www.yoonhalee.com/?p=742"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q56307799",
+            "identity": {
+              "title": "Ninefox Gambit",
+              "author": "李允夏"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [],
+            "query_note": "只记录实际保存的查询；实际已读材料及支持范围逐项保留，未保存查询不补造。",
+            "materials_checked": [
+              {
+                "url": "https://www.yoonhalee.com/?p=742",
+                "result": "actual_source_scope_read",
+                "material_type": "出版方简介",
+                "reading_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。",
+                "read_date": "2026-10-04"
+              }
+            ],
+            "reading_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。",
+            "reason_unconfirmed": "已读范围之外的细节与文学解释仍待独立核对；书目和简介不代表全书核验。",
+            "next_step": "继续按本条确切文本粒度对照原作，逐项核对具体解释与内容依据。",
+            "issue_result": "added_to_private_round7_unverified",
+            "raw_reading_log": {
+              "id": "Q56307799",
+              "identity": {
+                "title": "Ninefox Gambit",
+                "author": "李允夏"
+              },
+              "sources": [
+                {
+                  "url": "https://www.yoonhalee.com/?p=742",
+                  "material_kind": "出版方简介",
+                  "support_scope": "实际阅读作者官方首卷简介，支持切里斯、杰道屠杀和复活作战；历法信念与武器设置来自具体作品知识，未由游戏规则或后续卷反推。",
+                  "reading_status": "actually_read_support_scope_only"
+                }
+              ],
+              "queries": [],
+              "verification_status": "knowledge_added_unverified"
+            },
+            "attempt_input": "global-source-searches-round7.json"
+          },
+          "whole_prior_sha256": "5ddada14908a7b5fa39d5bc080866fdbc0f622b5fdc8732906dc4c0805fbc36e",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-since-1980-round7.json",
+            "file_sha256": "1c1fd8375793074ff38a3a660aa8a2e0adb0f9d3092d7bdc93737a285ddae5e5",
+            "pointer": "$.metadata",
+            "metadata_sha256": "65ea4bf3e4c31809deb2e6ee850be79dd64405ace5077545bce23463ec265eda"
+          },
+          "source_index_sha256": "e459abd1ac4206d892b38241277ed6b2f4e105fd1dc5aea4cde707ae9b8d5409",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "六统体的非常规军事能力依赖统一历法仪式，切里斯奉命夺回异端要塞；杰道合作另为原人物前提。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。只Ninefox Gambit首卷；历法/武器细节来自精确已有作品知识，原作者简介仅支持指名人物与复活作战角色，未升级为本次材料实读。"
+        }
+      ],
+      "comparison_with_existing": [
+        {
+          "id": "narrative:rules",
+          "exact_existing_record_sha256": "43e570d9c8ac659b6d2233169ef6520a770e88368455e6514b4c8892e8429576",
+          "existing_label": "规则与程序推动",
+          "existing_definition": "明确程序、任务或资格规则组织行动及其后果。",
+          "difference": "规则推动是广泛组织方式；本候选要求历法/仪式对武器效力的明确虚构因果，而非所有行动程序。"
+        },
+        {
+          "id": "topic:coercive-truth-and-thought",
+          "exact_existing_record_sha256": "b32c4a16491c6ab4554a6397ec1fcc862966995ed30152ceaa0a0801ebfed30f",
+          "existing_label": "思想自由与强制真理",
+          "existing_definition": "关注权力以技术、暴力或强制改造，将多种判断压成唯一可被承认的真理。",
+          "difference": "思想强制入口处理政治判断单一化；此候选保留信念与作战效力的特殊世界机制，不把现实思想治理等同物理改变。"
+        }
+      ],
+      "independent_work_support_count": 1,
+      "independence_note": "目前只首卷一个知识种子；系列后续不据此继承。"
+    },
+    {
+      "id": "pending:round96-global-convenient-service-and-hidden-brain-computation",
+      "axis": "science",
+      "proposed_dimension": "science",
+      "proposed_label": "便利服务掩护脑算力征用",
+      "definition_boundary": "看似提供维修服务的自动设施绑架使用者、提取大脑计算能力，并用死亡复制体隐瞒失踪。关注服务、计算资源与掩盖方式相结合的明确设定，不把服务设施都视为这种装置。",
+      "negative_boundary": "普通数据收集、广告画像、身体出租或意识上传不足以纳入；需要准确材料说明大脑计算征用及便利服务的隐藏作用。",
+      "review_status": "pending_further_comparison",
+      "verification_status": "knowledge_added_unverified",
+      "adoption_scope": "Pending proposal only; no category/member assignment, core addition, feasibility judgment or verification upgrade.",
+      "work_evidence": [
+        {
+          "id": "Q55230563",
+          "identity": {
+            "title": "Uncertain Logic",
+            "author": "Christopher L. Bennett"
+          },
+          "selection_index": 169,
+          "source_identity_grain": {
+            "title_zh": "Uncertain Logic",
+            "title_original": "原题待核（见来源标题声明）",
+            "author": "Christopher L. Bennett",
+            "first_year": 2015,
+            "sort_year": 2015,
+            "source_first_year": 2015,
+            "year_display": "2015（来源待核）",
+            "year_note": "来源 P577 最早年份候选；初刊、版本与日期精度尚待核查。",
+            "language_tradition": "语言未知",
+            "languages": [
+              "语言未知"
+            ],
+            "form": "长篇（来源描述候选）",
+            "forms": [
+              "文学作品",
+              "长篇（来源描述候选）"
+            ],
+            "source_entity_kind": "work_or_unspecified",
+            "source_types": [
+              {
+                "id": "Q7725634",
+                "label": "文学作品"
+              }
+            ],
+            "duration": "待分类",
+            "science_class": "待分类",
+            "science_note": "尚未进行科学前提分析。",
+            "story_era": "故事时代未知"
+          },
+          "selection_reference": {
+            "file": "work/evidence/global-breadth-selection-round6.json",
+            "file_sha256": "6ccf77a2700308d0c10ce23dd53ec73488b39d15ea635b9652338f9437d5c285",
+            "pointer": "$.records[169]",
+            "record_sha256": "a4e271768a778fd3ec1de4d1553b13dbd7298b35e014de99b0885b154adc43b4"
+          },
+          "original_analysis": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "record_pointer": "$.records[171]",
+            "record_sha256": "349db38b8871e0250cc3727865c64deda4f36cbc7dddeabad85c28fe20a57984"
+          },
+          "original_analysis_record": {
+            "id": "Q55230563",
+            "identity": {
+              "title": "Uncertain Logic",
+              "author": "Christopher L. Bennett"
+            },
+            "fields": {
+              "topics": [
+                "知识与认识",
+                "权力与制度",
+                "技术与责任"
+              ],
+              "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+              "issue_facets": [
+                {
+                  "label": "知识证据与制度改革",
+                  "question": "关键文献的真伪为何能改变一整个社会的权力方向？",
+                  "basis": "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。"
+                },
+                {
+                  "label": "服务便利与隐蔽剥削",
+                  "question": "看似互利的技术服务是否可以把使用者暗中变成资源？",
+                  "basis": "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+              "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+              "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+            ]
+          },
+          "active_core_assertion": {
+            "input_file": "research/issues-source-reading-round34.json",
+            "id": "Q55230563",
+            "identity": {
+              "title": "Uncertain Logic",
+              "author": "Christopher L. Bennett"
+            },
+            "fields": {
+              "topics": [
+                "知识与认识",
+                "权力与制度",
+                "技术与责任"
+              ],
+              "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+              "issue_facets": [
+                {
+                  "label": "知识证据与制度改革",
+                  "question": "关键文献的真伪为何能改变一整个社会的权力方向？",
+                  "basis": "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。"
+                },
+                {
+                  "label": "服务便利与隐蔽剥削",
+                  "question": "看似互利的技术服务是否可以把使用者暗中变成资源？",
+                  "basis": "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+                }
+              ]
+            },
+            "field_notes": {
+              "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+              "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+              "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+            },
+            "verification_status": "knowledge_added_unverified",
+            "sources": [
+              "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+            ]
+          },
+          "active_core_assertion_sha256": "b1459c00442c16f9c5d98d8125c96f78e56c41cd2f4d869c6fee3d03d0d205ff",
+          "dimension_proposal_reference": {
+            "file": "work/evidence/global-breadth-round6-part2-proposals.json",
+            "file_sha256": "f5feec41732345a8d836a332bc3f98c7e9735d4a7f4117dc9f35c17292860c63",
+            "record_pointer": "$.records[69]",
+            "record_sha256": "e0c2f8cb30166d53e52ffc29304b760ee6123c23d93cbaee465a9ce3fabc7476"
+          },
+          "dimension_proposed_values": {
+            "narrative_mechanism": "Surak文献真实性危机威胁和平改革，另一线的便利设施却提取旅客脑算力，使文明认识面对证据和技术代价。",
+            "scientific_premise": "Ware设施以死亡复制体掩盖绑架并提取脑计算能力；只所读第一章范围，不补系统全部机制。",
+            "reality_relation": "可与权威文本争议影响制度合法性、便利掩盖剥削及有效技术的隐藏生命成本比较。"
+          },
+          "dimension_proposed_evidence": {
+            "narrative_mechanism": {
+              "proposed_value": "Surak文献真实性危机威胁和平改革，另一线的便利设施却提取旅客脑算力，使文明认识面对证据和技术代价。",
+              "basis": {
+                "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+                "facet_bases": [
+                  "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。",
+                  "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[171]",
+                "record_sha256": "349db38b8871e0250cc3727865c64deda4f36cbc7dddeabad85c28fe20a57984"
+              },
+              "active_core_assertion_sha256": "b1459c00442c16f9c5d98d8125c96f78e56c41cd2f4d869c6fee3d03d0d205ff",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "scientific_premise": {
+              "proposed_value": "Ware设施以死亡复制体掩盖绑架并提取脑计算能力；只所读第一章范围，不补系统全部机制。",
+              "basis": {
+                "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+                "facet_bases": [
+                  "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。",
+                  "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+                ]
+              },
+              "role": "explicit_setting_or_scoped_expression_in_existing_analysis_pending_review",
+              "known_or_derived": "原分析／范围明确的设定或表达，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[171]",
+                "record_sha256": "349db38b8871e0250cc3727865c64deda4f36cbc7dddeabad85c28fe20a57984"
+              },
+              "active_core_assertion_sha256": "b1459c00442c16f9c5d98d8125c96f78e56c41cd2f4d869c6fee3d03d0d205ff",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            },
+            "reality_relation": {
+              "proposed_value": "可与权威文本争议影响制度合法性、便利掩盖剥削及有效技术的隐藏生命成本比较。",
+              "basis": {
+                "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+                "facet_bases": [
+                  "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。",
+                  "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+                ]
+              },
+              "role": "interpretive_description_derived_from_exact_existing_core",
+              "known_or_derived": "准确原分析的文学解释，待独立核对",
+              "support_scope": "只限准确原A、活跃核心和原完整历史声明的简介、节选、选篇或已有知识；本轮没有重读旧URL或新材料。叙事不证明全文章序，科学设定不评可行性，现实类比不评分预测。",
+              "source_analysis_ref": {
+                "file": "research/issues-source-reading-round34.json",
+                "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+                "record_pointer": "$.records[171]",
+                "record_sha256": "349db38b8871e0250cc3727865c64deda4f36cbc7dddeabad85c28fe20a57984"
+              },
+              "active_core_assertion_sha256": "b1459c00442c16f9c5d98d8125c96f78e56c41cd2f4d869c6fee3d03d0d205ff",
+              "original_material_scope": {
+                "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+                "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+                "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+              },
+              "retained_sources": [
+                "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+              ],
+              "new_material_read": false,
+              "independently_verified": false
+            }
+          },
+          "original_core_basis": {
+            "topics": [
+              "知识与认识",
+              "权力与制度",
+              "技术与责任"
+            ],
+            "issue": "Surak文献真实性遭到质疑，曾依靠它推进的Vulcan和平改革因此面临被旧好战势力逆转的危险。另一线中提供便利的自动设施把旅客的大脑当成计算资源，文明对有效技术的利用与对其代价的识别发生冲突。",
+            "issue_facets": [
+              {
+                "label": "知识证据与制度改革",
+                "question": "关键文献的真伪为何能改变一整个社会的权力方向？",
+                "basis": "官方简介明确Surak真著被宣称为伪造，改革十年成果和旧政权回归都受到影响。"
+              },
+              {
+                "label": "服务便利与隐蔽剥削",
+                "question": "看似互利的技术服务是否可以把使用者暗中变成资源？",
+                "basis": "授权试读中Ware设施提供维修便利，却用死亡复制体掩盖绑架并提取旅客脑算力。"
+              }
+            ]
+          },
+          "original_material_scope": {
+            "topics": "依照逐条所列实际材料与明确标注的已有知识作文学归类；不是来源原有分类或完整原作核验。",
+            "issue": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+            "issue_facets": "细分解释只采用逐条支持范围；不代表作者唯一意图。"
+          },
+          "sources": [
+            "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+          ],
+          "source_reference_note": "原URL只保留原支持角色；本轮没有新打开、读页或重新查询，不将身份链接当剧情或科学证据。",
+          "whole_prior": {
+            "input_file": "research/issue-source-searches.json",
+            "log_date": "2026-10-04",
+            "id": "Q55230563",
+            "identity": {
+              "title": "Uncertain Logic",
+              "author": "Christopher L. Bennett"
+            },
+            "attempt_state": "content_material_read",
+            "queries": [
+              "\"Uncertain Logic\" \"Christopher\" publisher"
+            ],
+            "query_note": "仅记录已保存的实际查询；打开、点击、查找另见原始日志，不补造查询词。",
+            "materials_checked": [
+              {
+                "url": "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126",
+                "result": "actual_source_scope_read",
+                "reading_scope": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+                "read_date": "2026-10-05"
+              }
+            ],
+            "reading_scope": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+            "reason_unconfirmed": "材料只支持明示范围；原作全文、版本与文学解释尚未逐项独立核验。",
+            "next_step": "按确切作品、单册或系列粒度继续查正文和更具体材料，保留日期与身份疑点。",
+            "issue_result": "added_to_frozen_input_unverified",
+            "attempt_input": "modern-recent-round20-log.json",
+            "raw_reading_log": {
+              "id": "Q55230563",
+              "identity": {
+                "title": "Uncertain Logic",
+                "author": "Christopher L. Bennett"
+              },
+              "queries": [
+                "\"Uncertain Logic\" \"Christopher\" publisher"
+              ],
+              "urls_read": [
+                "https://www.simonandschuster.co.uk/books/Rise-of-the-Federation-Uncertain-Logic/Christopher-L-Bennett/Star-Trek-Enterprise/9781476779126"
+              ],
+              "exact_support_scope": "实际打开官方本书页面，读取书介lines35—38及授权第一章Ware设施回顾/当次接触lines76—127。只当前小说文本所述风险，不因相似电视剧情节替代读取；未读全书或试读后部。",
+              "verification_status": "reading_scope_logged_not_full_verification",
+              "material_kind": "actual_authorized_original_excerpt_partial_and_publisher_blurb",
+              "original_partial_text_read": true,
+              "actual_search_performed": true,
+              "first_pass_only": true,
+              "original_full_text_read": false
+            },
+            "actual_search_performed": true,
+            "material_kind": "actual_authorized_original_excerpt_partial_and_publisher_blurb"
+          },
+          "whole_prior_sha256": "90282f03443f04b77ae87d3587de4be837af8f2eb2abd60d1aa5dfdce63acf98",
+          "original_record_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_presence": {
+            "ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "ownership_sha256": {
+              "present": false,
+              "value": null
+            },
+            "ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "ownership_indices": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_file": {
+              "present": false,
+              "value": null
+            },
+            "original_ownership_index": {
+              "present": false,
+              "value": null
+            },
+            "reading_log": {
+              "present": false,
+              "value": null
+            },
+            "reading_log_sha256": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache": {
+              "present": false,
+              "value": null
+            },
+            "raw_cache_sha256": {
+              "present": false,
+              "value": null
+            },
+            "actual_search_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_query_count": {
+              "present": false,
+              "value": null
+            },
+            "actual_open_count": {
+              "present": false,
+              "value": null
+            },
+            "search_count": {
+              "present": false,
+              "value": null
+            },
+            "open_count": {
+              "present": false,
+              "value": null
+            },
+            "source_evidence": {
+              "present": false,
+              "value": null
+            },
+            "publication_status": {
+              "present": false,
+              "value": null
+            },
+            "identity_caveat": {
+              "present": false,
+              "value": null
+            }
+          },
+          "original_metadata_reference": {
+            "file": "research/issues-source-reading-round34.json",
+            "file_sha256": "87e4edb0332ee3da1763054caf458b4ebe3675a6e27d42463ea4b28cbca95154",
+            "pointer": "$.metadata",
+            "metadata_sha256": "7bb9e51e99cce28bd2d4be54c62a15622289b3b072b664e4059e0c8b75f92c10"
+          },
+          "source_index_sha256": "8022ec9472db7d4029f92e7483989a736db19727f93ed544b0e37281ee06d1d3",
+          "discovery_source_mode": "knowledge_dimension_analysis_derivative",
+          "new_material_read": false,
+          "actual_content_source_read_this_batch": false,
+          "new_query_count": 0,
+          "new_open_count": 0,
+          "new_core_count": 0,
+          "independently_verified": false,
+          "basis": "Ware设施提供便利维修，却以死亡复制体掩盖绑架并提取旅客大脑算力。",
+          "exact_support_scope": "原精确核心、facet与冻结维度草稿的零新查读派生；仍待独立核对。只Uncertain Logic官方简介及授权第一章已读L76–127所述Ware回顾/当次接触，不借相似电视集或原试读后部补事件。"
+        }
+      ],
+      "comparison_with_existing": [
+        {
+          "id": "space:interface",
+          "exact_existing_record_sha256": "4362f69c7a83c47a66d5a6d08144d1005a8c3e348daab6f0cc24ceecaf524f5b",
+          "existing_label": "意识接口环境",
+          "existing_definition": "通过接口进入共享、人工或他人的心智空间。",
+          "difference": "接口环境不要求隐蔽征用大脑作计算；本候选不因此改变原空间导航或推意识在何种虚拟环境。"
+        },
+        {
+          "id": "pending:round94-global-intrinsic-capability-payments",
+          "exact_existing_record_sha256": "78aac5e4f660e0a08916d650d9190a1e6ee2bbf7416bdddf521ddfc7c1930334",
+          "existing_label": "内在能力作为支付与抵押",
+          "existing_definition": "个人的语言能力或未来活力被直接扣减、抵押为交易资源。只比较两种明确虚构条件，不把它们当相同神经机制，也不扩为所有债务、时间定价或失忆故事。",
+          "difference": "内在能力支付候选是语言或未来活力被交易扣减；这里明确绑架/暗中征用算力，不替换为自愿支付。"
+        },
+        {
+          "id": "pending:round95-global-implanted-conscious-evidence-and-unlocking",
+          "exact_existing_record_sha256": "2d07434e695b2b8250fa29042562f0af1b6e472e1b511f89508ca2c344e037fa",
+          "existing_label": "意识内植入证据与解锁",
+          "existing_definition": "他人把秘密作为意识中的幻象或信息植入受损主体，随后须解锁才能成为对机构的证据。先只取Carina与Mark这个实例；登记虚构前提，不声称意识可以现实存储此种证据或确定全部脑实验原理。",
+          "difference": "意识内植入证据候选涉及信息存储和解锁；本例是计算劳动与失踪掩盖，不是植入秘密后取证。"
+        }
+      ],
+      "independent_work_support_count": 1,
+      "independence_note": "目前一个准确单卷的已读授权节选范围，保留单例候选；不因同世界相似设备新增成员。"
     }
   ],
   "promoted_discoveries": [
@@ -29391,6 +33386,83 @@
       "support_scope": "实际直接读取Google Books再版书介，明确nonfiction historical account与具体报告类型；并读到Smith笔名Jan Hudson对应。未读报告正文，未验证接触者说法，不把它当虚构小说完整剧情。",
       "membership_extent": "claimed_nonfiction_contact_report_packaging_not_contact_validation",
       "review_input": "research/classification-discovery-audits/classification-v22-navigation-proposal-global.json"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-classification-candidates-round2:1",
+      "category_id": "form:disclosed-generative-production",
+      "status": "promoted_unverified",
+      "revision": 23,
+      "work_id": "Q111182873",
+      "additional_work_ids": [],
+      "original_candidate_record_sha256": "031c7c26c87155193f96ad7c775250f2cd16bd4aa751190b977191922350b0d4",
+      "evidence_mode": "v23_exact_scoped_navigation_review",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "仅评论实际查询返回的原书前言/创作方法讨论；未直接读原书前言、生成代码或小说全文，不作作者工具独立核验。",
+      "membership_extent": "exact_novel_production_claims_via_reviews_not_direct_preface_or_code",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "reviewed_project_member_ids": [
+        "Q111182873"
+      ]
+    },
+    {
+      "candidate_id": "discovery:quick-retry2-early-classification-candidates-round11:Q140031394-scoped-form-r11",
+      "category_id": "form:disclosed-generative-production",
+      "status": "promoted_unverified",
+      "revision": 23,
+      "work_id": "Q140031394",
+      "additional_work_ids": [],
+      "original_candidate_record_sha256": "d37c3dc6f81f07571740a0f3b6581f8546ca87cd4cd18d746a5b7af01d525cb4",
+      "evidence_mode": "v23_exact_scoped_navigation_review",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。 Ikki项目博客把The Great Parade单独列为WUKONG0/CelestusAnarchus小说，并自述四本小说及艺术方向由人创作，AI管线用于扩展、验证、声音和跨媒介生产。 只创作方公开的项目/制作方法宣称与本书表项，不独立核实实际制作或把整个宇宙设定当本书具体剧情。商品页2026版日期不修正底库2025。",
+      "membership_extent": "creator_project_method_claim_and_exact_book_table_no_target_plot",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "reviewed_project_member_ids": [
+        "Q140031394"
+      ]
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-classification-candidates-round10:1",
+      "category_id": "form:compiled-order-and-temporal-reference",
+      "status": "promoted_unverified",
+      "revision": 23,
+      "work_id": "Q6750709",
+      "additional_work_ids": [],
+      "original_candidate_record_sha256": "f11ba77bcaf0a251396e1e85a8fb769c9283a0025462690171069de821da59c9",
+      "evidence_mode": "v23_exact_scoped_navigation_review",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "真实搜索返回准确五篇关联故事的顺序段及Manna的不同编排说明；仅顺序与编辑解释，不读具体篇剧情，也不覆盖全部22个目录单元。",
+      "membership_extent": "only_five_named_Amber_related_stories_order_note_not_all_22_units",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "reviewed_project_member_ids": [
+        "Q6750709"
+      ]
+    },
+    {
+      "candidate_id": "pending:round94-modern-author-creation-order-collected-volumes",
+      "category_id": "form:compiled-order-and-temporal-reference",
+      "status": "promoted_unverified",
+      "revision": 23,
+      "work_id": "Q18424396",
+      "additional_work_ids": [
+        "Q18424650",
+        "Q18430220"
+      ],
+      "original_candidate_record_sha256": "20a25527ffc8483e49c4648b6360793e15ce5c1c4211854efdab1797370b6c51",
+      "evidence_mode": "v23_exact_scoped_navigation_review",
+      "core_result_unchanged": true,
+      "independent_verification_upgrade": false,
+      "support_scope": "2014短篇全集第一卷按创作年月排列，说明为1960年代及更早作品，列26项目录。 这是编辑编排的创作时间，不是故事发生年或叙事时间跨度；未读成员故事，核心missing且不自动赋类。",
+      "membership_extent": "exact_2014_collected_volume_creation_date_order_only_no_member_plot",
+      "review_input": "research/classification-discovery-audits/classification-v23-navigation-adoption-proposal.json",
+      "reviewed_project_member_ids": [
+        "Q18424396",
+        "Q18424650",
+        "Q18430220"
+      ]
     }
   ],
   "discovery_evidence_updates": [
@@ -29427,6 +33499,143 @@
       "independent_verification_upgrade": false,
       "original_full_text_read": false,
       "note": "原发现只确认具名章节和15页粒度，核心在当时延期。后来独立一次查询取得大学漫画馆这一章的限定摘要，新增核心解释仍待核；原书目发现、阅读范围、失败历史及分类候选状态全部保留。"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-classification-candidates-round12:1",
+      "work_id": "Q134705721",
+      "original_candidate_record_sha256": "91427171d936b2edf9cb235b1743152706c2d14740fe8b26248fe6e9a10ab828",
+      "original_work_evidence_sha256": "434fe15d7f879ec4ae284f5ce62a44cb0da52b3a15d4671b3bfcec5b7aa57f3d",
+      "original_source_mode": "bibliographic_candidate_no_core_analysis",
+      "status": "later_separate_core_analysis_added_unverified",
+      "update_mode": "round96_exact_frozen_raw_A_L_core_continuation",
+      "analysis_input": {
+        "file": "research/issue-input-snapshots/modern-easy-core-round96-part1.json",
+        "file_sha256": "20c384b488dd87aca49c06cca7dac84b7fac683d779831856fc0e7130218ed8d",
+        "record_index": 5,
+        "record_sha256": "5774cdb22dd7bc0367d700f9cf3c14431d6cf3371408294f6652ee7c9a64dc94"
+      },
+      "log_input": {
+        "file": "research/issue-input-snapshots/modern-easy-core-round96-part1-log.json",
+        "file_sha256": "08d880e29af4456418f98f7a6b57b7b9c6df760d72804a3f908b4c7909c2e40c",
+        "record_index": 11,
+        "record_sha256": "f42d044935734f1fd29301d647e5acddd1a5b2705e8a4a960d44d6a03b57ac34"
+      },
+      "active_analysis_input": "research/issues-source-reading-round96.json",
+      "active_assertion_sha256": "adb50b2ddf0e93e581235b60d66d32179d01c92ee0ac38568262b3f63f4637dc",
+      "identity": {
+        "title": "The Mendelian Lamp Case",
+        "author": "保羅·萊文森"
+      },
+      "support_scope": "实际返回中明确对应Mendelian Lamp Case的友人死亡、Amish式生物技术段；相邻Copyright Notice Case的DNA版权设定不采用。；虽为The Silk Code长篇评论，实际段落明确回忆1997短篇Mendelian Lamp Case及其秘密生物战前提；长篇后续剧情不移植。",
+      "source_evidence_roles": [
+        {
+          "url": "https://dosen.profillengkap.com/en/Phil_D%27Amato",
+          "source_type": "secondary_character_article_mirror",
+          "reading_scope": "实际返回中明确对应Mendelian Lamp Case的友人死亡、Amish式生物技术段；相邻Copyright Notice Case的DNA版权设定不采用。",
+          "exact_support_scope": "实际返回中明确对应Mendelian Lamp Case的友人死亡、Amish式生物技术段；相邻Copyright Notice Case的DNA版权设定不采用。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round96-query-batch3-private.json",
+            "sha256": "b4d0f1bde0b0d544aa812ad117a48a8a2ac5505cf53b2c51758e0521e5f2df7f",
+            "section": "returns",
+            "record_index": 2,
+            "record_sha256": "636badef72172c2c2896c7128d939f7d3db3e15c65a7d4bbd820f9bd40a7dbc1",
+            "request_sha256": "0e744fc33cd2dfb17d11f1f0e4bb6b8ef0fd267dd589adf00462cebaa37123a3"
+          }
+        },
+        {
+          "url": "https://www.christian-sauve.com/2004/02/",
+          "source_type": "critic_recollection_of_specific_short_story",
+          "reading_scope": "虽为The Silk Code长篇评论，实际段落明确回忆1997短篇Mendelian Lamp Case及其秘密生物战前提；长篇后续剧情不移植。",
+          "exact_support_scope": "虽为The Silk Code长篇评论，实际段落明确回忆1997短篇Mendelian Lamp Case及其秘密生物战前提；长篇后续剧情不移植。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "actual_search_return_only",
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round96-query-batch3-private.json",
+            "sha256": "b4d0f1bde0b0d544aa812ad117a48a8a2ac5505cf53b2c51758e0521e5f2df7f",
+            "section": "returns",
+            "record_index": 2,
+            "record_sha256": "636badef72172c2c2896c7128d939f7d3db3e15c65a7d4bbd820f9bd40a7dbc1",
+            "request_sha256": "0e744fc33cd2dfb17d11f1f0e4bb6b8ef0fd267dd589adf00462cebaa37123a3"
+          }
+        }
+      ],
+      "sources": [
+        "https://dosen.profillengkap.com/en/Phil_D%27Amato",
+        "https://www.christian-sauve.com/2004/02/"
+      ],
+      "actual_new_queries_for_original_R96_identity": 1,
+      "historical_bibliographic_scope_unchanged": true,
+      "classification_still_pending": true,
+      "independent_verification_upgrade": false,
+      "original_full_text_read": false,
+      "new_queries_from_annotation": 0,
+      "new_core_from_annotation": 0,
+      "note": "原书目候选及其资料角色不变。后续另一次限定资料分析补核心，仍未独立核验；短篇/长篇扩写和原版/新版关系不继承。Quirinal所用返回由另一个身份实际请求，复用不新增本身份query。"
+    },
+    {
+      "candidate_id": "discovery:quick-retry-root-classification-candidates-round13:1",
+      "work_id": "Q74534314",
+      "original_candidate_record_sha256": "8d0cf71866675557bab9a6335b12919a841c4047410f37689755474c1ea5615c",
+      "original_work_evidence_sha256": "695bb4070580f4c75ae97f5057cbcc2f3f0e2bd2c186fcfb8084c0cfebc9bc36",
+      "original_source_mode": "bibliographic_candidate_no_core_analysis",
+      "status": "later_separate_core_analysis_added_unverified",
+      "update_mode": "round96_exact_frozen_raw_A_L_core_continuation",
+      "analysis_input": {
+        "file": "research/issue-input-snapshots/modern-easy-core-round96-part2.json",
+        "file_sha256": "f52bcf5deed77ed2a146502384779167083fba13438f2c0e07b590a42cafcdd6",
+        "record_index": 1,
+        "record_sha256": "a0183176ce0e52634ef06987eb664622f5b7ccb36fe2cbfcc8220e71dd0fd395"
+      },
+      "log_input": {
+        "file": "research/issue-input-snapshots/modern-easy-core-round96-part2-log.json",
+        "file_sha256": "5c41401086f311decbd8c868e06c42dca34bb1d4e2254ec8e5b4c704ba274e6f",
+        "record_index": 3,
+        "record_sha256": "af875d66e06c8a43cbe95cff0ce9505bb231f832e0fcaaa2511c5b11489f0d12"
+      },
+      "active_analysis_input": "research/issues-source-reading-round96.json",
+      "active_assertion_sha256": "fdd098735559a63b4335ed9c1da89ef967365f63b10a337fbdd0123241488025",
+      "identity": {
+        "title": "2484 Quirinal Ave.",
+        "author": "Sebastian A. Corn"
+      },
+      "support_scope": "本轮另一身份index17的实际查询已返回此评论，其中明确点名2484 Quirinal Ave.及罗马延续、无电力和替代技术；本身份直接复用已保存准确段落，0新query，不把一次共享返回计成第二次检索。",
+      "source_evidence_roles": [
+        {
+          "url": "https://fantastica.ro/ne-vom-intoarce-in-muribecca-de-sebastian-a-corn/",
+          "source_type": "critic_author_profile_specific_work_description",
+          "reading_scope": "本轮另一身份index17的实际查询已返回此评论，其中明确点名2484 Quirinal Ave.及罗马延续、无电力和替代技术；本身份直接复用已保存准确段落，0新query，不把一次共享返回计成第二次检索。",
+          "exact_support_scope": "本轮另一身份index17的实际查询已返回此评论，其中明确点名2484 Quirinal Ave.及罗马延续、无电力和替代技术；本身份直接复用已保存准确段落，0新query，不把一次共享返回计成第二次检索。",
+          "supports_issue": true,
+          "result": "scoped_story_premise_or_fragment",
+          "full_text_read": false,
+          "scope": "saved_cross_identity_search_return_only",
+          "private_raw_cache": {
+            "path": "/Users/changkun/Documents/Codex/2026-10-04/ke/work/evidence/modern-easy-core-round96-query-batch5-private.json",
+            "sha256": "649a7dcd53598b4ab16ca8e9781d96a4afec47abcd13502e50008c7407a6bfd9",
+            "section": "returns",
+            "record_index": 0,
+            "record_sha256": "3a8ecf189c5fb87c643e1d0f1f04ae47dc7ee1c2faf53bb2d022a01cf99d1770",
+            "request_sha256": "6955709223d65547414671caa74de0be291188715e40915e117dd0fceb6d5bfb"
+          }
+        }
+      ],
+      "sources": [
+        "https://fantastica.ro/ne-vom-intoarce-in-muribecca-de-sebastian-a-corn/"
+      ],
+      "actual_new_queries_for_original_R96_identity": 0,
+      "historical_bibliographic_scope_unchanged": true,
+      "classification_still_pending": true,
+      "independent_verification_upgrade": false,
+      "original_full_text_read": false,
+      "new_queries_from_annotation": 0,
+      "new_core_from_annotation": 0,
+      "note": "原书目候选及其资料角色不变。后续另一次限定资料分析补核心，仍未独立核验；短篇/长篇扩写和原版/新版关系不继承。Quirinal所用返回由另一个身份实际请求，复用不新增本身份query。"
     }
   ]
 }
