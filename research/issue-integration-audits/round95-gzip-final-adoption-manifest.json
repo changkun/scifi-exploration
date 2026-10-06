@@ -1,0 +1,47 @@
+{
+  "status": "private_complete_compression_layout_adoption_proposal",
+  "targets": [
+    {
+      "target": "scripts/build-unified.mjs",
+      "input_sha256": "a5db436ff64864f53416f187992eb44261d01a63a7cdaa17fdfc0432288ecc93",
+      "proposed_file": "code/scripts/build-unified.mjs",
+      "proposed_sha256": "604d70ad1737b9bec04098a654fd70e6d04cfa3c4faec296d38165246a7e717e"
+    },
+    {
+      "target": "scripts/gzip-record-members.mjs",
+      "input_sha256": null,
+      "proposed_file": "code/scripts/gzip-record-members.mjs",
+      "proposed_sha256": "565fac3d0530ebd95056d057068fde583a27227987ef6a6965a5bf99443ad225"
+    }
+  ],
+  "baseline_source_build_sha256": "a5db436ff64864f53416f187992eb44261d01a63a7cdaa17fdfc0432288ecc93",
+  "baseline_source_canonical_gzip_sha256": "734c17c715c5808682055661d2a45dcfe9365ae9002ed5a0bb9209999ac917d4",
+  "preparation_manifest_sha256": "52efcc9118ab70bbebbaf83203eaac5862f0690a7f4e48031bc881d167cba37d",
+  "node_proof": {
+    "file": "node-compatibility-proof.json",
+    "sha256": "6ddbf104672b6ab2f8c3c130cc0795d4dde1bbc361148f8f6fceb05fadfe5c66"
+  },
+  "three_reader_proof": {
+    "file": "three-reader-compatibility-proof.json",
+    "sha256": "ea522fdd02c8b3c7b395ae5b83827c71a7281a18e9b298724fed04740ae38f65"
+  },
+  "actual_private_build_exit_code": 0,
+  "actual_private_gzip_file_count": 21,
+  "all_decoded_raw_bytes_identical": true,
+  "all_current_four_record_exports_below_50_MiB": true,
+  "canonical_gzip_bytes": 41163526,
+  "scope": "Only compression layout changes. JSON/CSV raw bytes, paths, record order, loader interfaces, source process storage, completion and bibliography exports are unchanged.",
+  "fallback": "At >=50MiB use a lossless single-member gzip. If that remains >=50MiB reject the build with an explicit bounded-shard planning message; never truncate records.",
+  "actual_public_adoption_or_build": false,
+  "required_adoption_order": [
+    "Verify the exact two code targets and proofs.",
+    "Apply code only with the dedicated helper.",
+    "Root builds unified normally, retaining all historical input/archive gzip bytes.",
+    "Check decoded export SHA preservation against the selected build inputs."
+  ],
+  "limitations": [
+    "Old compressed SHAs change on new builds; immutable historical gzip archives are not rewritten.",
+    "Concatenated gzip members do not themselves provide HTTP range/delta transfer or prove actual Git pack gains.",
+    "Layout reuse example fixes metadata and record order; a real metadata/order change can affect other members."
+  ]
+}

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import {CLASSIFICATION_REGISTRY} from '../dist/assets/classifications.mjs';
 import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
-import {gzipSync,gunzipSync} from 'node:zlib';
+import {gunzipSync} from 'node:zlib';
+import {gzipJsonRecordMembers,gzipCsvRowMembers} from './gzip-record-members.mjs';
 import {buildCanonicalUniverse,coverageOf} from '../dist/assets/canonical.mjs';
 import {researchPriority,compareResearchPriority} from './research-priority.mjs';
 const root=new URL('../',import.meta.url);
@@ -23,24 +24,24 @@ queue.metadata.scheduling={policy:'easy-first-with-deferred-retries-v1',parallel
 metadata.source_search_logs=completion.metadata.source_search_logs;
 metadata.issue_research_queue={record_count:works.length,stages,url:'./assets/issue-research-queue.json.gz'};
 await mkdir(new URL('research/',root),{recursive:true});
-const compressed=gzipSync(JSON.stringify(snapshot),{level:9});
+const compressed=gzipJsonRecordMembers(snapshot,'works');
 // Keep the complete archive in GitHub; the Site mirrors identical records in
 // bounded shards so growing research never exceeds the per-asset limit.
 const archiveDir=new URL('dist/assets/canonical-archive/',root);
 await mkdir(archiveDir,{recursive:true});
 for(const name of await readdir(archiveDir))if(name.endsWith('.json.gz'))await unlink(new URL(name,archiveDir));
 const archiveChunks=[];
-for(let start=0;start<works.length;start+=1000){const name=String(start/1000).padStart(3,'0')+'.json.gz';archiveChunks.push('./assets/canonical-archive/'+name);await writeFile(new URL(name,archiveDir),gzipSync(JSON.stringify({works:works.slice(start,start+1000)}),{level:9}));}
+for(let start=0;start<works.length;start+=1000){const name=String(start/1000).padStart(3,'0')+'.json.gz';archiveChunks.push('./assets/canonical-archive/'+name);await writeFile(new URL(name,archiveDir),gzipJsonRecordMembers({works:works.slice(start,start+1000)},'works'));}
 await writeFile(new URL('dist/assets/canonical-universe-manifest.json',root),JSON.stringify({format:'canonical-archive-manifest-v1',metadata,aliases:snapshot.aliases,chunks:archiveChunks,complete_archive_url:'https://raw.githubusercontent.com/changkun/scifi-exploration/main/research/canonical-universe.json.gz'},null,2)+'\n');
 await unlink(new URL('dist/assets/canonical-universe.json.gz',root)).catch(e=>{if(e.code!=='ENOENT')throw e;});
 await writeFile(new URL('research/canonical-universe.json.gz',root),compressed);
 await writeFile(new URL('research/canonical-universe-metadata.json',root),JSON.stringify(metadata,null,2)+'\n');
-const queueBytes=gzipSync(JSON.stringify(queue),{level:9});
+const queueBytes=gzipJsonRecordMembers(queue,'records');
 await writeFile(new URL('research/issue-research-queue.json.gz',root),queueBytes);
 await writeFile(new URL('dist/assets/issue-research-queue.json.gz',root),queueBytes);
 const fields=['id','research_id','source_id','title_zh','title_original','author','first_year','sort_year','source_first_year','year_display','research_level','source_entity_kind','topics','research_topics','knowledge_topics','topic_candidates','issue','issue_analysis_status','issue_facets','issue_facets_status','issue_alternatives','knowledge_identity_notes','issue_evidence_notes','issue_research_task','reading_materials','source_search_log','content_corrections','branches','duration','story_era','narrative_mechanism','scientific_premise','reality_relation','expression_form','science_class','spatial_primary','classification_assignments','completion'];
 const csv=values=>values.map(value=>'"'+String(value??'').replaceAll('"','""')+'"').join(',');
-await writeFile(new URL('research/canonical-universe.csv.gz',root),gzipSync('\ufeff'+[csv(fields),...works.map(w=>csv(fields.map(k=>typeof w[k]==='object'&&w[k]!=null?JSON.stringify(w[k]):w[k])))].join('\n'),{level:9}));
+await writeFile(new URL('research/canonical-universe.csv.gz',root),gzipCsvRowMembers(csv(fields),works.map(w=>csv(fields.map(k=>typeof w[k]==='object'&&w[k]!=null?JSON.stringify(w[k]):w[k])))));
 const previousKnowledge=(await Promise.all(['research/knowledge-existing.json','research/knowledge-additional.json'].map(read))).flatMap(d=>d.records);
 const previouslyAnalyzed=new Set([...links.links.map(l=>l.canonical_id),...previousKnowledge.filter(r=>r.fields.issue).map(r=>r.id)]);
 const newlyAnalyzed=works.filter(w=>w.issue_analysis_status!=='missing'&&!previouslyAnalyzed.has(w.id));
@@ -48,7 +49,7 @@ const nineteenth=works.filter(w=>w.sort_year!=null&&w.sort_year>=1800&&w.sort_ye
 const issueSummary={date:metadata.research_date,universe:works.length,previously_analyzed:previouslyAnalyzed.size,analyzed:metadata.issue_analyzed,newly_analyzed:newlyAnalyzed.length,analysis_missing:metadata.issue_missing,facet_records:metadata.issue_facet_records,facet_count:metadata.issue_facets,facet_labels:new Set(works.flatMap(w=>w.issue_facets.map(f=>f.label))).size,nineteenth_century:{total:nineteenth.length,analyzed:nineteenth.filter(w=>w.issue_analysis_status!=='missing').length,newly_analyzed:nineteenth.filter(w=>newlyAnalyzed.some(n=>n.id===w.id)).length,faceted:nineteenth.filter(w=>w.issue_facets.length).length},batches:completion.metadata.issue_batches,newly_analyzed_ids:newlyAnalyzed.map(w=>w.id),note:'作品分析与宽泛标签候选分开统计；新增分析及情节依据全部待独立核对，未知条目原样保留。'};
 await writeFile(new URL('research/issue-completion-summary.json',root),JSON.stringify(issueSummary,null,2)+'\n');
 const issueData={metadata:issueSummary,records:works.filter(w=>w.issue_analysis_status!=='missing').map(w=>({id:w.id,title:w.title_zh,author:w.author,publication_year_candidate:w.sort_year,topics:w.topics,research_topics:w.research_topics,knowledge_topics:w.knowledge_topics,topic_candidates:w.topic_candidates,issue:w.issue,issue_analysis_status:w.issue_analysis_status,issue_facets:w.issue_facets,issue_facets_status:w.issue_facets_status,issue_alternatives:w.issue_alternatives||[],knowledge_identity_notes:w.knowledge_identity_notes,issue_evidence_notes:w.issue_evidence_notes,issue_research_task:w.issue_research_task,content_corrections:w.content_corrections,original_research_issue:w.research?.issue||null,knowledge_assertions:w.knowledge?.assertions||[],sources:w.sources,classification_assignments:w.classification_assignments}))};
-const issueCompressed=gzipSync(JSON.stringify(issueData),{level:9});
+const issueCompressed=gzipJsonRecordMembers(issueData,'records');
 await writeFile(new URL('research/issue-analysis.json.gz',root),issueCompressed);
 await writeFile(new URL('dist/assets/issue-analysis.json.gz',root),issueCompressed);
 console.log(JSON.stringify(metadata,null,2));

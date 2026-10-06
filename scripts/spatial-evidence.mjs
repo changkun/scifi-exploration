@@ -1,3 +1,5 @@
+import {isR95FixedSameBatchSpatialRecord,validateR95FixedSameBatchSpatialEvidence} from './r95-fixed-samebatch-spatial-evidence-v1.mjs';
+import {isEarlySelection8PublishedSpatialRecord,validateEarlySelection8PublishedSpatialEvidence} from './early-published-spatial-selection8-evidence-v1.mjs';
 import {isEarlySelection6PublishedSpatialRecord,validateEarlySelection6PublishedSpatialEvidence} from './early-published-spatial-selection6-evidence-v1.mjs';
 import {isR93FixedSameBatchSpatialRecord,validateR93FixedSameBatchSpatialEvidence} from './r93-fixed-samebatch-spatial-evidence-v1.mjs';
 import {isEarlySelection7PublishedSpatialRecord,validateEarlySelection7PublishedSpatialEvidence} from './early-published-spatial-selection7-evidence-v1.mjs';
@@ -21,13 +23,15 @@ function modernIds(phase,getIds,options){
  return fixedModernIds.get(key);
 }
 export function initialResearchSpatialBuildArguments(record,options={}){
- if(isEarlySelection7PublishedSpatialRecord(record)){
+ if(isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
   const currentWork=options.currentWork;
   return {...options,currentWork,issueAssertions:currentWork?.knowledge?.assertions,sourceSearchLog:currentWork?.source_search_log,spatialAdoptionPhase:currentWork?.spatial_primary==='unknown'?'pre':'post'};
  }
  return earlierBuildArguments(record,options);
 }
 export function validateSpatialEvidence(record,options={}){
+ if(isR95FixedSameBatchSpatialRecord(record))return validateR95FixedSameBatchSpatialEvidence(record,options);
+ if(isEarlySelection8PublishedSpatialRecord(record))return validateEarlySelection8PublishedSpatialEvidence(record,options);
  if(isEarlySelection7PublishedSpatialRecord(record))return validateEarlySelection7PublishedSpatialEvidence(record,options);
  if(isR94FixedSameBatchSpatialRecord(record))return validateR94FixedSameBatchSpatialEvidence(record,options);
  if(isEarlySelection6PublishedSpatialRecord(record))return validateEarlySelection6PublishedSpatialEvidence(record,options);

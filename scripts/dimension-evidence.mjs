@@ -2,6 +2,7 @@ import {createKnowledgeDimensionContext, validateKnowledgeDimensionEvidence, DIM
 import {createKnowledgeDimensionRound2Context, validateKnowledgeDimensionRound2Evidence} from './knowledge-dimensions-round2-evidence.mjs';
 import {createKnowledgeDimensionRound3Context, validateKnowledgeDimensionRound3Evidence} from './knowledge-dimensions-round3-evidence.mjs';
 import {createKnowledgeDimensionRound4Context, validateKnowledgeDimensionRound4Evidence} from './knowledge-dimensions-round4-evidence.mjs';
+import {createKnowledgeDimensionRound5Context, validateKnowledgeDimensionRound5Evidence} from './knowledge-dimensions-round5-evidence.mjs';
 
 // Each batch keeps its own closed evidence boundary. Future inputs must add
 // an explicit route; they cannot inherit an earlier batch's assumptions.
@@ -11,6 +12,7 @@ export function createDimensionEvidenceContext({repoDir}) {
     ['research/knowledge-dimensions-round2.json', {trustedContext: createKnowledgeDimensionRound2Context({repoDir}), validate: validateKnowledgeDimensionRound2Evidence}],
     ['research/knowledge-dimensions-round3.json', {trustedContext: createKnowledgeDimensionRound3Context({repoDir}), validate: validateKnowledgeDimensionRound3Evidence}],
     ['research/knowledge-dimensions-round4.json', {trustedContext: createKnowledgeDimensionRound4Context({repoDir}), validate: validateKnowledgeDimensionRound4Evidence}],
+    ['research/knowledge-dimensions-round5.json', {trustedContext: createKnowledgeDimensionRound5Context({repoDir}), validate: validateKnowledgeDimensionRound5Evidence}],
   ]);
 }
 
