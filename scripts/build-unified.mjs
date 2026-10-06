@@ -24,7 +24,9 @@ queue.metadata.scheduling={policy:'easy-first-with-deferred-retries-v1',parallel
 metadata.source_search_logs=completion.metadata.source_search_logs;
 metadata.issue_research_queue={record_count:works.length,stages,url:'./assets/issue-research-queue.json.gz'};
 await mkdir(new URL('research/',root),{recursive:true});
-const compressed=gzipJsonRecordMembers(snapshot,'works');
+// The complete GitHub export has a separate 64 MiB ceiling; browser shards
+// remain bounded independently. Preserve every record and assertion.
+const compressed=gzipJsonRecordMembers(snapshot,'works',{maxCompressedBytes:64*1024*1024});
 // Keep the complete archive in GitHub; the Site mirrors identical records in
 // bounded shards so growing research never exceeds the per-asset limit.
 const archiveDir=new URL('dist/assets/canonical-archive/',root);
