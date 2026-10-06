@@ -1,3 +1,4 @@
+import {isEarlySelection15PublishedSpatialRecord} from './early-published-spatial-selection15-evidence-v1.mjs';
 import {isEarlySelection14PublishedSpatialRecord} from './early-published-spatial-selection14-evidence-v2.mjs';
 import {isEarlySelection13PublishedSpatialRecord} from './early-published-spatial-selection13-evidence-v3.mjs';
 import {isEarlySelection12PublishedSpatialRecord} from './early-published-spatial-selection12-evidence-v2.mjs';
@@ -100,7 +101,7 @@ for(const input of spatialInputs)for(const record of input.records){
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;
  }
- if(isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
+ if(isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)||isEarlySelection6PublishedSpatialRecord(record)||isR92FixedSameBatchSpatialRecord(record)||isEarlySelection5PublishedSpatialRecord(record,{repoDir:fileURLToPath(root)})){
   const work=works.find(item=>item.id===record.id);
   validateSpatialEvidence(record,{issueAssertions:work.knowledge.assertions,sourceSearchLog:work.source_search_log,currentWork:work,repoDir:fileURLToPath(root),spatialAdoptionPhase:'post'});
   frozenSpatialProvenance++;continue;

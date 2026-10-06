@@ -1,3 +1,4 @@
+import {isEarlySelection15PublishedSpatialRecord,validateEarlySelection15PublishedSpatialEvidence} from './early-published-spatial-selection15-evidence-v1.mjs';
 import {isEarlySelection14PublishedSpatialRecord,validateEarlySelection14PublishedSpatialEvidence} from './early-published-spatial-selection14-evidence-v2.mjs';
 import {isEarlySelection13PublishedSpatialRecord,validateEarlySelection13PublishedSpatialEvidence} from './early-published-spatial-selection13-evidence-v3.mjs';
 import {isEarlySelection12PublishedSpatialRecord,validateEarlySelection12PublishedSpatialEvidence} from './early-published-spatial-selection12-evidence-v2.mjs';
@@ -33,13 +34,14 @@ function modernIds(phase,getIds,options){
  return fixedModernIds.get(key);
 }
 export function initialResearchSpatialBuildArguments(record,options={}){
- if(isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
+ if(isEarlySelection15PublishedSpatialRecord(record)||isEarlySelection14PublishedSpatialRecord(record)||isEarlySelection13PublishedSpatialRecord(record)||isEarlySelection12PublishedSpatialRecord(record)||isEarlySelection11PublishedSpatialRecord(record)||isEarlySelection10PublishedSpatialRecord(record)||isEarlySelection9PublishedSpatialRecord(record)||isEarlySelection8PublishedSpatialRecord(record)||isEarlySelection7PublishedSpatialRecord(record)){
   const currentWork=options.currentWork;
   return {...options,currentWork,issueAssertions:currentWork?.knowledge?.assertions,sourceSearchLog:currentWork?.source_search_log,spatialAdoptionPhase:currentWork?.spatial_primary==='unknown'?'pre':'post'};
  }
  return earlierBuildArguments(record,options);
 }
 export function validateSpatialEvidence(record,options={}){
+ if(isEarlySelection15PublishedSpatialRecord(record))return validateEarlySelection15PublishedSpatialEvidence(record,options);
  if(isEarlySelection14PublishedSpatialRecord(record))return validateEarlySelection14PublishedSpatialEvidence(record,options);
  if(isEarlySelection13PublishedSpatialRecord(record))return validateEarlySelection13PublishedSpatialEvidence(record,options);
  if(isEarlySelection12PublishedSpatialRecord(record))return validateEarlySelection12PublishedSpatialEvidence(record,options);
